@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
+    },
+    {
+      "id": "urn:ngm:class:smart-home",
+      "label": "Smart Home"
+    },
+    {
+      "id": "urn:ngm:class:iot-platform",
+      "label": "IoT Platform"
+    },
+    {
+      "id": "urn:ngm:class:edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Home Automation"
+    },
+    {
+      "id": "urn:ngm:class:open-source-software",
+      "label": "Open Source Software"
     }
   ],
   "entityType": "Class",
@@ -48,6 +68,54 @@
       {
         "id": "urn:ngm:class:zigbee2-mqtt",
         "label": "Zigbee2MQTT"
+      },
+      {
+        "id": "urn:ngm:class:z-wave-js-ui",
+        "label": "Z-Wave JS"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee Home Automation"
+      },
+      {
+        "id": "urn:ngm:class:lovelace-dashboard",
+        "label": "Lovelace Dashboard"
+      },
+      {
+        "id": "urn:ngm:class:hacs",
+        "label": "HACS"
+      },
+      {
+        "id": "urn:ngm:class:assist-voice-pipeline",
+        "label": "Assist Voice Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:energy-dashboard",
+        "label": "Energy Dashboard"
+      },
+      {
+        "id": "urn:ngm:class:home-assistant-cloud",
+        "label": "Home Assistant Cloud"
+      },
+      {
+        "id": "urn:ngm:class:matter-server",
+        "label": "Matter Server"
+      },
+      {
+        "id": "urn:ngm:class:nabu-casa",
+        "label": "Nabu Casa"
+      },
+      {
+        "id": "urn:ngm:class:ai-task-integration",
+        "label": "AI Task Integration"
+      },
+      {
+        "id": "urn:ngm:class:local-llm-runtime-platform",
+        "label": "Ollama Integration"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation Engine"
       }
     ],
     "requires": [
@@ -78,6 +146,22 @@
       {
         "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker Containerisation Platform"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT Broker"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee Radio Dongle"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Local Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:wake-word-engine",
+        "label": "Wake Word Engine"
       }
     ],
     "enables": [
@@ -104,9 +188,74 @@
       {
         "id": "urn:ngm:class:smart-home-automation",
         "label": "Smart Home Automation"
+      },
+      {
+        "id": "urn:ngm:class:local-voice-control",
+        "label": "Local Voice Control"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Device Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-iot",
+        "label": "Privacy-Preserving IoT"
+      },
+      {
+        "id": "urn:ngm:class:multi-protocol-integration",
+        "label": "Multi-Protocol Integration"
+      },
+      {
+        "id": "urn:ngm:class:llm-controlled-devices",
+        "label": "LLM-Controlled Devices"
+      },
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Commissioning"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid Integration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "id": "urn:ngm:class:type-script",
+        "label": "TypeScript"
+      },
+      {
+        "id": "urn:ngm:class:sqlite",
+        "label": "SQLite"
+      },
+      {
+        "id": "urn:ngm:class:postgre-sql",
+        "label": "PostgreSQL"
+      },
+      {
+        "id": "urn:ngm:class:redis",
+        "label": "Redis"
+      },
+      {
+        "id": "urn:ngm:class:docker-containerisation-platform",
+        "label": "Docker Containerisation Platform"
+      },
+      {
+        "id": "urn:ngm:class:haos-linux",
+        "label": "HAOS Linux"
+      },
+      {
+        "id": "urn:ngm:class:supervisor-api",
+        "label": "Supervisor API"
+      },
+      {
+        "id": "urn:ngm:class:buildroot",
+        "label": "Buildroot"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:bluetooth-le",
@@ -147,9 +296,54 @@
       {
         "id": "urn:ngm:class:zigbee",
         "label": "Zigbee Protocol"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee Protocol"
+      },
+      {
+        "id": "urn:ngm:class:z-wave-protocol",
+        "label": "Z-Wave Protocol"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket API"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:amazon-alexa",
+        "label": "Amazon Alexa"
+      },
+      {
+        "id": "urn:ngm:class:google-home",
+        "label": "Google Home"
+      },
+      {
+        "id": "urn:ngm:class:apple-homekit",
+        "label": "Apple HomeKit"
+      },
+      {
+        "id": "urn:ngm:class:samsung-smartthings",
+        "label": "Samsung SmartThings"
+      },
+      {
+        "id": "urn:ngm:class:hubitat",
+        "label": "Hubitat"
+      },
+      {
+        "id": "urn:ngm:class:openhab",
+        "label": "openHAB"
+      },
+      {
+        "id": "urn:ngm:class:domoticz",
+        "label": "Domoticz"
+      },
+      {
+        "id": "urn:ngm:class:fhem",
+        "label": "FHEM"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:control-system",
@@ -192,6 +386,26 @@
       {
         "id": "urn:ngm:class:local-llm-runtime-platform",
         "label": "Local LLM Runtime Platform"
+      },
+      {
+        "id": "urn:ngm:class:whisper",
+        "label": "Whisper STT"
+      },
+      {
+        "id": "urn:ngm:class:openwakeword",
+        "label": "openWakeWord"
+      },
+      {
+        "id": "urn:ngm:class:microwakeword",
+        "label": "microWakeWord"
+      },
+      {
+        "id": "urn:ngm:class:local-llm-runtime-platform",
+        "label": "Ollama"
+      },
+      {
+        "id": "urn:ngm:class:appdaemon",
+        "label": "AppDaemon"
       }
     ],
     "supports": [
@@ -202,6 +416,38 @@
       {
         "id": "urn:ngm:class:raspberry-pi",
         "label": "Raspberry Pi"
+      },
+      {
+        "id": "urn:ngm:class:home-assistant-green",
+        "label": "Home Assistant Green"
+      },
+      {
+        "id": "urn:ngm:class:home-assistant-yellow",
+        "label": "Home Assistant Yellow"
+      },
+      {
+        "id": "urn:ngm:class:x86-64-linux",
+        "label": "x86-64 Linux"
+      },
+      {
+        "id": "urn:ngm:class:arm64-linux",
+        "label": "ARM64 Linux"
+      },
+      {
+        "id": "urn:ngm:class:qemu-kvm",
+        "label": "QEMU/KVM"
+      },
+      {
+        "id": "urn:ngm:class:home-assistant-voice-preview-edition",
+        "label": "Home Assistant Voice Preview Edition"
+      },
+      {
+        "id": "urn:ngm:class:orange-pi",
+        "label": "Orange Pi"
+      },
+      {
+        "id": "urn:ngm:class:odroid-n2",
+        "label": "Odroid-N2"
       }
     ],
     "standardizedBy": [
@@ -220,6 +466,22 @@
       {
         "id": "urn:ngm:class:wi-fi-alliance",
         "label": "Wi-Fi Alliance"
+      },
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "CSA Matter Specification"
+      },
+      {
+        "id": "urn:ngm:class:zigbee-alliance",
+        "label": "Zigbee Alliance"
+      },
+      {
+        "id": "urn:ngm:class:z-wave-alliance",
+        "label": "Z-Wave Alliance"
+      },
+      {
+        "id": "urn:ngm:class:ietf-coap-working-group",
+        "label": "IETF CoAP Working Group"
       }
     ],
     "partOf": [],
@@ -259,14 +521,108 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:local-ai",
+        "label": "Local AI"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing",
+      "slug": "cloud-computing"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-architecture",
+      "label": "Decentralised Architecture",
+      "slug": "decentralised-architecture"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:internet-of-things",
+      "label": "Internet of Things",
+      "slug": "internet-of-things"
+    },
+    {
+      "id": "urn:ngm:class:latency-sensitive-infrastructure",
+      "label": "Latency-Sensitive Infrastructure",
+      "slug": "latency-sensitive-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:network-function-virtualization",
+      "label": "Network Function Virtualization",
+      "slug": "network-function-virtualization"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -306,78 +662,326 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:technology-infrastructure-domain-layer",
+        "label": "Infrastructure Layer"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-efficiency",
+        "label": "Bandwidth Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-processing",
+        "label": "Decentralised Processing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Reduced Latency"
+      },
+      {
+        "id": "urn:ngm:class:offline-operation",
+        "label": "Offline Operation"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:mesh-network",
+        "label": "Mesh Network"
+      },
+      {
+        "id": "urn:ngm:class:wireless-network",
+        "label": "Wireless Network"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:5g-core",
+        "label": "5G Core"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cloudlet-architecture",
+        "label": "Cloudlet Architecture"
+      },
+      {
+        "id": "urn:ngm:class:edge-caching",
+        "label": "Edge Caching"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      },
+      {
+        "id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      },
+      {
+        "id": "urn:ngm:class:open-source-definition",
+        "label": "Open Source Definition"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-cloud-computing",
+        "label": "Centralised Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      },
+      {
+        "id": "urn:ngm:class:pure-on-device-computing",
+        "label": "Pure On-Device Computing"
+      },
+      {
+        "id": "urn:ngm:class:traditional-cdn",
+        "label": "Traditional CDN"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:closed-source-software",
+        "label": "Closed-Source Software"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      },
+      {
+        "id": "urn:ngm:class:on-premises-computing",
+        "label": "On-Premises Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
       },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twins"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
-    "contrastsWith": [
+    "uses": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "id": "urn:ngm:class:z-wave",
+        "label": "Z-Wave"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:on-device-llm",
+        "label": "On-Device LLM"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:etsi-mec",
+        "label": "ETSI MEC"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1934-openfog",
+        "label": "IEEE 1934 OpenFog"
+      },
+      {
+        "id": "urn:ngm:class:itu-t-y-3508",
+        "label": "ITU-T Y.3508"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation Edge"
+      },
+      {
+        "id": "urn:ngm:class:o-ran-alliance",
+        "label": "O-RAN Alliance"
+      },
+      {
+        "id": "urn:ngm:class:open-source-initiative",
+        "label": "Open Source Initiative"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet Of Things"
+      },
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [
@@ -386,7 +990,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -394,16 +998,24 @@
         "label": "Network and Communication"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:io-t",
+        "label": "IoT"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
       },
       {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:5-g",
+        "label": "5G"
+      },
+      {
+        "id": "urn:ngm:class:6g",
+        "label": "6G"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ]
   },

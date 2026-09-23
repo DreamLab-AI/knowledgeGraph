@@ -10,45 +10,332 @@
     {
       "id": "urn:ngm:class:dialogue-system",
       "label": "Dialogue System"
+    },
+    {
+      "id": "urn:ngm:class:dialogue-systems",
+      "label": "Dialogue Systems"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "id": "urn:ngm:class:task-oriented-dialogue-systems",
+      "label": "Task-Oriented Dialogue Systems"
+    },
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.6,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:belief-state",
+        "label": "Belief State"
+      },
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      },
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:domain-classification",
+        "label": "Domain Classification"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-history",
+        "label": "Dialogue History"
+      },
+      {
+        "id": "urn:ngm:class:utterance-encoding",
+        "label": "Utterance Encoding"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:utterance-encoding",
+        "label": "Utterance Encoding"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-history",
+        "label": "Dialogue History"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Annotation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:conversational-ai",
         "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-policy",
+        "label": "Dialogue Policy"
+      },
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:task-completion",
+        "label": "Task Completion"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-assistant",
+        "label": "Virtual Assistant"
+      },
+      {
+        "id": "urn:ngm:class:customer-support-automation",
+        "label": "Customer Support Automation"
+      },
+      {
+        "id": "urn:ngm:class:spoken-dialogue-systems",
+        "label": "Spoken Dialogue Systems"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-triage",
+        "label": "Healthcare Triage"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:pre-trained-language-model",
+        "label": "Pre-trained Language Model"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      },
+      {
+        "id": "urn:ngm:class:belief-state-update",
+        "label": "Belief State Update"
+      },
+      {
+        "id": "urn:ngm:class:context-accumulation",
+        "label": "Context Accumulation"
+      },
+      {
+        "id": "urn:ngm:class:domain-classification",
+        "label": "Domain Classification"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:carry-over-mechanism",
+        "label": "Carry-Over Mechanism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-domain-dialogue",
+        "label": "Open-Domain Dialogue"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-based-dialogue",
+        "label": "Retrieval-Based Dialogue"
+      },
+      {
+        "id": "urn:ngm:class:chit-chat-systems",
+        "label": "Chit-Chat Systems"
+      },
+      {
+        "id": "urn:ngm:class:eliza",
+        "label": "ELIZA"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multiwoz",
+        "label": "MultiWOZ"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:sequence-to-sequence-model",
+        "label": "Sequence-to-Sequence Model"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:schema-guided-dialogue",
+        "label": "Schema-Guided Dialogue"
+      },
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:task-oriented-dialogue-systems",
+        "label": "Task-Oriented Dialogue Systems"
+      },
+      {
+        "id": "urn:ngm:class:spoken-dialogue-systems",
+        "label": "Spoken Dialogue Systems"
+      },
+      {
+        "id": "urn:ngm:class:customer-support-automation",
+        "label": "Customer Support Automation"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:schema-guided-dialogue",
+        "label": "Schema-Guided Dialogue"
+      },
+      {
+        "id": "urn:ngm:class:multiwoz-benchmark",
+        "label": "MultiWOZ Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:dstc-challenge-series",
+        "label": "DSTC Challenge Series"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dialogue-systems",
+        "label": "Dialogue Systems"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-policy",
+        "label": "Dialogue Policy"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:tool-augmented-reasoning",
+        "label": "Tool-Augmented Reasoning"
+      }
+    ]
   },
   "inferredSuperClasses": [
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application",
       "slug": "ai-application"
-    },
-    {
-      "id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing",
-      "slug": "natural-language-processing"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -59,6 +346,11 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
     }
   ],
   "inheritedRelations": {
@@ -72,38 +364,34 @@
         "label": "Natural Language Understanding"
       },
       {
-        "id": "urn:ngm:class:autonomous-driving",
-        "label": "Autonomous Driving"
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:dialogue-policy",
+        "label": "Dialogue Policy"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:response-selection",
+        "label": "Response Selection"
       },
       {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
       },
       {
-        "id": "urn:ngm:class:fraud-detection",
-        "label": "Fraud Detection"
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:intent-recognition",
         "label": "Intent Recognition"
-      },
-      {
-        "id": "urn:ngm:class:natural-language-understanding",
-        "label": "Natural Language Understanding"
       },
       {
         "id": "urn:ngm:class:speech-recognition",
@@ -114,20 +402,24 @@
         "label": "Transformer"
       },
       {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
         "id": "urn:ngm:class:language-model",
         "label": "Language Model"
       },
       {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
@@ -140,8 +432,16 @@
         "label": "Question Answering"
       },
       {
-        "id": "urn:ngm:class:virtual-assistant",
-        "label": "Virtual Assistant"
+        "id": "urn:ngm:class:agentic-ai-workflow",
+        "label": "Agentic AI Workflow"
+      },
+      {
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
       },
       {
         "id": "urn:ngm:class:information-extraction",
@@ -154,14 +454,6 @@
       {
         "id": "urn:ngm:class:named-entity-recognition",
         "label": "Named Entity Recognition"
-      },
-      {
-        "id": "urn:ngm:class:sentiment-analysis",
-        "label": "Sentiment Analysis"
-      },
-      {
-        "id": "urn:ngm:class:text-generation",
-        "label": "Text Generation"
       }
     ],
     "dependsOn": [
@@ -174,12 +466,28 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:speech-processing",
+        "label": "Speech Processing"
       }
     ],
     "implements": [
@@ -190,6 +498,22 @@
       {
         "id": "urn:ngm:class:turn-taking",
         "label": "Turn Taking"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-policy",
+        "label": "Dialogue Policy"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:response-generation",
+        "label": "Response Generation"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
       }
     ],
     "contrastsWith": [
@@ -202,8 +526,24 @@
         "label": "Search Engine"
       },
       {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:form-based-interface",
+        "label": "Form-Based Interface"
+      },
+      {
+        "id": "urn:ngm:class:scripted-chatbot",
+        "label": "Scripted Chatbot"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -220,12 +560,24 @@
         "label": "Telecollaboration"
       },
       {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
         "id": "urn:ngm:class:knowledge-graphs",
         "label": "Knowledge Graphs"
       },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -238,16 +590,16 @@
         "label": "Slot Filling"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
+        "id": "urn:ngm:class:tool-augmented-reasoning",
+        "label": "Tool-Augmented Reasoning"
       },
       {
         "id": "urn:ngm:class:recurrent-neural-network",
@@ -262,6 +614,50 @@
         "label": "Transformer Architecture"
       }
     ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility Technology"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C Voice Browser Working Group"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:chatbots",
@@ -272,28 +668,28 @@
         "label": "Multimodal AI"
       },
       {
-        "id": "urn:ngm:class:sentiment-analysis",
-        "label": "Sentiment Analysis"
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
       },
       {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:machine-translation",
         "label": "Machine Translation"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       }
     ]
   },

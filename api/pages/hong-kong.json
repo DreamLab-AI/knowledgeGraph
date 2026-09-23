@@ -20,12 +20,20 @@
       {
         "id": "urn:ngm:class:bis-innovation-hub",
         "label": "BIS Innovation Hub"
+      },
+      {
+        "id": "urn:ngm:class:hong-kong-monetary-authority",
+        "label": "Hong Kong Monetary Authority"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:common-law",
+        "label": "Common Law"
       }
     ],
     "enables": [
@@ -40,13 +48,25 @@
       {
         "id": "urn:ngm:class:tokenized-asset",
         "label": "Tokenised Asset"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:ngm:class:tokenized-asset",
+        "label": "Tokenised Asset"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:one-country-two-systems",
+        "label": "One Country Two Systems"
       }
     ],
     "contrastsWith": [
@@ -61,8 +81,12 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:renminbi-internationalisation",
+        "label": "Renminbi Internationalisation"
       }
     ],
     "uses": [
@@ -90,7 +114,12 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:greater-bay-area",
+        "label": "Greater Bay Area"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:swift",
@@ -99,6 +128,10 @@
       {
         "id": "urn:ngm:class:correspondent-banking",
         "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:securities-and-futures-commission",
+        "label": "Securities and Futures Commission"
       }
     ]
   },
@@ -238,7 +271,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

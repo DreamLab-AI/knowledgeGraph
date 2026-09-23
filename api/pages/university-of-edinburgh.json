@@ -16,7 +16,20 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:school-of-informatics",
+        "label": "School of Informatics"
+      },
+      {
+        "id": "urn:ngm:class:bayes-centre",
+        "label": "Bayes Centre"
+      },
+      {
+        "id": "urn:ngm:class:institute-for-adaptive-and-neural-computation",
+        "label": "Institute for Adaptive and Neural Computation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:research-funding",
@@ -25,7 +38,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -61,6 +74,10 @@
       {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:industry-academia-collaboration",
+        "label": "Industry-Academia Collaboration"
       }
     ],
     "uses": [
@@ -96,6 +113,10 @@
       {
         "id": "urn:ngm:class:russell-group",
         "label": "Russell Group"
+      },
+      {
+        "id": "urn:ngm:class:league-of-european-research-universities",
+        "label": "League of European Research Universities"
       }
     ],
     "relatedTo": [
@@ -118,6 +139,10 @@
       {
         "id": "urn:ngm:class:university-of-oxford",
         "label": "University of Oxford"
+      },
+      {
+        "id": "urn:ngm:class:carnegie-mellon-university",
+        "label": "Carnegie Mellon University"
       }
     ]
   },
@@ -197,6 +222,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

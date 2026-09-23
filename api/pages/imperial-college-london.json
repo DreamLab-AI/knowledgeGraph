@@ -16,7 +16,20 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:department-of-computing",
+        "label": "Department of Computing"
+      },
+      {
+        "id": "urn:ngm:class:faculty-of-medicine",
+        "label": "Faculty of Medicine"
+      },
+      {
+        "id": "urn:ngm:class:white-city-innovation-district",
+        "label": "White City Innovation District"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:research-funding",
@@ -35,6 +48,10 @@
       {
         "id": "urn:ngm:class:open-science",
         "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:spin-out-company",
+        "label": "Spin-out Company"
       }
     ],
     "dependsOn": [],
@@ -48,11 +65,15 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-research",
+        "label": "Blockchain Research"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -76,6 +97,14 @@
       {
         "id": "urn:ngm:class:open-source-software",
         "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:interdisciplinary-research",
+        "label": "Interdisciplinary Research"
       }
     ],
     "standardizedBy": [],
@@ -83,6 +112,10 @@
       {
         "id": "urn:ngm:class:russell-group",
         "label": "Russell Group"
+      },
+      {
+        "id": "urn:ngm:class:united-kingdom-research-base",
+        "label": "United Kingdom Research Base"
       }
     ],
     "relatedTo": [
@@ -188,6 +221,20 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

@@ -12,19 +12,72 @@
       "label": "Network and Communication"
     },
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
-    },
-    {
       "id": "urn:ngm:class:policy-enforcement-point",
       "label": "Policy Enforcement Point"
+    },
+    {
+      "id": "urn:ngm:class:middleware",
+      "label": "Middleware"
+    },
+    {
+      "id": "urn:ngm:class:reverse-proxy",
+      "label": "Reverse Proxy"
+    },
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:cloud-native-component",
+      "label": "Cloud Native Component"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:request-router",
+        "label": "Request Router"
+      },
+      {
+        "id": "urn:ngm:class:authentication-handler",
+        "label": "Authentication Handler"
+      },
+      {
+        "id": "urn:ngm:class:rate-limiter",
+        "label": "Rate Limiter"
+      },
+      {
+        "id": "urn:ngm:class:tls-terminator",
+        "label": "TLS Terminator"
+      },
+      {
+        "id": "urn:ngm:class:request-transformer",
+        "label": "Request Transformer"
+      },
+      {
+        "id": "urn:ngm:class:response-cache",
+        "label": "Response Cache"
+      },
+      {
+        "id": "urn:ngm:class:distributed-tracing-collector",
+        "label": "Distributed Tracing Collector"
+      },
+      {
+        "id": "urn:ngm:class:access-log-emitter",
+        "label": "Access Log Emitter"
+      },
+      {
+        "id": "urn:ngm:class:plugin-runtime",
+        "label": "Plugin Runtime"
+      },
+      {
+        "id": "urn:ngm:class:health-checker",
+        "label": "Health Checker"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:certificate-authority",
@@ -37,6 +90,18 @@
       {
         "id": "urn:ngm:class:identity-provider",
         "label": "Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:ngm:class:configuration-store",
+        "label": "Configuration Store"
+      },
+      {
+        "id": "urn:ngm:class:observability-pipeline",
+        "label": "Observability Pipeline"
       }
     ],
     "enables": [
@@ -55,9 +120,50 @@
       {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Lifecycle Management"
+      },
+      {
+        "id": "urn:ngm:class:backend-for-frontend",
+        "label": "Backend-for-Frontend"
+      },
+      {
+        "id": "urn:ngm:class:graphql-federation",
+        "label": "GraphQL Federation"
+      },
+      {
+        "id": "urn:ngm:class:strangler-fig-pattern",
+        "label": "Strangler Fig Pattern"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP/2"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP/3"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP-IP"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:circuit-breaker",
@@ -70,9 +176,54 @@
       {
         "id": "urn:ngm:class:rate-limiting",
         "label": "Rate Limiting"
+      },
+      {
+        "id": "urn:ngm:class:oidc",
+        "label": "OIDC"
+      },
+      {
+        "id": "urn:ngm:class:jwt",
+        "label": "JWT"
+      },
+      {
+        "id": "urn:ngm:class:mtls",
+        "label": "mTLS"
+      },
+      {
+        "id": "urn:ngm:class:bulkhead-pattern",
+        "label": "Bulkhead Pattern"
+      },
+      {
+        "id": "urn:ngm:class:retry-pattern",
+        "label": "Retry Pattern"
+      },
+      {
+        "id": "urn:ngm:class:token-bucket-algorithm",
+        "label": "Token Bucket Algorithm"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:enterprise-service-bus",
+        "label": "Enterprise Service Bus"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      },
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "CDN"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -90,6 +241,18 @@
       {
         "id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffer"
+      },
+      {
+        "id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      },
+      {
+        "id": "urn:ngm:class:protobuf",
+        "label": "Protocol Buffers"
+      },
+      {
+        "id": "urn:ngm:class:w3c-trace-context",
+        "label": "W3C Trace Context"
       }
     ],
     "supports": [
@@ -124,7 +287,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "id": "urn:ngm:class:cncf",
         "label": "Cloud Native Computing Foundation"
       },
       {
@@ -134,6 +297,14 @@
       {
         "id": "urn:ngm:class:ietf",
         "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes-gateway-api",
+        "label": "Kubernetes Gateway API"
+      },
+      {
+        "id": "urn:ngm:class:openapi-initiative",
+        "label": "OpenAPI Initiative"
       }
     ],
     "partOf": [],
@@ -157,6 +328,14 @@
       {
         "id": "urn:ngm:class:web-application-firewall",
         "label": "Web Application Firewall"
+      },
+      {
+        "id": "urn:ngm:class:identity-aware-proxy",
+        "label": "Identity-Aware Proxy"
+      },
+      {
+        "id": "urn:ngm:class:ai-gateway",
+        "label": "AI Gateway"
       }
     ]
   },
@@ -167,25 +346,65 @@
       "slug": "access-control"
     },
     {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -226,24 +445,24 @@
         "label": "Policy Information Point"
       },
       {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:identity-management",
-        "label": "Identity Management"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       },
       {
         "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP-IP"
       }
     ],
     "enables": [
@@ -264,20 +483,54 @@
         "label": "Privileged Access Management"
       },
       {
-        "id": "urn:ngm:class:compliance",
-        "label": "Compliance"
+        "id": "urn:ngm:class:distributed-communication",
+        "label": "Distributed Communication"
       },
       {
-        "id": "urn:ngm:class:data-protection",
-        "label": "Data Protection"
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       },
       {
-        "id": "urn:ngm:class:security",
-        "label": "System Security"
+        "id": "urn:ngm:class:resource-abstraction",
+        "label": "Resource Abstraction"
       },
       {
-        "id": "urn:ngm:class:separation-of-duties",
-        "label": "Separation of Duties"
+        "id": "urn:ngm:class:service-integration",
+        "label": "Service Integration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:power-infrastructure",
+        "label": "Power Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "implements": [
@@ -294,12 +547,24 @@
         "label": "Attribute-Based Access Control"
       },
       {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Permission Management"
+      },
+      {
         "id": "urn:ngm:class:mandatory-access-control",
         "label": "Mandatory Access Control"
       },
       {
         "id": "urn:ngm:class:role-based-access-control",
         "label": "Role-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
       }
     ],
     "contrastsWith": [
@@ -312,12 +577,28 @@
         "label": "Role-Based Access Control"
       },
       {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      },
+      {
         "id": "urn:ngm:class:open-access",
         "label": "Open Access"
       },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
       }
     ],
     "bridgesTo": [
@@ -330,20 +611,28 @@
         "label": "Data Mesh"
       },
       {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -360,6 +649,14 @@
         "label": "Service Mesh"
       },
       {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:ssl-termination",
+        "label": "SSL Termination"
+      },
+      {
         "id": "urn:ngm:class:access-control-list",
         "label": "Access Control List"
       },
@@ -370,14 +667,6 @@
       {
         "id": "urn:ngm:class:privileged-access-management",
         "label": "Privileged Access Management"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
-      },
-      {
-        "id": "urn:ngm:class:digital-certificate",
-        "label": "Digital Certificate"
       }
     ],
     "supports": [
@@ -386,28 +675,32 @@
         "label": "Audit Logging"
       },
       {
+        "id": "urn:ngm:class:compliance-enforcement",
+        "label": "Compliance Enforcement"
+      },
+      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
       },
       {
-        "id": "urn:ngm:class:zero-trust-architecture",
-        "label": "Zero Trust Security"
+        "id": "urn:ngm:class:web-application-firewall",
+        "label": "Web Application Firewall"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "standardizedBy": [
@@ -420,6 +713,14 @@
         "label": "XACML"
       },
       {
+        "id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802 Standards"
+      },
+      {
         "id": "urn:ngm:class:iso-iec-27001",
         "label": "ISO/IEC 27001"
       },
@@ -428,18 +729,46 @@
         "label": "NIST SP 800-53"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
       }
     ],
     "partOf": [
       {
+        "id": "urn:ngm:class:xacml-architecture",
+        "label": "XACML Architecture"
+      },
+      {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
       }
     ],
     "relatedTo": [
@@ -448,7 +777,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

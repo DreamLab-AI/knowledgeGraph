@@ -37,7 +37,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -64,6 +64,10 @@
       {
         "id": "urn:ngm:class:open-access",
         "label": "Open Access"
+      },
+      {
+        "id": "urn:ngm:class:commons",
+        "label": "Commons"
       }
     ],
     "bridgesTo": [
@@ -113,6 +117,10 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:land-registry",
+        "label": "Land Registry"
       }
     ]
   },
@@ -235,6 +243,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -311,6 +323,10 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
@@ -319,16 +335,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

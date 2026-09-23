@@ -16,7 +16,12 @@
   "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inspect-evaluation-framework",
+        "label": "Inspect Evaluation Framework"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,6 +31,10 @@
       {
         "id": "urn:ngm:class:international-ai-cooperation",
         "label": "International AI Cooperation"
+      },
+      {
+        "id": "urn:ngm:class:pre-deployment-safety-testing",
+        "label": "Pre-Deployment Safety Testing"
       }
     ],
     "dependsOn": [],
@@ -33,6 +42,10 @@
       {
         "id": "urn:ngm:class:bletchley-declaration",
         "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-evaluation-framework",
+        "label": "AI Safety Evaluation Framework"
       }
     ],
     "contrastsWith": [
@@ -84,7 +97,12 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:department-for-science-innovation-and-technology",
+        "label": "Department for Science, Innovation and Technology"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:frontier-model-forum",
@@ -101,6 +119,18 @@
       {
         "id": "urn:ngm:class:oecd-ai-policy-observatory",
         "label": "OECD AI Policy Observatory"
+      },
+      {
+        "id": "urn:ngm:class:ai-office",
+        "label": "EU AI Office"
+      },
+      {
+        "id": "urn:ngm:class:deceptive-alignment",
+        "label": "Deceptive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-replication",
+        "label": "Autonomous Replication"
       }
     ]
   },
@@ -180,6 +210,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

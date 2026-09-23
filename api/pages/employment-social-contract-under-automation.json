@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
+    },
+    {
+      "id": "urn:ngm:class:labour-market-policy",
+      "label": "Labour Market Policy"
     }
   ],
   "entityType": "Class",
@@ -25,20 +29,73 @@
       {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:welfare-state",
+        "label": "Welfare State"
+      },
+      {
+        "id": "urn:ngm:class:collective-bargaining",
+        "label": "Collective Bargaining"
+      },
+      {
+        "id": "urn:ngm:class:labour-law",
+        "label": "Labour Law"
+      },
+      {
+        "id": "urn:ngm:class:social-insurance",
+        "label": "Social Insurance"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:just-transition",
         "label": "Workforce Transition"
+      },
+      {
+        "id": "urn:ngm:class:just-transition",
+        "label": "Workforce Transition"
+      },
+      {
+        "id": "urn:ngm:class:social-cohesion",
+        "label": "Social Cohesion"
+      },
+      {
+        "id": "urn:ngm:class:economic-redistribution",
+        "label": "Economic Redistribution"
+      },
+      {
+        "id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Legitimacy"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:labour-market-policy",
+        "label": "Labour Market Policy"
+      },
+      {
+        "id": "urn:ngm:class:social-insurance",
+        "label": "Social Insurance"
+      },
+      {
+        "id": "urn:ngm:class:collective-bargaining",
+        "label": "Collective Bargaining"
+      },
+      {
+        "id": "urn:ngm:class:labour-law",
+        "label": "Labour Law"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:gig-economy",
         "label": "Gig Economy"
+      },
+      {
+        "id": "urn:ngm:class:technological-unemployment",
+        "label": "Technological Unemployment"
       }
     ],
     "bridgesTo": [
@@ -53,6 +110,18 @@
       {
         "id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-management",
+        "label": "Algorithmic Management"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:task-automation",
+        "label": "Task Automation"
       }
     ],
     "uses": [],
@@ -60,6 +129,18 @@
       {
         "id": "urn:ngm:class:democratic-governance",
         "label": "Democratic Legitimacy"
+      },
+      {
+        "id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Legitimacy"
+      },
+      {
+        "id": "urn:ngm:class:human-dignity",
+        "label": "Human Dignity"
+      },
+      {
+        "id": "urn:ngm:class:social-cohesion",
+        "label": "Social Cohesion"
       }
     ],
     "standardizedBy": [],
@@ -84,6 +165,22 @@
       {
         "id": "urn:ngm:class:platform-economy",
         "label": "Platform Economy"
+      },
+      {
+        "id": "urn:ngm:class:ai-driven-workforce-displacement-registry",
+        "label": "Job Displacement"
+      },
+      {
+        "id": "urn:ngm:class:reskilling",
+        "label": "Reskilling"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-management",
+        "label": "Algorithmic Management"
+      },
+      {
+        "id": "urn:ngm:class:human-dignity",
+        "label": "Human Dignity"
       }
     ]
   },
@@ -163,6 +260,20 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

@@ -10,13 +10,42 @@
     {
       "id": "urn:ngm:class:information-extraction",
       "label": "Information Extraction"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.62,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mention-detection",
+        "label": "Mention Detection"
+      },
+      {
+        "id": "urn:ngm:class:candidate-generation",
+        "label": "Candidate Generation"
+      },
+      {
+        "id": "urn:ngm:class:entity-disambiguation",
+        "label": "Entity Disambiguation"
+      },
+      {
+        "id": "urn:ngm:class:nil-detection",
+        "label": "NIL Detection"
+      },
+      {
+        "id": "urn:ngm:class:alias-expansion",
+        "label": "Alias Expansion"
+      },
+      {
+        "id": "urn:ngm:class:global-coherence-model",
+        "label": "Global Coherence Model"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:named-entity-recognition",
@@ -25,6 +54,18 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:alias-dictionary",
+        "label": "Alias Dictionary"
+      },
+      {
+        "id": "urn:ngm:class:entity-description",
+        "label": "Entity Description"
       }
     ],
     "enables": [
@@ -35,19 +76,98 @@
       {
         "id": "urn:ngm:class:entity-resolution",
         "label": "Entity Resolution"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base-population",
+        "label": "Knowledge Base Population"
+      },
+      {
+        "id": "urn:ngm:class:event-extraction",
+        "label": "Event Extraction"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:named-entity-disambiguation",
+        "label": "Named Entity Disambiguation"
+      },
+      {
+        "id": "urn:ngm:class:wikification",
+        "label": "Wikification"
+      },
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:record-linkage",
+        "label": "Record Linkage"
+      },
+      {
+        "id": "urn:ngm:class:word-sense-disambiguation",
+        "label": "Word Sense Disambiguation"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
       }
     ],
     "uses": [
@@ -62,6 +182,30 @@
       {
         "id": "urn:ngm:class:wikidata",
         "label": "Wikidata"
+      },
+      {
+        "id": "urn:ngm:class:wikipedia",
+        "label": "Wikipedia"
+      },
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:ngm:class:bi-encoder",
+        "label": "Bi-Encoder"
+      },
+      {
+        "id": "urn:ngm:class:cross-encoder",
+        "label": "Cross-Encoder"
+      },
+      {
+        "id": "urn:ngm:class:trie-decoding",
+        "label": "Trie Decoding"
+      },
+      {
+        "id": "urn:ngm:class:faiss",
+        "label": "FAISS"
       }
     ],
     "supports": [
@@ -72,9 +216,34 @@
       {
         "id": "urn:ngm:class:text-mining",
         "label": "Text Mining"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-nlp",
+        "label": "Biomedical NLP"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-systems",
+        "label": "Dialogue Systems"
+      },
+      {
+        "id": "urn:ngm:class:content-recommendation",
+        "label": "Content Recommendation"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c-rdf",
+        "label": "W3C RDF"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:information-extraction",
@@ -89,15 +258,26 @@
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      },
+      {
+        "id": "urn:ngm:class:event-extraction",
+        "label": "Event Extraction"
+      },
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
       }
     ]
   },
   "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing",
-      "slug": "natural-language-processing"
-    },
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
@@ -146,6 +326,14 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:dependency-parsing",
+        "label": "Dependency Parsing"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
         "id": "urn:ngm:class:part-of-speech-tagging",
         "label": "Part-of-Speech Tagging"
       },
@@ -176,14 +364,6 @@
         "label": "Document Summarisation"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
-      },
-      {
-        "id": "urn:ngm:class:question-answering",
-        "label": "Question Answering"
-      },
-      {
         "id": "urn:ngm:class:information-extraction",
         "label": "Information Extraction"
       },
@@ -202,6 +382,14 @@
       {
         "id": "urn:ngm:class:text-generation",
         "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "dependsOn": [
@@ -242,16 +430,28 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
-      },
-      {
         "id": "urn:ngm:class:knowledge-graphs",
         "label": "Knowledge Graphs"
       },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -295,6 +495,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-information-extraction",
+        "label": "Open Information Extraction"
+      },
       {
         "id": "urn:ngm:class:text-mining",
         "label": "Text Mining"

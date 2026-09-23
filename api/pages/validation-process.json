@@ -28,12 +28,44 @@
       {
         "id": "urn:ngm:class:standards-validation",
         "label": "Standards Validation"
+      },
+      {
+        "id": "urn:ngm:class:requirement-verification",
+        "label": "Requirement Verification"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance Workflows"
+      },
+      {
+        "id": "urn:ngm:class:test-execution",
+        "label": "Test Execution"
+      },
+      {
+        "id": "urn:ngm:class:results-analysis",
+        "label": "Results Analysis"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:compliance-standards",
         "label": "Compliance Standards"
+      },
+      {
+        "id": "urn:ngm:class:test-framework",
+        "label": "Test Framework"
+      },
+      {
+        "id": "urn:ngm:class:validation-criteria",
+        "label": "Validation Criteria"
+      },
+      {
+        "id": "urn:ngm:class:quality-metrics",
+        "label": "Quality Metrics"
+      },
+      {
+        "id": "urn:ngm:class:testing-tools",
+        "label": "Testing Tools"
       }
     ],
     "enables": [
@@ -48,9 +80,34 @@
       {
         "id": "urn:ngm:class:standards-conformance",
         "label": "Standards Conformance"
+      },
+      {
+        "id": "urn:ngm:class:quality-certification",
+        "label": "Quality Certification"
+      },
+      {
+        "id": "urn:ngm:class:system-acceptance",
+        "label": "System Acceptance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:requirements-specification",
+        "label": "Requirements Specification"
+      },
+      {
+        "id": "urn:ngm:class:standards-documentation",
+        "label": "Standards Documentation"
+      },
+      {
+        "id": "urn:ngm:class:test-data",
+        "label": "Test Data"
+      },
+      {
+        "id": "urn:ngm:class:validation-rules",
+        "label": "Validation Rules"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -65,6 +122,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -118,6 +190,22 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -140,12 +228,28 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -154,12 +258,32 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -190,6 +314,20 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -222,6 +360,18 @@
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
       }
     ]
   },

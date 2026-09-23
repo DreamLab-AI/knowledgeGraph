@@ -24,6 +24,10 @@
       {
         "id": "urn:ngm:class:consumer-group",
         "label": "Consumer Group"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Dead Letter Queue"
       }
     ],
     "requires": [
@@ -48,6 +52,14 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:backpressure-management",
+        "label": "Backpressure Management"
+      },
+      {
+        "id": "urn:ngm:class:load-levelling",
+        "label": "Load Levelling"
       }
     ],
     "dependsOn": [
@@ -60,7 +72,16 @@
         "label": "Network Protocol"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:producer-consumer-pattern",
+        "label": "Producer Consumer Pattern"
+      },
+      {
+        "id": "urn:ngm:class:competing-consumers-pattern",
+        "label": "Competing Consumers Pattern"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:remote-procedure-call",
@@ -103,6 +124,10 @@
       {
         "id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scalability"
+      },
+      {
+        "id": "urn:ngm:class:service-decoupling",
+        "label": "Service Decoupling"
       }
     ],
     "standardizedBy": [],
@@ -166,12 +191,12 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -286,16 +311,16 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -402,7 +427,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

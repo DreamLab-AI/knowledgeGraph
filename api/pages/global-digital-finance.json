@@ -20,12 +20,20 @@
       {
         "id": "urn:ngm:class:code-of-conduct",
         "label": "Code of Conduct"
+      },
+      {
+        "id": "urn:ngm:class:crypto-asset-taxonomy",
+        "label": "Crypto Asset Taxonomy"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:membership-organisation",
+        "label": "Membership Organisation"
       }
     ],
     "enables": [
@@ -57,16 +65,24 @@
       {
         "id": "urn:ngm:class:centralised-finance",
         "label": "Centralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:mandatory-regulation",
+        "label": "Mandatory Regulation"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:open-finance",
+        "label": "Open Finance"
       }
     ],
     "uses": [],
@@ -102,11 +118,11 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -142,6 +158,10 @@
         "label": "Conformance Test Suite"
       },
       {
+        "id": "urn:ngm:class:technical-working-group",
+        "label": "Technical Working Group"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
@@ -160,10 +180,6 @@
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property Rights Framework"
-      },
-      {
-        "id": "urn:ngm:class:legal-framework",
-        "label": "Legal Framework"
       }
     ],
     "requires": [
@@ -316,6 +332,10 @@
         "label": "Governance"
       },
       {
+        "id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
+      },
+      {
         "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
       }
@@ -346,7 +366,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

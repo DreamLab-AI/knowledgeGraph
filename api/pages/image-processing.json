@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:image-filtering",
+        "label": "Image Filtering"
+      },
+      {
+        "id": "urn:ngm:class:histogram-equalisation",
+        "label": "Histogram Equalisation"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
       }
     ],
     "requires": [
@@ -56,6 +68,14 @@
       {
         "id": "urn:ngm:class:remote-sensing",
         "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "dependsOn": [],
@@ -107,6 +127,10 @@
       {
         "id": "urn:ngm:class:ieee-signal-processing-society",
         "label": "IEEE Signal Processing Society"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc29",
+        "label": "ISO/IEC JTC1 SC29"
       }
     ],
     "partOf": [
@@ -153,6 +177,10 @@
         "label": "Digital Signal Processing"
       },
       {
+        "id": "urn:ngm:class:filter-design",
+        "label": "Filter Design"
+      },
+      {
         "id": "urn:ngm:class:fourier-transform",
         "label": "Fourier Transform"
       },
@@ -175,10 +203,6 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
       }
     ],
     "requires": [
@@ -243,6 +267,18 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -265,7 +301,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

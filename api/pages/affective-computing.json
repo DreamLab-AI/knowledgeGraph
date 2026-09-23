@@ -10,13 +10,46 @@
     {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction"
+    },
+    {
+      "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.91,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-feedback-interface",
+        "label": "Cognitive Feedback Interface"
+      },
+      {
+        "id": "urn:ngm:class:emotional-analytics-engine",
+        "label": "Emotional Analytics Engine"
+      },
+      {
+        "id": "urn:ngm:class:physiological-signal-processing",
+        "label": "Physiological Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:biometric-sensing",
+        "label": "Biometric Sensing"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:emotion-recognition",
@@ -29,6 +62,18 @@
       {
         "id": "urn:ngm:class:multimodal-fusion",
         "label": "Multimodal Fusion"
+      },
+      {
+        "id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
+      },
+      {
+        "id": "urn:ngm:class:data-labelling",
+        "label": "Data Labelling"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ],
     "enables": [
@@ -59,11 +104,23 @@
       {
         "id": "urn:ngm:class:driver-monitoring-system",
         "label": "Driver Monitoring System"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -77,9 +134,38 @@
       {
         "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:rational-agent",
@@ -88,6 +174,10 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       }
     ],
     "bridgesTo": [
@@ -110,6 +200,10 @@
       {
         "id": "urn:ngm:class:social-robotics",
         "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
       }
     ],
     "uses": [
@@ -148,10 +242,60 @@
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:eeg",
+        "label": "EEG"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p7014",
+        "label": "IEEE P7014"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -181,6 +325,58 @@
       {
         "id": "urn:ngm:class:multimodal-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:bdi-model",
+        "label": "BDI Architecture"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:neuroimaging",
+        "label": "Neuroimaging"
+      },
+      {
+        "id": "urn:ngm:class:psychophysiology",
+        "label": "Psychophysiology"
+      },
+      {
+        "id": "urn:ngm:class:facial-action-coding-system",
+        "label": "Facial Action Coding System"
+      },
+      {
+        "id": "urn:ngm:class:appraisal-theory",
+        "label": "Appraisal Theory"
+      },
+      {
+        "id": "urn:ngm:class:dimensional-model-of-affect",
+        "label": "Dimensional Model of Affect"
       }
     ]
   },
@@ -194,6 +390,11 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
     }
   ],
   "inheritedRelations": {
@@ -215,20 +416,20 @@
         "label": "User Interface Design"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:multimodal-ai-architecture-understanding",
+        "label": "Multimodal Understanding"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
       }
     ],
     "requires": [
@@ -241,16 +442,28 @@
         "label": "User Research"
       },
       {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
       }
     ],
     "enables": [
@@ -271,26 +484,62 @@
         "label": "User Experience"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linguistics",
+        "label": "Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      },
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
       }
     ],
     "bridgesTo": [
@@ -305,12 +554,60 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:information-processing",
+        "label": "Information Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interface",
+        "label": "Brain Computer Interface"
+      },
+      {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:experimental-methods",
+        "label": "Experimental Methods"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:neuroimaging",
+        "label": "Neuroimaging"
       }
     ],
     "supports": [
@@ -321,6 +618,22 @@
       {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
       }
     ],
     "relatedTo": [
@@ -329,16 +642,32 @@
         "label": "Conversational AI"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-bias",
+        "label": "Cognitive Bias"
+      },
+      {
+        "id": "urn:ngm:class:consciousness",
+        "label": "Consciousness"
+      },
+      {
+        "id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      },
+      {
+        "id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
       }
     ]
   },

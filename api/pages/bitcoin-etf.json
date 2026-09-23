@@ -18,6 +18,22 @@
     {
       "id": "urn:ngm:class:exchange-traded-fund",
       "label": "Exchange-Traded Fund"
+    },
+    {
+      "id": "urn:ngm:class:pooled-investment-vehicle",
+      "label": "Pooled Investment Vehicle"
+    },
+    {
+      "id": "urn:ngm:class:regulated-investment-company",
+      "label": "Regulated Investment Company"
+    },
+    {
+      "id": "urn:ngm:class:bitcoin-exposure-product",
+      "label": "Bitcoin Exposure Product"
+    },
+    {
+      "id": "urn:ngm:class:passive-index-product",
+      "label": "Passive Index Product"
     }
   ],
   "entityType": "Class",
@@ -28,18 +44,174 @@
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-custody",
         "label": "Bitcoin Custody"
+      },
+      {
+        "id": "urn:ngm:class:authorized-participant",
+        "label": "Authorized Participant"
+      },
+      {
+        "id": "urn:ngm:class:creation-unit-basket",
+        "label": "Creation Unit Basket"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-reference-rate",
+        "label": "Bitcoin Reference Rate"
+      },
+      {
+        "id": "urn:ngm:class:trust-agreement",
+        "label": "Trust Agreement"
+      },
+      {
+        "id": "urn:ngm:class:net-asset-value-calculation",
+        "label": "Net Asset Value Calculation"
+      },
+      {
+        "id": "urn:ngm:class:fund-administrator",
+        "label": "Fund Administrator"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:qualified-custodian",
         "label": "Qualified Custodian"
+      },
+      {
+        "id": "urn:ngm:class:sec-form-s-1-registration",
+        "label": "SEC Form S-1 Registration"
+      },
+      {
+        "id": "urn:ngm:class:rule-19b-4-approval",
+        "label": "Rule 19b-4 Approval"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-sharing-agreement",
+        "label": "Surveillance Sharing Agreement"
+      },
+      {
+        "id": "urn:ngm:class:stock-exchange-listing",
+        "label": "Stock Exchange Listing"
+      },
+      {
+        "id": "urn:ngm:class:fund-sponsor",
+        "label": "Fund Sponsor"
+      },
+      {
+        "id": "urn:ngm:class:independent-trustee",
+        "label": "Independent Trustee"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tax-advantaged-bitcoin-exposure",
+        "label": "Tax-Advantaged Bitcoin Exposure"
+      },
+      {
+        "id": "urn:ngm:class:brokerage-account-bitcoin-access",
+        "label": "Brokerage-Account Bitcoin Access"
+      },
+      {
+        "id": "urn:ngm:class:pension-fund-bitcoin-allocation",
+        "label": "Pension Fund Bitcoin Allocation"
+      },
+      {
+        "id": "urn:ngm:class:options-on-bitcoin-etf",
+        "label": "Options on Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-inclusion-in-model-portfolio",
+        "label": "Bitcoin Inclusion in Model Portfolio"
+      },
+      {
+        "id": "urn:ngm:class:retirement-account-bitcoin-allocation",
+        "label": "Retirement Account Bitcoin Allocation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:qualified-custodian",
+        "label": "Qualified Custodian"
+      },
+      {
+        "id": "urn:ngm:class:stock-exchange",
+        "label": "Stock Exchange"
+      },
+      {
+        "id": "urn:ngm:class:market-maker-network",
+        "label": "Market Maker Network"
+      },
+      {
+        "id": "urn:ngm:class:cme-bitcoin-reference-rate",
+        "label": "CME Bitcoin Reference Rate"
+      },
+      {
+        "id": "urn:ngm:class:authorized-participant-network",
+        "label": "Authorized Participant Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:investment-company-act-1940-wrapper",
+        "label": "Investment Company Act 1940 Wrapper"
+      },
+      {
+        "id": "urn:ngm:class:daily-creation-redemption-mechanism",
+        "label": "Daily Creation Redemption Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cash-creation-process",
+        "label": "Cash Creation Process"
+      },
+      {
+        "id": "urn:ngm:class:in-kind-creation-process",
+        "label": "In-Kind Creation Process"
+      },
+      {
+        "id": "urn:ngm:class:nav-based-pricing",
+        "label": "NAV-Based Pricing"
+      },
+      {
+        "id": "urn:ngm:class:passive-bitcoin-tracking",
+        "label": "Passive Bitcoin Tracking"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-custody-bitcoin",
+        "label": "Self-Custody Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:micro-strategy",
+        "label": "MicroStrategy"
+      },
+      {
+        "id": "urn:ngm:class:proshares-bito",
+        "label": "ProShares BITO"
+      },
+      {
+        "id": "urn:ngm:class:grayscale-bitcoin-trust",
+        "label": "Grayscale Bitcoin Trust"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-mining-equity",
+        "label": "Bitcoin Mining Equity"
+      },
+      {
+        "id": "urn:ngm:class:spot-bitcoin-holdings",
+        "label": "Spot Bitcoin Holdings"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-lightning-wallet",
+        "label": "Bitcoin Lightning Wallet"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -61,6 +233,22 @@
       {
         "id": "urn:ngm:class:multi-signature-wallet",
         "label": "Multi-Signature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:fidelity-digital-assets",
+        "label": "Fidelity Digital Assets"
+      },
+      {
+        "id": "urn:ngm:class:gemini-custody",
+        "label": "Gemini Custody"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallets",
+        "label": "Multi-Signature Wallets"
+      },
+      {
+        "id": "urn:ngm:class:cme-brr",
+        "label": "CME BRR"
       }
     ],
     "supports": [
@@ -71,6 +259,22 @@
       {
         "id": "urn:ngm:class:price-discovery",
         "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:retail-bitcoin-access",
+        "label": "Retail Bitcoin Access"
+      },
+      {
+        "id": "urn:ngm:class:regulated-bitcoin-market",
+        "label": "Regulated Bitcoin Market"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-liquidity",
+        "label": "Bitcoin Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:wealth-manager-distribution",
+        "label": "Wealth Manager Distribution"
       }
     ],
     "standardizedBy": [
@@ -85,6 +289,26 @@
       {
         "id": "urn:ngm:class:securities-exchange-act-1934",
         "label": "Securities Exchange Act 1934"
+      },
+      {
+        "id": "urn:ngm:class:investment-company-act-1940",
+        "label": "Investment Company Act 1940"
+      },
+      {
+        "id": "urn:ngm:class:sec-rule-19b-4",
+        "label": "SEC Rule 19b-4"
+      },
+      {
+        "id": "urn:ngm:class:sec-form-s-1",
+        "label": "SEC Form S-1"
+      },
+      {
+        "id": "urn:ngm:class:cftc-commodity-classification",
+        "label": "CFTC Commodity Classification"
+      },
+      {
+        "id": "urn:ngm:class:fca-cryptoasset-promotions-regime",
+        "label": "FCA Cryptoasset Promotions Regime"
       }
     ],
     "partOf": [],
@@ -92,6 +316,34 @@
       {
         "id": "urn:ngm:class:spot-ethereum-etf",
         "label": "Spot Ether ETF"
+      },
+      {
+        "id": "urn:ngm:class:spot-ethereum-etf",
+        "label": "Spot Ether ETF"
+      },
+      {
+        "id": "urn:ngm:class:hong-kong-spot-bitcoin-etf",
+        "label": "Hong Kong Spot Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:purpose-bitcoin-etf",
+        "label": "Purpose Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:monochrome-ibtc",
+        "label": "Monochrome IBTC"
+      },
+      {
+        "id": "urn:ngm:class:european-bitcoin-etp",
+        "label": "European Bitcoin ETP"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-options",
+        "label": "Bitcoin Options"
+      },
+      {
+        "id": "urn:ngm:class:grayscale-v-sec",
+        "label": "Grayscale v SEC"
       }
     ]
   },
@@ -105,6 +357,141 @@
       "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset",
       "slug": "digital-asset"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     }
   ],
   "inheritedRelations": {
@@ -122,7 +509,7 @@
         "label": "Blockchain Governance"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
       },
       {
@@ -170,6 +557,10 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "enables": [
@@ -178,7 +569,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -218,11 +609,65 @@
       {
         "id": "urn:ngm:class:oracle",
         "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:channel-isolation-pattern",
+        "label": "Channel Isolation Pattern"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree Structure"
+      },
+      {
+        "id": "urn:ngm:class:notary-service",
+        "label": "Notary Validation Pattern"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -232,9 +677,45 @@
       {
         "id": "urn:ngm:class:physical-asset",
         "label": "Physical Asset"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralized Database"
+      },
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:centralised-ledger",
+        "label": "Centralised Ledger"
+      },
+      {
+        "id": "urn:ngm:class:cloud-database",
+        "label": "Cloud Database"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
@@ -246,6 +727,10 @@
       {
         "id": "urn:ngm:class:metaverse-economy",
         "label": "Metaverse Economy"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ],
     "uses": [
@@ -260,16 +745,128 @@
       {
         "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:hash-pointers",
+        "label": "Hash Pointers"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:retail-cbdc",
+        "label": "Retail CBDC"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-deposits",
+        "label": "Tokenised Deposits"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real World Assets"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:erc-20",
+        "id": "urn:ngm:class:erc-20-token-standard",
         "label": "ERC-20"
       },
       {
-        "id": "urn:ngm:class:erc-721",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:eu-dlt-pilot-regime",
+        "label": "EU DLT Pilot Regime"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2418",
+        "label": "IEEE P2418"
+      },
+      {
+        "id": "urn:ngm:class:isda-common-domain-model",
+        "label": "ISDA Common Domain Model"
+      },
+      {
+        "id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
       }
     ],
     "relatedTo": [
@@ -294,11 +891,11 @@
         "label": "Digital Asset"
       },
       {
-        "id": "urn:ngm:class:erc-20",
+        "id": "urn:ngm:class:erc-20-token-standard",
         "label": "ERC-20"
       },
       {
-        "id": "urn:ngm:class:erc-721",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721"
       },
       {

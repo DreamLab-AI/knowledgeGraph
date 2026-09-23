@@ -64,9 +64,26 @@
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:resource-abstraction",
+        "label": "Resource Abstraction"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -279,7 +296,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

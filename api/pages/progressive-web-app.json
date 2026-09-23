@@ -148,7 +148,7 @@
       },
       {
         "id": "urn:ngm:class:tcp-ip",
-        "label": "TCP/IP"
+        "label": "TCP-IP"
       },
       {
         "id": "urn:ngm:class:tls",
@@ -203,6 +203,14 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:centralised-cloud",
+        "label": "Centralised Cloud"
+      },
+      {
+        "id": "urn:ngm:class:native-application",
+        "label": "Native Application"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
@@ -213,7 +221,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -271,6 +279,10 @@
         "label": "W3C"
       },
       {
+        "id": "urn:ngm:class:whatwg",
+        "label": "WHATWG"
+      },
+      {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
       },
@@ -281,7 +293,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -289,11 +301,15 @@
         "label": "Web Browser"
       },
       {
+        "id": "urn:ngm:class:web-server",
+        "label": "Web Server"
+      },
+      {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -307,10 +323,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

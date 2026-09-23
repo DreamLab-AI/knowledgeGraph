@@ -29,6 +29,10 @@
       {
         "id": "urn:ngm:class:token",
         "label": "Secure Token"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Secure Token"
       }
     ],
     "enables": [
@@ -47,11 +51,19 @@
       {
         "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "Stateful API"
+      },
+      {
+        "id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi-User Collaboration"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:transport-layer-security",
+        "id": "urn:ngm:class:tls",
         "label": "Transport Layer Security"
       },
       {
@@ -64,6 +76,10 @@
       {
         "id": "urn:ngm:class:stateless-architecture",
         "label": "Stateless Architecture"
+      },
+      {
+        "id": "urn:ngm:class:anonymous-access",
+        "label": "Anonymous Access"
       }
     ],
     "bridgesTo": [
@@ -84,6 +100,14 @@
       {
         "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
+      },
+      {
+        "id": "urn:ngm:class:cache-layer",
+        "label": "Cache"
+      },
+      {
+        "id": "urn:ngm:class:cookie",
+        "label": "Cookie"
       },
       {
         "id": "urn:ngm:class:cache-layer",
@@ -118,6 +142,10 @@
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth2"
       },
       {
         "id": "urn:ngm:class:oauth-2-0",

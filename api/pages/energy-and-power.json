@@ -12,12 +12,28 @@
       "label": "Computing and Cloud"
     },
     {
-      "id": "urn:ngm:class:infra-software-engineering",
+      "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering"
     },
     {
       "id": "urn:ngm:class:grid-infrastructure",
       "label": "Grid Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    },
+    {
+      "id": "urn:ngm:class:critical-infrastructure",
+      "label": "Critical Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
     }
   ],
   "entityType": "Class",
@@ -60,6 +76,22 @@
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:battery-storage",
+        "label": "Battery Storage"
+      },
+      {
+        "id": "urn:ngm:class:grid-connection",
+        "label": "Grid Connection"
+      },
+      {
+        "id": "urn:ngm:class:carbon-intensity",
+        "label": "Carbon Intensity"
+      },
+      {
+        "id": "urn:ngm:class:liquid-cooling",
+        "label": "Water Cooling"
       }
     ],
     "requires": [
@@ -74,6 +106,22 @@
       {
         "id": "urn:ngm:class:transmission-network",
         "label": "Transmission Network"
+      },
+      {
+        "id": "urn:ngm:class:generation-capacity",
+        "label": "Generation Capacity"
+      },
+      {
+        "id": "urn:ngm:class:balancing-services",
+        "label": "Balancing Services"
+      },
+      {
+        "id": "urn:ngm:class:grid-connection-queue",
+        "label": "Grid Connection Queue"
+      },
+      {
+        "id": "urn:ngm:class:capacity-market",
+        "label": "Capacity Market"
       }
     ],
     "enables": [
@@ -96,9 +144,46 @@
       {
         "id": "urn:ngm:class:digital-economy",
         "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:ai-data-centres",
+        "label": "AI Data Centres"
+      },
+      {
+        "id": "urn:ngm:class:hyperscaler-operations",
+        "label": "Hyperscaler Operations"
+      },
+      {
+        "id": "urn:ngm:class:electrification",
+        "label": "Electrification"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:climate-policy",
+        "label": "Climate Policy"
+      },
+      {
+        "id": "urn:ngm:class:energy-storage",
+        "label": "Energy Storage"
+      },
+      {
+        "id": "urn:ngm:class:transmission-infrastructure",
+        "label": "Transmission Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:carbon-offsetting",
@@ -115,9 +200,38 @@
       {
         "id": "urn:ngm:class:renewable-energy-certificates",
         "label": "Renewable Energy Certificates"
+      },
+      {
+        "id": "urn:ngm:class:power-purchase-agreements",
+        "label": "Power Purchase Agreements"
+      },
+      {
+        "id": "urn:ngm:class:capacity-markets",
+        "label": "Capacity Markets"
+      },
+      {
+        "id": "urn:ngm:class:behind-the-meter-generation",
+        "label": "Behind-the-Meter Generation"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -131,6 +245,22 @@
       {
         "id": "urn:ngm:class:small-modular-reactors",
         "label": "Small Modular Reactors"
+      },
+      {
+        "id": "urn:ngm:class:offshore-wind",
+        "label": "Offshore Wind"
+      },
+      {
+        "id": "urn:ngm:class:solar-pv",
+        "label": "Solar PV"
+      },
+      {
+        "id": "urn:ngm:class:pumped-hydro-storage",
+        "label": "Pumped Hydro Storage"
+      },
+      {
+        "id": "urn:ngm:class:battery-energy-storage",
+        "label": "Battery Energy Storage"
       }
     ],
     "supports": [
@@ -163,7 +293,36 @@
         "label": "Instruction-Following Conversational AI System"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iea-electricity-reports",
+        "label": "IEA Electricity Reports"
+      },
+      {
+        "id": "urn:ngm:class:epri-standards",
+        "label": "EPRI Standards"
+      },
+      {
+        "id": "urn:ngm:class:national-grid-eso",
+        "label": "National Grid ESO"
+      },
+      {
+        "id": "urn:ngm:class:ferc-regulations",
+        "label": "FERC Regulations"
+      },
+      {
+        "id": "urn:ngm:class:ofgem",
+        "label": "Ofgem"
+      },
+      {
+        "id": "urn:ngm:class:ieee-power-standards",
+        "label": "IEEE Power Standards"
+      },
+      {
+        "id": "urn:ngm:class:sbti-net-zero-standard",
+        "label": "SBTi Net-Zero Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -206,14 +365,69 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:climate-risk-management",
+      "label": "Climate Risk Management",
+      "slug": "climate-risk-management"
+    },
+    {
+      "id": "urn:ngm:class:corporate-disclosure",
+      "label": "Corporate Disclosure",
+      "slug": "corporate-disclosure"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
     },
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
+      "id": "urn:ngm:class:environmental-accounting",
+      "label": "Environmental Accounting",
+      "slug": "environmental-accounting"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:measurement-frameworks",
+      "label": "Measurement Frameworks",
+      "slug": "measurement-frameworks"
+    },
+    {
+      "id": "urn:ngm:class:sustainability-reporting",
+      "label": "SustainabilityReporting",
+      "slug": "sustainability-reporting"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance",
+      "slug": "corporate-governance"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     }
   ],
   "inheritedRelations": {
@@ -253,12 +467,16 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cooling-system",
-        "label": "Cooling Systems"
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
       },
       {
-        "id": "urn:ngm:class:power-grid",
-        "label": "Power Grid"
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -271,28 +489,32 @@
       {
         "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:api-gateway",
-        "label": "API Gateway"
-      },
-      {
-        "id": "urn:ngm:class:testing-infrastructure",
-        "label": "Testing Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
-      },
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:orchestration",
-        "label": "Orchestration"
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -305,15 +527,71 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:open-source-software",
-        "label": "Open Source Software"
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:activity-data",
+        "label": "Activity Data"
+      },
+      {
+        "id": "urn:ngm:class:ai",
+        "label": "AI"
+      },
+      {
+        "id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factors"
+      },
+      {
+        "id": "urn:ngm:class:erp-systems",
+        "label": "ERP Systems"
+      },
+      {
+        "id": "urn:ngm:class:satellite-data",
+        "label": "Satellite Data"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Product Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:location-based-accounting",
+        "label": "Location-Based Accounting"
+      },
+      {
+        "id": "urn:ngm:class:market-based-accounting",
+        "label": "Market-Based Accounting"
+      },
+      {
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
       {
         "id": "urn:ngm:class:containerisation",
         "label": "Containerisation"
@@ -325,18 +603,46 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:planned-obsolescence",
+        "label": "Planned Obsolescence"
+      },
+      {
+        "id": "urn:ngm:class:rebound-effect",
+        "label": "Rebound Effect"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Markets"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
       },
       {
         "id": "urn:ngm:class:data",
@@ -345,23 +651,59 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:kubernetes",
-        "label": "Kubernetes"
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
       },
       {
-        "id": "urn:ngm:class:serverless-architecture",
-        "label": "Serverless Computing"
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:ai",
+        "label": "AI"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
-      },
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
@@ -373,20 +715,40 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Digital Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:carbon-aware-computing",
+        "label": "Carbon-Aware Computing"
+      },
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
       },
       {
-        "id": "urn:ngm:class:ieee",
-        "label": "IEEE"
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
       },
       {
-        "id": "urn:ngm:class:ietf",
-        "label": "IETF"
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
       },
       {
         "id": "urn:ngm:class:iso-iec",
@@ -395,6 +757,32 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:ngm:class:iso-14001",
+        "label": "ISO 14001"
+      },
+      {
+        "id": "urn:ngm:class:w3c-sustainable-web-design",
+        "label": "W3C Sustainable Web Design"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      },
+      {
+        "id": "urn:ngm:class:national-accounts",
+        "label": "National Accounts"
+      },
+      {
+        "id": "urn:ngm:class:institutional-framework",
+        "label": "Institutional Framework"
       }
     ],
     "relatedTo": [
@@ -403,7 +791,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -411,24 +799,24 @@
         "label": "Network and Communication"
       },
       {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
+        "id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
       },
       {
-        "id": "urn:ngm:class:distributed-system",
-        "label": "Distributed System"
+        "id": "urn:ngm:class:refactoring",
+        "label": "Refactoring"
       },
       {
-        "id": "urn:ngm:class:infra-legal-and-regulatory",
-        "label": "Legal and Regulatory"
+        "id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
       },
       {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
+        "id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
       }
     ]
   },

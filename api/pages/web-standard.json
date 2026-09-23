@@ -42,6 +42,10 @@
       {
         "id": "urn:ngm:class:browser-engine",
         "label": "Browser Engine"
+      },
+      {
+        "id": "urn:ngm:class:vendor-implementation",
+        "label": "Vendor Implementation"
       }
     ],
     "enables": [
@@ -56,6 +60,14 @@
       {
         "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Web Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:open-web-platform",
+        "label": "Open Web Platform"
       }
     ],
     "dependsOn": [],
@@ -64,6 +76,10 @@
       {
         "id": "urn:ngm:class:vendor-lock-in",
         "label": "Vendor Lock-in"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-technology",
+        "label": "Proprietary Technology"
       }
     ],
     "bridgesTo": [
@@ -89,6 +105,10 @@
       {
         "id": "urn:ngm:class:privacy",
         "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:web-security",
+        "label": "Web Security"
       }
     ],
     "standardizedBy": [
@@ -103,6 +123,10 @@
       {
         "id": "urn:ngm:class:ecma-international",
         "label": "ECMA International"
+      },
+      {
+        "id": "urn:ngm:class:whatwg",
+        "label": "WHATWG"
       }
     ],
     "partOf": [],
@@ -126,6 +150,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -226,8 +255,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -310,6 +347,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -328,8 +371,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -338,10 +385,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

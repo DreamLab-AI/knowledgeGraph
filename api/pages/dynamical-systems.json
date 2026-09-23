@@ -10,29 +10,274 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics-domain",
+      "label": "Applied Mathematics Domain"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-modelling",
+      "label": "Mathematical Modelling"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.6,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:bifurcation-theory",
+        "label": "Bifurcation Theory"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-stability-theory",
+        "label": "Lyapunov Stability Theory"
+      },
+      {
+        "id": "urn:ngm:class:attractor",
+        "label": "Attractor"
+      },
+      {
+        "id": "urn:ngm:class:phase-space",
+        "label": "Phase Space"
+      },
+      {
+        "id": "urn:ngm:class:ergodic-theory",
+        "label": "Ergodic Theory"
+      },
+      {
+        "id": "urn:ngm:class:koopman-operator",
+        "label": "Koopman Operator"
+      },
+      {
+        "id": "urn:ngm:class:state-space-representation",
+        "label": "State-Space Representation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:control-theory",
         "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "id": "urn:ngm:class:neural-ode",
+        "label": "Neural ODE"
+      },
+      {
+        "id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      },
+      {
+        "id": "urn:ngm:class:population-dynamics",
+        "label": "Population Dynamics"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:lyapunov-stability-theory",
+        "label": "Lyapunov Stability Theory"
+      },
+      {
+        "id": "urn:ngm:class:bifurcation-analysis",
+        "label": "Bifurcation Analysis"
+      },
+      {
+        "id": "urn:ngm:class:phase-portrait-analysis",
+        "label": "Phase Portrait Analysis"
+      },
+      {
+        "id": "urn:ngm:class:poincar-map",
+        "label": "Poincar\u00e9 Map"
+      },
+      {
+        "id": "urn:ngm:class:floquet-theory",
+        "label": "Floquet Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:discrete-event-simulation",
+        "label": "Discrete Event Simulation"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State-Space Model"
+      },
+      {
+        "id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      },
+      {
+        "id": "urn:ngm:class:koopman-operator",
+        "label": "Koopman Operator"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-function",
+        "label": "Lyapunov Function"
+      },
+      {
+        "id": "urn:ngm:class:poincar-map",
+        "label": "Poincar\u00e9 Map"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:physics-simulation-engine",
+        "label": "Physics Simulation Engine"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "id": "urn:ngm:class:computational-neuroscience",
+        "label": "Computational Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:aerospace-engineering",
+        "label": "Aerospace Engineering"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ifac",
+        "label": "IFAC"
+      },
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:society-for-industrial-and-applied-mathematics",
+        "label": "Society for Industrial and Applied Mathematics"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Complexity Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Analysis"
+      },
+      {
+        "id": "urn:ngm:class:fluid-dynamics",
+        "label": "Fluid Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      }
+    ]
   },
   "inferredSuperClasses": [
     {
@@ -110,6 +355,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

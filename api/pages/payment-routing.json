@@ -169,7 +169,7 @@
         "label": "State Channel"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       }
     ],
@@ -237,7 +237,7 @@
         "label": "Monetary Policy"
       },
       {
-        "id": "urn:ngm:class:tokenization",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -247,12 +247,12 @@
         "label": "Settlement"
       },
       {
-        "id": "urn:ngm:class:internet-infrastructure",
-        "label": "Internet Infrastructure"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
       },
       {
         "id": "urn:ngm:class:blockchain-infrastructure",
@@ -273,7 +273,7 @@
         "label": "Barter System"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -351,6 +351,10 @@
         "label": "Digital Wallet"
       },
       {
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      },
+      {
         "id": "urn:ngm:class:fintech",
         "label": "Financial Technology"
       },
@@ -359,7 +363,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -373,10 +377,6 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
       }
     ],
     "standardizedBy": [
@@ -411,7 +411,7 @@
         "label": "Transaction"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {

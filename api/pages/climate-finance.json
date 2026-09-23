@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:blended-finance",
         "label": "Blended Finance"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk-insurance",
+        "label": "Climate Risk Insurance"
       }
     ],
     "requires": [
@@ -48,20 +52,45 @@
       {
         "id": "urn:ngm:class:renewable-energy",
         "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:climate-adaptation",
+        "label": "Climate Adaptation"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:climate-policy",
         "label": "International Climate Policy"
+      },
+      {
+        "id": "urn:ngm:class:multilateral-development-banks",
+        "label": "Multilateral Development Banks"
+      },
+      {
+        "id": "urn:ngm:class:climate-policy",
+        "label": "International Climate Policy"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fossil-fuel-subsidies",
+        "label": "Fossil Fuel Subsidies"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-carbon-credits",
+        "label": "Tokenised Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-sustainability",
+        "label": "Supply Chain Sustainability"
       }
     ],
     "uses": [],
@@ -91,9 +120,18 @@
       {
         "id": "urn:ngm:class:eu-taxonomy",
         "label": "Taxonomy Regulation"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "Taxonomy Regulation"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:impact-investing",
@@ -102,6 +140,10 @@
       {
         "id": "urn:ngm:class:climate-disclosure",
         "label": "Climate Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:sovereign-green-bonds",
+        "label": "Sovereign Green Bonds"
       }
     ]
   },
@@ -143,8 +185,16 @@
         "label": "Impact Investing"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:sustainability-linked-loans",
+        "label": "Sustainability-Linked Loans"
+      },
+      {
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:conduct-regulation",
+        "label": "Conduct Regulation"
       },
       {
         "id": "urn:ngm:class:prudential-regulation",
@@ -157,14 +207,6 @@
       {
         "id": "urn:ngm:class:stablecoin-regulation",
         "label": "Stablecoin Regulation"
-      },
-      {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:policy",
-        "label": "Policy"
       }
     ],
     "requires": [
@@ -189,7 +231,7 @@
         "label": "Capital Adequacy"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -289,6 +331,10 @@
         "label": "Self-Regulation"
       },
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -315,7 +361,7 @@
         "label": "Tokenised Green Bonds"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -401,16 +447,16 @@
         "label": "Basel Committee"
       },
       {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
         "id": "urn:ngm:class:fatf",
         "label": "FATF"
       },
       {
         "id": "urn:ngm:class:financial-stability-board",
         "label": "Financial Stability Board"
-      },
-      {
-        "id": "urn:ngm:class:iosco",
-        "label": "IOSCO"
       }
     ],
     "partOf": [

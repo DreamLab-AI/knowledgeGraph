@@ -36,6 +36,18 @@
       {
         "id": "urn:ngm:class:system-call-interface",
         "label": "System Call Interface"
+      },
+      {
+        "id": "urn:ngm:class:kernel",
+        "label": "Kernel"
+      },
+      {
+        "id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:network-stack",
+        "label": "Network Stack"
       }
     ],
     "requires": [
@@ -89,11 +101,15 @@
       {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:bare-metal",
+        "label": "Bare Metal"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       },
       {
@@ -119,6 +135,10 @@
       {
         "id": "urn:ngm:class:inter-process-communication",
         "label": "Inter-Process Communication"
+      },
+      {
+        "id": "urn:ngm:class:security-isolation",
+        "label": "Security Isolation"
       }
     ],
     "standardizedBy": [],
@@ -254,7 +274,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

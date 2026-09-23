@@ -150,12 +150,12 @@
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:data-replication",
-        "label": "Data Replication"
+        "id": "urn:ngm:class:automatic-failover",
+        "label": "Automatic Failover"
       },
       {
-        "id": "urn:ngm:class:failover",
-        "label": "Failover"
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
       }
     ],
     "requires": [

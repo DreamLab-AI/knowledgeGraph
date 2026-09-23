@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
     }
   ],
   "entityType": "Class",
@@ -24,6 +28,18 @@
       {
         "id": "urn:ngm:class:tensor",
         "label": "Tensor"
+      },
+      {
+        "id": "urn:ngm:class:matrix",
+        "label": "Matrix"
+      },
+      {
+        "id": "urn:ngm:class:eigenvalue",
+        "label": "Eigenvalue"
+      },
+      {
+        "id": "urn:ngm:class:vector-space",
+        "label": "Vector Space"
       }
     ],
     "requires": [
@@ -60,6 +76,10 @@
       {
         "id": "urn:ngm:class:regression",
         "label": "Least Squares Regression"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-domain",
+        "label": "Computer Vision Domain"
       }
     ],
     "dependsOn": [],
@@ -192,6 +212,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

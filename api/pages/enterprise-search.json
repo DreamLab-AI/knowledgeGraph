@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:information-retrieval",
       "label": "Information Retrieval"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-management-system",
+      "label": "Knowledge Management System"
     }
   ],
   "entityType": "Class",
@@ -28,6 +32,26 @@
       {
         "id": "urn:ngm:class:query-understanding",
         "label": "Query Understanding"
+      },
+      {
+        "id": "urn:ngm:class:content-connector",
+        "label": "Content Connector"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:document-processing",
+        "label": "Document Processing"
+      },
+      {
+        "id": "urn:ngm:class:answer-synthesis",
+        "label": "Answer Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-enrichment",
+        "label": "Knowledge Graph Enrichment"
       }
     ],
     "requires": [
@@ -42,6 +66,14 @@
       {
         "id": "urn:ngm:class:identity-provider",
         "label": "Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:document-processing",
+        "label": "Document Processing"
       }
     ],
     "enables": [
@@ -56,6 +88,22 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-grounding",
+        "label": "Knowledge Grounding"
+      },
+      {
+        "id": "urn:ngm:class:employee-productivity",
+        "label": "Employee Productivity"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
       }
     ],
     "dependsOn": [
@@ -66,9 +114,46 @@
       {
         "id": "urn:ngm:class:data-ingestion",
         "label": "Data Ingestion Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:text-embeddings",
+        "label": "Text Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:apache-lucene",
+        "label": "Apache Lucene"
+      },
+      {
+        "id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:unified-search",
+        "label": "Unified Search"
+      },
+      {
+        "id": "urn:ngm:class:federated-search",
+        "label": "Federated Search"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-retrieval",
+        "label": "Hybrid Retrieval"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:web-search",
@@ -77,6 +162,14 @@
       {
         "id": "urn:ngm:class:database-query",
         "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:file-system-search",
+        "label": "File System Search"
+      },
+      {
+        "id": "urn:ngm:class:manual-knowledge-management",
+        "label": "Manual Knowledge Management"
       }
     ],
     "bridgesTo": [
@@ -109,10 +202,60 @@
       {
         "id": "urn:ngm:class:bm25",
         "label": "BM25"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-automation",
+        "label": "Enterprise Automation"
+      },
+      {
+        "id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management"
+      },
+      {
+        "id": "urn:ngm:class:customer-relationship-management",
+        "label": "Customer Relationship Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:oasis-cmis",
+        "label": "OASIS CMIS"
+      },
+      {
+        "id": "urn:ngm:class:saml-2-0",
+        "label": "SAML 2.0"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -126,10 +269,27 @@
       {
         "id": "urn:ngm:class:document-management-system",
         "label": "Document Management System"
+      },
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-automation",
+        "label": "Enterprise Automation"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
     {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing",
@@ -153,54 +313,66 @@
         "label": "Query Processing"
       },
       {
-        "id": "urn:ngm:class:coreference-resolution",
-        "label": "Coreference Resolution"
+        "id": "urn:ngm:class:document-repository",
+        "label": "Document Repository"
       },
       {
-        "id": "urn:ngm:class:machine-translation",
-        "label": "Machine Translation"
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
       },
       {
-        "id": "urn:ngm:class:speech-recognition",
-        "label": "Speech Recognition"
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
       },
       {
-        "id": "urn:ngm:class:text-classification",
-        "label": "Text Classification"
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:text-representation",
+        "label": "Text Representation"
+      },
       {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
         "id": "urn:ngm:class:language-model",
         "label": "Language Model"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -217,24 +389,24 @@
         "label": "Search Engine"
       },
       {
-        "id": "urn:ngm:class:information-extraction",
-        "label": "Information Extraction"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
       },
       {
-        "id": "urn:ngm:class:named-entity-recognition",
-        "label": "Named Entity Recognition"
+        "id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
       },
       {
-        "id": "urn:ngm:class:sentiment-analysis",
-        "label": "Sentiment Analysis"
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
       },
       {
-        "id": "urn:ngm:class:text-generation",
-        "label": "Text Generation"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
     "dependsOn": [
@@ -257,6 +429,22 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      },
+      {
+        "id": "urn:ngm:class:document-management-system",
+        "label": "Document Management System"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
+      },
+      {
         "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based Systems"
       },
@@ -275,12 +463,28 @@
         "label": "Spatial Search"
       },
       {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
+      {
         "id": "urn:ngm:class:knowledge-graphs",
         "label": "Knowledge Graphs"
       },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -297,6 +501,14 @@
         "label": "Word Embeddings"
       },
       {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
@@ -307,10 +519,44 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality",
+        "label": "Collaborative Authoring"
       },
       {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
+        "id": "urn:ngm:class:content-management-system",
+        "label": "Content Management System"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "relatedTo": [
@@ -319,7 +565,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -327,20 +573,24 @@
         "label": "Approximate Nearest Neighbour"
       },
       {
-        "id": "urn:ngm:class:machine-translation",
-        "label": "Machine Translation"
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
       }
     ]
   },

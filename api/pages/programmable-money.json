@@ -46,6 +46,10 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       }
     ],
     "enables": [
@@ -97,6 +101,10 @@
       {
         "id": "urn:ngm:class:money",
         "label": "Electronic Money"
+      },
+      {
+        "id": "urn:ngm:class:money",
+        "label": "Electronic Money"
       }
     ],
     "bridgesTo": [
@@ -131,6 +139,10 @@
         "label": "Liquidity"
       },
       {
+        "id": "urn:ngm:class:dao",
+        "label": "Decentralized Autonomous Organisation"
+      },
+      {
         "id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Autonomous Organisation"
       }
@@ -161,12 +173,27 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -174,7 +201,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -216,6 +243,10 @@
         "label": "Security Infrastructure"
       },
       {
+        "id": "urn:ngm:class:transaction-network",
+        "label": "Transaction Network"
+      },
+      {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
       },
@@ -226,10 +257,6 @@
       {
         "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-infrastructure",
-        "label": "Blockchain Infrastructure"
       }
     ],
     "enables": [
@@ -254,7 +281,7 @@
         "label": "Virtual Transactions"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -306,11 +333,15 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -356,7 +387,7 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -384,6 +415,14 @@
       {
         "id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [

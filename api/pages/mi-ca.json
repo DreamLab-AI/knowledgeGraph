@@ -61,14 +61,22 @@
         "label": "Crypto-Asset Regulation"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto-Asset Regulation"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:mifid-ii",
         "label": "MiFID II"
+      },
+      {
+        "id": "urn:ngm:class:crypto-regulation",
+        "label": "SEC Crypto Regulation"
       },
       {
         "id": "urn:ngm:class:crypto-regulation",
@@ -85,7 +93,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       }
     ],
@@ -105,7 +113,7 @@
         "label": "Stablecoin"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       }
     ],
@@ -288,7 +296,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:classification",
         "label": "Binary Classification"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Binary Classification"
       }
     ],
     "enables": [
@@ -65,6 +69,10 @@
       {
         "id": "urn:ngm:class:fraud-detection",
         "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:medical-diagnosis-ai",
+        "label": "Medical Diagnostics"
       }
     ],
     "uses": [
@@ -109,6 +117,18 @@
       {
         "id": "urn:ngm:class:f1-score",
         "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:youden-index",
+        "label": "Youden Index"
+      },
+      {
+        "id": "urn:ngm:class:negative-predictive-value",
+        "label": "Negative Predictive Value"
+      },
+      {
+        "id": "urn:ngm:class:likelihood-ratio",
+        "label": "Likelihood Ratio"
       }
     ]
   },
@@ -188,6 +208,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

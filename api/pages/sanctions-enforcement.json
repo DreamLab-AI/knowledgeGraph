@@ -28,7 +28,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -54,7 +54,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -64,7 +64,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -162,6 +162,10 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:policy-management",
+        "label": "Policy Management"
+      },
+      {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       },
@@ -182,6 +186,10 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:organisational-trust",
+        "label": "Organisational Trust"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -206,10 +214,6 @@
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
-      },
-      {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
       }
     ],
     "implements": [
@@ -226,6 +230,12 @@
         "label": "NIST AI RMF"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voluntary-guidelines",
+        "label": "Voluntary Guidelines"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -238,6 +248,18 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "supports": [

@@ -20,6 +20,18 @@
       {
         "id": "urn:ngm:class:reference-frames",
         "label": "Reference Frame"
+      },
+      {
+        "id": "urn:ngm:class:reference-frames",
+        "label": "Reference Frame"
+      },
+      {
+        "id": "urn:ngm:class:basis-vector",
+        "label": "Basis Vector"
+      },
+      {
+        "id": "urn:ngm:class:origin",
+        "label": "Origin"
       }
     ],
     "requires": [
@@ -58,10 +70,23 @@
       {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:rotation-representation",
+        "label": "Rotation Representation"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:polar-coordinate-system",
+        "label": "Polar Coordinate System"
+      },
+      {
+        "id": "urn:ngm:class:curvilinear-coordinate-system",
+        "label": "Curvilinear Coordinate System"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -73,6 +98,14 @@
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-transformation",
+        "label": "Transformation Matrix"
+      },
       {
         "id": "urn:ngm:class:quaternion-math",
         "label": "Quaternion"
@@ -104,6 +137,10 @@
       {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:iso-19111",
+        "label": "ISO 19111"
       }
     ],
     "partOf": [],
@@ -111,6 +148,10 @@
       {
         "id": "urn:ngm:class:euclidean-geometry",
         "label": "Euclidean Geometry"
+      },
+      {
+        "id": "urn:ngm:class:projection-model",
+        "label": "Projection Model"
       }
     ]
   },
@@ -119,6 +160,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -172,6 +228,22 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -190,12 +262,32 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -204,12 +296,32 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -240,6 +352,20 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -260,6 +386,26 @@
       {
         "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
       }
     ]
   },

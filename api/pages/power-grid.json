@@ -147,12 +147,12 @@
         "label": "Server"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       }
     ],
     "requires": [
@@ -195,12 +195,12 @@
         "label": "High Availability"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
       {
         "id": "urn:ngm:class:high-performance-computing",
@@ -413,12 +413,12 @@
         "label": "Energy and Power"
       },
       {
-        "id": "urn:ngm:class:colocation-services",
-        "label": "Colocation Services"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:colocation-services",
+        "label": "Colocation Services"
       },
       {
         "id": "urn:ngm:class:geographic-distribution",

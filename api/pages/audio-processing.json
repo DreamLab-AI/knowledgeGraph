@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:signal-processing",
       "label": "Signal Processing"
+    },
+    {
+      "id": "urn:ngm:class:digital-signal-processing",
+      "label": "Digital Signal Processing"
     }
   ],
   "entityType": "Class",
@@ -32,6 +36,26 @@
       {
         "id": "urn:ngm:class:feature-extraction",
         "label": "Audio Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Audio Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialisation",
+        "label": "Audio Spatialisation"
+      },
+      {
+        "id": "urn:ngm:class:source-separation",
+        "label": "Source Separation"
+      },
+      {
+        "id": "urn:ngm:class:spectrogram",
+        "label": "Spectrogram"
+      },
+      {
+        "id": "urn:ngm:class:waveform",
+        "label": "Waveform"
       }
     ],
     "requires": [
@@ -42,6 +66,18 @@
       {
         "id": "urn:ngm:class:fast-fourier-transform",
         "label": "Fast Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:spectrogram",
+        "label": "Spectrogram"
+      },
+      {
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      },
+      {
+        "id": "urn:ngm:class:nyquist-shannon-sampling-theorem",
+        "label": "Nyquist-Shannon Sampling Theorem"
       }
     ],
     "enables": [
@@ -68,6 +104,18 @@
       {
         "id": "urn:ngm:class:voice-activity-detection",
         "label": "Voice Activity Detection"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:music-information-retrieval",
+        "label": "Music Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:noise-cancellation",
+        "label": "Noise Cancellation"
       }
     ],
     "dependsOn": [
@@ -78,6 +126,18 @@
       {
         "id": "urn:ngm:class:fourier-analysis",
         "label": "Fourier Analysis"
+      },
+      {
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      },
+      {
+        "id": "urn:ngm:class:nyquist-shannon-sampling-theorem",
+        "label": "Nyquist-Shannon Sampling Theorem"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "implements": [],
@@ -85,6 +145,10 @@
       {
         "id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:analogue-signal-processing",
+        "label": "Analogue Signal Processing"
       }
     ],
     "bridgesTo": [
@@ -99,6 +163,14 @@
       {
         "id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialisation",
+        "label": "Audio Spatialisation"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
       }
     ],
     "uses": [
@@ -113,6 +185,26 @@
       {
         "id": "urn:ngm:class:audio-parameters",
         "label": "Audio Parameters"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:residual-vector-quantisation",
+        "label": "Residual Vector Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "supports": [
@@ -127,6 +219,22 @@
       {
         "id": "urn:ngm:class:telecommunications",
         "label": "Telecommunications"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:music-information-retrieval",
+        "label": "Music Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
       }
     ],
     "standardizedBy": [
@@ -143,6 +251,10 @@
       {
         "id": "urn:ngm:class:multimedia-processing",
         "label": "Multimedia Processing"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       }
     ],
     "relatedTo": [
@@ -157,6 +269,26 @@
       {
         "id": "urn:ngm:class:audio-processing-system",
         "label": "Audio Processing System"
+      },
+      {
+        "id": "urn:ngm:class:waveform",
+        "label": "Waveform"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ]
   },
@@ -175,6 +307,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:filter-design",
+        "label": "Filter Design"
+      },
+      {
         "id": "urn:ngm:class:fourier-transform",
         "label": "Fourier Transform"
       },
@@ -183,28 +319,24 @@
         "label": "Sampling Theory"
       },
       {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:digital-filter",
+        "label": "Digital Filter"
+      },
+      {
+        "id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:wavelet-transform",
+        "label": "Wavelet Transform"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
-      },
-      {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
       }
     ],
     "requires": [
@@ -217,16 +349,28 @@
         "label": "Probability Theory"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:algorithms",
+        "label": "Algorithms"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog-to-Digital Conversion"
+      },
+      {
+        "id": "urn:ngm:class:dsp-hardware",
+        "label": "DSP Hardware"
+      },
+      {
+        "id": "urn:ngm:class:sampling-theory",
+        "label": "Sampling Theory"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
       }
     ],
     "enables": [
@@ -247,20 +391,30 @@
         "label": "Spatial Audio"
       },
       {
+        "id": "urn:ngm:class:computer-vision-video-analysis",
+        "label": "Computer Vision Video Analysis"
+      },
+      {
+        "id": "urn:ngm:class:neural-audio-enhancement",
+        "label": "Audio Enhancement"
+      },
+      {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
       },
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
-      },
-      {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
       }
     ],
     "contrastsWith": [
@@ -277,6 +431,30 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -295,16 +473,28 @@
       {
         "id": "urn:ngm:class:wavelet-transform",
         "label": "Wavelet Transform"
+      },
+      {
+        "id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field Programmable Gate Array"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
       }
     ],
     "relatedTo": [
@@ -329,16 +519,16 @@
         "label": "Render Pipeline"
       },
       {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:radar-signal-processing",
+        "label": "Radar Signal Processing"
+      },
+      {
         "id": "urn:ngm:class:ai-application",
         "label": "AI Application"
-      },
-      {
-        "id": "urn:ngm:class:ai-research-area",
-        "label": "AI Research Area"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ]
   },

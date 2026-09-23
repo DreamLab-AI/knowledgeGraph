@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:dc-communication",
       "label": "Communication Technology"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "ArtificialIntelligence"
     }
   ],
   "entityType": "Class",
@@ -21,9 +25,18 @@
       {
         "id": "urn:ngm:class:neural-machine-translation",
         "label": "Neural Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:neural-machine-translation",
+        "label": "NeuralMachineTranslation"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:crosslingualcollaboration",
+        "label": "CrossLingualCollaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -78,6 +91,18 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       },
@@ -100,20 +125,28 @@
         "label": "Virtual Collaboration"
       },
       {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
         "id": "urn:ngm:class:open-source-development",
         "label": "Open Source Development"
-      },
-      {
-        "id": "urn:ngm:class:remote-work",
-        "label": "Remote Work"
-      },
-      {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
-      },
-      {
-        "id": "urn:ngm:class:virtual-team",
-        "label": "Virtual Team"
       }
     ],
     "dependsOn": [
@@ -128,11 +161,35 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
@@ -206,6 +263,10 @@
       {
         "id": "urn:ngm:class:groupware",
         "label": "Groupware"
+      },
+      {
+        "id": "urn:ngm:class:social-software",
+        "label": "Social Software"
       }
     ]
   },

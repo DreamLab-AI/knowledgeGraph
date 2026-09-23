@@ -76,6 +76,26 @@
       "slug": "control-system"
     },
     {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory",
+      "slug": "control-theory"
+    },
+    {
+      "id": "urn:ngm:class:optimal-control",
+      "label": "Optimal Control",
+      "slug": "optimal-control"
+    },
+    {
+      "id": "urn:ngm:class:predictive-control",
+      "label": "Predictive Control",
+      "slug": "predictive-control"
+    },
+    {
+      "id": "urn:ngm:class:robot-control",
+      "label": "Robot Control",
+      "slug": "robot-control"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
@@ -86,14 +106,109 @@
       "slug": "trajectory-optimisation"
     },
     {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:closed-loop-control",
+      "label": "Closed-Loop Control",
+      "slug": "closed-loop-control"
+    },
+    {
+      "id": "urn:ngm:class:control-engineering",
+      "label": "Control Engineering",
+      "slug": "control-engineering"
+    },
+    {
+      "id": "urn:ngm:class:cybernetics",
+      "label": "Cybernetics",
+      "slug": "cybernetics"
+    },
+    {
+      "id": "urn:ngm:class:dynamical-systems-theory",
+      "label": "Dynamical Systems Theory",
+      "slug": "dynamical-systems-theory"
+    },
+    {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
       "id": "urn:ngm:class:motion-planning",
       "label": "Motion Planning",
       "slug": "motion-planning"
     },
     {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-physics",
+      "label": "Mathematical Physics",
+      "slug": "mathematical-physics"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
       "id": "urn:ngm:class:robo-navigation-and-planning",
       "label": "Navigation and Planning",
       "slug": "robo-navigation-and-planning"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-theory",
+      "label": "Systems Theory",
+      "slug": "systems-theory"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -145,6 +260,14 @@
         "label": "Inertia Tensor"
       },
       {
+        "id": "urn:ngm:class:jacobian-computation",
+        "label": "Jacobian Computation"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-solver",
+        "label": "Optimisation Solver"
+      },
+      {
         "id": "urn:ngm:class:state-estimation",
         "label": "State Estimator"
       },
@@ -155,14 +278,6 @@
       {
         "id": "urn:ngm:class:real-time-computation",
         "label": "Real-Time Computation"
-      },
-      {
-        "id": "urn:ngm:class:sensor-input",
-        "label": "Sensor Input"
-      },
-      {
-        "id": "urn:ngm:class:time-synchronisation",
-        "label": "Timing Synchronisation"
       }
     ],
     "enables": [
@@ -183,34 +298,54 @@
         "label": "Sample Efficient Learning"
       },
       {
+        "id": "urn:ngm:class:real-time-motion-planning",
+        "label": "Real Time Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robust-locomotion",
+        "label": "Robust Locomotion"
+      },
+      {
         "id": "urn:ngm:class:adaptive-behaviour",
         "label": "Adaptive Behaviour"
       },
       {
         "id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
-      },
-      {
-        "id": "urn:ngm:class:task-execution",
-        "label": "Task Execution"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:environment-mapping",
-        "label": "Environment Mapping"
+        "id": "urn:ngm:class:contact-mechanics",
+        "label": "Contact Mechanics"
       },
       {
-        "id": "urn:ngm:class:robot-kinematics",
-        "label": "Robot Kinematics"
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
       },
       {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
+        "id": "urn:ngm:class:lagrangian-mechanics",
+        "label": "Lagrangian Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
       }
     ],
     "implements": [
@@ -219,40 +354,100 @@
         "label": "Differential Dynamic Programming"
       },
       {
+        "id": "urn:ngm:class:interior-point-methods",
+        "label": "Interior Point Methods"
+      },
+      {
+        "id": "urn:ngm:class:koopman-operator-methods",
+        "label": "Koopman Operator Methods"
+      },
+      {
         "id": "urn:ngm:class:quadratic-programming",
         "label": "Quadratic Programming"
       },
       {
-        "id": "urn:ngm:class:model-predictive-control",
-        "label": "Model Predictive Control"
+        "id": "urn:ngm:class:receding-horizon-control",
+        "label": "Receding Horizon Control"
       },
       {
-        "id": "urn:ngm:class:potential-field-method",
-        "label": "Potential Field Method"
+        "id": "urn:ngm:class:sequential-quadratic-programming",
+        "label": "Sequential Quadratic Programming"
       },
       {
-        "id": "urn:ngm:class:rapidly-exploring-random-tree",
-        "label": "Rapidly-Exploring Random Tree"
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:backstepping",
+        "label": "Backstepping"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:behaviour-cloning",
+        "label": "Behaviour Cloning"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:model-free-reinforcement-learning",
+        "label": "Model Free Reinforcement Learning"
+      },
+      {
         "id": "urn:ngm:class:reactive-control",
         "label": "Reactive Control"
+      },
+      {
+        "id": "urn:ngm:class:ai-without-dynamics-models",
+        "label": "AI Without Dynamics Models"
+      },
+      {
+        "id": "urn:ngm:class:classical-optimisation-without-feedback",
+        "label": "Classical Optimisation Without Feedback"
+      },
+      {
+        "id": "urn:ngm:class:model-free-heuristic-tuning",
+        "label": "Model-Free Heuristic Tuning"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-scheduling",
+        "label": "Open-Loop Scheduling"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
         "id": "urn:ngm:class:robotic-system",
         "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
       }
     ],
     "uses": [
@@ -265,28 +460,28 @@
         "label": "Servo Motor"
       },
       {
+        "id": "urn:ngm:class:acados",
+        "label": "acados"
+      },
+      {
+        "id": "urn:ngm:class:casadi",
+        "label": "CasADi"
+      },
+      {
         "id": "urn:ngm:class:drake",
         "label": "Drake Toolbox"
+      },
+      {
+        "id": "urn:ngm:class:hpipm",
+        "label": "HPIPM"
       },
       {
         "id": "urn:ngm:class:mu-jo-co",
         "label": "MuJoCo"
       },
       {
-        "id": "urn:ngm:class:optimisation-algorithm",
-        "label": "Optimization Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:sampling-based-planning",
-        "label": "Sampling-Based Planning"
-      },
-      {
-        "id": "urn:ngm:class:lidar",
-        "label": "Lidar"
-      },
-      {
-        "id": "urn:ngm:class:navigation",
-        "label": "Navigation"
+        "id": "urn:ngm:class:osqp-solver",
+        "label": "OSQP Solver"
       }
     ],
     "supports": [
@@ -313,6 +508,14 @@
       {
         "id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:aerospace-engineering",
+        "label": "Aerospace Engineering"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
       }
     ],
     "standardizedBy": [
@@ -327,9 +530,37 @@
       {
         "id": "urn:ngm:class:iso-10218-robot-safety",
         "label": "ISO 10218 Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:arp4754-a",
+        "label": "ARP4754A"
+      },
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C Avionics"
+      },
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508 Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:isa-95",
+        "label": "ISA-95"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
       {
         "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
@@ -365,12 +596,12 @@
         "label": "Kalman Filter"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:neural-odes",
+        "label": "Neural ODEs"
       },
       {
-        "id": "urn:ngm:class:sim-to-real-transfer",
-        "label": "Sim-to-Real Transfer"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ]
   },

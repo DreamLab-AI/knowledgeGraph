@@ -75,7 +75,7 @@
         "label": "TLS"
       },
       {
-        "id": "urn:ngm:class:https",
+        "id": "urn:ngm:class:http",
         "label": "HTTPS"
       }
     ],
@@ -87,12 +87,16 @@
       {
         "id": "urn:ngm:class:rfc-5280",
         "label": "RFC 5280"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509"
       }
     ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -102,6 +106,14 @@
       {
         "id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
       }
     ]
   },
@@ -227,12 +239,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -259,6 +271,10 @@
       {
         "id": "urn:ngm:class:threat-actor",
         "label": "Threat Actor"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
       },
       {
         "id": "urn:ngm:class:self-organisation",
@@ -377,16 +393,16 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
       }
     ]
   },

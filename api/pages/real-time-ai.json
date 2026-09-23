@@ -75,6 +75,21 @@
       "slug": "real-time"
     },
     {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:cyber-physical-systems",
+      "label": "Cyber Physical Systems",
+      "slug": "cyber-physical-systems"
+    },
+    {
+      "id": "urn:ngm:class:embedded-systems",
+      "label": "Embedded Systems",
+      "slug": "embedded-systems"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
@@ -90,9 +105,24 @@
       "slug": "safety-critical-systems"
     },
     {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
     },
     {
       "id": "urn:ngm:class:systems-engineering",
@@ -100,13 +130,32 @@
       "slug": "systems-engineering"
     },
     {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering (Infrastructure)",
-      "slug": "infra-software-engineering"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:deadline",
+        "label": "Deadline"
+      },
       {
         "id": "urn:ngm:class:interrupt-handler",
         "label": "Interrupt Handler"
@@ -116,28 +165,24 @@
         "label": "Priority Ceiling Protocol"
       },
       {
+        "id": "urn:ngm:class:rtos",
+        "label": "RTOS"
+      },
+      {
         "id": "urn:ngm:class:scheduler",
         "label": "Scheduler"
+      },
+      {
+        "id": "urn:ngm:class:task",
+        "label": "Task"
       },
       {
         "id": "urn:ngm:class:timer",
         "label": "Timer"
       },
       {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:cloud-native-applications",
-        "label": "Cloud-Native Applications"
-      },
-      {
-        "id": "urn:ngm:class:distributed-computing",
-        "label": "Distributed Computing"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:wcet-analysis",
+        "label": "WCET Analysis"
       }
     ],
     "requires": [
@@ -150,28 +195,28 @@
         "label": "Hardware Abstraction Layer"
       },
       {
-        "id": "urn:ngm:class:cpu",
-        "label": "CPU"
+        "id": "urn:ngm:class:priority-inheritance",
+        "label": "Priority Inheritance"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:schedulability-analysis",
+        "label": "Schedulability Analysis"
       },
       {
-        "id": "urn:ngm:class:memory",
-        "label": "Memory"
+        "id": "urn:ngm:class:temporal-correctness",
+        "label": "Temporal Correctness"
       },
       {
-        "id": "urn:ngm:class:formal-verification",
-        "label": "Formal Verification"
+        "id": "urn:ngm:class:wcet-bound",
+        "label": "WCET Bound"
       },
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator Output"
       },
       {
-        "id": "urn:ngm:class:hazard-analysis",
-        "label": "Hazard Analysis"
+        "id": "urn:ngm:class:real-time-computation",
+        "label": "Real-Time Computation"
       }
     ],
     "enables": [
@@ -184,6 +229,10 @@
         "label": "Sensor Fusion"
       },
       {
+        "id": "urn:ngm:class:automotive-control",
+        "label": "Automotive Control"
+      },
+      {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
       },
@@ -192,82 +241,152 @@
         "label": "Avionics"
       },
       {
+        "id": "urn:ngm:class:distributed-real-time",
+        "label": "Distributed Real-Time"
+      },
+      {
         "id": "urn:ngm:class:industrial-automation",
         "label": "IndustrialAutomation"
       },
       {
         "id": "urn:ngm:class:real-time-ai-inference",
         "label": "Real-Time AI Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
       },
       {
-        "id": "urn:ngm:class:safety-critical-systems",
-        "label": "Safety Critical Computing"
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:hardware-timing-models",
+        "label": "Hardware Timing Models"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1588-ptp",
+        "label": "IEEE 1588 PTP"
+      },
+      {
+        "id": "urn:ngm:class:posix",
+        "label": "POSIX"
+      },
+      {
+        "id": "urn:ngm:class:scheduling-theory",
+        "label": "Scheduling Theory"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:constant-bandwidth-server",
+        "label": "Constant Bandwidth Server"
+      },
+      {
+        "id": "urn:ngm:class:earliest-deadline-first",
+        "label": "Earliest Deadline First"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-scheduling",
+        "label": "Hierarchical Scheduling"
+      },
       {
         "id": "urn:ngm:class:priority-ceiling-protocol",
         "label": "Priority Ceiling Protocol"
       },
       {
-        "id": "urn:ngm:class:open-xr",
-        "label": "OpenXR"
+        "id": "urn:ngm:class:priority-inheritance-protocol",
+        "label": "Priority Inheritance Protocol"
       },
       {
-        "id": "urn:ngm:class:posix",
-        "label": "POSIX"
+        "id": "urn:ngm:class:rate-monotonic-algorithm",
+        "label": "Rate Monotonic Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:real-time-operating-system",
-        "label": "Real-Time Operating System"
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:best-effort-networking",
+        "label": "Best Effort Networking"
       },
       {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
+        "id": "urn:ngm:class:garbage-collected-runtimes",
+        "label": "Garbage Collected Runtimes"
       },
       {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:general-purpose-operating-systems",
+        "label": "General Purpose Operating Systems"
+      },
+      {
+        "id": "urn:ngm:class:information-technology",
+        "label": "Information Technology"
+      },
+      {
+        "id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:robot-operating-system",
-        "label": "Robot Operating System"
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
       },
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
         "id": "urn:ngm:class:cyber-physical-systems",
         "label": "Cyber Physical Systems"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "uses": [
@@ -280,28 +399,28 @@
         "label": "DDS"
       },
       {
+        "id": "urn:ngm:class:freertos",
+        "label": "FreeRTOS"
+      },
+      {
+        "id": "urn:ngm:class:qnx",
+        "label": "QNX"
+      },
+      {
         "id": "urn:ngm:class:ros-2",
         "label": "ROS 2"
       },
       {
+        "id": "urn:ngm:class:tsn",
+        "label": "TSN"
+      },
+      {
+        "id": "urn:ngm:class:vxworks",
+        "label": "VxWorks"
+      },
+      {
         "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
-      },
-      {
-        "id": "urn:ngm:class:hypervisor",
-        "label": "Hypervisor"
-      },
-      {
-        "id": "urn:ngm:class:virtualisation",
-        "label": "Virtualisation"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:reliability-engineering",
-        "label": "Reliability Engineering"
       }
     ],
     "supports": [
@@ -356,20 +475,20 @@
         "label": "IEEE 1588"
       },
       {
+        "id": "urn:ngm:class:ieee-802-1-tsn",
+        "label": "IEEE 802.1 TSN"
+      },
+      {
         "id": "urn:ngm:class:iso-26262",
         "label": "ISO 26262"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:posix-1003-1b",
+        "label": "POSIX 1003.1b"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
-      },
-      {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:misra-c",
+        "label": "MISRA C"
       }
     ],
     "relatedTo": [
@@ -402,8 +521,8 @@
         "label": "Time-Sensitive Networking"
       },
       {
-        "id": "urn:ngm:class:compute-infrastructure",
-        "label": "Compute Infrastructure"
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
       }
     ]
   },

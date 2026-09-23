@@ -24,6 +24,10 @@
       {
         "id": "urn:ngm:class:non-volatile-memory",
         "label": "Non-Volatile Memory"
+      },
+      {
+        "id": "urn:ngm:class:processor",
+        "label": "Processor"
       }
     ],
     "requires": [
@@ -245,6 +249,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:bus-interface",
+        "label": "Bus Interface"
+      },
+      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       }
@@ -305,6 +313,10 @@
         "label": "Field-Programmable Gate Array"
       },
       {
+        "id": "urn:ngm:class:printed-circuit-board",
+        "label": "Printed Circuit Board"
+      },
+      {
         "id": "urn:ngm:class:system-on-chip",
         "label": "System-on-Chip"
       },
@@ -313,7 +325,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

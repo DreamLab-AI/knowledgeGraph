@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:neural-network",
       "label": "Neural Network"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "id": "urn:ngm:class:transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "id": "urn:ngm:class:fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "id": "urn:ngm:class:model-adaptation",
+      "label": "Model Adaptation"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Networks"
     }
   ],
   "entityType": "Class",
@@ -48,6 +68,34 @@
       {
         "id": "urn:ngm:class:qlo-ra",
         "label": "QLoRA"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LongLoRA"
+      },
+      {
+        "id": "urn:ngm:class:vera",
+        "label": "VeRA"
+      },
+      {
+        "id": "urn:ngm:class:galore",
+        "label": "GaLore"
+      },
+      {
+        "id": "urn:ngm:class:ia3",
+        "label": "IA3"
+      },
+      {
+        "id": "urn:ngm:class:relora",
+        "label": "ReLoRA"
+      },
+      {
+        "id": "urn:ngm:class:x-lora",
+        "label": "X-LoRA"
       }
     ],
     "requires": [
@@ -70,6 +118,10 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-trained Model"
       }
     ],
     "enables": [
@@ -92,9 +144,42 @@
       {
         "id": "urn:ngm:class:multi-task-learning",
         "label": "Multi Task Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "LLM Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model Customisation"
+      },
+      {
+        "id": "urn:ngm:class:on-device-training",
+        "label": "On-Device Training"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-peft",
+        "label": "Hugging Face PEFT"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:matrix-factorisation",
@@ -117,7 +202,28 @@
         "label": "Knowledge Distillation"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-infrastructure",
@@ -140,6 +246,14 @@
       {
         "id": "urn:ngm:class:mixed-precision-training",
         "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Rank Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:parameter-sharing",
+        "label": "Parameter Sharing"
       }
     ],
     "supports": [
@@ -184,6 +298,14 @@
       {
         "id": "urn:ngm:class:nvidia-corporation",
         "label": "NVIDIA Corporation"
+      },
+      {
+        "id": "urn:ngm:class:microsoft",
+        "label": "Microsoft Research"
+      },
+      {
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI Research"
       }
     ],
     "partOf": [],
@@ -217,9 +339,24 @@
       "slug": "ai-model-architecture"
     },
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
     }
   ],
   "inheritedRelations": {
@@ -267,12 +404,28 @@
         "label": "Training Data"
       },
       {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:feature-representation",
+        "label": "Feature Representation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
       }
     ],
     "enables": [
@@ -297,16 +450,50 @@
         "label": "Speech Recognition"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:labelled-dataset",
+        "label": "Labelled Dataset"
+      },
+      {
+        "id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ],
     "implements": [
@@ -317,6 +504,30 @@
       {
         "id": "urn:ngm:class:universal-function-approximation",
         "label": "Universal Function Approximation"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
     "contrastsWith": [
@@ -327,6 +538,26 @@
       {
         "id": "urn:ngm:class:support-vector-machine",
         "label": "Support Vector Machine"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:multitask-learning",
+        "label": "Multitask Learning"
+      },
+      {
+        "id": "urn:ngm:class:training-from-scratch",
+        "label": "Training From Scratch"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
       }
     ],
     "bridgesTo": [
@@ -337,6 +568,30 @@
       {
         "id": "urn:ngm:class:robotics-perception",
         "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-models",
+        "label": "Multimodal Models"
       }
     ],
     "uses": [
@@ -345,12 +600,86 @@
         "label": "Backpropagation"
       },
       {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
         "id": "urn:ngm:class:regularisation",
         "label": "Regularisation"
       },
       {
         "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-training-pipeline",
+        "label": "Model Training Pipeline"
       }
     ],
     "relatedTo": [

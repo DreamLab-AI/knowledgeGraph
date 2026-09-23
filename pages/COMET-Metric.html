@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>COMET Metric</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="COMET Metric"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="COMET Metric"/><meta name="twitter:description" content="A family of learned, reference-based and reference-free evaluation metrics for machine translation that use pre-trained multilingual language model representations to predict human-quality assessments of translation output."/><meta property="og:description" content="A family of learned, reference-based and reference-free evaluation metrics for machine translation that use pre-trained multilingual language model representations to predict human-quality assessments of translation output."/><meta property="og:image:alt" content="A family of learned, reference-based and reference-free evaluation metrics for machine translation that use pre-trained multilingual language model representations to predict human-quality assessments of translation output."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/COMET-Metric"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/COMET-Metric"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="A family of learned, reference-based and reference-free evaluation metrics for machine translation that use pre-trained multilingual language model representations to predict human-quality assessments of translation output."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/COMET-Metric"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1310"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1310" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>COMET Metric</a></div></nav><h1 class="article-title">COMET Metric</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.567Z">23 Sept 2026</time><span>38 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:comet-metric</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.8</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Evaluation-Metric" class="internal">Evaluation Metric</a></li><li><a href="../AI-Technique" class="internal">AI Technique</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../XLM-RoBERTa" class="internal">XLM-RoBERTa</a></li><li><a href="../Regression-Model" class="internal">Regression Model</a></li><li><a href="../Direct-Assessment" class="internal">Direct Assessment</a></li><li><a href="../Multidimensional-Quality-Metrics" class="internal">Multidimensional Quality Metrics</a></li><li><a href="../pages/Quality-Estimation" class="internal">Quality Estimation</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../multilingual-language-model" class="internal">Multilingual Language Model</a></li><li><a href="../pages/Human-Annotation-Data" class="internal">Human Annotation Data</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../pages/Parallel-Corpus" class="internal">Parallel Corpus</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Quality-Estimation" class="internal">Quality Estimation</a></li><li><a href="../pages/Human-Evaluation" class="internal">Human Evaluation Correlation</a></li><li><a href="../translation-quality-assurance" class="internal">Translation Quality Assurance</a></li><li><a href="../Human-Evaluation-Correlation" class="internal">Human Evaluation Correlation</a></li><li><a href="../Post-Editing-Workflow" class="internal">Post-Editing Workflow</a></li><li><a href="../MT-Benchmarking" class="internal">MT Benchmarking</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/BLEU-Score" class="internal">BLEU Score</a></li><li><a href="../chrf" class="internal">chrF</a></li><li><a href="../ter" class="internal">TER</a></li><li><a href="../bleurt" class="internal">BLEURT</a></li><li><a href="../METEOR" class="internal">METEOR</a></li><li><a href="../Human-Translation" class="internal">Human Translation</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../direct-assessment" class="internal">Direct Assessment</a></li><li><a href="../multidimensional-quality-metrics" class="internal">Multidimensional Quality Metrics</a></li><li><a href="../XLM-RoBERTa" class="internal">XLM-RoBERTa</a></li><li><a href="../WMT-Shared-Task" class="internal">WMT Shared Task</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../NaturalLanguageProcessingLayer" class="internal">NaturalLanguageProcessingLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../regression-model" class="internal">Regression Model</a></li><li><a href="../ranking-model" class="internal">Ranking Model</a></li><li><a href="../pages/Fine-Tuning" class="internal">Fine-Tuning</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:comet-metric</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Neural-Machine-Translation" class="internal">Neural Machine Translation</a></li><li><a href="../natural-language-understanding" class="internal">Natural Language Understanding</a></li><li><a href="../wmt-shared-task" class="internal">WMT Shared Task</a></li><li><a href="../xcomet" class="internal">XCOMET</a></li><li><a href="../post-editing" class="internal">Post-Editing Workflow</a></li><li><a href="../pages/BLEU-Score" class="internal">BLEU Score</a></li><li><a href="../Flores-200" class="internal">Flores-200</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../MQM-Annotation" class="internal">MQM Annotation</a></li><li><a href="../LLM-as-Judge" class="internal">LLM-as-Judge</a></li><li><a href="../Post-Editing-Workflow" class="internal">Post-Editing Workflow</a></li><li><a href="../Translation-Quality-Assurance" class="internal">Translation Quality Assurance</a></li><li><a href="../Sequence-to-Sequence-Model" class="internal">Sequence-to-Sequence Model</a></li><li><a href="../pages/Attention-Mechanism" class="internal">Attention Mechanism</a></li><li><a href="../pages/Transformer-Architecture" class="internal">Transformer Architecture</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../WMT-Shared-Task" class="internal">WMT Shared Task</a></li><li><a href="../Unbabel" class="internal">Unbabel</a></li><li><a href="../Instituto-Superior-Tecnico" class="internal">Instituto Superior Tecnico</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Machine-Translation" class="internal">Machine Translation</a></li><li><a href="../pages/Neural-Machine-Translation" class="internal">Neural Machine Translation</a></li><li><a href="../Post-Editing-Workflow" class="internal">Post-Editing Workflow</a></li><li><a href="../Translation-Quality-Assurance" class="internal">Translation Quality Assurance</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Machine-Translation" class="internal">Machine Translation</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../xlm-roberta" class="internal">XLM-RoBERTa</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../Multilingual-Language-Model" class="internal">Multilingual Language Model</a></li><li><a href="../pages/Contrastive-Learning" class="internal">Contrastive Learning</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>A family of learned, reference-based and reference-free evaluation metrics for machine translation that use pre-trained multilingual language model representations to predict human-quality assessments of translation output. COMET models correlate more strongly with human judgements than n-gram-overlap metrics such as BLEU by capturing semantic and contextual similarity rather than surface string matching.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:XLMRoBERTaEncoder))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:RegressionHead))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:SourceEncoder))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:HypothesisEncoder))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:ReferenceEncoder))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:PoolingLayer))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:QualityEstimationVariant))
+</code></pre>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:requires ai:MultilingualLanguageModel))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:requires ai:HumanAnnotationData))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:requires ai:DirectAssessment))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:dependsOn ai:MultidimensionalQualityMetrics))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:dependsOn ai:WMTSharedTask))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:dependsOn ai:TransferLearning))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:dependsOn ai:ParallelCorpus))
+</code></pre>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:enables ai:QualityEstimation))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:enables ai:HumanEvaluationCorrelation))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:enables ai:TranslationQualityAssurance))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:enables ai:ErrorSpanDetection))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:enables ai:PostEditingWorkflow))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:enables ai:MTBenchmarking))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:enables ai:ReferenceFreeEvaluation))
+</code></pre>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:implements ai:RegressionModel))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:implements ai:RankingModel))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:implements ai:FineTuning))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:supports ai:MachineTranslation))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:supports ai:PostEditingWorkflow))
+</code></pre>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:reducesTo ai:EvaluationMetric))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:reducesTo ai:NeuralMTMetric))
+</code></pre>
+<h2 id="contrasting-relationships">Contrasting Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contrasting-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:BLEUScore))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:chrF))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:TER))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:BLEURT))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:LLMAsJudge))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:relatedTo ai:NeuralMachineTranslation))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:relatedTo ai:WMTSharedTask))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:relatedTo ai:LargeLanguageModels))
+SubClassOf(ai:COMETMetric
+  ObjectSomeValuesFrom(ai:relatedTo ai:Flores200))
+</code></pre>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>COMET (Crosslingual Optimised Metric for Evaluation of Translation) was introduced by Ricardo Rei, Craig Stewart, Ana C. Farinha, and Alon Lavie in their 2020 EMNLP paper “COMET: A Neural Framework for MT Evaluation.” The work was conducted jointly by Unbabel — a Lisbon-based language service and AI company — and Instituto Superior Técnico (IST) in Lisbon, Portugal, with collaboration extending to Carnegie Mellon University. The fundamental motivation for COMET was the chronic inadequacy of lexical overlap metrics such as <a href="../pages/BLEU-Score" class="internal alias" data-slug="pages/BLEU-Score">BLEU Score</a>, chrF, and TER when applied to modern <a href="../pages/Neural-Machine-Translation" class="internal alias" data-slug="pages/Neural-Machine-Translation">Neural Machine Translation</a> output. These metrics measure surface string similarity, which fails to recognise that two translations can be semantically equivalent yet lexically distinct (paraphrase), and that a single character substitution can constitute a catastrophic error in some contexts (e.g., a medication name) and be entirely trivial in others. Human annotators using direct assessment (DA) or MQM frameworks routinely disagree with BLEU-ordered system rankings by wide margins, particularly for high-quality neural MT systems clustered near the top of performance ranges.</p>
+<p>The COMET framework responded by framing MT evaluation as a supervised regression or ranking task over rich cross-lingual representations. By fine-tuning XLM-RoBERTa — a multilingual transformer pre-trained on 100 languages — on thousands of human DA annotations from WMT evaluation campaigns, COMET models learn to predict the quality score a human annotator would assign to a given (source, hypothesis, reference) triple. The resulting models achieve segment-level Pearson correlations with human judgements in the range of 0.6-0.8, dramatically higher than BLEU’s typical 0.3-0.5 on the same evaluation sets.</p>
+<p>The COMET framework was immediately influential. At WMT20 (2020), COMET-based submissions outperformed all prior automated metrics in correlation with human judgements for most language pairs. From WMT21 onwards, COMET and its variants became the reference metrics against which all new MT metric proposals are compared. The Flores-101 and Flores-200 benchmarks adopted COMET as the primary evaluation metric for low-resource and zero-shot translation quality assessment, cementing its position as the community standard.</p>
+<p>In 2022, COMET-22 (the Unbabel-IST WMT22 submission) introduced an ensemble of a regression estimator trained on DA data and a multitask model trained jointly on MQM annotations and word-level quality tags, achieving the top system ranking on Chinese-English and second place on most other language pairs at the WMT22 Metrics Shared Task. Simultaneously, COMETKiwi-22 introduced the reference-free quality estimation variant, enabling COMET scoring in production environments where human reference translations are unavailable.</p>
+<p>The architecture underwent further transformation with XCOMET (2024), which added explicit fine-grained error span detection to the COMET framework, training a unified model to simultaneously predict a sentence-level quality score and identify and classify error spans (minor, major, critical) using MQM-annotated data. XCOMET-XXL (10.7B parameters) and XCOMET-XL (3.5B parameters) achieved the highest reported correlations with MQM human judgements as of 2024, providing both a scalar quality estimate and interpretable error category information.</p>
+<h2 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Backbone Encoder</strong>: XLM-RoBERTa (base or large) is the standard encoder; larger backbones (XLM-R XXL, mDeBERTa-v3-base) are used in higher-capability variants. The encoder produces contextualised multilingual representations for source, hypothesis, and reference independently.</li>
+<li><strong>Pooling Strategy</strong>: A combination of layer-weighted average pooling and [CLS] token extraction is used; COMET averages representations across the top K transformer layers to balance surface-level and semantic-level features.</li>
+<li><strong>Regression Head</strong>: A multi-layer feedforward network with LayerNorm and dropout takes the concatenated and element-wise-product of the pooled source, hypothesis, and reference representations and regresses to a scalar quality score in [0, 1] (normalised from the WMT DA z-score distribution) or a direct human score.</li>
+<li><strong>Ranking Variant</strong>: COMET-ranking models use a triplet loss or pairwise preference loss to rank translation hypotheses by quality without requiring absolute score regression; these variants are particularly robust to annotation scale inconsistencies across languages.</li>
+<li><strong>Quality Estimation (Reference-Free) Variant (COMET-QE / COMETKiwi)</strong>: Uses only source and hypothesis as inputs; the reference encoder is omitted. Trained on MLQE-PE and WMT DA annotations, these models assess translation quality without access to reference translations, enabling deployment in production MT pipelines where references are unavailable.</li>
+<li><strong>XCOMET Error Span Detection</strong>: Augments the sentence-level regression head with a token-level classification head that assigns each target token an error tag (OK, minor, major, critical) using MQM error span annotations. The final quality score is a combination of the regression score and the aggregate error severity.</li>
+<li><strong>Ensemble Scoring</strong>: COMET-22 used an ensemble of regression and multitask models; MetricX (Google, 2024) also uses ensemble-style calibration. Ensemble COMET models consistently outperform single-model variants in WMT shared task rankings.</li>
+</ul>
+<h2 id="comet-model-family-2020-2026">COMET Model Family (2020-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comet-model-family-2020-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>COMET-DA (2020)</strong>: Original reference-based direct assessment regression model; XLM-R backbone; trained on WMT17-WMT20 DA annotations.</li>
+<li><strong>COMET-MQM (2021)</strong>: Fine-tuned on MQM-annotated data from WMT20 and WMT21; better calibrated for high-quality translation pairs where DA compression effects are pronounced.</li>
+<li><strong>COMET-QE (2021)</strong>: Reference-free quality estimation; uses source and hypothesis only; targets deployment in online MT pipelines.</li>
+<li><strong>COMET-22 (wmt22-comet-da)</strong>: WMT22 submission; ensemble of regression and multitask models; gold-standard checkpoint still widely used as of 2026; available on Hugging Face as Unbabel/wmt22-comet-da.</li>
+<li><strong>COMETKiwi-22 (wmt22-cometkiwi-da)</strong>: Reference-free WMT22 submission; trained on MLQE-PE and WMT DA; the de facto reference-free evaluation standard.</li>
+<li><strong>COMET-23 (wmt23-comet-da)</strong>: Updated regression model trained on extended WMT17-WMT22 DA data with improved training recipe.</li>
+<li><strong>COMETKiwi-23-XL / -XXL (2023)</strong>: Larger XL (3.5B) and XXL (10.7B) quality estimation models using mDeBERTa or XLM-R XL backbone; significantly improved segment-level correlation.</li>
+<li><strong>XCOMET-XL / XCOMET-XXL (2024)</strong>: Explainable COMET with sentence-level regression plus MQM error span tagging; published in Transactions of the Association for Computational Linguistics (TACL); best-performing open models on MQM correlation benchmarks as of early 2025.</li>
+<li><strong>MetricX-24-Hybrid (Google, 2024)</strong>: Google’s COMET-derivative using T5-XXL backbone trained on a combination of human DA and synthetic data; ranked first in WMT24 Metrics Shared Task, with COMET-22 ranked third; demonstrates that the COMET architecture scales to large decoder models.</li>
+</ul>
+<h2 id="evaluation-framework-and-benchmarks">Evaluation Framework and Benchmarks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-framework-and-benchmarks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>COMET models are evaluated annually at the WMT (Workshop on Machine Translation) Metrics Shared Task, which provides standardised language pairs, MT system outputs, and human quality annotations. The primary evaluation metrics used to assess COMET itself are:</p>
+<ul>
+<li><strong>Segment-Level Pearson Correlation</strong>: Correlation between COMET scores and human DA z-scores at the sentence level</li>
+<li><strong>Segment-Level Kendall-τ</strong>: Rank correlation between COMET pairwise preferences and human preference annotations</li>
+<li><strong>System-Level Spearman Correlation</strong>: Correlation between system-level COMET averages and system-level human evaluation rankings</li>
+<li><strong>MQM Error Span F1</strong>: For XCOMET models, agreement between predicted error spans and MQM-annotated spans</li>
+</ul>
+<p>The WMT24 Metrics Shared Task (“Are LLMs Breaking MT Metrics?”) examined whether LLM-generated MT output exposes blind spots in learned metrics like COMET; results showed that COMET-22 remained robust but that LLM-generated outputs with subtle hallucinations sometimes escaped detection, motivating XCOMET’s error span approach.</p>
+<p>Other benchmark environments include:</p>
+<ul>
+<li><strong>Flores-200</strong>: Meta AI’s 200-language benchmark; COMET is the primary quality metric alongside chrF</li>
+<li><strong>ACES Challenge Set</strong> (Cabello et al., 2022): Tests MT metric adequacy on 68 linguistic phenomena; exposes specific COMET failure modes in compositional and morphological reasoning</li>
+<li><strong>MT-LENS (2024)</strong>: Unified MT evaluation toolkit integrating COMET, XCOMET, chrF, and LLM-as-judge approaches for side-by-side comparison</li>
+</ul>
+<h2 id="use-cases">Use Cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Academic MT Research</strong>: COMET has displaced BLEU as the primary reporting metric in machine translation papers submitted to ACL, EMNLP, NAACL, and WMT venues since approximately 2022. Researchers report COMET-22 (reference-based) and COMETKiwi (reference-free) as a paired pair of evaluation metrics, analogously to how human DA and BLEU were previously paired.</li>
+<li><strong>Production MT Quality Assurance</strong>: Language service providers (LSPs) and enterprise MT deployers use COMET-QE or COMETKiwi to flag low-quality MT segments for human post-editing review, prioritising post-editing effort and ensuring that only segments below a quality threshold require human correction. This reduces post-editing cost by 30-50% in high-volume scenarios.</li>
+<li><strong>MT System Development and Tuning</strong>: During neural MT training, COMET scores can be used as part of quality-diversity selection for data filtering, as a minimum-Bayes-risk (MBR) decoding objective, and as a signal for reinforcement learning from human feedback (RLHF) fine-tuning of translation models, as demonstrated in the MBR-MT and RLMT lines of work.</li>
+<li><strong>Dataset Curation</strong>: COMET-QE scores are used to filter large parallel corpora for low-quality sentence pairs, analogously to CLIP score filtering for image-text datasets, yielding higher-quality training data for subsequent MT model training.</li>
+<li><strong>Post-Editing Workflow Optimisation</strong>: COMETKiwi scores predict the post-editing effort required for a given MT segment, enabling adaptive MT workflows that bypass human post-editing for high-quality segments and prioritise editing for low-quality ones — directly reducing the cost of human-in-the-loop translation pipelines.</li>
+<li><strong>Speech Translation Evaluation</strong>: Recent work (2024) has extended COMET to evaluate speech translation outputs by adapting the metric to account for ASR transcription errors in the hypothesis, using source-aware COMET variants that accept acoustic features alongside text.</li>
+<li><strong>LLM Translation Evaluation</strong>: As large language models increasingly function as MT engines, COMET and XCOMET are used to benchmark LLM translation quality against dedicated neural MT systems. Research at WMT24 showed that LLM-generated translations sometimes score highly on COMET but contain subtle hallucinations or named-entity errors not captured by segment-level correlation metrics alone, motivating hybrid COMET + LLM-as-judge evaluation stacks.</li>
+</ul>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The COMET framework belongs to the lineage of learned MT metrics that began with the neural quality estimation work of Specia et al. (2010, 2013) and the QUEST QE framework. Earlier learned metrics such as BEER (Stanojevic &amp; Simaan, 2014) and RUSE (Shimanaka et al., 2018) used simpler feature extraction and regression approaches. COMET’s key advance was to leverage the representations of massively multilingual pre-trained transformers — specifically XLM-RoBERTa — which provide cross-lingual semantic alignment without requiring language-pair-specific feature engineering.</p>
+<p>A concurrent related line of work is BLEURT (Sellam et al., Google, 2020), which pre-trains BERT on synthetic perturbations of reference translations before fine-tuning on human DA annotations. BLEURT demonstrated similar improvements over BLEU but is limited to English, whereas COMET’s XLM-R backbone generalises across 100 languages. The two approaches converged in practice: both use pre-trained language model representations and human DA supervision; the primary difference is the training data construction and the inclusion of the source sentence as input in COMET.</p>
+<p>MQM (Multidimensional Quality Metrics) annotation, developed by Lommel et al. (2014) and adopted by Google, Microsoft, and Unbabel for WMT21+ annotations, provides richer supervision than DA because annotators identify and classify specific error spans rather than assigning holistic scores. COMET-MQM and XCOMET exploit MQM annotations to produce more fine-grained evaluation, which is particularly important for distinguishing near-human quality systems that are trivially ranked by DA.</p>
+<p>The “pitfalls of COMET” discourse (Kocmi et al., WMT24; Freitag et al., 2022) has identified several limitations: COMET scores are not comparable across language pairs (scores for English-German are not directly comparable to scores for English-Chinese), COMET is sensitive to length (verbose translations often score higher), and COMET may be gamed by MT systems fine-tuned to optimise COMET scores specifically, analogous to BLEU gaming. These critiques have informed the design of XCOMET’s error span approach, which is harder to game than a scalar regression target.</p>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>As of 2026, the COMET family is the dominant evaluation framework for machine translation in both academic and industrial settings. The unbabel-comet Python package (v2.0+, available via PyPI) provides a unified API for running COMET-22, COMETKiwi, XCOMET-XL, and XCOMET-XXL; the package is integrated into the WMT evaluation infrastructure, the Flores evaluation suite, and major MT research frameworks including Fairseq, Marian, and Sacrebleu-compatible evaluation pipelines.</p>
+<p>In 2024, Google released MetricX-24-Hybrid, a T5-XXL-based MT metric that ranked first in the WMT24 Metrics Shared Task, slightly outperforming COMET-22 which ranked third. MetricX’s architecture is COMET-inspired but uses a sequence-to-sequence backbone rather than a bidirectional encoder, enabling richer conditioning on source and reference context. The result signals that the COMET approach of learned human-aligned evaluation is converging with LLM-scale architectures.</p>
+<p>LLM-as-judge evaluation (using GPT-4 or similar models prompted with MQM-style rubrics to score translations) emerged as a competitor to COMET in 2023-2024. ACL 2024 research showed that LLM-as-judge achieves only 0.2 segment-level correlation with human DA compared to COMET-22’s 0.6+, making it unsuitable for fine-grained system comparison, though it provides richer error category explanations. The consensus 2026 evaluation stack is COMET-22 (reference-based scalar score) combined with XCOMET (error span detection) and optionally supplemented with LLM-as-judge qualitative analysis for specific error categories.</p>
+<p>The COMET ecosystem has expanded to cover speech translation (source-aware COMET variants), document-level evaluation (context-COMET experiments), and multilingual evaluation of LLM translation outputs. Unbabel continues active maintenance and has open-sourced the COMET codebase under the Apache 2.0 licence, with the Hugging Face model hub hosting all major checkpoints.</p>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>UK universities have made substantive contributions to the evaluation of <a href="../pages/Machine-Translation" class="internal alias" data-slug="pages/Machine-Translation">Machine Translation</a> systems and the ecosystem surrounding COMET. The University of Edinburgh’s School of Informatics — which houses one of Europe’s leading MT research groups (Barry Haddow, Pinzhen Chen, Nikita Moghe, Tsz Kin Lam) — has co-authored work that critically evaluates COMET’s robustness and cross-lingual generalisation properties, examining cases where the metric’s predictions diverge from human judgements for morphologically complex languages. Edinburgh’s MT group has participated in WMT shared tasks continuously since the tasks’ inception and has published analyses of COMET’s behaviour on low-resource and domain-adapted translation outputs.</p>
+<p>The University of Sheffield’s NLP group has contributed to MT quality estimation research, including work on post-editing effort prediction and adaptive MT workflows that are directly applicable to COMET-QE-driven pipelines. Sheffield’s long-standing collaboration with the European Association for MT (EAMT) has included studies of COMET adoption in professional translation services.</p>
+<p>In industry, Unbabel — the primary developer of COMET — operates a significant presence in the UK through its enterprise language services business. UK-based language service providers including SDL (now RWS Group, headquartered in Chalfont St Giles, Buckinghamshire) integrate COMET-QE scoring into their translation quality workflows and adaptive post-editing pipelines. RWS’s Language Weaver product line uses neural MT quality estimation approaches conceptually aligned with COMET.</p>
+<p>NHS translation services across Northern England — particularly in Greater Manchester, West Yorkshire, and Tyne and Wear, which have substantial multilingual patient populations — are exploring COMET-informed MT quality assurance for patient-facing documentation. Manchester and Leeds city councils have piloted MT systems for public services, where COMET-QE thresholds determine whether MT output is reviewed by a professional translator or deployed directly.</p>
+<p>The Alan Turing Institute has funded MT evaluation research examining COMET’s calibration for under-resourced UK minority languages including Welsh, Scottish Gaelic, and British Sign Language glosses, highlighting that COMET’s XLM-R backbone performs significantly worse on these languages than on high-resource European languages.</p>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>COMET at LLM Scale</strong>: Scaling COMET to 70B+ parameter LLM backbones (e.g., Llama-3 or Qwen-2 fine-tuned on MQM data) to leverage in-context reasoning capabilities while maintaining the reference-based regression paradigm; early experiments (2025) suggest substantial gains for creative and literary translation evaluation where semantic fidelity is harder to measure from surface text alone.</li>
+<li><strong>Document-Level COMET</strong>: Extending COMET to evaluate translation coherence at the document level, where inter-sentence consistency of terminology, pronoun resolution, and discourse structure cannot be captured by segment-level metrics; this requires new MQM annotation schemes and training data with document-level context.</li>
+<li><strong>Multimodal COMET</strong>: Incorporating visual or audio source signals for evaluating multimodal translation (image captioning translation, audio dubbing quality, video subtitle translation), analogously to how CLIP extended contrastive learning across modalities.</li>
+<li><strong>COMET for Low-Resource Languages</strong>: Improving COMET’s coverage and calibration for low-resource languages through better backbone models (multilingual mDeBERTa, Aya-23), targeted DA collection campaigns for underserved language pairs, and cross-lingual transfer techniques that leverage high-resource COMET judgements to bootstrap low-resource evaluation.</li>
+<li><strong>Interpretable and Hybrid Evaluation</strong>: Combining COMET scalar scores with XCOMET error span explanations and LLM-generated error category narratives into a unified evaluation report that is actionable for both MT system developers and post-editing translators.</li>
+<li><strong>Regulation-Aligned Evaluation</strong>: As the EU AI Act (2024) and UK AI regulation framework (2025) impose transparency and quality assurance requirements on AI translation systems used in regulated domains (healthcare, legal, financial), COMET-QE scoring thresholds are likely to become embedded in regulatory compliance frameworks as a minimum standard for MT quality gates.</li>
+</ul>
+<h2 id="standards-governance-and-deployment">Standards, Governance and Deployment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standards-governance-and-deployment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>COMET is governed primarily through the academic WMT evaluation community and the Unbabel open-source ecosystem:</p>
+<ul>
+<li><strong>Apache 2.0 Licence</strong>: The unbabel-comet Python package and all associated model code are released under the Apache 2.0 licence, permitting commercial use, modification, and redistribution with attribution. Model weights on Hugging Face Hub carry additional data licences reflecting the WMT annotation data used in training.</li>
+<li><strong>Hugging Face Hub Integration</strong>: All major COMET checkpoints are hosted on the Hugging Face model hub under the <code>Unbabel</code> organisation namespace (e.g., <code>Unbabel/wmt22-comet-da</code>, <code>Unbabel/wmt22-cometkiwi-da</code>, <code>Unbabel/XCOMET-XXL</code>), enabling standardised loading via the <code>transformers</code> library and <code>unbabel-comet</code> Python API.</li>
+<li><strong>WMT Community Standards</strong>: The WMT Metrics Shared Task defines the gold-standard evaluation protocol for MT metrics. Submission to and ranking in the WMT Metrics shared task is the accepted method for validating a new MT metric’s claim to state-of-the-art performance. This community-driven evaluation process functions as a de facto standardisation mechanism for MT evaluation methodology.</li>
+<li><strong>SacreBLEU Compatibility</strong>: The unbabel-comet package is designed for interoperability with SacreBLEU, the standard BLEU implementation, enabling mixed-metric evaluation pipelines that report both COMET and BLEU/chrF for backward compatibility with older literature.</li>
+<li><strong>EU AI Act Translation Provisions</strong>: EU AI Act Article 50 and related guidance on AI translation systems in high-stakes contexts (judicial, medical) are expected to require demonstrable quality assurance; COMET-QE thresholds are natural candidates for automated quality gates in compliant MT workflows.</li>
+<li><strong>ISO 17100 and EN 15038</strong>: These standards for translation service quality define human quality thresholds for professional translation; COMET-QE scores are increasingly mapped to these standards to provide automated proxies for human quality assessment in regulated translation workflows.</li>
+<li><strong>UK Government Translation Services</strong>: The UK Cabinet Office’s Guidelines on Machine Translation (updated 2025) acknowledge COMET-class neural metrics as the preferred evaluation approach for MT used in government communications, replacing BLEU as the primary quality indicator.</li>
+</ul>
+<h2 id="integration-patterns-and-usage">Integration Patterns and Usage<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-patterns-and-usage" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>COMET is typically used in one of four deployment patterns:</p>
+<ul>
+<li><strong>Batch Offline Evaluation (Research)</strong>: Given a set of MT system outputs and reference translations, compute COMET-22 scores for all segments, average per system, and compare. Standard usage: <code>comet-score -s sources.txt -t hypotheses.txt -r references.txt --model Unbabel/wmt22-comet-da</code>. Returns segment-level scores and system-level mean.</li>
+<li><strong>Reference-Free QE Scoring (Production)</strong>: Without reference translations, use COMETKiwi to score MT segments in real-time: <code>comet-score -s sources.txt -t hypotheses.txt --model Unbabel/wmt22-cometkiwi-da</code>. Scores above a threshold (e.g., ≥ 0.85) are approved for publication; below threshold segments are routed to post-editing queues.</li>
+<li><strong>MBR Decoding Integration</strong>: During <a href="../pages/Neural-Machine-Translation" class="internal alias" data-slug="pages/Neural-Machine-Translation">Neural Machine Translation</a> inference, generate multiple candidate translations per source sentence (beam search or sampling) and select the candidate that minimises expected risk as measured by COMET similarity to other candidates. This Minimum Bayes Risk (MBR) approach improves COMET scores by 1-3 points at the cost of 10-100× more inference compute.</li>
+<li><strong>RLHF / Quality-Aware Fine-Tuning</strong>: Use COMET-QE as a reward signal in reinforcement learning fine-tuning of MT models, rewarding translations that the QE model scores highly. This is analogous to RLHF in LLM alignment and can significantly improve MT quality on out-of-domain data where the base model is weak.</li>
+</ul>
+<p>Computational requirements for COMET inference:</p>
+<ul>
+<li><strong>COMET-22 (base)</strong>: XLM-R Large backbone; ~560M parameters; 4GB GPU VRAM; ~10 segments/second on A100 for batch scoring</li>
+<li><strong>COMETKiwi-23-XL</strong>: 3.5B parameters; ~14GB GPU VRAM; ~2 segments/second on A100</li>
+<li><strong>XCOMET-XXL</strong>: 10.7B parameters; requires A100 80GB or multi-GPU; ~0.5 segments/second; recommended for high-value offline evaluation, not real-time production scoring</li>
+<li><strong>CPU Inference</strong>: COMET-22 base can run on CPU at ~0.5 segments/second using ONNX export; suitable for small-scale or development environments</li>
+</ul>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[1] Rei, R., Stewart, C., Farinha, A. C., &amp; Lavie, A. (2020). COMET: A Neural Framework for MT Evaluation. <em>Proceedings of EMNLP 2020</em>, pp. 2685-2702. ACL Anthology: 2020.emnlp-main.213. arXiv:2009.09025.</p>
+<p>[2] Rei, R., Treviso, M., Guerreiro, N. M., Zerva, C., Farinha, A. C., Maroti, C., de Souza, J. G. C., Glushkova, T., Alves, D., Coheur, L., Lavie, A., &amp; Martins, A. F. T. (2022). CometKiwi: IST-Unbabel 2022 Submission for the Quality Estimation Shared Task. <em>WMT 2022</em>. arXiv:2209.06243.</p>
+<p>[3] Rei, R., Zerva, C., Farinha, A. C., Treviso, M., Glushkova, T., Lavie, A., Coheur, L., &amp; Martins, A. F. T. (2022). COMET-22: Unbabel-IST 2022 Submission for the Metrics Shared Task. <em>WMT 2022</em>. ACL Anthology: 2022.wmt-1.52.</p>
+<p>[4] Guerreiro, N. M., Rei, R., van Stigt, D., Coheur, L., Colombo, P., &amp; Martins, A. F. T. (2023). xcomet: Transparent Machine Translation Evaluation through Fine-grained Error Detection. <em>Transactions of the Association for Computational Linguistics (TACL)</em>, 11, 1022-1038. doi:10.1162/tacl_a_00683.</p>
+<p>[5] Freitag, M., Bleu, N., Mathur, P., Foster, G., Rei, R., Bojar, O., Lavie, A., &amp; Way, A. (2022). Results of the WMT22 Metrics Shared Task: Stop Using BLEU — Neural MT Evaluation is Here to Stay. <em>WMT 2022</em>.</p>
+<p>[6] Kocmi, T., Avramidis, E., Bawden, R., Bojar, O., Dvorkovich, A., Federmann, C., Fishel, M., Freitag, M., Gowda, T., Grundkiewicz, R., Haddow, B., Herold, C., Junczys-Dowmunt, M., Karpinska, M., Koehn, P., Kozlova, A., Lommel, A., Mathur, P., Monz, C., … Zouhar, V. (2024). Are LLMs Breaking MT Metrics? Results of the WMT24 Metrics Shared Task. <em>WMT 2024</em>. statmt.org/wmt24/pdf/2024.wmt-1.2.pdf.</p>
+<p>[7] Sellam, T., Das, D., &amp; Parikh, A. P. (2020). BLEURT: Learning Robust Metrics for Text Generation. <em>Proceedings of ACL 2020</em>, pp. 7881-7892. arXiv:2004.04696.</p>
+<p>[8] Papineni, K., Roukos, S., Ward, T., &amp; Zhu, W.-J. (2002). BLEU: a Method for Automatic Evaluation of Machine Translation. <em>Proceedings of ACL 2002</em>, pp. 311-318.</p>
+<p>[9] Specia, L., Shah, K., de Souza, J. G. C., &amp; Cohn, T. (2013). QuEst — A translation quality estimation framework. <em>Proceedings of ACL 2013 System Demonstrations</em>.</p>
+<p>[10] Freitag, M., Foster, G., Grangier, D., Ratnakar, V., Tan, Q., &amp; Macherey, W. (2021). Experts, Errors, and Context: A Large-Scale Study of Human Evaluation for Machine Translation. <em>Transactions of the Association for Computational Linguistics</em>, 9, 1460-1474. arXiv:2104.14478.</p>
+<p>[11] Lommel, A., Uszkoreit, H., &amp; Burchardt, A. (2014). Multidimensional Quality Metrics (MQM): A Framework for Declaring and Describing Translation Quality Metrics. <em>Proceedings of the LREC 2014</em>.</p>
+<p>[12] Conneau, A., Khandelwal, K., Goyal, N., Chaudhary, V., Wenzek, G., Guzmán, F., Grave, E., Ott, M., Zettlemoyer, L., &amp; Stoyanov, V. (2020). Unsupervised Cross-lingual Representation Learning at Scale (XLM-R). <em>Proceedings of ACL 2020</em>. arXiv:1911.02116.</p>
+<p>[13] Costa-jussà, M. R., Cross, J., Çelebi, O., Elbayad, M., Heafield, K., Heffernan, K., Kalbassi, E., Lam, J., Licht, D., Maillard, J., Sun, A., Wang, S., Wenzek, G., Youngblood, F., Akula, B., Barrault, L., Mejia-Gonzalez, G., Hansanti, P., Hoffman, J., … Wang, C. (2022). No Language Left Behind: Scaling Human-Centered Machine Translation. arXiv:2207.04672.</p>
+<p>[14] Stanojevic, M., &amp; Simaan, K. (2014). BEER: BEtter Evaluation as Ranking. <em>Proceedings of WMT 2014</em>.</p>
+<p>[15] Mathur, P., Wei, J., Freitag, M., Ma, Q., &amp; Oncel Tuzel. (2020). Tangled up in BLEU: Reevaluating the Evaluation of Automatic Machine Translation Evaluation Metrics. arXiv:2006.06264.</p>
+<p>[16] Muller, B., Rücklé, A., Maillard, J., Bhattacharya, A., Lavie, A., Guzman, F., Keahey, K., Finkelstein, Y., Gopi, S., &amp; Hajlaoui, N. (2023). Evaluating Automatic Metrics with Incremental Machine Translation Systems. arXiv:2407.03277.</p>
+<p>[17] Cabello, L., Bugliarello, E., Brandl, S., &amp; Elliott, D. (2023). ACES: Translation Accuracy Challenge Sets for Evaluating Machine Translation Metrics. <em>EMNLP 2023</em>. arXiv:2210.15615.</p>
+<p>[18] Fernandes, P., Farinhas, A., Rei, R., de Souza, J. G. C., Ogayo, P., Neubig, G., &amp; Martins, A. F. T. (2022). Quality-Aware Decoding for Neural Machine Translation. <em>NAACL 2022</em>. arXiv:2205.00978.</p>
+<p>[19] de Souza, J. G. C., Grundkiewicz, R., Koehn, P., Kremer, G., Scherrer, Y., Bojar, O., Monz, C., Freitag, M., Haddow, B., &amp; Barrault, L. (2023). Pitfalls and Outlooks in Using COMET. <em>WMT 2024</em>. arXiv:2408.15366.</p>
+<p>[20] Raunak, V., Menezes, A., &amp; Junczys-Dowmunt, M. (2021). The Curious Case of Hallucinations in Neural Machine Translation. <em>NAACL 2021</em>. arXiv:2105.06683.</p>
+<p>[21] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., &amp; Polosukhin, I. (2017). Attention Is All You Need. <em>NeurIPS 2017</em>. arXiv:1706.03762.</p>
+<p>[22] Avramidis, E., Burchardt, A., van der Goot, R., Popovic, M., Toral, A., &amp; Way, A. (2024). MT-LENS: An All-in-One Toolkit for Better Machine Translation Evaluation. arXiv:2412.11615.</p>
+<p>[23] Guerreiro, N. M., Alves, D., Waldendorf, J., Haddow, B., Birch, A., Colombo, P., &amp; Martins, A. F. T. (2023). Hallucinations in Large Multilingual Translation Models. <em>TACL</em>, 11, 1082-1102. arXiv:2303.16104.</p>
+<p>[24] Rei, R., Guerreiro, N. M., Pombal, J., Treviso, M., Farinha, A. C., Coheur, L., Lavie, A., &amp; Martins, A. F. T. (2023). Scaling Up CometKiwi: Unbabel-IST 2023 Submission for the Quality Estimation Shared Task. <em>WMT 2023</em>. arXiv:2309.11374.</p>
+<p>[25] Moghe, N., Lam, T. K., Chen, P., &amp; Haddow, B. (2024). How to Evaluate Speech Translation with Source-Aware Neural MT Metrics. arXiv:2511.03295.</p>
+<p>[26] Future AGI Research. (2026). Evaluating LLM Translation Quality (2026). futureagi.com/blog/evaluating-llm-translation-quality-2026/.</p>
+<p>[27] Translated.com Research. (2024). Dig into why COMET often falls short on LLM-based MT Evaluation. translated.com/mt-quality-evaluation-in-the-age-of-llm-based-mt.</p>
+<p>[28] Unbabel. (2022). Introducing Unbabel-COMET v2.0: Improved Models and Metrics for Better Machine Translation Evaluation. unbabel.com/introducing-unbabel-comet-v2-0-improved-models-and-metrics-for-better-machine-translation-evaluation/.</p>
+<h2 id="formal-algorithm-comet-regression-scoring">Formal Algorithm: COMET Regression Scoring<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-algorithm-comet-regression-scoring" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The reference-based COMET-DA scoring process can be described precisely as follows:</p>
+<p><strong>Inputs</strong>:</p>
+<ul>
+<li>Source sentence s = (s₁, s₂, …, sₘ) — the original text in the source language</li>
+<li>MT hypothesis h = (h₁, h₂, …, hₙ) — the machine-translated text to be evaluated</li>
+<li>Reference translation r = (r₁, r₂, …, rₗ) — a human reference translation (not available in QE variants)</li>
+</ul>
+<p><strong>Encoding</strong> (XLM-RoBERTa backbone):</p>
+<ul>
+<li>Independently encode source, hypothesis, and reference through the shared multilingual encoder</li>
+<li>Extract layer-weighted pooled representations: eₛ, eₕ, eᵣ ∈ ℝᵈ (d = 1024 for XLM-R Large)</li>
+<li>Pooling combines [CLS] token and mean of top-K transformer layers weighted by learned scalars</li>
+</ul>
+<p><strong>Feature Construction</strong> (concatenation + element-wise product):</p>
+<ul>
+<li>Feature vector: f = [eₛ; eₕ; eᵣ; eₛ ⊙ eₕ; eₛ ⊙ eᵣ; eₕ ⊙ eᵣ] ∈ ℝ⁶ᵈ</li>
+<li>This captures pairwise interactions between all three inputs</li>
+</ul>
+<p><strong>Regression Head</strong>:</p>
+<ul>
+<li>Feed-forward network with 2 hidden layers, LayerNorm, and dropout</li>
+<li>Output: scalar quality score q ∈ [0, 1] predicting normalised human DA z-score</li>
+</ul>
+<p><strong>Training Objective</strong>:</p>
+<ul>
+<li>Mean Squared Error (MSE) between predicted scores and normalised human DA annotations</li>
+<li>Training data: WMT17-WMT22 human direct assessment datasets (≈60,000 annotated segments per language pair)</li>
+<li>Optional: KL divergence regularisation between reference model and fine-tuned model</li>
+</ul>
+<p><strong>COMET-QE (Reference-Free) Variant</strong>:</p>
+<ul>
+<li>Input: only source s and hypothesis h (reference r omitted)</li>
+<li>Feature vector: f_QE = [eₛ; eₕ; eₛ ⊙ eₕ; |eₛ - eₕ|] ∈ ℝ⁴ᵈ</li>
+<li>Trained on MLQE-PE annotations; enables deployment without reference translations</li>
+</ul>
+<p><strong>XCOMET Extension</strong>:</p>
+<ul>
+<li>Additional token-level classification head predicts error tags for each token: {OK, minor, major, critical}</li>
+<li>Final score combines regression head output and aggregate error severity penalty</li>
+<li>Trained jointly on MQM span annotations and DA regression targets</li>
+</ul>
+<p><strong>Evaluation Protocol</strong>:</p>
+<ul>
+<li>Segment-level Pearson correlation: r(q_metric, q_human) across all segments in an evaluation set</li>
+<li>Kendall-τ: rank correlation between metric pairwise preferences and human preferences</li>
+<li>Reported annually for each language pair at WMT Metrics Shared Task</li>
+</ul>
+<h2 id="limitations-and-critical-perspectives">Limitations and Critical Perspectives<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#limitations-and-critical-perspectives" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The COMET framework, while the state of the art in learned MT evaluation, carries several known limitations that have been systematically documented in the community. First, <strong>score incomparability across language pairs</strong>: a COMET-22 score of 0.85 for an English-German system is not comparable to a score of 0.85 for a Japanese-English system; the scales are calibrated separately from different pools of annotators and language pair characteristics, making cross-lingual system comparisons unreliable. Practitioners must always compare COMET scores within a language pair and annotation set, never across them.</p>
+<p>Second, <strong>length bias</strong>: COMET regression models trained on DA annotations exhibit a length bias where longer, more verbose translations tend to receive slightly higher scores, even when the additional verbiage is redundant or slightly inaccurate. This reflects length bias in the underlying human DA annotations (annotators may perceive longer translations as more complete) and is particularly problematic when comparing <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> that generate verbose translations against lean neural MT systems.</p>
+<p>Third, <strong>metric gaming</strong>: as COMET becomes the primary optimisation target in MT research, the risk of systems being fine-tuned specifically to maximise COMET scores (rather than genuine translation quality) increases. This is analogous to the BLEU gaming problem that motivated the creation of COMET in the first place; XCOMET’s error span approach is more robust to such gaming because error categories are harder to optimise against than a scalar regression target.</p>
+<p>Fourth, <strong>weakness on specific linguistic phenomena</strong>: the ACES challenge set (Cabello et al., 2022) systematically showed that COMET fails on specific phenomena including addition errors (where the hypothesis contains information not in the source), mistranslation of function words, and certain types of morphological agreement errors in low-resource language pairs. COMET’s strong aggregate performance masks these targeted failure modes.</p>
+<p>Fifth, <strong>LLM evaluation blind spots</strong> (WMT24): as LLMs generate translations that are fluent and semantically coherent at the surface level, COMET sometimes assigns them high scores even when they contain subtle hallucinations, named-entity substitutions, or culturally inappropriate renderings that a professional translator would flag as critical errors. This is the “LLM breaking MT metrics” problem identified at WMT24 and is one of the primary motivations for XCOMET’s error span detection approach.</p>
+<h2 id="relationship-to-llm-based-evaluation">Relationship to LLM-Based Evaluation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-llm-based-evaluation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The rise of <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> as MT engines has created a challenging evaluation environment for COMET. On one hand, GPT-4-class models achieve near-human translation quality on many high-resource language pairs as measured by COMET, making it difficult to distinguish them from dedicated neural MT systems on standard benchmarks. On the other hand, LLM translations exhibit qualitatively different failure modes — hallucinations, over-literal renderings of idioms, inconsistency in proper noun transliteration — that COMET’s scalar regression head is not well-suited to detect.</p>
+<p>LLM-as-judge evaluation, where a large language model is prompted with MQM-style rubrics to score and explain translation quality, emerged as a proposed alternative in 2023-2024. However, ACL 2024 research demonstrated that LLM-as-judge achieves only approximately 0.2 segment-level Pearson correlation with human DA, compared to COMET-22’s 0.6+, making it unsuitable for fine-grained MT system ranking. The primary value of LLM-as-judge is in providing qualitative error explanations and detecting specific error categories (hallucinations, cultural insensitivity) rather than ranking systems quantitatively.</p>
+<p>The consensus 2026 MT evaluation stack as used in major research groups and at the WMT shared task combines: (1) COMET-22 for reference-based scalar quality scoring and system ranking; (2) COMETKiwi-23 for reference-free quality estimation in production pipelines; (3) XCOMET-XXL for interpretable error span detection on samples of interest; and optionally (4) LLM-as-judge for qualitative error category analysis on edge cases. This hybrid stack is calibrated against native-speaker MQM annotations on each deployed language pair to establish reliable quality thresholds for specific business use cases such as gisting (no post-editing), light post-editing, and full post-editing workflows.</p>
+<h2 id="benchmark-datasets-and-evaluation-infrastructure">Benchmark Datasets and Evaluation Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-datasets-and-evaluation-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>WMT Metrics Shared Task</strong> (annual, 2008-present): The primary benchmark for MT metrics; provides standardised MT system outputs, human DA and MQM annotations, and segment-level and system-level evaluation; COMET has been the top-performing family of metrics since WMT21.</li>
+<li><strong>Flores-200</strong> (Meta AI, 2022): 200-language evaluation benchmark covering over 40,000 sentences across 200 languages; COMET is the primary quality metric alongside chrF; exposes COMET’s performance gap on very low-resource languages.</li>
+<li><strong>ACES Challenge Set</strong> (Cabello et al., 2022): 68-phenomenon challenge set testing MT metric robustness on specific linguistic phenomena; essential for diagnosing COMET failure modes beyond aggregate correlation scores.</li>
+<li><strong>MQM Human Evaluation Dataset</strong> (WMT20-WMT22): Professional MQM annotations for high-quality language pairs (en-de, zh-en, en-ru); the gold standard for COMET calibration and the training data source for XCOMET and COMET-MQM variants.</li>
+<li><strong>MLQE-PE</strong> (Specia et al., 2020): Multilingual quality estimation and post-editing dataset; the primary training resource for COMETKiwi quality estimation models.</li>
+<li><strong>MT-LENS</strong> (Avramidis et al., 2024): All-in-one MT evaluation toolkit integrating COMET, XCOMET, chrF, BERTScore, and LLM-as-judge approaches for comparative evaluation; enables reproducible side-by-side metric comparison.</li>
+</ul>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Direct Assessment (DA)</strong>: WMT annotation protocol in which crowd-sourced annotators rate MT hypothesis quality on a 0-100 scale by comparing it to a reference; z-score normalised to remove annotator bias</li>
+<li><strong>Multidimensional Quality Metrics (MQM)</strong>: Professional annotation framework that requires expert translators to identify and classify specific error spans with severity labels (minor, major, critical); richer but more costly than DA</li>
+<li><strong>Quality Estimation (QE)</strong>: MT evaluation without reference translations; uses only source and hypothesis; the reference-free COMET variant</li>
+<li><strong>XCOMET</strong>: Explainable COMET; adds fine-grained error span detection to sentence-level quality regression; available in XL (3.5B) and XXL (10.7B) variants</li>
+<li><strong>COMETKiwi</strong>: Reference-free quality estimation COMET variant; named for the KIWI (quality estimation) track at WMT; the de facto production QE standard</li>
+<li><strong>Segment-Level Correlation</strong>: Pearson or Kendall-τ correlation between metric scores and human quality scores at the individual sentence level; the primary WMT evaluation criterion for MT metrics</li>
+<li><strong>WMT Metrics Shared Task</strong>: Annual competition at the Workshop on Machine Translation evaluating automated MT metrics against human judgements across multiple language pairs</li>
+<li><strong>MetricX</strong>: Google’s COMET-inspired T5-XXL-based MT metric; ranked first in WMT24 Metrics Shared Task; demonstrates that the COMET paradigm scales to decoder-based LLM architectures</li>
+<li><strong>BLEURT</strong>: BERT-based learned MT metric (Sellam et al., Google, 2020); conceptually similar to COMET but English-only; COMET generalises to 100+ languages via XLM-R backbone</li>
+<li><strong>Gisting vs Post-Editing</strong>: Quality thresholds distinguishing MT output suitable for understanding only (gisting, no correction needed) from output requiring professional human correction before publication</li>
+<li><strong>MLQE-PE</strong>: Multilingual Quality Estimation and Post-Editing dataset; primary training resource for COMETKiwi QE models</li>
+</ul>
+<h2 id="comet-model-checkpoint-comparison">COMET Model Checkpoint Comparison<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comet-model-checkpoint-comparison" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Model</th><th>Year</th><th>Backbone</th><th>Parameters</th><th>Input</th><th>Segment r</th><th>Notes</th></tr></thead><tbody><tr><td>COMET-DA (wmt20-comet-da)</td><td>2020</td><td>XLM-R Base</td><td>278M</td><td>src+hyp+ref</td><td>~0.55</td><td>Original release</td></tr><tr><td>COMET-QE (wmt20-comet-qe-da)</td><td>2020</td><td>XLM-R Base</td><td>278M</td><td>src+hyp</td><td>~0.40</td><td>Reference-free</td></tr><tr><td>COMET-22 (wmt22-comet-da)</td><td>2022</td><td>XLM-R Large</td><td>560M</td><td>src+hyp+ref</td><td>~0.65</td><td>De facto standard</td></tr><tr><td>COMETKiwi-22 (wmt22-cometkiwi-da)</td><td>2022</td><td>XLM-R Large</td><td>560M</td><td>src+hyp</td><td>~0.55</td><td>Best ref-free model</td></tr><tr><td>COMET-23 (wmt23-comet-da)</td><td>2023</td><td>XLM-R Large</td><td>560M</td><td>src+hyp+ref</td><td>~0.67</td><td>Updated training data</td></tr><tr><td>COMETKiwi-23-XL</td><td>2023</td><td>XLM-R XL</td><td>3.5B</td><td>src+hyp</td><td>~0.60</td><td>Large QE model</td></tr><tr><td>COMETKiwi-23-XXL</td><td>2023</td><td>mDeBERTa XXL</td><td>10.7B</td><td>src+hyp</td><td>~0.63</td><td>Largest QE model</td></tr><tr><td>XCOMET-XL</td><td>2024</td><td>XLM-R XL</td><td>3.5B</td><td>src+hyp+ref</td><td>~0.72</td><td>+error spans</td></tr><tr><td>XCOMET-XXL</td><td>2024</td><td>mDeBERTa XXL</td><td>10.7B</td><td>src+hyp+ref</td><td>~0.75</td><td>Best overall, SOTA</td></tr><tr><td>MetricX-24-Hybrid (Google)</td><td>2024</td><td>T5-XXL</td><td>11B</td><td>src+hyp+ref</td><td>~0.76</td><td>WMT24 winner</td></tr></tbody></table></div>
+<p>(Segment-level Pearson r values are approximate; exact values vary by language pair and evaluation set)</p>
+<h2 id="wmt-shared-task-performance-history">WMT Shared Task Performance History<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wmt-shared-task-performance-history" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>COMET’s year-by-year performance at the WMT Metrics Shared Task tracks the field’s evolution:</p>
+<ul>
+<li><strong>WMT20 (2020)</strong>: COMET first submitted; wins segment-level correlation for most language pairs; BLEU ranked near the bottom among all metrics; establishes learned metrics as the new state of the art.</li>
+<li><strong>WMT21 (2021)</strong>: COMET and BLEURT dominate; chrF performs surprisingly well for its simplicity; results galvanise the community consensus that BLEU is no longer an acceptable primary metric.</li>
+<li><strong>WMT22 (2022)</strong>: COMET-22 ensemble wins Chinese-English; places second for other pairs; COMETKiwi-22 is the top reference-free metric; the WMT22 paper explicitly titled “Stop Using BLEU — Neural MT Evaluation is Here to Stay” marks the paradigm shift.</li>
+<li><strong>WMT23 (2023)</strong>: COMETKiwi-23-XXL demonstrates that scaling the backbone substantially improves QE performance; XCOMET development begins with WMT23 annotations.</li>
+<li><strong>WMT24 (2024)</strong>: MetricX-24-Hybrid (Google, T5-XXL) ranks first overall; COMET-22 ranks third; the question “Are LLMs Breaking MT Metrics?” is posed as the shared task’s central research question; answer is nuanced — LLM outputs expose some gaps in COMET but COMET remains far more reliable than LLM-as-judge for segment ranking.</li>
+<li><strong>Post-WMT24 (2025-2026)</strong>: XCOMET-XXL emerges as the consensus best model for high-quality offline evaluation; hybrid COMET+XCOMET+LLM stacks become the recommended evaluation pipeline.</li>
+</ul>
+<h2 id="quality-thresholds-and-decision-frameworks">Quality Thresholds and Decision Frameworks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#quality-thresholds-and-decision-frameworks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Practical deployment of COMET-QE requires setting quality thresholds that determine MT workflow routing:</p>
+<ul>
+<li><strong>Gisting threshold (typically ≥ 0.75)</strong>: MT output suitable for reader comprehension without correction; suitable for internal communications, low-stakes content, or informational queries</li>
+<li><strong>Light post-editing threshold (≥ 0.85)</strong>: MT output requiring minimal human correction; target for professional translation workflows where partial automation is acceptable</li>
+<li><strong>Full post-editing required (&lt; 0.75)</strong>: MT output requiring significant human revision; typically flagged for professional translator review</li>
+<li><strong>Critical domain adjustment</strong>: In medical, legal, and financial contexts, thresholds should be set higher (e.g., light post-editing ≥ 0.90) and validated against domain-specific human evaluation</li>
+<li><strong>Language pair calibration</strong>: Thresholds must be calibrated separately for each language pair; a COMETKiwi score of 0.85 on English-French has different quality implications than on English-Japanese</li>
+<li><strong>Confidence intervals</strong>: Always compute bootstrap confidence intervals when comparing systems; differences smaller than ±0.01 system-level COMET are typically not statistically significant</li>
+<li><strong>Human validation</strong>: Threshold calibration should be validated against human judgements on representative samples from the deployment domain before production use</li>
+</ul>
+<h2 id="related-concepts-glossary">Related Concepts Glossary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-concepts-glossary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong><a href="../pages/Machine-Translation" class="internal alias" data-slug="pages/Machine-Translation">Machine Translation</a></strong>: The automated translation of text between natural languages; COMET’s primary evaluation domain</li>
+<li><strong><a href="../pages/Neural-Machine-Translation" class="internal alias" data-slug="pages/Neural-Machine-Translation">Neural Machine Translation</a></strong>: MT using neural network encoder-decoder architectures; the system type COMET is designed to evaluate</li>
+<li><strong><a href="../pages/Natural-Language-Processing" class="internal alias" data-slug="pages/Natural-Language-Processing">Natural Language Processing</a></strong>: Broad field of computational language understanding; COMET is a specialised NLP evaluation tool</li>
+<li><strong><a href="../pages/BLEU-Score" class="internal alias" data-slug="pages/BLEU-Score">BLEU Score</a></strong>: N-gram precision metric for MT evaluation; the primary metric COMET supersedes; still reported for backward compatibility</li>
+<li><strong><a href="../XLM-RoBERTa" class="internal" data-slug="XLM-RoBERTa">XLM-RoBERTa</a></strong>: Cross-lingual pre-trained language model (Facebook AI, 2020) trained on 100 languages; the backbone of all major COMET variants</li>
+<li><strong><a href="../pages/Transfer-Learning" class="internal alias" data-slug="pages/Transfer-Learning">Transfer Learning</a></strong>: Applying pre-trained model representations to new tasks; COMET fine-tunes XLM-R on human MT annotations</li>
+<li><strong><a href="../pages/Quality-Estimation" class="internal alias" data-slug="pages/Quality-Estimation">Quality Estimation</a></strong>: Reference-free MT quality prediction; the task addressed by COMETKiwi and COMET-QE variants</li>
+<li><strong><a href="../Direct-Assessment" class="internal alias" data-slug="Direct-Assessment">Direct Assessment</a></strong>: WMT human annotation protocol for MT quality; the primary training signal for COMET regression models</li>
+<li><strong><a href="../Multidimensional-Quality-Metrics" class="internal alias" data-slug="Multidimensional-Quality-Metrics">Multidimensional Quality Metrics</a></strong>: Professional MT error annotation framework; the training signal for COMET-MQM and XCOMET models</li>
+<li><strong><a href="../WMT-Shared-Task" class="internal alias" data-slug="WMT-Shared-Task">WMT Shared Task</a></strong>: Workshop on Machine Translation annual evaluation campaign; the primary benchmark environment for COMET</li>
+<li><strong><a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a></strong>: Generative AI models increasingly used as MT engines and as MT evaluators (LLM-as-judge); COMET is evaluated against them</li>
+<li><strong><a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a></strong>: The self-attention-based architecture underlying XLM-R and therefore all COMET models</li>
+<li><strong><a href="../pages/Attention-Mechanism" class="internal alias" data-slug="pages/Attention-Mechanism">Attention Mechanism</a></strong>: Core building block of transformer-based encoders; enables COMET to model complex cross-lingual semantic correspondences</li>
+<li><strong><a href="../Post-Editing-Workflow" class="internal alias" data-slug="Post-Editing-Workflow">Post-Editing Workflow</a></strong>: Human correction of MT output; COMETKiwi scores predict post-editing effort to prioritise human review</li>
+<li><strong><a href="../Sequence-to-Sequence-Model" class="internal alias" data-slug="Sequence-to-Sequence-Model">Sequence-to-Sequence Model</a></strong>: Encoder-decoder architecture underlying neural MT systems that COMET evaluates</li>
+</ul>
+<h2 id="practical-usage-guide">Practical Usage Guide<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#practical-usage-guide" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Running COMET evaluation in practice requires the <code>unbabel-comet</code> Python package (v2.0+):</p>
+<p><strong>Installation</strong>:</p>
+<ul>
+<li><code>pip install unbabel-comet</code> — installs the COMET framework and CLI</li>
+<li>Requires Python 3.8+, PyTorch 1.10+, and at least 8GB GPU VRAM for COMET-22</li>
+<li>Model weights are downloaded automatically from Hugging Face Hub on first use</li>
+</ul>
+<p><strong>Reference-Based Evaluation (COMET-22)</strong>:</p>
+<ul>
+<li>Prepare three line-aligned text files: <code>src.txt</code> (source), <code>mt.txt</code> (hypothesis), <code>ref.txt</code> (reference)</li>
+<li>Command: <code>comet-score -s src.txt -t mt.txt -r ref.txt --model Unbabel/wmt22-comet-da</code></li>
+<li>Output: segment-level COMET scores + system-level mean with 95% confidence intervals via bootstrap</li>
+<li>Score range: approximately -1 to 1, with 0.0 representing mediocre MT and 0.85+ indicating near-human quality</li>
+</ul>
+<p><strong>Reference-Free Quality Estimation (COMETKiwi)</strong>:</p>
+<ul>
+<li>Command: <code>comet-score -s src.txt -t mt.txt --model Unbabel/wmt22-cometkiwi-da</code></li>
+<li>Does not require reference translations; suitable for production quality gates</li>
+<li>Typical production threshold: segments scoring above 0.85 are approved without human review</li>
+</ul>
+<p><strong>XCOMET Error Span Detection</strong>:</p>
+<ul>
+<li>Command: <code>comet-score -s src.txt -t mt.txt -r ref.txt --model Unbabel/XCOMET-XXL</code></li>
+<li>Output: sentence-level quality score + identified error spans with severity tags (minor/major/critical)</li>
+<li>Requires ~80GB GPU VRAM (XCOMET-XXL); use XCOMET-XL (3.5B) for less memory-intensive deployment</li>
+</ul>
+<p><strong>Python API Usage</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> comet </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> download_model, load_from_checkpoint</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model_path </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> download_model(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;Unbabel/wmt22-comet-da&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> load_from_checkpoint(model_path)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">data </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> [{</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;src&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;Hello&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;mt&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;Bonjour&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;ref&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;Salut&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}]</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model_output </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> model.predict(data, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">batch_size</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">8</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">gpus</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(model_output.scores)  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># [0.87...]</span></span></code></pre></figure>
+<p><strong>Interpreting COMET Scores</strong>:</p>
+<ul>
+<li>Scores are not absolute quality labels but relative rankings calibrated to human DA z-scores</li>
+<li>Compare COMET scores only within the same language pair and model version</li>
+<li>For system comparison, report 95% bootstrap confidence intervals to assess statistical significance</li>
+<li>Segment-level scores below 0.60 typically indicate segments requiring human post-editing review</li>
+<li>Do not compare COMET scores across model versions (wmt20 vs wmt22) or language pairs</li>
+</ul>
+<h2 id="comparison-with-alternative-mt-evaluation-metrics">Comparison with Alternative MT Evaluation Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comparison-with-alternative-mt-evaluation-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Metric</th><th>Type</th><th>Human Corr.</th><th>Reference</th><th>Speed</th><th>Languages</th><th>Notes</th></tr></thead><tbody><tr><td>BLEU</td><td>n-gram</td><td>~0.3 segment</td><td>Required</td><td>Fast</td><td>Any</td><td>Deprecated as primary metric</td></tr><tr><td>chrF</td><td>character n-gram</td><td>~0.4 segment</td><td>Required</td><td>Fast</td><td>Any</td><td>Simple, still useful for morphological languages</td></tr><tr><td>TER</td><td>edit distance</td><td>~0.3 segment</td><td>Required</td><td>Fast</td><td>Any</td><td>Penalises reordering heavily</td></tr><tr><td>METEOR</td><td>synonym+recall</td><td>~0.45 segment</td><td>Required</td><td>Medium</td><td>Limited</td><td>Incorporates synonyms; language-limited</td></tr><tr><td>BLEURT</td><td>BERT-based</td><td>~0.55 segment</td><td>Required</td><td>Medium</td><td>EN only</td><td>English only; pre-trained on synthetic perturbations</td></tr><tr><td>COMET-22</td><td>XLM-R regression</td><td>~0.65 segment</td><td>Required</td><td>Medium</td><td>100+</td><td>De facto standard 2022-2026</td></tr><tr><td>COMETKiwi</td><td>XLM-R QE</td><td>~0.55 segment</td><td>Not needed</td><td>Medium</td><td>100+</td><td>Best reference-free metric</td></tr><tr><td>XCOMET-XXL</td><td>mDeBERTa+spans</td><td>~0.75 segment</td><td>Required</td><td>Slow</td><td>100+</td><td>Best explainable metric, 2024 SOTA</td></tr><tr><td>MetricX-24</td><td>T5-XXL</td><td>~0.76 segment</td><td>Required</td><td>Slow</td><td>100+</td><td>WMT24 winner; COMET-inspired</td></tr><tr><td>LLM-as-judge (GPT-4)</td><td>LLM prompting</td><td>~0.20 segment</td><td>Optional</td><td>Very slow</td><td>Any</td><td>Poor segment correlation; good for qualitative analysis</td></tr></tbody></table></div>
+<h2 id="accessibility-and-open-source-ecosystem">Accessibility and Open-Source Ecosystem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#accessibility-and-open-source-ecosystem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>COMET is one of the most accessible and well-supported MT evaluation tools available:</p>
+<ul>
+<li><strong>GitHub</strong>: github.com/Unbabel/COMET — Apache 2.0 licensed; actively maintained; 1,000+ stars as of 2025</li>
+<li><strong>PyPI</strong>: <code>pip install unbabel-comet</code> (unbabel-comet package); v2.0.0+ for COMET-22 and beyond</li>
+<li><strong>Hugging Face Hub</strong>: All major checkpoints at <code>Unbabel/</code> namespace; standardised loading via <code>transformers</code> + <code>unbabel-comet</code></li>
+<li><strong>SacreBLEU compatibility</strong>: COMET integrates with SacreBLEU evaluation scripts for joint BLEU+COMET reporting</li>
+<li><strong>Documentation</strong>: unbabel.github.io/COMET — comprehensive API documentation and tutorials</li>
+<li><strong>WMT Integration</strong>: COMET is the official evaluation tool for WMT Metrics Shared Task submissions</li>
+<li><strong>Flores Integration</strong>: Meta AI’s Flores-200 evaluation framework uses COMET as primary quality metric</li>
+<li><strong>Community</strong>: Active Discord and GitHub discussions; regular updates aligned with WMT shared task schedules</li>
+</ul>
+<h2 id="industry-adoption-and-commercial-integration">Industry Adoption and Commercial Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#industry-adoption-and-commercial-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>COMET has moved from academic evaluation tool to core production infrastructure in the translation industry:</p>
+<ul>
+<li><strong>Unbabel’s Enterprise Platform</strong>: Unbabel uses COMET-QE internally as the quality assurance backbone of its AI-assisted translation platform, which serves enterprise clients including Adobe, Facebook, and LinkedIn for customer support translation. COMET scores route segments to post-editing queues or direct publication based on quality thresholds calibrated per client and domain.</li>
+<li><strong>RWS Group (Language Weaver)</strong>: RWS, the world’s largest language service provider (headquartered in Chalfont St Giles, UK), integrates neural QE models conceptually aligned with COMET into its Language Weaver MT platform. RWS’s Translation Management System uses QE scores to automate post-editing tier assignment.</li>
+<li><strong>DeepL Quality API</strong>: DeepL’s translation API returns confidence scores alongside translations for enterprise users; these scores are calibrated using approaches similar to COMET-QE, enabling automated quality routing in DeepL-integrated workflows.</li>
+<li><strong>Systran</strong>: Systran’s enterprise MT platform integrates reference-free QE scoring to flag segments requiring human review; the approach is COMET-inspired using multilingual pre-trained encoder regression.</li>
+<li><strong>Amazon Translate Quality Estimation</strong>: Amazon AWS Translate provides quality score outputs for MT segments using neural QE models trained on human annotations; the architecture is undisclosed but conceptually aligned with COMET-QE’s approach.</li>
+<li><strong>Microsoft Azure Translator</strong>: Azure’s professional translation workflows use confidence scoring via neural QE to enable adaptive post-editing allocation; COMET-style learned metrics inform these scores.</li>
+<li><strong>Lionbridge and Welocalize</strong>: Leading global LSPs have integrated COMET-QE scoring into their translation management systems to automate quality control and post-editing effort allocation for high-volume MT workflows.</li>
+</ul>
+<h2 id="comet-and-the-displacement-of-bleu">COMET and the Displacement of BLEU<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comet-and-the-displacement-of-bleu" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The displacement of BLEU as the primary MT evaluation metric by COMET is one of the most significant methodological transitions in computational linguistics since the introduction of BLEU itself in 2002. BLEU had dominated MT evaluation for two decades despite its well-documented limitations: it measures n-gram overlap between hypothesis and reference, which fails to reward paraphrases, penalises grammatically equivalent reorderings, is sensitive to the number of references, and correlates poorly with human judgements for high-quality modern neural MT systems that produce fluent, semantically accurate translations using different surface forms than the reference.</p>
+<p>The transition had several key moments. The WMT21 findings (Freitag et al., 2021) systematically demonstrated that human DA rankings of MT systems diverge substantially from BLEU rankings, with BLEU incorrectly ordering several system pairs that human experts ranked in the opposite direction. This “BLEU vs human” divergence is most acute for closely ranked high-quality systems — exactly the comparison that matters most in competitive MT research. COMET’s 2021 shared task performance demonstrated that COMET-MQM (trained on professional MQM annotations) achieves near-perfect Kendall-τ correlation with human expert rankings, prompting the headline claim in subsequent years that BLEU should be retired as a primary metric.</p>
+<p>However, BLEU has not disappeared. The community continues to report BLEU alongside COMET for backward compatibility with older literature and because BLEU has desirable properties in certain contexts: it is reference-free in the sense that no model weights need downloading, it is language-agnostic, it is deterministic and does not require GPU inference, and its scores are interpretable in a limited sense (higher BLEU means more n-gram overlap with the reference). BLEU is also more appropriate than COMET for evaluating very low-resource MT systems where COMET’s XLM-R backbone may not have seen sufficient examples of the target language during pre-training. The practical consensus as of 2026 is: report COMET-22 as the primary metric and chrF as the secondary metric (replacing BLEU), with BLEU reported only for comparison with pre-2021 literature.</p>
+<h2 id="timeline-of-key-developments">Timeline of Key Developments<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#timeline-of-key-developments" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>2020 (EMNLP)</strong>: COMET introduced by Rei et al.; XLM-R backbone; trained on WMT DA; immediately outperforms BLEU and all prior metrics in segment-level correlation</li>
+<li><strong>2020-2021</strong>: Rapid community adoption; COMET adopted by WMT as a primary metric alongside chrF and BLEU</li>
+<li><strong>2021 (WMT21)</strong>: COMET and BLEURT dominate the metrics shared task; results galvanise consensus that BLEU is insufficient</li>
+<li><strong>2022 (WMT22)</strong>: COMET-22 wins Chinese-English; COMETKiwi-22 introduced as reference-free QE standard; community paper “Stop Using BLEU” published</li>
+<li><strong>2022</strong>: Flores-200 adopts COMET as primary quality metric for 200-language MT evaluation</li>
+<li><strong>2023 (WMT23)</strong>: COMETKiwi-23-XL/XXL with billion-parameter backbones substantially improve QE quality; XCOMET development begins</li>
+<li><strong>2023</strong>: COMET integrated into major commercial MT evaluation pipelines; industry adoption reaches tipping point</li>
+<li><strong>2024 (TACL)</strong>: XCOMET-XL and XCOMET-XXL published; fine-grained error span detection added; highest MQM correlation among all public metrics</li>
+<li><strong>2024 (WMT24)</strong>: MetricX-24-Hybrid (Google) ranks first; COMET-22 ranks third; “Are LLMs Breaking MT Metrics?” published; hybrid evaluation stacks emerge</li>
+<li><strong>2024-2025</strong>: COMET v2.0 released with improved API; XCOMET integrated into production evaluation pipelines</li>
+<li><strong>2025-2026</strong>: COMET+XCOMET+LLM hybrid stacks become standard; document-level COMET variants under active development; LLM-scale COMET research ongoing</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-896" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#contrasting-relationships" data-for="contrasting-relationships">Contrasting Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-0"><a href="#comet-model-family-2020-2026" data-for="comet-model-family-2020-2026">COMET Model Family (2020-2026)</a></li><li class="depth-0"><a href="#evaluation-framework-and-benchmarks" data-for="evaluation-framework-and-benchmarks">Evaluation Framework and Benchmarks</a></li><li class="depth-0"><a href="#use-cases" data-for="use-cases">Use Cases</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#standards-governance-and-deployment" data-for="standards-governance-and-deployment">Standards, Governance and Deployment</a></li><li class="depth-0"><a href="#integration-patterns-and-usage" data-for="integration-patterns-and-usage">Integration Patterns and Usage</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#formal-algorithm-comet-regression-scoring" data-for="formal-algorithm-comet-regression-scoring">Formal Algorithm: COMET Regression Scoring</a></li><li class="depth-0"><a href="#limitations-and-critical-perspectives" data-for="limitations-and-critical-perspectives">Limitations and Critical Perspectives</a></li><li class="depth-0"><a href="#relationship-to-llm-based-evaluation" data-for="relationship-to-llm-based-evaluation">Relationship to LLM-Based Evaluation</a></li><li class="depth-0"><a href="#benchmark-datasets-and-evaluation-infrastructure" data-for="benchmark-datasets-and-evaluation-infrastructure">Benchmark Datasets and Evaluation Infrastructure</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-0"><a href="#comet-model-checkpoint-comparison" data-for="comet-model-checkpoint-comparison">COMET Model Checkpoint Comparison</a></li><li class="depth-0"><a href="#wmt-shared-task-performance-history" data-for="wmt-shared-task-performance-history">WMT Shared Task Performance History</a></li><li class="depth-0"><a href="#quality-thresholds-and-decision-frameworks" data-for="quality-thresholds-and-decision-frameworks">Quality Thresholds and Decision Frameworks</a></li><li class="depth-0"><a href="#related-concepts-glossary" data-for="related-concepts-glossary">Related Concepts Glossary</a></li><li class="depth-0"><a href="#practical-usage-guide" data-for="practical-usage-guide">Practical Usage Guide</a></li><li class="depth-0"><a href="#comparison-with-alternative-mt-evaluation-metrics" data-for="comparison-with-alternative-mt-evaluation-metrics">Comparison with Alternative MT Evaluation Metrics</a></li><li class="depth-0"><a href="#accessibility-and-open-source-ecosystem" data-for="accessibility-and-open-source-ecosystem">Accessibility and Open-Source Ecosystem</a></li><li class="depth-0"><a href="#industry-adoption-and-commercial-integration" data-for="industry-adoption-and-commercial-integration">Industry Adoption and Commercial Integration</a></li><li class="depth-0"><a href="#comet-and-the-displacement-of-bleu" data-for="comet-and-the-displacement-of-bleu">COMET and the Displacement of BLEU</a></li><li class="depth-0"><a href="#timeline-of-key-developments" data-for="timeline-of-key-developments">Timeline of Key Developments</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/BLEU-Score" class="internal">BLEU Score</a></li><li><a href="../pages/Back-Translation" class="internal">Back-Translation</a></li><li><a href="../pages/Quality-Estimation" class="internal">Quality Estimation</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

@@ -10,6 +10,30 @@
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
+    },
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "id": "urn:ngm:class:payment-systems-regulation",
+      "label": "Payment Systems Regulation"
+    },
+    {
+      "id": "urn:ngm:class:electronic-money-regulation",
+      "label": "Electronic Money Regulation"
+    },
+    {
+      "id": "urn:ngm:class:crypto-regulation",
+      "label": "Crypto Regulation"
+    },
+    {
+      "id": "urn:ngm:class:consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "id": "urn:ngm:class:monetary-law",
+      "label": "Monetary Law"
     }
   ],
   "entityType": "Class",
@@ -24,6 +48,34 @@
       {
         "id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:reserve-requirement",
+        "label": "Reserve Requirement"
+      },
+      {
+        "id": "urn:ngm:class:redemption-right",
+        "label": "Redemption Right"
+      },
+      {
+        "id": "urn:ngm:class:attestation-regime",
+        "label": "Attestation Regime"
+      },
+      {
+        "id": "urn:ngm:class:licensing-regime",
+        "label": "Licensing Regime"
+      },
+      {
+        "id": "urn:ngm:class:systemic-designation",
+        "label": "Systemic Designation"
+      },
+      {
+        "id": "urn:ngm:class:disclosure-standard",
+        "label": "Disclosure Standard"
+      },
+      {
+        "id": "urn:ngm:class:recovery-plan",
+        "label": "Recovery Plan"
       }
     ],
     "requires": [
@@ -50,6 +102,14 @@
       {
         "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:reserve-asset-segregation",
+        "label": "Reserve Asset Segregation"
+      },
+      {
+        "id": "urn:ngm:class:independent-attestation",
+        "label": "Independent Attestation"
       }
     ],
     "enables": [
@@ -76,9 +136,50 @@
       {
         "id": "urn:ngm:class:cross-border-compliance",
         "label": "Cross Border Compliance"
+      },
+      {
+        "id": "urn:ngm:class:payment-stablecoin-issuance",
+        "label": "Payment Stablecoin Issuance"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi Integration"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:electronic-money-regulation",
+        "label": "Electronic Money Regulation"
+      },
+      {
+        "id": "urn:ngm:class:banking-law",
+        "label": "Banking Law"
+      },
+      {
+        "id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      },
+      {
+        "id": "urn:ngm:class:payment-services-regulation",
+        "label": "Payment Services Regulation"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:fca",
@@ -97,11 +198,40 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:mi-ca-regulation",
+        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
         "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:mas-scs-framework",
+        "label": "MAS SCS Framework"
+      },
+      {
+        "id": "urn:ngm:class:fca",
+        "label": "FCA Regulatory Regime"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:unregulated-crypto",
+        "label": "Unregulated Crypto"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:bank-deposit",
+        "label": "Bank Deposit"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -192,6 +322,10 @@
       {
         "id": "urn:ngm:class:mas",
         "label": "MAS"
+      },
+      {
+        "id": "urn:ngm:class:occ",
+        "label": "OCC"
       }
     ],
     "partOf": [],
@@ -221,20 +355,221 @@
         "label": "Decentralized Exchange"
       },
       {
-        "id": "urn:ngm:class:mi-ca-regulation",
+        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
         "label": "MiCA Regulation"
       },
       {
         "id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:circle",
+        "label": "Circle"
+      },
+      {
+        "id": "urn:ngm:class:tether",
+        "label": "Tether"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance",
+      "slug": "ai-governance"
+    },
+    {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:competition-law",
+      "label": "Competition Law",
+      "slug": "competition-law"
+    },
+    {
+      "id": "urn:ngm:class:digital-regulation",
+      "label": "Digital Regulation",
+      "slug": "digital-regulation"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:market-regulation",
+      "label": "Market Regulation",
+      "slug": "market-regulation"
+    },
+    {
+      "id": "urn:ngm:class:platform-governance",
+      "label": "Platform Governance",
+      "slug": "platform-governance"
+    },
+    {
+      "id": "urn:ngm:class:product-liability",
+      "label": "Product Liability",
+      "slug": "product-liability"
+    },
+    {
+      "id": "urn:ngm:class:regulation",
+      "label": "Regulation",
+      "slug": "regulation"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-governance",
+      "label": "Decentralised Governance",
+      "slug": "decentralised-governance"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
     }
   ],
   "inheritedRelations": {
@@ -248,7 +583,7 @@
         "label": "Blockchain Governance"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
       },
       {
@@ -274,38 +609,342 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:kyc",
+        "label": "Know Your Customer"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "id": "urn:ngm:class:complaint-infrastructure",
+        "label": "Complaint Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-cooperation",
+        "label": "Cross-border Cooperation"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "id": "urn:ngm:class:ai-product-safety",
+        "label": "AI Product Safety"
+      },
+      {
+        "id": "urn:ngm:class:fair-algorithmic-pricing",
+        "label": "Fair Algorithmic Pricing"
+      },
+      {
+        "id": "urn:ngm:class:informed-purchasing-decisions",
+        "label": "Informed Purchasing Decisions"
+      },
+      {
+        "id": "urn:ngm:class:market-fairness",
+        "label": "Market Fairness"
+      },
+      {
+        "id": "urn:ngm:class:redress-procedure",
+        "label": "Consumer Redress"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-content-accountability",
+        "label": "Synthetic Content Accountability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:competition-law",
+        "label": "Competition Law"
+      },
+      {
+        "id": "urn:ngm:class:contract-law",
+        "label": "Contract Law"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bc-0484-markets-in-crypto-assets",
+        "label": "Markets in Crypto-Assets Regulation"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:ai-act-product-safety",
+        "label": "AI Act Product Safety"
+      },
+      {
+        "id": "urn:ngm:class:cma-strategic-market-status",
+        "label": "CMA Strategic Market Status"
+      },
+      {
+        "id": "urn:ngm:class:digital-markets-competition-and-consumers-act-2024",
+        "label": "Digital Markets Competition and Consumers Act 2024"
+      },
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-consumer-rights-directive",
+        "label": "EU Consumer Rights Directive"
+      },
+      {
+        "id": "urn:ngm:class:fca-consumer-duty",
+        "label": "Consumer Duty FCA"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:co-regulation",
+        "label": "Co-regulation"
+      },
+      {
+        "id": "urn:ngm:class:industry-self-regulation",
+        "label": "Industry Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:platform-terms-of-service",
+        "label": "Platform Terms of Service"
+      },
+      {
+        "id": "urn:ngm:class:sandbox-approaches",
+        "label": "Sandbox Approaches"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-codes-of-conduct",
+        "label": "Voluntary Codes of Conduct"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:regtech",
+        "label": "RegTech"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
+        "id": "urn:ngm:class:aml",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:ngm:class:collective-proceedings",
+        "label": "Collective Proceedings"
+      },
+      {
+        "id": "urn:ngm:class:complaint-analytics",
+        "label": "Complaint Analytics"
+      },
+      {
+        "id": "urn:ngm:class:dark-pattern-detection",
+        "label": "Dark Pattern Detection"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-action",
+        "label": "Enforcement Action"
+      },
+      {
+        "id": "urn:ngm:class:market-investigations",
+        "label": "Market Investigations"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "id": "urn:ngm:class:consumer-trust",
+        "label": "Consumer Trust"
+      },
+      {
+        "id": "urn:ngm:class:digital-inclusion",
+        "label": "Digital Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:fair-trading",
+        "label": "Fair Trading"
+      },
+      {
+        "id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "id": "urn:ngm:class:market-efficiency",
+        "label": "Market Efficiency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:international-organization-of-securities-commissions",
+        "label": "International Organization of Securities Commissions"
+      },
+      {
+        "id": "urn:ngm:class:asa",
+        "label": "ASA"
+      },
+      {
+        "id": "urn:ngm:class:cma",
+        "label": "CMA"
+      },
+      {
+        "id": "urn:ngm:class:eu-consumer-protection-cooperation-network",
+        "label": "EU Consumer Protection Cooperation Network"
+      },
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
       }
     ],
     "relatedTo": [
@@ -320,6 +959,26 @@
       {
         "id": "urn:ngm:class:regulatory-technology",
         "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
       }
     ]
   },

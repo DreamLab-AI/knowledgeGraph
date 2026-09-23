@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:resolution-test-chart",
         "label": "Resolution Test Chart"
+      },
+      {
+        "id": "urn:ngm:class:contrast-ratio-meter",
+        "label": "Contrast Ratio Meter"
       }
     ],
     "requires": [
@@ -42,6 +46,14 @@
       {
         "id": "urn:ngm:class:calibration-standards",
         "label": "Calibration Standards"
+      },
+      {
+        "id": "urn:ngm:class:measurement-methodology",
+        "label": "Measurement Protocols"
+      },
+      {
+        "id": "urn:ngm:class:environmental-control",
+        "label": "Environmental Control"
       }
     ],
     "enables": [
@@ -52,12 +64,34 @@
       {
         "id": "urn:ngm:class:display-calibration",
         "label": "Display Calibration"
+      },
+      {
+        "id": "urn:ngm:class:visual-quality-assessment",
+        "label": "Visual Quality Assessment"
+      },
+      {
+        "id": "urn:ngm:class:performance-validation",
+        "label": "Performance Validation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:iso-9241-303",
+        "label": "ISO 9241-303"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2733-standards",
+        "label": "IEEE P2733 Standards"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -74,6 +108,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -127,6 +176,22 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -145,12 +210,32 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -159,12 +244,32 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -195,6 +300,20 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -219,6 +338,26 @@
       {
         "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
       }
     ]
   },

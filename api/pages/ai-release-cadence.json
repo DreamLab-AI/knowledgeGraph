@@ -45,6 +45,11 @@
       "slug": "ai-governance-and-ethics"
     },
     {
+      "id": "urn:ngm:class:technology-policy",
+      "label": "Technology Policy",
+      "slug": "technology-policy"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -53,39 +58,51 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-consultation",
+        "label": "Stakeholder Consultation"
+      },
+      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
-      },
+      }
+    ],
+    "requires": [
       {
-        "id": "urn:ngm:class:ai-fairness",
-        "label": "AI Fairness"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
-      },
-      {
-        "id": "urn:ngm:class:ai-risk-management",
-        "label": "AI Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       },
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
-      }
-    ],
-    "requires": [
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
       {
         "id": "urn:ngm:class:impact-assessment",
         "label": "Impact Assessment"
@@ -105,18 +122,6 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
       }
     ],
     "enables": [
@@ -141,16 +146,48 @@
         "label": "Conformity Assessment"
       },
       {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
       }
     ],
     "contrastsWith": [
@@ -179,9 +216,43 @@
       {
         "id": "urn:ngm:class:supply-chain-security",
         "label": "Supply Chain Security"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
@@ -223,12 +294,24 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      },
+      {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
       },
       {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
       },
       {
         "id": "urn:ngm:class:competition-policy",
@@ -239,20 +322,8 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:intellectual-property-rights-framework",
-        "label": "Intellectual Property"
-      },
-      {
-        "id": "urn:ngm:class:technology-policy",
-        "label": "Technology Policy"
-      },
-      {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-framework",
-        "label": "AI Governance Framework"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ]
   },

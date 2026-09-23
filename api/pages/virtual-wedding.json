@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
+    },
+    {
+      "id": "urn:ngm:class:virtual-event",
+      "label": "Virtual Event"
     }
   ],
   "entityType": "Class",
@@ -72,9 +76,29 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -114,20 +138,36 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
       },
       {
         "id": "urn:ngm:class:low-latency",
         "label": "Low Latency"
-      },
-      {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
       }
     ],
     "enables": [
@@ -140,70 +180,170 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:digital-exhibition",
+        "label": "Digital Exhibition"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-networking",
+        "label": "Virtual Networking"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hybrid-event",
+        "label": "Hybrid Event"
+      },
+      {
+        "id": "urn:ngm:class:physical-event",
+        "label": "Physical Event"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
       },
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:scene-understanding",
-        "label": "Scene Understanding"
-      }
-    ],
-    "contrastsWith": [
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
       {
-        "id": "urn:ngm:class:pervasive-computing",
-        "label": "Pervasive Computing"
-      }
-    ],
-    "bridgesTo": [
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
-      },
-      {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
       },
       {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
       },
       {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
+        "id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
       },
       {
-        "id": "urn:ngm:class:hand-tracking",
-        "label": "Hand Tracking"
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
       },
       {
-        "id": "urn:ngm:class:head-mounted-display",
-        "label": "Head-Mounted Display"
+        "id": "urn:ngm:class:real-time-messaging",
+        "label": "Real-Time Messaging"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -228,6 +368,26 @@
       {
         "id": "urn:ngm:class:sc-standards-and-interop",
         "label": "Standards and Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event-platform",
+        "label": "Event Platform"
+      },
+      {
+        "id": "urn:ngm:class:computer-supported-cooperative-work",
+        "label": "Computer-Supported Cooperative Work"
+      },
+      {
+        "id": "urn:ngm:class:groupware",
+        "label": "Groupware"
       }
     ]
   },

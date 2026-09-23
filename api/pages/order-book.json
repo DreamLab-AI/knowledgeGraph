@@ -24,12 +24,28 @@
       {
         "id": "urn:ngm:class:bid-ask-spread",
         "label": "Bid-Ask Spread"
+      },
+      {
+        "id": "urn:ngm:class:bid-side",
+        "label": "Bid Side"
+      },
+      {
+        "id": "urn:ngm:class:ask-side",
+        "label": "Ask Side"
+      },
+      {
+        "id": "urn:ngm:class:depth-of-market",
+        "label": "Depth of Market"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:limit-order",
         "label": "Limit Order"
+      },
+      {
+        "id": "urn:ngm:class:price-time-priority",
+        "label": "Price-Time Priority"
       }
     ],
     "enables": [
@@ -61,18 +77,48 @@
       {
         "id": "urn:ngm:class:automated-market-maker",
         "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:request-for-quote",
+        "label": "Request for Quote"
+      },
+      {
+        "id": "urn:ngm:class:dark-pool",
+        "label": "Dark Pool"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:decentralised-exchange",
         "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-order-book",
+        "label": "On-Chain Order Book"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:market-order",
+        "label": "Market Order"
+      },
+      {
+        "id": "urn:ngm:class:depth-of-market",
+        "label": "Depth of Market"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trading-venue",
+        "label": "Trading Venue"
+      },
+      {
+        "id": "urn:ngm:class:exchange-mechanism",
+        "label": "Exchange Mechanism"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:market-microstructure",
@@ -98,6 +144,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -151,6 +212,22 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -191,6 +268,10 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -199,12 +280,32 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -241,6 +342,16 @@
         "label": "Haptic Feedback"
       }
     ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:open-xr",
@@ -271,6 +382,18 @@
       {
         "id": "urn:ngm:class:sc-standards-and-interop",
         "label": "Standards and Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
       }
     ]
   },

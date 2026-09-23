@@ -14,6 +14,10 @@
     {
       "id": "urn:ngm:class:video-understanding",
       "label": "Video Understanding"
+    },
+    {
+      "id": "urn:ngm:class:computer-vision-task",
+      "label": "Computer Vision Task"
     }
   ],
   "entityType": "Class",
@@ -28,6 +32,26 @@
       {
         "id": "urn:ngm:class:optical-flow",
         "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:spatiotemporal-feature-extractor",
+        "label": "Spatiotemporal Feature Extractor"
+      },
+      {
+        "id": "urn:ngm:class:skeleton-graph",
+        "label": "Skeleton Graph"
+      },
+      {
+        "id": "urn:ngm:class:temporal-sampler",
+        "label": "Temporal Sampler"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
       }
     ],
     "requires": [
@@ -42,6 +66,22 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:video-data",
+        "label": "Video Data"
+      },
+      {
+        "id": "urn:ngm:class:temporal-modelling",
+        "label": "Temporal Modelling"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
       }
     ],
     "enables": [
@@ -60,11 +100,98 @@
       {
         "id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioural Analytics"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:wearable-ai",
+        "label": "Wearable AI"
+      },
+      {
+        "id": "urn:ngm:class:fall-detection",
+        "label": "Fall Detection"
+      },
+      {
+        "id": "urn:ngm:class:gesture-interface",
+        "label": "Gesture Interface"
+      },
+      {
+        "id": "urn:ngm:class:activity-data",
+        "label": "Activity Data"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -82,10 +209,72 @@
       {
         "id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:human-capture-and-recognition",
+        "label": "Human Capture & Recognition"
+      },
+      {
+        "id": "urn:ngm:class:activity-data",
+        "label": "Activity Data"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -99,6 +288,42 @@
       {
         "id": "urn:ngm:class:multimodal-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      },
+      {
+        "id": "urn:ngm:class:action-space",
+        "label": "Action Space"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-video-analysis",
+        "label": "Computer Vision Video Analysis"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:human-capture-and-recognition",
+        "label": "Human Capture & Recognition"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      },
+      {
+        "id": "urn:ngm:class:sports-analytics",
+        "label": "Sports Analytics"
       }
     ]
   },
@@ -141,12 +366,12 @@
         "label": "Scene Understanding"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ],
     "requires": [
@@ -165,10 +390,6 @@
       {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -193,26 +414,34 @@
         "label": "Robotics Perception"
       },
       {
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
+      },
+      {
         "id": "urn:ngm:class:video-generation",
         "label": "Video Generation"
       },
       {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
       }
     ],
     "dependsOn": [
       {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       },
       {
         "id": "urn:ngm:class:feature-extraction",
@@ -225,6 +454,32 @@
         "label": "Optical Flow"
       }
     ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:attention-mechanism",
@@ -233,6 +488,14 @@
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
       }
     ],
     "partOf": [

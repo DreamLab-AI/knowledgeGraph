@@ -8,12 +8,28 @@
   "definition": "A Hash Function is a deterministic computational mapping H: {0,1}* \u2192 {0,1}^n from arbitrary-length input strings (preimages, messages) to fixed-length output strings (digests, hashes, fingerprints) of n bits (typically n \u2208 {128, 160, 224, 256, 384, 512}), whose security and utility derive fro...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "id": "urn:ngm:class:cryptographic-primitive",
       "label": "Cryptographic Primitive"
     },
     {
       "id": "urn:ngm:class:compression-function",
       "label": "Compression Function"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-algorithm",
+      "label": "Cryptographic Algorithm"
+    },
+    {
+      "id": "urn:ngm:class:one-way-function",
+      "label": "One-Way Function"
+    },
+    {
+      "id": "urn:ngm:class:deterministic-function",
+      "label": "Deterministic Function"
+    },
+    {
+      "id": "urn:ngm:class:digital-fingerprint",
+      "label": "Digital Fingerprint"
     }
   ],
   "entityType": "Class",
@@ -28,6 +44,22 @@
       {
         "id": "urn:ngm:class:initialization-vector",
         "label": "Initialization Vector"
+      },
+      {
+        "id": "urn:ngm:class:internal-state",
+        "label": "Internal State"
+      },
+      {
+        "id": "urn:ngm:class:padding-scheme",
+        "label": "Padding Scheme"
+      },
+      {
+        "id": "urn:ngm:class:round-function",
+        "label": "Round Function"
+      },
+      {
+        "id": "urn:ngm:class:output-truncation",
+        "label": "Output Truncation"
       }
     ],
     "requires": [
@@ -42,6 +74,14 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:computational-security",
+        "label": "Computational Security"
+      },
+      {
+        "id": "urn:ngm:class:pseudo-randomness",
+        "label": "Pseudo-Randomness"
       }
     ],
     "enables": [
@@ -84,9 +124,42 @@
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:password-storage",
+        "label": "Password Storage"
+      },
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:boolean-algebra",
+        "label": "Boolean Algebra"
+      },
+      {
+        "id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:finite-field-arithmetic",
+        "label": "Finite Field Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:bitwise-operations",
+        "label": "Bitwise Operations"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Complexity Theory"
+      },
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:preimage-resistance",
@@ -99,16 +172,70 @@
       {
         "id": "urn:ngm:class:collision-resistance",
         "label": "Collision Resistance"
+      },
+      {
+        "id": "urn:ngm:class:pre-image-resistance",
+        "label": "Pre-Image Resistance"
+      },
+      {
+        "id": "urn:ngm:class:second-pre-image-resistance",
+        "label": "Second Pre-Image Resistance"
+      },
+      {
+        "id": "urn:ngm:class:indistinguishability",
+        "label": "Indistinguishability"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:error-detection-code",
+        "label": "Error Detection Code"
+      },
+      {
+        "id": "urn:ngm:class:checksum",
+        "label": "Checksum"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:cryptographic-algorithm",
         "label": "Cryptographic Algorithm"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-damg-rd-construction",
+        "label": "Merkle-Damg\u00e5rd Construction"
+      },
+      {
+        "id": "urn:ngm:class:sponge-construction",
+        "label": "Sponge Construction"
+      },
+      {
+        "id": "urn:ngm:class:haifa-construction",
+        "label": "HAIFA Construction"
+      },
+      {
+        "id": "urn:ngm:class:davies-meyer-construction",
+        "label": "Davies-Meyer Construction"
+      },
+      {
+        "id": "urn:ngm:class:wide-pipe-construction",
+        "label": "Wide-Pipe Construction"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:certificate-transparency",
@@ -145,6 +272,10 @@
       {
         "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proofs"
       }
     ],
     "standardizedBy": [
@@ -155,6 +286,30 @@
       {
         "id": "urn:ngm:class:nist-fips-205",
         "label": "NIST FIPS 205"
+      },
+      {
+        "id": "urn:ngm:class:nist-fips-180-4",
+        "label": "NIST FIPS 180-4"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-6234",
+        "label": "IETF RFC 6234"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-2104-hmac",
+        "label": "IETF RFC 2104 HMAC"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-9106-argon2",
+        "label": "IETF RFC 9106 Argon2"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-8439",
+        "label": "IETF RFC 8439"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-10118-3",
+        "label": "ISO/IEC 10118-3"
       }
     ],
     "partOf": [],
@@ -170,19 +325,56 @@
       {
         "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computation Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:cryptanalysis",
+        "label": "Cryptanalysis"
+      },
+      {
+        "id": "urn:ngm:class:birthday-attack",
+        "label": "Birthday Attack"
+      },
+      {
+        "id": "urn:ngm:class:length-extension-attack",
+        "label": "Length-Extension Attack"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
     },
     {
-      "id": "urn:ngm:class:cryptographic-primitive",
-      "label": "Cryptographic Primitive",
-      "slug": "cryptographic-primitive"
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -192,106 +384,322 @@
         "label": "Asymmetric Encryption"
       },
       {
-        "id": "urn:ngm:class:cryptographic-commitment",
-        "label": "Cryptographic Commitment"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
-      },
-      {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:elliptic-curve-cryptography",
-        "label": "Elliptic Curve Cryptography"
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
       },
       {
-        "id": "urn:ngm:class:merkle-tree",
-        "label": "Merkle Tree"
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
       },
       {
         "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:random-number-generation",
-        "label": "Random Number Generation"
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:preimage-resistance",
+        "label": "Preimage Resistance"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital-Signature"
+      },
+      {
+        "id": "urn:ngm:class:encryption-scheme",
+        "label": "Encryption Scheme"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
-      },
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
+    ],
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:computational-hardness-assumption",
+        "label": "Computational Hardness Assumption"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:obfuscation",
+        "label": "Obfuscation"
+      },
+      {
+        "id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      },
+      {
+        "id": "urn:ngm:class:trapdoor-function",
+        "label": "Trapdoor Function"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "id": "urn:ngm:class:threat-actor",
+        "label": "Threat Actor"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:password-hashing",
+        "label": "Password Hashing"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD Principles on AI"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:homomorphic-encryption",
-        "label": "Homomorphic Encryption"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
       },
       {
         "id": "urn:ngm:class:key-management",
@@ -308,6 +716,14 @@
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
       }
     ]
   },

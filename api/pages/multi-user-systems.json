@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:authority-arbitration",
+        "label": "Authority Arbitration"
       }
     ],
     "requires": [
@@ -64,6 +68,10 @@
       {
         "id": "urn:ngm:class:social-vr",
         "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Collaborative Virtual Environment"
       }
     ],
     "dependsOn": [
@@ -88,9 +96,18 @@
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Networking"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Networking"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-user-application",
+        "label": "Single-User Application"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:cloud-computing",
@@ -119,6 +136,10 @@
       {
         "id": "urn:ngm:class:telepresence",
         "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality",
+        "label": "Collaborative XR"
       }
     ],
     "standardizedBy": [],
@@ -170,12 +191,12 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -290,16 +311,16 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -414,7 +435,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

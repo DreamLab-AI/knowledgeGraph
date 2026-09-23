@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
+    },
+    {
+      "id": "urn:ngm:class:complex-systems-concept",
+      "label": "Complex Systems Concept"
+    },
+    {
+      "id": "urn:ngm:class:cross-scale-phenomenon",
+      "label": "Cross-Scale Phenomenon"
+    },
+    {
+      "id": "urn:ngm:class:collective-behaviour",
+      "label": "Collective Behaviour"
+    },
+    {
+      "id": "urn:ngm:class:non-reductive-property",
+      "label": "Non-Reductive Property"
+    },
+    {
+      "id": "urn:ngm:class:organisational-pattern",
+      "label": "Organisational Pattern"
     }
   ],
   "entityType": "Class",
@@ -24,9 +44,54 @@
       {
         "id": "urn:ngm:class:feedback-loop",
         "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:lower-level-components",
+        "label": "Lower-Level Components"
+      },
+      {
+        "id": "urn:ngm:class:macro-level-pattern",
+        "label": "Macro-Level Pattern"
+      },
+      {
+        "id": "urn:ngm:class:cross-scale-mapping",
+        "label": "Cross-Scale Mapping"
+      },
+      {
+        "id": "urn:ngm:class:order-parameter",
+        "label": "Order Parameter"
+      },
+      {
+        "id": "urn:ngm:class:symmetry-breaking",
+        "label": "Symmetry Breaking"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:many-body-system",
+        "label": "Many-Body System"
+      },
+      {
+        "id": "urn:ngm:class:non-linear-interaction",
+        "label": "Non-Linear Interaction"
+      },
+      {
+        "id": "urn:ngm:class:local-coupling",
+        "label": "Local Coupling"
+      },
+      {
+        "id": "urn:ngm:class:energy-or-information-flow",
+        "label": "Energy or Information Flow"
+      },
+      {
+        "id": "urn:ngm:class:critical-threshold",
+        "label": "Critical Threshold"
+      },
+      {
+        "id": "urn:ngm:class:sufficient-composition",
+        "label": "Sufficient Composition"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:adaptive-behaviour",
@@ -43,9 +108,46 @@
       {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
+      },
+      {
+        "id": "urn:ngm:class:pattern-formation",
+        "label": "Pattern Formation"
+      },
+      {
+        "id": "urn:ngm:class:universality",
+        "label": "Universality"
+      },
+      {
+        "id": "urn:ngm:class:computational-universality",
+        "label": "Computational Universality"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:statistical-mechanics",
+        "label": "Statistical Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:network-theory",
+        "label": "Network Theory"
+      },
+      {
+        "id": "urn:ngm:class:dynamical-systems-theory",
+        "label": "Dynamical Systems Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:non-linear-dynamics",
+        "label": "Non-Linear Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:mean-field-approximation",
@@ -54,9 +156,46 @@
       {
         "id": "urn:ngm:class:stigmergy",
         "label": "Stigmergy"
+      },
+      {
+        "id": "urn:ngm:class:renormalisation-group-flow",
+        "label": "Renormalisation Group Flow"
+      },
+      {
+        "id": "urn:ngm:class:preferential-attachment",
+        "label": "Preferential Attachment"
+      },
+      {
+        "id": "urn:ngm:class:self-organised-criticality",
+        "label": "Self-Organised Criticality"
+      },
+      {
+        "id": "urn:ngm:class:variational-free-energy-minimisation",
+        "label": "Variational Free-Energy Minimisation"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reductionism",
+        "label": "Reductionism"
+      },
+      {
+        "id": "urn:ngm:class:linear-systems",
+        "label": "Linear Systems"
+      },
+      {
+        "id": "urn:ngm:class:fixed-rule-mechanisms",
+        "label": "Fixed-Rule Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:aggregative-property",
+        "label": "Aggregative Property"
+      },
+      {
+        "id": "urn:ngm:class:top-down-design",
+        "label": "Top-Down Design"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-research-area",
@@ -79,6 +218,18 @@
       {
         "id": "urn:ngm:class:scaling-laws",
         "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:phase-diagrams",
+        "label": "Phase Diagrams"
+      },
+      {
+        "id": "urn:ngm:class:order-parameters",
+        "label": "Order Parameters"
+      },
+      {
+        "id": "urn:ngm:class:power-law-distributions",
+        "label": "Power-Law Distributions"
       }
     ],
     "supports": [
@@ -97,9 +248,42 @@
       {
         "id": "urn:ngm:class:epidemiology",
         "label": "Epidemiology"
+      },
+      {
+        "id": "urn:ngm:class:consciousness-studies",
+        "label": "Consciousness Studies"
+      },
+      {
+        "id": "urn:ngm:class:multi-scale-simulation",
+        "label": "Multi-Scale Simulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-capability-forecasting",
+        "label": "AI Capability Forecasting"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:santa-fe-institute",
+        "label": "Santa Fe Institute"
+      },
+      {
+        "id": "urn:ngm:class:imperial-centre-for-complexity-science",
+        "label": "Imperial Centre for Complexity Science"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems-society",
+        "label": "Complex Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:royal-society-theo-murphy-meetings",
+        "label": "Royal Society Theo Murphy meetings"
+      },
+      {
+        "id": "urn:ngm:class:netsci-conference-series",
+        "label": "NetSci Conference Series"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -121,6 +305,18 @@
       {
         "id": "urn:ngm:class:systems-theory",
         "label": "Systems Theory"
+      },
+      {
+        "id": "urn:ngm:class:synergetics",
+        "label": "Synergetics"
+      },
+      {
+        "id": "urn:ngm:class:downward-causation",
+        "label": "Downward Causation"
+      },
+      {
+        "id": "urn:ngm:class:supervenience",
+        "label": "Supervenience"
       }
     ]
   },
@@ -248,7 +444,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

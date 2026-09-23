@@ -36,7 +36,7 @@
         "label": "Algorithmic Bias"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {
@@ -162,6 +162,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

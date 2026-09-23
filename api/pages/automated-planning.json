@@ -52,6 +52,10 @@
       {
         "id": "urn:ngm:class:multi-agent-coordination",
         "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       }
     ],
     "dependsOn": [
@@ -88,6 +92,10 @@
       {
         "id": "urn:ngm:class:supply-chain-management",
         "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
       }
     ],
     "uses": [
@@ -259,6 +267,18 @@
       {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-proof-model",
+      "label": "Cryptographic Proof Model"
     }
   ],
   "entityType": "Class",
@@ -25,6 +29,10 @@
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:provable-security",
+        "label": "Provable Security"
       }
     ],
     "enables": [
@@ -39,6 +47,10 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:public-key-encryption",
+        "label": "Public-Key Encryption"
       }
     ],
     "dependsOn": [],
@@ -52,7 +64,20 @@
         "label": "SHA-3"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:standard-model",
+        "label": "Standard Model"
+      },
+      {
+        "id": "urn:ngm:class:generic-group-model",
+        "label": "Generic Group Model"
+      },
+      {
+        "id": "urn:ngm:class:ideal-cipher-model",
+        "label": "Ideal Cipher Model"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -68,6 +93,18 @@
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:reduction-proof",
+        "label": "Reduction Proof"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-model",
+        "label": "Adversarial Model"
+      },
       {
         "id": "urn:ngm:class:computational-complexity-theory",
         "label": "Computational Complexity"
@@ -92,6 +129,14 @@
       {
         "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:rsa-oaep",
+        "label": "RSA-OAEP"
+      },
+      {
+        "id": "urn:ngm:class:indistinguishability-obfuscation",
+        "label": "Indistinguishability Obfuscation"
       }
     ]
   },

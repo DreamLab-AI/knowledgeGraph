@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:authentication-standards",
         "label": "Authentication Standards"
+      },
+      {
+        "id": "urn:ngm:class:identity-policies",
+        "label": "Identity Policies"
+      },
+      {
+        "id": "urn:ngm:class:trust-mechanism",
+        "label": "Trust Mechanisms"
       }
     ],
     "requires": [
@@ -42,6 +50,14 @@
       {
         "id": "urn:ngm:class:standardization-bodies",
         "label": "Standardization Bodies"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-systems",
+        "label": "Cryptographic Systems"
+      },
+      {
+        "id": "urn:ngm:class:policy-frameworks",
+        "label": "Policy Frameworks"
       }
     ],
     "enables": [
@@ -56,12 +72,21 @@
       {
         "id": "urn:ngm:class:digital-identity-management",
         "label": "Digital Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:secure-authentication",
+        "label": "Secure Authentication"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

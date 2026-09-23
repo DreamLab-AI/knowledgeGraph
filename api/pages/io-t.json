@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ],
     "requires": [
@@ -42,6 +46,10 @@
       {
         "id": "urn:ngm:class:device-identity",
         "label": "Device Identity"
+      },
+      {
+        "id": "urn:ngm:class:firmware-update",
+        "label": "Firmware Update"
       }
     ],
     "enables": [
@@ -64,6 +72,10 @@
       {
         "id": "urn:ngm:class:precision-agriculture",
         "label": "Precision Agriculture"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
       }
     ],
     "dependsOn": [
@@ -85,7 +97,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -132,6 +144,10 @@
       {
         "id": "urn:ngm:class:ieee-802-15-4",
         "label": "IEEE 802.15.4"
+      },
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Standard"
       }
     ],
     "partOf": [],
@@ -186,12 +202,12 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -418,7 +434,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

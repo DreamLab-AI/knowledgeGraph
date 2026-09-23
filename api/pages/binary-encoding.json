@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
+    },
+    {
+      "id": "urn:ngm:class:data-format",
+      "label": "Data Format"
     }
   ],
   "entityType": "Class",
@@ -21,12 +25,28 @@
       {
         "id": "urn:ngm:class:schema-definition",
         "label": "Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:encoding-rules",
+        "label": "Encoding Rules"
+      },
+      {
+        "id": "urn:ngm:class:parser-implementation",
+        "label": "Parser Implementation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:data-serialization",
         "label": "Data Serialization"
+      },
+      {
+        "id": "urn:ngm:class:transmission-network",
+        "label": "Network Transmission"
+      },
+      {
+        "id": "urn:ngm:class:efficient-storage",
+        "label": "Efficient Storage"
       },
       {
         "id": "urn:ngm:class:transmission-network",
@@ -50,9 +70,29 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -92,6 +132,26 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
       },
@@ -102,51 +162,127 @@
       {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:data-exchange",
+        "label": "Data Exchange"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
       },
       {
-        "id": "urn:ngm:class:scene-understanding",
-        "label": "Scene Understanding"
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:character-encoding",
+        "label": "Character Encoding"
+      },
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:interface-definition-language",
+        "label": "Interface Definition Language"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:binary-format",
+        "label": "Binary Format"
+      },
+      {
+        "id": "urn:ngm:class:text-format",
+        "label": "Text Format"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Compression"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
@@ -170,10 +306,28 @@
       {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:head-mounted-display",
-        "label": "Head-Mounted Display"
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -182,12 +336,42 @@
         "label": "3D Asset Standard"
       },
       {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {
         "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
       }
     ],
     "relatedTo": [
@@ -200,8 +384,28 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:universal-scene-description",
+        "id": "urn:ngm:class:usd",
         "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:apache-parquet",
+        "label": "Apache Parquet"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:protobuf",
+        "label": "Protocol Buffers"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffers"
+      },
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       }
     ]
   },

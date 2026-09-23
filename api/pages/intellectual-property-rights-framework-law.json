@@ -8,7 +8,7 @@
   "definition": "The body of statute and case law granting creators exclusive rights over the reproduction, distribution, adaptation, and communication of original works of authorship, including text, images, music, software, and audiovisual media. Copyright law defines the exceptions \u2014 fair use, fair dealing, text-and-data-mining carve-outs \u2014 that determine whether scraping and training artificial intelligence models on protected works is lawful, making it the central legal battleground of generative AI.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:intellectual-property",
+      "id": "urn:ngm:class:intellectual-property-rights-framework",
       "label": "Intellectual Property"
     }
   ],
@@ -50,14 +50,19 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:governance",
-      "label": "Governance",
-      "slug": "governance"
+      "id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework",
+      "slug": "legal-framework"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework",
+      "slug": "regulatory-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -68,32 +73,32 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
         "id": "urn:ngm:class:patent",
-        "label": "Patent"
+        "label": "Patent Law"
       },
       {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:trade-mark",
+        "label": "Trade Mark"
       },
       {
-        "id": "urn:ngm:class:policy",
-        "label": "Policy"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:transparency",
-        "label": "Transparency"
+        "id": "urn:ngm:class:trade-secret",
+        "label": "Trade Secret"
       },
       {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:breach-notification",
+        "label": "Breach Notification"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
       },
       {
         "id": "urn:ngm:class:compliance-framework",
@@ -102,78 +107,128 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:enforcement-mechanism",
-        "label": "Enforcement Mechanism"
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
       },
       {
-        "id": "urn:ngm:class:institutional-trust",
-        "label": "Institutional Trust"
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
       },
       {
-        "id": "urn:ngm:class:stakeholder-participation",
-        "label": "Stakeholder Participation"
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance Programme"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:aml",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:collective-action",
-        "label": "Collective Action"
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
       },
       {
-        "id": "urn:ngm:class:coordination",
-        "label": "Coordination"
+        "id": "urn:ngm:class:open-source-licensing",
+        "label": "Open-Source Licensing"
       },
       {
-        "id": "urn:ngm:class:legitimacy",
-        "label": "Legitimacy"
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
       },
       {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       },
       {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:regulatory-enforcement",
+        "label": "Regulatory Enforcement"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:rights-protection",
+        "label": "Rights Protection"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:information-asymmetry",
-        "label": "Information Asymmetry"
+        "id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
       },
       {
-        "id": "urn:ngm:class:rule-of-law",
-        "label": "Rule of Law"
+        "id": "urn:ngm:class:legal-jurisdiction",
+        "label": "Legal Jurisdiction"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Data Protection by Design"
+      },
+      {
+        "id": "urn:ngm:class:privacy-requirements",
+        "label": "Privacy Requirements"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security Obligations"
+      },
+      {
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:genius-act",
+        "label": "GENIUS Act"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:self-organisation",
-        "label": "Self-Organisation"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:public-domain",
+        "label": "Public Domain"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
       },
       {
         "id": "urn:ngm:class:application-layer",
@@ -182,8 +237,8 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-governance-and-ethics",
-        "label": "AI Governance and Ethics"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       },
       {
         "id": "urn:ngm:class:data-governance",
@@ -194,19 +249,47 @@
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:ngm:class:internet-governance",
-        "label": "Internet Governance"
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:innovation-ecosystem",
+        "label": "Innovation Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
@@ -222,42 +305,68 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-38500",
-        "label": "ISO-IEC 38500"
+        "id": "urn:ngm:class:trips-agreement",
+        "label": "TRIPS Agreement"
       },
       {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD Principles on AI"
+        "id": "urn:ngm:class:world-intellectual-property-organization",
+        "label": "World Intellectual Property Organization"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:international-organization-of-securities-commissions",
+        "label": "International Organization of Securities Commissions"
       },
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
-      },
+      }
+    ],
+    "partOf": [
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ai-generated-content",
-        "label": "AI Generated Content"
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
       },
       {
-        "id": "urn:ngm:class:software-licence",
-        "label": "Software Licence"
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
       },
       {
-        "id": "urn:ngm:class:algorithmic-accountability",
-        "label": "Algorithmic Accountability"
+        "id": "urn:ngm:class:fair-use",
+        "label": "Fair Use"
       },
       {
-        "id": "urn:ngm:class:corporate-governance",
-        "label": "Corporate Governance"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:multi-stakeholder-governance",
-        "label": "Multi-Stakeholder Governance"
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
       },
       {
         "id": "urn:ngm:class:compliance-monitoring",
@@ -266,10 +375,6 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
       }
     ]
   },

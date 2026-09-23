@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:block-header",
         "label": "Block Header"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Transaction Mempool"
       }
     ],
     "requires": [
@@ -42,6 +46,10 @@
       {
         "id": "urn:ngm:class:node",
         "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:network-node",
+        "label": "Network Node"
       }
     ],
     "enables": [
@@ -50,7 +58,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -67,6 +75,10 @@
       },
       {
         "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -241,7 +253,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -333,12 +345,12 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:decentralised-governance",
-        "label": "Decentralised Governance"
-      },
-      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:spatial-computing",

@@ -10,35 +10,282 @@
     {
       "id": "urn:ngm:class:information-theory",
       "label": "Information Theory"
+    },
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "id": "urn:ngm:class:statistical-mechanics",
+      "label": "Statistical Mechanics"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.6,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:shannon-entropy",
+        "label": "Shannon Entropy"
+      },
+      {
+        "id": "urn:ngm:class:differential-entropy",
+        "label": "Differential Entropy"
+      },
+      {
+        "id": "urn:ngm:class:joint-entropy",
+        "label": "Joint Entropy"
+      },
+      {
+        "id": "urn:ngm:class:conditional-entropy",
+        "label": "Conditional Entropy"
+      },
+      {
+        "id": "urn:ngm:class:von-neumann-entropy",
+        "label": "Von Neumann Entropy"
+      },
+      {
+        "id": "urn:ngm:class:r-nyi-entropy",
+        "label": "R\u00e9nyi Entropy"
+      },
+      {
+        "id": "urn:ngm:class:min-entropy",
+        "label": "Min-Entropy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:logarithm",
+        "label": "Logarithm"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:random-number-generation",
         "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:lossless-coding",
+        "label": "Lossless Coding"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "id": "urn:ngm:class:channel-capacity",
+        "label": "Channel Capacity"
+      },
+      {
+        "id": "urn:ngm:class:information-gain",
+        "label": "Information Gain"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:logarithm",
+        "label": "Logarithm"
+      },
+      {
+        "id": "urn:ngm:class:expectation",
+        "label": "Expectation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      },
+      {
+        "id": "urn:ngm:class:kl-divergence",
+        "label": "KL Divergence"
+      },
+      {
+        "id": "urn:ngm:class:mutual-information",
+        "label": "Mutual Information"
+      },
+      {
+        "id": "urn:ngm:class:information-gain",
+        "label": "Information Gain"
+      },
+      {
+        "id": "urn:ngm:class:information-bottleneck",
+        "label": "Information Bottleneck"
+      },
+      {
+        "id": "urn:ngm:class:evidence-lower-bound",
+        "label": "Evidence Lower Bound"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:negentropy",
+        "label": "Negentropy"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-information-theory",
+        "label": "Algorithmic Information Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:quantum-information",
+        "label": "Quantum Information"
+      },
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      },
+      {
+        "id": "urn:ngm:class:statistical-physics",
+        "label": "Statistical Physics"
+      },
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
+      },
+      {
+        "id": "urn:ngm:class:logarithm",
+        "label": "Logarithm"
+      },
+      {
+        "id": "urn:ngm:class:expectation-operator",
+        "label": "Expectation Operator"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-information-theory-society",
+        "label": "IEEE Information Theory Society"
+      },
+      {
+        "id": "urn:ngm:class:shannon-1948-a-mathematical-theory-of-communication",
+        "label": "Shannon 1948, A Mathematical Theory of Communication"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:channel-capacity",
+        "label": "Channel Capacity"
+      },
+      {
+        "id": "urn:ngm:class:mutual-information",
+        "label": "Mutual Information"
+      },
+      {
+        "id": "urn:ngm:class:kl-divergence",
+        "label": "KL Divergence"
+      },
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      },
+      {
+        "id": "urn:ngm:class:statistical-mechanics",
+        "label": "Statistical Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:coding-theory",
+        "label": "Coding Theory"
+      },
+      {
+        "id": "urn:ngm:class:rate-distortion-theory",
+        "label": "Rate-Distortion Theory"
+      }
+    ]
   },
   "inferredSuperClasses": [
     {
       "id": "urn:ngm:class:applied-mathematics",
       "label": "Applied Mathematics",
       "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:measure-theory",
+      "label": "Measure Theory",
+      "slug": "measure-theory"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -86,95 +333,115 @@
         "label": "Kullback-Leibler Divergence"
       },
       {
-        "id": "urn:ngm:class:calculus",
-        "label": "Calculus"
+        "id": "urn:ngm:class:mutual-information",
+        "label": "Mutual Information"
       },
       {
-        "id": "urn:ngm:class:control-theory",
-        "label": "Control Theory"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
-        "id": "urn:ngm:class:differential-equations",
-        "label": "Differential Equations"
+        "id": "urn:ngm:class:central-limit-theorem",
+        "label": "Central Limit Theorem"
       },
       {
-        "id": "urn:ngm:class:fourier-analysis",
-        "label": "Fourier Analysis"
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
       },
       {
-        "id": "urn:ngm:class:functional-analysis",
-        "label": "Functional Analysis"
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
-      },
       {
         "id": "urn:ngm:class:statistics",
         "label": "Statistics"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:real-analysis",
+        "label": "Real Analysis"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
       },
       {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
       },
       {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
       },
       {
-        "id": "urn:ngm:class:optimisation",
-        "label": "Optimisation"
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:data-compression",
-        "label": "Data Compression"
-      },
       {
         "id": "urn:ngm:class:error-correction",
         "label": "Error Correcting Code"
       },
       {
-        "id": "urn:ngm:class:convex-optimisation",
-        "label": "Convex Optimisation"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:numerical-methods",
-        "label": "Numerical Methods"
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
       },
       {
-        "id": "urn:ngm:class:operations-research",
-        "label": "Operations Research"
+        "id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:lebesgue-integration",
+        "label": "Lebesgue Integration"
+      },
+      {
+        "id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma-Algebra"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-science",
+        "label": "Mathematical Science"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Axiomatic Set Theory"
+      },
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
@@ -182,40 +449,130 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:deterministic-computation",
+        "label": "Deterministic Computation"
+      },
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
       {
         "id": "urn:ngm:class:network-coding",
         "label": "Network Coding"
       },
       {
-        "id": "urn:ngm:class:quantum-information",
-        "label": "Quantum Information"
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       },
       {
-        "id": "urn:ngm:class:thermodynamics",
-        "label": "Thermodynamics"
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:financial-mathematics",
+        "label": "Financial Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:random-variable",
-        "label": "Random Variable"
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence Theorems"
       },
       {
         "id": "urn:ngm:class:feature-engineering",
@@ -224,10 +581,6 @@
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ],
     "supports": [
@@ -236,12 +589,12 @@
         "label": "Feature Selection"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:bayesian-networks",
+        "label": "Bayesian Networks"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Models"
       },
       {
         "id": "urn:ngm:class:applied-machine-learning",
@@ -256,46 +609,58 @@
         "label": "Bayesian Deep Learning"
       },
       {
-        "id": "urn:ngm:class:diffusion-models",
-        "label": "Diffusion Models"
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:coding-theory",
-        "label": "Coding Theory"
-      },
       {
         "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
       },
       {
-        "id": "urn:ngm:class:mathematical-foundations",
-        "label": "Mathematical Foundations"
+        "id": "urn:ngm:class:bayesian-decision-theory",
+        "label": "Bayesian Decision Theory"
       },
       {
-        "id": "urn:ngm:class:mathematical-hard-problems",
-        "label": "Mathematical Hard Problems"
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
       },
       {
-        "id": "urn:ngm:class:mathematical-reasoning",
-        "label": "Mathematical Reasoning"
+        "id": "urn:ngm:class:information-geometry",
+        "label": "Information Geometry"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:optimal-transport",
+        "label": "Optimal Transport"
       },
       {
-        "id": "urn:ngm:class:simulation",
-        "label": "Simulation"
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ]
   },

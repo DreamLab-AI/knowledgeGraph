@@ -27,14 +27,19 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       }
     ],
@@ -133,6 +138,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [
@@ -254,6 +277,10 @@
     {
       "slug": "politics-law-privacy",
       "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
     },
     {
       "slug": "trust-and-safety",

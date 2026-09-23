@@ -92,7 +92,7 @@
         "label": "State Channel"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -101,6 +101,10 @@
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:banking-rail",
+        "label": "Banking Rail"
+      },
       {
         "id": "urn:ngm:class:kyc-aml-compliance",
         "label": "KYC/AML Compliance"
@@ -128,16 +132,16 @@
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
-      },
-      {
-        "id": "urn:ngm:class:network-security",
-        "label": "Network Security"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:e-commerce",
         "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:embedded-finance",
+        "label": "Embedded Finance"
       },
       {
         "id": "urn:ngm:class:financial-services",
@@ -162,20 +166,16 @@
       {
         "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
-      },
-      {
-        "id": "urn:ngm:class:real-time-payments",
-        "label": "Real-Time Payments"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:internet-infrastructure",
-        "label": "Internet Infrastructure"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
       },
       {
         "id": "urn:ngm:class:blockchain-infrastructure",
@@ -192,6 +192,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:adyen",
+        "label": "Adyen"
+      },
+      {
         "id": "urn:ngm:class:pay-pal",
         "label": "PayPal"
       },
@@ -204,7 +208,7 @@
         "label": "Barter System"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -218,7 +222,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -252,8 +256,12 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:rest-api",
@@ -278,10 +286,6 @@
       {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
-      },
-      {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
       }
     ],
     "supports": [
@@ -298,7 +302,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -348,6 +352,10 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:merchant-acquiring",
+        "label": "Merchant Acquiring"
+      },
+      {
         "id": "urn:ngm:class:payment-gateway",
         "label": "Payment Gateway"
       },
@@ -356,7 +364,7 @@
         "label": "PCI DSS"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -374,10 +382,6 @@
       {
         "id": "urn:ngm:class:economic-layer",
         "label": "Economic Layer"
-      },
-      {
-        "id": "urn:ngm:class:financial-regulation",
-        "label": "Financial Regulation"
       }
     ]
   },

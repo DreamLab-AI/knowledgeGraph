@@ -47,6 +47,10 @@
       {
         "id": "urn:ngm:class:task-delegation",
         "label": "Task Delegation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-reasoning",
+        "label": "Collaborative Reasoning"
       }
     ],
     "dependsOn": [],
@@ -160,6 +164,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:agent-environment",
+        "label": "Agent Environment"
+      },
+      {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
       },
@@ -186,10 +194,6 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
       }
     ],
     "requires": [
@@ -286,6 +290,22 @@
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

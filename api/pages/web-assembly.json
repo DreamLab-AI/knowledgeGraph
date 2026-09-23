@@ -10,13 +10,42 @@
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
+    },
+    {
+      "id": "urn:ngm:class:binary-instruction-format",
+      "label": "Binary Instruction Format"
+    },
+    {
+      "id": "urn:ngm:class:portable-execution-environment",
+      "label": "Portable Execution Environment"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:wasm-module",
+        "label": "Wasm Module"
+      },
+      {
+        "id": "urn:ngm:class:wasm-linear-memory",
+        "label": "Wasm Linear Memory"
+      },
+      {
+        "id": "urn:ngm:class:wasm-table",
+        "label": "Wasm Table"
+      },
+      {
+        "id": "urn:ngm:class:wasm-import-object",
+        "label": "Wasm Import Object"
+      },
+      {
+        "id": "urn:ngm:class:wasi-interface",
+        "label": "WASI Interface"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:binary-encoding",
@@ -29,6 +58,18 @@
       {
         "id": "urn:ngm:class:virtual-machine",
         "label": "Stack-Based Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Stack-Based Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding Standard"
+      },
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Host Runtime"
       }
     ],
     "enables": [
@@ -39,10 +80,44 @@
       {
         "id": "urn:ngm:class:edge-inference",
         "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:sandboxed-agent-execution",
+        "label": "Sandboxed Agent Execution"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Cross-Language Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-replay",
+        "label": "Deterministic Replay"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:llvm-compiler-toolchain",
+        "label": "LLVM Compiler Toolchain"
+      },
+      {
+        "id": "urn:ngm:class:wasmtime-runtime",
+        "label": "Wasmtime Runtime"
+      },
+      {
+        "id": "urn:ngm:class:wasmer-runtime",
+        "label": "Wasmer Runtime"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:w3c-webassembly-specification",
+        "label": "W3C WebAssembly Specification"
+      },
+      {
+        "id": "urn:ngm:class:wasi-standard",
+        "label": "WASI Standard"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [
       {
@@ -52,6 +127,18 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
       }
     ],
     "uses": [
@@ -83,6 +170,10 @@
       {
         "id": "urn:ngm:class:vision-claw-agentic-container",
         "label": "VisionClaw Agentic Container"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing Stack"
       }
     ],
     "relatedTo": [
@@ -216,7 +307,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

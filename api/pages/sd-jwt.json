@@ -23,7 +23,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -169,7 +169,7 @@
         "label": "Secure Multi-Party Computation"
       },
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       },
       {
@@ -273,6 +273,10 @@
       {
         "id": "urn:ngm:class:bearer-token",
         "label": "Bearer Token"
+      },
+      {
+        "id": "urn:ngm:class:full-credential-presentation",
+        "label": "Full Credential Presentation"
       },
       {
         "id": "urn:ngm:class:anonymisation",

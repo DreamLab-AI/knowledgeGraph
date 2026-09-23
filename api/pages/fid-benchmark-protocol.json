@@ -14,6 +14,18 @@
     {
       "id": "urn:ngm:class:benchmarks",
       "label": "Benchmarks"
+    },
+    {
+      "id": "urn:ngm:class:benchmarks",
+      "label": "Benchmark"
+    },
+    {
+      "id": "urn:ngm:class:image-quality-assessment",
+      "label": "Image Quality Assessment"
+    },
+    {
+      "id": "urn:ngm:class:distributional-similarity-metric",
+      "label": "Distributional Similarity Metric"
     }
   ],
   "entityType": "Class",
@@ -38,8 +50,24 @@
         "label": "Clean-FID"
       },
       {
-        "id": "urn:ngm:class:precision-recall",
+        "id": "urn:ngm:class:precision-recall-curve",
         "label": "Precision-Recall"
+      },
+      {
+        "id": "urn:ngm:class:fr-chet-distance",
+        "label": "Fr\u00e9chet Distance"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-distribution-estimator",
+        "label": "Gaussian Distribution Estimator"
+      },
+      {
+        "id": "urn:ngm:class:matrix-square-root",
+        "label": "Matrix Square Root"
+      },
+      {
+        "id": "urn:ngm:class:reference-statistics-cache",
+        "label": "Reference Statistics Cache"
       }
     ],
     "requires": [
@@ -58,6 +86,26 @@
       {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:imagenet",
+        "label": "ImageNet"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:training-data-distribution",
+        "label": "Training Data Distribution"
       }
     ],
     "enables": [
@@ -76,9 +124,46 @@
       {
         "id": "urn:ngm:class:medical-image-synthesis",
         "label": "Medical Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:video-synthesis",
+        "label": "Video Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:game-asset-generation",
+        "label": "Game Asset Generation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inception-v3",
+        "label": "Inception v3"
+      },
+      {
+        "id": "urn:ngm:class:imagenet",
+        "label": "ImageNet"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:frechet-distance",
@@ -87,6 +172,18 @@
       {
         "id": "urn:ngm:class:wasserstein-distance",
         "label": "Wasserstein Distance"
+      },
+      {
+        "id": "urn:ngm:class:fr-chet-distance",
+        "label": "Fr\u00e9chet Distance"
+      },
+      {
+        "id": "urn:ngm:class:optimal-transport",
+        "label": "Optimal Transport"
+      },
+      {
+        "id": "urn:ngm:class:kernel-maximum-mean-discrepancy",
+        "label": "Kernel Maximum Mean Discrepancy"
       }
     ],
     "contrastsWith": [
@@ -97,6 +194,14 @@
       {
         "id": "urn:ngm:class:cmmd",
         "label": "CMMD"
+      },
+      {
+        "id": "urn:ngm:class:kernel-inception-distance",
+        "label": "Kernel Inception Distance"
+      },
+      {
+        "id": "urn:ngm:class:perceptual-image-patch-similarity",
+        "label": "Perceptual Image Patch Similarity"
       }
     ],
     "bridgesTo": [],
@@ -116,6 +221,18 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "supports": [
@@ -128,12 +245,28 @@
         "label": "Generative Adversarial Networks"
       },
       {
-        "id": "urn:ngm:class:variational-autoencoder",
+        "id": "urn:ngm:class:vae",
         "label": "Variational Autoencoder"
       },
       {
         "id": "urn:ngm:class:text-to-image",
         "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:score-based-model",
+        "label": "Score-Based Model"
+      },
+      {
+        "id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
       }
     ],
     "standardizedBy": [
@@ -144,6 +277,14 @@
       {
         "id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
       }
     ],
     "partOf": [],
@@ -167,6 +308,30 @@
       {
         "id": "urn:ngm:class:frechet-video-distance",
         "label": "Fr\u00e9chet Video Distance"
+      },
+      {
+        "id": "urn:ngm:class:fr-chet-audio-distance",
+        "label": "Fr\u00e9chet Audio Distance"
+      },
+      {
+        "id": "urn:ngm:class:fr-chet-video-distance",
+        "label": "Fr\u00e9chet Video Distance"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       }
     ]
   },
@@ -182,9 +347,19 @@
       "slug": "evaluation-benchmarks-and-leaderboards"
     },
     {
+      "id": "urn:ngm:class:measurement-theory",
+      "label": "Measurement Theory",
+      "slug": "measurement-theory"
+    },
+    {
       "id": "urn:ngm:class:performance-metrics",
       "label": "Performance Metrics",
       "slug": "performance-metrics"
+    },
+    {
+      "id": "urn:ngm:class:reproducibility",
+      "label": "Reproducibility",
+      "slug": "reproducibility"
     },
     {
       "id": "urn:ngm:class:ai-evaluation",
@@ -202,14 +377,64 @@
       "slug": "artificial-intelligence"
     },
     {
+      "id": "urn:ngm:class:capability-assessment",
+      "label": "Capability Assessment",
+      "slug": "capability-assessment"
+    },
+    {
+      "id": "urn:ngm:class:empirical-methodology",
+      "label": "Empirical Methodology",
+      "slug": "empirical-methodology"
+    },
+    {
+      "id": "urn:ngm:class:measurement",
+      "label": "Measurement",
+      "slug": "measurement"
+    },
+    {
       "id": "urn:ngm:class:model-evaluation",
       "label": "Model Evaluation",
       "slug": "model-evaluation"
     },
     {
-      "id": "urn:ngm:class:machine-learning",
-      "label": "Machine Learning",
-      "slug": "machine-learning"
+      "id": "urn:ngm:class:quality-assurance",
+      "label": "Quality Assurance",
+      "slug": "quality-assurance"
+    },
+    {
+      "id": "urn:ngm:class:standardised-testing",
+      "label": "Standardised Testing",
+      "slug": "standardised-testing"
+    },
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety",
+      "slug": "ai-safety"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -223,6 +448,18 @@
         "label": "AUC-ROC"
       },
       {
+        "id": "urn:ngm:class:bertscore",
+        "label": "BERTScore"
+      },
+      {
+        "id": "urn:ngm:class:bleu-score",
+        "label": "BLEU"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
         "id": "urn:ngm:class:f1-score",
         "label": "F1 Score"
       },
@@ -231,23 +468,15 @@
         "label": "Fairness Metrics"
       },
       {
-        "id": "urn:ngm:class:loss-function",
-        "label": "Loss Function"
-      },
-      {
-        "id": "urn:ngm:class:precision",
-        "label": "Precision"
-      },
-      {
-        "id": "urn:ngm:class:recall",
-        "label": "Recall"
-      },
-      {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:frechet-inception-distance",
+        "label": "Frechet Inception Distance"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:annotation-schema",
+        "label": "Annotation Schema"
+      },
       {
         "id": "urn:ngm:class:evaluation-harness",
         "label": "Evaluation Protocol"
@@ -261,30 +490,34 @@
         "label": "Test Dataset"
       },
       {
+        "id": "urn:ngm:class:annotation-pipelines",
+        "label": "Annotation Pipelines"
+      },
+      {
+        "id": "urn:ngm:class:data-curation",
+        "label": "Data Curation"
+      },
+      {
         "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
       },
       {
-        "id": "urn:ngm:class:compute-infrastructure",
-        "label": "Compute Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:reference-model",
-        "label": "Reference Model"
-      },
-      {
-        "id": "urn:ngm:class:statistical-testing",
-        "label": "Statistical Significance Testing"
-      },
-      {
-        "id": "urn:ngm:class:benchmarking",
-        "label": "Benchmarking"
+        "id": "urn:ngm:class:held-out-test-sets",
+        "label": "Held-Out Test Sets"
       }
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
         "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:leaderboard",
+        "label": "Leaderboard"
       },
       {
         "id": "urn:ngm:class:model-comparison",
@@ -295,57 +528,81 @@
         "label": "Model Selection"
       },
       {
+        "id": "urn:ngm:class:production-monitoring",
+        "label": "Production Monitoring"
+      },
+      {
         "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Leaderboards"
       },
       {
         "id": "urn:ngm:class:model-evaluation-results",
         "label": "Model Evaluation Results"
-      },
-      {
-        "id": "urn:ngm:class:model-performance",
-        "label": "Model Performance"
-      },
-      {
-        "id": "urn:ngm:class:reproducibility",
-        "label": "Reproducibility"
-      },
-      {
-        "id": "urn:ngm:class:capability-elicitation",
-        "label": "Capability Elicitation"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:held-out-data",
+        "label": "Held-Out Data"
+      },
+      {
+        "id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Significance Testing"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:annotation-pipelines",
+        "label": "Annotation Pipelines"
+      },
       {
         "id": "urn:ngm:class:data-curation",
         "label": "Data Curation"
       },
       {
-        "id": "urn:ngm:class:audit-logging",
-        "label": "Logging"
+        "id": "urn:ngm:class:construct-validity",
+        "label": "Construct Validity"
       },
       {
-        "id": "urn:ngm:class:observability",
-        "label": "Observability"
+        "id": "urn:ngm:class:human-annotation",
+        "label": "Human Annotation"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
-        "label": "Machine Learning Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:empirical-evaluation",
+        "label": "Empirical Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Scientific Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Protocol"
+      },
+      {
+        "id": "urn:ngm:class:scoring-function",
+        "label": "Scoring Function"
+      },
+      {
+        "id": "urn:ngm:class:task-formulation",
+        "label": "Task Formulation"
+      },
+      {
+        "id": "urn:ngm:class:bradley-terry-aggregation",
+        "label": "Bradley-Terry Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:contamination-detection",
+        "label": "Contamination Detection"
+      },
       {
         "id": "urn:ngm:class:cross-validation",
         "label": "Cross-Validation"
@@ -361,31 +618,35 @@
         "label": "Objective Function"
       },
       {
+        "id": "urn:ngm:class:training-signal",
+        "label": "Training Signal"
+      },
+      {
+        "id": "urn:ngm:class:ablation-studies",
+        "label": "Ablation Studies"
+      },
+      {
         "id": "urn:ngm:class:human-evaluation",
         "label": "Human Evaluation"
       },
       {
-        "id": "urn:ngm:class:model-evaluation-results",
-        "label": "Model Evaluation Results"
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A-B Testing"
       },
       {
-        "id": "urn:ngm:class:benchmark-contamination",
-        "label": "Benchmark Contamination"
+        "id": "urn:ngm:class:academic-peer-review",
+        "label": "Academic Peer Review"
       },
       {
-        "id": "urn:ngm:class:benchmark-saturation",
-        "label": "Benchmark Saturation"
-      },
-      {
-        "id": "urn:ngm:class:model-training",
-        "label": "Model Training"
-      },
-      {
-        "id": "urn:ngm:class:overfitting",
-        "label": "Overfitting"
+        "id": "urn:ngm:class:real-world-deployment-evaluation",
+        "label": "Real-World Deployment Evaluation"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
       {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
@@ -393,6 +654,14 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:hardware-performance",
+        "label": "Hardware Performance"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -405,58 +674,50 @@
       {
         "id": "urn:ngm:class:energy-efficiency",
         "label": "Energy Efficiency"
-      },
-      {
-        "id": "urn:ngm:class:service-level-agreement",
-        "label": "Service Level Agreement"
-      },
-      {
-        "id": "urn:ngm:class:audit-and-compliance",
-        "label": "Audit and Compliance"
-      },
-      {
-        "id": "urn:ngm:class:smart-grid",
-        "label": "Smart Grid"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:inter-annotator-agreement",
+        "label": "Inter-Annotator Agreement"
+      },
+      {
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "id": "urn:ngm:class:statistical-hypothesis-testing",
+        "label": "Statistical Hypothesis Testing"
+      },
+      {
+        "id": "urn:ngm:class:datasets",
+        "label": "Datasets"
+      },
       {
         "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
       },
       {
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
         "id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metrics"
-      },
-      {
-        "id": "urn:ngm:class:statistical-testing",
-        "label": "Statistical Testing"
-      },
-      {
-        "id": "urn:ngm:class:crowdsourcing",
-        "label": "Crowdsourcing"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:multimodal-ai-architecture-models",
-        "label": "Multimodal Models"
-      },
-      {
-        "id": "urn:ngm:class:vision-language-model",
-        "label": "Vision Language Model"
-      },
-      {
-        "id": "urn:ngm:class:performance-benchmarks",
-        "label": "Performance Benchmarks"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:ai-safety",
@@ -471,30 +732,26 @@
         "label": "Model Training"
       },
       {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
       },
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
-      },
-      {
-        "id": "urn:ngm:class:model-selection",
-        "label": "Model Selection"
-      },
-      {
-        "id": "urn:ngm:class:capability-forecasting",
-        "label": "Capability Forecasting"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:evaluation-harness",
-        "label": "EleutherAI lm-evaluation-harness"
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:iso-iec-23053",
-        "label": "ISO-IEC 23053"
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO IEC 22989 2022"
       },
       {
         "id": "urn:ngm:class:mlcommons",
@@ -505,12 +762,38 @@
         "label": "NIST AI RMF"
       },
       {
-        "id": "urn:ngm:class:uk-ai-safety-institute",
-        "label": "UK AI Safety Institute"
+        "id": "urn:ngm:class:spec",
+        "label": "SPEC"
       },
       {
-        "id": "urn:ngm:class:iso-iec-23053-2022",
-        "label": "ISO-IEC 23053 2022"
+        "id": "urn:ngm:class:evaluation-harness",
+        "label": "EleutherAI lm-evaluation-harness"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053",
+        "label": "ISO-IEC 23053"
+      },
+      {
+        "id": "urn:ngm:class:stanford-crfm-helm",
+        "label": "Stanford CRFM HELM"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:empirical-research",
+        "label": "Empirical Research"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-research-infrastructure",
+        "label": "Machine Learning Research Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ],
     "relatedTo": [
@@ -527,24 +810,24 @@
         "label": "Calibration"
       },
       {
+        "id": "urn:ngm:class:data-drift",
+        "label": "Data Drift"
+      },
+      {
+        "id": "urn:ngm:class:distributional-shift",
+        "label": "Distributional Shift"
+      },
+      {
+        "id": "urn:ngm:class:goodhart-s-law",
+        "label": "Goodhart's Law"
+      },
+      {
         "id": "urn:ngm:class:goodharts-law",
         "label": "Goodhart's Law"
       },
       {
         "id": "urn:ngm:class:model-evaluation-results",
         "label": "Model Evaluation Results"
-      },
-      {
-        "id": "urn:ngm:class:model-performance",
-        "label": "Model Performance"
-      },
-      {
-        "id": "urn:ngm:class:adversarial-testing",
-        "label": "Adversarial Testing"
-      },
-      {
-        "id": "urn:ngm:class:bias-and-fairness",
-        "label": "Bias and Fairness"
       }
     ]
   },

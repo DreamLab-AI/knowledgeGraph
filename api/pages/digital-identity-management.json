@@ -44,8 +44,16 @@
         "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:identity-providers",
+        "label": "Identity Providers"
+      },
+      {
+        "id": "urn:ngm:class:credential-storage",
+        "label": "Credential Storage"
       }
     ],
     "enables": [
@@ -68,6 +76,10 @@
       {
         "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:privacy-control",
+        "label": "Privacy Control"
       }
     ],
     "dependsOn": [],
@@ -128,7 +140,7 @@
         "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       }
     ]
@@ -148,7 +160,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:blockchain-protocol",
       "label": "Blockchain Protocol"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "entityType": "Class",
@@ -73,7 +77,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
       },
       {
@@ -110,7 +114,12 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:bitcoin",
@@ -137,14 +146,169 @@
       "slug": "bc-protocol-and-consensus"
     },
     {
+      "id": "urn:ngm:class:consensus-algorithm",
+      "label": "Consensus Algorithm",
+      "slug": "consensus-algorithm"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol",
+      "slug": "cryptographic-protocol"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system-protocol",
+      "label": "Distributed System Protocol",
+      "slug": "distributed-system-protocol"
+    },
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol",
+      "slug": "network-protocol"
+    },
+    {
       "id": "urn:ngm:class:peerto-peer-protocol",
       "label": "Peerto Peer Protocol",
       "slug": "peerto-peer-protocol"
     },
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:protocol-layer",
+      "label": "Protocol Layer",
+      "slug": "protocol-layer"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     }
   ],
   "inheritedRelations": {
@@ -196,6 +360,10 @@
         "label": "Cryptographic Primitive"
       },
       {
+        "id": "urn:ngm:class:economic-incentives",
+        "label": "Economic Incentives"
+      },
+      {
         "id": "urn:ngm:class:network-synchronization",
         "label": "Network Synchronization"
       },
@@ -204,16 +372,12 @@
         "label": "Peer-to-Peer Network"
       },
       {
+        "id": "urn:ngm:class:state-database",
+        "label": "State Database"
+      },
+      {
         "id": "urn:ngm:class:transaction-pool",
         "label": "Transaction Pool"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
       }
     ],
     "enables": [
@@ -224,6 +388,14 @@
       {
         "id": "urn:ngm:class:censorship-resistance",
         "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-consensus",
+        "label": "Decentralized Consensus"
+      },
+      {
+        "id": "urn:ngm:class:defi-applications",
+        "label": "DeFi Applications"
       },
       {
         "id": "urn:ngm:class:double-spend-prevention",
@@ -240,14 +412,40 @@
       {
         "id": "urn:ngm:class:smart-contract-execution",
         "label": "Smart Contract Execution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
       },
       {
-        "id": "urn:ngm:class:tokenization",
-        "label": "Tokenization"
+        "id": "urn:ngm:class:digital-signature-scheme",
+        "label": "Digital Signature Scheme"
       },
       {
-        "id": "urn:ngm:class:trustless-execution",
-        "label": "Trustless Execution"
+        "id": "urn:ngm:class:economic-model",
+        "label": "Economic Model"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree Structure"
+      },
+      {
+        "id": "urn:ngm:class:networking-stack",
+        "label": "Networking Stack"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
       }
     ],
     "implements": [
@@ -258,6 +456,10 @@
       {
         "id": "urn:ngm:class:consensus-algorithm",
         "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:fee-mechanism",
+        "label": "Fee Mechanism"
       },
       {
         "id": "urn:ngm:class:governance-voting",
@@ -278,16 +480,210 @@
       {
         "id": "urn:ngm:class:state-machine-replication",
         "label": "State Machine Replication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
       },
       {
-        "id": "urn:ngm:class:transaction-ordering",
-        "label": "Transaction Ordering"
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:centralised-ledger",
+        "label": "Centralised Ledger"
+      },
+      {
+        "id": "urn:ngm:class:cloud-database",
+        "label": "Cloud Database"
+      },
+      {
+        "id": "urn:ngm:class:federated-database",
+        "label": "Federated Database"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
         "id": "urn:ngm:class:distributed-system-protocol",
         "label": "Distributed System Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum-Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:ed-dsa",
+        "label": "EdDSA"
+      },
+      {
+        "id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:hash-pointers",
+        "label": "Hash Pointers"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:retail-cbdc",
+        "label": "Retail CBDC"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-post-quantum-cryptography",
+        "label": "NIST Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography Standards"
+      },
+      {
+        "id": "urn:ngm:class:eu-dlt-pilot-regime",
+        "label": "EU DLT Pilot Regime"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2418",
+        "label": "IEEE P2418"
+      },
+      {
+        "id": "urn:ngm:class:isda-common-domain-model",
+        "label": "ISDA Common Domain Model"
+      },
+      {
+        "id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
       }
     ],
     "relatedTo": [
@@ -304,16 +700,24 @@
         "label": "Blockchain Scalability"
       },
       {
-        "id": "urn:ngm:class:distributed-ledger-technology",
-        "label": "Distributed Ledger Technology"
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
       },
       {
-        "id": "urn:ngm:class:network-protocol",
-        "label": "Network Protocol"
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
       }
     ]
   },

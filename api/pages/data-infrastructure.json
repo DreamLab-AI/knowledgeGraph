@@ -12,7 +12,7 @@
       "label": "Infrastructure"
     },
     {
-      "id": "urn:ngm:class:infra-data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management (Infrastructure)"
     }
   ],
@@ -88,7 +88,7 @@
         "label": "Business Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -133,12 +133,12 @@
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
       },
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "requires": [
@@ -153,6 +153,18 @@
       {
         "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "enables": [
@@ -175,12 +187,28 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -191,6 +219,14 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
       }
     ],
     "supports": [
@@ -205,6 +241,14 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "standardizedBy": [
@@ -215,6 +259,14 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
       }
     ],
     "relatedTo": [
@@ -231,12 +283,20 @@
         "label": "Microservices"
       },
       {
-        "id": "urn:ngm:class:infra-computing-and-cloud",
-        "label": "Computing and Cloud"
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
+      },
+      {
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       }
     ]
   },

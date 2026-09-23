@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:mel-spectrogram",
+        "label": "Mel-Spectrogram"
       }
     ],
     "enables": [
@@ -35,6 +39,22 @@
       {
         "id": "urn:ngm:class:accessibility",
         "label": "Accessibility Technology"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistant",
+        "label": "Personalised Voice Assistant"
+      },
+      {
+        "id": "urn:ngm:class:audiobook-narration",
+        "label": "Audiobook Narration"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility Technology"
+      },
+      {
+        "id": "urn:ngm:class:audio-deepfake",
+        "label": "Audio Deepfake"
       }
     ],
     "dependsOn": [],
@@ -43,6 +63,10 @@
       {
         "id": "urn:ngm:class:voice-conversion",
         "label": "Voice Conversion"
+      },
+      {
+        "id": "urn:ngm:class:concatenative-synthesis",
+        "label": "Concatenative Synthesis"
       }
     ],
     "bridgesTo": [
@@ -79,6 +103,10 @@
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:vocoder",
+        "label": "Vocoder"
       }
     ],
     "supports": [],
@@ -270,6 +298,22 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

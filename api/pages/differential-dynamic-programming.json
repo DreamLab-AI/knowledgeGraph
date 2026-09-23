@@ -61,9 +61,39 @@
       "slug": "robo-actuation-and-control"
     },
     {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -81,6 +111,10 @@
         "label": "Setpoint"
       },
       {
+        "id": "urn:ngm:class:actuator-driver",
+        "label": "Actuator Driver"
+      },
+      {
         "id": "urn:ngm:class:controller",
         "label": "Controller"
       },
@@ -95,10 +129,6 @@
       {
         "id": "urn:ngm:class:actuator",
         "label": "Actuator"
-      },
-      {
-        "id": "urn:ngm:class:adaptive-control",
-        "label": "Adaptive Control"
       }
     ],
     "requires": [
@@ -115,6 +145,10 @@
         "label": "State Space Representation"
       },
       {
+        "id": "urn:ngm:class:system-dynamics-model",
+        "label": "System Dynamics Model"
+      },
+      {
         "id": "urn:ngm:class:actuator",
         "label": "Actuator"
       },
@@ -129,10 +163,6 @@
       {
         "id": "urn:ngm:class:sensor-system",
         "label": "Sensor System"
-      },
-      {
-        "id": "urn:ngm:class:stability",
-        "label": "Stability"
       }
     ],
     "enables": [
@@ -145,7 +175,7 @@
         "label": "Motion Planning"
       },
       {
-        "id": "urn:ngm:class:trajectory-generation",
+        "id": "urn:ngm:class:rb-1007-trajectory-generation",
         "label": "Trajectory Generation"
       },
       {
@@ -157,16 +187,16 @@
         "label": "Disturbance Rejection"
       },
       {
-        "id": "urn:ngm:class:rb-1007-trajectory-generation",
-        "label": "Trajectory Generation"
-      },
-      {
         "id": "urn:ngm:class:rb-1013-localization",
         "label": "Localization"
       },
       {
         "id": "urn:ngm:class:adaptive-behaviour",
         "label": "Adaptive Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
       }
     ],
     "dependsOn": [
@@ -185,6 +215,22 @@
       {
         "id": "urn:ngm:class:state-estimation",
         "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
     "implements": [
@@ -213,11 +259,35 @@
       {
         "id": "urn:ngm:class:open-loop-control",
         "label": "Open-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:rb-1001-open-loop-control",
+        "label": "RB-1001-open-loop-control"
+      },
+      {
+        "id": "urn:ngm:class:virtual-agent",
+        "label": "Virtual Agent"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -235,6 +305,18 @@
       {
         "id": "urn:ngm:class:robotic-system",
         "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "uses": [
@@ -251,6 +333,10 @@
         "label": "Model Predictive Control"
       },
       {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
         "id": "urn:ngm:class:actuator",
         "label": "Actuator"
       },
@@ -265,10 +351,6 @@
       {
         "id": "urn:ngm:class:state-space-representation",
         "label": "State Space Representation"
-      },
-      {
-        "id": "urn:ngm:class:encoder",
-        "label": "Encoder"
       }
     ],
     "supports": [
@@ -287,12 +369,48 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:iso-8373-2021",
         "label": "ISO 8373:2021"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "partOf": [
@@ -329,6 +447,14 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },

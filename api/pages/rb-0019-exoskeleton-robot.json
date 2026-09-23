@@ -78,6 +78,26 @@
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:wearable-robotics",
+      "label": "Wearable Robotics",
+      "slug": "wearable-robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -139,9 +159,29 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:biomechanics",
+        "label": "Biomechanics"
+      },
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:accessibility-in-harsh-environments",
+        "label": "Accessibility in Harsh Environments"
+      },
+      {
+        "id": "urn:ngm:class:injury-prevention",
+        "label": "Injury Prevention"
+      },
+      {
+        "id": "urn:ngm:class:worker-productivity",
+        "label": "Worker Productivity"
+      },
       {
         "id": "urn:ngm:class:autonomous-manufacturing",
         "label": "Autonomous Manufacturing"
@@ -161,10 +201,168 @@
       {
         "id": "urn:ngm:class:smart-manufacturing",
         "label": "Smart Manufacturing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:warehouse-automation",
-        "label": "Warehouse Automation"
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-augmentation-system",
+        "label": "Human Augmentation System"
+      },
+      {
+        "id": "urn:ngm:class:occupational-safety-equipment",
+        "label": "Occupational Safety Equipment"
       }
     ],
     "relatedTo": [
@@ -179,6 +377,26 @@
       {
         "id": "urn:ngm:class:robo-safety-and-standards",
         "label": "Safety and Standards"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
       }
     ]
   },

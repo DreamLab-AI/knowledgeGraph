@@ -35,6 +35,10 @@
       {
         "id": "urn:ngm:class:esg-reporting",
         "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
       }
     ],
     "dependsOn": [
@@ -125,6 +129,11 @@
       "slug": "infra-legal-and-regulatory"
     },
     {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
@@ -205,6 +214,10 @@
         "label": "Carbon Offsetting"
       },
       {
+        "id": "urn:ngm:class:climate-action-planning",
+        "label": "Climate Action Planning"
+      },
+      {
         "id": "urn:ngm:class:emissions-reporting",
         "label": "Emissions Reporting"
       },
@@ -227,10 +240,6 @@
       {
         "id": "urn:ngm:class:stakeholder-engagement",
         "label": "Stakeholder Engagement"
-      },
-      {
-        "id": "urn:ngm:class:transparency",
-        "label": "Transparency"
       }
     ],
     "dependsOn": [

@@ -272,6 +272,14 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:email-system",
+        "label": "Email System"
+      },
+      {
+        "id": "urn:ngm:class:point-to-point-communication",
+        "label": "Point-to-Point Communication"
+      },
+      {
         "id": "urn:ngm:class:centralised-computing",
         "label": "Centralised Computing"
       },
@@ -298,16 +306,16 @@
         "label": "Metaverse and Telecollaboration"
       },
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -354,6 +362,10 @@
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:compliance-and-governance",
+        "label": "Compliance and Governance"
+      },
+      {
         "id": "urn:ngm:class:enterprise-security",
         "label": "Enterprise Security"
       },
@@ -380,10 +392,6 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
       }
     ],
     "standardizedBy": [

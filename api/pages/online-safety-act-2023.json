@@ -46,6 +46,10 @@
       {
         "id": "urn:ngm:class:age-verification",
         "label": "Age Assurance"
+      },
+      {
+        "id": "urn:ngm:class:age-verification",
+        "label": "Age Assurance"
       }
     ],
     "enables": [
@@ -76,12 +80,20 @@
       {
         "id": "urn:ngm:class:platform-governance",
         "label": "Platform Governance"
+      },
+      {
+        "id": "urn:ngm:class:online-harm-reduction",
+        "label": "Online Harm Reduction"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:digital-services-act",
         "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:first-amendment-doctrine",
+        "label": "First Amendment Doctrine"
       }
     ],
     "bridgesTo": [
@@ -106,7 +118,12 @@
         "label": "Regulatory Framework"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:uk-technology-policy",
+        "label": "UK Technology Policy"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:digital-safety",
@@ -119,6 +136,14 @@
       {
         "id": "urn:ngm:class:csam-detection",
         "label": "CSAM Detection"
+      },
+      {
+        "id": "urn:ngm:class:illegal-content",
+        "label": "Illegal Content"
+      },
+      {
+        "id": "urn:ngm:class:age-appropriate-design-code",
+        "label": "Age Appropriate Design Code"
       }
     ]
   },
@@ -244,6 +269,10 @@
     ],
     "dependsOn": [
       {
+        "id": "urn:ngm:class:enforcement",
+        "label": "Enforcement"
+      },
+      {
         "id": "urn:ngm:class:policy-framework",
         "label": "Policy Framework"
       },
@@ -268,6 +297,10 @@
       {
         "id": "urn:ngm:class:self-regulation",
         "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
       },
       {
         "id": "urn:ngm:class:self-organisation",
@@ -386,8 +419,8 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
       }
     ]
   },

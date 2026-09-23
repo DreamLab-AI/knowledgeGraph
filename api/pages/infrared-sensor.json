@@ -12,12 +12,20 @@
       "label": "Perception and Sensing"
     },
     {
-      "id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
+      "id": "urn:ngm:class:exteroceptive-sensor",
+      "label": "ExteroceptiveSensor"
     },
     {
-      "id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
+      "id": "urn:ngm:class:optoelectronicdevice",
+      "label": "OptoelectronicDevice"
+    },
+    {
+      "id": "urn:ngm:class:proximity-sensor",
+      "label": "ProximitySensor"
+    },
+    {
+      "id": "urn:ngm:class:thermalimager",
+      "label": "ThermalImager"
     }
   ],
   "entityType": "Class",
@@ -32,6 +40,30 @@
       {
         "id": "urn:ngm:class:signal-amplifier",
         "label": "Signal Amplifier"
+      },
+      {
+        "id": "urn:ngm:class:iremitter",
+        "label": "IREmitter"
+      },
+      {
+        "id": "urn:ngm:class:irreceiver",
+        "label": "IRReceiver"
+      },
+      {
+        "id": "urn:ngm:class:opticalfilter",
+        "label": "OpticalFilter"
+      },
+      {
+        "id": "urn:ngm:class:signalamplifier",
+        "label": "SignalAmplifier"
+      },
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "AnalogDigitalConverter"
+      },
+      {
+        "id": "urn:ngm:class:lensassembly",
+        "label": "LensAssembly"
       }
     ],
     "requires": [
@@ -46,6 +78,22 @@
       {
         "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "PowerSupply"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "SignalProcessing"
+      },
+      {
+        "id": "urn:ngm:class:opticalalignment",
+        "label": "OpticalAlignment"
+      },
+      {
+        "id": "urn:ngm:class:temperaturecompensation",
+        "label": "TemperatureCompensation"
       }
     ],
     "enables": [
@@ -60,6 +108,30 @@
       {
         "id": "urn:ngm:class:presence-detection",
         "label": "Presence Detection"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "ObstacleAvoidance"
+      },
+      {
+        "id": "urn:ngm:class:linefollowing",
+        "label": "LineFollowing"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "GestureRecognition"
+      },
+      {
+        "id": "urn:ngm:class:presence-detection",
+        "label": "PresenceDetection"
+      },
+      {
+        "id": "urn:ngm:class:thermalinspection",
+        "label": "ThermalInspection"
+      },
+      {
+        "id": "urn:ngm:class:navigationcontrol",
+        "label": "NavigationControl"
       }
     ],
     "dependsOn": [],
@@ -74,9 +146,59 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:environmental-sensor",
+      "label": "Environmental Sensor",
+      "slug": "environmental-sensor"
+    },
+    {
+      "id": "urn:ngm:class:perception-transducer",
+      "label": "Perception Transducer",
+      "slug": "perception-transducer"
+    },
+    {
+      "id": "urn:ngm:class:robot-sensor",
+      "label": "Robot Sensor",
+      "slug": "robot-sensor"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor",
+      "slug": "sensor"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component",
+      "slug": "hardware-component"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -110,11 +232,35 @@
         "label": "Tactile Sensor"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:calibration-target",
+        "label": "Calibration Target"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:computational-processing",
+        "label": "Computational Processing"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frame"
+      },
+      {
+        "id": "urn:ngm:class:sensor-driver",
+        "label": "Sensor Driver"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
       {
         "id": "urn:ngm:class:actuators",
         "label": "Actuators"
@@ -122,10 +268,6 @@
       {
         "id": "urn:ngm:class:control-system",
         "label": "Control System"
-      },
-      {
-        "id": "urn:ngm:class:kinematics",
-        "label": "Kinematics"
       }
     ],
     "enables": [
@@ -138,28 +280,296 @@
         "label": "Motion Planning"
       },
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
+        "id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:visual-servoing",
+        "label": "VisualServoing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Photometric Calibration"
+      },
+      {
+        "id": "urn:ngm:class:environmental-properties",
+        "label": "Environmental Properties"
+      },
+      {
+        "id": "urn:ngm:class:geometric-calibration",
+        "label": "Geometric Calibration"
+      },
+      {
+        "id": "urn:ngm:class:sensor-noise-characteristics",
+        "label": "Sensor Noise Characteristics"
+      },
+      {
+        "id": "urn:ngm:class:time-of-flight-principle",
+        "label": "Time-of-Flight Principle"
+      },
+      {
+        "id": "urn:ngm:class:wave-propagation",
+        "label": "Wave Propagation"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "Robot Operating System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:acoustic-sensing",
+        "label": "Acoustic Sensing"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-sensing",
+        "label": "Event-Driven Sensing"
+      },
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar Sensing"
+      },
+      {
+        "id": "urn:ngm:class:range-sensing",
+        "label": "Range Sensing"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "id": "urn:ngm:class:thermal-sensing",
+        "label": "Thermal Sensing"
+      },
+      {
+        "id": "urn:ngm:class:vision-sensing",
+        "label": "Vision Sensing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:interoceptive-sensor",
+        "label": "Interoceptive Sensor"
+      },
+      {
+        "id": "urn:ngm:class:proprioceptive-sensor",
+        "label": "Proprioceptive Sensor"
+      },
+      {
+        "id": "urn:ngm:class:virtual-sensor",
+        "label": "Virtual Sensor"
+      },
+      {
+        "id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:component",
+        "label": "Software Component"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:environmental-sensor",
+        "label": "Environmental Sensor"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:drone-navigation",
+        "label": "Drone Navigation"
       },
       {
         "id": "urn:ngm:class:humanoid-robotics",
         "label": "Humanoid Robotics"
       },
       {
-        "id": "urn:ngm:class:industrial-automation",
-        "label": "IndustrialAutomation"
+        "id": "urn:ngm:class:mobile-manipulation",
+        "label": "Mobile Manipulation"
       },
       {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
       },
       {
-        "id": "urn:ngm:class:smart-manufacturing",
-        "label": "Smart Manufacturing"
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
       },
       {
-        "id": "urn:ngm:class:warehouse-automation",
-        "label": "Warehouse Automation"
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61496",
+        "label": "IEC 61496"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iso-21448",
+        "label": "ISO 21448 SOTIF"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "ROS sensor_msgs"
+      },
+      {
+        "id": "urn:ngm:class:sae-j-3016",
+        "label": "SAE J3016"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
       }
     ],
     "relatedTo": [
@@ -178,6 +588,22 @@
       {
         "id": "urn:ngm:class:visual-odometry",
         "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:3-d-perception",
+        "label": "3D Perception"
+      },
+      {
+        "id": "urn:ngm:class:bird-s-eye-view-perception",
+        "label": "Bird's-Eye-View Perception"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:multi-modal-learning",
+        "label": "Multi-Modal Learning"
       }
     ]
   },

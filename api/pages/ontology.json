@@ -28,12 +28,20 @@
       {
         "id": "urn:ngm:class:data-property",
         "label": "Data Property"
+      },
+      {
+        "id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "Class Hierarchy"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:formal-language",
         "label": "Formal Language"
+      },
+      {
+        "id": "urn:ngm:class:axiom",
+        "label": "Axiom"
       }
     ],
     "enables": [
@@ -96,11 +104,19 @@
       {
         "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logics"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
       {
         "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
@@ -252,6 +268,18 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -321,7 +349,7 @@
     },
     {
       "slug": "complete-ontology-index",
-      "label": "COMPLETE ONTOLOGY [private]"
+      "label": "COMPLETE ONTOLOGY INDEX"
     },
     {
       "slug": "classification-rules",

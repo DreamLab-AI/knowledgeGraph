@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai-application",
+      "label": "Generative AI Application"
+    },
+    {
+      "id": "urn:ngm:class:llm-powered-tool",
+      "label": "LLM-Powered Tool"
+    },
+    {
+      "id": "urn:ngm:class:diagram-as-code",
+      "label": "Diagram-as-Code"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-visualisation",
+      "label": "Knowledge Visualisation"
+    },
+    {
+      "id": "urn:ngm:class:ai-productivity-tool",
+      "label": "AI Productivity Tool"
     }
   ],
   "entityType": "Class",
@@ -28,6 +48,22 @@
       {
         "id": "urn:ngm:class:rendering-engine",
         "label": "Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:llm-backend",
+        "label": "LLM Backend"
+      },
+      {
+        "id": "urn:ngm:class:diagram-grammar-compiler",
+        "label": "Diagram Grammar Compiler"
+      },
+      {
+        "id": "urn:ngm:class:editor-surface",
+        "label": "Editor Surface"
+      },
+      {
+        "id": "urn:ngm:class:export-pipeline",
+        "label": "Export Pipeline"
       }
     ],
     "requires": [
@@ -42,12 +78,136 @@
       {
         "id": "urn:ngm:class:markdown-diagramming-as-code-tool",
         "label": "Mermaid Syntax"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:markdown-diagramming-as-code-tool",
+        "label": "Mermaid Syntax"
+      },
+      {
+        "id": "urn:ngm:class:browser-runtime",
+        "label": "Browser Runtime"
+      },
+      {
+        "id": "urn:ngm:class:diagram-specification-language",
+        "label": "Diagram Specification Language"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:architecture-documentation",
+        "label": "Architecture Documentation"
+      },
+      {
+        "id": "urn:ngm:class:rapid-diagramming",
+        "label": "Rapid Diagramming"
+      },
+      {
+        "id": "urn:ngm:class:adr-generation",
+        "label": "ADR Generation"
+      },
+      {
+        "id": "urn:ngm:class:system-design-communication",
+        "label": "System Design Communication"
+      },
+      {
+        "id": "urn:ngm:class:prd-visualisation",
+        "label": "PRD Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:onboarding-diagram-production",
+        "label": "Onboarding Diagram Production"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:mermaid-js",
+        "label": "Mermaid.js"
+      },
+      {
+        "id": "urn:ngm:class:plantuml",
+        "label": "PlantUML"
+      },
+      {
+        "id": "urn:ngm:class:graphviz",
+        "label": "Graphviz"
+      },
+      {
+        "id": "urn:ngm:class:d2-diagram-language",
+        "label": "D2 Diagram Language"
+      },
+      {
+        "id": "urn:ngm:class:eclipse-layout-kernel",
+        "label": "Eclipse Layout Kernel"
+      },
+      {
+        "id": "urn:ngm:class:gpt-4",
+        "label": "GPT 4"
+      },
+      {
+        "id": "urn:ngm:class:claude-3-5",
+        "label": "Claude 3.5"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:text-to-mermaid-generation",
+        "label": "Text-to-Mermaid Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-plantuml-generation",
+        "label": "Text-to-PlantUML Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-dot-generation",
+        "label": "Text-to-DOT Generation"
+      },
+      {
+        "id": "urn:ngm:class:code-to-diagram-reverse-engineering",
+        "label": "Code-to-Diagram Reverse Engineering"
+      },
+      {
+        "id": "urn:ngm:class:screenshot-to-diagram-conversion",
+        "label": "Screenshot-to-Diagram Conversion"
+      },
+      {
+        "id": "urn:ngm:class:sugiyama-hierarchical-layout",
+        "label": "Sugiyama Hierarchical Layout"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hand-drawn-whiteboard",
+        "label": "Hand-Drawn Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:visio",
+        "label": "Visio"
+      },
+      {
+        "id": "urn:ngm:class:omnigraffle",
+        "label": "OmniGraffle"
+      },
+      {
+        "id": "urn:ngm:class:generative-image-model",
+        "label": "Generative Image Model"
+      },
+      {
+        "id": "urn:ngm:class:midjourney-text-to-image-service",
+        "label": "Midjourney Text-to-Image Service"
+      },
+      {
+        "id": "urn:ngm:class:static-diagram-file",
+        "label": "Static Diagram File"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-infrastructure",
@@ -66,6 +226,18 @@
       {
         "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:svg-rendering",
+        "label": "SVG Rendering"
+      },
+      {
+        "id": "urn:ngm:class:tree-sitter-parsing",
+        "label": "Tree Sitter Parsing"
+      },
+      {
+        "id": "urn:ngm:class:force-directed-layout",
+        "label": "Force-Directed Layout"
       }
     ],
     "supports": [
@@ -80,6 +252,22 @@
       {
         "id": "urn:ngm:class:knowledge-graph-construction",
         "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture-documentation",
+        "label": "Software Architecture Documentation"
+      },
+      {
+        "id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Writing"
+      },
+      {
+        "id": "urn:ngm:class:system-design-interview-prep",
+        "label": "System Design Interview Prep"
+      },
+      {
+        "id": "urn:ngm:class:diagram-driven-development",
+        "label": "Diagram-Driven Development"
       }
     ],
     "standardizedBy": [
@@ -90,6 +278,26 @@
       {
         "id": "urn:ngm:class:markdown-diagramming-as-code-tool",
         "label": "Mermaid Specification"
+      },
+      {
+        "id": "urn:ngm:class:structurizr-dsl",
+        "label": "Structurizr DSL Specification"
+      },
+      {
+        "id": "urn:ngm:class:markdown-diagramming-as-code-tool",
+        "label": "Mermaid Specification"
+      },
+      {
+        "id": "urn:ngm:class:plantuml-standard",
+        "label": "PlantUML Standard"
+      },
+      {
+        "id": "urn:ngm:class:omg-uml-2-5",
+        "label": "OMG UML 2.5"
+      },
+      {
+        "id": "urn:ngm:class:c4-model",
+        "label": "C4 Model Convention"
       },
       {
         "id": "urn:ngm:class:structurizr-dsl",
@@ -121,6 +329,34 @@
       {
         "id": "urn:ngm:class:structurizr-dsl",
         "label": "Structurizr DSL"
+      },
+      {
+        "id": "urn:ngm:class:eraser-diagramgpt",
+        "label": "Eraser DiagramGPT"
+      },
+      {
+        "id": "urn:ngm:class:whimsical-ai",
+        "label": "Whimsical AI"
+      },
+      {
+        "id": "urn:ngm:class:lucidchart-ai",
+        "label": "Lucidchart AI"
+      },
+      {
+        "id": "urn:ngm:class:miro",
+        "label": "Miro AI"
+      },
+      {
+        "id": "urn:ngm:class:napkin-ai",
+        "label": "Napkin AI"
+      },
+      {
+        "id": "urn:ngm:class:markdown-diagramming-as-code-tool",
+        "label": "Mermaid Chart"
+      },
+      {
+        "id": "urn:ngm:class:claude",
+        "label": "Claude Artifacts"
       }
     ]
   },
@@ -200,6 +436,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

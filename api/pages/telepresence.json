@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration"
-    },
-    {
-      "id": "urn:ngm:class:dc-telepresence",
-      "label": "Telepresence (Distributed Collaboration)"
     }
   ],
   "entityType": "Class",
@@ -82,6 +78,10 @@
       {
         "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Networks"
       }
     ],
     "implements": [],
@@ -103,6 +103,10 @@
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Systems"
       }
     ],
     "uses": [
@@ -184,32 +188,16 @@
         "label": "Asynchronous Collaboration"
       },
       {
+        "id": "urn:ngm:class:presence-mechanism",
+        "label": "Presence Mechanism"
+      },
+      {
         "id": "urn:ngm:class:shared-workspace",
         "label": "Shared Workspace"
       },
       {
         "id": "urn:ngm:class:synchronous-collaboration",
         "label": "Synchronous Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:haptic-feedback-telepresence",
-        "label": "Haptic Feedback Telepresence"
-      },
-      {
-        "id": "urn:ngm:class:immersive-communication",
-        "label": "Immersive Communication"
-      },
-      {
-        "id": "urn:ngm:class:presence",
-        "label": "Presence"
-      },
-      {
-        "id": "urn:ngm:class:robotic-telepresence",
-        "label": "Robotic Telepresence"
-      },
-      {
-        "id": "urn:ngm:class:social-presence",
-        "label": "Social Presence"
       }
     ],
     "requires": [
@@ -252,11 +240,19 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
@@ -268,10 +264,6 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
-      },
-      {
-        "id": "urn:ngm:class:metaverse-telepresence-bridge",
-        "label": "Metaverse-Telepresence Bridge"
       }
     ],
     "uses": [
@@ -294,14 +286,6 @@
       {
         "id": "urn:ngm:class:version-control",
         "label": "Version Control"
-      },
-      {
-        "id": "urn:ngm:class:avatar-system",
-        "label": "Avatar System"
-      },
-      {
-        "id": "urn:ngm:class:haptics",
-        "label": "Haptics"
       }
     ],
     "supports": [
@@ -324,16 +308,8 @@
         "label": "Groupware"
       },
       {
-        "id": "urn:ngm:class:dc-communication",
-        "label": "Communication Technology"
-      },
-      {
-        "id": "urn:ngm:class:dc-workspace-tools",
-        "label": "Workspace Tools"
-      },
-      {
-        "id": "urn:ngm:class:robotics-telepresence-bridge",
-        "label": "Robotics-Telepresence Bridge"
+        "id": "urn:ngm:class:social-software",
+        "label": "Social Software"
       }
     ]
   },

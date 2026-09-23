@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "id": "urn:ngm:class:philosophy-of-mind",
+      "label": "Philosophy of Mind"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "id": "urn:ngm:class:situated-cognition",
+      "label": "Situated Cognition"
     }
   ],
   "entityType": "Class",
@@ -36,6 +56,22 @@
       {
         "id": "urn:ngm:class:generative-model",
         "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:sensorimotor-loop",
+        "label": "Sensorimotor Loop"
+      },
+      {
+        "id": "urn:ngm:class:body-schema",
+        "label": "Body Schema"
+      },
+      {
+        "id": "urn:ngm:class:morphological-computation",
+        "label": "Morphological Computation"
+      },
+      {
+        "id": "urn:ngm:class:vision-language-action-models",
+        "label": "Vision-Language-Action Model"
       }
     ],
     "requires": [
@@ -54,6 +90,18 @@
       {
         "id": "urn:ngm:class:sensor",
         "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:physical-body",
+        "label": "Physical Body"
+      },
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
+        "id": "urn:ngm:class:sensorimotor-coupling",
+        "label": "Sensorimotor Coupling"
       }
     ],
     "enables": [
@@ -76,9 +124,42 @@
       {
         "id": "urn:ngm:class:manipulation",
         "label": "Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:robust-generalisation",
+        "label": "Robust Generalisation"
+      },
+      {
+        "id": "urn:ngm:class:social-cognition",
+        "label": "Social Cognition"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:phenomenology",
+        "label": "Phenomenology"
+      },
+      {
+        "id": "urn:ngm:class:ecological-psychology",
+        "label": "Ecological Psychology"
+      },
+      {
+        "id": "urn:ngm:class:cybernetics",
+        "label": "Cybernetics"
+      },
+      {
+        "id": "urn:ngm:class:dynamical-systems-theory",
+        "label": "Dynamical Systems Theory"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-brain-hypothesis",
+        "label": "Bayesian Brain Hypothesis"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:behaviour-based-robotics",
@@ -95,9 +176,42 @@
       {
         "id": "urn:ngm:class:subsumption-architecture",
         "label": "Subsumption Architecture"
+      },
+      {
+        "id": "urn:ngm:class:4e-cognition",
+        "label": "4E Cognition"
+      },
+      {
+        "id": "urn:ngm:class:free-energy-principle",
+        "label": "Free Energy Principle"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:disembodied-llm",
+        "label": "Disembodied LLM"
+      },
+      {
+        "id": "urn:ngm:class:gofai",
+        "label": "GOFAI"
+      },
+      {
+        "id": "urn:ngm:class:classical-cognitivism",
+        "label": "Classical Cognitivism"
+      },
+      {
+        "id": "urn:ngm:class:cartesian-dualism",
+        "label": "Cartesian Dualism"
+      },
+      {
+        "id": "urn:ngm:class:pure-language-models",
+        "label": "Pure Language Models"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:philosophy-of-mind",
@@ -124,6 +238,10 @@
       {
         "id": "urn:ngm:class:imitation-learning",
         "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-physics",
+        "label": "Differentiable Physics"
       }
     ],
     "supports": [
@@ -150,6 +268,10 @@
       {
         "id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
       }
     ],
     "standardizedBy": [
@@ -176,6 +298,10 @@
       {
         "id": "urn:ngm:class:urdf",
         "label": "URDF"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-corporation-isaac-sim",
+        "label": "Isaac Lab"
       }
     ],
     "partOf": [],
@@ -203,14 +329,37 @@
       {
         "id": "urn:ngm:class:soft-robotics",
         "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Foundation Models for Robotics"
+      },
+      {
+        "id": "urn:ngm:class:phenomenology-of-perception",
+        "label": "Phenomenology of Perception"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -250,6 +399,22 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -260,9 +425,37 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:epistemology",
+        "label": "Epistemology"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring Systems"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neurosymbolic AI"
+      },
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
@@ -270,18 +463,214 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linguistics",
+        "label": "Linguistics"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
+      },
+      {
+        "id": "urn:ngm:class:eliminative-materialism",
+        "label": "Eliminative Materialism"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:information-processing",
+        "label": "Information Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:brain-computer-interface",
+        "label": "Brain Computer Interface"
+      },
+      {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:experimental-methods",
+        "label": "Experimental Methods"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:neuroimaging",
+        "label": "Neuroimaging"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:signal-detection-theory",
+        "label": "Signal Detection Theory"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:philosophy",
+        "label": "Philosophy"
       }
     ],
     "relatedTo": [
@@ -296,6 +685,26 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-bias",
+        "label": "Cognitive Bias"
+      },
+      {
+        "id": "urn:ngm:class:consciousness",
+        "label": "Consciousness"
+      },
+      {
+        "id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      },
+      {
+        "id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
       }
     ]
   },

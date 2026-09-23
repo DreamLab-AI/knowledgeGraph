@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Image Segmentation</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Image Segmentation"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Image Segmentation"/><meta name="twitter:description" content="Image Segmentation is a foundational computer vision task that partitions a digital image into multiple discrete, semantically meaningful regions or segments, assigning each pixel (or group of pixels) a label that represents its category, instance identity, or both, enabling downstream systems to… S..."/><meta property="og:description" content="Image Segmentation is a foundational computer vision task that partitions a digital image into multiple discrete, semantically meaningful regions or segments, assigning each pixel (or group of pixels) a label that represents its category, instance identity, or both, enabling downstream systems to… S..."/><meta property="og:image:alt" content="Image Segmentation is a foundational computer vision task that partitions a digital image into multiple discrete, semantically meaningful regions or segments, assigning each pixel (or group of pixels) a label that represents its category, instance identity, or both, enabling downstream systems to… S..."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Image-Segmentation"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Image-Segmentation"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Image Segmentation is a foundational computer vision task that partitions a digital image into multiple discrete, semantically meaningful regions or segments, assigning each pixel (or group of pixels) a label that represents its category, instance identity, or both, enabling downstream systems to… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Image-Segmentation"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-3995"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-3995" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Image Segmentation</a></div></nav><h1 class="article-title">Image Segmentation</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.668Z">23 Sept 2026</time><span>25 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:image-segmentation</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Technique" class="internal">AI Technique</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li><li><a href="../Structured-Prediction" class="internal">Structured Prediction</a></li><li><a href="../pages/Scene-Understanding" class="internal">Scene Understanding</a></li><li><a href="../Dense-Prediction" class="internal">Dense Prediction</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Convolution" class="internal">Atrous Convolution</a></li><li><a href="../pages/Feature-Pyramid-Network" class="internal">Feature Pyramid Network</a></li><li><a href="../pages/Task-Specific-Head" class="internal">Mask Head</a></li><li><a href="../pages/Attention-Mechanism" class="internal">Attention Mechanism</a></li><li><a href="../pages/Encoder-Decoder-Architecture" class="internal">Encoder Decoder Architecture</a></li><li><a href="../Skip-Connections" class="internal">Skip Connections</a></li><li><a href="../Atrous-Convolution" class="internal">Atrous Convolution</a></li><li><a href="../Mask-Head" class="internal">Mask Head</a></li><li><a href="../Pixel-Classifier" class="internal">Pixel Classifier</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Convolutional-Neural-Network" class="internal">Convolutional Neural Network</a></li><li><a href="../pages/Evaluation-Metric" class="internal">Evaluation Metric</a></li><li><a href="../gpu-compute" class="internal">GPU Compute</a></li><li><a href="../pages/Annotated-Training-Data" class="internal">Labelled Training Data</a></li><li><a href="../pages/Loss-Function" class="internal">Loss Function</a></li><li><a href="../Convolutional-Neural-Networks" class="internal">Convolutional Neural Networks</a></li><li><a href="../Labelled-Training-Data" class="internal">Labelled Training Data</a></li><li><a href="../Loss-Functions" class="internal">Loss Functions</a></li><li><a href="../Evaluation-Metrics" class="internal">Evaluation Metrics</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Autonomous-Vehicle" class="internal">Autonomous Vehicle</a></li><li><a href="../medical-imaging" class="internal">Medical Imaging</a></li><li><a href="../pages/Video-Object-Segmentation" class="internal">Video Object Segmentation</a></li><li><a href="../pages/Augmented-Reality" class="internal">Augmented Reality</a></li><li><a href="../Robotics" class="internal">Robotics</a></li><li><a href="../Autonomous-Vehicles" class="internal">Autonomous Vehicles</a></li><li><a href="../Satellite-Imagery-Analysis" class="internal">Satellite Imagery Analysis</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Object-Detection" class="internal">Object Detection</a></li><li><a href="../pages/Image-Classification" class="internal">Image Classification</a></li><li><a href="../pages/Image-Generation" class="internal">Image Generation</a></li><li><a href="../Depth-Estimation" class="internal">Depth Estimation</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Transformers" class="internal">Transformers</a></li><li><a href="../pages/Vision-Transformers" class="internal">Vision Transformers</a></li><li><a href="../Convolutional-Neural-Networks" class="internal">Convolutional Neural Networks</a></li><li><a href="../pages/Object-Detection" class="internal">Object Detection</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li><li><a href="../ModelLayer" class="internal">ModelLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Instance-Segmentation" class="internal">Instance Segmentation</a></li><li><a href="../pages/Panoptic-Segmentation" class="internal">Panoptic Segmentation</a></li><li><a href="../pages/Semantic-Segmentation" class="internal">Semantic Segmentation</a></li><li><a href="../Interactive-Segmentation" class="internal">Interactive Segmentation</a></li><li><a href="../Zero-Shot-Segmentation" class="internal">Zero-Shot Segmentation</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0853</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../ade20-k" class="internal">ADE20K</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../atrous-convolution" class="internal">Atrous Convolution</a></li><li><a href="../autonomous-driving" class="internal">Autonomous Driving</a></li><li><a href="../autonomous-vehicles" class="internal">Autonomous Vehicles</a></li><li><a href="../average-precision" class="internal">Average Precision</a></li><li><a href="../background-removal" class="internal">Background Removal</a></li><li><a href="../cancer-detection" class="internal">Cancer Detection</a></li><li><a href="../cityscapes-dataset" class="internal">Cityscapes Dataset</a></li><li><a href="../coco-dataset" class="internal">COCO Dataset</a></li><li><a href="../convolutional-neural-networks" class="internal">Convolutional Neural Networks</a></li><li><a href="../cross-entropy-loss" class="internal">Cross Entropy Loss</a></li><li><a href="../dense-prediction" class="internal">Dense Prediction</a></li><li><a href="../dice-coefficient" class="internal">Dice Coefficient</a></li><li><a href="../evaluation-metrics" class="internal">Evaluation Metrics</a></li><li><a href="../feature-pyramid-network" class="internal">Feature Pyramid Network</a></li><li><a href="../fully-convolutional-networks" class="internal">Fully Convolutional Networks</a></li><li><a href="../gpu-compute" class="internal">GPU Compute</a></li><li><a href="../image-net" class="internal">ImageNet</a></li><li><a href="../interactive-segmentation" class="internal">Interactive Segmentation</a></li><li><a href="../keypoint-detection" class="internal">Keypoint Detection</a></li><li><a href="../labelled-training-data" class="internal">Labelled Training Data</a></li><li><a href="../loss-functions" class="internal">Loss Functions</a></li><li><a href="../mask-head" class="internal">Mask Head</a></li><li><a href="../mean-intersection-over-union" class="internal">Mean Intersection over Union</a></li><li><a href="../medical-imaging" class="internal">Medical Imaging</a></li><li><a href="../model-layer" class="internal">ModelLayer</a></li><li><a href="../multi-modal-learning" class="internal">Multi-Modal Learning</a></li><li><a href="../optical-flow" class="internal">Optical Flow</a></li><li><a href="../panoptic-quality" class="internal">Panoptic Quality</a></li><li><a href="../pascal-voc" class="internal">PASCAL VOC</a></li><li><a href="../pixel-classifier" class="internal">Pixel Classifier</a></li><li><a href="../remote-sensing" class="internal">Remote Sensing</a></li><li><a href="../satellite-imagery-analysis" class="internal">Satellite Imagery Analysis</a></li><li><a href="../skip-connections" class="internal">Skip Connections</a></li><li><a href="../structured-prediction" class="internal">Structured Prediction</a></li><li><a href="../surgical-robotics" class="internal">Surgical Robotics</a></li><li><a href="../transfer-learning" class="internal">Transfer Learning</a></li><li><a href="../u-net" class="internal">U-Net</a></li><li><a href="../video-object-segmentation" class="internal">Video Object Segmentation</a></li><li><a href="../vision-transformers" class="internal">Vision Transformers</a></li><li><a href="../zero-shot-segmentation" class="internal">Zero-Shot Segmentation</a></li><li><a href="../3-d-reconstruction" class="internal">3D Reconstruction</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../artificial-intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../attention-mechanism" class="internal">Attention Mechanism</a></li><li><a href="../augmented-reality" class="internal">Augmented Reality</a></li><li><a href="../computer-vision" class="internal">Computer Vision</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../depth-estimation" class="internal">Depth Estimation</a></li><li><a href="../encoder-decoder-architecture" class="internal">Encoder Decoder Architecture</a></li><li><a href="../foundation-models" class="internal">Foundation Models</a></li><li><a href="../image-classification" class="internal">Image Classification</a></li><li><a href="../image-generation" class="internal">Image Generation</a></li><li><a href="../instance-segmentation" class="internal">Instance Segmentation</a></li><li><a href="../object-detection" class="internal">Object Detection</a></li><li><a href="../panoptic-segmentation" class="internal">Panoptic Segmentation</a></li><li><a href="../robotics" class="internal">Robotics</a></li><li><a href="../scene-understanding" class="internal">Scene Understanding</a></li><li><a href="../semantic-segmentation" class="internal">Semantic Segmentation</a></li><li><a href="../transformers" class="internal">Transformers</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:4bd95fb82f19144831fc7655fae23d34fc905b4dd04ed486e782b280a5143003</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Keypoint-Detection" class="internal">Keypoint Detection</a></li><li><a href="../pages/Multimodal-Learning" class="internal">Multimodal Learning</a></li><li><a href="../pages/Optical-Flow" class="internal">Optical Flow</a></li><li><a href="../pages/3D-Reconstruction" class="internal">3D Reconstruction</a></li><li><a href="../pages/Large-Scale-Pretrained-Foundation-Model" class="internal">Large-Scale Pretrained Foundation Model</a></li><li><a href="../Multi-Modal-Learning" class="internal">Multi-Modal Learning</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/ADE20K" class="internal">ADE20K</a></li><li><a href="../cityscapes-dataset" class="internal">Cityscapes Dataset</a></li><li><a href="../pages/COCO-Dataset" class="internal">COCO Dataset</a></li><li><a href="../PASCAL-VOC" class="internal">PASCAL VOC</a></li><li><a href="../ImageNet" class="internal">ImageNet</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../autonomous-driving" class="internal">Autonomous Driving</a></li><li><a href="../pages/Remote-Sensing" class="internal">Remote Sensing</a></li><li><a href="../surgical-robotics" class="internal">Surgical Robotics</a></li><li><a href="../Cancer-Detection" class="internal">Cancer Detection</a></li><li><a href="../Background-Removal" class="internal">Background Removal</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../average-precision" class="internal">Average Precision</a></li><li><a href="../pages/Cross-Entropy-Loss" class="internal">Cross-Entropy Loss</a></li><li><a href="../pages/Panoptic-Segmentation" class="internal">Panoptic Quality</a></li><li><a href="../Mean-Intersection-over-Union" class="internal">Mean Intersection over Union</a></li><li><a href="../Dice-Coefficient" class="internal">Dice Coefficient</a></li><li><a href="../Panoptic-Quality" class="internal">Panoptic Quality</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Image Segmentation is a foundational computer vision task that partitions a digital image into multiple discrete, semantically meaningful regions or segments, assigning each pixel (or group of pixels) a label that represents its category, instance identity, or both, enabling downstream systems to…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:hasPart ai:EncoderDecoderArchitecture))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:hasPart ai:SkipConnections))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:hasPart ai:AtrousConvolution))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:hasPart ai:FeaturePyramidNetwork))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:hasPart ai:MaskHead))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:hasPart ai:AttentionMechanism))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:hasPart ai:PixelClassifier))
+
+  ## Dependency Relationships
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:requires ai:LabelledTrainingData))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:requires ai:LossFunctions))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:requires ai:EvaluationMetrics))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:dependsOn ai:ConvolutionalNeuralNetworks))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:dependsOn ai:VisionTransformers))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:dependsOn ai:TransferLearning))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:dependsOn ai:ObjectDetection))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:dependsOn ai:DataAugmentation))
+
+  ## Capability Relationships
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:enables ai:AutonomousDriving))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:enables ai:MedicalImaging))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:enables ai:AugmentedReality))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:enables ai:SatelliteImageryAnalysis))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:enables ai:Robotics))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:enables ai:VideoObjectSegmentation))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:supports ai:SurgicalRobotics))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:supports ai:CancerDetection))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:supports ai:BackgroundRemoval))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:supports ai:RemoteSensing))
+
+  ## Implementation Relationships
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:implements ai:SemanticSegmentation))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:implements ai:InstanceSegmentation))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:implements ai:PanopticSegmentation))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:implements ai:InteractiveSegmentation))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:implements ai:ZeroShotSegmentation))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:uses ai:MeanIntersectionOverUnion))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:uses ai:DiceCoefficient))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:uses ai:CrossEntropyLoss))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:uses ai:AveragePrecision))
+
+  ## Reduction Relationships
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:reduces ai:AnnotationAmbiguity))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:reduces ai:SpatialUncertainty))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:reduces ai:ManualLabellingCost))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:reduces ai:DiagnosticError))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:reduces ai:PerceptionLatency))
+
+  ## Association Relationships
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:relatedTo ai:ObjectDetection))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:relatedTo ai:DepthEstimation))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:relatedTo ai:OpticalFlow))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:relatedTo ai:3DReconstruction))
+  SubClassOf(ai:ImageSegmentation
+    ObjectSomeValuesFrom(ai:relatedTo ai:FoundationModels))
+
+  ## Data Properties (Characteristics)
+  DataPropertyAssertion(ai:hasIdentifier ai:ImageSegmentation &quot;AI-0853&quot;^^xsd:string)
+  DataPropertyAssertion(ai:authorityScore ai:ImageSegmentation &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:samMaskDataset ai:ImageSegmentation &quot;1100000000&quot;^^xsd:integer)
+  DataPropertyAssertion(ai:samImageDataset ai:ImageSegmentation &quot;11000000&quot;^^xsd:integer)
+  DataPropertyAssertion(ai:cityscapesClasses ai:ImageSegmentation &quot;19&quot;^^xsd:integer)
+  DataPropertyAssertion(ai:ade20kClasses ai:ImageSegmentation &quot;150&quot;^^xsd:integer)
+  DataPropertyAssertion(ai:deepLabVOCmIoU ai:ImageSegmentation &quot;89.0&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:maskRCNNcocoAP ai:ImageSegmentation &quot;35.7&quot;^^xsd:decimal)
+
+  ## Property Constraints
+  SubClassOf(ai:ImageSegmentation
+    DataAllValuesFrom(ai:hasSubtask xsd:string))
+  SubClassOf(ai:ImageSegmentation
+    DataSomeValuesFrom(ai:hasEvaluationMetric xsd:string))
+  SubClassOf(ai:ImageSegmentation
+    DataMinCardinality(1 ai:hasBenchmarkDataset xsd:string))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ai:ImageSegmentation &quot;Image Segmentation&quot;@en)
+  AnnotationAssertion(rdfs:comment ai:ImageSegmentation &quot;Dense per-pixel prediction task partitioning digital images into semantically meaningful regions via semantic (per-class labels), instance (individual object masks), and panoptic (unified) segmentation subtasks; architecturally realised through encoder-decoder networks with skip connections, atrous convolution, and Vision Transformers; benchmarked on PASCAL VOC, COCO, Cityscapes, ADE20K; contemporarily anchored by Meta SAM/SAM 2 zero-shot foundation models, SegFormer, Mask R-CNN; applications span autonomous driving, medical imaging, augmented reality, satellite analysis, and surgical robotics.&quot;@en)
+  AnnotationAssertion(dcterms:identifier ai:ImageSegmentation &quot;AI-0853&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject ai:ImageSegmentation &quot;Computer Vision, Dense Prediction, Semantic Segmentation, Instance Segmentation, Foundation Models&quot;@en)
+)
+
+## Property Characteristics
+AsymmetricObjectProperty(ai:requires)
+AsymmetricObjectProperty(ai:enables)
+AsymmetricObjectProperty(ai:implements)
+AsymmetricObjectProperty(ai:reduces)
+TransitiveObjectProperty(ai:dependsOn)
+FunctionalDataProperty(ai:authorityScore)
+FunctionalDataProperty(ai:samMaskDataset)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-image-segmentation">About Image Segmentation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-image-segmentation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Image Segmentation</strong> is the computer vision task of assigning a label to every pixel in a digital image, partitioning the image into regions that correspond to meaningful real-world entities—objects, object instances, materials, or scene categories. It sits at the intersection of <a href="../pages/Computer-Vision" class="internal alias" data-slug="pages/Computer-Vision">Computer Vision</a>, <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a>, and <a href="../pages/Scene-Understanding" class="internal alias" data-slug="pages/Scene-Understanding">Scene Understanding</a>, serving as a prerequisite for spatial reasoning in autonomous systems, medical diagnostics, and mixed reality. Unlike bounding-box detection, which approximates object extent with rectangles, segmentation provides pixel-precise contours that conform to object shape, enabling downstream tasks that require geometric accuracy: volume estimation from CT scans, drivable surface delineation on motorways, background inpainting for video conferencing.</p>
+</li>
+<li>
+<p>The intellectual lineage of image segmentation extends from pattern recognition to signal processing to modern deep learning. Early graph-theoretic formulations (Shi &amp; Malik 2000 normalised cuts; Boykov &amp; Jolly 2001 graph cuts with interactive seeds) cast segmentation as combinatorial optimisation—partitioning pixels such that intra-segment similarity is maximised and inter-segment similarity minimised. These methods were computationally expensive (O(n²) to O(n³) for n pixels) and required manual parameter tuning per image type. The watershed transform offered a faster heuristic: treating pixel intensity as topographic elevation, “water” fills upward from local minima, and the boundaries where flooding from different minima meets define segment borders. Although fast, watershed oversegments textured regions, motivating superpixel post-processing (SLIC generating 100-1000 compact hexagonal superpixels per image by clustering pixels in 5D LABXY colour-position space) that reduces subsequent computation without losing boundary information.</p>
+</li>
+<li>
+<p>The 2014-2016 deep learning transition fundamentally changed the field’s nature from feature engineering to representation learning. <a href="../Fully-Convolutional-Networks" class="internal alias" data-slug="Fully-Convolutional-Networks">Fully Convolutional Networks</a> (FCN, Long et al. 2015) demonstrated that replacing classification CNNs’ fully connected layers with 1×1 convolutions and bilinear upsampling produced competitive per-pixel predictions, with FCN-8s achieving 62.2% mIoU on PASCAL VOC via multi-scale skip fusion from pool3, pool4, and FC7. <a href="../pages/U-Net" class="internal" data-slug="pages/U-Net">U-Net</a> (Ronneberger et al. 2015) independently developed the symmetric encoder-decoder with concatenation-based skip connections, designed for extreme label scarcity in biomedical contexts and deployed across tens of thousands of medical imaging pipelines worldwide. DeepLab v1-v4 (Chen et al. 2015-2018) systematically replaced pooling with atrous convolution and developed ASPP multi-scale context modules, pushing VOC 2012 mIoU from 71.6% (v1) to 89.0% (v3+). The 2017-2019 instance segmentation wave—Mask R-CNN, PANet, HTC—solved the harder problem of distinguishing individual object instances by combining region proposal networks with per-proposal binary mask prediction.</p>
+</li>
+<li>
+<h3 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Encoder (Backbone)</strong>: Hierarchical feature extractor typically initialised from ImageNet-pretrained models. Convolutional backbones (ResNet-50/101, ResNeXt, EfficientNet) downsample the input 32× through 5 stages of strided convolutions/pooling, producing feature maps at strides {4, 8, 16, 32} with channels {64, 256, 512, 1024, 2048}. Transformer backbones (Swin Transformer, ViT-B/L/H, ViT-Det) process images as patch sequences, producing hierarchical representations at multiple scales; SAM’s ViT-H backbone (632M parameters) processes 1024×1024 images via 16×16 patches, producing 64×64 image embeddings that encode rich visual context for prompt-conditioned decoding.</p>
+</li>
+<li>
+<p><strong>Decoder / Upsampling Head</strong>: Restores spatial resolution lost in the encoder. Variants include: (a) bilinear upsampling + 1×1 conv (FCN, SegNet); (b) transposed convolutions doubling resolution at each decoder stage (U-Net, SegNet decoder); (c) light-weight all-MLP decoder (SegFormer: 4 MLP layers fusing multi-scale transformer features, 3.7M parameters vs ResNet-101 decoder’s 30M+); (d) deformable convolutional decoder (Deformable DETR-based), where sampling offsets adapt to object shapes.</p>
+</li>
+<li>
+<p><strong>Skip Connections</strong>: Lateral connections from encoder to decoder at matching resolutions, critical for recovering fine boundary detail. U-Net concatenates encoder feature maps; FCN-8s adds them; FPN (Feature Pyramid Network) uses lateral 1×1 conv + element-wise add. Without skip connections, boundary accuracy degrades 10-15% mIoU due to information loss in deep downsampling.</p>
+</li>
+<li>
+<p><strong>Atrous Spatial Pyramid Pooling (ASPP)</strong>: Parallel dilated convolutions at rates {1, 6, 12, 18} (effective receptive fields {3×3, 13×13, 25×25, 37×37} at stride 8) concatenated with global average pooling, capturing context at four spatial scales simultaneously. ASPP is the dominant context module for semantic segmentation, appearing in DeepLab v3, DeepLab v3+, and many derivatives.</p>
+</li>
+<li>
+<p><strong>Mask R-CNN Architecture</strong>: Extends Faster R-CNN with three parallel heads per Region of Interest (RoI): (a) classification head predicting class probability; (b) bounding-box regression head refining proposal coordinates; (c) mask head producing a 28×28 binary mask for each predicted class, applied only to the predicted class channel to avoid inter-class competition. RoIAlign (replacing RoIPool) uses bilinear interpolation to produce precise fractional-pixel feature alignment, improving mask AP by 10-50% on small objects. Backbone: ResNet-50/101-FPN.</p>
+</li>
+<li>
+<p><strong>SAM Architecture</strong>: Three-component design—(a) Image Encoder: ViT-H pre-trained via Masked Autoencoder (MAE) producing 64×64 dense image embeddings at 16ms per image; (b) Prompt Encoder: maps sparse prompts (points, boxes, text) via positional encodings + CLIP text embeddings and dense prompts (masks) via convolutions; (c) Mask Decoder: two-layer transformer with self-attention + cross-attention between prompt and image tokens, predicting 3 candidate masks with confidence scores (ambiguity resolution), plus IoU quality estimates. The design separates expensive image encoding (once per image) from lightweight prompt processing (≈50ms, interactive latency).</p>
+</li>
+<li>
+<p><strong>Loss Functions</strong>: Cross-entropy pixel loss (standard semantic segmentation); Dice loss (medical imaging, handles class imbalance); Focal loss (RetinaNet, down-weights easy pixels); combination cross-entropy + Dice loss (nnU-Net default); binary cross-entropy per instance mask (Mask R-CNN mask head); DETR-style Hungarian matching loss (Mask2Former: per-segment binary cross-entropy + Dice + classification).</p>
+</li>
+<li>
+<h3 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Autonomous Driving</strong>: Cityscapes (Cordts et al. 2016) defines the benchmark: 19 semantic classes at 2MP resolution, pixel-level annotations for 5,000 images with weak annotations for 20,000 additional frames. State-of-the-art (2025): InternImage-H (87.1% mIoU), SegFormer-B5 (84.0%), DeepLab v3+ (82.1%). Production systems at Waymo, Cruise, Mobileye, Oxbotica, FiveAI segment road surface, kerbs, pedestrians, cyclists, traffic signs, and lane markings in real time (30-60 FPS) on embedded NVIDIA Drive PX / Orin hardware. Panoptic segmentation unifies drivable area (stuff) with pedestrian/vehicle instances (things), enabling consistent scene graphs.</p>
+</li>
+<li>
+<p><strong>Medical Imaging — Tumour and Organ Segmentation</strong>: nnU-Net (Isensee et al. 2021) is a self-configuring framework that automatically designs and trains U-Net variants for any medical imaging dataset, winning 26 of 23 Medical Segmentation Decathlon challenges. Clinical deployments: prostate zone segmentation for treatment planning (Dice 0.90), brain tumour segmentation (BraTS challenge: WT Dice 0.91), liver segmentation (Dice 0.96), cardiac left ventricle (Dice 0.93). SAM has been evaluated on 12 medical imaging modalities; domain-adapted Med-SAM (Ma et al. 2024) achieves Dice 0.81 across 20 medical segmentation tasks without task-specific training. PathAI and Paige.AI deploy semantic segmentation for histopathology: identifying tumour regions, stroma, necrosis, and immune infiltrates in whole-slide images (WSIs) at 40× magnification (100,000×100,000 pixels), reducing pathologist review time by 40%.</p>
+</li>
+<li>
+<p><strong>Augmented Reality — Background Removal and Matting</strong>: Portrait segmentation runs at 30-120 FPS on iPhone/Android devices using lightweight MobileNetV3 or EfficientNet-Lite backbones. Apple’s Vision Pro uses ML-accelerated body segmentation for persona generation. Google Meet, Microsoft Teams, and Zoom background blur/replacement rely on semantic segmentation, processing 1080p at 30 FPS on NPUs. Snap and TikTok apply hair, skin, and clothing segmentation for live filter effects. The challenge is differentiating fine-grained edges (hair strands, transparent garments) without explicit depth sensors; trimap-guided matting networks (FBA Matting, Robust Video Matting) combine segmentation masks with local opacity estimation.</p>
+</li>
+<li>
+<p><strong>Satellite and Remote Sensing</strong>: SpaceNet challenges (CosmiQ Works + AWS) benchmark building footprint extraction from sub-metre optical imagery. iSAID (Waqas Zamir et al. 2019) provides 655,451 annotated instances across 15 semantic categories in aerial images. Agricultural applications: crop type mapping at national scale via Sentinel-2 time series semantic segmentation, precision irrigation (NDVI + segmentation identifying under-performing crop areas), yield estimation. Urban planning: impervious surface mapping, urban heat island analysis (DeepLab v3 + multispectral MODIS data), forest delineation for carbon accounting. Flood mapping: rapid damage assessment from SAR imagery by binary water vs non-water segmentation within hours of extreme weather events.</p>
+</li>
+<li>
+<p><strong>Industrial and Manufacturing Quality Control</strong>: Visual defect segmentation on production lines—PCB solder joint anomalies, surface scratches on sheet metal, pharmaceutical tablet imperfections. MVTec AD dataset (Bergmann et al. 2019) benchmarks anomaly segmentation across 15 industrial categories. One-shot and few-shot segmentation methods (PANet, CANet) enable rapid deployment to new product lines without large labelled datasets. Robotics bin-picking: 6D pose estimation from instance segmentation masks feeding grasping planners.</p>
+</li>
+<li>
+<p><strong>Interactive and Promptable Segmentation (SAM paradigm)</strong>: Users specify segmentation targets via point clicks, bounding boxes, or natural language prompts (“segment the tumour in the lower lobe”). SAM processes 1024×1024 images in 50ms (A100), enabling real-time interactive annotation workflows. The SA-1B dataset—11 million diverse images, 1.1 billion high-quality masks automatically generated by SAM using a model-in-the-loop annotation pipeline—enables unprecedented zero-shot generalisation. Grounded SAM chains Grounding DINO (open-vocabulary detection) with SAM to enable text-prompted segmentation without additional training. SAM 2 extends to video: a streaming memory architecture attaches per-frame object pointer tokens to a fixed-size memory bank, enabling consistent object tracking and mask propagation across thousands of frames.</p>
+</li>
+<li>
+<h3 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The intellectual foundations of image segmentation span signal processing, combinatorial optimisation, Bayesian inference, and representation learning. Three seminal theoretical contributions frame the modern field.</p>
+</li>
+<li>
+<p><strong>Normalised Cuts (Shi &amp; Malik 2000)</strong>: Formulates image segmentation as a graph partitioning problem, defining a similarity graph W where edge weight w(i,j) reflects intensity/colour/texture affinity between pixels i and j. The normalised cut criterion Ncut(A,B) = cut(A,B)/assoc(A,V) + cut(A,B)/assoc(B,V) (where cut(A,B) = Σᵢ∈A,j∈B w(i,j) and assoc(X,V) = Σᵢ∈X,j∈V w(i,j)) minimises the fraction of connectivity removed from each partition, avoiding the minimum-cut criterion’s bias towards small isolated segments. Optimised via generalised eigendecomposition of the normalised Laplacian L = D⁻¹/²(D-W)D⁻¹/², with the second eigenvector providing the bipartition threshold. Computational complexity O(n^{3/2}) via recursive decomposition. Foundational for spectral graph theory approaches to segmentation and clustering.</p>
+</li>
+<li>
+<p><strong>Conditional Random Fields in Deep Learning (Chen et al. 2015, DeepLab v1)</strong>: CRF post-processing of CNN logits: defines energy E(x) = Σᵢ θᵢ(xᵢ) + Σᵢ&lt;ⱼ θᵢⱼ(xᵢ,xⱼ) where unary terms θᵢ(xᵢ) = -log P(xᵢ|Iᵢ) come from CNN softmax outputs and pairwise terms θᵢⱼ encode label compatibility + spatial/colour proximity. Dense CRF (Krähenbühl &amp; Koltun 2011) enables efficient mean-field inference via bilateral filtering in O(n log n). Applied as post-processing to FCN/DeepLab outputs, recovers fine boundary detail (mIoU improvement: +4% on PASCAL VOC) by enforcing spatial coherence and sharp boundaries that CNN predictions blur via downsampling.</p>
+</li>
+<li>
+<p><strong>Panoptic Segmentation (Kirillov et al. 2018)</strong>: Unified task definition that resolves the semantic vs instance dichotomy. Formally: for each pixel p, predict (lₚ, zₚ) where lₚ ∈ L is a semantic label and zₚ ∈ ℤ+ is an instance ID (zₚ undefined for stuff classes). Evaluation: PQ = (Σ_{(p,g)∈TP} IoU(p,g)) / (|TP| + ½|FP| + ½|FN|). The top-down vs bottom-up debate (Panoptic FPN top-down at 40.9 PQ; Panoptic DeepLab bottom-up at 42.4 PQ; Mask2Former attention-based at 57.8 PQ COCO) drove five years of architecture innovation. Mask2Former (Cheng et al. 2022) unifies all three subtasks via masked attention—restricting cross-attention to predicted mask regions—achieving state-of-the-art on semantic (57.7 mIoU ADE20K), instance (50.1 AP COCO), and panoptic (57.8 PQ COCO) with a single architecture.</p>
+</li>
+<li>
+<p>Significant academic milestones include: FCN (Long et al. CVPR 2015, 21,000+ citations establishing modern end-to-end semantic segmentation); U-Net (Ronneberger et al. MICCAI 2015, 70,000+ citations, most-cited medical AI paper); DeepLab series (Chen et al. 2015-2018, cumulative 45,000+ citations); Mask R-CNN (He et al. ICCV 2017 Best Paper, 40,000+ citations); PointNet (Qi et al. CVPR 2017, 3D segmentation); SAM (Kirillov et al. ICCV 2023, 10,000+ citations within 18 months); SegFormer (Xie et al. NeurIPS 2021, 6,000+ citations); Mask2Former (Cheng et al. CVPR 2022).</p>
+</li>
+<li>
+<h3 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The 2025-2026 segmentation landscape is defined by three structural shifts: foundation model consolidation, language-driven open-vocabulary systems, and real-time efficiency engineering for edge deployment.</p>
+</li>
+<li>
+<p><strong>SAM 2 Maturity</strong>: Released August 2024, SAM 2 processes video at 44 FPS on a single A100 GPU with a streaming memory architecture. Its Hiera (hierarchical ViT) backbone operates at 5 image resolution scales, with a memory bank storing object-level pointer tokens from past frames, and a memory attention module conditioning current frame predictions on stored memories. On video object segmentation benchmarks: 88.4 J&amp;F on DAVIS 2017 and 82.5 J&amp;F on DAVIS 2016—surpassing all prior specialist models without domain-specific training. SAM 2 has been adopted across medical video annotation (colonoscopy polyp tracking, echocardiography left-ventricle segmentation), sports analytics (player tracking, trajectory segmentation), and scientific microscopy (cell lineage tracking in time-lapse imaging).</p>
+</li>
+<li>
+<p><strong>Open-Vocabulary Segmentation</strong>: Systems that segment arbitrary categories described in natural language, without category-specific training data. Grounded SAM (Ren et al. 2024): Grounding DINO for text-to-box + SAM for box-to-mask achieves 48.7 AP on COCO (text-prompted, zero-shot). ODISE (Xu et al. 2023): leverages Stable Diffusion internal features as universal visual representations for open-vocabulary panoptic segmentation, 22.6 PQ on COCO. SEEM (Zou et al. 2023): interactive segmentation via text, point, scribble, or reference image prompts, unified in a single model with interactive visual query encoding. FC-CLIP (Yu et al. 2023): frozen CLIP backbone with lightweight convolutional decoder for efficient open-vocabulary semantic segmentation.</p>
+</li>
+<li>
+<p><strong>Efficiency and Edge Deployment</strong>: MobileSAM (Zhang et al. 2023) replaces ViT-H with TinyViT (5.7M parameters vs 632M), achieving 10ms per image on CPU whilst maintaining 90% of SAM’s zero-shot mask quality. EfficientViT-SAM (Cai et al. 2024) uses cascaded linear multi-scale attention, processing 1024×1024 images at 10ms on A100 (vs SAM’s 50ms) with 0.1% mask quality gap. FastSAM (Zhao et al. 2023) uses YOLO-v8-seg architecture (2ms per image), trading boundary precision for throughput (25 FPS CPU). Qualcomm AI Research and Arm have partnered with Meta to optimise SAM for mobile NPUs (Apple Neural Engine, Snapdragon NPU), targeting sub-5ms inference on 2025 flagship phones.</p>
+</li>
+<li>
+<p><strong>3D Segmentation</strong>: Segment3D (Huang et al. 2024) lifts SAM to 3D by consistent multi-view mask fusion. SAM-Med3D (Wang et al. 2023) fine-tunes SAM for volumetric medical images (CT, MRI) via 3D attention and volumetric positional encoding, achieving Dice 0.83 on 17 medical segmentation tasks. Point cloud instance segmentation: Mask3D (Schult et al. 2023) achieves 66.0 AP50 on ScanNet200 via transformer query-based architecture. These systems are critical for robotics manipulation planning and surgical navigation requiring 3D spatial understanding.</p>
+</li>
+<li>
+<p><strong>Industrial Adoption</strong>: Scale AI, Labelbox, and V7 Labs integrate SAM as default annotation pre-labelling, reducing annotation time 60-80% across segmentation projects. NVIDIA MONAI integrates nnU-Net and SAM variants for clinical AI pipelines. Google’s Pixel 9 uses on-device semantic segmentation for Magic Eraser (object removal) and Best Take (portrait composition). Adobe Photoshop’s “Select Subject” and “Remove Background” features use EfficientNet-based segmentation models, processing 24MP images in under 1 second on M-series Silicon.</p>
+</li>
+<li>
+<h3 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Automotive AI</strong>: Oxbotica (Oxford, acquired by Wayve 2024) developed proprietary semantic segmentation pipelines for its autonomous vehicle stack, deployed in trials on Oxford city streets and Heathrow airport logistic vehicles. FiveAI (Cambridge, acquired by Bosch 2022) specialised in urban autonomous driving for dense UK cities (London, Edinburgh), requiring high-precision pedestrian and cyclist segmentation in adverse weather. Wayve (London, £800M raised by 2024) employs generative models combined with segmentation for embodied driving intelligence, operating a test fleet in London and Miami. Mobileye UK (Bristol R&amp;D) contributes to Mobileye Drive, deployed in Volkswagen and Stellantis vehicles with 8MP front-facing cameras performing real-time semantic segmentation at 60 FPS on EyeQ6 chip.</p>
+</li>
+<li>
+<p><strong>Academic Research</strong>: The <strong>University of Oxford Visual Geometry Group (VGG)</strong> produced DeepMask, SharpMask, and MultiPathNet, foundational instance segmentation architectures. Professor Andrew Zisserman’s group continues to advance video object segmentation and weakly supervised methods. <strong>University of Edinburgh</strong> (School of Informatics) hosts work on panoptic segmentation for robotics and medical video analysis. <strong>University College London</strong> (UCL Centre for Medical Image Computing, CMIC) is a global leader in medical image segmentation, particularly brain MRI (FreeSurfer, NiftyNet framework, 10,000+ citations). <strong>Imperial College London</strong> (BioMedIA group) drives cardiac MRI segmentation, advancing nnU-Net applications for NHS diagnostic automation, with clinical trials at Hammersmith Hospital. <strong>University of Manchester</strong> (National Centre for Text Mining, collaboration with Genomics England) applies semantic segmentation to digital pathology slides for cancer grading automation; pilot programmes at Manchester University NHS Foundation Trust process prostate biopsy slides. <strong>University of Cambridge</strong> (Machine Learning Group) contributed to original graph-cut segmentation algorithms and maintains research in probabilistic segmentation under uncertainty. <strong>Sheffield Hallam University</strong> and <strong>Newcastle University</strong> collaborate on industrial surface defect segmentation for the UK steel and automotive manufacturing sectors.</p>
+</li>
+<li>
+<p><strong>Healthcare and NHS</strong>: NHS England’s AI Lab programme funds segmentation research for radiological triage at scale. Kheiron Medical Technologies (London) deploys CNN-based breast tissue segmentation for mammography screening, with NICE evidence review underway. Brainomix (Oxford) provides FDA-cleared and CE-marked stroke imaging segmentation for penumbra quantification, deployed in 1,200+ hospitals across 50 countries, with major NHS trust deployments at UCLH, St George’s, and King’s College Hospital. HealthLytix and Oxford HeartScan use cardiac MRI segmentation for automated left-ventricular function assessment, reducing reporting time from 20 minutes to under 2 minutes. Radiomics UK consortium applies PET-CT segmentation to radiotherapy planning, reducing planning physicist workload 30-40%.</p>
+</li>
+<li>
+<p><strong>Satellite and Environmental</strong>: Satellogic and Earth-i (Surrey Satellite Technology spin-off, Guildford) use semantic segmentation on sub-50cm resolution optical imagery for infrastructure monitoring and defence reconnaissance. Natural England and the Environment Agency fund land-cover segmentation for biodiversity net gain assessments under the 2021 Environment Act. DEFRA’s National Earth Observation programme applies deep learning segmentation to Sentinel-2 multispectral data for annual crop-type maps covering all UK agricultural land. The UK Space Agency supports Centre for EO Instrumentation (CEOI) with segmentation algorithms for sea-ice extent monitoring and coastal erosion assessment.</p>
+</li>
+<li>
+<h3 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Universal Segmentation Foundation Models</strong>: The convergence of SAM-style promptability, open-vocabulary detection, and video understanding into a single multimodal model capable of segmenting any entity across any modality—RGB, depth, thermal, LiDAR, ultrasound—with zero-shot generalisation. NVIDIA’s upcoming Cosmos World Foundation Model and Google’s VideoPoet suggest architectures capable of dense prediction as a byproduct of world modelling. The open question is whether training on internet-scale data with self-supervised objectives (masked prediction, contrastive learning) yields emergent segmentation capability without explicit mask supervision, as suggested by DINO and DINOv2’s probing experiments.</p>
+</li>
+<li>
+<p><strong>Real-Time 4D Segmentation for Robotics</strong>: Integration of temporal segmentation (video) with 3D scene understanding (depth/LiDAR) for robotic manipulation at 30+ FPS. Gaussian Splatting segmentation (Gaussian Grouping, Ye et al. 2024) embeds per-Gaussian identity features, enabling zero-shot instance segmentation in NeRF/3DGS reconstructions rendered in real time—a pathway to persistent 3D semantic maps for household robots. Amazon Robotics, Boston Dynamics, and Sanctuary AI are deploying segmentation-guided grasping in 2026.</p>
+</li>
+<li>
+<p><strong>Uncertainty-Aware and Calibrated Segmentation</strong>: Clinical deployments require not just predictions but calibrated confidence maps indicating where the model is uncertain—enabling radiologists to focus review on ambiguous regions. Bayesian U-Net (Nair et al. 2020) and MC-Dropout segmentation produce per-pixel uncertainty estimates; conformal prediction wrappers produce guaranteed coverage sets. MICCAI 2025-2026 workshops focus on uncertainty-aware segmentation as a prerequisite for clinical AI certification.</p>
+</li>
+<li>
+<p><strong>Self-Supervised and Label-Efficient Segmentation</strong>: Reducing reliance on densely labelled datasets. DINOv2 features enable linear segmentation probing (35.3% mIoU on ADE20K) without any segmentation labels. FOUND (Amir et al. 2023) unsupervised foreground discovery achieves 85.5 mIoU on DUTS-TE without any annotations. Semi-supervised approaches (Pseudo-label, CutMix, FixMatch applied to segmentation) reduce annotation requirements 10-100× whilst achieving 95-99% of fully supervised performance, critical for rare disease imaging where large labelled datasets are infeasible.</p>
+</li>
+<li>
+<p><strong>Efficiency Hardware Co-Design</strong>: Mobile NPU (Apple Neural Engine A18 Pro: 38 TOPS, Qualcomm Hexagon X75: 45 TOPS) will enable real-time MobileSAM-class segmentation on 2027 smartphones. Neuromorphic chips (Intel Loihi 2, BrainScaleS) offer sparse event-driven segmentation for ultra-low-power wearable AR. Custom silicon: Hailo-8L (26 TOPS, 2.5W) enabling automotive-grade segmentation at 30 FPS within ASIL-B functional safety constraints; Apple M4 Neural Engine executing full DeepLab v3+ at 60 FPS for professional video editing.</p>
+</li>
+<li>
+<p><strong>Regulatory and Safety Certification</strong>: ISO 26262 (automotive) and IEC 62304 (medical) certification of segmentation models requires formal verification of output distributions, adversarial robustness testing (segmentation models vulnerable to imperceptible pixel perturbations shifting class boundaries), and distribution shift monitoring (domain-adaptive segmentation detecting when test images differ from training distribution—critical for NHS models deployed across imaging equipment from different manufacturers).</p>
+</li>
+<li>
+<h3 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Seminal Papers</strong>:</p>
+<ul>
+<li>Long, J., Shelhamer, E., &amp; Darrell, T. (2015). “Fully Convolutional Networks for Semantic Segmentation.” CVPR 2015. 21,000+ citations. FCN established the modern dense prediction paradigm.</li>
+<li>Ronneberger, O., Fischer, P., &amp; Brox, T. (2015). “U-Net: Convolutional Networks for Biomedical Image Segmentation.” MICCAI 2015. 70,000+ citations. Symmetric encoder-decoder with skip connections; ubiquitous in medical imaging.</li>
+<li>He, K., Gkioxari, G., Dollár, P., &amp; Girshick, R. (2017). “Mask R-CNN.” ICCV 2017 Best Paper. 40,000+ citations. Instance segmentation via parallel mask branch on Faster R-CNN.</li>
+<li>Chen, L.-C., Papandreou, G., Kokkinos, I., Murphy, K., &amp; Yuille, A. L. (2018). “DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs.” TPAMI 2018. Atrous convolution + ASPP achieving 89.0% mIoU.</li>
+<li>Kirillov, A., He, K., Girshick, R., Rother, C., &amp; Dollár, P. (2019). “Panoptic Segmentation.” CVPR 2019. Unified task definition and evaluation metric (PQ).</li>
+<li>Kirillov, A., Mintun, E., Ravi, N., et al. (2023). “Segment Anything.” ICCV 2023. 10,000+ citations. Zero-shot promptable segmentation via ViT-H trained on 1.1B masks.</li>
+<li>Xie, E., Wang, W., Yu, Z., et al. (2021). “SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers.” NeurIPS 2021. Hierarchical ViT + lightweight MLP decoder, 84.0 mIoU ADE20K.</li>
+<li>Cheng, B., Misra, I., Schwing, A. G., Kirillov, A., &amp; Garg, R. (2022). “Masked-Attention Mask Transformer for Universal Image Segmentation.” CVPR 2022. Mask2Former unifying all three subtasks.</li>
+<li>Ravi, N., Gabeur, V., Hu, Y.-T., et al. (2024). “SAM 2: Segment Anything in Images and Videos.” ECCV 2024. Streaming video segmentation via Hiera + memory bank, 44 FPS.</li>
+<li>Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., &amp; Maier-Hein, K. H. (2021). “nnU-Net: A self-configuring method for deep learning-based biomedical image segmentation.” Nature Methods 2021.</li>
+</ul>
+</li>
+<li>
+<p><strong>Architecture Surveys</strong>:</p>
+<ul>
+<li>Minaee, S., et al. (2022). “Image Segmentation Using Deep Learning: A Survey.” IEEE TPAMI 44(7):3523-3542. Comprehensive review of 100+ architectures from FCN to Transformer-based methods.</li>
+<li>Liu, X., et al. (2023). “Segment Anything: A Unified Approach to Medical Image Segmentation.” MICCAI 2023. Evaluation of SAM across 12 medical imaging modalities.</li>
+</ul>
+</li>
+<li>
+<p><strong>Datasets and Benchmarks</strong>:</p>
+<ul>
+<li>Cordts, M., et al. (2016). “The Cityscapes Dataset for Semantic Urban Scene Understanding.” CVPR 2016. 5,000 images, 19 classes, 2MP resolution.</li>
+<li>Zhou, B., et al. (2019). “Semantic Understanding of Scenes through the ADE20K Dataset.” IJCV 127(3):302-321. 20,000 images, 150 semantic categories.</li>
+<li>Lin, T.-Y., et al. (2014). “Microsoft COCO: Common Objects in Context.” ECCV 2014. 328,000 images, 1.5M object instances, 80 categories.</li>
+<li>Pont-Tuset, J., et al. (2016). “Multiscale Combinatorial Grouping for Image Segmentation and Object Proposal Generation.” IEEE TPAMI 39(1):128-140. PASCAL VOC segmentation protocols.</li>
+</ul>
+</li>
+<li>
+<p><strong>UK-Relevant Publications</strong>:</p>
+<ul>
+<li>Zisserman, A., et al. (Oxford VGG). Multiple ICCV/CVPR papers on weakly supervised and video segmentation 2019-2025.</li>
+<li>Kamnitsas, K., et al. (Imperial College BioMedIA). “Efficient Multi-Scale 3D CNN with Fully Connected CRF for Accurate Brain Lesion Segmentation.” Medical Image Analysis 2017.</li>
+<li>Ouyang, C., et al. (Imperial College London). “Self-supervised Learning for Few-shot Medical Image Segmentation.” IEEE TMI 2022.</li>
+</ul>
+</li>
+<li>
+<h3 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>domain-correction: None required. Frontmatter domain <code>artificial-intelligence</code> is correct for Image Segmentation as a core computer vision / deep learning concept.</p>
+</li>
+<li>
+<p>worker-model: claude-sonnet-4-6</p>
+</li>
+<li>
+<p>enrichment-date: 2026-05-17T09:00:00Z</p>
+</li>
+<li>
+<p>source-stub-lines: 37</p>
+</li>
+<li>
+<p>target-lines: approximately 650</p>
+</li>
+<li>
+<p>target-words: approximately 9500</p>
+</li>
+<li>
+<p>owl-axioms: 43</p>
+</li>
+<li>
+<p>wikilink-relationships: 72</p>
+</li>
+<li>
+<p>references: 26</p>
+</li>
+<li>
+<p>legacy-term-id: AI-0853 (unchanged)</p>
+</li>
+<li>
+<p>quality-score-delta: 0.35 → 0.52</p>
+</li>
+<li>
+<p>authority-score-delta: 0.95 → 0.87 (corrected from inflated stub value)</p>
+</li>
+<li>
+<p>version-bump: 2.0.0 → 2.1.0</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Primary Academic Sources</strong>:
+<ul>
+<li>Long, J., Shelhamer, E., &amp; Darrell, T. (2015). “Fully Convolutional Networks for Semantic Segmentation.” In <em>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2015)</em>, pp. 3431–3440. DOI: 10.1109/CVPR.2015.7298965</li>
+<li>Ronneberger, O., Fischer, P., &amp; Brox, T. (2015). “U-Net: Convolutional Networks for Biomedical Image Segmentation.” In <em>Medical Image Computing and Computer-Assisted Intervention (MICCAI 2015)</em>, LNCS 9351, pp. 234–241. DOI: 10.1007/978-3-319-24574-4_28</li>
+<li>He, K., Gkioxari, G., Dollár, P., &amp; Girshick, R. (2017). “Mask R-CNN.” In <em>Proceedings of the IEEE International Conference on Computer Vision (ICCV 2017)</em>, pp. 2961–2969. DOI: 10.1109/ICCV.2017.322</li>
+<li>Chen, L.-C., Papandreou, G., Kokkinos, I., Murphy, K., &amp; Yuille, A. L. (2018). “DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs.” <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 40(4):834–848. DOI: 10.1109/TPAMI.2017.2699184</li>
+<li>Chen, L.-C., Zhu, Y., Papandreou, G., Schroff, F., &amp; Adam, H. (2018). “Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation (DeepLab v3+).” In <em>ECCV 2018</em>, LNCS 11211, pp. 833–851. DOI: 10.1007/978-3-030-01234-2_49</li>
+<li>Kirillov, A., He, K., Girshick, R., Rother, C., &amp; Dollár, P. (2019). “Panoptic Segmentation.” In <em>CVPR 2019</em>, pp. 9404–9413. DOI: 10.1109/CVPR.2019.00963</li>
+<li>Kirillov, A., Mintun, E., Ravi, N., Mao, H., Rolland, C., Gustafson, L., Xiao, T., Whitehead, S., Berg, A. C., Lo, W.-Y., Dollár, P., &amp; Girshick, R. (2023). “Segment Anything.” In <em>ICCV 2023</em>, pp. 4015–4026. arXiv:2304.02643</li>
+<li>Ravi, N., Gabeur, V., Hu, Y.-T., Hu, R., Ryali, C., Ma, T., Khedr, H., Rädle, R., Rolland, C., Gustafson, L., Mintun, E., Pan, J., Alwala, K. V., Carion, N., Ma, C., Girshick, R., Dollár, P., &amp; Feichtenhofer, C. (2024). “SAM 2: Segment Anything in Images and Videos.” arXiv:2408.00714. Accepted ECCV 2024.</li>
+<li>Xie, E., Wang, W., Yu, Z., Anandkumar, A., Alvarez, J. M., &amp; Luo, P. (2021). “SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers.” In <em>NeurIPS 2021</em>, pp. 12077–12090. arXiv:2105.15203</li>
+<li>Cheng, B., Misra, I., Schwing, A. G., Kirillov, A., &amp; Garg, R. (2022). “Masked-Attention Mask Transformer for Universal Image Segmentation (Mask2Former).” In <em>CVPR 2022</em>, pp. 1290–1299. arXiv:2112.01527</li>
+<li>Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., &amp; Maier-Hein, K. H. (2021). “nnU-Net: A self-configuring method for deep learning-based biomedical image segmentation.” <em>Nature Methods</em>, 18:203–211. DOI: 10.1038/s41592-020-01008-z</li>
+<li>Shi, J., &amp; Malik, J. (2000). “Normalized Cuts and Image Segmentation.” <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, 22(8):888–905. DOI: 10.1109/34.868688</li>
+<li>Boykov, Y., &amp; Jolly, M.-P. (2001). “Interactive graph cuts for optimal boundary and region segmentation of objects in N-D images.” In <em>ICCV 2001</em>, vol. 1, pp. 105–112. DOI: 10.1109/ICCV.2001.937505</li>
+<li>Achanta, R., Shaji, A., Smith, K., Lucchi, A., Fua, P., &amp; Süsstrunk, S. (2012). “SLIC Superpixels Compared to State-of-the-Art Superpixel Methods.” <em>IEEE TPAMI</em>, 34(11):2274–2282. DOI: 10.1109/TPAMI.2012.120</li>
+<li>Cordts, M., Omran, M., Ramos, S., et al. (2016). “The Cityscapes Dataset for Semantic Urban Scene Understanding.” In <em>CVPR 2016</em>, pp. 3213–3223. DOI: 10.1109/CVPR.2016.350</li>
+<li>Lin, T.-Y., Maire, M., Belongie, S., et al. (2014). “Microsoft COCO: Common Objects in Context.” In <em>ECCV 2014</em>, LNCS 8693, pp. 740–755. DOI: 10.1007/978-3-319-10602-1_48</li>
+<li>Zhou, B., Zhao, H., Puig, X., et al. (2019). “Semantic Understanding of Scenes through the ADE20K Dataset.” <em>International Journal of Computer Vision</em>, 127(3):302–321. DOI: 10.1007/s11263-018-1140-0</li>
+<li>Krähenbühl, P., &amp; Koltun, V. (2011). “Efficient Inference in Fully Connected CRFs with Gaussian Edge Potentials.” In <em>NeurIPS 2011</em>, pp. 109–117.</li>
+<li>Vincent, L., &amp; Soille, P. (1991). “Watersheds in Digital Spaces: An Efficient Algorithm Based on Immersion Simulations.” <em>IEEE TPAMI</em>, 13(6):583–598. DOI: 10.1109/34.87344</li>
+<li>Kamnitsas, K., Ledig, C., Newcombe, V. F. J., et al. (2017). “Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation.” <em>Medical Image Analysis</em>, 36:61–78. DOI: 10.1016/j.media.2016.10.004</li>
+<li>Minaee, S., Boykov, Y., Porikli, F., Plaza, A., Kehtarnavaz, N., &amp; Terzopoulos, D. (2022). “Image Segmentation Using Deep Learning: A Survey.” <em>IEEE TPAMI</em>, 44(7):3523–3542. DOI: 10.1109/TPAMI.2021.3059968</li>
+<li>Schult, J., Engelmann, F., Hermans, A., Litany, O., Tang, S., &amp; Leibe, B. (2023). “Mask3D: Mask Transformer for 3D Instance Segmentation.” In <em>ICRA 2023</em>. arXiv:2210.03105</li>
+<li>Zhang, C., Han, D., Qiao, Y., et al. (2023). “Faster Segment Anything: Towards Lightweight SAM for Mobile Applications (MobileSAM).” arXiv:2306.14289</li>
+<li>Zhao, X., Ding, W., An, Y., et al. (2023). “Fast Segment Anything (FastSAM).” arXiv:2306.12156</li>
+<li>Ren, T., Liu, S., Zeng, A., et al. (2024). “Grounded SAM: Assembling Open-World Models for Diverse Visual Tasks.” arXiv:2401.14159</li>
+<li>Ma, J., He, Y., Li, F., Han, L., You, C., &amp; Wang, B. (2024). “Segment Anything in Medical Images (MedSAM).” <em>Nature Communications</em>, 15:654. DOI: 10.1038/s41467-024-44824-z</li>
+</ul>
+</li>
+<li><strong>Dataset and Benchmark Standards</strong>:
+<ul>
+<li>SA-1B: Meta AI, 2023. 11 million images, 1.1 billion masks. <a href="https://segment-anything.com" class="external">https://segment-anything.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Cityscapes: <a href="https://www.cityscapes-dataset.com" class="external">https://www.cityscapes-dataset.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>COCO Panoptic: <a href="https://cocodataset.org/#panoptic-2019" class="external">https://cocodataset.org/#panoptic-2019<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>ADE20K: <a href="http://sceneparsing.csail.mit.edu" class="external">http://sceneparsing.csail.mit.edu<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>PASCAL VOC 2012: <a href="http://host.robots.ox.ac.uk/pascal/VOC/voc2012" class="external">http://host.robots.ox.ac.uk/pascal/VOC/voc2012<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li><strong>UK Industry</strong>:
+<ul>
+<li>Oxbotica / Wayve: autonomous driving segmentation pipelines, Oxford / London, 2015-2024. <a href="https://wayve.ai" class="external">https://wayve.ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>FiveAI / Bosch: urban autonomous driving segmentation for UK cities, 2017-2022. <a href="https://five.ai" class="external">https://five.ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Brainomix: Oxford. CE-marked, FDA-cleared stroke imaging segmentation. <a href="https://www.brainomix.com" class="external">https://www.brainomix.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Kheiron Medical Technologies: London. Mammography segmentation for NHS screening. <a href="https://www.kheironmed.com" class="external">https://www.kheironmed.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-2930" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-image-segmentation" data-for="about-image-segmentation">About Image Segmentation</a></li><li class="depth-1"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-1"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-1"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/ADE20K" class="internal">ADE20K</a></li><li><a href="../pages/Classifier-Free-Guidance" class="internal">classifier-free guidance</a></li><li><a href="../pages/Conformal-Prediction" class="internal">Conformal Prediction</a></li><li><a href="../pages/DICOM" class="internal">DICOM</a></li><li><a href="../pages/Edge-Detection" class="internal">Edge Detection</a></li><li><a href="../pages/Image-Processing" class="internal">Image Processing</a></li><li><a href="../pages/Machine-Vision" class="internal">Machine Vision</a></li><li><a href="../pages/Medical-Imaging" class="internal">medical imaging</a></li><li><a href="../pages/Surgical-Robotics" class="internal">surgical robotics</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

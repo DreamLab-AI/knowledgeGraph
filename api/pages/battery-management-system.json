@@ -59,7 +59,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -175,6 +175,10 @@
         "label": "Hardware Abstraction Layer"
       },
       {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
@@ -283,6 +287,10 @@
         "label": "Digital Signal Processor"
       },
       {
+        "id": "urn:ngm:class:interrupt-controller",
+        "label": "Interrupt Controller"
+      },
+      {
         "id": "urn:ngm:class:sensor",
         "label": "Sensor"
       }
@@ -337,7 +345,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

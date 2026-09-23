@@ -16,7 +16,20 @@
   "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:attended-automation",
+        "label": "Attended Automation"
+      },
+      {
+        "id": "urn:ngm:class:unattended-automation",
+        "label": "Unattended Automation"
+      },
+      {
+        "id": "urn:ngm:class:bot-orchestration",
+        "label": "Bot Orchestration"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:business-process-management",
@@ -67,7 +80,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -91,6 +104,10 @@
       {
         "id": "urn:ngm:class:process-mining",
         "label": "Process Mining"
+      },
+      {
+        "id": "urn:ngm:class:low-code-development",
+        "label": "Low-Code Development"
       }
     ],
     "supports": [],
@@ -100,7 +117,12 @@
         "label": "IEEE Standards"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:task-automation",
@@ -266,6 +288,10 @@
       {
         "id": "urn:ngm:class:batch-processing",
         "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:manual-processing",
+        "label": "Manual Processing"
       }
     ],
     "bridgesTo": [
@@ -284,11 +310,27 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -338,6 +380,10 @@
       {
         "id": "urn:ngm:class:bpmn",
         "label": "BPMN"
+      },
+      {
+        "id": "urn:ngm:class:dmn",
+        "label": "DMN"
       }
     ],
     "relatedTo": [

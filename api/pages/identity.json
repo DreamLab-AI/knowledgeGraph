@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:decentralised-identifier",
         "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-standard",
+        "label": "Credential"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-claim",
+        "label": "Verifiable Claim"
       }
     ],
     "requires": [
@@ -36,7 +44,7 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -131,6 +139,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation"
       },
       {
         "id": "urn:ngm:class:reputation-system",

@@ -42,6 +42,10 @@
       {
         "id": "urn:ngm:class:central-bank",
         "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:monetary-authority",
+        "label": "Monetary Authority"
       }
     ],
     "enables": [
@@ -54,7 +58,7 @@
         "label": "Stablecoin"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -77,6 +81,10 @@
       {
         "id": "urn:ngm:class:fiscal-policy",
         "label": "Fiscal Policy"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-monetary-policy",
+        "label": "Algorithmic Monetary Policy"
       }
     ],
     "bridgesTo": [
@@ -111,6 +119,10 @@
       {
         "id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:full-employment",
+        "label": "Full Employment"
       }
     ],
     "standardizedBy": [
@@ -119,15 +131,28 @@
         "label": "Bank for International Settlements"
       },
       {
-        "id": "urn:ngm:class:international-monetary-fund",
+        "id": "urn:ngm:class:imf",
         "label": "International Monetary Fund"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:economic-governance",
+        "label": "Economic Governance"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:defi-protocol",
+        "id": "urn:ngm:class:de-fi-protocol",
         "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:exchange-rate-policy",
+        "label": "Exchange Rate Policy"
+      },
+      {
+        "id": "urn:ngm:class:banking-regulation",
+        "label": "Banking Regulation"
       }
     ]
   },
@@ -216,8 +241,24 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

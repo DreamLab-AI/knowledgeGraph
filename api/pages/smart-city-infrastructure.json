@@ -111,6 +111,11 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:spatial-computing-domain",
+      "label": "Spatial Computing Domain",
+      "slug": "spatial-computing-domain"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
@@ -237,6 +242,14 @@
         "label": "Distributed Systems"
       },
       {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:situational-awareness",
+        "label": "Situational Awareness"
+      },
+      {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
@@ -255,7 +268,7 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -313,7 +326,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

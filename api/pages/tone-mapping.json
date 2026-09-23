@@ -72,6 +72,18 @@
         "label": "Feature Extraction"
       },
       {
+        "id": "urn:ngm:class:histogram-equalisation",
+        "label": "Histogram Equalisation"
+      },
+      {
+        "id": "urn:ngm:class:image-filtering",
+        "label": "Image Filtering"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
         "id": "urn:ngm:class:morphological-operations",
         "label": "Morphological Operations"
       },
@@ -80,24 +92,12 @@
         "label": "Digital Signal Processing"
       },
       {
+        "id": "urn:ngm:class:filter-design",
+        "label": "Filter Design"
+      },
+      {
         "id": "urn:ngm:class:fourier-transform",
         "label": "Fourier Transform"
-      },
-      {
-        "id": "urn:ngm:class:sampling-theory",
-        "label": "Sampling Theory"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
       }
     ],
     "requires": [
@@ -132,6 +132,14 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
         "id": "urn:ngm:class:image-classification",
         "label": "Image Classification"
       },
@@ -154,14 +162,6 @@
       {
         "id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
-      },
-      {
-        "id": "urn:ngm:class:radar",
-        "label": "Radar Sensing"
-      },
-      {
-        "id": "urn:ngm:class:spatial-audio",
-        "label": "Spatial Audio"
       }
     ],
     "contrastsWith": [
@@ -190,6 +190,18 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -228,7 +240,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

@@ -12,12 +12,28 @@
       "label": "AI Application"
     },
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     },
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:ai-audio",
+      "label": "AI Audio"
+    },
+    {
+      "id": "urn:ngm:class:speech-synthesis",
+      "label": "Speech Synthesis"
+    },
+    {
+      "id": "urn:ngm:class:content-automation",
+      "label": "Content Automation"
+    },
+    {
+      "id": "urn:ngm:class:ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "id": "urn:ngm:class:ai-video",
+      "label": "AI Video"
     }
   ],
   "entityType": "Class",
@@ -40,6 +56,26 @@
       {
         "id": "urn:ngm:class:text-to-speech",
         "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:automated-transcription",
+        "label": "Automated Transcription"
+      },
+      {
+        "id": "urn:ngm:class:ai-audio-editing",
+        "label": "AI Audio Editing"
+      },
+      {
+        "id": "urn:ngm:class:show-notes-generation",
+        "label": "Show Notes Generation"
+      },
+      {
+        "id": "urn:ngm:class:ai-script-generation",
+        "label": "AI Script Generation"
+      },
+      {
+        "id": "urn:ngm:class:podcast-distribution-automation",
+        "label": "Podcast Distribution Automation"
       }
     ],
     "requires": [
@@ -66,15 +102,68 @@
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing Infrastructure"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:creator-economy",
         "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:scalable-audio-content-production",
+        "label": "Scalable Audio Content Production"
+      },
+      {
+        "id": "urn:ngm:class:low-cost-podcast-creation",
+        "label": "Low-Cost Podcast Creation"
+      },
+      {
+        "id": "urn:ngm:class:personalised-audio-summaries",
+        "label": "Personalised Audio Summaries"
+      },
+      {
+        "id": "urn:ngm:class:accessible-media",
+        "label": "Accessible Media"
+      },
+      {
+        "id": "urn:ngm:class:multilingual-podcasting",
+        "label": "Multilingual Podcasting"
+      },
+      {
+        "id": "urn:ngm:class:real-time-content-conversion",
+        "label": "Real-Time Content Conversion"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      },
+      {
+        "id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:automatic-speech-recognition",
@@ -95,9 +184,34 @@
       {
         "id": "urn:ngm:class:voice-cloning",
         "label": "Voice Cloning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-based-tts",
+        "label": "Transformer-Based TTS"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-ad-insertion",
+        "label": "Dynamic Ad Insertion"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-podcast-production",
+        "label": "Human Podcast Production"
+      },
+      {
+        "id": "urn:ngm:class:traditional-radio-broadcasting",
+        "label": "Traditional Radio Broadcasting"
+      },
+      {
+        "id": "urn:ngm:class:manual-audio-editing",
+        "label": "Manual Audio Editing"
+      },
+      {
+        "id": "urn:ngm:class:studio-recording",
+        "label": "Studio Recording"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -115,6 +229,26 @@
       {
         "id": "urn:ngm:class:openai-research-organisation-whisper",
         "label": "Open AI Whisper"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation-whisper",
+        "label": "OpenAI Whisper"
+      },
+      {
+        "id": "urn:ngm:class:descript",
+        "label": "Descript"
+      },
+      {
+        "id": "urn:ngm:class:notebooklm",
+        "label": "NotebookLM"
+      },
+      {
+        "id": "urn:ngm:class:adobe-podcast",
+        "label": "Adobe Podcast"
+      },
+      {
+        "id": "urn:ngm:class:assemblyai",
+        "label": "AssemblyAI"
       }
     ],
     "supports": [
@@ -133,6 +267,18 @@
       {
         "id": "urn:ngm:class:creator-economy",
         "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:media-accessibility",
+        "label": "Media Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:seo-optimisation",
+        "label": "SEO Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:podcast-distribution",
+        "label": "Podcast Distribution"
       }
     ],
     "standardizedBy": [
@@ -143,6 +289,14 @@
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50"
+      },
+      {
+        "id": "urn:ngm:class:ofcom-broadcasting-code",
+        "label": "Ofcom Broadcasting Code"
+      },
+      {
+        "id": "urn:ngm:class:ftc-endorsement-guidelines",
+        "label": "FTC Endorsement Guidelines"
       }
     ],
     "partOf": [],
@@ -183,9 +337,404 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:affective-computing-system",
+      "label": "Affective Computing System",
+      "slug": "affective-computing-system"
+    },
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System",
+      "slug": "ai-agent-system"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:consumer-ai-product",
+      "label": "Consumer AI Product",
+      "slug": "consumer-ai-product"
+    },
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI",
+      "slug": "conversational-ai"
+    },
+    {
+      "id": "urn:ngm:class:deep-generative-model",
+      "label": "Deep Generative Model",
+      "slug": "deep-generative-model"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model",
+      "slug": "foundation-model"
+    },
+    {
+      "id": "urn:ngm:class:large-language-model-application",
+      "label": "Large Language Model Application",
+      "slug": "large-language-model-application"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+      "label": "Multimodal AI",
+      "slug": "multimodal-ai-architecture-ai"
+    },
+    {
+      "id": "urn:ngm:class:synthetic-media",
+      "label": "Synthetic Media",
+      "slug": "synthetic-media"
+    },
+    {
+      "id": "urn:ngm:class:text-to-speech",
+      "label": "Text-to-Speech",
+      "slug": "text-to-speech"
+    },
+    {
+      "id": "urn:ngm:class:affective-computing",
+      "label": "Affective Computing",
+      "slug": "affective-computing"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-ai",
+      "label": "Cognitive AI",
+      "slug": "cognitive-ai"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing",
+      "slug": "natural-language-processing"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-architecture",
+      "label": "Cognitive Architecture",
+      "slug": "cognitive-architecture"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science",
+      "slug": "cognitive-science"
+    },
+    {
+      "id": "urn:ngm:class:hybrid-ai",
+      "label": "Hybrid AI",
+      "slug": "hybrid-ai"
+    },
+    {
+      "id": "urn:ngm:class:neuro-symbolic-ai",
+      "label": "Neuro Symbolic Ai",
+      "slug": "neuro-symbolic-ai"
+    },
+    {
+      "id": "urn:ngm:class:agent",
+      "label": "Agent",
+      "slug": "agent"
+    },
+    {
+      "id": "urn:ngm:class:agent-based-modelling",
+      "label": "Agent-Based Modelling",
+      "slug": "agent-based-modelling"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
+    },
+    {
+      "id": "urn:ngm:class:symbolic-reasoning",
+      "label": "Symbolic Reasoning",
+      "slug": "symbolic-reasoning"
+    },
+    {
+      "id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous System",
+      "slug": "autonomous-system"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:complex-systems-science",
+      "label": "Complex Systems Science",
+      "slug": "complex-systems-science"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:computational-modelling",
+      "label": "Computational Modelling",
+      "slug": "computational-modelling"
+    },
+    {
+      "id": "urn:ngm:class:reasoning",
+      "label": "Reasoning",
+      "slug": "reasoning"
+    },
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation",
+      "slug": "simulation"
+    },
+    {
+      "id": "urn:ngm:class:artificial-general-intelligence",
+      "label": "Artificial General Intelligence",
+      "slug": "artificial-general-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin",
+      "slug": "digital-twin"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:formal-verification",
+      "label": "Formal Verification",
+      "slug": "formal-verification"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation",
+      "slug": "knowledge-representation"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:scientific-machine-learning",
+      "label": "Scientific Machine Learning",
+      "slug": "scientific-machine-learning"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model-capability",
+      "label": "Foundation Model Capability",
+      "slug": "foundation-model-capability"
+    },
+    {
+      "id": "urn:ngm:class:frontier-ai",
+      "label": "Frontier AI",
+      "slug": "frontier-ai"
+    },
+    {
+      "id": "urn:ngm:class:general-intelligence",
+      "label": "General Intelligence",
+      "slug": "general-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:scientific-discovery",
+      "label": "Scientific Discovery",
+      "slug": "scientific-discovery"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer",
+      "slug": "foundation-model-layer"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model",
+      "slug": "large-scale-pretrained-foundation-model"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     }
   ],
   "inheritedRelations": {
@@ -225,38 +774,206 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Datasets"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:ngm:class:gpu-inference-capacity",
+        "label": "GPU Inference Capacity"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:ai-art-generation",
+        "label": "AI Art"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:automated-design",
+        "label": "Automated Design"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      },
+      {
+        "id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      },
+      {
+        "id": "urn:ngm:class:creative-collaboration",
+        "label": "Creative Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:inference-infrastructure",
+        "label": "Cloud Inference Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:mobile-app-distribution",
+        "label": "Mobile App Distribution"
+      },
+      {
+        "id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety-operations",
+        "label": "Trust and Safety Operations"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:age-verification",
+        "label": "Age Gating"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:engagement-optimisation",
+        "label": "Engagement Optimisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-assistant",
+        "label": "AI Assistant"
+      },
+      {
+        "id": "urn:ngm:class:customer-service-bot",
+        "label": "Customer Service Bot"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-chatbot",
+        "label": "General-Purpose Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:search-augmented-chatbot",
+        "label": "Search-Augmented Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:therapy-chatbot",
+        "label": "Therapy Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "id": "urn:ngm:class:classical-animation",
+        "label": "Classical Animation"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       }
     ],
     "uses": [
@@ -267,6 +984,132 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Diffusion Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:live2d-animation",
+        "label": "Live2D Animation"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bereavement-processing",
+        "label": "Bereavement Processing"
+      },
+      {
+        "id": "urn:ngm:class:creative-writing",
+        "label": "Creative Writing"
+      },
+      {
+        "id": "urn:ngm:class:dementia-engagement",
+        "label": "Dementia Engagement"
+      },
+      {
+        "id": "urn:ngm:class:fan-fiction",
+        "label": "Fan Fiction"
+      },
+      {
+        "id": "urn:ngm:class:mental-health-self-help",
+        "label": "Mental Health Self-Help"
+      },
+      {
+        "id": "urn:ngm:class:neurodivergent-communication",
+        "label": "Neurodivergent Communication"
+      },
+      {
+        "id": "urn:ngm:class:social-skills-training",
+        "label": "Social Skills Training"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-captioning",
+        "label": "Accessibility Captioning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:ftc-ai-enforcement",
+        "label": "FTC AI Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:ofcom",
+        "label": "Ofcom Guidance"
+      },
+      {
+        "id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      },
+      {
+        "id": "urn:ngm:class:bbc-generative-ai-principles",
+        "label": "BBC Generative AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:fvd",
+        "label": "FVD"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:speech-processing",
+        "label": "Speech Technology"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems-science",
+        "label": "Complex Systems Science"
+      },
+      {
+        "id": "urn:ngm:class:complexity-science",
+        "label": "Complexity Science"
       }
     ],
     "relatedTo": [
@@ -281,6 +1124,26 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intimacy",
+        "label": "Artificial Intimacy"
       }
     ]
   },

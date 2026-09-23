@@ -99,7 +99,12 @@
         "label": "ISO 10218"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:smart-manufacturing",
@@ -116,6 +121,10 @@
       {
         "id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-execution-system",
+        "label": "Manufacturing Execution System"
       }
     ]
   },
@@ -198,16 +207,16 @@
         "label": "Hardware Abstraction Layer"
       },
       {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -324,7 +333,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -378,7 +387,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -476,7 +485,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ]

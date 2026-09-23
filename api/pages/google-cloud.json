@@ -28,6 +28,18 @@
       {
         "id": "urn:ngm:class:tensor-processing-unit",
         "label": "Tensor Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:google-kubernetes-engine",
+        "label": "Google Kubernetes Engine"
+      },
+      {
+        "id": "urn:ngm:class:bigquery",
+        "label": "BigQuery"
+      },
+      {
+        "id": "urn:ngm:class:cloud-run",
+        "label": "Cloud Run"
       }
     ],
     "requires": [
@@ -60,6 +72,14 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
       }
     ],
     "dependsOn": [
@@ -85,6 +105,10 @@
       {
         "id": "urn:ngm:class:on-premises-infrastructure",
         "label": "On-Premises Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:azure",
+        "label": "Microsoft Azure"
       }
     ],
     "bridgesTo": [
@@ -135,6 +159,14 @@
       {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:google-workspace",
+        "label": "Google Workspace"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native Computing"
       }
     ]
   },
@@ -242,12 +274,12 @@
         "label": "Platform Engineering"
       },
       {
-        "id": "urn:ngm:class:infrastructure-as-a-service",
-        "label": "Infrastructure as a Service"
+        "id": "urn:ngm:class:elasticity",
+        "label": "Elasticity"
       },
       {
-        "id": "urn:ngm:class:platform-as-a-service",
-        "label": "Platform as a Service"
+        "id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure as a Service"
       }
     ],
     "dependsOn": [
@@ -272,11 +304,19 @@
         "label": "Edge Computing"
       },
       {
+        "id": "urn:ngm:class:on-premise-infrastructure",
+        "label": "On-Premise Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      },
       {
         "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Model"
@@ -344,7 +384,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "id": "urn:ngm:class:cncf",
         "label": "Cloud Native Computing Foundation"
       },
       {
@@ -364,10 +404,20 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:multi-cloud-strategy",
+        "label": "Multi-Cloud Strategy"
       },
       {
         "id": "urn:ngm:class:platform-governance",
@@ -392,10 +442,6 @@
       {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:infra-data-management",
-        "label": "Data Management"
       }
     ]
   },

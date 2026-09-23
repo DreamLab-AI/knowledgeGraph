@@ -8,7 +8,7 @@
   "definition": "The Ethereum Name Service (ENS) is a decentralised, open-source naming protocol deployed on Ethereum that maps human-readable names (e.g. 'alice.eth') to machine-readable identifiers including wallet addresses, content hashes, and arbitrary metadata stored on-chain. It operates through a hierarchy of smart contracts \u2014 a central registry recording ownership and resolver assignments, and resolver contracts that translate names to resources according to standardised ERC specifications. ENS names are minted as ERC-721 non-fungible tokens, granting cryptographic ownership without reliance on a centralised registrar, and extending DNS-compatible reverse resolution so on-chain addresses can be presented as readable identities. The protocol has become the dominant blockchain naming infrastructure on Ethereum, with millions of registered names and integrations across wallets, browsers, and decentralised applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
+      "id": "urn:ngm:class:network-component",
       "label": "Network Component"
     }
   ],
@@ -43,6 +43,10 @@
       {
         "id": "urn:ngm:class:web3-wallet",
         "label": "Web3 Wallet"
+      },
+      {
+        "id": "urn:ngm:class:human-readable-address",
+        "label": "Human-Readable Address"
       }
     ],
     "dependsOn": [],
@@ -52,7 +56,7 @@
         "label": "ERC-137"
       },
       {
-        "id": "urn:ngm:class:erc-721",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721"
       }
     ],
@@ -64,6 +68,10 @@
       {
         "id": "urn:ngm:class:unstoppable-domains",
         "label": "Unstoppable Domains"
+      },
+      {
+        "id": "urn:ngm:class:handshake-protocol",
+        "label": "Handshake Protocol"
       }
     ],
     "bridgesTo": [
@@ -74,12 +82,24 @@
       {
         "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:namehash-algorithm",
+        "label": "Namehash Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-transaction",
+        "label": "Ethereum Transaction"
       }
     ],
     "supports": [],
@@ -104,44 +124,24 @@
         "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "id": "urn:ngm:class:eip",
         "label": "Ethereum Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:reverse-resolution",
+        "label": "Reverse Resolution"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
-      {
-        "id": "urn:ngm:class:archival-node",
-        "label": "Archival Node"
-      },
-      {
-        "id": "urn:ngm:class:bootstrap-node",
-        "label": "Bootstrap Node"
-      },
-      {
-        "id": "urn:ngm:class:full-node",
-        "label": "Full Node"
-      },
-      {
-        "id": "urn:ngm:class:light-node",
-        "label": "Light Node"
-      },
-      {
-        "id": "urn:ngm:class:mempool",
-        "label": "Mempool"
-      },
-      {
-        "id": "urn:ngm:class:validator-node",
-        "label": "Validator Node"
-      },
       {
         "id": "urn:ngm:class:block",
         "label": "Block"
@@ -149,64 +149,96 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:block-propagation",
-        "label": "Block Propagation"
-      },
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Transparent Audit Trails"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:autonomous-governance",
+        "label": "Autonomous Governance"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
+        "id": "urn:ngm:class:distributed-trust",
+        "label": "Distributed Trust"
       }
     ],
-    "relatedTo": [
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
-      },
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "relatedTo": [
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
       }
     ]
   },

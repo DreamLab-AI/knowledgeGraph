@@ -14,6 +14,10 @@
     {
       "id": "urn:ngm:class:multimodal-ai-architecture",
       "label": "Multimodal AI Architecture"
+    },
+    {
+      "id": "urn:ngm:class:multimodal-ai-architecture-learning",
+      "label": "Multimodal Learning"
     }
   ],
   "entityType": "Class",
@@ -48,6 +52,18 @@
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:causal-language-modelling",
+        "label": "Causal Language Modelling"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
       }
     ],
     "requires": [
@@ -66,6 +82,10 @@
       {
         "id": "urn:ngm:class:image-text-paired-corpus",
         "label": "Image-Text Paired Corpus"
+      },
+      {
+        "id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
       }
     ],
     "enables": [
@@ -96,10 +116,52 @@
       {
         "id": "urn:ngm:class:cross-modal-retrieval",
         "label": "Cross Modal Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-understanding",
+        "label": "Multimodal Understanding"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:causal-language-modelling",
+        "label": "Causal Language Modelling"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:flamingo",
@@ -116,6 +178,10 @@
       {
         "id": "urn:ngm:class:full-fine-tuning",
         "label": "Full Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:gemini-multimodal-language-model",
+        "label": "Gemini Multimodal Language Model"
       }
     ],
     "bridgesTo": [],
@@ -139,10 +205,52 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "KOHYA Dreambooth and similar"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:salesforce-research",
+        "label": "Salesforce Research"
+      },
+      {
+        "id": "urn:ngm:class:lavis-library",
+        "label": "LAVIS Library"
+      },
+      {
+        "id": "urn:ngm:class:huggingface-transformers",
+        "label": "HuggingFace Transformers"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -154,7 +262,7 @@
         "label": "CLIP"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {
@@ -172,10 +280,31 @@
       {
         "id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini Multimodal Language Model"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal AI Architecture"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-reasoning",
+        "label": "Multimodal Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "id": "urn:ngm:class:cross-modal-retrieval",
+        "label": "Cross Modal Retrieval"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-machine-learning",
+      "label": "Ai Machine Learning",
+      "slug": "ai-machine-learning"
+    },
     {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture",
@@ -215,16 +344,16 @@
         "label": "Semantic Segmentation"
       },
       {
-        "id": "urn:ngm:class:autoencoder",
-        "label": "Autoencoder"
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross-Attention Fusion"
       },
       {
-        "id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Network"
+        "id": "urn:ngm:class:cross-modal-conditioning",
+        "label": "Cross-Modal Conditioning"
       },
       {
-        "id": "urn:ngm:class:diffusion-model",
-        "label": "Diffusion Model"
+        "id": "urn:ngm:class:modality-specific-encoder",
+        "label": "Modality-Specific Encoder"
       }
     ],
     "requires": [
@@ -249,12 +378,16 @@
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
@@ -275,6 +408,10 @@
         "label": "Robotics Perception"
       },
       {
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
+      },
+      {
         "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
       },
@@ -283,12 +420,68 @@
         "label": "Text-to-Speech"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-models",
+        "label": "Multimodal Models"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving-perception",
+        "label": "Autonomous Driving Perception"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "relatedTo": [
@@ -305,24 +498,24 @@
         "label": "Speech Recognition"
       },
       {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:grounding",
+        "label": "Grounding"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
       }
     ]
   },

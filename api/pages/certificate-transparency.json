@@ -8,7 +8,7 @@
   "definition": "Certificate Transparency (CT) is an open framework and internet standard (RFC 6962 and RFC 9162) that creates a publicly auditable, append-only log of all TLS certificates issued by certificate authorities, enabling domain owners, browser vendors, and security researchers to detect misissued or fraudulent certificates rapidly. CT logs use Merkle hash trees to provide cryptographic proofs of inclusion and consistency, guaranteeing that any certificate added to a log cannot be subsequently removed or altered. Major browsers enforce CT by requiring certificates to carry signed certificate timestamps (SCTs) from recognised logs, making unauthorised certificate issuance immediately detectable.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:public-key-infrastructure",
+      "id": "urn:ngm:class:cryptographic-infrastructure",
       "label": "Public Key Infrastructure"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -119,11 +119,6 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:cryptographic-infrastructure",
-      "label": "Cryptographic Infrastructure",
-      "slug": "cryptographic-infrastructure"
-    },
-    {
       "id": "urn:ngm:class:cryptographic-algorithm",
       "label": "Cryptographic Algorithm",
       "slug": "cryptographic-algorithm"
@@ -139,9 +134,24 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -152,55 +162,39 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:certificate-authority",
-        "label": "Certificate Authority"
-      },
-      {
-        "id": "urn:ngm:class:certificate-revocation-list",
-        "label": "Certificate Revocation List"
-      },
-      {
-        "id": "urn:ngm:class:digital-certificate",
-        "label": "Digital Certificate"
-      },
-      {
-        "id": "urn:ngm:class:online-certificate-status-protocol",
-        "label": "Online Certificate Status Protocol"
-      },
-      {
-        "id": "urn:ngm:class:registration-authority",
-        "label": "Registration Authority"
-      },
-      {
-        "id": "urn:ngm:class:root-certificate",
-        "label": "Root Certificate"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
-      }
-    ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:asymmetric-cryptography",
-        "label": "Asymmetric Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-keys",
-        "label": "Cryptographic Keys"
-      },
-      {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
       },
       {
         "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
       },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Cipher"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "requires": [
       {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
@@ -214,35 +208,27 @@
         "label": "Random Number Generation"
       },
       {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital-Signature"
+      },
+      {
         "id": "urn:ngm:class:encryption-scheme",
         "label": "Encryption Scheme"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash-Function"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:code-signing",
-        "label": "Code Signing"
-      },
-      {
-        "id": "urn:ngm:class:digital-identity",
-        "label": "Digital Identity"
-      },
-      {
-        "id": "urn:ngm:class:encrypted-email",
-        "label": "Encrypted Email"
-      },
-      {
-        "id": "urn:ngm:class:mutual-authentication",
-        "label": "Mutual Authentication"
-      },
-      {
-        "id": "urn:ngm:class:non-repudiation",
-        "label": "Non-Repudiation"
-      },
-      {
-        "id": "urn:ngm:class:transport-layer-security",
-        "label": "Transport Layer Security"
-      },
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
@@ -250,6 +236,30 @@
       {
         "id": "urn:ngm:class:data-integrity",
         "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
       }
     ],
     "dependsOn": [
@@ -260,17 +270,29 @@
       {
         "id": "urn:ngm:class:number-theory",
         "label": "Number Theory"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
       }
     ],
     "implements": [
-      {
-        "id": "urn:ngm:class:rfc-5280",
-        "label": "RFC 5280"
-      },
-      {
-        "id": "urn:ngm:class:x509-standard",
-        "label": "X.509 Standard"
-      },
       {
         "id": "urn:ngm:class:computational-hardness-assumption",
         "label": "Computational Hardness Assumption"
@@ -284,19 +306,11 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:decentralised-identifier",
-        "label": "Decentralised Identifier"
-      },
-      {
-        "id": "urn:ngm:class:web-of-trust",
-        "label": "Web of Trust"
-      },
       {
         "id": "urn:ngm:class:obfuscation",
         "label": "Obfuscation"
@@ -310,29 +324,33 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "id": "urn:ngm:class:threat-actor",
+        "label": "Threat Actor"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:blockchain-identity",
-        "label": "Blockchain Identity"
-      },
-      {
-        "id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self Sovereign Identity"
-      },
-      {
-        "id": "urn:ngm:class:verifiable-credential-vc",
-        "label": "Verifiable Credential"
-      },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -346,6 +364,18 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      },
+      {
+        "id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
       }
     ],
     "uses": [
@@ -360,23 +390,11 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:identity-and-access-management",
-        "label": "Identity and Access Management"
-      },
-      {
-        "id": "urn:ngm:class:secure-communication",
-        "label": "Secure Communication"
-      },
-      {
-        "id": "urn:ngm:class:zero-trust-architecture",
-        "label": "Zero Trust Architecture"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:transport-layer-security",
+        "id": "urn:ngm:class:tls",
         "label": "Transport Layer Security"
       },
       {
@@ -390,6 +408,18 @@
       {
         "id": "urn:ngm:class:data-privacy",
         "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       }
     ],
     "standardizedBy": [
@@ -398,12 +428,28 @@
         "label": "Internet Engineering Task Force"
       },
       {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
         "id": "urn:ngm:class:nist",
         "label": "NIST"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD Principles on AI"
       },
       {
         "id": "urn:ngm:class:open-standards",
@@ -421,18 +467,6 @@
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
-      },
-      {
-        "id": "urn:ngm:class:encryption",
-        "label": "Encryption"
-      },
-      {
-        "id": "urn:ngm:class:post-quantum-cryptography",
-        "label": "Post-Quantum Cryptography"
-      },
       {
         "id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
@@ -452,6 +486,18 @@
       {
         "id": "urn:ngm:class:message-authentication-code",
         "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ]
   },

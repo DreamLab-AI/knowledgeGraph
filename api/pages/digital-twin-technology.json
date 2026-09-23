@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics-Based Simulation"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics-Based Simulation"
       }
     ],
     "requires": [
@@ -50,6 +54,10 @@
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-streaming",
+        "label": "Real-Time Data Streaming"
       }
     ],
     "enables": [
@@ -72,11 +80,23 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bim-virtual-model",
+        "label": "Building Information Modelling"
+      },
+      {
+        "id": "urn:ngm:class:simulation-modelling",
+        "label": "Simulation Modelling"
+      },
       {
         "id": "urn:ngm:class:bim-virtual-model",
         "label": "Building Information Modelling"
@@ -98,7 +118,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -119,10 +139,23 @@
       {
         "id": "urn:ngm:class:iso-iec-jtc-1",
         "label": "ISO/IEC JTC 1"
+      },
+      {
+        "id": "urn:ngm:class:industrial-internet-consortium",
+        "label": "Industrial Internet Consortium"
       }
     ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-based-engineering",
+        "label": "Model-Based Engineering"
+      },
+      {
+        "id": "urn:ngm:class:asset-lifecycle-management",
+        "label": "Asset Lifecycle Management"
+      }
+    ]
   },
   "inferredSuperClasses": [
     {
@@ -198,16 +231,16 @@
         "label": "Hardware Abstraction Layer"
       },
       {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -324,7 +357,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -352,6 +385,10 @@
       {
         "id": "urn:ngm:class:digital-signal-processor",
         "label": "Digital Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-controller",
+        "label": "Interrupt Controller"
       },
       {
         "id": "urn:ngm:class:sensor",
@@ -432,7 +469,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -40,6 +40,14 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:ethics-committee",
+        "label": "Ethics Committee"
+      },
+      {
+        "id": "urn:ngm:class:value",
+        "label": "Value Framework"
       }
     ],
     "requires": [
@@ -50,6 +58,10 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ethics-law",
+        "label": "Ethics & Law"
       }
     ],
     "enables": [
@@ -60,12 +72,34 @@
       {
         "id": "urn:ngm:class:value-alignment",
         "label": "Value Alignment"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Ethical Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-accountability",
+        "label": "Stakeholder Accountability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethical-principles",
+        "label": "Ethical Principles"
+      },
+      {
+        "id": "urn:ngm:class:governance-models",
+        "label": "Governance Models"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -192,6 +226,18 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -234,7 +280,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

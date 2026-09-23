@@ -60,7 +60,7 @@
         "label": "Identity Management"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -154,6 +154,10 @@
         "label": "Directory Services"
       },
       {
+        "id": "urn:ngm:class:identity-governance-and-administration",
+        "label": "Identity Governance and Administration"
+      },
+      {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
@@ -168,10 +172,6 @@
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
       }
     ],
     "requires": [
@@ -270,6 +270,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
@@ -284,10 +288,6 @@
       {
         "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:saml",

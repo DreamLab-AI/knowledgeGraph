@@ -32,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:microsoft-entra-verified-id",
+        "label": "Microsoft Entra Verified ID"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -198,6 +203,14 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      },
+      {
+        "id": "urn:ngm:class:on-premises-computing",
+        "label": "On-Premises Computing"
+      },
+      {
         "id": "urn:ngm:class:centralised-computing",
         "label": "Centralised Computing"
       },
@@ -224,12 +237,12 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:decentralised-governance",
-        "label": "Decentralised Governance"
-      },
-      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:data",
@@ -242,12 +255,12 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:containerisation",
-        "label": "Containerisation"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
       },
       {
         "id": "urn:ngm:class:kubernetes",
@@ -311,6 +324,10 @@
       },
       {
         "id": "urn:ngm:class:nist-cloud-computing",
+        "label": "NIST Cloud Computing Definition"
+      },
+      {
+        "id": "urn:ngm:class:nist-cloud-computing-definition",
         "label": "NIST Cloud Computing Definition"
       },
       {

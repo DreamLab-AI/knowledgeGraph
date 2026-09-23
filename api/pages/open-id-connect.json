@@ -46,7 +46,7 @@
         "label": "JSON Web Key Set"
       },
       {
-        "id": "urn:ngm:class:transport-layer-security",
+        "id": "urn:ngm:class:tls",
         "label": "Transport Layer Security"
       }
     ],
@@ -82,6 +82,10 @@
       {
         "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "EU Digital Identity Wallet"
       },
       {
         "id": "urn:ngm:class:digital-identity-wallet",
@@ -128,7 +132,7 @@
         "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -152,6 +156,26 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:attribute-exchange",
+        "label": "Attribute Exchange"
+      },
+      {
+        "id": "urn:ngm:class:credential-mapping",
+        "label": "Credential Mapping"
+      },
+      {
+        "id": "urn:ngm:class:policy-negotiation",
+        "label": "Policy Negotiation"
+      },
+      {
+        "id": "urn:ngm:class:session-propagation",
+        "label": "Session Propagation"
+      },
+      {
+        "id": "urn:ngm:class:token-translation",
+        "label": "Token Translation"
+      },
+      {
         "id": "urn:ngm:class:trust-establishment",
         "label": "Trust Establishment"
       },
@@ -162,26 +186,6 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
-      },
-      {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:digital-identity-management",
-        "label": "Digital Identity Management"
       }
     ],
     "requires": [
@@ -192,6 +196,10 @@
       {
         "id": "urn:ngm:class:identity-provider-id-p",
         "label": "Identity Provider (IdP)"
+      },
+      {
+        "id": "urn:ngm:class:metadata-exchange",
+        "label": "Metadata Exchange"
       },
       {
         "id": "urn:ngm:class:trust-framework",
@@ -212,8 +220,20 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:b2b-collaboration",
+        "label": "B2B Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:cross-domain-sso",
+        "label": "Cross-Domain SSO"
+      },
+      {
         "id": "urn:ngm:class:decentralized-identity",
         "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:multi-organization-access",
+        "label": "Multi-Organization Access"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -230,10 +250,24 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:attribute-schema",
+        "label": "Attribute Schema"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:federation-agreement",
+        "label": "Federation Agreement"
+      },
+      {
+        "id": "urn:ngm:class:pki-infrastructure",
+        "label": "PKI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
       }
     ],
     "contrastsWith": [

@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -40,6 +40,10 @@
       {
         "id": "urn:ngm:class:domain-name-system",
         "label": "Domain Name System"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualisation"
       }
     ],
     "requires": [
@@ -50,6 +54,10 @@
       {
         "id": "urn:ngm:class:quality-of-service",
         "label": "Quality Of Service"
+      },
+      {
+        "id": "urn:ngm:class:traffic-engineering",
+        "label": "Traffic Engineering"
       }
     ],
     "enables": [
@@ -111,6 +119,10 @@
       {
         "id": "urn:ngm:class:inference-infrastructure",
         "label": "AI Inference Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference-infrastructure",
+        "label": "AI Inference Infrastructure"
       }
     ],
     "uses": [],
@@ -122,6 +134,10 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       },
       {
         "id": "urn:ngm:class:autonomous-system",
@@ -140,6 +156,10 @@
       {
         "id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802"
       }
     ],
     "partOf": [],
@@ -151,6 +171,10 @@
       {
         "id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Networks"
       }
     ]
   },
@@ -278,7 +302,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

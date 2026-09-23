@@ -36,7 +36,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:i-proov",
+        "label": "iProov"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -97,16 +102,20 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:database-lookup",
+        "label": "Database Lookup"
+      },
+      {
         "id": "urn:ngm:class:optical-character-recognition",
         "label": "Optical Character Recognition"
       },
       {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -127,7 +136,7 @@
         "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -135,7 +144,7 @@
         "label": "Digital Onboarding"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -157,12 +166,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:blockchain",
@@ -311,6 +320,12 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
       }
     ],
     "relatedTo": [

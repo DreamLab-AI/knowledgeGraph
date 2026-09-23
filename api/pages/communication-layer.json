@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
+    },
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
     }
   ],
   "entityType": "Class",
@@ -36,7 +40,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:publish-subscribe",
+        "label": "Publish-Subscribe"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -53,12 +66,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -167,7 +180,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

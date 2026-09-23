@@ -14,6 +14,22 @@
     {
       "id": "urn:ngm:class:search-technology",
       "label": "Search Technology"
+    },
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "id": "urn:ngm:class:neural-information-retrieval",
+      "label": "Neural Information Retrieval"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-retrieval",
+      "label": "Knowledge Retrieval"
     }
   ],
   "entityType": "Class",
@@ -48,6 +64,14 @@
       {
         "id": "urn:ngm:class:vector-index",
         "label": "Vector Index"
+      },
+      {
+        "id": "urn:ngm:class:document-encoder",
+        "label": "Document Encoder"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour"
       }
     ],
     "requires": [
@@ -70,6 +94,10 @@
       {
         "id": "urn:ngm:class:vector-database",
         "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Evaluation Benchmark"
       }
     ],
     "enables": [
@@ -88,9 +116,38 @@
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-query",
+        "label": "Knowledge Graph Query"
+      },
+      {
+        "id": "urn:ngm:class:conversational-search",
+        "label": "Conversational Search"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Sentence Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:bm25",
@@ -111,9 +168,38 @@
       {
         "id": "urn:ngm:class:reciprocal-rank-fusion",
         "label": "Reciprocal Rank Fusion"
+      },
+      {
+        "id": "urn:ngm:class:bi-encoder-architecture",
+        "label": "Bi-Encoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:colbert-late-interaction",
+        "label": "ColBERT Late Interaction"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:keyword-search",
+        "label": "Keyword Search"
+      },
+      {
+        "id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "id": "urn:ngm:class:tf-idf-retrieval",
+        "label": "TF-IDF Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:boolean-retrieval",
+        "label": "Boolean Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index-search",
+        "label": "Inverted Index Search"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:knowledge-retrieval",
@@ -140,6 +226,18 @@
       {
         "id": "urn:ngm:class:weaviate",
         "label": "Weaviate"
+      },
+      {
+        "id": "urn:ngm:class:qdrant",
+        "label": "Qdrant"
+      },
+      {
+        "id": "urn:ngm:class:pgvector",
+        "label": "pgvector"
+      },
+      {
+        "id": "urn:ngm:class:chroma",
+        "label": "Chroma"
       }
     ],
     "supports": [
@@ -158,6 +256,18 @@
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce-search",
+        "label": "E-Commerce Search"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Biomedical Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:legal-document-retrieval",
+        "label": "Legal Document Retrieval"
       }
     ],
     "standardizedBy": [
@@ -168,6 +278,18 @@
       {
         "id": "urn:ngm:class:mteb-benchmark",
         "label": "MTEB Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:trec",
+        "label": "TREC"
+      },
+      {
+        "id": "urn:ngm:class:ms-marco",
+        "label": "MS MARCO"
+      },
+      {
+        "id": "urn:ngm:class:nist-ir-evaluation",
+        "label": "NIST IR Evaluation"
       }
     ],
     "partOf": [],
@@ -195,10 +317,19 @@
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
@@ -242,16 +373,28 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:text-representation",
+        "label": "Text Representation"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
       }
     ],
     "enables": [
@@ -260,36 +403,106 @@
         "label": "Information Retrieval"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:corpus",
+        "label": "Corpus"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metrics"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-search",
+        "label": "Spatial Search"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -308,6 +521,28 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "relatedTo": [
@@ -322,6 +557,26 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ]
   },

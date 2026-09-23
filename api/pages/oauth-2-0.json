@@ -32,6 +32,14 @@
       {
         "id": "urn:ngm:class:pkce",
         "label": "PKCE"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation Code Flow"
+      },
+      {
+        "id": "urn:ngm:class:client-credentials-flow",
+        "label": "Client Credentials Flow"
       }
     ],
     "requires": [
@@ -46,6 +54,10 @@
       {
         "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTPS"
       }
     ],
     "enables": [
@@ -81,6 +93,10 @@
       {
         "id": "urn:ngm:class:api-key-authentication",
         "label": "API Key Authentication"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth 1.0"
       }
     ],
     "bridgesTo": [
@@ -105,6 +121,10 @@
       {
         "id": "urn:ngm:class:scope",
         "label": "Scope"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation Server"
       }
     ],
     "supports": [

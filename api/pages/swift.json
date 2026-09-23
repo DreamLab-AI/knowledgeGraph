@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:financial-infrastructure",
       "label": "Financial Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
     }
   ],
   "entityType": "Class",
@@ -80,15 +84,24 @@
         "label": "RippleNet"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:payment-systems-domain",
+        "label": "Payment Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      }
+    ],
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -139,7 +152,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -203,6 +216,10 @@
         "label": "Monetary Policy"
       },
       {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
@@ -225,10 +242,6 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
       }
     ],
     "dependsOn": [
@@ -283,7 +296,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -347,7 +360,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

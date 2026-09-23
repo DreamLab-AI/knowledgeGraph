@@ -216,6 +216,18 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -224,11 +236,15 @@
         "label": "Design System"
       },
       {
+        "id": "urn:ngm:class:widget-toolkit",
+        "label": "Widget Toolkit"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -242,7 +258,7 @@
         "label": "Localisation"
       },
       {
-        "id": "urn:ngm:class:multimodal-interaction",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
       },
       {

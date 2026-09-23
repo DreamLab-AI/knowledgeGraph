@@ -100,6 +100,10 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -126,7 +130,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:defi-protocol",
+        "id": "urn:ngm:class:de-fi-protocol",
         "label": "DeFi Protocol"
       },
       {
@@ -150,6 +154,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -236,6 +245,10 @@
         "label": "Commons Management"
       },
       {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
         "id": "urn:ngm:class:community-treasury",
         "label": "Community Treasury"
       },
@@ -254,10 +267,6 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
       }
     ],
     "dependsOn": [
@@ -324,16 +333,20 @@
         "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
         "id": "urn:ngm:class:digital-commons",
         "label": "Digital Commons"
       },
       {
         "id": "urn:ngm:class:collective-intelligence",
         "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
       },
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -346,10 +359,6 @@
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
       }
     ],
     "uses": [
@@ -382,6 +391,10 @@
       {
         "id": "urn:ngm:class:open-source",
         "label": "Open-Source Project"
+      },
+      {
+        "id": "urn:ngm:class:platform-cooperative",
+        "label": "Platform Cooperative"
       },
       {
         "id": "urn:ngm:class:distributed-collaboration",
@@ -446,6 +459,14 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:metagovernance",
+        "label": "Metagovernance"
+      },
+      {
+        "id": "urn:ngm:class:ostrom-principles",
+        "label": "Ostrom Principles"
+      },
+      {
         "id": "urn:ngm:class:rough-consensus",
         "label": "Rough Consensus"
       },
@@ -468,14 +489,6 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
       }
     ]
   },

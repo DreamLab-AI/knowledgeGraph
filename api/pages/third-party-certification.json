@@ -141,6 +141,10 @@
         "label": "Compliance Monitoring"
       },
       {
+        "id": "urn:ngm:class:control",
+        "label": "Control"
+      },
+      {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
       },
@@ -159,10 +163,6 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
-      },
-      {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
       }
     ],
     "requires": [
@@ -259,12 +259,20 @@
       {
         "id": "urn:ngm:class:regulation",
         "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:standard",
+        "label": "Standard"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:non-conformance",
         "label": "Non-Conformance"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
       },
       {
         "id": "urn:ngm:class:self-organisation",
@@ -375,6 +383,10 @@
       {
         "id": "urn:ngm:class:compliance",
         "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "relatedTo": [
@@ -395,6 +407,10 @@
         "label": "Ethics"
       },
       {
+        "id": "urn:ngm:class:reporting",
+        "label": "Reporting"
+      },
+      {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
       },
@@ -405,10 +421,6 @@
       {
         "id": "urn:ngm:class:multi-stakeholder-governance",
         "label": "Multi-Stakeholder Governance"
-      },
-      {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
       }
     ]
   },

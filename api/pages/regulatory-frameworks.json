@@ -32,6 +32,14 @@
       {
         "id": "urn:ngm:class:compliance",
         "label": "Compliance Obligations"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance Obligations"
       }
     ],
     "requires": [
@@ -76,6 +84,10 @@
       {
         "id": "urn:ngm:class:policy",
         "label": "Policy"
+      },
+      {
+        "id": "urn:ngm:class:international-agreements",
+        "label": "International Agreements"
       }
     ],
     "contrastsWith": [
@@ -127,6 +139,10 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:policy-infrastructure",
+        "label": "Policy Infrastructure"
       }
     ],
     "relatedTo": [
@@ -164,6 +180,14 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:enforcement",
+        "label": "Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:rule-making",
+        "label": "Rule-Making"
+      },
+      {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
       },
@@ -186,14 +210,6 @@
       {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
-      },
-      {
-        "id": "urn:ngm:class:compliance-framework",
-        "label": "Compliance Framework"
-      },
-      {
-        "id": "urn:ngm:class:data-protection-regulation",
-        "label": "Data Protection Regulation"
       }
     ],
     "requires": [
@@ -266,6 +282,10 @@
     ],
     "dependsOn": [
       {
+        "id": "urn:ngm:class:legislation",
+        "label": "Legislation"
+      },
+      {
         "id": "urn:ngm:class:information-asymmetry",
         "label": "Information Asymmetry"
       },
@@ -278,6 +298,10 @@
       {
         "id": "urn:ngm:class:deregulation",
         "label": "Deregulation"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
       },
       {
         "id": "urn:ngm:class:self-organisation",
@@ -400,16 +424,16 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
       }
     ]
   },

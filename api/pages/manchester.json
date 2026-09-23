@@ -20,6 +20,14 @@
       {
         "id": "urn:ngm:class:university-of-manchester",
         "label": "University of Manchester"
+      },
+      {
+        "id": "urn:ngm:class:greater-manchester-combined-authority",
+        "label": "Greater Manchester Combined Authority"
+      },
+      {
+        "id": "urn:ngm:class:manchester-science-park",
+        "label": "Manchester Science Park"
       }
     ],
     "requires": [
@@ -48,7 +56,12 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:london",
+        "label": "London"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:fintech",
@@ -57,6 +70,10 @@
       {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-cluster",
+        "label": "AI Research Cluster"
       }
     ],
     "uses": [],
@@ -68,6 +85,10 @@
       {
         "id": "urn:ngm:class:open-data",
         "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:regional-connectivity",
+        "label": "Regional Connectivity"
       }
     ],
     "standardizedBy": [],
@@ -89,6 +110,14 @@
       {
         "id": "urn:ngm:class:graphene",
         "label": "Graphene"
+      },
+      {
+        "id": "urn:ngm:class:liverpool",
+        "label": "Liverpool"
+      },
+      {
+        "id": "urn:ngm:class:salford",
+        "label": "Salford"
       }
     ]
   },
@@ -216,7 +245,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -10,6 +10,30 @@
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
+    },
+    {
+      "id": "urn:ngm:class:platform-decay",
+      "label": "Platform Decay"
+    },
+    {
+      "id": "urn:ngm:class:information-integrity",
+      "label": "Information Integrity"
+    },
+    {
+      "id": "urn:ngm:class:digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "id": "urn:ngm:class:ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "id": "urn:ngm:class:media-theory",
+      "label": "Media Theory"
+    },
+    {
+      "id": "urn:ngm:class:surveillance-capitalism",
+      "label": "Surveillance Capitalism"
     }
   ],
   "entityType": "Class",
@@ -24,6 +48,34 @@
       {
         "id": "urn:ngm:class:filter-bubble",
         "label": "Filter Bubble"
+      },
+      {
+        "id": "urn:ngm:class:dead-internet-theory",
+        "label": "Dead Internet Theory"
+      },
+      {
+        "id": "urn:ngm:class:enshittification",
+        "label": "Enshittification"
+      },
+      {
+        "id": "urn:ngm:class:habsburg-ai",
+        "label": "Habsburg AI"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-content-saturation",
+        "label": "Synthetic Content Saturation"
+      },
+      {
+        "id": "urn:ngm:class:bot-traffic",
+        "label": "Bot Traffic"
+      },
+      {
+        "id": "urn:ngm:class:dark-forest-theory",
+        "label": "Dark Forest Theory"
+      },
+      {
+        "id": "urn:ngm:class:background-tokens",
+        "label": "Background Tokens"
       }
     ],
     "requires": [
@@ -34,6 +86,22 @@
       {
         "id": "urn:ngm:class:platform-accountability",
         "label": "Platform Accountability"
+      },
+      {
+        "id": "urn:ngm:class:authentic-content",
+        "label": "Authentic Content"
+      },
+      {
+        "id": "urn:ngm:class:human-authorship",
+        "label": "Human Authorship"
+      },
+      {
+        "id": "urn:ngm:class:open-api-access",
+        "label": "Open API Access"
+      },
+      {
+        "id": "urn:ngm:class:epistemic-infrastructure",
+        "label": "Epistemic Infrastructure"
       }
     ],
     "enables": [
@@ -52,9 +120,50 @@
       {
         "id": "urn:ngm:class:surveillance-capitalism",
         "label": "Surveillance Capitalism"
+      },
+      {
+        "id": "urn:ngm:class:epistemic-degradation",
+        "label": "Epistemic Degradation"
+      },
+      {
+        "id": "urn:ngm:class:disinformation-ecosystem",
+        "label": "Disinformation Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:attention-manipulation",
+        "label": "Attention Manipulation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:advertising-economics",
+        "label": "Advertising Economics"
+      },
+      {
+        "id": "urn:ngm:class:platform-monopoly",
+        "label": "Platform Monopoly"
+      },
+      {
+        "id": "urn:ngm:class:ai-training-data",
+        "label": "AI Training Data"
+      },
+      {
+        "id": "urn:ngm:class:background-tokens",
+        "label": "Background Tokens"
+      },
+      {
+        "id": "urn:ngm:class:search-economics",
+        "label": "Search Economics"
+      },
+      {
+        "id": "urn:ngm:class:network-effects",
+        "label": "Network Effects"
+      },
+      {
+        "id": "urn:ngm:class:switching-costs",
+        "label": "Switching Costs"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:age-verification",
@@ -71,9 +180,46 @@
       {
         "id": "urn:ngm:class:c2-pa-standard",
         "label": "C2PA Standard"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa-content-credentials",
+        "label": "Content Credentials"
+      },
+      {
+        "id": "urn:ngm:class:robots-txt-enforcement",
+        "label": "Robots.txt Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:api-rate-limiting",
+        "label": "API Rate Limiting"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-web",
+        "label": "Open Web"
+      },
+      {
+        "id": "urn:ngm:class:human-authored-content",
+        "label": "Human-Authored Content"
+      },
+      {
+        "id": "urn:ngm:class:authentic-internet",
+        "label": "Authentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:federated-social-networks",
+        "label": "Federated Social Networks"
+      },
+      {
+        "id": "urn:ngm:class:solid",
+        "label": "Solid"
+      },
+      {
+        "id": "urn:ngm:class:indieweb-movement",
+        "label": "IndieWeb Movement"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:infra-security-and-identity",
@@ -112,6 +258,10 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:social-media-platform-infrastructure",
+        "label": "Social Media Algorithms"
       }
     ],
     "supports": [
@@ -172,6 +322,10 @@
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:dsa",
+        "label": "DSA"
       }
     ],
     "partOf": [],
@@ -219,6 +373,54 @@
       {
         "id": "urn:ngm:class:trust-and-safety",
         "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:traditional-mass-media-institution",
+        "label": "Legacy Media"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "id": "urn:ngm:class:solid",
+        "label": "Solid"
+      },
+      {
+        "id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
       }
     ]
   },
@@ -227,6 +429,176 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:civil-liberties",
+      "label": "Civil Liberties",
+      "slug": "civil-liberties"
+    },
+    {
+      "id": "urn:ngm:class:content-provenance",
+      "label": "Content Provenance",
+      "slug": "content-provenance"
+    },
+    {
+      "id": "urn:ngm:class:data-ethics",
+      "label": "Data Ethics",
+      "slug": "data-ethics"
+    },
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology",
+      "slug": "dc-communication"
+    },
+    {
+      "id": "urn:ngm:class:digital-rights",
+      "label": "Digital Rights",
+      "slug": "digital-rights"
+    },
+    {
+      "id": "urn:ngm:class:human-rights",
+      "label": "Human Rights",
+      "slug": "human-rights"
+    },
+    {
+      "id": "urn:ngm:class:platform-economy",
+      "label": "Platform Economy",
+      "slug": "platform-economy"
+    },
+    {
+      "id": "urn:ngm:class:political-economy",
+      "label": "Political Economy",
+      "slug": "political-economy"
+    },
+    {
+      "id": "urn:ngm:class:privacy",
+      "label": "Privacy",
+      "slug": "privacy"
+    },
+    {
+      "id": "urn:ngm:class:digital-platform",
+      "label": "Digital Platform",
+      "slug": "digital-platform"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics",
+      "slug": "economics"
+    },
+    {
+      "id": "urn:ngm:class:human-centred-values",
+      "label": "Human Centred Values",
+      "slug": "human-centred-values"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:provenance",
+      "label": "Provenance",
+      "slug": "provenance"
+    },
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety",
+      "slug": "sc-governance-and-safety"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:behavioural-economics",
+      "label": "Behavioural Economics",
+      "slug": "behavioural-economics"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:data-provenance",
+      "label": "Data Provenance",
+      "slug": "data-provenance"
+    },
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory",
+      "slug": "information-theory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:institutional-economics",
+      "label": "Institutional Economics",
+      "slug": "institutional-economics"
+    },
+    {
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding",
+      "slug": "metaverse-governance-and-safeguarding"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:social-science",
+      "label": "Social Science",
+      "slug": "social-science"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -266,38 +638,338 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:ai-classification-systems",
+        "label": "AI Classification Systems"
+      },
+      {
+        "id": "urn:ngm:class:biometric-databases",
+        "label": "Biometric Databases"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-brokers",
+        "label": "Data Brokers"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:network-interception-infrastructure",
+        "label": "Network Interception Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:fact-checking",
+        "label": "Fact-Checking"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:media-literacy",
+        "label": "Media Literacy"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:algorithmic-governance",
+        "label": "Algorithmic Governance"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:behavioural-prediction",
+        "label": "Behavioural Prediction"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:commercial-profiling",
+        "label": "Commercial Profiling"
+      },
+      {
+        "id": "urn:ngm:class:law-enforcement-identification",
+        "label": "Law Enforcement Identification"
+      },
+      {
+        "id": "urn:ngm:class:political-repression",
+        "label": "Political Repression"
+      },
+      {
+        "id": "urn:ngm:class:population-level-tracking",
+        "label": "Population-Level Tracking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:data-brokers",
+        "label": "Data Brokers"
+      },
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:alpr-networks",
+        "label": "ALPR Networks"
+      },
+      {
+        "id": "urn:ngm:class:clearview-ai",
+        "label": "Clearview AI"
+      },
+      {
+        "id": "urn:ngm:class:five-eyes-intelligence-sharing",
+        "label": "Five Eyes Intelligence Sharing"
+      },
+      {
+        "id": "urn:ngm:class:nso-group",
+        "label": "NSO Group"
+      },
+      {
+        "id": "urn:ngm:class:pegasus-spyware",
+        "label": "Pegasus Spyware"
+      },
+      {
+        "id": "urn:ngm:class:prism-programme",
+        "label": "PRISM Programme"
+      },
+      {
+        "id": "urn:ngm:class:social-credit-system",
+        "label": "Social Credit System"
+      },
+      {
+        "id": "urn:ngm:class:tempora",
+        "label": "TEMPORA"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:disinformation",
+        "label": "Disinformation"
+      },
+      {
+        "id": "urn:ngm:class:misinformation",
+        "label": "Misinformation"
+      },
+      {
+        "id": "urn:ngm:class:anonymous-communication",
+        "label": "Anonymous Communication"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:fourth-amendment",
+        "label": "Fourth Amendment"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:human-rights-act-1998",
+        "label": "Human Rights Act 1998"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:io-t",
+        "label": "IoT"
+      },
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity"
+      },
+      {
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:ai-surveillance",
+        "label": "AI Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      },
+      {
+        "id": "urn:ngm:class:biometric-classification",
+        "label": "Biometric Classification"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:advertising-technology",
+        "label": "Advertising Technology"
+      },
+      {
+        "id": "urn:ngm:class:financial-compliance",
+        "label": "Financial Compliance"
+      },
+      {
+        "id": "urn:ngm:class:immigration-control",
+        "label": "Immigration Control"
+      },
+      {
+        "id": "urn:ngm:class:intelligence-agencies",
+        "label": "Intelligence Agencies"
+      },
+      {
+        "id": "urn:ngm:class:state-security-apparatus",
+        "label": "State Security Apparatus"
+      },
+      {
+        "id": "urn:ngm:class:workplace-productivity-management",
+        "label": "Workplace Productivity Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-charter-of-fundamental-rights",
+        "label": "EU Charter of Fundamental Rights"
+      },
+      {
+        "id": "urn:ngm:class:fisa",
+        "label": "FISA"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-camera-code-of-practice",
+        "label": "Surveillance Camera Code of Practice"
+      },
+      {
+        "id": "urn:ngm:class:uk-data-protection-act-2018",
+        "label": "UK Data Protection Act 2018"
+      },
+      {
+        "id": "urn:ngm:class:uk-investigatory-powers-act-2016",
+        "label": "UK Investigatory Powers Act 2016"
+      },
+      {
+        "id": "urn:ngm:class:un-special-rapporteur-on-privacy",
+        "label": "UN Special Rapporteur on Privacy"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Regulatory Policy"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:democratic-values",
+        "label": "Democratic Values"
+      },
+      {
+        "id": "urn:ngm:class:human-centred-values",
+        "label": "Human Centred Values"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:decision-science",
+        "label": "Decision Science"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
       }
     ],
     "relatedTo": [
@@ -312,6 +984,26 @@
       {
         "id": "urn:ngm:class:ai-transparency-framework",
         "label": "Ai Transparency Framework"
+      },
+      {
+        "id": "urn:ngm:class:epistemic-security",
+        "label": "Epistemic Security"
+      },
+      {
+        "id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
       }
     ]
   },
@@ -711,6 +1403,10 @@
     {
       "slug": "media-theory",
       "label": "Media Theory"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
     },
     {
       "slug": "social-media",

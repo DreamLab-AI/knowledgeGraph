@@ -94,6 +94,14 @@
       {
         "id": "urn:ngm:class:raft-consensus",
         "label": "RAFT Consensus"
+      },
+      {
+        "id": "urn:ngm:class:crash-fault-tolerant-system",
+        "label": "Crash Fault Tolerant System"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos Consensus"
       }
     ],
     "bridgesTo": [
@@ -102,7 +110,7 @@
         "label": "Smart Contract Platform"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       }
     ],
@@ -115,6 +123,10 @@
       {
         "id": "urn:ngm:class:permissioned-blockchain",
         "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
       },
       {
         "id": "urn:ngm:class:state-machine-replication",
@@ -139,6 +151,10 @@
       {
         "id": "urn:ngm:class:hotstuff-protocol",
         "label": "HotStuff Protocol"
+      },
+      {
+        "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
       }
     ]
   },
@@ -266,7 +282,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

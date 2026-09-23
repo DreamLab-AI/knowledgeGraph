@@ -16,7 +16,20 @@
   "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-network-function",
+        "label": "Virtual Network Function"
+      },
+      {
+        "id": "urn:ngm:class:nfv-infrastructure",
+        "label": "NFV Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:nfv-management-and-orchestration",
+        "label": "NFV Management and Orchestration"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:hypervisor",
@@ -39,16 +52,42 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:network-scalability",
+        "label": "Network Scalability"
+      },
+      {
+        "id": "urn:ngm:class:service-function-chaining",
+        "label": "Service Function Chaining"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:software-defined-networking",
         "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:commercial-off-the-shelf-hardware",
+        "label": "Commercial Off-the-Shelf Hardware"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:etsi-nfv-standard",
+        "label": "ETSI NFV Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:network-appliance",
+        "label": "Network Appliance"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-hardware",
+        "label": "Proprietary Hardware"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -67,12 +106,24 @@
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:openstack",
+        "label": "OpenStack"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:5-g-network",
         "label": "5G Networks"
+      },
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Networks"
+      },
+      {
+        "id": "urn:ngm:class:telecom-cloud",
+        "label": "Telecom Cloud"
       }
     ],
     "standardizedBy": [
@@ -90,6 +141,10 @@
       {
         "id": "urn:ngm:class:software-defined-networking",
         "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-network-function",
+        "label": "Cloud-Native Network Function"
       }
     ]
   },
@@ -238,6 +293,22 @@
       {
         "id": "urn:ngm:class:hardware-accelerator",
         "label": "Hardware Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

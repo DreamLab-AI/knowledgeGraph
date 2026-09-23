@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:magnetometer",
         "label": "Magnetometer"
+      },
+      {
+        "id": "urn:ngm:class:digital-motion-processor",
+        "label": "Digital Motion Processor"
       }
     ],
     "requires": [
@@ -38,6 +42,10 @@
       {
         "id": "urn:ngm:class:kalman-filter",
         "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analogue-to-Digital Converter"
       },
       {
         "id": "urn:ngm:class:analog-to-digital-converter",
@@ -64,6 +72,10 @@
       {
         "id": "urn:ngm:class:attitude-estimation",
         "label": "Attitude Estimation"
+      },
+      {
+        "id": "urn:ngm:class:6-do-f-tracking",
+        "label": "6-DoF Tracking"
       }
     ],
     "dependsOn": [
@@ -76,6 +88,10 @@
       {
         "id": "urn:ngm:class:newton-euler-dynamics",
         "label": "Newton-Euler Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:strapdown-navigation",
+        "label": "Strapdown Navigation"
       }
     ],
     "contrastsWith": [
@@ -92,6 +108,14 @@
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Human Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:robot-proprioception",
+        "label": "Robot Proprioception"
       },
       {
         "id": "urn:ngm:class:motion-capture",
@@ -114,6 +138,10 @@
       {
         "id": "urn:ngm:class:rotation-matrix",
         "label": "Rotation Matrix"
+      },
+      {
+        "id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion"
       }
     ],
     "supports": [
@@ -132,9 +160,22 @@
       {
         "id": "urn:ngm:class:hand-tracking",
         "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:gait-analysis",
+        "label": "Gait Analysis"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-1559",
+        "label": "IEEE 1559"
+      },
+      {
+        "id": "urn:ngm:class:ieee-952",
+        "label": "IEEE 952"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:inertial-navigation-system",
@@ -143,6 +184,10 @@
       {
         "id": "urn:ngm:class:xr-headset",
         "label": "XR Headset"
+      },
+      {
+        "id": "urn:ngm:class:flight-controller",
+        "label": "Flight Controller"
       }
     ],
     "relatedTo": [
@@ -157,6 +202,10 @@
       {
         "id": "urn:ngm:class:gnss",
         "label": "GNSS"
+      },
+      {
+        "id": "urn:ngm:class:motion-sickness",
+        "label": "Motion Sickness"
       }
     ]
   },
@@ -318,7 +367,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -354,6 +403,10 @@
       {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:bus-interface",
+        "label": "Bus Interface"
       },
       {
         "id": "urn:ngm:class:communication-protocol",
@@ -430,6 +483,10 @@
         "label": "Edge Computing Node"
       },
       {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
@@ -448,6 +505,10 @@
         "label": "Field-Programmable Gate Array"
       },
       {
+        "id": "urn:ngm:class:printed-circuit-board",
+        "label": "Printed Circuit Board"
+      },
+      {
         "id": "urn:ngm:class:system-on-chip",
         "label": "System-on-Chip"
       },
@@ -456,16 +517,12 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
         "id": "urn:ngm:class:infra-network-and-comms",
         "label": "Network and Communication"
-      },
-      {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
       }
     ]
   },

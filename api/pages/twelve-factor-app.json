@@ -224,6 +224,10 @@
         "label": "Edge Computing"
       },
       {
+        "id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -266,7 +270,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "id": "urn:ngm:class:cncf",
         "label": "Cloud Native Computing Foundation"
       },
       {
@@ -300,7 +304,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

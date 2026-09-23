@@ -8,7 +8,7 @@
   "definition": "The article of the EU Artificial Intelligence Act (Regulation (EU) 2024/1689) that imposes obligations on providers of general-purpose AI models: maintaining technical documentation, supplying information to downstream integrators, putting in place a policy to comply with EU copyright law including text-and-data-mining opt-outs, and publishing a sufficiently detailed public summary of the content used for training. It is the principal legal hook connecting web scraping and training-data practices to EU regulatory enforcement.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:eu-ai-act",
+      "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
       "label": "EU AI Act"
     }
   ],
@@ -37,7 +37,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -54,301 +54,294 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:regulation",
-      "label": "Regulation",
-      "slug": "regulation"
+      "id": "urn:ngm:class:ai-regulation",
+      "label": "AI Regulation",
+      "slug": "ai-regulation"
     },
     {
-      "id": "urn:ngm:class:governance",
-      "label": "Governance",
-      "slug": "governance"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
     },
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory",
-      "slug": "infra-legal-and-regulatory"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:regulatory-frameworks",
-        "label": "Regulatory Frameworks"
+        "id": "urn:ngm:class:ai-office",
+        "label": "EU AI Office"
       },
       {
-        "id": "urn:ngm:class:supervisory-authority",
-        "label": "Supervisory Authority"
+        "id": "urn:ngm:class:ai-regulatory-sandbox",
+        "label": "AI Regulatory Sandbox"
       },
       {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:general-purpose-ai-model",
+        "label": "General Purpose AI Model"
       },
       {
-        "id": "urn:ngm:class:policy",
-        "label": "Policy"
+        "id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:prohibited-ai-practice",
+        "label": "Prohibited AI Practice"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:transparency",
-        "label": "Transparency"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
       },
       {
-        "id": "urn:ngm:class:compliance",
-        "label": "Compliance"
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       },
       {
-        "id": "urn:ngm:class:enforcement-mechanism",
-        "label": "Enforcement Mechanism"
+        "id": "urn:ngm:class:notified-body",
+        "label": "Notified Body"
       },
       {
-        "id": "urn:ngm:class:institutional-trust",
-        "label": "Institutional Trust"
+        "id": "urn:ngm:class:post-market-monitoring",
+        "label": "Post-Market Monitoring"
       },
       {
-        "id": "urn:ngm:class:stakeholder-participation",
-        "label": "Stakeholder Participation"
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
-      }
-    ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:consumer-protection",
-        "label": "Consumer Protection"
-      },
-      {
-        "id": "urn:ngm:class:market-integrity",
-        "label": "Market Integrity"
-      },
-      {
-        "id": "urn:ngm:class:systemic-risk-management",
-        "label": "Systemic Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:collective-action",
-        "label": "Collective Action"
-      },
-      {
-        "id": "urn:ngm:class:coordination",
-        "label": "Coordination"
-      },
-      {
-        "id": "urn:ngm:class:legitimacy",
-        "label": "Legitimacy"
-      },
-      {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
-      },
-      {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
-      }
-    ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:standards",
-        "label": "Standards"
-      },
-      {
-        "id": "urn:ngm:class:information-asymmetry",
-        "label": "Information Asymmetry"
-      },
-      {
-        "id": "urn:ngm:class:rule-of-law",
-        "label": "Rule of Law"
-      }
-    ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:risk-based-regulation",
-        "label": "Risk Based Regulation"
-      },
-      {
-        "id": "urn:ngm:class:policy",
-        "label": "Policy"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:deregulation",
-        "label": "Deregulation"
-      },
-      {
-        "id": "urn:ngm:class:self-regulation",
-        "label": "Self-Regulation"
-      },
-      {
-        "id": "urn:ngm:class:self-organisation",
-        "label": "Self-Organisation"
-      },
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:algorithmic-accountability",
-        "label": "Algorithmic Accountability"
-      },
-      {
-        "id": "urn:ngm:class:data-sovereignty",
-        "label": "Data Sovereignty"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-and-ethics",
-        "label": "AI Governance and Ethics"
+        "id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Documentation"
       },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
-      },
-      {
-        "id": "urn:ngm:class:internet-governance",
-        "label": "Internet Governance"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
-    "uses": [
+    "enables": [
       {
-        "id": "urn:ngm:class:impact-assessment",
-        "label": "Impact Assessment"
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
       },
       {
-        "id": "urn:ngm:class:risk-assessment",
-        "label": "Risk Assessment"
-      }
-    ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:data-protection",
-        "label": "Data Protection"
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
       },
       {
-        "id": "urn:ngm:class:safety",
-        "label": "Safety"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:iso-iec-38500",
-        "label": "ISO-IEC 38500"
-      },
-      {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD Principles on AI"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
-      }
-    ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
-      },
-      {
-        "id": "urn:ngm:class:public-policy",
-        "label": "Public Policy"
-      }
-    ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:algorithmic-bias",
-        "label": "Algorithmic Bias"
-      },
-      {
-        "id": "urn:ngm:class:compliance-audit-trail",
-        "label": "Compliance Audit Trail"
-      },
-      {
-        "id": "urn:ngm:class:audit",
-        "label": "Audit"
-      },
-      {
-        "id": "urn:ngm:class:certification",
-        "label": "Certification"
-      },
-      {
-        "id": "urn:ngm:class:licensing",
-        "label": "Licensing"
+        "id": "urn:ngm:class:ai-transparency-framework",
+        "label": "AI Transparency"
       },
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
       },
       {
-        "id": "urn:ngm:class:corporate-governance",
-        "label": "Corporate Governance"
+        "id": "urn:ngm:class:public-trust-in-ai",
+        "label": "Public Trust in AI"
       },
       {
-        "id": "urn:ngm:class:multi-stakeholder-governance",
-        "label": "Multi-Stakeholder Governance"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:new-legislative-framework",
+        "label": "New Legislative Framework"
+      },
+      {
+        "id": "urn:ngm:class:product-safety-regulation",
+        "label": "Product Safety Regulation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-regulation",
+        "label": "Risk-Based Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulatory-approach",
+        "label": "Self-Regulatory Approach"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-regulatory-approach",
+        "label": "UK AI Regulatory Approach"
+      },
+      {
+        "id": "urn:ngm:class:us-ai-executive-order",
+        "label": "US AI Executive Order"
+      },
+      {
+        "id": "urn:ngm:class:ai-self-regulation",
+        "label": "AI Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-ai-commitments",
+        "label": "Voluntary AI Commitments"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:biometric-identification",
+        "label": "Biometric Identification"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-law",
+        "label": "Cybersecurity Law"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:product-liability",
+        "label": "Product Liability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-and-certification",
+        "label": "Audit and Certification"
+      },
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-sandbox",
+        "label": "Regulatory Sandboxes"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:council-of-the-european-union",
+        "label": "Council of the European Union"
+      },
+      {
+        "id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "id": "urn:ngm:class:european-parliament",
+        "label": "European Parliament"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:brussels-effect",
+        "label": "Brussels Effect"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
       }
     ]
   },

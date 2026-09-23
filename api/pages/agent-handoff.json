@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:multi-agent-orchestration",
       "label": "Multi-Agent Orchestration"
+    },
+    {
+      "id": "urn:ngm:class:multiagentorchestration",
+      "label": "MultiAgentOrchestration"
     }
   ],
   "entityType": "Class",
@@ -21,12 +25,20 @@
       {
         "id": "urn:ngm:class:multi-agent-system",
         "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "MultiAgentSystem"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:agentic-workflow",
         "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:agenticworkflow",
+        "label": "AgenticWorkflow"
       }
     ],
     "dependsOn": [],
@@ -37,6 +49,10 @@
       {
         "id": "urn:ngm:class:task-delegation",
         "label": "Task Delegation"
+      },
+      {
+        "id": "urn:ngm:class:taskdelegation",
+        "label": "TaskDelegation"
       }
     ],
     "supports": [],
@@ -46,6 +62,10 @@
       {
         "id": "urn:ngm:class:llm-orchestration",
         "label": "LLM Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:llmorchestration",
+        "label": "LLMOrchestration"
       }
     ]
   },
@@ -309,7 +329,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

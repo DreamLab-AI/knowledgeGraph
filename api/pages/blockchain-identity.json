@@ -28,7 +28,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -160,8 +160,8 @@
         "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-standard",
-        "label": "Credential"
+        "id": "urn:ngm:class:verifiable-claim",
+        "label": "Verifiable Claim"
       }
     ],
     "requires": [
@@ -224,12 +224,12 @@
         "label": "Authorization"
       },
       {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:digital-presence",
+        "label": "Digital Presence"
       },
       {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       }
     ],
     "dependsOn": [
@@ -296,12 +296,20 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:iot-device-authentication",
+        "label": "IoT Device Authentication"
+      },
+      {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
         "id": "urn:ngm:class:web3",
         "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -318,10 +326,6 @@
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -330,16 +334,16 @@
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
       },
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:biometric-authentication",
@@ -430,7 +434,7 @@
         "label": "Trust Framework"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "KYC Know Your Customer"
       },
       {

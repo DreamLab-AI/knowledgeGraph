@@ -63,6 +63,18 @@
         "label": "Efficiency"
       },
       {
+        "id": "urn:ngm:class:error-prevention",
+        "label": "Error Prevention"
+      },
+      {
+        "id": "urn:ngm:class:learnability",
+        "label": "Learnability"
+      },
+      {
+        "id": "urn:ngm:class:memorability",
+        "label": "Memorability"
+      },
+      {
         "id": "urn:ngm:class:user-satisfaction",
         "label": "User Satisfaction"
       },
@@ -77,18 +89,6 @@
       {
         "id": "urn:ngm:class:interaction-design",
         "label": "Interaction Design"
-      },
-      {
-        "id": "urn:ngm:class:usability",
-        "label": "Usability"
-      },
-      {
-        "id": "urn:ngm:class:visual-design",
-        "label": "Visual Design"
-      },
-      {
-        "id": "urn:ngm:class:cognitive-ergonomics",
-        "label": "Cognitive Ergonomics"
       }
     ],
     "requires": [
@@ -193,6 +193,14 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:aesthetics",
+        "label": "Aesthetics"
+      },
+      {
+        "id": "urn:ngm:class:functionality",
+        "label": "Functionality"
+      },
+      {
         "id": "urn:ngm:class:customer-experience",
         "label": "Customer Experience"
       },
@@ -257,11 +265,15 @@
         "label": "Journey Mapping"
       },
       {
+        "id": "urn:ngm:class:personas",
+        "label": "Personas"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

@@ -14,14 +14,88 @@
     {
       "id": "urn:ngm:class:ai-evaluation",
       "label": "AI Evaluation"
+    },
+    {
+      "id": "urn:ngm:class:safety-evaluation",
+      "label": "Safety Evaluation"
+    },
+    {
+      "id": "urn:ngm:class:ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "id": "urn:ngm:class:benchmark-evaluation",
+      "label": "Benchmark Evaluation"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:scaffolded-evaluation",
+        "label": "Scaffolded Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-jailbreaking",
+        "label": "Adversarial Jailbreaking"
+      },
+      {
+        "id": "urn:ngm:class:best-of-n-sampling",
+        "label": "Best-of-N Sampling"
+      },
+      {
+        "id": "urn:ngm:class:tool-augmented-evaluation",
+        "label": "Tool-Augmented Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:agentic-evaluation",
+        "label": "Agentic Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning-elicitation",
+        "label": "Fine-Tuning Elicitation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      },
+      {
+        "id": "urn:ngm:class:model-access",
+        "label": "Model Access"
+      },
+      {
+        "id": "urn:ngm:class:expert-evaluators",
+        "label": "Expert Evaluators"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:safety-assessment",
@@ -30,20 +104,193 @@
       {
         "id": "urn:ngm:class:model-evaluation-results",
         "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:ngm:class:dangerous-capability-detection",
+        "label": "Dangerous Capability Detection"
+      },
+      {
+        "id": "urn:ngm:class:deployment-decision-making",
+        "label": "Deployment Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai-oversight",
+        "label": "Frontier AI Oversight"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:aisi-frontier-ai-safety-framework",
+        "label": "AISI Frontier AI Safety Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:standard-benchmark-evaluation",
+        "label": "Standard Benchmark Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:default-prompting",
+        "label": "Default Prompting"
+      },
+      {
+        "id": "urn:ngm:class:capability-suppression",
+        "label": "Capability Suppression"
+      },
+      {
+        "id": "urn:ngm:class:surface-level-safety-evaluation",
+        "label": "Surface-Level Safety Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:naive-evaluation",
+        "label": "Naive Evaluation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:red-teaming",
         "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:scaffolded-evaluation",
+        "label": "Scaffolded Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:aisi-frontier-ai-safety-framework",
+        "label": "AISI Frontier AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:metr",
+        "label": "METR"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:anthropic-responsible-scaling-policy",
+        "label": "Anthropic Responsible Scaling Policy"
+      },
+      {
+        "id": "urn:ngm:class:openai-preparedness-framework",
+        "label": "OpenAI Preparedness Framework"
+      },
+      {
+        "id": "urn:ngm:class:google-deepmind-frontier-safety-framework",
+        "label": "Google DeepMind Frontier Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -57,14 +304,80 @@
       {
         "id": "urn:ngm:class:safety-evaluation",
         "label": "Safety Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Abilities"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety",
+      "slug": "ai-safety"
     },
     {
       "id": "urn:ngm:class:ai-technique",
@@ -72,18 +385,52 @@
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning",
-      "label": "Machine Learning",
-      "slug": "machine-learning"
+      "id": "urn:ngm:class:benchmarking",
+      "label": "Benchmarking",
+      "slug": "benchmarking"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:performance-optimization",
+      "label": "Performance Optimization",
+      "slug": "performance-optimization"
+    },
+    {
+      "id": "urn:ngm:class:optimization-technique",
+      "label": "Optimization Technique",
+      "slug": "optimization-technique"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:alignment-evaluation",
+        "label": "Alignment Evaluation"
+      },
       {
         "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Evaluation Benchmarks and Leaderboards"
@@ -93,28 +440,24 @@
         "label": "Evaluation Metric"
       },
       {
-        "id": "urn:ngm:class:llm-as-judge",
-        "label": "LLM-as-Judge"
+        "id": "urn:ngm:class:human-preference-evaluation",
+        "label": "Human Preference Evaluation"
       },
       {
-        "id": "urn:ngm:class:red-teaming",
-        "label": "Red-Teaming"
+        "id": "urn:ngm:class:llm-as-judge",
+        "label": "LLM-as-Judge"
       },
       {
         "id": "urn:ngm:class:safety-evaluation",
         "label": "Safety Evaluation"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:leaderboard",
+        "label": "Leaderboard"
       }
     ],
     "requires": [
@@ -131,6 +474,10 @@
         "label": "Labelled Data"
       },
       {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
+      {
         "id": "urn:ngm:class:calibration",
         "label": "Calibration"
       },
@@ -143,18 +490,14 @@
         "label": "Human Oracle"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:optimisation-algorithm",
-        "label": "Optimisation Algorithm"
+        "id": "urn:ngm:class:prompt-sensitivity",
+        "label": "Prompt Sensitivity"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:ai-safety-evaluation",
+        "label": "AI Safety Evaluation"
       },
       {
         "id": "urn:ngm:class:model-deployment",
@@ -169,20 +512,20 @@
         "label": "AI Safety Evaluation"
       },
       {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
         "id": "urn:ngm:class:alignment-evaluation",
         "label": "Alignment Evaluation"
       },
       {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Card"
+        "id": "urn:ngm:class:eval-factsheet",
+        "label": "Eval Factsheet"
       },
       {
-        "id": "urn:ngm:class:scalable-oversight",
-        "label": "Scalable Oversight"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Model"
       }
     ],
     "dependsOn": [
@@ -195,12 +538,62 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:bradley-terry-model",
+        "label": "Bradley-Terry Model"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-evaluation",
+        "label": "Dynamic Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:elo-rating",
+        "label": "ELO Rating"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
       }
     ],
     "contrastsWith": [
@@ -221,12 +614,20 @@
         "label": "Benchmark Saturation"
       },
       {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
+        "id": "urn:ngm:class:goodhart-s-law",
+        "label": "Goodhart's Law"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "id": "urn:ngm:class:ai-capabilities-research",
+        "label": "AI Capabilities Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-evaluation",
+        "label": "Heuristic Evaluation"
       }
     ],
     "bridgesTo": [
@@ -239,16 +640,28 @@
         "label": "Audit and Compliance"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
       },
       {
-        "id": "urn:ngm:class:smart-grid",
-        "label": "Smart Grid"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       },
       {
-        "id": "urn:ngm:class:supply-chain-optimisation",
-        "label": "Supply Chain Optimisation"
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Cyber Security"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "uses": [
@@ -277,12 +690,12 @@
         "label": "Test Dataset"
       },
       {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
+        "id": "urn:ngm:class:aime",
+        "label": "AIME"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:arena-hard",
+        "label": "Arena-Hard"
       }
     ],
     "supports": [
@@ -291,30 +704,72 @@
         "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:distribution-shift",
+        "label": "Distribution Shift"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-23053-2022",
-        "label": "ISO-IEC 23053 2022"
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:mlcommons",
+        "label": "MLCommons"
+      },
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ],
     "relatedTo": [
@@ -339,16 +794,16 @@
         "label": "Red Teaming"
       },
       {
-        "id": "urn:ngm:class:ai-benchmark-epistemological-critique",
-        "label": "AI Benchmark Epistemological Critique"
-      },
-      {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
       },
       {
         "id": "urn:ngm:class:bias",
         "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ]
   },

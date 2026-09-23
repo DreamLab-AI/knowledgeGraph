@@ -64,6 +64,11 @@
       "slug": "explainable-ai"
     },
     {
+      "id": "urn:ngm:class:model-interpretability",
+      "label": "Model Interpretability",
+      "slug": "model-interpretability"
+    },
+    {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics",
       "slug": "ai-governance-and-ethics"
@@ -77,6 +82,14 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:deeplift",
+        "label": "DeepLIFT"
+      },
+      {
+        "id": "urn:ngm:class:grad-cam",
+        "label": "Grad-CAM"
+      },
+      {
         "id": "urn:ngm:class:gradient-saliency",
         "label": "Gradient Saliency"
       },
@@ -85,34 +98,34 @@
         "label": "LIME"
       },
       {
+        "id": "urn:ngm:class:permutation-importance",
+        "label": "Permutation Importance"
+      },
+      {
         "id": "urn:ngm:class:shap",
         "label": "SHAP"
       },
       {
+        "id": "urn:ngm:class:smoothgrad",
+        "label": "SmoothGrad"
+      },
+      {
         "id": "urn:ngm:class:feature-attribution",
         "label": "Feature Attribution"
-      },
-      {
-        "id": "urn:ngm:class:intrinsic-interpretability",
-        "label": "Intrinsic Interpretability"
-      },
-      {
-        "id": "urn:ngm:class:post-hoc-explanation",
-        "label": "Post Hoc Explanation"
-      },
-      {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
       }
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
         "id": "urn:ngm:class:algorithmic-transparency",
@@ -123,12 +136,12 @@
         "label": "Model Interpretability"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:predictive-model",
+        "label": "Predictive Model"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -141,8 +154,16 @@
         "label": "AI Safety"
       },
       {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
         "id": "urn:ngm:class:mechanistic-interpretability",
         "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:model-debugging",
+        "label": "Model Debugging"
       },
       {
         "id": "urn:ngm:class:model-interpretability",
@@ -159,17 +180,17 @@
       {
         "id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection Methods"
-      },
-      {
-        "id": "urn:ngm:class:human-ai-collaboration",
-        "label": "Human-AI Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
@@ -179,11 +200,27 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:shapley-value",
+        "label": "Shapley Value"
+      },
+      {
+        "id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      },
       {
         "id": "urn:ngm:class:lime",
         "label": "LIME"
@@ -195,12 +232,24 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      },
+      {
         "id": "urn:ngm:class:feature-importance",
         "label": "Feature Importance"
       },
       {
-        "id": "urn:ngm:class:black-box-model",
-        "label": "Black-Box Model"
+        "id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      },
+      {
+        "id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:model-complexity",
+        "label": "Model Complexity"
       }
     ],
     "bridgesTo": [
@@ -211,15 +260,63 @@
       {
         "id": "urn:ngm:class:healthcare-ai",
         "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Medical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
         "id": "urn:ngm:class:causal-inference",
         "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:lime",
+        "label": "LIME"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection"
+      },
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
@@ -227,6 +324,14 @@
       {
         "id": "urn:ngm:class:feature-importance",
         "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       },
       {
         "id": "urn:ngm:class:ai-governance-framework",
@@ -237,8 +342,22 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias Detection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2976-xai",
+        "label": "IEEE P2976 (XAI)"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
       }
     ],
     "partOf": [
@@ -253,6 +372,10 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:activation-patching",
+        "label": "Activation Patching"
+      },
+      {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
@@ -265,20 +388,20 @@
         "label": "Deep Learning"
       },
       {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:sparse-autoencoders",
+        "label": "Sparse Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
         "id": "urn:ngm:class:interpretable-ai",
         "label": "Interpretable AI"
-      },
-      {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-framework",
-        "label": "AI Governance Framework"
-      },
-      {
-        "id": "urn:ngm:class:ai-transparency-framework",
-        "label": "Ai Transparency Framework"
       }
     ]
   },

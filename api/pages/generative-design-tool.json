@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:constraint-solver",
         "label": "Constraint Solver"
+      },
+      {
+        "id": "urn:ngm:class:design-optimizer",
+        "label": "Design Optimizer"
+      },
+      {
+        "id": "urn:ngm:class:3d-generator",
+        "label": "3D Generator"
       }
     ],
     "requires": [
@@ -34,6 +42,10 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:design-database",
+        "label": "Design Database"
       }
     ],
     "enables": [
@@ -48,9 +60,26 @@
       {
         "id": "urn:ngm:class:parametric-design-methodology-modeling",
         "label": "Parametric Modeling"
+      },
+      {
+        "id": "urn:ngm:class:design-optimization",
+        "label": "Design Optimization"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-engine",
+        "label": "AI Engine"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -145,6 +174,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

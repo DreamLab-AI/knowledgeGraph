@@ -32,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:environment",
+        "label": "Environment"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -191,6 +196,18 @@
       {
         "id": "urn:ngm:class:smart-cities",
         "label": "Smart Cities"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -247,13 +264,17 @@
         "label": "AI Agent System"
       },
       {
+        "id": "urn:ngm:class:intelligent-virtual-entity",
+        "label": "Intelligent Virtual Entity"
+      },
+      {
         "id": "urn:ngm:class:robotics-systems",
         "label": "Robotics Systems"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:universal-scene-description",
+        "id": "urn:ngm:class:usd",
         "label": "Universal Scene Description"
       },
       {

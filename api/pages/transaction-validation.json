@@ -92,6 +92,10 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
       }
     ],
     "uses": [
@@ -100,7 +104,7 @@
         "label": "Hash Function"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -185,12 +189,12 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       }
     ],
     "requires": [
@@ -327,6 +331,10 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
       },
       {
         "id": "urn:ngm:class:decentralised-governance",

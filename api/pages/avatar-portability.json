@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
+    },
+    {
+      "id": "urn:ngm:class:asset-portability",
+      "label": "Digital Asset Portability"
     }
   ],
   "entityType": "Class",
@@ -25,12 +29,28 @@
       {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:translation-frameworks",
+        "label": "Translation Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:platform-integration",
+        "label": "Platform Integration"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"
+      },
+      {
+        "id": "urn:ngm:class:seamless-world-transitions",
+        "label": "Seamless World Transitions"
+      },
+      {
+        "id": "urn:ngm:class:asset-continuity",
+        "label": "Asset Continuity"
       }
     ],
     "dependsOn": [
@@ -39,7 +59,7 @@
         "label": "VRM Format"
       },
       {
-        "id": "urn:ngm:class:gl-tf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -71,6 +91,10 @@
       {
         "id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
       }
     ],
     "uses": [
@@ -110,9 +134,29 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets",
+      "slug": "sc-content-and-assets"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -152,6 +196,22 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
       },
@@ -170,6 +230,22 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:digital-property-rights",
+        "label": "User-Owned Digital Property"
+      },
+      {
+        "id": "urn:ngm:class:open-metaverse",
+        "label": "Open Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      },
+      {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
@@ -186,16 +262,50 @@
         "label": "Scene Understanding"
       }
     ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:runtime-api",
+        "label": "Runtime API"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "Universal Scene Description"
+      }
+    ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      },
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
         "id": "urn:ngm:class:extended-reality-xr",
@@ -204,9 +314,29 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:vrm-format",
+        "label": "VRM Format"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
@@ -226,20 +356,42 @@
       {
         "id": "urn:ngm:class:hand-tracking",
         "label": "Hand Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
-        "id": "urn:ngm:class:head-mounted-display",
-        "label": "Head-Mounted Display"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:3-d-asset-standard",
         "label": "3D Asset Standard"
+      },
+      {
+        "id": "urn:ngm:class:alliance-for-openusd",
+        "label": "Alliance for OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
       },
       {
         "id": "urn:ngm:class:open-xr",
@@ -260,8 +412,28 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:universal-scene-description",
+        "id": "urn:ngm:class:usd",
         "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      },
+      {
+        "id": "urn:ngm:class:content-pipeline",
+        "label": "Content Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
       }
     ]
   },

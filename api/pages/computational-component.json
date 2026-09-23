@@ -110,6 +110,11 @@
       "slug": "digital-infrastructure"
     },
     {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture",
+      "slug": "software-architecture"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
@@ -151,8 +156,8 @@
         "label": "AI System Component"
       },
       {
-        "id": "urn:ngm:class:hardware-component",
-        "label": "Hardware Component"
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "requires": [
@@ -173,20 +178,20 @@
         "label": "API"
       },
       {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
         "id": "urn:ngm:class:modularity",
         "label": "Modularity"
       },
       {
-        "id": "urn:ngm:class:cooling-system",
-        "label": "Cooling Systems"
+        "id": "urn:ngm:class:reusability",
+        "label": "Reusability"
       },
       {
-        "id": "urn:ngm:class:power-grid",
-        "label": "Power Grid"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:separation-of-concerns",
+        "label": "Separation of Concerns"
       }
     ],
     "enables": [
@@ -203,24 +208,24 @@
         "label": "Real-Time Inference"
       },
       {
+        "id": "urn:ngm:class:ai-system-eu-definition",
+        "label": "AI System (EU Definition)"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       },
       {
-        "id": "urn:ngm:class:model-deployment",
-        "label": "Model Deployment"
-      },
-      {
-        "id": "urn:ngm:class:reusability",
-        "label": "Reusability"
-      },
-      {
-        "id": "urn:ngm:class:testability",
-        "label": "Testability"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
       }
     ],
     "dependsOn": [
@@ -233,14 +238,46 @@
         "label": "Data Centre"
       },
       {
-        "id": "urn:ngm:class:open-source-software",
-        "label": "Open Source Software"
+        "id": "urn:ngm:class:ai-framework",
+        "label": "AI Framework"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
       }
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:dependency-injection",
+        "label": "Dependency Injection"
+      },
+      {
         "id": "urn:ngm:class:design-pattern",
         "label": "Design Pattern"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
       },
       {
         "id": "urn:ngm:class:separation-of-concerns",
@@ -283,6 +320,14 @@
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -305,8 +350,24 @@
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:serverless-architecture",
-        "label": "Serverless Computing"
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
       }
     ],
     "supports": [
@@ -323,23 +384,39 @@
         "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053",
+        "label": "ISO/IEC 23053"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-25010",
+        "label": "ISO/IEC 25010"
+      },
       {
         "id": "urn:ngm:class:cncf",
         "label": "CNCF"
@@ -365,6 +442,10 @@
       {
         "id": "urn:ngm:class:ai-system-eu-definition",
         "label": "AI System (EU Definition)"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "relatedTo": [
@@ -389,16 +470,16 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-framework",
-        "label": "Machine Learning Framework"
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmark"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
-        "label": "Machine Learning Pipeline"
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       }
     ]
   },

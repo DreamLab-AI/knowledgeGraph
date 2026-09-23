@@ -16,8 +16,24 @@
       "label": "AI Safety"
     },
     {
-      "id": "urn:ngm:class:ai-safety",
-      "label": "AI Safety"
+      "id": "urn:ngm:class:synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "id": "urn:ngm:class:online-harm",
+      "label": "Online Harm"
+    },
+    {
+      "id": "urn:ngm:class:information-integrity-threat",
+      "label": "Information Integrity Threat"
+    },
+    {
+      "id": "urn:ngm:class:identity-fraud",
+      "label": "Identity Fraud"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai-misuse",
+      "label": "Generative AI Misuse"
     }
   ],
   "entityType": "Class",
@@ -32,6 +48,30 @@
       {
         "id": "urn:ngm:class:face-swap",
         "label": "Face Swap"
+      },
+      {
+        "id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Clone"
+      },
+      {
+        "id": "urn:ngm:class:lip-sync-generation",
+        "label": "Lip Sync Generation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-avatar",
+        "label": "Real-Time Avatar"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-identity-document",
+        "label": "Synthetic Identity Document"
+      },
+      {
+        "id": "urn:ngm:class:non-consensual-intimate-imagery",
+        "label": "Non-Consensual Intimate Imagery"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-disinformation",
+        "label": "Synthetic Disinformation"
       }
     ],
     "requires": [
@@ -50,6 +90,10 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:target-identity-reference",
+        "label": "Target Identity Reference"
       }
     ],
     "enables": [
@@ -60,16 +104,110 @@
       {
         "id": "urn:ngm:class:social-engineering",
         "label": "Social Engineering"
+      },
+      {
+        "id": "urn:ngm:class:election-interference",
+        "label": "Election Interference"
+      },
+      {
+        "id": "urn:ngm:class:romance-fraud",
+        "label": "Romance Fraud"
+      },
+      {
+        "id": "urn:ngm:class:business-email-compromise",
+        "label": "Business Email Compromise"
+      },
+      {
+        "id": "urn:ngm:class:image-based-sexual-abuse",
+        "label": "Image-Based Sexual Abuse"
+      },
+      {
+        "id": "urn:ngm:class:reputation-attack",
+        "label": "Reputation Attack"
+      },
+      {
+        "id": "urn:ngm:class:kyc-bypass",
+        "label": "KYC Bypass"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      },
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:wav2lip",
+        "label": "Wav2Lip"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Image Model"
+      }
+    ],
     "implements": [
+      {
+        "id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning Attack"
+      },
+      {
+        "id": "urn:ngm:class:identity-impersonation",
+        "label": "Identity Impersonation"
+      },
+      {
+        "id": "urn:ngm:class:audiovisual-forgery",
+        "label": "Audiovisual Forgery"
+      },
+      {
+        "id": "urn:ngm:class:real-time-puppetry",
+        "label": "Real-Time Puppetry"
+      },
       {
         "id": "urn:ngm:class:voice-cloning",
         "label": "Voice Cloning Attack"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:shallowfake",
+        "label": "Shallowfake"
+      },
+      {
+        "id": "urn:ngm:class:cgi-vfx",
+        "label": "CGI VFX"
+      },
+      {
+        "id": "urn:ngm:class:authentic-ugc",
+        "label": "Authentic UGC"
+      },
+      {
+        "id": "urn:ngm:class:disclosed-synthetic-media",
+        "label": "Disclosed Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:consensual-avatar",
+        "label": "Consensual Avatar"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -87,9 +225,58 @@
       {
         "id": "urn:ngm:class:face-swap",
         "label": "Face Swap"
+      },
+      {
+        "id": "urn:ngm:class:deepfacelab",
+        "label": "DeepFaceLab"
+      },
+      {
+        "id": "urn:ngm:class:face-swap",
+        "label": "FaceSwap"
+      },
+      {
+        "id": "urn:ngm:class:reactor",
+        "label": "ReActor"
+      },
+      {
+        "id": "urn:ngm:class:heygen",
+        "label": "HeyGen"
+      },
+      {
+        "id": "urn:ngm:class:synthesia",
+        "label": "Synthesia"
+      },
+      {
+        "id": "urn:ngm:class:d-id",
+        "label": "D-ID"
+      },
+      {
+        "id": "urn:ngm:class:wav2lip",
+        "label": "Wav2Lip"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:disinformation-campaign",
+        "label": "Disinformation Campaign"
+      },
+      {
+        "id": "urn:ngm:class:influence-operation",
+        "label": "Influence Operation"
+      },
+      {
+        "id": "urn:ngm:class:fraud-ecosystem",
+        "label": "Fraud Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:pig-butchering-scam",
+        "label": "Pig-Butchering Scam"
+      },
+      {
+        "id": "urn:ngm:class:sextortion",
+        "label": "Sextortion"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:c2-pa",
@@ -106,6 +293,18 @@
       {
         "id": "urn:ngm:class:uk-online-safety-act",
         "label": "UK Online Safety Act"
+      },
+      {
+        "id": "urn:ngm:class:take-it-down-act",
+        "label": "TAKE IT DOWN Act"
+      },
+      {
+        "id": "urn:ngm:class:china-deep-synthesis-provisions",
+        "label": "China Deep Synthesis Provisions"
+      },
+      {
+        "id": "urn:ngm:class:cai-coalition-for-content-provenance-and-authenticity",
+        "label": "CAI Coalition for Content Provenance and Authenticity"
       }
     ],
     "partOf": [],
@@ -133,6 +332,10 @@
       {
         "id": "urn:ngm:class:cyber-security-and-cryptography",
         "label": "Cyber Security and Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:election-integrity",
+        "label": "Election Integrity"
       }
     ]
   },
@@ -146,6 +349,36 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI",
+      "slug": "generative-ai"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -193,8 +426,20 @@
         "label": "Formal Verification"
       },
       {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:computational-infrastructure",
@@ -211,6 +456,10 @@
         "label": "Human-AI Collaboration"
       },
       {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
       },
@@ -219,30 +468,122 @@
         "label": "Trustworthy AI"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:avatar-synthesis",
+        "label": "Avatar Synthesis"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ai-capabilities-research",
         "label": "AI Capabilities Research"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:ngm:class:media-authenticity",
+        "label": "Media Authenticity"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -257,6 +598,26 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -279,6 +640,18 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:sparse-autoencoders",
+        "label": "Sparse Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
       }
     ],
     "supports": [
@@ -287,12 +660,66 @@
         "label": "AI Ethics"
       },
       {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
       },
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI-Generated Content Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "partOf": [
@@ -319,20 +746,20 @@
         "label": "AI Regulation"
       },
       {
+        "id": "urn:ngm:class:ai-security-institute",
+        "label": "AI Security Institute"
+      },
+      {
+        "id": "urn:ngm:class:apollo-research",
+        "label": "Apollo Research"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
         "id": "urn:ngm:class:corrigibility",
         "label": "Corrigibility"
-      },
-      {
-        "id": "urn:ngm:class:existential-risk",
-        "label": "Existential Risk"
-      },
-      {
-        "id": "urn:ngm:class:mesa-optimisation",
-        "label": "Mesa-Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:robustness",
-        "label": "Robustness"
       }
     ]
   },

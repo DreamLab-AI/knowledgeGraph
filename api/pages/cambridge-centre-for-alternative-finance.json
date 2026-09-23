@@ -20,9 +20,25 @@
       {
         "id": "urn:ngm:class:cambridge-bitcoin-electricity-consumption-index",
         "label": "Cambridge Bitcoin Electricity Consumption Index"
+      },
+      {
+        "id": "urn:ngm:class:global-cryptoasset-benchmarking-study",
+        "label": "Global Cryptoasset Benchmarking Study"
+      },
+      {
+        "id": "urn:ngm:class:global-alternative-finance-market-benchmarking-report",
+        "label": "Global Alternative Finance Market Benchmarking Report"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:research-methods",
+        "label": "Empirical Research Methodology"
+      },
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Survey-Based Data Collection"
+      },
       {
         "id": "urn:ngm:class:research-methods",
         "label": "Empirical Research Methodology"
@@ -40,9 +56,25 @@
       {
         "id": "urn:ngm:class:cryptoasset-regulatory-framework",
         "label": "Cryptoasset Policy"
+      },
+      {
+        "id": "urn:ngm:class:cryptoasset-regulatory-framework",
+        "label": "Cryptoasset Policy"
+      },
+      {
+        "id": "urn:ngm:class:fintech-benchmarking",
+        "label": "Fintech Benchmarking"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network Data"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data Publishing"
+      },
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network Data"
@@ -61,6 +93,10 @@
       {
         "id": "urn:ngm:class:financial-system",
         "label": "Incumbent Financial System"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Incumbent Financial System"
       }
     ],
     "bridgesTo": [
@@ -73,8 +109,12 @@
         "label": "Energy Consumption Monitoring"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption Monitoring"
       }
     ],
     "uses": [
@@ -85,6 +125,10 @@
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-trading",
+        "label": "Peer-to-Peer Lending"
       },
       {
         "id": "urn:ngm:class:peer-to-peer-trading",
@@ -101,7 +145,7 @@
         "label": "Sustainable Finance"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       }
     ],
@@ -120,6 +164,10 @@
       {
         "id": "urn:ngm:class:crowdfunding",
         "label": "Crowdfunding"
+      },
+      {
+        "id": "urn:ngm:class:alternative-finance",
+        "label": "Alternative Finance"
       }
     ]
   },
@@ -143,7 +191,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -211,6 +259,10 @@
         "label": "Monetary Policy"
       },
       {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
@@ -229,10 +281,6 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "dependsOn": [
@@ -287,7 +335,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -355,7 +403,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

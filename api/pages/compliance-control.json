@@ -14,6 +14,30 @@
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
+    },
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance"
+    },
+    {
+      "id": "urn:ngm:class:internal-control",
+      "label": "Internal Control"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "id": "urn:ngm:class:information-security-management",
+      "label": "Information Security Management"
+    },
+    {
+      "id": "urn:ngm:class:enterprise-risk-management",
+      "label": "Enterprise Risk Management"
     }
   ],
   "entityType": "Class",
@@ -28,6 +52,38 @@
       {
         "id": "urn:ngm:class:segregation-of-duties",
         "label": "Segregation of Duties"
+      },
+      {
+        "id": "urn:ngm:class:control-objective",
+        "label": "Control Objective"
+      },
+      {
+        "id": "urn:ngm:class:control-activity",
+        "label": "Control Activity"
+      },
+      {
+        "id": "urn:ngm:class:control-owner",
+        "label": "Control Owner"
+      },
+      {
+        "id": "urn:ngm:class:control-evidence",
+        "label": "Control Evidence"
+      },
+      {
+        "id": "urn:ngm:class:control-testing",
+        "label": "Control Testing"
+      },
+      {
+        "id": "urn:ngm:class:exception-management",
+        "label": "Exception Management"
+      },
+      {
+        "id": "urn:ngm:class:control-maturity-assessment",
+        "label": "Control Maturity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:control-library",
+        "label": "Control Library"
       }
     ],
     "requires": [
@@ -50,6 +106,22 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-mapping",
+        "label": "Regulatory Mapping"
+      },
+      {
+        "id": "urn:ngm:class:management-oversight",
+        "label": "Management Oversight"
+      },
+      {
+        "id": "urn:ngm:class:control-documentation",
+        "label": "Control Documentation"
+      },
+      {
+        "id": "urn:ngm:class:it-general-controls",
+        "label": "IT General Controls"
       }
     ],
     "enables": [
@@ -72,9 +144,70 @@
       {
         "id": "urn:ngm:class:sox-compliance",
         "label": "SOX Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-assurance",
+        "label": "Regulatory Assurance"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001 Certification"
+      },
+      {
+        "id": "urn:ngm:class:soc-2-type-ii-attestation",
+        "label": "SOC 2 Type II Attestation"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR Accountability"
+      },
+      {
+        "id": "urn:ngm:class:fca-consumer-duty",
+        "label": "Consumer Duty Compliance"
+      },
+      {
+        "id": "urn:ngm:class:dora-compliance",
+        "label": "DORA Compliance"
+      },
+      {
+        "id": "urn:ngm:class:smcr-compliance",
+        "label": "SMCR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III Compliance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:it-general-controls",
+        "label": "IT General Controls"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:policy-management",
+        "label": "Policy Management"
+      },
+      {
+        "id": "urn:ngm:class:operational-risk-framework",
+        "label": "Operational Risk Framework"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:control-framework",
@@ -95,9 +228,50 @@
       {
         "id": "urn:ngm:class:nist-cybersecurity-framework",
         "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:control-framework",
+        "label": "COSO Internal Control Framework"
+      },
+      {
+        "id": "urn:ngm:class:three-lines-of-defence",
+        "label": "Three Lines of Defence"
+      },
+      {
+        "id": "urn:ngm:class:continuous-controls-monitoring",
+        "label": "Continuous Controls Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:regtech-automation",
+        "label": "RegTech Automation"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:detective-control",
+        "label": "Detective Control"
+      },
+      {
+        "id": "urn:ngm:class:preventive-control",
+        "label": "Preventive Control"
+      },
+      {
+        "id": "urn:ngm:class:corrective-control",
+        "label": "Corrective Control"
+      },
+      {
+        "id": "urn:ngm:class:compensating-control",
+        "label": "Compensating Control"
+      },
+      {
+        "id": "urn:ngm:class:manual-control",
+        "label": "Manual Control"
+      },
+      {
+        "id": "urn:ngm:class:automated-control",
+        "label": "Automated Control"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:enterprise-risk-management",
@@ -128,6 +302,18 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:grc-software",
+        "label": "GRC Software"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit Management System"
+      },
+      {
+        "id": "urn:ngm:class:policy-management-platform",
+        "label": "Policy Management Platform"
       }
     ],
     "supports": [
@@ -154,6 +340,18 @@
       {
         "id": "urn:ngm:class:esg-reporting",
         "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:financial-reporting-integrity",
+        "label": "Financial Reporting Integrity"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Conduct Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:cyber-risk-management",
+        "label": "Cyber Risk Management"
       }
     ],
     "standardizedBy": [
@@ -196,6 +394,10 @@
       {
         "id": "urn:ngm:class:sec",
         "label": "SEC"
+      },
+      {
+        "id": "urn:ngm:class:iia",
+        "label": "IIA"
       }
     ],
     "partOf": [],
@@ -235,14 +437,119 @@
       {
         "id": "urn:ngm:class:regulatory-technology",
         "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "id": "urn:ngm:class:data-loss-prevention",
+        "label": "Data Loss Prevention"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:cyber-risk-management",
+        "label": "Cyber Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:onetrust",
+        "label": "OneTrust"
+      },
+      {
+        "id": "urn:ngm:class:service-now",
+        "label": "ServiceNow"
+      },
+      {
+        "id": "urn:ngm:class:grc-platform",
+        "label": "GRC Platform"
+      },
+      {
+        "id": "urn:ngm:class:three-lines-of-defence",
+        "label": "Three Lines of Defence"
+      },
+      {
+        "id": "urn:ngm:class:continuous-controls-monitoring",
+        "label": "Continuous Controls Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:regtech-automation",
+        "label": "RegTech Automation"
+      },
+      {
+        "id": "urn:ngm:class:coso",
+        "label": "COSO"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:sox-compliance",
+        "label": "SOX Compliance"
+      },
+      {
+        "id": "urn:ngm:class:fca-consumer-duty",
+        "label": "Consumer Duty"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-principle",
+      "label": "AI Governance Principle",
+      "slug": "ai-governance-principle"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     }
   ],
   "inheritedRelations": {
@@ -282,16 +589,36 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
+      },
+      {
+        "id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      },
+      {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
       }
     ],
     "enables": [
@@ -304,27 +631,107 @@
         "label": "Privacy Framework"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modeling"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO 23894"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:governance-code",
+        "label": "Governance Code"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
@@ -332,12 +739,36 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:cybersecurity-risk-management",
+        "label": "Cybersecurity Risk Management"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:financial-risk-management",
+        "label": "Financial Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "uses": [
@@ -348,26 +779,112 @@
       {
         "id": "urn:ngm:class:digital-certificate",
         "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection"
+      },
+      {
+        "id": "urn:ngm:class:failure-mode-analysis",
+        "label": "Failure Mode Analysis"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-growth",
+        "label": "Inclusive Growth"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      },
+      {
+        "id": "urn:ngm:class:oecd-principles-of-corporate-governance",
+        "label": "OECD Principles of Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:uk-corporate-governance-code",
+        "label": "UK Corporate Governance Code"
+      },
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:g7-hiroshima-ai-process",
+        "label": "G7 Hiroshima AI Process"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:institutional-framework",
+        "label": "Institutional Framework"
       }
     ],
     "relatedTo": [
@@ -376,7 +893,7 @@
         "label": "Compliance Monitoring"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
@@ -392,16 +909,16 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
       },
       {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ]
   },

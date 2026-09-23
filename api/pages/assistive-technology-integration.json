@@ -10,13 +10,50 @@
     {
       "id": "urn:ngm:class:accessibility",
       "label": "Accessibility"
+    },
+    {
+      "id": "urn:ngm:class:inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "id": "urn:ngm:class:universal-design",
+      "label": "Universal Design"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:accessibility-tree",
+        "label": "Accessibility Tree"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-captioning",
+        "label": "Accessibility Captioning"
+      },
+      {
+        "id": "urn:ngm:class:audio-description",
+        "label": "Audio Description"
+      },
+      {
+        "id": "urn:ngm:class:alternative-text",
+        "label": "Alternative Text"
+      },
+      {
+        "id": "urn:ngm:class:live-captions",
+        "label": "Captions"
+      },
+      {
+        "id": "urn:ngm:class:colour-contrast",
+        "label": "Colour Contrast"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:accessibility-tree",
@@ -29,6 +66,14 @@
       {
         "id": "urn:ngm:class:participatory-design",
         "label": "Participatory Design"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-audit-tool",
+        "label": "Accessibility Audit Tool"
       }
     ],
     "enables": [
@@ -47,20 +92,66 @@
       {
         "id": "urn:ngm:class:inclusive-participation",
         "label": "Inclusive Participation"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-xr-design",
+        "label": "Inclusive Xr Design"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal Interaction"
+      },
+      {
+        "id": "urn:ngm:class:neural-xr-interfaces",
+        "label": "Neural XR Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real Time Processing"
+      }
+    ],
     "implements": [
       {
-        "id": "urn:ngm:class:wcag",
+        "id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       },
       {
         "id": "urn:ngm:class:aria",
         "label": "ARIA"
+      },
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cognitive-accessibility",
+        "label": "Cognitive Accessibility"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -86,10 +177,48 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-accessibility",
+        "label": "Cognitive Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Equity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -115,26 +244,162 @@
       {
         "id": "urn:ngm:class:digital-equity",
         "label": "Digital Equity"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:khronos-open-xr",
+        "label": "Khronos OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-ar",
+        "label": "Augmented Reality (AR)"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:design-principle",
+      "label": "Design Principle",
+      "slug": "design-principle"
+    },
+    {
+      "id": "urn:ngm:class:design-thinking",
+      "label": "Design Thinking",
+      "slug": "design-thinking"
+    },
+    {
+      "id": "urn:ngm:class:human-factors",
+      "label": "Human Factors",
+      "slug": "human-factors"
+    },
+    {
+      "id": "urn:ngm:class:non-functional-requirement",
+      "label": "Non-Functional Requirement",
+      "slug": "non-functional-requirement"
+    },
+    {
+      "id": "urn:ngm:class:quality-attribute",
+      "label": "Quality Attribute",
+      "slug": "quality-attribute"
+    },
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety",
       "slug": "sc-governance-and-safety"
     },
     {
+      "id": "urn:ngm:class:human-robot-interaction",
+      "label": "Human Robot Interaction",
+      "slug": "human-robot-interaction"
+    },
+    {
+      "id": "urn:ngm:class:interaction-design",
+      "label": "Interaction Design",
+      "slug": "interaction-design"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation",
+      "slug": "knowledge-representation"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:roboticsdomain",
+      "label": "RoboticsDomain",
+      "slug": "roboticsdomain"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:live-captions",
-        "label": "Captions"
+        "id": "urn:ngm:class:accessibility-statement",
+        "label": "Accessibility Statement"
+      },
+      {
+        "id": "urn:ngm:class:accessible-name-computation",
+        "label": "Accessible Name Computation"
+      },
+      {
+        "id": "urn:ngm:class:focus-management",
+        "label": "Focus Management"
+      },
+      {
+        "id": "urn:ngm:class:keyboard-navigation",
+        "label": "Keyboard Navigation"
+      },
+      {
+        "id": "urn:ngm:class:operability",
+        "label": "Operability"
+      },
+      {
+        "id": "urn:ngm:class:perceivability",
+        "label": "Perceivability"
       },
       {
         "id": "urn:ngm:class:robustness",
@@ -143,32 +408,20 @@
       {
         "id": "urn:ngm:class:semantic-html",
         "label": "Semantic HTML"
-      },
-      {
-        "id": "urn:ngm:class:content-moderation",
-        "label": "Content Moderation"
-      },
-      {
-        "id": "urn:ngm:class:data-protection",
-        "label": "Data Protection"
-      },
-      {
-        "id": "urn:ngm:class:digital-safety",
-        "label": "Digital Safety"
-      },
-      {
-        "id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy By Design"
-      },
-      {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:assistive-technology",
         "label": "Assistive Technology Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:colour-contrast",
+        "label": "Colour Contrast"
+      },
+      {
+        "id": "urn:ngm:class:keyboard-operability",
+        "label": "Keyboard Operability"
       },
       {
         "id": "urn:ngm:class:semantic-html",
@@ -183,20 +436,12 @@
         "label": "WAI-ARIA"
       },
       {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
+        "id": "urn:ngm:class:co-design",
+        "label": "Co-Design"
       },
       {
-        "id": "urn:ngm:class:risk-assessment",
-        "label": "Risk Assessment"
-      },
-      {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
-      },
-      {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
+        "id": "urn:ngm:class:interface-design",
+        "label": "Interface Design"
       }
     ],
     "enables": [
@@ -221,33 +466,115 @@
         "label": "Universal Usability"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Equity"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:assistive-technology-ecosystem",
+        "label": "Assistive Technology Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:disability-studies",
+        "label": "Disability Studies"
+      },
+      {
+        "id": "urn:ngm:class:human-factors-research",
+        "label": "Human Factors Research"
+      },
+      {
+        "id": "urn:ngm:class:operating-system-accessibility-apis",
+        "label": "Operating System Accessibility APIs"
+      },
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      },
+      {
+        "id": "urn:ngm:class:biomechanics",
+        "label": "Biomechanics"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
       }
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:atag-2-0",
+        "label": "ATAG 2.0"
+      },
+      {
         "id": "urn:ngm:class:en-301-549",
         "label": "EN 301 549"
+      },
+      {
+        "id": "urn:ngm:class:pour-principles",
+        "label": "POUR Principles"
       },
       {
         "id": "urn:ngm:class:section-508",
         "label": "Section 508"
       },
       {
-        "id": "urn:ngm:class:wcag-2-2",
-        "label": "WCAG 2.2"
+        "id": "urn:ngm:class:wai-aria-1-2",
+        "label": "WAI-ARIA 1.2"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal Interaction"
+      },
+      {
+        "id": "urn:ngm:class:closed-world-assumption",
+        "label": "Closed World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:reasonable-accommodation",
+        "label": "Reasonable Accommodation"
+      },
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "id": "urn:ngm:class:retrofitting",
+        "label": "Retrofitting"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:sub-symbolic-ai",
+        "label": "Sub-Symbolic AI"
+      },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
@@ -255,23 +582,43 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:3-d-reconstruction",
-        "label": "3D Reconstruction"
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
       },
       {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence-ethics",
+        "label": "Artificial Intelligence Ethics"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-interfaces",
+        "label": "Natural Language Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:axe-core",
+        "label": "axe-core"
+      },
       {
         "id": "urn:ngm:class:jaws",
         "label": "JAWS"
@@ -289,44 +636,98 @@
         "label": "Pa11y"
       },
       {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
+        "id": "urn:ngm:class:talkback",
+        "label": "TalkBack"
       },
       {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
+        "id": "urn:ngm:class:voiceover",
+        "label": "VoiceOver"
       },
       {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:hand-tracking",
-        "label": "Hand Tracking"
+        "id": "urn:ngm:class:wave",
+        "label": "WAVE"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:accessibility-captioning",
         "label": "Captioning Users"
+      },
+      {
+        "id": "urn:ngm:class:cognitively-diverse-users",
+        "label": "Cognitively Diverse Users"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking-users",
+        "label": "Eye-Tracking Users"
+      },
+      {
+        "id": "urn:ngm:class:keyboard-only-users",
+        "label": "Keyboard-Only Users"
+      },
+      {
+        "id": "urn:ngm:class:screen-reader-users",
+        "label": "Screen Reader Users"
+      },
+      {
+        "id": "urn:ngm:class:switch-users",
+        "label": "Switch Users"
+      },
+      {
+        "id": "urn:ngm:class:voice-control-users",
+        "label": "Voice-Control Users"
+      },
+      {
+        "id": "urn:ngm:class:built-environment",
+        "label": "Built Environment"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:bs-8878",
+        "label": "BS 8878"
+      },
+      {
         "id": "urn:ngm:class:en-301-549",
         "label": "EN 301 549"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-40500",
+        "label": "ISO/IEC 40500"
       },
       {
         "id": "urn:ngm:class:section-508",
         "label": "Section 508"
       },
       {
-        "id": "urn:ngm:class:open-xr",
-        "label": "OpenXR"
+        "id": "urn:ngm:class:w3c-wai",
+        "label": "W3C WAI"
       },
       {
-        "id": "urn:ngm:class:web-xr",
-        "label": "WebXR"
+        "id": "urn:ngm:class:european-accessibility-act",
+        "label": "European Accessibility Act"
+      },
+      {
+        "id": "urn:ngm:class:wai-aria",
+        "label": "WAI-ARIA"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
       }
     ],
     "relatedTo": [
@@ -359,8 +760,8 @@
         "label": "User Experience"
       },
       {
-        "id": "urn:ngm:class:compliance-framework",
-        "label": "Compliance Framework"
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
       }
     ]
   },

@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Language Modeling</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Language Modeling"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Language Modeling"/><meta name="twitter:description" content="Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations."/><meta property="og:description" content="Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations."/><meta property="og:image:alt" content="Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Language-Modeling"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Language-Modeling"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Language-Modeling"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-4435"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-4435" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Language Modeling</a></div></nav><h1 class="article-title">Language Modeling</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.684Z">23 Sept 2026</time><span>32 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:language-modeling</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>machine-learning</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.72</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Causal-Language-Modelling" class="internal">Autoregressive Language Modeling</a></li><li><a href="../pages/Encoder-Decoder-Architecture" class="internal">Encoder Decoder Architecture</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Transformer" class="internal">Transformer</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li><li><a href="../pages/Self-Attention" class="internal">Self Attention</a></li><li><a href="../pages/Tokenization" class="internal">Tokenization</a></li><li><a href="../pages/Training-Data" class="internal">Training Data</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Text-Generation" class="internal">Text Generation</a></li><li><a href="../pages/Question-Answering" class="internal">Question Answering</a></li><li><a href="../pages/Machine-Translation" class="internal">Machine Translation</a></li><li><a href="../pages/Code-Generation" class="internal">Code Generation</a></li><li><a href="../pages/Dialogue-Systems" class="internal">Dialogue Systems</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Knowledge-Graphing" class="internal">Knowledge Graphing</a></li><li><a href="../pages/Multimodal-AI" class="internal">Multimodal AI</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Diffusion-Models" class="internal">Diffusion Models</a></li><li><a href="../pages/State-Space-Models" class="internal">State Space Models</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0375</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../large-language-model" class="internal">Large Language Model</a></li><li><a href="../omniverse" class="internal">Omniverse</a></li><li><a href="../open-usd" class="internal">OpenUSD</a></li><li><a href="../presentation" class="internal">presentation</a></li><li><a href="../bert" class="internal">BERT</a></li><li><a href="../diffusion-models" class="internal">Diffusion Models</a></li><li><a href="../google" class="internal">Google</a></li><li><a href="../gpt" class="internal">GPT</a></li><li><a href="../knowledge-graphing" class="internal">Knowledge Graphing</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../logseq" class="internal">Logseq</a></li><li><a href="../metaverse-and-telecollaboration" class="internal">Metaverse and Telecollaboration</a></li><li><a href="../metaverse" class="internal">MetaverseDomain</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../nvidia-omniverse" class="internal">NVIDIA Omniverse</a></li><li><a href="../open-ai" class="internal">OpenAI</a></li><li><a href="../open-generative-ai-tools" class="internal">Open Generative AI tools</a></li><li><a href="../proprietary-large-language-models" class="internal">Proprietary Large Language Models</a></li><li><a href="../self-attention" class="internal">Self Attention</a></li><li><a href="../text-generation" class="internal">Text Generation</a></li><li><a href="../transformer" class="internal">Transformer</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:21fed56a01a327acef1c06e5e16bce33ce2369ee1f360d42de3b10a7cae9a94f</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../scaling-laws" class="internal">Scaling Laws</a></li><li><a href="../pages/Emergent-Capabilities" class="internal">Emergent Abilities</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../pages/Pre-Training" class="internal">Pre Training</a></li><li><a href="../pages/Fine-Tuning" class="internal">Fine Tuning</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.</p>
+</li>
+<li>
+<h3 id="models">Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[Llama 3.1, 3.2, and 4](https://yourstory.com/2025/02/meta-ai-llama-4-series-open-source-models)**: A series of powerful, open-source large language models.
+</code></pre>
+</li>
+<li>
+<h1 id="business-functions">Business Functions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#business-functions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><strong>AI Technology &amp; Concepts</strong>
+- LLMs (Large Language Models)
+- Automation
+- Chatbots
+- Agents
+- Avatars
+- Tech &amp; Infrastructure</p>
+<p><strong>Business Functions &amp; Roles</strong>
+- Business
+- Marketing
+- Sales
+- HR (Human Resources)
+- Customer Service
+- Finance
+- Product Management
+- Data Analysis
+- Small Business
+- Entrepreneurs
+- Solopreneurs</p>
+<p><strong>Creative &amp; Media</strong>
+- Creativity
+- Design
+- Writing
+- Image
+- Video
+- Audio
+- Music
+- Creators</p>
+<p><strong>Skills, Learning &amp; Productivity</strong>
+- Coding
+- Productivity
+- Learning
+- Education
+- Professional Development
+- Personal Growth</p>
+</li>
+<li>
+<h3 id="langchain"><a href="https://www.langchain.com/" class="external">LangChain<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#langchain" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- A framework for developing applications powered by language models.
+</code></pre>
+</li>
+<li>
+<h3 id="performance">Performance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#performance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- LLaMA-3 models demonstrate competitive performance on various language modeling tasks, showcasing significant improvements over previous open weights models.
+- Integrated free across their social media platforms
+- Fast image generation, can be fine tunes for creatives.
+- [Introducing New AI Experiences Across Our Family of Apps and Devices | Meta (fb.com)](https://about.fb.com/news/2023/09/introducing-ai-powered-assistants-characters-and-creative-tools/)
+- [What’s up with Llama 3? Arena data analysis | LMSYS Org](https://lmsys.org/blog/2024-05-08-llama3/)
+- ![](https://lmsys.org/images/blog/llama3/topic_win_rate.png){:width 500}
+</code></pre>
+</li>
+<li>
+<h2 id="large-language-models">Large Language models:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#large-language-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h4 id="biomedical">Biomedical<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#biomedical" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<pre><code>- Collaborative Virtual Environments (CVEs) have immense potential in the
+  fields of chemical and medical molecular modeling. By incorporating
+  natural language AI and visual generative machine learning, these
+  environments can revolutionize the way scientists and researchers
+  approach complex chemical and biological problems. Here are some
+  specific use cases:
+- Drug design and discovery: CVEs can enable researchers to
+   collaboratively visualize and manipulate 3D molecular structures in
+   real-time, identifying potential drug candidates and understanding
+   protein-ligand interactions. Natural language AI can help users interact
+   with the molecular data, while visual generative ML can predict
+   potential binding sites, energetics, or toxicity profiles based on
+   existing knowledge.
+- Protein structure prediction and modeling: Small teams can work together
+   to predict protein structures, visualize folding patterns, and model
+   protein-protein or protein-nucleic acid interactions. Natural language
+   AI can assist in annotating and explaining the structural features,
+   while visual generative ML can generate new structural hypotheses based
+   on sequence alignments, homology modeling, and experimental data.
+- Molecular dynamics simulations: CVEs can facilitate collaboration on
+   complex molecular dynamics simulations, allowing researchers to analyze
+   and visualize trajectories, energetics, and conformational changes.
+   Natural language AI can help users navigate through simulation data and
+   identify relevant patterns, while visual generative ML can create new
+   conformations or predict the effects of mutations on protein stability
+   and function.
+- Cheminformatics and QSAR modeling: Researchers can leverage CVEs to
+   develop and validate Quantitative Structure-Activity Relationship (QSAR)
+   models, which predict the biological activity of chemical compounds
+   based on their structural properties. Natural language AI can facilitate
+   the exploration and interpretation of chemical descriptors, while visual
+   generative ML can suggest new compounds with desired properties or
+   optimize existing molecular scaffolds.
+- Metabolic pathway modeling: Small teams can work together to build and
+   analyze metabolic pathways, integrating experimental data and
+   computational models to understand the underlying mechanisms and predict
+   metabolic fluxes. Natural language AI can assist in annotating and
+   explaining pathway components, while visual generative ML can generate
+   new pathway hypotheses or predict the effects of genetic or
+   environmental perturbations.
+- Biomolecular visualization and virtual reality: CVEs can offer
+   immersive, interactive experiences for exploring biomolecular structures
+   and dynamics, enhancing researchers’ understanding of complex biological
+   systems. Natural language AI can provide contextual information or guide
+   users through molecular landscapes, while visual generative ML can
+   create new visualizations or adapt existing ones based on user
+   preferences and insights.
+- Collaborative molecular docking and virtual screening: Small teams can
+   use CVEs to perform collaborative molecular docking and virtual
+   screening, which involve predicting the binding of small molecules to
+   target proteins. Natural language AI can help users refine docking
+   parameters and analyze results, while visual generative ML can generate
+   alternative poses or suggest new compounds for screening based on user
+   feedback and existing data. Choose a suitable mixed reality platform:
+   Select a platform that allows the creation of simple, accessible shared
+   mixed reality environments. Consider open-source options like Mozilla
+   Hubs or JanusVR, which offer customizable and collaborative virtual
+   spaces.
+- Integrate open-source biomed software: Incorporate open-source biomed
+   software such as PyMOL, Chimera, or VMD for molecular visualization and
+   analysis. These tools can be integrated into the mixed reality
+   environment for real-time interaction, allowing students and instructors
+   to collaboratively visualize and manipulate molecular structures.
+- Leverage AI and machine learning: Integrate AI and ML algorithms like
+   those found in DeepChem, RDKit, or Open Babel to aid in the discovery
+   and optimization of novel compounds. These tools can help predict
+   molecular properties, perform virtual screening, and optimize lead
+   compounds for drug development. By incorporating AI and ML, students can
+   learn how to apply these cutting-edge techniques to real-world problems
+   in biomedicine.
+- Establish a distributed proof system: Utilize a distributed proof system
+   like the Nostr protocol to federate the small virtual classroom
+   environments. This will allow for seamless collaboration among students
+   and faculty while maintaining security and data integrity.
+- Create digital objects for interaction: Use digital objects such as 3D
+   molecular models, virtual lab equipment, and interactive simulations to
+   create an immersive learning experience. These digital objects can be
+   shared and manipulated in real-time, promoting collaborative learning
+   and problem-solving.
+- Implement accessible interfaces: Ensure that the virtual classroom
+   environment is accessible to all students, including those with
+   disabilities. Utilize AI-driven tools like StabilityAI to help with
+   language barriers, safeguarding, and governance, enabling a more
+   inclusive learning experience.
+- Foster collaboration and communication: Encourage students and faculty
+   to collaborate on projects, share ideas, and ask questions in real-time
+   using voice chat, text chat, or other communication tools integrated
+   into the mixed reality environment.
+- Provide training and support: Offer training sessions and support
+   materials to help students and faculty become familiar with the mixed
+   reality environment, the integrated biomed software, and AI/ML tools.
+- Monitor progress and adjust as needed: Regularly review student
+   progress, gather feedback, and adjust the virtual classroom environment
+   as needed to ensure an effective and engaging learning experience.
+
+- ##### Language Model and Voice Interface
+- A specialized multi-modal LLM can be trained on local language, culture,
+   customs, and environmental data such as flora, fauna, biotica, soil pH,
+   and rainfall. This LLM can be accessed through a voice interface by the
+   local community, enabling data entry and knowledge exchange in the local
+   language. The voice interface can help overcome literacy barriers and
+   make the system more accessible to a diverse range of community members.
+</code></pre>
+</li>
+<li>
+<h2 id="language-and-tone">Language and Tone<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#language-and-tone" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Use EXPERT terminology for the given context</p>
+</li>
+<li>
+<p>AVOID: superfluous prose, self-references, expert advice disclaimers, and apologies</p>
+</li>
+<li>
+<h3 id="grok-from-musk-is-pretty-bad-but">Grok from Musk is pretty bad, but..<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#grok-from-musk-is-pretty-bad-but" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- People haven't appreciated the strength of the business model Musk has
+- His is the only unified language and vision company in the world at this scale that can handle real world interactions.
+
+	- # [[Metaverse and Telecollaboration]]
+	- 🟢 I could go on all day about this, goods and bads. I literally wrote a book on it.
+	- 🟢 A lot (for me) hinges on [[OpenUSD]] the universal scene language. It's been SO long since we have had something useful.
+	- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse Platform]]-aeco-demo-pack/) giving global instant models.
+	- ![1705423306024.mp4](assets/1705423306024_1705437842029_0.mp4)
+</code></pre>
+</li>
+<li>
+<p>{{tweet <a href="https://twitter.com/BlockadeLabs/status/1719818562917761094%7D%7D" class="external">https://twitter.com/BlockadeLabs/status/1719818562917761094}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>This is a <a href="../presentation" class="internal" data-slug="presentation">presentation</a> slide and the next slide is <a href="../Open-Generative-AI-tools" class="internal alias" data-slug="Open-Generative-AI-tools">Open Generative AI tools</a></p>
+<pre><code>- ### Key Quotes
+- &quot;Mamba enjoys fast inference (5× higher throughput than Transformers) and linear scaling in sequence length and its performance improves on real data up to million-length sequences.&quot;
+- **&quot;This class of models can be computed very efficiently as either a recurrence or convolution with linear or near-linear scaling in sequence length.&quot;**
+- &quot;Selective SSMs and by extension the Mamba architecture are fully recurrent models with key properties that make them suitable as the backbone of general foundation models operating on sequences.&quot;
+- **How does Mamba achieve linear-time modeling?**: By introducing a selection mechanism in structured state space models and designing a hardware-aware algorithm that avoids materializing expanded states, thereby enhancing computational efficiency.
+- **What improvements does Mamba offer over traditional models?**: It achieves faster inference, linear scaling with sequence length, and competitive or superior performance across various data modalities including language, audio, and genomics.
+- **Can Mamba handle long sequences efficiently?**: Yes, it is specifically designed to address the computational inefficiencies of traditional models like Transformers in handling long sequences, offering linear scaling and improved performance.
+- Mamba outperforms Transformers of the same size in language modelling and matches Transformers twice its size both in pretraining and downstream evaluation, demonstrating its efficiency and effectiveness.
+- **Authors' Views**: The authors propose Mamba as a significant step forward in sequence modeling, addressing the inefficiency of Transformers while maintaining or improving performance.
+- **Comparative Analysis**: Mamba is positioned as superior to existing models, particularly Transformers, in terms of efficiency and scalability
+</code></pre>
+</li>
+<li>
+<h1 id="long-context-modeling">Long Context Modeling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#long-context-modeling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code>- LongMamba (LongMamba): Generalizes to 40k tokens after training on 16k, nearly perfect on &quot;needle in a haystack&quot; task
+- Evo: Models long DNA sequences, learning a &quot;cell model&quot; analogous to language models' &quot;world model&quot;
+- Potential challenges:
+	- Eventual &quot;rotting&quot; of internal states with extreme context lengths
+	- Need for state regularization or &quot;pruning&quot; to maintain performance
+- Implications for biology: Foundation models could revolutionize drug discovery and biological research
+</code></pre>
+</li>
+<li>
+<h3 id="models-1">Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#models-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[Llama 3.1, 3.2, and 4](https://yourstory.com/2025/02/meta-ai-llama-4-series-open-source-models)**: A series of powerful, open-source large language models.
+</code></pre>
+</li>
+<li>
+<h1 id="business-functions-1">Business Functions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#business-functions-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><strong>AI Technology &amp; Concepts</strong>
+- LLMs (Large Language Models)
+- Automation
+- Chatbots
+- Agents
+- Avatars
+- Tech &amp; Infrastructure</p>
+<p><strong>Business Functions &amp; Roles</strong>
+- Business
+- Marketing
+- Sales
+- HR (Human Resources)
+- Customer Service
+- Finance
+- Product Management
+- Data Analysis
+- Small Business
+- Entrepreneurs
+- Solopreneurs</p>
+<p><strong>Creative &amp; Media</strong>
+- Creativity
+- Design
+- Writing
+- Image
+- Video
+- Audio
+- Music
+- Creators</p>
+<p><strong>Skills, Learning &amp; Productivity</strong>
+- Coding
+- Productivity
+- Learning
+- Education
+- Professional Development
+- Personal Growth</p>
+</li>
+<li>
+<h3 id="langchain-1"><a href="https://www.langchain.com/" class="external">LangChain<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#langchain-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- A framework for developing applications powered by language models.
+</code></pre>
+</li>
+<li>
+<h3 id="performance-1">Performance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#performance-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- LLaMA-3 models demonstrate competitive performance on various language modeling tasks, showcasing significant improvements over previous open weights models.
+- Integrated free across their social media platforms
+- Fast image generation, can be fine tunes for creatives.
+- [Introducing New AI Experiences Across Our Family of Apps and Devices | Meta (fb.com)](https://about.fb.com/news/2023/09/introducing-ai-powered-assistants-characters-and-creative-tools/)
+- [What’s up with Llama 3? Arena data analysis | LMSYS Org](https://lmsys.org/blog/2024-05-08-llama3/)
+- ![](https://lmsys.org/images/blog/llama3/topic_win_rate.png){:width 500}
+</code></pre>
+</li>
+<li>
+<h2 id="large-language-models-1">Large Language models:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#large-language-models-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h4 id="biomedical-1">Biomedical<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#biomedical-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<pre><code>- Collaborative Virtual Environments (CVEs) have immense potential in the
+  fields of chemical and medical molecular modeling. By incorporating
+  natural language AI and visual generative machine learning, these
+  environments can revolutionize the way scientists and researchers
+  approach complex chemical and biological problems. Here are some
+  specific use cases:
+- Drug design and discovery: CVEs can enable researchers to
+   collaboratively visualize and manipulate 3D molecular structures in
+   real-time, identifying potential drug candidates and understanding
+   protein-ligand interactions. Natural language AI can help users interact
+   with the molecular data, while visual generative ML can predict
+   potential binding sites, energetics, or toxicity profiles based on
+   existing knowledge.
+- Protein structure prediction and modeling: Small teams can work together
+   to predict protein structures, visualize folding patterns, and model
+   protein-protein or protein-nucleic acid interactions. Natural language
+   AI can assist in annotating and explaining the structural features,
+   while visual generative ML can generate new structural hypotheses based
+   on sequence alignments, homology modeling, and experimental data.
+- Molecular dynamics simulations: CVEs can facilitate collaboration on
+   complex molecular dynamics simulations, allowing researchers to analyze
+   and visualize trajectories, energetics, and conformational changes.
+   Natural language AI can help users navigate through simulation data and
+   identify relevant patterns, while visual generative ML can create new
+   conformations or predict the effects of mutations on protein stability
+   and function.
+- Cheminformatics and QSAR modeling: Researchers can leverage CVEs to
+   develop and validate Quantitative Structure-Activity Relationship (QSAR)
+   models, which predict the biological activity of chemical compounds
+   based on their structural properties. Natural language AI can facilitate
+   the exploration and interpretation of chemical descriptors, while visual
+   generative ML can suggest new compounds with desired properties or
+   optimize existing molecular scaffolds.
+- Metabolic pathway modeling: Small teams can work together to build and
+   analyze metabolic pathways, integrating experimental data and
+   computational models to understand the underlying mechanisms and predict
+   metabolic fluxes. Natural language AI can assist in annotating and
+   explaining pathway components, while visual generative ML can generate
+   new pathway hypotheses or predict the effects of genetic or
+   environmental perturbations.
+- Biomolecular visualization and virtual reality: CVEs can offer
+   immersive, interactive experiences for exploring biomolecular structures
+   and dynamics, enhancing researchers’ understanding of complex biological
+   systems. Natural language AI can provide contextual information or guide
+   users through molecular landscapes, while visual generative ML can
+   create new visualizations or adapt existing ones based on user
+   preferences and insights.
+- Collaborative molecular docking and virtual screening: Small teams can
+   use CVEs to perform collaborative molecular docking and virtual
+   screening, which involve predicting the binding of small molecules to
+   target proteins. Natural language AI can help users refine docking
+   parameters and analyze results, while visual generative ML can generate
+   alternative poses or suggest new compounds for screening based on user
+   feedback and existing data. Choose a suitable mixed reality platform:
+   Select a platform that allows the creation of simple, accessible shared
+   mixed reality environments. Consider open-source options like Mozilla
+   Hubs or JanusVR, which offer customizable and collaborative virtual
+   spaces.
+- Integrate open-source biomed software: Incorporate open-source biomed
+   software such as PyMOL, Chimera, or VMD for molecular visualization and
+   analysis. These tools can be integrated into the mixed reality
+   environment for real-time interaction, allowing students and instructors
+   to collaboratively visualize and manipulate molecular structures.
+- Leverage AI and machine learning: Integrate AI and ML algorithms like
+   those found in DeepChem, RDKit, or Open Babel to aid in the discovery
+   and optimization of novel compounds. These tools can help predict
+   molecular properties, perform virtual screening, and optimize lead
+   compounds for drug development. By incorporating AI and ML, students can
+   learn how to apply these cutting-edge techniques to real-world problems
+   in biomedicine.
+- Establish a distributed proof system: Utilize a distributed proof system
+   like the Nostr protocol to federate the small virtual classroom
+   environments. This will allow for seamless collaboration among students
+   and faculty while maintaining security and data integrity.
+- Create digital objects for interaction: Use digital objects such as 3D
+   molecular models, virtual lab equipment, and interactive simulations to
+   create an immersive learning experience. These digital objects can be
+   shared and manipulated in real-time, promoting collaborative learning
+   and problem-solving.
+- Implement accessible interfaces: Ensure that the virtual classroom
+   environment is accessible to all students, including those with
+   disabilities. Utilize AI-driven tools like StabilityAI to help with
+   language barriers, safeguarding, and governance, enabling a more
+   inclusive learning experience.
+- Foster collaboration and communication: Encourage students and faculty
+   to collaborate on projects, share ideas, and ask questions in real-time
+   using voice chat, text chat, or other communication tools integrated
+   into the mixed reality environment.
+- Provide training and support: Offer training sessions and support
+   materials to help students and faculty become familiar with the mixed
+   reality environment, the integrated biomed software, and AI/ML tools.
+- Monitor progress and adjust as needed: Regularly review student
+   progress, gather feedback, and adjust the virtual classroom environment
+   as needed to ensure an effective and engaging learning experience.
+
+- ##### Language Model and Voice Interface
+- A specialized multi-modal LLM can be trained on local language, culture,
+   customs, and environmental data such as flora, fauna, biotica, soil pH,
+   and rainfall. This LLM can be accessed through a voice interface by the
+   local community, enabling data entry and knowledge exchange in the local
+   language. The voice interface can help overcome literacy barriers and
+   make the system more accessible to a diverse range of community members.
+</code></pre>
+</li>
+<li>
+<h2 id="language-and-tone-1">Language and Tone<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#language-and-tone-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Use EXPERT terminology for the given context</p>
+</li>
+<li>
+<p>AVOID: superfluous prose, self-references, expert advice disclaimers, and apologies</p>
+</li>
+<li>
+<h3 id="grok-from-musk-is-pretty-bad-but-1">Grok from Musk is pretty bad, but..<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#grok-from-musk-is-pretty-bad-but-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- People haven't appreciated the strength of the business model Musk has
+- His is the only unified language and vision company in the world at this scale that can handle real world interactions.
+
+	- # [[Metaverse and Telecollaboration]]
+	- 🟢 I could go on all day about this, goods and bads. I literally wrote a book on it.
+	- 🟢 A lot (for me) hinges on [[OpenUSD]] the universal scene language. It's been SO long since we have had something useful.
+	- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse Platform]]-aeco-demo-pack/) giving global instant models.
+	- ![1705423306024.mp4](assets/1705423306024_1705437842029_0.mp4)
+</code></pre>
+</li>
+<li>
+<p>{{tweet <a href="https://twitter.com/BlockadeLabs/status/1719818562917761094%7D%7D" class="external">https://twitter.com/BlockadeLabs/status/1719818562917761094}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>This is a <a href="../presentation" class="internal" data-slug="presentation">presentation</a> slide and the next slide is <a href="../Open-Generative-AI-tools" class="internal alias" data-slug="Open-Generative-AI-tools">Open Generative AI tools</a></p>
+<pre><code>- ### Key Quotes
+- &quot;Mamba enjoys fast inference (5× higher throughput than Transformers) and linear scaling in sequence length and its performance improves on real data up to million-length sequences.&quot;
+- **&quot;This class of models can be computed very efficiently as either a recurrence or convolution with linear or near-linear scaling in sequence length.&quot;**
+- &quot;Selective SSMs and by extension the Mamba architecture are fully recurrent models with key properties that make them suitable as the backbone of general foundation models operating on sequences.&quot;
+- **How does Mamba achieve linear-time modeling?**: By introducing a selection mechanism in structured state space models and designing a hardware-aware algorithm that avoids materializing expanded states, thereby enhancing computational efficiency.
+- **What improvements does Mamba offer over traditional models?**: It achieves faster inference, linear scaling with sequence length, and competitive or superior performance across various data modalities including language, audio, and genomics.
+- **Can Mamba handle long sequences efficiently?**: Yes, it is specifically designed to address the computational inefficiencies of traditional models like Transformers in handling long sequences, offering linear scaling and improved performance.
+- Mamba outperforms Transformers of the same size in language modelling and matches Transformers twice its size both in pretraining and downstream evaluation, demonstrating its efficiency and effectiveness.
+- **Authors' Views**: The authors propose Mamba as a significant step forward in sequence modeling, addressing the inefficiency of Transformers while maintaining or improving performance.
+- **Comparative Analysis**: Mamba is positioned as superior to existing models, particularly Transformers, in terms of efficiency and scalability
+</code></pre>
+</li>
+<li>
+<h1 id="long-context-modeling-1">Long Context Modeling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#long-context-modeling-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code>- LongMamba (LongMamba): Generalizes to 40k tokens after training on 16k, nearly perfect on &quot;needle in a haystack&quot; task
+- Evo: Models long DNA sequences, learning a &quot;cell model&quot; analogous to language models' &quot;world model&quot;
+- Potential challenges:
+	- Eventual &quot;rotting&quot; of internal states with extreme context lengths
+	- Need for state regularization or &quot;pruning&quot; to maintain performance
+- Implications for biology: Foundation models could revolutionize drug discovery and biological research
+</code></pre>
+</li>
+<li>
+<h3 id="research">Research<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[Phi-3 and Phi-4](https://msdynamicsworld.com/story/new-microsoft-dynamics-365-and-power-platform-features-2024-release-wave-1-plan)**: Powerful language models compact enough to run on a smartphone.
+</code></pre>
+</li>
+<li>
+<h1 id="existing-state-of-the-art">Existing state of the Art<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#existing-state-of-the-art" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p><a href="https://glossary.metaverse-standards.org/" class="external">Index — MLGT: The authoritative multi-lingual glossary of terms (metaverse-standards.org)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>It was unexpectedly successful, resulting in what seems to be an internally consistent knowledge graph in an <a href="https://en.wikipedia.org/wiki/Web_Ontology_Language" class="external">Web Ontology Language<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> compliant ontology for the design represented throughout this wider <a href="../Logseq" class="internal" data-slug="Logseq">Logseq</a> <a href="../pages/Knowledge-Graphing" class="internal alias" data-slug="pages/Knowledge-Graphing">Knowledge Graphing</a>.
+- Although the established OWL can richly describe our ontology, it’s a little too arcane. Nonetheless the full text can be seen where with the diagram.
+- OWL based Ontology
+- <a href="https://github.com/VisualDataWeb/WebVOWL" class="external">https://github.com/VisualDataWeb/WebVOWL<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- Lack of standardized context definitions for vocabularies and IRI mappings
+- No explicit typing mechanism like <code>@type</code>
+- Limited to absolute IRIs, no compact IRIs or relative IRIs
+- Unclear semantics for blank node identifiers
+- No standardized representation of indexed values, lists, and named graphs
+- Inability to reshape data structure using framing
+- Reduced interoperability with RDF and Linked Data ecosystem</p>
+</li>
+<li>
+<h4 id="biomedical-2">Biomedical<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#biomedical-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<pre><code>- Collaborative Virtual Environments (CVEs) have immense potential in the
+  fields of chemical and medical molecular modeling. By incorporating
+  natural language AI and visual generative machine learning, these
+   identify relevant patterns, while visual generative ML can create new
+   conformations or predict the effects of mutations on protein stability
+   and function.
+- Cheminformatics and QSAR modeling: Researchers can leverage CVEs to
+   develop and validate Quantitative Structure-Activity Relationship (QSAR)
+   models, which predict the biological activity of chemical compounds
+   based on their structural properties. Natural language AI can facilitate
+   the exploration and interpretation of chemical descriptors, while visual
+   generative ML can suggest new compounds with desired properties or
+   optimize existing molecular scaffolds.
+- Metabolic pathway modeling: Small teams can work together to build and
+   analyze metabolic pathways, integrating experimental data and
+   computational models to understand the underlying mechanisms and predict
+   metabolic fluxes. Natural language AI can assist in annotating and
+   explaining pathway components, while visual generative ML can generate
+   new pathway hypotheses or predict the effects of genetic or
+   environmental perturbations.
+- Biomolecular visualization and virtual reality: CVEs can offer
+   immersive, interactive experiences for exploring biomolecular structures
+   and dynamics, enhancing researchers’ understanding of complex biological
+   parameters and analyze results, while visual generative ML can generate
+   alternative poses or suggest new compounds for screening based on user
+   feedback and existing data. Choose a suitable mixed reality platform:
+   Select a platform that allows the creation of simple, accessible shared
+   mixed reality environments. Consider open-source options like Mozilla
+   Hubs or JanusVR, which offer customizable and collaborative virtual
+   spaces.
+- Integrate open-source biomed software: Incorporate open-source biomed
+- Leverage AI and machine learning: Integrate AI and ML algorithms like
+   those found in DeepChem, RDKit, or Open Babel to aid in the discovery
+   and optimization of novel compounds. These tools can help predict
+   molecular properties, perform virtual screening, and optimize lead
+- Create digital objects for interaction: Use digital objects such as 3D
+   molecular models, virtual lab equipment, and interactive simulations to
+   create an immersive learning experience. These digital objects can be
+   shared and manipulated in real-time, promoting collaborative learning
+   and problem-solving.
+- Implement accessible interfaces: Ensure that the virtual classroom
+   environment is accessible to all students, including those with
+- Monitor progress and adjust as needed: Regularly review student
+   progress, gather feedback, and adjust the virtual classroom environment
+   as needed to ensure an effective and engaging learning experience.
+
+- ##### Language Model and Voice Interface
+- A specialized multi-modal LLM can be trained on local language, culture,
+   customs, and environmental data such as flora, fauna, biotica, soil pH,
+   and rainfall. This LLM can be accessed through a voice interface by the
+   local community, enabling data entry and knowledge exchange in the local
+   language. The voice interface can help overcome literacy barriers and
+   make the system more accessible to a diverse range of community members.
+- A live connection with the academic team allows for model tuning through
+   prompt engineering, vector database updates, and efficient Lora models,
+   potentially offering timely advice for ecosystem interventions.
+   Real-time communication between the community and academic teams can
+   help identify areas of concern and rapidly adapt the LLM to address
+   emerging challenges.
+</code></pre>
+</li>
+<li>
+<h2 id="language-and-tone-2">Language and Tone<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#language-and-tone-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Use EXPERT terminology for the given context</p>
+</li>
+<li>
+<p>AVOID: superfluous prose, self-references, expert advice disclaimers, and apologies</p>
+</li>
+<li>
+<h1 id="mamba-linear-time-sequence-modelling-with-selective-state-spaces">Mamba: Linear-Time Sequence Modelling with Selective State Spaces<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mamba-linear-time-sequence-modelling-with-selective-state-spaces" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code>- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/pdf/2312.00752.pdf)
+- **&quot;This class of models can be computed very efficiently as either a recurrence or convolution with linear or near-linear scaling in sequence length.&quot;**
+- &quot;Selective SSMs and by extension the Mamba architecture are fully recurrent models with key properties that make them suitable as the backbone of general foundation models operating on sequences.&quot;
+- **How does Mamba achieve linear-time modeling?**: By introducing a selection mechanism in structured state space models and designing a hardware-aware algorithm that avoids materializing expanded states, thereby enhancing computational efficiency.
+- **What improvements does Mamba offer over traditional models?**: It achieves faster inference, linear scaling with sequence length, and competitive or superior performance across various data modalities including language, audio, and genomics.
+- **Can Mamba handle long sequences efficiently?**: Yes, it is specifically designed to address the computational inefficiencies of traditional models like Transformers in handling long sequences, offering linear scaling and improved performance.
+- Mamba outperforms Transformers of the same size in language modelling and matches Transformers twice its size both in pretraining and downstream evaluation, demonstrating its efficiency and effectiveness.
+- **Authors' Views**: The authors propose Mamba as a significant step forward in sequence modeling, addressing the inefficiency of Transformers while maintaining or improving performance.
+- **Comparative Analysis**: Mamba is positioned as superior to existing models, particularly Transformers, in terms of efficiency and scalability
+
+- #### 6️⃣ [[Diffusion Models]] (Generative Models)
+</code></pre>
+</li>
+<li>
+<p>Next <a href="../presentation" class="internal" data-slug="presentation">presentation</a> slide <a href="../Proprietary-Large-Language-Models" class="internal alias" data-slug="Proprietary-Large-Language-Models">Proprietary Large Language Models</a></p>
+</li>
+<li>
+<h4 id="biomedical-3">Biomedical<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#biomedical-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<pre><code>- Collaborative Virtual Environments (CVEs) have immense potential in the
+  fields of chemical and medical molecular modeling. By incorporating
+  natural language AI and visual generative machine learning, these
+   identify relevant patterns, while visual generative ML can create new
+   conformations or predict the effects of mutations on protein stability
+   and function.
+- Cheminformatics and QSAR modeling: Researchers can leverage CVEs to
+   develop and validate Quantitative Structure-Activity Relationship (QSAR)
+   models, which predict the biological activity of chemical compounds
+   based on their structural properties. Natural language AI can facilitate
+   the exploration and interpretation of chemical descriptors, while visual
+   generative ML can suggest new compounds with desired properties or
+   optimize existing molecular scaffolds.
+- Metabolic pathway modeling: Small teams can work together to build and
+   and dynamics, enhancing researchers’ understanding of complex biological
+   parameters and analyze results, while visual generative ML can generate
+   alternative poses or suggest new compounds for screening based on user
+   feedback and existing data. Choose a suitable mixed reality platform:
+   Select a platform that allows the creation of simple, accessible shared
+   mixed reality environments. Consider open-source options like Mozilla
+   Hubs or JanusVR, which offer customizable and collaborative virtual
+   spaces.
+   create an immersive learning experience. These digital objects can be
+   shared and manipulated in real-time, promoting collaborative learning
+   and problem-solving.
+- Implement accessible interfaces: Ensure that the virtual classroom
+   environment is accessible to all students, including those with
+- Monitor progress and adjust as needed: Regularly review student
+   progress, gather feedback, and adjust the virtual classroom environment
+- The modular open-source system can be applied to various training,
+   The open-source system can be adapted to serve various industries,
+   making remote collaboration more efficient and inclusive.
+</code></pre>
+</li>
+<li>
+<h2 id="language-and-tone-3">Language and Tone<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#language-and-tone-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- #### 6️⃣ [[Diffusion Models]] (Generative Models)
+</code></pre>
+</li>
+<li>
+<p>Next <a href="../presentation" class="internal" data-slug="presentation">presentation</a> slide <a href="../Proprietary-Large-Language-Models" class="internal alias" data-slug="Proprietary-Large-Language-Models">Proprietary Large Language Models</a></p>
+</li>
+<li>
+<h2 id="see-also">See Also<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#see-also" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a></p>
+</li>
+<li>
+<p><a href="../pages/Google-AI-Technology-Corporation" class="internal alias" data-slug="pages/Google-AI-Technology-Corporation">Google AI Technology Corporation</a></p>
+</li>
+<li>
+<h2 id="see-also-1">See Also<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#see-also-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a></p>
+</li>
+<li>
+<p><a href="../pages/OpenAI-Research-Organisation" class="internal alias" data-slug="pages/OpenAI-Research-Organisation">OpenAI Research Organisation</a></p>
+</li>
+<li>
+<p><a href="../pages/Google-AI-Technology-Corporation" class="internal alias" data-slug="pages/Google-AI-Technology-Corporation">Google AI Technology Corporation</a></p>
+</li>
+<li>
+<h3 id="software-stack">Software stack<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#software-stack" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>This section needs building out to describe the stack and the choices made, but can be seen in Figure <a href="#fig:pyramind" data-reference-type="ref" data-reference="fig:pyramind" class="internal alias">[fig:pyramind]</a> and Figure <a href="#fig:highlevelstack" data-reference-type="ref" data-reference="fig:highlevelstack" class="internal alias">[fig:highlevelstack]</a>.</p>
+<p><img src="../assets/eca327e7bb2caa27aa4753ec0b4f1be3737ac371.jpg" alt="image"/></p>
+<p><span class="image">image</span></p>
+<p>At this time we favour the following component units, with alternatives in brackets.
+- 🟩 Open source collaborative space 🟩 Headset VR integration 🟨 WebGL interface 🟩 Minting digital assets (Ordinal then RGB) 🟨 Digital asset integration and management 🟩 Large language model MVP 🟩 Large language model API integration 🟩 Large language model voice to voice interface 🟩 Stable diffusion image creation MVP 🟩 Stable diffusion image creation MVP 🟨 AutoGPT voice to voice integration MVP 🟨 Stable diffusion image creation API 🟨 Nostr social media integration 🟨 Nostr identity management 🟨 Nostr machine to machine finacially enabled bots (ubiquitous federating agents) 🟨 Nostr human programmable semi autonomous economic actors 🟩 Bitcoin / Lightning / stablecoin stack 🟥 Bitcoin / Lightning / stablecoin integration 🟨 Collaborative virtual production MVP 🟥 Collaborative virtual production integration 🟥 3D asset generation with ML
+- <img src="../assets/highlevelstack.png" alt="image.png"/>{:width 600}
+- Collaborative space
+- Vircadia [Omniverse, Open3D foundation, Unreal]
+- Distributed truth
+- Bitcoin testnet [Main net]
+- Digital Objects
+- Fedimint [Ordinals, Pear credits, RGB]
+- Messaging and sync
+- Nostr
+- Identity
+- Nostr [Bluesky ION, pubky]
+- Fiat money xfer
+- Fedimint [Pear credits, RGB, Taro main net]
+- Hardware signing
+- Seed signer [any hardware wallet]
+- Small group banking
+- Fediment [chaumian ecash]
+- Local wallet
+- <a href="https://app.mutinywallet.com/" class="external">Mutiny<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [bitkit, and lightning wallet]
+- Machine learning text
+- Alpaca [ChatGPT etc]
+- Machine learning image
+- Stable diffusion [midjourney, Dall-E]
+- Object tracking
+- Nostr [LnBits accounts]</p>
+</li>
+<li>
+<h2 id="llama-3-overview">Llama 3 overview<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#llama-3-overview" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Meta (formerly Facebook) has recently released LLaMA-3,  a series of foundational large language models (LLMs) that aim to advance AI research while remaining more accessible in terms of computational requirements.</p>
+</li>
+<li>
+<h3 id="multilingual-and-abstract-translation">Multilingual and Abstract Translation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multilingual-and-abstract-translation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Projects dedicated to improving LLM capabilities in translation, fostering better understanding and communication across languages.
+- <a href="https://github.com/facebookresearch/seamless_communication#seamlessm4t" class="external">SeamlessM4T by Facebook Research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- <em>An innovative project aimed at enhancing multilingual translation, showcasing efforts to bridge language barriers and improve communication globally.</em></p>
+</li>
+<li>
+<h2 id="key-features">Key Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-features" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>3D Modeling:</strong> A comprehensive suite of modeling tools for creating, transforming, and editing your models.</p>
+</li>
+<li>
+<p><strong>Sculpting:</strong> Digital sculpting tools provide the power and flexibility required in several stages of the digital production pipeline.</p>
+</li>
+<li>
+<p><strong>Animation &amp; Rigging:</strong> A production-ready camera and object tracking solution.</p>
+</li>
+<li>
+<p><strong>Grease Pencil:</strong> A revolutionary 2D animation tool that allows you to draw in 3D space.</p>
+</li>
+<li>
+<p><strong>Rendering:</strong> A powerful, unbiased rendering engine that offers stunning, ultra-realistic rendering.</p>
+</li>
+<li>
+<p><strong>Simulation:</strong> Create amazing simulations with industry-standard libraries such as Bullet and MantaFlow.</p>
+</li>
+<li>
+<p><strong>Video Editing:</strong> A built-in video sequence editor allows you to perform basic actions like video cuts and splicing, as well as more complex tasks like video masking or color grading.</p>
+</li>
+<li>
+<p><strong>Scripting:</strong> With a rich Python API, Blender is highly customizable and can be extended with custom tools and add-ons.</p>
+</li>
+<li>
+<p><strong>VFX:</strong> A built-in compositor allows you to post-produce your renders without leaving Blender.</p>
+</li>
+</ul>
+<h2 id="core-characteristics">Core Characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Probability Distribution Learning</strong>: Modelling P(word|context) or P(sequence)</li>
+<li><strong>Autoregressive</strong>: Left-to-right sequential prediction (GPT-style)</li>
+<li><strong>Masked Language Modeling</strong>: Bidirectional context learning (BERT-style)</li>
+<li><strong>Large-Scale Pre-Training</strong>: Training on billions to trillions of tokens</li>
+<li><strong>Transfer Learning</strong>: Fine-tuning for diverse downstream tasks</li>
+<li><strong>Emergent Capabilities</strong>: In-context learning, reasoning, few-shot adaptation</li>
+</ul>
+<h2 id="relationships">Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Foundation For</strong>: Natural Language Processing, Text Generation, Machine Translation</li>
+<li><strong>Related</strong>: Large Language Model, Transformer, Self-Attention</li>
+<li><strong>Models</strong>: GPT series, BERT, T5, LLaMA, PaLM, Gemini</li>
+<li><strong>Paradigms</strong>: Autoregressive LM, Masked LM, Encoder-Decoder LM</li>
+</ul>
+<h2 id="key-literature">Key Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p>Bengio, Y., et al. (2003). “A neural probabilistic language model.” <em>Journal of Machine Learning Research</em>, 3, 1137-1155.</p>
+</li>
+<li>
+<p>Radford, A., et al. (2018). “Improving language understanding by generative pre-training.” <em>OpenAI Technical Report</em>.</p>
+</li>
+<li>
+<p>Devlin, J., et al. (2019). “BERT: Pre-training of deep bidirectional transformers for language understanding.” <em>NAACL</em>, 4171-4186.</p>
+</li>
+<li>
+<p>Brown, T., et al. (2020). “Language models are few-shot learners.” <em>NeurIPS</em>, 1877-1901.</p>
+</li>
+<li>
+<p>Kaplan, J., et al. (2020). “Scaling laws for neural language models.” <em>arXiv:2001.08361</em>.</p>
+</li>
+<li>
+<p>Wei, J., et al. (2022). “Emergent abilities of large language models.” <em>TMLR</em>.</p>
+</li>
+</ol>
+<h2 id="technical-concepts">Technical Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#technical-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="autoregressive-language-modeling">Autoregressive Language Modeling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#autoregressive-language-modeling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>P(x₁, x₂, ..., xₙ) = ∏ᵢ P(xᵢ | x₁, x₂, ..., xᵢ₋₁)
+</code></pre>
+<p>Models predict next token conditioned on previous tokens (GPT-style).</p>
+<h3 id="masked-language-modeling">Masked Language Modeling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#masked-language-modeling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Objective: Predict masked tokens given bidirectional context
+Example: &quot;The [MASK] sat on the mat&quot; → predict &quot;cat&quot;
+</code></pre>
+<p>Enables bidirectional context learning (BERT-style).</p>
+<h3 id="perplexity">Perplexity<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#perplexity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Perplexity = exp(-1/N ∑ᵢ log P(xᵢ | context))
+</code></pre>
+<p>Evaluation metric measuring model uncertainty.</p>
+<h2 id="applications">Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Text Generation</strong>: Article writing, story generation, content creation</li>
+<li><strong>Code Generation</strong>: Programming assistance, code completion</li>
+<li><strong>Machine Translation</strong>: Neural machine translation systems</li>
+<li><strong>Question Answering</strong>: Reading comprehension and knowledge retrieval</li>
+<li><strong>Text Classification</strong>: Sentiment analysis, topic modelling</li>
+<li><strong>Named Entity Recognition</strong>: Information extraction</li>
+<li><strong>Dialogue Systems</strong>: Conversational AI and chatbots</li>
+<li><strong>Text Summarisation</strong>: Document summarisation</li>
+<li><strong>Semantic Search</strong>: Embedding-based information retrieval</li>
+<li><strong>Few-Shot Learning</strong>: In-context learning for new tasks</li>
+</ol>
+<h2 id="pre-training-paradigms">Pre-Training Paradigms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pre-training-paradigms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="causal-language-modeling-clm">Causal Language Modeling (CLM)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#causal-language-modeling-clm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Models</strong>: GPT, GPT-2, GPT-3, GPT-4, LLaMA, PaLM</li>
+<li><strong>Training</strong>: Left-to-right autoregressive prediction</li>
+<li><strong>Strength</strong>: Natural text generation, few-shot learning</li>
+<li><strong>Applications</strong>: Chat, content generation, code synthesis</li>
+</ul>
+<h3 id="masked-language-modeling-mlm">Masked Language Modeling (MLM)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#masked-language-modeling-mlm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Models</strong>: BERT, RoBERTa, ALBERT, DeBERTa</li>
+<li><strong>Training</strong>: Bidirectional context with masked token prediction</li>
+<li><strong>Strength</strong>: Understanding tasks, representation learning</li>
+<li><strong>Applications</strong>: Classification, NER, question answering</li>
+</ul>
+<h3 id="encoder-decoder">Encoder-Decoder<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#encoder-decoder" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Models</strong>: T5, BART, mT5, UL2</li>
+<li><strong>Training</strong>: Sequence-to-sequence with various objectives</li>
+<li><strong>Strength</strong>: Versatile text-to-text framework</li>
+<li><strong>Applications</strong>: Translation, summarisation, generation</li>
+</ul>
+<h2 id="scaling-laws">Scaling Laws<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scaling-laws" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Language model performance improves predictably with:</p>
+<ul>
+<li><strong>Model Size</strong>: Number of parameters (millions to trillions)</li>
+<li><strong>Data Size</strong>: Training tokens (billions to trillions)</li>
+<li><strong>Compute</strong>: FLOPs for training</li>
+</ul>
+<p>Power law relationships:</p>
+<pre><code>Loss ∝ N^(-α)  where N is model size
+Loss ∝ D^(-β)  where D is dataset size
+Loss ∝ C^(-γ)  where C is compute budget
+</code></pre>
+<h2 id="emergent-abilities">Emergent Abilities<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#emergent-abilities" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Large language models exhibit emergent capabilities appearing at scale:</p>
+<ul>
+<li><strong>Few-Shot Learning</strong>: Learning from examples in prompts</li>
+<li><strong>Chain-of-Thought Reasoning</strong>: Step-by-step problem solving</li>
+<li><strong>Instruction Following</strong>: Zero-shot task execution from instructions</li>
+<li><strong>Multi-Step Reasoning</strong>: Complex reasoning tasks</li>
+<li><strong>Code Understanding</strong>: Programming language comprehension</li>
+</ul>
+<h2 id="evaluation-metrics">Evaluation Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Perplexity</strong>: Model uncertainty on held-out text</li>
+<li><strong>BLEU</strong>: Machine translation quality</li>
+<li><strong>ROUGE</strong>: Summarisation quality</li>
+<li><strong>Accuracy</strong>: Task-specific classification accuracy</li>
+<li><strong>F1 Score</strong>: Balanced precision and recall</li>
+<li><strong>Human Evaluation</strong>: Quality, coherence, factuality assessment</li>
+</ul>
+<h2 id="challenges-and-research-directions">Challenges and Research Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#challenges-and-research-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Hallucination</strong>: Generating plausible but factually incorrect content</li>
+<li><strong>Bias and Fairness</strong>: Societal biases in training data and outputs</li>
+<li><strong>Interpretability</strong>: Understanding model decisions and reasoning</li>
+<li><strong>Efficiency</strong>: Reducing computational costs for training and inference</li>
+<li><strong>Long-Context Modeling</strong>: Extending context windows beyond current limits</li>
+<li><strong>Multimodal Integration</strong>: Combining language with vision, audio, other modalities</li>
+<li><strong>Continual Learning</strong>: Updating knowledge without catastrophic forgetting</li>
+<li><strong>Grounding</strong>: Connecting language to external knowledge and real-world facts</li>
+<li><strong>Controllability</strong>: Steering model outputs for desired properties</li>
+<li><strong>Safety and Alignment</strong>: Ensuring beneficial and aligned AI behaviour</li>
+</ol>
+<h2 id="see-also-2">See Also<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#see-also-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../pages/Natural-Language-Processing" class="internal alias" data-slug="pages/Natural-Language-Processing">Natural Language Processing</a></li>
+<li><a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a></li>
+<li><a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a></li>
+<li><a href="../pages/Text-Generation" class="internal alias" data-slug="pages/Text-Generation">Text Generation</a></li>
+<li><a href="../pages/GPT" class="internal" data-slug="pages/GPT">GPT</a></li>
+<li><a href="../pages/BERT" class="internal" data-slug="pages/BERT">BERT</a></li>
+<li><a href="../pages/Self-Attention" class="internal alias" data-slug="pages/Self-Attention">Self Attention</a></li>
+</ul>
+<h4 id="current-landscape">Current Landscape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p>The AI landscape is currently dominated by a few large technology companies that are developing and deploying powerful large language models (LLMs). These models are being integrated into a wide range of products and services, from search engines to creative tools.</p>
+</li>
+<li>
+<p><a href="https://aiindex.stanford.edu/report/" class="external">AI Index Report 2024<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<h2 id="see-also-3">See Also<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#see-also-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a></p>
+</li>
+<li>
+<p><a href="../pages/OpenAI-Research-Organisation" class="internal alias" data-slug="pages/OpenAI-Research-Organisation">OpenAI Research Organisation</a></p>
+</li>
+<li>
+<p><a href="../pages/Google-AI-Technology-Corporation" class="internal alias" data-slug="pages/Google-AI-Technology-Corporation">Google AI Technology Corporation</a></p>
+</li>
+<li>
+<h2 id="how-it-works">How it Works<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#how-it-works" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>AnimateDiff works by adding a motion modeling module to a stable diffusion model. This module is trained on a large dataset of videos and learns to predict the motion between frames. When you provide AnimateDiff with an image and a text prompt, it uses the motion modeling module to generate a sequence of frames that create an animation.</p>
+</li>
+<li>
+<h3 id="multilingual-and-abstract-translation-1">Multilingual and Abstract Translation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multilingual-and-abstract-translation-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Projects dedicated to improving LLM capabilities in translation, fostering better understanding and communication across languages.
+- <a href="https://github.com/facebookresearch/seamless_communication#seamlessm4t" class="external">SeamlessM4T by Facebook Research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- <em>An innovative project aimed at enhancing multilingual translation, showcasing efforts to bridge language barriers and improve communication globally.</em></p>
+</li>
+</ul>
+<h2 id="core-characteristics-1">Core Characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-characteristics-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Probability Distribution Learning</strong>: Modelling P(word|context) or P(sequence)</li>
+<li><strong>Autoregressive</strong>: Left-to-right sequential prediction (GPT-style)</li>
+<li><strong>Masked Language Modeling</strong>: Bidirectional context learning (BERT-style)</li>
+<li><strong>Large-Scale Pre-Training</strong>: Training on billions to trillions of tokens</li>
+<li><strong>Transfer Learning</strong>: Fine-tuning for diverse downstream tasks</li>
+<li><strong>Emergent Capabilities</strong>: In-context learning, reasoning, few-shot adaptation</li>
+</ul>
+<h2 id="relationships-1">Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationships-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Foundation For</strong>: Natural Language Processing, Text Generation, Machine Translation</li>
+<li><strong>Related</strong>: Large Language Model, Transformer, Self-Attention</li>
+<li><strong>Models</strong>: GPT series, BERT, T5, LLaMA, PaLM, Gemini</li>
+<li><strong>Paradigms</strong>: Autoregressive LM, Masked LM, Encoder-Decoder LM</li>
+</ul>
+<h2 id="key-literature-1">Key Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-literature-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p>Bengio, Y., et al. (2003). “A neural probabilistic language model.” <em>Journal of Machine Learning Research</em>, 3, 1137-1155.</p>
+</li>
+<li>
+<p>Radford, A., et al. (2018). “Improving language understanding by generative pre-training.” <em>OpenAI Technical Report</em>.</p>
+</li>
+<li>
+<p>Devlin, J., et al. (2019). “BERT: Pre-training of deep bidirectional transformers for language understanding.” <em>NAACL</em>, 4171-4186.</p>
+</li>
+<li>
+<p>Brown, T., et al. (2020). “Language models are few-shot learners.” <em>NeurIPS</em>, 1877-1901.</p>
+</li>
+<li>
+<p>Kaplan, J., et al. (2020). “Scaling laws for neural language models.” <em>arXiv:2001.08361</em>.</p>
+</li>
+<li>
+<p>Wei, J., et al. (2022). “Emergent abilities of large language models.” <em>TMLR</em>.</p>
+</li>
+</ol>
+<h2 id="technical-concepts-1">Technical Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#technical-concepts-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="autoregressive-language-modeling-1">Autoregressive Language Modeling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#autoregressive-language-modeling-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>P(x₁, x₂, ..., xₙ) = ∏ᵢ P(xᵢ | x₁, x₂, ..., xᵢ₋₁)
+</code></pre>
+<p>Models predict next token conditioned on previous tokens (GPT-style).</p>
+<h3 id="masked-language-modeling-1">Masked Language Modeling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#masked-language-modeling-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Objective: Predict masked tokens given bidirectional context
+Example: &quot;The [MASK] sat on the mat&quot; → predict &quot;cat&quot;
+</code></pre>
+<p>Enables bidirectional context learning (BERT-style).</p>
+<h3 id="perplexity-1">Perplexity<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#perplexity-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Perplexity = exp(-1/N ∑ᵢ log P(xᵢ | context))
+</code></pre>
+<p>Evaluation metric measuring model uncertainty.</p>
+<h2 id="applications-1">Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applications-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Text Generation</strong>: Article writing, story generation, content creation</li>
+<li><strong>Code Generation</strong>: Programming assistance, code completion</li>
+<li><strong>Machine Translation</strong>: Neural machine translation systems</li>
+<li><strong>Question Answering</strong>: Reading comprehension and knowledge retrieval</li>
+<li><strong>Text Classification</strong>: Sentiment analysis, topic modelling</li>
+<li><strong>Named Entity Recognition</strong>: Information extraction</li>
+<li><strong>Dialogue Systems</strong>: Conversational AI and chatbots</li>
+<li><strong>Text Summarisation</strong>: Document summarisation</li>
+<li><strong>Semantic Search</strong>: Embedding-based information retrieval</li>
+<li><strong>Few-Shot Learning</strong>: In-context learning for new tasks</li>
+</ol>
+<h2 id="pre-training-paradigms-1">Pre-Training Paradigms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pre-training-paradigms-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="causal-language-modeling-clm-1">Causal Language Modeling (CLM)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#causal-language-modeling-clm-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Models</strong>: GPT, GPT-2, GPT-3, GPT-4, LLaMA, PaLM</li>
+<li><strong>Training</strong>: Left-to-right autoregressive prediction</li>
+<li><strong>Strength</strong>: Natural text generation, few-shot learning</li>
+<li><strong>Applications</strong>: Chat, content generation, code synthesis</li>
+</ul>
+<h3 id="masked-language-modeling-mlm-1">Masked Language Modeling (MLM)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#masked-language-modeling-mlm-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Models</strong>: BERT, RoBERTa, ALBERT, DeBERTa</li>
+<li><strong>Training</strong>: Bidirectional context with masked token prediction</li>
+<li><strong>Strength</strong>: Understanding tasks, representation learning</li>
+<li><strong>Applications</strong>: Classification, NER, question answering</li>
+</ul>
+<h3 id="encoder-decoder-1">Encoder-Decoder<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#encoder-decoder-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Models</strong>: T5, BART, mT5, UL2</li>
+<li><strong>Training</strong>: Sequence-to-sequence with various objectives</li>
+<li><strong>Strength</strong>: Versatile text-to-text framework</li>
+<li><strong>Applications</strong>: Translation, summarisation, generation</li>
+</ul>
+<h2 id="scaling-laws-1">Scaling Laws<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scaling-laws-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Language model performance improves predictably with:</p>
+<ul>
+<li><strong>Model Size</strong>: Number of parameters (millions to trillions)</li>
+<li><strong>Data Size</strong>: Training tokens (billions to trillions)</li>
+<li><strong>Compute</strong>: FLOPs for training</li>
+</ul>
+<p>Power law relationships:</p>
+<pre><code>Loss ∝ N^(-α)  where N is model size
+Loss ∝ D^(-β)  where D is dataset size
+Loss ∝ C^(-γ)  where C is compute budget
+</code></pre>
+<h2 id="emergent-abilities-1">Emergent Abilities<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#emergent-abilities-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Large language models exhibit emergent capabilities appearing at scale:</p>
+<ul>
+<li><strong>Few-Shot Learning</strong>: Learning from examples in prompts</li>
+<li><strong>Chain-of-Thought Reasoning</strong>: Step-by-step problem solving</li>
+<li><strong>Instruction Following</strong>: Zero-shot task execution from instructions</li>
+<li><strong>Multi-Step Reasoning</strong>: Complex reasoning tasks</li>
+<li><strong>Code Understanding</strong>: Programming language comprehension</li>
+</ul>
+<h2 id="evaluation-metrics-1">Evaluation Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-metrics-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Perplexity</strong>: Model uncertainty on held-out text</li>
+<li><strong>BLEU</strong>: Machine translation quality</li>
+<li><strong>ROUGE</strong>: Summarisation quality</li>
+<li><strong>Accuracy</strong>: Task-specific classification accuracy</li>
+<li><strong>F1 Score</strong>: Balanced precision and recall</li>
+<li><strong>Human Evaluation</strong>: Quality, coherence, factuality assessment</li>
+</ul>
+<h2 id="challenges-and-research-directions-1">Challenges and Research Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#challenges-and-research-directions-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Hallucination</strong>: Generating plausible but factually incorrect content</li>
+<li><strong>Bias and Fairness</strong>: Societal biases in training data and outputs</li>
+<li><strong>Interpretability</strong>: Understanding model decisions and reasoning</li>
+<li><strong>Efficiency</strong>: Reducing computational costs for training and inference</li>
+<li><strong>Long-Context Modeling</strong>: Extending context windows beyond current limits</li>
+<li><strong>Multimodal Integration</strong>: Combining language with vision, audio, other modalities</li>
+<li><strong>Continual Learning</strong>: Updating knowledge without catastrophic forgetting</li>
+<li><strong>Grounding</strong>: Connecting language to external knowledge and real-world facts</li>
+<li><strong>Controllability</strong>: Steering model outputs for desired properties</li>
+<li><strong>Safety and Alignment</strong>: Ensuring beneficial and aligned AI behaviour</li>
+</ol>
+<h2 id="see-also-4">See Also<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#see-also-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../pages/Natural-Language-Processing" class="internal alias" data-slug="pages/Natural-Language-Processing">Natural Language Processing</a></li>
+<li><a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a></li>
+<li><a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a></li>
+<li><a href="../pages/Text-Generation" class="internal alias" data-slug="pages/Text-Generation">Text Generation</a></li>
+<li><a href="../pages/GPT" class="internal" data-slug="pages/GPT">GPT</a></li>
+<li><a href="../pages/BERT" class="internal" data-slug="pages/BERT">BERT</a></li>
+<li><a href="../pages/Self-Attention" class="internal alias" data-slug="pages/Self-Attention">Self Attention</a></li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-3244" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-2"><a href="#content" data-for="content">Content</a></li><li class="depth-2"><a href="#models" data-for="models">Models</a></li><li class="depth-0"><a href="#business-functions" data-for="business-functions">Business Functions</a></li><li class="depth-2"><a href="#langchain" data-for="langchain">LangChain</a></li><li class="depth-2"><a href="#performance" data-for="performance">Performance</a></li><li class="depth-1"><a href="#large-language-models" data-for="large-language-models">Large Language models:</a></li><li class="depth-1"><a href="#language-and-tone" data-for="language-and-tone">Language and Tone</a></li><li class="depth-2"><a href="#grok-from-musk-is-pretty-bad-but" data-for="grok-from-musk-is-pretty-bad-but">Grok from Musk is pretty bad, but..</a></li><li class="depth-0"><a href="#long-context-modeling" data-for="long-context-modeling">Long Context Modeling</a></li><li class="depth-2"><a href="#models-1" data-for="models-1">Models</a></li><li class="depth-0"><a href="#business-functions-1" data-for="business-functions-1">Business Functions</a></li><li class="depth-2"><a href="#langchain-1" data-for="langchain-1">LangChain</a></li><li class="depth-2"><a href="#performance-1" data-for="performance-1">Performance</a></li><li class="depth-1"><a href="#large-language-models-1" data-for="large-language-models-1">Large Language models:</a></li><li class="depth-1"><a href="#language-and-tone-1" data-for="language-and-tone-1">Language and Tone</a></li><li class="depth-2"><a href="#grok-from-musk-is-pretty-bad-but-1" data-for="grok-from-musk-is-pretty-bad-but-1">Grok from Musk is pretty bad, but..</a></li><li class="depth-0"><a href="#long-context-modeling-1" data-for="long-context-modeling-1">Long Context Modeling</a></li><li class="depth-2"><a href="#research" data-for="research">Research</a></li><li class="depth-0"><a href="#existing-state-of-the-art" data-for="existing-state-of-the-art">Existing state of the Art</a></li><li class="depth-1"><a href="#language-and-tone-2" data-for="language-and-tone-2">Language and Tone</a></li><li class="depth-0"><a href="#mamba-linear-time-sequence-modelling-with-selective-state-spaces" data-for="mamba-linear-time-sequence-modelling-with-selective-state-spaces">Mamba: Linear-Time Sequence Modelling with Selective State Spaces</a></li><li class="depth-1"><a href="#language-and-tone-3" data-for="language-and-tone-3">Language and Tone</a></li><li class="depth-1"><a href="#see-also" data-for="see-also">See Also</a></li><li class="depth-1"><a href="#see-also-1" data-for="see-also-1">See Also</a></li><li class="depth-2"><a href="#software-stack" data-for="software-stack">Software stack</a></li><li class="depth-1"><a href="#llama-3-overview" data-for="llama-3-overview">Llama 3 overview</a></li><li class="depth-2"><a href="#multilingual-and-abstract-translation" data-for="multilingual-and-abstract-translation">Multilingual and Abstract Translation</a></li><li class="depth-1"><a href="#key-features" data-for="key-features">Key Features</a></li><li class="depth-1"><a href="#core-characteristics" data-for="core-characteristics">Core Characteristics</a></li><li class="depth-1"><a href="#relationships" data-for="relationships">Relationships</a></li><li class="depth-1"><a href="#key-literature" data-for="key-literature">Key Literature</a></li><li class="depth-1"><a href="#technical-concepts" data-for="technical-concepts">Technical Concepts</a></li><li class="depth-2"><a href="#autoregressive-language-modeling" data-for="autoregressive-language-modeling">Autoregressive Language Modeling</a></li><li class="depth-2"><a href="#masked-language-modeling" data-for="masked-language-modeling">Masked Language Modeling</a></li><li class="depth-2"><a href="#perplexity" data-for="perplexity">Perplexity</a></li><li class="depth-1"><a href="#applications" data-for="applications">Applications</a></li><li class="depth-1"><a href="#pre-training-paradigms" data-for="pre-training-paradigms">Pre-Training Paradigms</a></li><li class="depth-2"><a href="#causal-language-modeling-clm" data-for="causal-language-modeling-clm">Causal Language Modeling (CLM)</a></li><li class="depth-2"><a href="#masked-language-modeling-mlm" data-for="masked-language-modeling-mlm">Masked Language Modeling (MLM)</a></li><li class="depth-2"><a href="#encoder-decoder" data-for="encoder-decoder">Encoder-Decoder</a></li><li class="depth-1"><a href="#scaling-laws" data-for="scaling-laws">Scaling Laws</a></li><li class="depth-1"><a href="#emergent-abilities" data-for="emergent-abilities">Emergent Abilities</a></li><li class="depth-1"><a href="#evaluation-metrics" data-for="evaluation-metrics">Evaluation Metrics</a></li><li class="depth-1"><a href="#challenges-and-research-directions" data-for="challenges-and-research-directions">Challenges and Research Directions</a></li><li class="depth-1"><a href="#see-also-2" data-for="see-also-2">See Also</a></li><li class="depth-1"><a href="#see-also-3" data-for="see-also-3">See Also</a></li><li class="depth-1"><a href="#how-it-works" data-for="how-it-works">How it Works</a></li><li class="depth-2"><a href="#multilingual-and-abstract-translation-1" data-for="multilingual-and-abstract-translation-1">Multilingual and Abstract Translation</a></li><li class="depth-1"><a href="#core-characteristics-1" data-for="core-characteristics-1">Core Characteristics</a></li><li class="depth-1"><a href="#relationships-1" data-for="relationships-1">Relationships</a></li><li class="depth-1"><a href="#key-literature-1" data-for="key-literature-1">Key Literature</a></li><li class="depth-1"><a href="#technical-concepts-1" data-for="technical-concepts-1">Technical Concepts</a></li><li class="depth-2"><a href="#autoregressive-language-modeling-1" data-for="autoregressive-language-modeling-1">Autoregressive Language Modeling</a></li><li class="depth-2"><a href="#masked-language-modeling-1" data-for="masked-language-modeling-1">Masked Language Modeling</a></li><li class="depth-2"><a href="#perplexity-1" data-for="perplexity-1">Perplexity</a></li><li class="depth-1"><a href="#applications-1" data-for="applications-1">Applications</a></li><li class="depth-1"><a href="#pre-training-paradigms-1" data-for="pre-training-paradigms-1">Pre-Training Paradigms</a></li><li class="depth-2"><a href="#causal-language-modeling-clm-1" data-for="causal-language-modeling-clm-1">Causal Language Modeling (CLM)</a></li><li class="depth-2"><a href="#masked-language-modeling-mlm-1" data-for="masked-language-modeling-mlm-1">Masked Language Modeling (MLM)</a></li><li class="depth-2"><a href="#encoder-decoder-1" data-for="encoder-decoder-1">Encoder-Decoder</a></li><li class="depth-1"><a href="#scaling-laws-1" data-for="scaling-laws-1">Scaling Laws</a></li><li class="depth-1"><a href="#emergent-abilities-1" data-for="emergent-abilities-1">Emergent Abilities</a></li><li class="depth-1"><a href="#evaluation-metrics-1" data-for="evaluation-metrics-1">Evaluation Metrics</a></li><li class="depth-1"><a href="#challenges-and-research-directions-1" data-for="challenges-and-research-directions-1">Challenges and Research Directions</a></li><li class="depth-1"><a href="#see-also-4" data-for="see-also-4">See Also</a></li><li class="depth-2"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Cross-Entropy-Loss" class="internal">Cross-Entropy Loss</a></li><li><a href="../pages/Text-Generation" class="internal">Text Generation</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

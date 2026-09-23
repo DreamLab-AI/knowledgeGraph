@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:data-replication",
         "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:automatic-failover",
+        "label": "Automatic Failover"
       }
     ],
     "requires": [
@@ -66,6 +70,10 @@
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Storage Replication"
       },
       {
         "id": "urn:ngm:class:replication",
@@ -109,6 +117,10 @@
       {
         "id": "urn:ngm:class:container-orchestration",
         "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithms"
       }
     ],
     "supports": [
@@ -266,7 +278,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

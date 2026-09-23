@@ -71,6 +71,14 @@
       {
         "id": "urn:ngm:class:ai-for-social-good",
         "label": "AI for Social Good"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ],
     "dependsOn": [],
@@ -109,6 +117,10 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ],
     "uses": [],
@@ -118,7 +130,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -136,6 +148,14 @@
       {
         "id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness in Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
       }
     ],
     "standardizedBy": [
@@ -173,10 +193,79 @@
       {
         "id": "urn:ngm:class:multi-agent-system",
         "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:open-review",
+        "label": "Open Review"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:academia",
+      "label": "Academia",
+      "slug": "academia"
+    },
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
@@ -191,13 +280,36 @@
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application",
       "slug": "ai-application"
+    },
+    {
+      "id": "urn:ngm:class:education",
+      "label": "Education",
+      "slug": "education"
+    },
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools",
+      "slug": "dc-workspace-tools"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:double-blind-review",
+        "label": "Double-Blind Review"
+      },
+      {
         "id": "urn:ngm:class:proceedings",
         "label": "Proceedings"
+      },
+      {
+        "id": "urn:ngm:class:publication",
+        "label": "Publication"
       },
       {
         "id": "urn:ngm:class:ai-alignment",
@@ -218,14 +330,6 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
       }
     ],
     "requires": [
@@ -238,6 +342,14 @@
         "label": "Peer Review"
       },
       {
+        "id": "urn:ngm:class:programme-committee",
+        "label": "Programme Committee"
+      },
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -248,9 +360,17 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence-research",
+        "label": "Artificial Intelligence Research"
+      },
       {
         "id": "urn:ngm:class:collaboration",
         "label": "Collaboration"
@@ -268,20 +388,108 @@
         "label": "Reproducibility"
       },
       {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:academia",
+        "label": "Academia"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:programme-committee",
+        "label": "Programme Committee"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:double-blind-review",
+        "label": "Double-Blind Review"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:arxiv",
+        "label": "arXiv"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
     "uses": [
@@ -290,12 +498,24 @@
         "label": "arXiv"
       },
       {
+        "id": "urn:ngm:class:double-blind-review",
+        "label": "Double-Blind Review"
+      },
+      {
         "id": "urn:ngm:class:open-review",
+        "label": "OpenReview"
+      },
+      {
+        "id": "urn:ngm:class:openreview",
         "label": "OpenReview"
       },
       {
         "id": "urn:ngm:class:peer-review",
         "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
       },
       {
         "id": "urn:ngm:class:deep-learning",
@@ -316,8 +536,38 @@
         "label": "Artificial Intelligence Research"
       },
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
       }
     ],
     "partOf": [
@@ -340,6 +590,10 @@
         "label": "CVPR"
       },
       {
+        "id": "urn:ngm:class:iccv",
+        "label": "ICCV"
+      },
+      {
         "id": "urn:ngm:class:iclr",
         "label": "ICLR"
       },
@@ -348,20 +602,16 @@
         "label": "ICML"
       },
       {
-        "id": "urn:ngm:class:neur-ips",
-        "label": "NeurIPS"
+        "id": "urn:ngm:class:ijcai",
+        "label": "IJCAI"
       },
       {
-        "id": "urn:ngm:class:publication",
-        "label": "Publication"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ]
   },

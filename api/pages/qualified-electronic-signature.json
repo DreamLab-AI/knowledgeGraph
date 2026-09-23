@@ -8,7 +8,7 @@
   "definition": "A qualified electronic signature (QES) is the highest-assurance class of electronic signature defined by the European Union's eIDAS regulation, created with a qualified signature-creation device and backed by a qualified certificate issued by an accredited trust service provider. It is legally equivalent to a handwritten signature across the EU and provides strong guarantees of signer identity and document integrity. QES underpins cross-border legal acts requiring the highest evidentiary weight.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:electronic-signature",
+      "id": "urn:ngm:class:digital-signature-verification",
       "label": "Electronic Signature"
     }
   ],
@@ -23,7 +23,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -62,7 +62,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -88,7 +88,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:electronic-signature",
+        "id": "urn:ngm:class:digital-signature-verification",
         "label": "Electronic Signature"
       }
     ],
@@ -98,7 +98,7 @@
         "label": "eIDAS Regulation"
       },
       {
-        "id": "urn:ngm:class:electronic-signature",
+        "id": "urn:ngm:class:digital-signature-verification",
         "label": "Electronic Signature"
       },
       {
@@ -108,6 +108,11 @@
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:cryptographic-verification",
+      "label": "Cryptographic Verification",
+      "slug": "cryptographic-verification"
+    },
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
@@ -156,6 +161,26 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Hash Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:signature-algorithm",
+        "label": "Signature Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
@@ -170,33 +195,87 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:document-integrity",
+        "label": "Document Integrity"
+      },
+      {
+        "id": "urn:ngm:class:identity-attestation",
+        "label": "Identity Attestation"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication",
+        "label": "Secure Message Authentication"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:transaction-authentication",
+        "label": "Transaction Authentication"
       },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Symmetric Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:password-authentication",
+        "label": "Password-Based Authentication"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-system",
+        "label": "Cryptographic System"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
@@ -208,15 +287,55 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
+        "id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
       },
       {
-        "id": "urn:ngm:class:digital-certificate",
-        "label": "Digital Certificate"
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:ed-dsa",
+        "label": "EdDSA"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
@@ -232,6 +351,22 @@
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:nist-fips-186",
+        "label": "FIPS 186"
+      },
+      {
+        "id": "urn:ngm:class:rfc-8032",
+        "label": "RFC 8032"
+      },
+      {
+        "id": "urn:ngm:class:nist-cryptographic-standards",
+        "label": "NIST Cryptographic Standards"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate Standard"
+      },
+      {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
       },
@@ -242,8 +377,28 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:identification",
-        "label": "Identification"
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       },
       {
         "id": "urn:ngm:class:confidential-computing",
@@ -252,22 +407,6 @@
       {
         "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
-      },
-      {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

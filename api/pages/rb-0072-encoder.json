@@ -71,14 +71,69 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:control-feedback-element",
+      "label": "Control Feedback Element",
+      "slug": "control-feedback-element"
+    },
+    {
+      "id": "urn:ngm:class:mechatronic-component",
+      "label": "Mechatronic Component",
+      "slug": "mechatronic-component"
+    },
+    {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control",
       "slug": "robo-actuation-and-control"
     },
     {
+      "id": "urn:ngm:class:robotic-subsystem",
+      "label": "Robotic Subsystem",
+      "slug": "robotic-subsystem"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor",
+      "slug": "sensor"
+    },
+    {
+      "id": "urn:ngm:class:state-estimation-component",
+      "label": "State Estimation Component",
+      "slug": "state-estimation-component"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component",
+      "slug": "hardware-component"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -184,6 +239,40 @@
         "label": "Sensor Fusion"
       }
     ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real Time Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:gyroscope",
@@ -204,9 +293,85 @@
       {
         "id": "urn:ngm:class:series-elastic-actuation",
         "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:ngm:class:wheatstone-bridge-measurement",
+        "label": "Wheatstone Bridge Measurement"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:exteroceptive-sensor",
+        "label": "Exteroceptive Sensor"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar"
+      },
+      {
+        "id": "urn:ngm:class:ultrasonic-sensor",
+        "label": "Ultrasonic Sensor"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:component",
+        "label": "Software Component"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:biss-c-protocol",
+        "label": "BiSS-C Protocol"
+      },
       {
         "id": "urn:ngm:class:can-bus",
         "label": "CAN Bus"
@@ -216,8 +381,16 @@
         "label": "EtherCAT"
       },
       {
+        "id": "urn:ngm:class:i2c",
+        "label": "I2C"
+      },
+      {
         "id": "urn:ngm:class:self-sovereign-identity-ssi",
         "label": "SSI Protocol"
+      },
+      {
+        "id": "urn:ngm:class:spi",
+        "label": "SPI"
       },
       {
         "id": "urn:ngm:class:encoder",
@@ -248,6 +421,18 @@
       {
         "id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
       }
     ],
     "standardizedBy": [
@@ -262,6 +447,48 @@
       {
         "id": "urn:ngm:class:iso-9283-manipulating-industrial-robots-performance-criteria",
         "label": "ISO 9283 Robot Performance Standard"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "ROS"
+      },
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      },
+      {
+        "id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
       }
     ],
     "relatedTo": [
@@ -294,7 +521,7 @@
         "label": "Reinforcement Learning for Robotics"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       }
     ]

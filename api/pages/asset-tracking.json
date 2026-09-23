@@ -155,8 +155,8 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       }
     ],
     "requires": [
@@ -279,7 +279,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -411,6 +411,10 @@
         "label": "Cyber Physical Systems"
       },
       {
+        "id": "urn:ngm:class:device-management",
+        "label": "Device Management"
+      },
+      {
         "id": "urn:ngm:class:fog-computing",
         "label": "Fog Computing"
       },
@@ -429,10 +433,6 @@
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
       }
     ]
   },

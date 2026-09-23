@@ -132,7 +132,20 @@
         "label": "Affective Computing"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-19794",
+        "label": "ISO IEC 19794"
+      },
+      {
+        "id": "urn:ngm:class:nist-frvt",
+        "label": "NIST FRVT"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-30107",
+        "label": "ISO IEC 30107"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -144,7 +157,7 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -154,6 +167,30 @@
       {
         "id": "urn:ngm:class:deepfake-detection",
         "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ]
   },
@@ -242,16 +279,16 @@
         "label": "Feature Extraction"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:computational-infrastructure",
@@ -293,6 +330,18 @@
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
       {
         "id": "urn:ngm:class:digital-signatures",
         "label": "Digital Signatures"
@@ -342,6 +391,10 @@
         "label": "Password Authentication"
       },
       {
+        "id": "urn:ngm:class:token-based-authentication",
+        "label": "Token-Based Authentication"
+      },
+      {
         "id": "urn:ngm:class:anonymity",
         "label": "Anonymity"
       },
@@ -364,12 +417,28 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:on-device-inference",
         "label": "On-Device Inference"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:decentralised-identity",
@@ -378,18 +447,6 @@
       {
         "id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self Sovereign Identity"
-      },
-      {
-        "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -414,16 +471,16 @@
         "label": "Secure Enclave"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
       {
         "id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"
-      },
-      {
-        "id": "urn:ngm:class:oauth-2-0",
-        "label": "OAuth 2.0"
       }
     ],
     "supports": [
@@ -500,12 +557,12 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:federation",
-        "label": "Federation"
+        "id": "urn:ngm:class:biometrics",
+        "label": "Biometrics"
       },
       {
-        "id": "urn:ngm:class:multi-factor-authentication",
-        "label": "Multi-Factor Authentication"
+        "id": "urn:ngm:class:federation",
+        "label": "Federation"
       }
     ]
   },

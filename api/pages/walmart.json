@@ -32,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -56,9 +61,29 @@
       "slug": "applied-machine-learning"
     },
     {
+      "id": "urn:ngm:class:combinatorial-optimization",
+      "label": "Combinatorial Optimization",
+      "slug": "combinatorial-optimization"
+    },
+    {
+      "id": "urn:ngm:class:industrial-ai",
+      "label": "Industrial AI",
+      "slug": "industrial-ai"
+    },
+    {
+      "id": "urn:ngm:class:operations-research",
+      "label": "Operations Research",
+      "slug": "operations-research"
+    },
+    {
       "id": "urn:ngm:class:optimisation",
       "label": "Optimisation",
       "slug": "optimisation"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-management",
+      "label": "Supply Chain Management",
+      "slug": "supply-chain-management"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -69,6 +94,11 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:machine-learning-discipline",
@@ -84,6 +114,11 @@
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
     },
     {
       "id": "urn:ngm:class:mathematical-science",
@@ -174,6 +209,10 @@
         "label": "Trade Compliance"
       },
       {
+        "id": "urn:ngm:class:autonomous-warehousing",
+        "label": "Autonomous Warehousing"
+      },
+      {
         "id": "urn:ngm:class:carbon-footprint-reduction",
         "label": "Carbon Footprint Reduction"
       },
@@ -186,12 +225,8 @@
         "label": "Dynamic Pricing"
       },
       {
-        "id": "urn:ngm:class:predictive-maintenance",
-        "label": "Predictive Maintenance"
-      },
-      {
-        "id": "urn:ngm:class:reverse-logistics",
-        "label": "Reverse Logistics"
+        "id": "urn:ngm:class:just-in-time-inventory",
+        "label": "Just-in-Time Inventory"
       }
     ],
     "dependsOn": [
@@ -208,24 +243,24 @@
         "label": "IoT"
       },
       {
-        "id": "urn:ngm:class:applied-mathematics",
-        "label": "Applied Mathematics"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:bias-variance-tradeoff",
-        "label": "Bias-Variance Tradeoff"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
+        "id": "urn:ngm:class:io-t-integration",
+        "label": "IoT Integration"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
       }
     ],
     "implements": [
@@ -254,23 +289,51 @@
         "label": "Simulated Annealing"
       },
       {
+        "id": "urn:ngm:class:temporal-fusion-transformer",
+        "label": "Temporal Fusion Transformer"
+      },
+      {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer Networks"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:satisfiability",
-        "label": "Satisfiability"
+        "id": "urn:ngm:class:demand-chain",
+        "label": "Demand Chain"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "id": "urn:ngm:class:manual-route-planning",
+        "label": "Manual Route Planning"
+      },
+      {
+        "id": "urn:ngm:class:paper-based-freight-management",
+        "label": "Paper-Based Freight Management"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-dispatch",
+        "label": "Rule-Based Dispatch"
+      },
+      {
+        "id": "urn:ngm:class:static-inventory-positioning",
+        "label": "Static Inventory Positioning"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:imbalanced-learning",
+        "label": "Imbalanced Learning"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -278,20 +341,28 @@
         "label": "Supply Chain Blockchain"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
       },
       {
         "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
       }
     ],
     "uses": [
@@ -304,7 +375,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -312,20 +383,20 @@
         "label": "Apache Kafka"
       },
       {
-        "id": "urn:ngm:class:kubernetes",
-        "label": "Kubernetes"
+        "id": "urn:ngm:class:arm-cortex",
+        "label": "ARM Cortex"
       },
       {
-        "id": "urn:ngm:class:nvidia-corporation-jetson",
-        "label": "NVIDIA Jetson"
+        "id": "urn:ngm:class:google-or-tools",
+        "label": "Google OR-Tools"
       },
       {
-        "id": "urn:ngm:class:py-torch",
-        "label": "PyTorch"
+        "id": "urn:ngm:class:gurobi",
+        "label": "Gurobi"
       },
       {
-        "id": "urn:ngm:class:calculus",
-        "label": "Calculus"
+        "id": "urn:ngm:class:hexaly",
+        "label": "Hexaly"
       }
     ],
     "supports": [
@@ -338,8 +409,16 @@
         "label": "E-Commerce Fulfilment"
       },
       {
+        "id": "urn:ngm:class:intermodal-transport",
+        "label": "Intermodal Transport"
+      },
+      {
         "id": "urn:ngm:class:pharmaceutical-logistics",
         "label": "Pharmaceutical Logistics"
+      },
+      {
+        "id": "urn:ngm:class:port-operations",
+        "label": "Port Operations"
       },
       {
         "id": "urn:ngm:class:reverse-logistics",
@@ -350,16 +429,8 @@
         "label": "Retail Supply Chain"
       },
       {
-        "id": "urn:ngm:class:neural-network-training",
-        "label": "Neural Network Training"
-      },
-      {
-        "id": "urn:ngm:class:portfolio-optimisation",
-        "label": "Portfolio Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:urban-freight",
+        "label": "Urban Freight"
       }
     ],
     "standardizedBy": [
@@ -372,12 +443,38 @@
         "label": "ISO 28000"
       },
       {
+        "id": "urn:ngm:class:glec-framework",
+        "label": "GLEC Framework"
+      },
+      {
         "id": "urn:ngm:class:gri-standards",
         "label": "GRI Supply Chain Standards"
       },
       {
         "id": "urn:ngm:class:gs1",
         "label": "GS1"
+      },
+      {
+        "id": "urn:ngm:class:iata",
+        "label": "IATA"
+      },
+      {
+        "id": "urn:ngm:class:world-customs-organisation",
+        "label": "World Customs Organisation"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:operations-management",
+        "label": "Operations Management"
       }
     ],
     "relatedTo": [
@@ -394,24 +491,24 @@
         "label": "Trade Finance"
       },
       {
+        "id": "urn:ngm:class:adaptive-large-neighbourhood-search",
+        "label": "Adaptive Large Neighbourhood Search"
+      },
+      {
+        "id": "urn:ngm:class:amazon-sequoia",
+        "label": "Amazon Sequoia"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Model"
+      },
+      {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
       },
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:carbon-credit-tracking",
-        "label": "Carbon Credit Tracking"
-      },
-      {
-        "id": "urn:ngm:class:cold-chain-monitoring",
-        "label": "Cold Chain Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:customs-trade-facilitation",
-        "label": "Customs Trade Facilitation"
       }
     ]
   },

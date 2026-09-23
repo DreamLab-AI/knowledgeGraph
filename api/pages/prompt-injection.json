@@ -16,7 +16,16 @@
   "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:direct-prompt-injection",
+        "label": "Direct Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:indirect-prompt-injection",
+        "label": "Indirect Prompt Injection"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:large-language-model",
@@ -35,6 +44,10 @@
       {
         "id": "urn:ngm:class:adversarial-testing",
         "label": "Adversarial Testing"
+      },
+      {
+        "id": "urn:ngm:class:data-exfiltration",
+        "label": "Data Exfiltration"
       }
     ],
     "dependsOn": [
@@ -52,6 +65,10 @@
       {
         "id": "urn:ngm:class:adversarial-robustness",
         "label": "Adversarial Robustness"
+      },
+      {
+        "id": "urn:ngm:class:input-sanitisation",
+        "label": "Input Sanitisation"
       }
     ],
     "bridgesTo": [
@@ -83,12 +100,20 @@
       {
         "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:owasp-llm-top-10-2025",
+        "label": "OWASP LLM Top 10"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:llm-security",
+        "label": "LLM Security"
       }
     ],
     "relatedTo": [
@@ -107,6 +132,14 @@
       {
         "id": "urn:ngm:class:alignment",
         "label": "Alignment"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:sql-injection",
+        "label": "SQL Injection"
       },
       {
         "id": "urn:ngm:class:constitutional-ai-training-methodology",
@@ -163,7 +196,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {
@@ -235,6 +268,22 @@
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

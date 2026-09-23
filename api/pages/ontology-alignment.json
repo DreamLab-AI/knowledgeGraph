@@ -76,7 +76,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -142,6 +142,10 @@
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:axiom",
+        "label": "Axiom"
+      },
       {
         "id": "urn:ngm:class:formal-language",
         "label": "Formal Language"
@@ -245,6 +249,18 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

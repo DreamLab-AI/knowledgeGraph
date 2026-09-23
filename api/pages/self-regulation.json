@@ -52,6 +52,10 @@
       {
         "id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
       }
     ],
     "dependsOn": [
@@ -92,6 +96,10 @@
       {
         "id": "urn:ngm:class:distributed-governance",
         "label": "Distributed Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
       }
     ],
     "uses": [],
@@ -132,6 +140,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -206,6 +219,10 @@
         "label": "Risk Management"
       },
       {
+        "id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
+      },
+      {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
@@ -224,10 +241,6 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "implements": [
@@ -334,7 +347,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

@@ -8,12 +8,32 @@
   "definition": "Comprehensive ecosystem of physical and logical systems that provide durable, scalable, and performant data retention, retrieval, and replication across distributed computing environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     },
     {
       "id": "urn:ngm:class:data-layer",
       "label": "Data Layer"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "id": "urn:ngm:class:data-engineering",
+      "label": "Data Engineering"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "id": "urn:ngm:class:information-systems",
+      "label": "Information Systems"
     }
   ],
   "entityType": "Class",
@@ -64,6 +84,18 @@
       {
         "id": "urn:ngm:class:vector-databases",
         "label": "Vector Databases"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lakes"
+      },
+      {
+        "id": "urn:ngm:class:nvme",
+        "label": "NVMe"
+      },
+      {
+        "id": "urn:ngm:class:zfs",
+        "label": "ZFS"
       }
     ],
     "requires": [
@@ -90,6 +122,10 @@
       {
         "id": "urn:ngm:class:physical-layer",
         "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:consistency-protocols",
+        "label": "Consistency Protocols"
       }
     ],
     "enables": [
@@ -98,7 +134,7 @@
         "label": "Big Data Analytics"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -124,9 +160,58 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lakes"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Big Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-networks",
+        "label": "Content Delivery Networks"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Applications"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "RAG"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Functions"
+      },
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanisms",
+        "label": "Consensus Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:pki",
+        "label": "PKI"
+      },
+      {
+        "id": "urn:ngm:class:raid",
+        "label": "RAID"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:apache-iceberg",
@@ -151,9 +236,50 @@
       {
         "id": "urn:ngm:class:s3-api",
         "label": "S3 API"
+      },
+      {
+        "id": "urn:ngm:class:delta-lake",
+        "label": "Delta Lake"
+      },
+      {
+        "id": "urn:ngm:class:apache-hudi",
+        "label": "Apache Hudi"
+      },
+      {
+        "id": "urn:ngm:class:nvme-of",
+        "label": "NVMe-oF"
+      },
+      {
+        "id": "urn:ngm:class:crdts",
+        "label": "CRDTs"
+      },
+      {
+        "id": "urn:ngm:class:crush-algorithm",
+        "label": "CRUSH Algorithm"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
+      },
+      {
+        "id": "urn:ngm:class:stateless-computing",
+        "label": "Stateless Computing"
+      },
+      {
+        "id": "urn:ngm:class:ephemeral-storage",
+        "label": "Ephemeral Storage"
+      },
+      {
+        "id": "urn:ngm:class:tape-storage",
+        "label": "Tape Storage"
+      },
+      {
+        "id": "urn:ngm:class:volatile-memory",
+        "label": "Volatile Memory"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -179,6 +305,18 @@
       {
         "id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:aes-256-encryption",
+        "label": "AES-256 Encryption"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Trees"
+      },
+      {
+        "id": "urn:ngm:class:zstandard-compression",
+        "label": "Zstandard Compression"
       }
     ],
     "supports": [
@@ -213,12 +351,44 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "AI Model Training"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:ipld",
         "label": "W3C IPLD"
+      },
+      {
+        "id": "urn:ngm:class:snia",
+        "label": "SNIA"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27040",
+        "label": "ISO IEC 27040"
+      },
+      {
+        "id": "urn:ngm:class:posix-ieee-1003-1",
+        "label": "POSIX IEEE 1003.1"
+      },
+      {
+        "id": "urn:ngm:class:nvm-express-specification",
+        "label": "NVM Express Specification"
+      },
+      {
+        "id": "urn:ngm:class:ipld",
+        "label": "W3C IPLD"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-111",
+        "label": "NIST SP 800-111"
+      },
+      {
+        "id": "urn:ngm:class:cxl-consortium",
+        "label": "CXL Consortium"
       }
     ],
     "partOf": [],
@@ -250,57 +420,108 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:finops",
+        "label": "FinOps"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:architectural-layer",
+      "label": "Architectural Layer",
+      "slug": "architectural-layer"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
     {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
     },
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
+      "id": "urn:ngm:class:infrastructure-domain",
+      "label": "Infrastructure Domain",
+      "slug": "infrastructure-domain"
+    },
+    {
+      "id": "urn:ngm:class:software-layer",
+      "label": "Software Layer",
+      "slug": "software-layer"
+    },
+    {
+      "id": "urn:ngm:class:system-tier",
+      "label": "System Tier",
+      "slug": "system-tier"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture",
+      "slug": "software-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure",
+      "slug": "ai-infrastructure"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
+      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:cache-layer",
+        "label": "Cache Layer"
+      },
+      {
+        "id": "urn:ngm:class:connection-pool",
+        "label": "Connection Pool"
+      },
+      {
+        "id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
       },
       {
         "id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
       },
-      {
-        "id": "urn:ngm:class:database-system",
-        "label": "Database System"
-      },
-      {
-        "id": "urn:ngm:class:etl-pipeline",
-        "label": "ETL Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:graph-database",
-        "label": "Graph Database"
-      },
-      {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
-      }
-    ],
-    "requires": [
       {
         "id": "urn:ngm:class:backup-and-recovery",
         "label": "Backup Strategy"
@@ -320,21 +541,17 @@
       {
         "id": "urn:ngm:class:schema-definition",
         "label": "Schema Definition"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
       {
         "id": "urn:ngm:class:acid-properties",
         "label": "ACID Properties"
@@ -358,33 +575,119 @@
       {
         "id": "urn:ngm:class:persistence",
         "label": "Polyglot Persistence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:file-system",
+        "label": "File System"
       },
       {
-        "id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval-Augmented Generation"
+        "id": "urn:ngm:class:memory-hierarchy",
+        "label": "Memory Hierarchy"
       },
       {
-        "id": "urn:ngm:class:rollup",
-        "label": "Rollup Scaling"
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:active-record",
+        "label": "Active Record"
+      },
       {
         "id": "urn:ngm:class:cqrs",
         "label": "CQRS"
       },
       {
+        "id": "urn:ngm:class:data-mapper-pattern",
+        "label": "Data Mapper Pattern"
+      },
+      {
         "id": "urn:ngm:class:event-sourcing",
         "label": "Event Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:hexagonal-architecture",
+        "label": "Hexagonal Architecture"
+      },
+      {
+        "id": "urn:ngm:class:ports-and-adapters",
+        "label": "Ports and Adapters"
+      },
+      {
+        "id": "urn:ngm:class:repository-pattern",
+        "label": "Repository Pattern"
+      },
+      {
+        "id": "urn:ngm:class:unit-of-work",
+        "label": "Unit of Work"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:business-logic-layer",
+        "label": "Business Logic Layer"
+      },
+      {
+        "id": "urn:ngm:class:consensus-layer",
+        "label": "Consensus Layer"
+      },
+      {
+        "id": "urn:ngm:class:execution-layer",
+        "label": "Execution Layer"
+      },
+      {
+        "id": "urn:ngm:class:presentation-layer",
+        "label": "Presentation Layer"
+      },
+      {
+        "id": "urn:ngm:class:settlement-layer",
+        "label": "Settlement Layer"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
       {
         "id": "urn:ngm:class:architectural-layer",
         "label": "Architectural Layer"
@@ -396,6 +699,18 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -404,8 +719,24 @@
         "label": "Bloom Filter"
       },
       {
+        "id": "urn:ngm:class:cypher",
+        "label": "Cypher"
+      },
+      {
         "id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:jdbc",
+        "label": "JDBC"
+      },
+      {
+        "id": "urn:ngm:class:odbc",
+        "label": "ODBC"
+      },
+      {
+        "id": "urn:ngm:class:orm-frameworks",
+        "label": "ORM Frameworks"
       },
       {
         "id": "urn:ngm:class:reed-solomon-codes",
@@ -414,13 +745,21 @@
       {
         "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
-      },
-      {
-        "id": "urn:ngm:class:sql",
-        "label": "SQL"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
@@ -434,23 +773,23 @@
         "label": "Domain Model"
       },
       {
-        "id": "urn:ngm:class:settlement-layer",
-        "label": "Settlement Layer"
+        "id": "urn:ngm:class:execution-layer",
+        "label": "Execution Layer"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:reporting-layer",
+        "label": "Reporting Layer"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
       {
         "id": "urn:ngm:class:ansi-sql",
         "label": "ANSI SQL"
@@ -458,6 +797,10 @@
       {
         "id": "urn:ngm:class:celestia",
         "label": "Celestia Specifications"
+      },
+      {
+        "id": "urn:ngm:class:cidr-architecture",
+        "label": "CIDR Architecture"
       },
       {
         "id": "urn:ngm:class:eip-4844",
@@ -468,22 +811,36 @@
         "label": "ISO/IEC 9075"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:jdbc-specification",
+        "label": "JDBC Specification"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:infra-computing-and-cloud",
-        "label": "Computing and Cloud"
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
+      },
+      {
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       },
       {
         "id": "urn:ngm:class:avail",
@@ -494,20 +851,12 @@
         "label": "Celestia"
       },
       {
+        "id": "urn:ngm:class:clean-architecture",
+        "label": "Clean Architecture"
+      },
+      {
         "id": "urn:ngm:class:domain-driven-design",
         "label": "Domain-Driven Design"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graph"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
-      },
-      {
-        "id": "urn:ngm:class:modular-blockchain",
-        "label": "Modular Blockchain"
       }
     ]
   },

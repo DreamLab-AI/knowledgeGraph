@@ -40,6 +40,14 @@
       {
         "id": "urn:ngm:class:network-fabric",
         "label": "Network Fabric"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:storage-systems",
+        "label": "Storage"
       }
     ],
     "requires": [
@@ -120,7 +128,7 @@
         "label": "Distributed Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -138,6 +146,10 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Performance Optimisation"
       },
       {
         "id": "urn:ngm:class:optimisation",
@@ -301,7 +313,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ]

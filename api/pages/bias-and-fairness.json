@@ -10,13 +10,58 @@
     {
       "id": "urn:ngm:class:responsible-ai",
       "label": "Responsible AI"
+    },
+    {
+      "id": "urn:ngm:class:ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.62,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      },
+      {
+        "id": "urn:ngm:class:intersectional-fairness",
+        "label": "Intersectional Fairness"
+      },
+      {
+        "id": "urn:ngm:class:group-vs-individual-fairness",
+        "label": "Group vs Individual Fairness"
+      },
+      {
+        "id": "urn:ngm:class:fairness-constraints",
+        "label": "Fairness Constraints"
+      },
+      {
+        "id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:model-evaluation",
@@ -25,6 +70,26 @@
       {
         "id": "urn:ngm:class:data-quality",
         "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:dataset",
+        "label": "Dataset"
+      },
+      {
+        "id": "urn:ngm:class:protected-attributes",
+        "label": "Protected Attributes"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:statistical-hypothesis-testing",
+        "label": "Statistical Hypothesis Testing"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
       }
     ],
     "enables": [
@@ -35,26 +100,124 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-impact-assessment",
+        "label": "Algorithmic Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:dataset",
         "label": "Dataset"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:automated-decision-making",
+        "label": "Automated Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fairness-assessment",
+        "label": "Fairness Assessment"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-impact-assessment",
+        "label": "Algorithmic Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:automation-bias",
+        "label": "Automation Bias"
+      },
+      {
+        "id": "urn:ngm:class:harmful-bias",
+        "label": "Harmful Bias"
+      },
+      {
+        "id": "urn:ngm:class:inductive-bias",
+        "label": "Inductive Bias"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:human-ai-collaboration",
         "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:counterfactual-analysis",
+        "label": "Counterfactual Analysis"
+      },
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:statistical-hypothesis-testing",
+        "label": "Statistical Hypothesis Testing"
       }
     ],
     "supports": [
@@ -65,9 +228,42 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-p-7003-2021",
+        "label": "IEEE P7003-2021"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-tr-24027",
+        "label": "ISO/IEC TR 24027"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-1270",
+        "label": "NIST SP 1270"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:responsible-ai",
@@ -90,6 +286,46 @@
       {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:fairness-oecd",
+        "label": "Fairness (OECD)"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-governance",
+        "label": "Algorithmic Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
       }
     ]
   },
@@ -100,6 +336,11 @@
       "slug": "ai-governance"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework",
       "slug": "governance-framework"
@@ -108,6 +349,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -138,16 +384,16 @@
         "label": "Transparency"
       },
       {
-        "id": "urn:ngm:class:ai-ethics-board",
-        "label": "AI Ethics Board"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:ai-impact-assessment",
-        "label": "AI Impact Assessment"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:algorithmic-accountability",
-        "label": "Algorithmic Accountability"
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
       }
     ],
     "requires": [
@@ -168,16 +414,16 @@
         "label": "Stakeholder Engagement"
       },
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       },
       {
-        "id": "urn:ngm:class:human-oversight",
-        "label": "Human Oversight"
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
       },
       {
         "id": "urn:ngm:class:transparency",
@@ -190,39 +436,35 @@
         "label": "Public Trust in AI"
       },
       {
+        "id": "urn:ngm:class:social-licence-for-ai",
+        "label": "social licence for AI"
+      },
+      {
         "id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:human-centered-ai",
+        "label": "Human-Centered AI"
       },
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:resource-management",
-        "label": "Resource Management"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
-      },
-      {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
@@ -238,16 +480,12 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
-      },
-      {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
       },
       {
         "id": "urn:ngm:class:accountability",
@@ -260,12 +498,20 @@
       {
         "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
       },
       {
         "id": "urn:ngm:class:application-layer",
@@ -286,27 +532,49 @@
         "label": "Human Rights"
       },
       {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
       },
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:ai-governance-and-ethics",
-        "label": "AI Governance and Ethics"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:algorithmic-impact-assessment",
+        "label": "Algorithmic Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "id": "urn:ngm:class:value-sensitive-design",
+        "label": "Value-Sensitive Design"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      },
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
@@ -334,12 +602,16 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
-      },
-      {
         "id": "urn:ngm:class:oecd-ai-principles",
         "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Regulatory Policy"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",
@@ -360,10 +632,6 @@
       {
         "id": "urn:ngm:class:togaf",
         "label": "TOGAF"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
       }
     ],
     "partOf": [
@@ -382,28 +650,28 @@
         "label": "Algorithmic Accountability"
       },
       {
-        "id": "urn:ngm:class:explainability",
-        "label": "Explainability"
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
       },
       {
         "id": "urn:ngm:class:bias-mitigation-techniques",
-        "label": "Bias Mitigation"
+        "label": "Bias Mitigation Techniques"
       },
       {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
       },
       {
-        "id": "urn:ngm:class:gdpr",
-        "label": "GDPR"
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
       },
       {
-        "id": "urn:ngm:class:change-management",
-        "label": "Change Management"
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
       },
       {
-        "id": "urn:ngm:class:enterprise-architecture",
-        "label": "Enterprise Architecture"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       }
     ]
   },

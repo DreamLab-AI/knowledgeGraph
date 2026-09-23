@@ -10,6 +10,14 @@
     {
       "id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:real-time-communication-protocol",
+      "label": "Real-Time Communication Protocol"
+    },
+    {
+      "id": "urn:ngm:class:peer-to-peer-network-protocol",
+      "label": "Peer-to-Peer Network Protocol"
     }
   ],
   "entityType": "Class",
@@ -24,12 +32,48 @@
       {
         "id": "urn:ngm:class:stun-and-turn",
         "label": "STUN Server"
+      },
+      {
+        "id": "urn:ngm:class:rtcpeerconnection",
+        "label": "RTCPeerConnection"
+      },
+      {
+        "id": "urn:ngm:class:rtcdatachannel",
+        "label": "RTCDataChannel"
+      },
+      {
+        "id": "urn:ngm:class:getusermedia-api",
+        "label": "getUserMedia API"
+      },
+      {
+        "id": "urn:ngm:class:stun-and-turn",
+        "label": "STUN Server"
+      },
+      {
+        "id": "urn:ngm:class:turn-server",
+        "label": "TURN Server"
+      },
+      {
+        "id": "urn:ngm:class:sdp-offer-answer",
+        "label": "SDP Offer-Answer"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:ice-protocol",
         "label": "ICE Protocol"
+      },
+      {
+        "id": "urn:ngm:class:dtls-srtp-encryption",
+        "label": "DTLS-SRTP Encryption"
+      },
+      {
+        "id": "urn:ngm:class:sdp-session-description",
+        "label": "SDP Session Description"
+      },
+      {
+        "id": "urn:ngm:class:websocket-signalling",
+        "label": "WebSocket Signalling"
       }
     ],
     "enables": [
@@ -40,13 +84,62 @@
       {
         "id": "urn:ngm:class:screen-sharing",
         "label": "Screen Sharing"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-video-conferencing",
+        "label": "Peer-to-Peer Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-data-transfer",
+        "label": "Real-Time Data Transfer"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality",
+        "label": "Collaborative XR"
+      },
+      {
+        "id": "urn:ngm:class:zero-install-communication",
+        "label": "Zero-Install Communication"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:libwebrtc-library",
+        "label": "libwebrtc Library"
+      },
+      {
+        "id": "urn:ngm:class:stun-rfc-5389",
+        "label": "STUN RFC 5389"
+      },
+      {
+        "id": "urn:ngm:class:turn-rfc-5766",
+        "label": "TURN RFC 5766"
+      },
+      {
+        "id": "urn:ngm:class:opus-audio-codec",
+        "label": "Opus Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:vp8-video-codec",
+        "label": "VP8 Video Codec"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:web-rtc-w-3-c-specification",
         "label": "W3C WebRTC 1.0 Specification"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc-w-3-c-specification",
+        "label": "W3C WebRTC 1.0 Specification"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rtcweb-standards",
+        "label": "IETF RTCWEB Standards"
+      },
+      {
+        "id": "urn:ngm:class:dtls-srtp-rfc-5764",
+        "label": "DTLS-SRTP RFC 5764"
       }
     ],
     "contrastsWith": [],
@@ -54,12 +147,36 @@
       {
         "id": "urn:ngm:class:infra-network-and-comms",
         "label": "Network and Communication"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
       }
     ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration Stack"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing Platform"
+      },
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration Stack"
@@ -105,12 +222,12 @@
         "label": "Asynchronous Collaboration"
       },
       {
-        "id": "urn:ngm:class:shared-workspace",
-        "label": "Shared Workspace"
+        "id": "urn:ngm:class:presence-mechanism",
+        "label": "Presence Mechanism"
       },
       {
-        "id": "urn:ngm:class:synchronous-collaboration",
-        "label": "Synchronous Collaboration"
+        "id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
       }
     ],
     "requires": [
@@ -157,11 +274,19 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
@@ -235,6 +360,10 @@
       {
         "id": "urn:ngm:class:groupware",
         "label": "Groupware"
+      },
+      {
+        "id": "urn:ngm:class:social-software",
+        "label": "Social Software"
       }
     ]
   },

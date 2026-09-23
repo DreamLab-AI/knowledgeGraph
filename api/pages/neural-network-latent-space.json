@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:decoder-network",
         "label": "Decoder Network"
+      },
+      {
+        "id": "urn:ngm:class:latent-vector",
+        "label": "Latent Vector"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder Network"
+      },
+      {
+        "id": "urn:ngm:class:latent-code",
+        "label": "Latent Code"
       }
     ],
     "requires": [
@@ -90,9 +102,21 @@
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Explicit Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Explicit Knowledge Representation"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "3D Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:spatial-data-representation",
+        "label": "Spatial Data Representation"
+      },
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "3D Scene Understanding"
@@ -132,6 +156,14 @@
       {
         "id": "urn:ngm:class:principal-component-analysis",
         "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Semantic Embedding"
+      },
+      {
+        "id": "urn:ngm:class:manifold-hypothesis",
+        "label": "Manifold Hypothesis"
       }
     ]
   },
@@ -211,6 +243,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

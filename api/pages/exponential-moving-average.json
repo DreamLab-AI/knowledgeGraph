@@ -195,8 +195,12 @@
         "label": "Knowledge Discovery"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
         "id": "urn:ngm:class:data-analysis",
@@ -213,10 +217,6 @@
       {
         "id": "urn:ngm:class:information-theory",
         "label": "Information Theory"
-      },
-      {
-        "id": "urn:ngm:class:monte-carlo-methods",
-        "label": "Monte Carlo Methods"
       }
     ],
     "dependsOn": [
@@ -231,6 +231,10 @@
       {
         "id": "urn:ngm:class:sampling-theory",
         "label": "Sampling Theory"
+      },
+      {
+        "id": "urn:ngm:class:lebesgue-integration",
+        "label": "Lebesgue Integration"
       },
       {
         "id": "urn:ngm:class:sigma-algebra",
@@ -253,6 +257,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:deterministic-computation",
+        "label": "Deterministic Computation"
+      },
+      {
         "id": "urn:ngm:class:fuzzy-logic",
         "label": "Fuzzy Logic"
       }
@@ -267,6 +275,10 @@
         "label": "Information Theory"
       },
       {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
         "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
       },
@@ -279,16 +291,12 @@
         "label": "Diffusion Models"
       },
       {
+        "id": "urn:ngm:class:financial-mathematics",
+        "label": "Financial Mathematics"
+      },
+      {
         "id": "urn:ngm:class:functional-analysis",
         "label": "Functional Analysis"
-      },
-      {
-        "id": "urn:ngm:class:quantitative-finance",
-        "label": "Quantitative Finance"
-      },
-      {
-        "id": "urn:ngm:class:quantum-mechanics",
-        "label": "Quantum Mechanics"
       }
     ],
     "uses": [
@@ -323,11 +331,15 @@
         "label": "Causal Inference"
       },
       {
+        "id": "urn:ngm:class:bayesian-networks",
+        "label": "Bayesian Networks"
+      },
+      {
         "id": "urn:ngm:class:graphical-model",
         "label": "Probabilistic Graphical Models"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -343,6 +355,10 @@
       {
         "id": "urn:ngm:class:statistics",
         "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       }
     ],
     "relatedTo": [
@@ -375,8 +391,8 @@
         "label": "Causal Inference"
       },
       {
-        "id": "urn:ngm:class:optimal-transport",
-        "label": "Optimal Transport"
+        "id": "urn:ngm:class:information-geometry",
+        "label": "Information Geometry"
       }
     ]
   },

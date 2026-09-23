@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:dc-communication",
       "label": "Communication Technology"
+    },
+    {
+      "id": "urn:ngm:class:collaboration-software",
+      "label": "Collaboration Software"
+    },
+    {
+      "id": "urn:ngm:class:ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration-technology",
+      "label": "Distributed Collaboration Technology"
+    },
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "id": "urn:ngm:class:meeting-support-tools",
+      "label": "Meeting Support Tools"
     }
   ],
   "entityType": "Class",
@@ -32,6 +52,22 @@
       {
         "id": "urn:ngm:class:sentiment-analysis",
         "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:meeting-summarisation",
+        "label": "Meeting Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:action-item-extraction",
+        "label": "Action Item Extraction"
+      },
+      {
+        "id": "urn:ngm:class:meeting-minutes-generation",
+        "label": "Meeting Minutes Generation"
+      },
+      {
+        "id": "urn:ngm:class:integration-connector",
+        "label": "Integration Connector"
       }
     ],
     "requires": [
@@ -46,6 +82,26 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:audio-stream",
+        "label": "Audio Stream"
+      },
+      {
+        "id": "urn:ngm:class:meeting-platform-access",
+        "label": "Meeting Platform Access"
+      },
+      {
+        "id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Identity Model"
+      },
+      {
+        "id": "urn:ngm:class:meeting-transcription",
+        "label": "Transcription Engine"
+      },
+      {
+        "id": "urn:ngm:class:llm-based-text-generation",
+        "label": "LLM-based Text Generation"
       }
     ],
     "enables": [
@@ -60,9 +116,58 @@
       {
         "id": "urn:ngm:class:knowledge-preservation",
         "label": "Knowledge Preservation"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-meeting-access",
+        "label": "Asynchronous Meeting Access"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Decision Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:tc-0080-team-coordination",
+        "label": "Distributed Team Coordination"
+      },
+      {
+        "id": "urn:ngm:class:meeting-automation",
+        "label": "Meeting Automation"
+      },
+      {
+        "id": "urn:ngm:class:post-meeting-workflow",
+        "label": "Post-Meeting Workflow"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:conformer-architecture",
+        "label": "Conformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:whisper",
+        "label": "Whisper ASR"
+      },
+      {
+        "id": "urn:ngm:class:bert-based-nlp",
+        "label": "BERT-based NLP"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:calendar-integration",
+        "label": "Calendar Integration"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:text-summarisation",
@@ -87,9 +192,38 @@
       {
         "id": "urn:ngm:class:named-entity-recognition",
         "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:extractive-summarisation",
+        "label": "Extractive Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:text-summarisation",
+        "label": "Abstractive Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Detection"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-note-taking",
+        "label": "Manual Note Taking"
+      },
+      {
+        "id": "urn:ngm:class:human-minute-taker",
+        "label": "Human Minute Taker"
+      },
+      {
+        "id": "urn:ngm:class:post-hoc-recording-review",
+        "label": "Post-hoc Recording Review"
+      },
+      {
+        "id": "urn:ngm:class:email-thread-summaries",
+        "label": "Email Thread Summaries"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-agents",
@@ -124,6 +258,18 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer Models"
+      },
+      {
+        "id": "urn:ngm:class:speaker-diarisation",
+        "label": "Diarisation Models"
+      },
+      {
+        "id": "urn:ngm:class:text-summarisation",
+        "label": "Summarisation Models"
       }
     ],
     "supports": [
@@ -142,6 +288,18 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:sales-enablement",
+        "label": "Sales Enablement"
+      },
+      {
+        "id": "urn:ngm:class:customer-success",
+        "label": "Customer Success"
+      },
+      {
+        "id": "urn:ngm:class:hr-performance-review",
+        "label": "HR Performance Review"
       }
     ],
     "standardizedBy": [
@@ -160,6 +318,10 @@
       {
         "id": "urn:ngm:class:uk-data-protection-act-2018",
         "label": "UK Data Protection Act 2018"
+      },
+      {
+        "id": "urn:ngm:class:ico-guidance-on-workplace-monitoring-2024",
+        "label": "ICO Guidance on Workplace Monitoring 2024"
       }
     ],
     "partOf": [],
@@ -187,14 +349,71 @@
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:virtual-meeting",
+        "label": "Virtual Meeting Platforms"
+      },
+      {
+        "id": "urn:ngm:class:employee-monitoring",
+        "label": "Employee Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:workplace-privacy",
+        "label": "Workplace Privacy"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:autonomous-agent",
+      "label": "Autonomous Agent",
+      "slug": "autonomous-agent"
+    },
+    {
       "id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration",
       "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:goal-directed-system",
+      "label": "Goal-Directed System",
+      "slug": "goal-directed-system"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing",
+      "slug": "natural-language-processing"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
     }
   ],
   "inheritedRelations": {
@@ -234,16 +453,36 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
       },
       {
-        "id": "urn:ngm:class:identity-and-access-management",
-        "label": "Identity and Access Management"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
       }
     ],
     "enables": [
@@ -256,50 +495,164 @@
         "label": "Virtual Collaboration"
       },
       {
-        "id": "urn:ngm:class:open-source-development",
-        "label": "Open Source Development"
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
       },
       {
-        "id": "urn:ngm:class:remote-work",
-        "label": "Remote Work"
+        "id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision Making"
       },
       {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
       },
       {
-        "id": "urn:ngm:class:virtual-team",
-        "label": "Virtual Team"
+        "id": "urn:ngm:class:software-development-automation",
+        "label": "Software Engineering Automation"
+      },
+      {
+        "id": "urn:ngm:class:task-automation",
+        "label": "Task Automation"
+      },
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:consensus-algorithm",
-        "label": "Consensus Algorithm"
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
       },
       {
-        "id": "urn:ngm:class:latency-management-protocol",
-        "label": "Latency Management"
+        "id": "urn:ngm:class:api",
+        "label": "API Interface"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:pre-trained-language-model",
+        "label": "Pre-trained Language Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:belief-desire-intention",
+        "label": "Belief-Desire-Intention"
+      },
+      {
+        "id": "urn:ngm:class:plan-and-execute",
+        "label": "Plan and Execute"
+      },
+      {
+        "id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:ngm:class:reflexion",
+        "label": "Reflexion Pattern"
+      },
+      {
+        "id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-state-tracking",
+        "label": "Dialogue State Tracking"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:co-located-collaboration",
-        "label": "Co-Located Collaboration"
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:form-based-interface",
+        "label": "Form-Based Interface"
+      },
+      {
+        "id": "urn:ngm:class:scripted-chatbot",
+        "label": "Scripted Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      },
+      {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
+        "label": "Decentralised Autonomous Organisations"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:scientific-discovery",
+        "label": "Scientific Discovery"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
       }
     ],
     "uses": [
@@ -312,34 +665,110 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:conflict-free-replicated-data-type",
-        "label": "Conflict-Free Replicated Data Type"
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:end-to-end-encryption",
-        "label": "End-to-End Encryption"
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
       },
       {
-        "id": "urn:ngm:class:operational-transformation",
-        "label": "Operational Transformation"
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
       },
       {
-        "id": "urn:ngm:class:real-time-messaging",
-        "label": "Real-Time Messaging"
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
       },
       {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:knowledge-management",
-        "label": "Knowledge Management"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C Voice Browser Working Group"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-environment",
+        "label": "Intelligent Environment"
       }
     ],
     "relatedTo": [
@@ -356,12 +785,24 @@
         "label": "Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:computer-supported-cooperative-work",
-        "label": "Computer-Supported Cooperative Work"
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
       },
       {
-        "id": "urn:ngm:class:groupware",
-        "label": "Groupware"
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
       }
     ]
   },

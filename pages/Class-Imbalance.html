@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Class Imbalance</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Class Imbalance"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Class Imbalance"/><meta name="twitter:description" content="Class imbalance is the condition in a classification dataset where the number of examples in one class greatly exceeds that of another, causing learning algorithms to favour the majority class."/><meta property="og:description" content="Class imbalance is the condition in a classification dataset where the number of examples in one class greatly exceeds that of another, causing learning algorithms to favour the majority class."/><meta property="og:image:alt" content="Class imbalance is the condition in a classification dataset where the number of examples in one class greatly exceeds that of another, causing learning algorithms to favour the majority class."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Class-Imbalance"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Class-Imbalance"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Class imbalance is the condition in a classification dataset where the number of examples in one class greatly exceeds that of another, causing learning algorithms to favour the majority class."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Class-Imbalance"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1488"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1488" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Class Imbalance</a></div></nav><h1 class="article-title">Class Imbalance</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.574Z">23 Sept 2026</time><span>34 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:class-imbalance</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>machine-learning</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.62</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Classification" class="internal">Classification</a></li><li><a href="../AI-Technique" class="internal">AI Technique</a></li><li><a href="../pages/Supervised-Learning" class="internal">Supervised Learning</a></li><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/Classification" class="internal">Classification</a></li><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Resampling" class="internal">Resampling</a></li><li><a href="../Cost-Sensitive-Learning" class="internal">Cost-Sensitive Learning</a></li><li><a href="../SMOTE" class="internal">SMOTE</a></li><li><a href="../Focal-Loss" class="internal">Focal Loss</a></li><li><a href="../pages/Ensemble-Methods" class="internal">Ensemble Methods</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Evaluation-Metric" class="internal">Evaluation Metric</a></li><li><a href="../pages/Precision-Recall-Curve" class="internal">Precision-Recall Curve</a></li><li><a href="../pages/Confusion-Matrix" class="internal">Confusion Matrix</a></li><li><a href="../pages/F1-Score" class="internal">F1 Score</a></li><li><a href="../pages/Data-Preprocessing" class="internal">Data Preprocessing</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../anomaly-detection" class="internal">Anomaly Detection</a></li><li><a href="../fraud-detection" class="internal">Fraud Detection</a></li><li><a href="../pages/Medical-Diagnosis-AI" class="internal">Medical Diagnosis AI</a></li><li><a href="../pages/Predictive-Maintenance" class="internal">Predictive Maintenance</a></li><li><a href="../pages/Intrusion-Detection-System" class="internal">Intrusion Detection System</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Overfitting" class="internal">Overfitting</a></li><li><a href="../Balanced-Dataset" class="internal">Balanced Dataset</a></li><li><a href="../Accuracy-Metric" class="internal">Accuracy Metric</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Data-Preprocessing" class="internal">Data Preprocessing</a></li><li><a href="../pages/Feature-Engineering" class="internal">Feature Engineering</a></li><li><a href="../pages/Loss-Function" class="internal">Loss Function</a></li><li><a href="../pages/Classification" class="internal">Classification</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/Classification" class="internal">Classification</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../SMOTE" class="internal">SMOTE</a></li><li><a href="../pages/Resampling" class="internal">Resampling</a></li><li><a href="../Cost-Sensitive-Learning" class="internal">Cost-Sensitive Learning</a></li><li><a href="../Focal-Loss" class="internal">Focal Loss</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:class-imbalance</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Precision-Recall-Curve" class="internal">Precision-Recall Curve</a></li><li><a href="../pages/Confusion-Matrix" class="internal">Confusion Matrix</a></li><li><a href="../pages/F1-Score" class="internal">F1 Score</a></li><li><a href="../pages/ROC-Curve" class="internal">ROC Curve</a></li><li><a href="../pages/Recall" class="internal">Recall</a></li><li><a href="../pages/Anomaly-Detection" class="internal">Anomaly Detection</a></li><li><a href="../Long-Tail-Distribution" class="internal">Long-Tail Distribution</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../pages/Active-Learning" class="internal">Active Learning</a></li><li><a href="../pages/Data-Augmentation" class="internal">Data Augmentation</a></li><li><a href="../pages/Concept-Drift" class="internal">Concept Drift</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../imbalanced-learn" class="internal">imbalanced-learn</a></li><li><a href="../scikit-learn" class="internal">scikit-learn</a></li><li><a href="../NeurIPS-Benchmarks" class="internal">NeurIPS Benchmarks</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Model-Performance" class="internal">Model Performance</a></li><li><a href="../pages/Recall" class="internal">Recall</a></li><li><a href="../pages/Precision-Recall-Curve" class="internal">Precision-Recall Curve</a></li><li><a href="../pages/ROC-Curve" class="internal">ROC Curve</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Resampling" class="internal">Resampling</a></li><li><a href="../pages/Feature-Engineering" class="internal">Feature Engineering</a></li><li><a href="../pages/Ensemble-Methods" class="internal">Ensemble Methods</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li><li><a href="../pages/Random-Forest" class="internal">Random Forest</a></li><li><a href="../Gradient-Boosting" class="internal">Gradient Boosting</a></li><li><a href="../pages/Loss-Function" class="internal">Loss Function</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Class imbalance is the condition in a classification dataset where the number of examples in one class greatly exceeds that of another, causing learning algorithms to favour the majority class. It is common in problems such as fraud detection, medical diagnosis, and anomaly detection, where the events of interest are rare. Class imbalance undermines naive accuracy as an evaluation metric and motivates remedies such as resampling, cost-sensitive learning, and the use of precision-recall-oriented metrics.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:hasPart ml:MinorityClassSamples))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:hasPart ml:MajorityClassSamples))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:hasPart ml:ImbalanceRatioMetric))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:hasPart ml:ResamplingStrategy))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:hasPart ml:CostMatrix))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:hasPart ml:EvaluationProtocol))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:hasPart ml:SyntheticMinoritySampler))
+</code></pre>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:requires ml:EvaluationMetric))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:requires ml:DataPreprocessing))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:requires ml:FeatureEngineering))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:requires ml:LossFunction))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:requires ml:StratifiedCrossValidation))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:requires ml:ConfusionMatrix))
+</code></pre>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:enables ml:AnomalyDetection))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:enables ml:FraudDetection))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:enables ml:MedicalDiagnosis))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:enables ml:PredictiveMaintenance))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:enables ml:IntrusionDetection))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:enables ml:RareEventPrediction))
+</code></pre>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:implements ml:SMOTE))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:implements ml:Resampling))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:implements ml:CostSensitiveLearning))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:implements ml:FocalLoss))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:implements ml:EnsembleLearning))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:implements ml:ThresholdCalibration))
+</code></pre>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:reducesTo ml:Classification))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:reducesTo ml:SupervisedLearning))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:reducesTo ml:RareEventDetection))
+</code></pre>
+<h2 id="algorithmic-fairness-relationships">Algorithmic Fairness Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#algorithmic-fairness-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:relatedTo ml:AlgorithmicFairness))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:relatedTo ml:DataAugmentation))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:relatedTo ml:ConceptDrift))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:relatedTo ml:TransferLearning))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:relatedTo ml:ActiveLearning))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:relatedTo ml:LongTailDistribution))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:hasPart ml:ClassWeightParameter))
+SubClassOf(ml:ClassImbalance
+  ObjectSomeValuesFrom(ml:hasPart ml:ThresholdCalibrationScheme))
+</code></pre>
+<h2 id="formal-definition-and-mathematical-characterisation">Formal Definition and Mathematical Characterisation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-definition-and-mathematical-characterisation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Formally, class imbalance is characterised by an imbalance ratio (IR) defined as the ratio of the number of majority class examples N_maj to the number of minority class examples N_min: IR = N_maj / N_min. Mild imbalance is commonly defined as IR in [1.5, 4], moderate as IR in [4, 9], severe as IR in [9, 100], and extreme as IR > 100. The impact on classifier performance is not simply monotonic with IR — it interacts with the intrinsic complexity of the decision boundary, the dimensionality of the feature space, and the degree of class overlap. A dataset with IR = 50 and well-separated classes may be easier to learn than a dataset with IR = 10 and extensive class overlap in a high-dimensional feature space.</p>
+<p>Theoretically, under zero-one loss, the Bayes optimal classifier always predicts the majority class in the extreme imbalance limit (where N_min / N → 0), achieving accuracy equal to the majority class prior. This theoretical minimum — predicting majority always — is often called the “zero rule” or majority-class baseline and represents the lower bound that any useful classifier must exceed on minority class metrics. The key insight is that accuracy is not a coherent objective for imbalanced classification: a classifier achieving 99% accuracy on a 1:99 imbalanced dataset may have 0% minority class recall, making it entirely useless for the actual task.</p>
+<p>The expected number of minority class examples in a random training batch follows a hypergeometric distribution, and under extreme imbalance with small batch sizes, many batches will contain no minority examples — leading to gradient updates that carry no minority class signal. This is why class-weighted loss and oversampling strategies that ensure minority class examples appear in every batch are important in the <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a> setting, not merely in classical batch learning.</p>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Class imbalance has been recognised as a distinct research problem since the mid-1990s, when applied <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> began encountering real-world datasets where the ratio of positive to negative examples deviated dramatically from the near-unity ratios assumed by early theoretical analyses of generalisation. Kubat and Matwin (1997) are commonly credited with an early systematic study of the problem in the context of oil spill detection from satellite imagery. The watershed contribution was Chawla et al. (2002) “SMOTE: Synthetic Minority Over-sampling Technique,” published in the Journal of Artificial Intelligence Research, which proposed generating synthetic minority examples by interpolating between existing minority instances in feature space using k-nearest neighbours. SMOTE rapidly became the most widely cited technique in imbalanced learning and remains a standard baseline against which new methods are benchmarked over two decades later.</p>
+<p>The theoretical landscape of imbalanced learning connects to several streams of statistical learning theory. Probably Approximately Correct (PAC) learning theory assumes balanced classes in its standard formulations; extensions to class-imbalanced settings require modifying sample complexity bounds to account for the rarity of minority examples. Cost-sensitive learning theory, developed by Elkan (2001) and Domingos (1999), formalises the connection between asymmetric misclassification costs and decision boundary placement, providing a principled basis for practitioners selecting classification thresholds and loss functions. The connection between class imbalance and the precision-recall trade-off was formalised by Davis and Goadrich (2006), who demonstrated that the AUPRC is a more informative metric than AUROC under imbalanced conditions because it is sensitive to the minority class performance in ways that AUROC is not.</p>
+<p>The problem sits at the intersection of three distinct machine learning concerns: statistical learning theory (how does the optimal Bayes error rate relate to the class prior?), optimisation (does gradient descent on standard cross-entropy find useful decision boundaries for rare classes?), and evaluation methodology (which metric meaningfully captures the quality of rare-class prediction?). These concerns do not decompose cleanly — a well-designed data resampling strategy may fail if the evaluation metric does not reward minority class recall, and a theoretically sound <a href="../pages/Loss-Function" class="internal alias" data-slug="pages/Loss-Function">Loss Function</a> may be undermined by feature space geometry that clusters minority and majority examples in ways that prevent any linear boundary from separating them. Practitioners must therefore attend simultaneously to all three concerns, and diagnostic workflow should address all three before concluding that a classification system is performing adequately.</p>
+<p>In the <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a> era, class imbalance manifests differently than in classical supervised learning. Large neural networks trained on sufficient data can in principle learn arbitrarily complex decision boundaries, but the loss surface for imbalanced data tends to guide optimisation towards regions where majority class loss is minimised while minority class loss remains elevated. Focal loss, introduced by Lin et al. (2017) for object detection, addressed this by dynamically re-weighting loss contributions based on the model’s current confidence, penalising easy majority examples that the model already classifies correctly. This approach has since propagated into multi-class and multi-label classification contexts and has been shown to outperform static class weighting in several regimes. The interaction between imbalance and batch normalisation, dropout, and other regularisation techniques used in deep networks is an active area of investigation: batch normalisation statistics computed on imbalanced mini-batches may be dominated by majority class examples, subtly distorting the normalised activations seen by minority class examples during both training and inference.</p>
+<p>Multi-class and multi-label imbalance extends the binary problem in several important directions. In multi-class settings with hundreds or thousands of categories following a long-tail distribution (as in ImageNet-scale recognition), the minority class problem is not binary but power-law: a small number of categories have millions of examples while thousands of tail categories have tens or hundreds. Approaches developed for binary imbalance do not trivially extend to this setting, motivating a distinct literature on long-tail recognition centred on logit adjustment, decoupled training, and balanced sampling strategies that maintain head-class performance while improving tail-class recall.</p>
+<p>A closely related but distinct problem is dataset shift under class imbalance — the condition where the class ratio in deployment differs from that in training. A model trained on a 1:10 imbalanced dataset and deployed in a population with 1:100 imbalance will have a prior miscalibrated by an order of magnitude, generating excessive false positives at any fixed threshold. Calibration methods — Platt scaling, isotonic regression, temperature scaling — can correct for this but require knowing the deployment prior, which is frequently unknown in practice. This interaction between <a href="../pages/Concept-Drift" class="internal alias" data-slug="pages/Concept-Drift">Concept Drift</a> and class imbalance is a significant practical challenge in domains like fraud detection where fraud rates vary seasonally and across deployment contexts.</p>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Data-Level Remediation Strategies</strong></p>
+<ul>
+<li><em>Random Oversampling</em>: Duplicates minority class examples with replacement until the desired class ratio is achieved. Simple and computationally cheap, but amplifies specific minority examples and can cause severe overfitting to those instances.</li>
+<li><em>SMOTE (Synthetic Minority Over-sampling Technique)</em>: For each minority example, selects k nearest neighbours in feature space and generates a synthetic example at a random point along the line segment connecting the original example to a randomly chosen neighbour. Generates novel minority examples in the convex hull of existing minority instances rather than exact duplicates. The original SMOTE is extended by dozens of variants addressing specific failure modes.</li>
+<li><em>Borderline-SMOTE</em> (Han et al., 2005): Restricts synthetic generation to minority examples near the decision boundary — those with more majority neighbours than minority neighbours — where classifier confusion is concentrated. More targeted than base SMOTE.</li>
+<li><em>ADASYN (Adaptive Synthetic Sampling)</em> (He et al., 2008): Generates proportionally more synthetic examples for minority instances that are harder to classify, using the local density ratio as an adaptivity weight. Focuses generation effort where the model struggles most.</li>
+<li><em>LyCORIS (LoHa, LoKr, DyLoRA) analogy</em>: Research in 2024–2025 has extended the SMOTE family with cluster-prior approaches: MK-SMOTE clusters minority samples before interpolation to avoid generating synthetic examples in noisy inter-class regions; GK-SMOTE uses Gaussian KDE-based density estimation to sample synthetic examples from high-density minority regions.</li>
+<li><em>Random Undersampling</em>: Randomly removes majority class examples. Cheap and fast but discards potentially informative majority examples, reducing model performance on the majority class.</li>
+<li><em>Tomek Links</em>: Identifies pairs of examples from different classes that are each other’s nearest neighbours (the closest majority example to a minority example, and vice versa), then removes the majority member. Cleans the boundary rather than rebalancing globally.</li>
+<li><em>Edited Nearest Neighbour (ENN)</em>: Removes majority class examples whose class label disagrees with the majority vote of their k-nearest neighbours. A noise-reduction filter that clarifies class boundaries.</li>
+<li><em>SMOTEENN / SMOTETomek</em>: Hybrid pipelines combining SMOTE oversampling with ENN or Tomek Links cleaning to reduce noise introduced by synthetic generation.</li>
+</ul>
+<p><strong>Algorithm-Level Remediation Strategies</strong></p>
+<ul>
+<li><em>Class-Weighted Loss</em>: Scales the loss contribution of minority class examples by the inverse of their frequency, effectively up-weighting minority errors. Directly supported in <code>sklearn</code>, PyTorch, and TensorFlow via <code>class_weight</code> parameters. The simplest algorithm-level intervention.</li>
+<li><em>Cost-Sensitive Learning</em>: Generalises class weighting by specifying a cost matrix C[i,j] representing the penalty for predicting class j when the true class is i. False negatives on rare medical diagnoses or fraud events carry higher C entries than false positives, guiding the classifier towards higher recall at the expense of precision.</li>
+<li><em>Focal Loss</em> (Lin et al., 2017): Modifies binary cross-entropy as FL(p_t) = -(1 - p_t)^gamma * log(p_t) where p_t is the model’s probability for the correct class and gamma is a focusing parameter (typically 2). Down-weights well-classified easy examples and focuses training on hard, misclassified examples — which in imbalanced datasets tend to be minority class instances. Widely used in object detection (RetinaNet) and increasingly in tabular classification.</li>
+<li><em>Distribution-Aware Margin Loss / Balanced Softmax</em>: Adjusts the decision margin proportionally to class frequency, compensating for the tendency of softmax classifiers to compress logit differences for rare classes. Effective for long-tail multi-class problems.</li>
+</ul>
+<p><strong>Ensemble Strategies</strong></p>
+<ul>
+<li><em>BalancedBaggingClassifier</em>: Trains each base estimator on a balanced bootstrap sample drawn with undersampling of the majority class. Reduces overfitting compared to pure oversampling whilst exploiting the variance-reduction properties of bagging.</li>
+<li><em>EasyEnsemble</em> (Liu et al., 2009): Generates multiple subsets of the majority class, each combined with all minority examples. Trains an AdaBoost ensemble on each subset and combines predictions. Maintains diversity through varied majority subsets.</li>
+<li><em>SMOTEBoost</em> (Chawla et al., 2003): Interleaves SMOTE oversampling with each boosting iteration, generating synthetic minority examples at each round proportional to the current misclassification distribution. Focuses synthetic generation on the regions where the boosted model currently struggles.</li>
+<li><em>RUSBoost (Random Under-Sampling Boost)</em>: Undersamples the majority class at each boosting iteration, reducing computational overhead relative to SMOTEBoost while achieving similar minority class recall improvements.</li>
+<li><em>Cost-Sensitive AdaBoost</em>: Incorporates a cost matrix into the AdaBoost weight update step, increasing the weight of costly misclassifications (minority false negatives) more aggressively than standard boosting.</li>
+</ul>
+<p><strong>Evaluation Framework</strong></p>
+<p>The correct evaluation of classifiers trained under class imbalance requires departing from accuracy:</p>
+<ul>
+<li><em>Precision-Recall Curve and AUPRC</em>: The most informative single-number summary for imbalanced binary classification. Plots precision against recall as the classification threshold varies. AUPRC is invariant to majority class size in a way that AUROC is not.</li>
+<li><em>F1 Score and Fbeta Score</em>: Harmonic mean of precision and recall (F1) or weighted harmonic mean (Fbeta with beta > 1 emphasising recall). Per-class F1 scores in multi-class settings reveal minority class performance independently of majority class accuracy.</li>
+<li><em>AUROC (Area Under the ROC Curve)</em>: Plots true positive rate against false positive rate. Less sensitive to imbalance than accuracy but can be misleadingly optimistic under extreme imbalance because the large majority class dominates the false positive rate denominator.</li>
+<li><em>Matthews Correlation Coefficient (MCC)</em>: A single metric that accounts for all four confusion matrix cells and is considered one of the most reliable single metrics for imbalanced binary classification.</li>
+<li><em>Stratified K-Fold Cross-Validation</em>: Ensures that each fold preserves the original class ratio, preventing folds with no minority examples that would produce misleading evaluation results.</li>
+</ul>
+<h2 id="formal-procedure-smote-algorithm">Formal Procedure: SMOTE Algorithm<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-procedure-smote-algorithm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The SMOTE algorithm for a minority class S_min with |S_min| = N:</p>
+<p><strong>Inputs</strong></p>
+<ul>
+<li>S_min: the minority class training set</li>
+<li>k: number of nearest neighbours to consider (default: 5)</li>
+<li>T: the oversampling percentage (e.g., T=200 means generate 2N new examples)</li>
+</ul>
+<p><strong>Step 1 – Nearest Neighbour Computation</strong></p>
+<ul>
+<li>For each example x_i in S_min:
+<ul>
+<li>Compute k nearest neighbours of x_i within S_min (Euclidean distance in feature space)</li>
+<li>Store as knn[i] = {x_{i1}, x_{i2}, …, x_{ik}}</li>
+</ul>
+</li>
+</ul>
+<p><strong>Step 2 – Synthetic Sample Generation</strong></p>
+<ul>
+<li>For each x_i and each required synthetic sample:
+<ul>
+<li>Select a random neighbour x_{nn} from knn[i]</li>
+<li>Generate: x_new = x_i + lambda * (x_{nn} - x_i), where lambda ~ Uniform(0,1)</li>
+<li>x_new lies on the line segment between x_i and x_{nn} in feature space</li>
+<li>For categorical features: randomly copy from either x_i or x_{nn} (not interpolated)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Step 3 – Dataset Augmentation</strong></p>
+<ul>
+<li>Add all generated x_new to S_min</li>
+<li>Return augmented S_min union S_maj for classifier training</li>
+</ul>
+<p><strong>Critical Implementation Notes</strong></p>
+<ul>
+<li>Apply SMOTE only to training data; never to validation or test sets (data leakage risk)</li>
+<li>Apply SMOTE after train/test split, not before, to prevent minority examples from test set influencing synthetic generation in training set</li>
+<li>Use stratified k-fold when evaluating SMOTE-augmented classifiers to preserve fold class ratios</li>
+<li>For mixed (numerical + categorical) features, use SMOTENC variant which handles categorical feature interpolation</li>
+<li>Consider cleaning steps (ENN, Tomek Links) after SMOTE to remove noisy synthetic examples near the majority class boundary</li>
+</ul>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Fraud Detection and Financial Crime</strong>: Transaction fraud, insurance claim fraud, and credit card abuse represent extreme imbalance scenarios — legitimate transactions outnumber fraudulent ones at ratios commonly between 500:1 and 10,000:1. Financial institutions deploy cost-sensitive classifiers and SMOTE pipelines to achieve the high recall required to catch most fraud while controlling false positive rates that would block legitimate transactions and generate customer complaints. Gradient boosting methods (XGBoost, LightGBM, CatBoost) with class weighting are dominant in production fraud detection.</p>
+<ul>
+<li>Key challenge: non-stationary fraud patterns require continuous model retraining as fraudsters adapt</li>
+<li>Imbalance ratio: typically 1:500 to 1:10,000 in credit card fraud datasets</li>
+<li>Dominant evaluation metric: AUPRC and F1 at operating threshold calibrated to business cost matrix</li>
+<li>Common approaches: XGBoost + scale_pos_weight, LightGBM + is_unbalance=True, deep neural networks + focal loss</li>
+</ul>
+<p><strong>Medical Diagnosis and Clinical Screening</strong>: Disease diagnosis from clinical data — whether tabular lab results, imaging features, or genomic markers — typically involves rare positive cases in screening populations.</p>
+<ul>
+<li>A 1% disease prevalence means 99:1 imbalance; early-stage cancer screening can reach 1:1000 or beyond</li>
+<li>Cost asymmetry is asymmetric: missed diagnosis (false negative) is potentially fatal; false alarm results in unnecessary but survivable follow-up</li>
+<li>Cost-sensitive AdaBoost achieves strong AUC in medical tabular data applications</li>
+<li>Multimodal fusion (CT, MRI, PET) enriches minority class representations for rare condition detection</li>
+<li>NeurIPS 2024 featured EPIC, a prompting approach for imbalanced-class data augmentation in medical NLP contexts</li>
+<li>PubMed 41902166 (2025) surveys strategies for multi-sensor medical imaging under class imbalance</li>
+<li>UK regulatory context: MHRA software-as-medical-device submissions require documentation of training data imbalance handling</li>
+</ul>
+<p><strong>Network Intrusion and Cybersecurity</strong>: Intrusion detection systems classify network packets or host events as normal or malicious.</p>
+<ul>
+<li>Attack events are rare relative to benign traffic, typically 0.01–1% of network flows</li>
+<li>Novel attack signatures may fall outside the minority class manifold sampled by SMOTE generation</li>
+<li>Streaming and online learning settings add temporal complexity: minority class statistics shift as attack patterns evolve (<a href="../pages/Concept-Drift" class="internal alias" data-slug="pages/Concept-Drift">Concept Drift</a>)</li>
+<li>Graph neural network approaches model network topology; graph-specific SMOTE variants (IGL-Bench) apply</li>
+<li>Evaluation requires per-attack-type recall breakdown, not aggregate minority recall</li>
+</ul>
+<p><strong>Manufacturing Defect and Predictive Maintenance</strong>: Quality control in manufacturing produces predominantly passing units, with failure events that are rare but critical.</p>
+<ul>
+<li>Defect rates in automotive and electronics manufacturing typically range 0.1–2% of produced units</li>
+<li>High recall requirement: false negatives (missed defects) generate costly recalls and safety incidents</li>
+<li>Time series <a href="../pages/Anomaly-Detection" class="internal alias" data-slug="pages/Anomaly-Detection">Anomaly Detection</a> from sensor streams (vibration, temperature, current) — autoencoders and LSTM density estimators</li>
+<li><a href="../pages/Predictive-Maintenance" class="internal alias" data-slug="pages/Predictive-Maintenance">Predictive Maintenance</a> models for industrial equipment operate at 1:100 to 1:10,000 imbalance</li>
+</ul>
+<p><strong>Churn, Default, and Rare Event Prediction</strong>: Customer churn modelling, loan default prediction, and employee attrition prediction.</p>
+<ul>
+<li>Moderate imbalance (5–30% positive rate) where standard cross-entropy may still underperform</li>
+<li>Research in 2025 (Nature Scientific Reports): SMOTE + ensemble methods improve churn AUC 8–15% over baselines</li>
+<li>Threshold calibration is critical: the optimal classification threshold depends on the ratio of revenue-at-risk from churn to cost-to-retain</li>
+<li>Feature engineering (recency, frequency, monetary value — RFM) is particularly impactful for minority class representation</li>
+</ul>
+<p><strong>Long-Tail Visual Recognition</strong>: Large-scale image classification with power-law category frequency distribution.</p>
+<ul>
+<li>ImageNet-LT, Places-LT, iNaturalist benchmark datasets for this setting</li>
+<li>Head categories (thousands of examples) vs tail categories (tens of examples) in a single dataset</li>
+<li>Approaches: balanced softmax loss, logit adjustment, decoupled training (feature extraction then balanced fine-tuning)</li>
+<li>Foundation model pre-training significantly reduces tail-class difficulty by providing rich representations before fine-tuning</li>
+</ul>
+<p><strong>Clinical NLP and Medical Text Classification</strong>: Electronic health record coding, adverse event detection, rare disease mention extraction.</p>
+<ul>
+<li>Disease-mention frequency in clinical notes follows extreme power-law distribution</li>
+<li>Rare disease NLP: 1:1000 to 1:10,000 positive mention rates in unannotated clinical corpora</li>
+<li>LLM-based synthetic data augmentation generates realistic clinical notes for minority conditions without patient privacy risk</li>
+<li>Domain-adapted BERT models (BioBERT, ClinicalBERT) with class-weighted fine-tuning are dominant approaches</li>
+</ul>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Imbalance Ratio (IR)</strong>: N_majority / N_minority. The primary quantitative descriptor of imbalance severity.
+<ul>
+<li>IR = 1: perfectly balanced</li>
+<li>IR in [1.5, 4]: mild imbalance</li>
+<li>IR in [4, 9]: moderate imbalance</li>
+<li>IR in [9, 100]: severe imbalance</li>
+<li>IR > 100: extreme imbalance (common in fraud detection, rare disease screening)</li>
+</ul>
+</li>
+<li><strong>Minority Class</strong>: The class with fewer training examples; typically the class of interest in rare-event prediction (fraud, disease, fault, intrusion).</li>
+<li><strong>Majority Class</strong>: The class with more training examples; often the “normal” or “negative” class in the detection framing.</li>
+<li><strong>SMOTE (Synthetic Minority Over-sampling Technique)</strong>: The foundational oversampling algorithm generating synthetic minority examples by interpolating in feature space between minority nearest neighbours.</li>
+<li><strong>AUPRC (Area Under the Precision-Recall Curve)</strong>: The recommended primary evaluation metric for highly imbalanced binary classification.
+<ul>
+<li>Preferred over AUROC because it is sensitive to minority class performance even under extreme imbalance</li>
+<li>AUROC can be misleadingly high under extreme imbalance because the large majority class dominates the FPR denominator</li>
+</ul>
+</li>
+<li><strong>Cost Matrix</strong>: A square matrix C[i,j] specifying the penalty for predicting class j when the true class is i.
+<ul>
+<li>Enables domain-specific asymmetric cost encoding</li>
+<li>C[1,0] (cost of false negative) >> C[0,1] (cost of false positive) in most rare-event applications</li>
+</ul>
+</li>
+<li><strong>Focal Loss</strong>: FL(p_t) = -(1 - p_t)^gamma * log(p_t). Dynamically down-weights easy, well-classified examples (typically majority class), focusing gradient updates on hard, misclassified examples. gamma=0 reduces to cross-entropy; gamma=2 is the standard setting for imbalanced object detection.</li>
+<li><strong>Class Weight</strong>: A scalar multiplier applied to the loss contribution of each class, proportional to the inverse of class frequency. The simplest algorithm-level imbalance remediation, natively supported in most ML frameworks via <code>class_weight</code> parameter.</li>
+<li><strong>Stratified Cross-Validation</strong>: K-fold cross-validation where each fold preserves the original class ratio, preventing folds with no minority examples from distorting evaluation results.</li>
+<li><strong>Zero Rule Baseline</strong>: A trivial classifier that always predicts the majority class. Achieves accuracy equal to the majority class prior. Any useful classifier must exceed its minority class recall beyond this baseline.</li>
+<li><strong>Matthews Correlation Coefficient (MCC)</strong>: MCC = (TP<em>TN - FP</em>FN) / sqrt((TP+FP)(TP+FN)(TN+FP)(TN+FN)). A single evaluation metric accounting for all four confusion matrix cells; considered one of the most reliable metrics for binary imbalanced classification.</li>
+<li><strong>Tomek Links</strong>: A pair of examples (x_i, x_j) from different classes where each is the other’s nearest neighbour. Removing the majority member from Tomek Links cleans the decision boundary without altering the distribution.</li>
+<li><strong>ADASYN (Adaptive Synthetic Sampling)</strong>: Generates proportionally more synthetic examples for minority instances that are harder to classify, using local density ratio as an adaptivity weight.</li>
+<li><strong>SMOTEBoost</strong>: Hybrid algorithm interleaving SMOTE generation with each AdaBoost boosting iteration, focusing synthetic generation on regions where the current ensemble struggles.</li>
+</ul>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Class imbalance research has a well-documented lineage originating in the late 1990s and accelerating through the 2000s with SMOTE and its extensions. The foundational papers are:</p>
+<p>Kubat and Matwin (1997) at ICML introduced the problem in the context of satellite image <a href="../pages/Classification" class="internal" data-slug="pages/Classification">Classification</a>. Chawla et al. (2002) published SMOTE in JAIR, which remains among the most cited <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> papers over two decades later. Han et al. (2005) introduced Borderline-SMOTE at the Advances in Intelligent Computing conference. He et al. (2008) proposed ADASYN at IJCNN. Chawla et al. (2003) extended SMOTE into <a href="../pages/Ensemble-Methods" class="internal alias" data-slug="pages/Ensemble-Methods">Ensemble Methods</a> with SMOTEBoost at PKDD. Liu et al. (2009) introduced EasyEnsemble and BalanceCascade.</p>
+<p>The review literature consolidating these developments includes: He and Garcia (2009) “Learning from Imbalanced Data” in IEEE TKDE, which remains the standard taxonomy reference; Fernández et al. (2018) “SMOTE for Learning from Imbalanced Data: Progress and Challenges” in JAIR; Branco et al. (2016) survey in ACM Computing Surveys. The monograph Fernández et al. (2018) “Learning from Imbalanced Data Sets” (Springer) provides the most comprehensive treatment. Elkan (2001) “The Foundations of Cost-Sensitive Learning” at IJCAI formalised the theoretical basis for cost-sensitive classifiers. Davis and Goadrich (2006) “The Relationship Between Precision-Recall and ROC Curves” at ICML is the critical evaluation methodology contribution establishing AUPRC’s superiority under imbalance.</p>
+<p>Deep learning-specific contributions include Lin et al. (2017) “Focal Loss for Dense Object Detection” at ICCV (RetinaNet), which introduced focal loss and demonstrated its superiority over balanced sampling for object detection. Cui et al. (2019) proposed class-balanced loss weighted by effective sample numbers. Kang et al. (2020) introduced the decoupled training approach (feature learning then balanced <a href="../pages/Classification" class="internal" data-slug="pages/Classification">Classification</a> layer learning) for long-tail recognition. Menon et al. (2021) “Long-tail learning via logit adjustment” at ICLR formalised the theoretical basis for logit adjustment under long-tail distributions.</p>
+<p>Recent work at NeurIPS 2024 includes: “Revive: Re-weighting in Imbalanced Learning by Density Ratio Estimation” (NeurIPS 2024, poster 93181), which applies density ratio estimation to weight minority samples without synthetic generation; “EPIC: Effective Prompting for Imbalanced-Class Data” (NeurIPS 2024) applying prompt engineering for <a href="../pages/Data-Augmentation" class="internal alias" data-slug="pages/Data-Augmentation">Data Augmentation</a>. The 2025 comprehensive survey at arXiv (2502.08960) provides a consolidated view of state-of-the-art approaches across data, algorithm, and <a href="../pages/Ensemble-Methods" class="internal alias" data-slug="pages/Ensemble-Methods">Ensemble Methods</a> families. The arXiv 2601.04149 “A Theoretical and Empirical Taxonomy of Imbalance in Binary Classification” (2025) provides rigorous formal grounding for characterising different imbalance scenarios.</p>
+<p>The <code>imbalanced-learn</code> Python library (Lemaître et al., 2017) standardised the implementations of SMOTE, ADASYN, and ensemble methods for scikit-learn users, dramatically lowering the barrier to practitioner adoption and establishing a reproducible benchmark baseline. The library’s versioned API (current version 0.14.x) provides SMOTE, BorderlineSMOTE, ADASYN, SVMSMOTE, KMeansSMOTE, RandomUnderSampler, TomekLinks, ENN, BalancedBaggingClassifier, EasyEnsemble, and RUSBoostClassifier as sklearn-compatible estimators. IGL-Bench (NeurIPS 2022) introduced the first comprehensive benchmark for imbalanced graph learning, integrating 16 diverse datasets and 24 algorithms including graph-specific SMOTE variants.</p>
+<h2 id="comparative-analysis-of-remediation-strategies">Comparative Analysis of Remediation Strategies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comparative-analysis-of-remediation-strategies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The choice between remediation strategies depends on dataset characteristics, computational budget, and deployment constraints:</p>
+<p><strong>Data-Level Strategies: Pros and Cons</strong></p>
+<ul>
+<li><em>Random Oversampling</em>
+<ul>
+<li>Pro: trivially simple, zero hyperparameter tuning</li>
+<li>Con: amplifies specific minority examples, high overfitting risk, model memorises exact minority examples</li>
+<li>Use when: dataset is very small and no minority feature space knowledge is available</li>
+</ul>
+</li>
+<li><em>SMOTE</em>
+<ul>
+<li>Pro: generates novel examples in minority convex hull, widely validated, library support</li>
+<li>Con: may generate synthetic examples in majority class regions (noise), assumes continuous features</li>
+<li>Use when: moderate imbalance (IR &lt; 100), numerical features, sufficient minority examples (N_min > k)</li>
+</ul>
+</li>
+<li><em>Borderline-SMOTE / ADASYN</em>
+<ul>
+<li>Pro: focuses generation on difficult boundary examples, adaptive density weighting</li>
+<li>Con: more sensitive to hyperparameter choices, higher computational cost</li>
+<li>Use when: significant class overlap, desire to focus on boundary rather than interior minority generation</li>
+</ul>
+</li>
+<li><em>Random Undersampling</em>
+<ul>
+<li>Pro: reduces training time, may improve generalisation on some datasets</li>
+<li>Con: discards potentially informative majority examples, information loss</li>
+<li>Use when: training dataset is very large and majority class is over-represented relative to discriminative complexity</li>
+</ul>
+</li>
+<li><em>SMOTEENN / SMOTETomek (Hybrid)</em>
+<ul>
+<li>Pro: combines oversampling with cleaning to reduce noise</li>
+<li>Con: more complex pipeline, additional hyperparameters</li>
+<li>Use when: noisy class boundaries after SMOTE generation are a concern</li>
+</ul>
+</li>
+</ul>
+<p><strong>Algorithm-Level Strategies: Pros and Cons</strong></p>
+<ul>
+<li><em>Class-Weighted Loss</em>
+<ul>
+<li>Pro: simplest intervention, no training data modification, one hyperparameter (weight ratio)</li>
+<li>Con: static weights may not optimally address heterogeneous minority class difficulty</li>
+<li>Use when: training data cannot be modified, deep learning setting, quick baseline experiment</li>
+</ul>
+</li>
+<li><em>Focal Loss</em>
+<ul>
+<li>Pro: dynamic re-weighting based on current model confidence, state-of-the-art in object detection</li>
+<li>Con: additional hyperparameter (gamma), less interpretable than class weights</li>
+<li>Use when: deep learning, image classification, detection tasks with easy/hard example heterogeneity</li>
+</ul>
+</li>
+<li><em>Cost-Sensitive Learning</em>
+<ul>
+<li>Pro: directly encodes domain cost asymmetry, principled decision theory foundation</li>
+<li>Con: requires explicit cost matrix specification, which may be unavailable</li>
+<li>Use when: domain cost matrix is known (e.g., fraud cost >> false-alarm cost)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ensemble Strategies: Pros and Cons</strong></p>
+<ul>
+<li><em>BalancedBaggingClassifier / EasyEnsemble</em>
+<ul>
+<li>Pro: robust, theoretically grounded in bagging variance reduction, state-of-the-art on tabular data</li>
+<li>Con: higher computational cost than single classifier, model interpretability reduced</li>
+<li>Use when: tabular data, gradient boosting baseline already exhausted</li>
+</ul>
+</li>
+<li><em>SMOTEBoost / RUSBoost</em>
+<ul>
+<li>Pro: integrates oversampling with boosting, per-round adaptive focus</li>
+<li>Con: increased training time, hyperparameter interaction between boosting rounds and oversampling ratio</li>
+<li>Use when: boosting is already the base algorithm of choice</li>
+</ul>
+</li>
+</ul>
+<h2 id="benchmark-datasets-for-imbalanced-learning">Benchmark Datasets for Imbalanced Learning<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-datasets-for-imbalanced-learning" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Established benchmark collections used in the imbalanced learning literature:</p>
+<p><strong>KEEL Imbalanced Datasets Repository</strong></p>
+<ul>
+<li>66+ datasets covering binary and multi-class imbalance</li>
+<li>Imbalance ratios from 1.5:1 to 585:1</li>
+<li>Domains: medical, ecology, finance, engineering</li>
+<li>Widely used in SMOTE variant comparison studies</li>
+</ul>
+<p><strong>OpenML-CC18 Imbalanced Subset</strong></p>
+<ul>
+<li>Subset of the OpenML curated benchmark with imbalanced datasets</li>
+<li>Standardised splits and evaluation protocols for reproducibility</li>
+</ul>
+<p><strong>Credit Card Fraud Detection (Kaggle)</strong></p>
+<ul>
+<li>284,807 transactions, 492 fraud (imbalance ratio 577:1)</li>
+<li>Anonymised PCA features, the most widely cited tabular fraud benchmark</li>
+<li>Published by Pozzolo et al. (ULB Machine Learning Group)</li>
+</ul>
+<p><strong>CICIDS 2017 / 2018 (Network Intrusion)</strong></p>
+<ul>
+<li>Network traffic captures with benign and attack flows</li>
+<li>Severe class imbalance for most attack categories</li>
+<li>Standard benchmark for intrusion detection under imbalance</li>
+</ul>
+<p><strong>ImageNet-LT / Places-LT / iNaturalist 2018</strong></p>
+<ul>
+<li>Long-tail benchmarks for visual recognition</li>
+<li>ImageNet-LT: 1,000 classes, 115,846 images, power-law frequency distribution</li>
+<li>iNaturalist 2018: 8,142 species, extreme long-tail distribution</li>
+</ul>
+<p><strong>MIMIC-III / MIMIC-IV (Clinical)</strong></p>
+<ul>
+<li>Electronic health record data with rare clinical event outcomes (sepsis, mortality)</li>
+<li>De-identified, available through PhysioNet with credentialed access</li>
+<li>Imbalance ratios vary by outcome: in-hospital mortality ~10%, sepsis onset ~5%, rare diagnoses &lt; 0.1%</li>
+</ul>
+<p><strong>IGL-Bench (Graph Imbalance)</strong></p>
+<ul>
+<li>NeurIPS 2022: first comprehensive graph imbalance benchmark</li>
+<li>16 diverse graph datasets, 24 state-of-the-art algorithms</li>
+<li>Covers node classification, link prediction under graph imbalance</li>
+</ul>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>As of mid-2026, class imbalance remains an active research area despite over two decades of published work, driven by the expansion of machine learning into increasingly extreme-imbalance domains and the emergence of foundation models that change the remediation calculus.</p>
+<p><strong>SMOTE Family Extensions (2024–2025)</strong>: Published work continues to extend the SMOTE family. MK-SMOTE and M-SMOTE (ResearchGate, 2025) cluster minority samples before interpolation to reduce boundary noise. GK-SMOTE (arXiv 2509.11163) uses hyperparameter-free Gaussian KDE sampling. An improved SMOTE at Nature Scientific Reports (2025, DOI: 10.1038/s41598-025-09506-w) expands the sample generation space by using a broader neighbourhood definition. SMOTE vs. SMOTEENN comparative studies have quantified the conditions under which cleaning pipelines add value over pure oversampling.</p>
+<p><strong>Foundation Models and Transfer Learning</strong>: Pre-trained vision and language foundation models have partially displaced traditional imbalance remediation for tasks where the minority class is semantically well-represented in pre-training corpora. <a href="../pages/Transfer-Learning" class="internal alias" data-slug="pages/Transfer-Learning">Transfer Learning</a> from foundation model features provides richer minority class representations than SMOTE-generated interpolations in high-dimensional image and text domains. However, fine-tuning foundation models on highly imbalanced downstream tasks still benefits from class weighting and focal loss.</p>
+<p><strong>Quantum-Inspired Contrastive Learning</strong>: Emerging work (arXiv 2506.13987, June 2026) proposes Quantum-Informed Contrastive Learning with Dynamic Mixup Augmentation for class-imbalanced expert systems, representing the frontier of theoretical exploration in the field.</p>
+<p><strong>Regulatory and Fairness Connections</strong>: Research has connected class imbalance to algorithmic fairness: if a protected group is underrepresented in training data, it constitutes a minority class problem, and standard remediation techniques may improve both minority class recall and fairness metrics simultaneously. This connection has policy significance under the EU AI Act’s prohibited bias provisions and the UK Equality Act’s protected characteristics in AI decision systems. The bridging survey by Towards A Holistic View of Bias (arXiv 2207.06084) formalises this connection.</p>
+<p><strong>Practitioner Tooling</strong>: <code>imbalanced-learn</code> (version 0.14) remains the standard Python library, maintained within the scikit-learn ecosystem. XGBoost and LightGBM’s native <code>scale_pos_weight</code> and <code>class_weight</code> parameters handle the common case without external libraries. PyTorch’s <code>WeightedRandomSampler</code> and class-weighted <code>CrossEntropyLoss</code> serve deep learning practitioners. AutoML systems including AutoSklearn and H2O AutoML incorporate imbalance detection and automated remediation selection as standard pipeline components.</p>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>UK academic groups have made contributions to the class imbalance literature: The University of Edinburgh’s Machine Learning group has published on evaluation methodology for imbalanced learning; groups at UCL (Centre for Artificial Intelligence) and the University of Manchester (Department of Computer Science) have contributed to cost-sensitive learning and ensemble methods for healthcare applications. The Alan Turing Institute has published work on fair machine learning that intersects class imbalance through the shared lens of underrepresentation.</p>
+<p>Applied UK research in class imbalance spans NHS clinical decision support — where rare disease detection from electronic health records encounters extreme imbalance — and UK financial services fraud detection. UK banks and payment processors (Barclays, NatWest, Lloyds) deploy ensemble-based imbalanced classifiers in production fraud detection pipelines, with internal research teams publishing occasionally on domain-specific adaptations. The UK government’s Centre for Data Ethics and Innovation (CDEI) has highlighted the connection between data imbalance and discriminatory AI outcomes in its guidance on AI bias.</p>
+<p>Northern English industrial contexts — manufacturing defect detection at Siemens Healthineers’ Lincoln facility, automotive quality control at Jaguar Land Rover (Coventry), and predictive maintenance at power generation facilities — represent high-value deployment domains where class imbalance between normal operation and fault events is a core engineering challenge. Leeds and Sheffield universities have engaged in industrial machine learning partnerships relevant to these domains, and Newcastle University’s Digital Economy group has contributed to imbalanced time-series <a href="../pages/Anomaly-Detection" class="internal alias" data-slug="pages/Anomaly-Detection">Anomaly Detection</a> for industrial IoT applications. The University of Manchester’s Department of Computer Science maintains active research in <a href="../pages/Ensemble-Methods" class="internal alias" data-slug="pages/Ensemble-Methods">Ensemble Methods</a> that has relevance to imbalanced learning, and the Manchester-based National Institute for Data Science and Artificial Intelligence (NIDSA) has published guidance on responsible data practices that intersects with imbalanced dataset curation.</p>
+<p>The NHS Digital programmes — including the National Pathology Imaging Co-operative (NPIC) based in Leeds and the AI diagnostics work of NHS England’s Digital Transformation Directorate — encounter severe class imbalance challenges in clinical imaging: cancer screening from mammography, diabetic retinopathy detection from retinal photographs, and sepsis prediction from electronic health records all involve minority class rates well below 5%. UK NICE guidance on AI-derived medical devices increasingly requires explicit documentation of training data imbalance and its handling, connecting regulatory compliance to the technical methodology of imbalanced learning. MHRA’s review processes for AI medical devices similarly include evaluation of performance stratified by class and consideration of imbalance in training data as part of software-as-a-medical-device regulatory submissions.</p>
+<h2 id="practical-diagnostic-workflow-for-imbalanced-classification">Practical Diagnostic Workflow for Imbalanced Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#practical-diagnostic-workflow-for-imbalanced-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>When encountering a classification problem with suspected class imbalance, practitioners should follow this diagnostic sequence:</p>
+<p><strong>Step 1 – Measure Imbalance</strong></p>
+<ul>
+<li>Compute imbalance ratio: IR = N_majority / N_minority</li>
+<li>Compute class frequency distribution across all classes (for multi-class problems)</li>
+<li>Plot class frequency histogram; identify whether distribution is binary, multi-class, or long-tail</li>
+<li>Determine if imbalance is natural (domain prevalence) or artificial (sampling bias in data collection)</li>
+</ul>
+<p><strong>Step 2 – Establish Baseline with Correct Metrics</strong></p>
+<ul>
+<li>Train a default classifier (logistic regression or random forest with default settings)</li>
+<li>Evaluate with accuracy AND AUPRC AND confusion matrix AND per-class F1</li>
+<li>Compare accuracy to the zero-rule baseline (majority class frequency = zero-rule accuracy)</li>
+<li>Determine whether the gap between the model’s minority class recall and domain requirements is worth addressing</li>
+</ul>
+<p><strong>Step 3 – Choose Remediation Strategy</strong></p>
+<ul>
+<li>If IR &lt; 10 and features are well-engineered: try class weighting first (simplest intervention)</li>
+<li>If IR in [10, 100] and tabular data: SMOTE or SMOTETomek + class weighting as standard pipeline</li>
+<li>If IR > 100 and tabular: EasyEnsemble or BalancedBaggingClassifier</li>
+<li>If deep learning: focal loss (gamma=2) or class-weighted cross-entropy</li>
+<li>If foundation model available: transfer learning + class-weighted fine-tuning (often outperforms SMOTE)</li>
+<li>If data collection is possible: <a href="../pages/Active-Learning" class="internal alias" data-slug="pages/Active-Learning">Active Learning</a> to selectively label the most informative minority examples</li>
+</ul>
+<p><strong>Step 4 – Tune and Evaluate</strong></p>
+<ul>
+<li>Use stratified k-fold cross-validation (minimum k=5) to preserve class ratios across folds</li>
+<li>Optimise AUPRC, not accuracy, as the primary metric</li>
+<li>Plot precision-recall curve across threshold range; identify operating threshold aligned with cost matrix</li>
+<li>Report per-class recall and precision in confusion matrix decomposition</li>
+<li>Validate on held-out test set drawn from the same imbalanced distribution as deployment</li>
+</ul>
+<p><strong>Step 5 – Monitor in Production</strong></p>
+<ul>
+<li>Track minority class recall and precision in production on a rolling window</li>
+<li>Alert on recall degradation indicating <a href="../pages/Concept-Drift" class="internal alias" data-slug="pages/Concept-Drift">Concept Drift</a> in minority class patterns</li>
+<li>Implement scheduled retraining with updated data to maintain calibration</li>
+</ul>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Self-Supervised and Contrastive Pre-Training</strong>: Foundation model pre-training on large unlabelled corpora increasingly renders the minority class representation problem tractable in domains where collecting more labelled minority examples is expensive but unlabelled data is abundant. Contrastive self-supervised methods that pull minority instances together in representation space before fine-tuning may partially supplant data augmentation approaches.</p>
+<p><strong>LLM-Based Data Augmentation</strong>: Large language models capable of generating realistic tabular data, clinical notes, and structured text can produce minority class synthetic examples with substantially higher semantic fidelity than interpolation-based SMOTE generation. This approach is already used in clinical NLP for rare condition documentation generation. Extending robust LLM generation to structured tabular domains is an active research direction.</p>
+<p><strong>Online and Streaming Imbalance</strong>: Real-world data streams are not stationary — class ratios shift over time (<a href="../pages/Concept-Drift" class="internal alias" data-slug="pages/Concept-Drift">Concept Drift</a>), and minority class statistics evolve with changing fraud patterns, disease epidemiology, and adversarial behaviour. Online learning formulations of imbalance remediation that adapt class weights and synthetic generation distributions continuously without batch retraining are a major open problem.</p>
+<p><strong>Graph and Relational Imbalance</strong>: Many real-world datasets have relational structure — social networks, knowledge graphs, molecular interaction networks — where nodes or edges of interest are rare. Graph neural network-specific SMOTE variants (GraphSMOTE, ImGAGN) are emerging, and IGL-Bench provides the first systematic benchmark. Extending the field’s understanding of imbalance from flat feature tables to relational structures is an important research frontier.</p>
+<p><strong>Benchmark Standardisation</strong>: The field lacks consistent benchmark datasets for comparing methods across domains. Existing collections (UCI imbalanced datasets, OpenML-CC18 subsets, KEEL repository) are dated and skewed toward tabular UCI-style data. Community-maintained living benchmarks spanning images, text, time series, and graph data are needed to support reproducible progress.</p>
+<p><strong>Regulatory Compliance</strong>: As AI regulation in the EU, UK, and US increasingly requires demonstrating performance equity across subgroups, the methodological toolkit of imbalanced learning is becoming a compliance tool rather than merely a performance optimisation. Practitioners will need to document imbalance remediation choices and their impact on subgroup performance as part of AI impact assessments.</p>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Kubat, M., &amp; Matwin, S. (1997). “Addressing the curse of imbalanced training sets: One-sided selection.” <em>ICML 1997</em>, pp. 179–186. Early systematic treatment of the problem.</li>
+<li>Chawla, N. V., Bowyer, K. W., Hall, L. O., &amp; Kegelmeyer, W. P. (2002). “SMOTE: Synthetic minority over-sampling technique.” <em>Journal of Artificial Intelligence Research</em>, 16, 321–357. Foundational SMOTE paper, among the most cited ML papers.</li>
+<li>Chawla, N. V., Lazarevic, A., Hall, L. O., &amp; Bowyer, K. W. (2003). “SMOTEBoost: Improving prediction of the minority class in boosting.” <em>PKDD 2003</em>, pp. 107–119. SMOTE within boosting framework.</li>
+<li>Han, H., Wang, W. Y., &amp; Mao, B. H. (2005). “Borderline-SMOTE: A new over-sampling method in imbalanced data sets learning.” <em>Advances in Intelligent Computing</em>, pp. 878–887. Boundary-focused oversampling.</li>
+<li>He, H., Bai, Y., Garcia, E. A., &amp; Li, S. (2008). “ADASYN: Adaptive synthetic sampling approach for imbalanced learning.” <em>IJCNN 2008</em>, pp. 1322–1328. Adaptive density-weighted oversampling.</li>
+<li>He, H., &amp; Garcia, E. A. (2009). “Learning from imbalanced data.” <em>IEEE Transactions on Knowledge and Data Engineering</em>, 21(9), 1263–1284. Standard survey and taxonomy reference.</li>
+<li>Liu, X. Y., Wu, J., &amp; Zhou, Z. H. (2009). “Exploratory undersampling for class-imbalance learning.” <em>IEEE Transactions on Systems, Man, and Cybernetics Part B</em>, 39(2), 539–550. EasyEnsemble and BalanceCascade.</li>
+<li>Lin, T. Y., Goyal, P., Girshick, R., He, K., &amp; Dollár, P. (2017). “Focal loss for dense object detection.” <em>ICCV 2017</em>, pp. 2980–2988. Focal loss — the seminal algorithm-level deep learning contribution.</li>
+<li>Lemaître, G., Nogueira, F., &amp; Aridas, C. K. (2017). “Imbalanced-learn: A Python toolbox to tackle the curse of imbalanced datasets in machine learning.” <em>Journal of Machine Learning Research</em>, 18(1), 559–563. The canonical Python library.</li>
+<li>Fernández, A., García, S., Galar, M., Prati, R. C., Krawczyk, B., &amp; Herrera, F. (2018). “Learning from Imbalanced Data Sets.” Springer. Comprehensive monograph.</li>
+<li>Fernández, A., Garcia, S., Herrera, F., &amp; Chawla, N. V. (2018). “SMOTE for learning from imbalanced data: Progress and challenges, marking the 15-year anniversary.” <em>Journal of Artificial Intelligence Research</em>, 61, 863–905. State-of-the-art SMOTE review.</li>
+<li>Cui, Y., Jia, M., Lin, T. Y., Song, Y., &amp; Belongie, S. (2019). “Class-balanced loss based on effective number of samples.” <em>CVPR 2019</em>, pp. 9268–9277. Loss weighting by effective sample count.</li>
+<li>Kang, B., Xie, S., Rohrbach, M., Yan, Z., Gordo, A., Feng, J., &amp; Kalantidis, Y. (2020). “Decoupling representation and classifier for long-tailed recognition.” <em>ICLR 2020</em>. Decoupled training for long-tail imbalance.</li>
+<li>Branco, P., Torgo, L., &amp; Ribeiro, R. P. (2016). “A survey of predictive modelling under imbalanced distributions.” <em>ACM Computing Surveys</em>, 49(2), 31. Broad survey of resampling and cost-sensitive approaches.</li>
+<li>Buda, M., Maki, A., &amp; Mazurowski, M. A. (2018). “A systematic study of the class imbalance problem in convolutional neural networks.” <em>Neural Networks</em>, 106, 249–259. CNN-specific imbalance analysis.</li>
+<li>Charte, F., Rivera, A. J., del Jesus, M. J., &amp; Herrera, F. (2015). “Addressing imbalance in multilabel classification: Measures and random resampling algorithms.” <em>Neurocomputing</em>, 163, 3–16. Multi-label extension of imbalance.</li>
+<li>Seiffert, C., Khoshgoftaar, T. M., Van Hulse, J., &amp; Napolitano, A. (2010). “RUSBoost: A hybrid approach to alleviating class imbalance.” <em>IEEE Transactions on Systems, Man, and Cybernetics Part A</em>, 40(1), 185–197. Random undersampling in boosting.</li>
+<li>Guo, C., Pleiss, G., Sun, Y., &amp; Weinberger, K. Q. (2017). “On calibration of modern neural networks.” <em>ICML 2017</em>, pp. 1321–1330. Calibration analysis relevant to threshold setting in imbalanced classifiers.</li>
+<li>Zhang, Y., Wei, H., Zou, J., &amp; Zhao, P. (2024). “A comprehensive survey on imbalanced data learning.” <em>arXiv 2502.08960</em>. 2025 comprehensive survey covering deep, ensemble, and data-level methods.</li>
+<li>Song, Y., et al. (2024). “Revive: Re-weighting in imbalanced learning by density ratio estimation.” <em>NeurIPS 2024</em> (poster 93181). Density ratio approach without synthetic generation.</li>
+<li>Hairani et al. (2024). “Addressing class imbalance of health data: A systematic literature review on modified SMOTE strategies.” <em>JOIV: International Journal on Informatics Visualization</em>. Healthcare-domain SMOTE survey.</li>
+<li>Nature Scientific Reports (2025). “Mitigating class imbalance in churn prediction with ensemble methods and SMOTE.” DOI: 10.1038/s41598-025-01031-0. Real-world churn application benchmark.</li>
+<li>Nature Scientific Reports (2025). “An improved SMOTE algorithm for enhanced imbalanced data classification by expanding sample generation space.” DOI: 10.1038/s41598-025-09506-w. New SMOTE variant.</li>
+<li>arXiv (2025). “A theoretical and empirical taxonomy of imbalance in binary classification.” arXiv 2601.04149. Formal taxonomy and theoretical grounding.</li>
+<li>arXiv (2026). “Quantum-informed contrastive learning with dynamic mixup augmentation for class-imbalanced expert systems.” arXiv 2506.13987. Frontier approach combining quantum-inspired methods with contrastive learning.</li>
+<li>Strategies for Class-Imbalanced Learning in Multi-Sensor Medical Imaging (2025). <em>PubMed 41902166</em>. Multimodal fusion for rare condition detection.</li>
+<li>Towards A Holistic View of Bias in Machine Learning: Bridging Algorithmic Fairness and Imbalanced Learning (2022). arXiv 2207.06084. Connections to AI fairness regulation.</li>
+<li>IGL-Bench (2022). “Biased, imbalanced, dynamic tabular datasets for ML.” <em>NeurIPS 2022 Datasets and Benchmarks</em>. First graph-imbalance benchmark.</li>
+</ol>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1029" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#algorithmic-fairness-relationships" data-for="algorithmic-fairness-relationships">Algorithmic Fairness Relationships</a></li><li class="depth-0"><a href="#formal-definition-and-mathematical-characterisation" data-for="formal-definition-and-mathematical-characterisation">Formal Definition and Mathematical Characterisation</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#formal-procedure-smote-algorithm" data-for="formal-procedure-smote-algorithm">Formal Procedure: SMOTE Algorithm</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#comparative-analysis-of-remediation-strategies" data-for="comparative-analysis-of-remediation-strategies">Comparative Analysis of Remediation Strategies</a></li><li class="depth-0"><a href="#benchmark-datasets-for-imbalanced-learning" data-for="benchmark-datasets-for-imbalanced-learning">Benchmark Datasets for Imbalanced Learning</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#practical-diagnostic-workflow-for-imbalanced-classification" data-for="practical-diagnostic-workflow-for-imbalanced-classification">Practical Diagnostic Workflow for Imbalanced Classification</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Classification-Threshold" class="internal">Classification Threshold</a></li><li><a href="../pages/Data-Preprocessing" class="internal">Data Preprocessing</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

@@ -14,6 +14,18 @@
     {
       "id": "urn:ngm:class:user-interface",
       "label": "User Interface"
+    },
+    {
+      "id": "urn:ngm:class:inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "id": "urn:ngm:class:user-interface-model",
+      "label": "User Interface Model"
+    },
+    {
+      "id": "urn:ngm:class:semantic-representation",
+      "label": "Semantic Representation"
     }
   ],
   "entityType": "Class",
@@ -36,6 +48,26 @@
       {
         "id": "urn:ngm:class:focus-management",
         "label": "Focus Management"
+      },
+      {
+        "id": "urn:ngm:class:accessible-name-computation",
+        "label": "Accessible Name Computation"
+      },
+      {
+        "id": "urn:ngm:class:alternative-text",
+        "label": "Alternative Text"
+      },
+      {
+        "id": "urn:ngm:class:live-region",
+        "label": "Live Region"
+      },
+      {
+        "id": "urn:ngm:class:accessible-description",
+        "label": "Accessible Description"
+      },
+      {
+        "id": "urn:ngm:class:role-name-state-value-tuple",
+        "label": "Role Name State Value Tuple"
       }
     ],
     "requires": [
@@ -50,6 +82,18 @@
       {
         "id": "urn:ngm:class:semantic-html",
         "label": "Semantic HTML"
+      },
+      {
+        "id": "urn:ngm:class:html-accessibility-api-mappings",
+        "label": "HTML Accessibility API Mappings"
+      },
+      {
+        "id": "urn:ngm:class:platform-accessibility-api",
+        "label": "Platform Accessibility API"
+      },
+      {
+        "id": "urn:ngm:class:accessible-name-computation",
+        "label": "Accessible Name Computation"
       }
     ],
     "enables": [
@@ -68,9 +112,58 @@
       {
         "id": "urn:ngm:class:autonomous-task-execution",
         "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:jaws-screen-reader",
+        "label": "JAWS Screen Reader"
+      },
+      {
+        "id": "urn:ngm:class:nvda-screen-reader",
+        "label": "NVDA Screen Reader"
+      },
+      {
+        "id": "urn:ngm:class:voiceover",
+        "label": "VoiceOver"
+      },
+      {
+        "id": "urn:ngm:class:keyboard-navigation",
+        "label": "Keyboard Navigation"
+      },
+      {
+        "id": "urn:ngm:class:voice-control",
+        "label": "Voice Control"
+      },
+      {
+        "id": "urn:ngm:class:automated-accessibility-testing",
+        "label": "Automated Accessibility Testing"
+      },
+      {
+        "id": "urn:ngm:class:switch-access",
+        "label": "Switch Access"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:document-object-model",
+        "label": "Document Object Model"
+      },
+      {
+        "id": "urn:ngm:class:wai-aria",
+        "label": "WAI-ARIA"
+      },
+      {
+        "id": "urn:ngm:class:chrome-devtools-protocol",
+        "label": "Chrome DevTools Protocol"
+      },
+      {
+        "id": "urn:ngm:class:semantic-html",
+        "label": "Semantic HTML"
+      },
+      {
+        "id": "urn:ngm:class:browser-rendering-engine",
+        "label": "Browser Rendering Engine"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:core-accessibility-api-mappings",
@@ -79,13 +172,117 @@
       {
         "id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG 2.2"
+      },
+      {
+        "id": "urn:ngm:class:windows-ui-automation",
+        "label": "Windows UI Automation"
+      },
+      {
+        "id": "urn:ngm:class:platform-accessibility-api",
+        "label": "Platform Accessibility API"
+      },
+      {
+        "id": "urn:ngm:class:msaa-iaccessible2",
+        "label": "MSAA/IAccessible2"
+      },
+      {
+        "id": "urn:ngm:class:atk-at-spi",
+        "label": "ATK AT-SPI"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:visual-render-tree",
+        "label": "Visual Render Tree"
+      },
+      {
+        "id": "urn:ngm:class:pixel-based-interaction",
+        "label": "Pixel-Based Interaction"
+      },
+      {
+        "id": "urn:ngm:class:screenshot-based-automation",
+        "label": "Screenshot-Based Automation"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:aria-role",
+        "label": "ARIA Role"
+      },
+      {
+        "id": "urn:ngm:class:aria-state",
+        "label": "ARIA State"
+      },
+      {
+        "id": "urn:ngm:class:accessible-name-computation",
+        "label": "Accessible Name Computation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-html",
+        "label": "Semantic HTML"
+      },
+      {
+        "id": "urn:ngm:class:alternative-text",
+        "label": "Alternative Text"
+      },
+      {
+        "id": "urn:ngm:class:focus-management",
+        "label": "Focus Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:web-accessibility-initiative",
+        "label": "Web Accessibility Initiative"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:wai-aria",
+        "label": "WAI-ARIA"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG 2.2"
+      },
+      {
+        "id": "urn:ngm:class:core-accessibility-api-mappings",
+        "label": "Core Accessibility API Mappings"
+      },
+      {
+        "id": "urn:ngm:class:web-accessibility-initiative",
+        "label": "Web Accessibility Initiative"
+      },
+      {
+        "id": "urn:ngm:class:html-accessibility-api-mappings",
+        "label": "HTML Accessibility API Mappings"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -99,6 +296,42 @@
       {
         "id": "urn:ngm:class:chrome-devtools-protocol",
         "label": "Chrome DevTools Protocol"
+      },
+      {
+        "id": "urn:ngm:class:webdriver-bidi",
+        "label": "WebDriver BiDi"
+      },
+      {
+        "id": "urn:ngm:class:playwright-mcp",
+        "label": "Playwright MCP"
+      },
+      {
+        "id": "urn:ngm:class:axe-core",
+        "label": "axe-core"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:web-agent",
+        "label": "Web Agent"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-audit-tool",
+        "label": "Accessibility Audit Tool"
+      },
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
       }
     ]
   },
@@ -109,9 +342,19 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:design-thinking",
+      "label": "Design Thinking",
+      "slug": "design-thinking"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation",
+      "slug": "knowledge-representation"
     }
   ],
   "inheritedRelations": {
@@ -171,16 +414,16 @@
         "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:co-design",
+        "label": "Co-Design"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:user-centred-design",
+        "label": "User Centred Design"
       }
     ],
     "enables": [
@@ -209,12 +452,12 @@
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Equity"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:inclusive-participation",
+        "label": "Inclusive Participation"
       }
     ],
     "dependsOn": [
@@ -231,6 +474,16 @@
         "label": "Operating System"
       }
     ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:closed-world-assumption",
+        "label": "Closed World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:autonomous-agent",
@@ -243,6 +496,22 @@
       {
         "id": "urn:ngm:class:command-line-interface",
         "label": "Command Line Interface"
+      },
+      {
+        "id": "urn:ngm:class:retrofitting",
+        "label": "Retrofitting"
+      },
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:sub-symbolic-ai",
+        "label": "Sub-Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -265,6 +534,18 @@
       {
         "id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -273,7 +554,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -283,6 +564,22 @@
       {
         "id": "urn:ngm:class:design-systems",
         "label": "Design System"
+      },
+      {
+        "id": "urn:ngm:class:widget-toolkit",
+        "label": "Widget Toolkit"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
       }
     ],
     "supports": [
@@ -299,8 +596,16 @@
         "label": "Localisation"
       },
       {
-        "id": "urn:ngm:class:multimodal-interaction",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "standardizedBy": [
@@ -309,8 +614,8 @@
         "label": "W3C Standards"
       },
       {
-        "id": "urn:ngm:class:wcag-2-2",
-        "label": "WCAG"
+        "id": "urn:ngm:class:european-accessibility-act",
+        "label": "European Accessibility Act"
       }
     ],
     "partOf": [
@@ -345,16 +650,16 @@
         "label": "Mental Model"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Technology Access Equity"
       }
     ]
   },

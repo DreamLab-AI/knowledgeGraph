@@ -8,7 +8,7 @@
   "definition": "Artificial Intelligence is a artificial intelligence concept and a type of owl:Thing. that enables Autonomous Systems, Decision Support. comprising Computer Vision, Deep Learning.",
   "subClassOf": [
     {
-      "id": "owl:Thing",
+      "id": "urn:ngm:class:thing",
       "label": "Thing"
     }
   ],
@@ -54,6 +54,10 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       }
     ],
     "enables": [
@@ -76,12 +80,33 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -190,6 +215,10 @@
     {
       "slug": "comfy-ui",
       "label": "ComfyUI"
+    },
+    {
+      "slug": "comparison-of-gpt4-and-gemini-ultra",
+      "label": "Comparison of GPT4 and Gemini Ultra"
     },
     {
       "slug": "computer-vision",
@@ -934,7 +963,7 @@
       "label": "Machine Learning Discipline"
     },
     {
-      "slug": "machine-learning-model",
+      "slug": "machine-learning-discipline-model",
       "label": "Machine Learning Model"
     },
     {

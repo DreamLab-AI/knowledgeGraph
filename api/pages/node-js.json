@@ -109,8 +109,16 @@
         "label": "Just-In-Time Compiler"
       },
       {
+        "id": "urn:ngm:class:garbage-collector",
+        "label": "Garbage Collector"
+      },
+      {
         "id": "urn:ngm:class:memory-management",
         "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:standard-library",
+        "label": "Standard Library"
       },
       {
         "id": "urn:ngm:class:cloud-infrastructure",
@@ -127,14 +135,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:fpga",
-        "label": "FPGA"
-      },
-      {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
       }
     ],
     "requires": [
@@ -200,6 +200,14 @@
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bare-metal-execution",
+        "label": "Bare-Metal Execution"
+      },
+      {
+        "id": "urn:ngm:class:compile-time-environment",
+        "label": "Compile-Time Environment"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
@@ -291,7 +299,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

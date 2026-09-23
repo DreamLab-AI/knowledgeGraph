@@ -12,19 +12,44 @@
       "label": "Standards and Interoperability"
     },
     {
-      "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
+      "id": "urn:ngm:class:extended-reality-api",
+      "label": "Extended Reality API"
     },
     {
-      "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
+      "id": "urn:ngm:class:khronos-group",
+      "label": "Khronos Group Standard"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.6,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:openxr-session",
+        "label": "OpenXR Session"
+      },
+      {
+        "id": "urn:ngm:class:openxr-action-system",
+        "label": "OpenXR Action System"
+      },
+      {
+        "id": "urn:ngm:class:openxr-space",
+        "label": "OpenXR Space"
+      },
+      {
+        "id": "urn:ngm:class:openxr-swapchain",
+        "label": "OpenXR Swapchain"
+      },
+      {
+        "id": "urn:ngm:class:openxr-extension",
+        "label": "OpenXR Extension"
+      },
+      {
+        "id": "urn:ngm:class:openxr-loader",
+        "label": "OpenXR Loader"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:open-gl",
@@ -41,6 +66,22 @@
       {
         "id": "urn:ngm:class:xr-runtime-environment",
         "label": "XR Runtime"
+      },
+      {
+        "id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime"
+      },
+      {
+        "id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware Device"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan API"
+      },
+      {
+        "id": "urn:ngm:class:open-gl",
+        "label": "OpenGL ES"
       }
     ],
     "enables": [
@@ -63,17 +104,67 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:hardware-platform-agnostic",
+        "label": "Hardware-Agnostic XR Development"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:vulkan-graphics-api",
+        "label": "Vulkan Graphics API"
+      },
+      {
+        "id": "urn:ngm:class:open-gl",
+        "label": "OpenGL ES"
+      },
+      {
+        "id": "urn:ngm:class:android-platform",
+        "label": "Android Platform"
+      },
+      {
+        "id": "urn:ngm:class:windows-mixed-reality-runtime",
+        "label": "Windows Mixed Reality Runtime"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:khronos-open-xr-1-1-specification",
         "label": "Khronos OpenXR 1.0 Specification"
+      },
+      {
+        "id": "urn:ngm:class:khronos-open-xr-1-1-specification",
+        "label": "Khronos OpenXR 1.0 Specification"
+      },
+      {
+        "id": "urn:ngm:class:openxr-extension-registry",
+        "label": "OpenXR Extension Registry"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -85,6 +176,10 @@
       {
         "id": "urn:ngm:class:metaverse-infrastructure",
         "label": "Metaverse Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:technology-stack",
+        "label": "XR Technology Stack"
       }
     ],
     "relatedTo": []
@@ -94,6 +189,36 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:standardization-bodies",
+      "label": "Standardization Bodies",
+      "slug": "standardization-bodies"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:standards-organization",
+      "label": "Standards Organization",
+      "slug": "standards-organization"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -147,9 +272,41 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:cross-platform-rendering",
+        "label": "Cross-Platform Rendering"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
@@ -167,16 +324,54 @@
         "label": "Scene Understanding"
       }
     ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "id": "urn:ngm:class:metal-api",
+        "label": "Metal API"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-graphics-api",
+        "label": "Proprietary Graphics API"
+      },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-accelerator",
+        "label": "Machine Learning Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
         "id": "urn:ngm:class:extended-reality-xr",
@@ -185,6 +380,10 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
       }
     ],
     "uses": [
@@ -215,12 +414,54 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:3d-asset-interchange",
+        "label": "3D Asset Interchange"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-portability",
+        "label": "Neural Network Portability"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:3-d-asset-standard",
         "label": "3D Asset Standard"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
       },
       {
         "id": "urn:ngm:class:web-xr",
@@ -237,8 +478,28 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:universal-scene-description",
+        "id": "urn:ngm:class:usd",
         "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
       }
     ]
   },

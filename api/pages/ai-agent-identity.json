@@ -27,7 +27,7 @@
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -76,6 +76,10 @@
       {
         "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
       }
     ],
     "supports": [
@@ -103,9 +107,364 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive (Blockchain)",
-      "slug": "bc-cryptographic-primitive"
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-proof",
+      "label": "Cryptographic Proof",
+      "slug": "cryptographic-proof"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity",
+      "slug": "digital-identity"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-identity",
+      "label": "Distributed Identity",
+      "slug": "distributed-identity"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:self-sovereign-identity",
+      "label": "Self Sovereign Identity",
+      "slug": "self-sovereign-identity"
+    },
+    {
+      "id": "urn:ngm:class:w-3-c-standard",
+      "label": "W3C Standard",
+      "slug": "w-3-c-standard"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol",
+      "slug": "cryptographic-protocol"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-identity",
+      "label": "Decentralised Identity",
+      "slug": "decentralised-identity"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-web",
+      "label": "Decentralised Web",
+      "slug": "decentralised-web"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:identity",
+      "label": "Identity",
+      "slug": "identity"
+    },
+    {
+      "id": "urn:ngm:class:identity-management",
+      "label": "Identity Management",
+      "slug": "identity-management"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:privacy-enhancing-technologies",
+      "label": "Privacy Enhancing Technologies",
+      "slug": "privacy-enhancing-technologies"
+    },
+    {
+      "id": "urn:ngm:class:privacy-preserving-technology",
+      "label": "Privacy Preserving Technology",
+      "slug": "privacy-preserving-technology"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard",
+      "slug": "technical-standard"
+    },
+    {
+      "id": "urn:ngm:class:trust-framework",
+      "label": "Trust Framework",
+      "slug": "trust-framework"
+    },
+    {
+      "id": "urn:ngm:class:user-centric-identity",
+      "label": "User-Centric Identity",
+      "slug": "user-centric-identity"
+    },
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:certification-scheme",
+      "label": "Certification Scheme",
+      "slug": "certification-scheme"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:framework",
+      "label": "Framework",
+      "slug": "framework"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:open-protocol",
+      "label": "Open Protocol",
+      "slug": "open-protocol"
+    },
+    {
+      "id": "urn:ngm:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network",
+      "slug": "peer-to-peer-network"
+    },
+    {
+      "id": "urn:ngm:class:policy-framework",
+      "label": "Policy Framework",
+      "slug": "policy-framework"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:sociotechnical-system",
+      "label": "Sociotechnical System",
+      "slug": "sociotechnical-system"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
+    },
+    {
+      "id": "urn:ngm:class:web-architecture",
+      "label": "Web Architecture",
+      "slug": "web-architecture"
+    },
+    {
+      "id": "urn:ngm:class:complex-systems",
+      "label": "Complex Systems",
+      "slug": "complex-systems"
+    },
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework",
+      "slug": "compliance-framework"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networkcomponent",
+      "label": "Networkcomponent",
+      "slug": "networkcomponent"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:protocol",
+      "label": "Protocol",
+      "slug": "protocol"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:open-standards",
+      "label": "Open Standards",
+      "slug": "open-standards"
+    },
+    {
+      "id": "urn:ngm:class:systems-theory",
+      "label": "Systems Theory",
+      "slug": "systems-theory"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards",
+      "slug": "standards"
+    },
+    {
+      "id": "urn:ngm:class:metaverse",
+      "label": "Metaverse",
+      "slug": "metaverse"
+    },
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability",
+      "slug": "sc-standards-and-interop"
+    },
+    {
+      "id": "urn:ngm:class:multiverse",
+      "label": "Multiverse",
+      "slug": "multiverse"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:semantic-spatial-web-layer",
+      "label": "Semantic Spatial Web Layer",
+      "slug": "semantic-spatial-web-layer"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     }
   ],
   "inheritedRelations": {
@@ -165,16 +524,16 @@
         "label": "Decentralized Identifiers"
       },
       {
+        "id": "urn:ngm:class:did",
+        "label": "Decentralised Identifiers"
+      },
+      {
         "id": "urn:ngm:class:did-document",
         "label": "DID Document"
       },
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
-      },
-      {
-        "id": "urn:ngm:class:trust-framework",
-        "label": "Trust Framework"
       }
     ],
     "enables": [
@@ -183,7 +542,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -199,16 +558,50 @@
         "label": "Token Economics"
       },
       {
+        "id": "urn:ngm:class:cross-border-identity-recognition",
+        "label": "Cross-Border Identity Recognition"
+      },
+      {
         "id": "urn:ngm:class:offline-verification",
         "label": "Offline Verification"
       },
       {
         "id": "urn:ngm:class:privacy-preserving-identity",
         "label": "Privacy-Preserving Identity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cbor",
+        "label": "CBOR"
       },
       {
-        "id": "urn:ngm:class:selective-disclosure",
-        "label": "Selective Disclosure"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:did",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:w3c-data-integrity",
+        "label": "W3C Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
       }
     ],
     "implements": [
@@ -225,12 +618,12 @@
         "label": "mDL ISO 18013-5"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
-        "label": "JSON-LD"
-      },
-      {
         "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
       },
       {
         "id": "urn:ngm:class:open-id4-vc",
@@ -239,9 +632,63 @@
       {
         "id": "urn:ngm:class:sd-jwt",
         "label": "SD-JWT"
+      },
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralised Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:oauth2-token",
+        "label": "OAuth2 Token"
+      },
+      {
+        "id": "urn:ngm:class:saml-assertion",
+        "label": "SAML Assertion"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:tee",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralized Database"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
       {
         "id": "urn:ngm:class:cryptographic-proof",
         "label": "Cryptographic Proof"
@@ -249,6 +696,14 @@
       {
         "id": "urn:ngm:class:w-3-c-standard",
         "label": "W3C Standard"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-attestation",
+        "label": "AI Model Attestation"
       }
     ],
     "uses": [
@@ -269,7 +724,7 @@
         "label": "Elliptic Curve Cryptography"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
@@ -279,6 +734,10 @@
       {
         "id": "urn:ngm:class:open-id4-vp",
         "label": "OpenID4VP"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
       }
     ],
     "supports": [
@@ -297,6 +756,22 @@
       {
         "id": "urn:ngm:class:gov-uk-one-login",
         "label": "GOV.UK One Login"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-data-interoperability",
+        "label": "Healthcare Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
       }
     ],
     "standardizedBy": [
@@ -319,6 +794,52 @@
       {
         "id": "urn:ngm:class:w3-c",
         "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-did-specification",
+        "label": "W3C DID Specification"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
       }
     ],
     "relatedTo": [
@@ -343,12 +864,16 @@
         "label": "Hash Function"
       },
       {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
         "id": "urn:ngm:class:homomorphic-encryption",
         "label": "Homomorphic Encryption"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
       }
     ]
   },

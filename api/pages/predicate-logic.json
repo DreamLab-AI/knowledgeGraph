@@ -77,7 +77,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:semantic-reasoning",
+        "id": "urn:ngm:class:semantic-reasoning-engine",
         "label": "Semantic Reasoning"
       },
       {
@@ -262,7 +262,7 @@
         "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -276,6 +276,18 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [

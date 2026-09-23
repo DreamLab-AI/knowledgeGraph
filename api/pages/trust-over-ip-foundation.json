@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:decentralised-identifiers",
+        "id": "urn:ngm:class:did",
         "label": "Decentralised Identifiers"
       },
       {
@@ -27,7 +27,7 @@
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -68,6 +68,10 @@
       {
         "id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralised Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralised Identity Provider"
       }
     ],
     "bridgesTo": [
@@ -92,6 +96,10 @@
       {
         "id": "urn:ngm:class:openid-for-verifiable-credentials",
         "label": "OpenID for Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:didcomm",
+        "label": "DIDComm Messaging"
       }
     ],
     "supports": [
@@ -122,6 +130,14 @@
       {
         "id": "urn:ngm:class:eidas-regulation",
         "label": "eIDAS Regulation"
+      },
+      {
+        "id": "urn:ngm:class:w3c-credentials-community-group",
+        "label": "W3C Credentials Community Group"
+      },
+      {
+        "id": "urn:ngm:class:internet-identity-workshop",
+        "label": "Internet Identity Workshop"
       }
     ]
   },
@@ -148,6 +164,10 @@
         "label": "Conformance Test Suite"
       },
       {
+        "id": "urn:ngm:class:technical-working-group",
+        "label": "Technical Working Group"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
@@ -166,10 +186,6 @@
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property Rights Framework"
-      },
-      {
-        "id": "urn:ngm:class:legal-framework",
-        "label": "Legal Framework"
       }
     ],
     "requires": [
@@ -322,6 +338,10 @@
         "label": "Governance"
       },
       {
+        "id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
+      },
+      {
         "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
       }
@@ -352,7 +372,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

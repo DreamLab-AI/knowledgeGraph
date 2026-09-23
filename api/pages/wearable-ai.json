@@ -14,6 +14,10 @@
     {
       "id": "urn:ngm:class:wearable-device-integration",
       "label": "Wearable Device Integration"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing-domain",
+      "label": "Spatial Computing Domain"
     }
   ],
   "entityType": "Class",
@@ -36,7 +40,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -45,9 +58,54 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
       "id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology",
       "slug": "sc-interaction"
+    },
+    {
+      "id": "urn:ngm:class:system-integration",
+      "label": "System Integration",
+      "slug": "system-integration"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture",
+      "slug": "software-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure",
+      "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -73,16 +131,16 @@
         "label": "Virtual Reality"
       },
       {
-        "id": "urn:ngm:class:3-d-user-interface",
-        "label": "3D User Interface"
+        "id": "urn:ngm:class:cognitive-ergonomics",
+        "label": "Cognitive Ergonomics"
       },
       {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
       },
       {
-        "id": "urn:ngm:class:gaze-control",
-        "label": "Gaze Control"
+        "id": "urn:ngm:class:usability-engineering",
+        "label": "Usability Engineering"
       }
     ],
     "requires": [
@@ -105,6 +163,18 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
       }
     ],
     "enables": [
@@ -125,24 +195,108 @@
         "label": "Scene Understanding"
       },
       {
-        "id": "urn:ngm:class:augmented-reality-collaboration",
-        "label": "Augmented Reality Collaboration"
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
       },
       {
-        "id": "urn:ngm:class:immersive-experience",
-        "label": "Immersive Experience"
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:security-policy",
+        "label": "Security Policy"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      },
+      {
+        "id": "urn:ngm:class:design-pattern",
+        "label": "Design Pattern"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "id": "urn:ngm:class:point-to-point-integration",
+        "label": "Point To Point Integration"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
         "id": "urn:ngm:class:extended-reality-xr",
@@ -155,6 +309,18 @@
       {
         "id": "urn:ngm:class:system-integration",
         "label": "System Integration"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -191,6 +357,40 @@
         "label": "Interoperability"
       }
     ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:open-xr",
@@ -199,15 +399,55 @@
       {
         "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      },
+      {
+        "id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:wearable-computing-platform",
         "label": "Wearable Computing Platform"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
       {
         "id": "urn:ngm:class:immersive-interface",
         "label": "Immersive Interface"
@@ -219,6 +459,14 @@
       {
         "id": "urn:ngm:class:sc-platform-and-environment",
         "label": "Platform and Environment"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
       }
     ]
   },

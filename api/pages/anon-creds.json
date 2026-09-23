@@ -131,6 +131,10 @@
         "label": "Digital Signature"
       },
       {
+        "id": "urn:ngm:class:issuer-infrastructure",
+        "label": "Issuer Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:standards-body",
         "label": "Standards Body"
       },
@@ -161,6 +165,10 @@
         "label": "Selective Disclosure"
       },
       {
+        "id": "urn:ngm:class:trust-interoperability",
+        "label": "Trust Interoperability"
+      },
+      {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
       },
@@ -175,10 +183,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
       }
     ],
     "implements": [
@@ -229,7 +233,7 @@
         "label": "CBOR"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
@@ -279,12 +283,12 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:identity-verification",
-        "label": "Identity Verification"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
       },
       {
         "id": "urn:ngm:class:trust-framework",

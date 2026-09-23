@@ -170,7 +170,7 @@
         "label": "Transparency"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -178,7 +178,7 @@
         "label": "Compliance"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -296,11 +296,11 @@
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
       },
       {
@@ -406,7 +406,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

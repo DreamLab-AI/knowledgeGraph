@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
+    },
+    {
+      "id": "urn:ngm:class:security-service",
+      "label": "Security Service"
     }
   ],
   "entityType": "Class",
@@ -36,7 +40,7 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -75,6 +79,10 @@
       {
         "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:credential-validation",
+        "label": "Credential Validation"
       }
     ],
     "contrastsWith": [
@@ -91,6 +99,10 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       }
     ],
     "uses": [

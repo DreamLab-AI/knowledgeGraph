@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:galois-field-arithmetic",
         "label": "Galois Field Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:fountain-codes",
+        "label": "Fountain Codes"
       }
     ],
     "requires": [
@@ -38,6 +42,10 @@
       {
         "id": "urn:ngm:class:distributed-storage",
         "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:shard-distribution",
+        "label": "Shard Distribution"
       }
     ],
     "enables": [
@@ -52,12 +60,20 @@
       {
         "id": "urn:ngm:class:high-availability",
         "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:storage-efficiency",
+        "label": "Storage Efficiency"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:failure-domain",
+        "label": "Failure Domain"
       }
     ],
     "implements": [
@@ -78,6 +94,10 @@
       {
         "id": "urn:ngm:class:replication",
         "label": "Full Replication"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Full Replication"
       }
     ],
     "bridgesTo": [
@@ -88,6 +108,10 @@
       {
         "id": "urn:ngm:class:danksharding",
         "label": "Danksharding"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability Layer"
       },
       {
         "id": "urn:ngm:class:data-availability",
@@ -106,6 +130,10 @@
       {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitments"
       }
     ],
     "supports": [
@@ -149,6 +177,10 @@
       {
         "id": "urn:ngm:class:secret-sharing",
         "label": "Secret Sharing"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication Factor"
       }
     ]
   },
@@ -176,12 +208,12 @@
         "label": "Hamming Codes"
       },
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -340,7 +372,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

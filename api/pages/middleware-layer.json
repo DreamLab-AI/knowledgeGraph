@@ -36,6 +36,10 @@
       {
         "id": "urn:ngm:class:service-mesh",
         "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:event-bus",
+        "label": "Event Bus"
       }
     ],
     "requires": [
@@ -108,6 +112,10 @@
       {
         "id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Machine Learning Inference"
       }
     ],
     "uses": [
@@ -153,6 +161,10 @@
       {
         "id": "urn:ngm:class:enterprise-service-bus",
         "label": "Enterprise Service Bus"
+      },
+      {
+        "id": "urn:ngm:class:integration-platform",
+        "label": "Integration Platform"
       }
     ]
   },
@@ -274,7 +286,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

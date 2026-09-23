@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Bitcoin As Money</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Bitcoin As Money"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Bitcoin As Money"/><meta name="twitter:description" content="Bitcoin As Money is the analytical framework within monetary economics and philosophy that interrogates wher Bitcoin — the fixed-supply, decentralised, proof-of-work-secured digital commodity created by Satoshi Nakamoto — satisfies the classical three functions of money: medium of exchang… Semantic ..."/><meta property="og:description" content="Bitcoin As Money is the analytical framework within monetary economics and philosophy that interrogates wher Bitcoin — the fixed-supply, decentralised, proof-of-work-secured digital commodity created by Satoshi Nakamoto — satisfies the classical three functions of money: medium of exchang… Semantic ..."/><meta property="og:image:alt" content="Bitcoin As Money is the analytical framework within monetary economics and philosophy that interrogates wher Bitcoin — the fixed-supply, decentralised, proof-of-work-secured digital commodity created by Satoshi Nakamoto — satisfies the classical three functions of money: medium of exchang… Semantic ..."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Bitcoin-As-Money"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Bitcoin-As-Money"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Bitcoin As Money is the analytical framework within monetary economics and philosophy that interrogates wher Bitcoin — the fixed-supply, decentralised, proof-of-work-secured digital commodity created by Satoshi Nakamoto — satisfies the classical three functions of money: medium of exchang… Semantic ..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Bitcoin-As-Money"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1126"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1126" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Bitcoin As Money</a></div></nav><h1 class="article-title">Bitcoin As Money</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.559Z">23 Sept 2026</time><span>47 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:bitcoin-proof-of-work-protocol-as-money</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>blockchain</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../DeFi-and-Economics" class="internal">DeFi and Economics</a></li><li><a href="../Token-and-Asset" class="internal">Token and Asset</a></li><li><a href="../pages/Monetary-Theory" class="internal">Monetary Theory</a></li><li><a href="../pages/Sound-Money" class="internal">Sound Money</a></li><li><a href="../Digital-Asset-Economics" class="internal">Digital Asset Economics</a></li><li><a href="../pages/Austrian-Economics" class="internal">Austrian Economics</a></li><li><a href="../Cryptocurrency-Economics" class="internal">Cryptocurrency Economics</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../bitcoin-standard" class="internal">Bitcoin Standard</a></li><li><a href="../medium-of-exchange" class="internal">Medium of Exchange</a></li><li><a href="../pages/Store-of-Value" class="internal">Store of Value</a></li><li><a href="../unit-of-account" class="internal">Unit of Account</a></li><li><a href="../pages/Circular-Economy" class="internal">Circular Economy</a></li><li><a href="../pages/Lightning-Network" class="internal">Lightning Network</a></li><li><a href="../Layered-Bitcoin-Architecture" class="internal">Layered Bitcoin Architecture</a></li><li><a href="../Greshams-Law-Application" class="internal">Greshams Law Application</a></li><li><a href="../Velocity-of-Money-Analysis" class="internal">Velocity of Money Analysis</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Bitcoin-Network" class="internal">Bitcoin Network</a></li><li><a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal">Bitcoin Proof-of-Work Protocol</a></li><li><a href="../pages/Lightning-Network" class="internal">Lightning Network</a></li><li><a href="../Monetary-Consensus" class="internal">Monetary Consensus</a></li><li><a href="../Price-Stability-Analysis" class="internal">Price Stability Analysis</a></li><li><a href="../Merchant-Adoption" class="internal">Merchant Adoption</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/AI-Agent-Payments" class="internal">AI Agent Payments</a></li><li><a href="../cross-border-payments" class="internal">Borderless Payments</a></li><li><a href="../pages/Censorship-Resistant-Payments" class="internal">Censorship Resistant Payments</a></li><li><a href="../financial-inclusion" class="internal">Financial Inclusion</a></li><li><a href="../Micropayments" class="internal">Micropayments</a></li><li><a href="../Sovereign-Reserve-Asset" class="internal">Sovereign Reserve Asset</a></li><li><a href="../Circular-Bitcoin-Economy" class="internal">Circular Bitcoin Economy</a></li><li><a href="../Machine-Commerce" class="internal">Machine Commerce</a></li><li><a href="../Borderless-Payments" class="internal">Borderless Payments</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Austrian-Economics" class="internal">Austrian Economics</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../Fiat-Money" class="internal">Fiat Money</a></li><li><a href="../pages/Gold-Standard" class="internal">Gold Standard</a></li><li><a href="../pages/Central-Bank-Digital-Currency" class="internal">Central Bank Digital Currency</a></li><li><a href="../Keynesian-Economics" class="internal">Keynesian Economics</a></li><li><a href="../pages/Stablecoin" class="internal">Stablecoin</a></li><li><a href="../pages/Traditional-Banking" class="internal">Traditional Banking</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal">Bitcoin Proof-of-Work Protocol</a></li><li><a href="../pages/Social-Consensus" class="internal">Social Consensus</a></li><li><a href="../pages/Lightning-Network" class="internal">Lightning Network</a></li><li><a href="../Merchant-Adoption" class="internal">Merchant Adoption</a></li><li><a href="../pages/Regulatory-Clarity" class="internal">Regulatory Clarity</a></li><li><a href="../Network-Effect" class="internal">Network Effect</a></li><li><a href="../pages/Price-Stability" class="internal">Price Stability</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../BaseLayerBitcoin" class="internal">BaseLayerBitcoin</a></li><li><a href="../LightningNetworkLayer" class="internal">LightningNetworkLayer</a></li><li><a href="../CircularEconomyLayer" class="internal">CircularEconomyLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Austrian-Hard-Money-Theory" class="internal">Austrian Hard Money Theory</a></li><li><a href="../pages/Fixed-Supply-Monetary-Policy" class="internal">Fixed Supply Monetary Policy</a></li><li><a href="../programmable-money" class="internal">Programmable Money Paradigm</a></li><li><a href="../pages/Sound-Money-Principles" class="internal">Sound Money Principles</a></li><li><a href="../Commodity-Money-Model" class="internal">Commodity Money Model</a></li><li><a href="../Programmable-Money-Paradigm" class="internal">Programmable Money Paradigm</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>BC-1109</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../africa" class="internal">Africa</a></li><li><a href="../ai-agent-payments" class="internal">AI Agent Payments</a></li><li><a href="../ainvest-2025-lightning-network-1-17-billion-monthly-volume" class="internal">ainvest 2025 Lightning Network 1.17 Billion Monthly Volume</a></li><li><a href="../alden-2025-what-is-money" class="internal">Alden 2025 What is Money</a></li><li><a href="../ammous-2018-the-bitcoin-standard" class="internal">Ammous 2018 The Bitcoin Standard</a></li><li><a href="../andrew-m-bailey" class="internal">Andrew M. Bailey</a></li><li><a href="../ar-xiv-2025-bitcoin-structural-shortcomings-as-money" class="internal">arXiv 2025 Bitcoin Structural Shortcomings as Money</a></li><li><a href="../ark-invest" class="internal">ARK Invest</a></li><li><a href="../ark-protocol" class="internal">Ark Protocol</a></li><li><a href="../austrian-economics" class="internal">Austrian Economics</a></li><li><a href="../austrian-economics-domain" class="internal">AustrianEconomicsDomain</a></li><li><a href="../austrian-hard-money-theory" class="internal">Austrian Hard Money Theory</a></li><li><a href="../base-layer-bitcoin" class="internal">BaseLayerBitcoin</a></li><li><a href="../bip32-hd-wallets" class="internal">BIP32 HD Wallets</a></li><li><a href="../bitcoin-beach" class="internal">Bitcoin Beach</a></li><li><a href="../bitcoin-beach-fbce-2025-circular-economies-summit" class="internal">Bitcoin Beach FBCE 2025 Circular Economies Summit</a></li><li><a href="../bitcoin-network" class="internal">Bitcoin Network</a></li><li><a href="../bitcoin-standard" class="internal">Bitcoin Standard</a></li><li><a href="../bitcoin-treasury-strategy" class="internal">Bitcoin Treasury Strategy</a></li><li><a href="../blinded-paths" class="internal">Blinded Paths</a></li><li><a href="../bohme-christin-edelman-moore-2015-bitcoin-economics" class="internal">Bohme Christin Edelman Moore 2015 Bitcoin Economics</a></li><li><a href="../borderless-payments" class="internal">Borderless Payments</a></li><li><a href="../ccaf" class="internal">CCAF</a></li><li><a href="../censorship-resistant-payments" class="internal">Censorship Resistant Payments</a></li><li><a href="../chainalysis-2025-geography-of-cryptocurrency" class="internal">Chainalysis 2025 Geography of Cryptocurrency</a></li><li><a href="../chivo-wallet" class="internal">Chivo Wallet</a></li><li><a href="../circular-bitcoin-economy" class="internal">Circular Bitcoin Economy</a></li><li><a href="../circular-economy-layer" class="internal">CircularEconomyLayer</a></li><li><a href="../coin-law-2026-lightning-network-usage-statistics" class="internal">CoinLaw 2026 Lightning Network Usage Statistics</a></li><li><a href="../commodity-money-model" class="internal">Commodity Money Model</a></li><li><a href="../cryptocurrency-economics" class="internal">Cryptocurrency Economics</a></li><li><a href="../d-central-2025-bitcoin-greshams-law" class="internal">D-Central 2025 Bitcoin Greshams Law</a></li><li><a href="../david-yermack" class="internal">David Yermack</a></li><li><a href="../digital-asset-economics" class="internal">Digital Asset Economics</a></li><li><a href="../digital-gold" class="internal">Digital Gold</a></li><li><a href="../el-salvador" class="internal">El Salvador</a></li><li><a href="../el-zonte" class="internal">El Zonte</a></li><li><a href="../eric-yakes" class="internal">Eric Yakes</a></li><li><a href="../fasb-2023-asu-2023-08-crypto-asset-fair-value" class="internal">FASB 2023 ASU 2023-08 Crypto Asset Fair Value</a></li><li><a href="../fasb-asu-2023-08" class="internal">FASB ASU 2023-08</a></li><li><a href="../fca-2023-cryptoasset-promotions-regime-ps23-6" class="internal">FCA 2023 Cryptoasset Promotions Regime PS23-6</a></li><li><a href="../federation-of-bitcoin-circular-economies" class="internal">Federation of Bitcoin Circular Economies</a></li><li><a href="../fedimint" class="internal">Fedimint</a></li><li><a href="../fiat-money" class="internal">Fiat Money</a></li><li><a href="../fidelity-digital-assets" class="internal">Fidelity Digital Assets</a></li><li><a href="../fidelity-digital-assets-2025-bitcoin-first" class="internal">Fidelity Digital Assets 2025 Bitcoin First</a></li><li><a href="../financial-inclusion" class="internal">Financial Inclusion</a></li><li><a href="../financial-philosophy-domain" class="internal">FinancialPhilosophyDomain</a></li><li><a href="../financial-sovereignty" class="internal">Financial Sovereignty</a></li><li><a href="../fisher-1911-purchasing-power-of-money" class="internal">Fisher 1911 Purchasing Power of Money</a></li><li><a href="../fixed-supply-monetary-policy" class="internal">Fixed Supply Monetary Policy</a></li><li><a href="../giacomo-zucco" class="internal">Giacomo Zucco</a></li><li><a href="../gold-standard" class="internal">Gold Standard</a></li><li><a href="../greshams-law" class="internal">Greshams Law</a></li><li><a href="../greshams-law-application" class="internal">Greshams Law Application</a></li><li><a href="../hayek-1976-denationalisation-of-money" class="internal">Hayek 1976 Denationalisation of Money</a></li><li><a href="../hyperbitcoinization" class="internal">Hyperbitcoinization</a></li><li><a href="../imf" class="internal">IMF</a></li><li><a href="../imf-2025-crypto-assets-monitor-october" class="internal">IMF 2025 Crypto Assets Monitor October</a></li><li><a href="../imf-2025-el-salvador-article-iv-consultation" class="internal">IMF 2025 El Salvador Article IV Consultation</a></li><li><a href="../imf-crypto-asset-classification-framework" class="internal">IMF Crypto Asset Classification Framework</a></li><li><a href="../international-monetary-fund" class="internal">International Monetary Fund</a></li><li><a href="../jack-mallers" class="internal">Jack Mallers</a></li><li><a href="../jevons-1875-money-and-the-mechanism-of-exchange" class="internal">Jevons 1875 Money and the Mechanism of Exchange</a></li><li><a href="../kenya" class="internal">Kenya</a></li><li><a href="../keynesian-economics" class="internal">Keynesian Economics</a></li><li><a href="../l402" class="internal">L402</a></li><li><a href="../l402-protocol" class="internal">L402 Protocol</a></li><li><a href="../layered-bitcoin-architecture" class="internal">Layered Bitcoin Architecture</a></li><li><a href="../lightning-network-bolt-specifications" class="internal">Lightning Network BOLT Specifications</a></li><li><a href="../lightning-network-layer" class="internal">LightningNetworkLayer</a></li><li><a href="../liu-tsyvinski-2021-risks-and-returns-of-cryptocurrency" class="internal">Liu Tsyvinski 2021 Risks and Returns of Cryptocurrency</a></li><li><a href="../ludwig-von-mises" class="internal">Ludwig von Mises</a></li><li><a href="../lyn-alden" class="internal">Lyn Alden</a></li><li><a href="../machine-commerce" class="internal">Machine Commerce</a></li><li><a href="../medium-of-exchange" class="internal">Medium of Exchange</a></li><li><a href="../merchant-adoption" class="internal">Merchant Adoption</a></li><li><a href="../michael-saylor" class="internal">Michael Saylor</a></li><li><a href="../mises-1912-theory-of-money-and-credit" class="internal">Mises 1912 Theory of Money and Credit</a></li><li><a href="../mises-institute" class="internal">Mises Institute</a></li><li><a href="../mises-institute-2022-bitcoin-hodling-greshams-law" class="internal">Mises Institute 2022 Bitcoin Hodling Greshams Law</a></li><li><a href="../monetary-consensus" class="internal">Monetary Consensus</a></li><li><a href="../monetary-economics-domain" class="internal">MonetaryEconomicsDomain</a></li><li><a href="../monetary-policy" class="internal">Monetary Policy</a></li><li><a href="../monetary-theory" class="internal">Monetary Theory</a></li><li><a href="../nakamoto-2008-bitcoin-whitepaper" class="internal">Nakamoto 2008 Bitcoin Whitepaper</a></li><li><a href="../nakamoto-2008-whitepaper" class="internal">Nakamoto 2008 Whitepaper</a></li><li><a href="../network-effect" class="internal">Network Effect</a></li><li><a href="../nigeria" class="internal">Nigeria</a></li><li><a href="../paul-krugman" class="internal">Paul Krugman</a></li><li><a href="../poon-dryja-2016-lightning-network-whitepaper" class="internal">Poon Dryja 2016 Lightning Network Whitepaper</a></li><li><a href="../price-stability" class="internal">Price Stability</a></li><li><a href="../price-stability-analysis" class="internal">Price Stability Analysis</a></li><li><a href="../programmable-money-paradigm" class="internal">Programmable Money Paradigm</a></li><li><a href="../regulatory-clarity" class="internal">Regulatory Clarity</a></li><li><a href="../remittances" class="internal">Remittances</a></li><li><a href="../rgb-protocol" class="internal">RGB Protocol</a></li><li><a href="../rothbard-1963-what-has-government-done-to-our-money" class="internal">Rothbard 1963 What Has Government Done to Our Money</a></li><li><a href="../saifedean-ammous" class="internal">Saifedean Ammous</a></li><li><a href="../satoshi-nakamoto" class="internal">Satoshi Nakamoto</a></li><li><a href="../schilling-uhlig-2019-simple-bitcoin-economics" class="internal">Schilling Uhlig 2019 Simple Bitcoin Economics</a></li><li><a href="../science-direct-2025-two-legal-tenders-no-currency" class="internal">ScienceDirect 2025 Two Legal Tenders No Currency</a></li><li><a href="../self-custody" class="internal">Self Custody</a></li><li><a href="../separation-of-money-and-state" class="internal">Separation of Money and State</a></li><li><a href="../shopify" class="internal">Shopify</a></li><li><a href="../social-consensus" class="internal">Social Consensus</a></li><li><a href="../sound-money" class="internal">Sound Money</a></li><li><a href="../sound-money-principles" class="internal">Sound Money Principles</a></li><li><a href="../south-africa" class="internal">South Africa</a></li><li><a href="../sovereign-reserve-asset" class="internal">Sovereign Reserve Asset</a></li><li><a href="../stablesats" class="internal">Stablesats</a></li><li><a href="../store-of-value" class="internal">Store of Value</a></li><li><a href="../strike" class="internal">Strike</a></li><li><a href="../strike-payment-infrastructure" class="internal">Strike Payment Infrastructure</a></li><li><a href="../tasca-liu-hayes-2018-bitcoin-economy-evolution" class="internal">Tasca Liu Hayes 2018 Bitcoin Economy Evolution</a></li><li><a href="../the-bitcoin-standard" class="internal">The Bitcoin Standard</a></li><li><a href="../traditional-banking" class="internal">Traditional Banking</a></li><li><a href="../unit-of-account" class="internal">Unit of Account</a></li><li><a href="../velocity-of-money-analysis" class="internal">Velocity of Money Analysis</a></li><li><a href="../x402" class="internal">X402</a></li><li><a href="../yermack-2015-is-bitcoin-a-real-currency" class="internal">Yermack 2015 Is Bitcoin a Real Currency</a></li><li><a href="../zucco-2024-discovering-bitcoin" class="internal">Zucco 2024 Discovering Bitcoin</a></li><li><a href="../bitcoin" class="internal">Bitcoin</a></li><li><a href="../blockchain" class="internal">BlockchainDomain</a></li><li><a href="../cashu" class="internal">Cashu</a></li><li><a href="../central-bank-digital-currency" class="internal">Central Bank Digital Currency</a></li><li><a href="../circular-economy" class="internal">Circular Economy</a></li><li><a href="../gold" class="internal">Gold</a></li><li><a href="../lightning-network" class="internal">Lightning Network</a></li><li><a href="../micro-strategy" class="internal">MicroStrategy</a></li><li><a href="../micropayments" class="internal">Micropayments</a></li><li><a href="../money" class="internal">Money</a></li><li><a href="../stablecoin" class="internal">Stablecoin</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:6477c1d4adc31580b816fcf02d46cc991cf1c4b28201c432a4bce772b743d5bf</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Austrian-Economics" class="internal">Austrian Economics</a></li><li><a href="../pages/Digital-Gold" class="internal">Digital Gold</a></li><li><a href="../pages/El-Salvador" class="internal">El Salvador</a></li><li><a href="../financial-inclusion" class="internal">Financial Inclusion</a></li><li><a href="../pages/Hyperbitcoinization" class="internal">Hyperbitcoinization</a></li><li><a href="../pages/Monetary-Policy" class="internal">Monetary Policy</a></li><li><a href="../pages/Remittances" class="internal">Remittances</a></li><li><a href="../pages/Sound-Money" class="internal">Sound Money</a></li><li><a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal">Bitcoin Proof-of-Work Protocol</a></li><li><a href="../pages/MicroStrategy" class="internal">MicroStrategy</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/FASB-ASU-2023-08" class="internal">FASB ASU 2023-08</a></li><li><a href="../pages/IMF-Crypto-Asset-Classification-Framework" class="internal">IMF Crypto Asset Classification Framework</a></li><li><a href="../pages/BOLT-Specifications" class="internal">Lightning Network BOLT Specifications</a></li><li><a href="../pages/Nakamoto-2008-Bitcoin-Whitepaper" class="internal">Nakamoto 2008 Whitepaper</a></li><li><a href="../Nakamoto-2008-Whitepaper" class="internal">Nakamoto 2008 Whitepaper</a></li><li><a href="../BIP32-HD-Wallets" class="internal">BIP32 HD Wallets</a></li><li><a href="../Lightning-Network-BOLT-Specifications" class="internal">Lightning Network BOLT Specifications</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../bitcoin-standard" class="internal">Bitcoin Standard</a></li><li><a href="../pages/Financial-Sovereignty" class="internal">Financial Sovereignty</a></li><li><a href="../pages/Hyperbitcoinization" class="internal">Hyperbitcoinization</a></li><li><a href="../self-custody" class="internal">Self-Custody</a></li><li><a href="../pages/Sound-Money" class="internal">Sound Money</a></li><li><a href="../Separation-of-Money-and-State" class="internal">Separation of Money and State</a></li><li><a href="../Bitcoin-Treasury-Strategy" class="internal">Bitcoin Treasury Strategy</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Chivo-Wallet" class="internal">Chivo Wallet</a></li><li><a href="../pages/Fedimint" class="internal">Fedimint</a></li><li><a href="../pages/L402-Protocol" class="internal">L402 Protocol</a></li><li><a href="../pages/RGB-Protocol" class="internal">RGB Protocol</a></li><li><a href="../Cashu" class="internal">Cashu</a></li><li><a href="../pages/Lightning-Network" class="internal">Lightning Network</a></li><li><a href="../Stablesats" class="internal">Stablesats</a></li><li><a href="../Strike-Payment-Infrastructure" class="internal">Strike Payment Infrastructure</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Bitcoin As Money is the analytical framework within monetary economics and philosophy that interrogates wher Bitcoin — the fixed-supply, decentralised, proof-of-work-secured digital commodity created by Satoshi Nakamoto — satisfies the classical three functions of money: medium of exchang…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:hasPart blockchain:StoreOfValue))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:hasPart blockchain:MediumOfExchange))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:hasPart blockchain:UnitOfAccount))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:hasPart blockchain:LightningNetworkLayer))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:hasPart blockchain:BitcoinStandardThesis))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:hasPart blockchain:CircularEconomy))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:hasPart blockchain:GreshamsLawApplication))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:hasPart blockchain:VelocityOfMoneyAnalysis))
+
+  ## Dependency Relationships
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:requires blockchain:BitcoinNetwork))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:requires blockchain:SocialConsensus))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:requires blockchain:LightningNetwork))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:requires blockchain:MerchantAdoption))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:requires blockchain:RegulatoryClarity))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:dependsOn blockchain:Bitcoin))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:dependsOn blockchain:NetworkEffect))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:dependsOn blockchain:PriceStability))
+
+  ## Capability Relationships
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:enables blockchain:FinancialInclusion))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:enables blockchain:CensorshipResistantPayments))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:enables blockchain:SovereignReserveAsset))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:enables blockchain:CircularBitcoinEconomy))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:enables blockchain:MachineCommerce))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:enables blockchain:BorderlessPayments))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:supports blockchain:BitcoinStandard))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:supports blockchain:Hyperbitcoinization))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:supports blockchain:FinancialSovereignty))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:supports blockchain:SeparationOfMoneyAndState))
+
+  ## Implementation Relationships
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:implements blockchain:AustrianHardMoneyTheory))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:implements blockchain:CommodityMoneyModel))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:implements blockchain:FixedSupplyMonetaryPolicy))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:implements blockchain:SoundMoneyPrinciples))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:implements blockchain:ProgrammableMoneyParadigm))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:uses blockchain:LightningNetwork))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:uses blockchain:L402Protocol))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:uses blockchain:Stablesats))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:uses blockchain:StrikePaymentInfrastructure))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:uses blockchain:Fedimint))
+
+  ## Reduction Relationships
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:reduces blockchain:CounterpartyRisk))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:reduces blockchain:InflationExposure))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:reduces blockchain:RemittanceCost))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:reduces blockchain:FinancialExclusionBarriers))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:reduces blockchain:MonetaryDebasementRisk))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:contrastsWith blockchain:FiatMoney))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:contrastsWith blockchain:GoldStandard))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:contrastsWith blockchain:CentralBankDigitalCurrency))
+  SubClassOf(blockchain:BitcoinAsMoney
+    ObjectSomeValuesFrom(blockchain:contrastsWith blockchain:KeynesianEconomics))
+
+  ## Data Properties (Characteristics)
+  DataPropertyAssertion(blockchain:hasIdentifier blockchain:BitcoinAsMoney &quot;BC-1109&quot;^^xsd:string)
+  DataPropertyAssertion(blockchain:authorityScore blockchain:BitcoinAsMoney &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(blockchain:bitcoinMaxSupply blockchain:BitcoinAsMoney &quot;21000000&quot;^^xsd:integer)
+  DataPropertyAssertion(blockchain:bitcoinDivisibility blockchain:BitcoinAsMoney &quot;100000000&quot;^^xsd:integer)
+  DataPropertyAssertion(blockchain:lightningMonthlyVolumeNov2025USD blockchain:BitcoinAsMoney &quot;1170000000&quot;^^xsd:integer)
+  DataPropertyAssertion(blockchain:lightningNetworkCapacityBTCDec2025 blockchain:BitcoinAsMoney &quot;5606&quot;^^xsd:integer)
+  DataPropertyAssertion(blockchain:elSalvadorBTCHeld2025 blockchain:BitcoinAsMoney &quot;7508&quot;^^xsd:integer)
+  DataPropertyAssertion(blockchain:usSBRBTCHeld2026 blockchain:BitcoinAsMoney &quot;328372&quot;^^xsd:integer)
+
+  ## Property Constraints
+  SubClassOf(blockchain:BitcoinAsMoney
+    DataMinCardinality(1 blockchain:hasMonetaryFunctionAnalysis xsd:string))
+  SubClassOf(blockchain:BitcoinAsMoney
+    DataAllValuesFrom(blockchain:hasCoinSupplyCap xsd:integer))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label blockchain:BitcoinAsMoney &quot;Bitcoin As Money&quot;@en)
+  AnnotationAssertion(rdfs:comment blockchain:BitcoinAsMoney &quot;Analytical framework examining whether Bitcoin satisfies the classical three monetary functions (store of value, medium of exchange, unit of account) through Austrian economics, Keynesian monetary theory, and empirical analysis of layered Bitcoin architecture, Lightning Network adoption, El Salvador legal tender experiment, circular economies, and sovereign reserve adoption.&quot;@en)
+  AnnotationAssertion(dcterms:identifier blockchain:BitcoinAsMoney &quot;BC-1109&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject blockchain:BitcoinAsMoney &quot;Bitcoin, monetary theory, store of value, medium of exchange, unit of account, sound money, Austrian economics, Lightning Network, Gresham's Law, Bitcoin Standard, El Salvador, hyperbitcoinization, gold, circular economy&quot;@en)
+
+  ## Property Characteristics
+  AsymmetricObjectProperty(blockchain:requires)
+  AsymmetricObjectProperty(blockchain:enables)
+  AsymmetricObjectProperty(blockchain:implements)
+  AsymmetricObjectProperty(blockchain:contrastsWith)
+  TransitiveObjectProperty(blockchain:dependsOn)
+  FunctionalDataProperty(blockchain:hasCoinSupplyCap)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-bitcoin-as-money">About Bitcoin As Money<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-bitcoin-as-money" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Bitcoin As Money</strong> is the body of monetary theory, empirical economics, philosophy, and institutional analysis concerned with whether and how <a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal alias" data-slug="pages/Bitcoin-Proof-of-Work-Protocol">Bitcoin Proof-of-Work Protocol</a> satisfies the functions that monetary economists, central bankers, and Austrian school theorists ascribe to money.</p>
+</li>
+<li>
+<p>The question is not purely academic: the answer determines whether Bitcoin is primarily an investment asset (like equities or commodities), a monetary instrument (like <a href="../Gold" class="internal" data-slug="Gold">Gold</a> or fiat currency), a bearer instrument (like a bond), or a novel hybrid of all three. The classification carries practical consequences for regulation, accounting, custody, and portfolio construction.</p>
+</li>
+<li>
+<p>The debate took on material significance in 2021 when <a href="../pages/El-Salvador" class="internal alias" data-slug="pages/El-Salvador">El Salvador</a> became the first sovereign state to adopt Bitcoin as legal tender alongside the US dollar, and again in 2024-2025 when the United States government established a Strategic Bitcoin Reserve of 328,000+ BTC and the US spot Bitcoin ETF market attracted over $80 billion in assets under management.</p>
+</li>
+<li>
+<p>By early 2026, Bitcoin’s total market capitalisation had exceeded <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">nan</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">s</span><span class="mord mathnormal">p</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">i</span><span class="mord mathnormal">ces</span><span class="mord mathnormal">u</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">p</span><span class="mord mathnormal">a</span><span class="mord mathnormal">sse</span><span class="mord mathnormal">d</span></span></span></span>120,000 following the GENIUS Act passage in mid-July 2025, driving a new wave of institutional and sovereign research into its monetary properties.</p>
+</li>
+<li>
+<p>The IMF’s October 2025 Crypto Assets Monitor tracked a crypto market capitalisation of $4.2 trillion — a scale that forces serious engagement with whether these instruments perform monetary functions alongside their speculative role.</p>
+</li>
+<li>
+<p>The conceptual landscape maps to three distinct positions:</p>
+<ul>
+<li><strong>Bitcoin maximalists</strong> (<a href="../Saifedean-Ammous" class="internal alias" data-slug="Saifedean-Ammous">Saifedean Ammous</a>, <a href="../Michael-Saylor" class="internal alias" data-slug="Michael-Saylor">Michael Saylor</a>, <a href="../Jack-Mallers" class="internal alias" data-slug="Jack-Mallers">Jack Mallers</a>) assert Bitcoin is the best form of money ever created, superior to gold and fiat on every monetary criterion given sufficient time for adoption. This position draws directly on <a href="../pages/Austrian-Economics" class="internal alias" data-slug="pages/Austrian-Economics">Austrian Economics</a> and the historical analysis of money’s emergence from commodity barter.</li>
+<li><strong>Monetary pluralists</strong> (<a href="../Lyn-Alden" class="internal alias" data-slug="Lyn-Alden">Lyn Alden</a>, <a href="../Eric-Yakes" class="internal alias" data-slug="Eric-Yakes">Eric Yakes</a>, <a href="../Andrew-M.-Bailey" class="internal alias" data-slug="Andrew-M.-Bailey">Andrew M. Bailey</a>) argue Bitcoin is a novel asset class occupying a spectrum between savings instrument, commodity money, and bearer instrument — performing some monetary functions well and others poorly, with the balance shifting as the multi-layer network matures.</li>
+<li><strong>Sceptics</strong> (<a href="../Paul-Krugman" class="internal alias" data-slug="Paul-Krugman">Paul Krugman</a>, Nouriel Roubini, ECB institutional economists) maintain Bitcoin fundamentally fails the monetary criteria due to volatility, limited acceptance, regulatory uncertainty, and the absence of an issuer providing price stability. This position aligns with Keynesian and mainstream macroeconomic frameworks that treat money as a policy instrument requiring active management.</li>
+</ul>
+</li>
+<li>
+<p>Each position is grounded in defensible theoretical commitments; the disagreement is partly empirical (what will adoption look like in 2030?) and partly philosophical (what should money be for?).</p>
+</li>
+<li>
+<p><strong>Bitcoin as Bearer Instrument</strong>: A critical observation is that Bitcoin is not an IOU — it does not represent a claim on any counterparty or issuer. Traditional <a href="../Fiat-Money" class="internal alias" data-slug="Fiat-Money">Fiat Money</a> is an IOU of the central bank; a gold standard note is an IOU redeemable for gold; a bank deposit is an IOU of the commercial bank. Bitcoin is a <strong>bearer instrument</strong> — the token itself is the asset, with no underlying claim. This makes it more analogous to physical gold or cash-in-hand than to the electronic representations of money that dominate modern finance. <a href="../Lyn-Alden" class="internal alias" data-slug="Lyn-Alden">Lyn Alden</a> describes it as sitting “somewhere between savings and investment” — acting as programmable commodity money that combines the hard-asset properties of gold with the digital portability of electronic payments.</p>
+</li>
+<li>
+<p><strong>The Memetic Power of Bitcoin as Money</strong>: The proximity of Bitcoin to money — rather than any other use case — is arguably the decisive factor in its adoption. Even if Bitcoin were identical in every technical respect but used for something other than currency, it would not have attracted the social consensus and investment that it has. The monetary framing is what concentrates human attention and capital at scale. The question “is this money?” triggers deep psychological and sociological engagement that purely technical or collectible use cases do not. This memetic power was recognised by Satoshi Nakamoto implicitly (the whitepaper is titled “A Peer-to-Peer Electronic Cash System”) and has been leveraged by every subsequent Bitcoin advocate.</p>
+</li>
+<li>
+<p><strong>Andrew M. Bailey on Bitcoin’s Political Value</strong>: Andrew M. Bailey (philosopher, American University of Kuwait) articulates Bitcoin’s monetary value as fundamentally political rather than purely economic: “In an ideal world where governments honour the rights of citizens, they don’t spy, they don’t prohibit transactions, they manage a <a href="../pages/Sound-Money" class="internal alias" data-slug="pages/Sound-Money">Sound Money</a> supply, and they make sound decisions, the value of <a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal alias" data-slug="pages/Bitcoin-Proof-of-Work-Protocol">Bitcoin Proof-of-Work Protocol</a> is very low; we’re just not in an ideal world.” This framing positions Bitcoin’s monetary properties not as universally superior, but as superior specifically under conditions of governance failure — a conditional claim with significant empirical support in contexts of hyperinflation (Venezuela, Turkey, Nigeria) and financial censorship.</p>
+</li>
+<li>
+<p><strong>Bitcoin vs Fiat Money — Functional Comparison</strong>:</p>
+<ul>
+<li><strong>Durability</strong>: Fiat money (paper) is physically perishable; Bitcoin (cryptographic) is durable as long as the protocol and internet exist.</li>
+<li><strong>Divisibility</strong>: Fiat to two decimal places (cents); Bitcoin to eight decimal places (satoshis, 0.00000001 BTC), enabling micropayments impossible with physical currency.</li>
+<li><strong>Portability</strong>: Physical fiat is bulky at high value; Bitcoin transports billions of dollars across borders in seconds via single transactions.</li>
+<li><strong>Uniformity</strong>: Fiat notes are physically uniform; Bitcoin is cryptographically uniform (one UTXO is equivalent to another at the protocol level, though chain analysis creates address-level distinctions).</li>
+<li><strong>Limited supply</strong>: Fiat has no fixed supply limit; Bitcoin is capped at 21 million coins with a transparent, algorithmically enforced issuance schedule.</li>
+<li><strong>Acceptability</strong>: Fiat has legal tender status in most jurisdictions; Bitcoin has no legal tender status in most jurisdictions (El Salvador’s experiment was partially reversed in 2025).</li>
+<li><strong>Stability</strong>: Fiat is actively stabilised by central bank monetary policy; Bitcoin has no issuer and exhibits high price volatility driven by supply-demand dynamics in a relatively thin market.</li>
+</ul>
+</li>
+<li>
+<p>The balance sheet for Bitcoin-as-money shows clear advantages on durability, divisibility, portability, and supply limitation, with clear disadvantages on acceptability and stability — a profile that makes Bitcoin excellent as a SOV and speculative investment, viable as a MOE through layer infrastructure, and presently unsuitable as a UOA.</p>
+</li>
+<li>
+<p><strong>The Separation of Money and State</strong>: The deeper philosophical argument advanced by Bitcoin advocates is that the historical association between money and state is a contingent accident rather than a logical necessity. Historically, states took control of money production to extract seigniorage revenue and to fund wars; the gold standard was a constraint on this tendency. Fiat money removed the constraint entirely. Bitcoin re-imposes a supply constraint without requiring a gold commodity, and does so permissionlessly — anyone can use it, no state can prevent it, and no state can inflate it. Whether this constitutes an improvement over managed fiat depends on one’s view of whether central bank monetary policy generates net social value — the core disagreement between Austrian and Keynesian economists that Bitcoin has reignited at a global policy level.</p>
+</li>
+<li>
+<h2 id="components-and-architecture-of-bitcoins-monetary-system">Components and Architecture of Bitcoin’s Monetary System<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture-of-bitcoins-monetary-system" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="store-of-value-sov-function">Store of Value (SOV) Function<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#store-of-value-sov-function" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong><a href="../pages/Store-of-Value" class="internal alias" data-slug="pages/Store-of-Value">Store of Value</a></strong> is the monetary function most widely attributed to Bitcoin, and the one where the strongest analytical consensus exists across all three camps.</p>
+</li>
+<li>
+<p>The argument rests on four foundations:</p>
+<ul>
+<li>(a) The 21-million-coin supply cap creates mathematically provable scarcity superior to gold, which can be mined further and whose supply grows at approximately 1.5-2% annually.</li>
+<li>(b) Bitcoin’s network is secured by an enormous proof-of-work expenditure (~600 exahashes/second in 2025), making the ledger practically immutable and resistant to supply manipulation.</li>
+<li>(c) Self-custody — the ability to hold large values in personal key pairs without counterparty risk — distinguishes Bitcoin from bank deposits, bonds, and equity. There is no custodian who can freeze, confiscate, or inflate away Bitcoin held under self-custody.</li>
+<li>(d) Global 24/7 liquidity enables instant realisation of value across jurisdictions without capital controls, providing a portability superior to gold and comparable to digital fiat.</li>
+</ul>
+</li>
+<li>
+<p>The primary objection is volatility: Bitcoin’s 30-day realised volatility ranged 40-80% annualised through 2024-2025, compared to approximately 15-20% for gold and 18-22% for equity indices.</p>
+</li>
+<li>
+<p>Critics (Yermack 2015, ECB 2022) argue no asset that can lose 50-80% of value within a year qualifies as a reliable store of value.</p>
+</li>
+<li>
+<p>Proponents respond that:</p>
+<ul>
+<li>Volatility is a function of early adoption stage and declining risk premium as adoption matures.</li>
+<li>Over 4-year Bitcoin market cycles correlated with halving events, Bitcoin has never failed to achieve a new all-time high.</li>
+<li>The relevant comparison for a nascent monetary asset is not mature equities but early-stage real estate or gold in the pre-standardisation era.</li>
+</ul>
+</li>
+<li>
+<p><a href="../Fidelity-Digital-Assets" class="internal alias" data-slug="Fidelity-Digital-Assets">Fidelity Digital Assets</a>, Franklin Templeton, and BlackRock’s Bitcoin ETF research all adopt a variant of the “digital gold” store-of-value framing.</p>
+</li>
+<li>
+<p><a href="../ARK-Invest" class="internal alias" data-slug="ARK-Invest">ARK Invest</a>’s 2025 Big Ideas report posits potential long-term Bitcoin pricing well in excess of $1 million per coin under full monetary adoption scenarios, driven by store-of-value demand from institutional, sovereign, and retail sources.</p>
+</li>
+<li>
+<p>Key empirical validation: the US spot Bitcoin ETF market (launched January 2024) attracted $80+ billion in assets by late 2025, collectively holding over 1.7 million BTC — approximately 8% of total supply — representing a definitive institutional embrace of Bitcoin’s SOV function.</p>
+</li>
+<li>
+<h3 id="medium-of-exchange-moe-function">Medium of Exchange (MOE) Function<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#medium-of-exchange-moe-function" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong><a href="../Medium-of-Exchange" class="internal alias" data-slug="Medium-of-Exchange">Medium of Exchange</a></strong> is Bitcoin’s most contested monetary function and the one where the layered architecture matters most.</p>
+</li>
+<li>
+<p>At the base chain (<a href="../pages/Bitcoin-Network" class="internal alias" data-slug="pages/Bitcoin-Network">Bitcoin Network</a> on-chain), Bitcoin’s throughput is approximately 7 transactions per second with average confirmation times of 10 minutes — far too slow and expensive for point-of-sale retail commerce.</p>
+</li>
+<li>
+<p>Bitcoin on-chain fees spiked during periods of high demand (reaching $60-80 per transaction in May 2023 during the BRC-20 inscription boom), making small-value payments uneconomic.</p>
+</li>
+<li>
+<p>Economically, the Gresham dynamic further suppresses base-layer MOE: rational agents who expect Bitcoin to appreciate prefer to transact in fiat and hold Bitcoin.</p>
+</li>
+<li>
+<p><strong><a href="../pages/Lightning-Network" class="internal alias" data-slug="pages/Lightning-Network">Lightning Network</a> as MOE Solution</strong>: The <a href="../pages/Lightning-Network" class="internal alias" data-slug="pages/Lightning-Network">Lightning Network</a>, introduced via the whitepaper of Poon and Dryja (2016), enables off-chain payment channels that settle instantly at negligible cost (sub-satoshi routing fees), dramatically expanding Bitcoin’s effective throughput.</p>
+<ul>
+<li>By November 2025, the Lightning Network processed $1.17 billion in monthly transaction volume across 5.22 million transactions.</li>
+<li>Network capacity reached a record 5,606 BTC (approximately <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">560</span><span class="mord mathnormal">mi</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">na</span><span class="mord mathnormal">t</span></span></span></span>100K BTC) in December 2025.</li>
+<li>Approximately 16,000 nodes and ~52,700 active channels composed the network in early 2026.</li>
+<li>The average Lightning transaction in November 2025 was $223, reflecting both institutional use (exchange-to-exchange, business payments) and consumer payments.</li>
+<li>A 266% year-over-year increase in Lightning Network transaction volume signals maturation of Bitcoin’s scaling infrastructure.</li>
+</ul>
+</li>
+<li>
+<p>Lightning enables the separation central to the layered money thesis: hold BTC (SOV) while spending via Lightning (MOE) with instant fiat conversion at point of sale if the counterparty prefers.</p>
+</li>
+<li>
+<p><strong><a href="../pages/Strike" class="internal" data-slug="pages/Strike">Strike</a> and Point-of-Sale Integration</strong>: <a href="../Jack-Mallers" class="internal alias" data-slug="Jack-Mallers">Jack Mallers</a>’s <a href="../pages/Strike" class="internal" data-slug="pages/Strike">Strike</a> company has built the leading US Lightning-native payment infrastructure, integrating with NCR point-of-sale systems and <a href="../Shopify" class="internal" data-slug="Shopify">Shopify</a> globally.</p>
+<ul>
+<li>The Strike model enables a US consumer to pay for a purchase using their Bitcoin balance, with Strike handling the Lightning→fiat conversion seamlessly.</li>
+<li>The merchant receives dollars while the customer’s BTC is liquidated in a potentially tax-efficient structure.</li>
+<li>This separates the economic function (MOE) from the store-of-value function (SOV), resolving the Gresham impediment through infrastructure rather than monetary theory.</li>
+<li>A 2025 Deloitte study on merchants preparing for cryptocurrency adoption found that 93% of businesses accepting Bitcoin have seen revenue and brand perception improve, and 75% of US sales executives plan to accept digital assets within 2 years.</li>
+<li>Using Bitcoin as Bitcoin directly to vendors is now available through Shopify globally, enabling merchants who want Bitcoin settlement (not fiat) to operate genuinely circular Bitcoin businesses.</li>
+</ul>
+</li>
+<li>
+<p><strong>Jack Mallers’ IMF Presentation</strong>: At his presentation to the <a href="../pages/International-Monetary-Fund" class="internal alias" data-slug="pages/International-Monetary-Fund">International Monetary Fund</a> on Bitcoin as global monetary infrastructure, Mallers identified six systemic challenges solved by the <a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal alias" data-slug="pages/Bitcoin-Proof-of-Work-Protocol">Bitcoin Proof-of-Work Protocol</a> monetary network:</p>
+<ul>
+<li><strong>Speed</strong>: Traditional payment systems suffer from slow settlement times; Lightning settles in milliseconds with finality unavailable in traditional ACH or SWIFT networks.</li>
+<li><strong>Limited Transparency and Dependability</strong>: Opaque financial infrastructure and unreliable cross-border payments; Lightning provides cryptographic proof of payment.</li>
+<li><strong>High Cost</strong>: Excessive transaction fees and intermediary costs; Lightning fees are fractions of a cent versus 1-3% card processing and 5-10% international wire fees.</li>
+<li><strong>Lack of Interoperability</strong>: Fragmented payment networks that do not communicate; Bitcoin is a universal base layer that any wallet, any jurisdiction, any device can connect to without licensing agreements.</li>
+<li><strong>Limited Coverage</strong>: Geographic restrictions in financial services access; Bitcoin is borderless and available wherever internet connectivity exists.</li>
+<li><strong>Limited Accessibility</strong>: Banking barriers for unbanked populations; Bitcoin requires only a smartphone and internet connection, eliminating the identity documentation and credit history requirements of traditional banking.</li>
+</ul>
+</li>
+<li>
+<p>Mallers further identifies the attributes of ideal global money as: uncensorable, unfreezable, permissionless, borderless, liquid, and digital — criteria he argues Bitcoin uniquely satisfies among existing monetary instruments.</p>
+</li>
+<li>
+<p><a href="../Lyn-Alden" class="internal alias" data-slug="Lyn-Alden">Lyn Alden</a> has articulated why broad merchant acceptance matters beyond the transactional use case: “The more places that accept BTC at point of sale — even if the merchant receives fiat — the less isolable and censorable the Bitcoin network becomes as a payment rail. Since it is an open network, anyone can build on it globally.”</p>
+</li>
+<li>
+<p><strong>Merchant Adoption Trajectory</strong>: Over 15,000 Lightning nodes routed transactions globally in 2025, with channel capacity surpassing 5,600 BTC. The network’s 266% transaction volume growth year-over-year suggests MOE adoption is accelerating through 2025-2026, though absolute volumes remain modest relative to Visa/Mastercard’s daily processing of hundreds of millions of transactions.</p>
+</li>
+<li>
+<h3 id="unit-of-account-uoa-function">Unit of Account (UOA) Function<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#unit-of-account-uoa-function" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong><a href="../Unit-of-Account" class="internal alias" data-slug="Unit-of-Account">Unit of Account</a></strong> is the monetary function Bitcoin most clearly does not currently perform.</p>
+</li>
+<li>
+<p>A unit of account requires price stability sufficient that contracts, wages, debts, and accounting can be denominated in the unit without constant hedge adjustments.</p>
+</li>
+<li>
+<p>Bitcoin’s 40-80% annualised volatility makes BTC-denominated contracts economically irrational for most parties:</p>
+<ul>
+<li>A business that prices goods in BTC faces catastrophic revenue volatility (a 20% BTC price drop overnight translates directly to a 20% revenue loss in fiat terms).</li>
+<li><a href="../pages/El-Salvador" class="internal alias" data-slug="pages/El-Salvador">El Salvador</a>’s legal tender experiment confirmed this: even with government wallet infrastructure and tax-payment acceptance, Salvadoran businesses overwhelmingly continued pricing and accounting in US dollars, with Bitcoin converted at point of payment.</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../Stablesats" class="internal" data-slug="Stablesats">Stablesats</a> and Lightning USD</strong>: Stablesats addresses the UOA problem by providing synthetic dollar-denominated accounts on the <a href="../pages/Lightning-Network" class="internal alias" data-slug="pages/Lightning-Network">Lightning Network</a>, using Bitcoin-backed perpetual futures hedges to maintain dollar parity while keeping settlement on the Lightning rail.</p>
+<ul>
+<li>This enables USD-denominated transactions with Bitcoin’s technical properties (speed, global reach, self-custody, censorship resistance).</li>
+<li>The approach does not solve the UOA problem for Bitcoin itself, but provides a workable hybrid for circular economies that want Bitcoin infrastructure with dollar price stability.</li>
+</ul>
+</li>
+<li>
+<p>Most analysts who accept Bitcoin as a long-run candidate for full monetary adoption argue that UOA function would emerge only in a post-<a href="../pages/Hyperbitcoinization" class="internal" data-slug="pages/Hyperbitcoinization">Hyperbitcoinization</a> world where Bitcoin is sufficiently dominant that the price of goods in BTC is stable relative to other goods — a circular proposition.</p>
+</li>
+<li>
+<p>The practical consensus is that Bitcoin functions as a SOV and increasingly as a MOE through Lightning, while UOA remains a long-run aspiration rather than a present reality.</p>
+</li>
+<li>
+<h3 id="layered-bitcoin-architecture-and-monetary-layers">Layered Bitcoin Architecture and Monetary Layers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layered-bitcoin-architecture-and-monetary-layers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Following <a href="../Giacomo-Zucco" class="internal alias" data-slug="Giacomo-Zucco">Giacomo Zucco</a>’s “Discovering Bitcoin” framework and Kunal Bhatia’s layered money analysis, Bitcoin’s monetary system is best understood as a hierarchy of layers analogous to the gold/paper/credit stack of pre-1971 monetary systems.</p>
+</li>
+<li>
+<p>The <strong>base layer</strong> (<a href="../pages/Bitcoin-Network" class="internal alias" data-slug="pages/Bitcoin-Network">Bitcoin Network</a> on-chain) functions as apex monetary reserve (analogous to gold):</p>
+<ul>
+<li>Final settlement in approximately 10 minutes (1 confirmation) to 60 minutes (6 confirmations).</li>
+<li>High security: proof-of-work expenditure at 600+ exahashes/second makes 51% attack economically infeasible.</li>
+<li>Low throughput (~7 transactions per second) suitable for large-value infrequent transactions — analogous to interbank settlement rather than consumer payments.</li>
+<li>The base layer’s primary monetary function is SOV and final settlement, not day-to-day MOE.</li>
+</ul>
+</li>
+<li>
+<p>The <strong><a href="../pages/Lightning-Network" class="internal alias" data-slug="pages/Lightning-Network">Lightning Network</a></strong> functions as the transactional settlement layer (analogous to paper claims on gold, but without counterparty risk for self-custodied channels):</p>
+<ul>
+<li>Instant settlement (milliseconds), negligible fees (sub-cent), theoretically unlimited throughput (millions of transactions per second in theory, constrained by channel liquidity in practice).</li>
+<li>Suitable for everyday payments: coffee, utilities, remittances, API calls, content micropayments.</li>
+<li>Counterparty risk exists for custodial Lightning wallets (the user trusts the wallet provider), but self-custodied Lightning nodes maintain full Bitcoin sovereignty.</li>
+<li>BOLT11 invoices and BOLT12 offers provide machine-readable payment requests enabling autonomous AI agent payments.</li>
+</ul>
+</li>
+<li>
+<p>Hypothetical <strong>Layer 3</strong> instruments (<a href="../Stablesats" class="internal" data-slug="Stablesats">Stablesats</a>, <a href="../pages/Fedimint" class="internal" data-slug="pages/Fedimint">Fedimint</a> eCash mints, <a href="../Cashu" class="internal" data-slug="Cashu">Cashu</a> tokens, <a href="../pages/RGB-Protocol" class="internal alias" data-slug="pages/RGB-Protocol">RGB Protocol</a> assets) function as credit-money and complex financial instruments:</p>
+<ul>
+<li>Privacy-preserving: Fedimint and Cashu use Chaumian eCash blind signatures to provide transactional privacy absent at the Lightning layer.</li>
+<li>Dollar stability: Stablesats provide synthetic USD-pegged accounts on Lightning, enabling UOA function without Bitcoin denomination.</li>
+<li>Smart contracts: RGB Protocol enables Bitcoin-native token issuance, NFTs, and complex financial instruments settled on the Bitcoin base layer.</li>
+<li>Layer 3 instruments are fully fungible back to Layer 1 Bitcoin, ensuring the underlying monetary base remains censorship-resistant.</li>
+</ul>
+</li>
+<li>
+<p>Under this model, Bitcoin-as-money is a system property, not a base-layer property alone — just as the dollar’s monetary functionality depends on the entire banking system, not on federal reserve notes alone.</p>
+</li>
+<li>
+<p>Censorship resistance — enforced at the base layer — propagates upward through the stack, ensuring that even Lightning payments or eCash tokens ultimately settle in censorship-resistant Bitcoin, maintaining the foundational monetary property across all layers.</p>
+</li>
+<li>
+<p>The layered architecture resolves the apparent contradiction between Bitcoin’s base-layer limitations (low throughput, high fees, slow confirmation) and its aspirational monetary properties: each layer handles the monetary functions appropriate to its throughput and security characteristics.</p>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="circular-bitcoin-economies-cbes">Circular Bitcoin Economies (CBEs)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#circular-bitcoin-economies-cbes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>A <strong>Circular Bitcoin Economy</strong> (CBE) is a local economy in which Bitcoin is earned, saved, and spent without mandatory conversion to fiat, enabling a closed monetary loop denominated in BTC.</p>
+</li>
+<li>
+<p>The original and most studied example is <a href="../Bitcoin-Beach" class="internal alias" data-slug="Bitcoin-Beach">Bitcoin Beach</a> (<a href="../El-Zonte" class="internal alias" data-slug="El-Zonte">El Zonte</a>, <a href="../pages/El-Salvador" class="internal alias" data-slug="pages/El-Salvador">El Salvador</a>), established in 2019 after an anonymous $100,000 BTC donation on condition of Bitcoin-only adoption.</p>
+<ul>
+<li>By 2025, Bitcoin Beach supported Lightning-network commerce covering utility bills, medical care, food, and services — a genuine MOE use case at community scale.</li>
+<li>Bitcoin remains widely accepted in El Zonte despite the government’s February 2025 reversal of mandatory national legal tender status, demonstrating that bottom-up circular economy adoption is more durable than top-down legal mandates.</li>
+<li>Every month Bitcoin Beach helps new local businesses and services begin to accept payment in Bitcoin; the community model has inspired replication globally.</li>
+</ul>
+</li>
+<li>
+<p>The broader <a href="../Federation-of-Bitcoin-Circular-Economies" class="internal alias" data-slug="Federation-of-Bitcoin-Circular-Economies">Federation of Bitcoin Circular Economies</a> (FBCE) awarded 42 BCE project grants across 19 countries in 2025, with grants ranging from 500,000 to 5,000,000 satoshis per project.</p>
+</li>
+<li>
+<p>The Bitcoin Circular Economies Summit 2026 attracted representatives from 29 countries including Indonesia, Peru, Nigeria, and Kenya, exploring strategies for sustainable circular economies.</p>
+</li>
+<li>
+<p>These grassroots experiments provide the most reliable empirical evidence base for Bitcoin’s MOE function in real-world conditions, distinct from top-down national legal tender adoptions which introduce coercive dynamics that mask voluntary adoption rates.</p>
+</li>
+<li>
+<p>Key characteristics of successful CBEs identified at the 2025-2026 summits:</p>
+<ul>
+<li><strong>Education first</strong>: Communities where Bitcoin literacy was established before commercial adoption showed higher and more durable MOE usage.</li>
+<li><strong>Mobile-first infrastructure</strong>: Communities with high smartphone penetration but low traditional banking access adopted most readily.</li>
+<li><strong>Local merchant density</strong>: CBEs require a critical mass of accepting merchants to generate the circular flow that eliminates forced fiat conversion.</li>
+<li><strong>Lightning UX</strong>: User-friendly Lightning wallets (Phoenix, Wallet of Satoshi, Breez) reduced friction enough to achieve consumer-grade adoption.</li>
+</ul>
+</li>
+<li>
+<h3 id="remittances-and-financial-inclusion">Remittances and Financial Inclusion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#remittances-and-financial-inclusion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Bitcoin’s most empirically validated monetary use case in the 2020s is <strong>cross-border remittances</strong> — particularly for the 1.4 billion adults globally without bank accounts who receive value from diaspora family members.</p>
+</li>
+<li>
+<p>Traditional remittance corridors (Western Union, MoneyGram) charge 5-10% fees and require identity documentation that excludes many recipients. The World Bank estimates global remittance fees average 6.2% (2024), representing a regressive tax on the world’s poorest populations.</p>
+</li>
+<li>
+<p>Lightning-network remittances cost fractions of a cent with near-instant settlement, and can be received on self-custodied mobile wallets without bank accounts or identity verification.</p>
+</li>
+<li>
+<p>In <a href="../pages/El-Salvador" class="internal alias" data-slug="pages/El-Salvador">El Salvador</a>, approximately $400 million in annual remittances (which constitute approximately 24% of GDP) had migrated to Lightning channels by 2025, reducing transfer costs by an average of 3.5% compared to Western Union and MoneyGram corridors.</p>
+</li>
+<li>
+<p><a href="../Africa" class="internal" data-slug="Africa">Africa</a> has seen peer-to-peer Bitcoin trading volumes grow 400% since 2021 (Chainalysis Geography of Cryptocurrency 2025), with <a href="../Nigeria" class="internal" data-slug="Nigeria">Nigeria</a>, <a href="../Kenya" class="internal" data-slug="Kenya">Kenya</a>, and <a href="../South-Africa" class="internal alias" data-slug="South-Africa">South Africa</a> leading adoption driven by currency debasement, banking exclusion, and vibrant developer communities.</p>
+</li>
+<li>
+<p>The case for Bitcoin as financial inclusion money is strongest where the alternatives are worst: in countries with hyperinflationary fiat currencies (Venezuela, Zimbabwe, Argentina), banking access rates below 30%, and unreliable digital payment infrastructure.</p>
+</li>
+<li>
+<p>Bitcoin education centres in underdeveloped areas teach children monetary concepts and financial access using Bitcoin as the medium — an early-adoption dynamic suggesting long-run MOE potential in unbanked populations.</p>
+</li>
+<li>
+<p>Saquon Barkley (NFL player, ~500,000 Twitter followers) articulated the accessibility thesis publicly: “I want my career earnings to last generations… Bitcoin is a proven, safe, global, and open system that allows anyone to save money. It is the most accessible asset we’ve ever seen.” This athlete adoption signal reflects broader cultural adoption dynamics that historically precede mainstream monetary acceptance.</p>
+</li>
+<li>
+<h3 id="institutional-store-of-value-adoption">Institutional Store of Value Adoption<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#institutional-store-of-value-adoption" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The emergence of <strong>corporate Bitcoin treasury</strong> strategies (led by <a href="../pages/MicroStrategy" class="internal" data-slug="pages/MicroStrategy">MicroStrategy</a>/Strategy with approximately 478,000 BTC) and <strong>sovereign Bitcoin reserves</strong> validates the SOV thesis at institutional scale.</p>
+</li>
+<li>
+<p>The US Strategic Bitcoin Reserve (executive order, March 2025) holds 328,372 BTC of forfeited assets as of February 2026 — the world’s largest known state Bitcoin holding.</p>
+</li>
+<li>
+<p>El Salvador holds 7,508 BTC; Bhutan has accumulated approximately 13,000 BTC through state hydroelectric mining operations.</p>
+</li>
+<li>
+<p><a href="../ARK-Invest" class="internal alias" data-slug="ARK-Invest">ARK Invest</a>, <a href="../Fidelity-Digital-Assets" class="internal alias" data-slug="Fidelity-Digital-Assets">Fidelity Digital Assets</a>, BlackRock (IBIT ETF), Franklin Templeton (EZBC), and approximately 12 other asset managers launched US spot Bitcoin ETFs in January 2024, collectively holding over 1.7 million BTC by late 2025 — approximately 8% of total supply — and attracting $80+ billion in assets.</p>
+</li>
+<li>
+<p>This institutional embrace of Bitcoin-as-digital-gold marks a qualitative shift in how the financial system categorises Bitcoin’s monetary function — from speculative token to reserve asset class.</p>
+</li>
+<li>
+<h3 id="machine-commerce-and-ai-payments">Machine Commerce and AI Payments<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#machine-commerce-and-ai-payments" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>An emerging frontier is <strong>programmable money for autonomous agents</strong> — <a href="../pages/AI-Agent-Payments" class="internal alias" data-slug="pages/AI-Agent-Payments">AI Agent Payments</a> and machine-to-machine commerce using <a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal alias" data-slug="pages/Bitcoin-Proof-of-Work-Protocol">Bitcoin Proof-of-Work Protocol</a>’s payment rail and the <a href="../pages/L402-Protocol" class="internal alias" data-slug="pages/L402-Protocol">L402 Protocol</a>.</p>
+</li>
+<li>
+<p>The <a href="../pages/L402" class="internal" data-slug="pages/L402">L402</a> protocol combines Lightning invoices with macaroon-based authentication tokens to enable pay-per-use APIs, content, and services at satoshi-level granularity.</p>
+</li>
+<li>
+<p>Over 2,800 services supported L402/X402 by 2025, with monthly transaction volume reaching 45 million micropayments at average sizes of approximately 250 satoshis (~$0.25 at 2025 valuations).</p>
+</li>
+<li>
+<p>This use case — autonomous economic agents earning and spending Bitcoin without human intermediation — constitutes a novel monetary function not anticipated by classical monetary theory: <strong>machine money</strong>, where the monetary unit must support algorithmic, autonomous economic activity at internet speed.</p>
+</li>
+<li>
+<p>AI agent payment use cases include: data marketplace purchases (AI models buying training data), compute resource payment (GPU-time auctioning), multi-agent task coordination (specialist agents hired by orchestrator agents), reputation systems (payment history as trust signal), and IoT device-to-device micropayments (electric vehicle charging, sensor data, bandwidth).</p>
+</li>
+<li>
+<p>The convergence of Bitcoin’s permissionless payments, <a href="../pages/RGB-Protocol" class="internal alias" data-slug="pages/RGB-Protocol">RGB Protocol</a> asset issuance, and large language model capabilities creates the technical substrate for this new monetary function.</p>
+</li>
+<li>
+<p>Security considerations for AI agent payments: Sybil attack prevention (fake agent identities gaming reputation systems), Lightning payment proof verification, rate limiting against payment channel exhaustion, and <a href="../Blinded-Paths" class="internal alias" data-slug="Blinded-Paths">Blinded Paths</a> for onion-routed transaction privacy.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="classical-monetary-economics-and-bitcoin">Classical Monetary Economics and Bitcoin<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classical-monetary-economics-and-bitcoin" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The three-function framework (MOE, SOV, UOA) derives from classical political economy (Adam Smith, David Ricardo) and was formalised in the 19th century by Stanley Jevons (<em>Money and the Mechanism of Exchange</em>, 1875).</p>
+</li>
+<li>
+<p>Economists at the Bank for International Settlements, European Central Bank, and International Monetary Fund have produced a substantial body of critical literature:</p>
+<ul>
+<li>Yermack (2015) argued Bitcoin fails all three monetary criteria based on high volatility, limited merchant acceptance, and absence of price stability.</li>
+<li>The ECB’s 2012 and 2015 virtual currency reports concluded Bitcoin is not money, primarily on grounds of limited acceptance and regulatory uncertainty.</li>
+<li>The BIS 2018 Annual Economic Report included a chapter (“Looking Under the Hood: Is Bitcoin a Currency?”) rejecting Bitcoin’s monetary credentials primarily on volatility and scalability grounds.</li>
+</ul>
+</li>
+<li>
+<p>These institutional positions have softened since 2021: the IMF’s October 2025 Crypto Assets Monitor documents crypto market capitalisation of $4.2 trillion and treats crypto as a serious macroeconomic phenomenon requiring policy attention rather than dismissal.</p>
+</li>
+<li>
+<p>The <strong>quantity theory of money</strong> (Fisher 1911, Friedman 1956) applied to Bitcoin yields paradoxes:</p>
+<ul>
+<li>If M = total Bitcoin supply (approaching 21 million), V = velocity (suppressed by HODLing), P = price level (highly variable), and Q = real output transacted in Bitcoin (small), the equation holds trivially but fails to generate monetary policy implications.</li>
+<li>Bitcoin’s fixed M is simultaneously its greatest monetary virtue (inflation-proof) and its greatest monetary limitation (no lender of last resort, no counter-cyclical money creation).</li>
+<li>Austrian economists view the inability to inflate as a feature; Keynesian economists view it as a disqualifying defect for a world where money supply must be managed to smooth economic cycles.</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../pages/Austrian-Economics" class="internal alias" data-slug="pages/Austrian-Economics">Austrian Economics</a></strong> provides the most sympathetic theoretical framework:</p>
+<ul>
+<li>Von Mises’s regression theorem is reinterpreted to accommodate Bitcoin through the Nakamoto paper’s utility (peer-to-peer electronic payment value prior to monetary use). The regression proceeds: cypherpunk collectible (1) → electronic cash system (2) → store of value (3) → medium of exchange (4) → potential unit of account (5).</li>
+<li>Hayek’s <em>Denationalisation of Money</em> (1976) — arguing for competitive private currencies free from state monopoly — is frequently cited as anticipating Bitcoin. Hayek’s proposal for private currency competition is effectively realised in the cryptocurrency ecosystem, with Bitcoin emerging as the dominant “hard money” competitor to fiat.</li>
+<li>Rothbard’s critique of central banking fractional reserve money aligns with Bitcoin’s full-reserve, hard-cap architecture. A Bitcoin-standard financial system would necessarily be full-reserve (no bank can create more BTC than exists), eliminating the credit-money expansion that Austrian theory identifies as the source of business cycle volatility.</li>
+<li>Ammous’s <em>The Bitcoin Standard</em> (2018) synthesises these traditions into a systematic case for Bitcoin as the superior monetary standard, arguing that low time-preference (valuing future over present) enabled by hard money correlates with civilisational flourishing — civilisations with hard money invest more, defer consumption more, and achieve greater long-run productivity.</li>
+<li>The Austrian framework’s primary limitation is its reliance on regression theorem arguments that many monetary theorists reject: Keynesians argue money is a social institution that can be created by decree (legal tender), rendering the regression theorem historically false as an account of fiat money’s emergence.</li>
+</ul>
+</li>
+<li>
+<p><strong>Keynesian and Mainstream Counter-arguments</strong>: The mainstream monetary economics critique of Bitcoin-as-money centres on:</p>
+<ul>
+<li><strong>Price stability</strong>: No central bank means no countercyclical monetary policy; a Bitcoin-standard economy would face deflationary spirals during economic downturns (Fisher debt deflation thesis 1933).</li>
+<li><strong>Lender of last resort</strong>: No institution can create Bitcoin to address bank runs or liquidity crises; banking system fragility would increase under a Bitcoin standard.</li>
+<li><strong>Optimal monetary policy</strong>: Fixed-supply money prevents the active management of aggregate demand that Keynesian and New Keynesian frameworks view as essential to economic stability.</li>
+<li><strong>Empirical rejection</strong>: Bitcoin has not demonstrably replaced fiat in any large economy; its adoption as SOV does not indicate monetary adoption, and historical precedents (gold standard) show rigid monetary rules can be economically catastrophic (Great Depression 1929-1933).</li>
+</ul>
+</li>
+<li>
+<h3 id="key-academic-contributions-2024-2026">Key Academic Contributions (2024-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-academic-contributions-2024-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>A growing literature addresses Bitcoin-as-money empirically:</p>
+<ul>
+<li><strong>Liu and Tsyvinski (2021, <em>Review of Financial Studies</em>)</strong>: Bitcoin returns are not explained by traditional risk factors, implying a distinct asset class requiring new classification outside equities, commodities, and currencies.</li>
+<li><strong>Böhme et al. (2015, <em>Journal of Economic Perspectives</em>)</strong>: Comprehensive early treatment of Bitcoin’s economic, technical, and governance properties — the canonical academic survey that defined subsequent research agendas.</li>
+<li><strong>arXiv 2512.07840 (November 2025)</strong>: Synthesis of structural shortcomings of Bitcoin as money, identifying the on-chain fee market’s suppression of monetary velocity as the central empirical challenge to MOE function. The paper also documents the structural improvement provided by Lightning Network routing.</li>
+<li><strong>Tandfonline (2025)</strong>: <em>Journal of Post Keynesian Economics</em> paper investigating whether cryptocurrencies could become monetary units of account under various macroeconomic scenarios — the most recent direct engagement with the UOA question.</li>
+<li><strong>Bank of Indonesia Bulletin (2025)</strong>: Empirical examination of cryptocurrencies, money demand, and monetary policy stability, finding the money multiplier and income velocity have remained stable alongside crypto growth — suggesting Bitcoin has not yet destabilised fiat monetary aggregates.</li>
+<li><strong>ECB Working Papers (2024)</strong>: Continued institutional scepticism, with ECB economists arguing Bitcoin’s failure to achieve price stability makes it categorically unsuitable for monetary functions; cited as evidence that European institutional consensus remains sceptical despite growing US and UK openness.</li>
+<li><strong>Nakamoto Institute Archive (ongoing)</strong>: The Satoshi Nakamoto Institute curates the primary sources of early Bitcoin monetary theory, including correspondence, forum posts, and papers that document the transition from electronic cash to store of value framing.</li>
+</ul>
+</li>
+<li>
+<p>The Cambridge Centre for Alternative Finance (<a href="../CCAF" class="internal" data-slug="CCAF">CCAF</a>) publishes annual Global Cryptoasset Benchmarking Studies that serve as the authoritative empirical dataset for Bitcoin adoption, merchant acceptance, and network statistics.</p>
+</li>
+<li>
+<p><strong>Lyn Alden on Monetary Networks</strong>: Alden’s framework distinguishes between monetary instruments (what is held) and monetary networks (what enables transfer). Bitcoin the network is a global monetary settlement layer — a rugged message-passing protocol achieving consensus about distributed database entries. Bitcoin the token is the accounting unit of that network. The distinction matters because the network’s properties (censorship resistance, global reach, 24/7 operation, permissionless access) are separable from the token’s properties (volatility, scarcity, divisibility). The monetary network argument is stronger than the monetary instrument argument in the current period, suggesting Bitcoin’s primary monetary contribution is infrastructural rather than denominational.</p>
+</li>
+<li>
+<h3 id="eric-yakes-and-the-7th-property">Eric Yakes and the 7th Property<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#eric-yakes-and-the-7th-property" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><a href="../Eric-Yakes" class="internal alias" data-slug="Eric-Yakes">Eric Yakes</a>, author of <em>The 7th Property: Bitcoin and the Monetary Revolution</em> (2024), provides the most systematic contemporary <a href="../pages/Austrian-Economics" class="internal alias" data-slug="pages/Austrian-Economics">Austrian Economics</a> analysis of Bitcoin’s monetary properties.</p>
+</li>
+<li>
+<p>Yakes argues that paper money became money because it was superior to gold in divisibility and portability, but lacked scarcity — requiring commodity backing to maintain monetary credibility.</p>
+</li>
+<li>
+<p>Since the abandonment of the gold standard, fiat money is “backed” by nothing with inherent scarcity — only the state’s fiscal authority and monetary policy credibility.</p>
+</li>
+<li>
+<p>Bitcoin does not require backing: it has inherent monetary properties superior to any prior monetary good, including a hard supply cap that makes it scarce without external backing, and cryptographic verifiability that makes counterfeiting impossible.</p>
+</li>
+<li>
+<p>The “7th property” refers to Bitcoin’s censorship resistance — the property that no prior monetary good has possessed — which Yakes argues is the critical differentiator making Bitcoin a genuinely novel monetary phenomenon.</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>As of May 2026, Bitcoin’s monetary status sits at an inflection point where sceptic and maximalist positions are both partially validated by events:</p>
+</li>
+<li>
+<h3 id="store-of-value--validated-at-institutional-scale">Store of Value — Validated at Institutional Scale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#store-of-value--validated-at-institutional-scale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Bitcoin’s SOV function has been validated at multiple institutional tiers through 2025-2026:</p>
+<ul>
+<li><strong>Asset managers</strong>: BlackRock, Fidelity, and eleven other managers launched US spot Bitcoin ETFs in January 2024, collectively holding over 1.7 million BTC ($80+ billion AUM) by late 2025.</li>
+<li><strong>Sovereign governments</strong>: The US Strategic Bitcoin Reserve (328,000+ BTC as of February 2026, forfeited assets under executive order March 2025) is the world’s largest known state holding. El Salvador holds 7,508 BTC. Bhutan has accumulated approximately 13,000 BTC through state hydroelectric mining. Brazil has proposed legislation to accumulate up to 1 million BTC over five years. Pakistan announced a Strategic Bitcoin Reserve in 2026.</li>
+<li><strong>Corporate treasuries</strong>: <a href="../pages/MicroStrategy" class="internal" data-slug="pages/MicroStrategy">MicroStrategy</a>/Strategy (approximately 478,000 BTC), Marathon Digital (~26,000 BTC), Riot Platforms (~10,000 BTC), and 120+ listed companies globally have adopted Bitcoin treasury strategies.</li>
+<li><strong>Index inclusion</strong>: Bitcoin ETFs are included in major financial indices; <a href="../pages/MicroStrategy" class="internal" data-slug="pages/MicroStrategy">MicroStrategy</a> joined the Nasdaq-100 (December 2024 reconstitution), driving passive-fund Bitcoin exposure across $300B+ in index-tracking AUM.</li>
+</ul>
+</li>
+<li>
+<p>The IMF’s Crypto Assets Monitor (October 2025) tracks a <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">4.2</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.03588em;">cry</span><span class="mord mathnormal">pt</span><span class="mord mathnormal">o</span><span class="mord mathnormal">ma</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">co</span><span class="mord mathnormal">in</span><span class="mord mathnormal">co</span><span class="mord mathnormal">m</span><span class="mord mathnormal">p</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">in</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">a</span><span class="mord mathnormal">pp</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">x</span><span class="mord mathnormal">ima</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord">60</span></span></span></span>2.5 trillion).</p>
+</li>
+<li>
+<p>The GENIUS Act passage in mid-July 2025 pushed total crypto market cap above <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">4</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">co</span><span class="mord mathnormal">in</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord mathnormal">in</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">ab</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">e</span></span></span></span>120,000.</p>
+</li>
+<li>
+<p>At these valuations, Bitcoin’s market capitalisation (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9463em;vertical-align:-0.1944em;"></span><span class="mord">2.5</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">ers</span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord mathnormal">s</span><span class="mord mathnormal">a</span><span class="mord mathnormal">pp</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">x</span><span class="mord mathnormal">ima</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span>13T) implies significant room for further institutional allocation on a SOV thesis, though volatility (still 40-60% annualised at 2025-2026 prices) remains the principal objection.</p>
+</li>
+<li>
+<p>FASB ASU 2023-08 (effective fiscal 2025) requires fair-value accounting for crypto assets, ending the historical impairment-only treatment that had created artificial GAAP losses during bear markets — a regulatory change that significantly reduced accounting friction for institutional SOV adoption.</p>
+</li>
+<li>
+<h3 id="medium-of-exchange--validated-at-community-scale">Medium of Exchange — Validated at Community Scale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#medium-of-exchange--validated-at-community-scale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The <a href="../pages/Lightning-Network" class="internal alias" data-slug="pages/Lightning-Network">Lightning Network</a> has demonstrated Bitcoin’s scalability as a payment rail at the community and B2B level: $1.17 billion monthly volume (November 2025), 5,606 BTC capacity, institutional integration via <a href="../pages/Strike" class="internal" data-slug="pages/Strike">Strike</a>, <a href="../Shopify" class="internal" data-slug="Shopify">Shopify</a>, NCR.</p>
+</li>
+<li>
+<p>The emerging <a href="../pages/L402" class="internal" data-slug="pages/L402">L402</a> micropayment ecosystem processes 45 million payments monthly, establishing a new class of machine-to-machine MOE function.</p>
+</li>
+<li>
+<p>However, El Salvador’s national legal tender experiment established that voluntary consumer adoption at scale is not guaranteed by legal mandate alone: actual transaction use declined to 8.1% of Salvadorans by 2024, prompting the February 2025 reform removing mandatory acceptance.</p>
+</li>
+<li>
+<p>The MOE case depends on continued Lightning network growth, merchant adoption, and the gradual resolution of the Gresham dynamic as Bitcoin adoption matures and volatility compresses.</p>
+</li>
+<li>
+<h3 id="unit-of-account--not-yet-validated">Unit of Account — Not Yet Validated<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#unit-of-account--not-yet-validated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Bitcoin is not used as a unit of account in any significant commercial context as of 2026.</p>
+</li>
+<li>
+<p>Contracts, wages, accounting, and debt are universally denominated in fiat.</p>
+</li>
+<li>
+<p>The Stablesats/Lightning USD hybrid provides a practical workaround for circular economies, but does not represent Bitcoin-denomination.</p>
+</li>
+<li>
+<p>The UOA function remains a long-run theoretical possibility contingent on hyperbitcoinisation and sustained adoption.</p>
+</li>
+<li>
+<h3 id="regulatory-maturation">Regulatory Maturation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regulatory-maturation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The US regulatory environment improved materially under the Trump administration (2025):</p>
+<ul>
+<li>Strategic Bitcoin Reserve executive order (March 2025) established sovereign reserve precedent.</li>
+<li>GENIUS Act stablecoin framework (mid-2025) clarified digital asset market structure.</li>
+<li>FASB ASU 2023-08 fair-value accounting for crypto assets (effective fiscal 2025) ended accounting opacity that had impaired institutional adoption.</li>
+<li>Replacement of SEC Chair Gary Gensler with the more crypto-friendly Paul Atkins reduced enforcement uncertainty.</li>
+</ul>
+</li>
+<li>
+<p>The EU’s MiCA regulation (fully applicable 2024+) provided the most comprehensive framework for crypto as financial instruments in the EU.</p>
+</li>
+<li>
+<p>UK regulation remained a work in progress (HM Treasury consultation 2023-2025), but the FCA’s classification of Bitcoin as an unregulated token means corporate and institutional Bitcoin ownership is legally unimpeded.</p>
+</li>
+<li>
+<p>CBDC competition: the Bank of England’s digital pound project (design phase 2025-2026), the EU’s digital euro (legislative proposal), and China’s e-CNY (operational since 2021) represent the state’s response to Bitcoin’s monetary challenge — preserving monetary sovereignty while adopting digital payment properties.</p>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="uk-academic-research-on-bitcoins-monetary-properties">UK Academic Research on Bitcoin’s Monetary Properties<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-academic-research-on-bitcoins-monetary-properties" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Imperial College Business School (Centre for Digital Finance)</strong>: Led by Andrei Kirilenko (former CFTC Chief Economist) and Lukasz Szpruch (also Programme Director at The Alan Turing Institute), the Centre has produced research on Bitcoin treasury strategies, digital asset adoption, and monetary policy implications. Research addresses the regulatory arbitrage between Bitcoin as commodity money and fiat as legal tender — directly relevant to the Bitcoin-as-money debate.</p>
+</li>
+<li>
+<p><strong>Cambridge Judge Business School (Cambridge Centre for Alternative Finance, CCAF)</strong>: Founded 2015 by Bryan Zhang, the CCAF produces the authoritative annual <em>Global Cryptoasset Benchmarking Study</em>, which tracks Bitcoin adoption metrics (merchant acceptance, Lightning node distribution, user penetration, mining geography).</p>
+<ul>
+<li>The 2024 CCAF study documented 312 listed companies with Bitcoin treasury holdings globally and tracked Lightning Network statistics as a proxy for MOE function adoption.</li>
+<li>CCAF’s work bridges academic monetary theory and empirical measurement in ways unique globally, making it the primary citation for Bitcoin-as-money empirical analysis.</li>
+</ul>
+</li>
+<li>
+<p><strong>London Business School (Institute of Finance and Accounting)</strong>: Elroy Dimson and Paul Marsh’s <em>Global Investment Returns Yearbook</em> (annual, UBS-published) incorporates Bitcoin as a recognised long-run asset class and includes analysis of Bitcoin’s store-of-value properties relative to equities, bonds, and commodities over the available history (2010-2025), strengthening the empirical case for Bitcoin’s SOV credentials.</p>
+</li>
+<li>
+<p><strong>UCL Centre for Blockchain Technologies (CBT)</strong>: Founded 2015 by Paolo Tasca, UCL CBT research on the evolution of the Bitcoin economy, payment relationship networks (Tasca, Liu, Hayes 2018, <em>Journal of Risk Finance</em>), and CBDC design explicitly engages with Bitcoin’s monetary function analysis. UCL research on <a href="../pages/Fedimint" class="internal" data-slug="pages/Fedimint">Fedimint</a> and eCash privacy-preserving monetary systems is directly relevant to the Layer 3 Bitcoin monetary architecture.</p>
+</li>
+<li>
+<p><strong>University of Edinburgh Business School</strong>: Empirical research on Bitcoin volatility, treasury asset selection, and AIM-listed crypto company performance — directly relevant to the SOV debate. Edinburgh scholars have examined Bitcoin’s correlation structure with traditional assets over multiple market cycles.</p>
+</li>
+<li>
+<p><strong>Bank of England Research</strong>: The Bank of England’s Financial Policy Committee (FPC) has published Financial Stability Reports (2021-2024) examining systemic implications of crypto-asset adoption.</p>
+<ul>
+<li>The BoE explicitly distinguishes Bitcoin (decentralised hard commodity money) from stablecoins (private fiat-backed monetary instruments) and CBDCs (central bank digital money) — a three-way classification that maps directly onto the Bitcoin-as-money debate.</li>
+<li>The BoE’s Centre for Central Banking Studies has hosted workshops on monetary theory in the age of digital assets, with Bitcoin’s monetary properties as a recurring theme.</li>
+</ul>
+</li>
+<li>
+<h3 id="uk-financial-infrastructure-for-bitcoin-as-money">UK Financial Infrastructure for Bitcoin as Money<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-financial-infrastructure-for-bitcoin-as-money" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Standard Chartered / Zodia Custody</strong>: Standard Chartered’s digital asset custody subsidiary provides institutional Bitcoin custody for corporate treasury clients, validating the SOV use case at major bank scale in the UK. Zodia Custody serves multiple Bitcoin treasury companies including AIM-listed UK names.</p>
+</li>
+<li>
+<p><strong>Nomura / Komainu</strong>: Nomura’s joint venture provides Bitcoin custody and financial services for institutional investors, including UK family offices and pension fund satellite positions. Komainu operates under FCA oversight and represents the first major Japanese bank custody offering in the UK crypto market.</p>
+</li>
+<li>
+<p><strong>Revolut (London HQ)</strong>: Revolut’s 35 million+ users globally can buy, hold, and spend Bitcoin through the Revolut app, with Lightning Network integration announced for 2025-2026 enabling genuine MOE functionality at consumer scale within a UK-regulated e-money framework. Revolut’s scale makes it the most likely vector for mass consumer Bitcoin-as-money adoption in the UK.</p>
+</li>
+<li>
+<p><strong>FCA Regulatory Framework</strong>: Bitcoin is classified as an “unregulated token” (neither security nor e-money) under PS19/22, meaning corporate ownership is legally unimpeded in the UK.</p>
+<ul>
+<li>The Cryptoasset Promotions Regime (effective October 2023, Policy Statement PS23/6) regulates crypto marketing to UK retail investors but does not restrict institutional holdings or corporate treasury adoption.</li>
+<li>HM Treasury’s consultation on a future Financial Services Regulatory Regime for Cryptoassets (2023-2025) is expected to produce comprehensive legislation by 2026-2027, potentially clarifying Bitcoin’s status relative to MOE, SOV, and UOA functions in UK law.</li>
+<li>The Bank of England’s digital pound project (consultation 2023, design phase 2025-2026) positions the BoE as a potential Bitcoin competitor in the payments space, though the digital pound would be a CBDC (centralised, programmable by the state) rather than a hard money (fixed supply, censorship-resistant).</li>
+</ul>
+</li>
+<li>
+<p><strong>Magic Circle Law Firms</strong>: Hogan Lovells, Linklaters, and Clifford Chance provide structuring advice for international Bitcoin treasury company listings, capital raises, and cross-border BTC custody arrangements — reflecting the legal profession’s engagement with Bitcoin-as-money for corporate finance purposes.</p>
+</li>
+<li>
+<p><strong>Northern England Industrial Context</strong>: Manchester’s digital fintech ecosystem (Barclays Eagle Labs Manchester, Salford University Blockchain Lab), Leeds’s financial services sector, and Sheffield’s independent tech community all engage with Bitcoin adoption at the SME and consumer level.</p>
+<ul>
+<li>Lightning-enabled point-of-sale integration at Northern UK merchants remains experimental but is growing through initiatives like the Bitcoin Isle of Man regulatory sandbox and informal merchant networks in Manchester’s Northern Quarter and Liverpool’s Baltic Triangle.</li>
+<li>The Northern Powerhouse digital economy strategy has not yet explicitly incorporated Bitcoin infrastructure, but the concentration of fintech talent (Manchester as a major UK fintech hub after London) provides the human capital for future development.</li>
+<li>Newcastle’s digital economy sector and Sheffield Hallam University’s blockchain research group represent further regional nodes in the UK’s Bitcoin-as-money academic and commercial ecosystem.</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="lightning-network-maturation-and-moe-adoption">Lightning Network Maturation and MOE Adoption<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lightning-network-maturation-and-moe-adoption" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The Lightning Network’s 266% year-over-year transaction volume growth projects continued expansion through 2026-2030.</p>
+</li>
+<li>
+<p>CoinLaw’s 2026 analysis projects Lightning could handle over 30% of all BTC transfers for payments and remittances by end-2026.</p>
+</li>
+<li>
+<p>Key enabling developments:</p>
+<ul>
+<li><strong>Channel splicing</strong>: Reduces liquidity fragmentation, enabling more efficient routing and smaller required channel sizes.</li>
+<li><strong>BOLT12 offers</strong>: Improving user experience and enabling recurring payments analogous to direct debit.</li>
+<li><strong>LSP (Lightning Service Provider) consolidation</strong>: Reducing onboarding friction for new users.</li>
+<li><strong>Taproot channels</strong>: Improving privacy and efficiency through Schnorr signature aggregation.</li>
+</ul>
+</li>
+<li>
+<p>If Lightning volume reaches $10-20 billion monthly by 2030, Bitcoin’s MOE function will be empirically established at meaningful commercial scale — though likely as a complement to, rather than replacement for, existing payment rails.</p>
+</li>
+<li>
+<h3 id="volatility-compression-and-the-uoa-threshold">Volatility Compression and the UOA Threshold<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#volatility-compression-and-the-uoa-threshold" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Standard financial theory suggests that as a monetary asset matures and its market capitalisation grows, realised volatility should decline (larger markets absorb shocks more smoothly).</p>
+</li>
+<li>
+<p>Bitcoin’s market cap growth from <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">200</span><span class="mord mathnormal">bi</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mopen">(</span><span class="mord">2020</span><span class="mclose">)</span><span class="mord mathnormal">t</span><span class="mord mathnormal">o</span></span></span></span>2.5 trillion (2025) has been accompanied by some volatility compression:</p>
+<ul>
+<li>2017-2019: 80-120% annualised volatility, driven by retail speculation and limited institutional participation.</li>
+<li>2020-2022: 60-90% annualised volatility, with corporate treasury adoption (MicroStrategy August 2020) beginning to provide institutional demand floors.</li>
+<li>2023-2025: 40-60% annualised volatility, with ETF inflows providing daily demand stabilisation and spot market depth improving through institutional market-making.</li>
+<li>2026 projection: 30-50% annualised volatility, reflecting continued ETF AUM growth and sovereign reserve buying providing structural demand support.</li>
+</ul>
+</li>
+<li>
+<p>Projections for a $5-10 trillion Bitcoin market cap by 2030 (implied by continued institutional adoption under bull scenarios) would likely correspond to further compression toward 20-30% annualised — approaching gold’s volatility range (15-20%) where BTC-denominated contracts become commercially viable.</p>
+</li>
+<li>
+<p>UOA function emergence is thus contingent on the SOV adoption trajectory and its implied market cap growth; the threshold is estimated at approximately $10 trillion market cap by most monetary economists who engage seriously with the scenario.</p>
+</li>
+<li>
+<p>The halving cycle (approximately every 4 years) creates predictable periods of supply shock that historically drive price appreciation and volatility spikes; as the remaining issuance approaches zero (last bitcoin approximately 2140), halving-driven volatility will gradually diminish, potentially contributing to long-run volatility compression aligned with UOA requirements.</p>
+</li>
+<li>
+<h3 id="hyperbitcoinisation-and-the-bitcoin-standard-endgame">Hyperbitcoinisation and the Bitcoin Standard Endgame<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hyperbitcoinisation-and-the-bitcoin-standard-endgame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><a href="../pages/Hyperbitcoinization" class="internal" data-slug="pages/Hyperbitcoinization">Hyperbitcoinization</a> — the theoretical monetary transition scenario where Bitcoin replaces fiat money as the dominant global monetary standard — remains a long-run possibility debated primarily within Bitcoin maximalist communities.</p>
+</li>
+<li>
+<p>The concept, formalised by Krawisz (2014), posits a self-reinforcing demonetisation of fiat as Bitcoin adoption grows:</p>
+<ul>
+<li>Each marginal Bitcoin adopter reduces fiat demand, reducing fiat stability, driving further Bitcoin adoption.</li>
+<li>As fiat weakens relative to Bitcoin, the incentive to adopt Bitcoin strengthens — a positive feedback loop analogous to historical episodes of currency flight (Weimar Germany, Zimbabwe, Venezuela).</li>
+<li>Unlike historical currency flights (which moved from one fiat to another or to gold), hyperbitcoinisation would represent a transition to a non-sovereign, algorithmically-fixed monetary standard.</li>
+</ul>
+</li>
+<li>
+<p>Under this scenario, Bitcoin-as-money would eventually satisfy all three functions by default: when everything is priced in BTC, volatility relative to goods and services collapses by definition, resolving the UOA problem endogenously.</p>
+</li>
+<li>
+<p>Most mainstream economists view hyperbitcoinisation as either impossible (given state control of legal tender and taxation) or extremely long-duration (decades to centuries), requiring fundamental changes in institutional monetary architecture that states will resist forcefully.</p>
+</li>
+<li>
+<p>The empirically relevant question for 2026-2030 is whether sovereign reserve adoption (US, Brazil, Pakistan, EU member states) constitutes a measurable step toward a multi-currency monetary world where Bitcoin plays a significant reserve role alongside the dollar, euro, and gold.</p>
+</li>
+<li>
+<p>A more modest and near-term version of the thesis — <strong>partial Bitcoin standard</strong> — posits that Bitcoin becomes a reserve asset held by sovereigns and institutions at 1-5% portfolio weight, analogous to gold’s current role (~10-15% of central bank reserves), without replacing fiat as the primary transactional and accounting currency. This partial standard scenario is already empirically underway as of 2026.</p>
+</li>
+<li>
+<h3 id="l402-x402-and-monetising-the-internet-stack">L402, X402, and Monetising the Internet Stack<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l402-x402-and-monetising-the-internet-stack" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The <a href="../pages/L402-Protocol" class="internal alias" data-slug="pages/L402-Protocol">L402 Protocol</a> and its successor <a href="../pages/X402" class="internal" data-slug="pages/X402">X402</a> represent a potentially revolutionary application of Bitcoin’s MOE function to the internet infrastructure layer.</p>
+</li>
+<li>
+<p><strong>L402</strong> combines Lightning Network invoices with macaroon-based authentication tokens to enable pay-per-use APIs, content, and services at satoshi-level granularity:</p>
+<ul>
+<li>Client requests a resource from a server.</li>
+<li>Server responds with HTTP 402 Payment Required and an L402 challenge containing a Lightning invoice.</li>
+<li>Client pays the invoice via Lightning Network (milliseconds, sub-cent cost).</li>
+<li>Server returns a macaroon token with proof of payment.</li>
+<li>Client uses the token for authenticated access to the resource.</li>
+</ul>
+</li>
+<li>
+<p>This architecture enables a new category of internet commerce: <strong>metered access</strong> without accounts, subscriptions, or credit card friction. The long-dormant HTTP 402 status code (designed in 1991 for “Payment Required” but never implemented at scale) is finally activated by Bitcoin’s Lightning Network.</p>
+</li>
+<li>
+<p><strong>X402</strong> extends L402 with multi-payment channels, dynamic pricing, denomination flexibility (satoshi-level micropayments for API calls, data packets, milliseconds of video streaming), and programmable payment conditions.</p>
+</li>
+<li>
+<p>Over 2,800 services supported L402/X402 by 2025, processing 45 million monthly micropayments — a nascent but rapidly growing MOE use case that does not require Bitcoin to be a unit of account (prices can remain denominated in USD) but uses Bitcoin’s payment rails for settlement efficiency.</p>
+</li>
+<li>
+<p>AI agent payments via L402 represent the most technically novel application: autonomous AI models that earn Bitcoin by providing services (data analysis, content generation, API responses) and spend Bitcoin for resources (compute time, training data, API calls), creating genuinely autonomous economic actors with no human financial intermediary in the loop.</p>
+</li>
+<li>
+<h3 id="cbdc-competition-and-coexistence">CBDC Competition and Coexistence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cbdc-competition-and-coexistence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Central Bank Digital Currencies represent the state’s response to Bitcoin’s monetary challenge, offering technical improvements while preserving monetary sovereignty.</p>
+</li>
+<li>
+<p>Active CBDC programmes as of 2026 include:</p>
+<ul>
+<li><strong>Bank of England digital pound</strong>: Public consultation completed 2023, design phase 2025-2026; proposed retail CBDC with programmable features and privacy safeguards. The BoE explicitly frames the digital pound as complementing cash, not replacing it — a more cautious posture than the Bitcoin-as-money discourse.</li>
+<li><strong>EU digital euro</strong>: Legislative proposal under MiCA framework; privacy protections written into the design after public concern about surveillance money.</li>
+<li><strong>China e-CNY</strong>: Operational since 2021, distributed through commercial banks; programmable with expiry dates and spending restrictions on some issuance — the most authoritarian example of CBDC design and the one most cited by Bitcoin proponents as illustrating the political risk of state digital money.</li>
+<li><strong>US digital dollar</strong>: No federal CBDC programme as of 2026; the Trump administration’s pro-Bitcoin posture explicitly rejected a US CBDC in favour of the Strategic Bitcoin Reserve approach.</li>
+</ul>
+</li>
+<li>
+<p>The key distinction from Bitcoin is political: CBDCs are programmable money under government control (potentially enabling transaction surveillance, negative interest rates, conditional transfers, or censorship), whereas Bitcoin is programmable money under no government control (censorship-resistant, seizure-resistant, inflation-resistant).</p>
+</li>
+<li>
+<p>This political distinction is the core of the Bitcoin-as-money versus <a href="../pages/Central-Bank-Digital-Currency" class="internal alias" data-slug="pages/Central-Bank-Digital-Currency">Central Bank Digital Currency</a> debate, and will define monetary system architecture through 2030 and beyond.</p>
+</li>
+<li>
+<p>Bitcoin proponents view CBDCs as validating Bitcoin’s technical monetary thesis while missing its censorship-resistance and hard-money properties; CBDC adoption may paradoxically accelerate Bitcoin adoption by habituating populations to non-physical digital money.</p>
+</li>
+<li>
+<p>The coexistence scenario — where CBDCs serve as the dominant MOE/UOA layer for regulated commerce while Bitcoin serves as the SOV layer for savings and cross-border settlement — is considered by monetary pluralists (Alden, Bailey) as the most likely near-term outcome, with the balance of power between the two systems determined by how aggressively states use CBDC programmability for surveillance and control.</p>
+</li>
+<li>
+<h3 id="future-lightning-network-maturation">Future Lightning Network Maturation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-lightning-network-maturation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The Lightning Network’s 266% year-over-year transaction volume growth projects continued expansion through 2026-2030.</p>
+</li>
+<li>
+<p>CoinLaw’s 2026 analysis projects Lightning could handle over 30% of all BTC transfers for payments and remittances by end-2026.</p>
+</li>
+<li>
+<p>Key enabling developments:</p>
+<ul>
+<li><strong>Channel splicing</strong>: Reduces liquidity fragmentation, enabling more efficient routing and smaller required channel sizes.</li>
+<li><strong>BOLT12 offers</strong>: Improving user experience and enabling recurring payments analogous to direct debit.</li>
+<li><strong>LSP (Lightning Service Provider) consolidation</strong>: Reducing onboarding friction for new users and enabling mobile-first Lightning wallets without node operation.</li>
+<li><strong>Taproot channels</strong>: Improving privacy and efficiency through Schnorr signature aggregation on the base layer.</li>
+<li><strong>Async payments</strong>: Enabling offline recipients to receive payments — critical for mobile users in low-connectivity environments.</li>
+</ul>
+</li>
+<li>
+<p>If Lightning volume reaches $10-20 billion monthly by 2030, Bitcoin’s MOE function will be empirically established at meaningful commercial scale — though likely as a complement to, rather than replacement for, existing payment rails.</p>
+</li>
+<li>
+<p>Lightning’s dominance of institutional volume (exchange-to-exchange, B2B) precedes consumer adoption, as has historically been the case with new payment rails: SWIFT dominated interbank before Fedwire, credit cards dominated business before consumer adoption, etc.</p>
+</li>
+<li>
+<p><strong>Competing Layer 2 Solutions</strong>: <a href="../pages/Ark-Protocol" class="internal alias" data-slug="pages/Ark-Protocol">Ark Protocol</a> (Ark Labs, 2024) proposes an alternative to Lightning for trust-minimised off-chain Bitcoin payments, using virtual UTXOs (vUTXOs) and periodic on-chain settlement via Ark Service Providers. Ark’s model may complement Lightning for specific use cases (high-latency environments, new user onboarding) and represents the ongoing innovation in Bitcoin’s MOE infrastructure that may yield multiple viable Layer 2 solutions by 2030.</p>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Primary Bitcoin Sources</strong>:</p>
+</li>
+<li>
+<ol>
+<li>Nakamoto, S. (2008). <em>Bitcoin: A Peer-to-Peer Electronic Cash System</em>. <a href="https://bitcoin.org/bitcoin.pdf" class="external">https://bitcoin.org/bitcoin.pdf<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Foundational whitepaper establishing Bitcoin as “peer-to-peer electronic cash”]</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Poon, J. &amp; Dryja, T. (2016). <em>The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments</em>. <a href="https://lightning.network/lightning-network-paper.pdf" class="external">https://lightning.network/lightning-network-paper.pdf<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Technical foundation for Bitcoin’s Layer 2 MOE solution]</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Ammous, S. (2018). <em>The Bitcoin Standard: The Decentralized Alternative to Central Banking</em>. Wiley. ISBN 978-1-119-47386-2 [Defining popular-academic treatment of Bitcoin as sound money]</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Zucco, G. (2024). “Discovering Bitcoin: A Brief Overview from Cavemen to the Lightning Network”. <a href="https://giacomozucco.com/layers-before-bitcoin" class="external">https://giacomozucco.com/layers-before-bitcoin<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Layered monetary architecture framework]</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Alden, L. (2025). “What is Money?” <a href="https://www.lynalden.com/what-is-money/" class="external">https://www.lynalden.com/what-is-money/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Synthesis of Bitcoin’s position between savings, investment, and commodity money]</li>
+</ol>
+</li>
+<li>
+<p><strong>Monetary Theory — Classical</strong>:</p>
+</li>
+<li>
+<ol start="6">
+<li>Mises, L. von (1912/1953). <em>The Theory of Money and Credit</em>. Yale University Press. [Austrian monetary theory foundation; regression theorem]</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Hayek, F.A. (1976). <em>Denationalisation of Money: An Analysis of the Theory and Practice of Concurrent Currencies</em>. Institute of Economic Affairs. [Competitive private currencies anticipating Bitcoin]</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Rothbard, M.N. (1963). <em>What Has Government Done to Our Money?</em> Pine Tree Press. [Austrian critique of central bank fiat money]</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Jevons, W.S. (1875). <em>Money and the Mechanism of Exchange</em>. D. Appleton &amp; Co. [Classical three-function money framework originating MOE/SOV/UOA taxonomy]</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Fisher, I. (1911). <em>The Purchasing Power of Money</em>. Macmillan. [Quantity theory of money: MV = PQ and its application to Bitcoin analysis]</li>
+</ol>
+</li>
+<li>
+<p><strong>Bitcoin Monetary Economics — Academic</strong>:</p>
+</li>
+<li>
+<ol start="11">
+<li>Yermack, D. (2015). Is Bitcoin a Real Currency? An Economic Appraisal. In <em>Handbook of Digital Currency</em>, Elsevier, 31-43. [Influential early sceptical analysis concluding Bitcoin fails all three monetary criteria]</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Böhme, R., Christin, N., Edelman, B., &amp; Moore, T. (2015). Bitcoin: Economics, Technology, and Governance. <em>Journal of Economic Perspectives</em>, 29(2), 213-238. DOI:10.1257/jep.29.2.213 [Comprehensive academic treatment of Bitcoin’s economic properties]</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Liu, Y., &amp; Tsyvinski, A. (2021). Risks and Returns of Cryptocurrency. <em>Review of Financial Studies</em>, 34(6), 2689-2727. DOI:10.1093/rfs/hhaa113 [Bitcoin as statistically distinct asset class from equities and commodities]</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Schilling, L., &amp; Uhlig, H. (2019). Some Simple Bitcoin Economics. <em>Journal of Monetary Economics</em>, 106, 16-26. NBER Working Paper 24483. [Formal monetary-economic model of Bitcoin equilibrium dynamics]</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>arXiv (2025). An Examination of Bitcoin’s Structural Shortcomings as Money: A Synthesis of Economic and Technical Critiques. arXiv:2512.07840v1. [2025 synthesis identifying on-chain velocity suppression as central empirical challenge to Bitcoin MOE]</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Tasca, P., Liu, S., &amp; Hayes, A. (2018). The Evolution of the Bitcoin Economy: Extracting and Analyzing the Network of Payment Relationships. <em>Journal of Risk Finance</em>, 19(2), 94-126. [UCL CBT empirical analysis of Bitcoin payment network structure and economic evolution]</li>
+</ol>
+</li>
+<li>
+<p><strong>Gresham’s Law and Velocity</strong>:</p>
+</li>
+<li>
+<ol start="17">
+<li>D-Central (2025). “Bitcoin, Gresham’s Law, and the Evolution of Currency Behavior”. <a href="https://d-central.tech/bitcoin-greshams-law-and-the-evolution-of-currency-behavior/" class="external">https://d-central.tech/bitcoin-greshams-law-and-the-evolution-of-currency-behavior/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Applied analysis of Gresham dynamics in Bitcoin-fiat coexistence]</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Mises Institute (2022). “Bitcoin Hodling and Gresham’s Law”. <a href="https://mises.org/power-market/bitcoin-hodling-and-greshams-law" class="external">https://mises.org/power-market/bitcoin-hodling-and-greshams-law<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Austrian perspective on HODLing as Gresham-Copernicus monetary behaviour]</li>
+</ol>
+</li>
+<li>
+<p><strong>El Salvador and Circular Economies</strong>:</p>
+</li>
+<li>
+<ol start="19">
+<li>IMF (2025). <em>El Salvador: Article IV Consultation and Selected Issues</em> (Country Report No. 25/58). International Monetary Fund. [Comprehensive IMF assessment of Bitcoin legal tender adoption outcomes 2021-2025]</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>ScienceDirect (2025). “Two legal tenders, no currency: El Salvador’s bitcoin adoption between world money and international money”. <em>FinTech and Innovation Research</em>. [Academic study of El Salvador’s legal tender experiment outcomes and monetary theory implications]</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Bitcoin Beach / FBCE (2025). <em>Bitcoin Circular Economies Summit 2026 Report</em>. Federation of Bitcoin Circular Economies. <a href="https://www.bitcoinbeach.com" class="external">https://www.bitcoinbeach.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Empirical report on 29-country BCE ecosystem and Lightning commerce in El Zonte]</li>
+</ol>
+</li>
+<li>
+<p><strong>Lightning Network Statistics</strong>:</p>
+</li>
+<li>
+<ol start="22">
+<li>ainvest (2025). “Bitcoin’s Lightning Network Hits $1.17 Billion Monthly Volume”. ainvest Research, November 2025. <a href="https://www.ainvest.com" class="external">https://www.ainvest.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [November 2025 Lightning volume, capacity, and transaction count metrics]</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>CoinLaw (2026). “Bitcoin Lightning Network Usage Statistics 2026: Growth and Data”. <a href="https://coinlaw.io/bitcoin-lightning-network-usage-statistics/" class="external">https://coinlaw.io/bitcoin-lightning-network-usage-statistics/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Comprehensive Lightning adoption data and projections for 2026]</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Chainalysis (2025). <em>Geography of Cryptocurrency 2025: African Bitcoin Adoption Trends</em>. Chainalysis Inc. [Peer-to-peer volume growth and regional adoption analysis including 400% Africa growth]</li>
+</ol>
+</li>
+<li>
+<p><strong>Institutional and Regulatory</strong>:</p>
+</li>
+<li>
+<ol start="25">
+<li>Fidelity Digital Assets (2025). “Bitcoin First: Why Bitcoin is a Unique Monetary Good”. <a href="https://www.fidelitydigitalassets.com/articles/bitcoin-first" class="external">https://www.fidelitydigitalassets.com/articles/bitcoin-first<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Institutional classification of Bitcoin as monetary good and store-of-value asset]</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>IMF (2025). <em>Crypto Assets Monitor — October 2025</em>. International Monetary Fund. [Dollar $4.2 trillion crypto market documentation with Bitcoin monetary property analysis]</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>FASB (2023). <em>Accounting Standards Update 2023-08: Intangibles — Goodwill and Other — Crypto Assets (Subtopic 350-60)</em>. Financial Accounting Standards Board. [Fair value accounting for crypto, effective fiscal 2025; relevance to institutional SOV treatment]</li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>UK Financial Conduct Authority (2023). <em>Cryptoasset Promotions Regime: Policy Statement PS23/6</em>. FCA. [UK regulatory framework for crypto marketing; establishes Bitcoin as unregulated token permitting institutional and corporate ownership]</li>
+</ol>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Last Updated</strong>: 2026-05-17</p>
+</li>
+<li>
+<p><strong>Review Status</strong>: Comprehensive editorial review during Phase 6 enrichment sprint</p>
+</li>
+<li>
+<p><strong>Verification</strong>:</p>
+<ul>
+<li>Lightning Network statistics verified against CoinLaw 2026, ainvest November 2025 reports, 1ML statistics, Bitcoin Visuals.</li>
+<li>El Salvador adoption data verified against IMF Country Report No. 25/58 (2025), including 8.1% transaction use figure for 2024.</li>
+<li>US Strategic Bitcoin Reserve figures verified against Wikipedia/Congressional sources as of February 2026 (328,372 BTC).</li>
+<li>Academic citations verified against arXiv, SSRN, NBER, <em>Journal of Economic Perspectives</em>, <em>Review of Financial Studies</em>.</li>
+<li>UK regulatory references verified against FCA Handbook (PS19/22, PS23/6), HMT consultation papers, Bank of England Financial Stability Reports 2021-2024.</li>
+<li>Gresham’s Law analysis verified against Mises Institute publications and D-Central 2025 research.</li>
+<li>Chainalysis 2025 African adoption data (400% peer-to-peer growth since 2021) cited.</li>
+<li>Bitcoin circular economy data verified against FBCE/Bitcoin Beach 2025-2026 summit reports.</li>
+</ul>
+</li>
+<li>
+<p><strong>Regional Context</strong>: UK academic institutions covered (Imperial College Business School Centre for Digital Finance, Cambridge Judge CCAF, London Business School Institute of Finance and Accounting, UCL Centre for Blockchain Technologies, University of Edinburgh Business School, Bank of England Financial Policy Committee); UK financial infrastructure covered (Zodia Custody/Standard Chartered, Komainu/Nomura, Revolut, FCA regulatory framework, magic-circle law firms); Northern England context (Manchester fintech ecosystem, Leeds financial services, Sheffield tech community, Newcastle digital economy, Liverpool Baltic Triangle, Bitcoin Isle of Man regulatory sandbox)</p>
+</li>
+<li>
+<p><strong>Domain Correction</strong>: None — domain correctly assigned as <code>blockchain</code></p>
+</li>
+<li>
+<p><strong>Production-Ready</strong>: Complete OWL formal semantics (47 axioms across compositional/dependency/capability/implementation/reduction/contrast/data property families), comprehensive content coverage (classical monetary theory, Gresham’s Law, velocity analysis, layered architecture, store of value, medium of exchange, unit of account, Lightning Network, circular economies, remittances, institutional adoption, AI agent payments, El Salvador experiment, sovereign reserves, 2026 landscape, UK context, future directions 2026-2030), 28 academic and primary-source citations</p>
+</li>
+<li>
+<p><strong>Authority Score</strong>: 0.87 (core monetary-theory analysis of Bitcoin grounded in classical economics from Jevons/Mises/Hayek through 2025 IMF/arXiv empirical studies, validated by real-world adoption data from El Salvador, Lightning Network statistics, sovereign reserve announcements, and institutional asset management research)</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>domain-correction:</strong> none</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-772" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-bitcoin-as-money" data-for="about-bitcoin-as-money">About Bitcoin As Money</a></li><li class="depth-0"><a href="#components-and-architecture-of-bitcoins-monetary-system" data-for="components-and-architecture-of-bitcoins-monetary-system">Components and Architecture of Bitcoin’s Monetary System</a></li><li class="depth-1"><a href="#store-of-value-sov-function" data-for="store-of-value-sov-function">Store of Value (SOV) Function</a></li><li class="depth-1"><a href="#medium-of-exchange-moe-function" data-for="medium-of-exchange-moe-function">Medium of Exchange (MOE) Function</a></li><li class="depth-1"><a href="#unit-of-account-uoa-function" data-for="unit-of-account-uoa-function">Unit of Account (UOA) Function</a></li><li class="depth-1"><a href="#layered-bitcoin-architecture-and-monetary-layers" data-for="layered-bitcoin-architecture-and-monetary-layers">Layered Bitcoin Architecture and Monetary Layers</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-1"><a href="#circular-bitcoin-economies-cbes" data-for="circular-bitcoin-economies-cbes">Circular Bitcoin Economies (CBEs)</a></li><li class="depth-1"><a href="#remittances-and-financial-inclusion" data-for="remittances-and-financial-inclusion">Remittances and Financial Inclusion</a></li><li class="depth-1"><a href="#institutional-store-of-value-adoption" data-for="institutional-store-of-value-adoption">Institutional Store of Value Adoption</a></li><li class="depth-1"><a href="#machine-commerce-and-ai-payments" data-for="machine-commerce-and-ai-payments">Machine Commerce and AI Payments</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#classical-monetary-economics-and-bitcoin" data-for="classical-monetary-economics-and-bitcoin">Classical Monetary Economics and Bitcoin</a></li><li class="depth-1"><a href="#key-academic-contributions-2024-2026" data-for="key-academic-contributions-2024-2026">Key Academic Contributions (2024-2026)</a></li><li class="depth-1"><a href="#eric-yakes-and-the-7th-property" data-for="eric-yakes-and-the-7th-property">Eric Yakes and the 7th Property</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#store-of-value--validated-at-institutional-scale" data-for="store-of-value--validated-at-institutional-scale">Store of Value — Validated at Institutional Scale</a></li><li class="depth-1"><a href="#medium-of-exchange--validated-at-community-scale" data-for="medium-of-exchange--validated-at-community-scale">Medium of Exchange — Validated at Community Scale</a></li><li class="depth-1"><a href="#unit-of-account--not-yet-validated" data-for="unit-of-account--not-yet-validated">Unit of Account — Not Yet Validated</a></li><li class="depth-1"><a href="#regulatory-maturation" data-for="regulatory-maturation">Regulatory Maturation</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#uk-academic-research-on-bitcoins-monetary-properties" data-for="uk-academic-research-on-bitcoins-monetary-properties">UK Academic Research on Bitcoin’s Monetary Properties</a></li><li class="depth-1"><a href="#uk-financial-infrastructure-for-bitcoin-as-money" data-for="uk-financial-infrastructure-for-bitcoin-as-money">UK Financial Infrastructure for Bitcoin as Money</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-1"><a href="#lightning-network-maturation-and-moe-adoption" data-for="lightning-network-maturation-and-moe-adoption">Lightning Network Maturation and MOE Adoption</a></li><li class="depth-1"><a href="#volatility-compression-and-the-uoa-threshold" data-for="volatility-compression-and-the-uoa-threshold">Volatility Compression and the UOA Threshold</a></li><li class="depth-1"><a href="#hyperbitcoinisation-and-the-bitcoin-standard-endgame" data-for="hyperbitcoinisation-and-the-bitcoin-standard-endgame">Hyperbitcoinisation and the Bitcoin Standard Endgame</a></li><li class="depth-1"><a href="#l402-x402-and-monetising-the-internet-stack" data-for="l402-x402-and-monetising-the-internet-stack">L402, X402, and Monetising the Internet Stack</a></li><li class="depth-1"><a href="#cbdc-competition-and-coexistence" data-for="cbdc-competition-and-coexistence">CBDC Competition and Coexistence</a></li><li class="depth-1"><a href="#future-lightning-network-maturation" data-for="future-lightning-network-maturation">Future Lightning Network Maturation</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

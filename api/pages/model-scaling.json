@@ -112,6 +112,14 @@
         "label": "Parameter Count"
       },
       {
+        "id": "urn:ngm:class:power-law-exponent",
+        "label": "Power Law Exponent"
+      },
+      {
+        "id": "urn:ngm:class:token-count",
+        "label": "Token Count"
+      },
+      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
       },
@@ -130,14 +138,6 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
       }
     ],
     "requires": [
@@ -158,6 +158,10 @@
       {
         "id": "urn:ngm:class:capability-forecasting",
         "label": "Capability Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:compute-optimal-training",
+        "label": "Compute-Optimal Training"
       },
       {
         "id": "urn:ngm:class:large-language-models",
@@ -182,13 +186,13 @@
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
-      },
-      {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:compute-budget",
+        "label": "Compute Budget"
+      },
       {
         "id": "urn:ngm:class:cross-entropy-loss",
         "label": "Cross-Entropy Loss"
@@ -204,6 +208,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:diminishing-returns",
+        "label": "Diminishing Returns"
+      },
+      {
         "id": "urn:ngm:class:emergent-capabilities",
         "label": "Emergent Abilities"
       }
@@ -216,9 +224,29 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:floating-point-operations",
+        "label": "Floating-Point Operations"
+      },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
@@ -230,14 +258,30 @@
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:ai-infrastructure-planning",
+        "label": "AI Infrastructure Planning"
+      },
+      {
         "id": "urn:ngm:class:neural-architecture-search",
         "label": "Neural Architecture Search"
       }
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:data-efficiency",
+        "label": "Data Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:irreducible-loss",
+        "label": "Irreducible Loss"
+      },
+      {
         "id": "urn:ngm:class:model-compression",
         "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:power-law",
+        "label": "Power Law"
       },
       {
         "id": "urn:ngm:class:ai-governance",

@@ -10,6 +10,14 @@
     {
       "id": "urn:ngm:class:conversational-ai",
       "label": "Conversational AI"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
     }
   ],
   "entityType": "Class",
@@ -32,6 +40,30 @@
       {
         "id": "urn:ngm:class:response-selection",
         "label": "Response Selection"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-policy",
+        "label": "Dialogue Policy"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      },
+      {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
       }
     ],
     "requires": [
@@ -46,6 +78,22 @@
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
       }
     ],
     "enables": [
@@ -64,6 +112,22 @@
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-triage",
+        "label": "Healthcare Triage"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai-workflow",
+        "label": "Agentic AI Workflow"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
       }
     ],
     "dependsOn": [
@@ -74,13 +138,74 @@
       {
         "id": "urn:ngm:class:context-management",
         "label": "Context Management"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:pre-trained-language-model",
+        "label": "Pre-trained Language Model"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dialogue-state-tracking",
+        "label": "Dialogue State Tracking"
+      },
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:response-generation",
+        "label": "Response Generation"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-policy",
+        "label": "Dialogue Policy"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:form-based-interface",
+        "label": "Form-Based Interface"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:scripted-chatbot",
+        "label": "Scripted Chatbot"
       }
     ],
     "bridgesTo": [
@@ -105,10 +230,64 @@
       {
         "id": "urn:ngm:class:tool-augmented-reasoning",
         "label": "Tool-Augmented Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:customer-support-automation",
+        "label": "Customer Support Automation"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility Technology"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C Voice Browser Working Group"
+      },
+      {
+        "id": "urn:ngm:class:multiwoz-benchmark",
+        "label": "MultiWOZ Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:schema-guided-dialogue",
+        "label": "Schema-Guided Dialogue"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -118,15 +297,30 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
       }
     ]
   },
   "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing",
-      "slug": "natural-language-processing"
-    },
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
@@ -141,6 +335,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
         "id": "urn:ngm:class:chatbots",
         "label": "Chatbots"
       },
@@ -149,8 +347,8 @@
         "label": "Dialogue System"
       },
       {
-        "id": "urn:ngm:class:natural-language-understanding",
-        "label": "Natural Language Understanding"
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
       },
       {
         "id": "urn:ngm:class:sentiment-analysis",
@@ -167,24 +365,16 @@
       {
         "id": "urn:ngm:class:machine-translation",
         "label": "Machine Translation"
-      },
-      {
-        "id": "urn:ngm:class:speech-recognition",
-        "label": "Speech Recognition"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:context-management",
-        "label": "Context Management"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:knowledge-base",
-        "label": "Knowledge Base"
-      },
-      {
-        "id": "urn:ngm:class:language-modeling",
-        "label": "Language Modeling"
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:language-model",
@@ -195,8 +385,12 @@
         "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
       },
       {
         "id": "urn:ngm:class:computational-infrastructure",
@@ -209,12 +403,16 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility Technology"
+      },
+      {
         "id": "urn:ngm:class:customer-service-automation",
         "label": "Customer Service Automation"
       },
       {
-        "id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human Robot Interaction"
+        "id": "urn:ngm:class:medical-dialogue-system",
+        "label": "Medical Dialogue System"
       },
       {
         "id": "urn:ngm:class:information-extraction",
@@ -235,42 +433,36 @@
       {
         "id": "urn:ngm:class:text-generation",
         "label": "Text Generation"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
         "id": "urn:ngm:class:speech-processing",
         "label": "Speech Processing"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       }
     ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      }
+    ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:batch-processing",
-        "label": "Batch Data Processing"
-      },
-      {
-        "id": "urn:ngm:class:rule-based-systems",
-        "label": "Rule-Based Systems"
-      },
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -293,12 +485,32 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
-        "label": "Reinforcement Learning from Human Feedback"
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:speech-processing",
+        "label": "Speech Processing"
       },
       {
         "id": "urn:ngm:class:speech-recognition",
@@ -313,26 +525,38 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
-      },
-      {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Networks"
       },
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:word-embeddings",
-        "label": "Word Embeddings"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
-        "label": "Multimodal AI"
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
       },
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
@@ -341,6 +565,14 @@
       {
         "id": "urn:ngm:class:machine-translation",
         "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
       },
       {
         "id": "urn:ngm:class:ai-governance",

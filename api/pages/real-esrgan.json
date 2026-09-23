@@ -36,7 +36,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -158,7 +167,7 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:variational-autoencoder",
+        "id": "urn:ngm:class:vae",
         "label": "Variational Autoencoder"
       }
     ],
@@ -170,6 +179,22 @@
       {
         "id": "urn:ngm:class:privacy-preserving-ai",
         "label": "Privacy-Preserving AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

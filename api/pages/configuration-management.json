@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation"
     }
   ],
   "entityType": "Class",
@@ -36,6 +40,22 @@
       {
         "id": "urn:ngm:class:baseline",
         "label": "Baseline"
+      },
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:policy-as-code",
+        "label": "Policy as Code"
+      },
+      {
+        "id": "urn:ngm:class:sbom",
+        "label": "SBOM"
       }
     ],
     "requires": [
@@ -50,6 +70,10 @@
       {
         "id": "urn:ngm:class:audit",
         "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:build-automation",
+        "label": "Build Automation"
       }
     ],
     "enables": [
@@ -72,6 +96,22 @@
       {
         "id": "urn:ngm:class:continuous-delivery",
         "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "id": "urn:ngm:class:gitops",
+        "label": "GitOps"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
       }
     ],
     "dependsOn": [
@@ -82,6 +122,10 @@
       {
         "id": "urn:ngm:class:automation",
         "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
       }
     ],
     "implements": [
@@ -96,6 +140,14 @@
       {
         "id": "urn:ngm:class:immutable-infrastructure",
         "label": "Immutable Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:slsa",
+        "label": "SLSA"
+      },
+      {
+        "id": "urn:ngm:class:sbom",
+        "label": "SBOM"
       }
     ],
     "contrastsWith": [
@@ -130,6 +182,54 @@
       {
         "id": "urn:ngm:class:gitops",
         "label": "GitOps"
+      },
+      {
+        "id": "urn:ngm:class:docker-containerisation-platform",
+        "label": "Docker"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:opentofu",
+        "label": "OpenTofu"
+      },
+      {
+        "id": "urn:ngm:class:pulumi",
+        "label": "Pulumi"
+      },
+      {
+        "id": "urn:ngm:class:argo-cd",
+        "label": "Argo CD"
+      },
+      {
+        "id": "urn:ngm:class:flux-cd",
+        "label": "Flux CD"
+      },
+      {
+        "id": "urn:ngm:class:hashicorp-vault",
+        "label": "HashiCorp Vault"
+      },
+      {
+        "id": "urn:ngm:class:open-policy-agent",
+        "label": "Open Policy Agent"
+      },
+      {
+        "id": "urn:ngm:class:sigstore",
+        "label": "Sigstore"
+      },
+      {
+        "id": "urn:ngm:class:chef",
+        "label": "Chef"
+      },
+      {
+        "id": "urn:ngm:class:puppet",
+        "label": "Puppet"
+      },
+      {
+        "id": "urn:ngm:class:jenkins",
+        "label": "Jenkins"
       }
     ],
     "supports": [
@@ -148,6 +248,26 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-scanning",
+        "label": "Security Scanning"
+      },
+      {
+        "id": "urn:ngm:class:testing",
+        "label": "Testing"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:dev-sec-ops",
+        "label": "DevSecOps"
       }
     ],
     "standardizedBy": [],
@@ -172,6 +292,50 @@
       {
         "id": "urn:ngm:class:dev-sec-ops",
         "label": "DevSecOps"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:software-delivery-lifecycle",
+        "label": "Software Delivery Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "id": "urn:ngm:class:automated-testing",
+        "label": "Automated Testing"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "id": "urn:ngm:class:sbom",
+        "label": "SBOM"
       }
     ]
   },
@@ -180,16 +344,6 @@
       "id": "urn:ngm:class:systems-engineering",
       "label": "Systems Engineering",
       "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering (Infrastructure)",
-      "slug": "infra-software-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -211,20 +365,20 @@
         "label": "Software Architecture"
       },
       {
+        "id": "urn:ngm:class:software-design-patterns",
+        "label": "Software Design Patterns"
+      },
+      {
         "id": "urn:ngm:class:software-testing",
         "label": "Software Testing"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
       },
       {
-        "id": "urn:ngm:class:system-architecture",
-        "label": "System Architecture"
-      },
-      {
-        "id": "urn:ngm:class:code-generation",
-        "label": "Code Generation"
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
       }
     ],
     "requires": [
@@ -237,24 +391,24 @@
         "label": "Code Review"
       },
       {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control Systems"
+      },
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
         "id": "urn:ngm:class:model-based-systems-engineering",
         "label": "Model-Based Systems Engineering"
       },
       {
         "id": "urn:ngm:class:stakeholder-analysis",
         "label": "Stakeholder Analysis"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -275,20 +429,30 @@
         "label": "System Integration"
       },
       {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:technical-architecture-framework",
-        "label": "Technical Architecture Framework"
+        "id": "urn:ngm:class:system-of-systems",
+        "label": "System of Systems"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
       },
       {
-        "id": "urn:ngm:class:technology-infrastructure",
-        "label": "Technology Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:api-gateway",
-        "label": "API Gateway"
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
       }
     ],
     "contrastsWith": [
@@ -297,16 +461,20 @@
         "label": "Computer Science"
       },
       {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
       },
       {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
-      },
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -319,8 +487,16 @@
         "label": "Security Engineering"
       },
       {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
+      },
+      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twins"
       },
       {
         "id": "urn:ngm:class:cyber-physical-systems",
@@ -329,14 +505,6 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -357,23 +525,35 @@
         "label": "Static Analysis"
       },
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
-      },
-      {
-        "id": "urn:ngm:class:formal-methods",
-        "label": "Formal Methods"
-      },
-      {
-        "id": "urn:ngm:class:simulation",
-        "label": "Simulation"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
       {
         "id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety"
@@ -385,32 +565,28 @@
       {
         "id": "urn:ngm:class:robo-safety-and-standards",
         "label": "Safety and Standards"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "relatedTo": [
@@ -431,20 +607,20 @@
         "label": "Test-Driven Development"
       },
       {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
         "id": "urn:ngm:class:computational-complexity-theory",
         "label": "Complexity Theory"
-      },
-      {
-        "id": "urn:ngm:class:lifecycle-management",
-        "label": "Lifecycle Management"
-      },
-      {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:distributed-system",
-        "label": "Distributed System"
       }
     ]
   },

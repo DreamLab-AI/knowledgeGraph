@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:convolutional-neural-network",
       "label": "Convolutional Neural Network"
+    },
+    {
+      "id": "urn:ngm:class:deep-neural-network",
+      "label": "Deep Neural Network"
     }
   ],
   "entityType": "Class",
@@ -34,7 +38,24 @@
         "label": "Spatial Activation"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:filter-kernel",
+        "label": "Filter Kernel"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:feature-extraction",
@@ -51,6 +72,10 @@
       {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:grad-cam",
+        "label": "Grad-CAM"
       }
     ],
     "dependsOn": [
@@ -61,9 +86,26 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:spatial-hierarchy",
+        "label": "Spatial Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:weight-sharing",
+        "label": "Weight Sharing"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pooling-layer",
@@ -72,6 +114,10 @@
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:fully-connected-layer",
+        "label": "Fully Connected Layer"
       }
     ],
     "bridgesTo": [],
@@ -87,6 +133,14 @@
       {
         "id": "urn:ngm:class:tensor",
         "label": "Tensor"
+      },
+      {
+        "id": "urn:ngm:class:re-lu-activation",
+        "label": "ReLU"
+      },
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
       }
     ],
     "supports": [
@@ -105,9 +159,22 @@
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:feature-attribution",
+        "label": "Feature Attribution"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-100-3",
+        "label": "NIST AI 100-3"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:convolutional-neural-network",
@@ -134,6 +201,14 @@
       {
         "id": "urn:ngm:class:grad-cam",
         "label": "Grad-CAM"
+      },
+      {
+        "id": "urn:ngm:class:receptive-field",
+        "label": "Receptive Field"
+      },
+      {
+        "id": "urn:ngm:class:residual-connection",
+        "label": "Skip Connection"
       }
     ]
   },
@@ -142,6 +217,11 @@
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture",
       "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -194,6 +274,14 @@
         "label": "Training Data"
       },
       {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -216,6 +304,10 @@
         "label": "Semantic Segmentation"
       },
       {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
         "id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
       },
@@ -224,16 +316,12 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "dependsOn": [
@@ -244,12 +332,28 @@
       {
         "id": "urn:ngm:class:weight-sharing",
         "label": "Weight Sharing"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:feedforward-neural-network",
         "label": "Feedforward Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:universal-function-approximation",
+        "label": "Universal Function Approximation"
       }
     ],
     "contrastsWith": [
@@ -260,6 +364,18 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:feedforward-neural-network",
+        "label": "Feedforward Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
       }
     ],
     "bridgesTo": [
@@ -270,6 +386,30 @@
       {
         "id": "urn:ngm:class:autonomous-driving-perception",
         "label": "Autonomous Vehicle Perception"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -278,16 +418,24 @@
         "label": "Backpropagation"
       },
       {
-        "id": "urn:ngm:class:batch-normalisation",
-        "label": "Batch Normalisation"
-      },
-      {
         "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
       },
       {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
       }
     ],
     "supports": [
@@ -312,6 +460,22 @@
         "label": "Adversarial Robustness"
       },
       {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
@@ -322,10 +486,6 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ]
   },

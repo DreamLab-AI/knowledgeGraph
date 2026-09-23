@@ -175,6 +175,14 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:dependency-parsing",
+        "label": "Dependency Parsing"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
         "id": "urn:ngm:class:part-of-speech-tagging",
         "label": "Part-of-Speech Tagging"
       },
@@ -277,6 +285,18 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -319,6 +339,10 @@
       {
         "id": "urn:ngm:class:entity-linking",
         "label": "Entity Linking"
+      },
+      {
+        "id": "urn:ngm:class:open-information-extraction",
+        "label": "Open Information Extraction"
       },
       {
         "id": "urn:ngm:class:text-mining",

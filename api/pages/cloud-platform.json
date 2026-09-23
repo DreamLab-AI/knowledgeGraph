@@ -97,6 +97,10 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:on-premise-infrastructure",
+        "label": "On-Premise Infrastructure"
       }
     ],
     "bridgesTo": [
@@ -106,6 +110,10 @@
       },
       {
         "id": "urn:ngm:class:inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference-infrastructure",
         "label": "AI Inference Infrastructure"
       }
     ],
@@ -143,7 +151,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "id": "urn:ngm:class:cncf",
         "label": "Cloud Native Computing Foundation"
       },
       {
@@ -151,7 +159,12 @@
         "label": "NIST Cloud Computing"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:technology-infrastructure-domain-architecture",
@@ -168,6 +181,10 @@
       {
         "id": "urn:ngm:class:platform-governance",
         "label": "Platform Governance"
+      },
+      {
+        "id": "urn:ngm:class:multi-cloud-strategy",
+        "label": "Multi-Cloud Strategy"
       }
     ]
   },
@@ -238,6 +255,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:elasticity",
+        "label": "Elasticity"
+      },
+      {
         "id": "urn:ngm:class:infrastructure-as-a-service",
         "label": "Infrastructure as a Service"
       },
@@ -250,6 +271,10 @@
         "label": "Scalability"
       },
       {
+        "id": "urn:ngm:class:self-service-provisioning",
+        "label": "Self-Service Provisioning"
+      },
+      {
         "id": "urn:ngm:class:software-as-a-service",
         "label": "Software as a Service"
       },
@@ -260,14 +285,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "implements": [
@@ -358,7 +375,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

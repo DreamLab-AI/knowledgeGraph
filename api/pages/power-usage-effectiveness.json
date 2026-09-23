@@ -113,8 +113,16 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:economic-sustainability",
+        "label": "Economic Sustainability"
+      },
+      {
         "id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:social-sustainability",
+        "label": "Social Sustainability"
       },
       {
         "id": "urn:ngm:class:accountability",
@@ -135,14 +143,6 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
-      },
-      {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
-      },
-      {
-        "id": "urn:ngm:class:compliance-framework",
-        "label": "Compliance Framework"
       }
     ],
     "requires": [
@@ -237,6 +237,18 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:planned-obsolescence",
+        "label": "Planned Obsolescence"
+      },
+      {
+        "id": "urn:ngm:class:rebound-effect",
+        "label": "Rebound Effect"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -313,6 +325,10 @@
       {
         "id": "urn:ngm:class:iso-14001",
         "label": "ISO 14001"
+      },
+      {
+        "id": "urn:ngm:class:w3c-sustainable-web-design",
+        "label": "W3C Sustainable Web Design"
       },
       {
         "id": "urn:ngm:class:iso-iec-38500",

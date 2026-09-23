@@ -117,6 +117,14 @@
       {
         "id": "urn:ngm:class:pre-training",
         "label": "Language Model Pre-Training"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Language Model Pre-Training"
       }
     ],
     "relatedTo": [
@@ -269,6 +277,22 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

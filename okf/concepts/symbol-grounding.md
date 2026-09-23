@@ -1,0 +1,19 @@
+---
+okf_version: "0.2"
+type: Class
+title: Symbol Grounding
+resource: urn:ngm:class:symbol-grounding
+domain: ai
+description: Symbol grounding is the problem and process of connecting abstract symbols manipulated by an intelligent system to their referents in the perceptual and physical world, so that the symbols carry intrinsic meaning rather than being defined only by other symbols. First articulated by Stevan Harnad, it asks how a system can avoid an infinite regress of definitions and acquire understanding tied to se
+maturity: experimental
+quality: 0.72
+is-a:
+  - urn:ngm:class:ai-research-area
+relatedTo:
+  - urn:ngm:class:cognitive-ai
+  - urn:ngm:class:ai-technique
+---
+
+# Symbol Grounding
+
+Symbol grounding is the problem and process of connecting abstract symbols manipulated by an intelligent system to their referents in the perceptual and physical world, so that the symbols carry intrinsic meaning rather than being defined only by other symbols. First articulated by Stevan Harnad, it asks how a system can avoid an infinite regress of definitions and acquire understanding tied to sensory experience. It is central to debates about whether language models truly understand the concepts they process.

@@ -18,6 +18,18 @@
     {
       "id": "urn:ngm:class:attention-mechanism",
       "label": "Attention Mechanism"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "id": "urn:ngm:class:sequence-modelling",
+      "label": "Sequence Modelling"
+    },
+    {
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model"
     }
   ],
   "entityType": "Class",
@@ -116,9 +128,38 @@
       {
         "id": "urn:ngm:class:text-generation",
         "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:softmax-function",
+        "label": "Softmax"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:transformer-training-infrastructure",
+        "label": "Transformer Training Infrastructure"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:flash-attention",
@@ -143,9 +184,38 @@
       {
         "id": "urn:ngm:class:sparse-mixture-of-experts",
         "label": "Sparse Mixture of Experts"
+      },
+      {
+        "id": "urn:ngm:class:rope",
+        "label": "RoPE"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:mamba",
+        "label": "Mamba"
+      },
+      {
+        "id": "urn:ngm:class:state-space-models",
+        "label": "State Space Models"
+      },
+      {
+        "id": "urn:ngm:class:rwkv",
+        "label": "RWKV"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -207,6 +277,10 @@
       {
         "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Hugging Face Transformers"
       }
     ],
     "partOf": [],
@@ -242,14 +316,41 @@
       {
         "id": "urn:ngm:class:t5",
         "label": "T5"
+      },
+      {
+        "id": "urn:ngm:class:meta-llama-model-family",
+        "label": "LLaMA"
+      },
+      {
+        "id": "urn:ngm:class:vit",
+        "label": "ViT"
+      },
+      {
+        "id": "urn:ngm:class:alphafold",
+        "label": "AlphaFold"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
     },
     {
       "id": "urn:ngm:class:neural-network-component",
@@ -257,9 +358,14 @@
       "slug": "neural-network-component"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -311,6 +417,18 @@
         "label": "Positional Encoding"
       },
       {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -345,22 +463,46 @@
         "label": "Long-Range Dependency Modelling"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:backpropagation",
-        "label": "Backpropagation"
-      },
-      {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       }
     ],
     "implements": [
@@ -375,6 +517,26 @@
       {
         "id": "urn:ngm:class:sequence-to-sequence-learning",
         "label": "Sequence-to-Sequence Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       }
     ],
     "contrastsWith": [
@@ -391,8 +553,16 @@
         "label": "Long Short Term Memory"
       },
       {
-        "id": "urn:ngm:class:recurrent-neural-network",
-        "label": "Recurrent Neural Network"
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -411,12 +581,32 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-validation",
+        "label": "Blockchain Validation"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
         "id": "urn:ngm:class:regularisation",
@@ -429,6 +619,18 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "supports": [
@@ -439,6 +641,44 @@
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "partOf": [

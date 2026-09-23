@@ -58,13 +58,13 @@
         "label": "SEC Crypto Enforcement"
       },
       {
-        "id": "urn:ngm:class:defi-protocol",
+        "id": "urn:ngm:class:de-fi-protocol",
         "label": "DeFi Protocol"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -74,6 +74,10 @@
       {
         "id": "urn:ngm:class:digital-asset-custody",
         "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
       }
     ],
     "uses": [
@@ -118,7 +122,7 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti Money Laundering Directive"
       }
     ]
@@ -148,16 +152,20 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
         "id": "urn:ngm:class:market-abuse-regulation",
         "label": "Market Abuse Regulation"
+      },
+      {
+        "id": "urn:ngm:class:conduct-regulation",
+        "label": "Conduct Regulation"
       },
       {
         "id": "urn:ngm:class:prudential-regulation",
@@ -174,10 +182,6 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:policy",
-        "label": "Policy"
       }
     ],
     "requires": [
@@ -194,7 +198,7 @@
         "label": "Capital Adequacy"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -286,7 +290,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
       },
       {
@@ -296,6 +300,10 @@
       {
         "id": "urn:ngm:class:regulatory-arbitrage",
         "label": "Regulatory Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
       },
       {
         "id": "urn:ngm:class:self-organisation",
@@ -308,11 +316,11 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:stablecoin",
-        "label": "Stablecoin"
+        "id": "urn:ngm:class:aml",
+        "label": "Anti-Money Laundering"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {

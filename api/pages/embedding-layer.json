@@ -10,13 +10,30 @@
     {
       "id": "urn:ngm:class:neural-network",
       "label": "Neural Network"
+    },
+    {
+      "id": "urn:ngm:class:trainable-layer",
+      "label": "Trainable Layer"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.62,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:weight-matrix",
+        "label": "Weight Matrix"
+      },
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:gradient-update",
+        "label": "Gradient Update"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:vocabulary",
@@ -25,6 +42,14 @@
       {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
     "enables": [
@@ -35,24 +60,64 @@
       {
         "id": "urn:ngm:class:word-embedding",
         "label": "Word Embedding"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-completion",
+        "label": "Knowledge Graph Completion"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:embedding",
         "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:lookup-table",
+        "label": "Lookup Table"
+      },
+      {
+        "id": "urn:ngm:class:feature-encoding",
+        "label": "Feature Encoding"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:one-hot-encoding",
         "label": "One Hot Encoding"
+      },
+      {
+        "id": "urn:ngm:class:tf-idf",
+        "label": "TF-IDF"
+      },
+      {
+        "id": "urn:ngm:class:sparse-representation",
+        "label": "Sparse Representation"
       }
     ],
     "bridgesTo": [],
@@ -64,15 +129,48 @@
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:tensor-flow",
+        "label": "TensorFlow"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:neural-network",
@@ -81,6 +179,22 @@
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
       }
     ],
     "relatedTo": [
@@ -91,6 +205,22 @@
       {
         "id": "urn:ngm:class:positional-encoding",
         "label": "Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:word2vec",
+        "label": "Word2Vec"
+      },
+      {
+        "id": "urn:ngm:class:glove",
+        "label": "GloVe"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
       }
     ]
   },
@@ -121,10 +251,6 @@
         "label": "Neuron"
       },
       {
-        "id": "urn:ngm:class:weight-matrix",
-        "label": "Weight Matrix"
-      },
-      {
         "id": "urn:ngm:class:autoencoder",
         "label": "Autoencoder"
       },
@@ -139,16 +265,16 @@
       {
         "id": "urn:ngm:class:encoder-decoder-architecture",
         "label": "Encoder Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture-of-Experts Architecture"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:loss-function",
-        "label": "Loss Function"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -173,10 +299,6 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
-      },
-      {
         "id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
       },
@@ -195,6 +317,10 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       }
     ],
     "implements": [
@@ -225,16 +351,32 @@
       {
         "id": "urn:ngm:class:robotics-perception",
         "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:regularisation",
-        "label": "Regularisation"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:stochastic-gradient-descent",
-        "label": "Stochastic Gradient Descent"
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
       }
     ],
     "relatedTo": [
@@ -257,10 +399,6 @@
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
-      },
-      {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
       },
       {
         "id": "urn:ngm:class:large-language-models",

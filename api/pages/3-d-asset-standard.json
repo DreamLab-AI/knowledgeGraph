@@ -22,7 +22,7 @@
         "label": "glTF"
       },
       {
-        "id": "urn:ngm:class:universal-scene-description",
+        "id": "urn:ngm:class:usd",
         "label": "Universal Scene Description"
       },
       {
@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
       }
     ],
     "requires": [
@@ -81,12 +85,20 @@
       {
         "id": "urn:ngm:class:fbx",
         "label": "FBX"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-asset-format",
+        "label": "Proprietary Asset Format"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:non-fungible-token",
         "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
       },
       {
         "id": "urn:ngm:class:semantic-web-linked-data-standard",
@@ -105,6 +117,10 @@
       {
         "id": "urn:ngm:class:material-x",
         "label": "MaterialX"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeleton Animation"
       }
     ],
     "supports": [
@@ -142,7 +158,7 @@
         "label": "Digital Content Creation"
       },
       {
-        "id": "urn:ngm:class:spatial-web",
+        "id": "urn:ngm:class:semantic-spatial-web-layer",
         "label": "Spatial Web"
       },
       {
@@ -161,6 +177,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -287,8 +308,16 @@
         "label": "Metaverse Standards Forum"
       },
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -437,12 +466,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       }
     ]
   },

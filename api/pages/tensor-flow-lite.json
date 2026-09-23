@@ -20,6 +20,14 @@
       {
         "id": "urn:ngm:class:tensorflow-lite-micro",
         "label": "TensorFlow Lite Micro"
+      },
+      {
+        "id": "urn:ngm:class:tflite-converter",
+        "label": "TFLite Converter"
+      },
+      {
+        "id": "urn:ngm:class:tflite-interpreter",
+        "label": "TFLite Interpreter"
       }
     ],
     "requires": [
@@ -30,6 +38,10 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "enables": [
@@ -48,6 +60,10 @@
       {
         "id": "urn:ngm:class:privacy-preserving-inference",
         "label": "Privacy-Preserving Inference"
+      },
+      {
+        "id": "urn:ngm:class:on-device-learning",
+        "label": "On-Device Machine Learning"
       }
     ],
     "dependsOn": [
@@ -82,6 +98,10 @@
       {
         "id": "urn:ngm:class:core-ml",
         "label": "Core ML"
+      },
+      {
+        "id": "urn:ngm:class:ncnn",
+        "label": "NCNN"
       }
     ],
     "bridgesTo": [
@@ -106,6 +126,14 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:flatbuffers",
+        "label": "FlatBuffers"
+      },
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantisation"
       }
     ],
     "supports": [
@@ -488,7 +516,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ]

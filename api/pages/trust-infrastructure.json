@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
     }
   ],
   "entityType": "Class",
@@ -38,7 +42,7 @@
         "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -78,7 +82,16 @@
         "label": "Secure Communication"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:policy-enforcement",
@@ -107,6 +120,14 @@
       {
         "id": "urn:ngm:class:blockchain-governance",
         "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
       }
     ],
     "uses": [],
@@ -142,13 +163,7 @@
       }
     ]
   },
-  "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
-    }
-  ],
+  "inferredSuperClasses": [],
   "inheritedRelations": {
     "hasPart": [
       {

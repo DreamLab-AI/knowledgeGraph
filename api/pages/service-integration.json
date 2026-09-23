@@ -231,6 +231,10 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:ai-orchestration",
+        "label": "AI Orchestration"
+      },
+      {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
@@ -257,10 +261,6 @@
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [

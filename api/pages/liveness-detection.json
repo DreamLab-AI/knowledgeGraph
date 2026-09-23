@@ -64,6 +64,10 @@
       {
         "id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "Know Your Customer"
       }
     ],
     "standardizedBy": [],
@@ -95,6 +99,16 @@
       "slug": "identity-verification"
     },
     {
+      "id": "urn:ngm:class:authentication-method",
+      "label": "Authentication Method",
+      "slug": "authentication-method"
+    },
+    {
+      "id": "urn:ngm:class:compliance-control",
+      "label": "Compliance Control",
+      "slug": "compliance-control"
+    },
+    {
       "id": "urn:ngm:class:identity-proofing",
       "label": "Identity Proofing",
       "slug": "identity-proofing"
@@ -105,14 +119,144 @@
       "slug": "infra-security-and-identity"
     },
     {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:trust-establishment",
+      "label": "Trust Establishment",
+      "slug": "trust-establishment"
+    },
+    {
+      "id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance",
+      "slug": "corporate-governance"
+    },
+    {
+      "id": "urn:ngm:class:enterprise-risk-management",
+      "label": "Enterprise Risk Management",
+      "slug": "enterprise-risk-management"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
       "id": "urn:ngm:class:identity-management",
       "label": "Identity Management",
       "slug": "identity-management"
     },
     {
+      "id": "urn:ngm:class:information-security-management",
+      "label": "Information Security Management",
+      "slug": "information-security-management"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:internal-control",
+      "label": "Internal Control",
+      "slug": "internal-control"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance",
+      "slug": "regulatory-compliance"
+    },
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management",
+      "slug": "risk-management"
+    },
+    {
+      "id": "urn:ngm:class:trust-architecture",
+      "label": "Trust Architecture",
+      "slug": "trust-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-principle",
+      "label": "AI Governance Principle",
+      "slug": "ai-governance-principle"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety",
+      "slug": "sc-governance-and-safety"
+    },
+    {
+      "id": "urn:ngm:class:security-architecture",
+      "label": "Security Architecture",
+      "slug": "security-architecture"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture",
+      "slug": "system-architecture"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture",
+      "slug": "software-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure",
+      "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
     }
   ],
   "inheritedRelations": {
@@ -120,6 +264,10 @@
       {
         "id": "urn:ngm:class:biometric-verification",
         "label": "Biometric Verification"
+      },
+      {
+        "id": "urn:ngm:class:database-verification",
+        "label": "Database Verification"
       },
       {
         "id": "urn:ngm:class:document-verification",
@@ -130,24 +278,20 @@
         "label": "Knowledge-Based Authentication"
       },
       {
+        "id": "urn:ngm:class:mobile-network-operator-data",
+        "label": "Mobile Network Operator Data"
+      },
+      {
         "id": "urn:ngm:class:risk-scoring-engine",
         "label": "Risk Scoring Engine"
       },
       {
-        "id": "urn:ngm:class:access-control",
-        "label": "Access Control"
+        "id": "urn:ngm:class:control-activity",
+        "label": "Control Activity"
       },
       {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
-      },
-      {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "id": "urn:ngm:class:control-evidence",
+        "label": "Control Evidence"
       }
     ],
     "requires": [
@@ -160,28 +304,28 @@
         "label": "Presentation Attack Detection"
       },
       {
+        "id": "urn:ngm:class:authoritative-data-source",
+        "label": "Authoritative Data Source"
+      },
+      {
+        "id": "urn:ngm:class:biometric-template",
+        "label": "Biometric Template"
+      },
+      {
+        "id": "urn:ngm:class:capture-device",
+        "label": "Capture Device"
+      },
+      {
         "id": "urn:ngm:class:consent-management",
         "label": "Consent Mechanism"
       },
       {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
+        "id": "urn:ngm:class:identity-evidence",
+        "label": "Identity Evidence"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:trusted-issuer",
+        "label": "Trusted Issuer"
       }
     ],
     "enables": [
@@ -198,34 +342,58 @@
         "label": "Remote Identity Proofing"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:account-opening",
+        "label": "Account Opening"
       },
       {
         "id": "urn:ngm:class:age-verification",
         "label": "Age Verification"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
         "id": "urn:ngm:class:fraud-prevention",
         "label": "Fraud Prevention"
-      },
-      {
-        "id": "urn:ngm:class:sanctions-compliance",
-        "label": "Sanctions Compliance"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:biometric-matching-algorithm",
+        "label": "Biometric Matching Algorithm"
       },
       {
-        "id": "urn:ngm:class:distributed-ledger-technology",
-        "label": "Distributed Ledger Technology"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "implements": [
@@ -236,6 +404,10 @@
       {
         "id": "urn:ngm:class:fatf-recommendations",
         "label": "FATF Recommendation 10"
+      },
+      {
+        "id": "urn:ngm:class:icao-9303",
+        "label": "ICAO 9303"
       },
       {
         "id": "urn:ngm:class:iso-iec",
@@ -254,12 +426,8 @@
         "label": "UK DIATF"
       },
       {
-        "id": "urn:ngm:class:open-id-connect",
-        "label": "OpenID Connect"
-      },
-      {
-        "id": "urn:ngm:class:w3-c-did-specification",
-        "label": "W3C DID Specification"
+        "id": "urn:ngm:class:continuous-controls-monitoring",
+        "label": "Continuous Controls Monitoring"
       }
     ],
     "contrastsWith": [
@@ -272,16 +440,28 @@
         "label": "Password Authentication"
       },
       {
-        "id": "urn:ngm:class:centralised-identity",
-        "label": "Centralised Identity"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       },
       {
-        "id": "urn:ngm:class:federated-identity",
-        "label": "Federated Identity"
+        "id": "urn:ngm:class:identity-authentication",
+        "label": "Identity Authentication"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:pseudonymity",
+        "label": "Pseudonymity"
+      },
+      {
+        "id": "urn:ngm:class:automated-control",
+        "label": "Automated Control"
+      },
+      {
+        "id": "urn:ngm:class:compensating-control",
+        "label": "Compensating Control"
+      },
+      {
+        "id": "urn:ngm:class:corrective-control",
+        "label": "Corrective Control"
       }
     ],
     "bridgesTo": [
@@ -294,16 +474,28 @@
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence-ethics",
-        "label": "Artificial Intelligence Ethics"
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
       }
     ],
     "uses": [
@@ -316,12 +508,16 @@
         "label": "Feature Extraction"
       },
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       },
       {
         "id": "urn:ngm:class:face-recognition",
         "label": "Face Match"
+      },
+      {
+        "id": "urn:ngm:class:machine-readable-zone",
+        "label": "Machine-Readable Zone"
       },
       {
         "id": "urn:ngm:class:near-field-communication",
@@ -332,12 +528,8 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
-      },
-      {
-        "id": "urn:ngm:class:digital-certificate",
-        "label": "Digital Certificate"
+        "id": "urn:ngm:class:audit",
+        "label": "Audit Management System"
       }
     ],
     "supports": [
@@ -354,6 +546,14 @@
         "label": "Financial Services Onboarding"
       },
       {
+        "id": "urn:ngm:class:gambling-regulation",
+        "label": "Gambling Regulation"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-access",
+        "label": "Healthcare Access"
+      },
+      {
         "id": "urn:ngm:class:online-safety-act-2023",
         "label": "Online Safety Act"
       },
@@ -362,16 +562,8 @@
         "label": "Telecommunications"
       },
       {
-        "id": "urn:ngm:class:data-protection",
-        "label": "Data Protection"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:travel-and-border-control",
+        "label": "Travel and Border Control"
       }
     ],
     "standardizedBy": [
@@ -392,6 +584,10 @@
         "label": "FATF"
       },
       {
+        "id": "urn:ngm:class:icao",
+        "label": "ICAO"
+      },
+      {
         "id": "urn:ngm:class:ico",
         "label": "ICO"
       },
@@ -402,10 +598,28 @@
       {
         "id": "urn:ngm:class:nist",
         "label": "NIST"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:institutional-framework",
+        "label": "Institutional Framework"
       },
       {
-        "id": "urn:ngm:class:ofcom",
-        "label": "Ofcom"
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "relatedTo": [

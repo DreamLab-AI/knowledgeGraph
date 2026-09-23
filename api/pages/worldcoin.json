@@ -20,6 +20,10 @@
       {
         "id": "urn:ngm:class:world-id",
         "label": "World ID"
+      },
+      {
+        "id": "urn:ngm:class:worldcoin-token",
+        "label": "Worldcoin Token"
       }
     ],
     "requires": [
@@ -62,7 +66,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -82,6 +86,14 @@
       {
         "id": "urn:ngm:class:security",
         "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
       }
     ],
     "uses": [
@@ -156,6 +168,10 @@
         "label": "Decentralised Identifier"
       },
       {
+        "id": "urn:ngm:class:verifiable-claim",
+        "label": "Verifiable Claim"
+      },
+      {
         "id": "urn:ngm:class:verifiable-credential-standard",
         "label": "Credential"
       },
@@ -166,10 +182,6 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
       }
     ],
     "requires": [
@@ -178,12 +190,12 @@
         "label": "Credential Storage"
       },
       {
-        "id": "urn:ngm:class:privacy-controls",
-        "label": "Privacy Controls"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:privacy-controls",
+        "label": "Privacy Controls"
       },
       {
         "id": "urn:ngm:class:authentication",
@@ -220,6 +232,10 @@
         "label": "Authorization"
       },
       {
+        "id": "urn:ngm:class:digital-presence",
+        "label": "Digital Presence"
+      },
+      {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
       },
@@ -234,10 +250,6 @@
       {
         "id": "urn:ngm:class:trust",
         "label": "Trust"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
       }
     ],
     "dependsOn": [
@@ -287,6 +299,10 @@
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
@@ -382,7 +398,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "KYC Know Your Customer"
       },
       {

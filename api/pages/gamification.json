@@ -116,6 +116,10 @@
         "label": "Feedback Mechanism"
       },
       {
+        "id": "urn:ngm:class:interaction-flow",
+        "label": "Interaction Flow"
+      },
+      {
         "id": "urn:ngm:class:cognitive-ergonomics",
         "label": "Cognitive Ergonomics"
       },
@@ -130,10 +134,6 @@
       {
         "id": "urn:ngm:class:user-interface-design",
         "label": "User Interface Design"
-      },
-      {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
       }
     ],
     "requires": [
@@ -168,6 +168,10 @@
         "label": "Accessible Design"
       },
       {
+        "id": "urn:ngm:class:conversational-interface",
+        "label": "Conversational Interface"
+      },
+      {
         "id": "urn:ngm:class:inclusive-design",
         "label": "Inclusive Design"
       },
@@ -190,10 +194,6 @@
       {
         "id": "urn:ngm:class:user-experience",
         "label": "User Experience"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
       }
     ],
     "contrastsWith": [
@@ -204,7 +204,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:multimodal-interaction",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
       },
       {
@@ -222,6 +222,18 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -238,11 +250,15 @@
         "label": "Task Analysis"
       },
       {
+        "id": "urn:ngm:class:wireframing",
+        "label": "Wireframing"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

@@ -54,6 +54,21 @@
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -93,6 +108,10 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
       },
@@ -117,12 +136,8 @@
         "label": "Real-Time Operating System"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
-      },
-      {
-        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
-        "label": "Localisation and Mapping"
       }
     ],
     "enables": [
@@ -175,6 +190,14 @@
       {
         "id": "urn:ngm:class:wireless-communication",
         "label": "Wireless Communication"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
       }
     ],
     "implements": [
@@ -207,9 +230,33 @@
       {
         "id": "urn:ngm:class:virtual-agent",
         "label": "Virtual Agent"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
       {
         "id": "urn:ngm:class:smart-city-infrastructure",
         "label": "Smart City Infrastructure"
@@ -223,6 +270,10 @@
         "label": "Blockchain Identity"
       },
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
@@ -233,10 +284,6 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality",
-        "label": "Extended Reality"
       }
     ],
     "uses": [
@@ -253,12 +300,16 @@
         "label": "Lidar"
       },
       {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:motion-planning",
-        "label": "Motion Planning"
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
       },
       {
         "id": "urn:ngm:class:robot-perception",
@@ -267,10 +318,6 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
       }
     ],
     "supports": [
@@ -285,6 +332,26 @@
       {
         "id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "standardizedBy": [
@@ -299,6 +366,26 @@
       {
         "id": "urn:ngm:class:sae-j-3016",
         "label": "SAE J3016"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
@@ -315,6 +402,10 @@
         "label": "Self Driving Car"
       },
       {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
         "id": "urn:ngm:class:robot-learning",
         "label": "Robot Learning"
       },
@@ -329,10 +420,6 @@
       {
         "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human-Robot Interaction"
-      },
-      {
-        "id": "urn:ngm:class:robo-actuation-and-control",
-        "label": "Actuation and Control"
       }
     ]
   },

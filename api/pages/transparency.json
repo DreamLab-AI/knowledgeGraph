@@ -52,6 +52,10 @@
       {
         "id": "urn:ngm:class:stakeholder-trust",
         "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability (AI-0064)"
       }
     ],
     "dependsOn": [
@@ -202,6 +206,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

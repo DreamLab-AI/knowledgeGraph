@@ -10,6 +10,30 @@
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
+    },
+    {
+      "id": "urn:ngm:class:ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "id": "urn:ngm:class:biosecurity",
+      "label": "Biosecurity"
+    },
+    {
+      "id": "urn:ngm:class:dual-use-research",
+      "label": "Dual-Use Research"
+    },
+    {
+      "id": "urn:ngm:class:weapons-of-mass-destruction",
+      "label": "Weapons of Mass Destruction"
+    },
+    {
+      "id": "urn:ngm:class:global-catastrophic-risk",
+      "label": "Global Catastrophic Risk"
+    },
+    {
+      "id": "urn:ngm:class:pandemic-preparedness",
+      "label": "Pandemic Preparedness"
     }
   ],
   "entityType": "Class",
@@ -44,6 +68,26 @@
       {
         "id": "urn:ngm:class:synthetic-biology-threat",
         "label": "Synthetic Biology Threat"
+      },
+      {
+        "id": "urn:ngm:class:amerithrax-2001",
+        "label": "Amerithrax 2001"
+      },
+      {
+        "id": "urn:ngm:class:rajneeshee-salmonella-attack-1984",
+        "label": "Rajneeshee Salmonella Attack 1984"
+      },
+      {
+        "id": "urn:ngm:class:soviet-biopreparat-programme",
+        "label": "Soviet Biopreparat Programme"
+      },
+      {
+        "id": "urn:ngm:class:sverdlovsk-anthrax-release-1979",
+        "label": "Sverdlovsk Anthrax Release 1979"
+      },
+      {
+        "id": "urn:ngm:class:aum-shinrikyo-biological-programme",
+        "label": "Aum Shinrikyo Biological Programme"
       }
     ],
     "requires": [
@@ -94,7 +138,28 @@
         "label": "Societal Disruption"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:biological-weapons-convention",
+        "label": "Biological Weapons Convention"
+      },
+      {
+        "id": "urn:ngm:class:national-biosecurity-strategy",
+        "label": "National Biosecurity Strategy"
+      },
+      {
+        "id": "urn:ngm:class:international-health-regulations",
+        "label": "International Health Regulations"
+      },
+      {
+        "id": "urn:ngm:class:who-biosafety-guidelines",
+        "label": "WHO Biosafety Guidelines"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:barda-medical-countermeasures",
@@ -117,7 +182,24 @@
         "label": "Select Agent Programme"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pandemic-preparedness",
+        "label": "Pandemic Preparedness"
+      },
+      {
+        "id": "urn:ngm:class:biosafety",
+        "label": "Biosafety"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:vaccine-development",
+        "label": "Vaccine Development"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:biosecurity",
@@ -166,6 +248,10 @@
       {
         "id": "urn:ngm:class:pandemic-preparedness",
         "label": "Pandemic Preparedness"
+      },
+      {
+        "id": "urn:ngm:class:public-health-surveillance",
+        "label": "Public Health Surveillance"
       }
     ],
     "standardizedBy": [
@@ -239,14 +325,267 @@
       {
         "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:ukhsa",
+        "label": "UKHSA"
+      },
+      {
+        "id": "urn:ngm:class:dstl-porton-down",
+        "label": "Dstl Porton Down"
+      },
+      {
+        "id": "urn:ngm:class:national-biosecurity-centre-harlow",
+        "label": "National Biosecurity Centre Harlow"
+      },
+      {
+        "id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "id": "urn:ngm:class:cambridge-biosecurity-hub",
+        "label": "Cambridge Biosecurity Hub"
+      },
+      {
+        "id": "urn:ngm:class:johns-hopkins-center-for-health-security",
+        "label": "Johns Hopkins Center for Health Security"
+      },
+      {
+        "id": "urn:ngm:class:nti-bio",
+        "label": "NTI bio"
+      },
+      {
+        "id": "urn:ngm:class:harvard-belfer-center",
+        "label": "Harvard Belfer Center"
+      },
+      {
+        "id": "urn:ngm:class:rand-corporation",
+        "label": "RAND Corporation"
+      },
+      {
+        "id": "urn:ngm:class:govai",
+        "label": "GovAI"
+      },
+      {
+        "id": "urn:ngm:class:cdc-select-agent-program",
+        "label": "CDC Select Agent Program"
+      },
+      {
+        "id": "urn:ngm:class:who",
+        "label": "WHO"
+      },
+      {
+        "id": "urn:ngm:class:unoda",
+        "label": "UNODA"
+      },
+      {
+        "id": "urn:ngm:class:australia-group",
+        "label": "Australia Group"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "id": "urn:ngm:class:cdc-biowatch-programme",
+        "label": "CDC Biowatch Programme"
+      },
+      {
+        "id": "urn:ngm:class:ukhsa-genomic-surveillance",
+        "label": "UKHSA Genomic Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:federal-select-agent-program",
+        "label": "Federal Select Agent Program"
+      },
+      {
+        "id": "urn:ngm:class:ibbis",
+        "label": "IBBIS"
+      },
+      {
+        "id": "urn:ngm:class:nhs-syndromic-surveillance-system",
+        "label": "NHS Syndromic Surveillance System"
+      },
+      {
+        "id": "urn:ngm:class:pandemic-preparedness",
+        "label": "Pandemic Preparedness"
+      },
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-biology",
+        "label": "Synthetic Biology"
+      },
+      {
+        "id": "urn:ngm:class:crispr-gene-editing",
+        "label": "CRISPR Gene Editing"
+      },
+      {
+        "id": "urn:ngm:class:dual-use-research",
+        "label": "Dual-Use Research"
+      },
+      {
+        "id": "urn:ngm:class:global-catastrophic-risk",
+        "label": "Global Catastrophic Risk"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety",
+      "slug": "ai-safety"
+    },
+    {
+      "id": "urn:ngm:class:existential-risk",
+      "label": "Existential Risk",
+      "slug": "existential-risk"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:governance-object",
+      "label": "Governance Object",
+      "slug": "governance-object"
+    },
+    {
+      "id": "urn:ngm:class:harm-taxonomy",
+      "label": "Harm Taxonomy",
+      "slug": "harm-taxonomy"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:sociotechnical-risk",
+      "label": "Sociotechnical Risk",
+      "slug": "sociotechnical-risk"
+    },
+    {
+      "id": "urn:ngm:class:systemic-risk",
+      "label": "Systemic Risk",
+      "slug": "systemic-risk"
+    },
+    {
+      "id": "urn:ngm:class:technology-risk",
+      "label": "Technology Risk",
+      "slug": "technology-risk"
+    },
+    {
+      "id": "urn:ngm:class:ai-risk",
+      "label": "AI Risk",
+      "slug": "ai-risk"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:catastrophic-risk-assessment",
+      "label": "Catastrophic Risk Assessment",
+      "slug": "catastrophic-risk-assessment"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-risk-assessment",
+      "label": "Probabilistic Risk Assessment",
+      "slug": "probabilistic-risk-assessment"
+    },
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment",
+      "slug": "risk-assessment"
+    },
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management",
+      "slug": "risk-management"
+    },
+    {
+      "id": "urn:ngm:class:audit",
+      "label": "Audit",
+      "slug": "audit"
+    },
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework",
+      "slug": "compliance-framework"
+    },
+    {
+      "id": "urn:ngm:class:safety-engineering",
+      "label": "Safety Engineering",
+      "slug": "safety-engineering"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-analysis",
+      "label": "Systems Analysis",
+      "slug": "systems-analysis"
+    },
+    {
+      "id": "urn:ngm:class:accountability-mechanism",
+      "label": "Accountability Mechanism",
+      "slug": "accountability-mechanism"
+    },
+    {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards",
+      "slug": "robo-safety-and-standards"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:accountability",
+      "label": "Accountability",
+      "slug": "accountability"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance",
+      "slug": "ai-governance"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     }
   ],
   "inheritedRelations": {
@@ -286,16 +625,36 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluations"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:incident-reporting",
+        "label": "Incident Reporting"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-consultation",
+        "label": "Stakeholder Consultation"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ],
     "enables": [
@@ -308,60 +667,300 @@
         "label": "Privacy Framework"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability Frameworks"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:algorithmic-impact-assessment",
+        "label": "Algorithmic Impact Assessments"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:frontier-model-regulation",
+        "label": "Frontier Model Regulation"
+      },
+      {
+        "id": "urn:ngm:class:pre-deployment-evaluation",
+        "label": "Pre-deployment Evaluation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deployment-context",
+        "label": "Deployment Context"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai-systems",
+        "label": "Frontier AI Systems"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:defence-in-depth",
+        "label": "Defence in Depth"
+      },
+      {
+        "id": "urn:ngm:class:precautionary-principle",
+        "label": "Precautionary Principle"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-regulation",
+        "label": "Risk-Based Regulation"
+      },
+      {
+        "id": "urn:ngm:class:sociotechnical-analysis",
+        "label": "Sociotechnical Analysis"
+      },
+      {
+        "id": "urn:ngm:class:tiered-capability-thresholds",
+        "label": "Tiered Capability Thresholds"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:ai-benefits",
+        "label": "AI Benefits"
+      },
+      {
+        "id": "urn:ngm:class:ai-capabilities",
+        "label": "AI Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:ai-for-good",
+        "label": "AI for Good"
+      },
+      {
+        "id": "urn:ngm:class:beneficial-ai",
+        "label": "Beneficial AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-capabilities-research",
+        "label": "AI Capabilities Research"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Cyber Security"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness Testing"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:capability-elicitation",
+        "label": "Capability Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-frameworks",
+        "label": "Evaluation Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:risk-register",
+        "label": "Risk Registers"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:insurance-underwriting",
+        "label": "Insurance Underwriting"
+      },
+      {
+        "id": "urn:ngm:class:international-coordination",
+        "label": "International Coordination"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier",
+        "label": "Public Awareness"
+      },
+      {
+        "id": "urn:ngm:class:liability-adjudication",
+        "label": "Liability Adjudication"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards Development"
+      },
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:council-of-europe-ai-convention",
+        "label": "Council of Europe AI Convention"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO-IEC 23894"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:mit-ai-risk-repository",
+        "label": "MIT AI Risk Repository"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:global-catastrophic-risk",
+        "label": "Global Catastrophic Risk"
+      },
+      {
+        "id": "urn:ngm:class:risk-analysis",
+        "label": "Risk Analysis"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "General-Purpose AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:accountability-framework",
+        "label": "Accountability Framework"
       }
     ],
     "relatedTo": [
@@ -374,20 +973,28 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
       }
     ]
   },

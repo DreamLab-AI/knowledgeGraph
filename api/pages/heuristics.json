@@ -50,9 +50,69 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science",
+      "slug": "cognitive-science"
+    },
+    {
+      "id": "urn:ngm:class:decision-theory",
+      "label": "Decision Theory",
+      "slug": "decision-theory"
+    },
+    {
+      "id": "urn:ngm:class:operations-research",
+      "label": "Operations Research",
+      "slug": "operations-research"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
+    },
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation",
+      "slug": "optimisation"
+    },
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory",
+      "slug": "probability-theory"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-foundations",
+      "label": "Mathematical Foundations",
+      "slug": "mathematical-foundations"
+    },
+    {
+      "id": "urn:ngm:class:measure-theory",
+      "label": "Measure Theory",
+      "slug": "measure-theory"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -108,16 +168,20 @@
         "label": "Uncertainty Quantification"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
       }
     ],
     "enables": [
@@ -138,20 +202,20 @@
         "label": "Policy Optimisation"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
       }
     ],
     "dependsOn": [
@@ -170,6 +234,56 @@
       {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:linguistics",
+        "label": "Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      },
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       }
     ],
     "contrastsWith": [
@@ -180,6 +294,30 @@
       {
         "id": "urn:ngm:class:bounded-rationality",
         "label": "Bounded Rationality"
+      },
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
       }
     ],
     "bridgesTo": [
@@ -190,6 +328,30 @@
       {
         "id": "urn:ngm:class:supply-chain-management",
         "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:information-processing",
+        "label": "Information Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
       }
     ],
     "uses": [
@@ -198,7 +360,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -208,6 +370,22 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interface",
+        "label": "Brain Computer Interface"
+      },
+      {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:experimental-methods",
+        "label": "Experimental Methods"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ],
     "supports": [
@@ -222,6 +400,62 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:savage-expected-utility",
+        "label": "Savage Expected Utility"
+      },
+      {
+        "id": "urn:ngm:class:von-neumann-morgenstern-axioms",
+        "label": "Von Neumann-Morgenstern Axioms"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       }
     ],
     "relatedTo": [
@@ -232,6 +466,10 @@
       {
         "id": "urn:ngm:class:control-theory",
         "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -246,16 +484,12 @@
         "label": "Spatial Computing"
       },
       {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
       }
     ]
   },

@@ -91,6 +91,10 @@
       {
         "id": "urn:ngm:class:inference",
         "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flow",
+        "label": "Normalizing Flow"
       }
     ]
   },
@@ -101,9 +105,24 @@
       "slug": "ai-technique"
     },
     {
+      "id": "urn:ngm:class:bayesian-inference",
+      "label": "Bayesian Inference",
+      "slug": "bayesian-inference"
+    },
+    {
       "id": "urn:ngm:class:numerical-methods",
       "label": "Numerical Methods",
       "slug": "numerical-methods"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-model",
+      "label": "Probabilistic Model",
+      "slug": "probabilistic-model"
+    },
+    {
+      "id": "urn:ngm:class:statistical-computing",
+      "label": "Statistical Computing",
+      "slug": "statistical-computing"
     },
     {
       "id": "urn:ngm:class:stochastic-processes",
@@ -121,14 +140,64 @@
       "slug": "artificial-intelligence"
     },
     {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model",
+      "slug": "generative-model"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-inference",
+      "label": "Probabilistic Inference",
+      "slug": "probabilistic-inference"
+    },
+    {
       "id": "urn:ngm:class:probability-theory",
       "label": "Probability Theory",
       "slug": "probability-theory"
     },
     {
+      "id": "urn:ngm:class:statistical-inference",
+      "label": "Statistical Inference",
+      "slug": "statistical-inference"
+    },
+    {
+      "id": "urn:ngm:class:statistical-learning-theory",
+      "label": "Statistical Learning Theory",
+      "slug": "statistical-learning-theory"
+    },
+    {
+      "id": "urn:ngm:class:uncertainty-quantification",
+      "label": "Uncertainty Quantification",
+      "slug": "uncertainty-quantification"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
       "id": "urn:ngm:class:measure-theory",
       "label": "Measure Theory",
       "slug": "measure-theory"
+    },
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics",
+      "slug": "statistics"
     }
   ],
   "inheritedRelations": {
@@ -184,20 +253,20 @@
         "label": "Target Density"
       },
       {
-        "id": "urn:ngm:class:calculus",
-        "label": "Calculus"
+        "id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes' Theorem"
       },
       {
-        "id": "urn:ngm:class:differential-equations",
-        "label": "Differential Equations"
+        "id": "urn:ngm:class:conditional-probability",
+        "label": "Conditional Probability"
       },
       {
-        "id": "urn:ngm:class:floating-point-arithmetic",
-        "label": "Floating-Point Arithmetic"
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       },
       {
-        "id": "urn:ngm:class:linear-algebra",
-        "label": "Linear Algebra"
+        "id": "urn:ngm:class:statistical-model",
+        "label": "Statistical Model"
       }
     ],
     "enables": [
@@ -210,7 +279,7 @@
         "label": "Large-Scale Pretrained Foundation Model"
       },
       {
-        "id": "urn:ngm:class:particle-filter",
+        "id": "urn:ngm:class:monte-carlo-localization",
         "label": "Particle Filter"
       },
       {
@@ -222,33 +291,61 @@
         "label": "Uncertainty Quantification"
       },
       {
-        "id": "urn:ngm:class:computational-fluid-dynamics",
-        "label": "Computational Fluid Dynamics"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       },
       {
-        "id": "urn:ngm:class:finite-element-analysis",
-        "label": "Finite Element Analysis"
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:filtration",
-        "label": "Filtration"
+        "id": "urn:ngm:class:ergodic-theory",
+        "label": "Ergodic Theory"
       },
       {
-        "id": "urn:ngm:class:sigma-algebra",
-        "label": "Sigma-Algebra"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:set-theory",
-        "label": "Axiomatic Set Theory"
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:conditional-probability",
+        "label": "Conditional Probability"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:computational-statistics",
+        "label": "Computational Statistics"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:ddim",
+        "label": "DDIM"
+      },
+      {
+        "id": "urn:ngm:class:dpm-solver",
+        "label": "DPM-Solver"
+      },
       {
         "id": "urn:ngm:class:gibbs-sampling",
         "label": "Gibbs Sampling"
@@ -266,25 +363,65 @@
         "label": "Nucleus Sampling"
       },
       {
+        "id": "urn:ngm:class:nuts",
+        "label": "NUTS"
+      },
+      {
         "id": "urn:ngm:class:speculative-decoding",
         "label": "Speculative Decoding"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:symbolic-computation",
-        "label": "Symbolic Computation"
+        "id": "urn:ngm:class:deterministic-integration",
+        "label": "Deterministic Integration"
       },
       {
-        "id": "urn:ngm:class:chaos-theory",
-        "label": "Chaos Theory"
+        "id": "urn:ngm:class:grid-approximation",
+        "label": "Grid Approximation"
       },
       {
-        "id": "urn:ngm:class:fuzzy-logic",
-        "label": "Fuzzy Logic"
+        "id": "urn:ngm:class:laplace-approximation",
+        "label": "Laplace Approximation"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:frequentist-statistics",
+        "label": "Frequentist Statistics"
+      },
+      {
+        "id": "urn:ngm:class:maximum-a-posteriori-estimation",
+        "label": "Maximum A Posteriori Estimation"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:minimum-description-length",
+        "label": "Minimum Description Length"
+      },
       {
         "id": "urn:ngm:class:computer-graphics",
         "label": "Computer Graphics"
@@ -294,28 +431,12 @@
         "label": "Deep Learning"
       },
       {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
         "id": "urn:ngm:class:motion-planning",
         "label": "Robotics Motion Planning"
-      },
-      {
-        "id": "urn:ngm:class:diffusion-models",
-        "label": "Diffusion Models"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:statistical-mechanics",
-        "label": "Statistical Mechanics"
-      },
-      {
-        "id": "urn:ngm:class:conformal-prediction",
-        "label": "Conformal Prediction"
-      },
-      {
-        "id": "urn:ngm:class:functional-analysis",
-        "label": "Functional Analysis"
       }
     ],
     "uses": [
@@ -344,12 +465,12 @@
         "label": "Score Function"
       },
       {
-        "id": "urn:ngm:class:error-analysis",
-        "label": "Error Analysis"
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
       },
       {
-        "id": "urn:ngm:class:markov-decision-process",
-        "label": "Markov Decision Process"
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
       }
     ],
     "supports": [
@@ -362,6 +483,10 @@
         "label": "Large Language Models"
       },
       {
+        "id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Particle Filter"
+      },
+      {
         "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "Node-Based Diffusion Pipeline Interface"
       },
@@ -370,20 +495,16 @@
         "label": "ComfyUI Workflows"
       },
       {
-        "id": "urn:ngm:class:particle-filter",
-        "label": "Particle Filter"
-      },
-      {
         "id": "urn:ngm:class:variational-inference",
         "label": "Variational Inference"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:physics-simulation",
-        "label": "Physics Simulation"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "standardizedBy": [
@@ -392,8 +513,42 @@
         "label": "Hugging Face Diffusers"
       },
       {
+        "id": "urn:ngm:class:numpyro",
+        "label": "NumPyro"
+      },
+      {
         "id": "urn:ngm:class:py-mc",
         "label": "PyMC"
+      },
+      {
+        "id": "urn:ngm:class:pymc",
+        "label": "PyMC"
+      },
+      {
+        "id": "urn:ngm:class:robert-casella-monte-carlo-statistical-methods",
+        "label": "Robert-Casella Monte Carlo Statistical Methods"
+      },
+      {
+        "id": "urn:ngm:class:stan-probabilistic-programming",
+        "label": "Stan Probabilistic Programming"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       }
     ],
     "relatedTo": [

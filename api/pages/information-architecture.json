@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:metadata-standard",
         "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:navigation-schema",
+        "label": "Navigation Schema"
+      },
+      {
+        "id": "urn:ngm:class:search-system",
+        "label": "Search System"
       }
     ],
     "requires": [
@@ -105,6 +113,10 @@
       {
         "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
       }
     ],
     "supports": [],
@@ -127,6 +139,10 @@
       {
         "id": "urn:ngm:class:content-management-system",
         "label": "Content Management System"
+      },
+      {
+        "id": "urn:ngm:class:library-science",
+        "label": "Library Science"
       }
     ]
   },
@@ -183,8 +199,8 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       }
     ],
     "requires": [

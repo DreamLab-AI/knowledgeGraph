@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:presence",
         "label": "Presence System"
+      },
+      {
+        "id": "urn:ngm:class:signalling-protocol",
+        "label": "Signalling Protocol"
+      },
+      {
+        "id": "urn:ngm:class:media-codec",
+        "label": "Media Codec"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence System"
       }
     ],
     "requires": [
@@ -68,12 +80,24 @@
       {
         "id": "urn:ngm:class:asynchronous-messaging",
         "label": "Asynchronous Messaging"
+      },
+      {
+        "id": "urn:ngm:class:store-and-forward",
+        "label": "Store and Forward"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:ai-voice-synthesis",
+        "label": "AI Voice Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:avatar-streaming",
+        "label": "Avatar Streaming"
       }
     ],
     "uses": [
@@ -106,6 +130,10 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual Worlds"
       }
     ],
     "standardizedBy": [
@@ -133,7 +161,7 @@
         "label": "End-to-End Encryption"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       }
     ]
@@ -148,12 +176,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -262,7 +290,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

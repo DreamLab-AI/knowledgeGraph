@@ -10,6 +10,18 @@
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
+    },
+    {
+      "id": "urn:ngm:class:governance-artifact",
+      "label": "Governance Artifact"
+    },
+    {
+      "id": "urn:ngm:class:security-record",
+      "label": "Security Record"
+    },
+    {
+      "id": "urn:ngm:class:compliance-mechanism",
+      "label": "Compliance Mechanism"
     }
   ],
   "entityType": "Class",
@@ -40,6 +52,18 @@
       {
         "id": "urn:ngm:class:user-activity-logs",
         "label": "User Activity Logs"
+      },
+      {
+        "id": "urn:ngm:class:event-log",
+        "label": "Event Logs"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-chain",
+        "label": "Cryptographic Hash Chain"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature-record",
+        "label": "Digital Signature Record"
       }
     ],
     "requires": [
@@ -58,6 +82,18 @@
       {
         "id": "urn:ngm:class:secure-storage",
         "label": "Secure Storage"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronization-service",
+        "label": "Time Synchronization Service"
+      },
+      {
+        "id": "urn:ngm:class:logging-protocol",
+        "label": "Logging Protocol"
+      },
+      {
+        "id": "urn:ngm:class:event-schema",
+        "label": "Event Schema"
       }
     ],
     "enables": [
@@ -76,15 +112,157 @@
       {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-audit",
+        "label": "Regulatory Audit"
+      },
+      {
+        "id": "urn:ngm:class:breach-detection",
+        "label": "Breach Detection"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:provenance-standard",
+        "label": "Provenance Standard"
+      },
+      {
+        "id": "urn:ngm:class:logging-protocol",
+        "label": "Logging Protocol"
+      },
+      {
+        "id": "urn:ngm:class:event-schema",
+        "label": "Event Schema"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronization-service",
+        "label": "Time Synchronization Service"
+      },
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mutable-log",
+        "label": "Mutable Log"
+      },
+      {
+        "id": "urn:ngm:class:application-debug-log",
+        "label": "Application Debug Log"
+      },
+      {
+        "id": "urn:ngm:class:volatile-telemetry",
+        "label": "Volatile Telemetry"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:worm-storage",
+        "label": "WORM Storage"
+      },
+      {
+        "id": "urn:ngm:class:append-only-database",
+        "label": "Append-Only Database"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:soc-2-certification",
+        "label": "SOC 2 Certification"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      },
+      {
+        "id": "urn:ngm:class:nis2-directive",
+        "label": "NIS2 Directive"
+      },
+      {
+        "id": "urn:ngm:class:dora-compliance",
+        "label": "DORA Compliance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi-gr-arf-010",
+        "label": "ETSI GR ARF 010"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-csf-2-0",
+        "label": "NIST CSF 2.0"
+      },
+      {
+        "id": "urn:ngm:class:pci-dss-v4-0",
+        "label": "PCI DSS v4.0"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-article-12",
+        "label": "EU AI Act Article 12"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:governance-system",
@@ -105,9 +283,38 @@
       {
         "id": "urn:ngm:class:data-provenance",
         "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technology"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "id": "urn:ngm:class:evidence-management",
+        "label": "Evidence Management"
+      }
+    ]
   },
   "inferredSuperClasses": [
     {
@@ -185,6 +392,20 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

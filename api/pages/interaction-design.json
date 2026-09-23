@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:error-recovery",
         "label": "Error Recovery"
+      },
+      {
+        "id": "urn:ngm:class:interaction-flow",
+        "label": "Interaction Flow"
       }
     ],
     "requires": [
@@ -56,6 +60,10 @@
       {
         "id": "urn:ngm:class:inclusive-design",
         "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:conversational-interface",
+        "label": "Conversational Interface"
       }
     ],
     "dependsOn": [],
@@ -71,8 +79,12 @@
         "label": "Natural Language Interface"
       },
       {
-        "id": "urn:ngm:class:multimodal-interaction",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
+      },
+      {
+        "id": "urn:ngm:class:spatial-user-interfaces",
+        "label": "Spatial User Interface"
       }
     ],
     "uses": [
@@ -87,6 +99,10 @@
       {
         "id": "urn:ngm:class:task-analysis",
         "label": "Task Analysis"
+      },
+      {
+        "id": "urn:ngm:class:wireframing",
+        "label": "Wireframing"
       }
     ],
     "supports": [],
@@ -117,6 +133,10 @@
       {
         "id": "urn:ngm:class:usability-testing",
         "label": "Usability Testing"
+      },
+      {
+        "id": "urn:ngm:class:design-systems",
+        "label": "Design System"
       },
       {
         "id": "urn:ngm:class:design-systems",
@@ -237,6 +257,18 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -245,7 +277,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

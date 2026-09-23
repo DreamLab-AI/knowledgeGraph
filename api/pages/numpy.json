@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:vectorisation",
         "label": "Vectorisation"
+      },
+      {
+        "id": "urn:ngm:class:n-dimensional-array",
+        "label": "N-Dimensional Array"
       }
     ],
     "requires": [],
@@ -260,7 +264,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

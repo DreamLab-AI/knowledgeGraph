@@ -8,8 +8,20 @@
   "definition": "Telepresence Robot - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:dc-telepresence",
+      "id": "urn:ngm:class:telepresence",
       "label": "Telepresence"
+    },
+    {
+      "id": "urn:ngm:class:telepresence-technology",
+      "label": "Telepresence Technology"
+    },
+    {
+      "id": "urn:ngm:class:mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "id": "urn:ngm:class:remote-collaboration",
+      "label": "Remote Collaboration"
     }
   ],
   "entityType": "Class",
@@ -32,9 +44,21 @@
       {
         "id": "urn:ngm:class:motor-controller",
         "label": "Motor Controller"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera System"
+      },
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation Mechanism"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation Support"
+      },
       {
         "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation Support"
@@ -56,6 +80,10 @@
     ],
     "dependsOn": [],
     "implements": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision Understanding"
+      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision Understanding"
@@ -84,140 +112,312 @@
       "id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration",
       "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-teams",
+      "label": "Distributed Teams",
+      "slug": "distributed-teams"
+    },
+    {
+      "id": "urn:ngm:class:robot",
+      "label": "Robot",
+      "slug": "robot"
+    },
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology",
+      "slug": "dc-communication"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:haptic-feedback-telepresence",
-        "label": "Haptic Feedback Telepresence"
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
       },
       {
-        "id": "urn:ngm:class:immersive-communication",
-        "label": "Immersive Communication"
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:presence",
-        "label": "Presence"
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
       },
       {
-        "id": "urn:ngm:class:robotic-telepresence",
-        "label": "Robotic Telepresence"
+        "id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
       },
       {
-        "id": "urn:ngm:class:social-presence",
-        "label": "Social Presence"
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
       },
       {
-        "id": "urn:ngm:class:spatial-presence",
-        "label": "Spatial Presence"
+        "id": "urn:ngm:class:locomotion",
+        "label": "Locomotion System"
       },
       {
-        "id": "urn:ngm:class:teleoperation-systems",
-        "label": "Teleoperation Systems"
+        "id": "urn:ngm:class:onboard-computer",
+        "label": "Onboard Computer"
       },
       {
-        "id": "urn:ngm:class:asynchronous-collaboration",
-        "label": "Asynchronous Collaboration"
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
       },
       {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity and Access Management"
-      },
-      {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:open-source-development",
-        "label": "Open Source Development"
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:remote-surgery",
+        "label": "Remote Surgery"
       },
       {
         "id": "urn:ngm:class:remote-work",
         "label": "Remote Work"
       },
       {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
       },
       {
-        "id": "urn:ngm:class:virtual-team",
-        "label": "Virtual Team"
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:consensus-algorithm",
-        "label": "Consensus Algorithm"
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Networks"
       },
       {
-        "id": "urn:ngm:class:latency-management-protocol",
-        "label": "Latency Management"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:co-location",
+        "label": "Co-location"
+      },
+      {
+        "id": "urn:ngm:class:fixed-base-robot",
+        "label": "Fixed-Base Robot"
+      },
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Industrial Manipulator"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
-        "label": "Co-Located Collaboration"
+        "label": "Co-located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
+        "id": "urn:ngm:class:automated-machine",
+        "label": "Automated Machine"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:metaverse-telepresence-bridge",
-        "label": "Metaverse-Telepresence Bridge"
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Systems"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-workspaces",
+        "label": "Metaverse Workspaces"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:avatar-system",
-        "label": "Avatar System"
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:haptics",
-        "label": "Haptics"
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
       },
       {
-        "id": "urn:ngm:class:conflict-free-replicated-data-type",
-        "label": "Conflict-Free Replicated Data Type"
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
       },
       {
-        "id": "urn:ngm:class:end-to-end-encryption",
-        "label": "End-to-End Encryption"
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
       },
       {
-        "id": "urn:ngm:class:operational-transformation",
-        "label": "Operational Transformation"
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
       },
       {
-        "id": "urn:ngm:class:real-time-messaging",
-        "label": "Real-Time Messaging"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:hybrid-work",
+        "label": "Hybrid Work"
+      },
+      {
+        "id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Development"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
@@ -227,26 +427,98 @@
         "label": "Project Management"
       }
     ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "id": "urn:ngm:class:ansi-ria-r15-08",
+        "label": "ANSI/RIA R15.08"
+      },
+      {
+        "id": "urn:ngm:class:iso-8373-2021",
+        "label": "ISO 8373 2021"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot System"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical System"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:dc-communication",
-        "label": "Communication Technology"
+        "id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
       },
       {
-        "id": "urn:ngm:class:dc-workspace-tools",
-        "label": "Workspace Tools"
+        "id": "urn:ngm:class:presence-technology",
+        "label": "Presence Technology"
       },
       {
-        "id": "urn:ngm:class:robotics-telepresence-bridge",
-        "label": "Robotics-Telepresence Bridge"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-underwater-vehicle",
+        "label": "Autonomous Underwater Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:legged-robot",
+        "label": "Legged Robot"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "id": "urn:ngm:class:unmanned-aerial-vehicle",
+        "label": "Unmanned Aerial Vehicle"
       },
       {
         "id": "urn:ngm:class:computer-supported-cooperative-work",
         "label": "Computer-Supported Cooperative Work"
-      },
-      {
-        "id": "urn:ngm:class:groupware",
-        "label": "Groupware"
       }
     ]
   },

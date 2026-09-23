@@ -41,7 +41,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "inferredSuperClasses": [
     {
@@ -55,9 +60,39 @@
       "slug": "ai-technique"
     },
     {
+      "id": "urn:ngm:class:learning-from-demonstration",
+      "label": "Learning from Demonstration",
+      "slug": "learning-from-demonstration"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:policy-learning",
+      "label": "Policy Learning",
+      "slug": "policy-learning"
+    },
+    {
+      "id": "urn:ngm:class:sequential-decision-making",
+      "label": "Sequential Decision Making",
+      "slug": "sequential-decision-making"
+    },
+    {
+      "id": "urn:ngm:class:supervised-learning",
+      "label": "Supervised Learning",
+      "slug": "supervised-learning"
+    },
+    {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application",
       "slug": "ai-application"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -111,6 +146,14 @@
         "label": "Action Space"
       },
       {
+        "id": "urn:ngm:class:demonstrator",
+        "label": "Demonstrator"
+      },
+      {
+        "id": "urn:ngm:class:expert-trajectories",
+        "label": "Expert Trajectories"
+      },
+      {
         "id": "urn:ngm:class:function-approximator",
         "label": "Function Approximator"
       },
@@ -123,20 +166,12 @@
         "label": "Observation Space"
       },
       {
-        "id": "urn:ngm:class:authentication-system",
-        "label": "Authentication System"
+        "id": "urn:ngm:class:state-action-pairs",
+        "label": "State Action Pairs"
       },
       {
-        "id": "urn:ngm:class:environment-model",
-        "label": "Environment Model"
-      },
-      {
-        "id": "urn:ngm:class:reward-function",
-        "label": "Reward Function"
-      },
-      {
-        "id": "urn:ngm:class:sensor-input",
-        "label": "Sensor Input"
+        "id": "urn:ngm:class:api-access",
+        "label": "API Access"
       }
     ],
     "enables": [
@@ -145,8 +180,20 @@
         "label": "Cross-Embodiment Transfer"
       },
       {
+        "id": "urn:ngm:class:generalist-robot-policies",
+        "label": "Generalist Robot Policies"
+      },
+      {
+        "id": "urn:ngm:class:rapid-task-specification",
+        "label": "Rapid Task Specification"
+      },
+      {
         "id": "urn:ngm:class:reward-free-learning",
         "label": "Reward-Free Learning"
+      },
+      {
+        "id": "urn:ngm:class:sample-efficient-robotics",
+        "label": "Sample-Efficient Robotics"
       },
       {
         "id": "urn:ngm:class:skill-transfer",
@@ -159,24 +206,50 @@
       {
         "id": "urn:ngm:class:autonomous-operation",
         "label": "Autonomous Operation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
       },
       {
-        "id": "urn:ngm:class:browser-automation",
-        "label": "Browser Automation"
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
       },
       {
-        "id": "urn:ngm:class:code-generation",
-        "label": "Code Generation"
+        "id": "urn:ngm:class:maximum-entropy-principle",
+        "label": "Maximum Entropy Principle"
       },
       {
-        "id": "urn:ngm:class:file-system",
-        "label": "File System Access"
+        "id": "urn:ngm:class:no-regret-online-learning",
+        "label": "No-Regret Online Learning"
+      },
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:action-chunking-transformer",
         "label": "Action Chunking Transformer"
+      },
+      {
+        "id": "urn:ngm:class:airl",
+        "label": "AIRL"
       },
       {
         "id": "urn:ngm:class:behavioural-cloning",
@@ -191,20 +264,84 @@
         "label": "Diffusion Policy"
       },
       {
+        "id": "urn:ngm:class:gail",
+        "label": "GAIL"
+      },
+      {
         "id": "urn:ngm:class:goal-conditioned-behaviour-cloning",
         "label": "Goal Conditioned Behaviour Cloning"
       },
       {
         "id": "urn:ngm:class:inverse-reinforcement-learning",
         "label": "Inverse Reinforcement Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classical-control",
+        "label": "Classical Control"
       },
       {
-        "id": "urn:ngm:class:active-learning",
-        "label": "Active Learning"
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
       },
       {
-        "id": "urn:ngm:class:autonomous-behavior",
-        "label": "Autonomous Behavior"
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-economic-agent",
+        "label": "Autonomous Economic Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-trading-bot",
+        "label": "Bitcoin Trading Bot"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
       }
     ],
     "uses": [
@@ -233,12 +370,12 @@
         "label": "Vision Language Model"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:vision-language-models",
+        "label": "Vision Language Models"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "supports": [
@@ -251,6 +388,10 @@
         "label": "Dexterous Manipulation"
       },
       {
+        "id": "urn:ngm:class:drone-acrobatics",
+        "label": "Drone Acrobatics"
+      },
+      {
         "id": "urn:ngm:class:humanoid-control",
         "label": "Humanoid Control"
       },
@@ -261,16 +402,50 @@
       {
         "id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:calvin",
+        "label": "CALVIN"
+      },
+      {
+        "id": "urn:ngm:class:libero",
+        "label": "LIBERO"
+      },
       {
         "id": "urn:ngm:class:open-x-embodiment",
         "label": "Open X-Embodiment"
       },
       {
+        "id": "urn:ngm:class:rlbench",
+        "label": "RLBench"
+      },
+      {
+        "id": "urn:ngm:class:robomimic-benchmark",
+        "label": "Robomimic Benchmark"
+      },
+      {
         "id": "urn:ngm:class:training-dataset",
         "label": "DROID Dataset"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "relatedTo": [

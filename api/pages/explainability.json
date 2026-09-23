@@ -52,11 +52,15 @@
       {
         "id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:contestability-ai-0043",
+        "label": "Contestability (AI-0043)"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -120,7 +124,7 @@
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -233,6 +237,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

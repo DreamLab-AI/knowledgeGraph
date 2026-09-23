@@ -117,11 +117,6 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
     }
   ],
   "inheritedRelations": {
@@ -263,6 +258,10 @@
       {
         "id": "urn:ngm:class:vendor-lock-in",
         "label": "Vendor Lock-in"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [

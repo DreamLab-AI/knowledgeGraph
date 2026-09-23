@@ -39,10 +39,19 @@
       {
         "id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:european-ai-strategy",
+        "label": "European AI Strategy"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:oecd-ai-principles",
@@ -51,6 +60,10 @@
       {
         "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "bridgesTo": [
@@ -76,10 +89,19 @@
       {
         "id": "urn:ngm:class:ai-transparency-framework",
         "label": "AI Transparency"
+      },
+      {
+        "id": "urn:ngm:class:ai-transparency-framework",
+        "label": "AI Transparency"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:european-commission",
@@ -117,6 +139,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -207,6 +234,10 @@
         "label": "Risk Management"
       },
       {
+        "id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
+      },
+      {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
@@ -217,10 +248,6 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       }
     ],
     "dependsOn": [
@@ -353,12 +380,20 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
         "id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
       },
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       },
       {
         "id": "urn:ngm:class:change-management",
@@ -375,14 +410,6 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
-      },
-      {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
       }
     ]
   },

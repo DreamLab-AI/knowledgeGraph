@@ -30,6 +30,14 @@
       {
         "id": "urn:ngm:class:lattice-cryptography",
         "label": "Lattice-Based Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:lattice-cryptography",
+        "label": "Lattice-Based Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:learning-with-errors",
+        "label": "Learning With Errors"
       }
     ],
     "enables": [
@@ -44,12 +52,24 @@
       {
         "id": "urn:ngm:class:homomorphic-encryption-for-machine-learning",
         "label": "Encrypted Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:private-information-retrieval",
+        "label": "Private Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption-for-machine-learning",
+        "label": "Encrypted Machine Learning"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:noise-management",
+        "label": "Noise Management"
       }
     ],
     "implements": [],
@@ -65,6 +85,10 @@
       {
         "id": "urn:ngm:class:garbled-circuits",
         "label": "Garbled Circuits"
+      },
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclaves"
       }
     ],
     "bridgesTo": [
@@ -81,7 +105,16 @@
         "label": "Confidential Computing"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ring-learning-with-errors",
+        "label": "Ring Learning With Errors"
+      },
+      {
+        "id": "urn:ngm:class:number-theoretic-transform",
+        "label": "Number Theoretic Transform"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:cloud-computing",
@@ -90,9 +123,21 @@
       {
         "id": "urn:ngm:class:healthcare-data-privacy",
         "label": "Healthcare Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:genomic-data-analysis",
+        "label": "Genomic Data Analysis"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO/IEC JTC1 SC27"
+      },
+      {
+        "id": "urn:ngm:class:homomorphicencryption-org",
+        "label": "HomomorphicEncryption.org"
+      },
       {
         "id": "urn:ngm:class:iso-iec-jtc-1",
         "label": "ISO/IEC JTC1 SC27"
@@ -112,6 +157,10 @@
       {
         "id": "urn:ngm:class:oblivious-ram",
         "label": "Oblivious RAM"
+      },
+      {
+        "id": "urn:ngm:class:functional-encryption",
+        "label": "Functional Encryption"
       }
     ]
   },
@@ -122,9 +171,24 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -169,36 +233,36 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital-Signature"
+      },
+      {
         "id": "urn:ngm:class:encryption-scheme",
         "label": "Encryption Scheme"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash-Function"
       },
       {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
       {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       },
       {
         "id": "urn:ngm:class:random-number-generation",
         "label": "Random Number Generation"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
       }
     ],
     "enables": [
@@ -243,6 +307,26 @@
       {
         "id": "urn:ngm:class:number-theory",
         "label": "Number Theory"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
       }
     ],
     "implements": [
@@ -251,7 +335,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -265,13 +349,33 @@
         "label": "Post-Quantum Cryptography"
       },
       {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "id": "urn:ngm:class:threat-actor",
+        "label": "Threat Actor"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -291,12 +395,16 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
       }
     ],
     "uses": [
@@ -335,12 +443,12 @@
         "label": "Privacy Framework"
       },
       {
-        "id": "urn:ngm:class:transport-layer-security",
+        "id": "urn:ngm:class:tls",
         "label": "Transport Layer Security"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "standardizedBy": [
@@ -355,6 +463,22 @@
       {
         "id": "urn:ngm:class:ietf",
         "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD Principles on AI"
       },
       {
         "id": "urn:ngm:class:open-standards",
@@ -393,16 +517,16 @@
         "label": "Threat Model"
       },
       {
-        "id": "urn:ngm:class:confidential-computing",
-        "label": "Confidential Computing"
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
-        "label": "Public-Key Cryptography"
+        "id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
       }
     ]
   },

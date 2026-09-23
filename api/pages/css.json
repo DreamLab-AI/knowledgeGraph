@@ -44,7 +44,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -86,7 +86,7 @@
         "label": "Web Standard"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -105,6 +105,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -153,6 +158,10 @@
         "label": "Browser Engine"
       },
       {
+        "id": "urn:ngm:class:vendor-implementation",
+        "label": "Vendor Implementation"
+      },
+      {
         "id": "urn:ngm:class:consensus-process",
         "label": "Consensus Process"
       },
@@ -179,6 +188,10 @@
         "label": "Web Interoperability"
       },
       {
+        "id": "urn:ngm:class:open-web-platform",
+        "label": "Open Web Platform"
+      },
+      {
         "id": "urn:ngm:class:progressive-web-app",
         "label": "Progressive Web App"
       },
@@ -201,19 +214,27 @@
       {
         "id": "urn:ngm:class:safety",
         "label": "Safety"
-      },
-      {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
       }
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-technology",
+        "label": "Proprietary Technology"
+      },
       {
         "id": "urn:ngm:class:vendor-lock-in",
         "label": "Vendor Lock-in"
@@ -275,6 +296,10 @@
         "label": "Privacy"
       },
       {
+        "id": "urn:ngm:class:web-security",
+        "label": "Web Security"
+      },
+      {
         "id": "urn:ngm:class:certification",
         "label": "Certification"
       },
@@ -293,10 +318,6 @@
       {
         "id": "urn:ngm:class:high-availability",
         "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
       }
     ],
     "standardizedBy": [
@@ -307,6 +328,10 @@
       {
         "id": "urn:ngm:class:ietf",
         "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:whatwg",
+        "label": "WHATWG"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -320,6 +345,12 @@
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
       },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
@@ -355,7 +386,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       }
     ]

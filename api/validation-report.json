@@ -1,14 +1,133 @@
 {
   "total_pages": 8446,
+  "total_journals": 0,
+  "skipped": [
+    {
+      "path": ".deleted/AI-0376-algorithmic-accountability.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0378-algorithmic-bias.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0379-bias-detection-methods.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0380-bias-mitigation-techniques.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0381-disparate-impact.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0382-fairness-constraints.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0383-group-vs-individual-fairness.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0384-intersectional-fairness.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0385-fairness-accuracy-tradeoffs.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0386-fairness-auditing-tools.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0388-ai-ethics-board.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0389-responsible-ai-principles.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0390-ai-impact-assessment.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0391-stakeholder-engagement-ai.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0392-ai-documentation-standards.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0393-ethical-review-process.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0394-ai-risk-register.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0395-algorithmic-transparency-reports.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0396-ai-governance-maturity-model.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0407-TrustworthyAIFramework.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0408-AITrustworthinessDimensions.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0409-HumanAgencyOversight.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0410-TechnicalRobustnessSafety.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0411-PrivacyDataGovernance.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-0412-TransparencyExplainability.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/AI-Risk.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/Perception-System.md",
+      "reason": "hidden_directory"
+    },
+    {
+      "path": ".deleted/Recurrent-Neural-Network.md",
+      "reason": "hidden_directory"
+    }
+  ],
   "pages_with_ontology": 8446,
   "public_pages": 8432,
-  "total_issues": 1481,
+  "total_issues": 31319,
   "errors": 0,
-  "warnings": 84,
-  "info": 1397,
+  "warnings": 29086,
+  "info": 2233,
   "by_code": {
-    "MULTI_PARENT": 1397,
-    "INVALID_DOMAIN": 84
+    "DANGLING_LINK": 20559,
+    "INVALID_ENUM": 39,
+    "MULTI_PARENT": 2233,
+    "PUBLIC_LINKS_PRIVATE": 2,
+    "UNTERMINATED_FENCE": 40,
+    "UNVERIFIED_STABLE": 8446
   },
   "issues": []
 }

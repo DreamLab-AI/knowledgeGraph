@@ -40,6 +40,10 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
     "requires": [
@@ -76,6 +80,10 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       }
     ],
     "dependsOn": [
@@ -93,6 +101,14 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       },
       {
         "id": "urn:ngm:class:expert-systems",
@@ -155,7 +171,12 @@
         "label": "NIST AI RMF"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "relatedTo": []
   },
   "inferredSuperClasses": [],
@@ -178,10 +199,6 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
-      },
-      {
         "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
       },
@@ -198,10 +215,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
-      },
-      {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
       },
@@ -212,6 +225,24 @@
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [
@@ -748,8 +779,8 @@
       "label": "Ensemble Methods"
     },
     {
-      "slug": "experiment-tracking",
-      "label": "ML Experiment Tracking"
+      "slug": "empirical-experimental-design-tracking",
+      "label": "Experiment Tracking"
     },
     {
       "slug": "explainable-ai",
@@ -913,7 +944,7 @@
     },
     {
       "slug": "machine-learning-model",
-      "label": "Machine Learning Model"
+      "label": "Machine Learning Model (Artefact)"
     },
     {
       "slug": "machine-learning-technique",

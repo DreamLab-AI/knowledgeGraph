@@ -36,7 +36,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -58,6 +67,22 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:code-based-cryptography",
+        "label": "Code-Based Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-based-signatures",
+        "label": "Hash-Based Signatures"
+      },
+      {
+        "id": "urn:ngm:class:isogeny-based-cryptography",
+        "label": "Isogeny-Based Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:multivariate-cryptography",
+        "label": "Multivariate Cryptography"
+      },
+      {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
@@ -72,22 +97,6 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:digital-identity-management",
-        "label": "Digital Identity Management"
-      },
-      {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
       }
     ],
     "requires": [
@@ -126,6 +135,14 @@
         "label": "Secure Key Exchange"
       },
       {
+        "id": "urn:ngm:class:long-term-data-protection",
+        "label": "Long-Term Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:quantum-resistant-encryption",
+        "label": "Quantum-Resistant Encryption"
+      },
+      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
       },
@@ -140,10 +157,16 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
       }
     ],
     "contrastsWith": [

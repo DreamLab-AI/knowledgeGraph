@@ -30,6 +30,10 @@
       {
         "id": "urn:ngm:class:kyc-aml-compliance",
         "label": "KYC/AML Compliance"
+      },
+      {
+        "id": "urn:ngm:class:banking-rail",
+        "label": "Banking Rail"
       }
     ],
     "enables": [
@@ -44,6 +48,14 @@
       {
         "id": "urn:ngm:class:marketplace",
         "label": "Marketplace Platform"
+      },
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace Platform"
+      },
+      {
+        "id": "urn:ngm:class:embedded-finance",
+        "label": "Embedded Finance"
       }
     ],
     "dependsOn": [],
@@ -56,11 +68,15 @@
       {
         "id": "urn:ngm:class:square",
         "label": "Square"
+      },
+      {
+        "id": "urn:ngm:class:adyen",
+        "label": "Adyen"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -82,8 +98,12 @@
         "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       }
     ],
     "supports": [
@@ -111,6 +131,10 @@
       {
         "id": "urn:ngm:class:pci-dss",
         "label": "PCI DSS"
+      },
+      {
+        "id": "urn:ngm:class:merchant-acquiring",
+        "label": "Merchant Acquiring"
       }
     ]
   },
@@ -159,7 +183,7 @@
         "label": "State Channel"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -231,22 +255,22 @@
         "label": "Monetary Policy"
       },
       {
-        "id": "urn:ngm:class:tokenization",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:virtual-economy-market-framing",
-        "label": "Virtual Economy Market Framing"
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:internet-infrastructure",
-        "label": "Internet Infrastructure"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
       },
       {
         "id": "urn:ngm:class:blockchain-infrastructure",
@@ -267,7 +291,7 @@
         "label": "Barter System"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -337,7 +361,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -385,7 +409,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {

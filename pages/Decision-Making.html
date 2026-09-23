@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Decision Making</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Decision Making"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Decision Making"/><meta name="twitter:description" content="Decision making is the cognitive and computational process of selecting a course of action from a set of available alternatives by evaluating options against objectives, constraints, and uncertainty."/><meta property="og:description" content="Decision making is the cognitive and computational process of selecting a course of action from a set of available alternatives by evaluating options against objectives, constraints, and uncertainty."/><meta property="og:image:alt" content="Decision making is the cognitive and computational process of selecting a course of action from a set of available alternatives by evaluating options against objectives, constraints, and uncertainty."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Decision-Making"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Decision-Making"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Decision making is the cognitive and computational process of selecting a course of action from a set of available alternatives by evaluating options against objectives, constraints, and uncertainty."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Decision-Making"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-2313"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-2313" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Decision Making</a></div></nav><h1 class="article-title">Decision Making</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.606Z">23 Sept 2026</time><span>15 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:decision-making</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.9</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Research-Area" class="internal">AI Research Area</a></li><li><a href="../pages/Decision-Theory" class="internal">Decision Theory</a></li><li><a href="../pages/Operations-Research" class="internal">Operations Research</a></li><li><a href="../pages/Cognitive-Science" class="internal">Cognitive Science</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Utility-Theory" class="internal">Utility Theory</a></li><li><a href="../pages/Bayesian-Inference" class="internal">Bayesian Inference</a></li><li><a href="../pages/Markov-Decision-Process" class="internal">Markov Decision Process</a></li><li><a href="../multi-criteria-decision-analysis" class="internal">Multi-Criteria Decision Analysis</a></li><li><a href="../pages/Heuristics" class="internal">Heuristics</a></li><li><a href="../pages/Value-Function" class="internal">Value Function</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Uncertainty-Quantification" class="internal">Uncertainty Quantification</a></li><li><a href="../pages/Objective-Function" class="internal">Objective Function</a></li><li><a href="../pages/Knowledge-Representation" class="internal">Knowledge Representation</a></li><li><a href="../pages/Probability-Theory" class="internal">Probability Theory</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Autonomous-Agent" class="internal">Autonomous Agent</a></li><li><a href="../pages/Planning" class="internal">Planning</a></li><li><a href="../pages/Policy-Optimisation" class="internal">Policy Optimisation</a></li><li><a href="../pages/Governance" class="internal">Governance</a></li><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Supply-Chain-Management" class="internal">Supply Chain Management</a></li><li><a href="../pages/Risk-Management" class="internal">Risk Management</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Behavioural-Economics" class="internal">Behavioural Economics</a></li><li><a href="../pages/Bounded-Rationality" class="internal">Bounded Rationality</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Probability-Theory" class="internal">Probability Theory</a></li><li><a href="../pages/Optimisation" class="internal">Optimisation</a></li><li><a href="../pages/Game-Theory" class="internal">Game Theory</a></li><li><a href="../pages/Decision-Theory" class="internal">Decision Theory</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Decision-Theory" class="internal">Decision Theory</a></li><li><a href="../pages/Utility-Theory" class="internal">Utility Theory</a></li><li><a href="../pages/Bayesian-Inference" class="internal">Bayesian Inference</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../reinforcement-learning" class="internal">Reinforcement Learning</a></li><li><a href="../behavioural-economics" class="internal">Behavioural Economics</a></li><li><a href="../owl-thing" class="internal">owl:Thing</a></li><li><a href="../utility-theory" class="internal">Utility Theory</a></li><li><a href="../bayesian-inference" class="internal">Bayesian Inference</a></li><li><a href="../markov-decision-process" class="internal">Markov Decision Process</a></li><li><a href="../multi-criteria-decision-analysis" class="internal">Multi-Criteria Decision Analysis</a></li><li><a href="../uncertainty-quantification" class="internal">Uncertainty Quantification</a></li><li><a href="../objective-function" class="internal">Objective Function</a></li><li><a href="../knowledge-representation" class="internal">Knowledge Representation</a></li><li><a href="../autonomous-agent" class="internal">Autonomous Agent</a></li><li><a href="../planning" class="internal">Planning</a></li><li><a href="../policy-optimisation" class="internal">Policy Optimisation</a></li><li><a href="../probability-theory" class="internal">Probability Theory</a></li><li><a href="../optimisation" class="internal">Optimisation</a></li><li><a href="../game-theory" class="internal">Game Theory</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../bounded-rationality" class="internal">Bounded Rationality</a></li><li><a href="../governance" class="internal">Governance</a></li><li><a href="../ai-ethics" class="internal">AI Ethics</a></li><li><a href="../supply-chain-management" class="internal">Supply Chain Management</a></li><li><a href="../cognitive-science" class="internal">Cognitive Science</a></li><li><a href="../control-theory" class="internal">Control Theory</a></li><li><a href="../risk-assessment" class="internal">Risk Assessment</a></li><li><a href="../decision-theory" class="internal">Decision Theory</a></li><li><a href="../heuristics" class="internal">Heuristics</a></li><li><a href="../operations-research" class="internal">Operations Research</a></li><li><a href="../neural-network" class="internal">Neural Network</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../ai-safety-research" class="internal">AI Safety Research</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../spatial-computing" class="internal">Spatial Computing</a></li><li><a href="../risk-management" class="internal">Risk Management</a></li><li><a href="../value-function" class="internal">Value Function</a></li><li><a href="../reward-function" class="internal">Reward Function</a></li><li><a href="../choice-theory" class="internal">Choice Theory</a></li><li><a href="../transformer-architecture" class="internal">Transformer Architecture</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:f73f72fc78aeafdfd6e7be9915174cecbcacf1c5e6044e55b7ac550ac8b3f62d</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Cognitive-Science" class="internal">Cognitive Science</a></li><li><a href="../pages/Control-Theory" class="internal">Control Theory</a></li><li><a href="../pages/Operations-Research" class="internal">Operations Research</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../Spatial-Computing" class="internal">Spatial Computing</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Transformer-Architecture" class="internal">Transformer Architecture</a></li></ul></td></tr><tr><th scope="row">Same as</th><td><ul class="properties-values"><li><a href="../Choice-Theory" class="internal">Choice Theory</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/ISO-31000" class="internal">ISO 31000</a></li><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li><li><a href="../pages/NIST-AI-RMF" class="internal">NIST AI RMF</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/AI-Ethics" class="internal">AI Ethics</a></li><li><a href="../ai-safety-research" class="internal">AI Safety Research</a></li><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment</a></li><li><a href="../pages/Risk-Management" class="internal">Risk Management</a></li><li><a href="../pages/Supply-Chain-Management" class="internal">Supply Chain Management</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Reinforcement-Learning" class="internal">Reinforcement Learning</a></li><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li><li><a href="../pages/Heuristics" class="internal">Heuristics</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Decision making is the cognitive and computational process of selecting a course of action from a set of available alternatives by evaluating options against objectives, constraints, and uncertainty. It spans normative models of rational choice (expected utility, Bayesian reasoning), descriptive behavioural accounts that document systematic biases, and computational frameworks such as Markov Decision Processes and reinforcement learning that formalise sequential choice under uncertainty. In artificial intelligence, decision making underpins agent planning, autonomous systems, and large-scale optimisation, bridging probability theory, control theory, and game theory into operational policies.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:hasPart ai:UtilityTheory))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:hasPart ai:BayesianInference))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:hasPart ai:MarkovDecisionProcess))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:hasPart ai:MultiCriteriaDecisionAnalysis))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:hasPart ai:Heuristics))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:hasPart ai:ValueFunction))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:hasPart ai:RewardFunction))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:requires ai:UncertaintyQuantification))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:requires ai:ObjectiveFunction))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:requires ai:KnowledgeRepresentation))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:requires ai:ProbabilityTheory))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:dependsOn ai:GameTheory))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:dependsOn ai:Optimisation))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:dependsOn ai:DecisionTheory))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:enables ai:AutonomousAgent))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:enables ai:Planning))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:enables ai:PolicyOptimisation))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:enables ai:Governance))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:enables ai:RiskAssessment))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:supports ai:AIEthics))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:supports ai:AISafetyResearch))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:uses ai:ReinforcementLearning))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:uses ai:MachineLearning))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:uses ai:NeuralNetwork))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:uses ai:DeepLearning))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:implements ai:UtilityTheory))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:implements ai:BayesianInference))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:reducesTo ai:Optimisation))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:reducesTo ai:PolicyOptimisation))
+SubClassOf(ai:DecisionMaking
+  ObjectSomeValuesFrom(ai:reducesTo ai:MarkovDecisionProcess))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Decision making is one of the most pervasive and cross-disciplinary phenomena in science, studied simultaneously from the vantage points of psychology, economics, mathematics, neuroscience, computer science, and philosophy. Its unifying structure is simple to state: an agent confronts a set of alternatives, some description of an uncertain world, and a function measuring how much the agent values each possible outcome — and must select the best alternative given this structure. The normative branch of <a href="../pages/Decision-Theory" class="internal alias" data-slug="pages/Decision-Theory">Decision Theory</a> specifies what “best” means for a rational, coherent agent under the von Neumann–Morgenstern axioms; the descriptive branch, rooted in <a href="../pages/Behavioural-Economics" class="internal alias" data-slug="pages/Behavioural-Economics">Behavioural Economics</a> and <a href="../pages/Cognitive-Science" class="internal alias" data-slug="pages/Cognitive-Science">Cognitive Science</a>, documents the manifold ways human agents systematically depart from this ideal. The prescriptive tradition, spanning <a href="../pages/Operations-Research" class="internal alias" data-slug="pages/Operations-Research">Operations Research</a> and management science, seeks practical tools to improve real-world decisions without demanding perfect rationality from human actors.</li>
+<li>In artificial intelligence, the formalisation of decision making centres on the Markov Decision Process (MDP), introduced by Richard Bellman (1957) and extended by Howard (1960). The MDP tuple (S, A, T, R, γ) — states, actions, transition dynamics, reward function, and discount factor — provides the mathematical substrate for sequential decision making under uncertainty. Solving an MDP yields a <a href="../pages/Policy-Optimisation" class="internal alias" data-slug="pages/Policy-Optimisation">policy</a> π : S → A that maximises cumulative discounted reward. When transition dynamics are unknown, <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> algorithms learn the policy from interaction, giving rise to the Q-learning, actor-critic, and policy-gradient families that underpin modern AI systems. Large-scale deployments of RL-based decision making include AlphaGo (DeepMind, 2016), AlphaFold (protein folding, 2020), and the RLHF-trained <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> that power Claude, GPT-4, and Gemini (2023–2026).</li>
+<li>The societal stakes of automated decision making have intensified regulatory attention. The EU AI Act (fully applicable August 2026) classifies automated decision systems affecting fundamental rights as high-risk, mandating human oversight, transparency documentation, and conformity assessments. In the United Kingdom, the MHRA launched a National Commission into the Regulation of AI in Healthcare in September 2025, with a regulatory framework expected in 2026. NHS AI Governance Policy (2025) requires clinical risk standards, explainability, and human oversight for any AI system influencing clinical decisions, reflecting the growing imperative to align computational decision making with ethical and governance frameworks captured by <a href="../pages/AI-Ethics" class="internal alias" data-slug="pages/AI-Ethics">AI Ethics</a>, <a href="../pages/AI-Safety-Research" class="internal alias" data-slug="pages/AI-Safety-Research">AI Safety Research</a>, and <a href="../pages/Risk-Management" class="internal alias" data-slug="pages/Risk-Management">Risk Management</a>.</li>
+</ul>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Decision Problem Specification</strong>
+<ul>
+<li>Decision maker with preferences encoded as a <a href="../pages/Utility-Theory" class="internal alias" data-slug="pages/Utility-Theory">utility function</a> or a <a href="../pages/Reward-Function" class="internal alias" data-slug="pages/Reward-Function">Reward Function</a></li>
+<li>Alternative action set A (finite, countable, or continuous)</li>
+<li>State space S describing configurations of the world</li>
+<li>Outcome function mapping (action, state) pairs to consequences</li>
+<li><a href="../pages/Uncertainty-Quantification" class="internal alias" data-slug="pages/Uncertainty-Quantification">Uncertainty Quantification</a> over states, typically as probability distributions</li>
+</ul>
+</li>
+<li><strong>Normative Frameworks</strong>
+<ul>
+<li>Expected utility maximisation: choose a* = argmax_a Σ_s P(s) · U(outcome(a,s))</li>
+<li><a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a>: prior beliefs updated to posterior via Bayes’ theorem; posterior informs choice</li>
+<li><a href="../Multi-Criteria-Decision-Analysis" class="internal alias" data-slug="Multi-Criteria-Decision-Analysis">Multi-Criteria Decision Analysis</a>: extend single-objective utility to multi-attribute utility theory (MAUT), analytic hierarchy process (AHP), and Pareto dominance methods</li>
+<li><a href="../pages/Game-Theory" class="internal alias" data-slug="pages/Game-Theory">Game Theory</a>: Nash equilibrium, mechanism design, and correlated equilibrium for multi-agent settings</li>
+</ul>
+</li>
+<li><strong>Sequential Decision Models</strong>
+<ul>
+<li><a href="../pages/Markov-Decision-Process" class="internal alias" data-slug="pages/Markov-Decision-Process">Markov Decision Process</a>: (S, A, T, R, γ) with value iteration and policy iteration solvers</li>
+<li>Partially Observable MDP (POMDP): agent receives observations o ∈ O, not full state s; belief state maintained via <a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a></li>
+<li>Stochastic games: multi-agent extension of MDP with coupled transition dynamics</li>
+</ul>
+</li>
+<li><strong>Computational Decision Algorithms</strong>
+<ul>
+<li>Dynamic programming (Bellman equation, value/policy iteration)</li>
+<li>Model-free <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a>: Q-learning, SARSA, deep Q-networks (DQN)</li>
+<li>Policy gradient methods: REINFORCE, PPO, SAC — learn stochastic policy directly</li>
+<li>Planning algorithms: Monte Carlo Tree Search (MCTS), A* with <a href="../pages/Objective-Function" class="internal alias" data-slug="pages/Objective-Function">Objective Function</a></li>
+<li>LLM-based agents: chain-of-thought planning, tool-use decision chains in <a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a> models</li>
+</ul>
+</li>
+<li><strong>Descriptive and Heuristic Models</strong>
+<ul>
+<li>Dual-process theory (Kahneman System 1 / System 2)</li>
+<li>Prospect theory (Kahneman–Tversky): probability weighting, loss aversion, reference dependence</li>
+<li><a href="../pages/Heuristics" class="internal" data-slug="pages/Heuristics">Heuristics</a>: availability, representativeness, anchoring-and-adjustment (Tversky–Kahneman 1974)</li>
+<li><a href="../pages/Bounded-Rationality" class="internal alias" data-slug="pages/Bounded-Rationality">Bounded Rationality</a> (Simon): satisficing policies that terminate search when a threshold utility is found</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="formal-analysis">Formal Analysis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-analysis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The Bellman optimality equation for MDPs provides the core fixed-point characterisation of optimal decision making in sequential settings. For a finite MDP with discount factor γ ∈ [0,1):</li>
+<li>V*(s) = max_a [ R(s,a) + γ · Σ_{s’} T(s,a,s’) · V*(s’) ]</li>
+<li>This equation shows that optimal decision making at any state s consists of choosing the action a that maximises the sum of immediate reward R(s,a) and the discounted expected value of successor states. Value iteration (Bellman, 1957) solves this by successive approximation; policy iteration (Howard, 1960) alternates policy evaluation and greedy improvement, converging in polynomial time for finite state/action spaces.</li>
+<li>The relationship between decision making and <a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a> is captured by Bayesian decision theory: given a prior p(θ), likelihood p(x|θ), and utility U(a,θ), the optimal Bayesian action is a* = argmax_a ∫ U(a,θ) p(θ|x) dθ. This formulation unifies belief updating (<a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a>) with action selection (<a href="../pages/Utility-Theory" class="internal alias" data-slug="pages/Utility-Theory">Utility Theory</a>), making <a href="../pages/Uncertainty-Quantification" class="internal alias" data-slug="pages/Uncertainty-Quantification">Uncertainty Quantification</a> a first-class component of rational choice.</li>
+<li>In multi-agent settings, <a href="../pages/Game-Theory" class="internal alias" data-slug="pages/Game-Theory">Game Theory</a> extends single-agent decision making. A Nash equilibrium (Nash, 1950) is a strategy profile σ* such that no agent can improve its expected utility by unilaterally deviating: for all agents i, U_i(σ<em>_i, σ</em><em>{-i}) ≥ U_i(σ_i, σ*</em>{-i}). Mechanism design (Myerson, 1981) inverts the problem: design the game structure so that rational agent decisions aggregate to a socially desirable outcome, with applications in auction theory, voting protocols, and AI alignment.</li>
+</ul>
+</li>
+<li>
+<h2 id="major-frameworks-and-variants">Major Frameworks and Variants<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#major-frameworks-and-variants" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Expected Utility Theory (EUT)</strong>: The classical normative standard. Axioms: completeness, transitivity, continuity, and independence. Von Neumann and Morgenstern (1944) prove that any preference ordering satisfying these axioms is representable by a utility function over lotteries.</li>
+<li><strong>Subjective Expected Utility (SEU)</strong>: Savage (1954) extends EUT to subjective probability, allowing agents to act on personal beliefs rather than objective frequencies; foundation of modern <a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a>-based decision making.</li>
+<li><strong>Prospect Theory</strong>: Kahneman and Tversky (1979) show that humans use probability weighting functions (overweighting small probabilities) and reference-dependent value functions with loss aversion (losses loom larger than equivalent gains), explaining the Allais paradox and related anomalies.</li>
+<li><strong>Cumulative Prospect Theory</strong>: Tversky and Kahneman (1992) generalise to cumulative probability weighting, achieving stochastic dominance consistency.</li>
+<li><strong>Markov Decision Processes</strong>: Bellman (1957), Howard (1960). The canonical sequential framework. Extended to POMDPs by Aström (1965) and Sondik (1971).</li>
+<li><strong>Multi-Criteria Decision Analysis (MCDA)</strong>: Encompasses MAUT, AHP, ELECTRE, PROMETHEE, TOPSIS. Handles incommensurable objectives without forcing a single <a href="../pages/Utility-Theory" class="internal alias" data-slug="pages/Utility-Theory">utility</a> aggregation.</li>
+<li><strong>Reinforcement Learning as Decision Making</strong>: Watkins and Dayan (1992) Q-learning, Sutton et al. policy gradient theorem (2000), Mnih et al. DQN (2015), Schulman et al. PPO (2017). RL operationalises MDP solving from data rather than from a known model.</li>
+<li><strong>Robust Decision Making (RDM)</strong>: Walker et al. (2013); uses scenario discovery and satisficing rather than probability-weighted optimisation; appropriate when deep uncertainty makes prior specification unreliable.</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Autonomous Agents and Robotics</strong>: Self-driving vehicles (Waymo, Mobileye), robotic manipulation (Boston Dynamics, Figure), drone navigation. All use MDP/<a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> frameworks with real-time <a href="../pages/Planning" class="internal" data-slug="pages/Planning">Planning</a> and <a href="../pages/Policy-Optimisation" class="internal alias" data-slug="pages/Policy-Optimisation">Policy Optimisation</a>. As of 2025–2026, LLM-based agentic systems (OpenAI Operator, Google Agentic AI, Anthropic Claude Agents) extend decision making to web browsing, code writing, and enterprise workflow automation.</li>
+<li><strong>Clinical and Medical Decision Support</strong>: Diagnostic algorithm deployment in NHS hospitals (UK AI Governance Policy 2025), triage prioritisation, radiology AI (Annalise.ai, Qure.ai). Clinical risk standards DCB0129 and DCB0160 apply. Human oversight mandatory for high-risk decisions under MHRA guidelines.</li>
+<li><strong>Financial and Economic Applications</strong>: Algorithmic trading (high-frequency and statistical arbitrage), credit scoring, portfolio optimisation. Black-Litterman model fuses <a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a> with mean-variance optimisation; RL increasingly used for execution optimisation.</li>
+<li><strong>Supply-Chain and Operations Management</strong>: Stochastic inventory control, demand forecasting, logistics route optimisation. University of Manchester research group active in MCDA for energy policy. <a href="../pages/Supply-Chain-Management" class="internal alias" data-slug="pages/Supply-Chain-Management">Supply Chain Management</a> connects to <a href="../pages/Risk-Management" class="internal alias" data-slug="pages/Risk-Management">Risk Management</a> under disruption scenarios (post-COVID supply chain resilience).</li>
+<li><strong>Natural Language Processing and LLM Alignment</strong>: Chain-of-thought reasoning, tool-use agents, RLHF fine-tuning. <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> from human feedback (RLHF) and Direct Preference Optimisation (DPO) frame LLM alignment as a decision-making problem where model outputs are chosen to maximise human-evaluated <a href="../pages/Reward-Function" class="internal alias" data-slug="pages/Reward-Function">reward</a>. 74% of enterprises expected to use agentic AI at least moderately by 2027 (InsightMark 2026).</li>
+<li><strong>Policy and Governance</strong>: Cost-benefit analysis, multi-criteria evaluation of policy interventions, regulatory impact assessment. NICE DSU at University of Sheffield applies MCDA to health technology assessment. ISO 31000 embeds decision analysis within enterprise risk governance.</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Decision making has simultaneous founding lineages. In economics: von Neumann and Morgenstern (1944) axiomatised utility; Savage (1954) introduced subjective probability; Arrow (1951) proved the impossibility of aggregating individual preferences into a social welfare function without dictatorship. In psychology: Simon (1955, 1956) introduced <a href="../pages/Bounded-Rationality" class="internal alias" data-slug="pages/Bounded-Rationality">Bounded Rationality</a> and satisficing; Kahneman and Tversky (1974, 1979) documented cognitive biases and prospect theory. In operations research: Bellman (1957) developed dynamic programming; Howard (1960) formulated policy iteration for MDPs. In AI: Russell and Norvig (1995, 2020) consolidated decision making within the rational agent framework; Sutton and Barto (1998, 2018) provided the standard textbook for <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a>.</li>
+<li>Key journals: Management Science, Operations Research, Journal of Mathematical Economics, Artificial Intelligence, Journal of the ACM, Psychological Review, Nature Human Behaviour. Key conferences: IJCAI, NeurIPS, ICML, AAMAS (multi-agent), ACM FAccT (fairness and decision systems).</li>
+<li>Professional bodies: INFORMS Decision Analysis Society, Society for Judgment and Decision Making (SJDM), Operations Research Society (UK).</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The dominant trend in AI decision making as of 2026 is the rise of agentic LLM systems. The global AI agents market reached approximately $10.91 billion in 2026 (InsightMark Research 2026), driven by enterprise adoption of autonomous decision-making workflows. Systems such as OpenAI Operator, Anthropic Claude Agents, and Google Gemini Ultra Agents now execute multi-step decision chains over web browsers, databases, and enterprise APIs without per-step human oversight. 69% of executives cited improved decision-making as the top benefit of agentic AI deployment in 2025–2026 surveys.</li>
+<li>The RLHF paradigm that grounds LLM decision making evolved substantially in 2025–2026: online iterative RLHF with continuous feedback collection replaced static preference datasets; Direct Preference Optimisation (DPO) offered a stable offline alternative. Anthropic published an updated 80-page constitutional AI constitution (January 2026) articulating the philosophical foundations for Claude’s decision making under value uncertainty.</li>
+<li>Regulatory pressure sharpened: the EU AI Act became fully applicable on 2 August 2026, mandating human oversight, risk management documentation, and conformity assessments for high-risk automated decision systems. The MHRA (UK) National Commission on AI in Healthcare (launched September 2025) is preparing a regulatory framework expected mid-2026, with NHS AI Governance Policy (v2.0, May 2025) already requiring explicit human oversight for all AI-influenced clinical decisions.</li>
+<li>Research frontier: uncertainty-aware decision making in foundation models, causal reasoning for robust out-of-distribution decisions (CRAwDAD framework, 2025), hierarchical LLM planning (HiPlan, 2025), and value-alignment under deep uncertainty (Admissibility Alignment framework, 2026).</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The United Kingdom has significant academic strength in decision making research across multiple institutions. The University of Sheffield NICE Decision Support Unit is a leading centre for <a href="../Multi-Criteria-Decision-Analysis" class="internal alias" data-slug="Multi-Criteria-Decision-Analysis">Multi-Criteria Decision Analysis</a> in health technology assessment, developing MCDA methods for NICE’s value frameworks. The University of Manchester has active research programmes in MCDA for energy policy and <a href="../pages/Operations-Research" class="internal alias" data-slug="pages/Operations-Research">Operations Research</a>. LSE’s Centre for Philosophy of Natural and Social Science (CPNSS) conducts foundational research on rational choice and <a href="../pages/Decision-Theory" class="internal alias" data-slug="pages/Decision-Theory">Decision Theory</a>. Oxford University’s Institute for Ethics in AI (2026 paper: “Legal Alignment for Safe and Ethical AI”) addresses decision-making alignment in frontier AI systems.</li>
+<li>In Northern England, the industrial context is equally substantial. Manchester’s logistics and supply-chain sector (one of the UK’s largest distribution hubs) applies stochastic decision models for inventory control and fleet routing. Leeds’ NHS Teaching Hospitals and Leeds Digital Health cluster are active adopters of AI-assisted clinical decision support under NHS DTAC (Digital Technology Assessment Criteria). Sheffield’s Advanced Manufacturing Research Centre (AMRC) applies real-time MDP-based decision making to robotic manufacturing lines. Newcastle University’s Digital Institute has research on decision systems for smart-city infrastructure.</li>
+<li>The UK Government’s AI Opportunities Action Plan (2025) and the DSIT AI Safety Institute (Bletchley Park successor) both reference decision system safety as a priority, with the UK AI Act expected to diverge from the EU approach by emphasising innovation-friendly oversight rather than pre-market conformity assessment.</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Foundation Model Decision Agents</strong>: Scaling of agentic LLMs to trillion-parameter models with persistent memory, multi-modal perception, and tool-use will redefine autonomous decision making. Hierarchical planning integrating symbolic and neural components (HiPlan, MCTS + LLM hybrid) is the near-term frontier.</li>
+<li><strong>Causal Decision Making</strong>: Moving beyond correlation-based predictions to causal models (Pearl’s do-calculus) will enable more robust out-of-distribution generalisation in clinical and policy decision systems.</li>
+<li><strong>Uncertainty-Aware Neural Decision Systems</strong>: Conformal prediction, Bayesian neural networks, and calibrated ensemble methods will provide the <a href="../pages/Uncertainty-Quantification" class="internal alias" data-slug="pages/Uncertainty-Quantification">Uncertainty Quantification</a> necessary for safety-critical deployment.</li>
+<li><strong>Value-Aligned Sequential Decision Making</strong>: Aligning MDP reward functions with complex human values (multi-stakeholder utility, distributional fairness, intertemporal equity) remains an open problem, central to <a href="../pages/AI-Safety-Research" class="internal alias" data-slug="pages/AI-Safety-Research">AI Safety Research</a> and <a href="../pages/AI-Ethics" class="internal alias" data-slug="pages/AI-Ethics">AI Ethics</a>.</li>
+<li><strong>Human-AI Collaborative Decision Making</strong>: Moving beyond automation towards genuine complementarity — systems that improve human decision quality without replacing human agency — is the emerging paradigm. A 2025–2026 systematic review of 627 articles on AI-human collaborative decision making (Springer Group Decision and Negotiation) synthesises this direction.</li>
+<li><strong>Regulatory Technology for Decision Audit</strong>: Explainability tools (SHAP, LIME, concept bottleneck models) will evolve into formal audit trails required by EU and UK regulations, making decision provenance a first-class property of deployed systems.</li>
+</ul>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<ol>
+<li>von Neumann, J. and Morgenstern, O. (1944). <em>Theory of Games and Economic Behavior</em>. Princeton University Press.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Bellman, R. (1957). <em>Dynamic Programming</em>. Princeton University Press.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Savage, L.J. (1954). <em>The Foundations of Statistics</em>. Wiley.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Howard, R.A. (1960). Dynamic Programming and Markov Processes. MIT Press.</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Simon, H.A. (1955). A Behavioral Model of Rational Choice. <em>Quarterly Journal of Economics</em>, 69(1), 99–118.</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Kahneman, D. and Tversky, A. (1979). Prospect Theory: An Analysis of Decision under Risk. <em>Econometrica</em>, 47(2), 263–291.</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Tversky, A. and Kahneman, D. (1974). Judgment under Uncertainty: Heuristics and Biases. <em>Science</em>, 185(4157), 1124–1131.</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Tversky, A. and Kahneman, D. (1992). Advances in Prospect Theory: Cumulative Representation of Uncertainty. <em>Journal of Risk and Uncertainty</em>, 5(4), 297–323.</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Puterman, M.L. (1994). <em>Markov Decision Processes: Discrete Stochastic Dynamic Programming</em>. Wiley.</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Sutton, R.S. and Barto, A.G. (2018). <em>Reinforcement Learning: An Introduction</em> (2nd ed.). MIT Press.</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Keeney, R.L. and Raiffa, H. (1976). <em>Decisions with Multiple Objectives: Preferences and Value Trade-Offs</em>. Wiley.</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Russell, S. and Norvig, P. (2020). <em>Artificial Intelligence: A Modern Approach</em> (4th ed.). Pearson.</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Kahneman, D. (2011). <em>Thinking, Fast and Slow</em>. Farrar, Straus and Giroux.</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Nash, J.F. (1950). Equilibrium Points in n-Person Games. <em>Proceedings of the National Academy of Sciences</em>, 36(1), 48–49.</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Mnih, V. et al. (2015). Human-Level Control through Deep Reinforcement Learning. <em>Nature</em>, 518, 529–533.</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Schulman, J. et al. (2017). Proximal Policy Optimization Algorithms. arXiv:1707.06347.</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Christiano, P. et al. (2017). Deep Reinforcement Learning from Human Preferences. <em>NeurIPS</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Ouyang, L. et al. (2022). Training Language Models to Follow Instructions with Human Feedback (InstructGPT). <em>NeurIPS</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Walker, W. et al. (2013). Defining Uncertainty: A Conceptual Basis for Uncertainty Management in Model-Based Decision Support. <em>Integrated Assessment</em>, 4(1), 5–17.</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Arrow, K.J. (1951). <em>Social Choice and Individual Values</em>. Yale University Press.</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Myerson, R.B. (1981). Optimal Auction Design. <em>Mathematics of Operations Research</em>, 6(1), 58–73.</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Watkins, C.J.C.H. and Dayan, P. (1992). Q-learning. <em>Machine Learning</em>, 8(3–4), 279–292.</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Aström, K.J. (1965). Optimal Control of Markov Decision Processes with Incomplete State Estimation. <em>Journal of Mathematical Analysis and Applications</em>, 10(1), 174–205.</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Ngo, R. et al. (2024). A Decision Theoretic Framework for Measuring AI Reliance. <em>ACM FAccT 2024</em>. <a href="https://dl.acm.org/doi/10.1145/3630106.3658901" class="external">https://dl.acm.org/doi/10.1145/3630106.3658901<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>InsightMark Research (2026). LLM Agent Statistics 2026. <a href="https://insightmarkresearch.com/insights/llm-agent-statistics-2026" class="external">https://insightmarkresearch.com/insights/llm-agent-statistics-2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>European Commission (2024). EU AI Act. Official Journal of the EU. <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" class="external">https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>MHRA (2025). National Commission into the Regulation of AI in Healthcare. UK Government. <a href="https://www.gov.uk/government/groups/national-commission-into-the-regulation-of-ai-in-healthcare" class="external">https://www.gov.uk/government/groups/national-commission-into-the-regulation-of-ai-in-healthcare<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>University of Sheffield NICE DSU. Multiple Criteria Decision Analysis for Health Technology Assessment. <a href="https://sheffield.ac.uk/nice-dsu/methods-development/multiple-criteria-decision-analysis" class="external">https://sheffield.ac.uk/nice-dsu/methods-development/multiple-criteria-decision-analysis<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Alternative</strong>: A candidate action or choice available to the decision maker</li>
+<li><strong>Decision Policy (π)</strong>: A mapping from states to actions; the output of solving an MDP</li>
+<li><strong>Expected Utility</strong>: The probability-weighted average of utilities across all possible outcomes of an action</li>
+<li><strong>Value Function V(s)</strong>: The expected cumulative discounted reward achievable from state s under an optimal policy</li>
+<li><strong>Markov Property</strong>: The assumption that the future state depends only on the current state and action, not on history</li>
+<li><strong>POMDP</strong>: Partially Observable MDP; the agent receives observations rather than full state information</li>
+<li><strong>Satisficing</strong>: Herbert Simon’s term for accepting the first option that meets a threshold utility, rather than globally optimising</li>
+<li><strong>Prospect Theory</strong>: Kahneman–Tversky descriptive model of risky choice with probability weighting and loss aversion</li>
+<li><strong>RLHF</strong>: Reinforcement Learning from Human Feedback; training a reward model from human preference labels, then using it for RL fine-tuning of LLMs</li>
+<li><strong>MCDA</strong>: Multi-Criteria Decision Analysis; methods for evaluating alternatives against multiple, potentially conflicting criteria</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1645" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#formal-analysis" data-for="formal-analysis">Formal Analysis</a></li><li class="depth-0"><a href="#major-frameworks-and-variants" data-for="major-frameworks-and-variants">Major Frameworks and Variants</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Autonomous-Decision-Making" class="internal">Autonomous Decision Making</a></li><li><a href="../pages/Cognitive-Architecture" class="internal">Cognitive Architecture</a></li><li><a href="../pages/Cognitive-Science" class="internal">Cognitive Science</a></li><li><a href="../pages/Combinatorial-Optimisation" class="internal">Combinatorial Optimisation</a></li><li><a href="../pages/Consensus-Process" class="internal">Consensus Process</a></li><li><a href="../pages/Constraint-Satisfaction" class="internal">Constraint Satisfaction</a></li><li><a href="../pages/Financial-Modelling" class="internal">Financial Modelling</a></li><li><a href="../pages/Robot-Control" class="internal">Robot Control</a></li><li><a href="../pages/Utility-AI" class="internal">Utility AI</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

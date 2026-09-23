@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:optimisation",
       "label": "Optimisation"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-optimisation",
+      "label": "Mathematical Optimisation"
     }
   ],
   "entityType": "Class",
@@ -42,6 +46,18 @@
       {
         "id": "urn:ngm:class:optimisation",
         "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
       }
     ],
     "enables": [
@@ -78,9 +94,22 @@
       {
         "id": "urn:ngm:class:computational-complexity",
         "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:np-hardness",
+        "label": "NP-Hardness"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      },
+      {
+        "id": "urn:ngm:class:integer-programming",
+        "label": "Integer Programming"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:convex-optimisation",
@@ -116,6 +145,10 @@
       {
         "id": "urn:ngm:class:graph-neural-network",
         "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
       }
     ],
     "supports": [
@@ -132,7 +165,12 @@
         "label": "Neural Architecture Search"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:optimisation",
@@ -161,16 +199,30 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:quantum-computing",
+        "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
       "id": "urn:ngm:class:mathematical-foundations",
       "label": "Mathematical Foundations",
       "slug": "mathematical-foundations"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:mathematical-science",
@@ -178,19 +230,9 @@
       "slug": "mathematical-science"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
       "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning Discipline",
       "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
@@ -252,14 +294,6 @@
         "label": "Objective Function"
       },
       {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -268,8 +302,16 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
       }
     ],
     "enables": [
@@ -282,7 +324,7 @@
         "label": "Hyperparameter Tuning"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -302,8 +344,8 @@
         "label": "Formal Verification"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
       }
     ],
     "dependsOn": [
@@ -314,6 +356,64 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
@@ -322,14 +422,42 @@
         "label": "Satisfiability"
       },
       {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
         "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       },
       {
         "id": "urn:ngm:class:data-governance",
@@ -364,6 +492,14 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
       }
     ],
     "supports": [
@@ -400,6 +536,18 @@
         "label": "Cryptography"
       }
     ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:game-theory",
@@ -414,16 +562,8 @@
         "label": "Numerical Methods"
       },
       {
-        "id": "urn:ngm:class:mathematical-hard-problems",
-        "label": "Mathematical Hard Problems"
-      },
-      {
-        "id": "urn:ngm:class:mathematical-reasoning",
-        "label": "Mathematical Reasoning"
-      },
-      {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
         "id": "urn:ngm:class:ai-governance",
@@ -432,6 +572,14 @@
       {
         "id": "urn:ngm:class:ai-technique",
         "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
       }
     ]
   },

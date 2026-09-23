@@ -27,7 +27,7 @@
         "label": "Oracle Network"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -219,6 +219,10 @@
         "label": "Immutability"
       },
       {
+        "id": "urn:ngm:class:network-node",
+        "label": "Network Node"
+      },
+      {
         "id": "urn:ngm:class:node",
         "label": "Node"
       },
@@ -237,20 +241,20 @@
       {
         "id": "urn:ngm:class:clock-synchronization",
         "label": "Clock Synchronisation"
-      },
-      {
-        "id": "urn:ngm:class:cooling-system",
-        "label": "Cooling Systems"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralised Finance"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -261,7 +265,7 @@
         "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -271,10 +275,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
       }
     ],
     "dependsOn": [
@@ -349,12 +349,12 @@
         "label": "Internet of Things"
       },
       {
-        "id": "urn:ngm:class:decentralised-governance",
-        "label": "Decentralised Governance"
-      },
-      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:spatial-computing",

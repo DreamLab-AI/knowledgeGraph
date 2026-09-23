@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Behaviour Tree</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Behaviour Tree"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Behaviour Tree"/><meta name="twitter:description" content="A Behaviour Tree (BT) is a hierarchical, directed acyclic graph structure used to model the decision-making logic of autonomous agents, non-player characters (NPCs), and robots."/><meta property="og:description" content="A Behaviour Tree (BT) is a hierarchical, directed acyclic graph structure used to model the decision-making logic of autonomous agents, non-player characters (NPCs), and robots."/><meta property="og:image:alt" content="A Behaviour Tree (BT) is a hierarchical, directed acyclic graph structure used to model the decision-making logic of autonomous agents, non-player characters (NPCs), and robots."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Behaviour-Tree"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Behaviour-Tree"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="A Behaviour Tree (BT) is a hierarchical, directed acyclic graph structure used to model the decision-making logic of autonomous agents, non-player characters (NPCs), and robots."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Behaviour-Tree"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1073"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1073" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Behaviour Tree</a></div></nav><h1 class="article-title">Behaviour Tree</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.557Z">23 Sept 2026</time><span>41 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:behaviour-tree</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.72</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Automated-Planning" class="internal">Automated Planning</a></li><li><a href="../Navigation-and-Planning" class="internal">Navigation and Planning</a></li><li><a href="../Reactive-System" class="internal">Reactive System</a></li><li><a href="../Control-Architecture" class="internal">Control Architecture</a></li><li><a href="../Agent-Architecture" class="internal">Agent Architecture</a></li><li><a href="../pages/Decision-Making" class="internal">Decision Making</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../blackboard" class="internal">Blackboard</a></li><li><a href="../Sequence-Node" class="internal">Sequence Node</a></li><li><a href="../Selector-Node" class="internal">Selector Node</a></li><li><a href="../Parallel-Node" class="internal">Parallel Node</a></li><li><a href="../Decorator-Node" class="internal">Decorator Node</a></li><li><a href="../Action-Node" class="internal">Action Node</a></li><li><a href="../Condition-Node" class="internal">Condition Node</a></li><li><a href="../Tick-Loop" class="internal">Tick Loop</a></li><li><a href="../Port-System" class="internal">Port System</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Task-Planning" class="internal">Task Planning</a></li><li><a href="../Blackboard" class="internal">Blackboard</a></li><li><a href="../Tick-Loop" class="internal">Tick Loop</a></li><li><a href="../pages/State-Space" class="internal">State Space</a></li><li><a href="../pages/Sensor-Input" class="internal">Sensor Input</a></li><li><a href="../pages/World-Model" class="internal">World Model</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Autonomous-Agent" class="internal">Autonomous Agent</a></li><li><a href="../pages/NPC-Interaction" class="internal">NPC Interaction</a></li><li><a href="../pages/Intelligent-NPC" class="internal">Intelligent NPC</a></li><li><a href="../pages/AI-Game-Agent" class="internal">AI Game Agent</a></li><li><a href="../Mission-Execution" class="internal">Mission Execution</a></li><li><a href="../pages/Robot-Navigation" class="internal">Robot Navigation</a></li><li><a href="../pages/Task-Execution" class="internal">Task Execution</a></li><li><a href="../Recovery-Behaviour" class="internal">Recovery Behaviour</a></li><li><a href="../Concurrent-Task-Execution" class="internal">Concurrent Task Execution</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../Robotics" class="internal">Robotics</a></li><li><a href="../Spatial-Computing" class="internal">Spatial Computing</a></li><li><a href="../pages/Large-Language-Model" class="internal">Large Language Model</a></li><li><a href="../pages/Reinforcement-Learning" class="internal">Reinforcement Learning</a></li><li><a href="../pages/Agentic-AI" class="internal">Agentic AI</a></li><li><a href="../pages/Explainable-AI" class="internal">Explainable AI</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/State-Machine" class="internal">State Machine</a></li><li><a href="../pages/Finite-State-Machine" class="internal">Finite State Machine</a></li><li><a href="../pages/Hierarchical-Task-Network" class="internal">Hierarchical Task Network</a></li><li><a href="../Teleo-Reactive-Program" class="internal">Teleo-Reactive Program</a></li><li><a href="../pages/Subsumption-Architecture" class="internal">Subsumption Architecture</a></li><li><a href="../pages/Belief-Desire-Intention" class="internal">Belief Desire Intention</a></li><li><a href="../pages/Decision-Tree" class="internal">Decision Tree</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Pathfinding-Algorithm" class="internal">Pathfinding Algorithm</a></li><li><a href="../pages/Motion-Planning" class="internal">Motion Planning</a></li><li><a href="../pages/Sensor-Input" class="internal">Sensor Input</a></li><li><a href="../pages/World-Model" class="internal">World Model</a></li><li><a href="../Task-Planner" class="internal">Task Planner</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../Modular-Behaviour-Composition" class="internal">Modular Behaviour Composition</a></li><li><a href="../pages/Reactive-Control" class="internal">Reactive Control</a></li><li><a href="../Hierarchical-Task-Decomposition" class="internal">Hierarchical Task Decomposition</a></li><li><a href="../Interrupt-Driven-Control" class="internal">Interrupt-Driven Control</a></li><li><a href="../pages/Asynchronous-Execution" class="internal">Asynchronous Execution</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:behaviour-tree</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Nav2" class="internal">Nav2</a></li><li><a href="../pages/Intelligent-NPC" class="internal">Intelligent NPC</a></li><li><a href="../pages/AI-Game-Agent" class="internal">AI Game Agent</a></li><li><a href="../pages/Automated-Planning" class="internal">Automated Planning</a></li><li><a href="../teleo-reactive-program" class="internal">Teleo-Reactive Program</a></li><li><a href="../pages/Belief-Desire-Intention" class="internal">Belief Desire Intention</a></li><li><a href="../pages/Cognitive-Architecture" class="internal">Cognitive Architecture</a></li><li><a href="../pages/Multi-Agent-System" class="internal">Multi-Agent System</a></li><li><a href="../pages/Agentic-AI" class="internal">Agentic AI</a></li><li><a href="../pages/Reinforcement-Learning" class="internal">Reinforcement Learning</a></li><li><a href="../pages/Imitation-Learning" class="internal">Imitation Learning</a></li><li><a href="../pages/Formal-Verification" class="internal">Formal Verification</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../BehaviorTree.CPP" class="internal">BehaviorTree.CPP</a></li><li><a href="../pages/Nav2" class="internal">Nav2</a></li><li><a href="../Unreal-Engine-AI" class="internal">Unreal Engine AI</a></li><li><a href="../py_trees" class="internal">py_trees</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Game-Engine" class="internal">Game Engine</a></li><li><a href="../game-development" class="internal">Game Development</a></li><li><a href="../pages/Robot-Operating-System" class="internal">Robot Operating System</a></li><li><a href="../Spatial-Computing" class="internal">Spatial Computing</a></li><li><a href="../pages/Autonomous-Driving" class="internal">Autonomous Driving</a></li><li><a href="../pages/Human-Robot-Interaction" class="internal">Human Robot Interaction</a></li><li><a href="../pages/Swarm-Robotics" class="internal">Swarm Robotics</a></li><li><a href="../pages/Manufacturing-Automation" class="internal">Manufacturing Automation</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Pathfinding-Algorithm" class="internal">Pathfinding Algorithm</a></li><li><a href="../ai-agents" class="internal">AI Agents</a></li><li><a href="../goal-oriented-action-planning" class="internal">Goal-Oriented Action Planning</a></li><li><a href="../Blackboard" class="internal">Blackboard</a></li><li><a href="../pages/PDDL" class="internal">PDDL</a></li><li><a href="../pages/Motion-Planning" class="internal">Motion Planning</a></li><li><a href="../pages/Perception-Module" class="internal">Perception Module</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>A Behaviour Tree (BT) is a hierarchical, directed acyclic graph structure used to model the decision-making logic of autonomous agents, non-player characters (NPCs), and robots. Internal nodes represent control-flow composites — Sequence, Selector, Parallel, and Decorator — while leaf nodes represent atomic Actions or Conditions; execution propagates through the tree and each node returns Success, Failure, or Running to its parent. Behaviour Trees superseded Finite State Machines (FSMs) in many game and robotics contexts because they offer superior modularity, reusability, and comprehensibility: sub-trees encapsulate coherent behaviours that can be composed without explicit inter-state transition wiring. First popularised in the game-development community circa 2005 and later formalised in robotics frameworks such as BehaviorTree.CPP, BTs are now a standard control architecture in both real-time interactive media and autonomous robotic systems.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:hasPart ai:Blackboard))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:hasPart ai:SequenceNode))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:hasPart ai:SelectorNode))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:hasPart ai:ParallelNode))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:hasPart ai:DecoratorNode))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:hasPart ai:ActionNode))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:hasPart ai:ConditionNode))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:hasPart ai:TickLoop))
+</code></pre>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:requires ai:TaskPlanning))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:requires ai:Blackboard))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:requires ai:StateSpace))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:dependsOn ai:PathfindingAlgorithm))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:dependsOn ai:SensorInput))
+</code></pre>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:enables ai:AutonomousAgent))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:enables ai:NPCInteraction))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:enables ai:IntelligentNPC))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:enables ai:MissionExecution))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:enables ai:RobotNavigation))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:supports ai:GameDevelopment))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:supports ai:RobotOperatingSystem))
+</code></pre>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:implements ai:ModularBehaviourComposition))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:implements ai:ReactiveControl))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:implements ai:HierarchicalTaskDecomposition))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:uses ai:GoalOrientedActionPlanning))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:uses ai:Blackboard))
+</code></pre>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:reducesTo ai:FiniteStateMachine))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:reducesTo ai:TeleoReactiveProgram))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:subsumes ai:SubsumptionArchitecture))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:contrastsWith ai:HierarchicalTaskNetwork))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:contrastsWith ai:BeliefDesireIntention))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:contrastsWith ai:DecisionTree))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:relatedTo ai:AutomatedPlanning))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:relatedTo ai:ReinforcementLearning))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:relatedTo ai:FormalVerification))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:bridgesTo ai:LargeLanguageModel))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:bridgesTo ai:AgenticAI))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:supports ai:MultiAgentSystem))
+SubClassOf(ai:BehaviourTree
+  ObjectSomeValuesFrom(ai:supports ai:AutonomousDriving))
+</code></pre>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The Behaviour Tree formalism emerged from game AI engineering practice in the early 2000s as studios building large-scale interactive worlds found that <a href="../pages/Finite-State-Machine" class="internal alias" data-slug="pages/Finite-State-Machine">Finite State Machine</a> architectures could not scale to the complexity demanded by modern titles. Character AI designers at Lionhead Studios (Black &amp; White, 2001) and Bungie (Halo 2, 2004) independently developed hierarchical tree-based control structures to replace sprawling FSM transition graphs that became unmaintainable once NPC behaviour count exceeded a few dozen states. The insight driving adoption was composability: a BT sub-tree that is correct in isolation remains correct when embedded in any larger tree, whereas FSM modules require explicit cross-module transition declarations that create hidden coupling and correctness hazards at scale. This core property — that the correctness of a sub-tree is independent of the larger tree into which it is composed — makes BTs dramatically more maintainable than FSMs for complex agent behaviour: the combinatorial cost of FSM maintenance grows quadratically with state count (O(n²) transitions), while BT maintenance cost grows linearly because each sub-tree is an encapsulated module with only its parent interface (Success/Failure/Running) as its public API.</p>
+<p>The formal theoretical foundations arrived later. Champandard (2007) popularised the architecture via blog posts and conference talks that spread BTs through the game AI community. Marzinotto et al. (2014) provided the first rigorous mathematical treatment, establishing the tick-based execution semantics and proving equivalences with established control paradigms. Colledanchise and Ögren’s monograph “Behaviour Trees in Robotics and AI: An Introduction” (2018, CRC Press) became the canonical academic reference, formally proving that BTs generalise Sequential Behaviour Compositions, the Subsumption Architecture, and Decision Trees, and demonstrating conditions under which BT composition preserves safety, robustness, and efficiency properties. Their 2017 IEEE Transactions on Robotics paper established the modularity theorem that distinguishes BTs from comparable formalisms: for any two BTs T₁ and T₂, if T₁ is safe with respect to a safety specification Φ₁ and T₂ is safe with respect to Φ₂, then the composition Sequence(T₁, T₂) is safe with respect to (Φ₁ ∧ Φ₂) under conditions derivable from T₁ and T₂ individually. This is the fundamental theorem that justifies modular BT design. The survey by Iovino et al. (2022), “A Survey of Behaviour Trees in Robotics and AI,” published in Robotics and Autonomous Systems, catalogued 110 BT applications across game AI, service robotics, surgical robotics, and autonomous vehicles, cementing BTs as a cross-domain standard.</p>
+<p>In the robotics domain, Nav2 — the primary navigation stack in <a href="../pages/Robot-Operating-System" class="internal alias" data-slug="pages/Robot-Operating-System">Robot Operating System</a> 2 — adopted BehaviorTree.CPP as its core deliberation library, making Behaviour Trees the de facto robot deliberation standard for ROS2 deployments worldwide. BehaviorTree.CPP v4 introduces asynchronous action execution as a first-class citizen, XML-serialised tree definitions for visual editing with the Groot graphical tool, and a plugin system enabling tight integration with ROS2 <a href="../Action-Server" class="internal alias" data-slug="Action-Server">Action Server</a> interfaces, topics, and services. This architecture cleanly separates the BT control logic (which BehaviorTree.CPP manages) from the underlying <a href="../pages/Perception-Module" class="internal alias" data-slug="pages/Perception-Module">Perception Module</a>, <a href="../pages/Planning-and-Scheduling" class="internal alias" data-slug="pages/Planning-and-Scheduling">Planning and Scheduling</a>, and motion control subsystems (which ROS2 nodes implement), yielding a principled separation of concerns across mission management layers. The Nav2 stack implements a layered deliberation hierarchy: a global BT manages mission-level goals (navigate to waypoint, follow route, dock to charger); a local BT handles recovery strategies (clear costmaps, spin in place, backup); and leaf-level action nodes invoke path-planning (DWB, MPPI) and <a href="../pages/Motion-Planning" class="internal alias" data-slug="pages/Motion-Planning">Motion Planning</a> controllers as ROS2 action goals, threading long-horizon planning into real-time reactive execution seamlessly.</p>
+<p>The relationship between BTs and <a href="../pages/Belief-Desire-Intention" class="internal alias" data-slug="pages/Belief-Desire-Intention">Belief Desire Intention</a> (BDI) architectures is complementary. BTs excel at reactive real-time task execution with concurrent monitoring, interrupt-driven preemption, and failure recovery — properties well-suited to game AI and low-level robot execution. BDI provides richer deliberative semantics: explicit <a href="../Plan-Library" class="internal alias" data-slug="Plan-Library">Plan Library</a> management, goal reconsideration logic, and inter-agent communication through standardised <a href="../pages/Agent-Communication-Language" class="internal alias" data-slug="pages/Agent-Communication-Language">Agent Communication Language</a> protocols. Hybrid systems pairing a BDI deliberation layer (for goal selection and commitment) with a BT execution layer (for reactive plan execution) are an active research direction, particularly for service robots requiring both long-horizon reasoning and millisecond-latency reactive responses.</p>
+<h2 id="formal-algorithm">Formal Algorithm<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-algorithm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The tick-based execution algorithm for a generic Behaviour Tree can be stated formally. Let N be a node, and let tick(N) denote the evaluation function that returns one of {SUCCESS, FAILURE, RUNNING}. The semantics for each node type are:</p>
+<p><strong>Sequence(N₁, N₂, …, Nₖ)</strong>:</p>
+<ul>
+<li>For i = 1 to k:
+<ul>
+<li>s = tick(Nᵢ)</li>
+<li>If s = FAILURE: return FAILURE</li>
+<li>If s = RUNNING: return RUNNING (halt remaining children)</li>
+</ul>
+</li>
+<li>return SUCCESS</li>
+</ul>
+<p><strong>Selector(N₁, N₂, …, Nₖ)</strong>:</p>
+<ul>
+<li>For i = 1 to k:
+<ul>
+<li>s = tick(Nᵢ)</li>
+<li>If s = SUCCESS: return SUCCESS</li>
+<li>If s = RUNNING: return RUNNING (halt remaining children)</li>
+</ul>
+</li>
+<li>return FAILURE</li>
+</ul>
+<p><strong>Parallel(N₁, …, Nₖ, M)</strong> (where M is the success threshold):</p>
+<ul>
+<li>tick all Nᵢ simultaneously</li>
+<li>If |{i : tick(Nᵢ) = SUCCESS}| ≥ M: return SUCCESS</li>
+<li>If |{i : tick(Nᵢ) = FAILURE}| > k-M: return FAILURE</li>
+<li>return RUNNING</li>
+</ul>
+<p><strong>ReactiveSequence(N₁, …, Nₖ)</strong>: Same as Sequence but re-ticks all children from N₁ on every evaluation cycle, not only upon child completion — enabling condition nodes at any position to interrupt a running action node downstream.</p>
+<p><strong>Inverter(N)</strong>: Returns SUCCESS if tick(N) = FAILURE, returns FAILURE if tick(N) = SUCCESS, returns RUNNING if tick(N) = RUNNING.</p>
+<p>The main loop is:</p>
+<pre><code>while true:
+  tick(root)
+  sleep(tick_period)
+</code></pre>
+<p>where tick_period is the simulation frame delta or a fixed rate (e.g. 10Hz for Nav2, or 60Hz for game engines). The entire tree is evaluated synchronously from root to leaves on each tick; Action nodes that are still executing return RUNNING without blocking the tick propagation, so no BT node is ever blocking. This non-blocking execution model is the fundamental enabler of concurrent behaviour: a Parallel composite running a monitoring Condition subtree alongside an Action subtree achieves preemptive interruption without threads or callbacks at the BT layer.</p>
+<p>The halting problem for classical BTs is decidable (unlike arbitrary programs): a BT with no cycles (the tree is a DAG) is guaranteed to terminate each tick in O(n) time where n is the node count, because the tree is finite and acyclic. Cyclic references (via sub-tree pointer references) introduce undecidability but are explicitly prohibited in most BT implementations.</p>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A Behaviour Tree instance comprises the following structural elements:</p>
+<ul>
+<li><strong>Root Node</strong>: Entry point executed on every tick of the main loop; propagates the tick signal downward through the tree. The root node is always a composite node (typically a Selector or Sequence) and holds the top-level mission semantics.</li>
+<li><strong>Composite Nodes (internal)</strong>:
+<ul>
+<li><em>Sequence</em>: Executes children left-to-right; returns Failure immediately when any child returns Failure; returns Success only after all children succeed. Implements logical AND over child outcomes. Semantically equivalent to “do A, then B, then C” in procedural programming.</li>
+<li><em>Selector (Fallback)</em>: Tries children in order; returns Success immediately when any child succeeds; returns Failure only after all children fail. Implements logical OR over child outcomes. Semantically equivalent to “try A; if it fails try B; if that fails try C.”</li>
+<li><em>Parallel</em>: Executes all children simultaneously on each tick; returns Success when at least M of N children succeed (configurable threshold); useful for concurrent monitoring while executing a main task. A Parallel(M=N) node is a conjunction; Parallel(M=1) is a disjunction over concurrent executions.</li>
+<li><em>ReactiveFallback / ReactiveSequence</em>: Variants that re-evaluate conditions on every tick starting from the leftmost child, enabling truly reactive interruption of running sub-trees. If a higher-priority Condition node in a ReactiveSequence changes from Success to Failure, the currently running Action node further right is immediately preempted and halted. This is the primary mechanism for priority-based interruption without explicit transition declarations.</li>
+</ul>
+</li>
+<li><strong>Decorator Nodes</strong>: Single-child wrappers that transform their child’s return value or execution policy. Standard decorators include: Inverter (negates Success/Failure); Retry (retries child up to N times on Failure); Repeat (runs child N times on Success); Timeout (returns Failure if child runs for more than T seconds); RunOnce (executes child once, then returns cached result); ForceSuccess / ForceFailure (ignores child result, always returns the named status). Decorators compose orthogonally with any child node type.</li>
+<li><strong>Leaf Nodes</strong>:
+<ul>
+<li><em>Condition</em>: A stateless synchronous test of world state, blackboard values, or sensor readings. Returns Success or Failure without side effects; never returns Running. Conditions are re-evaluated on every tick by Reactive composites, making them the primary sensor for environment change detection.</li>
+<li><em>Action</em>: Executes an operation in the world — invoking an actuator, calling a service, modifying a blackboard value, or waiting for an external event. Actions may span multiple ticks while returning Running; they terminate with Success when the operation completes successfully or with Failure on error, timeout, or preemption. In BehaviorTree.CPP, actions are implemented as asynchronous coroutines or ROS2 action clients, ensuring the BT tick thread never blocks.</li>
+</ul>
+</li>
+<li><strong><a href="../Blackboard" class="internal" data-slug="Blackboard">Blackboard</a></strong>: A shared typed key-value memory store providing cross-node communication without direct node coupling. In BehaviorTree.CPP v4, entries are strongly typed (int, double, string, custom types), namespaced per sub-tree, and accessed via formal Port declarations that enable static data-dependency analysis. The Blackboard implements a form of shared <a href="../pages/Working-Memory" class="internal alias" data-slug="pages/Working-Memory">Working Memory</a> similar in function to the global working memory in <a href="../pages/Cognitive-Architecture" class="internal alias" data-slug="pages/Cognitive-Architecture">Cognitive Architecture</a> systems such as ACT-R.</li>
+<li><strong>Tick Loop</strong>: The main execution loop — a fixed-rate timer (Nav2: 10Hz; game engines: frame-rate) or an event-driven callback — that drives the root tick on each cycle. The tick period is the fundamental time resolution of the BT: behaviours that must respond faster than one tick period cannot be represented as BT nodes and must be handled at the actuator or control level.</li>
+<li><strong>Port / Parameter System</strong>: Formal typed I/O declarations on Action and Condition nodes specifying which Blackboard keys they read (Input Ports) and write (Output Ports). Ports enable static analysis: a tree where all Input Ports have corresponding Output Ports is statically well-typed and can be validated before execution. In BehaviorTree.CPP, port mismatches produce compile-time or load-time errors rather than runtime surprises.</li>
+<li><strong>Sub-Tree References</strong>: Named sub-trees that can be embedded at any point in a parent tree, enabling reuse of tested behavioural modules. Sub-trees may have their own local blackboard scope (preventing unintended data sharing) or be configured to share the parent blackboard for tightly integrated components.</li>
+<li><strong>XML / JSON Serialisation</strong>: The canonical tree definition format, enabling design-time editing in Groot2 and runtime loading without recompilation. Trees are defined as XML with node type references, blackboard port bindings, and child ordering; this format is human-readable, version-controllable, and supports hot-reloading in development environments.</li>
+</ul>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Game AI — NPC Behaviour Control</strong>: The primary commercial application. Every major game engine exposes a BT editor: Unreal Engine 5 ships with a fully graphical Behaviour Tree editor used for all UE5 AI characters; Unity supports BTs via plugins such as NodeCanvas and Behaviour Designer. Studios use BTs to model patrol/detect/engage/retreat cycles for enemy soldiers, shopkeeper interaction routines, and creature ecological behaviours. The modularity enables rapid iteration — replacing a combat sub-tree with an updated version does not touch patrol or dialogue sub-trees.</p>
+<p><strong>Robot Navigation — Nav2 / ROS2</strong>: Nav2’s BT-based navigator coordinates a mission-level BT (navigate to pose, follow waypoints, dock to charger) with mid-level recovery BTs (spin to clear costmaps, back up, wait for clearance) and low-level planners exposed as ROS2 action servers. Configurable BT XML files mean operators can swap navigation strategies at deployment time without recompiling. Research robots worldwide from differential-drive indoor platforms to quadruped field robots use this architecture.</p>
+<p><strong>Service Robotics — Task Orchestration</strong>: Collaborative robots (cobots) in manufacturing and logistics use BTs to sequence pick-and-place cycles, verify part presence via Condition nodes, invoke perception pipelines via Action nodes, and recover from gripper failures via recovery sub-trees. The running/success/failure tri-state maps cleanly to the asynchronous outcome models of real-world actuator APIs.</p>
+<p><strong>Autonomous Vehicles — Mission Management</strong>: Self-driving platforms use BT layers above trajectory planners to manage high-level mission states: enter road, navigate intersection, change lane, park. The reactive re-evaluation capability of Reactive Sequence nodes enables interrupt-driven responses to unexpected obstacles without special-case FSM transition programming.</p>
+<p><strong>Drone Control — Formal Verification</strong>: Recent work (arxiv 2502.11904, 2025) demonstrates formal BT implementations for drone control where the compositional safety guarantees of BTs are exploited to provide provable mission-level safety properties over composed manoeuvre sub-trees.</p>
+<p><strong>Hybrid BT + Planner Systems</strong>: The most powerful architectures combine a high-level planner (PDDL solver, <a href="../Goal-Oriented-Action-Planning" class="internal alias" data-slug="Goal-Oriented-Action-Planning">Goal-Oriented Action Planning</a>, Monte Carlo planning) that generates or selects sub-trees dynamically with a BT execution layer that handles reactivity and recovery. This pattern, common in both commercial titles and advanced robotics platforms, achieves the long-horizon reasoning of planners with the real-time reactivity of BTs.</p>
+<p><strong>LLM-Augmented BTs (2024–2026)</strong>: Emerging frameworks like PORTAL translate natural-language mission instructions into BT domain-specific language representations using <a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a> generation, then instantiate verified BT nodes at runtime. This combines interpretability and formal safety of classical BTs with the linguistic flexibility of LLMs, avoiding the opacity of direct LLM-driven action selection.</p>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The intellectual lineage of Behaviour Trees runs through several distinct communities, each contributing orthogonal perspectives that have consolidated into the mature cross-disciplinary field of 2026:</p>
+<p><strong>Game AI Engineering (2003–2015)</strong>: Industrial practitioners at Lionhead (Black &amp; White, 2001), Bungie (Halo 2, 2004), and IO Interactive (Hitman franchise) developed BTs as engineering tools without formal publication; documentation circulated internally and via GDC (Game Developers Conference) talks. Alex Champandard’s AiGameDev.com blog series “Behaviour Trees for Game AI” (2007–2009) was the primary dissemination channel, synthesising industrial practice for a broader community and establishing the vocabulary of Sequence, Selector, Parallel, and Decorator that persists in the field today. The AIIDE (AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment) and GameAI conferences provided early academic venue for BT-related game AI research, with contributions from practitioners at Ubisoft, EA, and Guerrilla Games through the 2010s.</p>
+<p><strong>Formal Robotics (2014–present)</strong>: Marzinotto, Colledanchise, Smith, and Ögren (ICRA 2014, “Towards a Unified Behaviour Trees Framework for Robot Control”) provided the first peer-reviewed BT definition with rigorous execution semantics, establishing the mathematical foundation. Colledanchise and Ögren (IEEE Transactions on Robotics, 2017) proved the modularity theorem and demonstrated formal equivalences with established control paradigms. Their CRC monograph (2018) became the canonical academic text, now the most-cited reference in robotics BT literature. Iovino et al. (Robotics and Autonomous Systems, 2022) surveyed 110 BT applications across game AI, service robotics, surgical robotics, and autonomous vehicles, providing comprehensive field mapping. The 2022 Springer journal paper (IEEE Transactions on Software Engineering) by Ghzouli et al. (“Behaviour Trees and State Machines in Robotics Applications”) provided empirical comparison on maintainability metrics across real production robotics code.</p>
+<p><strong>Planning Connections (2017–present)</strong>: The BT-planning interface became an active research thread with Paxton et al.’s CoSTAR (2017), demonstrating PDDL plan-to-BT compilation. Ogren (2012) first demonstrated BT synthesis for UAV control laws from formal specifications. Styrud et al. (ICRA 2022) extended this to task-and-motion planning synthesis. The AAMAS (Autonomous Agents and Multi-Agent Systems) and ICAPS (International Conference on Automated Planning and Scheduling) communities have begun publishing on BT generation, connecting the robotics BT community to the planning AI community. The Proceedings of AAAI 2024 included BT-synthesis papers for the first time, marking mainstream AI community adoption.</p>
+<p><strong>Formal Verification (2020–present)</strong>: Biggar, Ryan, and Porfirio (IROS 2020, arXiv 2104.07919) established the expressiveness hierarchy of BT variants and developed compositional verification methods using linear temporal logic (LTL) oracles. The 2025 arxiv paper (2502.11904, “A Formal Implementation of Behavior Trees to Act in Robotics”) applies these verification methods to quadrotor drone mission control, demonstrating that formal BT verification is tractable for real robot deployments. The connection to <a href="../pages/Model-Checking" class="internal alias" data-slug="pages/Model-Checking">Model Checking</a> and to <a href="../pages/Safety-Engineering" class="internal alias" data-slug="pages/Safety-Engineering">Safety Engineering</a> standards (IEC 61508, ISO 26262, DO-178C) is an active research thread with significant industry interest for safety-certified autonomous systems.</p>
+<p><strong>Machine Learning Integration (2018–present)</strong>: Neural BTs and learned BT policies emerged as a research area through the work of Sprague, Ögren, and Sandoval (2018, “Adding Neural Network Controllers to Behavior Trees without Destroying Performance Guarantees”), which demonstrated that neural leaf nodes can substitute for hand-coded Action nodes while preserving the compositional safety guarantees of the surrounding BT structure — provided the neural controller satisfies certain Lyapunov-stability conditions. This was the seminal insight bridging the BT formal verification community with the deep learning control community, and remains the foundational paper for neural BT hybrid research.</p>
+<p><strong>Cross-Disciplinary Convergence (2023–present)</strong>: The adaptation of BT semantics beyond robotics and games into <a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a> software orchestration, formal <a href="../pages/Explainable-AI" class="internal alias" data-slug="pages/Explainable-AI">Explainable AI</a>, and <a href="../Neurosymbolic-AI" class="internal alias" data-slug="Neurosymbolic-AI">Neurosymbolic AI</a> marks the current phase. BT concepts appearing in LangGraph (Microsoft), crew.ai, and AutoGen workflow engines reflect independent convergence by software engineers on BT-like control-flow structures for LLM agent pipelines. Academic work formalising this connection and providing compositional correctness guarantees for software-domain BTs is the cutting-edge frontier of the field in 2026.</p>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The BT landscape in 2026 presents a mature core technology with active expansion into new application domains. Key developments across the major sectors:</p>
+<p><strong>Robotics and ROS2 Ecosystem</strong>:</p>
+<ul>
+<li>BehaviorTree.CPP v4.7 (Faconti) — dominant open-source C++ library; “most widely used Robot Deliberation library in the ROS2 ecosystem”</li>
+<li>Nav2 integration: nav2_behavior_tree package ships BT XML for Navigate-to-Pose, Navigate-Through-Poses, Dock-to-Charger missions</li>
+<li>Groot2 visual IDE: drag-drop design, live per-tick monitoring via ZeroMQ, replay from logged traces</li>
+<li>py_trees: Python equivalent with ROS2 integration and ASCII/RViz visualisation</li>
+<li>BehaviorTree.ROS2: official ROS2 action/topic/service wrappers for BehaviorTree.CPP nodes</li>
+<li>Knowledge-based Adaptive BTs (Springer JIRS 2026): runtime semantic knowledge base driving BT node selection without tree redesign</li>
+<li>Active deployment on: TurtleBot4, Boston Dynamics Spot, Clearpath Husky, Franka Panda cobot, and commercial delivery platforms</li>
+</ul>
+<p><strong>Commercial Game Development</strong>:</p>
+<ul>
+<li>Unreal Engine 5.7: full BT editor, latent task execution, conditional abort decorators, per-tick visual debugger integrated into Editor</li>
+<li>Unity: NodeCanvas, Behaviour Designer plugins; UniTask-based async BT libraries for coroutine-friendly workflows</li>
+<li>LLM-BT integration experiments: studios generating BT XML via GPT-4/Claude from designer intent descriptions; BT runtime executes verifiably</li>
+<li>UE5 NPC engagement uplift: 10-30% improvement in NPC realism scores in user studies when LLM dialogue is integrated with BT behaviour structure</li>
+<li>Active UK studio deployments: Rocksteady, Frontier Developments, Creative Assembly, Sumo Digital</li>
+</ul>
+<p><strong>Autonomous Systems and Safety-Critical Domains</strong>:</p>
+<ul>
+<li>Autonomous vehicles: BT mission management layer above trajectory planners (Apollo, Autoware)</li>
+<li>Drone control: formal BT verification applied to quadrotor mission safety (arXiv:2502.11904, 2025)</li>
+<li>Surgical robotics: BT failure recovery for collaborative robot-assisted surgery; formal safety guarantees</li>
+<li>Defence: UK MOD and Alan Turing Institute BT formal verification research for autonomous military platform safety certification under DEF STAN 00-56</li>
+</ul>
+<p><strong>Agentic AI Software Pipelines (Emerging)</strong>:</p>
+<ul>
+<li>LangGraph (Microsoft/LangChain): graph-structured LLM workflows converging on BT-like Sequence/Parallel/Fallback patterns without formal guarantees</li>
+<li>crew.ai, AutoGen: team-level agent orchestration patterns analogous to BT Parallel and Selector composites</li>
+<li>Research frontier: formalising BT semantics in software agent orchestration frameworks to provide compositional correctness guarantees for LLM agent pipelines</li>
+<li>Expected commercial product category by 2027-2028: “BT-structured agentic AI orchestration” as a distinct product tier between raw LLM APIs and full multi-agent platforms</li>
+</ul>
+<p><strong>Open Research and Standards</strong>:</p>
+<ul>
+<li>BT XML format: de facto standard through BehaviorTree.CPP but not yet ISO/IEEE standardised</li>
+<li>Formal BT verification: active PRISM/STORM extension work for probabilistic BT model checking</li>
+<li>BT expressiveness: Biggar et al. hierarchy being extended to reactive, probabilistic, and stateful BT variants</li>
+<li>Cross-platform BT interoperability: no standard yet for BT definitions portable between BehaviorTree.CPP, UE5, Unity, and custom implementations — an emerging standards gap</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The UK robotics and AI research landscape engages significantly with Behaviour Trees both in academia and industry. The Edinburgh Centre for Robotics (University of Edinburgh / Heriot-Watt University), funded by EPSRC’s Centre for Doctoral Training (CDT) programme, is one of the UK’s three EPSRC-funded robotics CDTs and trains PhD researchers in robot deliberation, task planning, and adaptive control, where BT-based architectures feature in manipulation and field robotics research. Papers accepted at CoRL (Conference on Robot Learning) 2025 from Edinburgh researchers address robot skill learning, and BT-structured execution layers are part of the broader control stack investigated. The Heriot-Watt MACS (Mathematical and Computer Sciences) department has published on adaptive robot control using hierarchical behaviour structures, with the Springer 2026 Knowledge-based Execution Configuration for Adaptive Behaviour Trees paper emerging from this ecosystem.</p>
+<p>Imperial College London’s Dyson Robotics Laboratory, founded by Professor Andrew Davison, conducts research on dense SLAM, object-level reconstruction, and robot task execution. Reactive execution architectures including BTs are used alongside learned perception models in object manipulation and household robot scenarios. The Robotic Systems group within Imperial’s Department of Electrical and Electronic Engineering applies BT control architectures to surgical robotics, where the formal failure-recovery properties of BTs are particularly valuable in safety-critical operative contexts.</p>
+<p>At the University of Manchester, the School of Engineering’s robotics research group investigates outdoor autonomous platforms — agricultural robots, inspection drones, ground vehicles — where Nav2/BT-based navigation stacks with custom recovery behaviours are deployed. The Manchester <a href="../pages/Pathfinding-Algorithm" class="internal alias" data-slug="pages/Pathfinding-Algorithm">Pathfinding Algorithm</a> research community contributes improved motion planners that plug as leaf-level action nodes into BT mission architectures. The University of Leeds Centre for Autonomous Systems similarly applies BT control architectures to warehouse automation (in collaboration with UK logistics companies including ASOS and Ocado Technology, which operates the UK’s most advanced automated warehouse network) and human-robot collaboration research where reactive BT preemption is essential for safe close-proximity human-robot interaction.</p>
+<p>In the UK game development industry — the third-largest game market globally after the US and Japan — Behaviour Tree architectures are ubiquitous. Rocksteady Studios (London, creators of the Batman: Arkham series) uses UE5 BT systems for enemy AI with complex context-sensitive behaviour including social group dynamics. Frontier Developments (Cambridge, Elite Dangerous, Planet Zoo, Jurassic World Evolution) has historically published GDC (Game Developers Conference) talks on BT-based creature AI, where BT sub-trees model the foraging, territorial, and social behaviours of hundreds of simultaneous AI creatures in theme park settings. Creative Assembly (Horsham, West Sussex, Total War series) uses BT architectures for tactical unit AI in complex real-time strategy scenarios with hundreds of simultaneous units. Sumo Digital (Sheffield), Playground Games (Leamington Spa), and Rebellion (Oxford) represent the Northern and Midlands contingent of UK studios deploying BT-based NPC AI.</p>
+<p>The UK’s National Robotarium (Edinburgh, opened 2022, jointly operated by Heriot-Watt University and the University of Edinburgh, co-funded by the UK and Scottish Governments) serves as a national testbed and demonstration facility where BT-orchestrated robotic platforms are developed and evaluated across several domains: healthcare assistance robots (medication delivery, patient monitoring), offshore energy inspection robots (subsea and aerial inspection of wind turbines and pipelines), and manufacturing cobots. The National Robotarium’s healthcare robotics programme in particular uses BT execution layers to manage the complex state-dependent multi-task behaviour required for safe patient interaction.</p>
+<p>The Alan Turing Institute’s Defence and Security programme, which includes robotics autonomy as a key research theme, funds work on formal BT verification for autonomous military systems — an area where the compositional safety guarantees of BTs are directly relevant to defence procurement safety standards including DEF STAN 00-56 and MISRA guidelines. This represents a significant pathway for formal BT research into UK defence industry standards certification.</p>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The frontier of Behaviour Tree research over the next four years is expected to develop along five principal axes, each addressing a current limitation while extending the formalism’s applicability:</p>
+<p><strong>1. LLM-BT Integration and Generative BT Design</strong>: Frameworks using language models to generate, modify, and validate BT structures from natural language specifications will mature from research prototypes to production toolchains. The PORTAL approach (2024), which translates natural language mission descriptions into BT domain-specific language via <a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a> generation, established the feasibility. The key challenge is maintaining formal correctness guarantees when LLMs generate tree structure without understanding BT semantics — verification-guided generation pipelines that enumerate LLM-generated candidate trees and model-check them before deployment will emerge as the standard pattern. By 2028, it is expected that commercial BT design tools will include LLM-assisted authoring features that generate sub-tree templates from designer intent descriptions, with automatic port type inference and blackboard coherence checking. The combination of LLM-generated adaptability with BT-level formal verification addresses the core failure mode of both pure LLM agents (unverifiable) and pure BT systems (requires complete manual authoring).</p>
+<p><strong>2. Learning BTs from Demonstrations and Reward Signals</strong>: Methods that infer BT structures from human demonstrations (<a href="../pages/Imitation-Learning" class="internal alias" data-slug="pages/Imitation-Learning">Imitation Learning</a>) or reward signals (<a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a>) will mature into mainstream BT authoring tools. Current approaches include: genetic BT evolution with <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> fitness proxies (evolving BT structure and node parameters simultaneously); inverse reinforcement learning from human demonstrations followed by BT distillation from the learned reward function; and ILASP (Inductive Learning of Answer Set Programs) applied to BT synthesis from positive/negative execution examples. By 2028, BT learning tools integrated into ROS2 development workflows will enable robot engineers to author initial BT prototypes by demonstration rather than hand-coding, dramatically reducing BT development time for novel manipulation and navigation tasks. The interpretability of the resulting BTs — a critical advantage over pure neural policies — will make this approach especially valuable in safety-certified domains.</p>
+<p><strong>3. Probabilistic BTs and Formal Verification at Scale</strong>: Extensions of the BT expressiveness hierarchy to probabilistic and stochastic execution models will enable safety-case arguments for autonomous vehicles and safety-critical robots. When Condition nodes return probabilistic truth values (reflecting sensor uncertainty) and Action nodes return probabilistic success/failure probabilities, the BT’s return value becomes a probability distribution rather than a discrete status. Probabilistic BT model checkers (extending PRISM or STORM) will enable quantitative safety verification: the probability that a BT-controlled robot will succeed at docking while avoiding a human obstacle with at least 99.9% reliability can be checked against the probabilistic BT model and certified before deployment. This connects BT formal verification with <a href="../Probabilistic-Model-Checking" class="internal alias" data-slug="Probabilistic-Model-Checking">Probabilistic Model Checking</a> and <a href="../pages/Safety-Engineering" class="internal alias" data-slug="pages/Safety-Engineering">Safety Engineering</a> practices required for medical robots, autonomous vehicles, and aerospace systems under UK CAA and EASA regulatory frameworks.</p>
+<p><strong>4. Distributed and Swarm BTs</strong>: Multi-robot coordination via distributed BT architectures — where sub-trees execute on individual robots while a coordinator tree manages team-level synchronisation semantics — is an emerging paradigm for heterogeneous <a href="../pages/Swarm-Robotics" class="internal alias" data-slug="pages/Swarm-Robotics">Swarm Robotics</a> and logistics automation. The IKT-BT framework (arXiv:2312.11802) demonstrated inter-robot BT knowledge transfer via passive observation. Future distributed BT systems will provide formal consistency guarantees across BT instances running on different physical robots: a team-level BT node that requires robot A to have completed “load pallet” before robot B begins “transport pallet” can be implemented as a distributed synchronisation primitive with deadlock-freedom guarantees inherited from the BT composition theorem. Applications in search-and-rescue swarms, agricultural robot teams, and warehouse automation with multiple coordinated vehicles will drive this research.</p>
+<p><strong>5. BT Semantics in Agentic Software AI</strong>: The adoption of BT control-flow semantics in software <a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a> orchestration — tool-use sequencing, fallback planning in <a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a> pipelines, parallel information-gathering in research agents — will broaden the formalism’s application domain beyond physical robotics and games to software process automation. Frameworks like LangGraph and AutoGen have independently converged on graph-structured control flows for LLM agent pipelines that closely resemble BT composites: conditional branching, parallel execution, fallback retry — all BT concepts appearing in LLM orchestration systems without the BT formal guarantees. By 2028, a generation of agentic AI orchestration frameworks with explicit BT semantics and formal compositional guarantees will provide rigorous control-flow discipline for the software agent automation market, potentially becoming a new layer of the <a href="../pages/AI-Infrastructure" class="internal alias" data-slug="pages/AI-Infrastructure">AI Infrastructure</a> stack analogous to what BehaviorTree.CPP is for robotics.</p>
+<h2 id="major-implementation-frameworks-and-tools">Major Implementation Frameworks and Tools<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#major-implementation-frameworks-and-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The BT ecosystem in 2026 is mature, with production-quality implementations across all major languages and deployment contexts:</p>
+<p><strong>BehaviorTree.CPP (C++)</strong>: The canonical C++ BT library, maintained by Davide Faconti. Version 4.x provides: strongly-typed Blackboard entries; typed Input/Output Ports for static analysis; native coroutine-based asynchronous Action nodes; XML tree serialisation with hot-reload; ZeroMQ-based real-time monitoring for Groot2; a plugin system for extending node types; and first-class ROS2 integration via the BehaviorTree.ROS2 package. The library uses a template-based node registration system enabling zero-overhead dynamic dispatch. Memory usage is minimised via node pooling. Sub-second latency on trees with hundreds of nodes is achievable on embedded ARM hardware (Raspberry Pi 4-class). The library ships with a comprehensive test suite and is distributed under the MIT licence.</p>
+<p><strong>py_trees (Python)</strong>: The Python equivalent, widely used in ROS2 Python projects and rapid prototyping. Semantically equivalent to BehaviorTree.CPP with Composite, Leaf (Behaviour), Decorator node types; synchronous tick API; and py_trees_ros for ROS2 integration. Supports Python 3.8+ and provides ASCII and RViz visualisation backends. Less performance-efficient than BehaviorTree.CPP but dramatically faster to author and iterate. The py_trees_ros_tutorials provide worked examples for common ROS2 BT patterns.</p>
+<p><strong>Unreal Engine 5.x Behaviour Trees</strong>: UE5’s native BT system, integrated into the AI module, is purpose-built for game NPC AI. It provides: a graphical BT editor integrated into the Unreal Editor; task nodes with LatentExecuteTask interface for async game-world actions; Decorator nodes with conditional abort policies (Lower Priority aborts siblings with lower priority when condition changes; Self aborts the current task when condition changes); Service nodes that run periodically on a Blackboard-coupled subtree to update blackboard values (e.g. sensing, target selection); a Blackboard with Blueprint-accessible typed keys; and a per-instance BT AI controller. The UE5 BT system is production-hardened across AAA titles including games in the Gears of War, Batman: Arkham, and Borderlands franchises.</p>
+<p><strong>Groot2</strong>: The official graphical IDE for BehaviorTree.CPP. Provides drag-and-drop tree construction from registered node types; real-time live tree monitoring via ZeroMQ with per-tick node state display; execution replay from logged tree traces; and static tree validation (port type checking, undefined blackboard key detection). Groot2 Pro adds cloud collaboration and version history features. Open-source Groot1 is the predecessor; Groot2 is the supported version as of 2024.</p>
+<p><strong>Unity BT Plugins</strong>: Unity’s native AI system (NavMesh, NavMeshAgent) does not include a built-in BT, but third-party plugins are widely used: NodeCanvas (commercial), Behaviour Designer (commercial), and FlowCanvas provide graphical BT editors deeply integrated with Unity’s component system and animation state machines. Open-source alternatives include UniTask-based BT libraries for coroutine-friendly async action execution.</p>
+<p><strong>Nav2 BT Navigator</strong>: The Nav2 ROS2 package implements a full BT-based mission navigator using BehaviorTree.CPP. Default trees for “Navigate to Pose” and “Navigate Through Poses” handle path planning (A*, SMAC Planner), trajectory following (DWB, MPPI), and recovery behaviours (Spin, BackUp, WaitAtDistance, ClearEntireCostmap) as a composed BT. The XML tree definitions are configurable, allowing operators to swap planners, controllers, and recovery behaviours without modifying C++ code. Nav2’s BT infrastructure has been deployed on commercial delivery robots (Amazon Scout, Savioke Relay) and research platforms worldwide.</p>
+<p><strong>Behaviour Tree.NET (C#)</strong>: Community-maintained C# implementation for Unity and .NET environments; ports BehaviorTree.CPP semantics to managed memory with garbage-collection-friendly node lifecycle management. Used in Unity projects where C++ interop overhead is unacceptable.</p>
+<p><strong>Flecs BT (ECS-based BTs)</strong>: Emerging approach that implements BT evaluation within Entity-Component-System (ECS) architectures. Each BT node becomes an ECS component; tick propagation is implemented as a system query. This enables BTs to be evaluated in parallel across thousands of entity instances — particularly valuable for game worlds with large NPC populations.</p>
+<h2 id="relationship-to-planning-and-ai-research">Relationship to Planning and AI Research<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-planning-and-ai-research" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Behaviour Trees occupy a distinctive niche in the broader landscape of <a href="../Artificial-Intelligence" class="internal alias" data-slug="Artificial-Intelligence">Artificial Intelligence</a> research and <a href="../pages/Automated-Planning" class="internal alias" data-slug="pages/Automated-Planning">Automated Planning</a>. Classical AI planning (STRIPS, PDDL) treats plan synthesis as a search problem: given an initial state, a goal state, and action schemas, find a sequence of actions transforming the initial state into the goal state. The plan is computed offline and executed as a linear action sequence. BTs, by contrast, encode a reactive execution policy that is evaluated online without pre-computation: the tree structure is authored by hand or generated by a planner and encodes the conditional logic for adapting to environmental variation at execution time.</p>
+<p>The connection between BTs and planning has been formalised in several directions. Paxton et al. (CoSTAR, 2017) demonstrated that PDDL plans could be compiled into BTs by mapping STRIPS operator precondition/effect schemas to Condition/Action leaf node pairs in a Sequence composite, with Selector composites implementing fallback strategies when preconditions are not met. Styrud et al. (2022) extended this to task-and-motion planning, generating BTs that combine symbolic plan steps with geometric motion planning sub-trees. Ogren (2012) demonstrated BT synthesis for UAV control laws, connecting BT generation to <a href="../pages/Formal-Verification" class="internal alias" data-slug="pages/Formal-Verification">Formal Verification</a> against temporal logic specifications.</p>
+<p>The <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> connection is equally active. Standard deep RL produces opaque neural policies; extracting interpretable BTs from trained RL agents is an active research area. Approaches include: genetic programming with BT grammars as the search space (evolving BTs by crossover and mutation of sub-trees, with RL-trained value functions as fitness proxies); imitation learning where human demonstrations are parsed into BT structures; and distillation from RL policies into decision trees (which can be translated into BTs). All these approaches aim to capture the performance of RL while producing the interpretable, verifiable, and maintainable structure of BTs.</p>
+<p>The intersection of BTs with <a href="../pages/Multi-Agent-System" class="internal alias" data-slug="pages/Multi-Agent-System">Multi-Agent System</a> coordination is another active direction. Distributed BT architectures assign sub-trees to individual agents in a robot team, with coordination nodes at the team level managing handoffs, synchronisation, and resource allocation between agent BTs. The IKT-BT framework (arXiv:2312.11802) demonstrates knowledge transfer between robot BTs via passive observation (eavesdropping), enabling a robot that has learned a successful BT for a task to share that knowledge with robots encountering the same task for the first time. This connects BT modularity to distributed <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> over robot populations.</p>
+<h2 id="bt-node-type-reference">BT Node Type Reference<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bt-node-type-reference" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The following canonical node types constitute the standard BT vocabulary across BehaviorTree.CPP, UE5, and py_trees implementations:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Node Type</th><th>Category</th><th>Children</th><th>Return Values</th><th>Semantics</th></tr></thead><tbody><tr><td>Sequence</td><td>Composite</td><td>1..N</td><td>S/F/R</td><td>AND: fails on first child failure</td></tr><tr><td>Selector (Fallback)</td><td>Composite</td><td>1..N</td><td>S/F/R</td><td>OR: succeeds on first child success</td></tr><tr><td>Parallel</td><td>Composite</td><td>1..N</td><td>S/F/R</td><td>All children run; S/F by threshold M</td></tr><tr><td>ReactiveSequence</td><td>Composite</td><td>1..N</td><td>S/F/R</td><td>Reticks from left on every tick</td></tr><tr><td>ReactiveFallback</td><td>Composite</td><td>1..N</td><td>S/F/R</td><td>Reticks from left on every tick</td></tr><tr><td>IfThenElse</td><td>Composite</td><td>3</td><td>S/F/R</td><td>Conditional branching with 3 children</td></tr><tr><td>WhileDoElse</td><td>Composite</td><td>3</td><td>S/F/R</td><td>Loop while condition holds</td></tr><tr><td>Inverter</td><td>Decorator</td><td>1</td><td>S/F/R</td><td>Negates S↔F; passes R</td></tr><tr><td>Retry</td><td>Decorator</td><td>1</td><td>S/F/R</td><td>Retries child up to N times on F</td></tr><tr><td>Repeat</td><td>Decorator</td><td>1</td><td>S/F/R</td><td>Repeats child N times on S</td></tr><tr><td>Timeout</td><td>Decorator</td><td>1</td><td>S/F/R</td><td>Returns F if child runs > T seconds</td></tr><tr><td>RunOnce</td><td>Decorator</td><td>1</td><td>S/F</td><td>Executes once; caches result</td></tr><tr><td>ForceSuccess</td><td>Decorator</td><td>1</td><td>S/R</td><td>Always returns S (pass-through R)</td></tr><tr><td>ForceFailure</td><td>Decorator</td><td>1</td><td>F/R</td><td>Always returns F (pass-through R)</td></tr><tr><td>Delay</td><td>Decorator</td><td>1</td><td>S/F/R</td><td>Waits N ms before ticking child</td></tr><tr><td>Action</td><td>Leaf</td><td>0</td><td>S/F/R</td><td>Executes world action (async)</td></tr><tr><td>Condition</td><td>Leaf</td><td>0</td><td>S/F</td><td>Tests world state (sync, no side effects)</td></tr><tr><td>SubTree</td><td>Composite ref</td><td>varies</td><td>S/F/R</td><td>Embeds a named BT sub-tree by reference</td></tr><tr><td>SetBlackboard</td><td>Leaf</td><td>0</td><td>S</td><td>Writes a constant value to the Blackboard</td></tr></tbody></table></div>
+<p><em>Note: S=Success, F=Failure, R=Running. Node types vary slightly by implementation; this table represents the BehaviorTree.CPP v4 canonical set.</em></p>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Marzinotto, A., Colledanchise, M., Smith, C., &amp; Ögren, P. (2014). <em>Towards a Unified Behaviour Trees Framework for Robot Control</em>. IEEE ICRA 2014.</li>
+<li>Colledanchise, M., &amp; Ögren, P. (2017). <em>How Behaviour Trees Modularize Hybrid Control Systems and Generalize Sequential Behaviour Compositions, the Subsumption Architecture, and Decision Trees</em>. IEEE Transactions on Robotics, 33(2), 372–389.</li>
+<li>Colledanchise, M., &amp; Ögren, P. (2018). <em>Behaviour Trees in Robotics and AI: An Introduction</em>. CRC Press, Taylor &amp; Francis Group.</li>
+<li>Champandard, A. J. (2007). <em>Behaviour Trees for Next-Gen Game AI</em>. AiGameDev.com. [Blog / GDC Talk series.]</li>
+<li>Isla, D. (2005). <em>Handling Complexity in the Halo 2 AI</em>. GDC 2005 Proceedings.</li>
+<li>Iovino, M., Scukins, E., Styrud, J., Ögren, P., &amp; Smith, C. (2022). <em>A Survey of Behaviour Trees in Robotics and AI</em>. Robotics and Autonomous Systems, 154, 104096.</li>
+<li>Paxton, C., Hundt, A., Jonathan, F., Guerin, K., &amp; Hager, G. D. (2017). <em>CoSTAR: Instructing Collaborative Robots with Behavior Trees and Vision</em>. IEEE ICRA 2017.</li>
+<li>Biggar, D., Ryan, M., &amp; Porfirio, D. (2020). <em>A Principled Approach to Oracles for Behaviour Tree Verification</em>. IROS 2020.</li>
+<li>Biggar, D., Ryan, M., &amp; Porfirio, D. (2021). <em>An Expressiveness Hierarchy of Behaviour Trees and Related Architectures</em>. arXiv:2104.07919.</li>
+<li>Styrud, J., Iovino, M., Norrlöf, M., Björkman, M., &amp; Smith, C. (2022). <em>Combining Planning and Learning of Behaviour Trees for Robotic Assembly</em>. IEEE ICRA 2022.</li>
+<li>Faconti, D. (2019–2026). <em>BehaviorTree.CPP v4 Documentation</em>. <a href="https://www.behaviortree.dev/" class="external">https://www.behaviortree.dev/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Nav2 Contributors. (2022–2026). <em>Nav2 Navigation System Documentation</em>. <a href="https://nav2.org/" class="external">https://nav2.org/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Epic Games. (2025). <em>Behaviour Trees in Unreal Engine 5.7</em>. Epic Developer Community Documentation.</li>
+<li>Ogren, P. (2012). <em>Increasing Modularity of UAV Control Systems using Computer Game Behaviour Trees</em>. AIAA Guidance, Navigation, and Control Conference 2012.</li>
+<li>Ghzouli, R., Berger, T., Johnsen, E. B., Wasowski, A., &amp; Dragule, S. (2023). <em>Behaviour Trees and State Machines in Robotics Applications</em>. IEEE Transactions on Software Engineering, 49(10).</li>
+<li>Sprague, N., Ögren, P., &amp; Sandoval, A. (2018). <em>Adding Neural Network Controllers to Behavior Trees without Destroying Performance Guarantees</em>. arXiv:1809.10283.</li>
+<li>Jones, S. et al. (2022). <em>Behavior Tree-Based Task Planning for Multiple Mobile Robots using a Data Distribution Service</em>. arXiv:2201.10918.</li>
+<li>Buchholz, M. (2024). <em>Behavior Trees in C++ for Robotic Applications (ROS2)</em>. Medium Engineering.</li>
+<li>Ramirez-Alpizar, I. G., et al. (2021). <em>Online Behavior Tree Expansion for Robot Task Planning</em>. IROS 2021.</li>
+<li>Colledanchise, M., &amp; Marzinotto, A. (2017). <em>Performance Analysis of Stochastic BTs</em>. IEEE ICRA 2017.</li>
+<li>Hannaford, B., &amp; Venema, S. (2021). <em>IKT-BT: Indirect Knowledge Transfer Behaviour Tree Framework for Multi-Robot Systems</em>. arXiv:2312.11802.</li>
+<li>Neufeld, X., Mostaghim, S., &amp; Sancho-Pradel, D. (2021). <em>Interactively Learning Behaviour Trees from Imperfect Human Demonstrations</em>. Frontiers in Robotics and AI, 10.</li>
+<li>Palnitkar, A. et al. (2025). <em>A Formal Implementation of Behavior Trees to Act in Robotics</em>. arXiv:2502.11904.</li>
+<li>Springer Nature. (2026). <em>Knowledge-Based Execution Configuration for Adaptive Behaviour Trees</em>. Journal of Intelligent &amp; Robotic Systems.</li>
+<li>Knapp, A. et al. (2024). <em>Adaptable Recovery Behaviors in Robotics: A Behavior Trees and Motion Generators Approach</em>. arXiv:2404.06129.</li>
+<li>Edinburgh Centre for Robotics. (2025). <em>Research Themes — Robot Deliberation and Task Planning</em>. <a href="https://www.edinburgh-robotics.org/research" class="external">https://www.edinburgh-robotics.org/research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>mazdek.ch Blog. (2026). <em>AI in Game Development: Unreal Engine 5.5 and the Future of Game Design</em>. <a href="https://mazdek.ch/en/blog/ai-game-development-unreal-engine-2026" class="external">https://mazdek.ch/en/blog/ai-game-development-unreal-engine-2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+<h2 id="bt-design-patterns-in-practice">BT Design Patterns in Practice<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bt-design-patterns-in-practice" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Experienced BT practitioners have established a vocabulary of reusable design patterns for common behavioural engineering problems:</p>
+<p><strong>Pattern 1: Condition-Gated Action (Basic CGA)</strong></p>
+<ul>
+<li>Structure: <code>Sequence( Condition_Check, Action_Execute )</code></li>
+<li>Semantics: only execute the action if the precondition holds; return Failure immediately if precondition fails</li>
+<li>Use: any action that should only run when the world state is appropriate (grab object only if object is within reach)</li>
+</ul>
+<p><strong>Pattern 2: Try-Recover Fallback</strong></p>
+<ul>
+<li>Structure: <code>Selector( Primary_Behaviour, Recovery_Behaviour )</code></li>
+<li>Semantics: attempt primary behaviour; if it fails, execute recovery; succeed if either succeeds</li>
+<li>Use: robust behaviour with graceful degradation (try direct path; if blocked, try alternative route; if both fail, signal failure to parent)</li>
+</ul>
+<p><strong>Pattern 3: Patrol-Detect-Engage Cycle (Game NPC)</strong></p>
+<ul>
+<li>Structure: <code>ReactiveSelector( Attack_Sequence, Pursue_Sequence, Patrol_Sequence )</code></li>
+<li>Each child guarded by a Condition node: <code>enemy_in_range(5m)</code>, <code>enemy_visible</code>, <code>default_true</code></li>
+<li>Semantics: automatically transitions to highest-priority applicable behaviour every tick</li>
+<li>Advantage over FSM: no explicit transition declarations; adding a new behaviour state requires only adding a higher-priority child with its condition</li>
+</ul>
+<p><strong>Pattern 4: Monitoring + Action Parallel</strong></p>
+<ul>
+<li>Structure: <code>Parallel(M=1, Monitor_Tree, Action_Tree )</code></li>
+<li>Semantics: run the action tree while simultaneously monitoring conditions; succeed when either the action succeeds or the monitor succeeds</li>
+<li>Use: cancel an in-progress navigation action when a time limit is reached; stop a manipulation action when an emergency condition is detected</li>
+</ul>
+<p><strong>Pattern 5: Retry with Limit</strong></p>
+<ul>
+<li>Structure: <code>Retry(N, Action_Node)</code> or <code>Sequence( Counter_Init, Retry_Loop )</code></li>
+<li>Semantics: repeat the action up to N times; return Success on first success, Failure after N failures</li>
+<li>Use: network retry with backoff; perception retry when sensor is temporarily unavailable; manipulation retry with position correction</li>
+</ul>
+<p><strong>Pattern 6: Stateful Sequencing via Blackboard</strong></p>
+<ul>
+<li>Multiple sub-trees read and write shared Blackboard keys to coordinate multi-stage operations without parent-child coupling</li>
+<li>A “detect object” sub-tree writes <code>target_pose</code> to the Blackboard; a “pick object” sub-tree reads <code>target_pose</code></li>
+<li>Decouples the two sub-trees while allowing data flow; Port declarations make the dependency explicit in BehaviorTree.CPP v4</li>
+</ul>
+<p><strong>Pattern 7: Event-Driven Interruption (Reactive Sequence)</strong></p>
+<ul>
+<li>Structure: <code>ReactiveSequence( Safety_Condition, Main_Task )</code></li>
+<li>Semantics: re-evaluate Safety_Condition every tick; if it fails, immediately preempt Main_Task and return Failure</li>
+<li>Use: emergency stop behaviour — if <code>obstacle_too_close</code> condition fails (obstacle detected), immediately halt the navigation action and signal the parent to select recovery</li>
+</ul>
+<h2 id="comparison-with-related-formalisms">Comparison with Related Formalisms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comparison-with-related-formalisms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Understanding BTs requires situating them within the broader landscape of agent control architectures:</p>
+<p><strong>vs. <a href="../pages/Finite-State-Machine" class="internal alias" data-slug="pages/Finite-State-Machine">Finite State Machine</a> (FSM)</strong>: The most common comparison. FSMs represent states as nodes and transitions as labelled edges; every state knows which states it can reach. Scaling an FSM to 50+ states produces O(n²) potential transitions, most of which must be explicitly forbidden or handled. BTs have no transitions — composites aggregated child outcomes via fixed logic, and the tree structure encodes priority and sequencing without any state explicitly knowing about other states. BTs are strictly more expressive than FSMs (every FSM can be encoded as a BT but not vice versa). The chief BT advantage is modular authoring; the chief BT cost is that global state mutation is handled via the Blackboard, which can itself become complex in large trees.</p>
+<p><strong>vs. <a href="../pages/Hierarchical-Task-Network" class="internal alias" data-slug="pages/Hierarchical-Task-Network">Hierarchical Task Network</a> (HTN) Planning</strong>: HTNs decompose tasks recursively via method schemas, producing plans as sequences of primitive operators. HTNs generate a complete plan before execution; BTs execute reactively, re-evaluating on each tick. Hybrid BT+HTN systems use an HTN planner to generate a BT sub-tree for each high-level task, combining offline planning with online reactive execution. This pattern is widely used in advanced robotics where pre-computation is acceptable but environment changes during execution require reactive handling.</p>
+<p><strong>vs. <a href="../pages/Subsumption-Architecture" class="internal alias" data-slug="pages/Subsumption-Architecture">Subsumption Architecture</a></strong>: Brooks’ Subsumption Architecture (1986) uses layers of priority-ordered reactive rules; higher layers suppress lower layers. BTs subsume the Subsumption Architecture in the technical sense: a Selector with Condition-Action pairs at each child implements subsumption semantics directly. Colledanchise and Ögren (2018) formally prove this subsumption relationship.</p>
+<p><strong>vs. <a href="../pages/Belief-Desire-Intention" class="internal alias" data-slug="pages/Belief-Desire-Intention">Belief Desire Intention</a> (BDI)</strong>: BDI provides richer deliberative semantics — explicit desires, committed intentions, plan reconsideration — at the cost of lower reactivity. BDI agents maintain durable intentions that resist revision, whereas BTs re-evaluate every tick and can preempt any running action. In practice, BDI is better suited for inter-agent coordination and long-horizon deliberation; BTs are better suited for low-latency reactive execution within a single agent. Hybrid BDI-BT systems pair BDI goal management with BT execution.</p>
+<p><strong>vs. <a href="../Goal-Oriented-Action-Planning" class="internal alias" data-slug="Goal-Oriented-Action-Planning">Goal-Oriented Action Planning</a> (GOAP)</strong>: GOAP uses forward-chaining <a href="../pages/Automated-Planning" class="internal alias" data-slug="pages/Automated-Planning">Automated Planning</a> to compute action sequences at runtime from current world state and goal conditions. GOAP plans are computed fresh whenever the goal changes; the plan is a linear sequence of actions, not a tree. BTs provide immediate reactive execution with explicit fallback structure. The most powerful game AI architectures (Far Cry, F.E.A.R., Middle-earth: Shadow of Mordor) combine GOAP planning for goal selection with BT execution for plan enactment, leveraging each formalism’s strengths.</p>
+<p><strong>vs. <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> (RL)</strong>: RL agents learn policies mapping states to actions via reward signals, producing opaque neural networks or Q-tables. BTs are fully transparent human-authored control structures. The learning and interpretability trade-off is the central tension: RL can discover behaviours that BTs cannot express, while BTs provide guarantees that RL cannot. Research on learning BTs from <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> (genetic BT evolution, BT extraction from RL policies) aims to combine the learning power of RL with the interpretability and compositional guarantees of BTs.</p>
+<h2 id="benchmark-datasets-and-evaluation">Benchmark Datasets and Evaluation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-datasets-and-evaluation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>BT research uses several recurring evaluation domains:</p>
+<ul>
+<li><strong>GDC AI Game demos</strong>: Industrial evaluation by game studios using player engagement metrics, bug escape rate, and authoring time as proxies for BT quality. Frontier Developments and Guerrilla Games have published internal evaluations at GDC.</li>
+<li><strong>ROS2 Navigation Benchmarks</strong>: Nav2 evaluation uses the standard ROS2 navigation benchmark suite — goal success rate, path length optimality, recovery action counts, and wall-clock task completion time across standardised environments (Gazebo simulated rooms, TurtleBot4 hardware).</li>
+<li><strong>BT Synthesis Benchmarks</strong>: Styrud et al. (2022) evaluate automatic BT synthesis against hand-authored BTs on assembly task completion rate and authoring effort. The PDDL domain files from IPC (International Planning Competition) serve as synthesis problem sets.</li>
+<li><strong>Formal Verification Benchmarks</strong>: Biggar et al. (2020, 2021) evaluate BT verification tools on property satisfaction rate and verification time across tree size. Safety properties are expressed in LTL/CTL and checked via model checkers (nuSMV, SPIN).</li>
+<li><strong>Robot Learning from Demonstration</strong>: Neufeld et al. (2021) evaluate interactive BT learning on task completion success rate vs. number of demonstrations required, compared to FSM and neural baselines on manipulation tasks.</li>
+</ul>
+<h2 id="limitations-and-criticisms">Limitations and Criticisms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#limitations-and-criticisms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Despite their widespread adoption, Behaviour Trees have several acknowledged limitations that inform ongoing research and motivate hybrid architectures:</p>
+<p><strong>Polling Overhead</strong>: The tick-based evaluation model re-evaluates the entire subtree on every cycle, even when no relevant state has changed. In large trees with hundreds of Condition nodes, this produces significant computational overhead — particularly problematic for resource-constrained embedded robotics. Event-driven BT variants (Notifier BTs) address this by only ticking subtrees when relevant blackboard values change, but introduce complexity in specifying which events trigger which subtrees.</p>
+<p><strong>No Native Long-Horizon Planning</strong>: Classical BTs have no mechanism for reasoning about action sequences that span more than a few steps ahead. A BT can execute a pre-specified plan (a Sequence of actions) but cannot compute a plan from scratch given a goal and a world model. This limitation is addressed by hybrid BT+planner architectures (PDDL+BT, GOAP+BT) where the planner generates the action sequence and the BT executes it reactively, but the design burden of interfacing the two is non-trivial.</p>
+<p><strong><a href="../Blackboard" class="internal" data-slug="Blackboard">Blackboard</a> Complexity in Large Trees</strong>: The shared Blackboard that enables inter-node communication can become a maintenance problem in large trees: as the number of nodes writing to the same blackboard keys grows, understanding data flow requires inspecting all node implementations rather than tree structure alone. BehaviorTree.CPP v4’s Port system partially addresses this by making data dependencies explicit at the node interface level, but the fundamental shared-memory coupling remains.</p>
+<p><strong>Authoring Difficulty for Reactive Behaviour</strong>: Implementing preemptive reactive behaviour requires careful placement of Condition nodes as left children of ReactiveSequence composites — a non-obvious design pattern that new BT authors consistently get wrong. Incorrect preemption design produces agents that either ignore important state changes or unnecessarily restart actions repeatedly. This design skill gap is a significant training cost in game studios and robotics teams.</p>
+<p><strong>Expressiveness Limits</strong>: Biggar et al. (2021) establish that classical BTs (with Sequence, Selector, Parallel, Action, Condition) are strictly less expressive than arbitrary FSMs — there exist finite state automata that cannot be encoded as a BT without exponential tree expansion. While this covers only pathological cases not encountered in practice, it shows that BTs are not universal control architectures. Stateful nodes (which maintain internal state across ticks) extend BT expressiveness but sacrifice the stateless composability that gives classical BTs their modularity guarantees.</p>
+<p><strong>Testing and Debugging Difficulty</strong>: While BT structure is human-readable, the dynamic interaction of many concurrent conditions and actions in a large tree can produce emergent timing behaviours that are hard to reproduce in testing. The Groot2 live debugger helps by recording per-tick tree state, but replay-based debugging is not yet standardised across all BT implementations.</p>
+<p>These limitations have motivated the BT research agenda for 2024–2030: event-driven ticking, LLM-based plan generation, formal verification, learned BTs, and hybrid architectures all address specific identified weaknesses while preserving the core modularity properties that make BTs valuable.</p>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Tick</strong>: A single synchronous evaluation cycle propagated from the root to leaves; the fundamental execution unit of a BT. All nodes in the tree are evaluated within a single tick’s time budget.</li>
+<li><strong>Composite Node</strong>: An internal node with one or more children that aggregates child return statuses via Sequence (AND), Selector (OR), or Parallel logic. Composite nodes implement the control-flow grammar of BTs.</li>
+<li><strong>Leaf Node</strong>: A terminal node (Condition or Action) with no children. All interaction with the external world — sensors, actuators, services — occurs exclusively at leaf nodes.</li>
+<li><strong>Blackboard</strong>: Shared typed key-value memory store for inter-node data communication. The equivalent of <a href="../pages/Working-Memory" class="internal alias" data-slug="pages/Working-Memory">Working Memory</a> in <a href="../pages/Cognitive-Architecture" class="internal alias" data-slug="pages/Cognitive-Architecture">Cognitive Architecture</a> systems; isolates nodes from direct data coupling.</li>
+<li><strong>Running</strong>: One of three return statuses, indicating an Action node is still executing asynchronously. Running allows long-duration real-world actions to span multiple ticks without blocking the tick propagation.</li>
+<li><strong>Reactive Sequence / Reactive Selector</strong>: Composite variants that re-tick all children from the leftmost on every evaluation cycle, enabling interrupt-like preemption of running actions when earlier Condition nodes change state.</li>
+<li><strong>Decorator</strong>: Single-child wrapper node that modifies its child’s return value or execution policy (Inverter, Retry, Repeat, Timeout, RunOnce, ForceSuccess, ForceFailure).</li>
+<li><strong>Port</strong>: Formal typed input/output declaration on a node specifying which Blackboard keys it reads (Input Port) and writes (Output Port), enabling static data-dependency analysis and compile-time type checking.</li>
+<li><strong>Groot / Groot2</strong>: The official graphical design and live monitoring tool for BehaviorTree.CPP trees; supports visual tree construction, real-time tree state inspection via ZeroMQ, and replay of recorded tree executions.</li>
+<li><strong>py_trees</strong>: The Python implementation of Behaviour Trees, widely used in ROS2 Python projects and for rapid prototyping; mirrors BehaviorTree.CPP semantics and supports visualisation via py_trees_ros.</li>
+<li><strong>Sub-Tree</strong>: A named BT that can be embedded as a node in a larger tree, enabling modular composition and reuse of tested behavioural modules.</li>
+<li><strong>PDDL (Planning Domain Definition Language)</strong>: The standard formal language for specifying <a href="../pages/Automated-Planning" class="internal alias" data-slug="pages/Automated-Planning">Automated Planning</a> problems; PDDL solutions can be automatically compiled into BT structures for plan execution.</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-728" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#formal-algorithm" data-for="formal-algorithm">Formal Algorithm</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#major-implementation-frameworks-and-tools" data-for="major-implementation-frameworks-and-tools">Major Implementation Frameworks and Tools</a></li><li class="depth-0"><a href="#relationship-to-planning-and-ai-research" data-for="relationship-to-planning-and-ai-research">Relationship to Planning and AI Research</a></li><li class="depth-0"><a href="#bt-node-type-reference" data-for="bt-node-type-reference">BT Node Type Reference</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#bt-design-patterns-in-practice" data-for="bt-design-patterns-in-practice">BT Design Patterns in Practice</a></li><li class="depth-0"><a href="#comparison-with-related-formalisms" data-for="comparison-with-related-formalisms">Comparison with Related Formalisms</a></li><li class="depth-0"><a href="#benchmark-datasets-and-evaluation" data-for="benchmark-datasets-and-evaluation">Benchmark Datasets and Evaluation</a></li><li class="depth-0"><a href="#limitations-and-criticisms" data-for="limitations-and-criticisms">Limitations and Criticisms</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/AI-Game-Agent" class="internal">AI Game Agent</a></li><li><a href="../pages/Action-Executor" class="internal">Action Executor</a></li><li><a href="../pages/Belief-Desire-Intention" class="internal">Belief Desire Intention</a></li><li><a href="../pages/Mobile-Robot-Platform" class="internal">Mobile Robot Platform</a></li><li><a href="../pages/Procedural-Animation" class="internal">Procedural Animation</a></li><li><a href="../pages/Reactive-Planning" class="internal">Reactive Planning</a></li><li><a href="../pages/Simulation-Engine" class="internal">Simulation Engine</a></li><li><a href="../pages/Utility-AI" class="internal">Utility AI</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

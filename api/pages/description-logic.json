@@ -10,13 +10,114 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:first-order-logic",
+      "label": "First-Order Logic"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "id": "urn:ngm:class:formal-logic",
+      "label": "Formal Logic"
+    },
+    {
+      "id": "urn:ngm:class:modal-logic",
+      "label": "Modal Logic"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tbox",
+        "label": "TBox"
+      },
+      {
+        "id": "urn:ngm:class:abox",
+        "label": "ABox"
+      },
+      {
+        "id": "urn:ngm:class:concept-constructor",
+        "label": "Concept Constructor"
+      },
+      {
+        "id": "urn:ngm:class:role-constructor",
+        "label": "Role Constructor"
+      },
+      {
+        "id": "urn:ngm:class:subsumption-axiom",
+        "label": "Subsumption Axiom"
+      },
+      {
+        "id": "urn:ngm:class:tableau-algorithm",
+        "label": "Tableau Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consequence-based-algorithm",
+        "label": "Consequence-Based Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:nominals",
+        "label": "Nominals"
+      },
+      {
+        "id": "urn:ngm:class:number-restriction",
+        "label": "Number Restriction"
+      },
+      {
+        "id": "urn:ngm:class:general-concept-inclusion",
+        "label": "General Concept Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:role-hierarchy",
+        "label": "Role Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:concrete-domain",
+        "label": "Concrete Domain"
+      },
+      {
+        "id": "urn:ngm:class:alc",
+        "label": "ALC"
+      },
+      {
+        "id": "urn:ngm:class:shiq",
+        "label": "SHIQ"
+      },
+      {
+        "id": "urn:ngm:class:sroiq",
+        "label": "SROIQ"
+      },
+      {
+        "id": "urn:ngm:class:el",
+        "label": "EL++"
+      },
+      {
+        "id": "urn:ngm:class:dl-lite",
+        "label": "DL-Lite"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-el-profile",
+        "label": "OWL 2 EL Profile"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-ql-profile",
+        "label": "OWL 2 QL Profile"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-rl-profile",
+        "label": "OWL 2 RL Profile"
+      },
+      {
+        "id": "urn:ngm:class:alc-with-transitivity",
+        "label": "ALC with Transitivity"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:set-theory",
@@ -25,6 +126,22 @@
       {
         "id": "urn:ngm:class:first-order-logic",
         "label": "First-Order Logic"
+      },
+      {
+        "id": "urn:ngm:class:model-theory",
+        "label": "Model Theory"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
+      },
+      {
+        "id": "urn:ngm:class:formal-semantics",
+        "label": "Formal Semantics"
+      },
+      {
+        "id": "urn:ngm:class:model-theoretic-semantics",
+        "label": "Model-Theoretic Semantics"
       }
     ],
     "enables": [
@@ -43,16 +160,98 @@
       {
         "id": "urn:ngm:class:consistency-checking",
         "label": "Consistency Checking"
+      },
+      {
+        "id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
+      },
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:instance-recognition",
+        "label": "Instance Recognition"
+      },
+      {
+        "id": "urn:ngm:class:subsumption-reasoning",
+        "label": "Subsumption Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:conjunctive-query-answering",
+        "label": "Conjunctive Query Answering"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Ontology Classification"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      },
+      {
+        "id": "urn:ngm:class:model-theory",
+        "label": "Model Theory"
+      },
+      {
+        "id": "urn:ngm:class:formal-semantics",
+        "label": "Formal Semantics"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:model-theoretic-semantics",
+        "label": "Model-Theoretic Semantics"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rule-based-reasoning",
+        "label": "Rule-Based Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:closed-world-assumption",
+        "label": "Closed World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:relational-database-schema",
+        "label": "Relational Database Schema"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-logic",
+        "label": "Probabilistic Logic"
+      },
+      {
+        "id": "urn:ngm:class:horn-logic",
+        "label": "Horn Logic"
+      },
+      {
+        "id": "urn:ngm:class:semantic-network",
+        "label": "Semantic Network"
+      },
+      {
+        "id": "urn:ngm:class:frame-based-representation",
+        "label": "Frame-Based Representation"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -61,9 +260,62 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tableau-algorithm",
+        "label": "Tableau Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:elk-reasoner",
+        "label": "ELK Reasoner"
+      },
+      {
+        "id": "urn:ngm:class:hermit-reasoner",
+        "label": "HermiT Reasoner"
+      },
+      {
+        "id": "urn:ngm:class:pellet-reasoner",
+        "label": "Pellet Reasoner"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:prot-g",
+        "label": "Prot\u00e9g\u00e9"
+      },
+      {
+        "id": "urn:ngm:class:fact-reasoner",
+        "label": "FaCT++ Reasoner"
+      },
+      {
+        "id": "urn:ngm:class:whelk-reasoner",
+        "label": "Whelk Reasoner"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:semantic-web-linked-data-standard",
@@ -72,9 +324,42 @@
       {
         "id": "urn:ngm:class:ontology-engineering",
         "label": "Ontology Engineering"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-ontology",
+        "label": "Biomedical Ontology"
+      },
+      {
+        "id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-knowledge-graph",
+        "label": "Enterprise Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:clinical-terminology",
+        "label": "Clinical Terminology"
+      },
+      {
+        "id": "urn:ngm:class:snomed-ct",
+        "label": "SNOMED CT"
+      },
+      {
+        "id": "urn:ngm:class:gene-ontology",
+        "label": "Gene Ontology"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:knowledge-representation",
@@ -93,6 +378,42 @@
       {
         "id": "urn:ngm:class:open-world-assumption",
         "label": "Open World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:terminological-logic",
+        "label": "Terminological Logic"
+      },
+      {
+        "id": "urn:ngm:class:concept-language",
+        "label": "Concept Language"
+      },
+      {
+        "id": "urn:ngm:class:description-logic-handbook",
+        "label": "Description Logic Handbook"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:modal-logic",
+        "label": "Modal Logic"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Complexity Theory"
+      },
+      {
+        "id": "urn:ngm:class:tableau-method",
+        "label": "Tableau Method"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation-and-reasoning",
+        "label": "Knowledge Representation and Reasoning"
       }
     ]
   },
@@ -101,6 +422,11 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:logic",
+      "label": "Logic",
+      "slug": "logic"
     }
   ],
   "inheritedRelations": {
@@ -140,6 +466,22 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:logical-inference",
+        "label": "Logical Inference"
+      },
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -150,9 +492,37 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
@@ -160,18 +530,156 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:closed-world-assumption",
+        "label": "Closed World Assumption"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:sub-symbolic-ai",
+        "label": "Sub-Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:database-schema",
+        "label": "Database Schema"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:logical-inference",
+        "label": "Logical Inference"
+      },
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:semantic-network",
+        "label": "Semantic Network"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:model-theory",
+        "label": "Model Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
       }
     ],
     "relatedTo": [
@@ -186,6 +694,26 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
       }
     ]
   },

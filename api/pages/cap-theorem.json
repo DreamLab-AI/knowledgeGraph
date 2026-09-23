@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
+    },
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
     }
   ],
   "entityType": "Class",
@@ -32,6 +36,10 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "System Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-database-design",
+        "label": "Distributed Database Design"
       }
     ],
     "dependsOn": [
@@ -63,6 +71,18 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-domain",
+        "label": "Distributed Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
       }
     ],
     "uses": [],
@@ -224,7 +244,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:explainable-ai",
       "label": "Explainable AI"
+    },
+    {
+      "id": "urn:ngm:class:model-interpretability",
+      "label": "Model Interpretability"
     }
   ],
   "entityType": "Class",
@@ -32,6 +36,22 @@
       {
         "id": "urn:ngm:class:gradient-saliency",
         "label": "Gradient Saliency"
+      },
+      {
+        "id": "urn:ngm:class:deeplift",
+        "label": "DeepLIFT"
+      },
+      {
+        "id": "urn:ngm:class:grad-cam",
+        "label": "Grad-CAM"
+      },
+      {
+        "id": "urn:ngm:class:smoothgrad",
+        "label": "SmoothGrad"
+      },
+      {
+        "id": "urn:ngm:class:permutation-importance",
+        "label": "Permutation Importance"
       }
     ],
     "requires": [
@@ -42,6 +62,14 @@
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -60,6 +88,14 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "id": "urn:ngm:class:model-debugging",
+        "label": "Model Debugging"
       }
     ],
     "dependsOn": [
@@ -70,17 +106,71 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:shapley-value",
+        "label": "Shapley Value"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:feature-importance",
         "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      },
+      {
+        "id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
       }
     ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:feature-importance",
@@ -89,9 +179,34 @@
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-p2976-xai",
+        "label": "IEEE P2976 (XAI)"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -105,6 +220,22 @@
       {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:sparse-autoencoders",
+        "label": "Sparse Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:activation-patching",
+        "label": "Activation Patching"
       }
     ]
   },
@@ -131,28 +262,28 @@
         "label": "Post Hoc Explanation"
       },
       {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      },
+      {
+        "id": "urn:ngm:class:local-explanation",
+        "label": "Local Explanation"
+      },
+      {
+        "id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      },
+      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:ai-fairness",
-        "label": "AI Fairness"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
-      },
-      {
-        "id": "urn:ngm:class:ai-risk-management",
-        "label": "AI Risk Management"
       }
     ],
     "requires": [
@@ -165,12 +296,12 @@
         "label": "Model Interpretability"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:predictive-model",
+        "label": "Predictive Model"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -195,6 +326,10 @@
         "label": "Human-AI Collaboration"
       },
       {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
       },
@@ -205,15 +340,11 @@
       {
         "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Automation"
-      },
-      {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -229,8 +360,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:black-box-model",
-        "label": "Black-Box Model"
+        "id": "urn:ngm:class:model-complexity",
+        "label": "Model Complexity"
       }
     ],
     "bridgesTo": [
@@ -241,12 +372,40 @@
       {
         "id": "urn:ngm:class:healthcare-ai",
         "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Medical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:causal-inference",
         "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:lime",
+        "label": "LIME"
       }
     ],
     "supports": [
@@ -259,8 +418,12 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias Detection"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
       }
     ],
     "partOf": [
@@ -277,6 +440,14 @@
       {
         "id": "urn:ngm:class:interpretable-ai",
         "label": "Interpretable AI"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
       },
       {
         "id": "urn:ngm:class:accountability",

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
+    },
+    {
+      "id": "urn:ngm:class:digital-preservation",
+      "label": "Digital Preservation"
     }
   ],
   "entityType": "Class",
@@ -64,6 +68,10 @@
       {
         "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:cultural-heritage-access",
+        "label": "Cultural Heritage Access"
       }
     ],
     "dependsOn": [
@@ -141,9 +149,29 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -173,15 +201,31 @@
         "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:ngm:class:6-do-f-tracking",
-        "label": "6DoF Tracking"
+        "id": "urn:ngm:class:checksum-verification",
+        "label": "Checksum Verification"
       },
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:format-migration",
+        "label": "Format Migration"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
       {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
@@ -205,32 +249,80 @@
         "label": "Immersive Entertainment"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:etsi-domain-data-management-cultural-heritage",
+        "label": "Cultural Heritage Management"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:long-term-access",
+        "label": "Long-Term Access"
       },
       {
-        "id": "urn:ngm:class:scene-understanding",
-        "label": "Scene Understanding"
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Data Backup"
+      },
+      {
+        "id": "urn:ngm:class:data-archiving",
+        "label": "Data Archiving"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
         "id": "urn:ngm:class:extended-reality-xr",
@@ -242,6 +334,18 @@
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressable Storage"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
@@ -261,17 +365,51 @@
       {
         "id": "urn:ngm:class:hand-tracking",
         "label": "Hand Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
       },
       {
-        "id": "urn:ngm:class:head-mounted-display",
-        "label": "Head-Mounted Display"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-14721",
+        "label": "ISO 14721"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "PREMIS Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:reference-model",
+        "label": "OAIS Reference Model"
+      },
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
       {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
@@ -301,6 +439,18 @@
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:archival-standards",
+        "label": "Archival Standards"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:lifecycle-management",
+        "label": "Information Lifecycle Management"
       }
     ]
   },

@@ -12,12 +12,24 @@
       "label": "Legal and Regulatory"
     },
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:compliance-programs",
+      "label": "Compliance Programs"
     },
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:regulatory-governance",
+      "label": "Regulatory Governance"
+    },
+    {
+      "id": "urn:ngm:class:legal-risk-management",
+      "label": "Legal Risk Management"
+    },
+    {
+      "id": "urn:ngm:class:international-law",
+      "label": "International Law"
+    },
+    {
+      "id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance"
     }
   ],
   "entityType": "Class",
@@ -36,6 +48,26 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:jurisdictional-mapping",
+        "label": "Jurisdictional Mapping"
+      },
+      {
+        "id": "urn:ngm:class:data-transfer-mechanism",
+        "label": "Data Transfer Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-monitoring",
+        "label": "Regulatory Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:compliance-architecture",
+        "label": "Compliance Architecture"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-liaison",
+        "label": "Enforcement Liaison"
       }
     ],
     "requires": [
@@ -58,6 +90,18 @@
       {
         "id": "urn:ngm:class:privacy-impact-assessment",
         "label": "Privacy Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-intelligence",
+        "label": "Regulatory Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:data-residency-infrastructure",
+        "label": "Data Residency Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC AML Framework"
       }
     ],
     "enables": [
@@ -76,9 +120,50 @@
       {
         "id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:global-market-access",
+        "label": "Global Market Access"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-trust",
+        "label": "Regulatory Trust"
+      },
+      {
+        "id": "urn:ngm:class:level-playing-field",
+        "label": "Level Playing Field"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-protection-law",
+        "label": "Data Protection Law"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-regimes",
+        "label": "Sanctions Regimes"
+      },
+      {
+        "id": "urn:ngm:class:international-trade-law",
+        "label": "International Trade Law"
+      },
+      {
+        "id": "urn:ngm:class:privacy-law",
+        "label": "Privacy Law"
+      },
+      {
+        "id": "urn:ngm:class:adequacy-decisions",
+        "label": "Adequacy Decisions"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:basel-iii",
@@ -99,9 +184,46 @@
       {
         "id": "urn:ngm:class:oecd-ai-principles",
         "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:standard-contractual-clauses",
+        "label": "GDPR Standard Contractual Clauses"
+      },
+      {
+        "id": "urn:ngm:class:mica-passporting",
+        "label": "MiCA Passporting"
+      },
+      {
+        "id": "urn:ngm:class:oecd-carf-reporting",
+        "label": "OECD CARF Reporting"
+      },
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III Standards"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:forum-shopping",
+        "label": "Forum Shopping"
+      },
+      {
+        "id": "urn:ngm:class:jurisdictional-fragmentation",
+        "label": "Jurisdictional Fragmentation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-capture",
+        "label": "Regulatory Capture"
+      },
+      {
+        "id": "urn:ngm:class:data-nationalism",
+        "label": "Data Nationalism"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -127,11 +249,23 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:adequacy-decisions",
+        "label": "Adequacy Decisions"
+      },
+      {
+        "id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      },
+      {
+        "id": "urn:ngm:class:legal-entity-structure",
+        "label": "Legal Entity Architecture"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -153,6 +287,18 @@
       {
         "id": "urn:ngm:class:ai-trustworthiness",
         "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:eu-digital-single-market",
+        "label": "Digital Single Market"
+      },
+      {
+        "id": "urn:ngm:class:corporate-tax-compliance-framework",
+        "label": "Tax Transparency"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection Rights"
       }
     ],
     "standardizedBy": [
@@ -179,6 +325,18 @@
       {
         "id": "urn:ngm:class:oecd",
         "label": "OECD"
+      },
+      {
+        "id": "urn:ngm:class:eu-commission",
+        "label": "EU Commission"
+      },
+      {
+        "id": "urn:ngm:class:iapp",
+        "label": "IAPP"
+      },
+      {
+        "id": "urn:ngm:class:edpb",
+        "label": "EDPB"
       }
     ],
     "partOf": [],
@@ -194,14 +352,44 @@
       {
         "id": "urn:ngm:class:regulatory-harmonisation",
         "label": "Regulatory Harmonisation"
+      },
+      {
+        "id": "urn:ngm:class:mutual-legal-assistance",
+        "label": "Mutual Legal Assistance"
+      },
+      {
+        "id": "urn:ngm:class:extraterritorial-jurisdiction",
+        "label": "Extraterritorial Jurisdiction"
+      },
+      {
+        "id": "urn:ngm:class:schrems-ii",
+        "label": "Schrems II"
+      },
+      {
+        "id": "urn:ngm:class:digital-trade-agreements",
+        "label": "Digital Trade Agreements"
+      },
+      {
+        "id": "urn:ngm:class:oecd-carf",
+        "label": "OECD CARF"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     }
   ],
   "inheritedRelations": {
@@ -241,16 +429,36 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
+      },
+      {
+        "id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit and Oversight"
+      },
+      {
+        "id": "urn:ngm:class:executive-sponsorship",
+        "label": "Executive Sponsorship"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -263,27 +471,67 @@
         "label": "Privacy Framework"
       },
       {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
+      },
+      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:governance-code",
+        "label": "Governance Code"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:decision-rights",
+        "label": "Decision Rights"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
@@ -291,12 +539,36 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
       }
     ],
     "supports": [
@@ -315,12 +587,42 @@
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:oecd-principles-of-corporate-governance",
+        "label": "OECD Principles of Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:uk-corporate-governance-code",
+        "label": "UK Corporate Governance Code"
+      },
+      {
+        "id": "urn:ngm:class:cobit",
+        "label": "COBIT"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:itil",
+        "label": "ITIL"
+      },
+      {
+        "id": "urn:ngm:class:togaf",
+        "label": "TOGAF"
+      },
+      {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
       },
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:institutional-framework",
+        "label": "Institutional Framework"
       }
     ],
     "relatedTo": [
@@ -333,20 +635,28 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:executive-compensation",
+        "label": "Executive Compensation"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:stewardship",
+        "label": "Stewardship"
       },
       {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ]
   },

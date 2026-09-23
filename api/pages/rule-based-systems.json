@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution Strategy"
+      },
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution Strategy"
       }
     ],
     "requires": [
@@ -56,6 +60,10 @@
       {
         "id": "urn:ngm:class:automated-reasoning",
         "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:decision-automation",
+        "label": "Decision Automation"
       }
     ],
     "dependsOn": [],
@@ -63,16 +71,28 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:production-system-model",
+        "label": "Production System Model"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:case-based-reasoning",
+        "label": "Case-Based Reasoning"
       }
     ],
     "bridgesTo": [
@@ -97,12 +117,20 @@
       {
         "id": "urn:ngm:class:pattern-matching",
         "label": "Pattern Matching"
+      },
+      {
+        "id": "urn:ngm:class:rete-algorithm",
+        "label": "Rete Algorithm"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support Systems"
       },
       {
         "id": "urn:ngm:class:decision-support",
@@ -202,6 +230,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

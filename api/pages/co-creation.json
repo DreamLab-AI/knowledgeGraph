@@ -157,6 +157,10 @@
         "label": "Coordination"
       },
       {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
       }
@@ -173,6 +177,10 @@
       {
         "id": "urn:ngm:class:social-vr",
         "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
       },
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -219,6 +227,10 @@
         "label": "Organisational Learning"
       },
       {
+        "id": "urn:ngm:class:team-formation",
+        "label": "Team Formation"
+      },
+      {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
       },
@@ -231,6 +243,10 @@
       {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C (World Wide Web Consortium)"
       }
     ],
     "relatedTo": [
@@ -251,16 +267,20 @@
         "label": "Communication Technology"
       },
       {
-        "id": "urn:ngm:class:dc-telepresence",
-        "label": "Telepresence"
-      },
-      {
         "id": "urn:ngm:class:remote-collaboration",
         "label": "Remote Collaboration"
       },
       {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
         "id": "urn:ngm:class:groupware",
         "label": "Groupware"
+      },
+      {
+        "id": "urn:ngm:class:social-software",
+        "label": "Social Software"
       }
     ]
   },

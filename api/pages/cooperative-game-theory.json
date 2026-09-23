@@ -113,6 +113,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:evolutionary-game-theory",
+        "label": "Evolutionary Game Theory"
+      },
+      {
         "id": "urn:ngm:class:mechanism-design",
         "label": "Mechanism Design"
       },
@@ -139,13 +143,13 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:rational-agency",
+        "label": "Rational Agency"
+      },
       {
         "id": "urn:ngm:class:utility-theory",
         "label": "Utility Theory"
@@ -215,6 +219,22 @@
       {
         "id": "urn:ngm:class:swarm-intelligence",
         "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "supports": [

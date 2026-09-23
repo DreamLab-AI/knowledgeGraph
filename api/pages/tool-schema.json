@@ -47,12 +47,20 @@
       {
         "id": "urn:ngm:class:ai-agent",
         "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:tool-selection",
+        "label": "Tool Selection"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:schema-registry",
         "label": "Schema Registry"
+      },
+      {
+        "id": "urn:ngm:class:inference-compute",
+        "label": "Inference-Time Compute"
       },
       {
         "id": "urn:ngm:class:inference-compute",
@@ -93,6 +101,14 @@
       {
         "id": "urn:ngm:class:type-system",
         "label": "Type System"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-description",
+        "label": "Natural Language Description"
+      },
+      {
+        "id": "urn:ngm:class:parameter-validation",
+        "label": "Parameter Validation"
       }
     ],
     "supports": [
@@ -110,6 +126,14 @@
       {
         "id": "urn:ngm:class:multi-agent-orchestration",
         "label": "Agent Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Agent Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:capability-manifest",
+        "label": "Capability Manifest"
       }
     ],
     "relatedTo": [
@@ -199,6 +223,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

@@ -48,7 +48,12 @@
         "label": "Distributed Tracing"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalable-applications",
+        "label": "Scalable Applications"
+      }
+    ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:kubernetes",
@@ -451,6 +456,10 @@
         "label": "Kubernetes"
       },
       {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
         "id": "urn:ngm:class:security-architecture",
         "label": "Security Architecture"
       },
@@ -473,10 +482,6 @@
       {
         "id": "urn:ngm:class:model-registry",
         "label": "Model Registry"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ]
   },

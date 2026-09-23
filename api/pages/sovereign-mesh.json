@@ -8,7 +8,7 @@
   "definition": "A peer-to-peer agent network where each node is identified by a DID Nostr Identity|did:nostr:<pubkey> DIDs and communicates via Nostr Relay|Nostr relays, enabling decentralised agent discovery, gossip, and work distribution without a centralised broker or coordinator, whilst respecting ea...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
+      "id": "urn:ngm:class:network-component",
       "label": "Network Component"
     },
     {
@@ -36,6 +36,10 @@
       {
         "id": "urn:ngm:class:peer-discovery",
         "label": "Peer Discovery"
+      },
+      {
+        "id": "urn:ngm:class:agent-beacon",
+        "label": "Agent Beacon"
       }
     ],
     "requires": [
@@ -68,6 +72,18 @@
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Trustless Peer Communication"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-agent-coordination-initiative",
+        "label": "Decentralised Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Trustless Peer Communication"
+      },
+      {
+        "id": "urn:ngm:class:work-distribution",
+        "label": "Work Distribution"
       }
     ],
     "dependsOn": [],
@@ -83,10 +99,31 @@
       {
         "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol (NIP-01)"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Consensus"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -95,19 +132,24 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
-    },
-    {
-      "id": "urn:ngm:class:network-component",
-      "label": "Network Component",
-      "slug": "network-component"
-    },
-    {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity",
       "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:networkcomponent",
+      "label": "Networkcomponent",
+      "slug": "networkcomponent"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
     }
   ],
   "inheritedRelations": {
@@ -125,24 +167,24 @@
         "label": "Full Node"
       },
       {
-        "id": "urn:ngm:class:light-node",
-        "label": "Light Node"
+        "id": "urn:ngm:class:kademlia-dht",
+        "label": "Distributed Hash Table"
       },
       {
         "id": "urn:ngm:class:mempool",
         "label": "Mempool"
       },
       {
-        "id": "urn:ngm:class:validator-node",
-        "label": "Validator Node"
-      },
-      {
-        "id": "urn:ngm:class:kademlia-dht",
-        "label": "Distributed Hash Table"
-      },
-      {
         "id": "urn:ngm:class:transaction-pool",
         "label": "Transaction Pool"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "requires": [
@@ -156,19 +198,7 @@
       },
       {
         "id": "urn:ngm:class:tcp-ip",
-        "label": "TCP/IP"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "label": "TCP-IP"
       },
       {
         "id": "urn:ngm:class:cryptographic-security",
@@ -177,16 +207,28 @@
       {
         "id": "urn:ngm:class:distributed-protocol",
         "label": "Distributed Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:block-propagation",
-        "label": "Block Propagation"
-      },
-      {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
         "id": "urn:ngm:class:blockchain-network",
@@ -209,8 +251,18 @@
         "label": "Nakamoto Consensus"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Transparent Audit Trails"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
       }
     ],
     "implements": [
@@ -227,20 +279,48 @@
       {
         "id": "urn:ngm:class:client-server-architecture",
         "label": "Client-Server Architecture"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
     "uses": [
@@ -251,6 +331,40 @@
       {
         "id": "urn:ngm:class:nat-traversal",
         "label": "NAT Traversal"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
       }
     ],
     "partOf": [
@@ -261,20 +375,20 @@
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
       },
       {
         "id": "urn:ngm:class:blockchain",
@@ -289,8 +403,20 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:blockchain-protocol",
-        "label": "Blockchain Protocol"
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
       }
     ]
   },

@@ -29,6 +29,18 @@
       {
         "id": "urn:ngm:class:storage-systems",
         "label": "Storage Solutions"
+      },
+      {
+        "id": "urn:ngm:class:node-network",
+        "label": "Node Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-systems",
+        "label": "Cryptographic Systems"
+      },
+      {
+        "id": "urn:ngm:class:storage-systems",
+        "label": "Storage Solutions"
       }
     ],
     "enables": [
@@ -43,12 +55,21 @@
       {
         "id": "urn:ngm:class:transaction-processing",
         "label": "Transaction Processing"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Asset Custody"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -177,10 +198,6 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
@@ -253,7 +270,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

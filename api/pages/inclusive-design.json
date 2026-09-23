@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:participatory-design",
         "label": "Participatory Design"
+      },
+      {
+        "id": "urn:ngm:class:co-design",
+        "label": "Co-Design"
       }
     ],
     "enables": [
@@ -47,6 +51,10 @@
       {
         "id": "urn:ngm:class:assistive-technology",
         "label": "Assistive Technology"
+      },
+      {
+        "id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Equity"
       }
     ],
     "dependsOn": [],
@@ -106,6 +114,14 @@
       {
         "id": "urn:ngm:class:wai-aria",
         "label": "WAI-ARIA"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
+      },
+      {
+        "id": "urn:ngm:class:european-accessibility-act",
+        "label": "European Accessibility Act"
       }
     ],
     "partOf": [],
@@ -268,6 +284,22 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

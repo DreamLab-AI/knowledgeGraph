@@ -96,12 +96,16 @@
         "label": "Deepfake"
       },
       {
-        "id": "urn:ngm:class:intellectual-property",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {
         "id": "urn:ngm:class:misinformation",
         "label": "Misinformation"
+      },
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfake"
       }
     ]
   },
@@ -224,6 +228,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -304,6 +312,10 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
@@ -312,16 +324,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

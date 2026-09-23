@@ -72,7 +72,7 @@
         "label": "Smart City"
       },
       {
-        "id": "urn:ngm:class:building-information-modelling",
+        "id": "urn:ngm:class:bim-virtual-model",
         "label": "Building Information Modelling"
       }
     ],
@@ -205,16 +205,16 @@
         "label": "Hardware Abstraction Layer"
       },
       {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -331,7 +331,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -471,6 +471,10 @@
         "label": "Digital Twin"
       },
       {
+        "id": "urn:ngm:class:manufacturing-execution-system",
+        "label": "Manufacturing Execution System"
+      },
+      {
         "id": "urn:ngm:class:real-time-processing",
         "label": "Real-time Processing"
       },
@@ -485,10 +489,6 @@
       {
         "id": "urn:ngm:class:control-system",
         "label": "Control System"
-      },
-      {
-        "id": "urn:ngm:class:hardware-security",
-        "label": "Hardware Security"
       }
     ]
   },

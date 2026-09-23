@@ -32,6 +32,14 @@
       {
         "id": "urn:ngm:class:parameter-efficient-fine-tuning",
         "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Diffusers Library"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
       }
     ],
     "requires": [
@@ -96,6 +104,14 @@
       {
         "id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       }
     ],
     "supports": [
@@ -134,6 +150,10 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-model-hub",
+        "label": "Model Hub"
       }
     ]
   },
@@ -181,12 +201,12 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       }
     ],
     "requires": [
@@ -409,7 +429,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

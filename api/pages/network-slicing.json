@@ -134,6 +134,18 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:nfv-infrastructure",
+        "label": "NFV Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:nfv-management-and-orchestration",
+        "label": "NFV Management and Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-network-function",
+        "label": "Virtual Network Function"
+      },
+      {
         "id": "urn:ngm:class:activation-function",
         "label": "Activation Function"
       },
@@ -152,18 +164,6 @@
       {
         "id": "urn:ngm:class:residual-connection",
         "label": "Skip Connection"
-      },
-      {
-        "id": "urn:ngm:class:autoencoder",
-        "label": "Autoencoder"
-      },
-      {
-        "id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:diffusion-model",
-        "label": "Diffusion Model"
       }
     ],
     "requires": [
@@ -198,6 +198,14 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:network-scalability",
+        "label": "Network Scalability"
+      },
+      {
+        "id": "urn:ngm:class:service-function-chaining",
+        "label": "Service Function Chaining"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
@@ -220,17 +228,13 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:commercial-off-the-shelf-hardware",
+        "label": "Commercial Off-the-Shelf Hardware"
+      },
       {
         "id": "urn:ngm:class:software-defined-networking",
         "label": "Software-Defined Networking"
@@ -245,6 +249,10 @@
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:etsi-nfv-standard",
+        "label": "ETSI NFV Standard"
+      },
       {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
@@ -268,6 +276,14 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:network-appliance",
+        "label": "Network Appliance"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-hardware",
+        "label": "Proprietary Hardware"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
       }
@@ -288,6 +304,22 @@
       {
         "id": "urn:ngm:class:hardware-accelerator",
         "label": "Hardware Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -298,6 +330,10 @@
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:openstack",
+        "label": "OpenStack"
       },
       {
         "id": "urn:ngm:class:loss-function",
@@ -312,6 +348,10 @@
       {
         "id": "urn:ngm:class:5-g-network",
         "label": "5G Networks"
+      },
+      {
+        "id": "urn:ngm:class:telecom-cloud",
+        "label": "Telecom Cloud"
       },
       {
         "id": "urn:ngm:class:model-compression",
@@ -339,6 +379,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-native-network-function",
+        "label": "Cloud-Native Network Function"
+      },
       {
         "id": "urn:ngm:class:software-defined-networking",
         "label": "Software-Defined Networking"

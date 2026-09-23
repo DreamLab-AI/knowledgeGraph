@@ -41,9 +41,24 @@
       "slug": "computational-intelligence"
     },
     {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory",
+      "slug": "control-theory"
+    },
+    {
       "id": "urn:ngm:class:dynamical-systems",
       "label": "Dynamical Systems",
       "slug": "dynamical-systems"
+    },
+    {
+      "id": "urn:ngm:class:feedback-control",
+      "label": "Feedback Control",
+      "slug": "feedback-control"
+    },
+    {
+      "id": "urn:ngm:class:optimal-control",
+      "label": "Optimal Control",
+      "slug": "optimal-control"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -51,9 +66,119 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:applied-machine-learning",
+      "label": "Applied Machine Learning",
+      "slug": "applied-machine-learning"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics-domain",
+      "label": "Applied Mathematics Domain",
+      "slug": "applied-mathematics-domain"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:closed-loop-control",
+      "label": "Closed-Loop Control",
+      "slug": "closed-loop-control"
+    },
+    {
+      "id": "urn:ngm:class:control-engineering",
+      "label": "Control Engineering",
+      "slug": "control-engineering"
+    },
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:cybernetics",
+      "label": "Cybernetics",
+      "slug": "cybernetics"
+    },
+    {
+      "id": "urn:ngm:class:dynamical-systems-theory",
+      "label": "Dynamical Systems Theory",
+      "slug": "dynamical-systems-theory"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-modelling",
+      "label": "Mathematical Modelling",
+      "slug": "mathematical-modelling"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-physics",
+      "label": "Mathematical Physics",
+      "slug": "mathematical-physics"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-theory",
+      "label": "Systems Theory",
+      "slug": "systems-theory"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
     }
   ],
   "inheritedRelations": {
@@ -121,8 +246,8 @@
         "label": "Backpropagation"
       },
       {
-        "id": "urn:ngm:class:optimisation-algorithm",
-        "label": "Optimization Algorithm"
+        "id": "urn:ngm:class:fitness-function",
+        "label": "Fitness Function"
       }
     ],
     "enables": [
@@ -151,12 +276,46 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:control-system",
+        "label": "Control Systems"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-stability",
+        "label": "Lyapunov Stability"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "implements": [
@@ -195,12 +354,70 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:bang-bang-control",
+        "label": "Bang-Bang Control"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      },
+      {
         "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based Systems"
       },
       {
+        "id": "urn:ngm:class:classical-ai",
+        "label": "Classical AI"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-without-dynamics-models",
+        "label": "AI Without Dynamics Models"
+      },
+      {
+        "id": "urn:ngm:class:classical-optimisation-without-feedback",
+        "label": "Classical Optimisation Without Feedback"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -225,16 +442,16 @@
         "label": "System Identification"
       },
       {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:transformer",
-        "label": "Transformer"
+        "id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
       }
     ],
     "supports": [
@@ -245,6 +462,10 @@
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:chemical-process-control",
+        "label": "Chemical Process Control"
       },
       {
         "id": "urn:ngm:class:humanoid-robotics",
@@ -265,10 +486,6 @@
       {
         "id": "urn:ngm:class:applied-machine-learning",
         "label": "Applied Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
       }
     ],
     "standardizedBy": [
@@ -291,6 +508,36 @@
       {
         "id": "urn:ngm:class:iso-26262",
         "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:arp4754-a",
+        "label": "ARP4754A"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control System"
+      },
+      {
+        "id": "urn:ngm:class:stabilisation-architecture",
+        "label": "Stabilisation Architecture"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
       }
     ],
     "relatedTo": [

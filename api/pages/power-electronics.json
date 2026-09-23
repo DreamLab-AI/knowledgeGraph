@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:embedded-systems",
       "label": "Embedded Systems"
+    },
+    {
+      "id": "urn:ngm:class:embedded-systems-domain",
+      "label": "Embedded Systems Domain"
     }
   ],
   "entityType": "Class",
@@ -85,6 +89,10 @@
       {
         "id": "urn:ngm:class:power-supply",
         "label": "Linear Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Linear Power Supply"
       }
     ],
     "bridgesTo": [
@@ -99,6 +107,14 @@
       {
         "id": "urn:ngm:class:smart-grid",
         "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
       }
     ],
     "uses": [
@@ -129,6 +145,10 @@
       {
         "id": "urn:ngm:class:ieee-standards",
         "label": "IEEE Standards"
+      },
+      {
+        "id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
+        "label": "IEC 61800"
       },
       {
         "id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
@@ -203,6 +223,10 @@
       {
         "id": "urn:ngm:class:hardware-abstraction-layer",
         "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -295,7 +319,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -315,6 +339,10 @@
       {
         "id": "urn:ngm:class:digital-signal-processor",
         "label": "Digital Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-controller",
+        "label": "Interrupt Controller"
       },
       {
         "id": "urn:ngm:class:sensor",
@@ -379,7 +407,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

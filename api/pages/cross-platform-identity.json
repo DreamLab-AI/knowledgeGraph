@@ -32,7 +32,7 @@
         "label": "Trust Relationships"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -56,6 +56,10 @@
       {
         "id": "urn:ngm:class:authorisation",
         "label": "Cross-Domain Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity-system",
+        "label": "Federated Access"
       }
     ],
     "dependsOn": [
@@ -80,6 +84,10 @@
       {
         "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust Relationships"
       }
     ],
     "contrastsWith": [
@@ -94,7 +102,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:decentralised-identifiers",
+        "id": "urn:ngm:class:did",
         "label": "Decentralised Identifiers"
       },
       {

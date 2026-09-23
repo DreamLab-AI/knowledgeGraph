@@ -66,9 +66,49 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:audio-signal-processing",
+      "label": "Audio Signal Processing",
+      "slug": "audio-signal-processing"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing",
+      "slug": "natural-language-processing"
+    },
+    {
       "id": "urn:ngm:class:speech-processing",
       "label": "Speech Processing",
       "slug": "speech-processing"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     },
     {
       "id": "urn:ngm:class:audio-processing",
@@ -81,14 +121,9 @@
       "slug": "signal-processing"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
+      "id": "urn:ngm:class:digital-signal-processing",
+      "label": "Digital Signal Processing",
+      "slug": "digital-signal-processing"
     }
   ],
   "inheritedRelations": {
@@ -96,6 +131,10 @@
       {
         "id": "urn:ngm:class:acoustic-model",
         "label": "Acoustic Model"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       },
       {
         "id": "urn:ngm:class:beam-search",
@@ -114,22 +153,22 @@
         "label": "Language Model"
       },
       {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
         "id": "urn:ngm:class:rnn-transducer",
         "label": "RNN Transducer"
-      },
-      {
-        "id": "urn:ngm:class:audio-codec",
-        "label": "Audio Codec"
-      },
-      {
-        "id": "urn:ngm:class:digital-signal-processing",
-        "label": "Digital Signal Processing"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:audio-signal-processing",
         "label": "Audio Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
         "id": "urn:ngm:class:gpu-computing",
@@ -140,24 +179,20 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:audio-processing",
-        "label": "Audio Processing"
+        "id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
       },
       {
-        "id": "urn:ngm:class:analogue-to-digital-conversion",
-        "label": "Analogue-to-Digital Conversion"
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
       },
       {
-        "id": "urn:ngm:class:fast-fourier-transform",
-        "label": "Fast Fourier Transform"
+        "id": "urn:ngm:class:pulse-code-modulation",
+        "label": "Pulse-Code Modulation"
       },
       {
-        "id": "urn:ngm:class:linear-algebra",
-        "label": "Linear Algebra"
-      },
-      {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
       }
     ],
     "enables": [
@@ -186,77 +221,15 @@
         "label": "Voice Interaction"
       },
       {
-        "id": "urn:ngm:class:speech-recognition",
-        "label": "Speech Recognition"
-      },
-      {
-        "id": "urn:ngm:class:text-to-speech",
-        "label": "Text-to-Speech"
-      }
-    ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:digital-signal-processing",
-        "label": "Digital Signal Processing"
-      },
-      {
-        "id": "urn:ngm:class:fourier-analysis",
-        "label": "Fourier Analysis"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:keyword-spotting",
-        "label": "Keyword Spotting"
-      },
-      {
-        "id": "urn:ngm:class:text-to-speech",
-        "label": "Text-to-Speech"
-      },
-      {
-        "id": "urn:ngm:class:image-processing",
-        "label": "Image Processing"
-      },
-      {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:spatial-audio",
-        "label": "Spatial Audio"
+        "id": "urn:ngm:class:audio-compression",
+        "label": "Audio Compression"
       },
       {
         "id": "urn:ngm:class:audio-spatialization",
         "label": "Audio Spatialization"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality",
-        "label": "Extended Reality"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:connectionist-temporal-classification",
-        "label": "Connectionist Temporal Classification"
-      },
+    "dependsOn": [
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
@@ -264,6 +237,40 @@
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:audio-parameters",
+        "label": "Audio Parameters"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
       },
       {
         "id": "urn:ngm:class:self-supervised-learning",
@@ -278,14 +285,128 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:audio-parameters",
-        "label": "Audio Parameters"
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:keyword-spotting",
+        "label": "Keyword Spotting"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:analogue-signal-processing",
+        "label": "Analogue Signal Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-validation",
+        "label": "Blockchain Validation"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:accessibility",
         "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       },
       {
         "id": "urn:ngm:class:human-computer-interaction",
@@ -300,23 +421,35 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:adaptive-music",
+        "label": "Adaptive Music"
       },
+      {
+        "id": "urn:ngm:class:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      }
+    ],
+    "standardizedBy": [
       {
         "id": "urn:ngm:class:telecommunications",
         "label": "Telecommunications"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
       },
       {
-        "id": "urn:ngm:class:motion-capture",
-        "label": "Motion Capture"
-      }
-    ],
-    "standardizedBy": [
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
       {
         "id": "urn:ngm:class:mpeg-h-audio",
         "label": "MPEG-H Audio"
@@ -330,9 +463,17 @@
       {
         "id": "urn:ngm:class:multimedia-processing",
         "label": "Multimedia Processing"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
       {
         "id": "urn:ngm:class:knowledge-distillation",
         "label": "Knowledge Distillation"
@@ -346,6 +487,10 @@
         "label": "Model Compression"
       },
       {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
         "id": "urn:ngm:class:speaker-diarisation",
         "label": "Speaker Diarisation"
       },
@@ -356,14 +501,6 @@
       {
         "id": "urn:ngm:class:word-error-rate",
         "label": "Word Error Rate"
-      },
-      {
-        "id": "urn:ngm:class:audio-processing-system",
-        "label": "Audio Processing System"
-      },
-      {
-        "id": "urn:ngm:class:music-information-retrieval",
-        "label": "Music Information Retrieval"
       }
     ]
   },

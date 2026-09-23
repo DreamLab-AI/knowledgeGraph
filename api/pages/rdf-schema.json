@@ -36,7 +36,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -67,6 +76,18 @@
         "label": "IRI"
       },
       {
+        "id": "urn:ngm:class:rdf-graph",
+        "label": "RDF Graph"
+      },
+      {
+        "id": "urn:ngm:class:rdf-literal",
+        "label": "RDF Literal"
+      },
+      {
+        "id": "urn:ngm:class:rdf-triple",
+        "label": "RDF Triple"
+      },
+      {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
       },
@@ -81,18 +102,6 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
       }
     ],
     "requires": [
@@ -139,6 +148,10 @@
         "label": "Linked Data"
       },
       {
+        "id": "urn:ngm:class:ontological-reasoning",
+        "label": "Ontological Reasoning"
+      },
+      {
         "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
@@ -153,10 +166,6 @@
       {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
       }
     ],
     "implements": [
@@ -205,7 +214,7 @@
         "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -215,12 +224,32 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:rdfs",
+        "label": "RDFS"
       },
       {
         "id": "urn:ngm:class:sparql",
@@ -245,10 +274,6 @@
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
-      },
-      {
-        "id": "urn:ngm:class:semantic-network",
-        "label": "Semantic Network"
       }
     ],
     "supports": [

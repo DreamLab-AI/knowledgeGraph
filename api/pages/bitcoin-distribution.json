@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
       "label": "Bitcoin Proof-of-Work Protocol"
+    },
+    {
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
     }
   ],
   "entityType": "Class",
@@ -44,6 +64,26 @@
       {
         "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:whale-addresses",
+        "label": "Whale Addresses"
+      },
+      {
+        "id": "urn:ngm:class:short-term-holders",
+        "label": "Short-Term Holders"
+      },
+      {
+        "id": "urn:ngm:class:long-term-holders",
+        "label": "Long-Term Holders"
+      },
+      {
+        "id": "urn:ngm:class:lost-coins",
+        "label": "Lost Coins"
+      },
+      {
+        "id": "urn:ngm:class:dormant-supply",
+        "label": "Dormant Supply"
       }
     ],
     "requires": [
@@ -70,6 +110,10 @@
       {
         "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-addresses",
+        "label": "Cryptographic Addresses"
       }
     ],
     "enables": [
@@ -104,9 +148,42 @@
       {
         "id": "urn:ngm:class:micro-strategy",
         "label": "MicroStrategy"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Scarcity"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-addresses",
+        "label": "Cryptographic Addresses"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-halving",
+        "label": "Bitcoin Halving"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-halving",
@@ -133,7 +210,28 @@
         "label": "Bitcoin ETF"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-centralisation-risks",
+        "label": "Bitcoin Centralisation Risks"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-as-a-service",
+        "label": "Blockchain As A Service"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -147,6 +245,18 @@
       {
         "id": "urn:ngm:class:chainalysis",
         "label": "Chainalysis"
+      },
+      {
+        "id": "urn:ngm:class:glassnode",
+        "label": "Glassnode"
+      },
+      {
+        "id": "urn:ngm:class:bitinfocharts",
+        "label": "BitInfoCharts"
+      },
+      {
+        "id": "urn:ngm:class:cryptoquant",
+        "label": "CryptoQuant"
       }
     ],
     "supports": [
@@ -247,9 +357,39 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:austrian-economics",
+      "label": "Austrian Economics",
+      "slug": "austrian-economics"
+    },
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-sustainability",
+      "label": "Blockchain Sustainability",
+      "slug": "blockchain-sustainability"
+    },
+    {
+      "id": "urn:ngm:class:climate-finance",
+      "label": "Climate Finance",
+      "slug": "climate-finance"
+    },
+    {
+      "id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism",
+      "slug": "consensus-mechanism"
     },
     {
       "id": "urn:ngm:class:cryptocurrency",
@@ -257,14 +397,434 @@
       "slug": "cryptocurrency"
     },
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component (Blockchain)",
-      "slug": "bc-network-component"
+      "id": "urn:ngm:class:cryptocurrency-economics",
+      "label": "Cryptocurrency Economics",
+      "slug": "cryptocurrency-economics"
     },
     {
-      "id": "urn:ngm:class:bc-token-and-asset",
-      "label": "Token and Asset",
-      "slug": "bc-token-and-asset"
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol",
+      "slug": "cryptographic-protocol"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset",
+      "slug": "digital-asset"
+    },
+    {
+      "id": "urn:ngm:class:digital-asset-ecology",
+      "label": "Digital Asset Ecology",
+      "slug": "digital-asset-ecology"
+    },
+    {
+      "id": "urn:ngm:class:digital-asset-economics",
+      "label": "Digital Asset Economics",
+      "slug": "digital-asset-economics"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
+      "id": "urn:ngm:class:economic-philosophy",
+      "label": "Economic Philosophy",
+      "slug": "economic-philosophy"
+    },
+    {
+      "id": "urn:ngm:class:energy-economics",
+      "label": "Energy Economics",
+      "slug": "energy-economics"
+    },
+    {
+      "id": "urn:ngm:class:environmental-assessment",
+      "label": "Environmental Assessment",
+      "slug": "environmental-assessment"
+    },
+    {
+      "id": "urn:ngm:class:monetary-theory",
+      "label": "Monetary Theory",
+      "slug": "monetary-theory"
+    },
+    {
+      "id": "urn:ngm:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network",
+      "slug": "peer-to-peer-network"
+    },
+    {
+      "id": "urn:ngm:class:sound-money",
+      "label": "Sound Money",
+      "slug": "sound-money"
+    },
+    {
+      "id": "urn:ngm:class:store-of-value",
+      "label": "Store of Value",
+      "slug": "store-of-value"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:atomic-broadcast",
+      "label": "Atomic Broadcast",
+      "slug": "atomic-broadcast"
+    },
+    {
+      "id": "urn:ngm:class:bearer-instrument",
+      "label": "Bearer Instrument",
+      "slug": "bearer-instrument"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance",
+      "slug": "byzantine-fault-tolerance"
+    },
+    {
+      "id": "urn:ngm:class:coordination-protocol",
+      "label": "Coordination Protocol",
+      "slug": "coordination-protocol"
+    },
+    {
+      "id": "urn:ngm:class:cryptoasset",
+      "label": "Cryptoasset",
+      "slug": "cryptoasset"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-algorithm",
+      "label": "Distributed Algorithm",
+      "slug": "distributed-algorithm"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-native-token",
+      "label": "Distributed Ledger Native Token",
+      "slug": "distributed-ledger-native-token"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics",
+      "slug": "economics"
+    },
+    {
+      "id": "urn:ngm:class:economics-domain",
+      "label": "Economics Domain",
+      "slug": "economics-domain"
+    },
+    {
+      "id": "urn:ngm:class:green-finance",
+      "label": "Green Finance",
+      "slug": "green-finance"
+    },
+    {
+      "id": "urn:ngm:class:monetary-system",
+      "label": "Monetary System",
+      "slug": "monetary-system"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:networkcomponent",
+      "label": "Networkcomponent",
+      "slug": "networkcomponent"
+    },
+    {
+      "id": "urn:ngm:class:permissionless-asset",
+      "label": "Permissionless Asset",
+      "slug": "permissionless-asset"
+    },
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety",
+      "slug": "sc-governance-and-safety"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:behavioural-economics",
+      "label": "Behavioural Economics",
+      "slug": "behavioural-economics"
+    },
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol",
+      "slug": "communication-protocol"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-agreement",
+      "label": "Distributed Agreement",
+      "slug": "distributed-agreement"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:financial-system",
+      "label": "Financial System",
+      "slug": "financial-system"
+    },
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory",
+      "slug": "information-theory"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:institutional-economics",
+      "label": "Institutional Economics",
+      "slug": "institutional-economics"
+    },
+    {
+      "id": "urn:ngm:class:political-economy",
+      "label": "Political Economy",
+      "slug": "political-economy"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:social-science",
+      "label": "Social Science",
+      "slug": "social-science"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:sustainable-finance",
+      "label": "Sustainable Finance",
+      "slug": "sustainable-finance"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:communication-infrastructure",
+      "label": "Communication Infrastructure",
+      "slug": "communication-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation",
+      "slug": "financial-regulation"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:human-robot-interaction",
+      "label": "Human Robot Interaction",
+      "slug": "human-robot-interaction"
+    },
+    {
+      "id": "urn:ngm:class:information-architecture",
+      "label": "Information Architecture",
+      "slug": "information-architecture"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure",
+      "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-organization-system",
+      "label": "Knowledge Organization System",
+      "slug": "knowledge-organization-system"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:roboticsdomain",
+      "label": "RoboticsDomain",
+      "slug": "roboticsdomain"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -304,36 +864,36 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
       },
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
       },
       {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
       },
       {
-        "id": "urn:ngm:class:proof-of-stake",
-        "label": "Proof of Stake"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof Of Work"
-      },
-      {
-        "id": "urn:ngm:class:sybil-resistance",
-        "label": "Sybil Resistance"
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
       }
     ],
     "enables": [
@@ -342,50 +902,100 @@
         "label": "Bitcoin Standard"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:layer-2-protocols",
+        "label": "Layer 2 Protocols"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
       },
       {
-        "id": "urn:ngm:class:censorship-resistance",
-        "label": "Censorship Resistance"
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
       },
       {
-        "id": "urn:ngm:class:cross-border-transfer",
-        "label": "Cross-Border Transfer"
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:trustless-payments",
+        "label": "Trustless Payments"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:network-theory",
+        "label": "Network Theory"
+      },
+      {
+        "id": "urn:ngm:class:asic-hardware",
+        "label": "ASIC Mining Hardware"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:double-spend-prevention",
-        "label": "Double-Spending Prevention"
+        "id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
       },
       {
-        "id": "urn:ngm:class:emission-schedule",
-        "label": "Predictable Issuance Schedule"
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
       },
       {
-        "id": "urn:ngm:class:hard-money",
-        "label": "Hard Money Property"
+        "id": "urn:ngm:class:halving-schedule",
+        "label": "Halving Schedule"
       },
       {
-        "id": "urn:ngm:class:trustless-settlement",
-        "label": "Trustless Settlement"
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:austrian-economics",
+        "label": "Austrian Economics"
       }
     ],
     "contrastsWith": [
@@ -394,8 +1004,66 @@
         "label": "51% Attack"
       },
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-centralisation-risks",
-        "label": "Bitcoin Centralisation Risks"
+        "id": "urn:ngm:class:account-model",
+        "label": "Account Model"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:austrian-economics",
+        "label": "Austrian Economics"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:environmental-verification",
+        "label": "Environmental Impact Verification"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralised Finance"
       }
     ],
     "uses": [
@@ -420,68 +1088,118 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:bip-32-hd-wallet",
-        "label": "BIP-32 HD Wallet"
+        "id": "urn:ngm:class:bloom-filter",
+        "label": "Bloom Filter"
       },
       {
-        "id": "urn:ngm:class:bip-39-mnemonic",
-        "label": "BIP-39 Mnemonic"
+        "id": "urn:ngm:class:bloom-filters",
+        "label": "Bloom Filters"
       },
       {
-        "id": "urn:ngm:class:ecdsa",
-        "label": "ECDSA"
+        "id": "urn:ngm:class:compact-block-relay",
+        "label": "Compact Block Relay"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Neural Network Text Tokenisation"
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
       },
       {
-        "id": "urn:ngm:class:non-fungible-token",
-        "label": "Non-Fungible Token"
+        "id": "urn:ngm:class:ordinals",
+        "label": "Ordinals"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:payment-channels",
+        "label": "Payment Channels"
       },
       {
-        "id": "urn:ngm:class:stablecoin",
-        "label": "Stablecoin"
+        "id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
       },
       {
-        "id": "urn:ngm:class:web3",
-        "label": "Web3"
+        "id": "urn:ngm:class:seg-wit",
+        "label": "SegWit"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:time-locked-contracts",
+        "label": "Time-locked Contracts"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "id": "urn:ngm:class:bip-341",
+        "label": "BIP-341"
+      },
+      {
+        "id": "urn:ngm:class:bip-342",
+        "label": "BIP-342"
+      },
+      {
+        "id": "urn:ngm:class:bip-process",
+        "label": "BIP Process"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-optech",
+        "label": "Bitcoin Optech"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "id": "urn:ngm:class:bolt-specifications",
+        "label": "BOLT Specifications"
+      },
+      {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposals"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Request for Comments"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:fasb-asu-2023-08",
-        "label": "FASB ASU 2023-08"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:fatf-travel-rule",
-        "label": "FATF Travel Rule"
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
       },
       {
-        "id": "urn:ngm:class:iso-24165",
-        "label": "ISO 24165 Digital Token Identifier"
+        "id": "urn:ngm:class:functions-of-money",
+        "label": "Functions of Money"
       },
       {
-        "id": "urn:ngm:class:mi-ca-regulation",
-        "label": "MiCA Regulation"
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
       }
     ],
     "relatedTo": [

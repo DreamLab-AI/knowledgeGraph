@@ -220,6 +220,10 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
       },

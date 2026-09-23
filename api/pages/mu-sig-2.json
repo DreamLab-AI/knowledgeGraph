@@ -29,12 +29,28 @@
       {
         "id": "urn:ngm:class:key-aggregation",
         "label": "Key Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:nonce-commitment",
+        "label": "Nonce Commitment"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:taproot",
         "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signatures"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving",
+        "label": "Privacy-Preserving Transactions"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Collaborative Custody"
       },
       {
         "id": "urn:ngm:class:threshold-signature-scheme",
@@ -60,6 +76,18 @@
       {
         "id": "urn:ngm:class:shamir-secret-sharing",
         "label": "Shamir Secret Sharing"
+      },
+      {
+        "id": "urn:ngm:class:musig",
+        "label": "MuSig"
+      },
+      {
+        "id": "urn:ngm:class:frost",
+        "label": "FROST"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa-multisig",
+        "label": "ECDSA Multisig"
       }
     ],
     "bridgesTo": [
@@ -84,6 +112,10 @@
       {
         "id": "urn:ngm:class:random-oracle-model",
         "label": "Random Oracle Model"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
       }
     ],
     "supports": [
@@ -98,9 +130,17 @@
       {
         "id": "urn:ngm:class:hardware-wallet",
         "label": "Hardware Wallet"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Collaborative Custody"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposal"
+      },
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposal"
@@ -115,6 +155,18 @@
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:adaptor-signatures",
+        "label": "Adaptor Signatures"
+      },
+      {
+        "id": "urn:ngm:class:discrete-logarithm",
+        "label": "Discrete Logarithm"
+      },
+      {
+        "id": "urn:ngm:class:script-less-contracts",
+        "label": "Script-less Contracts"
       }
     ]
   },
@@ -140,9 +192,24 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -187,12 +254,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:private-key",
-        "label": "Private Key"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
       },
       {
         "id": "urn:ngm:class:quorum-threshold",
@@ -211,12 +278,12 @@
         "label": "Trapdoor Function"
       },
       {
-        "id": "urn:ngm:class:encryption-scheme",
-        "label": "Encryption Scheme"
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital-Signature"
       },
       {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
+        "id": "urn:ngm:class:encryption-scheme",
+        "label": "Encryption Scheme"
       }
     ],
     "enables": [
@@ -277,6 +344,14 @@
       {
         "id": "urn:ngm:class:number-theory",
         "label": "Number Theory"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
       }
     ],
     "implements": [
@@ -343,8 +418,8 @@
         "label": "Steganography"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
       }
     ],
     "bridgesTo": [
@@ -373,7 +448,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -385,10 +460,6 @@
       {
         "id": "urn:ngm:class:digital-signatures",
         "label": "Digital Signatures"
-      },
-      {
-        "id": "urn:ngm:class:elliptic-curve-cryptography",
-        "label": "Elliptic Curve Cryptography"
       },
       {
         "id": "urn:ngm:class:key-management",
@@ -413,6 +484,10 @@
       {
         "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
       }
     ],
     "supports": [
@@ -421,7 +496,7 @@
         "label": "Secure Email"
       },
       {
-        "id": "urn:ngm:class:transport-layer-security",
+        "id": "urn:ngm:class:tls",
         "label": "Transport Layer Security"
       },
       {
@@ -467,8 +542,20 @@
         "label": "ISO/IEC"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD Principles on AI"
       }
     ],
     "partOf": [

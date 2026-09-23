@@ -209,6 +209,10 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
       },
@@ -227,6 +231,14 @@
       {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [

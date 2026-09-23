@@ -10,6 +10,14 @@
     {
       "id": "urn:ngm:class:optimisation",
       "label": "Optimisation"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-optimisation",
+      "label": "Mathematical Optimisation"
+    },
+    {
+      "id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm"
     }
   ],
   "entityType": "Class",
@@ -20,9 +28,70 @@
       {
         "id": "urn:ngm:class:search-algorithm",
         "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:fitness-function",
+        "label": "Fitness Function"
+      },
+      {
+        "id": "urn:ngm:class:selection",
+        "label": "Selection"
+      },
+      {
+        "id": "urn:ngm:class:crossover",
+        "label": "Crossover"
+      },
+      {
+        "id": "urn:ngm:class:mutation",
+        "label": "Mutation"
+      },
+      {
+        "id": "urn:ngm:class:population",
+        "label": "Population"
+      },
+      {
+        "id": "urn:ngm:class:evolution-strategy",
+        "label": "Evolution Strategy"
+      },
+      {
+        "id": "urn:ngm:class:genetic-programming",
+        "label": "Genetic Programming"
+      },
+      {
+        "id": "urn:ngm:class:neuroevolution",
+        "label": "Neuroevolution"
+      },
+      {
+        "id": "urn:ngm:class:differential-evolution",
+        "label": "Differential Evolution"
+      },
+      {
+        "id": "urn:ngm:class:quality-diversity-algorithm",
+        "label": "Quality Diversity Algorithm"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fitness-function",
+        "label": "Fitness Function"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:population-representation",
+        "label": "Population Representation"
+      },
+      {
+        "id": "urn:ngm:class:fitness-landscape",
+        "label": "Fitness Landscape"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -35,10 +104,60 @@
       {
         "id": "urn:ngm:class:neural-architecture-search",
         "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "id": "urn:ngm:class:neuroevolution",
+        "label": "Neuroevolution"
+      },
+      {
+        "id": "urn:ngm:class:algorithm-design",
+        "label": "Algorithm Design"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "id": "urn:ngm:class:fitness-landscape",
+        "label": "Fitness Landscape"
+      },
+      {
+        "id": "urn:ngm:class:population-diversity",
+        "label": "Population Diversity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:metaheuristic",
+        "label": "Metaheuristic"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:stochastic-gradient-descent",
@@ -51,6 +170,18 @@
       {
         "id": "urn:ngm:class:bayesian-optimisation",
         "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "bridgesTo": [],
@@ -58,11 +189,27 @@
       {
         "id": "urn:ngm:class:sampling",
         "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:recombination",
+        "label": "Recombination"
+      },
+      {
+        "id": "urn:ngm:class:mutation-operator",
+        "label": "Mutation Operator"
+      },
+      {
+        "id": "urn:ngm:class:selection-pressure",
+        "label": "Selection Pressure"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -72,9 +219,34 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:material-science",
+        "label": "Materials Science"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-transactions-on-evolutionary-computation",
+        "label": "IEEE Transactions on Evolutionary Computation"
+      },
+      {
+        "id": "urn:ngm:class:gecco",
+        "label": "GECCO"
+      },
+      {
+        "id": "urn:ngm:class:ppsn",
+        "label": "PPSN"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:optimisation",
@@ -93,29 +265,48 @@
       {
         "id": "urn:ngm:class:swarm-intelligence",
         "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:particle-swarm-optimisation",
+        "label": "Particle Swarm Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:ant-colony-optimisation",
+        "label": "Ant Colony Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ]
   },
   "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:mathematical-foundations",
-      "label": "Mathematical Foundations",
-      "slug": "mathematical-foundations"
-    },
-    {
-      "id": "urn:ngm:class:mathematical-science",
-      "label": "Mathematical Science",
-      "slug": "mathematical-science"
-    },
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-foundations",
+      "label": "Mathematical Foundations",
+      "slug": "mathematical-foundations"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -123,14 +314,19 @@
       "slug": "artificial-intelligence"
     },
     {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -152,6 +348,10 @@
         "label": "Linear Programming"
       },
       {
+        "id": "urn:ngm:class:informed-search",
+        "label": "Informed Search"
+      },
+      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
       },
@@ -162,10 +362,6 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
       }
     ],
     "requires": [
@@ -182,12 +378,8 @@
         "label": "Objective Function"
       },
       {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:state-space",
+        "label": "State Space"
       },
       {
         "id": "urn:ngm:class:computational-infrastructure",
@@ -198,8 +390,12 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       }
     ],
     "enables": [
@@ -208,7 +404,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -220,20 +416,20 @@
         "label": "Optimal Control"
       },
       {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
       },
       {
-        "id": "urn:ngm:class:formal-verification",
-        "label": "Formal Verification"
+        "id": "urn:ngm:class:game-playing",
+        "label": "Game Playing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
       },
       {
-        "id": "urn:ngm:class:optimisation-algorithm",
-        "label": "Optimization Algorithm"
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
       }
     ],
     "dependsOn": [
@@ -244,6 +440,64 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:a-star-algorithm",
+        "label": "A* Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:depth-first-search",
+        "label": "Depth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       }
     ],
     "contrastsWith": [
@@ -252,22 +506,54 @@
         "label": "Satisfiability"
       },
       {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
       {
         "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:route-planning",
+        "label": "Route Planning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -284,16 +570,24 @@
         "label": "Probability Theory"
       },
       {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      },
+      {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
-      },
-      {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ],
     "supports": [
@@ -330,6 +624,18 @@
         "label": "Cryptography"
       }
     ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:game-theory",
@@ -340,16 +646,20 @@
         "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:mathematical-hard-problems",
-        "label": "Mathematical Hard Problems"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:mathematical-reasoning",
-        "label": "Mathematical Reasoning"
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Complexity Theory"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:constraint",
+        "label": "Constraint"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       },
       {
         "id": "urn:ngm:class:ai-governance",
@@ -358,10 +668,6 @@
       {
         "id": "urn:ngm:class:ai-technique",
         "label": "AI Technique"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
       }
     ]
   },

@@ -10,13 +10,30 @@
     {
       "id": "urn:ngm:class:optimisation-algorithm",
       "label": "Optimization Algorithm"
+    },
+    {
+      "id": "urn:ngm:class:black-box-optimisation",
+      "label": "Black-Box Optimisation"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:expected-improvement",
+        "label": "Expected Improvement"
+      },
+      {
+        "id": "urn:ngm:class:upper-confidence-bound",
+        "label": "Upper Confidence Bound"
+      },
+      {
+        "id": "urn:ngm:class:thompson-sampling",
+        "label": "Thompson Sampling"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:surrogate-model",
@@ -25,6 +42,14 @@
       {
         "id": "urn:ngm:class:probabilistic-inference",
         "label": "Probabilistic Inference"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:kernel-function",
+        "label": "Kernel Function"
       }
     ],
     "enables": [
@@ -51,10 +76,36 @@
       {
         "id": "urn:ngm:class:experimental-design",
         "label": "Experimental Design"
+      },
+      {
+        "id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo",
+        "label": "Monte Carlo"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration-Exploitation Trade-off"
+      },
+      {
+        "id": "urn:ngm:class:regret-minimisation",
+        "label": "Regret Minimisation"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:grid-search",
@@ -90,11 +141,19 @@
       {
         "id": "urn:ngm:class:kernel-function",
         "label": "Kernel Function"
+      },
+      {
+        "id": "urn:ngm:class:deep-kernel-learning",
+        "label": "Deep Kernel Learning"
+      },
+      {
+        "id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -104,9 +163,26 @@
       {
         "id": "urn:ngm:class:material-science",
         "label": "Materials Science"
+      },
+      {
+        "id": "urn:ngm:class:material-science",
+        "label": "Materials Science"
+      },
+      {
+        "id": "urn:ngm:class:protein-engineering",
+        "label": "Protein Engineering"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:botorch",
+        "label": "BoTorch"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -132,6 +208,26 @@
       {
         "id": "urn:ngm:class:information-theory",
         "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration-Exploitation Trade-off"
+      },
+      {
+        "id": "urn:ngm:class:bandit-algorithm",
+        "label": "Bandit Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:trust-region-method",
+        "label": "Trust Region Method"
+      },
+      {
+        "id": "urn:ngm:class:optimality",
+        "label": "Pareto Optimality"
       }
     ]
   },
@@ -227,7 +323,7 @@
         "label": "Hyperparameter Optimisation"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {
@@ -293,6 +389,22 @@
       {
         "id": "urn:ngm:class:operations-research",
         "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

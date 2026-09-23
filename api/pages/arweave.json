@@ -16,11 +16,32 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:smartweave",
+        "label": "SmartWeave"
+      },
+      {
+        "id": "urn:ngm:class:ao-compute",
+        "label": "AO Compute"
+      },
+      {
+        "id": "urn:ngm:class:bundlr-network",
+        "label": "Bundlr Network"
+      },
+      {
+        "id": "urn:ngm:class:blockweave",
+        "label": "Blockweave"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:ar-token",
+        "label": "AR Token"
       }
     ],
     "enables": [
@@ -67,6 +88,10 @@
       {
         "id": "urn:ngm:class:object-storage",
         "label": "Cloud Object Storage"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Cloud Object Storage"
       }
     ],
     "bridgesTo": [
@@ -103,6 +128,10 @@
       {
         "id": "urn:ngm:class:merkle-dag",
         "label": "Merkle DAG"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-access",
+        "label": "Proof Of Access"
       }
     ],
     "supports": [],
@@ -118,21 +147,16 @@
         "label": "Web3"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     }
   ],
   "inheritedRelations": {
@@ -146,28 +170,24 @@
         "label": "Storage Node"
       },
       {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
+      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
       },
       {
-        "id": "urn:ngm:class:data-lake",
-        "label": "Data Lake"
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:data-storage",
-        "label": "Data Storage"
-      },
-      {
-        "id": "urn:ngm:class:database-system",
-        "label": "Database System"
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
       }
     ],
     "requires": [
@@ -176,16 +196,16 @@
         "label": "Cryptographic Hash"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "enables": [
@@ -202,24 +222,20 @@
         "label": "User Sovereignty"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [
@@ -244,8 +260,8 @@
         "label": "Centralised Cloud Storage"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -262,12 +278,8 @@
         "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
       }
     ],
     "uses": [
@@ -290,16 +302,16 @@
         "label": "Persistent Storage"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "standardizedBy": [
@@ -308,12 +320,12 @@
         "label": "IEEE"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
       }
     ],
     "partOf": [
@@ -336,24 +348,20 @@
         "label": "Storj"
       },
       {
-        "id": "urn:ngm:class:infra-computing-and-cloud",
-        "label": "Computing and Cloud"
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       }
     ]
   },

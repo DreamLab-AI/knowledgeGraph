@@ -99,6 +99,11 @@
       "slug": "ai-model-architecture"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning",
       "slug": "deep-learning"
@@ -107,16 +112,6 @@
       "id": "urn:ngm:class:generative-model",
       "label": "Generative Model",
       "slug": "generative-model"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:machine-learning-discipline",
@@ -129,6 +124,11 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
@@ -137,46 +137,62 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      },
+      {
+        "id": "urn:ngm:class:forward-diffusion-process",
+        "label": "Forward Diffusion Process"
+      },
+      {
+        "id": "urn:ngm:class:latent-encoder",
+        "label": "Latent Encoder"
+      },
+      {
         "id": "urn:ngm:class:noise-schedule",
         "label": "Noise Schedule"
+      },
+      {
+        "id": "urn:ngm:class:reverse-diffusion-process",
+        "label": "Reverse Diffusion Process"
       },
       {
         "id": "urn:ngm:class:score-function",
         "label": "Score Function"
       },
       {
-        "id": "urn:ngm:class:diffusion-models",
-        "label": "Diffusion Models"
-      },
-      {
-        "id": "urn:ngm:class:gan",
-        "label": "GAN"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:vae",
-        "label": "VAE"
+        "id": "urn:ngm:class:u-net-backbone",
+        "label": "U-Net Backbone"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
         "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:noise-prediction-network",
+        "label": "Noise Prediction Network"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -185,25 +201,13 @@
       {
         "id": "urn:ngm:class:large-scale-datasets",
         "label": "Large-Scale Datasets"
-      },
-      {
-        "id": "urn:ngm:class:model-architecture",
-        "label": "Model Architecture"
-      },
-      {
-        "id": "urn:ngm:class:neural-network-training",
-        "label": "Neural Network Training"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning-framework",
-        "label": "Deep Learning Framework"
-      },
-      {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:3d-asset-generation",
+        "label": "3D Asset Generation"
+      },
       {
         "id": "urn:ngm:class:audio-synthesis",
         "label": "Audio Synthesis"
@@ -221,45 +225,69 @@
         "label": "Image Generation"
       },
       {
-        "id": "urn:ngm:class:text-to-image",
-        "label": "Text-to-Image"
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging Synthesis"
       },
       {
-        "id": "urn:ngm:class:video-generation",
-        "label": "Video Generation"
+        "id": "urn:ngm:class:protein-structure-design",
+        "label": "Protein Structure Design"
       },
       {
-        "id": "urn:ngm:class:ai-art-generation",
-        "label": "AI Art"
-      },
-      {
-        "id": "urn:ngm:class:automated-design",
-        "label": "Automated Design"
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:unsupervised-learning",
-        "label": "Unsupervised Learning"
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:denoising-objective",
+        "label": "Denoising Objective"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:score-matching",
+        "label": "Score Matching"
+      },
+      {
+        "id": "urn:ngm:class:variational-lower-bound",
+        "label": "Variational Lower Bound"
+      },
       {
         "id": "urn:ngm:class:audio-generation",
         "label": "Audio Generation"
@@ -275,28 +303,16 @@
       {
         "id": "urn:ngm:class:text-generation",
         "label": "Text Generation"
-      },
-      {
-        "id": "urn:ngm:class:video-generation",
-        "label": "Video Generation"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
-      },
-      {
-        "id": "urn:ngm:class:self-supervised-learning",
-        "label": "Self-Supervised Learning"
-      },
-      {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:autoregressive-model",
         "label": "Autoregressive Model"
+      },
+      {
+        "id": "urn:ngm:class:energy-based-model",
+        "label": "Energy-Based Model"
       },
       {
         "id": "urn:ngm:class:generative-adversarial-network",
@@ -307,26 +323,30 @@
         "label": "Normalising Flow"
       },
       {
-        "id": "urn:ngm:class:variational-autoencoder",
+        "id": "urn:ngm:class:vae",
         "label": "Variational Autoencoder"
       },
       {
-        "id": "urn:ngm:class:discriminative-model",
-        "label": "Discriminative Model"
-      },
-      {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
       },
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:discriminative-model",
+        "label": "Discriminative Model"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -337,16 +357,20 @@
         "label": "Synthetic Data"
       },
       {
-        "id": "urn:ngm:class:content-creation",
-        "label": "Content Creation"
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "uses": [
@@ -359,31 +383,55 @@
         "label": "Classifier-Free Guidance"
       },
       {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:rectified-flow",
+        "label": "Rectified Flow"
+      },
+      {
+        "id": "urn:ngm:class:text-encoder",
+        "label": "CLIP Text Encoder"
       },
       {
         "id": "urn:ngm:class:u-net",
         "label": "U-Net"
       },
       {
-        "id": "urn:ngm:class:variational-autoencoder",
+        "id": "urn:ngm:class:vae",
         "label": "Variational Autoencoder"
-      },
-      {
-        "id": "urn:ngm:class:vision-transformer",
-        "label": "Vision Transformer"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
-      },
-      {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:ai-watermarking",
+        "label": "AI Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa-standard",
+        "label": "C2PA Standard"
+      },
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
@@ -393,10 +441,40 @@
         "label": "Decision Support System"
       }
     ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2pa-coalition-for-content-provenance-and-authenticity",
+        "label": "C2PA Coalition for Content Provenance and Authenticity"
+      },
+      {
+        "id": "urn:ngm:class:mlcommons",
+        "label": "MLCommons MLPerf"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
       {
         "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:markov-chain",
@@ -407,24 +485,16 @@
         "label": "Multimodal Model"
       },
       {
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
+      },
+      {
+        "id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-Based Generative Model"
+      },
+      {
         "id": "urn:ngm:class:stochastic-differential-equation",
         "label": "Stochastic Differential Equation"
-      },
-      {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
-      },
-      {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
       }
     ]
   },

@@ -38,6 +38,10 @@
       {
         "id": "urn:ngm:class:data-schema",
         "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-acquisition",
+        "label": "Knowledge Acquisition"
       }
     ],
     "enables": [
@@ -91,6 +95,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-knowledge-graph",
+        "label": "Decentralised Knowledge Graph"
       }
     ],
     "uses": [
@@ -126,6 +134,10 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
       }
     ]
   },
@@ -256,6 +268,18 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -333,7 +357,7 @@
     },
     {
       "slug": "complete-ontology-index",
-      "label": "COMPLETE ONTOLOGY [private]"
+      "label": "COMPLETE ONTOLOGY INDEX"
     },
     {
       "slug": "call-centres",

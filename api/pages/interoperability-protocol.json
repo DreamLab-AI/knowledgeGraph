@@ -72,6 +72,10 @@
       {
         "id": "urn:ngm:class:vendor-lock-in",
         "label": "Vendor Lock-In"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "Proprietary API"
       }
     ],
     "bridgesTo": [
@@ -155,6 +159,14 @@
       {
         "id": "urn:ngm:class:decentralised-identifier",
         "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
       }
     ]
   },
@@ -177,12 +189,12 @@
         "label": "Protocol Stack"
       },
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -225,6 +237,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:data-transmission",
+        "label": "Data Transmission"
+      },
+      {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
       },
@@ -251,10 +267,6 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
       }
     ],
     "dependsOn": [
@@ -369,7 +381,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

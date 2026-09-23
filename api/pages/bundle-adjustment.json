@@ -24,6 +24,10 @@
       {
         "id": "urn:ngm:class:levenberg-marquardt-algorithm",
         "label": "Levenberg-Marquardt Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:schur-complement-elimination",
+        "label": "Schur Complement Elimination"
       }
     ],
     "requires": [
@@ -56,11 +60,27 @@
       {
         "id": "urn:ngm:class:point-cloud",
         "label": "Dense Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Dense Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:map-building",
+        "label": "Map Building"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "Incremental Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:pose-graph",
+        "label": "Pose Graph Optimisation"
+      },
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "Incremental Reconstruction"
@@ -78,12 +98,24 @@
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:sparse-matrix",
         "label": "Sparse Matrix"
+      },
+      {
+        "id": "urn:ngm:class:ceres-solver",
+        "label": "Ceres Solver"
+      },
+      {
+        "id": "urn:ngm:class:sift-features",
+        "label": "SIFT Features"
       }
     ],
     "supports": [],
@@ -189,6 +221,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

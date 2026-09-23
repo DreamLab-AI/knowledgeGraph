@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ifrs-s1",
   "domain": "governance",
-  "definition": "IFRS S1 is the inaugural sustainability-disclosure standard issued by the International Sustainability Standards Board, setting general requirements for disclosing sustainability-related financial information. It requires entities to report material risks and opportunities across governance, strategy, risk management, and metrics that [private] affect their prospects. IFRS S1 establishes the common baseline on which topic-specific standards such as IFRS S2 build.",
+  "definition": "IFRS S1 is the inaugural sustainability-disclosure standard issued by the International Sustainability Standards Board, setting general requirements for disclosing sustainability-related financial information. It requires entities to report material risks and opportunities across governance, strategy, risk management, and metrics that could affect their prospects. IFRS S1 establishes the common baseline on which topic-specific standards such as IFRS S2 build.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",
@@ -44,6 +44,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -144,8 +149,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -236,6 +249,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -254,8 +273,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -264,10 +287,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

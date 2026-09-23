@@ -123,7 +123,7 @@
         "label": "Self-Sovereign Identity"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ]
@@ -157,6 +157,10 @@
         "label": "Signature Verification"
       },
       {
+        "id": "urn:ngm:class:revocation-check",
+        "label": "Revocation Check"
+      },
+      {
         "id": "urn:ngm:class:schema-validation",
         "label": "Schema Validation"
       },
@@ -173,26 +177,22 @@
         "label": "Directory Services"
       },
       {
+        "id": "urn:ngm:class:identity-governance-and-administration",
+        "label": "Identity Governance and Administration"
+      },
+      {
         "id": "urn:ngm:class:privileged-access-management",
         "label": "Privileged Access Management"
-      },
-      {
-        "id": "urn:ngm:class:access-control",
-        "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-signature",
-        "label": "Cryptographic Signature"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
       },
       {
         "id": "urn:ngm:class:trust-anchor",
@@ -383,6 +383,10 @@
         "label": "Zero-Knowledge Proof"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
@@ -393,10 +397,6 @@
       {
         "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
-      },
-      {
-        "id": "urn:ngm:class:open-id-connect",
-        "label": "OpenID Connect"
       }
     ],
     "supports": [
@@ -459,6 +459,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:decentralized-identity",
@@ -469,7 +475,7 @@
         "label": "Digital Identity"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -477,20 +483,20 @@
         "label": "Mobile Driving Licence"
       },
       {
+        "id": "urn:ngm:class:biometrics",
+        "label": "Biometrics"
+      },
+      {
         "id": "urn:ngm:class:federation",
         "label": "Federation"
       },
       {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
         "id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"
-      },
-      {
-        "id": "urn:ngm:class:threat-model",
-        "label": "Threat Model"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ]
   },

@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
+    },
+    {
+      "id": "urn:ngm:class:stable-diffusion-frontend",
+      "label": "Stable Diffusion Frontend"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai-application",
+      "label": "Generative AI Application"
+    },
+    {
+      "id": "urn:ngm:class:open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "id": "urn:ngm:class:local-image-generation-interface",
+      "label": "Local Image Generation Interface"
+    },
+    {
+      "id": "urn:ngm:class:gradio-application",
+      "label": "Gradio Application"
     }
   ],
   "entityType": "Class",
@@ -24,6 +44,46 @@
       {
         "id": "urn:ngm:class:control-net",
         "label": "PyraCanny ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:gradio-web-ui",
+        "label": "Gradio Web UI"
+      },
+      {
+        "id": "urn:ngm:class:prompt-expansion-engine",
+        "label": "Prompt Expansion Engine"
+      },
+      {
+        "id": "urn:ngm:class:style-preset-library",
+        "label": "Style Preset Library"
+      },
+      {
+        "id": "urn:ngm:class:automatic-refiner-scheduler",
+        "label": "Automatic Refiner Scheduler"
+      },
+      {
+        "id": "urn:ngm:class:inpaint-pipeline",
+        "label": "Inpaint Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:ip-adapter",
+        "label": "Image Prompt IP-Adapter Module"
+      },
+      {
+        "id": "urn:ngm:class:faceswap-module",
+        "label": "Faceswap Module"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "PyraCanny ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:automatic-freeu-module",
+        "label": "Automatic FreeU Module"
+      },
+      {
+        "id": "urn:ngm:class:lora-blending-module",
+        "label": "LoRA Blending Module"
       }
     ],
     "requires": [
@@ -42,6 +102,22 @@
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion XL"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion XL"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA Toolkit"
+      },
+      {
+        "id": "urn:ngm:class:gradio-framework",
+        "label": "Gradio Framework"
+      },
+      {
+        "id": "urn:ngm:class:gpu-with-4-8gb-vram",
+        "label": "GPU with 4-8GB VRAM"
       }
     ],
     "enables": [
@@ -76,9 +152,42 @@
       {
         "id": "urn:ngm:class:style-transfer",
         "label": "Style Transfer"
+      },
+      {
+        "id": "urn:ngm:class:face-swap",
+        "label": "Faceswap"
+      },
+      {
+        "id": "urn:ngm:class:ai-art-generation",
+        "label": "Local AI Art Creation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion XL"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "id": "urn:ngm:class:text-encoder",
+        "label": "CLIP Text Encoder"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:control-net-conditioning",
@@ -95,9 +204,62 @@
       {
         "id": "urn:ngm:class:sdxl",
         "label": "SDXL Refiner Handoff"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion Sampling"
+      },
+      {
+        "id": "urn:ngm:class:sdxl",
+        "label": "SDXL Refiner Handoff"
+      },
+      {
+        "id": "urn:ngm:class:prompt-expansion",
+        "label": "Prompt Expansion"
+      },
+      {
+        "id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter Image Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:freeu-free-lunch-rebalancing",
+        "label": "FreeU Free-Lunch Rebalancing"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
+        "label": "Node-Based Diffusion Pipeline Interface"
+      },
+      {
+        "id": "urn:ngm:class:automatic-1111-web-ui",
+        "label": "AUTOMATIC1111 WebUI"
+      },
+      {
+        "id": "urn:ngm:class:invoke-ai",
+        "label": "InvokeAI"
+      },
+      {
+        "id": "urn:ngm:class:swarmui",
+        "label": "SwarmUI"
+      },
+      {
+        "id": "urn:ngm:class:forge-webui",
+        "label": "Forge WebUI"
+      },
+      {
+        "id": "urn:ngm:class:midjourney-text-to-image-service",
+        "label": "Midjourney Text-to-Image Service"
+      },
+      {
+        "id": "urn:ngm:class:dall-e-3",
+        "label": "DALL-E 3"
+      },
+      {
+        "id": "urn:ngm:class:adobe-firefly",
+        "label": "Adobe Firefly"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-infrastructure",
@@ -105,6 +267,30 @@
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP Skip"
+      },
+      {
+        "id": "urn:ngm:class:dpm-plus-plus-2m-karras-sampler",
+        "label": "DPM Plus Plus 2M Karras Sampler"
+      },
+      {
+        "id": "urn:ngm:class:lcm-sampler",
+        "label": "LCM Sampler"
+      },
+      {
+        "id": "urn:ngm:class:lightning-sampler",
+        "label": "Lightning Sampler"
+      },
+      {
+        "id": "urn:ngm:class:sdxl-vae-fp16-fix",
+        "label": "SDXL VAE FP16 Fix"
+      },
+      {
+        "id": "urn:ngm:class:gpt-2-prompt-expansion",
+        "label": "GPT-2 Prompt Expansion"
+      },
       {
         "id": "urn:ngm:class:clip",
         "label": "CLIP Skip"
@@ -122,6 +308,22 @@
       {
         "id": "urn:ngm:class:game-asset-generation",
         "label": "Indie Game Asset Creation"
+      },
+      {
+        "id": "urn:ngm:class:game-asset-generation",
+        "label": "Indie Game Asset Creation"
+      },
+      {
+        "id": "urn:ngm:class:concept-art",
+        "label": "Concept Art Workflows"
+      },
+      {
+        "id": "urn:ngm:class:local-privacy-workflows",
+        "label": "Local Privacy Workflows"
+      },
+      {
+        "id": "urn:ngm:class:educational-ai-demonstrations",
+        "label": "Educational AI Demonstrations"
       }
     ],
     "standardizedBy": [
@@ -132,6 +334,18 @@
       {
         "id": "urn:ngm:class:hugging-face-model-hub",
         "label": "Hugging Face Model Hub"
+      },
+      {
+        "id": "urn:ngm:class:open-rail",
+        "label": "CreativeML Open RAIL-M Licence"
+      },
+      {
+        "id": "urn:ngm:class:gplv3-licence",
+        "label": "GPLv3 Licence"
+      },
+      {
+        "id": "urn:ngm:class:gradio-specification",
+        "label": "Gradio Specification"
       }
     ],
     "partOf": [],
@@ -147,6 +361,30 @@
       {
         "id": "urn:ngm:class:stability-ai",
         "label": "Stability AI"
+      },
+      {
+        "id": "urn:ngm:class:ic-light",
+        "label": "IC-Light"
+      },
+      {
+        "id": "urn:ngm:class:paints-undo",
+        "label": "Paints-Undo"
+      },
+      {
+        "id": "urn:ngm:class:framepack",
+        "label": "FramePack"
+      },
+      {
+        "id": "urn:ngm:class:ruinedfooocus",
+        "label": "RuinedFooocus"
+      },
+      {
+        "id": "urn:ngm:class:fooocus-mre",
+        "label": "Fooocus-MRE"
+      },
+      {
+        "id": "urn:ngm:class:simplesdxl2",
+        "label": "SimpleSDXL2"
       }
     ]
   },
@@ -155,6 +393,16 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -194,6 +442,14 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:intellectual-property-licence-instrument",
+        "label": "Intellectual Property Licence Instrument"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -204,9 +460,41 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:community-driven-innovation",
+        "label": "Community-Driven Innovation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      },
+      {
+        "id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      },
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
@@ -218,14 +506,76 @@
       {
         "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Automation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-source-definition",
+        "label": "Open Source Definition"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:closed-source-software",
+        "label": "Closed-Source Software"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
       }
     ],
     "uses": [
@@ -236,6 +586,82 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:package-manager",
+        "label": "Package Manager"
+      },
+      {
+        "id": "urn:ngm:class:software-library",
+        "label": "Software Library"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-public-goods",
+        "label": "Digital Public Goods"
+      },
+      {
+        "id": "urn:ngm:class:open-source-framework",
+        "label": "Open Source Framework"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-source-initiative",
+        "label": "Open Source Initiative"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
@@ -250,6 +676,26 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:free-software-movement",
+        "label": "Free Software Movement"
+      },
+      {
+        "id": "urn:ngm:class:inner-source",
+        "label": "Inner Source"
+      },
+      {
+        "id": "urn:ngm:class:software-commons",
+        "label": "Software Commons"
+      },
+      {
+        "id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
+      },
+      {
+        "id": "urn:ngm:class:refactoring",
+        "label": "Refactoring"
       }
     ]
   },

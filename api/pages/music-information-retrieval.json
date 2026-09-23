@@ -39,7 +39,7 @@
         "label": "Signal Processing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -110,6 +110,14 @@
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:text-representation",
+        "label": "Text Representation"
+      },
       {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
@@ -185,6 +193,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
         "id": "urn:ngm:class:database-query",
         "label": "Database Query"
       },
@@ -213,6 +225,22 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -249,13 +277,19 @@
         "label": "Transfer Learning"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

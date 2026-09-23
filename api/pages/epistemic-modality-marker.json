@@ -5,37 +5,216 @@
   "public": true,
   "classIri": "urn:ngm:class:epistemic-modality-marker",
   "domain": "ai",
-  "definition": "An Epistemic Modality Marker is a lexical or grammatical element \u2014 such as the modal verbs may, might, [private] and must, or hedges like perhaps and possibly \u2014 that encodes a speaker's degree of certainty or commitment toward a proposition. Detecting and generating such markers is central to hedge detection, uncertainty-aware natural language processing and calibrated dialogue systems.",
+  "definition": "An Epistemic Modality Marker is a lexical or grammatical element \u2014 such as the modal verbs may, might, could and must, or hedges like perhaps and possibly \u2014 that encodes a speaker's degree of certainty or commitment toward a proposition. Detecting and generating such markers is central to hedge detection, uncertainty-aware natural language processing and calibrated dialogue systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
+    },
+    {
+      "id": "urn:ngm:class:computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
+      "id": "urn:ngm:class:pragmatics",
+      "label": "Pragmatics"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.6,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:modal-auxiliary-verb",
+        "label": "Modal Auxiliary Verb"
+      },
+      {
+        "id": "urn:ngm:class:hedge-cue",
+        "label": "Hedge Cue"
+      },
+      {
+        "id": "urn:ngm:class:evidential-marker",
+        "label": "Evidential Marker"
+      },
+      {
+        "id": "urn:ngm:class:epistemic-adverbial",
+        "label": "Epistemic Adverbial"
+      },
+      {
+        "id": "urn:ngm:class:certainty-scale",
+        "label": "Certainty Scale"
+      },
+      {
+        "id": "urn:ngm:class:polarity-marker",
+        "label": "Polarity Marker"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:natural-language-understanding",
         "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:parsing",
+        "label": "Parsing"
+      },
+      {
+        "id": "urn:ngm:class:semantic-role-labelling",
+        "label": "Semantic Role Labelling"
+      },
+      {
+        "id": "urn:ngm:class:word-sense-disambiguation",
+        "label": "Word Sense Disambiguation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:dialogue-systems",
         "label": "Dialogue Systems"
+      },
+      {
+        "id": "urn:ngm:class:hedge-detection",
+        "label": "Hedge Detection"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:fact-checking",
+        "label": "Fact Checking"
+      },
+      {
+        "id": "urn:ngm:class:clinical-nlp",
+        "label": "Clinical NLP"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computational-linguistics",
+        "label": "Computational Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:syntax",
+        "label": "Syntax"
+      },
+      {
+        "id": "urn:ngm:class:semantics",
+        "label": "Semantics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:pragmatics",
+        "label": "Pragmatics"
+      },
+      {
+        "id": "urn:ngm:class:speech-act-theory",
+        "label": "Speech Act Theory"
+      },
+      {
+        "id": "urn:ngm:class:hedging-theory",
+        "label": "Hedging Theory"
+      },
+      {
+        "id": "urn:ngm:class:evidentiality",
+        "label": "Evidentiality"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:assertive-marker",
+        "label": "Assertive Marker"
+      },
+      {
+        "id": "urn:ngm:class:deontic-modality",
+        "label": "Deontic Modality"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-modality",
+        "label": "Dynamic Modality"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:conditional-random-fields",
+        "label": "Conditional Random Fields"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:corpus-linguistics",
+        "label": "Corpus Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:annotation-schemes",
+        "label": "Annotation Schemes"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:biomedical-text-mining",
+        "label": "Biomedical Text Mining"
+      },
+      {
+        "id": "urn:ngm:class:pharmacovigilance",
+        "label": "Pharmacovigilance"
+      },
+      {
+        "id": "urn:ngm:class:scientific-claim-extraction",
+        "label": "Scientific Claim Extraction"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:conll-2010-shared-task",
+        "label": "CoNLL 2010 Shared Task"
+      },
+      {
+        "id": "urn:ngm:class:bionlp-shared-task",
+        "label": "BioNLP Shared Task"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -49,6 +228,30 @@
       {
         "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-systems",
+        "label": "Dialogue Systems"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:stance-detection",
+        "label": "Stance Detection"
+      },
+      {
+        "id": "urn:ngm:class:subjectivity-analysis",
+        "label": "Subjectivity Analysis"
+      },
+      {
+        "id": "urn:ngm:class:speculation-detection",
+        "label": "Speculation Detection"
       }
     ]
   },
@@ -62,6 +265,21 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -83,20 +301,20 @@
         "label": "Text Classification"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:dependency-parsing",
+        "label": "Dependency Parsing"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:discourse-analysis",
+        "label": "Discourse Analysis"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:part-of-speech-tagging",
+        "label": "Part-of-Speech Tagging"
       }
     ],
     "requires": [
@@ -113,19 +331,27 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:corpus-linguistics",
+        "label": "Corpus Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:grammar",
+        "label": "Grammar"
+      },
+      {
+        "id": "urn:ngm:class:linguistics",
+        "label": "Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:information-extraction",
-        "label": "Information Extraction"
-      },
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
@@ -135,24 +361,28 @@
         "label": "Named Entity Recognition"
       },
       {
-        "id": "urn:ngm:class:question-answering",
-        "label": "Question Answering"
-      },
-      {
-        "id": "urn:ngm:class:sentiment-analysis",
-        "label": "Sentiment Analysis"
-      },
-      {
         "id": "urn:ngm:class:text-generation",
         "label": "Text Generation"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:neural-machine-translation",
+        "label": "Neural Machine Translation"
       }
     ],
     "dependsOn": [
@@ -163,6 +393,64 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:corpus-linguistics",
+        "label": "Corpus Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Statistical Language Model"
+      },
+      {
+        "id": "urn:ngm:class:pre-trained-language-model",
+        "label": "Pre Trained Language Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cross-lingual-transfer",
+        "label": "Cross-Lingual Transfer"
+      },
+      {
+        "id": "urn:ngm:class:discourse-analysis",
+        "label": "Discourse Analysis"
+      },
+      {
+        "id": "urn:ngm:class:morphology",
+        "label": "Morphology"
+      },
+      {
+        "id": "urn:ngm:class:phonology",
+        "label": "Phonology"
+      },
+      {
+        "id": "urn:ngm:class:semantics",
+        "label": "Semantics"
+      },
+      {
+        "id": "urn:ngm:class:syntax",
+        "label": "Syntax"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "contrastsWith": [
@@ -173,6 +461,14 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:psycholinguistics",
+        "label": "Psycholinguistics"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -183,13 +479,33 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
-      },
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Networks"
@@ -199,12 +515,82 @@
         "label": "Transfer Learning"
       },
       {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
       },
       {
-        "id": "urn:ngm:class:word-embeddings",
-        "label": "Word Embeddings"
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:pre-trained-language-model",
+        "label": "Pre Trained Language Model"
+      },
+      {
+        "id": "urn:ngm:class:statistical-language-model",
+        "label": "Statistical Language Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:sequence-to-sequence-model",
+        "label": "Sequence-to-Sequence Model"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:text-mining",
+        "label": "Text Mining"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:association-for-computational-linguistics",
+        "label": "Association for Computational Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:universal-dependencies",
+        "label": "Universal Dependencies"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "relatedTo": [
@@ -213,16 +599,32 @@
         "label": "Machine Translation"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:corpus-linguistics",
+        "label": "Corpus Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ]
   },

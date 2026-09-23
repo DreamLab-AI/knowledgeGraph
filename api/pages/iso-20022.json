@@ -21,6 +21,10 @@
       {
         "id": "urn:ngm:class:data-mapping",
         "label": "Data Mapping"
+      },
+      {
+        "id": "urn:ngm:class:message-schema-validation",
+        "label": "Message Schema Validation"
       }
     ],
     "enables": [
@@ -33,8 +37,16 @@
         "label": "Regulatory Reporting"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:straight-through-processing",
+        "label": "Straight-Through Processing"
+      },
+      {
+        "id": "urn:ngm:class:automated-reconciliation",
+        "label": "Automated Reconciliation"
       }
     ],
     "dependsOn": [],
@@ -46,12 +58,24 @@
       {
         "id": "urn:ngm:class:data-model",
         "label": "Data Model"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Model"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:swift-messaging",
         "label": "SWIFT MT"
+      },
+      {
+        "id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT MT"
+      },
+      {
+        "id": "urn:ngm:class:fixed-length-financial-message",
+        "label": "Fixed-Length Financial Message"
       }
     ],
     "bridgesTo": [
@@ -85,6 +109,10 @@
       {
         "id": "urn:ngm:class:securities-settlement",
         "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:instant-settlement",
+        "label": "Instant Payments"
       }
     ],
     "standardizedBy": [
@@ -116,8 +144,12 @@
         "label": "XML"
       },
       {
-        "id": "urn:ngm:class:legal-entity-identifier",
+        "id": "urn:ngm:class:lei-system",
         "label": "Legal Entity Identifier"
+      },
+      {
+        "id": "urn:ngm:class:financial-messaging",
+        "label": "Financial Messaging"
       }
     ]
   },
@@ -131,6 +163,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -149,7 +186,7 @@
         "label": "OpenXR"
       },
       {
-        "id": "urn:ngm:class:universal-scene-description",
+        "id": "urn:ngm:class:usd",
         "label": "Universal Scene Description"
       },
       {
@@ -257,8 +294,16 @@
         "label": "Metaverse Standards Forum"
       },
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -407,12 +452,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       }
     ]
   },

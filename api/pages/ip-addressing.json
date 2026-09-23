@@ -38,7 +38,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:routing",
+        "id": "urn:ngm:class:routing-protocol",
         "label": "Routing"
       },
       {
@@ -61,7 +61,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:routing",
+        "id": "urn:ngm:class:routing-protocol",
         "label": "Routing"
       }
     ],
@@ -90,7 +90,7 @@
       },
       {
         "id": "urn:ngm:class:tcp-ip",
-        "label": "TCP/IP"
+        "label": "TCP-IP"
       }
     ],
     "relatedTo": [
@@ -128,7 +128,7 @@
         "label": "DNS"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -197,7 +197,7 @@
       },
       {
         "id": "urn:ngm:class:tcp-ip",
-        "label": "TCP/IP"
+        "label": "TCP-IP"
       },
       {
         "id": "urn:ngm:class:udp",
@@ -418,7 +418,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

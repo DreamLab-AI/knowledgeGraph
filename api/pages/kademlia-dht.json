@@ -217,6 +217,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:censorship-resistant-communication",
+        "label": "Censorship-Resistant Communication"
+      },
+      {
         "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
       },
@@ -243,13 +247,23 @@
       {
         "id": "urn:ngm:class:microservices",
         "label": "Microservices"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bootstrap-protocol",
+        "label": "Bootstrap Protocol"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:structured-overlay-network",
+        "label": "Structured Overlay Network"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:chord-protocol",
+        "label": "Chord Protocol"
+      },
       {
         "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
@@ -264,6 +278,14 @@
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-index",
+        "label": "Centralised Index"
+      },
+      {
+        "id": "urn:ngm:class:unstructured-overlay-network",
+        "label": "Unstructured Overlay Network"
+      },
       {
         "id": "urn:ngm:class:centralised-system",
         "label": "Centralised System"
@@ -397,7 +419,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

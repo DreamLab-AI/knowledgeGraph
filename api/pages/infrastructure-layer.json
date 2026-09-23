@@ -44,6 +44,14 @@
       {
         "id": "urn:ngm:class:storage-layer",
         "label": "Storage Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-centers",
+        "label": "Data Centers"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-layer",
+        "label": "Spatial Computing Layer"
       }
     ],
     "requires": [
@@ -85,7 +93,12 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infrastructuredomain",
+        "label": "InfrastructureDomain"
+      }
+    ],
     "relatedTo": []
   },
   "inferredSuperClasses": [
@@ -212,7 +225,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -349,12 +362,12 @@
       "label": "Distributed Ledger Technology (DLT)"
     },
     {
-      "slug": "etsi-domain-infrastructure-immersive",
-      "label": "ETSI_Domain_Infrastructure___Immersive"
-    },
-    {
       "slug": "etsi-domain-infrastructure",
       "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-immersive",
+      "label": "ETSI_Domain_Infrastructure___Immersive"
     },
     {
       "slug": "edge-computing",

@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
+    },
+    {
+      "id": "urn:ngm:class:rigid-body-dynamics",
+      "label": "Rigid Body Mechanics"
+    },
+    {
+      "id": "urn:ngm:class:robot-model",
+      "label": "Robot Model"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-model",
+      "label": "Mathematical Model"
+    },
+    {
+      "id": "urn:ngm:class:motion-model",
+      "label": "Motion Model"
+    },
+    {
+      "id": "urn:ngm:class:geometric-model",
+      "label": "Geometric Model"
     }
   ],
   "entityType": "Class",
@@ -40,6 +60,18 @@
       {
         "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:screw-theory",
+        "label": "Screw Theory"
+      },
+      {
+        "id": "urn:ngm:class:joint-space",
+        "label": "Joint Space"
+      },
+      {
+        "id": "urn:ngm:class:cartesian-space",
+        "label": "Cartesian Space"
       }
     ],
     "requires": [
@@ -54,6 +86,14 @@
       {
         "id": "urn:ngm:class:reference-frames",
         "label": "Reference Frames"
+      },
+      {
+        "id": "urn:ngm:class:robot-description-format",
+        "label": "Robot Description Format"
+      },
+      {
+        "id": "urn:ngm:class:se-3-lie-group",
+        "label": "SE(3) Lie Group"
       }
     ],
     "enables": [
@@ -86,21 +126,87 @@
         "label": "Teleoperation"
       },
       {
-        "id": "urn:ngm:class:trajectory-generation",
+        "id": "urn:ngm:class:rb-1007-trajectory-generation",
         "label": "Trajectory Generation"
+      },
+      {
+        "id": "urn:ngm:class:visual-servoing",
+        "label": "Visual Servoing"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Robot Calibration"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Cartesian Impedance Control"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:differential-geometry",
+        "label": "Differential Geometry"
+      },
+      {
+        "id": "urn:ngm:class:lie-group-theory",
+        "label": "Lie Group Theory"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ],
     "implements": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Neural Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:product-of-exponentials",
+        "label": "Product of Exponentials"
+      },
+      {
+        "id": "urn:ngm:class:dh-convention",
+        "label": "DH Convention"
+      },
+      {
+        "id": "urn:ngm:class:iterative-jacobian-solver",
+        "label": "Iterative Jacobian Solver"
+      },
+      {
+        "id": "urn:ngm:class:closed-form-ik",
+        "label": "Closed-Form IK"
+      },
       {
         "id": "urn:ngm:class:inverse-kinematics",
         "label": "Neural Inverse Kinematics"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dynamics-model",
+        "label": "Dynamics Model"
+      },
+      {
+        "id": "urn:ngm:class:kinetics-model",
+        "label": "Kinetics Model"
+      },
+      {
+        "id": "urn:ngm:class:deformable-body-model",
+        "label": "Deformable Body Model"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ],
@@ -128,6 +234,14 @@
       {
         "id": "urn:ngm:class:urdf",
         "label": "URDF"
+      },
+      {
+        "id": "urn:ngm:class:pinocchio-library",
+        "label": "Pinocchio Library"
+      },
+      {
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo"
       }
     ],
     "supports": [
@@ -168,6 +282,14 @@
       {
         "id": "urn:ngm:class:urdf",
         "label": "URDF Specification"
+      },
+      {
+        "id": "urn:ngm:class:ros-industrial",
+        "label": "ROS Industrial Consortium"
+      },
+      {
+        "id": "urn:ngm:class:urdf",
+        "label": "URDF Specification"
       }
     ],
     "partOf": [],
@@ -191,14 +313,63 @@
       {
         "id": "urn:ngm:class:collision-detection",
         "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:rb-0032-manipulability",
+        "label": "Manipulability Ellipsoid"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:physics-simulation",
+      "label": "Physics Simulation",
+      "slug": "physics-simulation"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -238,42 +409,158 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:inertia-tensor",
+        "label": "Inertia Tensor"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      },
+      {
         "id": "urn:ngm:class:actuators",
         "label": "Actuators"
-      },
-      {
-        "id": "urn:ngm:class:control-system",
-        "label": "Control System"
-      },
-      {
-        "id": "urn:ngm:class:kinematics",
-        "label": "Kinematics"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
+        "id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
       },
       {
-        "id": "urn:ngm:class:humanoid-robotics",
-        "label": "Humanoid Robotics"
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
       },
       {
-        "id": "urn:ngm:class:industrial-automation",
-        "label": "IndustrialAutomation"
+        "id": "urn:ngm:class:vehicle-simulation",
+        "label": "Vehicle Simulation"
       },
       {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
+        "id": "urn:ngm:class:robot-localisation",
+        "label": "Robot Localisation"
       },
       {
-        "id": "urn:ngm:class:smart-manufacturing",
-        "label": "Smart Manufacturing"
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
       },
       {
-        "id": "urn:ngm:class:warehouse-automation",
-        "label": "Warehouse Automation"
+        "id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Particle Filter"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Method"
+      },
+      {
+        "id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "id": "urn:ngm:class:soft-body-dynamics",
+        "label": "Soft Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:observation-model",
+        "label": "Observation Model"
+      },
+      {
+        "id": "urn:ngm:class:sensor-model",
+        "label": "Sensor Model"
+      },
+      {
+        "id": "urn:ngm:class:kinematic-animation",
+        "label": "Kinematic Animation"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:neural-physics",
+        "label": "Neural Physics"
+      },
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "uses": [
@@ -284,6 +571,112 @@
       {
         "id": "urn:ngm:class:servo-motor",
         "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-system",
+        "label": "3D Coordinate Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:classical-mechanics",
+        "label": "Classical Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
       }
     ],
     "relatedTo": [
@@ -298,6 +691,26 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:newton-euler-dynamics",
+        "label": "Newton-Euler Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
       }
     ]
   },

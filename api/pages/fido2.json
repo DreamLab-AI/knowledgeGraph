@@ -146,6 +146,11 @@
       "slug": "infra-legal-and-regulatory"
     },
     {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
@@ -188,8 +193,16 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:client-implementation",
+        "label": "Client Implementation"
+      },
+      {
         "id": "urn:ngm:class:digital-certificate",
         "label": "Digital Certificates"
+      },
+      {
+        "id": "urn:ngm:class:hardware-authenticators",
+        "label": "Hardware Authenticators"
       },
       {
         "id": "urn:ngm:class:public-key-cryptography",
@@ -210,16 +223,16 @@
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:phishing-resistance",
         "label": "Phishing Resistance"
+      },
+      {
+        "id": "urn:ngm:class:secure-platform-access",
+        "label": "Secure Platform Access"
       },
       {
         "id": "urn:ngm:class:compliance",
@@ -244,10 +257,6 @@
       {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
-      },
-      {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
       }
     ],
     "dependsOn": [
@@ -262,8 +271,16 @@
         "label": "NIST SP 800-63B"
       },
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -380,6 +397,10 @@
       {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [

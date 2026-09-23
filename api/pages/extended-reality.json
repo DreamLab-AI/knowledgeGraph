@@ -72,7 +72,12 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:two-dimensional-interface",
+        "label": "Two-Dimensional Interface"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:metaverse",
@@ -87,7 +92,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -118,6 +123,10 @@
       {
         "id": "urn:ngm:class:w-3-c-web-xr-device-api",
         "label": "WebXR Device API"
+      },
+      {
+        "id": "urn:ngm:class:w-3-c-web-xr-device-api",
+        "label": "WebXR Device API"
       }
     ],
     "partOf": [],
@@ -137,10 +146,19 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
     {
       "id": "urn:ngm:class:immersive-technology",
       "label": "Immersive Technology",
@@ -152,9 +170,19 @@
       "slug": "sc-platform-and-environment"
     },
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
       "id": "urn:ngm:class:digital-technology",
       "label": "Digital Technology",
       "slug": "digital-technology"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -184,12 +212,12 @@
         "label": "Virtual Reality (VR)"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:cognitive-ergonomics",
+        "label": "Cognitive Ergonomics"
       },
       {
-        "id": "urn:ngm:class:game-engine",
-        "label": "Game Engine"
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
       }
     ],
     "requires": [
@@ -214,6 +242,14 @@
         "label": "Input Device"
       },
       {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
         "id": "urn:ngm:class:motion-tracking",
         "label": "Motion Tracking"
       }
@@ -232,6 +268,10 @@
         "label": "Scene Understanding"
       },
       {
+        "id": "urn:ngm:class:cross-reality-transitions",
+        "label": "Cross-Reality Transitions"
+      },
+      {
         "id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
       },
@@ -244,15 +284,27 @@
         "label": "Spatial Interaction"
       },
       {
-        "id": "urn:ngm:class:metaverse-platform",
-        "label": "Metaverse Platform"
-      },
-      {
-        "id": "urn:ngm:class:virtual-collaboration",
-        "label": "Virtual Collaboration"
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing",
+        "label": "Graphics Processing"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
       {
         "id": "urn:ngm:class:graphics-processing-unit",
         "label": "Graphics Processing Unit"
@@ -272,6 +324,10 @@
         "label": "Pervasive Computing"
       },
       {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
         "id": "urn:ngm:class:display-technology",
         "label": "Traditional Display Technology"
       }
@@ -288,6 +344,14 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
       {
         "id": "urn:ngm:class:5-g-network",
@@ -324,19 +388,27 @@
         "label": "Head-Mounted Display"
       },
       {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
         "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
-      },
-      {
-        "id": "urn:ngm:class:computing-hardware",
-        "label": "Computing Hardware"
-      },
-      {
-        "id": "urn:ngm:class:computing-infrastructure",
-        "label": "Computing Infrastructure"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
       {
         "id": "urn:ngm:class:enterprise-training",
         "label": "Enterprise Training"
@@ -360,9 +432,25 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
@@ -382,14 +470,6 @@
       {
         "id": "urn:ngm:class:sc-standards-and-interop",
         "label": "Standards and Interoperability"
-      },
-      {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:disruptive-technology",
-        "label": "Disruptive Technology"
       }
     ]
   },

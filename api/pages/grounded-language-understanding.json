@@ -70,6 +70,10 @@
         "label": "Relation Extraction"
       },
       {
+        "id": "urn:ngm:class:semantic-role-labelling",
+        "label": "Semantic Role Labelling"
+      },
+      {
         "id": "urn:ngm:class:machine-translation",
         "label": "Machine Translation"
       },
@@ -80,16 +84,16 @@
       {
         "id": "urn:ngm:class:text-classification",
         "label": "Text Classification"
-      },
-      {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:semantic-parsing",
         "label": "Semantic Parsing"
+      },
+      {
+        "id": "urn:ngm:class:syntactic-parsing",
+        "label": "Syntactic Parsing"
       },
       {
         "id": "urn:ngm:class:language-model",
@@ -182,6 +186,22 @@
       {
         "id": "urn:ngm:class:knowledge-graphs",
         "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

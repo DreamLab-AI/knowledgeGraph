@@ -88,7 +88,7 @@
         "label": "Snapshot"
       },
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       }
     ]
@@ -226,6 +226,10 @@
         "label": "Application Layer"
       },
       {
+        "id": "urn:ngm:class:bare-metal",
+        "label": "Bare Metal"
+      },
+      {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
       }
@@ -244,7 +248,7 @@
         "label": "Governance"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       },
       {
@@ -290,6 +294,10 @@
       {
         "id": "urn:ngm:class:multithreading",
         "label": "Multithreading"
+      },
+      {
+        "id": "urn:ngm:class:security-isolation",
+        "label": "Security Isolation"
       }
     ],
     "standardizedBy": [
@@ -312,7 +320,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

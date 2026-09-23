@@ -45,8 +45,8 @@
         "label": "Uncertainty Quantification"
       },
       {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
+        "id": "urn:ngm:class:posterior-inference",
+        "label": "Posterior Inference"
       }
     ],
     "dependsOn": [],
@@ -121,6 +121,14 @@
       {
         "id": "urn:ngm:class:gaussian-process",
         "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence Diagnostics"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Bayesian Neural Network"
       },
       {
         "id": "urn:ngm:class:convergence",
@@ -231,6 +239,16 @@
         "label": "Predictive Analytics"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deterministic-algorithms",
+        "label": "Deterministic Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:numerical-quadrature",
+        "label": "Numerical Quadrature"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:drug-discovery",
@@ -243,6 +261,22 @@
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -275,7 +309,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:particle-filter",
+        "id": "urn:ngm:class:monte-carlo-localization",
         "label": "Particle Filter"
       },
       {

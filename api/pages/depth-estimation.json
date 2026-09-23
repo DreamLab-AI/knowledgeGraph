@@ -18,6 +18,18 @@
     {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
+    },
+    {
+      "id": "urn:ngm:class:dense-prediction",
+      "label": "Dense Prediction"
+    },
+    {
+      "id": "urn:ngm:class:geometric-vision",
+      "label": "Geometric Vision"
+    },
+    {
+      "id": "urn:ngm:class:scene-understanding",
+      "label": "Scene Understanding"
     }
   ],
   "entityType": "Class",
@@ -56,6 +68,10 @@
       {
         "id": "urn:ngm:class:point-cloud",
         "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Photometric Loss"
       }
     ],
     "requires": [
@@ -78,6 +94,14 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:image-pair",
+        "label": "Image Pair"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimization"
       }
     ],
     "enables": [
@@ -104,9 +128,42 @@
       {
         "id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:bokeh-rendering",
+        "label": "Bokeh Rendering"
+      },
+      {
+        "id": "urn:ngm:class:free-space-estimation",
+        "label": "Free-Space Estimation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformers",
+        "label": "Vision Transformers"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "id": "urn:ngm:class:photometric-consistency",
+        "label": "Photometric Consistency"
+      },
+      {
+        "id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:multi-view-stereo",
@@ -123,9 +180,66 @@
       {
         "id": "urn:ngm:class:structure-from-motion",
         "label": "Structure-from-Motion"
+      },
+      {
+        "id": "urn:ngm:class:block-matching",
+        "label": "Block Matching"
+      },
+      {
+        "id": "urn:ngm:class:psmnet",
+        "label": "PSMNet"
+      },
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "RAFT-Stereo"
+      },
+      {
+        "id": "urn:ngm:class:monodepth",
+        "label": "MonoDepth"
+      },
+      {
+        "id": "urn:ngm:class:midas",
+        "label": "MiDaS"
+      },
+      {
+        "id": "urn:ngm:class:dpt",
+        "label": "DPT"
+      },
+      {
+        "id": "urn:ngm:class:zoedepth",
+        "label": "ZoeDepth"
+      },
+      {
+        "id": "urn:ngm:class:depth-anything",
+        "label": "Depth Anything"
+      },
+      {
+        "id": "urn:ngm:class:marigold",
+        "label": "Marigold"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:surface-normal-estimation",
+        "label": "Surface Normal Estimation"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -147,6 +261,18 @@
       {
         "id": "urn:ngm:class:stereo-camera",
         "label": "Stereo Camera"
+      },
+      {
+        "id": "urn:ngm:class:time-of-flight-sensor",
+        "label": "Time-of-Flight Camera"
+      },
+      {
+        "id": "urn:ngm:class:kinect",
+        "label": "Kinect"
+      },
+      {
+        "id": "urn:ngm:class:realsense",
+        "label": "RealSense"
       }
     ],
     "supports": [
@@ -187,6 +313,34 @@
       {
         "id": "urn:ngm:class:stereo-vision",
         "label": "Middlebury Stereo"
+      },
+      {
+        "id": "urn:ngm:class:kitti-benchmark",
+        "label": "KITTI Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:nyu-depth-v2",
+        "label": "NYU Depth v2"
+      },
+      {
+        "id": "urn:ngm:class:scannet",
+        "label": "ScanNet"
+      },
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Middlebury Stereo"
+      },
+      {
+        "id": "urn:ngm:class:da-2k",
+        "label": "DA-2K"
+      },
+      {
+        "id": "urn:ngm:class:sintel",
+        "label": "Sintel"
+      },
+      {
+        "id": "urn:ngm:class:eth3d",
+        "label": "ETH3D"
       }
     ],
     "partOf": [],
@@ -210,6 +364,14 @@
       {
         "id": "urn:ngm:class:photogrammetry",
         "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Monocular 3D Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:depth-completion",
+        "label": "Depth Completion"
       }
     ]
   },
@@ -223,6 +385,11 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:perception-system",
+      "label": "Perception System",
+      "slug": "perception-system"
     }
   ],
   "inheritedRelations": {
@@ -274,6 +441,18 @@
         "label": "Pattern Recognition"
       },
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -312,8 +491,66 @@
         "label": "Robotics Perception"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-learning",
+        "label": "End-to-End Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -328,6 +565,62 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-21448",
+        "label": "ISO 21448"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:sae-j-3016",
+        "label": "SAE J3016"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-virtual-entity",
+        "label": "Intelligent Virtual Entity"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
       }
     ],
     "relatedTo": [
@@ -356,12 +649,12 @@
         "label": "Semantic Segmentation"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:usd",
+        "label": "Universal Scene Description"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ]
   },

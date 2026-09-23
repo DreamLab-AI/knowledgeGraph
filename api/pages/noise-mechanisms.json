@@ -96,52 +96,89 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-safety-technique",
+      "label": "AI Safety Technique",
+      "slug": "ai-safety-technique"
+    },
+    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
     },
     {
+      "id": "urn:ngm:class:privacy-enhancing-technologies",
+      "label": "Privacy Enhancing Technologies",
+      "slug": "privacy-enhancing-technologies"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:privacy-preserving-technology",
+      "label": "Privacy Preserving Technology",
+      "slug": "privacy-preserving-technology"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:composition-theorems",
+        "label": "Composition Theorems"
+      },
+      {
+        "id": "urn:ngm:class:dp-sgd",
+        "label": "DP-SGD"
+      },
+      {
+        "id": "urn:ngm:class:exponential-mechanism",
+        "label": "Exponential Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:local-differential-privacy",
+        "label": "Local Differential Privacy"
+      },
+      {
         "id": "urn:ngm:class:privacy-budget-management",
         "label": "Privacy Budget Management"
       },
       {
+        "id": "urn:ngm:class:r-nyi-differential-privacy",
+        "label": "R\u00e9nyi Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:shuffle-model",
+        "label": "Shuffle Model"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
-      },
-      {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
-      },
-      {
-        "id": "urn:ngm:class:reasoning",
-        "label": "Reasoning"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:noise-calibration",
+        "label": "Noise Calibration"
+      },
+      {
+        "id": "urn:ngm:class:privacy-accountant",
+        "label": "Privacy Accountant"
+      },
+      {
+        "id": "urn:ngm:class:query-mechanism",
+        "label": "Query Mechanism"
+      },
       {
         "id": "urn:ngm:class:sensitivity-analysis",
         "label": "Sensitivity Analysis"
@@ -157,12 +194,24 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:differentially-private-analytics",
+        "label": "Differentially Private Analytics"
+      },
+      {
         "id": "urn:ngm:class:federated-edge-learning",
         "label": "Federated Edge Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
         "id": "urn:ngm:class:privacy-by-design",
@@ -173,30 +222,52 @@
         "label": "Privacy-Preserving Machine Learning"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:private-empirical-risk-minimisation",
+        "label": "Private Empirical Risk Minimisation"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
       }
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:formal-privacy-guarantee",
+        "label": "Formal Privacy Guarantee"
+      },
+      {
         "id": "urn:ngm:class:privacy-mechanism",
         "label": "Privacy Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:statistical-disclosure-limitation",
+        "label": "Statistical Disclosure Limitation"
       }
     ],
     "contrastsWith": [
@@ -207,6 +278,26 @@
       {
         "id": "urn:ngm:class:k-anonymity-in-datasets",
         "label": "K-Anonymity"
+      },
+      {
+        "id": "urn:ngm:class:l-diversity",
+        "label": "L-Diversity"
+      },
+      {
+        "id": "urn:ngm:class:pseudonymisation",
+        "label": "Pseudonymisation"
+      },
+      {
+        "id": "urn:ngm:class:t-closeness",
+        "label": "T-Closeness"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-technology",
+        "label": "Surveillance Technology"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -217,6 +308,30 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-security",
+        "label": "Machine Learning Security"
       }
     ],
     "uses": [
@@ -225,11 +340,39 @@
         "label": "Machine Learning Discipline"
       },
       {
+        "id": "urn:ngm:class:random-noise",
+        "label": "Random Noise"
+      },
+      {
+        "id": "urn:ngm:class:statistical-query-model",
+        "label": "Statistical Query Model"
+      },
+      {
         "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:pseudonymisation",
+        "label": "Pseudonymisation"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
       {
         "id": "urn:ngm:class:data-minimisation",
         "label": "Data Minimisation"
@@ -239,11 +382,53 @@
         "label": "Data Protection"
       },
       {
+        "id": "urn:ngm:class:data-use-and-access-act-2025",
+        "label": "Data (Use and Access) Act 2025"
+      },
+      {
         "id": "urn:ngm:class:gdpr-compliance",
         "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:nhs-data-security",
+        "label": "NHS Data Security"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ico-privacy-enhancing-technologies-guidance",
+        "label": "ICO Privacy-Enhancing Technologies Guidance"
+      },
+      {
+        "id": "urn:ngm:class:national-institute-of-standards-and-technology",
+        "label": "National Institute of Standards and Technology"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC 29101"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:apple-differential-privacy",
+        "label": "Apple Differential Privacy"
+      },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
@@ -257,16 +442,20 @@
         "label": "Secure Multi-Party Computation"
       },
       {
-        "id": "urn:ngm:class:ai-application",
-        "label": "AI Application"
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
       },
       {
-        "id": "urn:ngm:class:ai-research-area",
-        "label": "AI Research Area"
+        "id": "urn:ngm:class:tee",
+        "label": "Trusted Execution Environment"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:u-s-census-2020",
+        "label": "U.S. Census 2020"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ]
   },

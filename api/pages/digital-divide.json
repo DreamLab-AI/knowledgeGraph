@@ -43,6 +43,10 @@
       {
         "id": "urn:ngm:class:online-learning",
         "label": "E-Learning"
+      },
+      {
+        "id": "urn:ngm:class:online-learning",
+        "label": "E-Learning"
       }
     ],
     "dependsOn": [],
@@ -81,6 +85,10 @@
       {
         "id": "urn:ngm:class:itu",
         "label": "ITU"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "UN Sustainable Development Goals"
       },
       {
         "id": "urn:ngm:class:sustainable-development-goals",
@@ -139,6 +147,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -148,7 +171,7 @@
         "label": "Cryptocurrency Exchange"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -216,8 +239,16 @@
         "label": "Creator Monetisation"
       },
       {
+        "id": "urn:ngm:class:digital-value-exchange",
+        "label": "Digital Value Exchange"
+      },
+      {
         "id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play-to-Earn"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
       },
       {
         "id": "urn:ngm:class:virtual-commerce",
@@ -234,14 +265,6 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
-      },
-      {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
       }
     ],
     "dependsOn": [
@@ -262,6 +285,10 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -278,12 +305,24 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -314,6 +353,10 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "supports": [
@@ -324,6 +367,14 @@
       {
         "id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [

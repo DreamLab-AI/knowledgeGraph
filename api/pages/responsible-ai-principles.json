@@ -207,6 +207,22 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -235,6 +251,10 @@
       {
         "id": "urn:ngm:class:human-rights",
         "label": "Human Rights"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
     "standardizedBy": [
@@ -263,6 +283,10 @@
       {
         "id": "urn:ngm:class:algorithmic-fairness",
         "label": "Algorithmic Fairness"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
       },
       {
         "id": "urn:ngm:class:existential-risk",

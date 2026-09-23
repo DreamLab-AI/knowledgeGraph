@@ -327,7 +327,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:openapi",
+        "id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI"
       },
       {

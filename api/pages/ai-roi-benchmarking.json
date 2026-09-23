@@ -52,41 +52,71 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:digital-transformation",
+      "label": "Digital Transformation",
+      "slug": "digital-transformation"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-management",
+      "label": "Knowledge Management",
+      "slug": "knowledge-management"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:organizational-change",
+      "label": "Organizational Change",
+      "slug": "organizational-change"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:autonomous-driving",
-        "label": "Autonomous Driving"
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
       },
       {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
       },
       {
-        "id": "urn:ngm:class:fraud-detection",
-        "label": "Fraud Detection"
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
       },
       {
-        "id": "urn:ngm:class:healthcare-ai",
-        "label": "Healthcare AI"
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
-        "label": "Multimodal AI"
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
       }
     ],
     "requires": [
@@ -95,16 +125,32 @@
         "label": "AI Governance Law and Privacy"
       },
       {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-infrastructure",
+        "label": "Data Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-platform",
+        "label": "Machine Learning Platform"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
       }
     ],
     "enables": [
@@ -113,46 +159,106 @@
         "label": "Agentic Workflow"
       },
       {
-        "id": "urn:ngm:class:enterprise-search",
-        "label": "Enterprise Search"
+        "id": "urn:ngm:class:back-office-automation",
+        "label": "Back-Office Automation"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
       },
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:enterprise-automation",
+        "label": "Enterprise Automation"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:knowledge-work-augmentation",
+        "label": "Knowledge Work Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:ai-governance-law-and-privacy",
         "label": "AI Governance Law and Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-platform",
+        "label": "Machine Learning Platform"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
       }
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
         "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:consumer-ai",
+        "label": "Consumer AI"
+      },
+      {
+        "id": "urn:ngm:class:research-ai",
+        "label": "Research AI"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:document-management",
+        "label": "Document Management"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
       }
     ],
     "bridgesTo": [
@@ -163,6 +269,30 @@
       {
         "id": "urn:ngm:class:enterprise-resource-planning",
         "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ],
     "uses": [
@@ -175,8 +305,20 @@
         "label": "Foundation Model"
       },
       {
+        "id": "urn:ngm:class:machine-learning-discipline-platform",
+        "label": "Machine Learning Platform"
+      },
+      {
         "id": "urn:ngm:class:microsoft-copilot",
         "label": "Microsoft Copilot"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
       },
       {
         "id": "urn:ngm:class:deep-learning",
@@ -193,14 +335,86 @@
         "label": "AI Adoption"
       },
       {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-ai-adoption",
+        "label": "Enterprise AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      },
+      {
         "id": "urn:ngm:class:technology-adoption",
         "label": "Technology Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-42001",
+        "label": "ISO 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:enterprise-ai-adoption",
         "label": "Enterprise AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-automation",
+        "label": "Enterprise Automation"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
       },
       {
         "id": "urn:ngm:class:institutional-adoption",
@@ -217,6 +431,10 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
       }
     ]
   },

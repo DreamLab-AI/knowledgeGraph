@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
+    },
+    {
+      "id": "urn:ngm:class:generative-content",
+      "label": "Generative Content"
     }
   ],
   "entityType": "Class",
@@ -50,7 +54,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:erc-721",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721"
       }
     ],
@@ -68,9 +72,29 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     }
   ],
   "inheritedRelations": {
@@ -100,15 +124,27 @@
         "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:ngm:class:6-do-f-tracking",
-        "label": "6DoF Tracking"
+        "id": "urn:ngm:class:synthetic-audio",
+        "label": "Synthetic Audio"
       },
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:synthetic-image",
+        "label": "Synthetic Image"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
       {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
@@ -124,12 +160,28 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:immersive-entertainment",
         "label": "Immersive Entertainment"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -148,16 +200,50 @@
         "label": "Scene Understanding"
       }
     ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inference-infrastructure",
+        "label": "Inference Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-authored-content",
+        "label": "Human-Authored Content"
+      },
+      {
+        "id": "urn:ngm:class:procedural-content",
+        "label": "Procedural Content"
+      },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:c2-pa-standard",
+        "label": "C2PA Standard"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
         "id": "urn:ngm:class:extended-reality-xr",
@@ -166,9 +252,41 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
@@ -176,26 +294,28 @@
       {
         "id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
       },
       {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
+        "id": "urn:ngm:class:educational-methodology",
+        "label": "Educational Methodology"
       },
       {
-        "id": "urn:ngm:class:hand-tracking",
-        "label": "Hand Tracking"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
-      },
-      {
-        "id": "urn:ngm:class:head-mounted-display",
-        "label": "Head-Mounted Display"
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -228,6 +348,18 @@
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfake"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property"
       }
     ]
   },

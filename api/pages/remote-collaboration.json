@@ -36,6 +36,10 @@
       {
         "id": "urn:ngm:class:virtual-workspace",
         "label": "Virtual Workspace"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality",
+        "label": "Collaborative Document Editing"
       }
     ],
     "requires": [
@@ -72,7 +76,7 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       }
     ],
@@ -99,6 +103,10 @@
       {
         "id": "urn:ngm:class:immersive-communication",
         "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-workspaces",
+        "label": "Metaverse Workspaces"
       }
     ],
     "uses": [
@@ -113,6 +121,10 @@
       {
         "id": "urn:ngm:class:version-control",
         "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-types",
+        "label": "Conflict-Free Replicated Data Types"
       }
     ],
     "supports": [
@@ -127,6 +139,10 @@
       {
         "id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Development"
       }
     ],
     "standardizedBy": [],
@@ -139,6 +155,10 @@
       {
         "id": "urn:ngm:class:presence-awareness",
         "label": "Presence Awareness"
+      },
+      {
+        "id": "urn:ngm:class:digital-workplace",
+        "label": "Digital Workplace"
       }
     ]
   },
@@ -154,6 +174,10 @@
       {
         "id": "urn:ngm:class:asynchronous-collaboration",
         "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:presence-mechanism",
+        "label": "Presence Mechanism"
       },
       {
         "id": "urn:ngm:class:shared-workspace",
@@ -178,10 +202,6 @@
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
-      },
-      {
-        "id": "urn:ngm:class:realtime-communication",
-        "label": "Realtime Communication"
       }
     ],
     "requires": [
@@ -222,7 +242,17 @@
         "label": "Latency Management"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      }
+    ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
@@ -272,6 +302,10 @@
       {
         "id": "urn:ngm:class:groupware",
         "label": "Groupware"
+      },
+      {
+        "id": "urn:ngm:class:social-software",
+        "label": "Social Software"
       },
       {
         "id": "urn:ngm:class:asynchronous-video",

@@ -91,7 +91,7 @@
         "label": "NIST Cybersecurity Framework"
       },
       {
-        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       }
     ]
@@ -225,6 +225,10 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-auditing",
+        "label": "Smart Contract Auditing"
       },
       {
         "id": "urn:ngm:class:data",

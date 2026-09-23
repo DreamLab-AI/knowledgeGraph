@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>clip</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="clip"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="clip"/><meta name="twitter:description" content="CLIP (Contrastive Language-Image Pre-training) is a dual-encoder neural network architecture developed by OpenAI in which a vision encoder (Vision Transformer or CNN) and a text encoder (Transformer) are jointly trained on large-scale internet-sourced image-text pairs using an InfoNCE contrastive ob..."/><meta property="og:description" content="CLIP (Contrastive Language-Image Pre-training) is a dual-encoder neural network architecture developed by OpenAI in which a vision encoder (Vision Transformer or CNN) and a text encoder (Transformer) are jointly trained on large-scale internet-sourced image-text pairs using an InfoNCE contrastive ob..."/><meta property="og:image:alt" content="CLIP (Contrastive Language-Image Pre-training) is a dual-encoder neural network architecture developed by OpenAI in which a vision encoder (Vision Transformer or CNN) and a text encoder (Transformer) are jointly trained on large-scale internet-sourced image-text pairs using an InfoNCE contrastive ob..."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/CLIP"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/CLIP"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="CLIP (Contrastive Language-Image Pre-training) is a dual-encoder neural network architecture developed by OpenAI in which a vision encoder (Vision Transformer or CNN) and a text encoder (Transformer) are jointly trained on large-scale internet-sourced image-text pairs using an InfoNCE contrastive ob..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/CLIP"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1304"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1304" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>clip</a></div></nav><h1 class="article-title">clip</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.566Z">23 Sept 2026</time><span>37 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:clip</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.74</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Model-Architecture" class="internal">AI Model Architecture</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Multimodal-AI" class="internal">Multimodal AI</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Vision-Transformer" class="internal">Vision Transformer</a></li><li><a href="../pages/Transformer-Architecture" class="internal">Transformer Architecture</a></li><li><a href="../InfoNCE-Loss" class="internal">InfoNCE Loss</a></li><li><a href="../pages/Embedding-Space" class="internal">Embedding Space</a></li><li><a href="../pages/Cosine-Similarity" class="internal">Cosine Similarity</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Large-Scale-Datasets" class="internal">Large-Scale Dataset</a></li><li><a href="../pages/Self-Supervised-Learning" class="internal">Self-Supervised Learning</a></li><li><a href="../pages/Embedding-Space" class="internal">Embedding Space</a></li><li><a href="../Large-Scale-Dataset" class="internal">Large-Scale Dataset</a></li><li><a href="../pages/Contrastive-Learning" class="internal">Contrastive Learning</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Zero-Shot-Learning" class="internal">Zero-Shot Learning</a></li><li><a href="../pages/Image-Classification" class="internal">Image Classification</a></li><li><a href="../pages/Cross-Modal-Retrieval" class="internal">Cross-Modal Retrieval</a></li><li><a href="../open-vocabulary-detection" class="internal">Open-Vocabulary Detection</a></li><li><a href="../image-text-retrieval" class="internal">Image-Text Retrieval</a></li><li><a href="../Multimodal-Search" class="internal">Multimodal Search</a></li><li><a href="../pages/Text-to-Image-Generation" class="internal">Text-to-Image Generation</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Spatial-Anchor" class="internal">Spatial Anchor</a></li><li><a href="../pages/Augmented-Reality" class="internal">Augmented Reality</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../ALIGN" class="internal">ALIGN</a></li><li><a href="../Florence" class="internal">Florence</a></li><li><a href="../CoCa" class="internal">CoCa</a></li><li><a href="../SigLIP" class="internal">SigLIP</a></li><li><a href="../MetaCLIP" class="internal">MetaCLIP</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../embedding-model" class="internal">Embedding Model</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../pages/Vision-Transformer" class="internal">Vision Transformer</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../MultimodalAILayer" class="internal">MultimodalAILayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Contrastive-Learning" class="internal">Contrastive Learning</a></li><li><a href="../Dual-Encoder-Architecture" class="internal">Dual-Encoder Architecture</a></li></ul></td></tr><tr><th scope="row">Label</th><td><ul class="properties-values"><li><span>CLIP</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:67905ad3cc2dd52b1f5f6a6d2814de0396618b29b4238b9af5207aeb69936e6d</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Vision-Language-Model" class="internal">Vision Language Model</a></li><li><a href="../pages/Prompt-Engineering" class="internal">Prompt Engineering</a></li><li><a href="../pages/Multimodal-AI" class="internal">Multimodal AI</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Augmented-Reality" class="internal">Augmented Reality</a></li><li><a href="../pages/Spatial-Anchor" class="internal">Spatial Anchor</a></li><li><a href="../OpenCLIP" class="internal">OpenCLIP</a></li><li><a href="../pages/Zero-Shot-Learning" class="internal">Zero-Shot Learning</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../OpenAI" class="internal">OpenAI</a></li><li><a href="../LAION" class="internal">LAION</a></li><li><a href="../OpenCLIP" class="internal">OpenCLIP</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Text-to-Image" class="internal">Text-to-Image</a></li><li><a href="../pages/Stable-Diffusion-Image-Model" class="internal">Stable Diffusion</a></li><li><a href="../multimodal-search" class="internal">Multimodal Search</a></li><li><a href="../Stable-Diffusion" class="internal">Stable Diffusion</a></li><li><a href="../pages/Text-to-Image-Generation" class="internal">Text-to-Image Generation</a></li><li><a href="../pages/Vision-Language-Model" class="internal">Vision-Language Model</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Contrastive-Learning" class="internal">Contrastive Learning</a></li><li><a href="../pages/Vision-Transformer" class="internal">Vision Transformer</a></li><li><a href="../pages/Transformer-Architecture" class="internal">Transformer Architecture</a></li><li><a href="../infonce-loss" class="internal">InfoNCE Loss</a></li><li><a href="../pages/Cosine-Similarity" class="internal">Cosine Similarity</a></li><li><a href="../pages/Prompt-Engineering" class="internal">Prompt Engineering</a></li><li><a href="../pages/Self-Supervised-Learning" class="internal">Self-Supervised Learning</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>CLIP (Contrastive Language-Image Pre-training) is a dual-encoder neural network architecture developed by OpenAI in which a vision encoder (Vision Transformer or CNN) and a text encoder (Transformer) are jointly trained on large-scale internet-sourced image-text pairs using an InfoNCE contrastive objective. The training maximises cosine similarity between embeddings of matched image-text pairs and minimises it for unmatched pairs within a batch, yielding a shared multimodal embedding space where semantically related images and text are geometrically proximate. This shared space enables zero-shot image classification by comparing image embeddings to natural language class descriptions without task-specific fine-tuning, and has become a foundational component in text-to-image diffusion models, open-vocabulary object detection, and cross-modal retrieval systems.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:hasPart ai:VisionEncoder))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:hasPart ai:TextEncoder))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:hasPart ai:SharedEmbeddingSpace))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:hasPart ai:InfoNCELoss))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:hasPart ai:LearnedTemperatureParameter))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:hasPart ai:LinearProjectionHead))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:hasPart ai:PromptTemplate))
+</code></pre>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:requires ai:ContrastiveLearning))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:requires ai:SelfSupervisedLearning))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:requires ai:LargeScaleDataset))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:requires ai:EmbeddingSpace))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:dependsOn ai:TransferLearning))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:dependsOn ai:VisionTransformer))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
+</code></pre>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:enables ai:ZeroShotLearning))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:enables ai:CrossModalRetrieval))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:enables ai:ImageClassification))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:enables ai:OpenVocabularyDetection))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:enables ai:ImageTextRetrieval))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:enables ai:MultimodalSearch))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:enables ai:TextToImageGeneration))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:enables ai:DatasetCuration))
+</code></pre>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:implements ai:ContrastiveLearning))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:implements ai:DualEncoderArchitecture))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:implements ai:NaturalLanguageSupervision))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:supports ai:StableDiffusion))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:supports ai:VisionLanguageModel))
+</code></pre>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:reducesTo ai:EmbeddingModel))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:reducesTo ai:MultimodalEncoder))
+</code></pre>
+<h2 id="contrasting-relationships">Contrasting Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contrasting-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:contrastsWith ai:ALIGN))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:contrastsWith ai:SigLIP))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:contrastsWith ai:ConvolutionalNeuralNetwork))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:contrastsWith ai:SupervisedLearning))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:relatedTo ai:VisionLanguageModel))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:relatedTo ai:PromptEngineering))
+SubClassOf(ai:CLIP
+  ObjectSomeValuesFrom(ai:relatedTo ai:AugmentedReality))
+</code></pre>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CLIP (Contrastive Language-Image Pre-training) was introduced by Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever at OpenAI in a preprint released in January 2021 and published in ICML 2021. The central hypothesis was that the rich and diverse supervision signal provided by natural language — in the form of image captions, alt-text, and web descriptions — could substitute for hand-curated per-image labels and yield visual representations with far greater breadth of semantic coverage. Prior to CLIP, the dominant paradigm was to pre-train visual models on ImageNet-scale supervised datasets (1M to 14M labelled images) and then fine-tune for downstream tasks. This approach was bottlenecked both by annotation cost and by the fixed label vocabulary, which constrained the model’s conceptual range. CLIP broke both constraints simultaneously: by sourcing training data from the internet, the dataset scaled to 400 million pairs with essentially unlimited vocabulary coverage; by framing the training signal as natural language similarity rather than discrete labels, the learned representations were inherently generalisable to any concept expressible in text.</p>
+<p>The significance of CLIP extends beyond its headline zero-shot numbers. By creating a shared semantic space for images and text, CLIP operationalised a new class of application: any task reducible to computing similarities between an image and a text description becomes solvable without labelled examples. This includes not only classification but also retrieval, filtering, reward shaping for generative models, and semantic segmentation. The architectural elegance of the dual-encoder design — independently encoding each modality and comparing in a shared space — made CLIP computationally tractable at inference: image and text embeddings can be pre-computed and indexed separately, enabling sub-millisecond similarity search over billion-scale image corpora using approximate nearest-neighbour algorithms.</p>
+<h2 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Vision Encoder</strong>
+<ul>
+<li>Processes raw pixel grids into fixed-dimensional embedding vectors</li>
+<li>Supported architectures include <a href="../pages/Vision-Transformer" class="internal alias" data-slug="pages/Vision-Transformer">Vision Transformer</a> variants: ViT-B/32, ViT-B/16, ViT-L/14, ViT-L/14@336 (higher resolution), and ViT-H/14 (used in EVA-CLIP); ResNet variants: RN50, RN101, RN50x4, RN50x16, RN50x64</li>
+<li>Each variant projects to a shared latent dimension (typically 512 or 768) via a linear projection head with no activation function</li>
+<li>ViT-based encoders generally outperform ResNet at equivalent compute in zero-shot transfer tasks</li>
+</ul>
+</li>
+<li><strong>Text Encoder</strong>
+<ul>
+<li>A 12-layer, 512-wide GPT-2-style <a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a> with causal attention masking</li>
+<li>BPE tokenisation with a 49,408-token vocabulary; sequences truncated at 77 tokens</li>
+<li>The hidden state at the [EOS] position is extracted and projected to the shared embedding dimension</li>
+<li>No task-specific pre-training; the text encoder is trained purely within the CLIP contrastive objective</li>
+</ul>
+</li>
+<li><strong>Shared Embedding Space</strong>
+<ul>
+<li>Both encoders project into a common L2-normalised <a href="../pages/Embedding-Space" class="internal alias" data-slug="pages/Embedding-Space">Embedding Space</a> where dot product equals cosine similarity</li>
+<li>The shared space is the critical innovation: it makes semantic alignment across modalities measurable by a single scalar</li>
+<li>Dimensionality typically 512 (ViT-B/32 and smaller) or 768 (ViT-L/14 and larger)</li>
+</ul>
+</li>
+<li><strong>InfoNCE Contrastive Loss</strong>
+<ul>
+<li>For batch size N, forms an N×N matrix of pairwise cosine similarities</li>
+<li>The diagonal represents N matched (positive) pairs; off-diagonal entries are N²-N negatives</li>
+<li>Cross-entropy is applied row-wise (image-to-text) and column-wise (text-to-image); losses are averaged</li>
+<li>A learned temperature scalar τ (initialised to 0.07) is applied before softmax</li>
+<li>Large batch sizes are critical: 32,768 samples were used in the original training, exposing each example to over 32,000 in-batch negatives per step</li>
+</ul>
+</li>
+<li><strong>Prompt Engineering Module</strong>
+<ul>
+<li>Zero-shot classification is performed by constructing text templates for each candidate class, e.g. “A photo of a {label}, a type of pet”</li>
+<li>Template ensembling over 80 hand-crafted templates improves ImageNet top-1 by approximately 3.5 percentage points versus bare class names</li>
+<li><a href="../pages/Prompt-Engineering" class="internal alias" data-slug="pages/Prompt-Engineering">Prompt Engineering</a> is therefore a first-class architectural concern in CLIP-based systems</li>
+</ul>
+</li>
+</ul>
+<h2 id="formal-training-protocol">Formal Training Protocol<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-training-protocol" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The CLIP training recipe used an Adam optimiser with decoupled weight decay (AdamW), a cosine learning rate schedule with linear warmup, and mixed-precision training. Models were trained for 32 epochs on WIT-400M. The temperature parameter τ was constrained to stay above 0.01 to prevent training instability. Data augmentation was minimal — random square crop from resized images — relying on the diversity of the 400M web-scraped pairs to provide the equivalent of heavy augmentation. The text encoder used the contrastive loss exclusively, with no auxiliary language modelling objective, which distinguished CLIP from concurrent work like ALIGN that used the same contrastive loss but a different data pipeline.</p>
+<h2 id="major-variants-and-successors-2021-2026">Major Variants and Successors (2021-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#major-variants-and-successors-2021-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>OpenCLIP</strong> (LAION / BAAI, 2022-2024): Open-source reproduction of CLIP trained on LAION-400M and LAION-5B; provides fully reproducible training code and scaling laws; open weights released under permissive licences. By 2024, OpenCLIP on LAION-5B matches or surpasses the original CLIP on multiple benchmarks at equivalent model scale.</li>
+<li><strong>ALIGN</strong> (Google, 2021): Concurrent dual-encoder model trained on 1.8 billion noisy image-alt-text pairs; demonstrated similar zero-shot capabilities with even more data and less filtering, suggesting that scale compensates for noise.</li>
+<li><strong>Florence</strong> (Microsoft, 2021): Extends CLIP with multi-task heads for detection, captioning, and retrieval in a unified model; targets production deployment in Azure Cognitive Services.</li>
+<li><strong>SigLIP</strong> (Google, 2023): Replaces the softmax-normalised InfoNCE loss with a pairwise sigmoid loss that removes the batch-size dependency of the softmax normalisation; enables effective training with batch sizes as small as 32,768 pairs without requiring full-batch normalisation, improving memory efficiency significantly.</li>
+<li><strong>SigLIP 2</strong> (Google DeepMind, February 2025): Major update adding captioning-based pretraining (CoCa-style), self-distillation (DINO/DINOv2-style), and masked prediction (BEiT-style) to the training recipe; zero-shot ImageNet accuracy improved from 76.7% to 79.1% on ViT-B/16@256 and COCO image-to-text recall improved from 65.1 to 69.7; 36-language multilingual checkpoint added.</li>
+<li><strong>CoCa</strong> (Google, 2022): Contrastive Captioners — combines InfoNCE contrastive loss with a generative captioning loss in a single model, enabling both retrieval and generation without separate systems.</li>
+<li><strong>MetaCLIP</strong> (Meta, 2023): Curates training data by extracting metadata concepts from CommonCrawl and matching image-text pairs to those concepts, achieving more balanced concept coverage; demonstrates that data quality matters as much as scale.</li>
+<li><strong>EVA-CLIP</strong> (BAAI, 2023-2024): Billion-parameter CLIP family reaching up to 18B parameters (EVA-CLIP-18B); achieves 80.7% averaged zero-shot top-1 accuracy across 27 image classification benchmarks, the highest open-source figure as of 2024.</li>
+<li><strong>CLIP-MoE</strong> (2024): Mixture-of-Experts extension improving zero-shot retrieval recall by up to 12 percentage points for modest additional compute overhead.</li>
+<li><strong>Jina-CLIP</strong> (Jina AI, 2024): Jointly optimises image-text and text-text contrastive objectives, enabling state-of-the-art performance on both multimodal and text-only retrieval tasks from a single model.</li>
+<li><strong>CLIMP</strong> (2025): Contrastive Language-Image Mamba Pre-training — replaces the transformer encoders with Mamba (state-space model) backbone for improved long-sequence efficiency.</li>
+</ul>
+<h2 id="use-cases">Use Cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Text-to-Image Generation</strong>: CLIP or CLIP-derived encoders condition the denoising process in <a href="../Stable-Diffusion" class="internal alias" data-slug="Stable-Diffusion">Stable Diffusion</a>, DALL-E 2, and Imagen by encoding the text prompt into the shared embedding space. The conditioning signal steers generation toward text-aligned outputs; CLIP similarity scores can also serve as a differentiable reward for RLHF-style fine-tuning of image generators.</li>
+<li><strong>Zero-Shot Image Classification</strong>: At inference, candidate class names are encoded as text using prompt templates; cosine similarities between the image embedding and all class text embeddings are computed; the argmax gives the predicted class. No labelled examples for those classes are needed, enabling deployment on novel taxonomies without annotation.</li>
+<li><strong>Cross-Modal Retrieval</strong>: Given a natural-language query, retrieve the top-K most similar images from a large corpus indexed by their CLIP embeddings. This underpins enterprise visual search platforms, stock photography services (Unsplash, Shutterstock), and multimodal knowledge base retrieval systems.</li>
+<li><strong>Open-Vocabulary Object Detection</strong>: Systems such as OWL-ViT, GLIP, and Grounding DINO use CLIP-derived features to localise and classify objects described in free-form text without being constrained to a fixed closed vocabulary. This is essential for open-world robotics and autonomous systems.</li>
+<li><strong>Vision-Language Models (VLMs)</strong>: CLIP visual encoders act as the visual backbone in systems such as LLaVA, Flamingo (DeepMind), BLIP-2, and mPLUG-Owl. The pre-aligned multimodal embedding space dramatically reduces the data and compute required to connect visual features to language decoder representations.</li>
+<li><strong>Dataset Curation and Filtering</strong>: CLIP cosine similarity scores between image and associated text are used to filter large web-scraped datasets. LAION applied a threshold of 0.28 CLIP cosine similarity when constructing LAION-5B, discarding roughly 85% of raw crawl data. This CLIP-score filtering has become an industry standard for data pipeline quality control.</li>
+<li><strong>Spatial Computing and AR Grounding</strong>: Emerging spatial computing platforms — including head-mounted displays running open-vocabulary scene understanding — leverage CLIP-style text-image alignment for <a href="../pages/Augmented-Reality" class="internal alias" data-slug="pages/Augmented-Reality">Augmented Reality</a> scene annotation and <a href="../pages/Spatial-Anchor" class="internal alias" data-slug="pages/Spatial-Anchor">Spatial Anchor</a> labelling, bridging AI semantics with the physical environment in real-time.</li>
+<li><strong>Medical and Scientific Imaging</strong>: Domain-adapted CLIP variants (BioMedCLIP, RadBERT-CLIP) pre-trained or fine-tuned on medical image-report pairs enable zero-shot radiology report retrieval, pathology slide classification, and drug discovery compound visualisation.</li>
+</ul>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CLIP emerged from a tradition of joint multimodal embedding research stretching back to DeViSE (Frome et al., 2013), which proposed projecting image features into a word-embedding space trained on ImageNet labels. The idea of learning from natural language supervision was explored in earlier works including Learning Visual Representations with Caption Supervision (Desai &amp; Johnson, 2021) and ConVIRT (Zhang et al., 2020) for medical images, but CLIP was the first to scale the approach to 400M web-sourced pairs and demonstrate competitive zero-shot performance on general-purpose vision benchmarks.</p>
+<p>The InfoNCE loss used by CLIP was formalised by van den Oord et al. in Contrastive Predictive Coding (CPC, 2018) and refined in SimCLR (Chen et al., 2020) and MoCo (He et al., 2020) for visual self-supervised learning. CLIP’s key contribution was to apply the InfoNCE objective across modalities (image and text) rather than within a single modality, creating a cross-modal contrastive framework that inherently aligns the two representation spaces.</p>
+<p>Subsequent theoretical analysis by Radford et al. and independent groups showed that the quality of CLIP representations obeys scaling laws similar to those for language models: performance improves predictably with both model size and dataset size. This motivated the EVA-CLIP line, which pushed model scale to 18B parameters, and the LAION community’s construction of LAION-5B (5.85 billion image-text pairs), the largest openly available contrastive pre-training dataset.</p>
+<p>Key critical analyses include the ACES benchmark (Cabello et al., 2022) examining compositional reasoning failures in CLIP, and the WinoGround (Thrush et al., 2022) study demonstrating that CLIP struggles with relational reasoning tasks involving attribute binding, counting, and spatial relationships despite strong aggregate benchmark performance.</p>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>By 2026, CLIP-family models are deeply embedded in production AI infrastructure across industries. Text-to-image generation at scale (Stable Diffusion XL, FLUX, DALL-E 3, Midjourney v6) universally uses CLIP or SigLIP encoders for text conditioning. Enterprise search and e-commerce recommendation systems from companies including Shopify, Pinterest, and Getty Images index product catalogues using CLIP embeddings for semantic visual retrieval. Google’s production image search integrates SigLIP-derived features.</p>
+<p>The open-source ecosystem has matured substantially: OpenCLIP provides reproducible training code and over 100 publicly available CLIP checkpoints spanning a wide range of architectures and training datasets. The Hugging Face transformers library provides standardised CLIP inference APIs. Apple’s Core ML CLIP deployment enables on-device CLIP inference on iPhone and Vision Pro hardware.</p>
+<p>Frontier research is moving in two directions: first, scaling CLIP encoders into the billion-parameter regime (EVA-CLIP-18B, InternVL) and studying the resulting scaling laws; second, enriching the training recipe beyond pure contrastive loss to add captioning (CoCa, SigLIP 2), masked image modelling (BEiT-style), and self-distillation (DINO-style), all of which improve the density and utility of the learned representations for downstream vision tasks beyond retrieval.</p>
+<p>Regulatory attention to foundation models in the EU AI Act (2024) and UK AI regulation framework (2025) has raised questions about the transparency of web-scraped training data, particularly the social biases embedded in WIT and LAION. This has prompted work on data attribution, bias measurement tools, and filtered dataset alternatives such as DataComp.</p>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>UK academic institutions have engaged with CLIP across several research threads. The University of Edinburgh’s Institute for Language, Cognition and Computation (ILCC) — which houses one of the UK’s strongest NLP and multimodal AI groups — has published work on cross-lingual CLIP extensions and CLIP-based visual question answering. Imperial College London’s Visual Geometry Group and the Oxford Visual Geometry Group have contributed open-vocabulary detection research building on CLIP features. University College London (UCL) has contributed to explainability studies of CLIP’s embedding geometry.</p>
+<p>In industry, British AI companies including DeepMind (London) have built on CLIP-derived architectures in their vision-language modelling work. Stability AI (London-founded) used CLIP as the conditioning encoder in the original Stable Diffusion 1.x series before transitioning to OpenCLIP for Stable Diffusion XL. The Alan Turing Institute has published benchmark studies comparing CLIP-family models across socially important visual domains including healthcare and cultural heritage.</p>
+<p>Northern England’s growing AI sector has adopted CLIP in applied settings: Manchester-based retail analytics companies use CLIP embeddings for product visual search; NHS digital imaging initiatives in Leeds and Sheffield are piloting CLIP-based report-to-image retrieval for radiology workflows.</p>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Efficiency at Scale</strong>: Mamba-based (state-space) CLIP variants (e.g., CLIMP) aim to reduce the O(N²) attention complexity of ViT encoders for long-sequence and high-resolution inputs, enabling deployment on edge devices without sacrificing representation quality.</li>
+<li><strong>Video and Temporal CLIP</strong>: Extensions such as VideoCLIP and InternVideo apply contrastive language-video pretraining to learn temporally coherent representations, enabling zero-shot video understanding and action recognition.</li>
+<li><strong>3D and Spatial CLIP</strong>: CLIP3D and OpenShape extend the contrastive framework to point clouds and voxel representations, enabling zero-shot 3D object classification and retrieval — a key capability for robotics and <a href="../pages/Augmented-Reality" class="internal alias" data-slug="pages/Augmented-Reality">Augmented Reality</a> scene understanding.</li>
+<li><strong>Compositional Understanding</strong>: Addressing CLIP’s known weakness in relational and compositional reasoning (counting, spatial relations, attribute binding) through structured training data, harder negatives, and neuro-symbolic integration.</li>
+<li><strong>Data Transparency and Attribution</strong>: Responding to regulatory pressure, future CLIP training pipelines are expected to include provenance tracking, consent-respecting data collection, and demographic bias auditing aligned with the EU AI Act’s Article 10 data governance requirements.</li>
+<li><strong>Multilingual Parity</strong>: Current CLIP models are primarily English-centric; multilingual CLIP (mCLIP, mSigLIP, SigLIP 2’s multilingual checkpoint) aim to close the gap, with particular importance for low-resource languages in medical and governmental applications.</li>
+</ul>
+<h2 id="standards-licensing-and-governance">Standards, Licensing and Governance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standards-licensing-and-governance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CLIP does not correspond to a formal standards-body specification such as an ISO or IEEE standard. Instead, the de facto standards ecosystem has emerged through community practice, open-source tooling, and benchmark conventions:</p>
+<ul>
+<li><strong>MIT Licence (OpenAI CLIP)</strong>: The original OpenAI CLIP model weights and inference code were released under the MIT licence, allowing commercial use, modification, and redistribution with attribution. This liberal licence was instrumental in CLIP’s rapid adoption as the backbone of commercial <a href="../pages/Text-to-Image-Generation" class="internal alias" data-slug="pages/Text-to-Image-Generation">Text-to-Image Generation</a> systems.</li>
+<li><strong>OpenCLIP Weights</strong>: The LAION community’s OpenCLIP checkpoints are released under a mixture of licences depending on the training dataset. Checkpoints trained on LAION-5B carry the LAION-5B dataset licence, which requires compliance with LAION’s terms regarding prohibited use cases (weapons, CSAM, biometric surveillance).</li>
+<li><strong>Hugging Face Hub Standards</strong>: The Hugging Face transformers library provides a standardised CLIP inference API (<code>CLIPModel</code>, <code>CLIPProcessor</code>) that has become the de facto programming interface for CLIP usage in Python. This standardisation reduces integration friction and ensures consistent preprocessing (image resizing, pixel normalisation, BPE tokenisation).</li>
+<li><strong>LAION CLIP-Score Threshold</strong>: LAION’s use of CLIP cosine similarity ≥ 0.28 as the data quality threshold for LAION-5B has become an informal industry standard for web-crawled dataset curation, adopted by DataComp, CC12M+, and other large image-text datasets.</li>
+<li><strong>EU AI Act Implications</strong>: The EU AI Act (2024) classifies large-scale image and text processing <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> systems as General Purpose AI (GPAI) models with transparency, documentation, and risk assessment obligations. CLIP-family models used as components of higher-risk AI systems (medical diagnosis, biometric identification) may require conformity assessment under the AI Act’s tiered framework.</li>
+<li><strong>UK AI Regulation (2025)</strong>: The UK’s AI Regulation framework (published 2025) takes a principles-based, sector-specific approach rather than prescriptive classification. CLIP deployments in regulated sectors (healthcare, financial services) are expected to demonstrate appropriate risk management and model cards disclosing training data sources, known biases, and performance limitations.</li>
+<li><strong>Benchmark Reporting Conventions</strong>: The community has converged on reporting zero-shot ImageNet top-1 accuracy, MSCOCO image-to-text R@1, and MSCOCO text-to-image R@1 as the canonical three-metric CLIP evaluation suite. All major papers and model releases report these three numbers, enabling fair comparison.</li>
+</ul>
+<h2 id="integration-patterns-and-deployment-architecture">Integration Patterns and Deployment Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-patterns-and-deployment-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CLIP is typically deployed in one of three patterns:</p>
+<ul>
+<li><strong>Static Embedding Index</strong>: Pre-compute and store image embeddings for a fixed corpus; at inference, encode the text query and run approximate nearest-neighbour search. This pattern is used in image search engines, e-commerce visual discovery, and stock photo retrieval. Tools: FAISS, HNSW (hnswlib), ScaNN. Typical latency: sub-millisecond for million-scale indices on CPU with quantisation.</li>
+<li><strong>Dynamic Scoring</strong>: Compute CLIP similarities on-the-fly for candidate image-text pairs; used in generative model conditioning (score each generated image against the prompt), dataset filtering (filter a batch of scraped pairs), and reward modelling (score images against reward descriptions). Requires GPU-accelerated batched inference.</li>
+<li><strong>Fine-Tuned Feature Extraction</strong>: Extract CLIP visual features (penultimate-layer activations rather than the final projected embedding) as input to a downstream task head; used in <a href="../pages/Vision-Language-Model" class="internal alias" data-slug="pages/Vision-Language-Model">Vision-Language Model</a> architectures (LLaVA, InstructBLIP), medical imaging classifiers, and remote sensing classifiers. Fine-tuning the CLIP backbone improves task-specific performance but risks degrading zero-shot generalisation.</li>
+</ul>
+<p>Production CLIP deployments at scale require:</p>
+<ul>
+<li><strong>Quantisation</strong>: FP16 or INT8 quantisation of encoder weights reduces memory from ~600MB (ViT-L/14) to ~150MB without significant accuracy loss on most benchmarks</li>
+<li><strong>TorchScript / ONNX Export</strong>: Converting CLIP to ONNX or TorchScript enables deployment on non-PyTorch runtimes (TensorRT, Core ML, OpenVINO)</li>
+<li><strong>Distributed Embedding Computation</strong>: For billion-scale image corpora, embedding computation is parallelised across multiple GPU nodes; results are sharded across distributed FAISS or Milvus vector database instances</li>
+<li><strong>Embedding Caching and Versioning</strong>: Because CLIP embeddings are not comparable across model versions, production systems must version embeddings alongside model checkpoints and re-index when upgrading models</li>
+</ul>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[1] Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., Krueger, G., &amp; Sutskever, I. (2021). Learning Transferable Visual Models From Natural Language Supervision. <em>ICML 2021</em>. arXiv:2103.00020.</p>
+<p>[2] Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., Uszkoreit, J., &amp; Houlsby, N. (2021). An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. <em>ICLR 2021</em>. arXiv:2010.11929.</p>
+<p>[3] van den Oord, A., Li, Y., &amp; Vinyals, O. (2018). Representation Learning with Contrastive Predictive Coding. arXiv:1807.03748.</p>
+<p>[4] Chen, T., Kornblith, S., Norouzi, M., &amp; Hinton, G. (2020). A Simple Framework for Contrastive Learning of Visual Representations (SimCLR). <em>ICML 2020</em>. arXiv:2002.05709.</p>
+<p>[5] Jia, C., Yang, Y., Xia, Y., Chen, Y.-T., Parekh, Z., Pham, H., Le, Q. V., Sung, Y., Li, Z., &amp; Duerig, T. (2021). Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision (ALIGN). <em>ICML 2021</em>. arXiv:2102.05918.</p>
+<p>[6] Schuhmann, C., Beaumont, R., Vencu, R., Gordon, C. W., Wightman, R., Cherti, M., Coombes, T., Katta, A., Mullis, C., Wortsman, M., Schramowski, P., Kundurthy, S. R., Crowson, K., Schmidt, L., Beaumont, R., &amp; Jitsev, J. (2022). LAION-5B: An open large-scale dataset for training next generation image-text models. <em>NeurIPS 2022</em>. arXiv:2210.08402.</p>
+<p>[7] Ilharco, G., Wortsman, M., Wightman, R., Gordon, C., Carlini, N., Taori, R., Dave, A., Shankar, V., Namkoong, H., Miller, J., Farhadi, A., Carlin, L., &amp; Schmidt, L. (2021). OpenCLIP. Zenodo. <a href="https://doi.org/10.5281/zenodo.5143773" class="external">https://doi.org/10.5281/zenodo.5143773<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+<p>[8] Yu, J., Wang, Z., Vasudevan, V., Yeung, L., Seyedhosseini, M., &amp; Wu, Y. (2022). CoCa: Contrastive Captioners are Image-Text Foundation Models. arXiv:2205.01917.</p>
+<p>[9] Zhai, X., Mustafa, B., Kolesnikov, A., &amp; Beyer, L. (2023). Sigmoid Loss for Language Image Pre-Training (SigLIP). <em>ICCV 2023</em>. arXiv:2303.15343.</p>
+<p>[10] Sun, Q., Fang, Y., Wu, L., Wang, X., &amp; Cao, Y. (2023). EVA-CLIP: Improved Training Techniques for CLIP at Scale. arXiv:2303.15389.</p>
+<p>[11] Sun, Q., Fang, Y., Wu, L., Wang, X., &amp; Cao, Y. (2024). EVA-CLIP-18B: Scaling CLIP to 18 Billion Parameters. arXiv:2402.04252.</p>
+<p>[12] Xu, H., Xie, S., Tan, X. E., Huang, P.-Y., Howes, R., Sharma, V., Li, S.-W., Ghosh, G., Zettlemoyer, L., &amp; Feichtenhofer, C. (2023). MetaCLIP: Demystifying CLIP Data. arXiv:2309.16671.</p>
+<p>[13] Li, J., Li, D., Savarese, S., &amp; Hoi, S. (2023). BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models. <em>ICML 2023</em>. arXiv:2301.12597.</p>
+<p>[14] Alayrac, J.-B., Donahue, J., Luc, P., Miech, A., Barr, I., Hasson, Y., Lenc, K., Mensch, A., Millican, K., Reynolds, M., Ring, R., Rutherford, E., Cabi, S., Han, T., Gong, Z., Samangooei, S., Monteiro, M., Menick, J. L., Borgeaud, S., … Simonyan, K. (2022). Flamingo: a Visual Language Model for Few-Shot Learning. <em>NeurIPS 2022</em>. arXiv:2204.14198.</p>
+<p>[15] Rombach, R., Blattmann, A., Lorenz, D., Esser, P., &amp; Ommer, B. (2022). High-Resolution Image Synthesis with Latent Diffusion Models. <em>CVPR 2022</em>. arXiv:2112.10752.</p>
+<p>[16] Minderer, M., Gritsenko, A., Stone, A., Neumann, M., Weissenborn, D., Dosovitskiy, A., Mahendran, A., Arnab, A., Dehghani, M., Shen, Z., Wang, X., Zhai, X., Kipf, T., &amp; Houlsby, N. (2022). Simple Open-Vocabulary Object Detection (OWL-ViT). <em>ECCV 2022</em>. arXiv:2205.06230.</p>
+<p>[17] Li, L. H., Zhang, P., Zhang, H., Yang, J., Li, C., Zhong, Y., Wang, L., Yuan, L., Zhang, L., Hwang, J.-N., Chang, K.-W., &amp; Gao, J. (2022). Grounded Language-Image Pre-training (GLIP). <em>CVPR 2022</em>. arXiv:2112.03857.</p>
+<p>[18] Frome, A., Corrado, G. S., Shlens, J., Bengio, S., Dean, J., Ranzato, M., &amp; Mikolov, T. (2013). DeViSE: A Deep Visual-Semantic Embedding Model. <em>NIPS 2013</em>.</p>
+<p>[19] Thrush, T., Jiang, R., Bartolo, M., Singh, A., Williams, A., Kiela, D., &amp; Ross, C. (2022). Winoground: Probing Vision and Language Models for Visuo-Linguistic Compositionality. <em>CVPR 2022</em>. arXiv:2204.03162.</p>
+<p>[20] Oquab, M., Darcet, T., Moutakanni, T., Vo, H. V., Szafraniec, M., Khalidov, V., Fernandez, P., Haziza, D., Massa, F., El-Nouby, A., Assran, M., Ballas, N., Galvez, W., Hannoun, B., Joulin, A., Misra, I., Synnaeve, G., Caron, M., Bojanowski, P., &amp; Mairal, J. (2023). DINOv2: Learning Robust Visual Features without Supervision. arXiv:2304.07193.</p>
+<p>[21] Zhai, X., Kolesnikov, A., Houlsby, N., &amp; Beyer, L. (2022). Scaling Vision Transformers. <em>CVPR 2022</em>. arXiv:2106.04560.</p>
+<p>[22] Gadre, S. Y., Ilharco, G., Fang, A., Hayase, J., Sheng, G., Boen, E., Smirnov, A., Robi, A. W., Maddox, E. H., Garg, N., Thrush, T., Nguyen, T., Nguyen, L., Jitsev, J., Yuksekgonul, M., Fang, R., Schmidt, L., &amp; Wortsman, M. (2024). DataComp: In Search of the Next Generation of Multimodal Datasets. <em>NeurIPS 2024</em>. arXiv:2304.14108.</p>
+<p>[23] Tschannen, M., Gritsenko, A., Zhai, X., El Ouali, M., Gehrke, T., Mustafa, B., Pavetic, F., &amp; Kolesnikov, A. (2025). SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding. arXiv:2502.14786.</p>
+<p>[24] Zhang, Y., Jiang, H., Miura, Y., Manning, C. D., &amp; Langlotz, C. P. (2022). Contrastive Learning of Medical Visual Representations from Paired Images and Text (ConVIRT). <em>MLHC 2022</em>. arXiv:2010.00747.</p>
+<p>[25] Desai, K., &amp; Johnson, J. (2021). VirTex: Learning Visual Representations from Textual Annotations. <em>CVPR 2021</em>. arXiv:2006.06666.</p>
+<p>[26] Li, J., Li, D., Xiong, C., &amp; Hoi, S. (2022). BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation. <em>ICML 2022</em>. arXiv:2201.12086.</p>
+<p>[27] Cabello, L., Bugliarello, E., Brandl, S., &amp; Elliott, D. (2023). ACES: Translation Accuracy Challenge Sets for Evaluating Machine Translation Metrics. <em>EMNLP 2023</em>. arXiv:2210.15615.</p>
+<p>[28] Wortsman, M., Ilharco, G., Gadre, S. Y., Rosenfeld, R., Garg, R., Ruder, S., Kornblith, S., Li, S., Hajishirzi, H., Farhadi, A., &amp; Schmidt, L. (2022). Model Soups: Averaging Weights of Multiple Fine-tuned Models Improves Accuracy without Increasing Inference Time. <em>ICML 2022</em>. arXiv:2203.05482.</p>
+<h2 id="formal-algorithm-clip-contrastive-pre-training">Formal Algorithm: CLIP Contrastive Pre-training<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-algorithm-clip-contrastive-pre-training" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The CLIP training algorithm can be stated precisely as follows:</p>
+<p><strong>Given</strong>:</p>
+<ul>
+<li>A dataset D of N (image, text) pairs: D = {(I₁, T₁), (I₂, T₂), …, (Iₙ, Tₙ)}</li>
+<li>A vision encoder f_v: image → ℝᵈ (ViT or ResNet with linear projection head)</li>
+<li>A text encoder f_t: token sequence → ℝᵈ (GPT-2 transformer with linear projection head)</li>
+<li>A learned temperature scalar τ ∈ ℝ₊, initialised to 0.07</li>
+</ul>
+<p><strong>Mini-batch Processing</strong> (batch size B, typically 32,768):</p>
+<ul>
+<li>Sample a mini-batch {(Iᵢ, Tᵢ)}ᵢ₌₁ᴮ from D</li>
+<li>Compute image embeddings: vᵢ = L2_normalise(f_v(Iᵢ)) ∈ ℝᵈ for i = 1…B</li>
+<li>Compute text embeddings: uᵢ = L2_normalise(f_t(Tᵢ)) ∈ ℝᵈ for i = 1…B</li>
+<li>Compute the B×B cosine similarity matrix: S[i,j] = vᵢ · uⱼ / τ</li>
+</ul>
+<p><strong>Loss Computation</strong> (InfoNCE / NT-Xent):</p>
+<ul>
+<li>Image-to-text loss: L_i2t = -1/B Σᵢ log(exp(S[i,i]) / Σⱼ exp(S[i,j]))</li>
+<li>Text-to-image loss: L_t2i = -1/B Σⱼ log(exp(S[j,j]) / Σᵢ exp(S[i,j]))</li>
+<li>Total CLIP loss: L = (L_i2t + L_t2i) / 2</li>
+</ul>
+<p><strong>Inference — Zero-Shot Classification</strong>:</p>
+<ul>
+<li>For C candidate classes {c₁, c₂, …, cC}, construct text prompts {T(cₖ)} using templates</li>
+<li>Compute text embeddings: uₖ = L2_normalise(f_t(T(cₖ))) for k = 1…C</li>
+<li>For a query image I, compute: v = L2_normalise(f_v(I))</li>
+<li>Predict class: argmax_k (v · uₖ)</li>
+</ul>
+<p><strong>Inference — Cross-Modal Retrieval</strong>:</p>
+<ul>
+<li>Pre-index a corpus of images by computing and storing all image embeddings {vᵢ}</li>
+<li>For a text query T: compute u = L2_normalise(f_t(T)), retrieve top-K by cosine similarity</li>
+<li>This reduces to approximate nearest-neighbour search in ℝᵈ, e.g. using FAISS or HNSW indices</li>
+</ul>
+<h2 id="benchmark-datasets-and-evaluation">Benchmark Datasets and Evaluation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-datasets-and-evaluation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CLIP is evaluated across a broad suite of transfer tasks that collectively measure the breadth of its learned representations. The primary benchmarks are:</p>
+<ul>
+<li><strong>ImageNet Zero-Shot</strong>: 1,000-class ImageNet ILSVRC 2012 validation set evaluated without any ImageNet training examples. CLIP ViT-L/14@336 achieves 76.2% top-1 accuracy, matching supervised ResNet-50. EVA-CLIP-18B raises this to 80.7% averaged across 27 benchmarks.</li>
+<li><strong>MSCOCO Retrieval</strong>: Image-text and text-image retrieval on 5,000 validation captions. Measured by recall at rank 1, 5, and 10 (R@1, R@5, R@10). SigLIP 2 achieves 69.7 image-to-text R@1 and 81.7 text-to-image R@1 on COCO.</li>
+<li><strong>Flickr30K Retrieval</strong>: Similar retrieval benchmark on 31,000 images; commonly reported alongside COCO.</li>
+<li><strong>EvalBench / ELEVATER</strong>: Suite of 20 image classification benchmarks assessing few-shot and zero-shot generalisation across diverse domains (satellite imagery, medical imaging, textures, fine-grained recognition).</li>
+<li><strong>WinoGround</strong>: Compositional reasoning benchmark probing whether CLIP correctly prefers matched over mismatched image-caption pairs for relationally complex descriptions; exposes significant CLIP weaknesses.</li>
+<li><strong>ARO (Attribution, Relation, Order)</strong>: Tests CLIP’s sensitivity to attribute binding (“blue cube to the right of a red sphere”) — another documented failure mode.</li>
+<li><strong>DataComp</strong> (Gadre et al., 2024): Benchmark for evaluating training dataset quality by fixing the model architecture and varying the data; demonstrates that CLIP’s performance depends as much on data quality as on scale.</li>
+<li><strong>LAION-CLIP-Score Threshold</strong>: LAION established that image-text pairs with CLIP cosine similarity below 0.28 should be discarded during web dataset curation; this threshold has become a de facto data quality standard used widely in <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> pre-training pipelines.</li>
+</ul>
+<h2 id="limitations-and-known-failure-modes">Limitations and Known Failure Modes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#limitations-and-known-failure-modes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Social and Demographic Biases</strong>: Training on unfiltered web data embeds demographic, geographic, occupational, and cultural biases. Studies have shown that CLIP associates certain occupations disproportionately with specific genders and ethnicities, reflecting and potentially amplifying societal stereotypes. This is a critical concern for deployments in <a href="../pages/Computer-Vision" class="internal alias" data-slug="pages/Computer-Vision">Computer Vision</a> systems used in hiring, policing, or healthcare.</li>
+<li><strong>Compositional and Relational Reasoning</strong>: CLIP struggles with tasks requiring attribute binding, counting, spatial relationships, and negation. WinoGround results show CLIP at chance performance on many relational reasoning items, despite strong aggregate benchmark scores. This limits its utility for <a href="../pages/Augmented-Reality" class="internal alias" data-slug="pages/Augmented-Reality">Augmented Reality</a> spatial reasoning tasks and robotic manipulation planning.</li>
+<li><strong>Fine-Grained Discrimination</strong>: CLIP cannot reliably distinguish visually similar fine-grained categories (bird species, car models, medical abnormalities) without domain-specific fine-tuning, because the natural-language supervision it was trained on rarely contains the precise taxonomic or clinical terminology that distinguishes these categories.</li>
+<li><strong>Domain Gap for Specialised Imaging</strong>: Medical imaging (radiology, pathology), satellite imagery, industrial inspection imagery, and scientific visualisations are severely underrepresented in WIT. CLIP representations are weak for these domains without domain-specific contrastive pre-training (e.g., BioMedCLIP for clinical images, RemoteCLIP for satellite imagery).</li>
+<li><strong>Prompt Sensitivity and Brittleness</strong>: Small changes in wording, punctuation, or template structure can shift zero-shot accuracy by 5-10 percentage points. This brittleness makes <a href="../pages/Prompt-Engineering" class="internal alias" data-slug="pages/Prompt-Engineering">Prompt Engineering</a> a critical and fragile component of CLIP-based classification pipelines, and complicates deployment in systems that must be robust to diverse user inputs.</li>
+<li><strong>Text Length Limitation</strong>: The 77-token BPE limit truncates long descriptions. For tasks involving detailed scene descriptions, long captions, or multi-sentence text, information loss at truncation can significantly degrade performance.</li>
+<li><strong>English Centricity</strong>: The original CLIP and most OpenCLIP checkpoints are overwhelmingly trained on English text. Zero-shot performance degrades substantially for non-English queries; multilingual variants (mSigLIP, SigLIP 2’s multilingual checkpoint) address this but at some cost to English performance.</li>
+<li><strong>Closed Training Data</strong>: OpenAI has not publicly released the WIT training dataset. The open-source alternative, LAION-5B, has faced legal scrutiny regarding copyright and consent for the web-scraped images and captions, creating regulatory uncertainty for models trained on it.</li>
+</ul>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>InfoNCE Loss</strong>: Information Noise-Contrastive Estimation loss; the contrastive objective that maximises mutual information between matched pairs by treating unmatched in-batch pairs as noise</li>
+<li><strong>Zero-Shot Transfer</strong>: Applying a model trained on one task distribution to a different task without any task-specific training examples</li>
+<li><strong>Dual-Encoder Architecture</strong>: A two-tower design in which each modality is independently encoded into a shared embedding space; enables efficient pre-computation of embeddings</li>
+<li><strong>Prompt Engineering</strong>: The practice of crafting natural-language templates to maximise downstream task performance in zero-shot or few-shot settings</li>
+<li><strong>CLIP Score</strong>: The cosine similarity between an image embedding and a text embedding from CLIP; widely used as a proxy for image-text semantic alignment in generative model evaluation and dataset filtering</li>
+<li><strong>WIT (WebImageText)</strong>: The 400M image-text pair proprietary dataset used to train the original CLIP; not publicly released</li>
+<li><strong>Temperature Parameter (τ)</strong>: A learned scalar that controls the sharpness of the similarity distribution before softmax in the contrastive loss; lower values make the distribution peakier</li>
+<li><strong>OpenCLIP</strong>: Open-source CLIP reproduction by the LAION community and BAAI; provides reproducible training code and over 100 public checkpoints trained on LAION-400M and LAION-5B</li>
+<li><strong>SigLIP</strong>: Sigmoid Loss for Language Image Pre-training; removes batch-size dependence of the InfoNCE softmax normalisation by using a pairwise sigmoid loss</li>
+<li><strong>LAION-5B</strong>: The largest openly available image-text dataset (5.85 billion pairs), curated using CLIP-score filtering; the foundation for most open-source CLIP training runs</li>
+<li><strong>WIT (WebImageText)</strong>: 400 million image-text pairs from the internet, proprietary to OpenAI; the training set for the original CLIP models</li>
+<li><strong>DataComp</strong>: Benchmark and dataset competition for CLIP data curation; demonstrates that data quality (smart filtering) matters as much as data scale for CLIP representation quality</li>
+<li><strong>CLIP-FID</strong>: Fréchet Inception Distance computed using CLIP ViT-L/14 features instead of Inception-v3; provides more semantically meaningful image distribution distance for generative model evaluation</li>
+<li><strong>Open-Vocabulary Detection</strong>: Object detection where the set of detectable classes is not fixed at training time; specified via natural-language descriptions at inference; enabled by CLIP-derived feature representations in systems such as OWL-ViT and Grounding DINO</li>
+<li><strong>EVA-CLIP</strong>: Family of billion-parameter CLIP models from BAAI; uses enhanced training with masked image modelling combined with contrastive loss; largest variant reaches 18B parameters and 80.7% ImageNet zero-shot</li>
+<li><strong>CoCa (Contrastive Captioners)</strong>: Combines InfoNCE contrastive loss with a generative captioning loss; enables CLIP-style retrieval plus image captioning from a single model; developed by Google Research (2022)</li>
+</ul>
+<h2 id="how-clip-differs-from-earlier-visual-representation-models">How CLIP Differs from Earlier Visual Representation Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#how-clip-differs-from-earlier-visual-representation-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>To appreciate CLIP’s significance it is helpful to contrast it with the representation learning approaches it superseded:</p>
+<ul>
+<li><strong>ImageNet-Supervised CNNs</strong> (AlexNet, VGG, ResNet, 2012-2019): Trained on 1.28M manually labelled images from 1,000 classes. The label set is closed and the semantic coverage is determined entirely by the annotation team’s taxonomic choices. Transfer to new domains requires re-labelling data and retraining classification heads. CLIP eliminates both constraints: 400M web-sourced pairs with open vocabulary coverage and zero-shot transfer without any task-specific labels.</li>
+<li><strong>Self-Supervised Visual Representations</strong> (SimCLR, MoCo, DINO, 2020-2022): Learn visual representations from unlabelled images using augmentation-based or self-distillation contrastive objectives. These produce rich visual features but have no text alignment and therefore no zero-shot capability. Downstream tasks still require labelled data for each new classification or detection task. CLIP’s text alignment changes the economics of new-task deployment fundamentally.</li>
+<li><strong>Visual-Semantic Embedding</strong> (VSE, DeViSE, 2013-2016): Early attempts to align image and word-embedding spaces (GloVe, Word2Vec). Limited by word embedding quality and small training datasets (tens of thousands of pairs). CLIP’s scale (400M pairs) and use of transformer language models as the text encoder produce qualitatively superior cross-modal alignment that handles paraphrase, context, and compositional descriptions that word-vector models cannot.</li>
+<li><strong>ALIGN and Florence</strong> (Google and Microsoft, 2021): Direct contemporaries using similar dual-encoder contrastive objectives. ALIGN used 1.8B noisy pairs; Florence added multi-task heads for detection and captioning. Both systems independently validated CLIP’s core approach, establishing the dual-encoder contrastive framework as the consensus paradigm for vision-language pre-training.</li>
+<li><strong>BLIP-2</strong> (Salesforce, 2023): Extended the CLIP framework by introducing a Q-Former (Querying Transformer) connector between a frozen CLIP encoder and a frozen large language model (OPT, FlanT5). The Q-Former extracts a fixed number of visual query tokens from CLIP features and passes them to the language model, achieving competitive VQA and image captioning while training only the lightweight connector. This architecture — frozen CLIP + lightweight connector + frozen LLM — became the dominant VLM design template, used by InstructBLIP, mPLUG-Owl2, and related systems.</li>
+</ul>
+<h2 id="clip-model-family-comparison-table">CLIP Model Family Comparison Table<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#clip-model-family-comparison-table" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Model</th><th>Year</th><th>Params</th><th>Training Data</th><th>ImageNet ZS Top-1</th><th>COCO I2T R@1</th><th>Notes</th></tr></thead><tbody><tr><td>CLIP ViT-B/32</td><td>2021</td><td>150M</td><td>WIT-400M</td><td>63.2%</td><td>58.4</td><td>Original OpenAI release</td></tr><tr><td>CLIP ViT-L/14</td><td>2021</td><td>428M</td><td>WIT-400M</td><td>75.5%</td><td>65.7</td><td>Best original variant</td></tr><tr><td>CLIP ViT-L/14@336</td><td>2021</td><td>428M</td><td>WIT-400M</td><td>76.2%</td><td>67.0</td><td>Higher resolution input</td></tr><tr><td>OpenCLIP ViT-H/14</td><td>2022</td><td>986M</td><td>LAION-2B</td><td>78.0%</td><td>73.4</td><td>Open-source, LAION data</td></tr><tr><td>OpenCLIP ViT-G/14</td><td>2022</td><td>1.8B</td><td>LAION-2B</td><td>78.5%</td><td>74.0</td><td>Largest standard OpenCLIP</td></tr><tr><td>SigLIP ViT-B/16</td><td>2023</td><td>150M</td><td>WebLI</td><td>76.7%</td><td>65.1</td><td>Sigmoid loss, no batch-norm</td></tr><tr><td>EVA-CLIP-18B</td><td>2024</td><td>18B</td><td>LAION+COYO</td><td>80.7% avg</td><td>—</td><td>Largest open CLIP model</td></tr><tr><td>SigLIP 2 ViT-B/16</td><td>2025</td><td>150M</td><td>WebLI++</td><td>79.1%</td><td>69.7</td><td>+captioning, +distillation</td></tr><tr><td>MetaCLIP ViT-L/14</td><td>2023</td><td>428M</td><td>CommonCrawl</td><td>76.2%</td><td>69.1</td><td>Curated data balance</td></tr><tr><td>Jina-CLIP v2</td><td>2024</td><td>865M</td><td>LAION+text</td><td>70.0%</td><td>—</td><td>Joint image-text+text-text</td></tr></tbody></table></div>
+<h2 id="evaluation-results-and-comparisons">Evaluation Results and Comparisons<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-results-and-comparisons" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Zero-Shot ImageNet Performance (top-1 accuracy)</strong>:</p>
+<ul>
+<li>CLIP ViT-B/32 (OpenAI, 2021): 63.2%</li>
+<li>CLIP ViT-L/14@336 (OpenAI, 2021): 76.2% — equivalent to supervised ResNet-50</li>
+<li>OpenCLIP ViT-H/14 on LAION-2B (2022): 78.0%</li>
+<li>EVA-CLIP-18B (BAAI, 2024): 80.7% averaged across 27 benchmarks — open-source SOTA</li>
+<li>SigLIP 2 ViT-B/16 (Google, 2025): 79.1% — at B/16 scale, surpasses all prior variants</li>
+<li>Supervised ResNet-50 baseline: 76.2% — this is the target CLIP aimed to match at zero-shot</li>
+<li>Supervised ViT-L/16 on ImageNet-21K: 87.8% — upper bound for supervised vision models</li>
+</ul>
+<p><strong>MSCOCO Retrieval (image-to-text R@1)</strong>:</p>
+<ul>
+<li>CLIP ViT-L/14 (2021): 65.7 — original baseline</li>
+<li>OpenCLIP ViT-H/14 LAION-2B (2022): 73.4 — open-source improvement</li>
+<li>SigLIP ViT-B/16 (2023): 65.1 — comparable despite smaller model</li>
+<li>SigLIP 2 ViT-B/16 (2025): 69.7 — +4.6 points from richer training recipe</li>
+<li>CoCa ViT-G/14 (2022): 75.7 — benefits from captioning objective</li>
+</ul>
+<p><strong>Compositional Reasoning (WinoGround)</strong>:</p>
+<ul>
+<li>CLIP ViT-L/14: 30.4% text score, 11.4% image score — barely above chance (25%)</li>
+<li>This exposes the fundamental limitation of bag-of-words text understanding in CLIP</li>
+<li>Structured CLIP variants with compositional training improve to ~38-42% on WinoGround</li>
+</ul>
+<h2 id="related-concepts-glossary">Related Concepts Glossary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-concepts-glossary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong><a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a></strong>: Pre-trained large model adaptable to many downstream tasks; CLIP is the canonical vision-language foundation model</li>
+<li><strong><a href="../pages/Contrastive-Learning" class="internal alias" data-slug="pages/Contrastive-Learning">Contrastive Learning</a></strong>: Self-supervised approach training representations by comparing positive/negative pairs; CLIP’s core training paradigm</li>
+<li><strong><a href="../pages/Vision-Transformer" class="internal alias" data-slug="pages/Vision-Transformer">Vision Transformer</a></strong>: Transformer applied to image patches; the dominant CLIP vision encoder architecture since 2021</li>
+<li><strong><a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a></strong>: The universal sequence-to-sequence architecture underlying both CLIP encoders</li>
+<li><strong><a href="../pages/Self-Supervised-Learning" class="internal alias" data-slug="pages/Self-Supervised-Learning">Self-Supervised Learning</a></strong>: Learning representations without human labels; CLIP’s web-scraped image-caption data serves as self-supervision</li>
+<li><strong><a href="../pages/Zero-Shot-Learning" class="internal alias" data-slug="pages/Zero-Shot-Learning">Zero-Shot Learning</a></strong>: Performing tasks without task-specific training examples; CLIP’s primary and most remarkable capability</li>
+<li><strong><a href="../pages/Cross-Modal-Retrieval" class="internal alias" data-slug="pages/Cross-Modal-Retrieval">Cross-Modal Retrieval</a></strong>: Retrieving items from one modality (images) using queries in another (text); CLIP’s primary retrieval application</li>
+<li><strong><a href="../pages/Embedding-Space" class="internal alias" data-slug="pages/Embedding-Space">Embedding Space</a></strong>: A vector space in which semantic similarity is captured by geometric proximity; CLIP creates a shared multimodal embedding space</li>
+<li><strong><a href="../pages/Transfer-Learning" class="internal alias" data-slug="pages/Transfer-Learning">Transfer Learning</a></strong>: Using representations learned on one task for another; CLIP’s representations transfer broadly across visual tasks</li>
+<li><strong><a href="../pages/Multimodal-AI" class="internal alias" data-slug="pages/Multimodal-AI">Multimodal AI</a></strong>: AI systems processing multiple input/output modalities; CLIP is foundational infrastructure for multimodal AI</li>
+<li><strong><a href="../Stable-Diffusion" class="internal alias" data-slug="Stable-Diffusion">Stable Diffusion</a></strong>: Open-source text-to-image diffusion model that uses CLIP text encoders for conditioning</li>
+<li><strong><a href="../pages/Augmented-Reality" class="internal alias" data-slug="pages/Augmented-Reality">Augmented Reality</a></strong>: Overlaying digital content on physical reality; CLIP enables semantic scene understanding for AR</li>
+<li><strong><a href="../pages/Prompt-Engineering" class="internal alias" data-slug="pages/Prompt-Engineering">Prompt Engineering</a></strong>: Crafting effective natural-language inputs to optimise model behaviour; critical for CLIP zero-shot classification</li>
+</ul>
+<h2 id="prompt-engineering-best-practices-for-clip">Prompt Engineering Best Practices for CLIP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#prompt-engineering-best-practices-for-clip" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Effective CLIP zero-shot classification requires careful prompt design. The following practices are recommended based on empirical analysis from Radford et al. (2021) and subsequent work:</p>
+<ul>
+<li><strong>Use contextual templates</strong> rather than bare class names:
+<ul>
+<li>Bad: “dog”</li>
+<li>Good: “A photo of a dog”</li>
+<li>Better: “A photo of a {label}, a type of pet”</li>
+<li>Best (for specific domains): “A satellite image of a {label}” (for remote sensing)</li>
+</ul>
+</li>
+<li><strong>Template ensembling</strong>: Average text embeddings over 80 diverse templates; yields +3.5pp ImageNet top-1 versus single template</li>
+<li><strong>Domain-specific templates</strong>: Choose templates appropriate to the deployment domain:
+<ul>
+<li>Medical: “A chest X-ray showing {disease}”</li>
+<li>Art: “A painting in the style of {artist}”</li>
+<li>Food: “A photo of {food}, a type of food”</li>
+<li>Document: “A scanned page of a {document type}”</li>
+</ul>
+</li>
+<li><strong>Avoid ambiguous class names</strong>: “Jaguar” is ambiguous (car vs animal); use “Jaguar automobile” or “jaguar cat” to disambiguate</li>
+<li><strong>Handle multi-word classes</strong>: Hyphenate or naturalise compound class names for consistent tokenisation</li>
+<li><strong>Soft prompt tuning</strong> (CoOp, CoCoOp): Learnable continuous prompt tokens prepended to class embeddings; improves few-shot accuracy by 5-15pp at the cost of requiring a few labelled examples per class</li>
+<li><strong>WaffleCLIP</strong> (random textual descriptors): Demonstrates that even random word concatenations around class names improve zero-shot accuracy, suggesting CLIP is sensitive to text length and context rather than purely semantic content</li>
+</ul>
+<h2 id="accessibility-and-computational-requirements">Accessibility and Computational Requirements<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#accessibility-and-computational-requirements" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CLIP is widely accessible through multiple distribution channels, making it one of the most widely deployed <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> architectures in both research and production:</p>
+<ul>
+<li><strong>OpenAI CLIP (original)</strong>:
+<ul>
+<li>Repository: github.com/openai/CLIP (MIT licence)</li>
+<li>Models: ViT-B/32 (151MB), ViT-B/16 (585MB), ViT-L/14 (890MB), ViT-L/14@336 (891MB)</li>
+<li>Minimum requirements: Python 3.7+, PyTorch 1.7.1+, CUDA 10.1+ (GPU optional for inference)</li>
+<li>RAM: 4GB minimum; 16GB recommended for ViT-L/14</li>
+</ul>
+</li>
+<li><strong>HuggingFace transformers integration</strong>:
+<ul>
+<li><code>from transformers import CLIPModel, CLIPProcessor</code></li>
+<li>Supports all major CLIP variants; standardised preprocessing pipeline</li>
+<li>Widely used in research and production Python stacks</li>
+</ul>
+</li>
+<li><strong>OpenCLIP (open-source)</strong>:
+<ul>
+<li>Repository: github.com/mlfoundations/open_clip (MIT licence)</li>
+<li>100+ pretrained checkpoints on LAION-400M, LAION-2B, DataComp, CommonCrawl</li>
+<li>Supports ViT-B, ViT-L, ViT-H, ViT-G, ConvNeXt backbones</li>
+</ul>
+</li>
+<li><strong>Apple Core ML</strong>: CLIP ViT-B/32 converted to Core ML for on-device inference on iPhone 12+ and Apple Silicon; enables privacy-preserving local semantic search without server round-trips</li>
+<li><strong>TensorRT Deployment</strong>: NVIDIA TensorRT-optimised CLIP variants achieve 4-8× inference speedup on NVIDIA GPUs; widely used in production visual search infrastructure</li>
+<li><strong>ONNX Export</strong>: CLIP models exported to ONNX format for runtime-agnostic deployment (OpenVINO, ONNX Runtime, TensorRT); enables deployment on AMD GPUs, Intel CPUs, and edge inference hardware</li>
+</ul>
+<h2 id="clip-in-the-broader-ai-ecosystem">CLIP in the Broader AI Ecosystem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#clip-in-the-broader-ai-ecosystem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CLIP occupies a unique position in the modern AI stack as both a standalone capability and a foundational component for downstream systems. Understanding its ecosystem relationships clarifies its strategic importance:</p>
+<p><strong>As a Component in Generative AI</strong>:
+The text-to-image generation pipeline — arguably the highest-visibility consumer AI application of 2022-2026 — depends critically on CLIP. In Stable Diffusion 1.x, the text encoder is CLIP ViT-L/14, whose output embeddings directly condition the U-Net denoising network via cross-attention. This means that every Stable Diffusion image generation is implicitly a CLIP inference. Stable Diffusion XL (2023) uses two CLIP text encoders in parallel (CLIP ViT-L/14 and OpenCLIP ViT-bigG/14), concatenating their outputs for richer conditioning. DALL-E 2 (OpenAI, 2022) uses CLIP image embeddings directly as the conditioning signal for its diffusion model, enabling image variations by conditioning on the CLIP embedding of an input image rather than text. This architecture made CLIP central to the generative AI revolution of 2022-2024.</p>
+<p><strong>As a Retrieval Infrastructure</strong>:
+Pinterest deployed CLIP-based visual search (“Shop the Look”, “Visual Discovery”) at scale, processing billions of image-text retrieval queries monthly. The deployment index contains hundreds of millions of product images encoded by CLIP; users’ text or image queries are encoded by CLIP at inference time and matched via approximate nearest-neighbour search using a custom HNSW-based index. This Pinterest deployment was one of the first at-scale production CLIP systems and demonstrated that CLIP embeddings remain stable and useful for retrieval at billion-scale corpora. Getty Images, Shutterstock, and Adobe Stock subsequently deployed CLIP-based semantic search as the default search modality for their stock image libraries. Unsplash’s “Semantic Search” product was an early open demonstration of CLIP-powered cross-modal image retrieval.</p>
+<p><strong>As an Evaluation Tool</strong>:
+CLIP Score — the cosine similarity between a generated image’s CLIP embedding and the text prompt’s CLIP embedding — has become a standard automatic evaluation metric for text-to-image generation quality, complementing human preference studies. The FID (Fréchet Inception Distance) metric for generative image quality uses Inception-v3 features; CLIP-FID uses CLIP ViT-L/14 features instead, providing a more semantically meaningful distribution-level quality measure. CLIP Score and CLIP-FID are reported in virtually every text-to-image generation paper since 2022.</p>
+<p><strong>As a Training Signal</strong>:
+CLIP rewards are used in RLHF-style fine-tuning of text-to-image models. By maximising CLIP similarity between generated images and their prompts, generators can be fine-tuned to improve prompt adherence without collecting new human preference labels. This CLIP-guided generation (also called CLIP-guided diffusion) was widely used in early open-source image generation systems before human preference RLHF data became available at scale.</p>
+<p><strong>As a Foundation for VLMs</strong>:
+Large vision-language models (GPT-4V, LLaVA, InstructBLIP, CogVLM, Idefics) universally use CLIP or CLIP-derived visual encoders as their vision backbone. The pre-aligned multimodal embedding space that CLIP provides means that much less cross-modal alignment training is required when connecting visual features to a language model decoder — the CLIP encoder has already done the heavy lifting of aligning image and text representations. This architectural choice makes CLIP the default visual feature extractor for the entire frontier VLM ecosystem as of 2026.</p>
+<h2 id="scaling-laws-and-efficiency-research">Scaling Laws and Efficiency Research<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scaling-laws-and-efficiency-research" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CLIP’s performance follows predictable scaling laws similar to those established for large language models. Key findings from the scaling literature as of 2025:</p>
+<ul>
+<li><strong>Data Scaling</strong>: Performance improves monotonically with training dataset size (LAION-400M → LAION-2B → LAION-5B) at fixed model scale; the relationship is approximately logarithmic: doubling the data yields roughly constant absolute accuracy gains</li>
+<li><strong>Model Scaling</strong>: Performance improves predictably with model parameter count (ViT-B → ViT-L → ViT-H → ViT-G); EVA-CLIP-18B demonstrates that scaling to 18B parameters continues to yield substantial gains (80.7% vs 78.5% for ViT-G)</li>
+<li><strong>Compute-Optimal Training</strong>: Chinchilla-style compute-optimal scaling for CLIP has been studied by Zhai et al. (2022, “Scaling Vision Transformers”) and subsequently by DataComp (Gadre et al., 2024), which found that data quality is at least as important as data scale for CLIP at fixed compute — better data curation can match a 4× dataset size increase</li>
+<li><strong>Batch Size Effects</strong>: InfoNCE loss quality is strongly dependent on batch size because more in-batch negatives improve the contrastive signal. SigLIP’s sigmoid loss removes this batch-size dependence, enabling efficient training at much smaller batch sizes without quality degradation — a critical practical improvement for memory-constrained training setups</li>
+<li><strong>Resolution Scaling</strong>: Higher input resolution consistently improves CLIP performance; ViT-L/14@336 (336×336 input) outperforms ViT-L/14@224 by approximately 0.7pp on ImageNet zero-shot, demonstrating that spatial detail in the image embedding adds information beyond what lower-resolution patches capture</li>
+<li><strong>Architectural Comparisons</strong>: ViT encoders consistently outperform ResNet encoders at equivalent parameter counts on zero-shot transfer tasks, but ResNet encoders are more efficient at small scales. The ViT advantage grows with scale, making ViT the dominant choice for all large CLIP models as of 2022 onwards</li>
+</ul>
+<h2 id="clip-industry-timeline">CLIP Industry Timeline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#clip-industry-timeline" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>January 2021</strong>: CLIP preprint published on arXiv (arXiv:2103.00020); OpenAI releases weights and inference code under MIT licence</li>
+<li><strong>May 2021</strong>: CLIP presented at ICML 2021; receives broad citation and coverage</li>
+<li><strong>April 2022</strong>: DALL-E 2 released using CLIP image embeddings for conditioning; public awareness of CLIP reaches mainstream AI users</li>
+<li><strong>August 2022</strong>: Stable Diffusion 1.x released using CLIP ViT-L/14 as the text encoder; massive open-source adoption begins</li>
+<li><strong>September 2022</strong>: OpenCLIP ViT-H/14 trained on LAION-2B released, surpassing original CLIP quality with open weights</li>
+<li><strong>October 2022</strong>: LAION-5B dataset released; CLIP-score filtering at 0.28 threshold documented as the curation method</li>
+<li><strong>October 2022</strong>: CLIP-based open-vocabulary detection (OWL-ViT, GLIP) demonstrated at ECCV 2022</li>
+<li><strong>March 2023</strong>: SigLIP (sigmoid loss CLIP) released by Google, removing batch-size dependence</li>
+<li><strong>July 2023</strong>: Stable Diffusion XL released using dual CLIP text encoders</li>
+<li><strong>August 2023</strong>: MetaCLIP introduced, demonstrating that data curation quality is as important as data scale</li>
+<li><strong>December 2023</strong>: EVA-CLIP scaling pushed to 18B parameters; open-source CLIP performance reaches 80.7% ImageNet zero-shot</li>
+<li><strong>February 2025</strong>: SigLIP 2 released by Google DeepMind with captioning, distillation, and multilingual checkpoints; 79.1% ImageNet zero-shot at ViT-B scale</li>
+<li><strong>2025-2026</strong>: CLIP variants embedded in spatial computing hardware (Apple Vision Pro, Meta Quest Pro, Microsoft HoloLens 2); AR scene understanding applications proliferate</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-893" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#contrasting-relationships" data-for="contrasting-relationships">Contrasting Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-0"><a href="#formal-training-protocol" data-for="formal-training-protocol">Formal Training Protocol</a></li><li class="depth-0"><a href="#major-variants-and-successors-2021-2026" data-for="major-variants-and-successors-2021-2026">Major Variants and Successors (2021-2026)</a></li><li class="depth-0"><a href="#use-cases" data-for="use-cases">Use Cases</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#standards-licensing-and-governance" data-for="standards-licensing-and-governance">Standards, Licensing and Governance</a></li><li class="depth-0"><a href="#integration-patterns-and-deployment-architecture" data-for="integration-patterns-and-deployment-architecture">Integration Patterns and Deployment Architecture</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#formal-algorithm-clip-contrastive-pre-training" data-for="formal-algorithm-clip-contrastive-pre-training">Formal Algorithm: CLIP Contrastive Pre-training</a></li><li class="depth-0"><a href="#benchmark-datasets-and-evaluation" data-for="benchmark-datasets-and-evaluation">Benchmark Datasets and Evaluation</a></li><li class="depth-0"><a href="#limitations-and-known-failure-modes" data-for="limitations-and-known-failure-modes">Limitations and Known Failure Modes</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-0"><a href="#how-clip-differs-from-earlier-visual-representation-models" data-for="how-clip-differs-from-earlier-visual-representation-models">How CLIP Differs from Earlier Visual Representation Models</a></li><li class="depth-0"><a href="#clip-model-family-comparison-table" data-for="clip-model-family-comparison-table">CLIP Model Family Comparison Table</a></li><li class="depth-0"><a href="#evaluation-results-and-comparisons" data-for="evaluation-results-and-comparisons">Evaluation Results and Comparisons</a></li><li class="depth-0"><a href="#related-concepts-glossary" data-for="related-concepts-glossary">Related Concepts Glossary</a></li><li class="depth-0"><a href="#prompt-engineering-best-practices-for-clip" data-for="prompt-engineering-best-practices-for-clip">Prompt Engineering Best Practices for CLIP</a></li><li class="depth-0"><a href="#accessibility-and-computational-requirements" data-for="accessibility-and-computational-requirements">Accessibility and Computational Requirements</a></li><li class="depth-0"><a href="#clip-in-the-broader-ai-ecosystem" data-for="clip-in-the-broader-ai-ecosystem">CLIP in the Broader AI Ecosystem</a></li><li class="depth-0"><a href="#scaling-laws-and-efficiency-research" data-for="scaling-laws-and-efficiency-research">Scaling Laws and Efficiency Research</a></li><li class="depth-0"><a href="#clip-industry-timeline" data-for="clip-industry-timeline">CLIP Industry Timeline</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/AI-Art-Generation" class="internal">AI Art Generation</a></li><li><a href="../pages/AI-Upscaling-and-Super-Resolution" class="internal">AI Upscaling and Super-Resolution</a></li><li><a href="../pages/AUTOMATIC1111-WebUI" class="internal">AUTOMATIC1111 WebUI</a></li><li><a href="../pages/Automatic1111" class="internal">Automatic1111</a></li><li><a href="../pages/CLIP-Encoder" class="internal">CLIP Encoder</a></li><li><a href="../pages/Classifier-Free-Guidance" class="internal">classifier-free guidance</a></li><li><a href="../pages/CodeFormer" class="internal">CodeFormer</a></li><li><a href="../pages/Comfy-Ui" class="internal">Comfy Ui</a></li><li><a href="../pages/ComfyUI-API-Specification" class="internal">ComfyUI API Specification</a></li><li><a href="../pages/Creative-AI" class="internal">Creative AI</a></li><li><a href="../pages/Cross-Modal-Retrieval" class="internal">Cross Modal Retrieval</a></li><li><a href="../pages/Cross-Modal-Conditioning" class="internal">Cross-Modal Conditioning</a></li><li><a href="../pages/DALL-E-3" class="internal">DALL-E 3</a></li><li><a href="../pages/Deepfake-Detection" class="internal">Deepfake Detection</a></li><li><a href="../pages/ETSI-Domain-AI-+-Creative-Media" class="internal">ETSI Domain AI + Creative Media</a></li><li><a href="../pages/Hugging-Face-Diffusers" class="internal">hugging face diffusers</a></li><li><a href="../pages/InvokeAI" class="internal">InvokeAI</a></li><li><a href="../pages/Latent-Diffusion" class="internal">latent diffusion</a></li><li><a href="../pages/Modality-Specific-Encoder" class="internal">Modality-Specific Encoder</a></li><li><a href="../pages/Multimodal-Models" class="internal">Multimodal Models</a></li><li><a href="../pages/Perception-System" class="internal">Perception System</a></li><li><a href="../pages/Stability-AI" class="internal">Stability AI</a></li><li><a href="../pages/Text-to-Image-Generation" class="internal">Text-to-Image Generation</a></li><li><a href="../pages/Vector-Search" class="internal">Vector Search</a></li><li><a href="../pages/Video-Generation" class="internal">video generation</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

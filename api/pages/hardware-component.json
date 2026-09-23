@@ -36,6 +36,14 @@
       {
         "id": "urn:ngm:class:power-management",
         "label": "Power Management Unit"
+      },
+      {
+        "id": "urn:ngm:class:processor",
+        "label": "Processor"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management Unit"
       }
     ],
     "requires": [
@@ -89,6 +97,10 @@
       {
         "id": "urn:ngm:class:virtual-machine",
         "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:component",
+        "label": "Software Component"
       }
     ],
     "bridgesTo": [
@@ -109,6 +121,10 @@
       {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bus-interface",
+        "label": "Bus Interface"
       }
     ],
     "supports": [
@@ -119,6 +135,10 @@
       {
         "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
       }
     ],
     "standardizedBy": [
@@ -139,6 +159,10 @@
       {
         "id": "urn:ngm:class:edge-computing-node",
         "label": "Edge Computing Node"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ],
     "relatedTo": [
@@ -149,6 +173,10 @@
       {
         "id": "urn:ngm:class:field-programmable-gate-array",
         "label": "Field-Programmable Gate Array"
+      },
+      {
+        "id": "urn:ngm:class:printed-circuit-board",
+        "label": "Printed Circuit Board"
       }
     ]
   },
@@ -272,7 +300,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

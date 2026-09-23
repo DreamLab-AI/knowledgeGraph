@@ -78,6 +78,10 @@
       {
         "id": "urn:ngm:class:supervisory-authority",
         "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:european-data-protection-board",
+        "label": "European Data Protection Board"
       }
     ],
     "implements": [
@@ -120,6 +124,10 @@
       {
         "id": "urn:ngm:class:differential-privacy",
         "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "AI Act"
       }
     ],
     "uses": [],
@@ -239,7 +247,7 @@
         "label": "Privacy Preserving Technology"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -247,7 +255,7 @@
         "label": "Compliance"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -357,11 +365,11 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
       },
       {

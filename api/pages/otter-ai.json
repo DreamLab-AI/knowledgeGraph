@@ -32,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -127,6 +132,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:clinical-documentation",
+        "label": "Clinical Documentation"
+      },
+      {
         "id": "urn:ngm:class:language-translation",
         "label": "Language Translation"
       },
@@ -153,10 +162,6 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:named-entity-recognition",
-        "label": "Named Entity Recognition"
       }
     ],
     "dependsOn": [
@@ -201,7 +206,7 @@
         "label": "Accessibility Technology"
       },
       {
-        "id": "urn:ngm:class:multimodal-interaction",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
       },
       {
@@ -215,6 +220,18 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [

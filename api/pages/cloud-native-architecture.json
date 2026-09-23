@@ -186,6 +186,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:elasticity",
+        "label": "Elasticity"
+      },
+      {
         "id": "urn:ngm:class:infrastructure-as-a-service",
         "label": "Infrastructure as a Service"
       },
@@ -198,6 +202,10 @@
         "label": "Scalability"
       },
       {
+        "id": "urn:ngm:class:self-service-provisioning",
+        "label": "Self-Service Provisioning"
+      },
+      {
         "id": "urn:ngm:class:software-as-a-service",
         "label": "Software as a Service"
       },
@@ -208,14 +216,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "implements": [
@@ -306,7 +306,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -169,6 +169,10 @@
       {
         "id": "urn:ngm:class:hardware-abstraction-layer",
         "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
       }
     ],
     "enables": [
@@ -265,7 +269,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -277,6 +281,10 @@
       {
         "id": "urn:ngm:class:digital-signal-processor",
         "label": "Digital Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-controller",
+        "label": "Interrupt Controller"
       },
       {
         "id": "urn:ngm:class:sensor",
@@ -367,7 +375,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ]

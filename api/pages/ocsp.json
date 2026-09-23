@@ -45,7 +45,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -61,6 +61,10 @@
       {
         "id": "urn:ngm:class:trust-model",
         "label": "Trust Model"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "Transport Layer Security"
       }
     ],
     "standardizedBy": [],
@@ -207,12 +211,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -259,6 +263,10 @@
         "label": "Threat Actor"
       },
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -303,7 +311,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:https",
+        "id": "urn:ngm:class:http",
         "label": "HTTPS"
       },
       {
@@ -337,6 +345,10 @@
         "label": "RFC 5280"
       },
       {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509"
+      },
+      {
         "id": "urn:ngm:class:x509",
         "label": "X.509"
       },
@@ -359,10 +371,6 @@
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "relatedTo": [
@@ -371,12 +379,20 @@
         "label": "Certificate Authority"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:digital-certificate",
         "label": "Digital Certificate"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
       },
       {
         "id": "urn:ngm:class:supply-chain-security",
@@ -389,14 +405,6 @@
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
-      },
-      {
-        "id": "urn:ngm:class:corporate-governance",
-        "label": "Corporate Governance"
-      },
-      {
-        "id": "urn:ngm:class:multi-stakeholder-governance",
-        "label": "Multi-Stakeholder Governance"
       }
     ]
   },

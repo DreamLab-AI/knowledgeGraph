@@ -204,6 +204,10 @@
         "label": "Decentralised Identity"
       },
       {
+        "id": "urn:ngm:class:smart-contract-auditing",
+        "label": "Smart Contract Auditing"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },

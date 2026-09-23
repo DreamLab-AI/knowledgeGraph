@@ -118,6 +118,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:mixed-precision-quantisation",
+        "label": "Mixed-Precision Quantisation"
+      },
+      {
         "id": "urn:ngm:class:quantisation-aware-training",
         "label": "Quantisation-Aware Training"
       },
@@ -144,13 +148,13 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
-      },
-      {
-        "id": "urn:ngm:class:reasoning",
-        "label": "Reasoning"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:scale-factor",
+        "label": "Scale Factor"
+      },
       {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
@@ -222,6 +226,22 @@
       {
         "id": "urn:ngm:class:floating-point-arithmetic",
         "label": "Fixed-Point Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

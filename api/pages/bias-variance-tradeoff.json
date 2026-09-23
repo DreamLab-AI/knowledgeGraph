@@ -14,6 +14,14 @@
     {
       "id": "urn:ngm:class:hyperparameter-tuning",
       "label": "Hyperparameter Tuning"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
     }
   ],
   "entityType": "Class",
@@ -40,6 +48,14 @@
       {
         "id": "urn:ngm:class:irreducible-error",
         "label": "Irreducible Error"
+      },
+      {
+        "id": "urn:ngm:class:bias-error-component",
+        "label": "Bias Error Component"
+      },
+      {
+        "id": "urn:ngm:class:variance-error-component",
+        "label": "Variance Error Component"
       }
     ],
     "requires": [
@@ -50,6 +66,14 @@
       {
         "id": "urn:ngm:class:statistical-learning-theory",
         "label": "Statistical Learning Theory"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
     "enables": [
@@ -68,6 +92,10 @@
       {
         "id": "urn:ngm:class:learning-curve-analysis",
         "label": "Learning Curve Analysis"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularization"
       }
     ],
     "dependsOn": [
@@ -88,7 +116,16 @@
         "label": "Loss Function"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:generalisation-error-decomposition",
+        "label": "Generalisation Error Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:complexity-penalisation",
+        "label": "Complexity Penalisation"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:overfitting",
@@ -101,6 +138,10 @@
       {
         "id": "urn:ngm:class:double-descent",
         "label": "Double Descent"
+      },
+      {
+        "id": "urn:ngm:class:benign-overfitting",
+        "label": "Benign Overfitting"
       }
     ],
     "bridgesTo": [],
@@ -116,6 +157,26 @@
       {
         "id": "urn:ngm:class:ensemble-methods",
         "label": "Ensemble Methods"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularization"
+      },
+      {
+        "id": "urn:ngm:class:l1-regularization",
+        "label": "L1 Regularization"
+      },
+      {
+        "id": "urn:ngm:class:l2-regularization",
+        "label": "L2 Regularization"
+      },
+      {
+        "id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
       }
     ],
     "supports": [
@@ -134,9 +195,18 @@
       {
         "id": "urn:ngm:class:dimensionality-reduction",
         "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -166,6 +236,26 @@
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularization"
+      },
+      {
+        "id": "urn:ngm:class:random-forest",
+        "label": "Random Forest"
+      },
+      {
+        "id": "urn:ngm:class:boosting",
+        "label": "Gradient Boosting"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:kernel-methods",
+        "label": "Kernel Methods"
       }
     ]
   },
@@ -181,19 +271,14 @@
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -211,24 +296,24 @@
         "label": "VC Dimension"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
       }
     ],
     "requires": [
@@ -261,18 +346,14 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:empirical-experimental-design-tracking",
+        "label": "Experiment Tracking"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:regularisation",
-        "label": "Regularisation"
       },
       {
         "id": "urn:ngm:class:supervised-learning",
@@ -297,6 +378,10 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [
@@ -323,6 +408,48 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
@@ -333,6 +460,14 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -343,6 +478,10 @@
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
       },
       {
         "id": "urn:ngm:class:cloud-computing",
@@ -359,6 +498,10 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
       }
     ],
     "uses": [
@@ -411,6 +554,28 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "partOf": [
@@ -445,16 +610,16 @@
         "label": "Transfer Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:bias-and-fairness",
+        "label": "Bias and Fairness"
       }
     ]
   },

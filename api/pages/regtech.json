@@ -26,6 +26,14 @@
       {
         "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "Anti-Money Laundering"
       }
     ],
     "dependsOn": [],
@@ -38,7 +46,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       }
     ],
@@ -48,7 +56,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -108,11 +116,11 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -154,6 +162,10 @@
         "label": "Identity Management"
       },
       {
+        "id": "urn:ngm:class:policy-management",
+        "label": "Policy Management"
+      },
+      {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       },
@@ -180,8 +192,16 @@
         "label": "Regulatory Sandbox"
       },
       {
+        "id": "urn:ngm:class:supervisory-technology",
+        "label": "Supervisory Technology"
+      },
+      {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:organisational-trust",
+        "label": "Organisational Trust"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -194,20 +214,16 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:application-programming-interface",
         "label": "Application Programming Interface"
+      },
+      {
+        "id": "urn:ngm:class:data-standardisation",
+        "label": "Data Standardisation"
       }
     ],
     "implements": [
@@ -228,6 +244,14 @@
       {
         "id": "urn:ngm:class:legal-technology",
         "label": "Legal Technology"
+      },
+      {
+        "id": "urn:ngm:class:manual-compliance",
+        "label": "Manual Compliance"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-guidelines",
+        "label": "Voluntary Guidelines"
       }
     ],
     "bridgesTo": [
@@ -236,7 +260,7 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -254,6 +278,14 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -264,10 +296,6 @@
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

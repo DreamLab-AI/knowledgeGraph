@@ -28,12 +28,28 @@
       {
         "id": "urn:ngm:class:training-data-documentation",
         "label": "Training Data Documentation"
+      },
+      {
+        "id": "urn:ngm:class:intended-use-statement",
+        "label": "Intended Use Statement"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Bias and Fairness Analysis"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Disaggregated Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Model Metadata"
       },
       {
         "id": "urn:ngm:class:model-evaluation",
@@ -68,6 +84,10 @@
       {
         "id": "urn:ngm:class:datasheets-for-datasets",
         "label": "Datasheets for Datasets"
+      },
+      {
+        "id": "urn:ngm:class:system-cards",
+        "label": "System Cards"
       }
     ],
     "bridgesTo": [
@@ -91,6 +111,10 @@
       {
         "id": "urn:ngm:class:model-governance",
         "label": "Model Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-documentation-standards",
+        "label": "AI Documentation"
       }
     ],
     "relatedTo": [
@@ -127,6 +151,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -209,6 +238,10 @@
         "label": "Public Trust in AI"
       },
       {
+        "id": "urn:ngm:class:social-licence-for-ai",
+        "label": "social licence for AI"
+      },
+      {
         "id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
       },
@@ -225,16 +258,12 @@
         "label": "Risk Management"
       },
       {
+        "id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
+      },
+      {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
-      },
-      {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
       }
     ],
     "dependsOn": [
@@ -257,16 +286,12 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
-      },
-      {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
       },
       {
         "id": "urn:ngm:class:accountability",
@@ -279,6 +304,10 @@
       {
         "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
       }
     ],
     "contrastsWith": [
@@ -337,6 +366,10 @@
       {
         "id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       },
       {
         "id": "urn:ngm:class:fault-tolerance",
@@ -401,6 +434,10 @@
         "label": "Algorithmic Accountability"
       },
       {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
         "id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
       },
@@ -413,16 +450,12 @@
         "label": "GDPR"
       },
       {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
         "id": "urn:ngm:class:change-management",
         "label": "Change Management"
-      },
-      {
-        "id": "urn:ngm:class:enterprise-architecture",
-        "label": "Enterprise Architecture"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
       }
     ]
   },

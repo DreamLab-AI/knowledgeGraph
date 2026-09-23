@@ -14,6 +14,18 @@
     {
       "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:data-centre",
+      "label": "Data Centre Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:critical-national-infrastructure",
+      "label": "Critical National Infrastructure"
     }
   ],
   "entityType": "Class",
@@ -48,6 +60,26 @@
       {
         "id": "urn:ngm:class:storage-systems",
         "label": "Storage Systems"
+      },
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "AI ASIC"
+      },
+      {
+        "id": "urn:ngm:class:infiniband",
+        "label": "InfiniBand"
+      },
+      {
+        "id": "urn:ngm:class:spectrum-x",
+        "label": "Spectrum-X"
+      },
+      {
+        "id": "urn:ngm:class:power-distribution",
+        "label": "Power Distribution"
+      },
+      {
+        "id": "urn:ngm:class:datacentre-network",
+        "label": "Datacentre Network"
       }
     ],
     "requires": [
@@ -66,6 +98,22 @@
       {
         "id": "urn:ngm:class:semiconductor-supply-chain",
         "label": "Semiconductor Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:cooling-capacity",
+        "label": "Cooling Capacity"
+      },
+      {
+        "id": "urn:ngm:class:skilled-operators",
+        "label": "Skilled Operators"
+      },
+      {
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "HBM Memory"
+      },
+      {
+        "id": "urn:ngm:class:cowos-packaging",
+        "label": "CoWoS Packaging"
       }
     ],
     "enables": [
@@ -88,9 +136,46 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model-inference",
+        "label": "Foundation Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:ai-factory",
+        "label": "AI Factory"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:semiconductor-manufacturing",
+        "label": "Semiconductor Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:tsmc",
+        "label": "TSMC"
+      },
+      {
+        "id": "urn:ngm:class:hbm-supply",
+        "label": "HBM Supply"
+      },
+      {
+        "id": "urn:ngm:class:electrical-grid",
+        "label": "Electrical Grid"
+      },
+      {
+        "id": "urn:ngm:class:optical-networking",
+        "label": "Optical Networking"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:rocm",
+        "label": "ROCm"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:collective-communication",
@@ -121,7 +206,28 @@
         "label": "Tensor Parallelism"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-hpc",
+        "label": "Traditional HPC"
+      },
+      {
+        "id": "urn:ngm:class:classical-cloud-compute",
+        "label": "Classical Cloud Compute"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:cpu-centric-datacentre",
+        "label": "CPU-Centric Datacentre"
+      },
+      {
+        "id": "urn:ngm:class:fp64-optimised-hpc",
+        "label": "FP64-Optimised HPC"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -135,6 +241,26 @@
       {
         "id": "urn:ngm:class:rdma",
         "label": "RDMA"
+      },
+      {
+        "id": "urn:ngm:class:hbm3e",
+        "label": "HBM3e"
+      },
+      {
+        "id": "urn:ngm:class:fp8-arithmetic",
+        "label": "FP8 Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "FP4 Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:gpudirect",
+        "label": "GPUDirect"
+      },
+      {
+        "id": "urn:ngm:class:direct-current-distribution",
+        "label": "Direct Current Distribution"
       }
     ],
     "supports": [
@@ -161,12 +287,36 @@
       {
         "id": "urn:ngm:class:scientific-computing",
         "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:sovereign-research",
+        "label": "Sovereign Research"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:mlcommons",
         "label": "MLCommons"
+      },
+      {
+        "id": "urn:ngm:class:infiniband-trade-association",
+        "label": "InfiniBand Trade Association"
+      },
+      {
+        "id": "urn:ngm:class:ultra-ethernet-consortium",
+        "label": "Ultra Ethernet Consortium"
+      },
+      {
+        "id": "urn:ngm:class:ualink-consortium",
+        "label": "UALink Consortium"
+      },
+      {
+        "id": "urn:ngm:class:open-compute-project",
+        "label": "Open Compute Project"
       }
     ],
     "partOf": [],
@@ -190,16 +340,22 @@
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:hyperscaler",
+        "label": "Hyperscaler"
+      },
+      {
+        "id": "urn:ngm:class:nuclear-energy",
+        "label": "Nuclear Power"
+      },
+      {
+        "id": "urn:ngm:class:ai-supply-chain",
+        "label": "AI Supply Chain"
       }
     ]
   },
-  "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
-    }
-  ],
+  "inferredSuperClasses": [],
   "inheritedRelations": {
     "hasPart": [
       {
@@ -247,6 +403,26 @@
       {
         "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      },
+      {
+        "id": "urn:ngm:class:high-speed-network-connectivity",
+        "label": "High-Speed Network Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:physical-security",
+        "label": "Physical Security"
+      },
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
       }
     ],
     "enables": [
@@ -277,12 +453,34 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:fibre-optic-network",
+        "label": "Fibre Optic Network"
+      },
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
       }
     ],
     "bridgesTo": [
@@ -293,6 +491,40 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:hot-aisle-cold-aisle-containment",
+        "label": "Hot-Aisle Cold-Aisle Containment"
+      },
+      {
+        "id": "urn:ngm:class:power-usage-effectiveness",
+        "label": "Power Usage Effectiveness"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
       }
     ],
     "supports": [
@@ -315,6 +547,18 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:failover",
+        "label": "Failover"
       }
     ],
     "standardizedBy": [
@@ -325,11 +569,25 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:tier-classification-standard",
+        "label": "Tier Classification Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

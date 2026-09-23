@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:product-quantisation",
         "label": "Product Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted File Index"
+      },
+      {
+        "id": "urn:ngm:class:metadata-filter",
+        "label": "Metadata Filter"
       }
     ],
     "requires": [
@@ -38,6 +46,10 @@
       {
         "id": "urn:ngm:class:vector-embedding",
         "label": "Vector Embedding"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
       },
       {
         "id": "urn:ngm:class:nearest-neighbor-search",
@@ -76,6 +88,10 @@
       {
         "id": "urn:ngm:class:search-engine",
         "label": "Search Engine"
+      },
+      {
+        "id": "urn:ngm:class:document-database",
+        "label": "Document Database"
       }
     ],
     "bridgesTo": [
@@ -168,12 +184,12 @@
         "label": "Model Serving"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -400,7 +416,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

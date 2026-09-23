@@ -10,6 +10,18 @@
     {
       "id": "urn:ngm:class:network-analysis",
       "label": "Network Analysis"
+    },
+    {
+      "id": "urn:ngm:class:clustering",
+      "label": "Clustering"
+    },
+    {
+      "id": "urn:ngm:class:unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "id": "urn:ngm:class:graph-analysis",
+      "label": "Graph Analysis"
     }
   ],
   "entityType": "Class",
@@ -40,6 +52,22 @@
       {
         "id": "urn:ngm:class:modularity-optimisation",
         "label": "Modularity Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:infomap",
+        "label": "Infomap"
+      },
+      {
+        "id": "urn:ngm:class:walktrap-algorithm",
+        "label": "Walktrap Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:clique-percolation-method",
+        "label": "Clique Percolation Method"
+      },
+      {
+        "id": "urn:ngm:class:bigclam",
+        "label": "BIGCLAM"
       }
     ],
     "requires": [
@@ -50,6 +78,14 @@
       {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:adjacency-matrix",
+        "label": "Adjacency Matrix"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       }
     ],
     "enables": [
@@ -76,6 +112,18 @@
       {
         "id": "urn:ngm:class:bioinformatics",
         "label": "Bioinformatics"
+      },
+      {
+        "id": "urn:ngm:class:urban-mobility-analysis",
+        "label": "Urban Mobility Analysis"
+      },
+      {
+        "id": "urn:ngm:class:protein-interaction-network-analysis",
+        "label": "Protein Interaction Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
       }
     ],
     "dependsOn": [
@@ -84,11 +132,32 @@
         "label": "Graph Theory"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:modularity-optimisation",
+        "label": "Modularity Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:minimum-description-length",
+        "label": "Minimum Description Length"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-block-model",
+        "label": "Stochastic Block Model"
+      },
+      {
+        "id": "urn:ngm:class:constant-potts-model",
+        "label": "Constant Potts Model"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:hierarchical-clustering",
@@ -97,6 +166,14 @@
       {
         "id": "urn:ngm:class:graph-partitioning",
         "label": "Graph Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:k-means-clustering",
+        "label": "k-means Clustering"
+      },
+      {
+        "id": "urn:ngm:class:density-based-clustering",
+        "label": "Density-Based Clustering"
       }
     ],
     "bridgesTo": [
@@ -107,6 +184,14 @@
       {
         "id": "urn:ngm:class:blockchain-governance",
         "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
       }
     ],
     "uses": [
@@ -129,6 +214,42 @@
       {
         "id": "urn:ngm:class:node-embedding",
         "label": "Node Embedding"
+      },
+      {
+        "id": "urn:ngm:class:random-walk",
+        "label": "Random Walks"
+      },
+      {
+        "id": "urn:ngm:class:graph-convolutional-network",
+        "label": "Graph Convolutional Network"
+      },
+      {
+        "id": "urn:ngm:class:graph-attention-network",
+        "label": "Graph Attention Network"
+      },
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:temporal-graph-networks",
+        "label": "Temporal Graph Networks"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
       }
     ],
     "supports": [
@@ -139,9 +260,30 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -167,14 +309,66 @@
       {
         "id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:complex-networks",
+        "label": "Complex Networks"
+      },
+      {
+        "id": "urn:ngm:class:scale-free-networks",
+        "label": "Scale-Free Networks"
+      },
+      {
+        "id": "urn:ngm:class:small-world-networks",
+        "label": "Small-World Networks"
+      },
+      {
+        "id": "urn:ngm:class:community-governance-model",
+        "label": "Community Governance Model"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:data-mining",
+      "label": "Data Mining",
+      "slug": "data-mining"
+    },
+    {
       "id": "urn:ngm:class:graph-theory",
       "label": "Graph Theory",
       "slug": "graph-theory"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:statistical-learning-theory",
+      "label": "Statistical Learning Theory",
+      "slug": "statistical-learning-theory"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -185,10 +379,34 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-discovery",
+      "label": "Knowledge Discovery",
+      "slug": "knowledge-discovery"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-management",
+      "label": "Knowledge Management",
+      "slug": "knowledge-management"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:centrality-measure",
+        "label": "Centrality Measure"
+      },
       {
         "id": "urn:ngm:class:graph-embedding",
         "label": "Graph Embedding"
@@ -198,28 +416,24 @@
         "label": "Link Prediction"
       },
       {
-        "id": "urn:ngm:class:graph-algorithms",
-        "label": "Graph Traversal"
+        "id": "urn:ngm:class:dbscan",
+        "label": "DBSCAN"
       },
       {
-        "id": "urn:ngm:class:path-planning",
-        "label": "Shortest Path"
+        "id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation-Maximisation"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:hdbscan",
+        "label": "HDBSCAN"
       }
     ],
     "requires": [
@@ -232,24 +446,28 @@
         "label": "Graph Database"
       },
       {
-        "id": "urn:ngm:class:combinatorics",
-        "label": "Combinatorics"
+        "id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
       },
       {
-        "id": "urn:ngm:class:set-theory",
-        "label": "Set Theory"
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:similarity-function",
+        "label": "Similarity Function"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Latent Space"
       }
     ],
     "enables": [
@@ -266,33 +484,115 @@
         "label": "Recommendation System"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graph"
+        "id": "urn:ngm:class:cell-type-identification",
+        "label": "Cell Type Identification"
       },
       {
-        "id": "urn:ngm:class:network-analysis",
-        "label": "Network Analysis"
+        "id": "urn:ngm:class:customer-segmentation",
+        "label": "Customer Segmentation"
       },
       {
-        "id": "urn:ngm:class:routing-protocol",
-        "label": "Routing Protocol"
+        "id": "urn:ngm:class:document-organisation",
+        "label": "Document Organisation"
       },
       {
-        "id": "urn:ngm:class:social-network-analysis",
-        "label": "Social Network Analysis"
+        "id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:image-retrieval",
+        "label": "Image Retrieval"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation-Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:graph-laplacian",
+        "label": "Graph Laplacian"
+      },
+      {
+        "id": "urn:ngm:class:k-means",
+        "label": "K-Means"
+      },
+      {
+        "id": "urn:ngm:class:manifold-hypothesis",
+        "label": "Manifold Hypothesis"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
       {
         "id": "urn:ngm:class:euclidean-geometry",
         "label": "Euclidean Geometry"
@@ -300,13 +600,13 @@
       {
         "id": "urn:ngm:class:relational-algebra",
         "label": "Relational Algebra"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
-      },
       {
         "id": "urn:ngm:class:epidemiological-modelling",
         "label": "Epidemiological Modelling"
@@ -316,12 +616,28 @@
         "label": "Supply Chain Resilience"
       },
       {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-domain",
+        "label": "Distributed Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
       }
     ],
     "uses": [
@@ -342,26 +658,86 @@
         "label": "Social Network Graph"
       },
       {
-        "id": "urn:ngm:class:adjacency-matrix",
-        "label": "Adjacency Matrix"
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
       },
       {
-        "id": "urn:ngm:class:dynamic-programming",
-        "label": "Dynamic Programming"
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
       },
       {
-        "id": "urn:ngm:class:linear-algebra",
-        "label": "Linear Algebra"
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:graph-neural-network",
-        "label": "Graph Neural Network"
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
       },
       {
-        "id": "urn:ngm:class:ontology",
-        "label": "Ontology"
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-tpami",
+        "label": "IEEE TPAMI"
+      },
+      {
+        "id": "urn:ngm:class:scikit-learn",
+        "label": "scikit-learn"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       }
     ],
     "relatedTo": [
@@ -382,20 +758,20 @@
         "label": "Linked Data"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:computational-complexity-theory",
-        "label": "Computational Complexity"
+        "id": "urn:ngm:class:bayesian-nonparametrics",
+        "label": "Bayesian Nonparametrics"
       },
       {
-        "id": "urn:ngm:class:topology",
-        "label": "Topology"
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
       }
     ]
   },

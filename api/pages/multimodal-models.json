@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:decoder",
         "label": "Multimodal Decoder"
+      },
+      {
+        "id": "urn:ngm:class:projection-layer",
+        "label": "Projection Layer"
+      },
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "Multimodal Decoder"
       }
     ],
     "requires": [
@@ -34,6 +42,10 @@
       {
         "id": "urn:ngm:class:cross-attention",
         "label": "Cross Attention"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Paired Training Data"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -56,6 +68,14 @@
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Audio-Visual Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Audio-Visual Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-retrieval",
+        "label": "Multimodal Retrieval"
       }
     ],
     "dependsOn": [
@@ -66,10 +86,19 @@
       {
         "id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:unimodal-models",
+        "label": "Unimodal Models"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -96,6 +125,10 @@
       {
         "id": "urn:ngm:class:embedding-space",
         "label": "Embedding Space"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Vision Encoder"
       }
     ],
     "supports": [],
@@ -201,6 +234,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

@@ -24,9 +24,22 @@
       {
         "id": "urn:ngm:class:nostr-relay",
         "label": "Nostr Relay"
+      },
+      {
+        "id": "urn:ngm:class:nostr-improvement-proposal",
+        "label": "Nostr Improvement Proposal"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:relay-server",
+        "label": "Relay Server"
+      },
+      {
+        "id": "urn:ngm:class:event-signing",
+        "label": "Event Signing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:censorship-resistance",
@@ -81,6 +94,10 @@
       {
         "id": "urn:ngm:class:federated-social-networks",
         "label": "Federated Social Network"
+      },
+      {
+        "id": "urn:ngm:class:federated-social-networks",
+        "label": "Federated Social Network"
       }
     ],
     "bridgesTo": [
@@ -107,6 +124,10 @@
       {
         "id": "urn:ngm:class:javascript-solid-server",
         "label": "JavaScript Solid Server"
+      },
+      {
+        "id": "urn:ngm:class:inter-agent-communication",
+        "label": "Agent-to-Agent Communication"
       }
     ],
     "uses": [
@@ -129,6 +150,10 @@
       {
         "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON"
       }
     ],
     "supports": [],
@@ -142,6 +167,10 @@
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:value-for-value",
+        "label": "Value-for-Value"
       }
     ]
   },
@@ -155,12 +184,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -269,7 +298,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -29,12 +29,24 @@
       {
         "id": "urn:ngm:class:aml",
         "label": "AML/CFT"
+      },
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "AML/CFT"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:regulatory-sandbox",
         "label": "Regulatory Sandbox"
+      },
+      {
+        "id": "urn:ngm:class:fintech-innovation",
+        "label": "FinTech Innovation"
+      },
+      {
+        "id": "urn:ngm:class:financial-promotion",
+        "label": "Financial Promotion"
       }
     ],
     "dependsOn": [],
@@ -42,6 +54,10 @@
       {
         "id": "urn:ngm:class:financial-services-and-markets-act",
         "label": "Financial Services and Markets Act"
+      },
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "Money Laundering Regulations"
       },
       {
         "id": "urn:ngm:class:anti-money-laundering",
@@ -72,14 +88,18 @@
         "label": "Digital Asset Custody"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto-Asset Regulation"
       }
     ],
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -265,7 +285,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

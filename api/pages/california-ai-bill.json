@@ -12,12 +12,24 @@
       "label": "AI Governance and Ethics"
     },
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:ai-regulation",
+      "label": "AI Regulation"
     },
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:technology-policy",
+      "label": "Technology Policy"
+    },
+    {
+      "id": "urn:ngm:class:legislative-instrument",
+      "label": "Legislative Instrument"
+    },
+    {
+      "id": "urn:ngm:class:state-law",
+      "label": "State Law"
+    },
+    {
+      "id": "urn:ngm:class:frontier-model-governance",
+      "label": "Frontier Model Governance"
     }
   ],
   "entityType": "Class",
@@ -48,6 +60,38 @@
       {
         "id": "urn:ngm:class:whistleblower-protection",
         "label": "Whistleblower Protection"
+      },
+      {
+        "id": "urn:ngm:class:sb-53",
+        "label": "SB 53"
+      },
+      {
+        "id": "urn:ngm:class:ab-2013",
+        "label": "AB 2013"
+      },
+      {
+        "id": "urn:ngm:class:ab-1008",
+        "label": "AB 1008"
+      },
+      {
+        "id": "urn:ngm:class:ab-489",
+        "label": "AB 489"
+      },
+      {
+        "id": "urn:ngm:class:sb-942",
+        "label": "SB 942"
+      },
+      {
+        "id": "urn:ngm:class:incident-reporting",
+        "label": "Critical Safety Incident Reporting"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance Statement"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-division",
+        "label": "Frontier Model Division"
       }
     ],
     "requires": [
@@ -74,6 +118,10 @@
       {
         "id": "urn:ngm:class:training-data-documentation",
         "label": "Training Data Documentation"
+      },
+      {
+        "id": "urn:ngm:class:attorney-general-enforcement",
+        "label": "Attorney General Enforcement"
       }
     ],
     "enables": [
@@ -88,9 +136,54 @@
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-transparency",
+        "label": "AI Safety Transparency"
+      },
+      {
+        "id": "urn:ngm:class:training-data-disclosure",
+        "label": "Training Data Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:consumer-privacy-in-ai",
+        "label": "Consumer Privacy in AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai-accountability",
+        "label": "Healthcare AI Accountability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:california-legislature",
+        "label": "California Legislature"
+      },
+      {
+        "id": "urn:ngm:class:governor-of-california",
+        "label": "Governor of California"
+      },
+      {
+        "id": "urn:ngm:class:california-department-of-justice",
+        "label": "California Department of Justice"
+      },
+      {
+        "id": "urn:ngm:class:california-office-of-emergency-services",
+        "label": "California Office of Emergency Services"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:ccpa",
+        "label": "CCPA"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:critical-harm-framework",
@@ -107,9 +200,54 @@
       {
         "id": "urn:ngm:class:whistleblower-protection",
         "label": "Whistleblower Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "Risk-Based AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency Mandate"
+      },
+      {
+        "id": "urn:ngm:class:pre-deployment-safety-checks",
+        "label": "Pre-Deployment Safety Checks"
+      },
+      {
+        "id": "urn:ngm:class:whistleblower-protection",
+        "label": "Whistleblower Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:dual-threshold-regulation",
+        "label": "Dual Threshold Regulation"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:federal-ai-policy",
+        "label": "Federal AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-ai-commitments",
+        "label": "Voluntary AI Commitments"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-regulation",
+        "label": "Risk-Based Regulation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -135,6 +273,10 @@
       {
         "id": "urn:ngm:class:revenue-threshold",
         "label": "Revenue Threshold"
+      },
+      {
+        "id": "urn:ngm:class:third-party-safety-audit",
+        "label": "Third-Party Safety Audit"
       }
     ],
     "supports": [
@@ -157,6 +299,10 @@
       {
         "id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:federal-preemption-debate",
+        "label": "Federal Preemption Debate"
       }
     ],
     "standardizedBy": [
@@ -165,12 +311,20 @@
         "label": "California Office of Emergency Services"
       },
       {
-        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
         "label": "ISO/IEC JTC 1/SC 42"
       },
       {
         "id": "urn:ngm:class:nist",
         "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:california-legislature",
+        "label": "California Legislature"
+      },
+      {
+        "id": "urn:ngm:class:california-attorney-general",
+        "label": "California Attorney General"
       }
     ],
     "partOf": [],
@@ -226,6 +380,122 @@
       {
         "id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI Research Organisation"
+      },
+      {
+        "id": "urn:ngm:class:sb-1047",
+        "label": "SB 1047"
+      },
+      {
+        "id": "urn:ngm:class:sb-53",
+        "label": "SB 53"
+      },
+      {
+        "id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:technology-policy",
+        "label": "Technology Policy"
+      },
+      {
+        "id": "urn:ngm:class:liability",
+        "label": "Liability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:whistleblower-protection",
+        "label": "Whistleblower Protection"
+      },
+      {
+        "id": "urn:ngm:class:training-data-transparency",
+        "label": "Training Data Transparency"
+      },
+      {
+        "id": "urn:ngm:class:kill-switch",
+        "label": "Kill Switch"
+      },
+      {
+        "id": "urn:ngm:class:compute-threshold",
+        "label": "Compute Threshold"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:dario-amodei",
+        "label": "Dario Amodei"
+      },
+      {
+        "id": "urn:ngm:class:elon-musk",
+        "label": "Elon Musk"
+      },
+      {
+        "id": "urn:ngm:class:marc-andreessen",
+        "label": "Marc Andreessen"
+      },
+      {
+        "id": "urn:ngm:class:dan-hendrycks",
+        "label": "Dan Hendrycks"
+      },
+      {
+        "id": "urn:ngm:class:yann-lecun",
+        "label": "Yann LeCun"
+      },
+      {
+        "id": "urn:ngm:class:california-legislature",
+        "label": "California Legislature"
+      },
+      {
+        "id": "urn:ngm:class:california-attorney-general",
+        "label": "California Attorney General"
+      },
+      {
+        "id": "urn:ngm:class:california-office-of-emergency-services",
+        "label": "California Office of Emergency Services"
+      },
+      {
+        "id": "urn:ngm:class:google-ai-technology-corporation",
+        "label": "Google AI Technology Corporation"
+      },
+      {
+        "id": "urn:ngm:class:ai-alliance",
+        "label": "AI Alliance"
+      },
+      {
+        "id": "urn:ngm:class:center-for-ai-safety",
+        "label": "Center for AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
+        "label": "ISO IEC JTC 1 SC 42"
       }
     ]
   },
@@ -273,6 +543,22 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -286,6 +572,14 @@
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:ai-transparency-framework",
+        "label": "AI Transparency"
+      },
+      {
+        "id": "urn:ngm:class:public-trust-in-ai",
+        "label": "Public Trust in AI"
+      },
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
@@ -307,6 +601,94 @@
         "label": "Predictive Analytics"
       }
     ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-regulation",
+        "label": "Risk-Based Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-self-regulation",
+        "label": "AI Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity-law",
+        "label": "Cybersecurity Law"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:product-liability",
+        "label": "Product Liability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-and-certification",
+        "label": "Audit and Certification"
+      },
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-sandbox",
+        "label": "Regulatory Sandboxes"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:accountability",
@@ -319,6 +701,18 @@
       {
         "id": "urn:ngm:class:ai-transparency-framework",
         "label": "Ai Transparency Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ]
   },

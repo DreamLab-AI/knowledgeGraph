@@ -8,7 +8,7 @@
   "definition": "Asset recovery is the process of identifying, tracing, freezing, and ultimately returning funds or property obtained through fraud, corruption, money laundering, or other financial crime. It combines financial investigation, legal action, and cross-border cooperation to follow illicit value through layered transactions and recover it for victims or the state. In the digital era it increasingly relies on blockchain analytics to trace cryptocurrency proceeds.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:anti-money-laundering",
+      "id": "urn:ngm:class:aml",
       "label": "Anti-Money Laundering"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -70,7 +70,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       }
     ],
@@ -95,19 +95,34 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:regulatory-compliance",
-      "label": "Regulatory Compliance",
-      "slug": "regulatory-compliance"
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services",
+      "slug": "financial-services"
     },
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics",
-      "slug": "ai-governance-and-ethics"
+      "id": "urn:ngm:class:economic-systems",
+      "label": "Economic Systems",
+      "slug": "economic-systems"
     },
     {
-      "id": "urn:ngm:class:ai-governance-principle",
-      "label": "AI Governance Principle",
-      "slug": "ai-governance-principle"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -122,12 +137,8 @@
         "label": "Customer Due Diligence"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
-        "label": "Know Your Customer"
-      },
-      {
-        "id": "urn:ngm:class:sanctions-screening",
-        "label": "Sanctions Screening"
+        "id": "urn:ngm:class:kyc",
+        "label": "KYC"
       },
       {
         "id": "urn:ngm:class:suspicious-activity-report",
@@ -138,118 +149,148 @@
         "label": "Transaction Monitoring"
       },
       {
-        "id": "urn:ngm:class:audit-trail",
-        "label": "Audit Trail"
+        "id": "urn:ngm:class:banking",
+        "label": "Banking"
       },
       {
-        "id": "urn:ngm:class:compliance-audit-trail",
-        "label": "Compliance Audit Trail"
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:compliance-framework",
-        "label": "Compliance Framework"
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "id": "urn:ngm:class:insurance",
+        "label": "Insurance"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:fraud-detection",
-        "label": "Fraud Detection"
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
       },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
+        "id": "urn:ngm:class:risk-scoring",
+        "label": "Risk Scoring"
       },
       {
-        "id": "urn:ngm:class:ai-audit",
-        "label": "AI Audit"
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
       },
       {
-        "id": "urn:ngm:class:ai-impact-assessment",
-        "label": "AI Impact Assessment"
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
       },
       {
-        "id": "urn:ngm:class:human-oversight",
-        "label": "Human Oversight"
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
       },
       {
-        "id": "urn:ngm:class:model-evaluation",
-        "label": "Model Evaluation"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:financial-intelligence",
-        "label": "Financial Intelligence"
+        "id": "urn:ngm:class:financial-crime-prevention",
+        "label": "Financial Crime Prevention"
       },
       {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
       },
       {
-        "id": "urn:ngm:class:ai-governance-framework",
-        "label": "AI Governance Framework"
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
       },
       {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
       },
       {
-        "id": "urn:ngm:class:national-ai-strategy",
-        "label": "National AI Strategy"
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
       },
       {
-        "id": "urn:ngm:class:trustworthy-ai",
-        "label": "Trustworthy AI"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
-      }
-    ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD AI Principles"
-      },
-      {
-        "id": "urn:ngm:class:value-alignment",
-        "label": "Value Alignment"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:financial-privacy",
-        "label": "Financial Anonymity"
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
       },
       {
-        "id": "urn:ngm:class:privacy-preserving-computation",
-        "label": "Privacy-Preserving Computation"
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       }
     ],
     "uses": [
@@ -258,76 +299,102 @@
         "label": "Anomaly Detection"
       },
       {
-        "id": "urn:ngm:class:graph-neural-network",
-        "label": "Graph Neural Network"
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:api-economy",
+        "label": "API Economy"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
-        "label": "Basel Committee on Banking Supervision"
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
       },
       {
-        "id": "urn:ngm:class:financial-action-task-force",
-        "label": "Financial Action Task Force"
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
-        "label": "EU AI Act"
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
       },
       {
-        "id": "urn:ngm:class:iso-iec-42001",
-        "label": "ISO IEC 42001"
+        "id": "urn:ngm:class:psd2",
+        "label": "PSD2"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
       },
       {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD AI Principles"
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:blockchain-compliance",
-        "label": "Blockchain Compliance"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:counter-terrorist-financing",
-        "label": "Counter-Terrorist Financing"
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
       },
       {
-        "id": "urn:ngm:class:financial-crime-detection",
-        "label": "Financial Crime"
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
       },
       {
-        "id": "urn:ngm:class:regtech",
-        "label": "RegTech"
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
       },
       {
-        "id": "urn:ngm:class:ai-governance-framework",
-        "label": "AI Governance Framework"
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
       },
       {
-        "id": "urn:ngm:class:ai-risk-management",
-        "label": "AI Risk Management"
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
       },
       {
-        "id": "urn:ngm:class:data-protection",
-        "label": "Data Protection"
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
       },
       {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
       }
     ]
   },

@@ -62,7 +62,7 @@
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -90,6 +90,10 @@
       {
         "id": "urn:ngm:class:bounding-volume-hierarchy",
         "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:heatmap-regression",
+        "label": "Heatmap Regression"
       }
     ]
   },
@@ -221,6 +225,18 @@
       {
         "id": "urn:ngm:class:image-classification",
         "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       }
     ],
     "implements": [
@@ -251,6 +267,30 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -298,7 +338,7 @@
   "backlinks": [
     {
       "slug": "heatmap-regression",
-      "label": "Heatmap Regression"
+      "label": "Heatmap Regression (Keypoint Localisation)"
     }
   ]
 }

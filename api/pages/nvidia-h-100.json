@@ -12,7 +12,7 @@
       "label": "GPU"
     },
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
@@ -28,6 +28,18 @@
       {
         "id": "urn:ngm:class:high-bandwidth-memory",
         "label": "High Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:transformer-engine",
+        "label": "Transformer Engine"
+      },
+      {
+        "id": "urn:ngm:class:nvswitch",
+        "label": "NVSwitch"
+      },
+      {
+        "id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
       }
     ],
     "requires": [
@@ -62,6 +74,14 @@
       {
         "id": "urn:ngm:class:cuda",
         "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:hopper-architecture",
+        "label": "Hopper Architecture"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-software-stack",
+        "label": "NVIDIA Software Stack"
       }
     ],
     "implements": [
@@ -72,9 +92,25 @@
       {
         "id": "urn:ngm:class:tensor-core",
         "label": "Tensor Core"
+      },
+      {
+        "id": "urn:ngm:class:fp8-precision",
+        "label": "FP8 Precision"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tpu",
+        "label": "Google TPU v4"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-a100",
+        "label": "NVIDIA A100"
+      },
+      {
+        "id": "urn:ngm:class:amd-instinct-mi300x",
+        "label": "AMD Instinct MI300X"
+      },
       {
         "id": "urn:ngm:class:tpu",
         "label": "Google TPU v4"
@@ -92,12 +128,20 @@
       {
         "id": "urn:ngm:class:data-centre",
         "label": "AI Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "AI Data Centre"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:infiniband",
         "label": "InfiniBand"
+      },
+      {
+        "id": "urn:ngm:class:pcie-5",
+        "label": "PCIe 5"
       }
     ],
     "supports": [],
@@ -106,6 +150,10 @@
       {
         "id": "urn:ngm:class:gpu-cluster",
         "label": "GPU Cluster"
+      },
+      {
+        "id": "urn:ngm:class:dgx-h100",
+        "label": "DGX H100"
       }
     ],
     "relatedTo": [
@@ -116,14 +164,18 @@
       {
         "id": "urn:ngm:class:ai-accelerator",
         "label": "AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-corporation-h200",
+        "label": "NVIDIA H200"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:graphics-processing",
@@ -149,6 +201,26 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing-domain",
+      "label": "Spatial Computing Domain",
+      "slug": "spatial-computing-domain"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -158,32 +230,32 @@
         "label": "Shader"
       },
       {
-        "id": "urn:ngm:class:tensor-core",
-        "label": "Tensor Core"
-      },
-      {
         "id": "urn:ngm:class:video-memory",
         "label": "Video Memory"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
       }
     ],
     "requires": [
@@ -196,28 +268,28 @@
         "label": "Parallel Programming Model"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:gpu",
-        "label": "GPU"
-      },
-      {
-        "id": "urn:ngm:class:rendering-pipeline",
-        "label": "Rendering Pipeline"
-      },
-      {
         "id": "urn:ngm:class:shader",
         "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:networking-fabric",
+        "label": "Networking Fabric"
+      },
+      {
+        "id": "urn:ngm:class:cooling-system",
+        "label": "Cooling Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
       }
     ],
     "enables": [
@@ -246,12 +318,12 @@
         "label": "Scientific Computing"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "dependsOn": [
@@ -262,6 +334,18 @@
       {
         "id": "urn:ngm:class:pcie-bus",
         "label": "PCIe Bus"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
       },
       {
         "id": "urn:ngm:class:hardware-acceleration",
@@ -276,6 +360,14 @@
       {
         "id": "urn:ngm:class:single-instruction-multiple-thread",
         "label": "Single-Instruction Multiple-Thread"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
       }
     ],
     "contrastsWith": [
@@ -288,6 +380,10 @@
         "label": "Neural Processing Unit"
       },
       {
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
+      },
+      {
         "id": "urn:ngm:class:cpu-computing",
         "label": "CPU Computing"
       },
@@ -298,9 +394,17 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
       {
         "id": "urn:ngm:class:mining",
         "label": "Blockchain Mining"
@@ -310,28 +414,24 @@
         "label": "Spatial Computing"
       },
       {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
       },
       {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
         "id": "urn:ngm:class:neural-rendering",
         "label": "Neural Rendering"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
-      },
-      {
-        "id": "urn:ngm:class:3-d-reconstruction",
-        "label": "3D Reconstruction"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
       }
     ],
     "uses": [
@@ -348,24 +448,24 @@
         "label": "Vulkan"
       },
       {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "Accelerated Computing"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      },
+      {
         "id": "urn:ngm:class:graphics-api",
         "label": "Graphics API"
-      },
-      {
-        "id": "urn:ngm:class:rasterization",
-        "label": "Rasterisation"
-      },
-      {
-        "id": "urn:ngm:class:texture-mapping",
-        "label": "Texture Mapping"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
       }
     ],
     "supports": [
@@ -374,12 +474,24 @@
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -388,24 +500,24 @@
       {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:khronos-group",
         "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
       },
       {
         "id": "urn:ngm:class:direct3d",
@@ -422,18 +534,6 @@
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
-      },
-      {
-        "id": "urn:ngm:class:open-xr",
-        "label": "OpenXR"
-      },
-      {
-        "id": "urn:ngm:class:web-xr",
-        "label": "WebXR"
       }
     ],
     "relatedTo": [
@@ -446,28 +546,28 @@
         "label": "Graphics Pipeline"
       },
       {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:empirical-experimental-design-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
         "id": "urn:ngm:class:display-technology",
         "label": "Display Technology"
-      },
-      {
-        "id": "urn:ngm:class:compute-infrastructure",
-        "label": "Compute Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:infra-data-management",
-        "label": "Data Management"
-      },
-      {
-        "id": "urn:ngm:class:infra-network-and-comms",
-        "label": "Network and Communication"
-      },
-      {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

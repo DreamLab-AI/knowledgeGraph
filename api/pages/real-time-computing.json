@@ -20,6 +20,14 @@
       {
         "id": "urn:ngm:class:deadline-scheduling",
         "label": "Deadline Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:hard-real-time",
+        "label": "Hard Real-Time"
+      },
+      {
+        "id": "urn:ngm:class:soft-real-time",
+        "label": "Soft Real-Time"
       }
     ],
     "requires": [
@@ -30,6 +38,10 @@
       {
         "id": "urn:ngm:class:deterministic-scheduling",
         "label": "Deterministic Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-handling",
+        "label": "Interrupt Handling"
       }
     ],
     "enables": [
@@ -48,12 +60,28 @@
       {
         "id": "urn:ngm:class:control-system",
         "label": "Flight Control Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Flight Control Systems"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:latency",
         "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronisation"
       },
       {
         "id": "urn:ngm:class:clock-synchronization",
@@ -65,6 +93,10 @@
       {
         "id": "urn:ngm:class:batch-processing",
         "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:time-sharing",
+        "label": "Time-Sharing"
       }
     ],
     "bridgesTo": [
@@ -75,6 +107,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Machine Learning Inference"
       }
     ],
     "uses": [
@@ -85,6 +121,10 @@
       {
         "id": "urn:ngm:class:memory-management",
         "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:watchdog-timer",
+        "label": "Watchdog Timer"
       }
     ],
     "supports": [
@@ -159,12 +199,12 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -279,16 +319,16 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -399,7 +439,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

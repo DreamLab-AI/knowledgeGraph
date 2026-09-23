@@ -28,11 +28,19 @@
       {
         "id": "urn:ngm:class:trust-framework",
         "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:provider",
+        "label": "Service Provider"
+      },
+      {
+        "id": "urn:ngm:class:security-assertion",
+        "label": "Security Assertion"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -42,6 +50,10 @@
       {
         "id": "urn:ngm:class:authentication-standards",
         "label": "Authentication Standards"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificates"
       }
     ],
     "enables": [
@@ -142,7 +154,12 @@
         "label": "IETF"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:privileged-access-management",
@@ -155,6 +172,14 @@
       {
         "id": "urn:ngm:class:scim",
         "label": "SCIM"
+      },
+      {
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privilege Access Management"
+      },
+      {
+        "id": "urn:ngm:class:directory-service",
+        "label": "Directory Services"
       }
     ]
   },

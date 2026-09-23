@@ -20,24 +20,60 @@
       {
         "id": "urn:ngm:class:rejection-sampling",
         "label": "Rejection Sampling"
+      },
+      {
+        "id": "urn:ngm:class:token-verification",
+        "label": "Token Verification"
+      },
+      {
+        "id": "urn:ngm:class:acceptance-criterion",
+        "label": "Acceptance Criterion"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:inference-hardware",
         "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:draft-model",
+        "label": "Draft Model"
+      },
+      {
+        "id": "urn:ngm:class:shared-vocabulary",
+        "label": "Shared Vocabulary"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-inference",
         "label": "Real-Time Inference"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-inference",
+        "label": "Low-Latency Inference"
+      },
+      {
+        "id": "urn:ngm:class:real-time-text-generation",
+        "label": "Real-Time Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:llm-serving",
+        "label": "LLM Serving"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computation"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-accelerated-inference",
+        "label": "GPU Accelerated Inference"
       }
     ],
     "implements": [
@@ -115,6 +151,18 @@
       {
         "id": "urn:ngm:class:model-compression-for-edge",
         "label": "Model Compression for Edge"
+      },
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Model Distillation"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling Strategies"
       }
     ]
   },
@@ -194,6 +242,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

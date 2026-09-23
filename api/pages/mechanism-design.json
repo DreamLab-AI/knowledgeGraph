@@ -64,6 +64,10 @@
       {
         "id": "urn:ngm:class:auction-theory",
         "label": "Auction Theory"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
       }
     ],
     "dependsOn": [],
@@ -81,6 +85,10 @@
       {
         "id": "urn:ngm:class:algorithmic-game-theory",
         "label": "Algorithmic Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioral Economics"
       },
       {
         "id": "urn:ngm:class:behavioural-economics",
@@ -156,6 +164,10 @@
         "label": "Cooperative Game Theory"
       },
       {
+        "id": "urn:ngm:class:evolutionary-game-theory",
+        "label": "Evolutionary Game Theory"
+      },
+      {
         "id": "urn:ngm:class:nash-equilibrium",
         "label": "Nash Equilibrium"
       },
@@ -178,13 +190,13 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:rational-agency",
+        "label": "Rational Agency"
+      },
       {
         "id": "urn:ngm:class:utility-theory",
         "label": "Utility Theory"
@@ -250,6 +262,22 @@
       {
         "id": "urn:ngm:class:swarm-intelligence",
         "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "supports": [

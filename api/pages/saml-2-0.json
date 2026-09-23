@@ -19,12 +19,16 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:xml-encryption",
         "label": "XML Encryption"
+      },
+      {
+        "id": "urn:ngm:class:xml-digital-signature",
+        "label": "XML Digital Signature"
       }
     ],
     "enables": [
@@ -51,6 +55,10 @@
       {
         "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:ws-federation",
+        "label": "WS-Federation"
       }
     ],
     "bridgesTo": [
@@ -113,6 +121,14 @@
       {
         "id": "urn:ngm:class:directory-service",
         "label": "Directory Services"
+      },
+      {
+        "id": "urn:ngm:class:provider",
+        "label": "Service Provider"
+      },
+      {
+        "id": "urn:ngm:class:directory-service",
+        "label": "Directory Services"
       }
     ]
   },
@@ -144,6 +160,10 @@
         "label": "Service Provider"
       },
       {
+        "id": "urn:ngm:class:security-assertion",
+        "label": "Security Assertion"
+      },
+      {
         "id": "urn:ngm:class:trust-framework",
         "label": "Trust Framework"
       },
@@ -162,10 +182,6 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
       }
     ],
     "requires": [
@@ -388,6 +404,12 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
       }
     ],
     "relatedTo": [

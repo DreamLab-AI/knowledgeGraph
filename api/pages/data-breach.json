@@ -48,6 +48,14 @@
       {
         "id": "urn:ngm:class:data-exfiltration",
         "label": "Data Exfiltration"
+      },
+      {
+        "id": "urn:ngm:class:model-extraction",
+        "label": "Model Extraction"
+      },
+      {
+        "id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
       }
     ],
     "requires": [
@@ -62,6 +70,10 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
       }
     ],
     "enables": [
@@ -76,11 +88,58 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -102,6 +161,10 @@
       {
         "id": "urn:ngm:class:model-extraction",
         "label": "Model Extraction"
+      },
+      {
+        "id": "urn:ngm:class:ransomware",
+        "label": "Ransomware"
       }
     ],
     "supports": [
@@ -116,6 +179,10 @@
       {
         "id": "urn:ngm:class:threat-intelligence",
         "label": "Threat Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
       }
     ],
     "standardizedBy": [],
@@ -160,6 +227,22 @@
       {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:insider-threat",
+        "label": "Insider Threat"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
       }
     ]
   },
@@ -297,6 +380,22 @@
       {
         "id": "urn:ngm:class:security",
         "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

@@ -75,20 +75,20 @@
         "label": "Impact Investing"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:sustainability-linked-loans",
+        "label": "Sustainability-Linked Loans"
+      },
+      {
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:conduct-regulation",
+        "label": "Conduct Regulation"
       },
       {
         "id": "urn:ngm:class:prudential-regulation",
         "label": "Prudential Regulation"
-      },
-      {
-        "id": "urn:ngm:class:securities-regulation",
-        "label": "Securities Regulation"
-      },
-      {
-        "id": "urn:ngm:class:stablecoin-regulation",
-        "label": "Stablecoin Regulation"
       }
     ],
     "requires": [
@@ -117,7 +117,7 @@
         "label": "Capital Adequacy"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -213,6 +213,10 @@
         "label": "Self-Regulation"
       },
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -227,7 +231,7 @@
         "label": "Blockchain Tokenisation"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -243,7 +247,7 @@
         "label": "Tokenised Green Bonds"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -329,12 +333,12 @@
         "label": "Basel Committee"
       },
       {
-        "id": "urn:ngm:class:fatf",
-        "label": "FATF"
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
       },
       {
-        "id": "urn:ngm:class:financial-stability-board",
-        "label": "Financial Stability Board"
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
       }
     ],
     "partOf": [

@@ -113,8 +113,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:conduct-regulation",
+        "label": "Conduct Regulation"
       },
       {
         "id": "urn:ngm:class:prudential-regulation",
@@ -139,10 +143,6 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
       }
     ],
     "requires": [
@@ -159,7 +159,7 @@
         "label": "Capital Adequacy"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -247,6 +247,10 @@
         "label": "Self-Regulation"
       },
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -265,11 +269,11 @@
         "label": "Security Token Offering"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -317,6 +321,10 @@
         "label": "Basel Committee"
       },
       {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
         "id": "urn:ngm:class:fatf",
         "label": "FATF"
       },
@@ -335,10 +343,6 @@
       {
         "id": "urn:ngm:class:oecd-ai-principles",
         "label": "OECD Principles on AI"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
       }
     ],
     "partOf": [

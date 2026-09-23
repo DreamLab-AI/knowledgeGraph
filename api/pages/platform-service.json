@@ -68,6 +68,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:multi-tenant-architecture",
+        "label": "Multi-Tenant Architecture"
       }
     ],
     "dependsOn": [
@@ -108,6 +112,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference Service"
       }
     ],
     "uses": [
@@ -122,12 +130,20 @@
       {
         "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth2"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth2"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:observability",
         "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scaling"
       },
       {
         "id": "urn:ngm:class:horizontal-scalability",
@@ -140,7 +156,7 @@
         "label": "OpenAPI Specification"
       },
       {
-        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "id": "urn:ngm:class:cncf",
         "label": "Cloud Native Computing Foundation"
       }
     ],
@@ -162,6 +178,10 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
       }
     ]
   },
@@ -289,7 +309,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

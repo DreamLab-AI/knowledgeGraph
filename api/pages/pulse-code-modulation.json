@@ -31,6 +31,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:audio-processing",
+      "label": "Audio Processing",
+      "slug": "audio-processing"
+    },
+    {
       "id": "urn:ngm:class:signal-processing",
       "label": "Signal Processing",
       "slug": "signal-processing"
@@ -41,6 +46,11 @@
       "slug": "ai-technique"
     },
     {
+      "id": "urn:ngm:class:digital-signal-processing",
+      "label": "Digital Signal Processing",
+      "slug": "digital-signal-processing"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -49,68 +59,92 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:beamforming",
+        "label": "Beamforming"
+      },
+      {
         "id": "urn:ngm:class:digital-filter",
         "label": "Digital Filter"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-range-compression",
+        "label": "Dynamic Range Compression"
+      },
+      {
+        "id": "urn:ngm:class:echo-cancellation",
+        "label": "Echo Cancellation"
+      },
+      {
+        "id": "urn:ngm:class:equalisation",
+        "label": "Equalisation"
       },
       {
         "id": "urn:ngm:class:fast-fourier-transform",
         "label": "Fast Fourier Transform"
       },
       {
-        "id": "urn:ngm:class:digital-signal-processing",
-        "label": "Digital Signal Processing"
+        "id": "urn:ngm:class:noise-cancellation",
+        "label": "Noise Cancellation"
       },
       {
-        "id": "urn:ngm:class:fourier-transform",
-        "label": "Fourier Transform"
-      },
-      {
-        "id": "urn:ngm:class:sampling-theory",
-        "label": "Sampling Theory"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
+        "id": "urn:ngm:class:source-separation",
+        "label": "Source Separation"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      },
       {
         "id": "urn:ngm:class:real-time-computing",
         "label": "Real-Time Computing"
       },
       {
-        "id": "urn:ngm:class:linear-algebra",
-        "label": "Linear Algebra"
+        "id": "urn:ngm:class:analogue-to-digital-conversion",
+        "label": "Analogue-to-Digital Conversion"
       },
       {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
+        "id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:nyquist-shannon-sampling-theorem",
+        "label": "Nyquist-Shannon Sampling Theorem"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:spectrogram",
+        "label": "Spectrogram"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:audio-compression",
         "label": "Audio Compression"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:binaural-audio",
+        "label": "Binaural Audio"
+      },
+      {
+        "id": "urn:ngm:class:music-information-retrieval",
+        "label": "Music Information Retrieval"
       },
       {
         "id": "urn:ngm:class:noise-suppression",
@@ -123,25 +157,69 @@
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:audio-parameters",
+        "label": "Audio Parameters"
       },
       {
-        "id": "urn:ngm:class:speech-synthesis",
-        "label": "Speech Synthesis"
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
       },
       {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:nyquist-shannon-sampling-theorem",
+        "label": "Nyquist-Shannon Sampling Theorem"
+      },
+      {
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:analogue-signal-processing",
+        "label": "Analogue Signal Processing"
       },
       {
         "id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
       },
-      {
-        "id": "urn:ngm:class:radar",
-        "label": "Radar Sensing"
-      }
-    ],
-    "contrastsWith": [
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
@@ -149,12 +227,32 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialisation",
+        "label": "Audio Spatialisation"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -171,72 +269,120 @@
         "label": "Convolution"
       },
       {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
         "id": "urn:ngm:class:digital-signal-processing",
         "label": "Digital Signal Processing"
-      },
-      {
-        "id": "urn:ngm:class:compressed-sensing",
-        "label": "Compressed Sensing"
-      },
-      {
-        "id": "urn:ngm:class:fast-fourier-transform",
-        "label": "Fast Fourier Transform"
-      },
-      {
-        "id": "urn:ngm:class:kalman-filter",
-        "label": "Kalman Filter"
-      },
-      {
-        "id": "urn:ngm:class:wavelet-transform",
-        "label": "Wavelet Transform"
-      }
-    ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:telecommunications",
-        "label": "Telecommunications"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:motion-capture",
-        "label": "Motion Capture"
-      }
-    ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:audio-engine",
-        "label": "Audio Engine"
-      },
-      {
-        "id": "urn:ngm:class:audio-processing-system",
-        "label": "Audio Processing System"
-      },
-      {
-        "id": "urn:ngm:class:neural-audio-codec",
-        "label": "Neural Audio Codec"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:data-compression",
-        "label": "Data Compression"
       },
       {
         "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
       },
       {
-        "id": "urn:ngm:class:noise-reduction",
-        "label": "Noise Reduction"
+        "id": "urn:ngm:class:mel-spectrogram",
+        "label": "Mel-Spectrogram"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:adaptive-music",
+        "label": "Adaptive Music"
       },
       {
-        "id": "urn:ngm:class:render-pipeline",
-        "label": "Render Pipeline"
+        "id": "urn:ngm:class:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "id": "urn:ngm:class:hearing-aids",
+        "label": "Hearing Aids"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "id": "urn:ngm:class:mpeg-h-audio",
+        "label": "MPEG-H Audio"
+      },
+      {
+        "id": "urn:ngm:class:opus-codec",
+        "label": "Opus Codec"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multimedia-processing",
+        "label": "Multimedia Processing"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      },
+      {
+        "id": "urn:ngm:class:audio-technology",
+        "label": "Audio Technology"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:neural-audio-codec",
+        "label": "Neural Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ]
   },

@@ -20,6 +20,18 @@
       {
         "id": "urn:ngm:class:c2-pa-content-credentials",
         "label": "C2PA Content Credentials"
+      },
+      {
+        "id": "urn:ngm:class:c2pa-manifest",
+        "label": "C2PA Manifest"
+      },
+      {
+        "id": "urn:ngm:class:c2pa-assertion",
+        "label": "C2PA Assertion"
+      },
+      {
+        "id": "urn:ngm:class:c2pa-trust-list",
+        "label": "C2PA Trust List"
       }
     ],
     "requires": [
@@ -28,7 +40,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -48,6 +60,10 @@
       {
         "id": "urn:ngm:class:ai-generated-content-disclosure",
         "label": "AI Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI Disclosure"
       }
     ],
     "dependsOn": [],
@@ -55,6 +71,14 @@
       {
         "id": "urn:ngm:class:content-authenticity",
         "label": "Content Authenticity Initiative"
+      },
+      {
+        "id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity Initiative"
+      },
+      {
+        "id": "urn:ngm:class:project-origin",
+        "label": "Project Origin"
       }
     ],
     "contrastsWith": [
@@ -79,6 +103,14 @@
       {
         "id": "urn:ngm:class:provenance-ontology-prov-o",
         "label": "PROV-O"
+      },
+      {
+        "id": "urn:ngm:class:watermarking-service",
+        "label": "Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:provenance-ontology-prov-o",
+        "label": "PROV-O"
       }
     ],
     "uses": [
@@ -93,6 +125,10 @@
       {
         "id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:jumbf",
+        "label": "JUMBF"
       }
     ],
     "supports": [
@@ -103,6 +139,10 @@
       {
         "id": "urn:ngm:class:supply-chain-transparency",
         "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:media-integrity",
+        "label": "Media Integrity"
       }
     ],
     "standardizedBy": [],
@@ -127,6 +167,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -180,6 +235,22 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -198,12 +269,32 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -212,12 +303,32 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -248,6 +359,20 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -274,8 +399,28 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:universal-scene-description",
+        "id": "urn:ngm:class:usd",
         "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
       }
     ]
   },

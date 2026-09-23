@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:deletion-request",
+        "label": "Deletion Request"
+      },
+      {
+        "id": "urn:ngm:class:erasure-verification",
+        "label": "Erasure Verification"
       }
     ],
     "requires": [
@@ -52,9 +60,30 @@
       {
         "id": "urn:ngm:class:user-privacy-control",
         "label": "User Privacy Control"
+      },
+      {
+        "id": "urn:ngm:class:data-erasure",
+        "label": "Data Erasure"
+      },
+      {
+        "id": "urn:ngm:class:content-removal",
+        "label": "Content Removal"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-controller",
+        "label": "Data Controller"
+      },
+      {
+        "id": "urn:ngm:class:data-processor",
+        "label": "Data Processor"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -65,6 +94,14 @@
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection Framework"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection Framework"
+      },
+      {
+        "id": "urn:ngm:class:privacy-rights-system",
+        "label": "Privacy Rights System"
       }
     ],
     "relatedTo": []
@@ -81,9 +118,9 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     }
   ],
   "inheritedRelations": {
@@ -143,16 +180,16 @@
         "label": "Data Classification"
       },
       {
+        "id": "urn:ngm:class:data-ownership",
+        "label": "Data Ownership"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -185,7 +222,7 @@
         "label": "Data Interoperability"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -201,6 +238,10 @@
       {
         "id": "urn:ngm:class:data-architecture",
         "label": "Data Architecture"
+      },
+      {
+        "id": "urn:ngm:class:organisational-policy",
+        "label": "Organisational Policy"
       }
     ],
     "implements": [
@@ -237,6 +278,10 @@
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -297,6 +342,14 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
       }
     ],
     "standardizedBy": [
@@ -331,7 +384,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

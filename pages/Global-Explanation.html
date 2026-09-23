@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Global Explanation</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Global Explanation"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Global Explanation"/><meta name="twitter:description" content="Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions."/><meta property="og:description" content="Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions."/><meta property="og:image:alt" content="Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Global-Explanation"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Global-Explanation"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Global-Explanation"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-3478"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-3478" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Global Explanation</a></div></nav><h1 class="article-title">Global Explanation</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.649Z">23 Sept 2026</time><span>16 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:global-explanation</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Technique" class="internal">AI Technique</a></li><li><a href="../pages/Explainability" class="internal">Explainability</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/Explainable-AI" class="internal">Explainable AI</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Model-Transparency" class="internal">Model Transparency</a></li><li><a href="../pages/Fairness" class="internal">Fairness</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Local-Explanation" class="internal">Local Explanation</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0302</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../caballero2008financial-spiro2019hidden" class="internal">caballero2008financial; @spiro2019hidden</a></li><li><a href="../carney2019growing-piffaretti2009reshaping" class="internal">carney2019growing; @piffaretti2009reshaping</a></li><li><a href="../grewal2020struggling" class="internal">grewal2020struggling</a></li><li><a href="../individual-conditional-expectation" class="internal">Individual Conditional Expectation</a></li><li><a href="../partial-dependence-plot" class="internal">Partial Dependence Plot</a></li><li><a href="../permutation-importance" class="internal">Permutation Importance</a></li><li><a href="../shap" class="internal">SHAP</a></li><li><a href="../srinivasan2022" class="internal">Srinivasan2022</a></li><li><a href="../stoeferle2018gold" class="internal">stoeferle2018gold</a></li><li><a href="../surrogate-models" class="internal">Surrogate Models</a></li><li><a href="../tomlinson2003third" class="internal">tomlinson2003third</a></li><li><a href="../agents" class="internal">Agents</a></li><li><a href="../explainable-ai" class="internal">Explainable AI</a></li><li><a href="../feature-importance" class="internal">Feature Importance</a></li><li><a href="../local-explanation" class="internal">Local Explanation</a></li><li><a href="../metaverse" class="internal">MetaverseDomain</a></li><li><a href="../model-interpretability" class="internal">Model Interpretability</a></li><li><a href="../model-transparency" class="internal">Model Transparency</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:cbd3ea861985c7d6460623dce45b46ef358e7e0122e19a5df50c6b2d490db84a</span></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Feature-Importance" class="internal">Feature Importance</a></li><li><a href="../pages/Model-Interpretability" class="internal">Model Interpretability</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions. Global explanations—such as feature importance rankings, partial dependence plots, and surrogate model trees—reveal systematic model tendencies and support auditing, debugging, and regulatory compliance.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="related-terms">Related Terms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-terms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Broader</strong>: <a href="../pages/Model-Interpretability" class="internal alias" data-slug="pages/Model-Interpretability">Model Interpretability</a>, <a href="../pages/Explainable-AI" class="internal alias" data-slug="pages/Explainable-AI">Explainable AI</a></li>
+<li><strong>Narrower</strong>: <a href="../Partial-Dependence-Plot" class="internal alias" data-slug="Partial-Dependence-Plot">Partial Dependence Plot</a>, <a href="../Permutation-Importance" class="internal alias" data-slug="Permutation-Importance">Permutation Importance</a>, <a href="../pages/Feature-Importance" class="internal alias" data-slug="pages/Feature-Importance">Feature Importance</a></li>
+<li><strong>Related</strong>: <a href="../pages/Model-Transparency" class="internal alias" data-slug="pages/Model-Transparency">Model Transparency</a>, <a href="../Surrogate-Models" class="internal alias" data-slug="Surrogate-Models">Surrogate Models</a></li>
+<li><strong>Contrasts</strong>: <a href="../pages/Local-Explanation" class="internal alias" data-slug="pages/Local-Explanation">Local Explanation</a></li>
+</ul>
+<h2 id="formal-specification">Formal Specification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-specification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="core-concept">Core Concept<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-concept" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Given a trained model <code>f: X → Y</code>, a global explanation <code>G(f)</code> characterises:</p>
+<pre><code>G(f) → {overall behaviour, feature importance, decision boundaries, interaction effects}
+</code></pre>
+<p><strong>Scope</strong>: Entire input space <code>X</code>
+<strong>Objective</strong>: Understand <code>f</code> holistically without instance-specific focus</p>
+<h3 id="mathematical-framework">Mathematical Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mathematical-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Global Feature Importance</strong>:</p>
+<pre><code>I(f, j) = E_X[Impact of feature j on f(X)]
+</code></pre>
+<p><strong>Global Model Approximation</strong>:</p>
+<pre><code>g* = argmin E_X[L(f(X), g(X))]
+   g∈G_interpretable
+</code></pre>
+<p>Where <code>g</code> is an interpretable surrogate model approximating <code>f</code> globally.</p>
+<h2 id="key-methods">Key Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="feature-importance-measures">Feature Importance Measures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#feature-importance-measures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="permutation-importance">Permutation Importance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#permutation-importance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Algorithm</strong> (Breiman, 2001):</p>
+<ol>
+<li><strong>Baseline</strong>: Compute model performance on validation set</li>
+</ol>
+<pre><code>Score_original = Performance(f, X_val, y_val)
+</code></pre>
+<ol start="2">
+<li><strong>Permute feature</strong>: Shuffle feature <code>j</code> values</li>
+</ol>
+<pre><code>X_permuted = X_val with column j randomly shuffled
+</code></pre>
+<ol start="3">
+<li><strong>Recompute performance</strong>:</li>
+</ol>
+<pre><code>Score_permuted = Performance(f, X_permuted, y_val)
+</code></pre>
+<ol start="4">
+<li><strong>Feature importance</strong>:</li>
+</ol>
+<pre><code>FI(j) = Score_original - E[Score_permuted]
+</code></pre>
+<p><strong>Properties</strong>:</p>
+<ul>
+<li>Model-agnostic</li>
+<li>Accounts for feature interactions</li>
+<li>Reflects true predictive importance</li>
+</ul>
+<p><strong>Limitations</strong>:</p>
+<ul>
+<li>Requires retraining for some models (not for tree ensembles)</li>
+<li>Assumes feature independence</li>
+<li>Variance from random permutation</li>
+</ul>
+<h4 id="shap-feature-importance-global">SHAP Feature Importance (Global)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#shap-feature-importance-global" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Aggregation</strong> (Lundberg &amp; Lee, 2017):</p>
+<pre><code>I(j) = (1/n) Σ |φ_j(x_i)|
+           i=1 to n
+</code></pre>
+<p><strong>Interpretation</strong>: Average absolute SHAP value across all instances</p>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li>Consistent with local explanations</li>
+<li>Theoretically grounded</li>
+<li>Handles feature interactions</li>
+</ul>
+<p><strong>Visualisations</strong>:</p>
+<ul>
+<li><strong>Summary plot</strong>: Distribution of SHAP values per feature</li>
+<li><strong>Bar plot</strong>: Mean absolute SHAP values</li>
+<li><strong>Dependence plot</strong>: Feature value vs. SHAP value</li>
+</ul>
+<h3 id="model-behaviour-characterisation">Model Behaviour Characterisation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#model-behaviour-characterisation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="partial-dependence-plots-pdp">Partial Dependence Plots (PDP)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#partial-dependence-plots-pdp" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Definition</strong> (Friedman, 2001):</p>
+<pre><code>PD_S(x_S) = E_X_C[f(x_S, X_C)]
+</code></pre>
+<p>Where:</p>
+<ul>
+<li><code>S</code> is subset of features to visualise</li>
+<li><code>C</code> is complement of <code>S</code></li>
+<li>Marginalisation over <code>X_C</code></li>
+</ul>
+<p><strong>Computation</strong>:</p>
+<pre><code>PD_S(x_S) ≈ (1/n) Σ f(x_S, x_C^(i))
+                 i=1
+</code></pre>
+<p><strong>Interpretation</strong>: Average model output when feature(s) fixed at value</p>
+<p><strong>Advantages</strong>:</p>
+<ul>
+<li>Intuitive visualisation</li>
+<li>Model-agnostic</li>
+<li>Handles non-linear relationships</li>
+</ul>
+<p><strong>Limitations</strong>:</p>
+<ul>
+<li>Assumes feature independence (can be misleading)</li>
+<li>Computationally expensive for many features</li>
+<li>Ignores feature distribution</li>
+</ul>
+<h4 id="individual-conditional-expectation-ice">Individual Conditional Expectation (ICE)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#individual-conditional-expectation-ice" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Definition</strong> (Goldstein et al., 2015):</p>
+<pre><code>ICE_i(x_S) = f(x_S, x_C^(i))
+</code></pre>
+<p><strong>Interpretation</strong>: Model output for instance <code>i</code> as feature(s) vary</p>
+<p><strong>Relationship to PDP</strong>:</p>
+<pre><code>PD_S(x_S) = (1/n) Σ ICE_i(x_S)
+</code></pre>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li>Reveals heterogeneity (individual instance behaviour)</li>
+<li>Detects interactions (diverging ICE curves)</li>
+<li>Visualises distribution, not just average</li>
+</ul>
+<p><strong>Visualisation</strong>: Overlaid curves showing instance-specific effects</p>
+<h4 id="accumulated-local-effects-ale">Accumulated Local Effects (ALE)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#accumulated-local-effects-ale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Definition</strong> (Apley &amp; Zhu, 2020):</p>
+<pre><code>ALE_j(x) = ∫_{z_min}^x E_X|X_j=z[∂f/∂X_j | X_j=z] dz
+</code></pre>
+<p><strong>Advantages over PDP</strong>:</p>
+<ul>
+<li>Unbiased with correlated features</li>
+<li>Uses conditional rather than marginal distribution</li>
+<li>Faster computation</li>
+</ul>
+<p><strong>Interpretation</strong>: Accumulated marginal effect of feature</p>
+<p><strong>Use Case</strong>: Preferred when features are correlated</p>
+<h3 id="surrogate-models">Surrogate Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#surrogate-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="global-surrogate">Global Surrogate<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#global-surrogate" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Approach</strong>:</p>
+<ol>
+<li><strong>Train black-box model</strong>: <code>f(X) → Y</code></li>
+<li><strong>Generate predictions</strong>: <code>Ŷ = f(X)</code> for large dataset</li>
+<li><strong>Train interpretable model</strong>: <code>g(X) → Ŷ</code></li>
+<li><strong>Interpret</strong> <code>g</code> as approximation of <code>f</code></li>
+</ol>
+<p><strong>Interpretable Model Choices</strong>:</p>
+<ul>
+<li>Decision tree</li>
+<li>Linear regression</li>
+<li>Rule set (RuleFit)</li>
+<li>GAM (Generalized Additive Model)</li>
+</ul>
+<p><strong>Fidelity Measure</strong>:</p>
+<pre><code>Fidelity = R²(f(X), g(X))
+</code></pre>
+<p><strong>Trade-off</strong>: Accuracy (of <code>f</code>) vs. Interpretability (of <code>g</code>)</p>
+<p><strong>Limitations</strong>:</p>
+<ul>
+<li>Surrogate may not faithfully represent black-box</li>
+<li>Model mismatch in complex regions</li>
+<li>Interpretability of surrogate still limited</li>
+</ul>
+<h4 id="rulefit">RuleFit<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rulefit" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Algorithm</strong> (Friedman &amp; Popescu, 2008):</p>
+<ol>
+<li><strong>Extract rules</strong> from tree ensemble</li>
+<li><strong>Fit sparse linear model</strong> with rules as features</li>
+</ol>
+<pre><code>y ≈ β₀ + Σ β_k R_k(x)
+</code></pre>
+<p>Where <code>R_k</code> are if-then rules</p>
+<p><strong>Output</strong>: Interpretable rule-based global model</p>
+<p><strong>Example</strong>:</p>
+<pre><code>Prediction = 0.5
++ 0.3 × (age > 50 AND cholesterol > 200)
++ 0.15 × (BMI > 30)
+- 0.2 × (exercise_weekly = True)
+</code></pre>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li>Combines predictive power and interpretability</li>
+<li>Explicit rule interactions</li>
+<li>Sparse representation</li>
+</ul>
+<h3 id="interaction-detection">Interaction Detection<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interaction-detection" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="friedmans-h-statistic">Friedman’s H-statistic<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#friedmans-h-statistic" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Two-way Interaction</strong>:</p>
+<pre><code>H²_jk = [Σ(PD_jk(x_j, x_k) - PD_j(x_j) - PD_k(x_k))²] / [Σ PD_jk(x_j, x_k)²]
+</code></pre>
+<p><strong>Interpretation</strong>: Proportion of variance due to interaction</p>
+<p><strong>Values</strong>:</p>
+<ul>
+<li><code>H² = 0</code>: No interaction</li>
+<li><code>H² > 0</code>: Interaction present (larger = stronger)</li>
+</ul>
+<p><strong>Use Case</strong>: Identify which feature pairs interact significantly</p>
+<h4 id="shap-interaction-values">SHAP Interaction Values<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#shap-interaction-values" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Definition</strong>:</p>
+<pre><code>φ_ij = Σ |S|!(|N|-|S|-1)! / (2|N|!) [Δ_ij(S)]
+     S⊆N\{i,j}
+</code></pre>
+<p>Where <code>Δ_ij(S)</code> quantifies pairwise interaction effect.</p>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li>Consistent with SHAP values</li>
+<li>Detects non-linear interactions</li>
+<li>Distributes effects fairly</li>
+</ul>
+<p><strong>Visualisation</strong>: Heatmap of interaction strengths</p>
+<h2 id="application-domains">Application Domains<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#application-domains" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="model-debugging">Model Debugging<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#model-debugging" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Use Cases</strong>:</p>
+<ul>
+<li>Detect unexpected feature importance (sanity check)</li>
+<li>Identify bias in feature usage</li>
+<li>Discover data leakage</li>
+</ul>
+<p><strong>Example</strong>:
+Global feature importance reveals that “patient ID” has high importance → data leakage detected.</p>
+<h3 id="regulatory-compliance">Regulatory Compliance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regulatory-compliance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Finance</strong>:</p>
+<ul>
+<li>Fair lending: ensure protected attributes not driving decisions</li>
+<li>Model risk management: holistic model understanding</li>
+</ul>
+<p><strong>Healthcare</strong>:</p>
+<ul>
+<li>Clinical validation: feature importance aligns with medical knowledge</li>
+<li>IEEE P2802 compliance: transparent device behaviour</li>
+</ul>
+<p><strong>Example</strong>:
+Partial dependence plots show that “race” feature has flat PD → no discriminatory effect.</p>
+<h3 id="scientific-discovery">Scientific Discovery<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scientific-discovery" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Use Cases</strong>:</p>
+<ul>
+<li>Hypothesis generation from feature importance</li>
+<li>Mechanism understanding via PDPs</li>
+<li>Interaction detection for biological pathways</li>
+</ul>
+<p><strong>Example</strong>:
+Climate modelling: PDP reveals non-linear CO₂ effect on temperature, guiding further research.</p>
+<h3 id="model-comparison">Model Comparison<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#model-comparison" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Approach</strong>:</p>
+<ul>
+<li>Generate global explanations for multiple models</li>
+<li>Compare feature importance rankings</li>
+<li>Assess consistency of relationships (PDPs)</li>
+</ul>
+<p><strong>Decision Criterion</strong>: Select model with interpretable, domain-aligned behaviour.</p>
+<h2 id="implementation-approaches">Implementation Approaches<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-approaches" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="permutation-importance-1">Permutation Importance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#permutation-importance-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Scikit-learn</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.inspection </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> permutation_importance</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">result </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> permutation_importance(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  estimator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  X</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_val,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  y</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">y_val,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  n_repeats</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  random_state</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">42</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  scoring</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'accuracy'</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">importances </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> result.importances_mean</span></span></code></pre></figure>
+<p><strong>Custom Implementation</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">def</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> permutation_importance</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(model, X, y, metric, n_repeats</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">):</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  baseline_score </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> metric(y, model.predict(X))</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  importances </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {}</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">  for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> col </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">in</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> X.columns:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">      scores </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> []</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">      for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> _ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">in</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> range</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(n_repeats):</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">          X_permuted </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> X.copy()</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">          X_permuted[col] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> X_permuted[col].sample(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">frac</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">).values</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">          score </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> metric(y, model.predict(X_permuted))</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">          scores.append(baseline_score </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> score)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">      importances[col] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> np.mean(scores)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> importances</span></span></code></pre></figure>
+<h3 id="partial-dependence-plots">Partial Dependence Plots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#partial-dependence-plots" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Scikit-learn</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.inspection </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> PartialDependenceDisplay</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">features </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'cholesterol'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, (</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'cholesterol'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">PartialDependenceDisplay.from_estimator(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  estimator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  X</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  features</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">features,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  feature_names</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train.columns</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<p><strong>PDPbox</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> pdpbox </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> pdp</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">pdp_age </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> pdp.pdp_isolate(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  model</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  dataset</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  model_features</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train.columns,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  feature</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">pdp.pdp_plot(pdp_age, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<h3 id="ice-plots">ICE Plots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ice-plots" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Scikit-learn</strong> (built into PDP):</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.inspection </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> PartialDependenceDisplay</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">PartialDependenceDisplay.from_estimator(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  estimator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  X</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  features</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">],</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  kind</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'both'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Shows both PDP and ICE</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  ice_lines_kw</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">{</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'alpha'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">0.2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<h3 id="ale-plots">ALE Plots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ale-plots" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>ALEPython</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> alepython </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ale_plot</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">ale_plot(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  model</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model.predict,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  X_train</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  feature</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  bins</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">20</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<h3 id="shap-global-explanations">SHAP Global Explanations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#shap-global-explanations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Summary Plot</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> shap</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">explainer </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> shap.TreeExplainer(model)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">shap_values </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> explainer.shap_values(X_test)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">shap.summary_plot(shap_values, X_test, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">plot_type</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;bar&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Feature importance</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">shap.summary_plot(shap_values, X_test)  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Distribution</span></span></code></pre></figure>
+<p><strong>Dependence Plot</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">shap.dependence_plot(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  ind</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  shap_values</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">shap_values,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  features</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_test,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  interaction_index</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'cholesterol'</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">  # Color by interaction</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<h3 id="surrogate-models-1">Surrogate Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#surrogate-models-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Global Tree Surrogate</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.tree </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> DecisionTreeRegressor, plot_tree</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Train black-box model</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">black_box </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> RandomForestRegressor().fit(X_train, y_train)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Generate predictions</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">y_surrogate </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> black_box.predict(X_train)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Train interpretable surrogate</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">surrogate </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> DecisionTreeRegressor(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">max_depth</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">5</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">surrogate.fit(X_train, y_surrogate)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Visualize</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">plot_tree(surrogate, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">feature_names</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train.columns, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">filled</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">True</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Assess fidelity</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.metrics </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> r2_score</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">fidelity </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> r2_score(black_box.predict(X_test), surrogate.predict(X_test))</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">f</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;Surrogate fidelity: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">{</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">fidelity</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:.3f</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<h2 id="evaluation-metrics">Evaluation Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="fidelity-metrics">Fidelity Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fidelity-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Global Fidelity</strong> (for surrogates):</p>
+<pre><code>Fidelity = R²(f(X), g(X))
+</code></pre>
+<p>Measures how well interpretable model <code>g</code> approximates black-box <code>f</code>.</p>
+<p><strong>Feature Importance Stability</strong>:</p>
+<pre><code>Stability = Spearman_correlation(FI(subset₁), FI(subset₂))
+</code></pre>
+<p>Consistency across data subsets.</p>
+<h3 id="computational-efficiency">Computational Efficiency<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#computational-efficiency" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>PDP Complexity</strong>:</p>
+<ul>
+<li>Grid points: <code>m</code></li>
+<li>Instances: <code>n</code></li>
+<li>Features: <code>p</code></li>
+<li>Complexity: <code>O(m × n × p)</code> for all features</li>
+</ul>
+<p><strong>Permutation Importance Complexity</strong>:</p>
+<ul>
+<li>Features: <code>p</code></li>
+<li>Repeats: <code>r</code></li>
+<li>Complexity: <code>O(p × r × prediction_cost)</code></li>
+</ul>
+<h3 id="completeness-metrics">Completeness Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#completeness-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Interaction Coverage</strong>:</p>
+<pre><code>Coverage = (Detected interactions) / (True interactions)
+</code></pre>
+<p><strong>Feature Coverage</strong>:
+Percentage of features with significant importance.</p>
+<h2 id="challenges--limitations">Challenges &amp; Limitations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#challenges--limitations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="methodological-challenges">Methodological Challenges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#methodological-challenges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Feature Correlation</strong>:</p>
+<ul>
+<li><strong>PDP Issue</strong>: Marginalises over unrealistic feature combinations</li>
+<li><strong>Solution</strong>: Use ALE or condition on realistic feature values</li>
+<li><strong>Example</strong>: Age and years of education correlated; PDP may show “5-year-old with PhD”</li>
+</ul>
+<p><strong>Computational Cost</strong>:</p>
+<ul>
+<li><strong>PDP/ICE</strong>: Requires many model evaluations</li>
+<li><strong>SHAP</strong>: Exponential complexity (exact)</li>
+<li><strong>Mitigation</strong>: Sampling, approximations, caching</li>
+</ul>
+<p><strong>Interpretation Ambiguity</strong>:</p>
+<ul>
+<li><strong>Permutation Importance</strong>: Which feature interactions are captured?</li>
+<li><strong>SHAP</strong>: Baseline choice affects values</li>
+<li><strong>Surrogate</strong>: Fidelity-interpretability trade-off</li>
+</ul>
+<h3 id="practical-challenges">Practical Challenges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#practical-challenges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>High-Dimensional Data</strong>:</p>
+<ul>
+<li>Visualising >3 features difficult</li>
+<li>Feature selection needed</li>
+<li>Curse of dimensionality for interactions</li>
+</ul>
+<p><strong>Model Complexity</strong>:</p>
+<ul>
+<li>Deep neural networks: millions of parameters</li>
+<li>Global explanations may oversimplify</li>
+<li>Multiple explanations needed for completeness</li>
+</ul>
+<p><strong>Dynamic Models</strong>:</p>
+<ul>
+<li>Online learning: explanations change over time</li>
+<li>Temporal dependencies: static explanations insufficient</li>
+<li>Concept drift: explanations become stale</li>
+</ul>
+<h2 id="research-directions">Research Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="emerging-areas">Emerging Areas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#emerging-areas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Causal Global Explanations</strong>:</p>
+<ul>
+<li>Structural causal models</li>
+<li>Interventional feature importance</li>
+<li>Beyond observational statistics</li>
+</ul>
+<p><strong>Temporal Global Explanations</strong>:</p>
+<ul>
+<li>Evolution of feature importance</li>
+<li>Concept drift detection</li>
+<li>Dynamic model behaviour</li>
+</ul>
+<p><strong>Multi-objective Global Explanations</strong>:</p>
+<ul>
+<li>Balancing accuracy, fairness, and interpretability</li>
+<li>Pareto-optimal model selection</li>
+<li>Trade-off visualisation</li>
+</ul>
+<p><strong>Scalable Global Explanations</strong>:</p>
+<ul>
+<li>Distributed PDP computation</li>
+<li>Incremental feature importance</li>
+<li>Approximate methods for large-scale data</li>
+</ul>
+<h3 id="industry-innovation">Industry Innovation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#industry-innovation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Microsoft InterpretML</strong>:</p>
+<ul>
+<li>Explainable Boosting Machines (inherently global)</li>
+<li>ICE plots with distribution</li>
+<li>Interaction detection</li>
+</ul>
+<p><strong>Google Cloud Explainable AI</strong>:</p>
+<ul>
+<li>Feature attributions aggregated globally</li>
+<li>What-If Tool for PDP-like exploration</li>
+<li>TensorFlow Model Analysis integration</li>
+</ul>
+<p><strong>DataRobot</strong>:</p>
+<ul>
+<li>Automated feature importance</li>
+<li>Feature effects (PDP-like)</li>
+<li>Prediction explanations at scale</li>
+</ul>
+<h2 id="best-practices">Best Practices<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#best-practices" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="method-selection">Method Selection<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#method-selection" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Decision Tree</strong>:</p>
+<ol>
+<li><strong>Feature correlation</strong>: High → ALE; Low → PDP</li>
+<li><strong>Model type</strong>: Trees → native importance; Any → permutation/SHAP</li>
+<li><strong>Computational budget</strong>: Limited → permutation; Ample → SHAP</li>
+<li><strong>Explanation goal</strong>: Feature ranking → importance; Relationships → PDP/ALE</li>
+</ol>
+<h3 id="implementation-guidelines">Implementation Guidelines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-guidelines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Pre-deployment</strong>:</p>
+<ul>
+<li>Validate feature importance with domain experts</li>
+<li>Check PDP/ALE for unexpected patterns</li>
+<li>Assess computational feasibility</li>
+<li>Test on held-out data</li>
+</ul>
+<p><strong>Production</strong>:</p>
+<ul>
+<li>Pre-compute global explanations (cached)</li>
+<li>Update periodically (model drift)</li>
+<li>Monitor feature importance shifts</li>
+<li>Dashboard for stakeholder access</li>
+</ul>
+<p><strong>Post-deployment</strong>:</p>
+<ul>
+<li>Track explanation usage</li>
+<li>Refine based on feedback</li>
+<li>Update as model evolves</li>
+<li>Audit for consistency</li>
+</ul>
+<h3 id="visualisation-best-practices">Visualisation Best Practices<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#visualisation-best-practices" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Feature Importance</strong>:</p>
+<ul>
+<li>Sort by magnitude</li>
+<li>Include confidence intervals (permutation variance)</li>
+<li>Highlight top-K features</li>
+<li>Use color for positive/negative effects</li>
+</ul>
+<p><strong>PDP/ICE</strong>:</p>
+<ul>
+<li>Show feature distribution (rug plot)</li>
+<li>Include confidence bands</li>
+<li>Limit number of ICE curves (avoid clutter)</li>
+<li>2D PDPs for key interactions</li>
+</ul>
+<p><strong>SHAP Plots</strong>:</p>
+<ul>
+<li>Summary plot: distribution + importance</li>
+<li>Dependence plots: select top interactions</li>
+<li>Waterfall plots: global average explanation</li>
+</ul>
+<h3 id="documentation">Documentation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#documentation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Model Cards</strong> should include:</p>
+<ul>
+<li>Global explanation methods used</li>
+<li>Feature importance rankings</li>
+<li>Key feature effects (PDP summaries)</li>
+<li>Computational requirements</li>
+</ul>
+<p><strong>User-Facing</strong>:</p>
+<ul>
+<li>Executive summary of model behaviour</li>
+<li>Top-K feature importance with interpretation</li>
+<li>Key relationships (PDP insights)</li>
+<li>Known limitations</li>
+</ul>
+<h2 id="related-terms-1">Related Terms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-terms-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Broader</strong>: <a href="../pages/Model-Interpretability" class="internal alias" data-slug="pages/Model-Interpretability">Model Interpretability</a>, <a href="../pages/Explainable-AI" class="internal alias" data-slug="pages/Explainable-AI">Explainable AI</a></li>
+<li><strong>Narrower</strong>: <a href="../Partial-Dependence-Plot" class="internal alias" data-slug="Partial-Dependence-Plot">Partial Dependence Plot</a>, <a href="../Permutation-Importance" class="internal alias" data-slug="Permutation-Importance">Permutation Importance</a>, <a href="../pages/Feature-Importance" class="internal alias" data-slug="pages/Feature-Importance">Feature Importance</a></li>
+<li><strong>Related</strong>: <a href="../pages/Model-Transparency" class="internal alias" data-slug="pages/Model-Transparency">Model Transparency</a>, <a href="../Surrogate-Models" class="internal alias" data-slug="Surrogate-Models">Surrogate Models</a></li>
+<li><strong>Contrasts</strong>: <a href="../pages/Local-Explanation" class="internal alias" data-slug="pages/Local-Explanation">Local Explanation</a></li>
+</ul>
+<h2 id="formal-specification-1">Formal Specification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-specification-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="core-concept-1">Core Concept<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-concept-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Given a trained model <code>f: X → Y</code>, a global explanation <code>G(f)</code> characterises:</p>
+<pre><code>G(f) → {overall behaviour, feature importance, decision boundaries, interaction effects}
+</code></pre>
+<p><strong>Scope</strong>: Entire input space <code>X</code>
+<strong>Objective</strong>: Understand <code>f</code> holistically without instance-specific focus</p>
+<h3 id="mathematical-framework-1">Mathematical Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mathematical-framework-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Global Feature Importance</strong>:</p>
+<pre><code>I(f, j) = E_X[Impact of feature j on f(X)]
+</code></pre>
+<p><strong>Global Model Approximation</strong>:</p>
+<pre><code>g* = argmin E_X[L(f(X), g(X))]
+   g∈G_interpretable
+</code></pre>
+<p>Where <code>g</code> is an interpretable surrogate model approximating <code>f</code> globally.</p>
+<h2 id="key-methods-1">Key Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-methods-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="feature-importance-measures-1">Feature Importance Measures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#feature-importance-measures-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="permutation-importance-2">Permutation Importance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#permutation-importance-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Algorithm</strong> (Breiman, 2001):</p>
+<ol>
+<li><strong>Baseline</strong>: Compute model performance on validation set</li>
+</ol>
+<pre><code>Score_original = Performance(f, X_val, y_val)
+</code></pre>
+<ol start="2">
+<li><strong>Permute feature</strong>: Shuffle feature <code>j</code> values</li>
+</ol>
+<pre><code>X_permuted = X_val with column j randomly shuffled
+</code></pre>
+<ol start="3">
+<li><strong>Recompute performance</strong>:</li>
+</ol>
+<pre><code>Score_permuted = Performance(f, X_permuted, y_val)
+</code></pre>
+<ol start="4">
+<li><strong>Feature importance</strong>:</li>
+</ol>
+<pre><code>FI(j) = Score_original - E[Score_permuted]
+</code></pre>
+<p><strong>Properties</strong>:</p>
+<ul>
+<li>Model-agnostic</li>
+<li>Accounts for feature interactions</li>
+<li>Reflects true predictive importance</li>
+</ul>
+<p><strong>Limitations</strong>:</p>
+<ul>
+<li>Requires retraining for some models (not for tree ensembles)</li>
+<li>Assumes feature independence</li>
+<li>Variance from random permutation</li>
+</ul>
+<h4 id="shap-feature-importance-global-1">SHAP Feature Importance (Global)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#shap-feature-importance-global-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Aggregation</strong> (Lundberg &amp; Lee, 2017):</p>
+<pre><code>I(j) = (1/n) Σ |φ_j(x_i)|
+           i=1 to n
+</code></pre>
+<p><strong>Interpretation</strong>: Average absolute SHAP value across all instances</p>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li>Consistent with local explanations</li>
+<li>Theoretically grounded</li>
+<li>Handles feature interactions</li>
+</ul>
+<p><strong>Visualisations</strong>:</p>
+<ul>
+<li><strong>Summary plot</strong>: Distribution of SHAP values per feature</li>
+<li><strong>Bar plot</strong>: Mean absolute SHAP values</li>
+<li><strong>Dependence plot</strong>: Feature value vs. SHAP value</li>
+</ul>
+<h3 id="model-behaviour-characterisation-1">Model Behaviour Characterisation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#model-behaviour-characterisation-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="partial-dependence-plots-pdp-1">Partial Dependence Plots (PDP)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#partial-dependence-plots-pdp-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Definition</strong> (Friedman, 2001):</p>
+<pre><code>PD_S(x_S) = E_X_C[f(x_S, X_C)]
+</code></pre>
+<p>Where:</p>
+<ul>
+<li><code>S</code> is subset of features to visualise</li>
+<li><code>C</code> is complement of <code>S</code></li>
+<li>Marginalisation over <code>X_C</code></li>
+</ul>
+<p><strong>Computation</strong>:</p>
+<pre><code>PD_S(x_S) ≈ (1/n) Σ f(x_S, x_C^(i))
+                 i=1
+</code></pre>
+<p><strong>Interpretation</strong>: Average model output when feature(s) fixed at value</p>
+<p><strong>Advantages</strong>:</p>
+<ul>
+<li>Intuitive visualisation</li>
+<li>Model-agnostic</li>
+<li>Handles non-linear relationships</li>
+</ul>
+<p><strong>Limitations</strong>:</p>
+<ul>
+<li>Assumes feature independence (can be misleading)</li>
+<li>Computationally expensive for many features</li>
+<li>Ignores feature distribution</li>
+</ul>
+<h4 id="individual-conditional-expectation-ice-1">Individual Conditional Expectation (ICE)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#individual-conditional-expectation-ice-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Definition</strong> (Goldstein et al., 2015):</p>
+<pre><code>ICE_i(x_S) = f(x_S, x_C^(i))
+</code></pre>
+<p><strong>Interpretation</strong>: Model output for instance <code>i</code> as feature(s) vary</p>
+<p><strong>Relationship to PDP</strong>:</p>
+<pre><code>PD_S(x_S) = (1/n) Σ ICE_i(x_S)
+</code></pre>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li>Reveals heterogeneity (individual instance behaviour)</li>
+<li>Detects interactions (diverging ICE curves)</li>
+<li>Visualises distribution, not just average</li>
+</ul>
+<p><strong>Visualisation</strong>: Overlaid curves showing instance-specific effects</p>
+<h4 id="accumulated-local-effects-ale-1">Accumulated Local Effects (ALE)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#accumulated-local-effects-ale-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Definition</strong> (Apley &amp; Zhu, 2020):</p>
+<pre><code>ALE_j(x) = ∫_{z_min}^x E_X|X_j=z[∂f/∂X_j | X_j=z] dz
+</code></pre>
+<p><strong>Advantages over PDP</strong>:</p>
+<ul>
+<li>Unbiased with correlated features</li>
+<li>Uses conditional rather than marginal distribution</li>
+<li>Faster computation</li>
+</ul>
+<p><strong>Interpretation</strong>: Accumulated marginal effect of feature</p>
+<p><strong>Use Case</strong>: Preferred when features are correlated</p>
+<h3 id="surrogate-models-2">Surrogate Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#surrogate-models-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="global-surrogate-1">Global Surrogate<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#global-surrogate-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Approach</strong>:</p>
+<ol>
+<li><strong>Train black-box model</strong>: <code>f(X) → Y</code></li>
+<li><strong>Generate predictions</strong>: <code>Ŷ = f(X)</code> for large dataset</li>
+<li><strong>Train interpretable model</strong>: <code>g(X) → Ŷ</code></li>
+<li><strong>Interpret</strong> <code>g</code> as approximation of <code>f</code></li>
+</ol>
+<p><strong>Interpretable Model Choices</strong>:</p>
+<ul>
+<li>Decision tree</li>
+<li>Linear regression</li>
+<li>Rule set (RuleFit)</li>
+<li>GAM (Generalized Additive Model)</li>
+</ul>
+<p><strong>Fidelity Measure</strong>:</p>
+<pre><code>Fidelity = R²(f(X), g(X))
+</code></pre>
+<p><strong>Trade-off</strong>: Accuracy (of <code>f</code>) vs. Interpretability (of <code>g</code>)</p>
+<p><strong>Limitations</strong>:</p>
+<ul>
+<li>Surrogate may not faithfully represent black-box</li>
+<li>Model mismatch in complex regions</li>
+<li>Interpretability of surrogate still limited</li>
+</ul>
+<h4 id="rulefit-1">RuleFit<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rulefit-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Algorithm</strong> (Friedman &amp; Popescu, 2008):</p>
+<ol>
+<li><strong>Extract rules</strong> from tree ensemble</li>
+<li><strong>Fit sparse linear model</strong> with rules as features</li>
+</ol>
+<pre><code>y ≈ β₀ + Σ β_k R_k(x)
+</code></pre>
+<p>Where <code>R_k</code> are if-then rules</p>
+<p><strong>Output</strong>: Interpretable rule-based global model</p>
+<p><strong>Example</strong>:</p>
+<pre><code>Prediction = 0.5
++ 0.3 × (age > 50 AND cholesterol > 200)
++ 0.15 × (BMI > 30)
+- 0.2 × (exercise_weekly = True)
+</code></pre>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li>Combines predictive power and interpretability</li>
+<li>Explicit rule interactions</li>
+<li>Sparse representation</li>
+</ul>
+<h3 id="interaction-detection-1">Interaction Detection<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interaction-detection-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="friedmans-h-statistic-1">Friedman’s H-statistic<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#friedmans-h-statistic-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Two-way Interaction</strong>:</p>
+<pre><code>H²_jk = [Σ(PD_jk(x_j, x_k) - PD_j(x_j) - PD_k(x_k))²] / [Σ PD_jk(x_j, x_k)²]
+</code></pre>
+<p><strong>Interpretation</strong>: Proportion of variance due to interaction</p>
+<p><strong>Values</strong>:</p>
+<ul>
+<li><code>H² = 0</code>: No interaction</li>
+<li><code>H² > 0</code>: Interaction present (larger = stronger)</li>
+</ul>
+<p><strong>Use Case</strong>: Identify which feature pairs interact significantly</p>
+<h4 id="shap-interaction-values-1">SHAP Interaction Values<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#shap-interaction-values-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Definition</strong>:</p>
+<pre><code>φ_ij = Σ |S|!(|N|-|S|-1)! / (2|N|!) [Δ_ij(S)]
+     S⊆N\{i,j}
+</code></pre>
+<p>Where <code>Δ_ij(S)</code> quantifies pairwise interaction effect.</p>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li>Consistent with SHAP values</li>
+<li>Detects non-linear interactions</li>
+<li>Distributes effects fairly</li>
+</ul>
+<p><strong>Visualisation</strong>: Heatmap of interaction strengths</p>
+<h2 id="application-domains-1">Application Domains<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#application-domains-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="model-debugging-1">Model Debugging<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#model-debugging-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Use Cases</strong>:</p>
+<ul>
+<li>Detect unexpected feature importance (sanity check)</li>
+<li>Identify bias in feature usage</li>
+<li>Discover data leakage</li>
+</ul>
+<p><strong>Example</strong>:
+Global feature importance reveals that “patient ID” has high importance → data leakage detected.</p>
+<h3 id="regulatory-compliance-1">Regulatory Compliance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regulatory-compliance-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Finance</strong>:</p>
+<ul>
+<li>Fair lending: ensure protected attributes not driving decisions</li>
+<li>Model risk management: holistic model understanding</li>
+</ul>
+<p><strong>Healthcare</strong>:</p>
+<ul>
+<li>Clinical validation: feature importance aligns with medical knowledge</li>
+<li>IEEE P2802 compliance: transparent device behaviour</li>
+</ul>
+<p><strong>Example</strong>:
+Partial dependence plots show that “race” feature has flat PD → no discriminatory effect.</p>
+<h3 id="scientific-discovery-1">Scientific Discovery<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scientific-discovery-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Use Cases</strong>:</p>
+<ul>
+<li>Hypothesis generation from feature importance</li>
+<li>Mechanism understanding via PDPs</li>
+<li>Interaction detection for biological pathways</li>
+</ul>
+<p><strong>Example</strong>:
+Climate modelling: PDP reveals non-linear CO₂ effect on temperature, guiding further research.</p>
+<h3 id="model-comparison-1">Model Comparison<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#model-comparison-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Approach</strong>:</p>
+<ul>
+<li>Generate global explanations for multiple models</li>
+<li>Compare feature importance rankings</li>
+<li>Assess consistency of relationships (PDPs)</li>
+</ul>
+<p><strong>Decision Criterion</strong>: Select model with interpretable, domain-aligned behaviour.</p>
+<h2 id="implementation-approaches-1">Implementation Approaches<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-approaches-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="permutation-importance-3">Permutation Importance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#permutation-importance-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Scikit-learn</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.inspection </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> permutation_importance</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">result </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> permutation_importance(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  estimator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  X</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_val,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  y</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">y_val,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  n_repeats</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  random_state</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">42</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  scoring</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'accuracy'</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">importances </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> result.importances_mean</span></span></code></pre></figure>
+<p><strong>Custom Implementation</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">def</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> permutation_importance</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(model, X, y, metric, n_repeats</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">):</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  baseline_score </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> metric(y, model.predict(X))</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  importances </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {}</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">  for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> col </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">in</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> X.columns:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">      scores </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> []</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">      for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> _ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">in</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> range</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(n_repeats):</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">          X_permuted </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> X.copy()</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">          X_permuted[col] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> X_permuted[col].sample(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">frac</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">).values</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">          score </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> metric(y, model.predict(X_permuted))</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">          scores.append(baseline_score </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> score)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">      importances[col] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> np.mean(scores)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> importances</span></span></code></pre></figure>
+<h3 id="partial-dependence-plots-1">Partial Dependence Plots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#partial-dependence-plots-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Scikit-learn</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.inspection </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> PartialDependenceDisplay</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">features </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'cholesterol'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, (</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'cholesterol'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">PartialDependenceDisplay.from_estimator(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  estimator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  X</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  features</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">features,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  feature_names</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train.columns</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<p><strong>PDPbox</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> pdpbox </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> pdp</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">pdp_age </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> pdp.pdp_isolate(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  model</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  dataset</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  model_features</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train.columns,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  feature</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">pdp.pdp_plot(pdp_age, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<h3 id="ice-plots-1">ICE Plots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ice-plots-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Scikit-learn</strong> (built into PDP):</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.inspection </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> PartialDependenceDisplay</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">PartialDependenceDisplay.from_estimator(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  estimator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  X</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  features</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">],</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  kind</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'both'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Shows both PDP and ICE</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  ice_lines_kw</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">{</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'alpha'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">0.2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<h3 id="ale-plots-1">ALE Plots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ale-plots-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>ALEPython</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> alepython </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ale_plot</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">ale_plot(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  model</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">model.predict,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  X_train</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  feature</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  bins</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">20</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<h3 id="shap-global-explanations-1">SHAP Global Explanations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#shap-global-explanations-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Summary Plot</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> shap</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">explainer </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> shap.TreeExplainer(model)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">shap_values </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> explainer.shap_values(X_test)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">shap.summary_plot(shap_values, X_test, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">plot_type</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;bar&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Feature importance</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">shap.summary_plot(shap_values, X_test)  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Distribution</span></span></code></pre></figure>
+<p><strong>Dependence Plot</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">shap.dependence_plot(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  ind</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'age'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  shap_values</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">shap_values,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  features</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_test,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  interaction_index</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'cholesterol'</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">  # Color by interaction</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<h3 id="surrogate-models-3">Surrogate Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#surrogate-models-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Global Tree Surrogate</strong>:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.tree </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> DecisionTreeRegressor, plot_tree</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Train black-box model</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">black_box </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> RandomForestRegressor().fit(X_train, y_train)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Generate predictions</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">y_surrogate </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> black_box.predict(X_train)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Train interpretable surrogate</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">surrogate </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> DecisionTreeRegressor(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">max_depth</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">5</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">surrogate.fit(X_train, y_surrogate)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Visualize</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">plot_tree(surrogate, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">feature_names</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">X_train.columns, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">filled</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">True</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Assess fidelity</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.metrics </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> r2_score</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">fidelity </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> r2_score(black_box.predict(X_test), surrogate.predict(X_test))</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">f</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;Surrogate fidelity: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">{</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">fidelity</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:.3f</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<h2 id="evaluation-metrics-1">Evaluation Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-metrics-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="fidelity-metrics-1">Fidelity Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fidelity-metrics-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Global Fidelity</strong> (for surrogates):</p>
+<pre><code>Fidelity = R²(f(X), g(X))
+</code></pre>
+<p>Measures how well interpretable model <code>g</code> approximates black-box <code>f</code>.</p>
+<p><strong>Feature Importance Stability</strong>:</p>
+<pre><code>Stability = Spearman_correlation(FI(subset₁), FI(subset₂))
+</code></pre>
+<p>Consistency across data subsets.</p>
+<h3 id="computational-efficiency-1">Computational Efficiency<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#computational-efficiency-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>PDP Complexity</strong>:</p>
+<ul>
+<li>Grid points: <code>m</code></li>
+<li>Instances: <code>n</code></li>
+<li>Features: <code>p</code></li>
+<li>Complexity: <code>O(m × n × p)</code> for all features</li>
+</ul>
+<p><strong>Permutation Importance Complexity</strong>:</p>
+<ul>
+<li>Features: <code>p</code></li>
+<li>Repeats: <code>r</code></li>
+<li>Complexity: <code>O(p × r × prediction_cost)</code></li>
+</ul>
+<h3 id="completeness-metrics-1">Completeness Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#completeness-metrics-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Interaction Coverage</strong>:</p>
+<pre><code>Coverage = (Detected interactions) / (True interactions)
+</code></pre>
+<p><strong>Feature Coverage</strong>:
+Percentage of features with significant importance.</p>
+<h2 id="challenges--limitations-1">Challenges &amp; Limitations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#challenges--limitations-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="methodological-challenges-1">Methodological Challenges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#methodological-challenges-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Feature Correlation</strong>:</p>
+<ul>
+<li><strong>PDP Issue</strong>: Marginalises over unrealistic feature combinations</li>
+<li><strong>Solution</strong>: Use ALE or condition on realistic feature values</li>
+<li><strong>Example</strong>: Age and years of education correlated; PDP may show “5-year-old with PhD”</li>
+</ul>
+<p><strong>Computational Cost</strong>:</p>
+<ul>
+<li><strong>PDP/ICE</strong>: Requires many model evaluations</li>
+<li><strong>SHAP</strong>: Exponential complexity (exact)</li>
+<li><strong>Mitigation</strong>: Sampling, approximations, caching</li>
+</ul>
+<p><strong>Interpretation Ambiguity</strong>:</p>
+<ul>
+<li><strong>Permutation Importance</strong>: Which feature interactions are captured?</li>
+<li><strong>SHAP</strong>: Baseline choice affects values</li>
+<li><strong>Surrogate</strong>: Fidelity-interpretability trade-off</li>
+</ul>
+<h3 id="practical-challenges-1">Practical Challenges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#practical-challenges-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>High-Dimensional Data</strong>:</p>
+<ul>
+<li>Visualising >3 features difficult</li>
+<li>Feature selection needed</li>
+<li>Curse of dimensionality for interactions</li>
+</ul>
+<p><strong>Model Complexity</strong>:</p>
+<ul>
+<li>Deep neural networks: millions of parameters</li>
+<li>Global explanations may oversimplify</li>
+<li>Multiple explanations needed for completeness</li>
+</ul>
+<p><strong>Dynamic Models</strong>:</p>
+<ul>
+<li>Online learning: explanations change over time</li>
+<li>Temporal dependencies: static explanations insufficient</li>
+<li>Concept drift: explanations become stale</li>
+</ul>
+<h2 id="research-directions-1">Research Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-directions-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="emerging-areas-1">Emerging Areas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#emerging-areas-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Causal Global Explanations</strong>:</p>
+<ul>
+<li>Structural causal models</li>
+<li>Interventional feature importance</li>
+<li>Beyond observational statistics</li>
+</ul>
+<p><strong>Temporal Global Explanations</strong>:</p>
+<ul>
+<li>Evolution of feature importance</li>
+<li>Concept drift detection</li>
+<li>Dynamic model behaviour</li>
+</ul>
+<p><strong>Multi-objective Global Explanations</strong>:</p>
+<ul>
+<li>Balancing accuracy, fairness, and interpretability</li>
+<li>Pareto-optimal model selection</li>
+<li>Trade-off visualisation</li>
+</ul>
+<p><strong>Scalable Global Explanations</strong>:</p>
+<ul>
+<li>Distributed PDP computation</li>
+<li>Incremental feature importance</li>
+<li>Approximate methods for large-scale data</li>
+</ul>
+<h3 id="industry-innovation-1">Industry Innovation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#industry-innovation-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Microsoft InterpretML</strong>:</p>
+<ul>
+<li>Explainable Boosting Machines (inherently global)</li>
+<li>ICE plots with distribution</li>
+<li>Interaction detection</li>
+</ul>
+<p><strong>Google Cloud Explainable AI</strong>:</p>
+<ul>
+<li>Feature attributions aggregated globally</li>
+<li>What-If Tool for PDP-like exploration</li>
+<li>TensorFlow Model Analysis integration</li>
+</ul>
+<p><strong>DataRobot</strong>:</p>
+<ul>
+<li>Automated feature importance</li>
+<li>Feature effects (PDP-like)</li>
+<li>Prediction explanations at scale</li>
+</ul>
+<h2 id="best-practices-1">Best Practices<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#best-practices-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="method-selection-1">Method Selection<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#method-selection-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Decision Tree</strong>:</p>
+<ol>
+<li><strong>Feature correlation</strong>: High → ALE; Low → PDP</li>
+<li><strong>Model type</strong>: Trees → native importance; Any → permutation/SHAP</li>
+<li><strong>Computational budget</strong>: Limited → permutation; Ample → SHAP</li>
+<li><strong>Explanation goal</strong>: Feature ranking → importance; Relationships → PDP/ALE</li>
+</ol>
+<h3 id="implementation-guidelines-1">Implementation Guidelines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-guidelines-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Pre-deployment</strong>:</p>
+<ul>
+<li>Validate feature importance with domain experts</li>
+<li>Check PDP/ALE for unexpected patterns</li>
+<li>Assess computational feasibility</li>
+<li>Test on held-out data</li>
+</ul>
+<p><strong>Production</strong>:</p>
+<ul>
+<li>Pre-compute global explanations (cached)</li>
+<li>Update periodically (model drift)</li>
+<li>Monitor feature importance shifts</li>
+<li>Dashboard for stakeholder access</li>
+</ul>
+<p><strong>Post-deployment</strong>:</p>
+<ul>
+<li>Track explanation usage</li>
+<li>Refine based on feedback</li>
+<li>Update as model evolves</li>
+<li>Audit for consistency</li>
+</ul>
+<h3 id="visualisation-best-practices-1">Visualisation Best Practices<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#visualisation-best-practices-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Feature Importance</strong>:</p>
+<ul>
+<li>Sort by magnitude</li>
+<li>Include confidence intervals (permutation variance)</li>
+<li>Highlight top-K features</li>
+<li>Use color for positive/negative effects</li>
+</ul>
+<p><strong>PDP/ICE</strong>:</p>
+<ul>
+<li>Show feature distribution (rug plot)</li>
+<li>Include confidence bands</li>
+<li>Limit number of ICE curves (avoid clutter)</li>
+<li>2D PDPs for key interactions</li>
+</ul>
+<p><strong>SHAP Plots</strong>:</p>
+<ul>
+<li>Summary plot: distribution + importance</li>
+<li>Dependence plots: select top interactions</li>
+<li>Waterfall plots: global average explanation</li>
+</ul>
+<h3 id="documentation-1">Documentation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#documentation-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Model Cards</strong> should include:</p>
+<ul>
+<li>Global explanation methods used</li>
+<li>Feature importance rankings</li>
+<li>Key feature effects (PDP summaries)</li>
+<li>Computational requirements</li>
+</ul>
+<p><strong>User-Facing</strong>:</p>
+<ul>
+<li>Executive summary of model behaviour</li>
+<li>Top-K feature importance with interpretation</li>
+<li>Key relationships (PDP insights)</li>
+<li>Known limitations</li>
+</ul>
+<h4 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<h3 id="academic-literature">Academic Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Friedman, J. H. (2001). “Greedy function approximation: A gradient boosting machine.” <em>Annals of Statistics</em>, 29(5), 1189-1232</li>
+<li>Breiman, L. (2001). “Random forests.” <em>Machine Learning</em>, 45(1), 5-32</li>
+<li>Goldstein, A., et al. (2015). “Peeking inside the black box: Visualizing statistical learning with plots of individual conditional expectation.” <em>Journal of Computational and Graphical Statistics</em>, 24(1), 44-65</li>
+<li>Apley, D. W., &amp; Zhu, J. (2020). “Visualizing the effects of predictor variables in black box supervised learning models.” <em>Journal of the Royal Statistical Society: Series B</em>, 82(4), 1059-1086</li>
+<li>Friedman, J. H., &amp; Popescu, B. E. (2008). “Predictive learning via rule ensembles.” <em>Annals of Applied Statistics</em>, 2(3), 916-954</li>
+</ul>
+<h3 id="standards">Standards<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standards" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>IEEE. (2023). <em>IEEE P2976: Standard for eXplainable Artificial Intelligence</em></li>
+<li>IEEE. (2021). <em>IEEE 7001-2021: Standard for Transparency of Autonomous Systems</em></li>
+</ul>
+<h3 id="tools--frameworks">Tools &amp; Frameworks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tools--frameworks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Scikit-learn. (2023). <em>Inspection module</em></li>
+<li>Lundberg, S. M. (2023). <em>SHAP library</em></li>
+<li>Molnar, C. (2022). <em>Interpretable Machine Learning</em></li>
+</ul>
+<h2 id="see-also">See Also<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#see-also" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../pages/Local-Explanation" class="internal alias" data-slug="pages/Local-Explanation">Local Explanation</a></li>
+<li><a href="../pages/Feature-Importance" class="internal alias" data-slug="pages/Feature-Importance">Feature Importance</a></li>
+<li><a href="../Partial-Dependence-Plot" class="internal alias" data-slug="Partial-Dependence-Plot">Partial Dependence Plot</a></li>
+<li><a href="../Permutation-Importance" class="internal alias" data-slug="Permutation-Importance">Permutation Importance</a></li>
+<li><a href="../Individual-Conditional-Expectation" class="internal alias" data-slug="Individual-Conditional-Expectation">Individual Conditional Expectation</a></li>
+<li><a href="../pages/SHAP" class="internal" data-slug="pages/SHAP">SHAP</a></li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-2541" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#related-terms" data-for="related-terms">Related Terms</a></li><li class="depth-0"><a href="#formal-specification" data-for="formal-specification">Formal Specification</a></li><li class="depth-1"><a href="#core-concept" data-for="core-concept">Core Concept</a></li><li class="depth-1"><a href="#mathematical-framework" data-for="mathematical-framework">Mathematical Framework</a></li><li class="depth-0"><a href="#key-methods" data-for="key-methods">Key Methods</a></li><li class="depth-1"><a href="#feature-importance-measures" data-for="feature-importance-measures">Feature Importance Measures</a></li><li class="depth-1"><a href="#model-behaviour-characterisation" data-for="model-behaviour-characterisation">Model Behaviour Characterisation</a></li><li class="depth-1"><a href="#surrogate-models" data-for="surrogate-models">Surrogate Models</a></li><li class="depth-1"><a href="#interaction-detection" data-for="interaction-detection">Interaction Detection</a></li><li class="depth-0"><a href="#application-domains" data-for="application-domains">Application Domains</a></li><li class="depth-1"><a href="#model-debugging" data-for="model-debugging">Model Debugging</a></li><li class="depth-1"><a href="#regulatory-compliance" data-for="regulatory-compliance">Regulatory Compliance</a></li><li class="depth-1"><a href="#scientific-discovery" data-for="scientific-discovery">Scientific Discovery</a></li><li class="depth-1"><a href="#model-comparison" data-for="model-comparison">Model Comparison</a></li><li class="depth-0"><a href="#implementation-approaches" data-for="implementation-approaches">Implementation Approaches</a></li><li class="depth-1"><a href="#permutation-importance" data-for="permutation-importance">Permutation Importance</a></li><li class="depth-1"><a href="#partial-dependence-plots" data-for="partial-dependence-plots">Partial Dependence Plots</a></li><li class="depth-1"><a href="#ice-plots" data-for="ice-plots">ICE Plots</a></li><li class="depth-1"><a href="#ale-plots" data-for="ale-plots">ALE Plots</a></li><li class="depth-1"><a href="#shap-global-explanations" data-for="shap-global-explanations">SHAP Global Explanations</a></li><li class="depth-1"><a href="#surrogate-models-1" data-for="surrogate-models-1">Surrogate Models</a></li><li class="depth-0"><a href="#evaluation-metrics" data-for="evaluation-metrics">Evaluation Metrics</a></li><li class="depth-1"><a href="#fidelity-metrics" data-for="fidelity-metrics">Fidelity Metrics</a></li><li class="depth-1"><a href="#computational-efficiency" data-for="computational-efficiency">Computational Efficiency</a></li><li class="depth-1"><a href="#completeness-metrics" data-for="completeness-metrics">Completeness Metrics</a></li><li class="depth-0"><a href="#challenges--limitations" data-for="challenges--limitations">Challenges &amp; Limitations</a></li><li class="depth-1"><a href="#methodological-challenges" data-for="methodological-challenges">Methodological Challenges</a></li><li class="depth-1"><a href="#practical-challenges" data-for="practical-challenges">Practical Challenges</a></li><li class="depth-0"><a href="#research-directions" data-for="research-directions">Research Directions</a></li><li class="depth-1"><a href="#emerging-areas" data-for="emerging-areas">Emerging Areas</a></li><li class="depth-1"><a href="#industry-innovation" data-for="industry-innovation">Industry Innovation</a></li><li class="depth-0"><a href="#best-practices" data-for="best-practices">Best Practices</a></li><li class="depth-1"><a href="#method-selection" data-for="method-selection">Method Selection</a></li><li class="depth-1"><a href="#implementation-guidelines" data-for="implementation-guidelines">Implementation Guidelines</a></li><li class="depth-1"><a href="#visualisation-best-practices" data-for="visualisation-best-practices">Visualisation Best Practices</a></li><li class="depth-1"><a href="#documentation" data-for="documentation">Documentation</a></li><li class="depth-0"><a href="#related-terms-1" data-for="related-terms-1">Related Terms</a></li><li class="depth-0"><a href="#formal-specification-1" data-for="formal-specification-1">Formal Specification</a></li><li class="depth-1"><a href="#core-concept-1" data-for="core-concept-1">Core Concept</a></li><li class="depth-1"><a href="#mathematical-framework-1" data-for="mathematical-framework-1">Mathematical Framework</a></li><li class="depth-0"><a href="#key-methods-1" data-for="key-methods-1">Key Methods</a></li><li class="depth-1"><a href="#feature-importance-measures-1" data-for="feature-importance-measures-1">Feature Importance Measures</a></li><li class="depth-1"><a href="#model-behaviour-characterisation-1" data-for="model-behaviour-characterisation-1">Model Behaviour Characterisation</a></li><li class="depth-1"><a href="#surrogate-models-2" data-for="surrogate-models-2">Surrogate Models</a></li><li class="depth-1"><a href="#interaction-detection-1" data-for="interaction-detection-1">Interaction Detection</a></li><li class="depth-0"><a href="#application-domains-1" data-for="application-domains-1">Application Domains</a></li><li class="depth-1"><a href="#model-debugging-1" data-for="model-debugging-1">Model Debugging</a></li><li class="depth-1"><a href="#regulatory-compliance-1" data-for="regulatory-compliance-1">Regulatory Compliance</a></li><li class="depth-1"><a href="#scientific-discovery-1" data-for="scientific-discovery-1">Scientific Discovery</a></li><li class="depth-1"><a href="#model-comparison-1" data-for="model-comparison-1">Model Comparison</a></li><li class="depth-0"><a href="#implementation-approaches-1" data-for="implementation-approaches-1">Implementation Approaches</a></li><li class="depth-1"><a href="#permutation-importance-1" data-for="permutation-importance-1">Permutation Importance</a></li><li class="depth-1"><a href="#partial-dependence-plots-1" data-for="partial-dependence-plots-1">Partial Dependence Plots</a></li><li class="depth-1"><a href="#ice-plots-1" data-for="ice-plots-1">ICE Plots</a></li><li class="depth-1"><a href="#ale-plots-1" data-for="ale-plots-1">ALE Plots</a></li><li class="depth-1"><a href="#shap-global-explanations-1" data-for="shap-global-explanations-1">SHAP Global Explanations</a></li><li class="depth-1"><a href="#surrogate-models-3" data-for="surrogate-models-3">Surrogate Models</a></li><li class="depth-0"><a href="#evaluation-metrics-1" data-for="evaluation-metrics-1">Evaluation Metrics</a></li><li class="depth-1"><a href="#fidelity-metrics-1" data-for="fidelity-metrics-1">Fidelity Metrics</a></li><li class="depth-1"><a href="#computational-efficiency-1" data-for="computational-efficiency-1">Computational Efficiency</a></li><li class="depth-1"><a href="#completeness-metrics-1" data-for="completeness-metrics-1">Completeness Metrics</a></li><li class="depth-0"><a href="#challenges--limitations-1" data-for="challenges--limitations-1">Challenges &amp; Limitations</a></li><li class="depth-1"><a href="#methodological-challenges-1" data-for="methodological-challenges-1">Methodological Challenges</a></li><li class="depth-1"><a href="#practical-challenges-1" data-for="practical-challenges-1">Practical Challenges</a></li><li class="depth-0"><a href="#research-directions-1" data-for="research-directions-1">Research Directions</a></li><li class="depth-1"><a href="#emerging-areas-1" data-for="emerging-areas-1">Emerging Areas</a></li><li class="depth-1"><a href="#industry-innovation-1" data-for="industry-innovation-1">Industry Innovation</a></li><li class="depth-0"><a href="#best-practices-1" data-for="best-practices-1">Best Practices</a></li><li class="depth-1"><a href="#method-selection-1" data-for="method-selection-1">Method Selection</a></li><li class="depth-1"><a href="#implementation-guidelines-1" data-for="implementation-guidelines-1">Implementation Guidelines</a></li><li class="depth-1"><a href="#visualisation-best-practices-1" data-for="visualisation-best-practices-1">Visualisation Best Practices</a></li><li class="depth-1"><a href="#documentation-1" data-for="documentation-1">Documentation</a></li><li class="depth-1"><a href="#academic-literature" data-for="academic-literature">Academic Literature</a></li><li class="depth-1"><a href="#standards" data-for="standards">Standards</a></li><li class="depth-1"><a href="#tools--frameworks" data-for="tools--frameworks">Tools &amp; Frameworks</a></li><li class="depth-0"><a href="#see-also" data-for="see-also">See Also</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Feature-Importance" class="internal">Feature Importance</a></li><li><a href="../pages/Local-Explanation" class="internal">Local Explanation</a></li><li><a href="../pages/Model-Interpretability" class="internal">Model Interpretability</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

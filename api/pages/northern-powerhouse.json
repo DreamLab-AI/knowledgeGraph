@@ -16,11 +16,28 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:northern-powerhouse-rail",
+        "label": "Northern Powerhouse Rail"
+      },
+      {
+        "id": "urn:ngm:class:mayoral-combined-authority",
+        "label": "Mayoral Combined Authority"
+      },
+      {
+        "id": "urn:ngm:class:science-and-innovation-audit",
+        "label": "Science and Innovation Audit"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:transport-infrastructure",
         "label": "Transport Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:fiscal-devolution",
+        "label": "Fiscal Devolution"
       }
     ],
     "enables": [
@@ -31,11 +48,23 @@
       {
         "id": "urn:ngm:class:advanced-manufacturing",
         "label": "Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:inward-investment",
+        "label": "Inward Investment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-divide",
+        "label": "North-South Divide"
+      },
+      {
+        "id": "urn:ngm:class:golden-triangle",
+        "label": "Golden Triangle"
+      },
       {
         "id": "urn:ngm:class:digital-divide",
         "label": "North-South Divide"
@@ -51,7 +80,20 @@
         "label": "Data Infrastructure"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:city-deal",
+        "label": "City Deal"
+      },
+      {
+        "id": "urn:ngm:class:freeport",
+        "label": "Freeport"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-zone",
+        "label": "Enterprise Zone"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:research-and-development",
@@ -60,6 +102,14 @@
       {
         "id": "urn:ngm:class:workforce-development",
         "label": "Skills Development"
+      },
+      {
+        "id": "urn:ngm:class:workforce-development",
+        "label": "Skills Development"
+      },
+      {
+        "id": "urn:ngm:class:clean-energy-transition",
+        "label": "Clean Energy Transition"
       }
     ],
     "standardizedBy": [],
@@ -67,6 +117,10 @@
       {
         "id": "urn:ngm:class:uk-industrial-strategy",
         "label": "UK Industrial Strategy"
+      },
+      {
+        "id": "urn:ngm:class:levelling-up",
+        "label": "Levelling Up"
       }
     ],
     "relatedTo": [
@@ -77,6 +131,14 @@
       {
         "id": "urn:ngm:class:economic-model",
         "label": "Regional Economic Policy"
+      },
+      {
+        "id": "urn:ngm:class:devolution",
+        "label": "Devolution"
+      },
+      {
+        "id": "urn:ngm:class:regional-development-agency",
+        "label": "Regional Development Agency"
       }
     ]
   },
@@ -216,7 +278,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

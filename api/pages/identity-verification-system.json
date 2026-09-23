@@ -38,15 +38,19 @@
       {
         "id": "urn:ngm:class:optical-character-recognition",
         "label": "Optical Character Recognition"
+      },
+      {
+        "id": "urn:ngm:class:database-lookup",
+        "label": "Database Lookup"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -60,11 +64,11 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -88,6 +92,10 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:verifiable-credential-vc",
@@ -130,9 +138,18 @@
       {
         "id": "urn:ngm:class:eidas-regulation",
         "label": "eIDAS Regulation"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC 30107"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:synthetic-identity-fraud",
@@ -193,12 +210,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       },
       {
         "id": "urn:ngm:class:data-centre",

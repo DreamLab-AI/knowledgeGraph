@@ -16,7 +16,20 @@
   "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:workshop",
+        "label": "Workshop"
+      },
+      {
+        "id": "urn:ngm:class:tutorial",
+        "label": "Tutorial"
+      },
+      {
+        "id": "urn:ngm:class:paper-submission",
+        "label": "Paper Submission"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -80,7 +93,7 @@
         "label": "Optimization Algorithm"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {
@@ -91,11 +104,23 @@
     "supports": [],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "International Machine Learning Society"
+      },
+      {
         "id": "urn:ngm:class:machine-learning",
         "label": "International Machine Learning Society"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Community"
+      },
+      {
+        "id": "urn:ngm:class:journal-of-machine-learning-research",
+        "label": "Proceedings of Machine Learning Research"
+      },
       {
         "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning Community"
@@ -107,7 +132,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -220,6 +245,20 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

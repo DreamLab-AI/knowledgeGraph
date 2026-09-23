@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
+    },
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
     }
   ],
   "entityType": "Class",
@@ -40,7 +44,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:uniform-resource-identifier",
+        "label": "Uniform Resource Identifier"
+      },
+      {
+        "id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

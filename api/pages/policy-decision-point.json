@@ -132,9 +132,29 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:authorisation-mechanism",
+      "label": "Authorisation Mechanism",
+      "slug": "authorisation-mechanism"
+    },
+    {
+      "id": "urn:ngm:class:governance-control",
+      "label": "Governance Control",
+      "slug": "governance-control"
+    },
+    {
+      "id": "urn:ngm:class:information-security-system",
+      "label": "Information Security System",
+      "slug": "information-security-system"
+    },
+    {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:security-control",
+      "label": "Security Control",
+      "slug": "security-control"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -144,6 +164,10 @@
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:attribute-evaluation",
+        "label": "Attribute Evaluation"
+      },
       {
         "id": "urn:ngm:class:audit-log",
         "label": "Audit Log"
@@ -171,10 +195,6 @@
       {
         "id": "urn:ngm:class:session-manager",
         "label": "Session Manager"
-      },
-      {
-        "id": "urn:ngm:class:token-service",
-        "label": "Token Service"
       }
     ],
     "requires": [
@@ -245,13 +265,97 @@
         "label": "Separation of Duties"
       }
     ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:directory-service",
+        "label": "Directory Service"
+      },
+      {
+        "id": "urn:ngm:class:secure-logging",
+        "label": "Secure Logging"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:abac",
+        "label": "ABAC"
+      },
+      {
+        "id": "urn:ngm:class:capability-based-security",
+        "label": "Capability-Based Security"
+      },
+      {
+        "id": "urn:ngm:class:dac",
+        "label": "DAC"
+      },
+      {
+        "id": "urn:ngm:class:mac",
+        "label": "MAC"
+      },
+      {
+        "id": "urn:ngm:class:pbac",
+        "label": "PBAC"
+      },
+      {
+        "id": "urn:ngm:class:rbac",
+        "label": "RBAC"
+      },
+      {
+        "id": "urn:ngm:class:rebac",
+        "label": "ReBAC"
+      }
+    ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:capability-based-security",
+        "label": "Capability-Based Security"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
@@ -291,8 +395,8 @@
         "label": "XACML"
       },
       {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
+        "id": "urn:ngm:class:zanzibar",
+        "label": "Zanzibar"
       }
     ],
     "supports": [
@@ -339,6 +443,10 @@
         "label": "IETF RFC 4120"
       },
       {
+        "id": "urn:ngm:class:ietf-rfc-6749",
+        "label": "IETF RFC 6749"
+      },
+      {
         "id": "urn:ngm:class:iso-iec-27002",
         "label": "ISO IEC 27002"
       },
@@ -357,10 +465,6 @@
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "relatedTo": [

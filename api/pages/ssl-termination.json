@@ -27,6 +27,10 @@
       {
         "id": "urn:ngm:class:http",
         "label": "HTTPS"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTPS"
       }
     ],
     "dependsOn": [],
@@ -40,7 +44,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:transport-layer-security",
+        "id": "urn:ngm:class:tls",
         "label": "Transport Layer Security"
       },
       {
@@ -79,7 +83,7 @@
         "label": "Caching"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -151,7 +155,7 @@
       },
       {
         "id": "urn:ngm:class:tcp-ip",
-        "label": "TCP/IP"
+        "label": "TCP-IP"
       },
       {
         "id": "urn:ngm:class:hyperparameter-tuning",
@@ -256,7 +260,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -270,6 +274,22 @@
       {
         "id": "urn:ngm:class:hardware-accelerator",
         "label": "Hardware Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

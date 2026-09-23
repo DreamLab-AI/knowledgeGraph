@@ -72,6 +72,14 @@
       {
         "id": "urn:ngm:class:mixed-reality",
         "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:industrial-guidance",
+        "label": "Industrial Guidance"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing Applications"
       }
     ],
     "dependsOn": [],
@@ -84,12 +92,24 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
       }
     ],
     "uses": [
@@ -146,14 +166,29 @@
       "slug": "spatial-computing"
     },
     {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
       "id": "urn:ngm:class:immersive-technology",
       "label": "Immersive Technology",
       "slug": "immersive-technology"
     },
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
       "id": "urn:ngm:class:digital-technology",
       "label": "Digital Technology",
       "slug": "digital-technology"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -243,40 +278,68 @@
         "label": "Spatial Audio"
       },
       {
+        "id": "urn:ngm:class:contextual-information-overlay",
+        "label": "Contextual Information Overlay"
+      },
+      {
+        "id": "urn:ngm:class:interactive-holograms",
+        "label": "Interactive Holograms"
+      },
+      {
         "id": "urn:ngm:class:object-recognition",
         "label": "Object Recognition"
       },
       {
         "id": "urn:ngm:class:spatial-anchoring",
         "label": "Spatial Anchoring"
-      },
-      {
-        "id": "urn:ngm:class:immersive-experiences",
-        "label": "Immersive Experiences"
-      },
-      {
-        "id": "urn:ngm:class:presence",
-        "label": "Presence"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:graphics-processing-unit",
-        "label": "Graphics Processing Unit"
+        "id": "urn:ngm:class:6-do-f-tracking",
+        "label": "6DOF Tracking"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
       },
       {
-        "id": "urn:ngm:class:spatial-audio",
-        "label": "Spatial Audio"
+        "id": "urn:ngm:class:environmental-understanding",
+        "label": "Environmental Understanding"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing",
+        "label": "Graphics Processing"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:two-dimensional-interface",
+        "label": "Two-Dimensional Interface"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       },
       {
         "id": "urn:ngm:class:display-technology",
@@ -284,10 +347,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
@@ -301,6 +360,10 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
@@ -309,12 +372,12 @@
         "label": "Gesture Recognition"
       },
       {
-        "id": "urn:ngm:class:5-g-network",
-        "label": "5G Network"
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -353,6 +416,14 @@
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
         "id": "urn:ngm:class:enterprise-training",
         "label": "Enterprise Training"
       },
@@ -383,6 +454,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       },
       {
         "id": "urn:ngm:class:immersive-technology",
@@ -419,8 +494,8 @@
         "label": "Standards and Interoperability"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
       }
     ]
   },

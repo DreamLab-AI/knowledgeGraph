@@ -53,7 +53,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -142,6 +142,14 @@
         "label": "Metadata Standard"
       },
       {
+        "id": "urn:ngm:class:navigation-schema",
+        "label": "Navigation Schema"
+      },
+      {
+        "id": "urn:ngm:class:search-system",
+        "label": "Search System"
+      },
+      {
         "id": "urn:ngm:class:taxonomy",
         "label": "Taxonomy"
       },
@@ -156,20 +164,20 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
-      },
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
       }
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:domain-expertise",
+        "label": "Domain Expertise"
+      },
+      {
         "id": "urn:ngm:class:process",
         "label": "Maintenance Process"
+      },
+      {
+        "id": "urn:ngm:class:term-governance",
+        "label": "Term Governance"
       },
       {
         "id": "urn:ngm:class:content-strategy",
@@ -190,20 +198,16 @@
       {
         "id": "urn:ngm:class:networking-fabric",
         "label": "Networking Fabric"
-      },
-      {
-        "id": "urn:ngm:class:cooling-system",
-        "label": "Cooling Systems"
-      },
-      {
-        "id": "urn:ngm:class:power-grid",
-        "label": "Power Grid"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:content-discovery",
         "label": "Content Discovery"
+      },
+      {
+        "id": "urn:ngm:class:data-standardization",
+        "label": "Data Standardization"
       },
       {
         "id": "urn:ngm:class:faceted-classification",
@@ -228,10 +232,6 @@
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
       }
     ],
     "dependsOn": [
@@ -308,10 +308,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web"
       },
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -456,6 +452,10 @@
         "label": "Human Computer Interaction"
       },
       {
+        "id": "urn:ngm:class:library-science",
+        "label": "Library Science"
+      },
+      {
         "id": "urn:ngm:class:knowledge-organization",
         "label": "Knowledge Organization"
       },
@@ -466,10 +466,6 @@
       {
         "id": "urn:ngm:class:empirical-experimental-design-tracking",
         "label": "Experiment Tracking"
-      },
-      {
-        "id": "urn:ngm:class:model-registry",
-        "label": "Model Registry"
       }
     ]
   },

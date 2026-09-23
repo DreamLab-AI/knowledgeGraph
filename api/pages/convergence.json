@@ -16,8 +16,24 @@
       "label": "AI Research Area"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
+      "id": "urn:ngm:class:digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "id": "urn:ngm:class:innovation-systems",
+      "label": "Innovation Systems"
+    },
+    {
+      "id": "urn:ngm:class:sociotechnical-systems",
+      "label": "Sociotechnical Systems"
+    },
+    {
+      "id": "urn:ngm:class:general-purpose-technology",
+      "label": "General Purpose Technology"
+    },
+    {
+      "id": "urn:ngm:class:technology-management",
+      "label": "Technology Management"
     }
   ],
   "entityType": "Class",
@@ -56,6 +72,18 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-and-blockchain",
+        "label": "AI and Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:biocomputing",
+        "label": "Biocomputing"
       }
     ],
     "requires": [
@@ -70,6 +98,22 @@
       {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocols",
+        "label": "Interoperability Protocols"
+      },
+      {
+        "id": "urn:ngm:class:cross-domain-research-infrastructure",
+        "label": "Cross-Domain Research Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-coordination",
+        "label": "Regulatory Coordination"
       }
     ],
     "enables": [
@@ -100,9 +144,38 @@
       {
         "id": "urn:ngm:class:precision-medicine",
         "label": "Precision Medicine"
+      },
+      {
+        "id": "urn:ngm:class:singularity",
+        "label": "Technological Singularity"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Technology"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-biology",
+        "label": "Synthetic Biology"
+      },
+      {
+        "id": "urn:ngm:class:quantum-mechanics",
+        "label": "Quantum Mechanics"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:platform-economy",
@@ -111,9 +184,38 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-technology-theory",
+        "label": "General Purpose Technology Theory"
+      },
+      {
+        "id": "urn:ngm:class:schumpeterian-innovation",
+        "label": "Schumpeterian Innovation"
+      },
+      {
+        "id": "urn:ngm:class:systems-of-systems-design",
+        "label": "Systems of Systems Design"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:singularity",
+        "label": "Technological Singularity"
+      },
+      {
+        "id": "urn:ngm:class:technology-lock-in",
+        "label": "Technology Lock-In"
+      },
+      {
+        "id": "urn:ngm:class:digital-divide",
+        "label": "Digital Divide"
+      },
+      {
+        "id": "urn:ngm:class:silo-innovation",
+        "label": "Silo Innovation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -157,6 +259,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       }
     ],
     "standardizedBy": [
@@ -175,6 +281,10 @@
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:oecd-sti-directorate",
+        "label": "OECD STI Directorate"
       }
     ],
     "partOf": [],
@@ -198,6 +308,10 @@
       {
         "id": "urn:ngm:class:platform-economy",
         "label": "Platform Economy"
+      },
+      {
+        "id": "urn:ngm:class:disruptive-innovation",
+        "label": "Disruptive Innovation"
       }
     ]
   },
@@ -206,6 +320,21 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:organizational-change",
+      "label": "Organizational Change",
+      "slug": "organizational-change"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -245,6 +374,22 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -255,9 +400,29 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:business-innovation",
+        "label": "Business Innovation"
+      },
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "id": "urn:ngm:class:operational-efficiency",
+        "label": "Operational Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
@@ -273,6 +438,132 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
@@ -299,6 +590,14 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
       }
     ]
   },

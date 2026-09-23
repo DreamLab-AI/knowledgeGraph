@@ -17,7 +17,16 @@
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-durability",
+        "label": "Message Durability"
+      },
+      {
+        "id": "urn:ngm:class:delivery-guarantees",
+        "label": "Delivery Guarantees"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:asynchronous-execution",
@@ -77,6 +86,10 @@
       },
       {
         "id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffers"
+      },
+      {
+        "id": "urn:ngm:class:protobuf",
         "label": "Protocol Buffers"
       }
     ],
@@ -138,12 +151,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -244,7 +257,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

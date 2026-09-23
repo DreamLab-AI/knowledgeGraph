@@ -100,6 +100,10 @@
         "label": "Kullback-Leibler Divergence"
       },
       {
+        "id": "urn:ngm:class:mutual-information",
+        "label": "Mutual Information"
+      },
+      {
         "id": "urn:ngm:class:calculus",
         "label": "Calculus"
       },
@@ -110,10 +114,6 @@
       {
         "id": "urn:ngm:class:differential-equations",
         "label": "Differential Equations"
-      },
-      {
-        "id": "urn:ngm:class:fourier-analysis",
-        "label": "Fourier Analysis"
       }
     ],
     "requires": [
@@ -126,6 +126,18 @@
         "label": "Statistics"
       },
       {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -136,18 +148,6 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
-      },
-      {
-        "id": "urn:ngm:class:optimisation",
-        "label": "Optimisation"
       }
     ],
     "enables": [
@@ -164,6 +164,10 @@
         "label": "Error Correcting Code"
       },
       {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
         "id": "urn:ngm:class:convex-optimisation",
         "label": "Convex Optimisation"
       },
@@ -178,13 +182,17 @@
       {
         "id": "urn:ngm:class:numerical-methods",
         "label": "Numerical Methods"
-      },
-      {
-        "id": "urn:ngm:class:operations-research",
-        "label": "Operations Research"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-science",
+        "label": "Mathematical Science"
+      },
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
@@ -192,15 +200,81 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
       {
         "id": "urn:ngm:class:network-coding",
         "label": "Network Coding"
@@ -210,22 +284,46 @@
         "label": "Quantum Information"
       },
       {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
         "id": "urn:ngm:class:thermodynamics",
         "label": "Thermodynamics"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:random-variable",
         "label": "Random Variable"
+      },
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       },
       {
         "id": "urn:ngm:class:feature-engineering",
@@ -246,7 +344,7 @@
         "label": "Feature Selection"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -266,12 +364,18 @@
         "label": "Bayesian Deep Learning"
       },
       {
-        "id": "urn:ngm:class:diffusion-models",
-        "label": "Diffusion Models"
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [
@@ -282,6 +386,10 @@
       {
         "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       },
       {
         "id": "urn:ngm:class:mathematical-foundations",
@@ -296,16 +404,12 @@
         "label": "Mathematical Reasoning"
       },
       {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
         "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computation Paradigm"
-      },
-      {
-        "id": "urn:ngm:class:simulation",
-        "label": "Simulation"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
       }
     ]
   },

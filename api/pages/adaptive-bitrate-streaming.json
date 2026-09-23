@@ -36,7 +36,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       }
     ],
@@ -59,7 +59,7 @@
         "label": "Video Compression"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       }
     ],
@@ -115,11 +115,15 @@
         "label": "Live Streaming"
       },
       {
+        "id": "urn:ngm:class:video-on-demand",
+        "label": "Video On Demand"
+      },
+      {
         "id": "urn:ngm:class:volumetric-video",
         "label": "Volumetric Video"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -137,15 +141,11 @@
       {
         "id": "urn:ngm:class:software-defined-networking",
         "label": "Software-Defined Networking"
-      },
-      {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -235,6 +235,10 @@
         "label": "Broadcast Television"
       },
       {
+        "id": "urn:ngm:class:file-download",
+        "label": "File Download"
+      },
+      {
         "id": "urn:ngm:class:overlay-network",
         "label": "Overlay Network"
       },
@@ -273,6 +277,10 @@
       {
         "id": "urn:ngm:class:data-compression",
         "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:http-live-streaming",
+        "label": "HTTP Live Streaming"
       },
       {
         "id": "urn:ngm:class:real-time-rendering",
@@ -379,7 +387,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

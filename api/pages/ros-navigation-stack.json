@@ -8,7 +8,7 @@
   "definition": "The ROS Navigation Stack is a collection of software packages within the Robot Operating System (ROS) framework that provides a robot with the capability to move autonomously through an environment by combining map building, localisation, global path planning, local obstacle avoidance, and motor control into an integrated pipeline. It abstracts sensor inputs (laser scan, odometry, IMU), maintains a 2D occupancy grid map and cost layers, runs AMCL (Adaptive Monte Carlo Localisation) for pose estimation, and uses A* or Dijkstra for global plans combined with DWA (Dynamic Window Approach) or TEB (Timed Elastic Band) for local reactive navigation. The Navigation Stack is the de facto standard for mobile ground-robot navigation in research and production robotics.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robot-operating-system",
+      "id": "urn:ngm:class:ros",
       "label": "Robot Operating System"
     }
   ],
@@ -76,7 +76,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -94,7 +94,7 @@
         "label": "Localisation"
       },
       {
-        "id": "urn:ngm:class:particle-filter",
+        "id": "urn:ngm:class:monte-carlo-localization",
         "label": "Particle Filter"
       },
       {
@@ -106,7 +106,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       }
     ],
@@ -129,83 +129,26 @@
       }
     ]
   },
-  "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control",
-      "slug": "robo-actuation-and-control"
-    },
-    {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics",
-      "slug": "robotics"
-    }
-  ],
+  "inferredSuperClasses": [],
   "inheritedRelations": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:colcon-build-system",
-        "label": "colcon Build System"
-      },
-      {
-        "id": "urn:ngm:class:ros",
-        "label": "ROS Node"
-      },
-      {
-        "id": "urn:ngm:class:urdf-robot-model",
-        "label": "URDF Robot Model"
-      },
-      {
-        "id": "urn:ngm:class:actuator",
-        "label": "Actuator"
-      },
-      {
-        "id": "urn:ngm:class:adaptive-control",
-        "label": "Adaptive Control"
-      },
-      {
-        "id": "urn:ngm:class:feedback-control",
-        "label": "Feedback Control"
-      },
-      {
-        "id": "urn:ngm:class:motion-control",
-        "label": "Motion Control"
-      },
-      {
-        "id": "urn:ngm:class:pid-control",
-        "label": "PID Control"
-      }
-    ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-distribution-service",
-        "label": "Data Distribution Service"
+        "id": "urn:ngm:class:dds-middleware",
+        "label": "DDS Middleware"
       },
       {
-        "id": "urn:ngm:class:python-3",
-        "label": "Python 3"
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
       },
       {
-        "id": "urn:ngm:class:actuators",
-        "label": "Actuators"
-      },
-      {
-        "id": "urn:ngm:class:control-system",
-        "label": "Control System"
-      },
-      {
-        "id": "urn:ngm:class:kinematics",
-        "label": "Kinematics"
+        "id": "urn:ngm:class:operating-system",
+        "label": "Linux Operating System"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:hardware-abstraction",
-        "label": "Hardware Abstraction"
-      },
-      {
-        "id": "urn:ngm:class:motion-planning",
-        "label": "Motion Planning"
+        "id": "urn:ngm:class:multi-robot-coordination",
+        "label": "Multi-Robot Coordination"
       },
       {
         "id": "urn:ngm:class:robot-simulation",
@@ -214,58 +157,76 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
-      },
+      }
+    ],
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
-      },
-      {
-        "id": "urn:ngm:class:humanoid-robotics",
-        "label": "Humanoid Robotics"
-      },
-      {
-        "id": "urn:ngm:class:industrial-automation",
-        "label": "IndustrialAutomation"
-      },
-      {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
+        "id": "urn:ngm:class:inter-process-communication",
+        "label": "Inter-Process Communication"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:ros-rep",
-        "label": "REP Standards"
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:micro-ros",
+        "label": "micro-ROS"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:encoder",
-        "label": "Encoder"
+        "id": "urn:ngm:class:colcon-build-system",
+        "label": "Colcon Build System"
       },
       {
-        "id": "urn:ngm:class:servo-motor",
-        "label": "Servo Motor"
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:micro-ros",
+        "label": "micro-ROS"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Embedded Robotics"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems Platform"
+        "id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Software Ecosystem"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:control-theory",
-        "label": "Control Theory"
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
       },
       {
-        "id": "urn:ngm:class:impedance-control",
-        "label": "Impedance Control"
-      },
-      {
-        "id": "urn:ngm:class:kinematics",
-        "label": "Kinematics"
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
       }
     ]
   },

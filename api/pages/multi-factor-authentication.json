@@ -28,12 +28,24 @@
       {
         "id": "urn:ngm:class:biometric-authentication",
         "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:push-notification-authentication",
+        "label": "Push Notification Authentication"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:credential-management",
+        "label": "Credential Management"
+      },
+      {
+        "id": "urn:ngm:class:shared-secret",
+        "label": "Shared Secret"
       }
     ],
     "enables": [
@@ -60,7 +72,7 @@
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -73,6 +85,10 @@
       {
         "id": "urn:ngm:class:password-authentication",
         "label": "Password Authentication"
+      },
+      {
+        "id": "urn:ngm:class:single-factor-authentication",
+        "label": "Single-Factor Authentication"
       }
     ],
     "bridgesTo": [
@@ -89,6 +105,14 @@
       {
         "id": "urn:ngm:class:biometric-binding-mechanism",
         "label": "Biometric Binding Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2 WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:time-based-one-time-password",
+        "label": "Time-Based One-Time Password"
       },
       {
         "id": "urn:ngm:class:fido2",
@@ -123,7 +147,16 @@
         "label": "FIDO Alliance"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:authentication",
@@ -192,26 +225,26 @@
         "label": "Directory Services"
       },
       {
+        "id": "urn:ngm:class:identity-governance-and-administration",
+        "label": "Identity Governance and Administration"
+      },
+      {
         "id": "urn:ngm:class:privileged-access-management",
         "label": "Privileged Access Management"
       },
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-keys",
-        "label": "Cryptographic Keys"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
       },
       {
         "id": "urn:ngm:class:secure-channel",
@@ -374,6 +407,10 @@
         "label": "One-Time Password"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
@@ -384,10 +421,6 @@
       {
         "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:saml",
@@ -464,10 +497,6 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:identity-and-access-management",
-        "label": "Identity and Access Management"
-      },
-      {
         "id": "urn:ngm:class:security-protocol",
         "label": "Security Protocol"
       }
@@ -478,8 +507,16 @@
         "label": "Session Management"
       },
       {
+        "id": "urn:ngm:class:biometrics",
+        "label": "Biometrics"
+      },
+      {
         "id": "urn:ngm:class:federation",
         "label": "Federation"
+      },
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
       },
       {
         "id": "urn:ngm:class:threat-model",
@@ -496,14 +533,6 @@
       {
         "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
-      },
-      {
-        "id": "urn:ngm:class:confidential-computing",
-        "label": "Confidential Computing"
-      },
-      {
-        "id": "urn:ngm:class:public-key-cryptography",
-        "label": "Public-Key Cryptography"
       }
     ]
   },

@@ -76,7 +76,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -104,6 +104,10 @@
       {
         "id": "urn:ngm:class:human-computer-interface",
         "label": "Human-Machine Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interface",
+        "label": "Human-Machine Interface"
       }
     ],
     "supports": [],
@@ -119,6 +123,10 @@
       {
         "id": "urn:ngm:class:iso-10218",
         "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131"
       }
     ],
     "partOf": [],
@@ -134,6 +142,10 @@
       {
         "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-execution-system",
+        "label": "Manufacturing Execution System"
       }
     ]
   },
@@ -211,16 +223,16 @@
         "label": "Hardware Abstraction Layer"
       },
       {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -351,7 +363,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -361,6 +373,10 @@
       {
         "id": "urn:ngm:class:digital-signal-processor",
         "label": "Digital Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-controller",
+        "label": "Interrupt Controller"
       }
     ],
     "supports": [
@@ -437,7 +453,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

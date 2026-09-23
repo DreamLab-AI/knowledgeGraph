@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:authorization",
         "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       }
     ],
     "enables": [
@@ -135,12 +139,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       },
       {
         "id": "urn:ngm:class:data-centre",

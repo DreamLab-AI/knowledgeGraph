@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -29,6 +29,10 @@
       {
         "id": "urn:ngm:class:statistical-modelling",
         "label": "Statistical Modelling"
+      },
+      {
+        "id": "urn:ngm:class:historical-data",
+        "label": "Historical Data"
       }
     ],
     "enables": [
@@ -51,6 +55,10 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
       }
     ],
     "dependsOn": [],
@@ -69,6 +77,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-analytics",
+        "label": "Spatial Analytics"
       }
     ],
     "uses": [
@@ -99,6 +111,10 @@
       {
         "id": "urn:ngm:class:time-series-analysis",
         "label": "Time-Series Analysis"
+      },
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression Analysis"
       }
     ],
     "supports": [],
@@ -192,6 +208,20 @@
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

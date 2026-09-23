@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:memory-encryption",
         "label": "Memory Encryption"
+      },
+      {
+        "id": "urn:ngm:class:trusted-measurement",
+        "label": "Trusted Measurement"
       }
     ],
     "requires": [
@@ -38,6 +42,10 @@
       {
         "id": "urn:ngm:class:secure-boot",
         "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-attestation",
+        "label": "Cryptographic Attestation"
       }
     ],
     "enables": [
@@ -68,6 +76,10 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proofs"
       }
     ],
     "bridgesTo": [
@@ -78,6 +90,10 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-oracle",
+        "label": "Decentralised Oracle"
       }
     ],
     "uses": [
@@ -92,6 +108,10 @@
       {
         "id": "urn:ngm:class:amd-sev",
         "label": "AMD SEV"
+      },
+      {
+        "id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
       }
     ],
     "supports": [
@@ -112,6 +132,10 @@
       {
         "id": "urn:ngm:class:confidential-computing-consortium",
         "label": "Confidential Computing Consortium"
+      },
+      {
+        "id": "urn:ngm:class:globalplatform-standard",
+        "label": "GlobalPlatform Standard"
       }
     ],
     "partOf": [],
@@ -123,6 +147,10 @@
       {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attacks"
       }
     ]
   },
@@ -161,7 +189,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       },
       {
@@ -189,8 +217,8 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       }
     ],
     "requires": [
@@ -241,7 +269,7 @@
         "label": "Private Inference"
       },
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       },
       {
@@ -303,7 +331,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:transport-layer-security",
+        "id": "urn:ngm:class:tls",
         "label": "Transport Layer Security"
       },
       {
@@ -319,6 +347,14 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       },
       {
         "id": "urn:ngm:class:decentralised-ai",

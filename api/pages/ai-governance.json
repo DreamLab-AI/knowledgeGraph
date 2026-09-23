@@ -106,6 +106,10 @@
       {
         "id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
     "standardizedBy": [
@@ -131,6 +135,14 @@
       {
         "id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ]
   },
@@ -139,6 +151,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -213,6 +230,10 @@
         "label": "Risk Management"
       },
       {
+        "id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
+      },
+      {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
@@ -231,10 +252,6 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "implements": [
@@ -341,7 +358,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

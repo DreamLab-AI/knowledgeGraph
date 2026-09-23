@@ -18,6 +18,22 @@
     {
       "id": "urn:ngm:class:autonomous-system",
       "label": "Autonomous System"
+    },
+    {
+      "id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous Systems"
+    },
+    {
+      "id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
     }
   ],
   "entityType": "Class",
@@ -64,6 +80,10 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-trees",
+        "label": "Behaviour Trees"
       }
     ],
     "requires": [
@@ -84,7 +104,7 @@
         "label": "Kinematics"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       },
       {
@@ -124,9 +144,38 @@
       {
         "id": "urn:ngm:class:social-robotics",
         "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Processes"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:behaviour-tree",
@@ -139,9 +188,58 @@
       {
         "id": "urn:ngm:class:a-star-algorithm",
         "label": "A Star Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:rrt-algorithm",
+        "label": "RRT"
+      },
+      {
+        "id": "urn:ngm:class:rrt-star",
+        "label": "RRT Star"
+      },
+      {
+        "id": "urn:ngm:class:prm",
+        "label": "PRM"
+      },
+      {
+        "id": "urn:ngm:class:d-star-lite",
+        "label": "D Star Lite"
+      },
+      {
+        "id": "urn:ngm:class:dwa",
+        "label": "DWA"
+      },
+      {
+        "id": "urn:ngm:class:teb-planner",
+        "label": "TEB Planner"
+      },
+      {
+        "id": "urn:ngm:class:mppi",
+        "label": "MPPI"
+      },
+      {
+        "id": "urn:ngm:class:mpc",
+        "label": "MPC"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-trees",
+        "label": "Behaviour Trees"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:scripted-motion",
+        "label": "Scripted Motion"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-control",
+        "label": "Open Loop Control"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -171,6 +269,14 @@
       {
         "id": "urn:ngm:class:transformers",
         "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:rgb-d-camera",
+        "label": "RGB-D Cameras"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       }
     ],
     "supports": [
@@ -193,6 +299,10 @@
       {
         "id": "urn:ngm:class:swarm-robotics",
         "label": "Swarm Robotics"
+      },
+      {
+        "id": "urn:ngm:class:simulation-environments",
+        "label": "Simulation Environments"
       }
     ],
     "standardizedBy": [
@@ -211,6 +321,14 @@
       {
         "id": "urn:ngm:class:nav2",
         "label": "ROS 2 Nav2"
+      },
+      {
+        "id": "urn:ngm:class:nav2",
+        "label": "ROS 2 Nav2"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1872",
+        "label": "IEEE 1872 Ontology for Robotics"
       }
     ],
     "partOf": [],
@@ -239,9 +357,39 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:motion-planning",
-      "label": "Motion Planning",
-      "slug": "motion-planning"
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:control-engineering",
+      "label": "Control Engineering",
+      "slug": "control-engineering"
+    },
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:cybernetics",
+      "label": "Cybernetics",
+      "slug": "cybernetics"
+    },
+    {
+      "id": "urn:ngm:class:dynamical-systems-theory",
+      "label": "Dynamical Systems Theory",
+      "slug": "dynamical-systems-theory"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
     },
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -249,9 +397,64 @@
       "slug": "robo-robot-type"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics",
-      "slug": "robotics"
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-physics",
+      "label": "Mathematical Physics",
+      "slug": "mathematical-physics"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-theory",
+      "label": "Systems Theory",
+      "slug": "systems-theory"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -281,12 +484,12 @@
         "label": "Trajectory Planning"
       },
       {
-        "id": "urn:ngm:class:perception-module",
-        "label": "Perception Module"
+        "id": "urn:ngm:class:actuation-system",
+        "label": "Actuation System"
       },
       {
-        "id": "urn:ngm:class:planning-module",
-        "label": "Planning Module"
+        "id": "urn:ngm:class:perception-module",
+        "label": "Perception Module"
       }
     ],
     "requires": [
@@ -341,6 +544,10 @@
         "label": "Autonomous Robot"
       },
       {
+        "id": "urn:ngm:class:autonomous-warehouse-robot",
+        "label": "Autonomous Warehouse Robot"
+      },
+      {
         "id": "urn:ngm:class:unmanned-aerial-vehicle",
         "label": "Unmanned Aerial Vehicle"
       },
@@ -351,17 +558,9 @@
       {
         "id": "urn:ngm:class:robotic-manipulation",
         "label": "Robotic Manipulation"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:graph-search",
-        "label": "Graph Search"
-      },
       {
         "id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
@@ -389,6 +588,10 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
       }
     ],
     "implements": [
@@ -403,9 +606,37 @@
       {
         "id": "urn:ngm:class:rapidly-exploring-random-tree",
         "label": "Rapidly-Exploring Random Tree"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:backstepping",
+        "label": "Backstepping"
+      },
+      {
+        "id": "urn:ngm:class:h-control",
+        "label": "H\u221e Control"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:obstacles",
+        "label": "Obstacles"
+      },
+      {
+        "id": "urn:ngm:class:semi-autonomous-system",
+        "label": "Semi-Autonomous System"
+      },
       {
         "id": "urn:ngm:class:teleoperated-robot",
         "label": "Teleoperated System"
@@ -413,6 +644,22 @@
       {
         "id": "urn:ngm:class:reactive-control",
         "label": "Reactive Control"
+      },
+      {
+        "id": "urn:ngm:class:ai-without-dynamics-models",
+        "label": "AI Without Dynamics Models"
+      },
+      {
+        "id": "urn:ngm:class:classical-optimisation-without-feedback",
+        "label": "Classical Optimisation Without Feedback"
+      },
+      {
+        "id": "urn:ngm:class:model-free-heuristic-tuning",
+        "label": "Model-Free Heuristic Tuning"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-scheduling",
+        "label": "Open-Loop Scheduling"
       }
     ],
     "bridgesTo": [
@@ -431,6 +678,22 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
       }
     ],
     "uses": [
@@ -479,6 +742,26 @@
       {
         "id": "urn:ngm:class:multi-robot-systems",
         "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:ngm:class:aerospace-engineering",
+        "label": "Aerospace Engineering"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-engineering",
+        "label": "Biomedical Engineering"
+      },
+      {
+        "id": "urn:ngm:class:hvac-systems",
+        "label": "HVAC Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
       }
     ],
     "standardizedBy": [
@@ -489,6 +772,30 @@
       {
         "id": "urn:ngm:class:sae-j-3016",
         "label": "SAE Levels of Driving Automation"
+      },
+      {
+        "id": "urn:ngm:class:arp4754-a",
+        "label": "ARP4754A"
+      },
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C Avionics"
+      },
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508 Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:ifac",
+        "label": "IFAC"
       }
     ],
     "partOf": [

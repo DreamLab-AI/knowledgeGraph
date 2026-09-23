@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:royalty-calculation",
+        "label": "Royalty Calculation"
+      },
+      {
+        "id": "urn:ngm:class:payment-distribution",
+        "label": "Payment Distribution"
+      },
+      {
+        "id": "urn:ngm:class:rights-registry",
+        "label": "Rights Registry"
       }
     ],
     "requires": [
@@ -34,15 +46,36 @@
       {
         "id": "urn:ngm:class:nft-standard",
         "label": "NFT Standard"
+      },
+      {
+        "id": "urn:ngm:class:creator-wallet",
+        "label": "Creator Wallet"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:creator-compensation",
         "label": "Creator Compensation"
+      },
+      {
+        "id": "urn:ngm:class:perpetual-revenue",
+        "label": "Perpetual Revenue"
+      },
+      {
+        "id": "urn:ngm:class:rights-enforcement",
+        "label": "Rights Enforcement"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:marketplace-integration",
+        "label": "Marketplace Integration"
+      },
+      {
+        "id": "urn:ngm:class:transaction-tracking",
+        "label": "Transaction Tracking"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -67,6 +100,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -114,6 +162,10 @@
         "label": "Risk Assessment"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:digital-watermarking",
         "label": "Digital Watermarking"
       },
@@ -122,8 +174,8 @@
         "label": "Encryption"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:license-management",
+        "label": "License Management"
       },
       {
         "id": "urn:ngm:class:smart-contracts",
@@ -132,10 +184,6 @@
       {
         "id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
-      },
-      {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
       }
     ],
     "enables": [
@@ -174,7 +222,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       }
     ],
@@ -190,11 +238,19 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -206,12 +262,20 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "uses": [
@@ -248,6 +312,16 @@
         "label": "Eye Tracking"
       }
     ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:open-xr",
@@ -282,6 +356,14 @@
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property Rights Framework"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
       }
     ]
   },

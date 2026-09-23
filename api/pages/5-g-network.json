@@ -28,6 +28,18 @@
       {
         "id": "urn:ngm:class:network-slicing",
         "label": "Network Slicing"
+      },
+      {
+        "id": "urn:ngm:class:5-g",
+        "label": "5G New Radio"
+      },
+      {
+        "id": "urn:ngm:class:5g-core",
+        "label": "5G Core"
+      },
+      {
+        "id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "Multi-Access Edge Computing"
       }
     ],
     "requires": [
@@ -60,6 +72,14 @@
       {
         "id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:private-5g",
+        "label": "Private 5G"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
       }
     ],
     "dependsOn": [],
@@ -68,6 +88,10 @@
       {
         "id": "urn:ngm:class:wi-fi",
         "label": "Wi-Fi"
+      },
+      {
+        "id": "urn:ngm:class:4g-lte",
+        "label": "4G LTE"
       }
     ],
     "bridgesTo": [
@@ -82,6 +106,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:ai-driven-network-operations",
+        "label": "AI-Driven Network Operations"
       }
     ],
     "uses": [
@@ -100,6 +128,10 @@
       {
         "id": "urn:ngm:class:massive-mimo",
         "label": "Massive MIMO"
+      },
+      {
+        "id": "urn:ngm:class:millimetre-wave",
+        "label": "Millimetre Wave"
       }
     ],
     "supports": [],
@@ -172,12 +204,12 @@
         "label": "Satellite Communication"
       },
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       }
     ],
     "requires": [
@@ -248,6 +280,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:terrestrial-broadcast",
+        "label": "Terrestrial Broadcast"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
@@ -272,12 +308,12 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -328,7 +364,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -136,6 +136,10 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:monetary-authority",
+        "label": "Monetary Authority"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -150,7 +154,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -192,6 +196,12 @@
         "label": "Macroeconomics"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:algorithmic-monetary-policy",
+        "label": "Algorithmic Monetary Policy"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:on-chain-governance",
@@ -202,8 +212,24 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -226,6 +252,10 @@
         "label": "Financial Stability"
       },
       {
+        "id": "urn:ngm:class:full-employment",
+        "label": "Full Employment"
+      },
+      {
         "id": "urn:ngm:class:monetary-policy-transmission",
         "label": "Monetary Policy Transmission"
       }
@@ -236,14 +266,28 @@
         "label": "Bank for International Settlements"
       },
       {
-        "id": "urn:ngm:class:international-monetary-fund",
+        "id": "urn:ngm:class:imf",
         "label": "International Monetary Fund"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:economic-governance",
+        "label": "Economic Governance"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:defi-protocol",
+        "id": "urn:ngm:class:banking-regulation",
+        "label": "Banking Regulation"
+      },
+      {
+        "id": "urn:ngm:class:de-fi-protocol",
         "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:exchange-rate-policy",
+        "label": "Exchange Rate Policy"
       },
       {
         "id": "urn:ngm:class:digital-economy",
@@ -264,10 +308,6 @@
       {
         "id": "urn:ngm:class:ai-governance-framework",
         "label": "AI Governance Framework"
-      },
-      {
-        "id": "urn:ngm:class:ai-transparency-framework",
-        "label": "Ai Transparency Framework"
       }
     ]
   },

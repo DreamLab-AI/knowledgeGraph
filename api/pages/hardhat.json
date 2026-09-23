@@ -8,7 +8,7 @@
   "definition": "Hardhat is a professional Ethereum development environment that provides a comprehensive toolchain for compiling, deploying, testing, and debugging Solidity smart contracts. It ships with Hardhat Network, an in-process Ethereum node implementation designed for local development that supports forking mainnet state and emitting Solidity stack traces on failure. Hardhat's plugin architecture integrates tightly with ethers.js and Waffle, and its tasks system allows developers to automate bespoke deployment and verification workflows. It has become the dominant development framework in the Ethereum ecosystem, displacing earlier tools such as Truffle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
+      "id": "urn:ngm:class:network-component",
       "label": "Network Component"
     }
   ],
@@ -16,11 +16,28 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hardhat-network",
+        "label": "Hardhat Network"
+      },
+      {
+        "id": "urn:ngm:class:hardhat-runner",
+        "label": "Hardhat Runner"
+      },
+      {
+        "id": "urn:ngm:class:hardhat-plugin",
+        "label": "Hardhat Plugin"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:node-js",
         "label": "Node.js"
+      },
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Solidity Compiler"
       },
       {
         "id": "urn:ngm:class:compiler",
@@ -35,6 +52,14 @@
       {
         "id": "urn:ngm:class:smart-contract-deployment",
         "label": "Smart Contract Deployment"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-testing",
+        "label": "Smart Contract Testing"
+      },
+      {
+        "id": "urn:ngm:class:contract-verification",
+        "label": "Contract Verification"
       }
     ],
     "dependsOn": [
@@ -45,6 +70,10 @@
       {
         "id": "urn:ngm:class:evm",
         "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
       }
     ],
     "implements": [],
@@ -80,11 +109,19 @@
       {
         "id": "urn:ngm:class:type-script",
         "label": "TypeScript"
+      },
+      {
+        "id": "urn:ngm:class:ethers-js",
+        "label": "ethers.js"
+      },
+      {
+        "id": "urn:ngm:class:mocha",
+        "label": "Mocha"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:defi-protocol",
+        "id": "urn:ngm:class:de-fi-protocol",
         "label": "DeFi Protocol"
       },
       {
@@ -102,42 +139,26 @@
       {
         "id": "urn:ngm:class:open-zeppelin",
         "label": "OpenZeppelin"
+      },
+      {
+        "id": "urn:ngm:class:remix-ide",
+        "label": "Remix IDE"
+      },
+      {
+        "id": "urn:ngm:class:etherscan",
+        "label": "Etherscan"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
-      {
-        "id": "urn:ngm:class:archival-node",
-        "label": "Archival Node"
-      },
-      {
-        "id": "urn:ngm:class:bootstrap-node",
-        "label": "Bootstrap Node"
-      },
-      {
-        "id": "urn:ngm:class:full-node",
-        "label": "Full Node"
-      },
-      {
-        "id": "urn:ngm:class:light-node",
-        "label": "Light Node"
-      },
-      {
-        "id": "urn:ngm:class:mempool",
-        "label": "Mempool"
-      },
-      {
-        "id": "urn:ngm:class:validator-node",
-        "label": "Validator Node"
-      },
       {
         "id": "urn:ngm:class:block",
         "label": "Block"
@@ -145,64 +166,96 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:block-propagation",
-        "label": "Block Propagation"
-      },
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Transparent Audit Trails"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:autonomous-governance",
+        "label": "Autonomous Governance"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
+        "id": "urn:ngm:class:distributed-trust",
+        "label": "Distributed Trust"
       }
     ],
-    "relatedTo": [
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
-      },
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "relatedTo": [
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
       }
     ]
   },

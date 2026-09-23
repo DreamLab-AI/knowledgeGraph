@@ -56,6 +56,10 @@
       {
         "id": "urn:ngm:class:collective-intelligence",
         "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:emergent-behavior",
+        "label": "Emergent Behaviour"
       }
     ],
     "dependsOn": [
@@ -72,6 +76,10 @@
       {
         "id": "urn:ngm:class:belief-desire-intention",
         "label": "Belief-Desire-Intention"
+      },
+      {
+        "id": "urn:ngm:class:reactive-agents",
+        "label": "Reactive Agents"
       }
     ],
     "contrastsWith": [
@@ -92,6 +100,18 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twins"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisations"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twins"
+      },
+      {
+        "id": "urn:ngm:class:iot-networks",
+        "label": "IoT Networks"
       }
     ],
     "uses": [
@@ -180,12 +200,12 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -300,16 +320,16 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -424,7 +444,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

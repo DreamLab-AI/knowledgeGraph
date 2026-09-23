@@ -64,7 +64,7 @@
         "label": "Solid"
       },
       {
-        "id": "urn:ngm:class:web-id",
+        "id": "urn:ngm:class:webid-decentralised-identity-uri",
         "label": "WebID"
       },
       {
@@ -176,16 +176,20 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
         "id": "urn:ngm:class:decentralized-identifier",
         "label": "Decentralized Identifier"
       },
       {
         "id": "urn:ngm:class:did-document",
         "label": "DID Document"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:verifiable-data-registry",
@@ -202,10 +206,6 @@
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
-      },
-      {
-        "id": "urn:ngm:class:privacy-controls",
-        "label": "Privacy Controls"
       }
     ],
     "enables": [
@@ -322,8 +322,16 @@
         "label": "Smart Contract"
       },
       {
+        "id": "urn:ngm:class:iot-device-authentication",
+        "label": "IoT Device Authentication"
+      },
+      {
         "id": "urn:ngm:class:web3",
         "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -336,14 +344,6 @@
       {
         "id": "urn:ngm:class:avatar",
         "label": "Avatar"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -364,12 +364,12 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-keys",
-        "label": "Cryptographic Keys"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
       },
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
@@ -472,7 +472,7 @@
         "label": "Trust Framework"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "KYC Know Your Customer"
       }
     ]

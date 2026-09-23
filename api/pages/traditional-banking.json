@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:correspondent-banking",
         "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:retail-banking",
+        "label": "Retail Banking"
+      },
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Commercial Banking"
       }
     ],
     "requires": [
@@ -62,7 +70,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -76,7 +84,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -98,8 +106,12 @@
         "label": "Interbank Settlement"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:credit-scoring",
+        "label": "Credit Scoring"
       }
     ],
     "supports": [],
@@ -111,7 +123,7 @@
         "label": "Systemic Risk"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -153,7 +165,11 @@
         "label": "Clearing House"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:securities-exchange",
+        "label": "Securities Exchange"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -171,10 +187,6 @@
       {
         "id": "urn:ngm:class:governance-model",
         "label": "Governance Model"
-      },
-      {
-        "id": "urn:ngm:class:governance-token",
-        "label": "Governance Token"
       }
     ],
     "requires": [
@@ -233,16 +245,16 @@
         "label": "Monetary Policy"
       },
       {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:virtual-economy-market-framing",
         "label": "Virtual Economy Market Framing"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
       }
     ],
     "dependsOn": [
@@ -273,10 +285,6 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "DeFi"
-      },
-      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
@@ -285,6 +293,10 @@
       {
         "id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:tokenised-real-world-assets",
@@ -317,7 +329,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {

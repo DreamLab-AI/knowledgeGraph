@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Proposal System</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Proposal System"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Proposal System"/><meta name="twitter:description" content="Multi-stage governance workflow mechanism enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes that combine off-chain deliberation (forums, governance calls), cryptographic signalling via off-chain snapshot votes, and b..."/><meta property="og:description" content="Multi-stage governance workflow mechanism enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes that combine off-chain deliberation (forums, governance calls), cryptographic signalling via off-chain snapshot votes, and b..."/><meta property="og:image:alt" content="Multi-stage governance workflow mechanism enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes that combine off-chain deliberation (forums, governance calls), cryptographic signalling via off-chain snapshot votes, and b..."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Proposal-System"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Proposal-System"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Multi-stage governance workflow mechanism enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes that combine off-chain deliberation (forums, governance calls), cryptographic signalling via off-chain snapshot votes, and b..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Proposal-System"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6094"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6094" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Proposal System</a></div></nav><h1 class="article-title">Proposal System</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.741Z">23 Sept 2026</time><span>15 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:proposal-system</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>blockchain</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>draft</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.72</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Governance-and-Regulation" class="internal">Governance and Regulation</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/Decentralized-Autonomous-Organization" class="internal">Decentralized Autonomous Organization</a></li><li><a href="../pages/DAO-Governance" class="internal">DAO Governance Framework</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Timelock" class="internal">Timelock Delay</a></li><li><a href="../proposal-lifecycle" class="internal">Proposal Lifecycle</a></li><li><a href="../quorum-requirement" class="internal">Quorum Requirement</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Snapshot" class="internal">Snapshot</a></li><li><a href="../pages/Governance-Token" class="internal">Governance Token</a></li><li><a href="../pages/Smart-Contract" class="internal">Smart Contract</a></li><li><a href="../pages/Vote-Delegation" class="internal">Vote Delegation</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/On-Chain-Voting" class="internal">On Chain Voting</a></li><li><a href="../pages/Protocol-Upgrades" class="internal">Protocol Upgrade</a></li><li><a href="../pages/Treasury-Management" class="internal">Treasury Management</a></li><li><a href="../OnChainVoting" class="internal">OnChainVoting</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Digital-Democracy" class="internal">Digital Democracy</a></li><li><a href="../pages/Collective-Decision-Making" class="internal">Collective Decision Making</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Corporate-Governance" class="internal">Corporate Governance</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Blockchain-Network" class="internal">Blockchain Network</a></li><li><a href="../pages/EIP-712" class="internal">EIP-712 Signature</a></li><li><a href="../ipfs" class="internal">IPFS</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Compound-Governor-Bravo" class="internal">Governor Bravo</a></li><li><a href="../pages/Decentralized-Governance" class="internal">Decentralized Governance</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>BC-0465</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../aave" class="internal">Aave</a></li><li><a href="../aave-improvement-proposals" class="internal">Aave Improvement Proposals</a></li><li><a href="../bc-0142-smart-contract" class="internal">BC-0142-smart-contract</a></li><li><a href="../bc-0142-smart-contract" class="internal">BC-0142-smart-contract</a></li><li><a href="../bc-0461-decentralized-autonomous-organization" class="internal">BC-0461-decentralized-autonomous-organization</a></li><li><a href="../bc-0461-decentralized-autonomous-organization" class="internal">BC-0461-decentralized-autonomous-organization</a></li><li><a href="../bc-0462-on-chain-voting" class="internal">BC-0462-on-chain-voting</a></li><li><a href="../bc-0462-on-chain-voting" class="internal">BC-0462-on-chain-voting</a></li><li><a href="../bc-0463-governance-token" class="internal">BC-0463-governance-token</a></li><li><a href="../bc-0463-governance-token" class="internal">BC-0463-governance-token</a></li><li><a href="../bc-0464-treasury-management" class="internal">BC-0464-treasury-management</a></li><li><a href="../compound" class="internal">Compound</a></li><li><a href="../compound-governor-bravo" class="internal">Compound Governor Bravo</a></li><li><a href="../maker-dao" class="internal">MakerDAO</a></li><li><a href="../maker-dao-executive-votes" class="internal">MakerDAO Executive Votes</a></li><li><a href="../snapshot" class="internal">Snapshot</a></li><li><a href="../snapshot-off-chain-voting" class="internal">Snapshot Off-Chain Voting</a></li><li><a href="../tally-governance" class="internal">Tally Governance</a></li><li><a href="../uniswap" class="internal">Uniswap</a></li><li><a href="../uniswap-governance-process" class="internal">Uniswap Governance Process</a></li><li><a href="../blockchain" class="internal">BlockchainDomain</a></li><li><a href="../dao" class="internal">DAO</a></li><li><a href="../governance-token" class="internal">GovernanceToken</a></li><li><a href="../on-chain-voting" class="internal">OnChainVoting</a></li><li><a href="../on-chain-voting" class="internal">OnChainVoting</a></li><li><a href="../smart-contract" class="internal">SmartContract</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:6fcc612283e4493936a4632425efbdb7fdd511f35b7fb1613e475fb5feec91c9</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../sybil-resistance" class="internal">Sybil Resistance</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../community-participation" class="internal">Community Participation</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Tally" class="internal">Tally Governance</a></li><li><a href="../pages/Multisig-Wallet" class="internal">Multisig Wallet</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Multi-stage governance workflow mechanism enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes that combine off-chain deliberation (forums, governance calls), cryptographic signalling via off-chain snapshot votes, and binding on-chain execution through smart contracts, with threshold requirements (token holdings, quorum) balancing permissionless participation against governance efficiency.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Proposal systems in <a href="../BC-0461-decentralized-autonomous-organization" class="internal alias" data-slug="BC-0461-decentralized-autonomous-organization">DAOs</a> represent the structured mechanisms through which community members initiate, discuss, refine, vote upon, and execute protocol changes, transforming decentralised governance from theoretical abstraction into operational reality through multi-stage workflows combining off-chain deliberation (forums, Discord, governance calls), cryptographic signaling (<a href="../pages/Snapshot" class="internal" data-slug="pages/Snapshot">Snapshot</a> off-chain votes), and binding <a href="../BC-0462-on-chain-voting" class="internal alias" data-slug="BC-0462-on-chain-voting">on-chain execution</a> via <a href="../BC-0142-smart-contract" class="internal alias" data-slug="BC-0142-smart-contract">smart contracts</a>. Unlike traditional corporate governance where proposals typically flow top-down from management to board approval to shareholder ratification, DAO proposal systems enable bottom-up community initiation whilst imposing significant barriers—<a href="../BC-0463-governance-token" class="internal alias" data-slug="BC-0463-governance-token">governance token</a> thresholds requiring millions in token holdings, technical expertise to encode proposal actions in executable smart contract code, and social capital to mobilise community support through multi-week deliberation processes—creating tension between permissionless participation ideals and practical governance efficiency. The 2020-2025 period witnessed explosive growth in proposal sophistication across major DAOs like <a href="../pages/Uniswap" class="internal" data-slug="pages/Uniswap">Uniswap</a> (processing 50+ binding governance proposals governing <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">re</span><span class="mord mathnormal">a</span><span class="mord mathnormal">s</span><span class="mord mathnormal">u</span><span class="mord mathnormal" style="margin-right:0.03588em;">ry</span><span class="mord mathnormal">an</span><span class="mord mathnormal">d</span><span class="mord mathnormal">p</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">t</span><span class="mord mathnormal">oco</span><span class="mord mathnormal">lp</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord mathnormal">ers</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mopen">[[</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal" style="margin-right:0.03148em;">ak</span><span class="mord mathnormal" style="margin-right:0.02778em;">erD</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mclose">]]</span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">000</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mord mathnormal">ec</span><span class="mord mathnormal">u</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">o</span><span class="mord mathnormal">t</span><span class="mord mathnormal">es</span><span class="mord mathnormal">mana</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">in</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span>8B+ DeFi system), <a href="../pages/Compound" class="internal" data-slug="pages/Compound">Compound</a> (200+ proposals pioneering autonomous parameter adjustments), and <a href="../pages/Aave" class="internal" data-slug="pages/Aave">Aave</a> (150+ governance proposals coordinating multi-chain protocol deployments), whilst simultaneously exposing persistent challenges: proposal spam and low-quality submissions, voter fatigue and declining participation rates (5-15% typical turnout), governance attacks exploiting quorum requirements, the professionalization of proposal authorship concentrating power amongst technical elites, and the fundamental question of whether formal on-chain governance creates more problems than decentralised coordination solves.</p>
+<h3 id="proposal-lifecycle-and-multi-stage-governance">Proposal Lifecycle and Multi-Stage Governance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#proposal-lifecycle-and-multi-stage-governance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Modern DAO proposal systems employ multi-stage workflows balancing accessibility, deliberation quality, and execution security:</p>
+<p><strong>Stage 1: Ideation and Discussion (Off-Chain Forums)</strong></p>
+<p>Initial proposal concepts emerge through informal community discussions:</p>
+<ul>
+<li><strong>Platforms</strong>: Discourse forums, Commonwealth, Discord channels, Telegram groups, governance calls</li>
+<li><strong>Participants</strong>: Any community member can initiate discussion (no token threshold)</li>
+<li><strong>Duration</strong>: Ongoing/indefinite until sufficient interest emerges</li>
+<li><strong>Output</strong>: Rough proposal concept, identification of champions willing to formalize</li>
+</ul>
+<p><strong>Example Forums:</strong></p>
+<ul>
+<li><strong>Uniswap Governance Forum</strong> (gov.uniswap.org): 10,000+ posts, 3,000+ topics, dedicated categories for proposals, grants, meta-governance</li>
+<li><strong>MakerDAO Forum</strong> (forum.makerdao.com): 50,000+ posts, extensive discussion threads on collateral onboarding, risk parameters, protocol upgrades</li>
+<li><strong>Compound Community Forum</strong>: Technical discussions on interest rate models, asset listings, security</li>
+<li><strong>Aave Governance Forum</strong>: Multi-chain deployment proposals, risk parameter adjustments, treasury allocations</li>
+</ul>
+<p><strong>Stage 2: Temperature Check (Snapshot Signaling Vote)</strong></p>
+<p>Formalized proposal draft subjected to off-chain vote gauging community sentiment:</p>
+<ul>
+<li><strong>Platform</strong>: Snapshot (snapshot.org) - off-chain governance signaling using cryptographic signatures</li>
+<li><strong>Requirements</strong>:
+<ul>
+<li>Minimum token holding to create Snapshot (varies: 50K-100K tokens typical)</li>
+<li>Structured proposal format (title, summary, motivation, specification, voting options)</li>
+</ul>
+</li>
+<li><strong>Duration</strong>: 3-7 days typically</li>
+<li><strong>Voting</strong>: Free (no gas costs), uses EIP-712 signatures verified via IPFS</li>
+<li><strong>Quorum</strong>: Lower than on-chain (often no quorum, simple majority sufficient)</li>
+<li><strong>Outcome</strong>: Non-binding signal; if passes, proceeds to formal governance</li>
+</ul>
+<p><strong>Snapshot Technical Mechanism:</strong></p>
+<pre><code>1. Proposer creates proposal on Snapshot platform
+2. Snapshot records Ethereum block number for vote power calculation
+3. Voters sign EIP-712 messages (off-chain, no gas)
+4. Signatures stored on IPFS (decentralized storage)
+5. Anyone can verify signatures match voter addresses + block balances
+6. Vote tallying occurs off-chain by aggregating signatures
+</code></pre>
+<p><strong>Stage 3: Consensus Check / Refined Proposal</strong></p>
+<p>For proposals passing temperature check, authors refine based on feedback:</p>
+<ul>
+<li><strong>Refinement</strong>: Incorporate community feedback, address concerns, add technical specifications</li>
+<li><strong>Legal review</strong>: For major proposals, DAOs increasingly conduct legal analysis (regulatory compliance, securities law implications, liability risks)</li>
+<li><strong>Security audit</strong>: For smart contract changes, third-party audits verify code correctness</li>
+<li><strong>Economic modeling</strong>: For parameter changes, quantitative analysis of expected impact</li>
+<li><strong>Second Snapshot</strong>: Some DAOs require second off-chain vote on refined proposal before on-chain submission</li>
+</ul>
+<p><strong>Stage 4: On-Chain Governance Proposal</strong></p>
+<p>Formal binding proposal submitted to blockchain for execution:</p>
+<ul>
+<li>
+<p><strong>Requirements</strong>:</p>
+<ul>
+<li><strong>Proposal threshold</strong>: Minimum governance tokens held/delegated (Uniswap 2.5M UNI, Compound 400K COMP, Aave 80K AAVE)</li>
+<li><strong>Executable code</strong>: Proposal must include exact smart contract function calls to execute if approved</li>
+<li><strong>Gas costs</strong>: Submission costs $50-500 depending on Ethereum gas prices (proposal creation is complex transaction)</li>
+</ul>
+</li>
+<li>
+<p><strong>Components</strong>:</p>
+<ul>
+<li><strong>Targets</strong>: Array of contract addresses to call</li>
+<li><strong>Values</strong>: ETH amounts to send with each call (typically zero)</li>
+<li><strong>Signatures</strong>: Function signatures to call on each target</li>
+<li><strong>Calldatas</strong>: ABI-encoded parameters for each function call</li>
+<li><strong>Description</strong>: Human-readable proposal text (stored on-chain or IPFS)</li>
+</ul>
+</li>
+<li>
+<p><strong>Example Proposal Structure</strong> (Compound Governor Bravo):</p>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="solidity" data-theme="github-light github-dark"><code data-language="solidity" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> propose</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    address</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">memory</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"> targets</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    uint</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">memory</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"> values</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">memory</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"> signatures</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    bytes</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">memory</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"> calldatas</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    string</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> memory</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"> description</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">public</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> returns</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">uint</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<ul>
+<li><strong>Voting period</strong>: 3-10 days (Uniswap 7 days, Compound 7 days, Aave 10 days)</li>
+<li><strong>Quorum requirement</strong>: 3-5% of circulating supply typical (Uniswap 40M UNI = 4%, Compound 400K COMP = 4%)</li>
+<li><strong>Approval threshold</strong>: Simple majority (For > Against) plus quorum met</li>
+</ul>
+<p><strong>Stage 5: Timelock Delay</strong></p>
+<p>Successful proposals enter mandatory delay before execution:</p>
+<ul>
+<li>
+<p><strong>Duration</strong>: 2-7 days (Uniswap 2 days, Compound 2 days, Aave 1-7 days depending on risk)</p>
+</li>
+<li>
+<p><strong>Purpose</strong>:</p>
+<ul>
+<li><strong>Security review</strong>: Community inspects exact bytecode that will execute</li>
+<li><strong>Fraud detection</strong>: Identify proposals with hidden malicious code</li>
+<li><strong>Exit window</strong>: Users opposed to change can withdraw funds, sell tokens before execution</li>
+<li><strong>Emergency response</strong>: If malicious code detected, activate emergency procedures (multisig intervention, migration)</li>
+</ul>
+</li>
+<li>
+<p><strong>Transparency</strong>: During timelock, exact transaction data is public on-chain, enabling thorough verification</p>
+</li>
+</ul>
+<p><strong>Stage 6: Execution</strong></p>
+<p>After timelock expiration, proposal executes automatically (or requires permissionless trigger):</p>
+<ul>
+<li><strong>Execution</strong>: Anyone can call <code>execute()</code> function (small gas fee) to trigger queued proposal</li>
+<li><strong>Atomicity</strong>: All proposal actions execute in single transaction (either all succeed or all revert)</li>
+<li><strong>Finality</strong>: Once executed, changes are permanent (barring subsequent proposal to reverse)</li>
+<li><strong>Verification</strong>: Community verifies execution matched proposal description</li>
+</ul>
+<h3 id="real-world-proposal-systems">Real-World Proposal Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#real-world-proposal-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Uniswap Three-Stage Governance:</strong></p>
+<p>Uniswap employs rigorous multi-stage process ensuring high-quality proposals:</p>
+<p><strong>1. Temperature Check (Discourse + Snapshot):</strong></p>
+<ul>
+<li><strong>Forum discussion</strong>: 2-3 days minimum on gov.uniswap.org</li>
+<li><strong>Snapshot vote</strong>: 5 days, 50K UNI threshold to create, simple majority to pass</li>
+<li><strong>Purpose</strong>: Filter out low-quality proposals early (free voting encourages broad participation)</li>
+</ul>
+<p><strong>2. Consensus Check (Snapshot):</strong></p>
+<ul>
+<li><strong>Refined proposal</strong>: Authors incorporate feedback, add technical specifications</li>
+<li><strong>Second Snapshot</strong>: 5 days, 50K UNI threshold</li>
+<li><strong>Purpose</strong>: Ensure refined proposal maintains community support before expensive on-chain submission</li>
+</ul>
+<p><strong>3. Governance Proposal (On-Chain):</strong></p>
+<ul>
+<li><strong>Requirements</strong>: 2.5M UNI proposal threshold (~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">19</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span></span></span></span>7.50/UNI), 40M UNI quorum (4% of supply)</li>
+<li><strong>Voting</strong>: 7 days on-chain</li>
+<li><strong>Timelock</strong>: 2 days</li>
+<li><strong>Execution</strong>: Automatic after timelock</li>
+</ul>
+<p><strong>Historical Uniswap Proposals:</strong></p>
+<ul>
+<li><strong>UGP v0.1</strong> (March 2021): $1.5M grants program, 40M UNI voted, passed 99.97% in favor</li>
+<li><strong>Deploy v3 on Optimism</strong> (June 2021): First L2 deployment, 42M UNI voted, passed 99.3%</li>
+<li><strong>Deploy v3 on Polygon</strong> (December 2021): Second L2 deployment, 45M UNI voted, passed 99.4%</li>
+<li><strong>Uniswap Foundation Funding</strong> (June 2022): $74M UNI to foundation, 52M UNI voted, passed 84.3%</li>
+<li><strong>UNIfication Proposal</strong> (December 2025): Passed with 99.9% support (125M+ UNI); burned 100M UNI (~$596M) from treasury, activated protocol fee switch redirecting trading fees to UNI burn, removed Uniswap Labs interface fees, approved 20M UNI annual growth budget</li>
+</ul>
+<p><strong>MakerDAO Dual Governance System:</strong></p>
+<p>MakerDAO uses unique system combining polls and executive votes:</p>
+<p><strong>Governance Polls (Non-Binding Signal):</strong></p>
+<ul>
+<li><strong>Purpose</strong>: Gauge community sentiment on proposed changes before formal vote</li>
+<li><strong>Examples</strong>: “Should we increase DAI Savings Rate from 1% to 2%?”</li>
+<li><strong>Voting</strong>: MKR-weighted, no quorum, typically 3-7 days</li>
+<li><strong>Outcome</strong>: Informs executive vote creation but doesn’t execute changes</li>
+</ul>
+<p><strong>Executive Votes (Binding Execution):</strong></p>
+<ul>
+<li><strong>Mechanism</strong>: “Spell” smart contracts encoding proposed changes</li>
+<li><strong>Voting</strong>: MKR holders vote by staking tokens on preferred executive</li>
+<li><strong>No quorum</strong>: Executive with most staked MKR becomes active (continuous approval voting)</li>
+<li><strong>Execution</strong>: Leading executive automatically executes when overtaking previous executive</li>
+<li><strong>Unique feature</strong>: Voters keep MKR staked indefinitely on preferred executive (not time-limited vote)</li>
+</ul>
+<p><strong>MakerDAO Emergency Shutdown:</strong></p>
+<ul>
+<li><strong>Trigger</strong>: 50,000 MKR staked on Emergency Shutdown Module (~$67M in 2024)</li>
+<li><strong>Effect</strong>: Immediately halts protocol, allows DAI holders to redeem collateral</li>
+<li><strong>Purpose</strong>: Protection against governance attacks, critical bugs, or black swan events</li>
+</ul>
+<p><strong>Historical MakerDAO Proposals:</strong></p>
+<ul>
+<li><strong>Collateral Onboarding</strong>: 100+ new collateral types approved (USDC, wBTC, stETH, RWAs)</li>
+<li><strong>Stability Fee Adjustments</strong>: 500+ parameter changes responding to market conditions</li>
+<li><strong>DAI Savings Rate Changes</strong>: 200+ DSR adjustments balancing DAI demand</li>
+<li><strong>Sky Protocol Transition</strong> (2024–2025): Restructuring into Sky Ecosystem; MKR token retired, SKY governance token launched September 2025; USDS replaced DAI as primary stablecoin</li>
+</ul>
+<p><strong>Compound Autonomous Proposals:</strong></p>
+<p>Compound pioneered autonomous on-chain governance with minimal off-chain coordination:</p>
+<p><strong>Proposal Process:</strong></p>
+<ul>
+<li><strong>Direct submission</strong>: Proposals can skip off-chain stages and go directly on-chain (though discouraged)</li>
+<li><strong>Requirements</strong>: 400K COMP proposal threshold + quorum (4% supply = 400K COMP)</li>
+<li><strong>Voting</strong>: 7 days (50,400 Ethereum blocks)</li>
+<li><strong>Timelock</strong>: 2 days</li>
+<li><strong>Scope</strong>: Interest rate models, collateral factors, reserve factors, asset listings, COMP distribution</li>
+</ul>
+<p><strong>Governor Bravo Innovation:</strong>
+Compound developed Governor Bravo contract (2020), which became industry standard:</p>
+<ul>
+<li><strong>Three voting options</strong>: For, Against, Abstain (abstain counts toward quorum but not outcome)</li>
+<li><strong>Proposal threshold checking</strong>: Proposer must maintain threshold throughout voting (prevents flash loan governance attacks)</li>
+<li><strong>Timelock integration</strong>: Automatic queuing of successful proposals with mandatory delay</li>
+<li><strong>Delegation support</strong>: Voting power delegation without token transfer</li>
+</ul>
+<p><strong>Historical Compound Proposals:</strong></p>
+<ul>
+<li><strong>COMP Distribution Launch</strong> (Proposal 007, June 2020): Activated COMP token distribution, catalyzed DeFi Summer</li>
+<li><strong>cDAI Interest Rate Model</strong> (Multiple proposals): Optimized borrowing costs for DAI market</li>
+<li><strong>Compound III (Comet)</strong>: New protocol version with different architecture, approved via governance</li>
+<li><strong>Treasury Diversification</strong>: Proposals to convert COMP treasury holdings into stablecoins</li>
+</ul>
+<p><strong>Aave Risk-Tiered Governance:</strong></p>
+<p>Aave implements different timelock durations based on proposal risk level:</p>
+<p><strong>Proposal Categories:</strong></p>
+<ol>
+<li><strong>Low Risk</strong> (1-day timelock): Parameter tweaks within safe ranges</li>
+<li><strong>Medium Risk</strong> (3-day timelock): Significant parameter changes, new asset listings</li>
+<li><strong>High Risk</strong> (7-day timelock): Smart contract upgrades, major protocol changes</li>
+</ol>
+<p><strong>Aave Improvement Proposals (AIPs):</strong></p>
+<ul>
+<li><strong>Proposition Power</strong>: 80,000 AAVE required to create proposal</li>
+<li><strong>Voting Power</strong>: 320,000 AAVE quorum required (2% of supply)</li>
+<li><strong>Voting Period</strong>: ~10 days</li>
+<li><strong>Multi-Chain Coordination</strong>: Proposals can trigger actions across Ethereum, Polygon, Avalanche, Optimism, Arbitrum</li>
+</ul>
+<p><strong>Historical Aave Proposals:</strong></p>
+<ul>
+<li><strong>AIP-16: Aavenomics</strong> (October 2020): Introduced Safety Module staking and AAVE value accrual</li>
+<li><strong>AIP-27: Add GHO</strong> (July 2023): Launched Aave’s native stablecoin GHO</li>
+<li><strong>AIP-45: Aave v3 Deployment</strong> (March 2022): Deployed v3 across multiple chains</li>
+<li><strong>AIP-60: Treasury Management</strong> (2023): Allocated treasury to yield-generating strategies</li>
+</ul>
+<h3 id="proposal-templates-and-standards">Proposal Templates and Standards<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#proposal-templates-and-standards" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>DAOs developed standardized proposal formats ensuring completeness and enabling systematic evaluation:</p>
+<p><strong>Standard Proposal Structure:</strong></p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="markdown" data-theme="github-light github-dark"><code data-language="markdown" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;"># [Proposal ID]: [</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">Title</span><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Summary</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[2-3 sentence overview]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Motivation</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[Why is this change needed? What problem does it solve?]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Specification</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[Exact technical details of proposed change]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Technical Implementation</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[Smart contract addresses, function calls, parameters]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Security Considerations</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[Risks, attack vectors, mitigations]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Economic Impact</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[Expected effects on protocol metrics, users, treasury]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Voting Options</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-light-font-weight:bold;--shiki-dark:#E1E4E8;--shiki-dark-font-weight:bold;"> **For**</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [What voting &quot;yes&quot; means]</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-light-font-weight:bold;--shiki-dark:#E1E4E8;--shiki-dark-font-weight:bold;"> **Against**</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [What voting &quot;no&quot; means]</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-light-font-weight:bold;--shiki-dark:#E1E4E8;--shiki-dark-font-weight:bold;"> **Abstain**</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [Counted toward quorum but not outcome]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Timeline</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> Temperature Check: [</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">Dates</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> Consensus Check: [</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">Dates</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> On-Chain Vote: [</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">Dates</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> Timelock: [</span><span style="--shiki-light:#032F62;--shiki-light-text-decoration:underline;--shiki-dark:#DBEDFF;--shiki-dark-text-decoration:underline;">Duration</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> Execution: [Expected date]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## References</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[Forum links, audit reports, economic analysis, prior art]</span></span></code></pre></figure>
+<p><strong>Specialized Templates:</strong></p>
+<ul>
+<li><strong>Collateral Onboarding (MakerDAO)</strong>: Risk assessment, oracle configuration, liquidation parameters, debt ceiling</li>
+<li><strong>Asset Listing (Aave, Compound)</strong>: Market parameters, interest rate curves, collateral factors, supply/borrow caps</li>
+<li><strong>Treasury Allocation (Multiple DAOs)</strong>: Budget breakdown, deliverables, milestones, accountability mechanisms</li>
+<li><strong>Parameter Changes</strong>: Current vs proposed values, expected impact, rollback procedures</li>
+<li><strong>Smart Contract Upgrades</strong>: Diff of code changes, audit reports, migration procedures, emergency response plans</li>
+</ul>
+<h3 id="proposal-authorship-and-professionalization">Proposal Authorship and Professionalization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#proposal-authorship-and-professionalization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Creating successful proposals requires significant expertise and resources:</p>
+<p><strong>Barriers to Proposal Creation:</strong></p>
+<ol>
+<li>
+<p><strong>Token threshold</strong>: 2.5M UNI (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">19</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">400</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mord mathnormal" style="margin-right:0.13889em;">COMP</span><span class="mopen">(</span></span></span></span>37M), 80K AAVE (~$12M) creates economic barrier excluding small holders</p>
+</li>
+<li>
+<p><strong>Technical expertise</strong>: Encoding proposal actions in smart contract calls requires Solidity knowledge, understanding of protocol architecture, testing on testnets</p>
+</li>
+<li>
+<p><strong>Legal knowledge</strong>: Major proposals increasingly require legal review (securities compliance, DAO liability, regulatory implications)</p>
+</li>
+<li>
+<p><strong>Economic modeling</strong>: Parameter change proposals need quantitative impact analysis, simulation of edge cases</p>
+</li>
+<li>
+<p><strong>Social capital</strong>: Mobilizing sufficient community support requires reputation, communication skills, persistence through multi-week process</p>
+</li>
+<li>
+<p><strong>Time investment</strong>: 20-100+ hours typical for major proposals (research, drafting, feedback incorporation, community calls, vote shepherding)</p>
+</li>
+</ol>
+<p><strong>Professional Proposal Services:</strong></p>
+<p>Specialized firms emerged offering proposal-as-a-service:</p>
+<ul>
+<li><strong>Llama</strong>: DAO treasury and governance consulting, authored proposals for major DAOs, provides economic analysis and execution support</li>
+<li><strong>Gauntlet</strong>: Financial modeling and risk analysis for DeFi protocols, authored Aave/Compound parameter optimization proposals</li>
+<li><strong>StableLab</strong>: Governance participation service, delegates and proposal authorship</li>
+<li><strong>BlockworksResearch</strong>: Governance research and proposal strategy</li>
+</ul>
+<p><strong>Implications:</strong></p>
+<ul>
+<li><strong>Governance professionalization</strong>: High-quality proposals increasingly authored by paid experts rather than community volunteers</li>
+<li><strong>Centralization concerns</strong>: Small number of service providers author large percentage of proposals across ecosystem</li>
+<li><strong>Quality improvement</strong>: Professional proposals tend to be better researched, technically sound, legally reviewed</li>
+<li><strong>Accessibility erosion</strong>: Smaller community members increasingly excluded from proposal authorship</li>
+</ul>
+<h3 id="proposal-challenges-and-attack-vectors">Proposal Challenges and Attack Vectors<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#proposal-challenges-and-attack-vectors" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>DAO proposal systems face numerous challenges and exploits:</p>
+<p><strong>Proposal Spam and Low-Quality Submissions:</strong></p>
+<p>High proposal thresholds mitigate spam, but DAOs still face:</p>
+<ul>
+<li><strong>Self-serving grants</strong>: Participants proposing grants to themselves or affiliated entities</li>
+<li><strong>Duplicative proposals</strong>: Multiple proposals addressing same issue slightly differently</li>
+<li><strong>Underdeveloped proposals</strong>: Insufficient technical specification, no security review, unclear impact analysis</li>
+<li><strong>Attention fragmentation</strong>: Too many simultaneous proposals overwhelm voter capacity to evaluate</li>
+</ul>
+<p><strong>Voter Fatigue and Declining Participation:</strong></p>
+<p>Excessive governance burden reduces participation:</p>
+<ul>
+<li><strong>MakerDAO</strong>: 500+ annual votes creates fatigue; participation often &lt;10% MKR</li>
+<li><strong>Compound</strong>: 50+ annual proposals; participation 8-15% COMP</li>
+<li><strong>Uniswap</strong>: Selective on-chain voting (rigorous off-chain filtering) maintains 5-10% participation</li>
+</ul>
+<p><strong>Governance Attacks:</strong></p>
+<ol>
+<li>
+<p><strong>Quorum manipulation</strong>: Submit proposals during holidays/weekends when participation is low, exploit minimal quorum to pass self-serving proposals</p>
+</li>
+<li>
+<p><strong>Proposal rushing</strong>: Create urgency around proposals to limit review time, exploit complexity to hide malicious code</p>
+</li>
+<li>
+<p><strong>Vote buying</strong>: Purchase voting power on open market or via bribes (Curve bribery markets openly facilitate governance influence purchases)</p>
+</li>
+<li>
+<p><strong>Sybil proposals</strong>: Create multiple wallets to submit many proposals, exhaust community attention, sneak through malicious proposal during fatigue</p>
+</li>
+<li>
+<p><strong>Flash loan attacks</strong> (mitigated): Early governance systems vulnerable to flash loan voting; modern systems use block snapshots preventing intra-block manipulation</p>
+</li>
+</ol>
+<p><strong>Governance Gridlock:</strong></p>
+<p>High quorum requirements can prevent legitimate proposals from passing:</p>
+<ul>
+<li><strong>Too-high quorum</strong>: If 10% quorum required but only 8% participate, all proposals fail regardless of support</li>
+<li><strong>Competing proposals</strong>: Multiple proposals addressing same issue split votes, none achieve quorum</li>
+<li><strong>Controversial changes</strong>: Divisive proposals (fee switch activation) may approach but never achieve quorum</li>
+</ul>
+<h3 id="emergency-proposals-and-fast-track-mechanisms">Emergency Proposals and Fast-Track Mechanisms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#emergency-proposals-and-fast-track-mechanisms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>DAOs implement emergency procedures for critical vulnerabilities:</p>
+<p><strong>Standard Emergency Mechanisms:</strong></p>
+<ol>
+<li>
+<p><strong>Multisig intervention</strong>: Core team or elected multisig can pause contracts, deploy fixes, freeze assets during active exploits (bypasses governance temporarily)</p>
+</li>
+<li>
+<p><strong>Reduced timelock</strong>: Critical security fixes use shortened timelock (1 day vs standard 7 days), reducing exploit window</p>
+</li>
+<li>
+<p><strong>Emergency quorum reduction</strong>: Lower quorum requirements for emergency proposals (2% vs standard 4%), enabling faster response</p>
+</li>
+<li>
+<p><strong>Guardian role</strong>: Designated addresses (team multisig, security council) can veto malicious proposals during timelock period</p>
+</li>
+</ol>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>MakerDAO Emergency Shutdown</strong>: 50K MKR can immediately halt protocol, preventing further damage during critical failures</li>
+<li><strong>Compound Guardian</strong>: Multisig can cancel malicious proposals during timelock, veto dangerous parameter changes</li>
+<li><strong>Aave Emergency Admin</strong>: Can pause protocol during active exploits, freeze reserves, disable borrowing</li>
+<li><strong>Uniswap Emergency Response</strong>: Foundation multisig can intervene if governance is compromised, though never used as of 2025</li>
+</ul>
+<p><strong>Trade-offs:</strong></p>
+<ul>
+<li><strong>Security vs Decentralization</strong>: Emergency powers centralize control, contradicting DAO ethos, but necessary for security</li>
+<li><strong>Abuse risk</strong>: Malicious multisig could abuse emergency powers to extract value, censor legitimate proposals</li>
+<li><strong>Transition plan</strong>: Most DAOs plan eventual removal of emergency powers as protocols mature and ossify</li>
+</ul>
+<h3 id="proposal-analytics-and-tooling">Proposal Analytics and Tooling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#proposal-analytics-and-tooling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Specialized infrastructure supports proposal creation, voting, and tracking:</p>
+<p><strong>Governance Platforms:</strong></p>
+<ul>
+<li><strong>Tally</strong> (tally.xyz): On-chain governance interface, supports proposal creation/voting for Governor-based DAOs, provides analytics dashboards</li>
+<li><strong>Snapshot</strong> (snapshot.org): Off-chain signaling votes, 10,000+ DAOs using platform, supports multiple voting strategies</li>
+<li><strong>Boardroom</strong> (boardroom.io): Aggregates governance across DAOs, provides proposal notifications, voting history tracking</li>
+<li><strong>Commonwealth</strong> (commonwealth.im): Discussion forums + governance voting integrated platform</li>
+</ul>
+<p><strong>Delegation Platforms:</strong></p>
+<ul>
+<li><strong>Agora</strong> (voteagora.com): Optimism governance and delegation</li>
+<li><strong>Karma</strong> (karmahq.xyz): Delegate discovery and reputation scoring</li>
+<li><strong>Delegation dashboards</strong>: DAO-specific platforms showing delegate voting records, participation rates, alignment</li>
+</ul>
+<p><strong>Analytics and Transparency:</strong></p>
+<ul>
+<li><strong>DeepDAO</strong>: DAO governance analytics, tracks proposals, participation, treasury across 1000+ DAOs</li>
+<li><strong>Dune Analytics</strong>: Community-built SQL dashboards analyzing proposal outcomes, voter behavior, participation trends</li>
+<li><strong>Nansen</strong>: On-chain analytics identifying whale voting patterns, delegation flows, governance influence</li>
+</ul>
+<h3 id="best-practices-for-proposal-systems">Best Practices for Proposal Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#best-practices-for-proposal-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Based on 2020-2025 ecosystem experience:</p>
+<ol>
+<li>
+<p><strong>Multi-stage filtering</strong>: Require off-chain temperature checks before expensive on-chain votes, reducing spam and improving quality</p>
+</li>
+<li>
+<p><strong>Standardized templates</strong>: Enforce proposal structure ensuring completeness (summary, specification, security analysis, economic impact)</p>
+</li>
+<li>
+<p><strong>Sufficient deliberation time</strong>: Minimum 7-14 days from temperature check to execution, allowing thorough review and community coordination</p>
+</li>
+<li>
+<p><strong>Transparent executable code</strong>: Publish exact smart contract calls that will execute, enable community verification during timelock</p>
+</li>
+<li>
+<p><strong>Proportional thresholds</strong>: Set proposal thresholds high enough to prevent spam (0.25-4% of supply) but not so high they exclude broad participation</p>
+</li>
+<li>
+<p><strong>Achievable quorum</strong>: Set quorum at 3-5% of circulating supply, ensuring legitimacy whilst remaining achievable (10%+ quorum frequently causes gridlock)</p>
+</li>
+<li>
+<p><strong>Delegation enablement</strong>: Support vote delegation reducing barriers to participation for passive holders</p>
+</li>
+<li>
+<p><strong>Emergency procedures</strong>: Implement multisig guardians or security councils for critical vulnerabilities, with plans to eventually remove</p>
+</li>
+<li>
+<p><strong>Proposal subsidies</strong>: Consider funding public goods proposals or providing governance participation incentives to improve quality and participation</p>
+</li>
+<li>
+<p><strong>Clear governance scope</strong>: Explicitly define what can/cannot be governed, constitutional limits protecting core protocol properties</p>
+</li>
+</ol>
+<h3 id="future-developments">Future Developments<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-developments" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>AI-Assisted Proposal Creation</strong>: Natural language interfaces enabling non-technical community members to generate executable proposals via AI translation of intent to smart contract code.</p>
+<p><strong>Futarchy and Prediction Markets</strong>: Proposal evaluation via prediction markets assessing expected protocol impact rather than direct voting (proposed by Robin Hanson). Early real-world adoption emerged 2025-2026: Optimism conducted a 21-day futarchy experiment in March 2025 distributing 500K OP tokens, MetaDAO’s launchpad enables new DAOs to launch as futarchies from inception, and DeSci DAO research explores policy-binding conditional prediction markets anchored to KPIs.</p>
+<p><strong>Cross-Chain Proposal Execution</strong>: Unified governance systems enabling single proposal to execute across Ethereum, Arbitrum, Optimism, Polygon simultaneously via cross-chain messaging.</p>
+<p><strong>Reputation-Weighted Proposals</strong>: Non-transferable reputation earned through contribution determining proposal creation rights rather than token holdings, reducing plutocracy.</p>
+<p><strong>Regulatory Adaptation</strong>: Clearer legal frameworks distinguishing governance proposals from securities offerings, investment advice, or fiduciary actions.</p>
+<h3 id="references-and-case-studies">References and Case Studies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references-and-case-studies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../BC-0461-decentralized-autonomous-organization" class="internal" data-slug="BC-0461-decentralized-autonomous-organization">BC-0461-decentralized-autonomous-organization</a></li>
+<li><a href="../BC-0462-on-chain-voting" class="internal" data-slug="BC-0462-on-chain-voting">BC-0462-on-chain-voting</a></li>
+<li><a href="../BC-0463-governance-token" class="internal" data-slug="BC-0463-governance-token">BC-0463-governance-token</a></li>
+<li><a href="../BC-0464-treasury-management" class="internal" data-slug="BC-0464-treasury-management">BC-0464-treasury-management</a></li>
+<li><a href="../BC-0142-smart-contract" class="internal" data-slug="BC-0142-smart-contract">BC-0142-smart-contract</a></li>
+<li><a href="../Uniswap-Governance-Process" class="internal alias" data-slug="Uniswap-Governance-Process">Uniswap Governance Process</a></li>
+<li><a href="../MakerDAO-Executive-Votes" class="internal alias" data-slug="MakerDAO-Executive-Votes">MakerDAO Executive Votes</a></li>
+<li><a href="../pages/Compound-Governor-Bravo" class="internal alias" data-slug="pages/Compound-Governor-Bravo">Compound Governor Bravo</a></li>
+<li><a href="../Aave-Improvement-Proposals" class="internal alias" data-slug="Aave-Improvement-Proposals">Aave Improvement Proposals</a></li>
+<li><a href="../pages/Snapshot-Off-Chain-Voting" class="internal alias" data-slug="pages/Snapshot-Off-Chain-Voting">Snapshot Off-Chain Voting</a></li>
+<li><a href="../Tally-Governance" class="internal alias" data-slug="Tally-Governance">Tally Governance</a></li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-4470" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-0"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#proposal-lifecycle-and-multi-stage-governance" data-for="proposal-lifecycle-and-multi-stage-governance">Proposal Lifecycle and Multi-Stage Governance</a></li><li class="depth-0"><a href="#real-world-proposal-systems" data-for="real-world-proposal-systems">Real-World Proposal Systems</a></li><li class="depth-0"><a href="#proposal-templates-and-standards" data-for="proposal-templates-and-standards">Proposal Templates and Standards</a></li><li class="depth-0"><a href="#proposal-authorship-and-professionalization" data-for="proposal-authorship-and-professionalization">Proposal Authorship and Professionalization</a></li><li class="depth-0"><a href="#proposal-challenges-and-attack-vectors" data-for="proposal-challenges-and-attack-vectors">Proposal Challenges and Attack Vectors</a></li><li class="depth-0"><a href="#emergency-proposals-and-fast-track-mechanisms" data-for="emergency-proposals-and-fast-track-mechanisms">Emergency Proposals and Fast-Track Mechanisms</a></li><li class="depth-0"><a href="#proposal-analytics-and-tooling" data-for="proposal-analytics-and-tooling">Proposal Analytics and Tooling</a></li><li class="depth-0"><a href="#best-practices-for-proposal-systems" data-for="best-practices-for-proposal-systems">Best Practices for Proposal Systems</a></li><li class="depth-0"><a href="#future-developments" data-for="future-developments">Future Developments</a></li><li class="depth-0"><a href="#references-and-case-studies" data-for="references-and-case-studies">References and Case Studies</a></li><li class="depth-0"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Community-Governance" class="internal">Community Governance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

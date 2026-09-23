@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:model-selection",
       "label": "Model Selection"
+    },
+    {
+      "id": "urn:ngm:class:modelselection",
+      "label": "ModelSelection"
     }
   ],
   "entityType": "Class",
@@ -22,6 +26,10 @@
       {
         "id": "urn:ngm:class:cost-optimisation",
         "label": "Cost Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:costoptimisation",
+        "label": "CostOptimisation"
       }
     ],
     "dependsOn": [],
@@ -32,6 +40,10 @@
       {
         "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:largelanguagemodel",
+        "label": "LargeLanguageModel"
       }
     ],
     "supports": [],
@@ -40,12 +52,20 @@
       {
         "id": "urn:ngm:class:llm-orchestration",
         "label": "LLM Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:llmorchestration",
+        "label": "LLMOrchestration"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cost-efficient-inference",
         "label": "Cost-Efficient Inference"
+      },
+      {
+        "id": "urn:ngm:class:costefficientinference",
+        "label": "CostEfficientInference"
       }
     ]
   },
@@ -66,14 +86,24 @@
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning",
-      "label": "Machine Learning",
-      "slug": "machine-learning"
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -137,12 +167,12 @@
         "label": "Data Collection"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:optimisation-algorithm",
-        "label": "Optimisation Algorithm"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -159,6 +189,10 @@
         "label": "AI Governance"
       },
       {
+        "id": "urn:ngm:class:ai-safety-evaluation",
+        "label": "AI Safety Evaluation"
+      },
+      {
         "id": "urn:ngm:class:model-selection",
         "label": "Model Selection"
       },
@@ -173,10 +207,6 @@
       {
         "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
-      },
-      {
-        "id": "urn:ngm:class:model-optimisation-and-performance",
-        "label": "Model Optimisation"
       }
     ],
     "dependsOn": [
@@ -209,8 +239,42 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
@@ -227,12 +291,16 @@
         "label": "Model Evaluation Results"
       },
       {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
+        "id": "urn:ngm:class:qualitative-assessment",
+        "label": "Qualitative Assessment"
       },
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -261,12 +329,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:smart-grid",
-        "label": "Smart Grid"
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:supply-chain-optimisation",
-        "label": "Supply Chain Optimisation"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -329,27 +397,23 @@
         "label": "Monitoring Dashboard"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-23053-2022",
-        "label": "ISO-IEC 23053 2022"
-      },
-      {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -387,8 +451,8 @@
         "label": "Red Teaming"
       },
       {
-        "id": "urn:ngm:class:auc",
-        "label": "AUC"
+        "id": "urn:ngm:class:area-under-the-curve",
+        "label": "Area Under the Curve"
       }
     ]
   },

@@ -12,12 +12,24 @@
       "label": "Robot Type"
     },
     {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
+      "id": "urn:ngm:class:robot",
+      "label": "Robot"
     },
     {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
+      "id": "urn:ngm:class:mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "id": "urn:ngm:class:embodied-ai",
+      "label": "Embodied Agent"
+    },
+    {
+      "id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous System"
+    },
+    {
+      "id": "urn:ngm:class:bipedal-robot",
+      "label": "Bipedal Robot"
     }
   ],
   "entityType": "Class",
@@ -56,6 +68,14 @@
       {
         "id": "urn:ngm:class:whole-body-control",
         "label": "Whole Body Control"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-system",
+        "label": "Vision System"
+      },
+      {
+        "id": "urn:ngm:class:compute-resources",
+        "label": "Onboard Compute"
       }
     ],
     "requires": [
@@ -78,6 +98,10 @@
       {
         "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:contact-dynamics",
+        "label": "Contact Dynamics"
       }
     ],
     "enables": [
@@ -100,9 +124,46 @@
       {
         "id": "urn:ngm:class:warehouse-automation",
         "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Elder Care Robotics"
+      },
+      {
+        "id": "urn:ngm:class:hazardous-environment-inspection",
+        "label": "Hazardous Environment Inspection"
+      },
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "General-Purpose Manipulation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-systems",
+        "label": "Real-Time Operating Systems"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:model-predictive-control",
@@ -129,7 +190,28 @@
         "label": "Reinforcement Learning"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:wheeled-robot",
+        "label": "Wheeled Robot"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot-arm",
+        "label": "Industrial Robot Arm"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:quadruped-robot",
+        "label": "Quadruped Robot"
+      },
+      {
+        "id": "urn:ngm:class:drone",
+        "label": "Drone"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -151,6 +233,10 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:multi-modal-sensing",
+        "label": "Multi-Modal Sensing"
       }
     ],
     "supports": [
@@ -219,9 +305,49 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -261,38 +387,326 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:actuators",
-        "label": "Actuators"
-      },
-      {
-        "id": "urn:ngm:class:control-system",
-        "label": "Control System"
-      },
-      {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
-      },
-      {
-        "id": "urn:ngm:class:humanoid-robotics",
-        "label": "Humanoid Robotics"
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
       },
       {
         "id": "urn:ngm:class:industrial-automation",
         "label": "IndustrialAutomation"
       },
       {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
       },
       {
-        "id": "urn:ngm:class:smart-manufacturing",
-        "label": "Smart Manufacturing"
+        "id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      },
+      {
+        "id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power System"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:active-perception",
+        "label": "Active Perception"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:sensorimotor-loop",
+        "label": "Sensorimotor Loop"
+      },
+      {
+        "id": "urn:ngm:class:situated-cognition",
+        "label": "Situated Cognition"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:automated-machine",
+        "label": "Automated Machine"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:fixed-base-robot",
+        "label": "Fixed-Base Robot"
+      },
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Industrial Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:disembodied-language-model",
+        "label": "Disembodied Language Model"
+      },
+      {
+        "id": "urn:ngm:class:passive-learning",
+        "label": "Passive Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      },
+      {
+        "id": "urn:ngm:class:ansi-ria-r15-08",
+        "label": "ANSI/RIA R15.08"
+      },
+      {
+        "id": "urn:ngm:class:iso-8373-2021",
+        "label": "ISO 8373 2021"
+      },
+      {
+        "id": "urn:ngm:class:open-x-embodiment-dataset",
+        "label": "Open X-Embodiment Dataset"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI Gym"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "ROS"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42010",
+        "label": "ISO/IEC 42010"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical System"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot System"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "relatedTo": [
@@ -311,6 +725,22 @@
       {
         "id": "urn:ngm:class:robo-safety-and-standards",
         "label": "Safety and Standards"
+      },
+      {
+        "id": "urn:ngm:class:cobotic-system",
+        "label": "Cobotic System"
+      },
+      {
+        "id": "urn:ngm:class:drone",
+        "label": "Drone"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-underwater-vehicle",
+        "label": "Autonomous Underwater Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:legged-robot",
+        "label": "Legged Robot"
       }
     ]
   },

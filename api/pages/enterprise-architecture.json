@@ -473,6 +473,10 @@
         "label": "Microservices Architecture"
       },
       {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
         "id": "urn:ngm:class:security-architecture",
         "label": "Security Architecture"
       },
@@ -491,10 +495,6 @@
       {
         "id": "urn:ngm:class:empirical-experimental-design-tracking",
         "label": "Experiment Tracking"
-      },
-      {
-        "id": "urn:ngm:class:model-registry",
-        "label": "Model Registry"
       }
     ]
   },

@@ -8,8 +8,24 @@
   "definition": "Digital Objects is an umbrella ontology concept covering three closely-related but historically distinct senses of \"an addressable, transferable, identifiable unit of digital content\": (1) Digital Object Architecture (DOA), the formal information-infrastructure paradigm proposed by Robert E.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
+    },
+    {
+      "id": "urn:ngm:class:information-resource",
+      "label": "Information Resource"
+    },
+    {
+      "id": "urn:ngm:class:digital-artefact",
+      "label": "Digital Artefact"
+    },
+    {
+      "id": "urn:ngm:class:networked-resource",
+      "label": "Networked Resource"
+    },
+    {
+      "id": "urn:ngm:class:identified-entity",
+      "label": "Identified Entity"
     }
   ],
   "entityType": "Class",
@@ -28,6 +44,26 @@
       {
         "id": "urn:ngm:class:transferable-right",
         "label": "Transferable Right"
+      },
+      {
+        "id": "urn:ngm:class:typed-payload",
+        "label": "Typed Payload"
+      },
+      {
+        "id": "urn:ngm:class:metadata-record",
+        "label": "Metadata Record"
+      },
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance Chain"
+      },
+      {
+        "id": "urn:ngm:class:transferable-rights",
+        "label": "Transferable Rights"
+      },
+      {
+        "id": "urn:ngm:class:resolution-endpoint",
+        "label": "Resolution Endpoint"
       }
     ],
     "requires": [
@@ -38,6 +74,18 @@
       {
         "id": "urn:ngm:class:storage-layer",
         "label": "Storage Layer"
+      },
+      {
+        "id": "urn:ngm:class:identifier-registry",
+        "label": "Identifier Registry"
+      },
+      {
+        "id": "urn:ngm:class:resolution-infrastructure",
+        "label": "Resolution Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-binding",
+        "label": "Cryptographic Binding"
       }
     ],
     "enables": [
@@ -60,9 +108,42 @@
       {
         "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:citation",
+        "label": "Citation"
+      },
+      {
+        "id": "urn:ngm:class:royalty-automation",
+        "label": "Royalty Automation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-ordinals",
@@ -73,8 +154,20 @@
         "label": "ERC-1155"
       },
       {
-        "id": "urn:ngm:class:erc-721",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "glTF Asset Specification"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "USD Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:handle-system-protocol",
+        "label": "Handle System Protocol"
       },
       {
         "id": "urn:ngm:class:gl-tf",
@@ -85,7 +178,28 @@
         "label": "USD Scene Description"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:url",
+        "label": "URL"
+      },
+      {
+        "id": "urn:ngm:class:urn",
+        "label": "URN"
+      },
+      {
+        "id": "urn:ngm:class:filesystem-path",
+        "label": "Filesystem Path"
+      },
+      {
+        "id": "urn:ngm:class:database-row",
+        "label": "Database Row"
+      },
+      {
+        "id": "urn:ngm:class:ephemeral-resource",
+        "label": "Ephemeral Resource"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:sc-content-and-assets",
@@ -120,6 +234,30 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:doi",
+        "label": "DOI"
+      },
+      {
+        "id": "urn:ngm:class:ark-protocol",
+        "label": "ARK"
+      },
+      {
+        "id": "urn:ngm:class:handle",
+        "label": "Handle"
+      },
+      {
+        "id": "urn:ngm:class:orcid",
+        "label": "ORCID"
+      },
+      {
+        "id": "urn:ngm:class:ror",
+        "label": "ROR"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "NFT Metadata Standard"
       }
     ],
     "supports": [
@@ -146,6 +284,14 @@
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:scholarly-communication",
+        "label": "Scholarly Communication"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twins"
       }
     ],
     "standardizedBy": [
@@ -164,6 +310,30 @@
       {
         "id": "urn:ngm:class:w3-c-did",
         "label": "W3C DID"
+      },
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T X.1255"
+      },
+      {
+        "id": "urn:ngm:class:iso-26324",
+        "label": "ISO 26324"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-3650",
+        "label": "IETF RFC 3650"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-3651",
+        "label": "IETF RFC 3651"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-3652",
+        "label": "IETF RFC 3652"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-erc-721",
+        "label": "Ethereum ERC-721"
       }
     ],
     "partOf": [],
@@ -198,144 +368,118 @@
       }
     ]
   },
-  "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
-    }
-  ],
+  "inferredSuperClasses": [],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
       },
       {
-        "id": "urn:ngm:class:data-lake",
-        "label": "Data Lake"
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:data-storage",
-        "label": "Data Storage"
-      },
-      {
-        "id": "urn:ngm:class:database-system",
-        "label": "Database System"
-      },
-      {
-        "id": "urn:ngm:class:etl-pipeline",
-        "label": "ETL Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:graph-database",
-        "label": "Graph Database"
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
       },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
+      }
+    ],
+    "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:infra-computing-and-cloud",
-        "label": "Computing and Cloud"
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       }
     ]
   },

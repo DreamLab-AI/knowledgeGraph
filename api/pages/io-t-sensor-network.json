@@ -14,6 +14,18 @@
     {
       "id": "urn:ngm:class:pervasive-computing",
       "label": "Pervasive Computing"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "id": "urn:ngm:class:cyber-physical-systems",
+      "label": "Cyber-Physical Systems"
+    },
+    {
+      "id": "urn:ngm:class:networked-embedded-systems",
+      "label": "Networked Embedded Systems"
     }
   ],
   "entityType": "Class",
@@ -48,6 +60,26 @@
       {
         "id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:sensor-node",
+        "label": "Sensor Node"
+      },
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation Layer"
+      },
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud IoT Platform"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management Unit"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation Protocol"
       }
     ],
     "requires": [
@@ -78,6 +110,10 @@
       {
         "id": "urn:ngm:class:time-synchronisation",
         "label": "Time Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:power-source",
+        "label": "Power Source"
       }
     ],
     "enables": [
@@ -112,9 +148,42 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:smart-building",
+        "label": "Smart Buildings"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:6-lo-wpan",
@@ -151,9 +220,34 @@
       {
         "id": "urn:ngm:class:zigbee",
         "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:6lowpan",
+        "label": "6LoWPAN"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:wired-sensor-network",
+        "label": "Wired Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:cellular-m2m",
+        "label": "Cellular M2M"
+      },
+      {
+        "id": "urn:ngm:class:traditional-scada",
+        "label": "Traditional SCADA"
+      },
+      {
+        "id": "urn:ngm:class:centralised-sensing",
+        "label": "Centralised Sensing"
+      },
+      {
+        "id": "urn:ngm:class:fieldbus",
+        "label": "Fieldbus"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:control-system",
@@ -188,6 +282,14 @@
       {
         "id": "urn:ngm:class:tiny-ml",
         "label": "TinyML"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificates",
+        "label": "X.509 Certificates"
+      },
+      {
+        "id": "urn:ngm:class:ota-firmware-update",
+        "label": "OTA Firmware Update"
       }
     ],
     "supports": [
@@ -248,6 +350,26 @@
       {
         "id": "urn:ngm:class:matter-protocol",
         "label": "Matter CSA"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-1883",
+        "label": "IETF RFC 1883"
+      },
+      {
+        "id": "urn:ngm:class:nb-io-t",
+        "label": "3GPP NB-IoT"
+      },
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter CSA"
+      },
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI EN 303 645"
+      },
+      {
+        "id": "urn:ngm:class:wireless-hart",
+        "label": "IEC 62591 WirelessHART"
       }
     ],
     "partOf": [],
@@ -287,14 +409,44 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "Wireless Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-cities",
+        "label": "Smart Cities"
+      },
+      {
+        "id": "urn:ngm:class:tiny-ml",
+        "label": "TinyML"
+      },
+      {
+        "id": "urn:ngm:class:lpwan",
+        "label": "LPWAN"
+      },
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Networks"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
       "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing",
       "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:embedded-systems",
+      "label": "Embedded Systems",
+      "slug": "embedded-systems"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -302,15 +454,35 @@
       "slug": "infrastructure"
     },
     {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -344,32 +516,36 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Partial Failure Tolerance"
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronisation"
       },
       {
-        "id": "urn:ngm:class:message-passing",
-        "label": "Message Passing"
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
       },
       {
-        "id": "urn:ngm:class:network-communication",
-        "label": "Network Communication"
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
       },
       {
-        "id": "urn:ngm:class:serialisation-format",
-        "label": "Serialisation Format"
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:cooling-system",
+        "label": "Cooling Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
       }
     ],
     "enables": [
@@ -386,16 +562,8 @@
         "label": "Wearable Computing Platform"
       },
       {
-        "id": "urn:ngm:class:distributed-ai-training",
-        "label": "Distributed AI Training"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:geographic-distribution",
-        "label": "Geographic Distribution"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:high-availability",
@@ -404,56 +572,150 @@
       {
         "id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scalability"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocols"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:flp-impossibility",
+        "label": "FLP Impossibility"
+      },
+      {
+        "id": "urn:ngm:class:lamport-timestamps",
+        "label": "Lamport Timestamps"
+      },
+      {
+        "id": "urn:ngm:class:pacelc",
+        "label": "PACELC"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
       {
         "id": "urn:ngm:class:actor-model",
         "label": "Actor Model"
       },
       {
-        "id": "urn:ngm:class:crdt",
-        "label": "CRDT"
-      },
-      {
-        "id": "urn:ngm:class:map-reduce",
-        "label": "MapReduce"
-      },
-      {
-        "id": "urn:ngm:class:paxos",
-        "label": "Paxos"
-      },
-      {
-        "id": "urn:ngm:class:pbft",
-        "label": "PBFT"
-      },
-      {
-        "id": "urn:ngm:class:raft",
-        "label": "Raft"
-      },
-      {
-        "id": "urn:ngm:class:saga-pattern",
-        "label": "Saga Pattern"
-      },
-      {
-        "id": "urn:ngm:class:two-phase-commit",
-        "label": "Two-Phase Commit"
+        "id": "urn:ngm:class:bulk-synchronous-parallel",
+        "label": "Bulk Synchronous Parallel"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "id": "urn:ngm:class:information-technology",
+        "label": "Information Technology"
+      },
+      {
+        "id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      },
+      {
+        "id": "urn:ngm:class:embarrassingly-parallel-batch",
+        "label": "Embarrassingly Parallel Batch"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      },
+      {
+        "id": "urn:ngm:class:single-machine-multiprocessing",
+        "label": "Single-Machine Multiprocessing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "uses": [
@@ -462,96 +724,106 @@
         "label": "Embedded Systems"
       },
       {
-        "id": "urn:ngm:class:apache-flink",
-        "label": "Apache Flink"
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
       },
       {
-        "id": "urn:ngm:class:apache-kafka",
-        "label": "Apache Kafka"
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
       },
       {
-        "id": "urn:ngm:class:apache-spark",
-        "label": "Apache Spark"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:etcd",
-        "label": "etcd"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:g-rpc",
-        "label": "gRPC"
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
       },
       {
         "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:service-mesh",
-        "label": "Service Mesh"
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
       }
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
         "id": "urn:ngm:class:blockchain-consensus",
         "label": "Blockchain Consensus"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
-      },
-      {
-        "id": "urn:ngm:class:distributed-ai-training",
-        "label": "Distributed AI Training"
-      },
-      {
-        "id": "urn:ngm:class:distributed-databases",
-        "label": "Distributed Databases"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:apache-software-foundation",
-        "label": "Apache Software Foundation"
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
       },
       {
         "id": "urn:ngm:class:cncf",
         "label": "CNCF"
       },
       {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:apache-software-foundation",
+        "label": "Apache Software Foundation"
+      },
+      {
         "id": "urn:ngm:class:g-rpc",
         "label": "gRPC Specification"
       },
       {
-        "id": "urn:ngm:class:open-telemetry",
-        "label": "OpenTelemetry"
-      },
+        "id": "urn:ngm:class:mpi-forum",
+        "label": "MPI Forum"
+      }
+    ],
+    "partOf": [
       {
-        "id": "urn:ngm:class:quic",
-        "label": "IETF QUIC"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [
@@ -560,7 +832,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -576,16 +848,16 @@
         "label": "Sociotechnical System"
       },
       {
-        "id": "urn:ngm:class:cloud-native",
-        "label": "Cloud Native"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
       },
       {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
       }
     ]
   },

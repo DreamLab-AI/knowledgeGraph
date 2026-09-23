@@ -16,8 +16,20 @@
       "label": "Existential Risk"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
+      "id": "urn:ngm:class:artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "id": "urn:ngm:class:futures-studies",
+      "label": "Futures Studies"
+    },
+    {
+      "id": "urn:ngm:class:philosophy-of-mind",
+      "label": "Philosophy of Mind"
+    },
+    {
+      "id": "urn:ngm:class:transhumanism",
+      "label": "Transhumanism"
     }
   ],
   "entityType": "Class",
@@ -48,6 +60,10 @@
       {
         "id": "urn:ngm:class:superintelligence",
         "label": "Superintelligence"
+      },
+      {
+        "id": "urn:ngm:class:takeoff-scenarios",
+        "label": "Takeoff Scenarios"
       }
     ],
     "requires": [
@@ -88,9 +104,38 @@
       {
         "id": "urn:ngm:class:superintelligence",
         "label": "Superintelligence"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Post-Scarcity Economics"
+      },
+      {
+        "id": "urn:ngm:class:technological-acceleration",
+        "label": "Technological Acceleration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:intelligence-explosion",
@@ -99,14 +144,59 @@
       {
         "id": "urn:ngm:class:recursive-self-improvement",
         "label": "Recursive Self-Improvement"
+      },
+      {
+        "id": "urn:ngm:class:exponential-growth-models",
+        "label": "Exponential Growth Models"
+      },
+      {
+        "id": "urn:ngm:class:kurzweil-law-of-accelerating-returns",
+        "label": "Kurzweil Law of Accelerating Returns"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stochastic-parrots-critique",
+        "label": "Stochastic Parrots Critique"
+      },
+      {
+        "id": "urn:ngm:class:ai-winter",
+        "label": "AI Winter"
+      },
+      {
+        "id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      },
+      {
+        "id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:agi-timelines",
         "label": "AGI Timelines"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-forecasting",
+        "label": "Bayesian Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:metaculus",
+        "label": "Metaculus"
+      },
+      {
+        "id": "urn:ngm:class:ai-impacts-surveys",
+        "label": "AI Impacts Surveys"
+      },
+      {
+        "id": "urn:ngm:class:compute-scaling",
+        "label": "Compute Scaling"
       }
     ],
     "supports": [
@@ -135,6 +225,18 @@
       {
         "id": "urn:ngm:class:future-of-humanity-institute",
         "label": "Future of Humanity Institute"
+      },
+      {
+        "id": "urn:ngm:class:cambridge-cser",
+        "label": "Cambridge CSER"
+      },
+      {
+        "id": "urn:ngm:class:oxford-govai",
+        "label": "Oxford GovAI"
+      },
+      {
+        "id": "urn:ngm:class:machine-intelligence-research-institute",
+        "label": "Machine Intelligence Research Institute"
       }
     ],
     "partOf": [],
@@ -173,14 +275,169 @@
       "slug": "catastrophic-risk-assessment"
     },
     {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science",
+      "slug": "cognitive-science"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model-capability",
+      "label": "Foundation Model Capability",
+      "slug": "foundation-model-capability"
+    },
+    {
+      "id": "urn:ngm:class:frontier-ai",
+      "label": "Frontier AI",
+      "slug": "frontier-ai"
+    },
+    {
+      "id": "urn:ngm:class:general-intelligence",
+      "label": "General Intelligence",
+      "slug": "general-intelligence"
+    },
+    {
       "id": "urn:ngm:class:ai-safety",
       "label": "AI Safety",
       "slug": "ai-safety"
     },
     {
+      "id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer",
+      "slug": "foundation-model-layer"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
+    },
+    {
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model",
+      "slug": "large-scale-pretrained-foundation-model"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-risk-assessment",
+      "label": "Probabilistic Risk Assessment",
+      "slug": "probabilistic-risk-assessment"
+    },
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment",
+      "slug": "risk-assessment"
+    },
+    {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics",
       "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:audit",
+      "label": "Audit",
+      "slug": "audit"
+    },
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework",
+      "slug": "compliance-framework"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
+    },
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management",
+      "slug": "risk-management"
+    },
+    {
+      "id": "urn:ngm:class:safety-engineering",
+      "label": "Safety Engineering",
+      "slug": "safety-engineering"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-analysis",
+      "label": "Systems Analysis",
+      "slug": "systems-analysis"
+    },
+    {
+      "id": "urn:ngm:class:accountability-mechanism",
+      "label": "Accountability Mechanism",
+      "slug": "accountability-mechanism"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards",
+      "slug": "robo-safety-and-standards"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:accountability",
+      "label": "Accountability",
+      "slug": "accountability"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance",
+      "slug": "ai-governance"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     }
   ],
   "inheritedRelations": {
@@ -228,24 +485,28 @@
         "label": "Probability Estimation"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:alignment-techniques",
+        "label": "Alignment Techniques"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:evaluation-infrastructure",
+        "label": "Evaluation Infrastructure"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:frontier-training-data",
+        "label": "Frontier Training Data"
       },
       {
-        "id": "urn:ngm:class:formal-verification",
-        "label": "Formal Verification"
+        "id": "urn:ngm:class:large-scale-compute",
+        "label": "Large-Scale Compute"
       },
       {
-        "id": "urn:ngm:class:interpretability",
-        "label": "Interpretability"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
       }
     ],
     "enables": [
@@ -262,36 +523,126 @@
         "label": "Pandemic Preparedness"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:economic-automation",
+        "label": "Economic Automation"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:recursive-self-improvement",
+        "label": "Recursive Self-Improvement"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:scientific-discovery-acceleration",
+        "label": "Scientific Discovery Acceleration"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:transformative-ai",
+        "label": "Transformative AI"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:longtermism",
         "label": "Longtermism"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:bitter-lesson",
+        "label": "Bitter Lesson"
+      },
+      {
+        "id": "urn:ngm:class:compute-trends",
+        "label": "Compute Trends"
+      },
+      {
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
+      },
+      {
+        "id": "urn:ngm:class:inference-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture-of-Experts Architecture"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "id": "urn:ngm:class:scaling-hypothesis",
+        "label": "Scaling Hypothesis"
+      },
+      {
+        "id": "urn:ngm:class:failure-mode-effects-analysis",
+        "label": "Failure Mode Effects Analysis"
+      },
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:ai-capabilities-research",
-        "label": "AI Capabilities Research"
+        "id": "urn:ngm:class:domain-specific-ai",
+        "label": "Domain-Specific AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:weak-ai",
+        "label": "Weak AI"
+      },
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "id": "urn:ngm:class:eliminative-materialism",
+        "label": "Eliminative Materialism"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:beneficial-ai-risk",
+        "label": "Beneficial AI Risk"
       }
     ],
     "bridgesTo": [
@@ -308,30 +659,58 @@
         "label": "Future of Humanity Institute"
       },
       {
-        "id": "urn:ngm:class:autonomous-robot",
-        "label": "Autonomous Robot"
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
       },
       {
-        "id": "urn:ngm:class:security",
-        "label": "Cyber Security"
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:adversarial-machine-learning",
-        "label": "Adversarial Machine Learning"
+        "id": "urn:ngm:class:arc-agi",
+        "label": "ARC-AGI"
       },
       {
-        "id": "urn:ngm:class:red-teaming",
-        "label": "Red Teaming"
+        "id": "urn:ngm:class:frontiermath",
+        "label": "FrontierMath"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
-        "label": "Reinforcement Learning from Human Feedback"
+        "id": "urn:ngm:class:gpqa",
+        "label": "GPQA"
+      },
+      {
+        "id": "urn:ngm:class:humanity-s-last-exam",
+        "label": "Humanity's Last Exam"
+      },
+      {
+        "id": "urn:ngm:class:metr-evaluations",
+        "label": "METR Evaluations"
+      },
+      {
+        "id": "urn:ngm:class:mmlu",
+        "label": "MMLU"
+      },
+      {
+        "id": "urn:ngm:class:swe-bench",
+        "label": "SWE-bench"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
       }
     ],
     "supports": [
@@ -340,16 +719,66 @@
         "label": "Biosafety Regulation"
       },
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk-studies",
+        "label": "Existential Risk Studies"
       },
       {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:deepmind-levels-of-agi-framework",
+        "label": "DeepMind Levels of AGI Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:openai-charter",
+        "label": "OpenAI Charter"
+      },
+      {
+        "id": "urn:ngm:class:california-sb53",
+        "label": "California SB53"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
       }
     ],
     "partOf": [
@@ -362,8 +791,28 @@
         "label": "Risk Analysis"
       },
       {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:philosophy",
+        "label": "Philosophy"
+      },
+      {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
       }
     ],
     "relatedTo": [
@@ -396,8 +845,8 @@
         "label": "Longtermism"
       },
       {
-        "id": "urn:ngm:class:california-ai-bill",
-        "label": "California AI bill"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ]
   },

@@ -66,6 +66,31 @@
       "id": "urn:ngm:class:medical-ai",
       "label": "Medical AI",
       "slug": "medical-ai"
+    },
+    {
+      "id": "urn:ngm:class:healthcare-technology",
+      "label": "Healthcare Technology",
+      "slug": "healthcare-technology"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     }
   ],
   "inheritedRelations": {
@@ -127,6 +152,14 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "enables": [
@@ -163,6 +196,20 @@
         "label": "Predictive Analytics"
       }
     ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:explainable-ai",
@@ -177,6 +224,14 @@
       {
         "id": "urn:ngm:class:general-purpose-ai-model",
         "label": "General-Purpose AI"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -187,6 +242,18 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       },
       {
         "id": "urn:ngm:class:genomics",
@@ -235,6 +302,16 @@
         "label": "Uncertainty Quantification"
       }
     ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:fda-510k",
@@ -247,6 +324,18 @@
       {
         "id": "urn:ngm:class:iec-62304",
         "label": "IEC 62304"
+      },
+      {
+        "id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
       }
     ],
     "partOf": [
@@ -287,6 +376,10 @@
       {
         "id": "urn:ngm:class:telemedicine",
         "label": "Telemedicine"
+      },
+      {
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
       }
     ]
   },

@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:creative-ai",
       "label": "Creative AI"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model"
+    },
+    {
+      "id": "urn:ngm:class:audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+      "label": "Multimodal AI"
     }
   ],
   "entityType": "Class",
@@ -28,6 +48,42 @@
       {
         "id": "urn:ngm:class:speech-synthesis",
         "label": "Vocal Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:text-to-music-synthesis",
+        "label": "Text-to-Music Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:melodic-generation",
+        "label": "Melodic Generation"
+      },
+      {
+        "id": "urn:ngm:class:lyric-generation",
+        "label": "Lyric Generation"
+      },
+      {
+        "id": "urn:ngm:class:audio-diffusion",
+        "label": "Audio Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:music-language-model",
+        "label": "Music Language Model"
+      },
+      {
+        "id": "urn:ngm:class:stem-separation",
+        "label": "Stem Separation"
+      },
+      {
+        "id": "urn:ngm:class:audio-watermarking",
+        "label": "Audio Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "Vocal Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:clap-embeddings",
+        "label": "CLAP Embeddings"
       }
     ],
     "requires": [
@@ -58,6 +114,14 @@
       {
         "id": "urn:ngm:class:transformers",
         "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:clap-audio-embeddings",
+        "label": "CLAP Audio Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Audio Datasets"
       }
     ],
     "enables": [
@@ -68,9 +132,62 @@
       {
         "id": "urn:ngm:class:procedural-audio-generator",
         "label": "Game Audio Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:ai-music-production",
+        "label": "AI Music Production"
+      },
+      {
+        "id": "urn:ngm:class:royalty-free-music-generation",
+        "label": "Royalty-Free Music Generation"
+      },
+      {
+        "id": "urn:ngm:class:personalised-soundtracks",
+        "label": "Personalised Soundtracks"
+      },
+      {
+        "id": "urn:ngm:class:film-scoring-automation",
+        "label": "Film Scoring Automation"
+      },
+      {
+        "id": "urn:ngm:class:podcast-music-generation",
+        "label": "Podcast Music Generation"
+      },
+      {
+        "id": "urn:ngm:class:procedural-audio-generator",
+        "label": "Game Audio Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:ai-mastering",
+        "label": "AI Mastering"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:autoregressive-decoding",
@@ -95,9 +212,42 @@
       {
         "id": "urn:ngm:class:transformers",
         "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-language-audio-pre-training",
+        "label": "Contrastive Language Audio Pre-training"
+      },
+      {
+        "id": "urn:ngm:class:residual-vector-quantisation",
+        "label": "Residual Vector Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "Variational Autoencoder"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-music-composition",
+        "label": "Traditional Music Composition"
+      },
+      {
+        "id": "urn:ngm:class:digital-audio-workstation",
+        "label": "Digital Audio Workstation"
+      },
+      {
+        "id": "urn:ngm:class:sample-libraries",
+        "label": "Sample Libraries"
+      },
+      {
+        "id": "urn:ngm:class:human-performance-capture",
+        "label": "Human Performance Capture"
+      },
+      {
+        "id": "urn:ngm:class:midi-sequencing",
+        "label": "MIDI Sequencing"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:audio-signal-processing",
@@ -112,6 +262,38 @@
       {
         "id": "urn:ngm:class:text-encoder",
         "label": "T5 Text Encoder"
+      },
+      {
+        "id": "urn:ngm:class:encodec",
+        "label": "EnCodec"
+      },
+      {
+        "id": "urn:ngm:class:neural-audio-codec",
+        "label": "DAC Codec"
+      },
+      {
+        "id": "urn:ngm:class:soundstream",
+        "label": "SoundStream"
+      },
+      {
+        "id": "urn:ngm:class:midi",
+        "label": "MIDI"
+      },
+      {
+        "id": "urn:ngm:class:spectrogram-diffusion",
+        "label": "Spectrogram Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:text-encoder",
+        "label": "T5 Text Encoder"
+      },
+      {
+        "id": "urn:ngm:class:clap",
+        "label": "CLAP"
+      },
+      {
+        "id": "urn:ngm:class:mulan",
+        "label": "MuLan"
       }
     ],
     "supports": [
@@ -134,6 +316,14 @@
       {
         "id": "urn:ngm:class:education-and-ai",
         "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:music-production",
+        "label": "Music Production"
+      },
+      {
+        "id": "urn:ngm:class:film-and-television",
+        "label": "Film and Television"
       }
     ],
     "standardizedBy": [
@@ -144,6 +334,22 @@
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:riaa-copyright-framework",
+        "label": "RIAA Copyright Framework"
+      },
+      {
+        "id": "urn:ngm:class:audioseal-watermarking",
+        "label": "AudioSeal Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:synthid-audio",
+        "label": "SynthID Audio"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa-standard",
+        "label": "C2PA Audio Standard"
       }
     ],
     "partOf": [],
@@ -179,34 +385,18 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:generative-ai",
-      "label": "Generative AI",
-      "slug": "generative-ai"
-    },
-    {
-      "id": "urn:ngm:class:deep-learning",
-      "label": "Deep Learning",
-      "slug": "deep-learning"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -214,9 +404,59 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:audio-processing",
+      "label": "Audio Processing",
+      "slug": "audio-processing"
+    },
+    {
+      "id": "urn:ngm:class:computational-creativity",
+      "label": "Computational Creativity",
+      "slug": "computational-creativity"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
+    },
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing",
+      "slug": "signal-processing"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science",
+      "slug": "cognitive-science"
+    },
+    {
+      "id": "urn:ngm:class:digital-signal-processing",
+      "label": "Digital Signal Processing",
+      "slug": "digital-signal-processing"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
     }
   ],
   "inheritedRelations": {
@@ -260,12 +500,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
       },
       {
         "id": "urn:ngm:class:model-architecture",
@@ -276,16 +512,20 @@
         "label": "Neural Network Training"
       },
       {
-        "id": "urn:ngm:class:deep-learning-framework",
-        "label": "Deep Learning Framework"
+        "id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
       },
       {
-        "id": "urn:ngm:class:hyperparameter-tuning",
-        "label": "Hyperparameter Tuning"
+        "id": "urn:ngm:class:pulse-code-modulation",
+        "label": "Pulse-Code Modulation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
       }
     ],
     "enables": [
@@ -324,12 +564,36 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:audio-parameters",
+        "label": "Audio Parameters"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "implements": [
@@ -354,16 +618,16 @@
         "label": "Video Generation"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
       },
       {
-        "id": "urn:ngm:class:self-supervised-learning",
-        "label": "Self-Supervised Learning"
+        "id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
       },
       {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
       }
     ],
     "contrastsWith": [
@@ -376,8 +640,28 @@
         "label": "Rule-Based Systems"
       },
       {
+        "id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:analogue-signal-processing",
+        "label": "Analogue Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:classical-ai-planning",
+        "label": "Classical AI Planning"
       }
     ],
     "bridgesTo": [
@@ -394,12 +678,24 @@
         "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "uses": [
@@ -450,12 +746,64 @@
         "label": "Game Development"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:adaptive-music",
+        "label": "Adaptive Music"
+      },
+      {
+        "id": "urn:ngm:class:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "id": "urn:ngm:class:hearing-aids",
+        "label": "Hearing Aids"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:mpeg-h-audio",
+        "label": "MPEG-H Audio"
+      },
+      {
+        "id": "urn:ngm:class:opus-codec",
+        "label": "Opus Codec"
+      },
+      {
+        "id": "urn:ngm:class:c2pa-provenance-standard",
+        "label": "C2PA Provenance Standard"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multimedia-processing",
+        "label": "Multimedia Processing"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       }
     ],
     "relatedTo": [
@@ -480,16 +828,16 @@
         "label": "Computational Creativity"
       },
       {
-        "id": "urn:ngm:class:copyright",
-        "label": "Copyright"
-      },
-      {
         "id": "urn:ngm:class:creative-industries",
         "label": "Creative Industries"
       },
       {
         "id": "urn:ngm:class:human-ai-collaboration",
         "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
       }
     ]
   },

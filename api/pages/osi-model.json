@@ -54,15 +54,32 @@
       {
         "id": "urn:ngm:class:architecture",
         "label": "Layered Architecture"
+      },
+      {
+        "id": "urn:ngm:class:architecture",
+        "label": "Layered Architecture"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:vendor-neutrality",
         "label": "Vendor Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:protocol-interoperability",
+        "label": "Protocol Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:network-troubleshooting",
+        "label": "Network Troubleshooting"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:separation-of-concerns",
@@ -85,7 +102,16 @@
         "label": "Microservices"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encapsulation",
+        "label": "Encapsulation"
+      },
+      {
+        "id": "urn:ngm:class:protocol-data-unit",
+        "label": "Protocol Data Unit"
+      }
+    ],
     "supports": [],
     "standardizedBy": [
       {
@@ -267,6 +293,22 @@
       {
         "id": "urn:ngm:class:hardware-accelerator",
         "label": "Hardware Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

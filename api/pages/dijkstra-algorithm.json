@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:path-planning",
       "label": "Path Planning"
+    },
+    {
+      "id": "urn:ngm:class:path-planning",
+      "label": "RB-1016-path-planning"
+    },
+    {
+      "id": "urn:ngm:class:graph-search",
+      "label": "Graph Search"
+    },
+    {
+      "id": "urn:ngm:class:graph-search-algorithm",
+      "label": "Graph Search Algorithm"
+    },
+    {
+      "id": "urn:ngm:class:a-star-algorithm",
+      "label": "A-Star Algorithm"
+    },
+    {
+      "id": "urn:ngm:class:bellman-ford-algorithm",
+      "label": "Bellman-Ford Algorithm"
     }
   ],
   "entityType": "Class",
@@ -21,15 +41,37 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:non-negative-weights",
+        "label": "Non-negative Weights"
+      },
+      {
+        "id": "urn:ngm:class:weighted-graph",
+        "label": "Weighted Graph"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rrt-algorithm",
+        "label": "RB-1017-rrt-algorithm"
+      },
+      {
+        "id": "urn:ngm:class:a-star-algorithm",
+        "label": "A-Star Algorithm"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:graph-search",
         "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       }
     ],
     "uses": [
@@ -49,14 +91,59 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:graph-algorithms",
+      "label": "Graph Algorithms",
+      "slug": "graph-algorithms"
+    },
+    {
+      "id": "urn:ngm:class:informed-search",
+      "label": "Informed Search",
+      "slug": "informed-search"
+    },
+    {
       "id": "urn:ngm:class:motion-planning",
       "label": "Motion Planning",
       "slug": "motion-planning"
     },
     {
+      "id": "urn:ngm:class:pathfinding",
+      "label": "Pathfinding",
+      "slug": "pathfinding"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm",
+      "slug": "search-algorithm"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -120,12 +207,12 @@
         "label": "Start Configuration"
       },
       {
-        "id": "urn:ngm:class:control-theory",
-        "label": "Control Theory"
+        "id": "urn:ngm:class:data-structure",
+        "label": "Graph Data Structure"
       },
       {
-        "id": "urn:ngm:class:path-planning",
-        "label": "Path Planning"
+        "id": "urn:ngm:class:heuristic-function",
+        "label": "Heuristic Function"
       }
     ],
     "enables": [
@@ -146,20 +233,20 @@
         "label": "RB-1007-trajectory-generation"
       },
       {
-        "id": "urn:ngm:class:autonomous-robot",
-        "label": "Autonomous Robot"
+        "id": "urn:ngm:class:game-tree-search",
+        "label": "Game Tree Search"
       },
       {
-        "id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human Robot Interaction"
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
       },
       {
-        "id": "urn:ngm:class:robotic-manipulation",
-        "label": "Robotic Manipulation"
+        "id": "urn:ngm:class:route-planning",
+        "label": "Route Planning"
       },
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
       }
     ],
     "dependsOn": [
@@ -176,19 +263,43 @@
         "label": "Optimal Control"
       },
       {
-        "id": "urn:ngm:class:environment-mapping",
-        "label": "Environment Mapping"
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structures"
       },
       {
-        "id": "urn:ngm:class:robot-kinematics",
-        "label": "Robot Kinematics"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:optimality",
+        "label": "Optimality"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:informed-search",
+        "label": "Informed Search"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
       {
         "id": "urn:ngm:class:model-predictive-control",
         "label": "Model Predictive Control"
@@ -200,12 +311,44 @@
       {
         "id": "urn:ngm:class:rapidly-exploring-random-tree",
         "label": "Rapidly-Exploring Random Tree"
+      },
+      {
+        "id": "urn:ngm:class:a-star-algorithm",
+        "label": "A* Algorithm"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:obstacles",
+        "label": "Obstacles"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
         "id": "urn:ngm:class:reactive-control",
         "label": "Reactive Control"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
       }
     ],
     "bridgesTo": [
@@ -216,6 +359,30 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Indexing"
+      },
+      {
+        "id": "urn:ngm:class:pathfinding-algorithm",
+        "label": "Pathfinding Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
       }
     ],
     "uses": [
@@ -240,12 +407,16 @@
         "label": "A* Search"
       },
       {
-        "id": "urn:ngm:class:optimisation-algorithm",
-        "label": "Optimization Algorithm"
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
       },
       {
-        "id": "urn:ngm:class:sampling-based-planning",
-        "label": "Sampling-Based Planning"
+        "id": "urn:ngm:class:heuristic-function",
+        "label": "Heuristic Function"
+      },
+      {
+        "id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
       }
     ],
     "supports": [
@@ -256,9 +427,71 @@
       {
         "id": "urn:ngm:class:mobile-robot",
         "label": "Mobile Robots"
+      },
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      },
+      {
+        "id": "urn:ngm:class:gps-systems",
+        "label": "GPS Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
       {
         "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
@@ -286,12 +519,20 @@
         "label": "SLAM"
       },
       {
-        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
-        "label": "Simultaneous Localisation and Mapping"
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
       },
       {
-        "id": "urn:ngm:class:task-planning",
-        "label": "Task Planning"
+        "id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:bidirectional-search",
+        "label": "Bidirectional Search"
       }
     ]
   },

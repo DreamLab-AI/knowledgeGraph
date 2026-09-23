@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Security</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Security"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Security"/><meta name="twitter:description" content="The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle."/><meta property="og:description" content="The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle."/><meta property="og:image:alt" content="The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Security"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Security"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Security"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6886"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6886" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Security</a></div></nav><h1 class="article-title">Security</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.769Z">23 Sept 2026</time><span>34 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:security</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>security</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Governance" class="internal">Governance</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Access-Control" class="internal">Access Control</a></li><li><a href="../pages/Intrusion-Detection" class="internal">Intrusion Detection</a></li><li><a href="../pages/Vulnerability-Management" class="internal">Vulnerability Management</a></li><li><a href="../pages/Incident-Response" class="internal">Incident Response</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../authentication" class="internal">Authentication</a></li><li><a href="../encryption" class="internal">Encryption</a></li><li><a href="../identity-and-access-management" class="internal">Identity and Access Management</a></li><li><a href="../pages/Cryptographic-Key-Management" class="internal">Cryptographic Key Management</a></li><li><a href="../pages/Threat-Modelling" class="internal">Threat Modelling</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Privacy" class="internal">Privacy</a></li><li><a href="../pages/Cybersecurity" class="internal">Cybersecurity</a></li><li><a href="../pages/Trust" class="internal">Trust</a></li><li><a href="../data-integrity" class="internal">Data Integrity</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../Distributed-Identity" class="internal">Distributed Identity</a></li><li><a href="../pages/Cyber-Security-and-Cryptography" class="internal">Cyber Security and Cryptography</a></li><li><a href="../pages/AI-Governance-Law-and-Privacy" class="internal">AI Governance Law and Privacy</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Threat-Actor" class="internal">Threat Actor</a></li><li><a href="../pages/Attack-Vector" class="internal">Attack Vector</a></li><li><a href="../pages/Adversarial-Machine-Learning" class="internal">Adversarial Machine Learning</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Public-Key-Infrastructure" class="internal">Public Key Infrastructure</a></li><li><a href="../pages/Secure-Boot" class="internal">Secure Boot</a></li><li><a href="../hardware-security-module" class="internal">Hardware Security Module</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0071</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../apostolaki2016hijacking-apostolaki2017hijacking-johnson2014game-stinner2022proof" class="internal">apostolaki2016hijacking; @apostolaki2017hijacking; @johnson2014game; @stinner2022proof</a></li><li><a href="../dymydiuk2020rubicon" class="internal">dymydiuk2020rubicon</a></li><li><a href="../eurodollar" class="internal">Eurodollar</a></li><li><a href="../anthropic-claude" class="internal">Anthropic Claude</a></li><li><a href="../cbdcs" class="internal">CBDCs</a></li><li><a href="../cyber-security-and-cryptography" class="internal">Cyber Security and Cryptography</a></li><li><a href="../distributed-identity" class="internal">Distributed Identity</a></li><li><a href="../gaussian-splatting" class="internal">Gaussian Splatting</a></li><li><a href="../hardware-and-edge" class="internal">Hardware and Edge</a></li><li><a href="../machine-learning" class="internal">machine learning</a></li><li><a href="../metaverse" class="internal">MetaverseDomain</a></li><li><a href="../politics-law-privacy" class="internal">Politics, Law, Privacy</a></li><li><a href="../robotics" class="internal">robotics</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:bc28b3d2b09714f9c4eec75ad00d5de17a1eb0117eec82ed51b09860dbecb330</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Surveillance" class="internal">Surveillance</a></li><li><a href="../pages/Supply-Chain-Security" class="internal">Supply Chain Security</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/NIST-Cybersecurity-Framework" class="internal">NIST Cybersecurity Framework</a></li><li><a href="../pages/ISO-27001" class="internal">ISO 27001</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../zero-trust-architecture" class="internal">Zero Trust Architecture</a></li><li><a href="../pages/Security-Framework" class="internal">Security Framework</a></li><li><a href="../pages/Regulatory-Compliance" class="internal">Regulatory Compliance</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle.</li>
+<li>
+<h3 id="vmesh"><strong>VMesh</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vmesh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- [VMesh](https://bennyguo.github.io/vmesh/) - //bennyguo.github.io/vmesh/ and formatting as requested:
+</code></pre>
+</li>
+<li>Vmesh is a programmable service mesh built with Cilium, focusing on enhanced visibility, control, and security for microservice architectures.</li>
+<li>It allows users to programme the data plane of their service mesh using WebAssembly (Wasm) filters, offering flexibility in customising network traffic processing.</li>
+<li>Vmesh aims to simplify the process of creating and managing service meshes, particularly by reducing the complexity associated with traditional sidecar proxies.</li>
+<li>The system provides tools to observe and analyse network traffic flowing through the mesh, providing insights into the performance and behaviour of services.</li>
+<li>Users can apply granular policies to control access between services, ensuring a strong security posture and preventing unauthorised communication.</li>
+<li>Vmesh integrates with existing Kubernetes environments and leverages Cilium’s eBPF-based networking for performance and efficiency.</li>
+<li>The platform offers a range of features, including traffic management, observability, security policies, and extensibility through Wasm filters.</li>
+<li>Vmesh supports customisable extensions for various use cases, such as authentication, authorisation, and request manipulation.</li>
+<li>The project emphasises developer-friendliness, providing simple APIs and tools to facilitate the development and deployment of service mesh applications.</li>
+<li>Vmesh aims to lower the operational overhead of running a service mesh, by streamlining the configuration and management processes.</li>
+<li>
+<h3 id="cyberattacks-and-fraud">Cyberattacks and Fraud<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cyberattacks-and-fraud" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- AI can be used to create more sophisticated phishing attacks, malware, and other forms of cybercrime. The &quot;2024 State of AI Security Report&quot; found significant security risks in production environments across major cloud platforms.
+- ### Legal Adjustments
+	- To accommodate the extensive use of AI surveillance technologies, France has enacted several legal modifications. These changes are aimed at broadening the scope of data collection and analysis, allowing for more comprehensive security measures during the Olympics. Key legal adjustments include:
+		- **Expansion of Surveillance Powers:** Legislation has been passed to allow for increased electronic surveillance, including wiretapping, data mining, and the use of AI for real-time data analysis.
+		- **Data Retention Policies:** New laws permit the extended retention of collected data, which is essential for the training and improvement of AI systems.
+		- **Transparency and Accountability:** Despite the legal changes, there are significant concerns regarding the transparency of data usage and the accountability of both the government and private entities involved. The extent to which these measures comply with the European Union's General Data Protection Regulation (GDPR) is a major point of contention.
+	- ### Transparency Issues
+		- Transparency is a critical issue in the deployment of AI surveillance technologies:
+		- **Lack of Public Awareness:** There is a general lack of transparency regarding how data is collected, analysed, and used by both the government and private companies. This opacity makes it difficult for the public to understand the full implications of the surveillance systems.
+		- **GDPR Concerns:** Civil liberties organisations in France have expressed concerns that the extensive data collection practices may violate the GDPR. The regulation is designed to protect individuals' privacy and personal data, and the new surveillance measures may conflict with these protections.
+	- **Event Detection:** Identifies potential security threats and unusual activities, allowing for rapid response by security personnel.
+</code></pre>
+</li>
+<li>
+<h2 id="build-vs-buy-dynamics">Build vs Buy Dynamics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#build-vs-buy-dynamics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- Shift from reliance on third-party software (80% in 2023) to in-house solutions (47% in 2024).
+- In-house solutions are driven by security and data interaction requirements.
+- Anticipated long-term oscillation between in-house and third-party solutions as vertical and functional applications evolve.
+- #### **Key Implementation Notes**
+	- **Error Handling**:
+		- Ensure fallback mechanisms for failed payments or data access.
+		- Use retry strategies for communication with external components.
+	- **Privacy**:
+		- Adhere strictly to user permissions with Solid Pods.
+	- **Security**:
+		- Use robust identity verification and cryptographic signatures for transactions.
+	- **Scalability**:
+		- Design APIs and logging systems to handle high throughput.
+</code></pre>
+</li>
+<li>
+<h3 id="in-camera-vfx--telepresence">In-Camera VFX &amp; Telepresence:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#in-camera-vfx--telepresence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- The proposed framework can be applied to film production and virtual production workflows. By leveraging the world's most powerful decentralized computing network (Bitcoin) and cryptographically assured endpoints, the system can enable scale and security without high cost. New tooling in the space allows for microtransactions and micropayments, radically improving creative microtask workflows. The unified digital backend is optimized for flows of money, trust, and digital objects, offering a new area for virtual production.
+				- ### Safeguarding
+					- Implementing security measures and user protection mechanisms.
+</code></pre>
+</li>
+<li>
+<h3 id="ios18-security-and-privacy">IOS18 Security and Privacy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ios18-security-and-privacy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- [Thread by Matthew Green](https://threadreaderapp.com/thread/1800291897245835616.html?)
+	- Apple, unlike most other mobile providers, has traditionally done a lot of processing on-device. For example, all of the machine learning and OCR text recognition on Photos is done right on your device. 
+	  The problem is that while modern phone &quot;neural&quot; hardware is improving, it's not improving fast enough to take advantage of all the crazy features Silicon Valley wants from modern AI, including generative AI and its ilk. This fundamentally requires servers.
+	- But if you send your tasks out to servers in &quot;the cloud&quot; (god using quotes makes me feel 80), this means sending incredibly private data off your phone and out over the Internet. That exposes you to spying, hacking, and the data hungry business model of Silicon Valley.
+	- The solution Apple has come up with is to try to build secure and trustworthy hardware in their own data centers. Your phone can then &quot;outsource&quot; heavy tasks to this hardware. Seems easy, right? Well: here's the blog post.
+	- [**Blog**](https://security.apple.com/blog/private-cloud-compute/) Private Cloud Compute: A new frontier for AI privacy in the cloud - Apple Security Research**Secure and private AI processing in the cloud poses a formidable new challenge. To support advanced features of Apple Intelligence with larger foundation models, we created Private Cloud Compute (PCC)
+	- TL;DR: it is not easy. Building trustworthy computers is literally the hardest problem in computer security. Honestly it's almost the only problem in computer security. But while it remains a challenging problem, we've made a lot of advances. Apple is using almost all of them.
+	- The first thing Apple is doing is using all the advances they've made in building secure phones and PCs in their new servers. This involves using Secure Boot and a Secure Enclave Processor (SEP) to hold keys. They've presumably turned on all the processor security features.
+	- Then they're throwing all kinds of processes at the server hardware to make sure the hardware isn't tampered with. I can't tell if this prevents hardware attacks, but it seems like a start.
+	- They also use a bunch of protections to ensure that software is legitimate. One is that the software is &quot;stateless&quot; and allegedly doesn't keep information between user requests. To help ensure this, each server/node reboot re-keys and wipes all storage.
+	- A second protection is that the operating system can &quot;attest&quot; to the software image it's running. Specifically, it signs a hash of the software and shares this with every phone/client. If you trust this infrastructure, you'll know it's running a specific piece of software.
+	- Of course, knowing that the phone is running a specific piece of software doesn't help you if you don't trust the software. So Apple plans to put each binary image into a &quot;transparency log&quot; and publish the software.
+	- Security researchers will get *some code* and a VM they can use to run the software. They'll then have to reverse-engineer the binaries to see if they're doing unexpected things. It's a little suboptimal.
+	- When your phone wants to outsource a task, it will contact Apple and obtain a list of servers/nodes and their keys. It will then encrypt its request to all servers, and one will process it. They're even using fancy anonymous credentials and a third part relay to hide your IP.
+	- Ok there are probably half a dozen more technical details in the blog post. It's a very thoughtful design. Indeed, if you gave an excellent team a huge pile of money and told them to build the best &quot;private&quot; cloud in the world, it would probably look like this.
+	- But now the tough questions. Is it a good idea? And is it as secure as what Apple does today? And most importantly:
+	- I admit that as I learned about this feature, it made me kind of sad. The thought that was going through my head was: this is going to be too much of a temptation. Once you can &quot;safely&quot; outsource tasks to the cloud, why bother doing them locally. Outsource everything!
+	- As best I can tell, Apple does not have explicit plans to announce when your data is going off-device for to Private Compute. You won't opt into this, you won't necessarily even be told it's happening. It will just happen. Magically. I don't love that part.
+	- Finally, there are so many invisible sharp edges that could exist in a system like this. Hardware flaws. Issues with the cryptographic attestation framework. Clever software exploits. Many of these will be hard for security researchers to detect. That worries me too. 18/
+	- Wrapping up on a more positive note: it's worth keeping in mind that sometimes the perfect is the enemy of the really good.
+	- In practice the alternative to on-device is: ship private data to OpenAI or someplace sketchier, where who knows what might happen to it.
+	- And of course, keep in mind that super-spies aren't your biggest adversary. For many people your biggest adversary is the company who sold you your device/software. This PCC system represents a real commitment by Apple not to &quot;peek&quot; at your data. That's a big deal.
+	- In any case, this is the world we're moving to. Your phone might seem to be in your pocket, but a part of it lives 2,000 miles away in a data center. As security folks we probably need to get used to that fact, and do the best we can to make sure all parts are secure.
+</code></pre>
+</li>
+<li>They are sitting on a huge cash war chest and can effectively buy their way through and out of the coming battles around ip like the NYT court case.</li>
+<li>Biding their time waiting for local inferencing that leverages strong legacy media buy in might be a great play. Only the cost to their mind share of talent might be an issue.</li>
+<li>Apple are innovating in core ML research to support large language models.</li>
+<li>They are developing new techniques for data management between flash memory and DRAM, crucial for running larger models on devices with limited memory.</li>
+<li>The research also reveals significant speed improvements, with 4-5 times faster processing on CPUs and 20-25 times on GPUs for models up to twice the size of the available DRAM. These advancements could lead to a wider adoption of these technologies,</li>
+<li><a href="https://huggingface.co/papers/2312.11514" class="external">Paper page
+- LLM in a flash: Efficient Large Language Model Inference with Limited Memory (huggingface.co)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> <a href="../Hardware-and-Edge" class="internal alias" data-slug="Hardware-and-Edge">Hardware and Edge</a></li>
+<li><a href="https://arstechnica.com/apple/2023/12/apple-wants-ai-to-run-directly-on-its-hardware-instead-of-in-the-cloud/" class="external">Apple wants AI to run directly on its hardware instead of in the cloud | Ars Technica<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> <a href="../Hardware-and-Edge" class="internal alias" data-slug="Hardware-and-Edge">Hardware and Edge</a></li>
+<li>HUGS: Human <a href="../pages/Gaussian-Splatting" class="internal alias" data-slug="pages/Gaussian-Splatting">Gaussian Splatting</a></li>
+<li><a href="https://machinelearning.apple.com/research/hugs" class="external">Apple Machine Learning Research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Apple presents [Paper page</li>
+<li>Speculative Streaming: Fast LLM Inference without Auxiliary Models (huggingface.co)](<a href="https://huggingface.co/papers/2402.11131" class="external">https://huggingface.co/papers/2402.11131<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>):</li>
+<li>Speculative decoding is a prominent technique to speed up the inference of a large target language model based on predictions of an auxiliary draft model. While effective, in application-specific settings, it often involves fine-tuning both draft and target models to achieve high acceptance rates. As the number of downstream tasks grows, these draft models add significant complexity to inference systems. We propose Speculative Streaming, a single-model speculative decoding method that fuses drafting into the target model by changing the fine-tuning objective from next token prediction to future n-gram prediction. Speculative Streaming speeds up decoding by 1.8</li>
+<li>3.1X in a diverse set of tasks, such as Summarization, Structured Queries, and Meaning Representation, without sacrificing generation quality. Additionally, Speculative Streaming is parameter-efficient. It achieves on-par/higher speed-ups than Medusa-style architectures while using ~10000X fewer extra parameters, making it well-suited for resource-constrained devices.</li>
+<li>
+<h3 id="bitvm">BitVM<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bitvm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- [BitVM](https://bitvm.org/) is a new paradigm that enables arbitrary program execution on Bitcoin, combining Turing-complete expressiveness with the security of Bitcoin consensus.
+</code></pre>
+</li>
+<li>
+<h2 id="advanced-features-optional">Advanced Features (Optional)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#advanced-features-optional" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- Expand upon the basic wallet functionality by exploring advanced features such as:
+	- Supporting transactions of multiple ecash denominations.
+	- Implementing a withdrawal feature to convert ecash back into Bitcoin.
+	- Adding multisig capabilities for enhanced security.
+</code></pre>
+</li>
+<li>
+<h2 id="ai-ethics-and-security">AI Ethics and Security<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-ethics-and-security" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- ### Security and Privacy Concerns
+	- **AI Model Hacking**: Discussions on potential security breaches and privacy issues with AI models ([Reddit Discussion](https://old.reddit.com/r/ChatGPT/comments/11wkw5z/has_chatgpt_or_me_been_hacked_ive_never_had_these)).
+</code></pre>
+</li>
+<li>
+<h1 id="what-we-can-expect">What we can expect<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-we-can-expect" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>The potential of AI to dominate warfare in the next decade, exacerbating issues of disinformation and misinformation.</li>
+<li>The accessibility of AI tools for creating realistic content, enhancing the capabilities of bad actors in misinformation campaigns.</li>
+<li>The critical need for investment in data infrastructure and preparation to counter the threats posed by AI in warfare.</li>
+<li>The concept of deterrence in military thinking and how it might evolve with the advent of AI technologies.</li>
+<li>The importance of data as a new form of ammunition in AI-driven warfare.</li>
+<li>The mission of the speaker and like-minded technologists to leverage AI for improving national security and maintaining global stability.</li>
+<li>The urgent call for more technologists to understand the critical nature of the current era and commit to supporting national security efforts.</li>
+<li>Swarms of lethal drones equipped with facial recognition technology.</li>
+<li>Unmanned armed robots that are nearly impossible to defeat.
+- {{video <a href="https://www.youtube.com/watch?v=KX0ji1sAXl8%7D%7D" class="external">https://www.youtube.com/watch?v=KX0ji1sAXl8}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Autonomous fighter jets capable of supersonic speeds and enduring greater gravitational forces than human pilots.</li>
+<li>Cyberattacks aimed at disabling critical port infrastructure.</li>
+<li>Disinformation campaigns and deepfakes that can manipulate presidential elections.</li>
+<li>Foreign adversaries capable of disabling satellites, impairing global surveillance and communication.</li>
+<li>
+<h3 id="postulated-bad-actors">Postulated Bad Actors<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#postulated-bad-actors" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- Despite the technical nature of the outage, there were concerns about potential exploitation:
+- **Potential Exploitation**: CrowdStrike CEO George Kurtz highlighted that &quot;bad actors will try to exploit events like this,&quot; underscoring the persistent challenges in cybersecurity, especially with Microsoft systems ([Al Jazeera](https://www.aljazeera.com/news/2024/7/20/slow-recovery-after-crowdstrike-update-sparks-global-it-outage)).
+</code></pre>
+</li>
+<li>
+<h2 id="broader-implications-for-cyber-security">Broader Implications for Cyber Security<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#broader-implications-for-cyber-security" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h5 id="glue">Glue<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#glue" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>- Better enterprise security integration
+- Larger environments, potential for breakouts in the same space. Workshop capable
+- 3D object support, screen sharing, some collaborative tools
+- Apply for a license
+- Fairly basic graphics
+- Basic avatars
+- Quest and PC
+- Writing and gestures supported
+- Mac support
+</code></pre>
+</li>
+<li>
+<h4 id="the-truth-is-out-there">THe TrUTh iS OuT ThERe<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-truth-is-out-there" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<pre><code>- This was [[Constitutional AI Language Model Family]] responding to a research formatted query about 'conspiracy theories' found online.
+- ![image.png](assets/image_1719001668969_0.png){:width 600}
+- &quot;Open source response&quot;
+	- CIA/MI5 Hacking Smart Devices
+		- **Verdict:** Partly True. The CIA and MI5 have been known to engage in surveillance activities involving internet-connected devices through programs like Weeping Angel. This program was designed to hack into Samsung smart TVs, but it's important to note that the extent of this capability and its current status are classified.
+	- CIA Infecting Car Control Systems
+		- **Verdict:** Partly True. Vault 7 revealed a range of hacking tools developed by the CIA, including those capable of exploiting vulnerabilities in modern car systems. However, there's no concrete evidence to suggest that the CIA has used these tools to remotely take control of cars.
+	- Tech Companies Providing NSA with Zero-Day Vulnerabilities
+		- **Verdict:** True. Documents leaked by Edward Snowden revealed that tech companies like Microsoft did provide advance warnings about zero-day vulnerabilities to the NSA before disclosing them to the public. This was part of a broader program aimed at improving national cybersecurity and giving government agencies an early warning system.
+	- NSA Breaking Tor Networks
+		- **Verdict:** Partly True. While the NSA has been involved in efforts to compromise Tor, there's no conclusive evidence that they have successfully broken the network or can identify users with certainty. However, it is known that various intelligence agencies have attempted to exploit vulnerabilities in Tor.
+	- NSA Intercepts Devices and Installs Malware Chips
+		- **Verdict:** Partly True. The ANT/TAO Catalog, leaked by Edward Snowden in 2013, reveals the NSA's capabilities for intercepting and altering electronic devices, including installing malware or backdoors before they are delivered to customers. However, this catalog primarily focuses on exploiting vulnerabilities in targeted surveillance operations rather than mass production of compromised devices.
+	- American-Made Electronics Allow Access via Radio Frequencies
+		- **Verdict:** Partly True. The Cottonmouth-I and SURLYSPAWN projects, as mentioned in the Snowden leaks, involve the use of radio frequency (RF) signals to remotely access devices. However, these were designed for specific targeted surveillance operations rather than mass surveillance. It's true that many modern electronic devices emit RF signals or can be accessed through their wireless capabilities, but this does not inherently mean that all American-made electronics are compromised for remote access by the NSA or FBI without further context.
+	- Backdoored Random Number Generators
+		- **Verdict:** Partly True. The Dual Elliptic Curve Deterministic Random Bit Generator (Dual EC DRBG) algorithm, developed by NIST and NSA, has been criticized for its potential to contain a backdoor that could allow the NSA to break RSA encryption. However, it's important to note that while the algorithm's vulnerabilities have been identified and it has been subsequently withdrawn from use, there's no conclusive evidence that the NSA actively exploited this backdoor to break RSA encryption on a widespread scale.
+	- NSA Backdoors in CPUs
+		- **Verdict:** Partly True. The claim refers to Intel ME (Management Engine) and AMD PSP (Platform Security Processor), which are both hardware-based security features integrated into modern CPUs. While these technologies can operate independently of the main system, there's no conclusive evidence that they were implemented at the NSA's request or are being used by the NSA specifically for mass surveillance. Their primary purpose is enterprise-level management and security rather than clandestine operations.
+	- FBI Distributes Undetectable Malware
+		- **Verdict:** Partly True. The claim likely refers to the FBI's use of malware for law enforcement purposes, such as tracking suspects or gaining access to encrypted data. While the FBI has been known to use such tools, it's not accurate to say that anti-virus software is legally not allowed to detect them. However, some of these tools may be designed to evade detection by common anti-virus programs.
+</code></pre>
+</li>
+<li>
+<h1 id="government-and-agency-involvement-in-ai">Government and Agency Involvement in AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#government-and-agency-involvement-in-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>Former NSA Director Michael Hayden said:</li>
+<li>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>  &quot;we kill people based on metadata&quot;</span></span></code></pre></figure>
+</li>
+<li>during a debate in 2014 at John Hopkins University. Hayden admitted that the U.S. government uses metadata, which refers to data about communications like phone records (numbers called, time, duration) rather than the actual content, as a basis for killing people in drone strikes against terrorist suspects abroad. Reports based on Snowden leaks alleged the NSA used metadata analysis to track potential targets for lethal drone operations.</li>
+<li>OpenAI <a href="https://openai.com/index/openai-announces-leadership-transition/" class="external">has appointed<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> Retired U.S. Army General Paul M. Nakasone to its Board of Directors and the Board’s Safety and Security Committee. General Nakasone is a leading expert in cybersecurity, having previously served as the Director of the National Security Agency (NSA) and Commander of U.S. Cyber Command (USCYBERCOM).
+- <a href="https://twitter.com/Snowden/status/1801610725229498403" class="external">(1) Edward Snowden on X: “They’ve gone full mask-off: 𝐝𝐨 𝐧𝐨𝐭 𝐞𝐯𝐞𝐫 trust @OpenAI or its products (ChatGPT etc). There is only one reason for appointing an @NSAGov Director to your board. This is a willful, calculated betrayal of the rights of every person on Earth. You have been warned.” / X (twitter.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- {{twitter <a href="https://twitter.com/Snowden/status/1801610725229498403%7D%7D" class="external">https://twitter.com/Snowden/status/1801610725229498403}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<iframe src="https://www.eff.org/deeplinks/2024/04/us-senate-and-biden-administration-shamefully-renew-and-expand-fisa-section-702-0" style="width:100%;height:600px;"></iframe>
+</li>
+<li><a href="https://www.patrick-breyer.de/en/posts/chat-control/" class="external">Chat Control: The EU’s CSEM scanner proposal – Patrick Breyer (patrick-breyer.de)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<h3 id="cultural-and-financial-security">Cultural and Financial Security<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cultural-and-financial-security" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Symbolic Value:** Gold has been revered throughout history, symbolizing wealth, purity, and status across cultures.
+- **Financial Instrument:** Often viewed as a hedge against inflation and currency devaluation, gold is a staple in diversified investment portfolios.
+</code></pre>
+</li>
+<li>
+<h2 id="cyber-security-and-cryptography-and-fraud-prevention"><a href="../pages/Cyber-Security-and-Cryptography" class="internal alias" data-slug="pages/Cyber-Security-and-Cryptography">Cyber Security and Cryptography</a> and Fraud Prevention<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cyber-security-and-cryptography-and-fraud-prevention" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[AI Governance Law and Privacy]]  &lt;&lt; this feels like it will be warfare
+- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
+- ### Tether
+	- [Tether](https://tether.to/en/whitepaper/) is the largest of the stablecoins, with approximately $186B in circulation as of mid-2026 (up from ~$70B in 2022, and ~$118B at start of 2025), and the third largest 'crypto' by market cap. This has been a meteoric rise, attracting the ire and scrutiny of [regulators](https://www.cftc.gov/PressRoom/PressReleases/8450-21) and [investigators](https://www.bloomberg.com/news/features/2021-10-07/crypto-mystery-where-s-the-69-billion-backing-the-stablecoin-tether). There was considerable doubt that Tether had sufficient assets backing their synthetic dollars, but the market seems not to mind. They have transitioned to being backed by US treasury bills, a perfect asset for this use case. It's resilience against 'bank runs' was tested in May 2022 when $9B was redeemed directly for dollars in a few days following the UST crash. It's an important technology for this metaverse conversation because of intersections with Bitcoin through the Lightning network. Tether might actually provide everything needed. It's only as safe as the trust invested in the central issuer though, and the leadership and history of the company [are questionable](https://www.wsj.com/articles/tether-ownership-and-company-weaknesses-revealed-in-documents-11675363340). It's notable and somewhat ironic that it's perhaps better and more transparently backed than most banks, and probably all novel fiat fintech products. We can employ the asset through the Taro technology described earlier but we would rather use something with higher regulatory assurances.
+		- [Paolo Ardoino 🍐 on X: &quot;Today Tether takes the majority stake in @BlackrockNeuro_ and unveils the ultimate pillar of its long term vision and strategy: Tether Evo🧠🦾 First of all, this investment (same as energy, mining, ...) is done outside of stablecoin reserves, with our own company profits (last…&quot; / X (twitter.com)](https://twitter.com/paoloardoino/status/1784938950525661578)
+		- {{twitter https://twitter.com/paoloardoino/status/1784938950525661578}}
+	- Paolo Ardoino, Tether's chief technology officer, said in a podcast episode with The Block that USDT is increasingly used for value transfers, making up about **40**% of all token usage, compared to 60% of crypto trading.
+		- 40% of USDT is now real world use cases, with Tron emerging as the blockchain of the moment.
+		- Tether as a company makes billions of dollars of profit per year and has global adoption and network effect. The company has around 20 employees. They will likely remain pre-eminent in the synthetic dollar market.
+		- The USA is positioning to exclude USDT within it's borders, by capping such assets at $10B for [National security reasons.](https://www.brookings.edu/articles/stablecoins-and-national-security-learning-the-lessons-of-eurodollars/)
+		- Tether is potentially the natural inheritor of the global [[Eurodollar]] system.
+</code></pre>
+</li>
+<li>
+<h3 id="vox-e"><strong>Vox-E</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vox-e" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- [Vox-E Results](https://etaisella.github.io/htmlTutorial2.github.io-index.html/results_real.html) - - The website displays the results of a real-world experiment comparing different hyperparameter optimisation algorithms for [[machine learning]] models.
+</code></pre>
+</li>
+<li>3DFuse aims to improve the accuracy and robustness of 3D object detection systems by leveraging the complementary strengths of different sensor types.</li>
+<li>The system is intended for applications such as autonomous driving, <a href="../robotics" class="internal" data-slug="robotics">robotics</a>, and augmented reality where precise 3D understanding is critical.</li>
+<li>
+<h1 id="partnership-with-openai-and-siri">Partnership with OpenAI, and Siri<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#partnership-with-openai-and-siri" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>Apple is focusing on “AI for the rest of us” - making AI capabilities accessible and useful for everyday tasks rather than flashy frontier use cases. The emphasis is on small but significant time-saving wins.</li>
+<li>Siri is the centerpiece, with expanded natural language understanding, ability to maintain context, and both voice and text input. Siri can now take actions across Apple and third-party apps.</li>
+<li>
+<h3 id="enhancing-cybersecurity-measures">Enhancing Cybersecurity Measures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#enhancing-cybersecurity-measures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- Given the evolving threat landscape, enhancing cybersecurity measures is imperative:
+</code></pre>
+</li>
+<li><a href="https://github.com/AbdBarho/stable-diffusion-webui-docker" class="external">Open Generative AI tools<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<ul>
+<li><a href=".." class="internal" data-slug="index"></a>The GitHub repository “AbdBarho/stable-diffusion-webui-docker” offers an easy Docker setup for Stable Diffusion, featuring a user-friendly UI.</li>
+</ul>
+</li>
+<li>The project is based on topics like Docker, PyTorch, Gradio, Docker-compose, and Stable Diffusion.</li>
+<li><a href="https://csrc.nist.gov/pubs/ai/100/2/e2023/final" class="external">Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href=".." class="internal" data-slug="index"></a>The web page discusses the NIST Trustworthy and Responsible AI report on adversarial machine learning (AML). Here is a summary based on the provided content:</li>
+<li>The report develops a taxonomy and terminology in the field of AML, surveying literature to build a conceptual hierarchy.
+- Includes key ML methods, lifecycle stages of attacks, attacker goals, and capabilities in the learning process.</li>
+<li>Topics: Security and Privacy (advanced persistent threats, botnets, information sharing, intrusion detection &amp; prevention, malware), Technologies (artificial intelligence).
+If you need further assistance or a specific focus on any aspect, feel free to ask.</li>
+<li><a href="https://www.wired.com/story/here-come-the-ai-worms/" class="external">Here Come the AI Worms<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Researchers have demonstrated the first generative AI worm, Morris II, which targets email assistants using ChatGPT and Gemini, showing how these worms can exploit vulnerabilities.
+The web page discusses the rise of generative AI systems and the emerging threat of AI worms that exploit vulnerabilities in these systems for malicious purposes, highlighting the importance of robust security measures and human oversight in AI development.</li>
+<li><a href="https://checkcybersecurity.service.ncsc.gov.uk/ip-check" class="external">Check your IP address &amp; website security<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href=".." class="internal" data-slug="index"></a>Unable to access or summarize the content at <a href="https://checkcybersecurity.service.ncsc.gov.uk/ip-check" class="external">https://checkcybersecurity.service.ncsc.gov.uk/ip-check<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<h5 id="glue-1">Glue<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#glue-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>- Better enterprise security integration
+- Larger environments, potential for breakouts in the same space. Workshop capable
+- 3D object support, screen sharing, some collaborative tools
+- Apply for a license
+- Fairly basic graphics
+- Basic avatars
+- Writing and gestures supported
+- Mac support
+- Really simple to join
+- Quest and PC
+- Larger scenes within scenes
+- Runs in the browser
+</code></pre>
+</li>
+<li>
+<h1 id="risks-and-mitigations">Risks and mitigations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#risks-and-mitigations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>Looking across the whole sector, this paragraph from the Bank of International Settlement (BIS) <a href="https://www.bis.org/publ/arpdf/ar2022e3.htm" class="external">sums everything up<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>:
+- “..it is now becoming clear that crypto and DeFi have deeper structural limitations that prevent them from achieving the levels of efficiency, stability or integrity required for an adequate monetary system. In particular, the crypto universe lacks a nominal anchor, which it tries to import, imperfectly, through stable coins. It is also prone to fragmentation, and its applications cannot scale without compromising security, as shown by their congestion and exorbitant fees. Activity in this parallel system is, instead, sustained by the influx of speculative coin holders. Finally, there are serious concerns about the role of unregulated intermediaries in the system. As they are deep-seated, these structural shortcomings are unlikely to be amenable to technical fixes alone. This is because they reflect the inherent limitations of a decentralised system built on permissionless blockchains.”</li>
+<li>For “crypto” assets more generally it is useful to look at the recent <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2022/03/09/executive-order-on-ensuring-responsible-development-of-digital-assets/" class="external">“whole government executive order”<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>signed by President Biden early in 2022. It was mainly framed in terms of “responsible innovation, and leadership” in the new space. The resulting, “Comprehensive Framework for Responsible Development of Digital Assets” was a product of multi agency collaboration and can be seen as 9 reports and a summary document, and was long anticipated. The summary itself is neither particularly comprehensive nor a framework, and mainly serves to identifies high level risks, aspirations, and challenges, and strongly hints toward eventual development of a “digital dollar” (CBDC, expanded later). This work has been repealed completely as the Trump administration eschews <a href="../pages/CBDCs" class="internal" data-slug="pages/CBDCs">CBDCs</a> and openly promotes crypto.</li>
+<li><a href="https://twitter.com/kofinas/status/1881077334750421066" class="external">https://twitter.com/kofinas/status/1881077334750421066<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- {{twitter <a href="https://twitter.com/kofinas/status/1881077334750421066%7D%7D" class="external">https://twitter.com/kofinas/status/1881077334750421066}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>The risks section of the original executive order shows how legislatorsare framing this, so it’s useful to break down here.
+- Consumer and business protections. This is likely to pertain to custodians and is much needed. Misselling is rife. Security presents a challenge.
+- Highlighting the need for international coordination suggests they are mindful of <a href="https://twitter.com/iamLeonHill/status/1847973039234846747" class="external">jurisdictional arbitrage<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+- {{twitter <a href="https://twitter.com/iamLeonHill/status/1847973039234846747%7D%7D" class="external">https://twitter.com/iamLeonHill/status/1847973039234846747}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- Future protocol changes.
+- Unanticipated effects on the domestic and international energy system.
+- Vulnerability to adversary attacks are <a href="https://braiins.com/blog/bitcoin-mining-attacks-explained" class="external">widely studied<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a href="../apostolaki2016hijacking;-@apostolaki2017hijacking;-@johnson2014game;-@stinner2022proof" class="internal alias" data-slug="apostolaki2016hijacking;-@apostolaki2017hijacking;-@johnson2014game;-@stinner2022proof">apostolaki2016hijacking; @apostolaki2017hijacking; @johnson2014game; @stinner2022proof</a>, and still pretty much completely speculative because of the complex nature of the attack surface.
+- Mining tends toward economy of scale concentration. Many are already on their <a href="https://bitcoinfibre.org/" class="external">own specialised network<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> to connect to one another.
+- Future hard forks. There will doubtless be pressure to fork the code to add inflation, or ESG mitigations, or to fix the UNIX clock issue in 2106. Each fork is a risk.
+- Other unknown, unanticipated risks given Bitcoin’s limited 13-year history.
+- There is a “non-zero” chance that Bitcoin is a complex government intelligence agency construct, <a href="https://en.wikipedia.org/wiki/Crypto_AG" class="external">much like Crypto AG was<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> toward the end of the last century.<a href="../dymydiuk2020rubicon" class="internal" data-slug="dymydiuk2020rubicon">dymydiuk2020rubicon</a></li>
+<li>
+<h4 id="spacechains">Spacechains<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#spacechains" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<pre><code>- It feels like spacechains are almost ready, so this is worth keeping aneye on. It's the 'cleanest' way to issue assets using Bitcoin becausethere's no additional speculative chain. As briefly explained in theearlier section Bitcoin is destroyed to create a new chain which theninherits the security of Bitcoin through onward mining. This new assetor chain is able to accrue value and trade independently based purely onit's value to the buyer, not as a function of a wider speculative bubbleattached to a token with multiple use cases.
+- It is also possible to use the whole suit of ordinal based ideas on anyother chain such as Litecoin, the long standing Bitcoin fork which is used somewhat as a technical testbed for Bitcoin. This might develop into a far more appealing option, though again, it's too early to be sure.
+- [Runes on Litecoin! : r/litecoin (reddit.com)](https://www.reddit.com/r/litecoin/comments/1ckwnu6/runes_on_litecoin/)
+- ### Impact on Institutions
+</code></pre>
+<ul>
+<li><strong>Democratization of AI:</strong> Explores the potential for the democratization of powerful AI capabilities to be as destabilizing as historical technologies like the printing press, reshaping institutions and societal structures.</li>
+<li><strong>Techno-Feudalist Timeline:</strong> Discusses the potential for a *techno-feudalist” timeline, where the provision of various public goods, including security against AI misuse, shifts into private hands.</li>
+</ul>
+</li>
+<li>
+<h3 id="security-evaluation">Security evaluation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#security-evaluation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>  **Phase 4: User Interface and Experience:**
+- **Identity and Value Management:**
+- **Integrate Nostr protocol for decentralized identity and messaging.**
+- **Develop or utilize existing libraries for Nostr event creation, signing, and relaying.**
+- **Develop avatar systems for both human and AI agents within Omniverse.**
+</code></pre>
+</li>
+<li>
+<h4 id="4129-ai-integrity-and-accessibility">4.12.9 AI, Integrity, and Accessibility<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4129-ai-integrity-and-accessibility" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>and its underlying power</li>
+<li><a href="https://www.lesswrong.com/tag/ai" class="external">Lesswrong AI section<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/?sh=3af7314e782b" class="external">Goldman Sachs Predicts 300 Million Jobs Will Be Lost Or Degraded By Artificial Intelligence: Goldman Sachs maintains that if generative AI lives up to its hype, the workforce in the United States and Europe will be upended. The bank estimates 300 million jobs could be lost or diminished due to this fast-growing technology.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+Gartner’s hype cycle 2022 features Web3, distributed identity, NFTs, and Metaverse and can be seen in Figure 1.6.</li>
+<li><a href="https://ir.silvergate.com/news/news-details/2022/Silvergate-Purchases-Blockchain-Payment-Network-Assets-from-Diem/default.aspx" class="external">Silvergate Purchases Blockchain libre<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://webdevlaw.uk/2022/11/21/a-quick-hypothetical-situation-or-your-crash-introduction-to-the-real-world/" class="external">Online safety bill heather articles<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<h4 id="4127-uncontrolled-agi-creation">4.12.7 Uncontrolled AGI Creation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4127-uncontrolled-agi-creation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+</ul>
+On the other hand, some suggest that capitalist competition could result in the creation of AGI that cannot be controlled. Dr. Jeffrey Hinton, a vocal advocate of this view, argues that AI’s potential to disrupt business models could drive companies to recklessly pursue advancements in AI to stay competitive. This could lead to increased state power as people become more reliant on the state in an AI-dominated economy, potentially resulting in increased authoritarianism.
+<ul>
+<li>
+<h4 id="4129-ai-integrity-and-accessibility-1">4.12.9 AI, Integrity, and Accessibility<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4129-ai-integrity-and-accessibility-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>and its underlying power</li>
+<li>must be accessible to everyone to mitigate the risks of misuse and ensure fair benefits distribution.</li>
+<li>
+<h4 id="4128-ai-promoting-freedom">4.12.8 AI Promoting Freedom<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4128-ai-promoting-freedom" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+</ul>
+However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+<ul>
+<li>
+<h4 id="4126-ai-and-central-planning">4.12.6 AI and Central Planning<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4126-ai-and-central-planning" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+</ul>
+Another concern is the fear that AI will make centrally planned economies seem viable, where past attempts failed due to the lack of data. This idea was discussed in a conversation between Peter Thiel and Reed Hoffman hosted by Neil Ferguson at Stanford in 2018. Thiel posited that AI appears to favor centralization, an aspect that supports the principles of central planning.
+<ul>
+<li>
+<h3 id="preventing-errors-in-security-content-updates">Preventing Errors in Security Content Updates<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#preventing-errors-in-security-content-updates" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul>
+CrowdStrike, a cybersecurity company, experienced an issue with a Rapid Response Content update containing an undetected error. To prevent such errors, CrowdStrike has implemented several measures:
+<ul>
+<li><strong>Improved testing:</strong> Local developer testing, content update and rollback testing, stress testing, fuzzing, and fault injection.</li>
+<li><strong>Enhanced validation checks:</strong> Adding additional validation checks to the Content Validator to guard against problematic content.</li>
+<li><strong>Error handling:</strong> Enhancing existing error handling in the Content Interpreter.</li>
+<li><strong>Staggered deployment:</strong> Implementing a staggered deployment strategy for Rapid Response Content updates.</li>
+<li><strong>Monitoring and feedback:</strong> Improving monitoring for sensor and system performance, collecting feedback during deployment to guide a phased rollout.</li>
+<li><strong>Customer control:</strong> Providing customers with greater control over the delivery of Rapid Response Content updates.</li>
+<li><strong>Third-party validation:</strong> Conducting multiple independent third-party security code reviews and end-to-end quality process reviews.</li>
+<li>
+<h2 id="malicious-use-and-security-threats">Malicious Use and Security Threats<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#malicious-use-and-security-threats" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>A primary and immediate concern is the use of AI by malicious actors. Generative AI is seen as a tool that can amplify existing risks, increasing the speed and scale of threats.</li>
+<li>
+<h2 id="2024-2025-prompt-injection-and-jailbreak-crisis">2024-2025: Prompt Injection and Jailbreak Crisis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2024-2025-prompt-injection-and-jailbreak-crisis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+</ul>
+The period from 2024 through 2025 exposed critical vulnerabilities in large language models and AI systems, with <strong>prompt injection</strong> and <strong>jailbreak attacks</strong> emerging as the dominant security threats, prompting urgent development of defensive techniques and regulatory attention.
+<ul>
+<li>
+<h3 id="prompt-injection-as-top-threat">Prompt Injection as Top Threat<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#prompt-injection-as-top-threat" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul>
+<strong>OWASP</strong> ranked prompt injection as the <strong>top security risk</strong> in its 2025 <em>OWASP Top 10 for LLM Applications</em> report. <strong>Trend Micro’s mid-2025 report</strong> revealed that <strong>93% of security leaders</strong> expected daily AI attacks by year’s end. Cybersecurity agencies, including the <strong>UK National Cyber Security Centre (NCSC)</strong> and <strong>US NIST</strong>, classified prompt injection as a <strong>critical security threat</strong>.
+<strong>Prompt injection</strong> involves manipulating model responses through specific inputs to alter behaviour, which can include bypassing safety measures. <strong>Jailbreaking</strong> is a form of prompt injection where the attacker provides inputs that cause the model to disregard its safety protocols entirely.
+<ul>
+<li>
+<h3 id="attack-techniques-proliferation">Attack Techniques Proliferation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#attack-techniques-proliferation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul>
+Attack techniques evolved rapidly in 2024-2025, including:
+<ul>
+<li><strong>Roleplay, logic traps, encoding, and multi-turn attacks</strong></li>
+<li><strong>Adversarial suffixes</strong>—seemingly gibberish strings appended to malicious prompts that are highly transferable between models</li>
+<li><strong>Invisible prompt injections</strong>—adversaries hiding malicious content as Unicode characters invisible in user interfaces</li>
+<li><strong>Adversarial prompts embedded in non-textual elements</strong>, such as hidden instructions within images</li>
+<li>
+<h3 id="high-profile-vulnerabilities">High-Profile Vulnerabilities<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#high-profile-vulnerabilities" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul>
+A security audit of <strong>DeepSeek’s R1 model</strong> revealed it failed to block <strong>91% of jailbreak prompts</strong> and <strong>86% of prompt injection attacks</strong> in testing. In December 2024, <em>The Guardian</em> reported that <strong>OpenAI’s ChatGPT search tool</strong> was vulnerable to indirect prompt injection attacks, allowing hidden webpage content to manipulate responses.
+<strong>CVE-2025-32711</strong>, affecting <strong>Microsoft 365 Copilot</strong> with a CVSS score of <strong>9.3</strong>, involved AI command injection potentially allowing attackers to steal sensitive data. In July 2025, <strong>NeuralTrust</strong> reported a successful jailbreak of <strong>X’s Grok4</strong> using a combination of Echo Chamber Attack and Crescendo Attack.
+<ul>
+<li>
+<h3 id="research-and-transferability">Research and Transferability<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-transferability" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul>
+Researchers categorised over <strong>1,400 adversarial prompts</strong> and analysed their success against GPT-4, Claude 2, Mistral 7B, and Vicuna. Jailbreak prompts succeeding on GPT-4 transferred effectively to Claude 2 and Vicuna in <strong>64.1%</strong> and <strong>59.7%</strong> of cases respectively, demonstrating dangerous cross-model vulnerability.
+<ul>
+<li>
+<h3 id="defense-strategies">Defense Strategies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#defense-strategies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul>
+Mitigation strategies included input and output filtering, prompt evaluation, reinforcement learning from human feedback, and prompt engineering to distinguish user input from system instructions. One major line of defence was training or fine-tuning LLMs on adversarial examples, compiling datasets of attack prompts to teach models to refuse or safely handle them.
+However, early 2025 findings indicated that techniques like <strong>Retrieval Augmented Generation (RAG)</strong> and <strong>fine-tuning do not fully mitigate prompt injection vulnerabilities</strong>. The community steadily closed gaps through innovative defences like structured prompts, ensemble monitors, and adversarially trained filters, though no single fix existed.
+<ul>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>Definition and scope of AI security in contemporary practice</li>
+<li>Protection framework encompassing confidentiality, integrity, and availability across the AI lifecycle</li>
+<li>Evolution from reactive rule-based systems to adaptive, learning-based threat detection</li>
+<li>Recognition that AI security operates as a continuous framework rather than a discrete toolset</li>
+<li>Foundational principles</li>
+<li>Machine learning and automation deployed across data ingestion through model deployment stages</li>
+<li>Emphasis on trustworthiness and verifiability of AI decision-making</li>
+<li>Integration of governance controls with technical security measures</li>
+<li>
+<h2 id="current-landscape-2025">Current Landscape (2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>Industry adoption and implementation patterns</li>
+<li>Organisations increasingly embed AI security across enterprise operations, particularly in cloud-native and SaaS environments</li>
+<li>Continuous control monitoring now standard practice, replacing periodic testing cycles</li>
+<li>Real-time compliance monitoring ingests data from cloud platforms, identity providers, and ticketing systems</li>
+<li>85% of organisations now utilise AI services, driving urgent compliance adoption</li>
+<li>Technical capabilities and threat detection mechanisms</li>
+<li>Anomaly detection through unsupervised and semi-supervised learning identifies behavioural patterns traditional tools cannot</li>
+<li>Specific threat vectors addressed include data drift detection, model extraction attempts, and prompt injection identification</li>
+<li>Zero-trust infrastructure and strict access controls implemented during deployment and operational phases</li>
+<li>Adversarial testing and formal verification employed where appropriate</li>
+<li>Standards and frameworks (2025 landscape)</li>
+<li>OWASP LLM Top-10 provides rapid, actionable guidance for large language model security, implementable within weeks</li>
+<li>NIST AI Risk Management Framework (1.0) establishes governance structures mapping regulatory demands across jurisdictions, though its 1,000+ controls require strategic prioritisation</li>
+<li>SOC 2, ISO 27001, CMMC 2.0, and FedRAMP 20x increasingly mandate continuous monitoring capabilities</li>
+<li>SANS Draft Critical AI Security Guidelines v1.1 emphasises risk-based approach combining robust controls, governance, and compliance</li>
+<li>Regulatory convergence accelerating: Gartner projects fragmented AI regulation will cover 50% of world economies by 2027 and 75% by 2030, driving over $1 billion in compliance spend</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>Foundational frameworks and guidance</li>
+<li>SANS Institute (2025). Draft Critical AI Security Guidelines v1.1. Emphasises continuous adaptation of security strategies and risk-based implementation approaches</li>
+<li>NIST (2025). AI Risk Management Framework 1.0. Provides governance structure and control catalogue for regulatory compliance across jurisdictions</li>
+<li>OWASP (2025). LLM Top-10. Identifies ten critical vulnerabilities in large language model applications, including prompt injection and supply chain risks</li>
+<li>Joint Cybersecurity Information (May 2025). AI Data Security Guidance. Collaborative guidance from US, Australian, and UK national cyber security centres addressing data security across AI lifecycle stages</li>
+<li>Emerging research directions</li>
+<li>Continuous monitoring and control drift detection in cloud environments</li>
+<li>Adversarial robustness testing methodologies</li>
+<li>Data minimisation and integrity principles in compliance frameworks</li>
+<li>Ethical guardrails and transparency requirements in AI system design</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>National Cyber Security Centre (NCSC-UK) contributions</li>
+<li>Collaborative participation in joint AI data security guidance (May 2025), establishing UK-aligned best practices</li>
+<li>Emphasis on data protection throughout AI supply chain, reflecting UK data governance priorities</li>
+<li>Regulatory environment</li>
+<li>GDPR compliance requirements for AI systems handling personal data, with particular emphasis on data minimisation and storage limitations</li>
+<li>Emerging UK AI governance frameworks aligning with international standards whilst maintaining domestic regulatory autonomy</li>
+<li>North England innovation considerations</li>
+<li>Manchester, Leeds, Newcastle, and Sheffield emerging as technology hubs with growing AI adoption in financial services, healthcare, and manufacturing sectors</li>
+<li>Regional organisations increasingly implementing continuous compliance monitoring to meet SOC 2 and ISO 27001 requirements</li>
+<li>University research clusters (Manchester, Leeds) contributing to adversarial testing and formal verification methodologies</li>
+<li>
+<h2 id="future-directions">Future Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>Emerging trends and anticipated developments</li>
+<li>Shift from periodic compliance testing to real-time, continuous monitoring as regulatory standard</li>
+<li>Integration of AI security into development pipelines as foundational practice rather than post-deployment consideration</li>
+<li>Expansion of regulatory frameworks: Gartner projects 50% of world economies will have AI regulation by 2027, 75% by 2030</li>
+<li>Growing recognition of AI-enabled cyberattacks and misinformation as top emerging risks requiring proactive governance</li>
+<li>Anticipated challenges</li>
+<li>Governance and compliance struggling to maintain pace with rapid AI technology evolution</li>
+<li>Technical governance gaps introducing serious risks, particularly where AI systems process sensitive data</li>
+<li>Balancing security rigour with implementation feasibility (the “1,000 controls problem” in NIST frameworks)</li>
+<li>Establishing ethical guardrails whilst maintaining operational efficiency</li>
+<li>Research priorities</li>
+<li>Scalable adversarial testing methodologies for large language models</li>
+<li>Data drift detection and mitigation strategies</li>
+<li>Supply chain security in AI model development and deployment</li>
+<li>Trustworthiness verification mechanisms for AI decision-making</li>
+<li>Regional implementation case studies demonstrating compliance integration in UK organisations</li>
+<li>
+<h2 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+</ul>
+[1] Riseup Labs (2025). “What Is AI Security? Why It Matters in 2025.” Available at: riseuplabs.com/ai-security/
+[2] SANS Institute (2025). “Securing AI in 2025: A Risk-Based Approach to AI Controls and Governance.” SANS Draft Critical AI Security Guidelines v1.1. Available at: sans.org/blog/securing-ai-in-2025-a-risk-based-approach-to-ai-controls-and-governance
+[3] Joint Cybersecurity Information (May 2025). “AI Data Security.” Version 1.0, PP-25-2301. Collaborative guidance from US Cybersecurity and Infrastructure Security Agency, Australian Signals Directorate, and UK National Cyber Security Centre.
+[4] Secureframe (2025). “Artificial Intelligence in 2025: The New Foundation for Security Compliance.” Available at: secureframe.com/blog/ai-in-security-compliance
+[5] Wiz (2025). “AI Compliance in 2025: Definition, Standards, and Frameworks.” Available at: wiz.io/academy/ai-compliance
+[6] SentinelOne (2025). “AI Security Standards: Key Frameworks for 2025.” Available at: sentinelone.com/cybersecurity-101/data-and-ai/ai-security-standards/
+<ul>
+<li>
+<h3 id="primary-sources">Primary Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#primary-sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>  1. **NIST AI Risk Management Framework (AI RMF 1.0)**, January 2023
+     - Section 2.1: &quot;Secure and Resilient&quot;
+     - &quot;AI systems are protected from and resilient to compromise&quot;
+     - Source: National Institute of Standards and Technology
+  2. **EU AI Act** (Regulation 2024/1689), June 2024
+     - Article 15: &quot;Accuracy, robustness and cybersecurity&quot;
+     - Cybersecurity requirements for high-risk AI
+     - Source: European Parliament and Council
+  3. **ISO/IEC 27001:2022** - Information security management systems
+     - Applicable to AI system security
+     - Source: ISO/IEC JTC 1/SC 27
+  ### Supporting Standards
+  4. **ISO/IEC 23894:2023** - Guidance on risk management
+     - Section 7.6: &quot;Security considerations&quot;
+  5. **ENISA** - &quot;AI Cybersecurity Challenges: Threat Landscape for Artificial Intelligence&quot; (2020)
+     - Comprehensive threat taxonomy
+  6. **MITRE ATLAS** - Adversarial Threat Landscape for Artificial Intelligence Systems
+     - Attack framework for AI/ML systems
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-5021" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-2"><a href="#content" data-for="content">Content</a></li><li class="depth-2"><a href="#vmesh" data-for="vmesh">VMesh</a></li><li class="depth-2"><a href="#cyberattacks-and-fraud" data-for="cyberattacks-and-fraud">Cyberattacks and Fraud</a></li><li class="depth-1"><a href="#build-vs-buy-dynamics" data-for="build-vs-buy-dynamics">Build vs Buy Dynamics</a></li><li class="depth-2"><a href="#in-camera-vfx--telepresence" data-for="in-camera-vfx--telepresence">In-Camera VFX &amp; Telepresence:</a></li><li class="depth-2"><a href="#ios18-security-and-privacy" data-for="ios18-security-and-privacy">IOS18 Security and Privacy</a></li><li class="depth-2"><a href="#bitvm" data-for="bitvm">BitVM</a></li><li class="depth-1"><a href="#advanced-features-optional" data-for="advanced-features-optional">Advanced Features (Optional)</a></li><li class="depth-1"><a href="#ai-ethics-and-security" data-for="ai-ethics-and-security">AI Ethics and Security</a></li><li class="depth-0"><a href="#what-we-can-expect" data-for="what-we-can-expect">What we can expect</a></li><li class="depth-2"><a href="#postulated-bad-actors" data-for="postulated-bad-actors">Postulated Bad Actors</a></li><li class="depth-1"><a href="#broader-implications-for-cyber-security" data-for="broader-implications-for-cyber-security">Broader Implications for Cyber Security</a></li><li class="depth-0"><a href="#government-and-agency-involvement-in-ai" data-for="government-and-agency-involvement-in-ai">Government and Agency Involvement in AI</a></li><li class="depth-2"><a href="#cultural-and-financial-security" data-for="cultural-and-financial-security">Cultural and Financial Security</a></li><li class="depth-1"><a href="#cyber-security-and-cryptography-and-fraud-prevention" data-for="cyber-security-and-cryptography-and-fraud-prevention">Cyber Security and Cryptography and Fraud Prevention</a></li><li class="depth-2"><a href="#vox-e" data-for="vox-e">Vox-E</a></li><li class="depth-0"><a href="#partnership-with-openai-and-siri" data-for="partnership-with-openai-and-siri">Partnership with OpenAI, and Siri</a></li><li class="depth-2"><a href="#enhancing-cybersecurity-measures" data-for="enhancing-cybersecurity-measures">Enhancing Cybersecurity Measures</a></li><li class="depth-0"><a href="#risks-and-mitigations" data-for="risks-and-mitigations">Risks and mitigations</a></li><li class="depth-2"><a href="#security-evaluation" data-for="security-evaluation">Security evaluation</a></li><li class="depth-2"><a href="#preventing-errors-in-security-content-updates" data-for="preventing-errors-in-security-content-updates">Preventing Errors in Security Content Updates</a></li><li class="depth-1"><a href="#malicious-use-and-security-threats" data-for="malicious-use-and-security-threats">Malicious Use and Security Threats</a></li><li class="depth-1"><a href="#2024-2025-prompt-injection-and-jailbreak-crisis" data-for="2024-2025-prompt-injection-and-jailbreak-crisis">2024-2025: Prompt Injection and Jailbreak Crisis</a></li><li class="depth-2"><a href="#prompt-injection-as-top-threat" data-for="prompt-injection-as-top-threat">Prompt Injection as Top Threat</a></li><li class="depth-2"><a href="#attack-techniques-proliferation" data-for="attack-techniques-proliferation">Attack Techniques Proliferation</a></li><li class="depth-2"><a href="#high-profile-vulnerabilities" data-for="high-profile-vulnerabilities">High-Profile Vulnerabilities</a></li><li class="depth-2"><a href="#research-and-transferability" data-for="research-and-transferability">Research and Transferability</a></li><li class="depth-2"><a href="#defense-strategies" data-for="defense-strategies">Defense Strategies</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2025" data-for="current-landscape-2025">Current Landscape (2025)</a></li><li class="depth-1"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions" data-for="future-directions">Future Directions</a></li><li class="depth-1"><a href="#references" data-for="references">References</a></li><li class="depth-2"><a href="#primary-sources" data-for="primary-sources">Primary Sources</a></li><li class="depth-2"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/5G-Network" class="internal">5G Network</a></li><li><a href="../pages/AI-Inference" class="internal">AI Inference</a></li><li><a href="../pages/AI-Infrastructure" class="internal">AI Infrastructure</a></li><li><a href="../pages/Adversarial-Training" class="internal">Adversarial Training</a></li><li><a href="../pages/Attack-Vector" class="internal">Attack Vector</a></li><li><a href="../pages/Bitcoin-Whitepaper" class="internal">Bitcoin Whitepaper</a></li><li><a href="../pages/Content-Delivery-Network" class="internal">content delivery network</a></li><li><a href="../pages/Curve-Wars" class="internal">Curve Wars</a></li><li><a href="../pages/DICOM" class="internal">DICOM</a></li><li><a href="../pages/Digital-Health" class="internal">Digital Health</a></li><li><a href="../pages/Externally-Owned-Account" class="internal">Externally Owned Account</a></li><li><a href="../pages/Foundry" class="internal">Foundry</a></li><li><a href="../pages/Immersive-Communication" class="internal">Immersive Communication</a></li><li><a href="../pages/Imperial-College-London" class="internal">Imperial College London</a></li><li><a href="../pages/Internal-AI-Harness" class="internal">Internal AI Harness</a></li><li><a href="../pages/JavaScript" class="internal">JavaScript</a></li><li><a href="../pages/King's-College-London" class="internal">King's College London</a></li><li><a href="../pages/Multi-Tenancy" class="internal">Multi-Tenancy</a></li><li><a href="../pages/Open-Source-Software" class="internal">Open Source Software</a></li><li><a href="../pages/Policy-Administration-Point" class="internal">Policy Administration Point</a></li><li><a href="../pages/Privacy-Preserving-Technology" class="internal">Privacy Preserving Technology</a></li><li><a href="../pages/Rate-Limiting" class="internal">Rate Limiting</a></li><li><a href="../pages/Reliability-Engineering" class="internal">Reliability Engineering</a></li><li><a href="../pages/Secure-Boot" class="internal">Secure Boot</a></li><li><a href="../pages/Smart-Contract-Execution" class="internal">smart contract execution</a></li><li><a href="../pages/Smart-Contract-Security" class="internal">Smart Contract Security</a></li><li><a href="../pages/Telecollaboration-and-Telepresence" class="internal">Telecollaboration and Telepresence</a></li><li><a href="../pages/Threat-Actor" class="internal">Threat Actor</a></li><li><a href="../pages/Trust-Service-Provider" class="internal">Trust Service Provider</a></li><li><a href="../pages/University-College-London" class="internal">University College London</a></li><li><a href="../pages/University-of-Cambridge" class="internal">University of Cambridge</a></li><li><a href="../pages/Vulnerability-Scanning" class="internal">Vulnerability Scanning</a></li><li><a href="../pages/Vulnerability" class="internal">Vulnerability</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

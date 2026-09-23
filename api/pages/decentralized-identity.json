@@ -36,6 +36,10 @@
       {
         "id": "urn:ngm:class:digital-identity-wallet",
         "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
       }
     ],
     "requires": [
@@ -75,6 +79,10 @@
       {
         "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
         "label": "Verifiable Credentials Data Model"
+      },
+      {
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "Verifiable Credentials Data Model"
       }
     ],
     "contrastsWith": [
@@ -89,6 +97,10 @@
       {
         "id": "urn:ngm:class:oauth",
         "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralised Identity Provider"
       }
     ],
     "bridgesTo": [
@@ -99,6 +111,10 @@
       {
         "id": "urn:ngm:class:web3",
         "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:iot-device-authentication",
+        "label": "IoT Device Authentication"
       }
     ],
     "uses": [
@@ -115,7 +131,7 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -186,6 +202,10 @@
         "label": "Decentralised Identifier"
       },
       {
+        "id": "urn:ngm:class:verifiable-claim",
+        "label": "Verifiable Claim"
+      },
+      {
         "id": "urn:ngm:class:verifiable-credential-standard",
         "label": "Credential"
       },
@@ -200,10 +220,6 @@
       {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
-      },
-      {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
       }
     ],
     "requires": [
@@ -212,16 +228,16 @@
         "label": "Credential Storage"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
         "id": "urn:ngm:class:privacy-controls",
         "label": "Privacy Controls"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:authentication",
@@ -254,6 +270,10 @@
         "label": "Authorization"
       },
       {
+        "id": "urn:ngm:class:digital-presence",
+        "label": "Digital Presence"
+      },
+      {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
       },
@@ -268,10 +288,6 @@
       {
         "id": "urn:ngm:class:trust",
         "label": "Trust"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
       }
     ],
     "dependsOn": [
@@ -317,6 +333,10 @@
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
@@ -412,7 +432,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "KYC Know Your Customer"
       },
       {

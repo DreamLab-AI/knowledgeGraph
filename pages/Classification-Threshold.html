@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Classification Threshold</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Classification Threshold"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Classification Threshold"/><meta name="twitter:description" content="A Classification Threshold is a decision boundary applied to the probabilistic output of a classifier to assign discrete class labels."/><meta property="og:description" content="A Classification Threshold is a decision boundary applied to the probabilistic output of a classifier to assign discrete class labels."/><meta property="og:image:alt" content="A Classification Threshold is a decision boundary applied to the probabilistic output of a classifier to assign discrete class labels."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Classification-Threshold"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Classification-Threshold"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="A Classification Threshold is a decision boundary applied to the probabilistic output of a classifier to assign discrete class labels."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Classification-Threshold"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1492"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1492" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Classification Threshold</a></div></nav><h1 class="article-title">Classification Threshold</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.574Z">23 Sept 2026</time><span>45 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:classification-threshold</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.62</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../AI-Technique" class="internal">AI Technique</a></li><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li><li><a href="../Decision-System" class="internal">Decision System</a></li><li><a href="../Statistical-Decision-Theory" class="internal">Statistical Decision Theory</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/ROC-Curve" class="internal">ROC Curve</a></li><li><a href="../pages/Precision-Recall-Curve" class="internal">Precision-Recall Curve</a></li><li><a href="../Youden-J-Statistic" class="internal">Youden J Statistic</a></li><li><a href="../Operating-Point" class="internal">Operating Point</a></li><li><a href="../Cost-Matrix" class="internal">Cost Matrix</a></li><li><a href="../Confusion-Matrix-Slice" class="internal">Confusion Matrix Slice</a></li><li><a href="../pages/F1-Score" class="internal">F1 Score</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li><li><a href="../pages/Supervised-Learning" class="internal">Supervised Learning</a></li><li><a href="../pages/Classifier" class="internal">Classifier</a></li><li><a href="../Probability-Calibration" class="internal">Probability Calibration</a></li><li><a href="../pages/Labelled-Dataset" class="internal">Labelled Dataset</a></li><li><a href="../pages/Classification" class="internal">Classification</a></li><li><a href="../Binary-Classification" class="internal">Binary Classification</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../decision-system" class="internal">Decision System</a></li><li><a href="../pages/Risk-Management" class="internal">Risk Management</a></li><li><a href="../Cost-Sensitive-Learning" class="internal">Cost-Sensitive Learning</a></li><li><a href="../pages/Clinical-Decision-Support" class="internal">Clinical Decision Support</a></li><li><a href="../pages/Fraud-Detection" class="internal">Fraud Detection</a></li><li><a href="../pages/Anomaly-Detection" class="internal">Anomaly Detection</a></li><li><a href="../AI-Fairness-Audit" class="internal">AI Fairness Audit</a></li><li><a href="../Credit-Scoring" class="internal">Credit Scoring</a></li><li><a href="../Malware-Classification" class="internal">Malware Classification</a></li><li><a href="../Spam-Filtering" class="internal">Spam Filtering</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Conformal-Prediction" class="internal">Conformal Prediction</a></li><li><a href="../pages/Active-Learning" class="internal">Active Learning</a></li><li><a href="../pages/Bayesian-Optimisation" class="internal">Bayesian Optimisation</a></li><li><a href="../pages/MLOps" class="internal">MLOps</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Regression" class="internal">Regression</a></li><li><a href="../hard-label" class="internal">Hard Label</a></li><li><a href="../Soft-Label" class="internal">Soft Label</a></li><li><a href="../Ranking" class="internal">Ranking</a></li><li><a href="../pages/Conformal-Prediction" class="internal">Conformal Prediction</a></li><li><a href="../Soft-Classifier" class="internal">Soft Classifier</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Classifier" class="internal">Classifier</a></li><li><a href="../probability-calibration" class="internal">Probability Calibration</a></li><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li><li><a href="../Binary-Classification" class="internal">Binary Classification</a></li><li><a href="../pages/Confusion-Matrix" class="internal">Confusion Matrix</a></li><li><a href="../pages/Loss-Function" class="internal">Loss Function</a></li><li><a href="../pages/Class-Imbalance" class="internal">Class Imbalance</a></li><li><a href="../pages/Precision" class="internal">Precision</a></li><li><a href="../pages/Recall" class="internal">Recall</a></li><li><a href="../pages/Specificity" class="internal">Specificity</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../ModelEvaluationLayer" class="internal">ModelEvaluationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../Cost-Sensitive-Learning" class="internal">Cost-Sensitive Learning</a></li><li><a href="../pages/Threshold-Optimisation" class="internal">Threshold Optimisation</a></li><li><a href="../Operating-Point-Selection" class="internal">Operating Point Selection</a></li><li><a href="../Empirical-Risk-Minimisation" class="internal">Empirical Risk Minimisation</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:classification-threshold</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../binary-classification" class="internal">Binary Classification</a></li><li><a href="../pages/Confusion-Matrix" class="internal">Confusion Matrix</a></li><li><a href="../pages/F1-Score" class="internal">F1 Score</a></li><li><a href="../Multi-Label-Classification" class="internal">Multi-Label Classification</a></li><li><a href="../pages/Class-Imbalance" class="internal">Class Imbalance</a></li><li><a href="../pages/Calibration" class="internal">Calibration</a></li><li><a href="../Youden-J-Statistic" class="internal">Youden J Statistic</a></li><li><a href="../pages/Demographic-Parity" class="internal">Demographic Parity</a></li><li><a href="../Equal-Opportunity-Fairness" class="internal">Equal Opportunity Fairness</a></li><li><a href="../pages/Concept-Drift" class="internal">Concept Drift</a></li><li><a href="../Covariate-Shift" class="internal">Covariate Shift</a></li><li><a href="../pages/Adversarial-Robustness" class="internal">Adversarial Robustness</a></li><li><a href="../Platt-Scaling" class="internal">Platt Scaling</a></li><li><a href="../Temperature-Scaling" class="internal">Temperature Scaling</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../ISO/IEC-22989" class="internal">ISO/IEC 22989</a></li><li><a href="../pages/NIST-AI-RMF" class="internal">NIST AI RMF</a></li><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li><li><a href="../MHRA-SaMD-Guidance" class="internal">MHRA SaMD Guidance</a></li><li><a href="../ISO/IEC-23053" class="internal">ISO/IEC 23053</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/AI-Fairness" class="internal">AI Fairness</a></li><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../pages/Explainable-AI" class="internal">Explainable AI</a></li><li><a href="../Model-Card" class="internal">Model Card</a></li><li><a href="../pages/MLOps" class="internal">MLOps</a></li><li><a href="../pages/AI-Audit" class="internal">AI Audit</a></li><li><a href="../pages/Regulatory-Compliance" class="internal">Regulatory Compliance</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../AUC-ROC" class="internal">AUC-ROC</a></li><li><a href="../pages/F1-Score" class="internal">F1 Score</a></li><li><a href="../pages/Precision" class="internal">Precision</a></li><li><a href="../pages/Recall" class="internal">Recall</a></li><li><a href="../Matthews-Correlation-Coefficient" class="internal">Matthews Correlation Coefficient</a></li><li><a href="../pages/Specificity" class="internal">Specificity</a></li><li><a href="../pages/Sensitivity" class="internal">Sensitivity</a></li><li><a href="../pages/True-Positive-Rate" class="internal">True Positive Rate</a></li><li><a href="../False-Positive-Rate" class="internal">False Positive Rate</a></li><li><a href="../Average-Precision" class="internal">Average Precision</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>A Classification Threshold is a decision boundary applied to the probabilistic output of a classifier to assign discrete class labels. By default set at 0.5 for binary classification, the threshold can be adjusted to trade off precision against recall, or sensitivity against specificity, depending on application requirements. Threshold selection is a critical model calibration step that directly affects downstream decision quality and fairness properties.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:hasPart ai:ROCCurve))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:hasPart ai:PrecisionRecallCurve))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:hasPart ai:YoudenJStatistic))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:hasPart ai:OperatingPoint))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:hasPart ai:CostMatrix))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:hasPart ai:ConfusionMatrixSlice))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:hasPart ai:F1Score))
+</code></pre>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:requires ai:Classifier))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:requires ai:ProbabilityCalibration))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:requires ai:SupervisedLearning))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:dependsOn ai:BinaryClassification))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:dependsOn ai:ConfusionMatrix))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:dependsOn ai:LossFunction))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:dependsOn ai:LabelledDataset))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:dependsOn ai:ModelEvaluation))
+</code></pre>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:enables ai:DecisionSystem))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:enables ai:RiskManagement))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:enables ai:FraudDetection))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:enables ai:ClinicalDecisionSupport))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:enables ai:AIFairnessAudit))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:enables ai:AnomalyDetection))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:enables ai:CostSensitiveLearning))
+</code></pre>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:implements ai:ThresholdOptimisation))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:implements ai:CostSensitiveLearning))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:implements ai:OperatingPointSelection))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:supports ai:AIFairness))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:supports ai:ExplainableAI))
+</code></pre>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:reducesTo ai:BinaryDecision))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:reducesTo ai:OperatingPoint))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:reducesTo ai:PrecisionRecallTradeoff))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:reducesTo ai:CostOptimalDecisionRule))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:reducesTo ai:BayesDecisionBoundary))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:bridges ai:ConformalPrediction))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:bridges ai:ActiveLearning))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:bridges ai:MLOps))
+SubClassOf(ai:ClassificationThreshold
+  ObjectSomeValuesFrom(ai:bridges ai:BayesianOptimisation))
+</code></pre>
+<h2 id="formal-definition">Formal Definition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-definition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Let f: X → [0,1] be a probabilistic binary classifier, mapping an input x ∈ X to a posterior probability estimate p̂ = f(x) = P̂(Y=1|X=x). A classification threshold τ ∈ [0,1] induces a decision rule:</p>
+<pre><code>  ŷ(x) = 1   if f(x) ≥ τ
+  ŷ(x) = 0   if f(x) &lt; τ
+</code></pre>
+<p>The <a href="../pages/Confusion-Matrix" class="internal alias" data-slug="pages/Confusion-Matrix">Confusion Matrix</a> at threshold τ is parameterised by four counts: TP(τ), FP(τ), TN(τ), FN(τ). As τ increases from 0 to 1, TP(τ) decreases monotonically, FP(τ) decreases monotonically, and the <a href="../pages/ROC-Curve" class="internal alias" data-slug="pages/ROC-Curve">ROC Curve</a> traces the path {(FPR(τ), TPR(τ)) : τ ∈ [0,1]} where FPR(τ) = FP(τ)/(FP(τ)+TN(τ)) and TPR(τ) = TP(τ)/(TP(τ)+FN(τ)).</p>
+<p>The Bayes-optimal threshold under a cost matrix C minimises expected misclassification cost:
+τ* = C(FP) / (C(FP) + C(FN))</p>
+<p>where C(FP) is the cost of a false positive and C(FN) is the cost of a false negative. This formula is derived from minimising the expected loss under the class-conditional risk framework (Wald, 1950; Elkan, 2001). When C(FP) = C(FN), τ* = 0.5, recovering the default threshold. When C(FN) >> C(FP) (e.g., cancer screening), τ* &lt;&lt; 0.5, biasing the classifier towards high recall at lower precision.</p>
+<p>For multi-class problems with K > 2 classes, the generalisation decomposes into K one-versus-rest thresholds {τ₁, τ₂, …, τK} or into a single softmax temperature parameter T that controls the sharpness of the probability distribution over classes: softmax_T(z_i) = exp(z_i/T) / Σⱼ exp(z_j/T). As T → 0, the distribution collapses to a hard argmax; as T → ∞, it becomes uniform. Temperature scaling is a common post-hoc <a href="../Probability-Calibration" class="internal alias" data-slug="Probability-Calibration">Probability Calibration</a> technique (Guo et al., 2017) that modifies the effective threshold behaviour without changing the model’s ranking.</p>
+<p>For multi-label classification with L independent labels, L independent thresholds {τ₁, …, τL} are required, one per label. Each threshold is tuned independently on a validation set to optimise per-label F1 score, micro-averaged F1, or macro-averaged F1 depending on the application’s tolerance for label-frequency imbalance.</p>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A classification threshold is the operational hinge point of any probabilistic classifier: it is the scalar value that transforms a continuous model output — typically a posterior class probability or a discriminant score — into an actionable binary or multi-class decision. The concept is foundational in <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> and <a href="../pages/Statistical-Learning-Theory" class="internal alias" data-slug="pages/Statistical-Learning-Theory">Statistical Learning Theory</a>, underpinning every deployed classification system from email spam filters to cancer screening tools, credit risk models, and autonomous vehicle perception pipelines.</p>
+<p>The default threshold of 0.5 assumes that the prior probability of the positive class is equal to that of the negative class and that misclassifying a positive as a negative carries the same cost as the reverse. Both assumptions are almost universally violated in real-world applications. Class imbalance — where the positive class is far rarer than the negative — is endemic in fraud detection (fraud rates of 0.1–1%), medical screening (rare disease prevalence), and cybersecurity (intrusion frequency). In such settings, a threshold of 0.5 causes the classifier to default to the majority class, achieving high accuracy whilst detecting almost no positive cases. Threshold adjustment is the simplest and most computationally efficient remedy: by lowering τ, practitioners can recover recall at an acceptable precision cost without retraining the model.</p>
+<p>The theoretical basis for threshold selection draws on <a href="../Statistical-Decision-Theory" class="internal alias" data-slug="Statistical-Decision-Theory">Statistical Decision Theory</a>. The Bayes optimal threshold minimises expected misclassification cost: τ* = C(FP) / [C(FP) + C(FN)], where C(FP) and C(FN) are the costs of false positive and false negative errors respectively. When costs are equal, τ* = 0.5; when false negatives are twice as costly as false positives (as is common in medical screening), τ* = 0.33. This formal framing makes explicit what practitioners have long known intuitively: threshold selection is fundamentally a domain-knowledge problem, not a statistical one. The UK MHRA and the US FDA both emphasise that for Software as a Medical Device (SaMD), the classification threshold should be set using clinical rather than statistical reasoning, and must be validated on data representative of the intended patient population.</p>
+<p>The relationship between threshold and calibration is subtle but critical. A <a href="../pages/Classifier" class="internal" data-slug="pages/Classifier">Classifier</a> that is poorly calibrated — that is, whose raw output scores do not correspond to true class probabilities — may have its optimal threshold in unexpected regions of [0,1]. For example, a well-discriminating SVM with hinge loss outputs decision values rather than probabilities, and may require a Platt scaling correction or isotonic regression recalibration before the threshold has a meaningful probabilistic interpretation. Temperature scaling for deep neural networks (Guo et al., 2017) is a single-parameter calibration technique that adjusts the softmax temperature to improve calibration, effectively shifting the entire score distribution and therefore altering the effective operating point of any fixed threshold. This interaction between calibration and threshold selection means that the two steps — calibration and threshold optimisation — must be performed sequentially on held-out validation data, not on the training set, to avoid overfitting the operating point.</p>
+<p>Multi-threshold strategies arise naturally in cascaded or hierarchical <a href="../pages/Classification" class="internal" data-slug="pages/Classification">Classification</a> systems. A two-stage cascade first applies a high-recall low-precision “pre-filter” threshold τ₁ to rapidly eliminate clear negatives; a more expensive second-stage classifier then applies a higher-precision threshold τ₂ to the remaining candidates. This architecture is standard in object detection pipelines (region proposal + object classifier) and in document retrieval (candidate retrieval + re-ranking). The two thresholds must be jointly optimised to achieve the target operating point on the end-to-end pipeline, typically using a grid search or Bayesian optimisation over the two-dimensional threshold space.</p>
+<p>The intersection of classification threshold selection with <a href="../pages/Explainable-AI" class="internal alias" data-slug="pages/Explainable-AI">Explainable AI</a> (XAI) is an emerging research topic. When a threshold is adjusted to increase recall — for example in medical screening — the set of “positive” predictions expands to include cases near the decision boundary where the model is less certain. These borderline cases are often the most difficult to explain, as they are close to equally likely under the model to be either class. SHAP (SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations) values for borderline cases tend to be smaller in magnitude and more sensitive to small input perturbations, making threshold-induced positive predictions near the boundary inherently less interpretable. This suggests a research direction: threshold selection that simultaneously optimises prediction quality and explanation quality, avoiding operating points where the most numerous positive predictions are also the least explainable.</p>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>ROC Curve Analysis</strong></p>
+<ul>
+<li>The <a href="../pages/ROC-Curve" class="internal alias" data-slug="pages/ROC-Curve">ROC Curve</a> sweeps τ from 0 to 1, plotting (FPR, TPR) pairs at each threshold. The curve provides a model-level summary of discriminative ability (AUC-ROC) whilst simultaneously showing all achievable operating points. Practitioners select τ at the operating point that best satisfies domain constraints.</li>
+<li>Youden’s J statistic: J = sensitivity + specificity − 1; maximised at the inflection point of the ROC curve. Equivalent to maximising balanced accuracy (the arithmetic mean of sensitivity and specificity). Simple to compute; does not account for asymmetric costs.</li>
+<li>The F1-optimal threshold is found by sweeping τ and computing F1 = 2TP/(2TP + FP + FN) at each point; this is the standard approach in information retrieval and text classification tasks.</li>
+<li>The closest-to-(0,1) threshold (minimum Euclidean distance from the (FPR,TPR) = (0,1) ideal point on the ROC plane) is a geometry-based heuristic that does not require cost specifications.</li>
+<li>AUC thresholding: the threshold corresponding to the maximum of (AUC_left − AUC_right), partitioning the AUC into two parts, selects the point of maximum curvature on the ROC curve — equivalent to Youden’s J for well-calibrated models.</li>
+</ul>
+<p><strong>Precision-Recall Curve Analysis</strong></p>
+<ul>
+<li>The <a href="../pages/Precision-Recall-Curve" class="internal alias" data-slug="pages/Precision-Recall-Curve">Precision-Recall Curve</a> is preferred under severe class imbalance because the ROC curve can appear optimistic when the negative class dominates. It plots precision = TP/(TP+FP) against recall = TP/(TP+FN) as τ varies.</li>
+<li>Average Precision (AP) — the area under the precision-recall curve — is the standard evaluation metric in <a href="../pages/Object-Detection" class="internal alias" data-slug="pages/Object-Detection">Object Detection</a> (COCO mAP) and <a href="../pages/Information-Retrieval" class="internal alias" data-slug="pages/Information-Retrieval">Information Retrieval</a>.</li>
+<li>The threshold maximising F-beta score (Fβ = (1+β²)·precision·recall / (β²·precision + recall)) is selected by sweeping the PR curve with appropriate β weighting.</li>
+</ul>
+<p><strong>Cost-Sensitive Threshold Selection</strong></p>
+<ul>
+<li>Cost matrix C encodes application-specific misclassification costs: C[0,1] (false positive cost) and C[1,0] (false negative cost). The optimal threshold is τ* = C[0,1] / (C[0,1] + C[1,0]).</li>
+<li>In credit risk modelling, C[FN] reflects average loan default loss (£tens of thousands); C[FP] reflects opportunity cost of a rejected good applicant (£hundreds).</li>
+<li>In medical screening, C[FN] may be arbitrarily high (missed cancer); C[FP] is the cost of an unnecessary biopsy (anxiety, procedure cost).</li>
+</ul>
+<p><strong>Fairness-Aware Threshold Selection</strong></p>
+<ul>
+<li>Group-specific thresholds are learned per demographic subgroup to equalise false positive rates (demographic parity) or true positive rates (equal opportunity) across groups.</li>
+<li>The EU AI Act and UK Equality Act 2010 both require that AI classification systems used in high-stakes domains do not impose disparate impacts on protected groups.</li>
+<li>Fairlearn (Microsoft) and IBM AI Fairness 360 provide open-source tooling for group-specific threshold optimisation with fairness constraints.</li>
+</ul>
+<p><strong>Advanced Algorithmic Approaches</strong></p>
+<ul>
+<li>Mixed Integer Linear Programming (MILP): formulates threshold selection as an optimisation problem over arbitrary linear metric constraints; globally optimal but computationally intensive for large candidate sets.</li>
+<li>Quantile-based thresholding: reparameterises τ as the q-th quantile of predicted scores, converting rate constraints into differentiable surrogates compatible with SGD end-to-end training.</li>
+<li>Post-hoc simplex search (a posteriori tuning): for deep multi-class networks, searches the probability simplex to maximise macro-F1, accuracy, or custom objective functions.</li>
+</ul>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Medical Diagnosis and Clinical Decision Support</strong></p>
+<ul>
+<li>Radiology AI (chest X-ray, mammography, CT): threshold set to achieve clinically mandated sensitivity ≥ 95% for specific pathologies; specificity adjusted based on radiologist workload capacity and downstream biopsy costs. NHS NHSX AI Award projects at Guy’s and St Thomas’ NHS Trust and Moorfields Eye Hospital deploy AI classifiers with MHRA-validated thresholds for diabetic retinopathy and AMD screening.</li>
+<li>Pathology AI: whole-slide image classifiers for cancer detection at Imperial College Healthcare and University College Hospital use calibrated thresholds reviewed by clinical governance boards under the UK MDR 2002 (as amended) framework.</li>
+<li>Sepsis early warning: EPIC Sepsis Model (deployed in the US and trialled in the UK) applies a severity-stratified threshold to alert clinical staff; threshold tuning is central to reducing alarm fatigue.</li>
+</ul>
+<p><strong>Fraud Detection and Financial Services</strong></p>
+<ul>
+<li>Payment card fraud: Mastercard and Visa deploy real-time transaction classifiers with thresholds that balance fraud catch rate against false-alarm load on manual review queues. Lowering the threshold by 0.05 can increase fraud recall by 15% at the cost of a 3× increase in alert volume.</li>
+<li>Mortgage and credit risk: under the Consumer Credit Act 1974 (UK) and the EU Consumer Credit Directive, automated credit refusal systems must be explainable; the threshold and its cost rationale must be documented in the credit decision audit trail.</li>
+<li>Anti-money laundering (AML): Financial Conduct Authority (FCA) guidance requires UK banks to validate AML classifier thresholds on representative transaction samples annually.</li>
+</ul>
+<p><strong>Cybersecurity and Intrusion Detection</strong></p>
+<ul>
+<li>Network intrusion detection systems (NIDS): extremely low positive-class prevalence (attack traffic is &lt;0.1% of all packets) means default 0.5 thresholds are useless; operating thresholds of 0.01–0.1 are common, balanced against Security Operations Centre analyst capacity.</li>
+<li>Malware classification: endpoint detection systems from CrowdStrike, Darktrace (Cambridge-founded), and Sophos (Oxford-based) use adaptive thresholds that shift based on threat intelligence feed confidence scores.</li>
+</ul>
+<p><strong>Spam and Content Moderation</strong></p>
+<ul>
+<li>Email spam filters (SpamAssassin, Gmail): user-configurable sensitivity settings correspond directly to threshold adjustment. Google’s Gmail achieves >99.9% spam catch rate with &lt;0.1% false positive rate through ensemble classifier threshold tuning.</li>
+<li>Social media content moderation: Meta, YouTube, and TikTok use multiple cascaded classifiers each with independently tuned thresholds for hate speech, misinformation, and CSAM detection.</li>
+</ul>
+<p><strong>Environmental and Scientific Applications</strong></p>
+<ul>
+<li>Species presence/absence classifiers: ecological AI models predicting species distribution (used by UK Centre for Ecology and Hydrology) apply thresholds optimised for conservation priority rather than statistical accuracy.</li>
+<li>Remote sensing: land cover and deforestation classifiers (ESA Copernicus, UK Space Agency projects) use precision-optimised thresholds to minimise false change detection alerts.</li>
+<li>Drug discovery: molecular property classifiers (QSAR models used by Benevolent AI and AstraZeneca) use thresholds tuned to a target false positive rate, since wet-lab validation of predicted hits is expensive.</li>
+</ul>
+<p><strong>Industrial Quality Control</strong></p>
+<ul>
+<li>Semiconductor manufacturing: vision classifiers for wafer defect detection at suppliers including ON Semiconductor and TSMC apply extremely low false-positive thresholds (&lt; 0.001) since each false positive triggers expensive line stoppages; false negatives (undetected defects) are accepted at higher rates, controlled by downstream test stages.</li>
+<li>Pharmaceutical batch release: classifiers for raw material identity verification (near-infrared spectroscopy) require very low false acceptance rates; UK MHRA Good Manufacturing Practice (GMP) guidelines specify statistical confidence requirements for the decision boundary.</li>
+<li>Automotive assembly: vision classifiers for paint defect, assembly correctness, and component presence/absence operate at different thresholds depending on the severity of the defect and its detectability at later stages in the production process.</li>
+</ul>
+<h2 id="challenges-and-active-research">Challenges and Active Research<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#challenges-and-active-research" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>The Class Imbalance Challenge.</strong> The most pervasive challenge in threshold selection is severe <a href="../pages/Class-Imbalance" class="internal alias" data-slug="pages/Class-Imbalance">Class Imbalance</a>. When the positive-to-negative ratio falls below 1:50, the ROC curve becomes misleadingly optimistic because it includes the enormous number of true negatives in the FPR denominator. The <a href="../pages/Precision-Recall-Curve" class="internal alias" data-slug="pages/Precision-Recall-Curve">Precision-Recall Curve</a> is the more appropriate diagnostic in this regime. SMOTE (Synthetic Minority Over-sampling Technique) and its variants (ADASYN, Borderline-SMOTE) address class imbalance at the data level by generating synthetic minority-class samples, but threshold adjustment is still required post-training because oversampled training distributions do not match test-time prevalence. Cost-sensitive training (weighting the minority class loss by the inverse class frequency) is a cleaner alternative that preserves the original distribution while matching the threshold-level objective.</p>
+<p><strong>Threshold Instability Across Validation Folds.</strong> When threshold selection is performed on a single validation split, the estimated optimal threshold can vary substantially across different random splits — a phenomenon termed “threshold variance.” Cross-validated threshold selection averages the optimal threshold across K folds, but introduces a selection bias because each fold’s threshold is tuned to that fold’s data distribution. Nested cross-validation (outer loop for evaluation, inner loop for threshold selection) provides unbiased threshold performance estimates at the cost of K² model fits. Bootstrap-based threshold confidence intervals (Efron and Tibshirani, 1993) are an alternative for quantifying threshold estimation uncertainty.</p>
+<p><strong>Multi-Metric Optimisation.</strong> Many real applications require simultaneous satisfaction of multiple constraints rather than optimisation of a single metric. For example, a diagnostic classifier may need to achieve sensitivity ≥ 0.95 AND specificity ≥ 0.90 simultaneously — a feasibility problem rather than an optimisation problem. Mixed Integer Linear Programming threshold selection (Zhu et al., 2025) handles arbitrary linear metric constraints, enabling practitioners to express complex regulatory requirements as formal optimisation constraints. When the feasible region is empty (no threshold satisfies all constraints), the MILP framework identifies the constraint set most nearly satisfied, guiding classifier improvement.</p>
+<p><strong>Threshold Drift in Production.</strong> Once a <a href="../pages/Classifier" class="internal" data-slug="pages/Classifier">Classifier</a> is deployed, the distribution of incoming data may shift over time — through <a href="../pages/Concept-Drift" class="internal alias" data-slug="pages/Concept-Drift">Concept Drift</a> (the relationship between features and labels changes) or <a href="../Covariate-Shift" class="internal alias" data-slug="Covariate-Shift">Covariate Shift</a> (the feature distribution changes but the label relationship is stable). Both types of drift invalidate the threshold selected at training time. In medical AI, demographic shifts in the patient population (age, ethnicity, co-morbidity prevalence) can cause a threshold calibrated on historical hospital data to produce different false positive rates on the current patient mix. Continuous monitoring of precision, recall, and F1 at the deployed threshold — with automated alerting when metrics deviate beyond a pre-specified tolerance — is now a core component of responsible MLOps for high-stakes classifiers.</p>
+<p><strong>Threshold Selection for Large Language Models.</strong> Foundation models performing classification through instruction prompting (e.g., GPT-4 classifying text as positive/negative sentiment) do not output calibrated probabilities by default. The logit scores from the model’s softmax layer are accessible via the API’s <code>logprobs</code> parameter, and can be used for threshold-based classification. However, these scores are poorly calibrated relative to true class probabilities — often overconfident — and require temperature scaling or Platt scaling before principled threshold selection can be applied. An alternative approach uses structured output formats (JSON with confidence fields) and applies threshold selection to the model’s self-reported confidence, though this introduces additional uncertainty about the calibration of model self-assessment.</p>
+<p><strong>Adversarial Threshold Manipulation.</strong> An adversary aware of a classifier’s threshold can deliberately craft inputs that score just above τ (adversarial attacks in the positive direction) or just below τ (adversarial evasion). This is particularly relevant for financial fraud detection, where fraudsters probe payment classification thresholds and adjust transaction amounts or patterns to avoid triggering alerts. Adversarially robust threshold selection requires either randomising the threshold (differential privacy approaches), providing certified guarantees about the minimum perturbation needed to cross the threshold (<a href="../pages/Adversarial-Robustness" class="internal alias" data-slug="pages/Adversarial-Robustness">Adversarial Robustness</a> certification), or implementing online threshold adaptation that adjusts in response to detected adversarial patterns.</p>
+<h2 id="threshold-selection-for-foundation-models">Threshold Selection for Foundation Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#threshold-selection-for-foundation-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The rise of large language models (LLMs) and multimodal foundation models performing <a href="../pages/Classification" class="internal" data-slug="pages/Classification">Classification</a> through prompting introduces novel threshold selection challenges distinct from those of traditional ML classifiers.</p>
+<p><strong>Token Probability as a Classification Score.</strong> When an LLM (GPT-4, Claude 3.5 Sonnet, Gemini 1.5 Pro) classifies text through a prompt such as “Is this review positive or negative? Answer ‘positive’ or ‘negative’:”, the log-probability of the first output token (‘positive’ vs. ‘negative’) can be used as a soft score for threshold-based classification. The log-probability difference log P(“positive”|x) − log P(“negative”|x) plays the role of the discriminant score; exponentiating and normalising gives a probability estimate. However, token probabilities from autoregressive language models are notoriously poorly calibrated — the model’s confidence in its output token does not reliably reflect the probability that the label is correct. Temperature scaling applied to the logits before softmax is the standard post-hoc calibration method, requiring a held-out calibration set with ground-truth labels.</p>
+<p><strong>Verbalized Confidence and Chain-of-Thought.</strong> An alternative approach asks the LLM to output a numerical confidence score (0-100) alongside its classification: “Is this review positive? Answer with the classification and your confidence (0-100).” The verbalized confidence is used as the threshold score. Research (Xiong et al., 2024) shows that verbalized confidence from large LLMs (GPT-4, Claude 3) is better calibrated than token log-probabilities, but still overconfident, with ECE of ~0.1 even after calibration. Chain-of-thought reasoning (Wei et al., 2022) improves the reliability of verbalized confidence by making the reasoning process explicit before the confidence assessment.</p>
+<p><strong>Embedding-Based Threshold Selection.</strong> When the LLM is used as a feature extractor (encoding text to embeddings which are then fed to a downstream linear classifier), standard threshold selection applies unmodified. This architecture — BERT/RoBERTa/sentence-transformer embeddings + logistic regression or SVM with threshold tuning — is the standard production NLP classification pattern for latency-sensitive applications where full autoregressive generation is too slow. Threshold selection on the downstream classifier’s probability output is identical to the traditional ML case.</p>
+<p><strong>RAG-Augmented Classification Thresholds.</strong> Retrieval-Augmented Generation (RAG) systems that combine LLM generation with retrieved document context introduce a retrieval relevance threshold as an additional decision point: documents below the retrieval relevance threshold τ_retrieval are excluded from the context window, and the overall classification confidence threshold τ_classify is applied to the LLM’s output. The joint threshold optimisation problem (τ_retrieval, τ_classify) is a 2D grid search problem on a validation set, with the objective function being the end-to-end classification metric (F1, precision, recall, or MCC). This two-threshold architecture is deployed in <a href="../pages/Knowledge-Graph" class="internal alias" data-slug="pages/Knowledge-Graph">Knowledge Graph</a> question-answering systems and enterprise search classification pipelines.</p>
+<p><strong>Threshold Documentation for Foundation Model Classifiers.</strong> The EU AI Act and emerging regulatory guidance for foundation models (Article 53 of the Act covers general-purpose AI models) require that providers document the evaluation methodology, including the threshold used, for any benchmarks or capability assessments reported during the conformity assessment process. For foundation model classifiers deployed in high-risk applications, the operator (downstream deployer) must document the threshold applied to the foundation model’s outputs and justify it with respect to the application-specific risk profile. This creates a new accountability layer in the AI supply chain: the foundation model provider certifies discriminative capability (AUC-ROC on standard benchmarks); the operator selects and documents the deployment threshold; the deployer monitors threshold performance in production.</p>
+<h2 id="implementation-guide">Implementation Guide<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-guide" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Step-by-Step Threshold Selection Protocol</strong></p>
+<p>The following protocol is recommended for production classification system deployment:</p>
+<ol>
+<li>
+<p><strong>Train the base classifier</strong> on the training split using the appropriate <a href="../pages/Loss-Function" class="internal alias" data-slug="pages/Loss-Function">Loss Function</a> (cross-entropy for probabilistic classifiers). Do NOT tune the threshold during training.</p>
+</li>
+<li>
+<p><strong>Calibrate the probability outputs</strong> on a held-out calibration set (separate from the validation set used for threshold selection). Apply Platt scaling (logistic regression on the raw scores) or isotonic regression for non-monotonic calibration errors. For deep neural networks, temperature scaling (Guo et al., 2017) is recommended as the simplest effective calibration technique. Verify calibration using a reliability diagram and the Expected Calibration Error (ECE) metric.</p>
+</li>
+<li>
+<p><strong>Compute the ROC curve and Precision-Recall curve</strong> on the validation set. These curves summarise all possible operating points and should be inspected before selecting a threshold.</p>
+</li>
+<li>
+<p><strong>Elicit the cost structure</strong> from domain experts: What is the relative cost of a false positive versus a false negative? This should be expressed as a ratio C(FN)/C(FP), not as an absolute value. Document the cost rationale for regulatory audit purposes.</p>
+</li>
+<li>
+<p><strong>Select the threshold</strong> using the cost-optimal formula: τ* = C(FP) / (C(FP) + C(FN)), or by sweeping the ROC/PR curve and selecting the operating point satisfying domain constraints (e.g., sensitivity ≥ 0.95). For exploratory analysis, Youden’s J provides a useful starting point.</p>
+</li>
+<li>
+<p><strong>Perform fairness audit</strong> on the validation set: compute precision, recall, and false positive rate separately for each protected group (age, gender, ethnicity, postcode deprivation score). If disparities exceed the four-fifths rule threshold or the legal standard, apply group-specific threshold calibration using Fairlearn or IBM AI Fairness 360.</p>
+</li>
+<li>
+<p><strong>Evaluate on the test set</strong> at the selected threshold. Report the full <a href="../pages/Confusion-Matrix" class="internal alias" data-slug="pages/Confusion-Matrix">Confusion Matrix</a>, <a href="../pages/F1-Score" class="internal alias" data-slug="pages/F1-Score">F1 Score</a>, precision, recall, AUC-ROC, and AUC-PR. Document the threshold value, the metric optimised, and the cost rationale in the model card.</p>
+</li>
+<li>
+<p><strong>Set up production monitoring</strong> using a drift detection tool (Evidently AI, WhyLabs). Configure alerts for when precision or recall at the deployed threshold deviates by more than a pre-specified tolerance (e.g., 5% relative change) from the validation-set values.</p>
+</li>
+</ol>
+<p><strong>Implementation in Python (scikit-learn)</strong></p>
+<p>The following pseudocode illustrates the standard threshold selection workflow:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.metrics </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> roc_curve, precision_recall_curve, f1_score</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> sklearn.calibration </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> CalibratedClassifierCV</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> numpy </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">as</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> np</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Step 1: Calibrate classifier</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">calibrated </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> CalibratedClassifierCV(base_clf, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">method</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'isotonic'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">cv</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'prefit'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">calibrated.fit(X_cal, y_cal)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Step 2: Compute curves on validation set</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">y_prob </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> calibrated.predict_proba(X_val)[:, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">fpr, tpr, thresholds_roc </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> roc_curve(y_val, y_prob)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">precision, recall, thresholds_pr </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> precision_recall_curve(y_val, y_prob)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Step 3: Youden's J threshold</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">j_scores </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> tpr </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> fpr</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">tau_youden </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> thresholds_roc[np.argmax(j_scores)]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Step 4: Cost-optimal threshold</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">cost_fn, cost_fp </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> 10.0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1.0</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">  # domain-specific costs</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">tau_cost </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> cost_fp </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">/</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> (cost_fp </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">+</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> cost_fn)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Step 5: F1-optimal threshold</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">f1_scores </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> 2</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> *</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> precision </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> recall </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">/</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> (precision </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">+</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> recall </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> 1e-9</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">tau_f1 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> thresholds_pr[np.argmax(f1_scores)]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Step 6: Apply selected threshold</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">tau </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> tau_cost  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># or tau_youden, tau_f1 as appropriate</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">y_pred </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> (y_prob </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">>=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> tau).astype(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></figure>
+<p><strong>MLOps Integration.</strong> In MLflow, the threshold is logged as a parameter alongside the model artifact: <code>mlflow.log_param(&quot;decision_threshold&quot;, tau)</code>. The threshold is stored in the model’s metadata and retrieved at inference time. Vertex AI Model Registry and SageMaker Model Monitor support threshold parameterisation in model serving configurations, enabling threshold changes without model redeployment.</p>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The classification threshold has roots in signal detection theory formalised by Peterson, Birdsall, and Fox (1954) during radar signal processing research for the US Air Force, which introduced the ROC curve as a tool for comparing detection systems at different operating points. Swets (1973) transported the ROC framework into psychological and medical testing research. Green and Swets (1966) published the foundational text “Signal Detection Theory and Psychophysics,” establishing the mathematical relationship between threshold, sensitivity, and specificity that underlies modern ML evaluation practice.</p>
+<p>The connection to <a href="../Statistical-Decision-Theory" class="internal alias" data-slug="Statistical-Decision-Theory">Statistical Decision Theory</a> was formalised by Wald (1950) and developed in the context of pattern recognition by Duda and Hart (1973) in “Pattern Classification and Scene Analysis.” The cost-sensitive framework for threshold selection was thoroughly analysed by Elkan (2001) in his landmark paper “The Foundations and Implications of Risk Scores,” and by Domingos (1999) in “MetaCost: A General Method for Making Classifiers Cost-Sensitive.”</p>
+<p>The calibration of probability scores prior to thresholding — ensuring that p(y=1|x) genuinely reflects a class probability — was systematically studied by Platt (1999), who introduced Platt scaling (a logistic regression correction applied to SVM outputs), and by Niculescu-Mizil and Caruana (2005), who benchmarked calibration methods across classifiers. Venn prediction (Vovk et al., 2005) and conformal prediction (Shafer and Vovk, 2008) provide distribution-free calibrated confidence intervals under which thresholds carry formal coverage guarantees.</p>
+<p>Threshold selection under class imbalance was comprehensively surveyed by He and Garcia (2009) and by Branco, Torgo, and Ribeiro (2016). The GHOST (Generating Hypotheses and Optimal Threshold Selection) algorithm by Greenbaum et al. (2022) provides a statistically principled approach to threshold optimisation for imbalanced molecular datasets. Multi-class threshold optimisation — the a posteriori tuning approach — was systematically analysed by Collell et al. (2016) and further developed in the FlexOVA framework by Zhu et al. (2022).</p>
+<p>The fairness dimension of threshold selection crystallised with Hardt, Price, and Srebro (2016) “Equality of Opportunity in Supervised Learning,” which demonstrated that per-group threshold calibration is necessary and sufficient to achieve the equal opportunity fairness criterion. Chouldechova (2017) proved the impossibility theorem showing that three intuitively appealing fairness criteria (calibration within groups, balance for the positive class, balance for the negative class) cannot simultaneously be satisfied when base rates differ across groups — an insight with profound implications for any system that uses threshold-based classification in demographically heterogeneous populations.</p>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>As of 2026, classification threshold selection is a mature but still actively researched topic. The EU AI Act (entered into force August 2024, full compliance for high-risk systems required by August 2026) mandates that high-risk AI systems — including those used in employment, credit, healthcare, and law enforcement — maintain records of the decision threshold used, the rationale for its selection, and the fairness audit results disaggregated by protected group. This has catalysed significant commercial investment in automated threshold documentation tooling, with MLflow, Weights &amp; Biases, and Vertex AI all introducing threshold-tracking capabilities in their model registries during 2024–2025.</p>
+<p>The UK MHRA AI Airlock programme (launched May 2024, second cohort January 2025) provides a regulatory sandbox for SaMD developers to test AI classifiers — including their threshold configurations — in a supervised NHS environment before full UKCA marking. This has proven particularly important for radiology and pathology AI, where the MHRA now requires post-market surveillance data on threshold drift as patient population demographics evolve over time. The Post Market Surveillance Requirements Regulation (implemented June 2025) requires Periodic Safety Update Reports (PSURs) for higher-risk Class IIa, IIb, and III devices, which must include threshold performance monitoring data.</p>
+<p>In the financial services sector, the UK Financial Conduct Authority’s 2024 AI governance framework explicitly requires UK-regulated firms to document and justify classification thresholds in automated decision systems for credit, insurance, and fraud, with particular attention to differential false positive rates that could constitute indirect discrimination under the Equality Act 2010.</p>
+<p>Research frontiers in 2025–2026 include threshold learning end-to-end within neural architectures (rather than post-hoc tuning), conformal prediction as a principled alternative that replaces a fixed threshold with adaptive prediction sets, and threshold-invariant fairness formulations that seek classifiers whose fairness properties hold across all threshold values rather than at a specific operating point. The Flexible Multi-Class Cost-Sensitive Thresholding paper (Zhu et al., Springer ADAC, 2025) extends cost-sensitive multi-class thresholding to arbitrary metric objectives with polynomial-time algorithms, representing the current state of the art for complex multi-class threshold optimisation.</p>
+<h2 id="evaluation-metrics-reference">Evaluation Metrics Reference<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-metrics-reference" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The following table summarises all threshold-dependent and threshold-independent metrics relevant to <a href="../pages/Classification-Threshold" class="internal alias" data-slug="pages/Classification-Threshold">Classification Threshold</a> selection, their formulae, and the scenarios where each is most informative:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Metric</th><th>Formula</th><th>Best Used When</th></tr></thead><tbody><tr><td>Accuracy</td><td>(TP+TN)/N</td><td>Balanced classes, symmetric costs</td></tr><tr><td>Precision</td><td>TP/(TP+FP)</td><td>False positive cost high; fixed recall required</td></tr><tr><td>Recall / Sensitivity</td><td>TP/(TP+FN)</td><td>False negative cost high; screening scenarios</td></tr><tr><td>Specificity</td><td>TN/(TN+FP)</td><td>False positive rate must be controlled</td></tr><tr><td>F1 Score</td><td>2PR/(P+R)</td><td>Imbalanced data; single summary metric needed</td></tr><tr><td>F-beta</td><td>(1+β²)PR/(β²P+R)</td><td>Asymmetric precision/recall weighting</td></tr><tr><td>MCC</td><td>(TP·TN−FP·FN)/√((TP+FP)(TP+FN)(TN+FP)(TN+FN))</td><td>Severe class imbalance; all confusion matrix cells informative</td></tr><tr><td>Balanced Accuracy</td><td>(TPR+TNR)/2</td><td>Imbalanced data; threshold-symmetric evaluation</td></tr><tr><td>Youden’s J</td><td>TPR+TNR−1</td><td>Identifying single balanced threshold on ROC curve</td></tr><tr><td>AUC-ROC</td><td>∫₀¹ TPR(FPR) dFPR</td><td>Threshold-independent ranking; balanced or mildly imbalanced</td></tr><tr><td>Average Precision</td><td>∫₀¹ P(R) dR</td><td>Threshold-independent; severe class imbalance</td></tr><tr><td>Log-loss</td><td>−(1/n)Σ[y·log(p̂)+(1−y)·log(1−p̂)]</td><td>Evaluating probability calibration</td></tr><tr><td>Brier Score</td><td>(1/n)Σ(p̂−y)²</td><td>Calibration quality; combines discrimination and calibration</td></tr><tr><td>ECE</td><td>Σᵢ (nᵢ/n)</td><td>accuracy_i − confidence_i</td></tr></tbody></table></div>
+<p><strong>Metric Selection for Regulatory Compliance.</strong> Under the EU AI Act’s high-risk AI provisions, the following minimum reporting requirements apply to classification systems in Annex III categories: (1) <a href="../pages/Confusion-Matrix" class="internal alias" data-slug="pages/Confusion-Matrix">Confusion Matrix</a> at the deployed threshold, disaggregated by protected group; (2) AUC-ROC on the held-out test set; (3) documented cost rationale for the selected threshold; (4) fairness metrics (demographic parity ratio, equal opportunity ratio) per protected group; (5) confidence intervals (bootstrapped) around all metrics. The <a href="../pages/NIST-AI-RMF" class="internal alias" data-slug="pages/NIST-AI-RMF">NIST AI RMF</a> MEASURE function specifically includes threshold documentation as part of MEASURE-2.2 (quantification of AI system performance and risks) and MEASURE-2.6 (risk metrics for bias and discrimination).</p>
+<h2 id="interdisciplinary-connections">Interdisciplinary Connections<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interdisciplinary-connections" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The <a href="../pages/Classification-Threshold" class="internal alias" data-slug="pages/Classification-Threshold">Classification Threshold</a> connects classification theory to several adjacent disciplines beyond <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a>:</p>
+<p><strong>Signal Detection Theory (SDT).</strong> SDT (Green and Swets, 1966) provides the foundational theoretical framework for threshold-based detection: a <a href="../pages/Classifier" class="internal" data-slug="pages/Classifier">Classifier</a>’s discriminability (d’ in SDT) is analogous to AUC-ROC; the response criterion (β or c in SDT) is analogous to the classification threshold; and the receiver operating characteristic is identical in both frameworks. SDT is widely used in <a href="../pages/Medical-Diagnosis-AI" class="internal alias" data-slug="pages/Medical-Diagnosis-AI">Medical Diagnosis AI</a> (sensitivity/specificity trade-off), psychophysics, and radar signal processing.</p>
+<p><strong>Information Retrieval (IR).</strong> In <a href="../pages/Information-Retrieval" class="internal alias" data-slug="pages/Information-Retrieval">Information Retrieval</a>, the <a href="../pages/Classification-Threshold" class="internal alias" data-slug="pages/Classification-Threshold">Classification Threshold</a> determines which documents a retrieval system returns as relevant. The precision-recall trade-off at different cut-offs (P@k, MAP, NDCG) reflects threshold variation across ranked result lists. The <a href="../pages/Precision-Recall-Curve" class="internal alias" data-slug="pages/Precision-Recall-Curve">Precision-Recall Curve</a> is the canonical IR evaluation plot.</p>
+<p><strong>Decision Theory.</strong> Threshold selection is formally equivalent to setting the response criterion in Wald’s sequential decision framework. The <a href="../pages/Classification-Threshold" class="internal alias" data-slug="pages/Classification-Threshold">Classification Threshold</a> implements a Bayesian decision rule that minimises expected loss under the given cost structure. This connects to <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> (where the policy maps states to actions, analogous to classifier mapping inputs to predictions at a threshold) and to <a href="../pages/Game-Theory" class="internal alias" data-slug="pages/Game-Theory">Game Theory</a> (where adversarial threshold manipulation is a strategic interaction).</p>
+<p><strong>Epidemiology and Biostatistics.</strong> Sensitivity and specificity — the primary metrics for characterising diagnostic tests in medicine — are directly computed from threshold-specific <a href="../pages/Confusion-Matrix" class="internal alias" data-slug="pages/Confusion-Matrix">Confusion Matrix</a> cells. Receiver operating characteristic analysis was first introduced to epidemiology by Hanley and McNeil (1982) specifically for evaluating diagnostic accuracy. STARD (Standards for Reporting of Diagnostic Accuracy Studies) guidelines require reporting of sensitivity and specificity at the employed diagnostic threshold for all clinical diagnostic accuracy studies.</p>
+<p><strong>Operations Research.</strong> Cost-sensitive threshold selection is a form of stochastic programming: the expected total cost (E[cost] = π·C(FN)·(1−TPR) + (1−π)·C(FP)·FPR, where π is the positive class prevalence) is minimised over τ. This connects threshold selection to inventory management (newsvendor problem), queueing theory (alert systems), and sequential analysis (SPRT — Sequential Probability Ratio Test), where the monitoring threshold in sequential hypothesis testing is the analogue of the classification threshold in batch learning.</p>
+<h2 id="cross-domain-threshold-transfer">Cross-Domain Threshold Transfer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-domain-threshold-transfer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A practical question that arises frequently in applied machine learning is whether a threshold validated in one context can be transferred to a related context, obviating the need for new threshold validation data.</p>
+<p><strong>Transfer Conditions.</strong> Threshold transfer from source domain S to target domain T is valid when: (1) the score distributions p_S(f(x)|y=1) and p_T(f(x)|y=1) are approximately equal (the classifier is equally calibrated in both domains); (2) the class prior π_T is known and can be used to adjust the threshold via the cost-optimal formula; and (3) the relative misclassification costs C_T(FP)/C_T(FN) are the same as in the source domain. In practice, condition (1) is rarely satisfied without domain adaptation — a <a href="../pages/Transfer-Learning" class="internal alias" data-slug="pages/Transfer-Learning">Transfer Learning</a> technique that aligns the source and target score distributions. Platt scaling applied to source-domain calibration data and then reapplied to a small target-domain validation set (using label-preserving re-weighting) can achieve partial transfer with as few as 20–50 labelled target-domain examples.</p>
+<p><strong>NHS Multi-Site Deployment.</strong> A common scenario in UK NHS AI deployment is calibrating a classifier’s threshold at one hospital trust and deploying it across the NHS network. Differences in patient demographics, equipment calibration, imaging protocols, and clinical workflows across trusts mean that a threshold validated at Guy’s Hospital may perform differently at Newcastle RVI or Sheffield Teaching Hospitals. MHRA guidance for multi-site SaMD deployments requires site-specific validation of the classification threshold, or demonstration via bridging studies that the original threshold performs within pre-specified tolerances at the new site. This is a current bottleneck in NHS AI scaling: the threshold validation requirement creates a multiplicative burden as the number of deployment sites increases.</p>
+<p><strong>Federated Threshold Calibration.</strong> Federated learning frameworks (e.g., PySyft, FATE, NHS Digital Federated Analytics Platform) enable threshold calibration across multiple sites without sharing raw patient data. Each site computes the calibration statistics (reliability diagram, ECE, candidate threshold metrics) locally and contributes aggregated statistics to a central server that computes the globally optimal threshold. This preserves patient privacy while enabling multi-site threshold calibration — a capability of direct relevance to NHS-wide AI deployment at scale.</p>
+<p><strong>Regulatory Portability.</strong> The EU AI Act’s Chapter III requirements for high-risk AI systems include provisions for “substantial modifications” that require re-notification to notified bodies. A change in the classification threshold at deployment may or may not constitute a substantial modification depending on the magnitude of the performance change — a legal ambiguity currently being resolved through guidance from MDCG (Medical Device Coordination Group) for SaMD and from CENELEC for software systems more broadly.</p>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The UK has significant academic and industrial presence in the field of classification threshold methodology. The Alan Turing Institute (headquartered at the British Library, London) has produced research on threshold selection for fairness-aware machine learning, with contributions from David Leslie (ethics of algorithms) and Novi Quadrianto (fair machine learning). UCL’s Statistical Science and Computer Science departments host active research programmes on calibration and uncertainty quantification relevant to threshold setting, with the CSML (Computational Statistics and Machine Learning) group led by Ricardo Silva working on probabilistic classification and threshold optimisation.</p>
+<p>The University of Edinburgh’s Informatics department has a long tradition in probabilistic machine learning and classifier calibration, with work by Amos Storkey and Michael Gutmann on calibrated density models. Cambridge’s Machine Learning Group (Zoubin Ghahramani, now at Google Brain Cambridge) developed kernel methods and Gaussian process classifiers where principled threshold selection is built into the probabilistic inference framework. Imperial College London’s Data Science Institute has applied cost-sensitive threshold methods to clinical prediction models for the NHS, including sepsis risk stratification and deterioration prediction tools used at Imperial College Healthcare NHS Trust.</p>
+<p>Manchester’s £120 million AI research hub (opened 2024) is actively working on threshold selection for industrial AI including manufacturing quality control, where the precision-recall trade-off directly impacts yield rates in semiconductor fabrication and pharmaceutical batch release. Sheffield and Leeds universities contribute through their Centre for Machine Learning and Health (CMHL) partnership, which focuses on threshold calibration for diagnostic AI deployed in Northern England NHS trusts.</p>
+<p>Commercial UK companies with notable threshold methodology work include Darktrace (Cambridge), which uses adaptive thresholds in its cyber AI platform that update in real time as network behaviour evolves; Benevolent AI (London), which applies calibrated thresholds to drug candidate classifiers; and Faculty AI (London), which has advised the NHS and government agencies on threshold documentation under the Government AI Playbook.</p>
+<h2 id="variants-and-extensions">Variants and Extensions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#variants-and-extensions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Ordinal Threshold Selection.</strong> In <a href="../Ordinal-Classification" class="internal alias" data-slug="Ordinal-Classification">Ordinal Classification</a> problems (e.g., severity rating scales, opinion Likert scales, star ratings), the label space is ordered: Y = {y₁ &lt; y₂ &lt; … &lt; yK}. Threshold-based ordinal classifiers learn K−1 thresholds {τ₁ &lt; τ₂ &lt; … &lt; τK-1} on a single latent score: ŷ = k iff τk-1 ≤ f(x) &lt; τk. The proportional odds model (ordered logistic regression) is the standard parametric approach; it assumes the thresholds are constant across inputs (the proportional odds assumption). Ordinal thresholds must be jointly optimised to respect the ordering constraint, and fairness auditing must assess whether the thresholds divide the score distribution equitably across demographic groups.</p>
+<p><strong>Hierarchical Threshold Selection.</strong> In <a href="../Hierarchical-Classification" class="internal alias" data-slug="Hierarchical-Classification">Hierarchical Classification</a> over a taxonomy, coarse-level thresholds and fine-level thresholds may differ. A classifier for a two-level taxonomy (e.g., animal/plant at the coarse level; dog/cat/horse at the fine level) may apply a high-recall threshold at the coarse level and a higher-precision threshold at the fine level. This cascade structure allows different operating points at different levels of the hierarchy, trading off the cost of misclassification at each level independently.</p>
+<p><strong>Anomaly Score Thresholding.</strong> <a href="../pages/Anomaly-Detection" class="internal alias" data-slug="pages/Anomaly-Detection">Anomaly Detection</a> systems output anomaly scores rather than class probabilities, but the practical deployment problem is identical to binary <a href="../pages/Classification-Threshold" class="internal alias" data-slug="pages/Classification-Threshold">Classification Threshold</a> selection: a threshold τ converts the anomaly score into a binary alert/no-alert decision. Unlike classification, anomaly detection often lacks labelled anomaly examples at training time, making threshold selection entirely data-independent — relying instead on a fixed percentile of the training score distribution (e.g., the 99th percentile is flagged as anomalous). This is equivalent to fixing the false positive rate on the training distribution rather than optimising over a true positive/false positive trade-off curve.</p>
+<p><strong>Multi-Threshold Ensembles.</strong> Rather than selecting a single threshold, multi-threshold ensembles partition the score range into three zones: {high-confidence positive (f(x) ≥ τ_high), uncertain (τ_low ≤ f(x) &lt; τ_high), high-confidence negative (f(x) &lt; τ_low)}. Uncertain predictions are handled by a more expensive second-stage classifier, human review, or deferred decision (“abstain”). This three-zone framework was formalised as “selective classification” by Geifman and El-Yaniv (2017) and provides a principled mechanism for trading classification accuracy against coverage (the fraction of inputs for which a prediction is made). It is particularly valuable in medical diagnosis, where an AI “abstain” option routes borderline cases to human expert review.</p>
+<p><strong>Online Threshold Adaptation.</strong> In streaming data settings, the threshold can be adapted in real time based on the most recent window of predictions and their eventual labels (if labels are available with delay). Prequential threshold evaluation (prediction-then-observe-then-update) allows the threshold to track concept drift. In <a href="../pages/Fraud-Detection" class="internal alias" data-slug="pages/Fraud-Detection">Fraud Detection</a> systems where fraud labels are confirmed after investigation, the threshold is periodically re-estimated on a rolling window of labelled transactions. Kalman filter-based threshold tracking (treating the optimal threshold as a latent state) provides a principled approach to online threshold adaptation with Bayesian uncertainty quantification.</p>
+<p><strong>Conformal Classification Sets.</strong> Conformal prediction (Vovk et al., 2005; Shafer and Vovk, 2008) generalises the binary threshold to a set-valued prediction: instead of outputting a single class label, the classifier outputs the smallest set of classes that contains the true label with probability at least 1−α, for user-specified α ∈ (0,1). For binary classification, this reduces to: predict {positive} if f(x) ≥ τ_α, predict {negative} if f(x) &lt; 1−τ_α, and predict {positive, negative} otherwise. The middle zone (abstain set) has guaranteed coverage: the true label is in the predicted set for at least fraction 1−α of test inputs, under exchangeability. Conformal prediction is threshold-free in the sense that α directly controls the coverage guarantee without requiring a probability calibration step.</p>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Conformal Prediction as Threshold Replacement.</strong> The most significant near-term shift is likely to be the replacement of fixed classification thresholds with adaptive prediction sets from conformal prediction. Rather than outputting a class label for a fixed τ, conformal classifiers output the minimal set of classes whose true coverage is guaranteed at a user-specified confidence level (e.g., 90%). This provides rigorous frequentist coverage without assumptions about the distribution of the classifier’s scores and eliminates the threshold-selection problem by replacing it with a confidence-level parameter that has a directly interpretable statistical meaning.</p>
+<p><strong>Threshold Learning End-to-End.</strong> Several research groups are exploring architectures that learn optimal thresholds jointly with model parameters during training, rather than treating threshold selection as a post-hoc tuning step. Differentiable threshold learning through surrogate gradient approximations and quantile reparameterisation enables gradient-based optimisation of the exact evaluation metric of interest, including non-differentiable metrics such as F1-score and AUC.</p>
+<p><strong>Fairness-Constrained Threshold Optimisation.</strong> The tension between predictive performance and fairness constraints at the threshold level will intensify as the EU AI Act and UK AI regulation mature. Research is converging on multi-objective threshold optimisation algorithms that find Pareto-optimal operating points balancing performance metrics against multiple simultaneous fairness criteria, with formal guarantees about the fairness-performance frontier.</p>
+<p><strong>Threshold Monitoring in Production.</strong> Continuous monitoring of threshold performance as data distributions evolve — concept drift, covariate shift, population shift in healthcare AI — is becoming a core MLOps capability. Tools like Evidently AI, WhyLabs, and Arize AI provide real-time threshold drift detection with alerting for when the deployed threshold no longer achieves its target operating point on current production data.</p>
+<p><strong>Regulation-Aligned Threshold Documentation.</strong> By 2028, it is anticipated that threshold documentation will be a mandated component of AI model cards and technical documentation under the EU AI Act implementing regulations. Standardised threshold specification formats — covering the threshold value, the metric being optimised, the cost rationale, and the fairness audit results — are being developed by CEN-CENELEC/JTC 21 and ISO/IEC JTC 1/SC 42.</p>
+<p><strong>Neuro-Symbolic Integration.</strong> The intersection of neural probabilistic classifiers with symbolic reasoning systems raises new threshold questions: in neuro-symbolic architectures where a <a href="../pages/Neural-Network" class="internal alias" data-slug="pages/Neural-Network">Neural Network</a> classifier outputs probabilities that are passed as evidence to a Bayesian knowledge graph or logic reasoning engine, the threshold at the neural–symbolic boundary determines how soft neural evidence is converted into hard symbolic facts. This is an active research area at UCL, Edinburgh, and the Alan Turing Institute’s Data-Centric Engineering programme, with applications to safety-critical systems including autonomous vehicles, medical diagnostic reasoning, and legal AI.</p>
+<p><strong>Quantum Computing Implications.</strong> Quantum machine learning algorithms for binary classification (quantum support vector machines, quantum neural networks, quantum kernel methods) output measurement probabilities from quantum circuits rather than classical model scores. The classification threshold in a quantum classifier is the measurement outcome threshold at which the quantum state is declared to belong to the positive class. The probabilistic nature of quantum measurement introduces inherent randomness into the threshold decision, requiring multiple measurement shots and majority voting — effectively implementing a stochastic threshold that samples from the quantum probability distribution rather than applying a deterministic cut-off.</p>
+<h2 id="threshold-selection-algorithms-compared">Threshold Selection Algorithms Compared<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#threshold-selection-algorithms-compared" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The following comparison summarises the principal threshold selection algorithms, their computational complexity, and their applicability conditions:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Algorithm</th><th>Objective</th><th>Complexity</th><th>Requires Cost?</th><th>Handles Multi-class?</th><th>Notes</th></tr></thead><tbody><tr><td>Default (τ=0.5)</td><td>None</td><td>O(1)</td><td>No</td><td>Yes (softmax argmax)</td><td>Only valid when prior = 0.5 and costs equal</td></tr><tr><td>Youden’s J</td><td>max(TPR+TNR−1)</td><td>O(n)</td><td>No</td><td>No (binary only)</td><td>Ignores cost asymmetry; good first approximation</td></tr><tr><td>F1-optimal</td><td>max(F1)</td><td>O(n)</td><td>No</td><td>Via macro-F1</td><td>Standard for IR and NLP tasks</td></tr><tr><td>F-beta-optimal</td><td>max(Fβ)</td><td>O(n)</td><td>No</td><td>Via macro-Fβ</td><td>Allows user-specified recall weighting</td></tr><tr><td>Closest-to-(0,1)</td><td>min Euclidean to ideal</td><td>O(n)</td><td>No</td><td>No</td><td>Geometry heuristic; no cost semantics</td></tr><tr><td>Cost-minimising</td><td>min expected cost</td><td>O(1) given C</td><td>Yes</td><td>Via per-class costs</td><td>Theoretically optimal; requires cost elicitation</td></tr><tr><td>Constraint-based (MILP)</td><td>feasibility + metric</td><td>O(n·K)</td><td>Yes</td><td>Yes</td><td>Handles multiple simultaneous constraints</td></tr><tr><td>Quantile thresholding</td><td>recall@quantile</td><td>O(n)</td><td>No</td><td>Via percentile</td><td>Differentiable; end-to-end training compatible</td></tr><tr><td>Group-specific (Fairlearn)</td><td>per-group TPR/FPR</td><td>O(n·G)</td><td>Optional</td><td>Yes</td><td>Required for EU AI Act high-risk fairness</td></tr><tr><td>Conformal (split)</td><td>coverage guarantee</td><td>O(n)</td><td>No</td><td>Yes</td><td>Distribution-free; replaces threshold with α</td></tr><tr><td>Conformal (full)</td><td>coverage guarantee</td><td>O(n²)</td><td>No</td><td>Yes</td><td>Tighter sets; computationally intensive</td></tr><tr><td>Temperature scaling</td><td>calibration</td><td>O(n)</td><td>No</td><td>Yes</td><td>Prerequisite step; does not select threshold</td></tr></tbody></table></div>
+<p><strong>Choosing Among Algorithms.</strong> In practice, the algorithm selection follows a decision tree: (1) if regulatory compliance requires fairness auditing, use group-specific threshold selection with Fairlearn after calibration; (2) if costs can be elicited from domain experts, use cost-minimising threshold; (3) if costs cannot be quantified, use F1-optimal (imbalanced data) or Youden’s J (balanced data); (4) if distributional coverage guarantees are required (safety-critical), use conformal prediction. Temperature scaling is always applied first as a calibration prerequisite regardless of the threshold algorithm chosen.</p>
+<p><strong>Integration with <a href="../pages/Hyperparameter-Tuning" class="internal alias" data-slug="pages/Hyperparameter-Tuning">Hyperparameter Tuning</a>.</strong> The threshold is sometimes included as a hyperparameter in automated machine learning (AutoML) pipelines. Google Vertex AI AutoML and H2O AutoML treat the classification threshold as a searchable hyperparameter during model selection, optimising it jointly with model architecture and training hyperparameters using Bayesian optimisation. This approach, while computationally expensive, avoids the threshold selection bias problem (selection on validation data that is then used for performance reporting) by using separate inner/outer cross-validation loops.</p>
+<h2 id="benchmark-datasets-and-evaluation-standards">Benchmark Datasets and Evaluation Standards<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-datasets-and-evaluation-standards" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Classification threshold evaluation is typically conducted on standardised datasets that provide reproducible benchmarks for comparing threshold selection methods:</p>
+<p><strong>Medical Benchmarks</strong></p>
+<ul>
+<li>MIMIC-III / MIMIC-IV (Johnson et al., 2016/2023): de-identified EHR data from 40,000+ ICU patients at Beth Israel Deaconess Medical Center; widely used for sepsis prediction threshold evaluation. Available under PhysioNet access.</li>
+<li>CheXpert (Irvin et al., 2019): 224,316 chest X-rays from Stanford; multi-label classification of 14 pathologies with expert-labelled uncertainty; threshold selection per pathology is a key challenge. Aligns with NHS National Radiology Dataset.</li>
+<li>CAMELYON16/17: whole-slide image datasets for lymph node metastasis detection; standard for pathology AI threshold evaluation. Used in NHS Digital Pathology benchmarking.</li>
+<li>UK Biobank: 500,000 participants with linked health data; used for disease prediction classifier threshold validation across multiple chronic conditions.</li>
+</ul>
+<p><strong>Finance and Fraud Benchmarks</strong></p>
+<ul>
+<li>IEEE-CIS Fraud Detection Dataset (Kaggle, 2019): 590,540 transactions from Vesta Corporation with 433 features; severe class imbalance (3.5% positive). Standard for evaluating fraud detection threshold strategies.</li>
+<li>Home Credit Default Risk Dataset: 307,511 loan applications from Home Credit Group; used for credit scoring threshold evaluation with fairness constraints.</li>
+<li>PaySim Synthetic Mobile Money Dataset: simulated mobile financial transactions with 11 types; positive class rate 0.13%. Standard for AML threshold research.</li>
+</ul>
+<p><strong>Cybersecurity Benchmarks</strong></p>
+<ul>
+<li>NSL-KDD: improved version of KDD Cup 1999; 125,973 network connection records; binary (normal/attack) and multi-class (DoS, Probe, R2L, U2R) classification. Standard threshold evaluation benchmark for NIDS.</li>
+<li>CICIDS 2017 (Canadian Institute for Cybersecurity): 2.8M network flows with 80 features; eight attack types; class imbalance varies by attack type. Current standard for intrusion detection threshold research.</li>
+<li>EMBER (Anderson and Roth, 2018): 1 million PE file samples; binary malware classification; threshold selection determines false positive rate acceptable to endpoint security products.</li>
+</ul>
+<p><strong>NLP Classification Benchmarks</strong></p>
+<ul>
+<li>GLUE / SuperGLUE: multi-task NLP benchmarks including sentiment classification, textual entailment, question classification. Foundation model threshold evaluation for text classification tasks.</li>
+<li>IMDB Sentiment Dataset: 50,000 movie reviews; binary sentiment classification; widely used for threshold vs. calibration studies in NLP.</li>
+<li>Reuters-21578: news category multi-label classification; standard for evaluating per-class threshold optimisation in text categorisation.</li>
+</ul>
+<p><strong>Threshold Method Comparison Studies</strong></p>
+<ul>
+<li>The empirical comparison by Ferri, Hernandez-Orallo, and Modroiu (2009) evaluated threshold selection methods across 44 UCI datasets; found Youden’s J and cost-minimising threshold to be most robust across imbalance ratios.</li>
+<li>The GHOST benchmark (Greenbaum et al., 2022) evaluated threshold selection for molecular property prediction across 10 ChEMBL assay datasets; demonstrated that standard threshold selection methods fail under extreme class imbalance (ratio > 30:1) without bootstrapping.</li>
+</ul>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody><tr><td>Decision boundary</td><td>The hyperplane or surface in feature space at which the classifier changes its predicted class label; parameterised by the threshold in the probability output space</td></tr><tr><td>Operating point</td><td>A specific (FPR, TPR) pair on the <a href="../pages/ROC-Curve" class="internal alias" data-slug="pages/ROC-Curve">ROC Curve</a> corresponding to a particular threshold value; characterises the trade-off at that threshold</td></tr><tr><td>Sensitivity / Recall / TPR</td><td>TP/(TP+FN): fraction of actual positives correctly detected; increases as τ decreases</td></tr><tr><td>Specificity / TNR</td><td>TN/(TN+FP): fraction of actual negatives correctly rejected; increases as τ increases</td></tr><tr><td>Precision / PPV</td><td>TP/(TP+FP): fraction of positive predictions that are correct; generally increases as τ increases</td></tr><tr><td>False positive rate (FPR)</td><td>FP/(FP+TN): the x-axis of the <a href="../pages/ROC-Curve" class="internal alias" data-slug="pages/ROC-Curve">ROC Curve</a>; complement of specificity</td></tr><tr><td>Youden’s J statistic</td><td>J = sensitivity + specificity − 1; ranges from 0 (no discrimination) to 1 (perfect discrimination); identifies the threshold maximising balanced performance</td></tr><tr><td>Platt scaling</td><td>Logistic regression post-processing of raw classifier scores to produce calibrated probabilities; a prerequisite for probabilistic threshold interpretation</td></tr><tr><td>Temperature scaling</td><td>A single-parameter calibration technique for neural networks that divides logits by a learned temperature T before softmax; equivalent to global threshold shift</td></tr><tr><td>Conformal prediction set</td><td>A set-valued prediction outputting the smallest subset of classes with guaranteed marginal coverage 1−α; the distribution-free generalisation of fixed-threshold classification</td></tr><tr><td>Equal opportunity</td><td>Fairness criterion requiring equal true positive rates across demographic subgroups; achieved by per-group threshold calibration (Hardt et al., 2016)</td></tr><tr><td>Demographic parity</td><td>Fairness criterion requiring equal positive prediction rates across demographic subgroups; requires different thresholds when base rates differ across groups</td></tr><tr><td>Alarm fatigue</td><td>Clinical phenomenon where excessive false positive alerts from a classifier set too low a threshold cause clinicians to ignore or override alerts; a major safety concern for medical AI deployments in the NHS</td></tr><tr><td>AUROC</td><td>Area Under the Receiver Operating Characteristic Curve; threshold-independent performance metric; probability that a randomly chosen positive scores higher than a randomly chosen negative under the model</td></tr><tr><td>AP / AUPRC</td><td>Average Precision / Area Under the Precision-Recall Curve; threshold-independent metric preferred under class imbalance; equals the <a href="../pages/Confusion-Matrix" class="internal alias" data-slug="pages/Confusion-Matrix">Confusion Matrix</a>-derived mean precision across recall levels</td></tr></tbody></table></div>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Peterson, W.W., Birdsall, T.G., Fox, W.C. (1954). The theory of signal detectability. <em>Transactions of the IRE Professional Group on Information Theory</em>, 4(4), 171–212.</li>
+<li>Green, D.M., Swets, J.A. (1966). <em>Signal Detection Theory and Psychophysics</em>. Wiley, New York.</li>
+<li>Swets, J.A. (1973). The relative operating characteristic in psychology. <em>Science</em>, 182(4116), 990–1000.</li>
+<li>Wald, A. (1950). <em>Statistical Decision Functions</em>. Wiley, New York.</li>
+<li>Duda, R.O., Hart, P.E. (1973). <em>Pattern Classification and Scene Analysis</em>. Wiley, New York.</li>
+<li>Elkan, C. (2001). The foundations and implications of risk scores. <em>Proceedings of the Seventh ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</em>, 155–164.</li>
+<li>Domingos, P. (1999). MetaCost: A general method for making classifiers cost-sensitive. <em>Proceedings of KDD-1999</em>, 155–164.</li>
+<li>Platt, J.C. (1999). Probabilistic outputs for support vector machines and comparisons to regularised likelihood methods. <em>Advances in Large Margin Classifiers</em>, MIT Press, 61–74.</li>
+<li>Niculescu-Mizil, A., Caruana, R. (2005). Predicting good probabilities with supervised learning. <em>Proceedings of the 22nd ICML</em>, 625–632.</li>
+<li>He, H., Garcia, E.A. (2009). Learning from imbalanced data. <em>IEEE Transactions on Knowledge and Data Engineering</em>, 21(9), 1263–1284.</li>
+<li>Hardt, M., Price, E., Srebro, N. (2016). Equality of opportunity in supervised learning. <em>Advances in Neural Information Processing Systems</em>, 29, 3315–3323.</li>
+<li>Chouldechova, A. (2017). Fair prediction with disparate impact: A study of bias in recidivism prediction instruments. <em>Big Data</em>, 5(2), 153–163.</li>
+<li>Vovk, V., Gammerman, A., Shafer, G. (2005). <em>Algorithmic Learning in a Random World</em>. Springer, New York.</li>
+<li>Shafer, G., Vovk, V. (2008). A tutorial on conformal prediction. <em>Journal of Machine Learning Research</em>, 9, 371–421.</li>
+<li>Branco, P., Torgo, L., Ribeiro, R.P. (2016). A survey of predictive modelling under imbalanced distributions. <em>ACM Computing Surveys</em>, 49(2), Article 31.</li>
+<li>Collell, G., Prelec, D., Patil, K.R. (2016). A simple plug-in bagging ensemble based on threshold-moving for classifying binary and multiclass imbalanced data. <em>Neurocomputing</em>, 214, 360–369.</li>
+<li>Fawcett, T. (2006). An introduction to ROC analysis. <em>Pattern Recognition Letters</em>, 27(8), 861–874.</li>
+<li>Davis, J., Goadrich, M. (2006). The relationship between precision-recall and ROC curves. <em>Proceedings of the 23rd ICML</em>, 233–240.</li>
+<li>Greenbaum, J.A., et al. (2022). GHOST: Adjusting the decision threshold to handle imbalanced data in machine learning. <em>Journal of Chemical Information and Modeling</em>, 62(8), 1813–1821.</li>
+<li>Zhu, R., et al. (2025). Flexible multi-class cost-sensitive thresholding. <em>Advances in Data Analysis and Classification</em>, Springer, doi:10.1007/s11634-025-00651-8.</li>
+<li>Ferri, C., Hernandez-Orallo, J., Modroiu, R. (2009). An experimental comparison of performance measures for classification. <em>Pattern Recognition Letters</em>, 30(1), 27–38.</li>
+<li>Zou, K.H., O’Malley, A.J., Mauri, L. (2007). Receiver-operating characteristic analysis for evaluating diagnostic tests and predictive models. <em>Circulation</em>, 115(5), 654–657.</li>
+<li>Hand, D.J. (2009). Measuring classifier performance: A coherent alternative to the area under the ROC curve. <em>Machine Learning</em>, 77(1), 103–123.</li>
+<li>MHRA (2024). Software and AI as a Medical Device — Guidance for Digital Health Technologies. UK Medicines and Healthcare Products Regulatory Agency.</li>
+<li>EU AI Act (2024). Regulation (EU) 2024/1689 on Artificial Intelligence. European Parliament and Council.</li>
+<li>ISO/IEC 22989:2022. Artificial Intelligence Concepts and Terminology. International Organisation for Standardisation.</li>
+<li>NIST (2023). Artificial Intelligence Risk Management Framework (AI RMF 1.0). National Institute of Standards and Technology, NIST AI 100-1.</li>
+<li>Bishop, C.M. (2006). <em>Pattern Recognition and Machine Learning</em>. Springer, New York. Chapter 1.5 (Decision Theory).</li>
+</ol>
+<h2 id="connections-to-related-concepts">Connections to Related Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#connections-to-related-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The <a href="../pages/Classification-Threshold" class="internal alias" data-slug="pages/Classification-Threshold">Classification Threshold</a> concept is tightly interwoven with the following related ideas in the ontology:</p>
+<ul>
+<li><strong><a href="../pages/ROC-Curve" class="internal alias" data-slug="pages/ROC-Curve">ROC Curve</a></strong>: the threshold defines which point on the ROC curve is the operational point; the curve itself summarises the set of all achievable thresholds. The AUC-ROC is the threshold-averaged performance metric.</li>
+<li><strong><a href="../pages/Precision-Recall-Curve" class="internal alias" data-slug="pages/Precision-Recall-Curve">Precision-Recall Curve</a></strong>: the threshold selects the operating point on the PR curve; preferred over ROC under <a href="../pages/Class-Imbalance" class="internal alias" data-slug="pages/Class-Imbalance">Class Imbalance</a> because it focuses attention on the minority class performance.</li>
+<li><strong><a href="../pages/Confusion-Matrix" class="internal alias" data-slug="pages/Confusion-Matrix">Confusion Matrix</a></strong>: at any fixed threshold, the confusion matrix contains the complete information about classifier performance; TP, FP, TN, FN counts are the building blocks of all threshold-dependent metrics.</li>
+<li><strong><a href="../pages/F1-Score" class="internal alias" data-slug="pages/F1-Score">F1 Score</a></strong>: the F1-optimal threshold is frequently selected by sweeping the PR curve; it is the standard operating point for NLP and IR classification systems.</li>
+<li><strong><a href="../Probability-Calibration" class="internal alias" data-slug="Probability-Calibration">Probability Calibration</a></strong>: calibration ensures that the model’s probability output corresponds to true frequencies; it must be performed before threshold selection has a meaningful probabilistic interpretation.</li>
+<li><strong><a href="../pages/AI-Fairness" class="internal alias" data-slug="pages/AI-Fairness">AI Fairness</a></strong>: group-specific thresholds are the standard post-processing method for achieving equal opportunity or demographic parity fairness criteria; the impossibility theorem (Chouldechova, 2017) means not all fairness criteria can be simultaneously satisfied through threshold adjustment.</li>
+<li><strong><a href="../pages/Anomaly-Detection" class="internal alias" data-slug="pages/Anomaly-Detection">Anomaly Detection</a></strong>: anomaly scores are thresholded analogously to classifier probabilities; the positive class (anomaly) prevalence is typically unknown, making prevalence-dependent cost-optimal thresholding less applicable.</li>
+<li><strong><a href="../pages/Medical-Diagnosis-AI" class="internal alias" data-slug="pages/Medical-Diagnosis-AI">Medical Diagnosis AI</a></strong>: clinical AI classifiers require clinically motivated thresholds set to achieve specified sensitivity or specificity targets; the <a href="../MHRA-SaMD-Guidance" class="internal alias" data-slug="MHRA-SaMD-Guidance">MHRA SaMD Guidance</a> and NHS AI evaluation standards govern threshold documentation requirements.</li>
+<li><strong><a href="../Credit-Scoring" class="internal alias" data-slug="Credit-Scoring">Credit Scoring</a></strong>: threshold determines the loan approval/rejection boundary; must be documented under FCA AI governance guidance; fairness auditing for protected characteristics is legally required under the Equality Act 2010.</li>
+<li><strong><a href="../pages/Fraud-Detection" class="internal alias" data-slug="pages/Fraud-Detection">Fraud Detection</a></strong>: the precision-recall trade-off at the threshold directly determines investigator workload vs. fraud catch rate; adaptive threshold systems adjust in real time as fraud patterns evolve.</li>
+<li><strong><a href="../pages/Explainable-AI" class="internal alias" data-slug="pages/Explainable-AI">Explainable AI</a></strong>: SHAP and LIME explanations of borderline predictions (near the threshold) are inherently less stable than explanations for high-confidence predictions; this creates an interaction between threshold choice and explanation quality.</li>
+<li><strong><a href="../pages/Conformal-Prediction" class="internal alias" data-slug="pages/Conformal-Prediction">Conformal Prediction</a></strong>: the asymptotic alternative to fixed-threshold classification; provides set-valued predictions with guaranteed coverage instead of point predictions at a fixed threshold.</li>
+<li><strong><a href="../pages/MLOps" class="internal" data-slug="pages/MLOps">MLOps</a></strong>: threshold monitoring is a key MLOps capability; drift in precision, recall, or F1 at the deployed threshold triggers model review or threshold recalibration.</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1032" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#formal-definition" data-for="formal-definition">Formal Definition</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#challenges-and-active-research" data-for="challenges-and-active-research">Challenges and Active Research</a></li><li class="depth-0"><a href="#threshold-selection-for-foundation-models" data-for="threshold-selection-for-foundation-models">Threshold Selection for Foundation Models</a></li><li class="depth-0"><a href="#implementation-guide" data-for="implementation-guide">Implementation Guide</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#evaluation-metrics-reference" data-for="evaluation-metrics-reference">Evaluation Metrics Reference</a></li><li class="depth-0"><a href="#interdisciplinary-connections" data-for="interdisciplinary-connections">Interdisciplinary Connections</a></li><li class="depth-0"><a href="#cross-domain-threshold-transfer" data-for="cross-domain-threshold-transfer">Cross-Domain Threshold Transfer</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#variants-and-extensions" data-for="variants-and-extensions">Variants and Extensions</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#threshold-selection-algorithms-compared" data-for="threshold-selection-algorithms-compared">Threshold Selection Algorithms Compared</a></li><li class="depth-0"><a href="#benchmark-datasets-and-evaluation-standards" data-for="benchmark-datasets-and-evaluation-standards">Benchmark Datasets and Evaluation Standards</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#connections-to-related-concepts" data-for="connections-to-related-concepts">Connections to Related Concepts</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Classification-Threshold" class="internal">Classification Threshold</a></li><li><a href="../pages/Classification" class="internal">Classification</a></li><li><a href="../pages/Classifier" class="internal">Classifier</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

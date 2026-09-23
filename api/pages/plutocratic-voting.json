@@ -50,6 +50,10 @@
       {
         "id": "urn:ngm:class:decentralization",
         "label": "Decentralisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
       }
     ],
     "uses": [
@@ -60,7 +64,11 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
       }
     ],
@@ -213,6 +221,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -293,6 +305,10 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
@@ -301,16 +317,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

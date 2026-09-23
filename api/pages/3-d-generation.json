@@ -18,6 +18,10 @@
     {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
     }
   ],
   "entityType": "Class",
@@ -40,6 +44,18 @@
       {
         "id": "urn:ngm:class:mesh-generation",
         "label": "Mesh Generation"
+      },
+      {
+        "id": "urn:ngm:class:scene-generation",
+        "label": "Scene Generation"
+      },
+      {
+        "id": "urn:ngm:class:texture-synthesis",
+        "label": "Texture Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
       }
     ],
     "requires": [
@@ -54,6 +70,14 @@
       {
         "id": "urn:ngm:class:differentiable-rendering",
         "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
       }
     ],
     "enables": [
@@ -76,11 +100,78 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:score-distillation-sampling",
+        "label": "Score Distillation Sampling"
+      },
+      {
+        "id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -110,10 +201,68 @@
       {
         "id": "urn:ngm:class:clip",
         "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-network",
+        "label": "Occupancy Network"
+      },
+      {
+        "id": "urn:ngm:class:signed-distance-function",
+        "label": "Signed Distance Function"
+      },
+      {
+        "id": "urn:ngm:class:instant-ngp",
+        "label": "Instant-NGP"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:game-asset-generation",
+        "label": "Game Asset Generation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:objaverse",
+        "label": "Objaverse"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -135,6 +284,34 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:texture-synthesis",
+        "label": "Texture Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:instant-ngp",
+        "label": "Instant-NGP"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:neural-3-d-generation",
+        "label": "Neural 3D Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-3-d",
+        "label": "Text-to-3D"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion Model"
       }
     ]
   },
@@ -148,6 +325,16 @@
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:generative-ai",
@@ -165,24 +352,9 @@
       "slug": "ai-application"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    },
-    {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
-    },
-    {
-      "id": "urn:ngm:class:deep-learning",
-      "label": "Deep Learning",
-      "slug": "deep-learning"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -194,10 +366,6 @@
       {
         "id": "urn:ngm:class:procedural-generation",
         "label": "Procedural Generation"
-      },
-      {
-        "id": "urn:ngm:class:texture-synthesis",
-        "label": "Texture Synthesis"
       },
       {
         "id": "urn:ngm:class:autoencoder",
@@ -218,6 +386,10 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
       }
     ],
     "requires": [
@@ -228,10 +400,6 @@
       {
         "id": "urn:ngm:class:computer-graphics",
         "label": "Computer Graphics"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -252,16 +420,16 @@
       {
         "id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
       },
       {
         "id": "urn:ngm:class:game-development",
@@ -286,6 +454,10 @@
       {
         "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
       }
     ],
     "dependsOn": [
@@ -306,35 +478,23 @@
         "label": "Unsupervised Learning"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "implements": [
-      {
-        "id": "urn:ngm:class:audio-generation",
-        "label": "Audio Generation"
-      },
-      {
-        "id": "urn:ngm:class:code-generation",
-        "label": "Code Generation"
-      },
-      {
-        "id": "urn:ngm:class:image-generation",
-        "label": "Image Generation"
-      },
-      {
-        "id": "urn:ngm:class:text-generation",
-        "label": "Text Generation"
-      },
-      {
-        "id": "urn:ngm:class:video-generation",
-        "label": "Video Generation"
-      },
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
@@ -346,6 +506,26 @@
       {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
       }
     ],
     "contrastsWith": [
@@ -366,14 +546,26 @@
         "label": "Supervised Learning"
       },
       {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
       },
       {
         "id": "urn:ngm:class:extended-reality",
@@ -392,12 +584,12 @@
         "label": "Synthetic Data"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -436,12 +628,50 @@
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
       },
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [
@@ -470,12 +700,12 @@
         "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
       }
     ]
   },

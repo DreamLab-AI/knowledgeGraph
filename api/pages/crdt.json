@@ -10,6 +10,30 @@
     {
       "id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-synchronisation",
+      "label": "Distributed Data Synchronisation"
+    },
+    {
+      "id": "urn:ngm:class:eventually-consistent-data-structure",
+      "label": "Eventually Consistent Data Structure"
+    },
+    {
+      "id": "urn:ngm:class:replicated-data-structure",
+      "label": "Replicated Data Structure"
+    },
+    {
+      "id": "urn:ngm:class:mergeable-data-type",
+      "label": "Mergeable Data Type"
+    },
+    {
+      "id": "urn:ngm:class:commutative-data-structure",
+      "label": "Commutative Data Structure"
+    },
+    {
+      "id": "urn:ngm:class:monotone-data-structure",
+      "label": "Monotone Data Structure"
     }
   ],
   "entityType": "Class",
@@ -36,6 +60,42 @@
       {
         "id": "urn:ngm:class:version-vector",
         "label": "Version Vector"
+      },
+      {
+        "id": "urn:ngm:class:g-counter",
+        "label": "G-Counter"
+      },
+      {
+        "id": "urn:ngm:class:g-set",
+        "label": "G-Set"
+      },
+      {
+        "id": "urn:ngm:class:lww-element-set",
+        "label": "LWW-Element-Set"
+      },
+      {
+        "id": "urn:ngm:class:replicated-growable-array",
+        "label": "Replicated Growable Array"
+      },
+      {
+        "id": "urn:ngm:class:causal-ordering",
+        "label": "Causal Ordering"
+      },
+      {
+        "id": "urn:ngm:class:join-semilattice",
+        "label": "Semilattice Merge Function"
+      },
+      {
+        "id": "urn:ngm:class:tombstone-record",
+        "label": "Tombstone Record"
+      },
+      {
+        "id": "urn:ngm:class:delta-state",
+        "label": "Delta State"
+      },
+      {
+        "id": "urn:ngm:class:causal-history-graph",
+        "label": "Causal History Graph"
       }
     ],
     "requires": [
@@ -46,6 +106,30 @@
       {
         "id": "urn:ngm:class:join-semilattice",
         "label": "Semilattice Ordering"
+      },
+      {
+        "id": "urn:ngm:class:causal-delivery",
+        "label": "Causal Delivery"
+      },
+      {
+        "id": "urn:ngm:class:unique-replica-identifiers",
+        "label": "Unique Replica Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:join-semilattice",
+        "label": "Semilattice Ordering"
+      },
+      {
+        "id": "urn:ngm:class:idempotent-merge",
+        "label": "Idempotent Merge"
+      },
+      {
+        "id": "urn:ngm:class:monotone-operations",
+        "label": "Monotone Operations"
+      },
+      {
+        "id": "urn:ngm:class:causal-broadcast-protocol",
+        "label": "Causal Broadcast Protocol"
       }
     ],
     "enables": [
@@ -68,9 +152,66 @@
       {
         "id": "urn:ngm:class:real-time-collaborative-editing",
         "label": "Real-Time Collaborative Editing"
+      },
+      {
+        "id": "urn:ngm:class:offline-first-collaboration",
+        "label": "Offline-first Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Peer-to-peer Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Multi-datacenter Replication"
+      },
+      {
+        "id": "urn:ngm:class:distributed-databases",
+        "label": "Partition-tolerant Databases"
+      },
+      {
+        "id": "urn:ngm:class:coordination-free-computing",
+        "label": "Coordination-free Computing"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Optimistic Replication"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:vector-clocks",
+        "label": "Vector Clocks"
+      },
+      {
+        "id": "urn:ngm:class:lamport-timestamps",
+        "label": "Lamport Timestamps"
+      },
+      {
+        "id": "urn:ngm:class:causal-consistency",
+        "label": "Causal Consistency"
+      },
+      {
+        "id": "urn:ngm:class:order-theory",
+        "label": "Order Theory"
+      },
+      {
+        "id": "urn:ngm:class:lattice-theory",
+        "label": "Lattice Theory"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:synchronisation",
@@ -87,9 +228,62 @@
       {
         "id": "urn:ngm:class:eventual-consistency",
         "label": "Strong Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:commutativity",
+        "label": "Commutativity"
+      },
+      {
+        "id": "urn:ngm:class:associativity",
+        "label": "Associativity"
+      },
+      {
+        "id": "urn:ngm:class:state-lattice-merge",
+        "label": "State Lattice Merge"
+      },
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Delta Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:causal-broadcast",
+        "label": "Causal Broadcast"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Strong Eventual Consistency"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "id": "urn:ngm:class:pessimistic-locking",
+        "label": "Pessimistic Locking"
+      },
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-phase Commit"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos Consensus"
+      },
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-locking",
+        "label": "Optimistic Locking"
+      },
+      {
+        "id": "urn:ngm:class:strong-consistency",
+        "label": "Strong Consistency"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:infra-network-and-comms",
@@ -108,6 +302,26 @@
       {
         "id": "urn:ngm:class:merkle-dag",
         "label": "Merkle DAG"
+      },
+      {
+        "id": "urn:ngm:class:causal-history",
+        "label": "Causal History"
+      },
+      {
+        "id": "urn:ngm:class:unique-identifiers-per-replica",
+        "label": "Unique Identifiers per Replica"
+      },
+      {
+        "id": "urn:ngm:class:version-vectors",
+        "label": "Version Vectors"
+      },
+      {
+        "id": "urn:ngm:class:logical-clocks",
+        "label": "Logical Clocks"
+      },
+      {
+        "id": "urn:ngm:class:vector-clocks",
+        "label": "Hybrid Logical Clocks"
       }
     ],
     "supports": [
@@ -138,9 +352,42 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:mobile-sync",
+        "label": "Mobile Sync"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality",
+        "label": "Collaborative IDEs"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-tools",
+        "label": "Multiplayer Collaboration Tools"
+      },
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "IoT Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:local-first-software",
+        "label": "Offline-first Architecture"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:shapiro-et-al-2011-socc",
+        "label": "Shapiro et al. 2011 SoCC"
+      },
+      {
+        "id": "urn:ngm:class:syncfree-eu-project-fp7-ict-2011-7-609551",
+        "label": "SyncFree EU Project FP7-ICT-2011-7 609551"
+      },
+      {
+        "id": "urn:ngm:class:inria-technical-report-rr-7506",
+        "label": "INRIA Technical Report RR-7506"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -207,6 +454,10 @@
         "label": "Asynchronous Collaboration"
       },
       {
+        "id": "urn:ngm:class:presence-mechanism",
+        "label": "Presence Mechanism"
+      },
+      {
         "id": "urn:ngm:class:shared-workspace",
         "label": "Shared Workspace"
       },
@@ -259,11 +510,19 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
@@ -337,6 +596,10 @@
       {
         "id": "urn:ngm:class:groupware",
         "label": "Groupware"
+      },
+      {
+        "id": "urn:ngm:class:social-software",
+        "label": "Social Software"
       }
     ]
   },

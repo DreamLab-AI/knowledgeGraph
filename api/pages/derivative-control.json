@@ -12,19 +12,36 @@
       "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
+      "id": "urn:ngm:class:feedback-control",
+      "label": "Feedback Control"
     },
     {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
+      "id": "urn:ngm:class:control-actions",
+      "label": "Control Actions"
+    },
+    {
+      "id": "urn:ngm:class:pid-control-component",
+      "label": "PID Control Component"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:error-rate-measurement",
+        "label": "Error Rate Measurement"
+      },
+      {
+        "id": "urn:ngm:class:derivative-gain",
+        "label": "Derivative Gain"
+      },
+      {
+        "id": "urn:ngm:class:damping-action",
+        "label": "Damping Action"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:error-signal",
@@ -33,13 +50,43 @@
       {
         "id": "urn:ngm:class:gain-tuning",
         "label": "Gain Tuning"
+      },
+      {
+        "id": "urn:ngm:class:time-derivative",
+        "label": "Time Derivative"
+      },
+      {
+        "id": "urn:ngm:class:low-pass-filtering",
+        "label": "Low-Pass Filtering"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:oscillation-damping",
+        "label": "Oscillation Damping"
+      },
+      {
+        "id": "urn:ngm:class:faster-convergence",
+        "label": "Faster Convergence"
+      },
+      {
+        "id": "urn:ngm:class:reduced-overshoot",
+        "label": "Reduced Overshoot"
+      },
+      {
+        "id": "urn:ngm:class:stability-improvement",
+        "label": "Stability Improvement"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -48,9 +95,109 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory",
+      "slug": "control-theory"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:control-engineering",
+      "label": "Control Engineering",
+      "slug": "control-engineering"
+    },
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:cybernetics",
+      "label": "Cybernetics",
+      "slug": "cybernetics"
+    },
+    {
+      "id": "urn:ngm:class:dynamical-systems-theory",
+      "label": "Dynamical Systems Theory",
+      "slug": "dynamical-systems-theory"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-physics",
+      "label": "Mathematical Physics",
+      "slug": "mathematical-physics"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-theory",
+      "label": "Systems Theory",
+      "slug": "systems-theory"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -90,42 +237,206 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:actuators",
-        "label": "Actuators"
+        "id": "urn:ngm:class:actuator-response",
+        "label": "Actuator Response"
       },
       {
-        "id": "urn:ngm:class:control-system",
-        "label": "Control System"
+        "id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
       },
       {
-        "id": "urn:ngm:class:kinematics",
-        "label": "Kinematics"
+        "id": "urn:ngm:class:error-measurement",
+        "label": "Error Measurement"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
+        "id": "urn:ngm:class:disturbance-rejection",
+        "label": "Disturbance Rejection"
       },
       {
-        "id": "urn:ngm:class:humanoid-robotics",
-        "label": "Humanoid Robotics"
+        "id": "urn:ngm:class:robust-operation",
+        "label": "Robust Operation"
       },
       {
-        "id": "urn:ngm:class:industrial-automation",
-        "label": "IndustrialAutomation"
+        "id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
       },
       {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
       },
       {
-        "id": "urn:ngm:class:smart-manufacturing",
-        "label": "Smart Manufacturing"
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Operation"
       },
       {
-        "id": "urn:ngm:class:warehouse-automation",
-        "label": "Warehouse Automation"
+        "id": "urn:ngm:class:flight-stability",
+        "label": "Flight Stability"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:ngm:class:process-regulation",
+        "label": "Process Regulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:plant-model",
+        "label": "Plant Model"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:hamilton-jacobi-bellman-equation",
+        "label": "Hamilton-Jacobi-Bellman Equation"
+      },
+      {
+        "id": "urn:ngm:class:laplace-transform",
+        "label": "Laplace Transform"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-stability-theory",
+        "label": "Lyapunov Stability Theory"
+      },
+      {
+        "id": "urn:ngm:class:riccati-equation",
+        "label": "Riccati Equation"
+      },
+      {
+        "id": "urn:ngm:class:state-space-representation",
+        "label": "State-Space Representation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:backstepping",
+        "label": "Backstepping"
+      },
+      {
+        "id": "urn:ngm:class:h-control",
+        "label": "H\u221e Control"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:feedforward-control",
+        "label": "Feedforward Control"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:ai-without-dynamics-models",
+        "label": "AI Without Dynamics Models"
+      },
+      {
+        "id": "urn:ngm:class:classical-optimisation-without-feedback",
+        "label": "Classical Optimisation Without Feedback"
+      },
+      {
+        "id": "urn:ngm:class:model-free-heuristic-tuning",
+        "label": "Model-Free Heuristic Tuning"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-scheduling",
+        "label": "Open-Loop Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
       }
     ],
     "uses": [
@@ -136,6 +447,108 @@
       {
         "id": "urn:ngm:class:servo-motor",
         "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      },
+      {
+        "id": "urn:ngm:class:bode-plot",
+        "label": "Bode Plot"
+      },
+      {
+        "id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-function",
+        "label": "Lyapunov Function"
+      },
+      {
+        "id": "urn:ngm:class:nyquist-diagram",
+        "label": "Nyquist Diagram"
+      },
+      {
+        "id": "urn:ngm:class:root-locus",
+        "label": "Root Locus"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:aerospace-engineering",
+        "label": "Aerospace Engineering"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-engineering",
+        "label": "Biomedical Engineering"
+      },
+      {
+        "id": "urn:ngm:class:hvac-systems",
+        "label": "HVAC Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      },
+      {
+        "id": "urn:ngm:class:process-industries",
+        "label": "Process Industries"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-13849",
+        "label": "ISO 13849"
+      },
+      {
+        "id": "urn:ngm:class:arp4754-a",
+        "label": "ARP4754A"
+      },
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C Avionics"
+      },
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      },
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:ifac",
+        "label": "IFAC"
+      },
+      {
+        "id": "urn:ngm:class:isa-95",
+        "label": "ISA-95"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control System"
+      },
+      {
+        "id": "urn:ngm:class:stabilisation-architecture",
+        "label": "Stabilisation Architecture"
       }
     ],
     "relatedTo": [
@@ -150,6 +563,26 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:estimation-theory",
+        "label": "Estimation Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
       }
     ]
   },

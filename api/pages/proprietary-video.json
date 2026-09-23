@@ -16,8 +16,32 @@
       "label": "Legal and Regulatory"
     },
     {
-      "id": "urn:ngm:class:content-delivery-network",
+      "id": "urn:ngm:class:cdn",
       "label": "Content Delivery Network"
+    },
+    {
+      "id": "urn:ngm:class:video-codec-standards",
+      "label": "Video Codec Standards"
+    },
+    {
+      "id": "urn:ngm:class:digital-rights-management",
+      "label": "Digital Rights Management"
+    },
+    {
+      "id": "urn:ngm:class:streaming-protocols",
+      "label": "Streaming Protocols"
+    },
+    {
+      "id": "urn:ngm:class:broadcast-standards",
+      "label": "Broadcast Standards"
+    },
+    {
+      "id": "urn:ngm:class:intellectual-property-rights-framework",
+      "label": "Intellectual Property"
+    },
+    {
+      "id": "urn:ngm:class:patent",
+      "label": "Patent Licensing"
     }
   ],
   "entityType": "Class",
@@ -44,6 +68,54 @@
       {
         "id": "urn:ngm:class:mpeg-dash",
         "label": "MPEG-DASH"
+      },
+      {
+        "id": "urn:ngm:class:vvc-h-266",
+        "label": "VVC H.266"
+      },
+      {
+        "id": "urn:ngm:class:dolby-vision",
+        "label": "Dolby Vision"
+      },
+      {
+        "id": "urn:ngm:class:widevine",
+        "label": "Widevine"
+      },
+      {
+        "id": "urn:ngm:class:fairplay",
+        "label": "FairPlay"
+      },
+      {
+        "id": "urn:ngm:class:playready",
+        "label": "PlayReady"
+      },
+      {
+        "id": "urn:ngm:class:hls",
+        "label": "HLS"
+      },
+      {
+        "id": "urn:ngm:class:cmaf",
+        "label": "CMAF"
+      },
+      {
+        "id": "urn:ngm:class:atsc-3-0",
+        "label": "ATSC 3.0"
+      },
+      {
+        "id": "urn:ngm:class:hbbtv",
+        "label": "HbbTV"
+      },
+      {
+        "id": "urn:ngm:class:uhd-blu-ray",
+        "label": "UHD Blu-ray"
+      },
+      {
+        "id": "urn:ngm:class:hdcp",
+        "label": "HDCP"
+      },
+      {
+        "id": "urn:ngm:class:common-encryption",
+        "label": "Common Encryption"
       }
     ],
     "requires": [
@@ -52,7 +124,7 @@
         "label": "ARM TrustZone"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -82,6 +154,10 @@
       {
         "id": "urn:ngm:class:hardware-and-edge",
         "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:patent",
+        "label": "Patent Licensing"
       }
     ],
     "enables": [
@@ -100,9 +176,70 @@
       {
         "id": "urn:ngm:class:low-latency",
         "label": "Low Latency Streaming"
+      },
+      {
+        "id": "urn:ngm:class:premium-streaming",
+        "label": "Premium Streaming"
+      },
+      {
+        "id": "urn:ngm:class:4k-uhd-delivery",
+        "label": "4K UHD Delivery"
+      },
+      {
+        "id": "urn:ngm:class:hdr-video",
+        "label": "HDR Video"
+      },
+      {
+        "id": "urn:ngm:class:pay-tv",
+        "label": "Pay TV"
+      },
+      {
+        "id": "urn:ngm:class:over-the-top-streaming",
+        "label": "Over The Top Streaming"
+      },
+      {
+        "id": "urn:ngm:class:advertising",
+        "label": "Addressable Advertising"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency Streaming"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:patent-pools",
+        "label": "Patent Pools"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:arm-trust-zone",
+        "label": "ARM TrustZone"
+      },
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:codec-licensing",
+        "label": "Codec Licensing"
+      },
+      {
+        "id": "urn:ngm:class:frand-commitments",
+        "label": "FRAND Commitments"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:etsi",
@@ -115,9 +252,78 @@
       {
         "id": "urn:ngm:class:itu-t",
         "label": "ITU-T Standards"
+      },
+      {
+        "id": "urn:ngm:class:mpeg-standards",
+        "label": "MPEG Standards"
+      },
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO IEC Standards"
+      },
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI Standards"
+      },
+      {
+        "id": "urn:ngm:class:atsc-standards",
+        "label": "ATSC Standards"
+      },
+      {
+        "id": "urn:ngm:class:dvb-standards",
+        "label": "DVB Standards"
+      },
+      {
+        "id": "urn:ngm:class:blu-ray-disc-standards",
+        "label": "Blu-ray Disc Standards"
+      },
+      {
+        "id": "urn:ngm:class:w3c-eme-standards",
+        "label": "W3C EME Standards"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:av1-codec",
+        "label": "AV1"
+      },
+      {
+        "id": "urn:ngm:class:vp9-codec",
+        "label": "VP9"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:royalty-free-codecs",
+        "label": "Royalty Free Codecs"
+      },
+      {
+        "id": "urn:ngm:class:mpeg-5-evc-baseline",
+        "label": "MPEG-5 EVC Baseline"
+      },
+      {
+        "id": "urn:ngm:class:avs3",
+        "label": "AVS3"
+      },
+      {
+        "id": "urn:ngm:class:ogg-vorbis-theora",
+        "label": "Ogg Vorbis Theora"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -129,7 +335,7 @@
         "label": "AV1"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -155,6 +361,18 @@
       {
         "id": "urn:ngm:class:hardware-and-edge",
         "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:av1-codec",
+        "label": "AV1"
+      },
+      {
+        "id": "urn:ngm:class:vp9-codec",
+        "label": "VP9"
+      },
+      {
+        "id": "urn:ngm:class:fmp4",
+        "label": "fMP4"
       }
     ],
     "supports": [
@@ -177,6 +395,42 @@
       {
         "id": "urn:ngm:class:you-tube",
         "label": "YouTube"
+      },
+      {
+        "id": "urn:ngm:class:disney-plus",
+        "label": "Disney Plus"
+      },
+      {
+        "id": "urn:ngm:class:amazon-prime-video",
+        "label": "Amazon Prime Video"
+      },
+      {
+        "id": "urn:ngm:class:apple-inc-technology-corporation",
+        "label": "Apple TV Plus"
+      },
+      {
+        "id": "urn:ngm:class:bbc-iplayer",
+        "label": "BBC iPlayer"
+      },
+      {
+        "id": "urn:ngm:class:itvx",
+        "label": "ITVX"
+      },
+      {
+        "id": "urn:ngm:class:sky-glass",
+        "label": "Sky Glass"
+      },
+      {
+        "id": "urn:ngm:class:bt-sport",
+        "label": "BT Sport"
+      },
+      {
+        "id": "urn:ngm:class:youtube",
+        "label": "YouTube"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
       }
     ],
     "standardizedBy": [
@@ -215,6 +469,22 @@
       {
         "id": "urn:ngm:class:google-ai-technology-corporation",
         "label": "Google AI Technology Corporation"
+      },
+      {
+        "id": "urn:ngm:class:atsc",
+        "label": "ATSC"
+      },
+      {
+        "id": "urn:ngm:class:dvb",
+        "label": "DVB"
+      },
+      {
+        "id": "urn:ngm:class:blu-ray-disc-association",
+        "label": "Blu-ray Disc Association"
+      },
+      {
+        "id": "urn:ngm:class:dolby-laboratories",
+        "label": "Dolby Laboratories"
       }
     ],
     "partOf": [],
@@ -224,7 +494,7 @@
         "label": "Advertising and Marketing"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -258,30 +528,73 @@
       {
         "id": "urn:ngm:class:proprietary-ai-video",
         "label": "Proprietary AI Video"
+      },
+      {
+        "id": "urn:ngm:class:streaming-services",
+        "label": "Streaming Services"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:content-protection",
+      "label": "Content Protection",
+      "slug": "content-protection"
+    },
     {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:network-infrastructure",
-      "label": "Network Infrastructure",
-      "slug": "network-infrastructure"
+      "id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework",
+      "slug": "legal-framework"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework",
+      "slug": "regulatory-framework"
+    },
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety",
+      "slug": "sc-governance-and-safety"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -310,36 +623,36 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:anycast-routing",
-        "label": "Anycast Routing"
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
       },
       {
-        "id": "urn:ngm:class:dns",
-        "label": "DNS"
+        "id": "urn:ngm:class:origin-server",
+        "label": "Origin Server"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:license-management",
+        "label": "License Management"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
       },
       {
-        "id": "urn:ngm:class:identity-and-access-management",
-        "label": "Identity and Access Management"
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
       },
       {
-        "id": "urn:ngm:class:network-security",
-        "label": "Network Security"
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
       }
     ],
     "enables": [
@@ -352,82 +665,140 @@
         "label": "Privacy Framework"
       },
       {
+        "id": "urn:ngm:class:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      },
+      {
         "id": "urn:ngm:class:ddos-mitigation",
         "label": "DDoS Mitigation"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Edge Compute"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:power-infrastructure",
-        "label": "Power Infrastructure"
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:telecommunications-infrastructure",
-        "label": "Telecommunications Infrastructure"
+        "id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
+      },
+      {
+        "id": "urn:ngm:class:legal-jurisdiction",
+        "label": "Legal Jurisdiction"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:tee",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Data Protection by Design"
+      },
+      {
+        "id": "urn:ngm:class:privacy-requirements",
+        "label": "Privacy Requirements"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security Obligations"
+      },
+      {
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:genius-act",
+        "label": "GENIUS Act"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:origin-server",
-        "label": "Origin Server"
-      },
-      {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      },
+      {
+        "id": "urn:ngm:class:open-source-licensing",
+        "label": "Open Source Licensing"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:public-domain",
+        "label": "Public Domain"
       },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:overlay-network",
-        "label": "Overlay Network"
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:edge-inference",
-        "label": "Edge AI Inference"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       }
     ],
     "uses": [
@@ -436,64 +807,100 @@
         "label": "Anycast Routing"
       },
       {
-        "id": "urn:ngm:class:http-caching",
-        "label": "HTTP Caching"
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
       },
       {
-        "id": "urn:ngm:class:quic",
-        "label": "HTTP/3 QUIC"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
+        "id": "urn:ngm:class:adaptive-bitrate-streaming",
+        "label": "Adaptive Bitrate Streaming"
       },
       {
-        "id": "urn:ngm:class:microservices-architecture",
-        "label": "Microservices Architecture"
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
       },
       {
-        "id": "urn:ngm:class:scalability-pattern",
-        "label": "Scalability Pattern"
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
       },
       {
-        "id": "urn:ngm:class:streaming-media",
-        "label": "Streaming Media"
+        "id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:innovation-ecosystem",
+        "label": "Innovation Ecosystem"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
       },
       {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:trips-agreement",
+        "label": "TRIPS Agreement"
+      },
+      {
+        "id": "urn:ngm:class:world-intellectual-property-organization",
+        "label": "World Intellectual Property Organization"
+      },
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
       },
       {
-        "id": "urn:ngm:class:3-gpp",
-        "label": "3GPP"
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:ieee-802-x",
-        "label": "IEEE 802 Standards"
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:ietf",
-        "label": "IETF"
+        "id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:international-organization-of-securities-commissions",
+        "label": "International Organization of Securities Commissions"
       }
     ],
     "partOf": [
@@ -502,8 +909,8 @@
         "label": "Internet Infrastructure"
       },
       {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
       }
     ],
     "relatedTo": [
@@ -512,7 +919,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -528,16 +935,16 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:caching",
-        "label": "Caching"
+        "id": "urn:ngm:class:content-delivery-network-cdn",
+        "label": "Content Delivery Network (CDN)"
       },
       {
-        "id": "urn:ngm:class:network-latency",
-        "label": "Network Latency"
+        "id": "urn:ngm:class:http-caching",
+        "label": "HTTP Caching"
       }
     ]
   },

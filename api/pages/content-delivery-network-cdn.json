@@ -40,6 +40,10 @@
       {
         "id": "urn:ngm:class:routing-protocol",
         "label": "Routing Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cache-layer",
+        "label": "Cache System"
       }
     ],
     "requires": [
@@ -54,13 +58,56 @@
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:storage-systems",
+        "label": "Storage System"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS Service"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:low-latency-content-delivery",
+        "label": "Low-Latency Content Delivery"
+      },
+      {
+        "id": "urn:ngm:class:scalable-distribution",
+        "label": "Scalable Distribution"
+      },
+      {
+        "id": "urn:ngm:class:geographic-redundancy",
+        "label": "Geographic Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:ddos-protection",
+        "label": "DDoS Protection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:internet-service-provider",
+        "label": "Internet Service Provider"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -82,12 +129,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -272,7 +319,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

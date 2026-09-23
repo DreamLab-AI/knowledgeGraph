@@ -68,6 +68,10 @@
       {
         "id": "urn:ngm:class:accessibility",
         "label": "Digital Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Digital Accessibility"
       }
     ],
     "dependsOn": [
@@ -117,6 +121,10 @@
       {
         "id": "urn:ngm:class:journey-mapping",
         "label": "Journey Mapping"
+      },
+      {
+        "id": "urn:ngm:class:personas",
+        "label": "Personas"
       }
     ],
     "supports": [],
@@ -124,6 +132,10 @@
       {
         "id": "urn:ngm:class:iso-9241-210",
         "label": "ISO 9241-210"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
       },
       {
         "id": "urn:ngm:class:wcag-2-2",
@@ -268,6 +280,18 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -276,7 +300,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

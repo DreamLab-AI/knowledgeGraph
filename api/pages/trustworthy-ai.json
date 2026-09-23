@@ -37,6 +37,10 @@
       {
         "id": "urn:ngm:class:privacy-by-design",
         "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation"
       }
     ],
     "enables": [
@@ -66,6 +70,10 @@
       {
         "id": "urn:ngm:class:iso-iec-42001",
         "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       }
     ],
     "contrastsWith": [
@@ -132,6 +140,10 @@
       {
         "id": "urn:ngm:class:iso-iec-jtc1-sc42",
         "label": "ISO/IEC JTC1 SC42"
+      },
+      {
+        "id": "urn:ngm:class:eu-hleg-ai",
+        "label": "EU High-Level Expert Group on AI"
       }
     ],
     "partOf": [],
@@ -147,6 +159,10 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:fairness-aware-machine-learning",
+        "label": "Fairness-Aware Machine Learning"
       }
     ]
   },
@@ -226,6 +242,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

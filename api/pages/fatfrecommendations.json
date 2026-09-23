@@ -32,7 +32,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -78,7 +78,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -93,9 +93,189 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:anti-financial-crime-regime",
+      "label": "Anti-Financial Crime Regime",
+      "slug": "anti-financial-crime-regime"
+    },
+    {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:customer-onboarding-discipline",
+      "label": "Customer Onboarding Discipline",
+      "slug": "customer-onboarding-discipline"
+    },
+    {
+      "id": "urn:ngm:class:financial-crime-compliance",
+      "label": "Financial Crime Compliance",
+      "slug": "financial-crime-compliance"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance",
+      "slug": "regulatory-compliance"
+    },
+    {
+      "id": "urn:ngm:class:risk-management-framework",
+      "label": "Risk Management Framework",
+      "slug": "risk-management-framework"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-principle",
+      "label": "AI Governance Principle",
+      "slug": "ai-governance-principle"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management",
+      "slug": "risk-management"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     }
   ],
   "inheritedRelations": {
@@ -113,7 +293,7 @@
         "label": "Blockchain Governance"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
       },
       {
@@ -143,20 +323,28 @@
         "label": "Board-Level Oversight"
       },
       {
+        "id": "urn:ngm:class:compliance-officer",
+        "label": "Compliance Officer"
+      },
+      {
+        "id": "urn:ngm:class:customer-identification-documentation",
+        "label": "Customer Identification Documentation"
+      },
+      {
+        "id": "urn:ngm:class:fiu-reporting-channel",
+        "label": "FIU Reporting Channel"
+      },
+      {
         "id": "urn:ngm:class:risk-based-approach",
         "label": "Risk-Based Approach"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:sanctions-list-feed",
+        "label": "Sanctions List Feed"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:staff-training-programme",
+        "label": "Staff Training Programme"
       }
     ],
     "enables": [
@@ -173,30 +361,68 @@
         "label": "Terrorist Financing Disruption"
       },
       {
+        "id": "urn:ngm:class:cross-border-payment-compliance",
+        "label": "Cross-Border Payment Compliance"
+      },
+      {
+        "id": "urn:ngm:class:financial-system-integrity",
+        "label": "Financial System Integrity"
+      },
+      {
+        "id": "urn:ngm:class:proceeds-of-crime-recovery",
+        "label": "Proceeds of Crime Recovery"
+      },
+      {
         "id": "urn:ngm:class:sanctions-enforcement",
         "label": "Sanctions Enforcement"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:vasp-market-access",
+        "label": "VASP Market Access"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:beneficial-ownership-registers",
+        "label": "Beneficial Ownership Registers"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:companies-house-psc-register",
+        "label": "Companies House PSC Register"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:egmont-group-information-sharing",
+        "label": "Egmont Group Information Sharing"
+      },
+      {
+        "id": "urn:ngm:class:financial-intelligence-unit",
+        "label": "Financial Intelligence Unit"
+      },
+      {
+        "id": "urn:ngm:class:government-issued-identity-documents",
+        "label": "Government-Issued Identity Documents"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Electronic Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:pep-databases",
+        "label": "PEP Databases"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:bank-secrecy-act",
         "label": "Bank Secrecy Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-amlr-single-rulebook",
+        "label": "EU AMLR Single Rulebook"
       },
       {
         "id": "urn:ngm:class:fatf-40-recommendations",
@@ -207,44 +433,122 @@
         "label": "FATF Travel Rule"
       },
       {
+        "id": "urn:ngm:class:proceeds-of-crime-act-2002",
+        "label": "Proceeds of Crime Act 2002"
+      },
+      {
         "id": "urn:ngm:class:risk-based-approach",
         "label": "Risk-Based Approach Methodology"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-and-anti-money-laundering-act-2018",
+        "label": "Sanctions and Anti-Money Laundering Act 2018"
       },
       {
         "id": "urn:ngm:class:uk-mlr-2017",
         "label": "UK MLR 2017"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:anonymous-cryptocurrency",
+        "label": "Anonymous Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:cypherpunk-pseudonymity",
+        "label": "Cypherpunk Pseudonymity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance-anonymity",
+        "label": "Decentralised Finance Anonymity"
+      },
+      {
+        "id": "urn:ngm:class:privacy-coin-architecture",
+        "label": "Privacy Coin Architecture"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-identity",
+        "label": "Privacy-Preserving Identity"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:unhosted-wallet",
+        "label": "Unhosted Wallet"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-kyc",
+        "label": "Zero-Knowledge KYC"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Legal and Regulatory"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-risk-management",
+        "label": "Supply Chain Risk Management"
       }
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:biometric-liveness-detection",
+        "label": "Biometric Liveness Detection"
+      },
+      {
         "id": "urn:ngm:class:blockchain-analytics-platform",
         "label": "Blockchain Analytics Platform"
+      },
+      {
+        "id": "urn:ngm:class:document-authentication-ocr",
+        "label": "Document Authentication OCR"
       },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Electronic Identity Verification"
       },
       {
+        "id": "urn:ngm:class:machine-learning-risk-scoring",
+        "label": "Machine Learning Risk Scoring"
+      },
+      {
         "id": "urn:ngm:class:network-analysis",
         "label": "Network Analysis"
       },
       {
+        "id": "urn:ngm:class:nfc-chip-reading",
+        "label": "NFC Chip Reading"
+      },
+      {
         "id": "urn:ngm:class:sanctions-screening",
         "label": "Sanctions Screening Engine"
-      },
-      {
-        "id": "urn:ngm:class:travel-rule-protocol",
-        "label": "Travel Rule Protocol"
-      },
-      {
-        "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
       }
     ],
     "supports": [
@@ -253,12 +557,32 @@
         "label": "Correspondent Banking"
       },
       {
+        "id": "urn:ngm:class:de-risking-avoidance",
+        "label": "De-Risking Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:fca-cryptoasset-registration",
+        "label": "FCA Cryptoasset Registration"
+      },
+      {
         "id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
       },
       {
         "id": "urn:ngm:class:licensing-requirements",
         "label": "VASP Licensing"
+      },
+      {
+        "id": "urn:ngm:class:listed-company-compliance",
+        "label": "Listed Company Compliance"
+      },
+      {
+        "id": "urn:ngm:class:mica-authorisation",
+        "label": "MiCA Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
       }
     ],
     "standardizedBy": [
@@ -271,28 +595,62 @@
         "label": "eIDAS 2.0"
       },
       {
+        "id": "urn:ngm:class:eccta-2023",
+        "label": "ECCTA 2023"
+      },
+      {
+        "id": "urn:ngm:class:eu-amla-regulation-2024-1620",
+        "label": "EU AMLA Regulation 2024/1620"
+      },
+      {
+        "id": "urn:ngm:class:eu-amld6-2024-1640",
+        "label": "EU AMLD6 2024/1640"
+      },
+      {
+        "id": "urn:ngm:class:eu-amlr-2024-1624",
+        "label": "EU AMLR 2024/1624"
+      },
+      {
         "id": "urn:ngm:class:fatf-40-recommendations",
         "label": "FATF 40 Recommendations"
       },
       {
         "id": "urn:ngm:class:fatf-recommendations",
         "label": "FATF Recommendation 15"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:fatf-travel-rule",
-        "label": "FATF Recommendation 16 Travel Rule"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:iso-20022",
-        "label": "ISO 20022 Payment Messaging"
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
       },
       {
-        "id": "urn:ngm:class:uk-mlr-2017",
-        "label": "UK MLR 2017"
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
       },
       {
-        "id": "urn:ngm:class:w3-c-verifiable-credentials",
-        "label": "W3C Verifiable Credentials"
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
       }
     ],
     "relatedTo": [
@@ -309,24 +667,24 @@
         "label": "Regulatory Technology"
       },
       {
+        "id": "urn:ngm:class:amla",
+        "label": "AMLA"
+      },
+      {
+        "id": "urn:ngm:class:austrac",
+        "label": "AUSTRAC"
+      },
+      {
         "id": "urn:ngm:class:beneficial-ownership",
         "label": "Beneficial Ownership"
       },
       {
+        "id": "urn:ngm:class:binance-settlement-2023",
+        "label": "Binance Settlement 2023"
+      },
+      {
         "id": "urn:ngm:class:chainalysis",
         "label": "Chainalysis"
-      },
-      {
-        "id": "urn:ngm:class:elliptic",
-        "label": "Elliptic"
-      },
-      {
-        "id": "urn:ngm:class:fatf",
-        "label": "FATF"
-      },
-      {
-        "id": "urn:ngm:class:fca",
-        "label": "FCA"
       }
     ]
   },

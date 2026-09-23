@@ -34,12 +34,25 @@
       {
         "id": "urn:ngm:class:redress-procedure",
         "label": "redress"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Effective governance"
+      },
+      {
+        "id": "urn:ngm:class:redress-procedure",
+        "label": "redress"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -128,8 +141,8 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
+        "id": "urn:ngm:class:policy-management",
+        "label": "Policy Management"
       }
     ],
     "enables": [
@@ -200,6 +213,10 @@
       {
         "id": "urn:ngm:class:self-regulation",
         "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-guidelines",
+        "label": "Voluntary Guidelines"
       }
     ],
     "bridgesTo": [
@@ -214,6 +231,18 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       },
       {
         "id": "urn:ngm:class:explainable-ai",

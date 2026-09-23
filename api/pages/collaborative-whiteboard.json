@@ -16,8 +16,24 @@
       "label": "Communication Technology"
     },
     {
-      "id": "urn:ngm:class:dc-communication",
-      "label": "Communication Technology"
+      "id": "urn:ngm:class:visual-collaboration-tools",
+      "label": "Visual Collaboration Tools"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration"
+    },
+    {
+      "id": "urn:ngm:class:asynchronous-communication",
+      "label": "Asynchronous Communication"
+    },
+    {
+      "id": "urn:ngm:class:remote-work-technology",
+      "label": "Remote Work Technology"
+    },
+    {
+      "id": "urn:ngm:class:digital-workspace",
+      "label": "Digital Workspace"
     }
   ],
   "entityType": "Class",
@@ -48,6 +64,50 @@
       {
         "id": "urn:ngm:class:crdt",
         "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:infinite-canvas",
+        "label": "Infinite Canvas"
+      },
+      {
+        "id": "urn:ngm:class:shape-library",
+        "label": "Shape Library"
+      },
+      {
+        "id": "urn:ngm:class:freehand-drawing",
+        "label": "Freehand Drawing"
+      },
+      {
+        "id": "urn:ngm:class:voting-system",
+        "label": "Voting System"
+      },
+      {
+        "id": "urn:ngm:class:template-library",
+        "label": "Template Library"
+      },
+      {
+        "id": "urn:ngm:class:real-time-cursors",
+        "label": "Real-time Cursors"
+      },
+      {
+        "id": "urn:ngm:class:frame",
+        "label": "Frame"
+      },
+      {
+        "id": "urn:ngm:class:follow-mode",
+        "label": "Follow Mode"
+      },
+      {
+        "id": "urn:ngm:class:breakout-board",
+        "label": "Breakout Board"
+      },
+      {
+        "id": "urn:ngm:class:connector",
+        "label": "Connector"
+      },
+      {
+        "id": "urn:ngm:class:embed-widget",
+        "label": "Embed Widget"
       }
     ],
     "requires": [
@@ -60,7 +120,7 @@
         "label": "Cloud Storage"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -78,6 +138,10 @@
       {
         "id": "urn:ngm:class:crdt",
         "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:browser-graphics-rendering",
+        "label": "Browser Graphics Rendering"
       }
     ],
     "enables": [
@@ -100,9 +164,58 @@
       {
         "id": "urn:ngm:class:sprint-planning",
         "label": "Sprint Planning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-brainstorming",
+        "label": "Distributed Brainstorming"
+      },
+      {
+        "id": "urn:ngm:class:visual-process-mapping",
+        "label": "Visual Process Mapping"
+      },
+      {
+        "id": "urn:ngm:class:user-journey-mapping",
+        "label": "User Journey Mapping"
+      },
+      {
+        "id": "urn:ngm:class:wardley-mapping",
+        "label": "Wardley Mapping"
+      },
+      {
+        "id": "urn:ngm:class:affinity-diagramming",
+        "label": "Affinity Diagramming"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-ideation",
+        "label": "Asynchronous Ideation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-synchronisation",
+        "label": "Real-time Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-logical-clock",
+        "label": "Hybrid Logical Clock"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:conflict-resolution",
@@ -123,9 +236,38 @@
       {
         "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:vector-graphics",
+        "label": "Vector Graphics"
+      },
+      {
+        "id": "urn:ngm:class:lww-register",
+        "label": "LWW Register"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:physical-whiteboard",
+        "label": "Physical Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:static-diagramming-tool",
+        "label": "Static Diagramming Tool"
+      },
+      {
+        "id": "urn:ngm:class:presentation-software",
+        "label": "Presentation Software"
+      },
+      {
+        "id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      },
+      {
+        "id": "urn:ngm:class:videoconference-whiteboard",
+        "label": "Videoconference Whiteboard"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -151,6 +293,22 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:canvas-api",
+        "label": "Canvas API"
+      },
+      {
+        "id": "urn:ngm:class:svg",
+        "label": "SVG"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:sentence-transformers",
+        "label": "Sentence Transformers"
       }
     ],
     "supports": [
@@ -169,6 +327,18 @@
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:agile-retrospective",
+        "label": "Agile Retrospective"
+      },
+      {
+        "id": "urn:ngm:class:remote-facilitation",
+        "label": "Remote Facilitation"
+      },
+      {
+        "id": "urn:ngm:class:liberating-structures",
+        "label": "Liberating Structures"
       }
     ],
     "standardizedBy": [
@@ -179,6 +349,22 @@
       {
         "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC Standard"
+      },
+      {
+        "id": "urn:ngm:class:w3c-pointer-events",
+        "label": "W3C Pointer Events"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC Standard"
+      },
+      {
+        "id": "urn:ngm:class:crdt-academic-literature",
+        "label": "CRDT Academic Literature"
+      },
+      {
+        "id": "urn:ngm:class:iso-9241-usability",
+        "label": "ISO 9241 Usability"
       }
     ],
     "partOf": [],
@@ -230,14 +416,31 @@
       {
         "id": "urn:ngm:class:video-conferencing",
         "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Digital Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:design-tools",
+        "label": "Design Tools"
+      },
+      {
+        "id": "urn:ngm:class:mural",
+        "label": "Mural"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "Distributed Collaboration",
-      "slug": "distributed-collaboration"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -287,6 +490,26 @@
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:delivery-guarantees",
+        "label": "Delivery Guarantees"
+      },
+      {
+        "id": "urn:ngm:class:message-durability",
+        "label": "Message Durability"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
       }
     ],
     "enables": [
@@ -317,6 +540,10 @@
       {
         "id": "urn:ngm:class:virtual-team",
         "label": "Virtual Team"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-execution",
+        "label": "Asynchronous Execution"
       }
     ],
     "dependsOn": [
@@ -331,11 +558,31 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
@@ -347,6 +594,22 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "uses": [
@@ -377,12 +640,58 @@
       {
         "id": "urn:ngm:class:version-control",
         "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:backpressure",
+        "label": "Backpressure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [
@@ -391,12 +700,12 @@
         "label": "Communication Technology"
       },
       {
-        "id": "urn:ngm:class:dc-telepresence",
-        "label": "Telepresence"
-      },
-      {
         "id": "urn:ngm:class:remote-collaboration",
         "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
       },
       {
         "id": "urn:ngm:class:collaboration-technology",

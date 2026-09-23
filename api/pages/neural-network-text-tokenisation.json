@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:subword-tokenisation",
         "label": "WordPiece Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:subword-tokenisation",
+        "label": "WordPiece Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:sentencepiece-tokenisation",
+        "label": "SentencePiece Tokenisation"
       }
     ],
     "requires": [
@@ -62,19 +70,36 @@
       {
         "id": "urn:ngm:class:language-model",
         "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:unicode-text-encoding",
+        "label": "Unicode Text Encoding"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:text-segmentation-algorithm",
+        "label": "Text Segmentation Algorithm"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:word-level-tokenisation",
         "label": "Word-Level Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:character-level-tokenisation",
+        "label": "Character-Level Tokenisation"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:computational-linguistics",
         "label": "Computational Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Digital Asset Tokenisation"
       },
       {
         "id": "urn:ngm:class:asset-tokenisation",
@@ -89,6 +114,10 @@
       {
         "id": "urn:ngm:class:embedding-layer",
         "label": "Embedding Layer"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Statistical Language Model"
       },
       {
         "id": "urn:ngm:class:language-model",
@@ -207,6 +236,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

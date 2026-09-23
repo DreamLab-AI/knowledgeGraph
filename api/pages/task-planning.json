@@ -18,6 +18,18 @@
     {
       "id": "urn:ngm:class:symbolic-ai",
       "label": "Symbolic AI"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "id": "urn:ngm:class:sequential-decision-making",
+      "label": "Sequential Decision Making"
     }
   ],
   "entityType": "Class",
@@ -56,6 +68,18 @@
       {
         "id": "urn:ngm:class:world-model",
         "label": "World Model"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-trees",
+        "label": "Behaviour Trees"
+      },
+      {
+        "id": "urn:ngm:class:plan-library",
+        "label": "Plan Library"
+      },
+      {
+        "id": "urn:ngm:class:action-schema",
+        "label": "Action Schema"
       }
     ],
     "requires": [
@@ -66,6 +90,18 @@
       {
         "id": "urn:ngm:class:search-algorithm",
         "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:world-state-representation",
+        "label": "World State Representation"
+      },
+      {
+        "id": "urn:ngm:class:action-model",
+        "label": "Action Model"
+      },
+      {
+        "id": "urn:ngm:class:feasibility-checker",
+        "label": "Feasibility Checker"
       }
     ],
     "enables": [
@@ -96,9 +132,38 @@
       {
         "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Intelligent Agent"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:search-theory",
+        "label": "Search Theory"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:behaviour-tree",
@@ -123,9 +188,38 @@
       {
         "id": "urn:ngm:class:strips",
         "label": "STRIPS"
+      },
+      {
+        "id": "urn:ngm:class:htn-planning",
+        "label": "HTN Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree Execution"
+      },
+      {
+        "id": "urn:ngm:class:mcts-rollout",
+        "label": "MCTS Rollout"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reactive-control",
+        "label": "Reactive Control"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-based-robotics",
+        "label": "Behaviour-Based Robotics"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-learning",
+        "label": "End-to-End Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Model-Free Reinforcement Learning"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -151,6 +245,10 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       }
     ],
     "supports": [
@@ -177,6 +275,14 @@
       {
         "id": "urn:ngm:class:game-ai",
         "label": "Video Game AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:game-ai",
+        "label": "Video Game AI"
       }
     ],
     "standardizedBy": [
@@ -187,6 +293,22 @@
       {
         "id": "urn:ngm:class:pddl",
         "label": "PDDL Standard"
+      },
+      {
+        "id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS 2 Navigation"
+      },
+      {
+        "id": "urn:ngm:class:pddl",
+        "label": "PDDL Standard"
+      },
+      {
+        "id": "urn:ngm:class:ipc-benchmark",
+        "label": "IPC Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:open-x-embodiment",
+        "label": "Open-X-Embodiment Dataset"
       },
       {
         "id": "urn:ngm:class:ros-navigation-stack",
@@ -219,9 +341,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
     },
     {
       "id": "urn:ngm:class:planning-and-scheduling",
@@ -232,6 +354,16 @@
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -291,12 +423,16 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:constraint-satisfaction",
-        "label": "Constraint Satisfaction"
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
       },
       {
-        "id": "urn:ngm:class:search-algorithms",
-        "label": "Search Algorithms"
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
       }
     ],
     "enables": [
@@ -343,6 +479,14 @@
         "label": "Search Algorithm"
       },
       {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
+      },
+      {
         "id": "urn:ngm:class:optimisation",
         "label": "Optimization"
       },
@@ -367,10 +511,6 @@
         "label": "Reactive Planning"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
-      },
-      {
         "id": "urn:ngm:class:connectionism",
         "label": "Connectionism"
       },
@@ -387,11 +527,23 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:reactive-control",
-        "label": "Reactive Control"
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
@@ -409,16 +561,16 @@
         "label": "Neurosymbolic AI"
       },
       {
-        "id": "urn:ngm:class:logistics",
-        "label": "Logistics"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:operations-research",
-        "label": "Operations Research"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -435,16 +587,24 @@
         "label": "Search Algorithm"
       },
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
         "id": "urn:ngm:class:markov-decision-process",
         "label": "Markov Decision Process"
       },
       {
         "id": "urn:ngm:class:pddl",
         "label": "PDDL"
-      },
-      {
-        "id": "urn:ngm:class:strips",
-        "label": "STRIPS"
       }
     ],
     "supports": [
@@ -457,8 +617,50 @@
         "label": "Logistics Optimisation"
       },
       {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
         "id": "urn:ngm:class:mission-planning",
         "label": "Mission Planning"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "partOf": [

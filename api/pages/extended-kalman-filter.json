@@ -65,7 +65,7 @@
         "label": "Unscented Kalman Filter"
       },
       {
-        "id": "urn:ngm:class:particle-filter",
+        "id": "urn:ngm:class:monte-carlo-localization",
         "label": "Particle Filter"
       }
     ],
@@ -77,6 +77,10 @@
       {
         "id": "urn:ngm:class:augmented-reality-tracking",
         "label": "Augmented Reality Tracking"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-robotics",
+        "label": "Probabilistic Robotics"
       }
     ],
     "uses": [
@@ -101,14 +105,19 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:bayes-filter",
+      "label": "Bayes Filter",
+      "slug": "bayes-filter"
+    },
+    {
+      "id": "urn:ngm:class:recursive-estimator",
+      "label": "Recursive Estimator",
+      "slug": "recursive-estimator"
+    },
+    {
       "id": "urn:ngm:class:state-estimation",
       "label": "State Estimation",
       "slug": "state-estimation"
-    },
-    {
-      "id": "urn:ngm:class:probabilistic-inference",
-      "label": "Probabilistic Inference",
-      "slug": "probabilistic-inference"
     },
     {
       "id": "urn:ngm:class:ai-technique",
@@ -116,78 +125,128 @@
       "slug": "ai-technique"
     },
     {
+      "id": "urn:ngm:class:bayesian-inference",
+      "label": "Bayesian Inference",
+      "slug": "bayesian-inference"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-filter",
+      "label": "Probabilistic Filter",
+      "slug": "probabilistic-filter"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-inference",
+      "label": "Probabilistic Inference",
+      "slug": "probabilistic-inference"
+    },
+    {
+      "id": "urn:ngm:class:sequential-monte-carlo",
+      "label": "Sequential Monte Carlo",
+      "slug": "sequential-monte-carlo"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:numerical-methods",
+      "label": "Numerical Methods",
+      "slug": "numerical-methods"
+    },
+    {
+      "id": "urn:ngm:class:statistical-inference",
+      "label": "Statistical Inference",
+      "slug": "statistical-inference"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics",
+      "slug": "statistics"
+    },
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory",
+      "slug": "probability-theory"
+    },
+    {
+      "id": "urn:ngm:class:measure-theory",
+      "label": "Measure Theory",
+      "slug": "measure-theory"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:factor-graph",
-        "label": "Factor Graph"
+        "id": "urn:ngm:class:unscented-kalman-filter",
+        "label": "Unscented Kalman Filter"
       },
       {
-        "id": "urn:ngm:class:kalman-filter",
-        "label": "Kalman Filter"
+        "id": "urn:ngm:class:belief-state",
+        "label": "Belief State"
       },
       {
-        "id": "urn:ngm:class:particle-filter",
-        "label": "Particle Filter"
+        "id": "urn:ngm:class:measurement-update-step",
+        "label": "Measurement Update Step"
       },
       {
-        "id": "urn:ngm:class:belief-propagation",
-        "label": "Belief Propagation"
+        "id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
       },
       {
-        "id": "urn:ngm:class:expectation-propagation",
-        "label": "Expectation Propagation"
+        "id": "urn:ngm:class:normalisation-constant",
+        "label": "Normalisation Constant"
       },
       {
-        "id": "urn:ngm:class:markov-chain-monte-carlo",
-        "label": "Markov Chain Monte Carlo"
+        "id": "urn:ngm:class:observation-model",
+        "label": "Observation Model"
       },
       {
-        "id": "urn:ngm:class:variational-inference",
-        "label": "Variational Inference"
+        "id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:prediction-step",
+        "label": "Prediction Step"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:gaussian-noise-assumption",
+        "label": "Gaussian Noise Assumption"
+      },
+      {
+        "id": "urn:ngm:class:linear-system-model",
+        "label": "Linear System Model"
+      },
       {
         "id": "urn:ngm:class:state-transition-function",
         "label": "State Transition Model"
       },
       {
-        "id": "urn:ngm:class:imu",
-        "label": "IMU"
+        "id": "urn:ngm:class:control-inputs",
+        "label": "Control Inputs"
       },
       {
-        "id": "urn:ngm:class:probabilistic-model",
-        "label": "Probabilistic Models"
+        "id": "urn:ngm:class:initial-belief",
+        "label": "Initial Belief"
       },
       {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
+        "id": "urn:ngm:class:markov-assumption",
+        "label": "Markov Assumption"
       },
       {
-        "id": "urn:ngm:class:system-dynamics",
-        "label": "System Dynamics"
+        "id": "urn:ngm:class:motion-model",
+        "label": "Probabilistic Motion Model"
       },
       {
-        "id": "urn:ngm:class:likelihood-function",
-        "label": "Likelihood Function"
-      },
-      {
-        "id": "urn:ngm:class:prior-distribution",
-        "label": "Prior Distribution"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:observation-model",
+        "label": "Probabilistic Observation Model"
       }
     ],
     "enables": [
@@ -200,28 +259,28 @@
         "label": "SLAM"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous Systems"
+        "id": "urn:ngm:class:active-perception",
+        "label": "Active Perception"
       },
       {
-        "id": "urn:ngm:class:robot-control",
-        "label": "Robot Control"
+        "id": "urn:ngm:class:belief-space-planning",
+        "label": "Belief-Space Planning"
       },
       {
-        "id": "urn:ngm:class:bayesian-decision-theory",
-        "label": "Bayesian Decision Theory"
-      },
-      {
-        "id": "urn:ngm:class:predictive-modelling",
-        "label": "Predictive Modelling"
+        "id": "urn:ngm:class:robot-localisation",
+        "label": "Robot Localisation"
       },
       {
         "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
       }
     ],
     "dependsOn": [
@@ -234,20 +293,28 @@
         "label": "Probability Theory"
       },
       {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
+        "id": "urn:ngm:class:dynamic-bayesian-networks",
+        "label": "Dynamic Bayesian Networks"
+      },
+      {
+        "id": "urn:ngm:class:hidden-markov-models",
+        "label": "Hidden Markov Models"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       },
       {
         "id": "urn:ngm:class:stochastic-processes",
         "label": "Stochastic Processes"
       },
       {
-        "id": "urn:ngm:class:bayes-theorem",
-        "label": "Bayes Theorem"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
-        "id": "urn:ngm:class:graphical-model",
-        "label": "Graphical Model"
+        "id": "urn:ngm:class:conditional-probability",
+        "label": "Conditional Probability"
       }
     ],
     "implements": [
@@ -256,22 +323,66 @@
         "label": "Bayes Filter"
       },
       {
+        "id": "urn:ngm:class:bayes-rule",
+        "label": "Bayes Rule"
+      },
+      {
         "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
+        "label": "Sequential Bayesian Updating"
+      },
+      {
+        "id": "urn:ngm:class:chapman-kolmogorov-equation",
+        "label": "Chapman-Kolmogorov Equation"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "Recursive State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes' Theorem"
+      },
+      {
+        "id": "urn:ngm:class:posterior-approximation",
+        "label": "Posterior Approximation"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:monte-carlo-localization",
-        "label": "Particle Filter"
+        "id": "urn:ngm:class:batch-optimisation",
+        "label": "Batch Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-observer",
+        "label": "Deterministic Observer"
+      },
+      {
+        "id": "urn:ngm:class:least-squares-estimation",
+        "label": "Least Squares Estimation"
+      },
+      {
+        "id": "urn:ngm:class:pose-graph",
+        "label": "Pose Graph Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:pure-neural-state-estimation",
+        "label": "Pure Neural State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-control",
+        "label": "Deterministic Control"
       },
       {
         "id": "urn:ngm:class:open-loop-control",
         "label": "Open-Loop Control"
       },
       {
-        "id": "urn:ngm:class:frequentist-inference",
-        "label": "Frequentist Inference"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "bridgesTo": [
@@ -282,6 +393,10 @@
       {
         "id": "urn:ngm:class:inertial-navigation-system",
         "label": "Inertial Navigation System"
+      },
+      {
+        "id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
       },
       {
         "id": "urn:ngm:class:deep-learning",
@@ -296,11 +411,19 @@
         "label": "Causal Inference"
       },
       {
-        "id": "urn:ngm:class:knowledge-representation",
-        "label": "Knowledge Representation"
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "RB-1002-closed-loop-control"
+      },
       {
         "id": "urn:ngm:class:mean-squared-error",
         "label": "Mean Squared Error"
@@ -310,42 +433,90 @@
         "label": "RB-1008-odometry"
       },
       {
-        "id": "urn:ngm:class:gps",
-        "label": "Gps"
+        "id": "urn:ngm:class:rb-1013-localization",
+        "label": "RB-1013-localization"
       },
       {
-        "id": "urn:ngm:class:lidar",
-        "label": "Lidar"
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:visual-odometry",
-        "label": "Visual Odometry"
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
       },
       {
-        "id": "urn:ngm:class:wheel-odometry",
-        "label": "Wheel Odometry"
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
       },
       {
-        "id": "urn:ngm:class:monte-carlo-methods",
-        "label": "Monte Carlo Methods"
-      },
-      {
-        "id": "urn:ngm:class:posterior-distribution",
-        "label": "Posterior Distribution"
+        "id": "urn:ngm:class:linearisation",
+        "label": "Linearisation"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:anomaly-detection",
-        "label": "Anomaly Detection"
+        "id": "urn:ngm:class:aerospace-guidance-navigation-control",
+        "label": "Aerospace Guidance Navigation Control"
       },
       {
-        "id": "urn:ngm:class:bayesian-deep-learning",
-        "label": "Bayesian Deep Learning"
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:drone-autonomy",
+        "label": "Drone Autonomy"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-robotics-and-automation-society",
+        "label": "IEEE Robotics And Automation Society"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-robotics-textbook",
+        "label": "Probabilistic Robotics Textbook"
+      },
+      {
+        "id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       }
     ],
     "relatedTo": [
@@ -366,20 +537,20 @@
         "label": "Signal Processing"
       },
       {
-        "id": "urn:ngm:class:path-planning",
-        "label": "Path Planning"
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
       },
       {
-        "id": "urn:ngm:class:robot-dynamics",
-        "label": "Robot Dynamics"
+        "id": "urn:ngm:class:factor-graph",
+        "label": "Factor Graph"
       },
       {
-        "id": "urn:ngm:class:information-theory",
-        "label": "Information Theory"
+        "id": "urn:ngm:class:pomdp",
+        "label": "POMDP"
       },
       {
-        "id": "urn:ngm:class:latent-variable-model",
-        "label": "Latent Variable Model"
+        "id": "urn:ngm:class:smoothing-and-mapping",
+        "label": "Smoothing And Mapping"
       }
     ]
   },

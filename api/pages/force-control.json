@@ -12,12 +12,20 @@
       "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
-    {
       "id": "urn:ngm:class:robotic-control",
       "label": "Robotic Control"
+    },
+    {
+      "id": "urn:ngm:class:closed-loop-control",
+      "label": "Closed Loop Control"
+    },
+    {
+      "id": "urn:ngm:class:interaction-control",
+      "label": "Interaction Control"
+    },
+    {
+      "id": "urn:ngm:class:cyber-physical-control",
+      "label": "Cyber-Physical Control"
     }
   ],
   "entityType": "Class",
@@ -40,6 +48,22 @@
       {
         "id": "urn:ngm:class:force-torque-sensor",
         "label": "Force Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:joint-torque-sensor",
+        "label": "Joint Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:manipulator-jacobian",
+        "label": "Manipulator Jacobian"
+      },
+      {
+        "id": "urn:ngm:class:reference-wrench",
+        "label": "Reference Wrench"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Frame"
       }
     ],
     "requires": [
@@ -62,6 +86,14 @@
       {
         "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics Model"
+      },
+      {
+        "id": "urn:ngm:class:force-measurement",
+        "label": "Force Measurement"
       }
     ],
     "enables": [
@@ -76,9 +108,54 @@
       {
         "id": "urn:ngm:class:safe-human-robot-interaction",
         "label": "Safe Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:peg-in-hole-assembly",
+        "label": "Peg-in-Hole Assembly"
+      },
+      {
+        "id": "urn:ngm:class:polishing",
+        "label": "Polishing"
+      },
+      {
+        "id": "urn:ngm:class:deburring",
+        "label": "Deburring"
+      },
+      {
+        "id": "urn:ngm:class:surgical-suturing",
+        "label": "Surgical Suturing"
+      },
+      {
+        "id": "urn:ngm:class:tactile-exploration",
+        "label": "Tactile Exploration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:lagrangian-mechanics",
+        "label": "Lagrangian Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:newton-euler-recursion",
+        "label": "Newton-Euler Recursion"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:computed-torque-control",
@@ -91,9 +168,42 @@
       {
         "id": "urn:ngm:class:impedance-control",
         "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-position-force-control",
+        "label": "Hybrid Position-Force Control"
+      },
+      {
+        "id": "urn:ngm:class:explicit-force-control",
+        "label": "Explicit Force Control"
+      },
+      {
+        "id": "urn:ngm:class:implicit-force-control",
+        "label": "Implicit Force Control"
+      },
+      {
+        "id": "urn:ngm:class:operational-space-control",
+        "label": "Operational Space Control"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pure-position-control",
+        "label": "Pure Position Control"
+      },
+      {
+        "id": "urn:ngm:class:velocity-control",
+        "label": "VelocityControl"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-trajectory-execution",
+        "label": "Open Loop Trajectory Execution"
+      },
+      {
+        "id": "urn:ngm:class:torque-only-control",
+        "label": "Torque-Only Control"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -119,6 +229,18 @@
       {
         "id": "urn:ngm:class:whole-body-control",
         "label": "Whole-Body Controller"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Six-Axis Force Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:remote-centre-of-compliance",
+        "label": "Remote Centre of Compliance"
+      },
+      {
+        "id": "urn:ngm:class:whole-body-control",
+        "label": "Whole-Body Controller"
       }
     ],
     "supports": [
@@ -133,6 +255,22 @@
       {
         "id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-assembly",
+        "label": "Industrial Assembly"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-locomotion",
+        "label": "Humanoid Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:telerobotics",
+        "label": "Telerobotics"
+      },
+      {
+        "id": "urn:ngm:class:robotic-polishing",
+        "label": "Robotic Polishing"
       }
     ],
     "standardizedBy": [
@@ -155,6 +293,14 @@
       {
         "id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:rss",
+        "label": "RSS"
+      },
+      {
+        "id": "urn:ngm:class:humanoids-conference",
+        "label": "Humanoids Conference"
       }
     ],
     "partOf": [],
@@ -192,9 +338,49 @@
       "slug": "control-system"
     },
     {
+      "id": "urn:ngm:class:human-robot-interaction",
+      "label": "Human Robot Interaction",
+      "slug": "human-robot-interaction"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
+    },
+    {
+      "id": "urn:ngm:class:roboticsdomain",
+      "label": "RoboticsDomain",
+      "slug": "roboticsdomain"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -246,24 +432,24 @@
         "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:sensor-input",
-        "label": "Sensor Input"
+        "id": "urn:ngm:class:controller",
+        "label": "Controller"
       },
       {
-        "id": "urn:ngm:class:time-synchronisation",
-        "label": "Timing Synchronisation"
+        "id": "urn:ngm:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
       },
       {
-        "id": "urn:ngm:class:actuators",
-        "label": "Actuators"
+        "id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      },
+      {
+        "id": "urn:ngm:class:stability",
+        "label": "Stability"
       },
       {
         "id": "urn:ngm:class:control-system",
         "label": "Control System"
-      },
-      {
-        "id": "urn:ngm:class:kinematics",
-        "label": "Kinematics"
       }
     ],
     "enables": [
@@ -288,22 +474,50 @@
         "label": "Robot Manipulation"
       },
       {
-        "id": "urn:ngm:class:adaptive-behaviour",
-        "label": "Adaptive Behaviour"
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
       },
       {
-        "id": "urn:ngm:class:motion-control",
-        "label": "Motion Control"
+        "id": "urn:ngm:class:disturbance-rejection",
+        "label": "Disturbance Rejection"
       },
       {
-        "id": "urn:ngm:class:task-execution",
-        "label": "Task Execution"
+        "id": "urn:ngm:class:rb-1007-trajectory-generation",
+        "label": "Trajectory Generation"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:real-time-computing",
         "label": "Real-Time Computing"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "implements": [
@@ -314,11 +528,61 @@
       {
         "id": "urn:ngm:class:trajectory-planning",
         "label": "Trajectory Planning"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:robust-control",
+        "label": "Robust Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:rb-1001-open-loop-control",
+        "label": "RB-1001-open-loop-control"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:virtual-agent",
+        "label": "Virtual Agent"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -326,8 +590,28 @@
         "label": "Reinforcement Learning"
       },
       {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
         "id": "urn:ngm:class:robotic-system",
         "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
       }
     ],
     "uses": [
@@ -358,12 +642,80 @@
       {
         "id": "urn:ngm:class:pid-control",
         "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-8373-2021",
+        "label": "ISO 8373:2021"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
       },
       {
         "id": "urn:ngm:class:robotics",
@@ -398,6 +750,10 @@
       {
         "id": "urn:ngm:class:visual-servoing",
         "label": "Visual Servoing"
+      },
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
       }
     ]
   },

@@ -94,6 +94,11 @@
       "slug": "robotics"
     },
     {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
       "id": "urn:ngm:class:mobile-robot",
       "label": "Mobile Robot",
       "slug": "mobile-robot"
@@ -102,6 +107,16 @@
       "id": "urn:ngm:class:robot",
       "label": "Robot",
       "slug": "robot"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -169,8 +184,8 @@
         "label": "Kinematics"
       },
       {
-        "id": "urn:ngm:class:motion-planning",
-        "label": "Motion Planning"
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
       }
     ],
     "enables": [
@@ -181,6 +196,10 @@
       {
         "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:automated-delivery",
+        "label": "Automated Delivery"
       },
       {
         "id": "urn:ngm:class:environmental-monitoring",
@@ -201,13 +220,17 @@
       {
         "id": "urn:ngm:class:industrial-automation",
         "label": "IndustrialAutomation"
-      },
-      {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
+      },
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
@@ -217,24 +240,68 @@
         "label": "Localisation"
       },
       {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
         "id": "urn:ngm:class:power-systems",
         "label": "Power System"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:fixed-base-robot",
+        "label": "Fixed-Base Robot"
+      },
+      {
         "id": "urn:ngm:class:manipulator",
         "label": "Industrial Manipulator"
       },
       {
+        "id": "urn:ngm:class:automated-machine",
+        "label": "Automated Machine"
+      },
+      {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
       },
       {
         "id": "urn:ngm:class:edge-computing",
@@ -245,8 +312,8 @@
         "label": "Internet of Things"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
       }
     ],
     "uses": [
@@ -275,15 +342,45 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:inertial-measurement-unit",
-        "label": "Inertial Measurement Unit"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:lidar",
-        "label": "Lidar"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ansi-ria-r15-08",
+        "label": "ANSI/RIA R15.08"
+      },
       {
         "id": "urn:ngm:class:iso-8373-2021",
         "label": "ISO 8373 2021"
@@ -295,9 +392,29 @@
       {
         "id": "urn:ngm:class:iso-8373",
         "label": "ISO 8373"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:aerial-vehicle",
+        "label": "Aerial Vehicle"
+      },
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
@@ -349,8 +466,8 @@
         "label": "Swarm Robotics"
       },
       {
-        "id": "urn:ngm:class:legged-robot",
-        "label": "Legged Robot"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ]
   },

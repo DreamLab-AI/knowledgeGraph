@@ -24,6 +24,10 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:control",
+        "label": "Control"
       }
     ],
     "requires": [
@@ -72,6 +76,10 @@
       {
         "id": "urn:ngm:class:regulation",
         "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:standard",
+        "label": "Standard"
       }
     ],
     "contrastsWith": [
@@ -111,7 +119,12 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ethics",
@@ -120,6 +133,10 @@
       {
         "id": "urn:ngm:class:certification",
         "label": "Certification"
+      },
+      {
+        "id": "urn:ngm:class:reporting",
+        "label": "Reporting"
       }
     ]
   },
@@ -242,6 +259,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -322,6 +343,10 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
@@ -330,16 +355,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

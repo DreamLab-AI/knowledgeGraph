@@ -73,6 +73,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:fountain-codes",
+        "label": "Fountain Codes"
+      },
+      {
         "id": "urn:ngm:class:galois-field-arithmetic",
         "label": "Galois Field Arithmetic"
       },
@@ -89,20 +93,16 @@
         "label": "Hamming Codes"
       },
       {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ],
     "requires": [
@@ -113,6 +113,10 @@
       {
         "id": "urn:ngm:class:galois-field-arithmetic",
         "label": "Galois Field Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:shard-distribution",
+        "label": "Shard Distribution"
       },
       {
         "id": "urn:ngm:class:channel-capacity",
@@ -145,6 +149,10 @@
         "label": "High Availability"
       },
       {
+        "id": "urn:ngm:class:storage-efficiency",
+        "label": "Storage Efficiency"
+      },
+      {
         "id": "urn:ngm:class:packet-loss-recovery",
         "label": "Packet Loss Recovery"
       },
@@ -163,16 +171,16 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:failure-domain",
+        "label": "Failure Domain"
       },
       {
         "id": "urn:ngm:class:information-theory",
@@ -335,7 +343,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ]

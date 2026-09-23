@@ -29,7 +29,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -65,6 +65,14 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:hong-kong",
+        "label": "Hong Kong"
       }
     ],
     "uses": [
@@ -136,6 +144,10 @@
         "label": "Basel Committee on Banking Supervision"
       },
       {
+        "id": "urn:ngm:class:committee-on-payments-and-market-infrastructures",
+        "label": "Committee on Payments and Market Infrastructures"
+      },
+      {
         "id": "urn:ngm:class:financial-stability-board",
         "label": "Financial Stability Board"
       },
@@ -158,10 +170,6 @@
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property Rights Framework"
-      },
-      {
-        "id": "urn:ngm:class:legal-framework",
-        "label": "Legal Framework"
       }
     ],
     "requires": [
@@ -252,6 +260,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
@@ -294,7 +306,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -302,8 +314,12 @@
         "label": "Financial Regulation"
       },
       {
-        "id": "urn:ngm:class:international-monetary-fund",
+        "id": "urn:ngm:class:imf",
         "label": "International Monetary Fund"
+      },
+      {
+        "id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
       },
       {
         "id": "urn:ngm:class:compliance-monitoring",
@@ -314,16 +330,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

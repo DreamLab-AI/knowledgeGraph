@@ -126,12 +126,16 @@
       {
         "id": "urn:ngm:class:model-registry",
         "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:a-b-testing",
-        "label": "A/B Testing"
+        "label": "A-B Testing"
       },
       {
         "id": "urn:ngm:class:model-governance",
@@ -191,12 +195,12 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -423,7 +427,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -29,6 +29,10 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Ethical Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Ethical Risk Assessment"
       }
     ],
     "enables": [
@@ -39,6 +43,10 @@
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ethical-system-design",
+        "label": "Ethical System Design"
       }
     ],
     "dependsOn": [],
@@ -72,7 +80,20 @@
         "label": "Explainable AI"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:value-elicitation",
+        "label": "Value Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:concept-of-operations",
+        "label": "Concept of Operations"
+      },
+      {
+        "id": "urn:ngm:class:ethical-value-register",
+        "label": "Ethical Value Register"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-governance",
@@ -93,7 +114,12 @@
         "label": "IEEE"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ieee-7000",
+        "label": "IEEE 7000 Series"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:iso-iec-42001",
@@ -110,6 +136,14 @@
       {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE Ethically Aligned Design"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE Ethically Aligned Design"
       }
     ]
   },
@@ -118,6 +152,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -218,8 +257,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -306,6 +353,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -324,8 +377,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -334,10 +391,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

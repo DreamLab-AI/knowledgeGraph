@@ -10,32 +10,240 @@
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
+    },
+    {
+      "id": "urn:ngm:class:legal-entity-wrappers",
+      "label": "Legal Entity Wrappers"
+    },
+    {
+      "id": "urn:ngm:class:governance-structures",
+      "label": "Governance Structures"
+    },
+    {
+      "id": "urn:ngm:class:corporate-forms",
+      "label": "Corporate Forms"
+    },
+    {
+      "id": "urn:ngm:class:liability-shield-mechanisms",
+      "label": "Liability Shield Mechanisms"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-compliance-frameworks",
+      "label": "Regulatory Compliance Frameworks"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:wyoming-dao-llc",
+        "label": "Wyoming DAO LLC"
+      },
+      {
+        "id": "urn:ngm:class:wyoming-duna",
+        "label": "Wyoming DUNA"
+      },
+      {
+        "id": "urn:ngm:class:vermont-bbllc",
+        "label": "Vermont BBLLC"
+      },
+      {
+        "id": "urn:ngm:class:tennessee-do",
+        "label": "Tennessee DO"
+      },
+      {
+        "id": "urn:ngm:class:utah-dao-llc",
+        "label": "Utah DAO LLC"
+      },
+      {
+        "id": "urn:ngm:class:marshall-islands-dao-llc",
+        "label": "Marshall Islands DAO LLC"
+      },
+      {
+        "id": "urn:ngm:class:cayman-foundation-company",
+        "label": "Cayman Foundation Company"
+      },
+      {
+        "id": "urn:ngm:class:swiss-verein",
+        "label": "Swiss Verein"
+      },
+      {
+        "id": "urn:ngm:class:swiss-stiftung",
+        "label": "Swiss Stiftung"
+      },
+      {
+        "id": "urn:ngm:class:liechtenstein-tvtg-entity",
+        "label": "Liechtenstein TVTG Entity"
+      },
+      {
+        "id": "urn:ngm:class:bvi-limited-company",
+        "label": "BVI Limited Company"
+      },
+      {
+        "id": "urn:ngm:class:panama-private-interest-foundation",
+        "label": "Panama Private Interest Foundation"
+      },
+      {
+        "id": "urn:ngm:class:delaware-statutory-trust",
+        "label": "Delaware Statutory Trust"
+      },
+      {
+        "id": "urn:ngm:class:singapore-variable-capital-company",
+        "label": "Singapore Variable Capital Company"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering Compliance"
       },
       {
         "id": "urn:ngm:class:beneficial-ownership-disclosure",
         "label": "Beneficial Ownership Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:registered-agent",
+        "label": "Registered Agent"
+      },
+      {
+        "id": "urn:ngm:class:articles-of-organization",
+        "label": "Articles of Organization"
+      },
+      {
+        "id": "urn:ngm:class:operating-agreement",
+        "label": "Operating Agreement"
+      },
+      {
+        "id": "urn:ngm:class:bylaws",
+        "label": "Bylaws"
+      },
+      {
+        "id": "urn:ngm:class:tax-identification-number",
+        "label": "Tax Identification Number"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering Compliance"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:dispute-resolution",
         "label": "Dispute Resolution Forum"
+      },
+      {
+        "id": "urn:ngm:class:liability-protection",
+        "label": "Liability Protection"
+      },
+      {
+        "id": "urn:ngm:class:legal-personality",
+        "label": "Legal Personality"
+      },
+      {
+        "id": "urn:ngm:class:contractual-capacity",
+        "label": "Contractual Capacity"
+      },
+      {
+        "id": "urn:ngm:class:bank-account-access",
+        "label": "Bank Account Access"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-ownership",
+        "label": "Intellectual Property Ownership"
+      },
+      {
+        "id": "urn:ngm:class:tax-treatment-clarity",
+        "label": "Tax Treatment Clarity"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-engagement",
+        "label": "Regulatory Engagement"
+      },
+      {
+        "id": "urn:ngm:class:dispute-resolution",
+        "label": "Dispute Resolution Forum"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:statutory-authorisation",
+        "label": "Statutory Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:jurisdictional-recognition",
+        "label": "Jurisdictional Recognition"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:governance-tokens",
+        "label": "Governance Tokens"
+      },
+      {
+        "id": "urn:ngm:class:off-chain-multisig",
+        "label": "Off-Chain Multisig"
+      },
+      {
+        "id": "urn:ngm:class:beneficial-ownership-registers",
+        "label": "Beneficial Ownership Registers"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:legal-wrapping-pattern",
+        "label": "Legal Wrapping Pattern"
+      },
+      {
+        "id": "urn:ngm:class:dual-entity-structure",
+        "label": "Dual Entity Structure"
+      },
+      {
+        "id": "urn:ngm:class:foundation-plus-subsidiary-pattern",
+        "label": "Foundation Plus Subsidiary Pattern"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-management-doctrine",
+        "label": "Algorithmic Management Doctrine"
+      },
+      {
+        "id": "urn:ngm:class:operating-agreement-supremacy",
+        "label": "Operating Agreement Supremacy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-limited-liability-company",
+        "label": "Traditional Limited Liability Company"
+      },
+      {
+        "id": "urn:ngm:class:charitable-incorporated-organisation",
+        "label": "Charitable Incorporated Organisation"
+      },
+      {
+        "id": "urn:ngm:class:general-partnership",
+        "label": "General Partnership"
+      },
+      {
+        "id": "urn:ngm:class:unincorporated-association",
+        "label": "Unincorporated Association"
+      },
+      {
+        "id": "urn:ngm:class:stateless-dao",
+        "label": "Stateless DAO"
+      },
+      {
+        "id": "urn:ngm:class:closed-end-investment-fund",
+        "label": "Closed-End Investment Fund"
+      },
+      {
+        "id": "urn:ngm:class:sole-proprietorship",
+        "label": "Sole Proprietorship"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:governance-structure",
@@ -66,13 +274,86 @@
       {
         "id": "urn:ngm:class:snapshot-voting",
         "label": "Snapshot Voting"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallets",
+        "label": "Multi-Signature Wallets"
+      },
+      {
+        "id": "urn:ngm:class:legal-wrapper-service-providers",
+        "label": "Legal Wrapper Service Providers"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dao-bank-account-opening",
+        "label": "DAO Bank Account Opening"
+      },
+      {
+        "id": "urn:ngm:class:dao-trademark-registration",
+        "label": "DAO Trademark Registration"
+      },
+      {
+        "id": "urn:ngm:class:dao-contributor-payroll",
+        "label": "DAO Contributor Payroll"
+      },
+      {
+        "id": "urn:ngm:class:dao-grant-programmes",
+        "label": "DAO Grant Programmes"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-treasury-operations",
+        "label": "Cross-Border Treasury Operations"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-negotiation-capacity",
+        "label": "Regulatory Negotiation Capacity"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:fsma-2023",
         "label": "FSMA 2023"
+      },
+      {
+        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
+        "label": "MiCA Regulation 2023-1114"
+      },
+      {
+        "id": "urn:ngm:class:wyoming-sf0038",
+        "label": "Wyoming SF0038"
+      },
+      {
+        "id": "urn:ngm:class:wyoming-duna-act-2024",
+        "label": "Wyoming DUNA Act 2024"
+      },
+      {
+        "id": "urn:ngm:class:vermont-title-11-chapter-25",
+        "label": "Vermont Title 11 Chapter 25"
+      },
+      {
+        "id": "urn:ngm:class:marshall-islands-non-profit-entities-amendment-act-2022",
+        "label": "Marshall Islands Non-Profit Entities Amendment Act 2022"
+      },
+      {
+        "id": "urn:ngm:class:cayman-foundation-companies-act-2017",
+        "label": "Cayman Foundation Companies Act 2017"
+      },
+      {
+        "id": "urn:ngm:class:swiss-civil-code-articles-60-79",
+        "label": "Swiss Civil Code Articles 60-79"
+      },
+      {
+        "id": "urn:ngm:class:liechtenstein-tvtg",
+        "label": "Liechtenstein TVTG"
+      },
+      {
+        "id": "urn:ngm:class:coala-model-dao-law",
+        "label": "COALA Model DAO Law"
+      },
+      {
+        "id": "urn:ngm:class:uk-law-commission-report-414",
+        "label": "UK Law Commission Report 414"
       },
       {
         "id": "urn:ngm:class:mi-ca-regulation",
@@ -90,12 +371,44 @@
         "label": "Howey Test"
       },
       {
-        "id": "urn:ngm:class:mi-ca-regulation",
+        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
         "label": "MiCA Regulation"
       },
       {
         "id": "urn:ngm:class:securities-regulation",
         "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisations"
+      },
+      {
+        "id": "urn:ngm:class:corporate-law",
+        "label": "Corporate Law"
+      },
+      {
+        "id": "urn:ngm:class:tax-treatment",
+        "label": "Tax Treatment"
+      },
+      {
+        "id": "urn:ngm:class:cftc-v-ooki-dao",
+        "label": "CFTC v Ooki DAO"
+      },
+      {
+        "id": "urn:ngm:class:sarcuni-v-bzx-dao",
+        "label": "Sarcuni v bZx DAO"
+      },
+      {
+        "id": "urn:ngm:class:law-commission-dao-report",
+        "label": "Law Commission DAO Report"
+      },
+      {
+        "id": "urn:ngm:class:otonomos",
+        "label": "Otonomos"
+      },
+      {
+        "id": "urn:ngm:class:midao",
+        "label": "MIDAO"
       }
     ]
   },
@@ -104,6 +417,141 @@
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     }
   ],
   "inheritedRelations": {
@@ -121,7 +569,7 @@
         "label": "Blockchain Governance"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
       },
       {
@@ -153,6 +601,26 @@
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:replication-protocol",
+        "label": "Replication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
       }
     ],
     "enables": [
@@ -161,7 +629,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -175,6 +643,290 @@
       {
         "id": "urn:ngm:class:token-economics",
         "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:node-operators",
+        "label": "Node Operators"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:channel-isolation-pattern",
+        "label": "Channel Isolation Pattern"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree Structure"
+      },
+      {
+        "id": "urn:ngm:class:notary-service",
+        "label": "Notary Validation Pattern"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralized Database"
+      },
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:centralised-ledger",
+        "label": "Centralised Ledger"
+      },
+      {
+        "id": "urn:ngm:class:cloud-database",
+        "label": "Cloud Database"
+      },
+      {
+        "id": "urn:ngm:class:federated-database",
+        "label": "Federated Database"
+      },
+      {
+        "id": "urn:ngm:class:traditional-database",
+        "label": "Traditional Database"
+      },
+      {
+        "id": "urn:ngm:class:centralised-system",
+        "label": "Centralised System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:hash-pointers",
+        "label": "Hash Pointers"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:retail-cbdc",
+        "label": "Retail CBDC"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-deposits",
+        "label": "Tokenised Deposits"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real World Assets"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-dlt-pilot-regime",
+        "label": "EU DLT Pilot Regime"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2418",
+        "label": "IEEE P2418"
+      },
+      {
+        "id": "urn:ngm:class:isda-common-domain-model",
+        "label": "ISDA Common Domain Model"
+      },
+      {
+        "id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "id": "urn:ngm:class:iso-tr-23244",
+        "label": "ISO TR 23244"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-23258",
+        "label": "ISO TS 23258"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
       }
     ],
     "relatedTo": [
@@ -189,6 +941,26 @@
       {
         "id": "urn:ngm:class:regulatory-technology",
         "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ]
   },

@@ -124,7 +124,7 @@
         "label": "Payment Gateway"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -180,12 +180,16 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:e-commerce",
         "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:microtransaction",
+        "label": "Microtransaction"
       },
       {
         "id": "urn:ngm:class:cross-border-payments",
@@ -196,20 +200,16 @@
         "label": "Monetary Policy"
       },
       {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:virtual-economy-market-framing",
         "label": "Virtual Economy Market Framing"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       }
     ],
     "dependsOn": [
@@ -232,7 +232,7 @@
         "label": "Barter System"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -245,6 +245,10 @@
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-driven-finance",
+        "label": "AI-Driven Finance"
+      },
       {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
@@ -290,7 +294,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {

@@ -49,16 +49,6 @@
       "id": "urn:ngm:class:systems-engineering",
       "label": "Systems Engineering",
       "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering (Infrastructure)",
-      "slug": "infra-software-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -88,18 +78,22 @@
         "label": "DevOps"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
+        "id": "urn:ngm:class:software-design-patterns",
+        "label": "Software Design Patterns"
       },
       {
-        "id": "urn:ngm:class:system-architecture",
-        "label": "System Architecture"
+        "id": "urn:ngm:class:interface-management",
+        "label": "Interface Management"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:programming-paradigm",
         "label": "Programming Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:software-design-pattern",
+        "label": "Software Design Pattern"
       },
       {
         "id": "urn:ngm:class:agile-software-development",
@@ -124,10 +118,6 @@
       {
         "id": "urn:ngm:class:stakeholder-analysis",
         "label": "Stakeholder Analysis"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
       }
     ],
     "enables": [
@@ -184,19 +174,23 @@
         "label": "Computer Science"
       },
       {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
       },
       {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
-      },
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-code-generation",
+        "label": "AI Code Generation"
+      },
       {
         "id": "urn:ngm:class:code-generation",
         "label": "AI Code Generation"
@@ -220,14 +214,6 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -238,6 +224,10 @@
       {
         "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:integrated-development-environment",
+        "label": "Integrated Development Environment"
       },
       {
         "id": "urn:ngm:class:software-development-process",
@@ -258,10 +248,6 @@
       {
         "id": "urn:ngm:class:observability",
         "label": "Observability"
-      },
-      {
-        "id": "urn:ngm:class:static-analysis",
-        "label": "Static Analysis"
       }
     ],
     "supports": [
@@ -288,28 +274,34 @@
       {
         "id": "urn:ngm:class:robo-safety-and-standards",
         "label": "Safety and Standards"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
-      },
+      }
+    ],
+    "partOf": [
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "relatedTo": [

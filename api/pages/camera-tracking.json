@@ -71,6 +71,11 @@
       "slug": "computer-vision"
     },
     {
+      "id": "urn:ngm:class:xr-input-technologies",
+      "label": "XR Input Technologies",
+      "slug": "xr-input-technologies"
+    },
+    {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
@@ -168,6 +173,10 @@
         "label": "Gesture Control"
       },
       {
+        "id": "urn:ngm:class:user-identification",
+        "label": "User Identification"
+      },
+      {
         "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Vehicle Navigation"
       },
@@ -178,10 +187,20 @@
       {
         "id": "urn:ngm:class:quality-control",
         "label": "Quality Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:robotics-perception",
-        "label": "Robotics Perception"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       }
     ],
     "bridgesTo": [
@@ -192,11 +211,31 @@
       {
         "id": "urn:ngm:class:sc-interaction",
         "label": "Interaction Technology"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

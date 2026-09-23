@@ -50,7 +50,24 @@
       }
     ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:black-box-model",
+        "label": "Black Box Model"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree-approximation",
+        "label": "Decision Tree Approximation"
+      },
+      {
+        "id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -137,6 +154,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

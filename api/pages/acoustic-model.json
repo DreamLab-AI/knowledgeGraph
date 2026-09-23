@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:speech-recognition",
       "label": "Speech Recognition"
+    },
+    {
+      "id": "urn:ngm:class:sequence-model",
+      "label": "Sequence Model"
     }
   ],
   "entityType": "Class",
@@ -22,7 +26,7 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder",
+        "id": "urn:ngm:class:encoder-decoder-architecture",
         "label": "Encoder-Decoder"
       },
       {
@@ -58,13 +62,17 @@
         "label": "Voice User Interface"
       },
       {
-        "id": "urn:ngm:class:multimodal-interaction",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility Technology"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -74,9 +82,30 @@
       {
         "id": "urn:ngm:class:hidden-markov-model",
         "label": "Hidden Markov Model"
+      },
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:sequence-model",
+        "label": "Sequence Model"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-learning",
+        "label": "End-to-End Learning"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:language-model",
@@ -116,6 +145,18 @@
       {
         "id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
       }
     ],
     "supports": [
@@ -126,9 +167,18 @@
       {
         "id": "urn:ngm:class:accessibility-technology",
         "label": "Accessibility Technology"
+      },
+      {
+        "id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:speech-recognition",
@@ -163,10 +213,31 @@
       {
         "id": "urn:ngm:class:representation-learning",
         "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:noise-robustness",
+        "label": "Noise Robustness"
+      },
+      {
+        "id": "urn:ngm:class:speaker-adaptation",
+        "label": "Speaker Adaptation"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
+    },
     {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing",
@@ -178,9 +249,24 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -232,15 +318,31 @@
         "label": "Training Data"
       },
       {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:clinical-documentation",
+        "label": "Clinical Documentation"
+      },
       {
         "id": "urn:ngm:class:language-translation",
         "label": "Language Translation"
@@ -268,10 +370,6 @@
       {
         "id": "urn:ngm:class:named-entity-recognition",
         "label": "Named Entity Recognition"
-      },
-      {
-        "id": "urn:ngm:class:sentiment-analysis",
-        "label": "Sentiment Analysis"
       }
     ],
     "dependsOn": [
@@ -284,12 +382,62 @@
         "label": "Model Compression"
       },
       {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
@@ -308,6 +456,10 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -316,7 +468,7 @@
         "label": "Accessibility Technology"
       },
       {
-        "id": "urn:ngm:class:multimodal-interaction",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
       },
       {
@@ -330,6 +482,18 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -338,8 +502,8 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:recurrent-neural-network",
-        "label": "Recurrent Neural Networks"
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
       },
       {
         "id": "urn:ngm:class:transfer-learning",
@@ -352,16 +516,62 @@
       {
         "id": "urn:ngm:class:word-embeddings",
         "label": "Word Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:nist",
-        "label": "NIST"
-      },
-      {
         "id": "urn:ngm:class:w3-c-web-speech-api",
         "label": "W3C Web Speech API"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [
@@ -378,20 +588,24 @@
         "label": "SpeechSynthesis"
       },
       {
-        "id": "urn:ngm:class:machine-translation",
-        "label": "Machine Translation"
+        "id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ]
   },

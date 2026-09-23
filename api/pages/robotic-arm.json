@@ -44,6 +44,10 @@
       {
         "id": "urn:ngm:class:pick-and-place",
         "label": "Pick and Place"
+      },
+      {
+        "id": "urn:ngm:class:grasping",
+        "label": "Grasping"
       }
     ],
     "dependsOn": [
@@ -108,6 +112,21 @@
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -121,11 +140,15 @@
         "label": "Link"
       },
       {
+        "id": "urn:ngm:class:wrist",
+        "label": "Wrist"
+      },
+      {
         "id": "urn:ngm:class:robot-controller",
         "label": "Robot Controller"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       },
       {
@@ -139,10 +162,6 @@
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
-      },
-      {
-        "id": "urn:ngm:class:collaborative-systems-modality-robot",
-        "label": "Collaborative Robot"
       }
     ],
     "requires": [
@@ -185,6 +204,10 @@
         "label": "Assembly Automation"
       },
       {
+        "id": "urn:ngm:class:robot-welding",
+        "label": "Robot Welding"
+      },
+      {
         "id": "urn:ngm:class:teleoperation",
         "label": "Teleoperation"
       },
@@ -207,10 +230,6 @@
       {
         "id": "urn:ngm:class:humanoid-robotics",
         "label": "Humanoid Robotics"
-      },
-      {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
       }
     ],
     "dependsOn": [
@@ -223,12 +242,24 @@
         "label": "Inverse Kinematics"
       },
       {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:power-systems",
         "label": "Power System"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
       }
     ],
     "implements": [
@@ -251,8 +282,28 @@
         "label": "Mobile Robot"
       },
       {
+        "id": "urn:ngm:class:automated-machine",
+        "label": "Automated Machine"
+      },
+      {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
       }
     ],
     "bridgesTo": [
@@ -271,6 +322,22 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
       }
     ],
     "uses": [
@@ -291,12 +358,20 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
       }
     ],
     "supports": [
@@ -307,6 +382,30 @@
       {
         "id": "urn:ngm:class:human-robot-collaboration",
         "label": "Human-Robot Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
       }
     ],
     "standardizedBy": [
@@ -317,6 +416,26 @@
       {
         "id": "urn:ngm:class:iso-8373",
         "label": "ISO 8373"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "partOf": [
@@ -339,6 +458,14 @@
         "label": "Parallel Robot"
       },
       {
+        "id": "urn:ngm:class:redundant-manipulator",
+        "label": "Redundant Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:cobotic-system",
+        "label": "Cobotic System"
+      },
+      {
         "id": "urn:ngm:class:drone",
         "label": "Drone"
       },
@@ -357,10 +484,6 @@
       {
         "id": "urn:ngm:class:robo-navigation-and-planning",
         "label": "Navigation and Planning"
-      },
-      {
-        "id": "urn:ngm:class:robo-safety-and-standards",
-        "label": "Safety and Standards"
       }
     ]
   },

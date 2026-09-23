@@ -36,7 +36,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -76,6 +81,10 @@
         "label": "Inverted File Index"
       },
       {
+        "id": "urn:ngm:class:metadata-filter",
+        "label": "Metadata Filter"
+      },
+      {
         "id": "urn:ngm:class:product-quantisation",
         "label": "Product Quantisation"
       },
@@ -94,10 +103,6 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
-      },
-      {
-        "id": "urn:ngm:class:model-serving",
-        "label": "Model Serving"
       }
     ],
     "requires": [
@@ -193,6 +198,10 @@
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:document-database",
+        "label": "Document Database"
+      },
       {
         "id": "urn:ngm:class:relational-database",
         "label": "Relational Database"

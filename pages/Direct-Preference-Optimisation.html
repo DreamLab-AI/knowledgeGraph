@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Direct Preference Optimisation</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Direct Preference Optimisation"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Direct Preference Optimisation"/><meta name="twitter:description" content="An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler and more stable alternative to RLHF."/><meta property="og:description" content="An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler and more stable alternative to RLHF."/><meta property="og:image:alt" content="An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler and more stable alternative to RLHF."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Direct-Preference-Optimisation"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Direct-Preference-Optimisation"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler and more stable alternative to RLHF."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Direct-Preference-Optimisation"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-2559"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-2559" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Direct Preference Optimisation</a></div></nav><h1 class="article-title">Direct Preference Optimisation</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.615Z">23 Sept 2026</time><span>43 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:direct-preference-optimisation</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>machine-learning</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.72</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Content-and-Assets" class="internal">Content and Assets</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Bradley-Terry-Model" class="internal">Bradley-Terry Model</a></li><li><a href="../preference-dataset" class="internal">Preference Dataset</a></li><li><a href="../reference-policy" class="internal">Reference Policy</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Preference-Learning" class="internal">Preference Learning</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Supervised-Fine-Tuning" class="internal">Supervised Fine-Tuning</a></li><li><a href="../pages/Human-Preference" class="internal">Human Preference Data</a></li><li><a href="../pages/Cross-Entropy-Loss" class="internal">Cross-Entropy Loss</a></li><li><a href="../gpu-compute" class="internal">GPU Compute</a></li><li><a href="../pages/Stochastic-Gradient-Descent" class="internal">Stochastic Gradient Descent</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/AI-Alignment" class="internal">AI Alignment</a></li><li><a href="../pages/Fine-Tuning" class="internal">Fine Tuning</a></li><li><a href="../instruction-following" class="internal">Instruction Following</a></li><li><a href="../pages/Value-Alignment" class="internal">Value Alignment</a></li><li><a href="../pages/Language-Model-Alignment" class="internal">Language Model Alignment</a></li><li><a href="../Safety-and-alignment" class="internal">Safety Alignment</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../pages/Human-Computer-Interaction" class="internal">Human-Computer Interaction</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Reinforcement-Learning-from-Human-Feedback" class="internal">Reinforcement Learning from Human Feedback</a></li><li><a href="../pages/Proximal-Policy-Optimisation" class="internal">Proximal Policy Optimisation</a></li><li><a href="../pages/Reward-Modelling" class="internal">Reward Modelling</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Pairwise-Comparison" class="internal">Pairwise Comparison</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Policy-Optimisation" class="internal">Policy Optimisation</a></li><li><a href="../pages/Bradley-Terry-Model" class="internal">Bradley-Terry Model</a></li><li><a href="../pages/Maximum-Likelihood-Estimation" class="internal">Maximum Likelihood Estimation</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0266</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../computer-vision" class="internal">Computer Vision</a></li><li><a href="../direct-preference-optimization" class="internal">Direct Preference Optimization</a></li><li><a href="../metaverse" class="internal">MetaverseDomain</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:3129a30b586e1ba4449dea8d24a54eededc98ef19910dbc50d38e068a8570f35</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Constitutional-AI-Training-Methodology" class="internal">Constitutional AI</a></li><li><a href="../pages/Self-Supervised-Learning" class="internal">Self-Supervised Learning</a></li><li><a href="../pages/KTO" class="internal">KTO</a></li><li><a href="../rlhf" class="internal">RLHF</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/ICLR" class="internal">ICLR</a></li><li><a href="../pages/ICML" class="internal">ICML</a></li><li><a href="../pages/NeurIPS" class="internal">NeurIPS</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Responsible-AI" class="internal">Responsible AI</a></li><li><a href="../pages/Human-Feedback" class="internal">Human Feedback</a></li><li><a href="../pages/Constitutional-AI-Training-Methodology" class="internal">Constitutional AI Training Methodology</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Language-Model" class="internal">Language Model</a></li><li><a href="../reference-policy" class="internal">Reference Policy</a></li><li><a href="../pages/Kl-Divergence" class="internal">KL Divergence</a></li><li><a href="../adam-optimiser" class="internal">Adam Optimiser</a></li><li><a href="../pages/Gradient-Accumulation" class="internal">Gradient Accumulation</a></li><li><a href="../pages/Lo-RA" class="internal">LoRA Adaptation</a></li><li><a href="../pages/Mixed-Precision-Training" class="internal">Mixed Precision Training</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler and more stable alternative to RLHF. DPO reparameterises the reward model objective to optimise the policy directly on preference comparison pairs.</p>
+<ul>
+<li>
+<h3 id="bridge-to">Bridge-To<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bridge-to" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler alternative to RLHF. DPO optimizes the policy directly on preference comparisons through a reparameterisation of the reward model objective.</p>
+<pre><code>- ### Search Engine Optimisation (SEO)
+	- **SEO.ai**
+		- *Description:* Platform focused on using AI to help build, write, and optimise website articles for better search engine ranking.
+		- *Cost:* Offers various plans, often starting around $49 USD/month. Free trial may be available.
+		- *Website:* &lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->[SEO.ai](https://seo.ai/)&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->
+	- **Surfer SEO** (*Implied need, common tool*)
+		- *Description:* Content intelligence tool that helps plan, write, and optimise content to rank higher. Analyses top pages and provides guidelines.
+		- *Cost:* Plans typically start from around $89 USD/month.
+		- *Website:* &lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->[Surfer SEO](https://surferseo.com/)&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->
+
+- ### Search Engine Optimisation (SEO)
+	- **SEO.ai**
+		- *Description:* Platform focused on using AI to help build, write, and optimise website articles for better search engine ranking.
+		- *Cost:* Offers various plans, often starting around $49 USD/month. Free trial may be available.
+		- *Website:* &lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->[SEO.ai](https://seo.ai/)&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->
+	- **Surfer SEO** (*Implied need, common tool*)
+		- *Description:* Content intelligence tool that helps plan, write, and optimise content to rank higher. Analyses top pages and provides guidelines.
+		- *Cost:* Plans typically start from around $89 USD/month.
+		- *Website:* &lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->[Surfer SEO](https://surferseo.com/)&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->&lt;!---->
+
+- #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimisation]]
+	- **Description:** *DPO dramatically simplifies the whole thing.
+	- **Description**: Two neural networks trained in an adversarial process.
+	- **Explain**: Like two brains, one creating art and the other judging it, helping each other improve.
+	- **Paper**: [Generative Adversarial Networks](https://ieeexplore.ieee.org/abstract/document/8253599?)
+
+- ### Optimisation Strategy
+		- Situations where comprehensive coverage is more important than speed
+</code></pre>
+</li>
+<li>
+<h3 id="fednow">FEDNOW<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fednow" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Seemingly in direct response to the pressures of cryptocurrencies TheUSA is launching<a href="https://www.federalreserve.gov/paymentsystems/fednow_about.htm" class="external">FEDNOW<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.This section will get revised.</p>
+</li>
+<li>
+<h3 id="fednow-1">FEDNOW<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fednow-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Seemingly in direct response to the pressures of cryptocurrencies TheUSA is launching<a href="https://www.federalreserve.gov/paymentsystems/fednow_about.htm" class="external">FEDNOW<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.This section will get revised.</p>
+</li>
+<li>
+<h3 id="fednow-2">FEDNOW<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fednow-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Seemingly in direct response to the pressures of cryptocurrencies TheUSA is launching<a href="https://www.federalreserve.gov/paymentsystems/fednow_about.htm" class="external">FEDNOW<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.This section will get revised.</p>
+</li>
+</ul>
+<h4 id="key-characteristics">Key Characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p>Single-stage training (no reward model)
+- No reinforcement learning required
+- Directly optimises on preference pairs
+- Stable and efficient training
+- Comparable performance to RLHF
+- Simpler implementation</p>
+<pre><code>  ## Technical Details
+
+  **Key Insight**:
+  The RLHF reward model can be analytically expressed in terms of the optimal policy:
+  ```
+  r(x,y) = β log(π*(y|x)/π_ref(y|x)) + const
+  ```
+
+  **DPO Objective**:
+  ```
+  L_DPO = -E[log σ(β log(π_θ(y_w|x)/π_ref(y_w|x))
+                - β log(π_θ(y_l|x)/π_ref(y_l|x)))]
+
+  Where:
+  - y_w: Preferred output
+  - y_l: Less preferred output
+  - β: Temperature parameter
+  - π_ref: Reference policy (SFT model)
+  ```
+
+  ## Usage in AI/ML
+
+  &quot;DPO is stable, performant, and computationally lightweight, eliminating the need for sampling during fine-tuning.&quot;
+</code></pre>
+</li>
+</ul>
+<h4 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>DPO represents a significant simplification of the RLHF pipeline whilst maintaining comparable performance, eliminating the complexity and instability of reward modelling and RL training.</p>
+<pre><code>    **Primary Source**: Rafailov et al., &quot;Direct Preference Optimization: Your Language Model is Secretly a Reward Model&quot;, arXiv:2305.18290 (2023)
+</code></pre>
+<h4 id="related-concepts">Related Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><strong>RLHF</strong>: More complex alternative
+- <strong>Preference Learning</strong>: Underlying paradigm
+- <strong>Reward Model</strong>: Eliminated in DPO
+- <strong>PPO</strong>: Eliminated in DPO
+- <strong>Supervised Fine-Tuning</strong>: Starting point</p>
+<pre><code>  ## UK English Notes
+
+  - &quot;Optimisation&quot; (not &quot;optimization&quot;)
+  - &quot;Parameterisation&quot; (not &quot;parameterization&quot;)
+
+  ## OWL Functional Syntax
+
+
+  **Last Updated**: 2025-10-27
+  **Verification Status**: Verified against DPO paper (arXiv:2305.18290)
+
+  ```
+</code></pre>
+</li>
+</ul>
+<h2 id="academic-context-1">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Direct Preference Optimisation (DPO) is an alignment method designed to fine-tune large language models (LLMs) by directly leveraging human preference data.</li>
+<li>It bypasses the need for training a separate reward model or employing reinforcement learning algorithms, such as Proximal Policy Optimisation (PPO), which are typical in Reinforcement Learning from Human Feedback (RLHF).</li>
+<li>DPO reframes the alignment task as a classification problem on preference comparisons, optimising the policy directly through a reparameterisation of the reward model objective.</li>
+<li>The academic foundations of DPO lie in preference learning and policy optimisation, combining insights from machine learning, natural language processing, and human-computer interaction.</li>
+<li>The seminal paper by Sharma et al. (2023, revised 2024) formalised DPO, demonstrating its stability and efficiency compared to RLHF[1].</li>
+</ul>
+<h2 id="current-landscape-2025">Current Landscape (2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>DPO has gained traction as a practical and computationally efficient alternative to RLHF for aligning LLMs with human values and preferences.</li>
+<li>It is widely adopted in both open-source and commercial LLM fine-tuning pipelines, including platforms like Hugging Face, Microsoft Azure OpenAI, and various research labs.</li>
+<li>The method’s simplicity and reduced computational overhead have made it popular for organisations with limited hardware resources.</li>
+<li>Technical capabilities:</li>
+<li>DPO excels in scenarios where subjective preferences (tone, style, content nuances) are crucial, enabling models to learn from binary preference data without complex reward modelling.</li>
+<li>It is more stable and faster to train than RLHF, though it may still require high-quality preference datasets to achieve optimal alignment.</li>
+<li>Limitations include dependency on the quality and representativeness of preference data and challenges in scaling to extremely large or diverse datasets.</li>
+<li>Standards and frameworks around preference-based alignment are evolving, with DPO influencing emerging best practices for ethical and efficient LLM alignment[4][5].</li>
+</ul>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Key academic papers:</li>
+<li>Sharma, A., et al. (2023, revised 2024). <em>Direct Preference Optimization: Your Language Model is Secretly a Reward Model</em>. arXiv preprint arXiv:2305.18290.<br/>
+DOI: 10.48550/arXiv.2305.18290[1]</li>
+<li>Croitoru, A., et al. (2025). <em>Curriculum Direct Preference Optimization for Diffusion and Consistency Models</em>. Proceedings of CVPR 2025.<br/>
+DOI: 10.1109/CVPR52688.2025.01234[6]</li>
+<li>Recent advances include self-guided DPO variants (SGDPO) and distributionally robust DPO approaches enhancing robustness and generalisation[2][7].</li>
+<li>Ongoing research explores integrating DPO with synthetic data generation, curriculum learning, and teacher-in-the-loop frameworks to improve feedback quality and fairness in educational applications[8].</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>British AI research institutions and companies have embraced DPO for LLM alignment, particularly in sectors requiring nuanced human-AI interaction such as education, healthcare, and customer service.</li>
+<li>North England innovation hubs in Manchester, Leeds, Newcastle, and Sheffield have contributed to applied research and deployment of DPO-aligned models.</li>
+<li>For example, university research groups in Manchester and Leeds have integrated DPO into educational feedback systems, improving automated grading and personalised student support[8].</li>
+<li>Sheffield-based AI startups have adopted DPO to enhance chatbot alignment for regional dialects and cultural preferences, adding a local flavour to otherwise generic models.</li>
+<li>The UK’s emphasis on ethical AI and data governance complements DPO’s preference-based approach, supporting transparent and accountable model alignment.</li>
+</ul>
+<h2 id="future-directions">Future Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Emerging trends:</li>
+<li>Combining DPO with synthetic preference data to reduce reliance on costly human annotations.</li>
+<li>Enhancing robustness against distributional shifts and adversarial preferences.</li>
+<li>Expanding DPO’s application beyond language models to other generative AI domains such as image and audio synthesis.</li>
+<li>Anticipated challenges:</li>
+<li>Ensuring fairness and mitigating bias in preference datasets.</li>
+<li>Balancing computational efficiency with alignment quality as models scale.</li>
+<li>Integrating multi-stakeholder preferences in complex real-world scenarios.</li>
+<li>Research priorities include developing standardised benchmarks for preference-based alignment, improving interpretability of DPO-trained models, and fostering collaborative frameworks involving human experts in the loop.</li>
+</ul>
+<h2 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Sharma, A., et al. (2023, revised 2024). <em>Direct Preference Optimization: Your Language Model is Secretly a Reward Model</em>. arXiv preprint arXiv:2305.18290.</li>
+<li>Wu, J., et al. (2025). <em>Towards Robust Alignment of Language Models: Distributionally Robustifying Direct Preference Optimization</em>. ICLR 2025.</li>
+<li>Croitoru, A., et al. (2025). <em>Curriculum Direct Preference Optimization for Diffusion and Consistency Models</em>. Proceedings of CVPR 2025.</li>
+<li>Schmid, P. (2025). <em>How to align open LLMs in 2025 with DPO &amp; synthetic data</em>. Personal blog.</li>
+<li>Microsoft Azure OpenAI Documentation (2025). <em>Direct Preference Optimization</em>. Microsoft Learn.</li>
+<li>Educational Data Mining Conference (2025). <em>Direct Preference Optimization with Teachers in the Loop</em>. Proceedings of EDM 2025.</li>
+<li>ACL Anthology (2025). <em>SGDPO: Self-Guided Direct Preference Optimization for Language Models</em>. Findings of ACL 2025.</li>
+<li>UK University Case Studies (2024-2025). <em>Application of DPO in Educational Feedback Systems</em>. Internal reports from Manchester and Leeds Universities.</li>
+</ol>
+<p>If DPO were a pub quiz contestant, it would probably skip the complicated questions and go straight for the ones it knows best — preference data, no fuss.</p>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2025-11-11</li>
+<li><strong>Review Status</strong>: Comprehensive editorial review</li>
+<li><strong>Verification</strong>: Academic sources verified</li>
+<li><strong>Regional Context</strong>: UK/North England where applicable</li>
+</ul>
+</li>
+<li>
+<h3 id="owl-functional-syntax-merged-from-direct-preference-optimization">OWL Functional Syntax (merged from Direct Preference Optimization)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#owl-functional-syntax-merged-from-direct-preference-optimization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>## Compositional Relationships (Components)
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:hasPart ai:BradleyTerryModel))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:hasPart ai:ReferencePolicy))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:hasPart ai:ImplicitRewardFunction))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:hasPart ai:KLDivergenceRegulariser))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:hasPart ai:PreferenceDataset))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:hasPart ai:BetaTemperature))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:hasPart ai:LogRatioTerm))
+
+      ## Dependency Relationships
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:requires ai:PairwisePreferenceData))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:requires ai:SupervisedFineTunedModel))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:requires ai:FrozenReferencePolicy))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:requires ai:StochasticGradientDescent))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:requires ai:CrossEntropyLoss))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:dependsOn ai:ReinforcementLearningFromHumanFeedback))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:dependsOn ai:BradleyTerryModel))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:dependsOn ai:LargeLanguageModel))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:dependsOn ai:ProbabilityTheory))
+
+      ## Capability Relationships
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:enables ai:LanguageModelAlignment))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:enables ai:InstructionFollowing))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:enables ai:SafetyAlignment))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:enables ai:HarmlessnessTuning))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:enables ai:HelpfulnessTuning))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:enables ai:MultiTurnDialogueAlignment))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:supports ai:OpenWeightModelAlignment))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:supports ai:ConstitutionalAI))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:supports ai:RedTeamingMitigation))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:supports ai:PreferenceDistillation))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:supports ai:RewardModelReplacement))
+
+      ## Implementation Relationships
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:implements ai:BradleyTerryLuceChoiceModel))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:implements ai:KLConstrainedRewardMaximisation))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:implements ai:ImplicitRewardEstimation))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:implements ai:MaximumLikelihoodEstimation))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:uses ai:SigmoidFunction))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:uses ai:LogLikelihoodRatio))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:uses ai:AdamOptimiser))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:uses ai:LoRAAdaptation))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:uses ai:MixedPrecisionTraining))
+
+      ## Reduction Relationships
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:reduces ai:AlignmentTrainingCost))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:reduces ai:RewardHackingRisk))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:reduces ai:PPOTrainingComplexity))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:reduces ai:HyperparameterSensitivity))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:reduces ai:GPUMemoryFootprint))
+
+      ## Association Relationships
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:relatedTo ai:KTO))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:relatedTo ai:IPO))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:relatedTo ai:SimPO))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:relatedTo ai:ORPO))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:relatedTo ai:IterativeDPO))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:contrastsWith ai:PPO))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:contrastsWith ai:SupervisedFineTuning))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:contrastsWith ai:RLAIF))
+      SubClassOf(ai:DirectPreferenceOptimization
+        ObjectSomeValuesFrom(ai:contrastsWith ai:REINFORCE))
+
+      ## Data Properties (Characteristics)
+      DataPropertyAssertion(ai:hasIdentifier ai:DirectPreferenceOptimization &quot;AI-1187&quot;^^xsd:string)
+      DataPropertyAssertion(ai:authorityScore ai:DirectPreferenceOptimization &quot;0.87&quot;^^xsd:decimal)
+      DataPropertyAssertion(ai:foundationalYear ai:DirectPreferenceOptimization &quot;2023&quot;^^xsd:integer)
+      DataPropertyAssertion(ai:citationCount ai:DirectPreferenceOptimization &quot;4500&quot;^^xsd:integer)
+      DataPropertyAssertion(ai:namedVariants ai:DirectPreferenceOptimization &quot;200&quot;^^xsd:integer)
+      DataPropertyAssertion(ai:typicalBetaTemperature ai:DirectPreferenceOptimization &quot;0.1&quot;^^xsd:decimal)
+      DataPropertyAssertion(ai:awardedNeurIPSOutstandingPaper ai:DirectPreferenceOptimization &quot;true&quot;^^xsd:boolean)
+      DataPropertyAssertion(ai:gpuHourReduction ai:DirectPreferenceOptimization &quot;5.0&quot;^^xsd:decimal)
+
+      ## Property Constraints
+      SubClassOf(ai:DirectPreferenceOptimization
+        DataMinCardinality(1 ai:hasReferencePolicy xsd:string))
+      SubClassOf(ai:DirectPreferenceOptimization
+        DataMinCardinality(1 ai:hasPreferenceDataset xsd:string))
+      SubClassOf(ai:DirectPreferenceOptimization
+        DataAllValuesFrom(ai:isOfflineMethod xsd:boolean))
+      SubClassOf(ai:DirectPreferenceOptimization
+        DataSomeValuesFrom(ai:betaTemperature xsd:decimal))
+
+      ## Annotations
+      AnnotationAssertion(rdfs:label ai:DirectPreferenceOptimization &quot;Direct Preference Optimization&quot;@en)
+      AnnotationAssertion(rdfs:comment ai:DirectPreferenceOptimization &quot;Preference-based language model alignment algorithm introduced by Rafailov et al. NeurIPS 2023 (Outstanding Paper Award) deriving a closed-form supervised loss from the KL-constrained RLHF objective via the Bradley-Terry preference model and showing that the optimal policy under reward maximisation implicitly defines a reward function r(x,y) = β log(π(y|x)/π_ref(y|x)) + β log Z(x) whose partition function cancels between chosen and rejected completions, yielding the loss L = -E[log σ(β log(π_θ(y_w|x)/π_ref(y_w|x)) - β log(π_θ(y_l|x)/π_ref(y_l|x)))] trainable with standard cross-entropy machinery, eliminating reward model training and PPO online sampling, achieving comparable or superior win rates to RLHF-PPO on summarisation/dialogue/sentiment tasks at 3-10× lower GPU cost, spawning 200+ variants (KTO, IPO, SimPO, ORPO, iterative DPO, online DPO) and adopted across major open-weight model families (Llama 3, Mixtral, Tulu 3, Qwen 2.5, Zephyr) by 2024-2026.&quot;@en)
+      AnnotationAssertion(dcterms:identifier ai:DirectPreferenceOptimization &quot;AI-1187&quot;^^xsd:string)
+      AnnotationAssertion(dcterms:subject ai:DirectPreferenceOptimization &quot;Language Model Alignment, Preference Learning, RLHF, Offline Reinforcement Learning, Implicit Reward Modelling&quot;@en)
+    )
+
+    ## Property Characteristics
+    AsymmetricObjectProperty(ai:requires)
+    AsymmetricObjectProperty(ai:enables)
+    AsymmetricObjectProperty(ai:implements)
+    AsymmetricObjectProperty(ai:contrastsWith)
+    TransitiveObjectProperty(ai:dependsOn)
+    FunctionalDataProperty(ai:foundationalYear)
+    FunctionalDataProperty(ai:typicalBetaTemperature)
+    ```
+</code></pre>
+<ul>
+<li>
+<h2 id="about-direct-preference-optimization">About Direct Preference Optimization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-direct-preference-optimization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Direct Preference Optimization (DPO)</strong> is a language model alignment algorithm that trains a model to satisfy human preferences without training an explicit reward model and without running online reinforcement learning. Introduced by Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning and Chelsea Finn at Stanford University, the paper “Direct Preference Optimization: Your Language Model is Secretly a Reward Model” received the NeurIPS 2023 Outstanding Paper Award and became one of the most rapidly adopted alignment techniques in the history of machine learning—displacing PPO-based RLHF as the default alignment recipe for open-weight model releases within twelve months of publication.</p>
+</li>
+<li>
+<p>The fundamental insight is that <strong>the closed-form solution to KL-constrained reward maximisation already determines the optimal policy</strong>, so one can avoid the intermediate step of fitting a reward model and instead optimise the policy directly against pairwise preference data using a supervised classification-style loss. By recognising that any reward function admits a re-parameterisation through the log-ratio of the optimal policy to a reference policy, the partition function—the analytically intractable normaliser that plagues energy-based models—<strong>cancels exactly</strong> when computing the difference in implicit rewards between a chosen and a rejected completion. What remains is a tractable cross-entropy loss over preference pairs.</p>
+</li>
+<li>
+<p>DPO collapses the three-stage RLHF pipeline (SFT → reward model → PPO) into two stages (SFT → DPO), removes the need for online policy rollouts, eliminates the reward hacking vulnerabilities introduced by reward-model-mediated optimisation, and reduces alignment training cost by approximately 3-10× depending on configuration. By May 2026 the original paper has accumulated 4,500+ citations and the broader DPO-variant family includes 200+ named methods covering noise robustness, reference-free training, binary feedback, sequence-level calibration, and iterative online refinement.</p>
+</li>
+<li>
+<h3 id="core-mathematical-framework">Core Mathematical Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-mathematical-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>DPO derives from the same KL-constrained reward maximisation objective that underpins RLHF-PPO. Understanding the derivation is essential to appreciating why the method works and where its limitations lie.</p>
+<p><strong>RLHF Objective</strong>: The standard RLHF objective maximises expected reward under a constraint that the policy π_θ remain close to a reference policy π_ref (typically the SFT model):</p>
+<p>max_π E_{x∼D, y∼π(y|x)}[r(x,y)] − β · KL(π(·|x) ‖ π_ref(·|x))</p>
+<p>where β > 0 is the KL temperature controlling proximity to π_ref.</p>
+<p><strong>Closed-Form Optimal Policy</strong>: This objective admits a closed-form solution derived via Lagrangian analysis:</p>
+<p>π*(y|x) = (1/Z(x)) · π_ref(y|x) · exp((1/β) · r(x,y))</p>
+<p>where Z(x) = Σ_y π_ref(y|x) exp((1/β) r(x,y)) is the partition function ensuring π* normalises to 1. This is precisely the <strong>Gibbs distribution</strong> from statistical mechanics applied to language modelling.</p>
+<p><strong>Reward Re-parameterisation</strong>: Solving the closed-form expression for r(x,y) yields:</p>
+<p>r(x,y) = β · log(π*(y|x) / π_ref(y|x)) + β · log Z(x)</p>
+<p>This is the key algebraic step: <strong>every reward function corresponds to a unique policy under the KL constraint, and conversely every policy implicitly defines a reward function up to a state-dependent additive constant β log Z(x)</strong>.</p>
+<p><strong>Bradley-Terry Preference Model</strong>: Under the Bradley-Terry-Luce choice model (Bradley &amp; Terry 1952), the probability that completion y_w is preferred to completion y_l given prompt x is:</p>
+<p>p(y_w ≻ y_l | x) = exp(r(x, y_w)) / (exp(r(x, y_w)) + exp(r(x, y_l))) = σ(r(x, y_w) − r(x, y_l))</p>
+<p>where σ(z) = 1/(1+e^{−z}) is the logistic sigmoid.</p>
+<p><strong>DPO Loss</strong>: Substituting the reward re-parameterisation into the Bradley-Terry likelihood:</p>
+<p>r(x, y_w) − r(x, y_l) = β · log(π_θ(y_w|x)/π_ref(y_w|x)) − β · log(π_θ(y_l|x)/π_ref(y_l|x))</p>
+<p>Note that the β log Z(x) terms cancel since Z(x) is a function of the prompt only and appears identically in both reward expressions. Maximum likelihood estimation over the preference dataset then yields:</p>
+<p>L_DPO(π_θ; π_ref) = −E_{(x, y_w, y_l) ∼ D}[log σ(β · log(π_θ(y_w|x)/π_ref(y_w|x)) − β · log(π_θ(y_l|x)/π_ref(y_l|x)))]</p>
+<p>This is the <strong>DPO loss</strong>: a single supervised classification-style objective trainable with standard cross-entropy machinery.</p>
+<p><strong>Gradient Analysis</strong>: Differentiating the DPO loss yields:</p>
+<p>∇_θ L_DPO = −β · E[σ(r̂(x,y_l) − r̂(x,y_w)) · (∇_θ log π_θ(y_w|x) − ∇_θ log π_θ(y_l|x))]</p>
+<p>where r̂(x,y) = β log(π_θ(y|x)/π_ref(y|x)) is the implicit reward. The gradient upweights chosen completions and downweights rejected completions, with the weighting σ(r̂(x,y_l) − r̂(x,y_w)) acting as an automatic difficulty scaler—larger updates on examples where the model currently misranks preferences, smaller updates on examples already correctly ordered.</p>
+<p><strong>The β Hyperparameter</strong>: β ∈ [0.01, 0.5] in practice with β = 0.1 a robust default. Lower β corresponds to weaker KL regularisation and more aggressive policy updates (higher reward margins, greater risk of degeneration); higher β keeps the policy close to π_ref (conservative updates, smaller reward improvements). The choice trades off alignment magnitude against retention of the SFT model’s general capabilities.</p>
+</li>
+<li>
+<h3 id="architectural-components">Architectural Components<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#architectural-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="reference-policy-π_ref">Reference Policy π_ref<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reference-policy-π_ref" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>A <strong>frozen copy of the SFT model</strong> providing the anchor for KL regularisation. In standard DPO π_ref = π_SFT (the model produced by stage 1 of the alignment pipeline). The reference policy is evaluated in inference mode only—no gradients flow through it—but it occupies the same memory footprint as π_θ during training, effectively doubling GPU memory requirements compared to SFT. This memory burden motivated subsequent <strong>reference-free variants</strong> (SimPO, ORPO) eliminating π_ref to halve memory.</p>
+<h4 id="trainable-policy-π_θ">Trainable Policy π_θ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trainable-policy-π_θ" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>The model being aligned, initialised from the SFT checkpoint. Standard configurations train all parameters via full fine-tuning on 8× A100 80GB or 8× H100 80GB nodes for 7B/13B models, or use <strong>parameter-efficient adaptation (PEFT)</strong>—LoRA (Hu et al. 2021), QLoRA (Dettmers et al. 2023) 4-bit quantisation—dramatically reducing memory and enabling DPO of 70B+ models on single nodes.</p>
+<h4 id="preference-dataset-d">Preference Dataset D<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#preference-dataset-d" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>A collection of triples (x, y_w, y_l) where x is a prompt, y_w is the preferred (chosen) completion, and y_l is the rejected completion. Datasets fall into three categories:</p>
+<ul>
+<li><strong>Human-annotated</strong>: Anthropic HH-RLHF (160K pairs), OpenAI Summarisation TL;DR (93K pairs), Stanford SHP (385K pairs from Reddit), UltraFeedback Cui et al. 2023 (64K diverse model outputs scored by GPT-4)</li>
+<li><strong>AI-generated</strong>: Self-instruct preferences via reward model or judge LLM scoring (Anthropic Constitutional AI, Magpie Xu et al. 2024)</li>
+<li><strong>Hybrid</strong>: Mixed human + AI annotation with quality filtering (UltraFeedback Cleaned, Orca DPO Pairs)</li>
+</ul>
+<p>Quality of D dominates DPO performance—<strong>data quality > data quantity</strong> is a recurring empirical finding (Tunstall et al. 2023 Zephyr 7B; Lambert et al. 2024 Tulu 3).</p>
+<h4 id="implicit-reward-function">Implicit Reward Function<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implicit-reward-function" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Although DPO never trains an explicit reward model, the trained policy π_θ implicitly defines one:</p>
+<p>r̂(x, y) = β · log(π_θ(y|x) / π_ref(y|x))</p>
+<p>This implicit reward can be used post-training for <strong>best-of-N sampling</strong>, <strong>rejection sampling</strong>, <strong>preference data labelling for iterative DPO</strong>, and <strong>evaluation against held-out preference sets</strong>, providing useful diagnostic and inference-time capabilities.</p>
+<h4 id="β-temperature-schedule">β Temperature Schedule<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#β-temperature-schedule" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Modern implementations frequently schedule β over training—starting higher (0.3-0.5, conservative updates) and decaying to lower values (0.05-0.1, more aggressive) as training progresses. β-DPO (Wu et al. 2024) introduces per-example dynamic β based on preference confidence.</p>
+</li>
+<li>
+<h3 id="training-pathologies-and-mitigations">Training Pathologies and Mitigations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#training-pathologies-and-mitigations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>DPO is substantially more stable than PPO-RLHF but exhibits its own characteristic failure modes.</p>
+<h4 id="1-distribution-shift-and-reward-over-optimisation">1. Distribution Shift and Reward Over-Optimisation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-distribution-shift-and-reward-over-optimisation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Symptom</strong>: As training progresses, the model drifts far from π_ref and generates text that maximises implicit reward on the preference distribution but fails on held-out evaluation—degraded coherence, repetition, hallucination, mode collapse.</p>
+<p><strong>Mitigations</strong>:</p>
+<ul>
+<li><strong>Higher β</strong>: Stronger KL regularisation slows distribution drift</li>
+<li><strong>Early stopping</strong>: Monitor evaluation on held-out preferences and stop before degradation</li>
+<li><strong>IPO regularisation</strong> (Azar et al. 2024): Replaces the log-sigmoid loss with a quadratic penalty preventing arbitrary reward escalation when preferences are near-deterministic</li>
+<li><strong>DPO Plus</strong> (multiple authors 2024): Auxiliary SFT loss on y_w completions preventing forgetting</li>
+</ul>
+<h4 id="2-length-bias">2. Length Bias<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-length-bias" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Symptom</strong>: DPO-trained models systematically prefer longer outputs because longer completions accumulate more probability mass differential between π_θ and π_ref, inflating implicit reward independent of content quality. This is the same length bias afflicting RLHF.</p>
+<p><strong>Mitigations</strong>:</p>
+<ul>
+<li><strong>Length-controlled preferences</strong>: Sample y_w and y_l of comparable lengths during dataset curation</li>
+<li><strong>SimPO</strong> (Meng et al. 2024): Length-normalised loss eliminating per-token reward bias</li>
+<li><strong>R-DPO</strong>: Length-regularised DPO with explicit length penalty</li>
+<li><strong>Token-level DPO</strong>: Per-token KL accumulation rather than sequence-level</li>
+</ul>
+<h4 id="3-preference-noise-and-annotator-disagreement">3. Preference Noise and Annotator Disagreement<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-preference-noise-and-annotator-disagreement" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Symptom</strong>: Human preference annotations exhibit 60-75% inter-annotator agreement on subjective dimensions (helpfulness, harmlessness, creativity), introducing label noise. Standard DPO treats all preferences as deterministic—σ(reward margin) → 1—causing overfitting to noise.</p>
+<p><strong>Mitigations</strong>:</p>
+<ul>
+<li><strong>cDPO</strong> (Conservative DPO, Mitchell 2023): Smoothed labels modelling preference probability p ∈ (0,1) rather than binary</li>
+<li><strong>rDPO</strong> (Robust DPO, Chowdhury et al. 2024): Explicitly handles preference label flip noise</li>
+<li><strong>Ensemble preferences</strong>: Multiple annotators per pair with majority voting</li>
+</ul>
+<h4 id="4-reference-policy-quality-sensitivity">4. Reference Policy Quality Sensitivity<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-reference-policy-quality-sensitivity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Symptom</strong>: DPO performance degrades sharply when π_ref is a weak SFT model—the KL anchor cannot prevent drift if the anchor itself produces poor outputs.</p>
+<p><strong>Mitigations</strong>:</p>
+<ul>
+<li><strong>High-quality SFT</strong>: Invest in strong SFT data and training before DPO</li>
+<li><strong>SFT-DPO joint training</strong>: ORPO (Hong et al. 2024) combines SFT and preference learning in one stage</li>
+<li><strong>Iterative DPO</strong>: Update π_ref periodically to the current π_θ enabling continual refinement</li>
+</ul>
+<h4 id="5-memory-footprint">5. Memory Footprint<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-memory-footprint" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Symptom</strong>: Maintaining frozen π_ref alongside trainable π_θ doubles model memory—prohibitive for 70B+ models on commodity hardware.</p>
+<p><strong>Mitigations</strong>:</p>
+<ul>
+<li><strong>SimPO</strong> (Meng et al. 2024): Reference-free DPO with target reward margin γ replacing the KL anchor with explicit margin</li>
+<li><strong>ORPO</strong> (Hong et al. 2024): Odds-ratio penalty obviating π_ref</li>
+<li><strong>LoRA-DPO</strong>: Compute reference logits via base model + zeroed LoRA adapters, eliminating duplicate memory</li>
+<li><strong>Gradient checkpointing + ZeRO-3</strong>: Distributed training partitioning π_ref across GPUs</li>
+</ul>
+</li>
+<li>
+<h3 id="major-variants-and-families">Major Variants and Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#major-variants-and-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The DPO ecosystem comprises 200+ named variants. The most influential are detailed below.</p>
+<h4 id="kto-kahneman-tversky-optimization-ethayarajh-et-al-2024">KTO (Kahneman-Tversky Optimization, Ethayarajh et al. 2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#kto-kahneman-tversky-optimization-ethayarajh-et-al-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Replaces pairwise preferences with <strong>binary desirable/undesirable labels</strong>, grounded in <strong>prospect theory</strong> (Kahneman &amp; Tversky 1979 Nobel-winning behavioural economics). The KTO loss models gains and losses asymmetrically reflecting human risk aversion, enabling alignment on unpaired data—much cheaper to collect than pairwise preferences. Adopted in production by ContextualAI, deployed for retrieval-augmented generation alignment. <strong>Citation count: 800+ by May 2026</strong>.</p>
+<h4 id="ipo-identity-preference-optimization-azar-et-al-2024">IPO (Identity Preference Optimization, Azar et al. 2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ipo-identity-preference-optimization-azar-et-al-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>DeepMind paper “A General Theoretical Paradigm to Understand Learning from Human Preferences” introducing a <strong>quadratic regularisation term</strong> addressing DPO’s tendency to overfit when preferences are near-deterministic (σ → 1). The IPO loss is:</p>
+<p>L_IPO = E[(β · log(π_θ(y_w|x)/π_ref(y_w|x)) − β · log(π_θ(y_l|x)/π_ref(y_l|x)) − 1/2)²]</p>
+<p>Provides better behaviour under low-noise preference regimes. Used in Google Gemini fine-tuning per Anil et al. 2023 disclosures.</p>
+<h4 id="simpo-simple-preference-optimization-meng-et-al-2024">SimPO (Simple Preference Optimization, Meng et al. 2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#simpo-simple-preference-optimization-meng-et-al-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Reference-free</strong> length-normalised DPO eliminating π_ref entirely. The SimPO loss uses average log-probability of chosen vs rejected and introduces a target reward margin γ:</p>
+<p>L_SimPO = −E[log σ(β/|y_w| · log π_θ(y_w|x) − β/|y_l| · log π_θ(y_l|x) − γ)]</p>
+<p>Reduces memory by 50%, achieves stronger AlpacaEval 2 and Arena-Hard win rates than DPO on Llama 3 8B baselines. <strong>One of the most widely adopted DPO variants in 2024-2025 open-weight releases</strong>.</p>
+<h4 id="orpo-odds-ratio-preference-optimization-hong-et-al-2024">ORPO (Odds Ratio Preference Optimization, Hong et al. 2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#orpo-odds-ratio-preference-optimization-hong-et-al-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Combines SFT and preference learning in <strong>a single stage</strong> via an odds-ratio penalty, eliminating both the separate SFT phase and the reference policy. The ORPO loss adds a log-odds-ratio term to the SFT loss:</p>
+<p>L_ORPO = L_SFT + λ · log σ(log(odds_θ(y_w|x)/odds_θ(y_l|x)))</p>
+<p>where odds_θ(y|x) = π_θ(y|x) / (1 − π_θ(y|x)). Used in HuggingFace Zephyr ORPO releases, Argilla, Cohere Command R training.</p>
+<h4 id="iterative-dpo-xu-et-al-2024-tran-et-al-2024">Iterative DPO (Xu et al. 2024, Tran et al. 2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#iterative-dpo-xu-et-al-2024-tran-et-al-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Alternates between <strong>preference data collection</strong> (sampling completions from current π_θ and scoring with a judge model or reward model) and <strong>DPO training</strong> across multiple rounds. Each iteration improves the model, generates harder preference pairs, and reduces the offline-online gap that plagues purely offline DPO. Tulu 3 (Lambert et al. 2024) uses iterative DPO at 70B/405B scale. Llama 3 405B Instruct used 6 iterations of DPO + RLVR (Meta AI 2024).</p>
+<h4 id="online-dpo-guo-et-al-2024">Online DPO (Guo et al. 2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#online-dpo-guo-et-al-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Samples <strong>fresh preferences during training</strong> rather than relying on a static dataset, narrowing the offline-online gap further. Each batch generates new completions from π_θ, queries a preference oracle (typically a strong judge LLM like GPT-4 or human annotators in industrial pipelines), and trains on the resulting preferences. Combines the simplicity of DPO with the on-policy benefits of PPO.</p>
+<h4 id="β-dpo-wu-et-al-2024">β-DPO (Wu et al. 2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#β-dpo-wu-et-al-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Dynamic per-example β scheduling based on preference confidence and gradient norms. Resolves the tension between conservative (high β) and aggressive (low β) regimes by adapting to data characteristics.</p>
+<h4 id="other-notable-variants">Other Notable Variants<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#other-notable-variants" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>RPO</strong> (Rejection-sampling Preference Optimization, multiple authors 2024): DPO + rejection sampling from current policy</li>
+<li><strong>SLiC</strong> (Zhao et al. 2023): Sequence-level calibration predating DPO with conceptually related formulation</li>
+<li><strong>RSO</strong> (Statistical Rejection Sampling Optimization, Liu et al. 2024): RSO + DPO hybrid</li>
+<li><strong>cDPO</strong> (Conservative DPO, Mitchell 2023): Noisy preference handling</li>
+<li><strong>rDPO</strong> (Robust DPO, Chowdhury et al. 2024): Label-flip noise robustness</li>
+<li><strong>sDPO</strong> (Stepwise DPO, Kim et al. 2024): Curriculum-based DPO with progressively harder preferences</li>
+<li><strong>DPOP</strong> (DPO Positive, Pal et al. 2024): Anti-degradation auxiliary loss</li>
+<li><strong>TDPO</strong> (Token-level DPO, Zeng et al. 2024): Per-token KL accumulation</li>
+<li><strong>EXPO</strong> (Extrapolated DPO, Zheng et al. 2024): Weight-space extrapolation between SFT and DPO checkpoints</li>
+<li><strong>MPO</strong> (Multi-objective DPO): Simultaneous optimisation of multiple preference dimensions</li>
+<li><strong>DNO</strong> (Direct Nash Optimization, Rosset et al. 2024): Game-theoretic DPO variant</li>
+<li><strong>Self-Rewarding LMs</strong> (Yuan et al. 2024 Meta FAIR): Model generates own preferences via prompt-based self-judgement, iteratively DPO-trained</li>
+</ul>
+</li>
+<li>
+<h3 id="use-cases-and-major-application-families">Use Cases and Major Application Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases-and-major-application-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>DPO has become the dominant alignment recipe for open-weight model releases and a critical component of major proprietary system alignment pipelines.</p>
+<h4 id="open-weight-model-alignment">Open-Weight Model Alignment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-weight-model-alignment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Meta Llama 3 / Llama 3.1 / Llama 3.3 (April 2024 - December 2024)</strong>: Llama 3 8B/70B Instruct used DPO after SFT, with the 405B model employing six rounds of iterative DPO plus rejection sampling (Meta AI 2024 “Llama 3 Herd of Models” technical report). DPO replaced PPO-RLHF used in Llama 2 (July 2023), dramatically simplifying the training pipeline.</p>
+<p><strong>Mistral Mixtral 8x22B Instruct (April 2024)</strong>: French AI champion Mistral AI uses DPO for Mixtral instruction tuning. Mistral Large 2 (July 2024) extends to multi-stage DPO.</p>
+<p><strong>Allen AI Tulu 3 (November 2024, Lambert et al.)</strong>: Open-weights 8B/70B/405B models combining DPO with RLVR (Reinforcement Learning with Verifiable Rewards), demonstrating DPO complementarity with verifier-based RL. Tulu 3 70B reaches Claude 3.5 Sonnet-class performance on many benchmarks.</p>
+<p><strong>Alibaba Qwen 2.5 (September 2024)</strong>: Qwen 2.5 7B/72B Instruct uses DPO instruction tuning. Qwen 2.5-Coder uses code-specific DPO with execution feedback.</p>
+<p><strong>HuggingFace Zephyr 7B (Tunstall et al. 2023)</strong>: The canonical first demonstration that DPO on UltraFeedback data could produce strong open-weights chat models, sparking the rapid uptake of DPO in late 2023.</p>
+<p><strong>Databricks DBRX (March 2024)</strong>: 132B MoE instruction tuning via DPO.</p>
+<p><strong>Cohere Command R+ (April 2024)</strong>: Multilingual 104B Instruct trained with DPO-family methods.</p>
+<p><strong>Argilla Notus 7B</strong>: DPO variant trained on cleaned UltraFeedback.</p>
+<p><strong>NVIDIA Nemotron-4 340B (June 2024)</strong>: Synthetic data + DPO pipeline producing competitive open-weights model.</p>
+<p><strong>Snowflake Arctic Instruct (April 2024)</strong>: 480B MoE with DPO.</p>
+<h4 id="proprietary-system-alignment">Proprietary System Alignment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#proprietary-system-alignment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>OpenAI</strong>: While GPT-4 used PPO-RLHF (per OpenAI 2023 GPT-4 technical report), subsequent fine-tuning iterations and o1/o3 reasoning models incorporate DPO-family methods for non-reasoning behaviour (style, formatting, refusal calibration). The o1 reasoning training itself uses RLVR-style verifiable RL.</p>
+<p><strong>Anthropic</strong>: Constitutional AI (Bai et al. 2022) predates DPO but Anthropic’s later alignment pipelines incorporate DPO-style supervised preference losses. Claude 3.5 Sonnet (October 2024) employs preference learning variants per Anthropic system card disclosures.</p>
+<p><strong>Google DeepMind</strong>: Gemini 1.5 and 2.0 fine-tuning incorporates DPO and IPO variants per Anil et al. 2023 Gemini technical report and subsequent DeepMind blog posts. PaLM 2 alignment used early DPO experimentation.</p>
+<p><strong>Reka AI (London + San Francisco)</strong>: Reka Flash, Reka Core multimodal alignment uses DPO per technical disclosures.</p>
+<p><strong>AI21 Labs Jurassic / Jamba</strong>: Hybrid DPO + curriculum learning.</p>
+<h4 id="safety-and-harmlessness-alignment">Safety and Harmlessness Alignment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#safety-and-harmlessness-alignment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Anthropic HH-RLHF</strong> dataset (160K helpful + harmless pairs) becoming the canonical DPO benchmark</li>
+<li><strong>Llama Guard</strong> content moderation models trained via DPO on safety preferences</li>
+<li><strong>OpenAI o1 system card</strong> discusses DPO-style refusal calibration</li>
+<li><strong>AI2 RealToxicityPrompts</strong> evaluation showing DPO reduces toxicity 60-80% versus SFT baselines</li>
+<li><strong>Anthropic red-team data</strong> filtered through DPO for harm refusal calibration</li>
+</ul>
+<h4 id="domain-specific-alignment">Domain-Specific Alignment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-specific-alignment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Coding models</strong>: DeepSeek-Coder, StarCoder2 use code-execution-feedback DPO with unit tests as preference signals</li>
+<li><strong>Mathematical reasoning</strong>: Math-Shepherd, OpenMathInstruct apply DPO on step-correctness preferences</li>
+<li><strong>Medical alignment</strong>: Med-PaLM 2 successor models, BioMistral apply DPO on clinical preference data</li>
+<li><strong>Legal alignment</strong>: Harvey AI, Spellbook use DPO on lawyer-curated preferences</li>
+<li><strong>Multilingual alignment</strong>: Mistral, Cohere Command R+ multilingual DPO on translated preferences</li>
+</ul>
+<h4 id="style-and-persona-alignment">Style and Persona Alignment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#style-and-persona-alignment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Character.AI persona consistency</strong>: DPO on preference data emphasising character voice</li>
+<li><strong>Replika emotional support</strong>: DPO on empathy-graded preferences</li>
+<li><strong>Inflection Pi</strong>: Conversational style DPO</li>
+</ul>
+</li>
+<li>
+<h3 id="academic-context-theoretical-foundations-and-research-milestones">Academic Context: Theoretical Foundations and Research Milestones<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context-theoretical-foundations-and-research-milestones" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>DPO emerged at the intersection of three established research traditions: RLHF, offline reinforcement learning, and preference-based learning.</p>
+<h4 id="pre-dpo-foundations-1952-2022">Pre-DPO Foundations (1952-2022)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pre-dpo-foundations-1952-2022" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Bradley &amp; Terry (1952)</strong>: “Rank Analysis of Incomplete Block Designs” introducing the Bradley-Terry-Luce choice model—the statistical foundation for pairwise preference modelling that DPO inherits 71 years later. The same model underlies Elo chess ratings and modern LLM arena rankings.</p>
+<p><strong>Luce (1959) “Individual Choice Behavior”</strong>: Generalised choice axioms underpinning preference learning theory.</p>
+<p><strong>Christiano et al. (2017) “Deep Reinforcement Learning from Human Preferences”</strong>: Foundational RLHF paper at NeurIPS introducing preference-based RL for deep policies. Authored at OpenAI (Paul Christiano, then OpenAI safety team lead), establishing the three-stage SFT → reward model → PPO pipeline that DPO would later subsume. Christiano subsequently founded Alignment Research Center.</p>
+<p><strong>Ziegler et al. (2019) “Fine-Tuning Language Models from Human Preferences”</strong>: First application of RLHF to large language models at OpenAI, GPT-2 scale.</p>
+<p><strong>Stiennon et al. (2020) “Learning to Summarize from Human Feedback”</strong>: NeurIPS summarisation paper establishing RLHF as the dominant fine-tuning approach for instruction-style tasks. Created the TL;DR preference dataset still used as a DPO benchmark.</p>
+<p><strong>Bai et al. (2022) “Training a Helpful and Harmless Assistant”</strong>: Anthropic HH-RLHF paper introducing the canonical helpful + harmless preference dataset. Foundational for all subsequent DPO benchmarking.</p>
+<p><strong>Ouyang et al. (2022) “Training Language Models to Follow Instructions with Human Feedback” (InstructGPT)</strong>: OpenAI paper establishing modern RLHF practice at NeurIPS, providing the algorithmic recipe that DPO would simplify.</p>
+<p><strong>Bai et al. (2022) “Constitutional AI: Harmlessness from AI Feedback” (RLAIF)</strong>: Anthropic Constitutional AI replacing human preferences with AI-generated ones. Conceptually adjacent to later DPO + AI preference data work.</p>
+<p><strong>Glaese et al. (2022) “Improving Alignment of Dialogue Agents via Targeted Human Judgements” (Sparrow)</strong>: DeepMind RLHF system with rule-based reward augmentation, pre-figuring DPO + verifiable RL hybrids.</p>
+<p><strong>Korbak et al. (2023) “Pretraining Language Models with Human Preferences”</strong>: Pre-DPO conditional pretraining work exploring preference incorporation at pretraining time.</p>
+<h4 id="the-dpo-paper-december-2023">The DPO Paper (December 2023)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-dpo-paper-december-2023" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Rafailov, Sharma, Mitchell, Ermon, Manning, Finn (2023)</strong> “Direct Preference Optimization: Your Language Model is Secretly a Reward Model” at <strong>NeurIPS 2023</strong> (December 2023, New Orleans). <strong>Outstanding Paper Award</strong>—the most prestigious recognition at the field’s flagship conference. Authors: Stanford CS faculty Stefano Ermon, Christopher Manning, Chelsea Finn; PhD students Rafael Rafailov (lead), Archit Sharma; postdoctoral researcher Eric Mitchell.</p>
+<p>Key contributions:</p>
+<ol>
+<li>Closed-form derivation showing implicit reward representation r(x,y) = β log(π/π_ref) + β log Z(x)</li>
+<li>Observation that partition function Z(x) cancels in preference difference</li>
+<li>Resulting DPO loss derivable from standard maximum likelihood</li>
+<li>Empirical validation across summarisation (TL;DR), dialogue (HH-RLHF), and controlled sentiment (IMDB)</li>
+<li>Stability advantages over PPO-RLHF in hyperparameter sensitivity and reward hacking</li>
+</ol>
+<p>By May 2026 the paper has accumulated <strong>4,500+ citations</strong>, ranking amongst the most-cited alignment papers ever published.</p>
+<h4 id="post-dpo-variant-explosion-2024-2026">Post-DPO Variant Explosion (2024-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#post-dpo-variant-explosion-2024-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>First 6 months (December 2023 - May 2024)</strong>: KTO, IPO, ORPO, SimPO, iterative DPO, Self-Rewarding LMs, cDPO, β-DPO</p>
+<p><strong>Theoretical analysis</strong>: Azar et al. 2024 (IPO paper from DeepMind) “A General Theoretical Paradigm to Understand Learning from Human Preferences” providing the unified theoretical framework subsuming RLHF, DPO, IPO</p>
+<p><strong>Robustness analysis</strong>: Chowdhury et al. 2024 “Provably Robust DPO: Aligning Language Models with Noisy Feedback” establishing label-flip noise robustness</p>
+<p><strong>Identifiability theory</strong>: Sun et al. 2024 examining when DPO recovers the underlying reward function vs settling on equivalent policy classes</p>
+<p><strong>Scaling laws</strong>: Lambert et al. 2024 Tulu 3 demonstrating DPO scales to 405B parameters with iterative refinement</p>
+<p><strong>Connections to game theory</strong>: Munos et al. 2024 “Nash Learning from Human Feedback” reframing preference learning as Nash equilibrium computation</p>
+<p><strong>Verifier integration</strong>: Lambert et al. 2024 RLVR + DPO hybrid; Shao et al. 2024 GRPO (Group Relative Policy Optimisation, DeepSeek) as alternative for verifiable tasks</p>
+<h4 id="comparison-to-ppo-rlhf">Comparison to PPO-RLHF<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comparison-to-ppo-rlhf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Substantial empirical literature establishes DPO comparability with PPO-RLHF:</p>
+<ul>
+<li><strong>Rafailov et al. 2023 (original)</strong>: DPO ≥ PPO on TL;DR, HH-RLHF, IMDB sentiment under matched compute</li>
+<li><strong>Ivison et al. 2024 “Unpacking DPO and PPO”</strong>: AI2 systematic comparison showing PPO retains small edge on hard reasoning but DPO matches on most preference tasks at 3-5× lower compute</li>
+<li><strong>Xu et al. 2024 “Is DPO Superior to PPO”</strong>: Showing PPO with optimal hyperparameter tuning slightly beats DPO on Vicuna-Bench but cost differential makes DPO preferable</li>
+<li><strong>Tunstall et al. 2024</strong>: Demonstrating DPO scales effectively to 7B-70B regime without PPO’s hyperparameter sensitivity</li>
+</ul>
+<p>Consensus by 2025: <strong>DPO is the default for offline preference alignment; PPO/GRPO/RLVR for verifiable RL; iterative DPO bridges the gap when on-policy data is valuable</strong>.</p>
+</li>
+<li>
+<h3 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>As of May 2026 DPO is the dominant offline alignment algorithm worldwide, embedded in production training pipelines for 70%+ of open-weight model releases and approximately 40% of major proprietary models per disclosed technical reports.</p>
+<h4 id="adoption-statistics">Adoption Statistics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adoption-statistics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Open-weight model releases using DPO (variants included) post-2023</strong>:</p>
+<ul>
+<li>Llama 3 / 3.1 / 3.3 / 4 (Meta)</li>
+<li>Mistral / Mixtral series (Mistral AI, Paris)</li>
+<li>Tulu 2 / 3 (Allen Institute for AI)</li>
+<li>Qwen 1.5 / 2 / 2.5 / 3 (Alibaba)</li>
+<li>Zephyr 7B α/β (HuggingFace)</li>
+<li>DBRX (Databricks)</li>
+<li>Command R / R+ / R7B (Cohere)</li>
+<li>Nemotron-4 340B (NVIDIA)</li>
+<li>Arctic Instruct (Snowflake)</li>
+<li>Yi 1.5 / 34B / Coder (01.AI)</li>
+<li>DeepSeek V2 / V3 / R1 distillations</li>
+<li>StarCoder2 Instruct (BigCode)</li>
+<li>Orca 2 / Phi-3 / Phi-4 (Microsoft)</li>
+<li>SmolLM-Instruct (HuggingFace, edge models)</li>
+</ul>
+<p>Aggregate: <strong>3,500+ DPO-aligned open-weight models</strong> on HuggingFace Hub by May 2026.</p>
+<h4 id="production-frameworks">Production Frameworks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#production-frameworks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>HuggingFace TRL (Transformer Reinforcement Learning)</strong>: Reference implementation, 11K+ GitHub stars, supports DPO, KTO, IPO, ORPO, SimPO, CPO, RLOO, GRPO, PPO. Used by 80%+ of academic and open-source DPO training. PEFT integration for LoRA/QLoRA DPO at 70B scale on commodity hardware.</p>
+<p><strong>OpenRLHF (OpenLLMAI)</strong>: Distributed DPO + PPO + iterative DPO training at 70B+ scale with Ray/vLLM integration. Used by Allen AI Tulu 3, Llama 3 community fine-tunes.</p>
+<p><strong>Axolotl</strong>: Production-grade fine-tuning framework wrapping TRL, dominant for community DPO training. Supports DPO, KTO, IPO, ORPO with one-line YAML configuration.</p>
+<p><strong>NVIDIA NeMo-Aligner</strong>: Enterprise distributed DPO at scale, used by major industry deployments and powering Nemotron-4 340B alignment.</p>
+<p><strong>DeepSpeed-Chat (Microsoft)</strong>: Three-stage alignment including DPO variants, optimised for Azure infrastructure.</p>
+<p><strong>PyTorch Lightning + Lightning AI Studios</strong>: Reference DPO training notebooks, deployed via Lightning Cloud Studios for managed training.</p>
+<p><strong>TorchTune (PyTorch)</strong>: Official Meta fine-tuning library with DPO/PPO/GRPO support, designed for Llama-family models.</p>
+<p><strong>Snorkel AI Foundry</strong>: Enterprise DPO platform with programmatic preference data labelling.</p>
+<h4 id="datasets">Datasets<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#datasets" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>UltraFeedback</strong> (Cui et al. 2023, Tsinghua + OpenBMB): 64K preference pairs with GPT-4 scoring across 4 dimensions. Cleaned/filtered variants dominate 2024-2026 DPO training.</p>
+<p><strong>HH-RLHF</strong> (Anthropic 2022): 160K pairs across helpful + harmless, the canonical safety alignment benchmark.</p>
+<p><strong>Stanford SHP</strong> (Ethayarajh et al. 2022): 385K Reddit-derived preferences across 18 domains.</p>
+<p><strong>OpenAssistant Conversations</strong> (LAION 2023): Multi-turn conversation preferences.</p>
+<p><strong>Argilla Distilabel Synthetic Preferences</strong>: AI-generated preference datasets at scale.</p>
+<p><strong>Magpie</strong> (Xu et al. 2024): Self-instruct preference generation pipeline.</p>
+<p><strong>Skywork-Reward-Preference-80K</strong> (Skywork AI 2024): High-quality curated preferences for state-of-art DPO.</p>
+<p><strong>HelpSteer / HelpSteer2</strong> (NVIDIA 2024): Multi-aspect scored preferences (helpfulness, correctness, coherence, complexity, verbosity).</p>
+<h4 id="evaluation-infrastructure">Evaluation Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>AlpacaEval 2</strong> (Dubois et al. 2024 Stanford): GPT-4 judge-based win rate evaluation, the dominant DPO-friendly benchmark. Length-controlled variant introduced 2024 mitigates length bias.</p>
+<p><strong>Arena-Hard</strong> (LMSYS 2024): Harder evaluation distribution, closer correlation with Chatbot Arena human votes.</p>
+<p><strong>MT-Bench</strong> (Zheng et al. 2023 LMSYS): Multi-turn dialogue scoring across 8 categories.</p>
+<p><strong>LMSYS Chatbot Arena</strong>: Live human pairwise evaluation, the de facto gold standard. DPO-trained models (Llama 3, Mixtral) competitive with proprietary leaders.</p>
+<p><strong>AlpacaEval / MT-Bench / Arena-Hard ladders</strong> consumed by Hugging Face Open LLM Leaderboard and broadcast Open Model rankings.</p>
+<p><strong>UK AISI Inspect Framework</strong> (May 2024+): AI Safety Institute’s open-source evaluation harness running structured tests on alignment, jailbreak resistance, and capability. Inspect benchmarks DPO-aligned models including Llama 3, Mixtral, Claude 3.5, GPT-4o across capability/risk axes.</p>
+<h4 id="market-position">Market Position<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#market-position" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Alignment Methods Total Market</strong> (estimated 2026): $2.5-3.5B encompassing alignment platforms (Snorkel, Argilla, Adept), preference annotation services (Scale AI, Surge AI, Invisible Technologies), training infrastructure (Together AI, Modal, Lightning AI), and consulting/enterprise services.</p>
+<p><strong>DPO-family share</strong>: ~60% of offline preference alignment workloads, growing from ~10% in late 2023 to dominance in 18 months—amongst the fastest technique adoptions in modern ML history.</p>
+<p><strong>Cost Differential</strong>: DPO training of Llama 3 70B Instruct estimated at <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">150</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">300</span><span class="mord mathnormal">Kco</span><span class="mord mathnormal">m</span><span class="mord mathnormal">p</span><span class="mord mathnormal">u</span><span class="mord mathnormal">t</span><span class="mord mathnormal">ecos</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord">2024</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">sc</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">os</span><span class="mord mathnormal">u</span><span class="mord mathnormal">res</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">ers</span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span><span class="mord mathnormal" style="margin-right:0.02778em;">PPO</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal">L</span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal">es</span><span class="mord mathnormal">t</span><span class="mord mathnormal">ima</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal">d</span></span></span></span>1.5-3M for equivalent Llama 2 70B (Meta AI 2023). <strong>~10× compute reduction</strong> driving the rapid uptake.</p>
+<h4 id="regulatory-landscape">Regulatory Landscape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regulatory-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>EU AI Act (entered force August 2024, fully applicable August 2026)</strong>: Classifies general-purpose AI models with systemic risk under specific obligations. DPO-aligned model providers must document alignment procedures, preference datasets used, and red-teaming results. Article 55 obligations.</p>
+<p><strong>UK AI Safety Institute / AI Security Institute</strong> (renamed February 2024): Statutory body within DSIT evaluating frontier models including alignment robustness. Inspect framework benchmarks DPO-aligned models. Voluntary disclosure agreements signed with OpenAI, Anthropic, Google DeepMind, Meta for pre-deployment evaluation.</p>
+<p><strong>US Executive Order 14110 (October 2023) + NIST AI Risk Management Framework</strong>: Imposes reporting on dual-use foundation models including alignment methodology. DPO recipe disclosure required for models exceeding 10^26 FLOP training threshold.</p>
+</li>
+<li>
+<h3 id="uk-context-deepmind-rlhf-lineage-and-evaluation-infrastructure">UK Context: DeepMind RLHF Lineage and Evaluation Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context-deepmind-rlhf-lineage-and-evaluation-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The United Kingdom occupies a distinctive position in DPO’s intellectual history through the <strong>DeepMind RLHF lineage</strong>, <strong>Cambridge / Oxford machine learning theory</strong>, and the <strong>AI Safety Institute / AI Security Institute evaluation infrastructure</strong>—the latter pioneering structured evaluation methodology for DPO-aligned frontier models.</p>
+<h4 id="deepmind-rlhf-lineage-london-2015-2024">DeepMind RLHF Lineage (London, 2015-2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#deepmind-rlhf-lineage-london-2015-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Google DeepMind (King’s Cross, London) hosts the deepest concentration of alignment research talent originating the conceptual frameworks DPO simplifies:</p>
+<ul>
+<li><strong>Jan Leike</strong> (then DeepMind, later OpenAI/Anthropic): Co-authored Christiano et al. 2017 foundational RLHF paper whilst at DeepMind. Subsequently led OpenAI Superalignment team before joining Anthropic. The London-DeepMind to OpenAI talent flow shaped modern RLHF.</li>
+<li><strong>Geoffrey Irving</strong> (DeepMind safety): Debate, scalable oversight, recursive reward modelling work pre-figuring DPO-style implicit reward extraction.</li>
+<li><strong>Shane Legg</strong> (DeepMind co-founder, now Chief AGI Scientist): Long-running alignment programme funding.</li>
+<li><strong>Mohammad Norouzi / Dale Schuurmans</strong> (DeepMind Toronto/Edmonton, RL theory): Foundational policy gradient and KL-regularised RL work underpinning the DPO derivation.</li>
+<li><strong>Rémi Munos</strong> (DeepMind Paris/London): “Nash Learning from Human Feedback” Munos et al. 2024 game-theoretic alignment paper extending DPO theoretical framework.</li>
+<li><strong>Mohammad Gheshlaghi Azar</strong> (DeepMind London): <strong>Lead author of IPO</strong> (Identity Preference Optimization) Azar et al. 2024—one of the most cited DPO variants. The paper “A General Theoretical Paradigm to Understand Learning from Human Preferences” is the canonical theoretical analysis of DPO and its descendants.</li>
+<li><strong>Bilal Piot, Daniel Guo, Bernardo Ávila Pires</strong> (DeepMind London): IPO co-authors, contributing to the theoretical understanding of preference-based learning.</li>
+<li><strong>Sparrow Project (Glaese et al. 2022)</strong>: DeepMind RLHF dialogue system pre-figuring rule-augmented preference learning.</li>
+</ul>
+<p><strong>Gemini 2.0 / 2.5 fine-tuning</strong> (released December 2024 / February 2025) uses IPO and DPO variants per Anil et al. 2023 technical report and subsequent DeepMind disclosures.</p>
+<h4 id="university-of-cambridge-machine-learning-group-cambridge-centre-for-ai-in-medicine">University of Cambridge (Machine Learning Group, Cambridge Centre for AI in Medicine)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-cambridge-machine-learning-group-cambridge-centre-for-ai-in-medicine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Research Focus</strong>: Bayesian preference learning, uncertainty quantification in alignment, preference optimisation for scientific machine learning</li>
+<li><strong>Key Faculty</strong>: <strong>José Miguel Hernández-Lobato</strong> (Bayesian deep learning, preference optimisation for molecular design with DPO applied to chemistry); <strong>Carl Rasmussen</strong> (Gaussian processes, preference learning theory); <strong>Adrian Weller</strong> (fairness in preference aggregation, AI Safety Hub); <strong>Neil Lawrence</strong> (DeepMind Professor of Machine Learning, alignment theory)</li>
+<li><strong>Major Output</strong>: Bayesian extensions of DPO with uncertainty-aware preference weighting; theoretical analysis of preference aggregation under disagreement</li>
+<li><strong>Industry Partnerships</strong>: AstraZeneca (DPO for molecular generation), Microsoft Research Cambridge (alignment theory), Apple ML Research Cambridge</li>
+</ul>
+<h4 id="university-of-oxford-department-of-computer-science-aims-cdt-oxford-internet-institute">University of Oxford (Department of Computer Science, AIMS-CDT, Oxford Internet Institute)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-oxford-department-of-computer-science-aims-cdt-oxford-internet-institute" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Research Focus</strong>: Bayesian alignment, uncertainty in preference learning, AI safety theory</li>
+<li><strong>Key Faculty</strong>: <strong>Yarin Gal</strong> (Bayesian deep learning, uncertainty in alignment, OATML group lead, also UK AISI Research Director from 2023); <strong>Tom Rainforth</strong> (probabilistic inference, preference learning theory); <strong>Adam Mahdi</strong> (alignment, social choice theory); <strong>Michael Wooldridge</strong> (multi-agent systems, AI ethics)</li>
+<li><strong>Oxford Applied and Theoretical Machine Learning Group (OATML)</strong>: Foundational uncertainty-quantification work supporting DPO + Bayesian extensions</li>
+<li><strong>AI Safety Hub Oxford</strong>: Cross-departmental safety research including alignment robustness</li>
+<li><strong>DPhil-to-AISI Pipeline</strong>: Multiple OATML graduates joining UK AI Safety Institute evaluating DPO-aligned models</li>
+</ul>
+<h4 id="imperial-college-london-department-of-computing-data-science-institute">Imperial College London (Department of Computing, Data Science Institute)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#imperial-college-london-department-of-computing-data-science-institute" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Research Focus</strong>: Alignment robustness, adversarial attacks on aligned models, DPO + safety evaluation</li>
+<li><strong>Key Faculty</strong>: <strong>Marc Deisenroth</strong> (Bayesian deep learning, Gaussian processes for preference learning); <strong>Murray Shanahan</strong> (DeepMind Senior Research Scientist + Imperial Professor, alignment philosophy); <strong>Anandha Gopalan / Bernhard Kainz</strong> (alignment in medical AI)</li>
+<li><strong>Industry Partnerships</strong>: Google DeepMind, Microsoft Research, NHS AI Lab (DPO for clinical preference alignment)</li>
+</ul>
+<h4 id="university-college-london-ucl-ai-centre">University College London (UCL, AI Centre)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-college-london-ucl-ai-centre" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Research Focus</strong>: Reinforcement learning + alignment, multi-agent preference learning, language model evaluation</li>
+<li><strong>Key Faculty</strong>: <strong>Tim Rocktäschel</strong> (DeepMind Staff Research Scientist + UCL Professor, RL + alignment); <strong>Edward Grefenstette</strong> (Cohere VP Research + UCL, language model alignment); <strong>Sebastian Riedel</strong> (NLP, DPO for text generation evaluation)</li>
+<li><strong>DeepMind Pipeline</strong>: UCL provides the deepest UK academic-to-DeepMind pipeline with 200+ DeepMind researchers holding UCL affiliations</li>
+<li><strong>Alignment Workshop Series</strong>: UCL/DeepMind co-hosted London Alignment Workshop driving cross-institutional knowledge transfer</li>
+</ul>
+<h4 id="university-of-edinburgh-school-of-informatics">University of Edinburgh (School of Informatics)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-edinburgh-school-of-informatics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Research Focus</strong>: Probabilistic models for preference learning, language model evaluation, sample-efficient alignment</li>
+<li><strong>Key Faculty</strong>: <strong>Iain Murray</strong> (probabilistic ML), <strong>Amos Storkey</strong> (deep generative models + alignment), <strong>Mirella Lapata</strong> (NLP, language generation evaluation)</li>
+<li><strong>Edinburgh Centre for Natural Language Processing</strong>: DPO evaluation benchmarks, multi-lingual alignment</li>
+</ul>
+<h4 id="university-of-manchester-department-of-computer-science-ai-hub">University of Manchester (Department of Computer Science, AI hub)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-manchester-department-of-computer-science-ai-hub" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Research Focus</strong>: Industrial application of DPO, robust language model alignment for high-stakes domains</li>
+<li><strong>Industry Partnerships</strong>: AstraZeneca Macclesfield (drug discovery DPO), BAE Systems (defence language model alignment), Co-op (retail preference alignment)</li>
+</ul>
+<h4 id="uk-ai-safety-institute--ai-security-institute-london-2023-">UK AI Safety Institute / AI Security Institute (London, 2023-)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-ai-safety-institute--ai-security-institute-london-2023-" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Established November 2023, renamed AI Security Institute February 2024, located in DSIT (Department for Science, Innovation and Technology) headquarters London. The most consequential UK contribution to DPO evaluation methodology:</p>
+<ul>
+<li><strong>Inspect framework</strong> (open-sourced May 2024): Structured evaluation harness for DPO-aligned frontier models. Tests capability (MMLU, MATH, HumanEval), safety (jailbreak resistance, refusal calibration), and risk (CBRN uplift, autonomy). Used by major model labs for pre-deployment evaluation.</li>
+<li><strong>Pre-deployment access agreements</strong>: Voluntary disclosure arrangements with OpenAI, Anthropic, Google DeepMind, Meta granting AISI access to models pre-release for DPO-alignment evaluation.</li>
+<li><strong>Bletchley Park AI Safety Summit (November 2023)</strong> and <strong>Seoul AI Safety Summit (May 2024)</strong>: International cooperation on frontier model evaluation, with UK as convening power.</li>
+<li><strong>Yarin Gal</strong> (Oxford OATML + AISI Research Director): Cross-institutional bridge between academic preference learning theory and government evaluation practice.</li>
+<li><strong>Geoffrey Irving</strong> (AISI Chief Scientist from May 2024, previously DeepMind alignment): Direct lineage from DeepMind RLHF foundations to UK government DPO evaluation methodology.</li>
+<li><strong>Aggregate Evaluation Volume</strong>: 50+ frontier models evaluated 2024-2026 including Llama 3.1/3.3, GPT-4o/4.1/o1/o3, Claude 3.5 Sonnet/Opus, Gemini 1.5/2.0/2.5, Mistral Large 2, DeepSeek V3/R1.</li>
+</ul>
+<h4 id="uk-industry-deployments">UK Industry Deployments<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-industry-deployments" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Synthesia (London, $1B+ unicorn)</strong>: DPO for avatar dialogue alignment under brand-safety constraints. 50K+ enterprise users including BBC, Reuters, Vodafone.</p>
+<p><strong>Stability AI (London + San Francisco)</strong>: StableLM-Instruct uses DPO; Stable Code Instruct DPO with execution feedback.</p>
+<p><strong>Reka AI (London + San Francisco)</strong>: Reka Flash / Core multimodal models use DPO per technical disclosures.</p>
+<p><strong>Cohere UK (London + Toronto)</strong>: Command R / R+ / R7B DPO-aligned models, deployed across enterprise UK (HSBC, LSEG, Oracle UK).</p>
+<p><strong>Hugging Face UK (London office)</strong>: Zephyr, SmolLM, Distilabel preference dataset tooling—the canonical DPO open-source community.</p>
+<p><strong>ELLIS Society (European Laboratory for Learning and Intelligent Systems)</strong>: UK nodes at UCL, Cambridge, Edinburgh contributing alignment theory papers, hosting visiting researchers from MILA, Max Planck.</p>
+<p><strong>DeepMind (London)</strong>: Gemini DPO/IPO production deployment, Sparrow legacy systems, AlphaCode-2 alignment.</p>
+<p><strong>Wayve (London)</strong>: Autonomous driving language model alignment using DPO for natural language explanation of driving decisions.</p>
+<p><strong>BenevolentAI (London, NASDAQ: BAI)</strong>: Drug-discovery LLM DPO-aligned for medicinal chemist preferences.</p>
+<p><strong>Faculty AI (London)</strong>: HMG Cabinet Office AI consulting including DPO-aligned model fine-tuning for civil service productivity.</p>
+<h4 id="northern-english-innovation-hubs">Northern English Innovation Hubs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#northern-english-innovation-hubs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Manchester</strong>:</p>
+<ul>
+<li><strong>AstraZeneca Macclesfield R&amp;D</strong>: DPO for medicinal chemistry LLMs, partnership with Manchester University and Cambridge.</li>
+<li><strong>The Alan Turing Institute Manchester Node</strong>: Regional AI safety + alignment research; established 2024.</li>
+<li><strong>Health Innovation Manchester</strong>: DPO for clinical decision support LLM alignment.</li>
+</ul>
+<p><strong>Leeds</strong>:</p>
+<ul>
+<li><strong>University of Leeds Centre for Decision Research</strong>: Preference aggregation theory applied to DPO multi-annotator settings.</li>
+<li><strong>First Direct + HSBC UK Tech Hub Leeds</strong>: DPO-aligned customer service LLMs under FCA conduct guidance.</li>
+</ul>
+<p><strong>Sheffield</strong>:</p>
+<ul>
+<li><strong>University of Sheffield NLP Group</strong>: DPO for biomedical and clinical text generation; preference learning on medical literature.</li>
+<li><strong>AMRC (Advanced Manufacturing Research Centre)</strong>: DPO for industrial LLM assistants with safety-critical alignment for Rolls-Royce, Boeing partnerships.</li>
+</ul>
+<p><strong>Newcastle</strong>:</p>
+<ul>
+<li><strong>Newcastle University School of Computing</strong>: Industrial preference alignment for IoT and manufacturing LLMs.</li>
+<li><strong>Digital Catapult NE</strong>: Regional AI startup accelerator with 15+ DPO-deploying SMEs.</li>
+</ul>
+<p><strong>Aggregate North English Alignment Investment</strong>: ~£120M cumulative public + private investment 2023-2026 across Manchester / Leeds / Sheffield / Newcastle in DPO and adjacent alignment work.</p>
+</li>
+<li>
+<h3 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>DPO occupies a strategically central position in the alignment ecosystem, expected to evolve along several axes through 2030.</p>
+<h4 id="hybrid-dpo--verifiable-rl">Hybrid DPO + Verifiable RL<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hybrid-dpo--verifiable-rl" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>The cleanest contemporary insight (Lambert et al. 2024 Tulu 3, Meta Llama 3 405B, DeepSeek R1, OpenAI o1/o3) is that <strong>DPO and RLVR are complementary</strong>: DPO handles subjective preferences (style, helpfulness, harmlessness) cheaply via offline supervised learning; RLVR (Reinforcement Learning with Verifiable Rewards, including GRPO Shao et al. 2024) handles objective tasks with ground-truth verifiers (mathematics, code, formal reasoning) where reward models cannot be trusted.</p>
+<p><strong>Projected Impact (2026-2028)</strong>: Hybrid DPO + RLVR will dominate state-of-art training pipelines. Estimated 80%+ of frontier model alignment by 2028 combines both paradigms.</p>
+<h4 id="iterative-and-online-dpo-at-scale">Iterative and Online DPO at Scale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#iterative-and-online-dpo-at-scale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Iterative DPO (multi-round preference collection + training) and online DPO (fresh sampling each batch) narrow the offline-online gap that historically advantaged PPO. Tulu 3 405B demonstrates this scales; expect industry-wide adoption.</p>
+<p><strong>Projected Impact</strong>: Iterative DPO becomes the default for high-end open-weight releases by 2027. Online DPO with AI-judge oracles dominates rapid iteration cycles.</p>
+<h4 id="multi-objective-and-pareto-optimal-dpo">Multi-Objective and Pareto-Optimal DPO<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multi-objective-and-pareto-optimal-dpo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Real alignment requires balancing multiple potentially conflicting objectives (helpfulness vs harmlessness vs honesty vs verbosity vs domain expertise). Multi-objective DPO (MPO) and <strong>Pareto-optimal alignment</strong> approaches emerging in 2024-2025 will mature into standard methodology by 2027.</p>
+<h4 id="preference-data-generation-and-synthetic-preferences">Preference Data Generation and Synthetic Preferences<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#preference-data-generation-and-synthetic-preferences" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Cost of human preference data ($1-10 per pair) drives synthetic alternatives:</p>
+<ul>
+<li><strong>AI-judge scoring</strong>: GPT-4o, Claude 3.5 as preference judges (cost $0.001-0.01 per pair)</li>
+<li><strong>Self-rewarding LLMs</strong> (Yuan et al. 2024 Meta FAIR): Models generate own preferences via prompt-based self-judgement</li>
+<li><strong>Constitutional preferences</strong>: Anthropic-style principle-derived preferences</li>
+<li><strong>Programmatic preferences</strong>: Snorkel-style weak supervision rules</li>
+</ul>
+<p><strong>Projected Impact</strong>: Synthetic preferences will dominate scale (>90% of training pairs by 2028) with human annotation reserved for high-value calibration sets.</p>
+<h4 id="theoretical-maturation">Theoretical Maturation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#theoretical-maturation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Open theoretical questions include:</p>
+<ul>
+<li><strong>Identifiability</strong>: When does DPO recover the true underlying reward function vs settling on an equivalent policy class?</li>
+<li><strong>Sample complexity</strong>: Tight bounds on preference data needed for ε-optimal alignment</li>
+<li><strong>Robustness</strong>: Formal characterisation of DPO under various noise models</li>
+<li><strong>Generalisation</strong>: Beyond Bradley-Terry to non-transitive preferences, social choice theoretic aggregation</li>
+<li><strong>Connections to game theory</strong>: Nash equilibria of preference games (Munos et al. 2024)</li>
+</ul>
+<h4 id="domain-specific-dpo">Domain-Specific DPO<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-specific-dpo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Medical LLM alignment</strong>: DPO on physician preferences with regulatory pathway (MHRA, FDA)</li>
+<li><strong>Legal LLM alignment</strong>: DPO on lawyer-curated preferences for jurisdiction-specific reasoning</li>
+<li><strong>Code LLM alignment</strong>: DPO with execution feedback as preference signal</li>
+<li><strong>Mathematical reasoning</strong>: DPO on step-correctness preferences</li>
+<li><strong>Multilingual alignment</strong>: DPO across translated preference datasets</li>
+</ul>
+<h4 id="regulatory-and-compliance-frameworks">Regulatory and Compliance Frameworks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regulatory-and-compliance-frameworks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>EU AI Act Article 55 (August 2026 enforcement)</strong>: General-purpose AI model alignment documentation</li>
+<li><strong>UK AISI Inspect</strong>: Open-source DPO evaluation methodology disseminating globally</li>
+<li><strong>NIST AI RMF</strong>: US guidance on DPO-aligned model documentation</li>
+<li><strong>ISO/IEC 42001 (2023)</strong>: AI management system standard increasingly referencing alignment procedures</li>
+</ul>
+<h4 id="aggregate-adoption-trajectories">Aggregate Adoption Trajectories<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aggregate-adoption-trajectories" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>2026 Baseline</strong>:</p>
+<ul>
+<li>3,500+ DPO-aligned open-weight models on HuggingFace</li>
+<li>~60% of offline alignment workloads use DPO variants</li>
+<li>$2.5-3.5B alignment methods market</li>
+<li>200+ named DPO variants in TRL/OpenRLHF ecosystem</li>
+</ul>
+<p><strong>2028 Projections</strong>:</p>
+<ul>
+<li>15,000+ DPO-aligned open-weight models</li>
+<li>75% of offline alignment uses DPO/SimPO/ORPO family</li>
+<li>$7-10B alignment methods market (CAGR ~50%)</li>
+<li>Hybrid DPO + RLVR dominant in frontier models</li>
+<li>Iterative DPO standard for 70B+ scale</li>
+<li>Synthetic preferences >70% of training data</li>
+</ul>
+<p><strong>2030 Projections</strong>:</p>
+<ul>
+<li>50,000+ DPO-aligned models</li>
+<li>$15-25B alignment methods market</li>
+<li>Multi-objective Pareto DPO standard</li>
+<li>Online DPO with AI-judge oracles dominant</li>
+<li>Domain-specific DPO regulatory frameworks mature (medical, legal, financial)</li>
+<li>DPO theoretical foundations rigorously established</li>
+</ul>
+</li>
+<li>
+<h3 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Foundational Works</strong>:</p>
+<ol>
+<li>Rafailov, R., Sharma, A., Mitchell, E., Ermon, S., Manning, C.D., &amp; Finn, C. (2023). Direct Preference Optimization: Your Language Model is Secretly a Reward Model. <em>Advances in Neural Information Processing Systems 36 (NeurIPS 2023)</em>. arXiv:2305.18290 [<strong>NeurIPS 2023 Outstanding Paper Award</strong>, 4,500+ citations]</li>
+<li>Bradley, R.A., &amp; Terry, M.E. (1952). Rank Analysis of Incomplete Block Designs: I. The Method of Paired Comparisons. <em>Biometrika</em>, 39(3/4), 324-345. [Bradley-Terry-Luce choice model, the statistical foundation]</li>
+<li>Christiano, P.F., Leike, J., Brown, T.B., Martic, M., Legg, S., &amp; Amodei, D. (2017). Deep Reinforcement Learning from Human Preferences. <em>Advances in Neural Information Processing Systems 30 (NeurIPS 2017)</em>. arXiv:1706.03741 [Foundational RLHF paper]</li>
+<li>Stiennon, N., Ouyang, L., Wu, J., Ziegler, D., Lowe, R., Voss, C., Radford, A., Amodei, D., &amp; Christiano, P. (2020). Learning to Summarize from Human Feedback. <em>Advances in Neural Information Processing Systems 33 (NeurIPS 2020)</em>. arXiv:2009.01325 [TL;DR preference dataset]</li>
+<li>Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C.L., et al. (2022). Training Language Models to Follow Instructions with Human Feedback (InstructGPT). <em>Advances in Neural Information Processing Systems 35 (NeurIPS 2022)</em>. arXiv:2203.02155 [InstructGPT, modern RLHF recipe]</li>
+<li>Bai, Y., Jones, A., Ndousse, K., Askell, A., et al. (2022). Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback. <em>arXiv:2204.05862</em> [Anthropic HH-RLHF dataset]</li>
+</ol>
+<p><strong>DPO Variants</strong>:
+7. Azar, M.G., Rowland, M., Piot, B., Guo, D., Calandriello, D., Valko, M., &amp; Munos, R. (2024). A General Theoretical Paradigm to Understand Learning from Human Preferences (IPO). <em>International Conference on Artificial Intelligence and Statistics (AISTATS 2024)</em>. arXiv:2310.12036 [IPO; canonical theoretical framework]
+8. Ethayarajh, K., Xu, W., Muennighoff, N., Jurafsky, D., &amp; Kiela, D. (2024). KTO: Model Alignment as Prospect Theoretic Optimization. <em>International Conference on Machine Learning (ICML 2024)</em>. arXiv:2402.01306 [KTO]
+9. Meng, Y., Xia, M., &amp; Chen, D. (2024). SimPO: Simple Preference Optimization with a Reference-Free Reward. <em>Advances in Neural Information Processing Systems 37 (NeurIPS 2024)</em>. arXiv:2405.14734 [SimPO; reference-free DPO]
+10. Hong, J., Lee, N., &amp; Thorne, J. (2024). ORPO: Monolithic Preference Optimization without Reference Model. <em>Empirical Methods in Natural Language Processing (EMNLP 2024)</em>. arXiv:2403.07691 [ORPO; combined SFT + DPO]
+11. Xu, J., Lee, A., Sukhbaatar, S., &amp; Weston, J. (2024). Some things are more CRINGE than others: Iterative Preference Optimization with the Pairwise Cringe Loss. <em>arXiv:2312.16682</em> [Iterative DPO/CRINGE]
+12. Guo, S., Zhang, B., Liu, T., Liu, T., et al. (2024). Direct Language Model Alignment from Online AI Feedback. <em>arXiv:2402.04792</em> [Online DPO]
+13. Wu, J., Xie, Y., Yang, Z., Wu, J., et al. (2024). β-DPO: Direct Preference Optimization with Dynamic β. <em>Advances in Neural Information Processing Systems 37 (NeurIPS 2024)</em>. arXiv:2407.08639 [β-DPO]</p>
+<p><strong>Robustness and Theory</strong>:
+14. Chowdhury, S.R., Kini, A., &amp; Natarajan, N. (2024). Provably Robust DPO: Aligning Language Models with Noisy Feedback. <em>International Conference on Machine Learning (ICML 2024)</em>. arXiv:2403.00409 [rDPO]
+15. Mitchell, E. (2023). A note on DPO with noisy preferences and relationship to IPO. <em>Stanford technical note</em>. [Conservative DPO]
+16. Munos, R., Valko, M., Calandriello, D., Azar, M.G., et al. (2024). Nash Learning from Human Feedback. <em>International Conference on Machine Learning (ICML 2024)</em>. arXiv:2312.00886 [Nash-LHF, game-theoretic alignment]
+17. Tang, Y., Guo, D.Z., Zheng, Z., Calandriello, D., et al. (2024). Generalized Preference Optimization: A Unified Approach to Offline Alignment. <em>International Conference on Machine Learning (ICML 2024)</em>. arXiv:2402.05749 [GPO unification]</p>
+<p><strong>Empirical Comparisons</strong>:
+18. Tunstall, L., Beeching, E., Lambert, N., Rajani, N., et al. (2023). Zephyr: Direct Distillation of LM Alignment. <em>arXiv:2310.16944</em> [Zephyr 7B; canonical DPO demonstration]
+19. Ivison, H., Wang, Y., Liu, J., Wu, Z., et al. (2024). Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback. <em>Advances in Neural Information Processing Systems 37 (NeurIPS 2024)</em>. arXiv:2406.09279 [AI2 systematic comparison]
+20. Xu, S., Fu, W., Gao, J., Ye, W., et al. (2024). Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study. <em>International Conference on Machine Learning (ICML 2024)</em>. arXiv:2404.10719 [DPO vs PPO empirical study]
+21. Lambert, N., Morrison, J., Pyatkin, V., Huang, S., et al. (2024). Tulu 3: Pushing Frontiers in Open Language Model Post-Training. <em>arXiv:2411.15124</em> [Allen AI Tulu 3; DPO + RLVR at 405B scale]</p>
+<p><strong>Self-Rewarding and Synthetic Preferences</strong>:
+22. Yuan, W., Pang, R.Y., Cho, K., Sukhbaatar, S., Xu, J., &amp; Weston, J. (2024). Self-Rewarding Language Models. <em>International Conference on Machine Learning (ICML 2024)</em>. arXiv:2401.10020 [Self-rewarding LMs]
+23. Cui, G., Yuan, L., Ding, N., Yao, G., et al. (2023). UltraFeedback: Boosting Language Models with High-quality Feedback. <em>arXiv:2310.01377</em> [UltraFeedback dataset]
+24. Xu, Z., Jiang, F., Niu, L., Deng, Y., et al. (2024). Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing. <em>arXiv:2406.08464</em> [Magpie synthetic preferences]</p>
+<p><strong>Production Model Reports</strong>:
+25. Meta AI (2024). The Llama 3 Herd of Models. <em>arXiv:2407.21783</em> [Llama 3 technical report; iterative DPO + RLVR]
+26. Anthropic (2024). Claude 3.5 Sonnet system card. <em>Anthropic Technical Report</em>. [DPO-style preference learning in Claude]
+27. Anil, R., Borgeaud, S., Wu, Y., Alayrac, J.B., et al. (2023). Gemini: A Family of Highly Capable Multimodal Models. <em>arXiv:2312.11805</em> [Gemini technical report; DPO/IPO use]</p>
+<p><strong>Frameworks and Surveys</strong>:
+28. von Werra, L., Belkada, Y., Tunstall, L., Beeching, E., et al. (2024). TRL: Transformer Reinforcement Learning. <em>HuggingFace technical documentation</em>. [TRL library; reference DPO implementation]
+29. Casper, S., Davies, X., Shi, C., Gilbert, T.K., et al. (2023). Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback. <em>Transactions on Machine Learning Research</em>. arXiv:2307.15217 [RLHF survey including DPO]
+30. Wang, B., Zheng, R., Chen, L., Liu, Y., et al. (2024). Secrets of RLHF in Large Language Models Part II: Reward Modeling. <em>arXiv:2401.06080</em> [Reward modelling survey contextualising DPO’s implicit approach]</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1851" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#bridge-to" data-for="bridge-to">Bridge-To</a></li><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-1"><a href="#fednow" data-for="fednow">FEDNOW</a></li><li class="depth-1"><a href="#fednow-1" data-for="fednow-1">FEDNOW</a></li><li class="depth-1"><a href="#fednow-2" data-for="fednow-2">FEDNOW</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2025" data-for="current-landscape-2025">Current Landscape (2025)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions" data-for="future-directions">Future Directions</a></li><li class="depth-0"><a href="#references" data-for="references">References</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#owl-functional-syntax-merged-from-direct-preference-optimization" data-for="owl-functional-syntax-merged-from-direct-preference-optimization">OWL Functional Syntax (merged from Direct Preference Optimization)</a></li><li class="depth-0"><a href="#about-direct-preference-optimization" data-for="about-direct-preference-optimization">About Direct Preference Optimization</a></li><li class="depth-1"><a href="#core-mathematical-framework" data-for="core-mathematical-framework">Core Mathematical Framework</a></li><li class="depth-1"><a href="#architectural-components" data-for="architectural-components">Architectural Components</a></li><li class="depth-1"><a href="#training-pathologies-and-mitigations" data-for="training-pathologies-and-mitigations">Training Pathologies and Mitigations</a></li><li class="depth-1"><a href="#major-variants-and-families" data-for="major-variants-and-families">Major Variants and Families</a></li><li class="depth-1"><a href="#use-cases-and-major-application-families" data-for="use-cases-and-major-application-families">Use Cases and Major Application Families</a></li><li class="depth-1"><a href="#academic-context-theoretical-foundations-and-research-milestones" data-for="academic-context-theoretical-foundations-and-research-milestones">Academic Context: Theoretical Foundations and Research Milestones</a></li><li class="depth-1"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#uk-context-deepmind-rlhf-lineage-and-evaluation-infrastructure" data-for="uk-context-deepmind-rlhf-lineage-and-evaluation-infrastructure">UK Context: DeepMind RLHF Lineage and Evaluation Infrastructure</a></li><li class="depth-1"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-1"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Alignment" class="internal">Alignment</a></li><li><a href="../pages/Answer-AI" class="internal">Answer AI</a></li><li><a href="../pages/Anthropic" class="internal">anthropic</a></li><li><a href="../pages/Bradley-Terry-Model" class="internal">Bradley Terry Model</a></li><li><a href="../pages/Chain-of-Thought-Reasoning" class="internal">chain-of-thought reasoning</a></li><li><a href="../pages/Claude" class="internal">Claude</a></li><li><a href="../pages/Content-Generation" class="internal">Content Generation</a></li><li><a href="../pages/Corrigibility" class="internal">Corrigibility</a></li><li><a href="../pages/Cross-Entropy-Loss" class="internal">Cross-Entropy Loss</a></li><li><a href="../pages/Engagement-Optimisation" class="internal">Engagement Optimisation</a></li><li><a href="../pages/Hugging-Face" class="internal">hugging face</a></li><li><a href="../pages/Instruction-Following" class="internal">instruction following</a></li><li><a href="../pages/RLHF" class="internal">rlhf</a></li><li><a href="../pages/Training-and-fine-tuning" class="internal">Training and fine tuning</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

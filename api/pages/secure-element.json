@@ -56,6 +56,10 @@
       {
         "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:tee",
+        "label": "Trusted Execution Environment"
       }
     ],
     "bridgesTo": [],
@@ -78,7 +82,7 @@
         "label": "Hardware Wallet"
       },
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       }
     ],
@@ -150,6 +154,10 @@
         "label": "Hardware Root of Trust"
       },
       {
+        "id": "urn:ngm:class:tamper-resistance",
+        "label": "Tamper Resistance"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
@@ -172,12 +180,16 @@
         "label": "Code Signing"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:payment-security",
+        "label": "Payment Security"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -190,10 +202,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
       }
     ],
     "contrastsWith": [
@@ -202,8 +210,8 @@
         "label": "Secure Enclave"
       },
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
-        "label": "Trusted Execution Environment"
+        "id": "urn:ngm:class:software-keystore",
+        "label": "Software Keystore"
       },
       {
         "id": "urn:ngm:class:trusted-platform-module",
@@ -215,6 +223,10 @@
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-key-custody",
+        "label": "Blockchain Key Custody"
+      },
       {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
@@ -240,6 +252,10 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:pkcs",
+        "label": "PKCS"
       },
       {
         "id": "urn:ngm:class:random-number-generation",
@@ -273,6 +289,10 @@
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:common-criteria",
+        "label": "Common Criteria"
+      },
       {
         "id": "urn:ngm:class:fips-140-3",
         "label": "FIPS 140"

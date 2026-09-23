@@ -12,12 +12,24 @@
       "label": "AI Application"
     },
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:llm-application",
+      "label": "LLM Application"
     },
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:conversational-ai-system",
+      "label": "Conversational AI System"
+    },
+    {
+      "id": "urn:ngm:class:retrieval-augmented-generation-system",
+      "label": "Retrieval-Augmented Generation System"
+    },
+    {
+      "id": "urn:ngm:class:no-code-platform",
+      "label": "No-Code Platform"
+    },
+    {
+      "id": "urn:ngm:class:ai-productivity-tool",
+      "label": "AI Productivity Tool"
     }
   ],
   "entityType": "Class",
@@ -48,6 +60,18 @@
       {
         "id": "urn:ngm:class:vector-store",
         "label": "Vector Store"
+      },
+      {
+        "id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Schema"
+      },
+      {
+        "id": "urn:ngm:class:conversation-starter",
+        "label": "Conversation Starter"
+      },
+      {
+        "id": "urn:ngm:class:visibility-setting",
+        "label": "Visibility Setting"
       }
     ],
     "requires": [
@@ -70,6 +94,10 @@
       {
         "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ],
     "enables": [
@@ -84,9 +112,42 @@
       {
         "id": "urn:ngm:class:workflow-automation",
         "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:task-specific-assistant",
+        "label": "Task-Specific Assistant"
+      },
+      {
+        "id": "urn:ngm:class:document-q-a",
+        "label": "Document Q&A"
+      },
+      {
+        "id": "urn:ngm:class:bot-marketplaces",
+        "label": "Bot Marketplaces"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:conversation-memory",
@@ -109,7 +170,24 @@
         "label": "Function Calling"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuned-models",
+        "label": "Fine-Tuned Models"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-chatbots",
+        "label": "Rule-Based Chatbots"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -161,6 +239,14 @@
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-triage",
+        "label": "Healthcare Triage"
+      },
+      {
+        "id": "urn:ngm:class:newsroom-workflows",
+        "label": "Newsroom Workflows"
       }
     ],
     "standardizedBy": [
@@ -183,6 +269,10 @@
       {
         "id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI 3.0"
       }
     ],
     "partOf": [],
@@ -210,6 +300,10 @@
       {
         "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:plugins",
+        "label": "Plugins"
       }
     ]
   },
@@ -289,6 +383,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

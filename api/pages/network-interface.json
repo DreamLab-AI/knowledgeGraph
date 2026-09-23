@@ -122,6 +122,10 @@
         "label": "Power Management Unit"
       },
       {
+        "id": "urn:ngm:class:processor",
+        "label": "Processor"
+      },
+      {
         "id": "urn:ngm:class:sensor",
         "label": "Sensor"
       },
@@ -136,10 +140,6 @@
       {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ],
     "requires": [
@@ -246,6 +246,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:bus-interface",
+        "label": "Bus Interface"
+      },
+      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       }
@@ -296,6 +300,10 @@
         "label": "Edge Computing Node"
       },
       {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
@@ -306,6 +314,10 @@
         "label": "Field-Programmable Gate Array"
       },
       {
+        "id": "urn:ngm:class:printed-circuit-board",
+        "label": "Printed Circuit Board"
+      },
+      {
         "id": "urn:ngm:class:system-on-chip",
         "label": "System-on-Chip"
       },
@@ -314,7 +326,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -328,10 +340,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

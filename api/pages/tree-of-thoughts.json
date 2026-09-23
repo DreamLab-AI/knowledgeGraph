@@ -20,6 +20,18 @@
       {
         "id": "urn:ngm:class:search-algorithm",
         "label": "Tree Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:thought-generator",
+        "label": "Thought Generator"
+      },
+      {
+        "id": "urn:ngm:class:thought-evaluator",
+        "label": "Thought Evaluator"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Tree Search Algorithm"
       }
     ],
     "requires": [
@@ -44,6 +56,10 @@
       {
         "id": "urn:ngm:class:multi-step-reasoning",
         "label": "Multi-Step Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-problem-solving",
+        "label": "Combinatorial Problem Solving"
       }
     ],
     "dependsOn": [],
@@ -84,11 +100,23 @@
       {
         "id": "urn:ngm:class:beam-search",
         "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:backtracking",
+        "label": "Backtracking"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
+      {
+        "id": "urn:ngm:class:inference-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Deliberate Reasoning"
+      },
       {
         "id": "urn:ngm:class:inference-compute",
         "label": "Inference-Time Compute"
@@ -114,6 +142,10 @@
       {
         "id": "urn:ngm:class:graph-of-thoughts",
         "label": "Graph of Thoughts"
+      },
+      {
+        "id": "urn:ngm:class:skeleton-of-thought",
+        "label": "Skeleton of Thought"
       }
     ]
   },
@@ -193,6 +225,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

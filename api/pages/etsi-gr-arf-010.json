@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:coordinate-reference-system",
         "label": "Coordinate Reference System"
+      },
+      {
+        "id": "urn:ngm:class:reference-architecture",
+        "label": "AR Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:ar-tracking-subsystem",
+        "label": "AR Tracking Subsystem"
       }
     ],
     "requires": [
@@ -44,10 +52,23 @@
       {
         "id": "urn:ngm:class:ar-interoperability",
         "label": "AR Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:multi-vendor-ar",
+        "label": "Multi-Vendor AR"
+      },
+      {
+        "id": "urn:ngm:class:persistent-ar-content",
+        "label": "Persistent AR Content"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:augmented-reality-framework",
+        "label": "Augmented Reality Framework"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:open-xr",
@@ -74,6 +95,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "5G Network Slicing"
       }
     ],
     "uses": [],
@@ -99,8 +124,16 @@
         "label": "3GPP"
       },
       {
-        "id": "urn:ngm:class:spatial-web",
+        "id": "urn:ngm:class:semantic-spatial-web-layer",
         "label": "Spatial Web"
+      },
+      {
+        "id": "urn:ngm:class:etsi-gs-arf-003",
+        "label": "ETSI GS ARF 003"
+      },
+      {
+        "id": "urn:ngm:class:xr-architecture",
+        "label": "XR Architecture"
       }
     ]
   },
@@ -109,6 +142,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -209,8 +247,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -301,6 +347,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -319,8 +371,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -329,10 +385,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },
@@ -396,12 +448,12 @@
       "label": "Display Metrology"
     },
     {
-      "slug": "etsi-domain-human-interface-ux",
-      "label": "ETSI_Domain_Human_Interface___UX"
-    },
-    {
       "slug": "etsi-domain-human-interface",
       "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "etsi-domain-human-interface-ux",
+      "label": "ETSI_Domain_Human_Interface___UX"
     },
     {
       "slug": "etsi-domain-virtual-society",

@@ -86,6 +86,10 @@
       {
         "id": "urn:ngm:class:sigma-algebra",
         "label": "Sigma-Algebra"
+      },
+      {
+        "id": "urn:ngm:class:lebesgue-integration",
+        "label": "Lebesgue Integration"
       }
     ],
     "implements": [],
@@ -93,6 +97,10 @@
       {
         "id": "urn:ngm:class:fuzzy-logic",
         "label": "Fuzzy Logic"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-computation",
+        "label": "Deterministic Computation"
       }
     ],
     "bridgesTo": [
@@ -103,13 +111,25 @@
       {
         "id": "urn:ngm:class:conformal-prediction",
         "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:financial-mathematics",
+        "label": "Financial Mathematics"
       }
     ],
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Models"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-networks",
+        "label": "Bayesian Networks"
       },
       {
         "id": "urn:ngm:class:graphical-model",
@@ -117,7 +137,12 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:bayesian-decision-theory",
@@ -134,6 +159,10 @@
       {
         "id": "urn:ngm:class:optimal-transport",
         "label": "Optimal Transport"
+      },
+      {
+        "id": "urn:ngm:class:information-geometry",
+        "label": "Information Geometry"
       }
     ]
   },
@@ -151,6 +180,10 @@
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:lebesgue-integral",
+        "label": "Lebesgue Integral"
+      },
       {
         "id": "urn:ngm:class:sigma-algebra",
         "label": "Sigma-Algebra"
@@ -178,10 +211,6 @@
       {
         "id": "urn:ngm:class:knowledge-graph-construction",
         "label": "Knowledge Graph Construction"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
       }
     ],
     "requires": [
@@ -254,6 +283,22 @@
       {
         "id": "urn:ngm:class:quantum-mechanics",
         "label": "Quantum Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

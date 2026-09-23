@@ -58,6 +58,14 @@
         "label": "Deadline Scheduling"
       },
       {
+        "id": "urn:ngm:class:hard-real-time",
+        "label": "Hard Real-Time"
+      },
+      {
+        "id": "urn:ngm:class:soft-real-time",
+        "label": "Soft Real-Time"
+      },
+      {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
@@ -74,19 +82,15 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
-      },
-      {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Centre"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:interrupt-handling",
+        "label": "Interrupt Handling"
+      },
       {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
@@ -114,10 +118,6 @@
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -192,6 +192,10 @@
         "label": "Batch Processing"
       },
       {
+        "id": "urn:ngm:class:time-sharing",
+        "label": "Time-Sharing"
+      },
+      {
         "id": "urn:ngm:class:centralised-computing",
         "label": "Centralised Computing"
       },
@@ -214,16 +218,16 @@
         "label": "Machine Learning Inference"
       },
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -246,6 +250,10 @@
       {
         "id": "urn:ngm:class:priority-scheduling",
         "label": "Priority Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:watchdog-timer",
+        "label": "Watchdog Timer"
       },
       {
         "id": "urn:ngm:class:remote-procedure-call",

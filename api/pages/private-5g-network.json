@@ -58,6 +58,10 @@
         "label": "5G New Radio"
       },
       {
+        "id": "urn:ngm:class:5g-core",
+        "label": "5G Core"
+      },
+      {
         "id": "urn:ngm:class:multi-access-edge-computing",
         "label": "MultiAccessEdgeComputing"
       },
@@ -80,10 +84,6 @@
       {
         "id": "urn:ngm:class:internet-exchange-point",
         "label": "Internet Exchange Point"
-      },
-      {
-        "id": "urn:ngm:class:network-protocol",
-        "label": "Network Protocol"
       }
     ],
     "requires": [
@@ -138,6 +138,10 @@
         "label": "IoT Infrastructure"
       },
       {
+        "id": "urn:ngm:class:private-5g",
+        "label": "Private 5G"
+      },
+      {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
       },
@@ -148,10 +152,6 @@
       {
         "id": "urn:ngm:class:remote-communication",
         "label": "Remote Communication"
-      },
-      {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
       }
     ],
     "dependsOn": [
@@ -166,8 +166,16 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:4g-lte",
+        "label": "4G LTE"
+      },
+      {
         "id": "urn:ngm:class:wi-fi",
         "label": "Wi-Fi"
+      },
+      {
+        "id": "urn:ngm:class:terrestrial-broadcast",
+        "label": "Terrestrial Broadcast"
       },
       {
         "id": "urn:ngm:class:application-layer",
@@ -178,6 +186,10 @@
       {
         "id": "urn:ngm:class:6-g-network-slice",
         "label": "6G Network Slice"
+      },
+      {
+        "id": "urn:ngm:class:ai-driven-network-operations",
+        "label": "AI-Driven Network Operations"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence-operations",
@@ -214,6 +226,10 @@
         "label": "Massive MIMO"
       },
       {
+        "id": "urn:ngm:class:millimetre-wave",
+        "label": "Millimetre Wave"
+      },
+      {
         "id": "urn:ngm:class:network-function-virtualization",
         "label": "Network Function Virtualization"
       },
@@ -224,12 +240,12 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -304,7 +320,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

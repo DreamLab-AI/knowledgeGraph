@@ -14,6 +14,22 @@
     {
       "id": "urn:ngm:class:physics-simulation",
       "label": "Physics Simulation"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing-paradigm",
+      "label": "Spatial Computing Paradigm"
+    },
+    {
+      "id": "urn:ngm:class:computational-geometry",
+      "label": "Computational Geometry"
+    },
+    {
+      "id": "urn:ngm:class:geometric-algorithm",
+      "label": "Geometric Algorithm"
+    },
+    {
+      "id": "urn:ngm:class:real-time-algorithm",
+      "label": "Real-Time Algorithm"
     }
   ],
   "entityType": "Class",
@@ -24,6 +40,34 @@
       {
         "id": "urn:ngm:class:bounding-volume-hierarchy",
         "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:broad-phase-detection",
+        "label": "Broad-Phase Detection"
+      },
+      {
+        "id": "urn:ngm:class:narrow-phase-detection",
+        "label": "Narrow-Phase Detection"
+      },
+      {
+        "id": "urn:ngm:class:contact-resolution",
+        "label": "Contact Resolution"
+      },
+      {
+        "id": "urn:ngm:class:time-of-impact",
+        "label": "Time of Impact"
+      },
+      {
+        "id": "urn:ngm:class:contact-manifold",
+        "label": "Contact Manifold"
+      },
+      {
+        "id": "urn:ngm:class:separating-axis-theorem",
+        "label": "Separating Axis Theorem"
+      },
+      {
+        "id": "urn:ngm:class:penetration-depth",
+        "label": "Penetration Depth"
       }
     ],
     "requires": [
@@ -42,6 +86,10 @@
       {
         "id": "urn:ngm:class:spatial-partitioning",
         "label": "Spatial Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:numerical-robustness",
+        "label": "Numerical Robustness"
       }
     ],
     "enables": [
@@ -76,9 +124,42 @@
       {
         "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:ragdoll-animation",
+        "label": "Ragdoll Animation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:convex-optimization",
+        "label": "Convex Optimization"
+      },
+      {
+        "id": "urn:ngm:class:minkowski-sum",
+        "label": "Minkowski Sum"
+      },
+      {
+        "id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:bsp-tree",
@@ -87,9 +168,58 @@
       {
         "id": "urn:ngm:class:signed-distance-function",
         "label": "Signed Distance Field"
+      },
+      {
+        "id": "urn:ngm:class:gjk-algorithm",
+        "label": "GJK Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:epa-algorithm",
+        "label": "EPA Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:sweep-and-prune",
+        "label": "Sweep and Prune"
+      },
+      {
+        "id": "urn:ngm:class:spatial-hashing",
+        "label": "Spatial Hashing"
+      },
+      {
+        "id": "urn:ngm:class:signed-distance-function",
+        "label": "Signed Distance Field"
+      },
+      {
+        "id": "urn:ngm:class:continuous-collision-detection",
+        "label": "Continuous Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:conservative-advancement",
+        "label": "Conservative Advancement"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ray-casting",
+        "label": "Ray Casting"
+      },
+      {
+        "id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "id": "urn:ngm:class:visibility-determination",
+        "label": "Visibility Determination"
+      },
+      {
+        "id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -143,6 +273,22 @@
       {
         "id": "urn:ngm:class:rapier-physics",
         "label": "Rapier Physics"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-physx",
+        "label": "NVIDIA PhysX"
+      },
+      {
+        "id": "urn:ngm:class:box2d",
+        "label": "Box2D"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-warp",
+        "label": "NVIDIA Warp"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-flex",
+        "label": "NVIDIA Flex"
       }
     ],
     "supports": [
@@ -177,6 +323,14 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:crash-simulation",
+        "label": "Crash Simulation"
       }
     ],
     "standardizedBy": [
@@ -203,6 +357,10 @@
       {
         "id": "urn:ngm:class:w-3-c-web-xr",
         "label": "W3C WebXR"
+      },
+      {
+        "id": "urn:ngm:class:mjcf",
+        "label": "MJCF"
       }
     ],
     "partOf": [],
@@ -246,14 +404,58 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:deepsdf",
+        "label": "DeepSDF"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:algorithm",
+      "label": "Algorithm",
+      "slug": "algorithm"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:computational-model",
+      "label": "Computational Model",
+      "slug": "computational-model"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation",
+      "slug": "simulation"
+    },
+    {
+      "id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin",
+      "slug": "digital-twin"
     }
   ],
   "inheritedRelations": {
@@ -305,20 +507,24 @@
         "label": "Spatial Data Structure"
       },
       {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
       },
       {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
       },
       {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
       },
       {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
       }
     ],
     "enables": [
@@ -347,12 +553,48 @@
         "label": "Virtual Reality"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:3-d-engine",
+        "label": "3D Engine"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:computer-aided-design",
+        "label": "Computer-Aided Design"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-modelling",
+        "label": "Mathematical Modelling"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:turing-machine",
+        "label": "Turing Machine"
+      },
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
       }
     ],
     "contrastsWith": [
@@ -361,26 +603,58 @@
         "label": "Kinematic Animation"
       },
       {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:emulation",
+        "label": "Emulation"
+      },
+      {
+        "id": "urn:ngm:class:physical-prototype",
+        "label": "Physical Prototype"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-physics",
+        "label": "Neural Physics"
+      },
       {
         "id": "urn:ngm:class:sim-to-real-transfer",
         "label": "Sim-to-Real Transfer"
       },
       {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
-      },
-      {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
       }
     ],
     "uses": [
@@ -389,32 +663,32 @@
         "label": "Finite Element Method"
       },
       {
+        "id": "urn:ngm:class:smoothed-particle-hydrodynamics",
+        "label": "Smoothed Particle Hydrodynamics"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      },
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
-      },
-      {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
-      },
-      {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:hand-tracking",
-        "label": "Hand Tracking"
-      },
-      {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
-      },
-      {
-        "id": "urn:ngm:class:head-mounted-display",
-        "label": "Head-Mounted Display"
       }
     ],
     "supports": [
@@ -425,9 +699,41 @@
       {
         "id": "urn:ngm:class:robot-learning",
         "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-testing",
+        "label": "Autonomous Vehicle Testing"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
       {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
@@ -445,6 +751,26 @@
       {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-framework",
+        "label": "Algorithmic Framework"
+      },
+      {
+        "id": "urn:ngm:class:computational-model",
+        "label": "Computational Model"
+      },
+      {
+        "id": "urn:ngm:class:software-system",
+        "label": "Software System"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
       }
     ],
     "relatedTo": [
@@ -475,6 +801,10 @@
       {
         "id": "urn:ngm:class:scientific-computing",
         "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
       }
     ]
   },

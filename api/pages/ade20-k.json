@@ -20,7 +20,32 @@
   "qualityScore": 0.9,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:data-curation",
@@ -29,6 +54,18 @@
       {
         "id": "urn:ngm:class:human-in-the-loop",
         "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:crowdsourcing",
+        "label": "Crowdsourcing"
+      },
+      {
+        "id": "urn:ngm:class:sun-database",
+        "label": "SUN Database"
+      },
+      {
+        "id": "urn:ngm:class:places-dataset",
+        "label": "Places Dataset"
       }
     ],
     "enables": [
@@ -55,11 +92,62 @@
       {
         "id": "urn:ngm:class:open-vocabulary-segmentation",
         "label": "Open Vocabulary Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:visual-grounding",
+        "label": "Visual Grounding"
+      },
+      {
+        "id": "urn:ngm:class:weakly-supervised-learning",
+        "label": "Weakly Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:coco-dataset",
+        "label": "COCO Dataset"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -71,16 +159,58 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:ground-truth",
+        "id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth"
       },
       {
         "id": "urn:ngm:class:crowdsourcing",
         "label": "Crowdsourcing"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformers",
+        "label": "Vision Transformers"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:mit-csail",
+        "label": "MIT CSAIL"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -92,12 +222,44 @@
         "label": "Image Segmentation"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       },
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Vehicle Navigation"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ]
   },
@@ -113,44 +275,24 @@
       "slug": "evaluation-benchmarks-and-leaderboards"
     },
     {
+      "id": "urn:ngm:class:labelled-dataset",
+      "label": "Labelled Dataset",
+      "slug": "labelled-dataset"
+    },
+    {
+      "id": "urn:ngm:class:performance-metrics",
+      "label": "Performance Metrics",
+      "slug": "performance-metrics"
+    },
+    {
+      "id": "urn:ngm:class:reproducibility",
+      "label": "Reproducibility",
+      "slug": "reproducibility"
+    },
+    {
       "id": "urn:ngm:class:ai-evaluation",
       "label": "AI Evaluation",
       "slug": "ai-evaluation"
-    },
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Artificial Intelligence)",
-      "slug": "cat-ai-infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:data-architecture",
-      "label": "Data Architecture",
-      "slug": "data-architecture"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:enterprise-architecture",
-      "label": "Enterprise Architecture",
-      "slug": "enterprise-architecture"
-    },
-    {
-      "id": "urn:ngm:class:system-architecture",
-      "label": "System Architecture",
-      "slug": "system-architecture"
-    },
-    {
-      "id": "urn:ngm:class:software-architecture",
-      "label": "Software Architecture",
-      "slug": "software-architecture"
     },
     {
       "id": "urn:ngm:class:ai-infrastructure",
@@ -158,9 +300,129 @@
       "slug": "ai-infrastructure"
     },
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:capability-assessment",
+      "label": "Capability Assessment",
+      "slug": "capability-assessment"
+    },
+    {
+      "id": "urn:ngm:class:computational-modelling",
+      "label": "Computational Modelling",
+      "slug": "computational-modelling"
+    },
+    {
+      "id": "urn:ngm:class:data-architecture",
+      "label": "Data Architecture",
+      "slug": "data-architecture"
+    },
+    {
+      "id": "urn:ngm:class:empirical-methodology",
+      "label": "Empirical Methodology",
+      "slug": "empirical-methodology"
+    },
+    {
+      "id": "urn:ngm:class:measurement",
+      "label": "Measurement",
+      "slug": "measurement"
+    },
+    {
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation",
+      "slug": "model-evaluation"
+    },
+    {
+      "id": "urn:ngm:class:quality-assurance",
+      "label": "Quality Assurance",
+      "slug": "quality-assurance"
+    },
+    {
+      "id": "urn:ngm:class:standardised-testing",
+      "label": "Standardised Testing",
+      "slug": "standardised-testing"
+    },
+    {
+      "id": "urn:ngm:class:training-data",
+      "label": "Training Data",
+      "slug": "training-data"
+    },
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety",
+      "slug": "ai-safety"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance",
+      "slug": "data-governance"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:enterprise-architecture",
+      "label": "Enterprise Architecture",
+      "slug": "enterprise-architecture"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation",
+      "slug": "knowledge-representation"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:scientific-machine-learning",
+      "label": "Scientific Machine Learning",
+      "slug": "scientific-machine-learning"
+    },
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation",
+      "slug": "simulation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin",
+      "slug": "digital-twin"
     },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -168,13 +430,72 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:scientific-discovery",
+      "label": "Scientific Discovery",
+      "slug": "scientific-discovery"
+    },
+    {
+      "id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture",
+      "slug": "system-architecture"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture",
+      "slug": "software-architecture"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:annotation-pipelines",
+        "label": "Annotation Pipelines"
+      },
+      {
+        "id": "urn:ngm:class:datasets",
+        "label": "Datasets"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:held-out-test-sets",
+        "label": "Held-Out Test Sets"
+      },
+      {
+        "id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      },
+      {
+        "id": "urn:ngm:class:leaderboard",
+        "label": "Leaderboard"
+      },
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
@@ -182,70 +503,50 @@
       {
         "id": "urn:ngm:class:data-record",
         "label": "Data Record"
-      },
-      {
-        "id": "urn:ngm:class:data-split",
-        "label": "Data Split"
-      },
-      {
-        "id": "urn:ngm:class:evaluation-metric",
-        "label": "Evaluation Metric"
-      },
-      {
-        "id": "urn:ngm:class:ground-truth-labels",
-        "label": "Ground Truth Labels"
-      },
-      {
-        "id": "urn:ngm:class:metadata",
-        "label": "Metadata"
-      },
-      {
-        "id": "urn:ngm:class:schema",
-        "label": "Schema"
-      },
-      {
-        "id": "urn:ngm:class:evaluation-harness",
-        "label": "Evaluation Harness"
       }
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:annotation-pipelines",
+        "label": "Annotation Pipelines"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Protocol"
+      },
+      {
         "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
       },
       {
         "id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth Labels"
+      },
+      {
+        "id": "urn:ngm:class:held-out-test-sets",
+        "label": "Held-Out Test Sets"
       },
       {
         "id": "urn:ngm:class:data-annotation",
         "label": "Data Annotation"
       },
       {
-        "id": "urn:ngm:class:ground-truth",
-        "label": "Ground Truth"
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
       },
       {
         "id": "urn:ngm:class:data-cleaning",
         "label": "Data Cleaning"
-      },
-      {
-        "id": "urn:ngm:class:data-collection",
-        "label": "Data Collection"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:data-labelling",
-        "label": "Data Labelling"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
       },
       {
         "id": "urn:ngm:class:model-evaluation-results",
@@ -256,129 +557,137 @@
         "label": "Model Performance"
       },
       {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
         "id": "urn:ngm:class:reproducibility",
         "label": "Reproducibility"
       },
       {
-        "id": "urn:ngm:class:model-evaluation",
-        "label": "Model Evaluation"
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
       },
       {
-        "id": "urn:ngm:class:benchmarking",
-        "label": "Benchmarking"
-      },
-      {
-        "id": "urn:ngm:class:data-analysis",
-        "label": "Data Analysis"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:annotation-pipelines",
+        "label": "Annotation Pipelines"
+      },
       {
         "id": "urn:ngm:class:data-curation",
         "label": "Data Curation"
       },
       {
-        "id": "urn:ngm:class:ground-truth",
-        "label": "Ground Truth"
+        "id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
       },
       {
         "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
-        "id": "urn:ngm:class:enterprise-integration",
-        "label": "Enterprise Integration"
-      },
-      {
-        "id": "urn:ngm:class:identity-and-access-management",
-        "label": "Identity and Access Management"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
-      },
-      {
-        "id": "urn:ngm:class:infrastructure-as-code",
-        "label": "Infrastructure as Code"
+        "id": "urn:ngm:class:data-management-system",
+        "label": "Data Management System"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:cross-validation",
-        "label": "Cross-Validation"
+        "id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Protocol"
       },
       {
-        "id": "urn:ngm:class:togaf",
-        "label": "TOGAF"
+        "id": "urn:ngm:class:scoring-function",
+        "label": "Scoring Function"
       },
       {
-        "id": "urn:ngm:class:zachman-framework",
-        "label": "Zachman Framework"
+        "id": "urn:ngm:class:task-formulation",
+        "label": "Task Formulation"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
       },
       {
-        "id": "urn:ngm:class:multi-tenancy",
-        "label": "Multi-Tenancy"
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
       },
       {
-        "id": "urn:ngm:class:design-pattern",
-        "label": "Design Pattern"
+        "id": "urn:ngm:class:data-ethics",
+        "label": "Data Ethics"
       },
       {
-        "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event Driven Architecture"
+        "id": "urn:ngm:class:data-governance-framework",
+        "label": "Data Governance Framework"
       },
       {
-        "id": "urn:ngm:class:containerisation",
-        "label": "Containerisation"
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ablation-studies",
+        "label": "Ablation Studies"
+      },
       {
         "id": "urn:ngm:class:human-evaluation",
         "label": "Human Evaluation"
       },
       {
-        "id": "urn:ngm:class:benchmark-contamination",
-        "label": "Benchmark Contamination"
+        "id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
       },
       {
-        "id": "urn:ngm:class:benchmark-saturation",
-        "label": "Benchmark Saturation"
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
       },
       {
-        "id": "urn:ngm:class:information-architecture",
-        "label": "Information Architecture"
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
       },
       {
-        "id": "urn:ngm:class:solution-architecture",
-        "label": "Solution Architecture"
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
       },
       {
-        "id": "urn:ngm:class:model-architecture",
-        "label": "Model Architecture"
+        "id": "urn:ngm:class:data-management-system",
+        "label": "Data Management System"
       },
       {
-        "id": "urn:ngm:class:monolithic-architecture",
-        "label": "Monolithic Architecture"
-      },
-      {
-        "id": "urn:ngm:class:general-purpose-computing",
-        "label": "General-Purpose Computing"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:hardware-performance",
+        "label": "Hardware Performance"
+      },
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
@@ -388,31 +697,23 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
-      },
-      {
-        "id": "urn:ngm:class:system-architecture",
-        "label": "System Architecture"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:datasets",
+        "label": "Datasets"
+      },
       {
         "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
@@ -426,30 +727,30 @@
         "label": "Statistical Testing"
       },
       {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-models",
-        "label": "Multimodal Models"
-      },
-      {
-        "id": "urn:ngm:class:vision-language-model",
-        "label": "Vision Language Model"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       },
       {
         "id": "urn:ngm:class:mlops",
@@ -460,34 +761,26 @@
         "label": "Model Selection"
       },
       {
-        "id": "urn:ngm:class:image-classification",
-        "label": "Image Classification"
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
       },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
-      },
-      {
-        "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Model"
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:evaluation-harness",
-        "label": "EleutherAI lm-evaluation-harness"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-23053",
-        "label": "ISO-IEC 23053"
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989"
       },
       {
         "id": "urn:ngm:class:mlcommons",
@@ -498,26 +791,46 @@
         "label": "NIST AI RMF"
       },
       {
-        "id": "urn:ngm:class:uk-ai-safety-institute",
-        "label": "UK AI Safety Institute"
+        "id": "urn:ngm:class:spec",
+        "label": "SPEC"
       },
       {
-        "id": "urn:ngm:class:iso-42010",
-        "label": "ISO/IEC 42010"
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:ieee",
-        "label": "IEEE"
+        "id": "urn:ngm:class:data-governance-framework",
+        "label": "Data Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "AI Act"
       }
     ],
     "partOf": [
       {
+        "id": "urn:ngm:class:empirical-research",
+        "label": "Empirical Research"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-research-infrastructure",
+        "label": "Machine Learning Research Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       },
       {
         "id": "urn:ngm:class:enterprise-architecture",
@@ -528,46 +841,42 @@
         "label": "Information Architecture"
       },
       {
-        "id": "urn:ngm:class:digital-transformation",
-        "label": "Digital Transformation"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:ablation-studies",
+        "label": "Ablation Studies"
+      },
+      {
         "id": "urn:ngm:class:adversarial-testing",
         "label": "Adversarial Testing"
+      },
+      {
+        "id": "urn:ngm:class:annotation-pipelines",
+        "label": "Annotation Pipelines"
       },
       {
         "id": "urn:ngm:class:benchmark-standard",
         "label": "Benchmark Standard"
       },
       {
+        "id": "urn:ngm:class:benign-overfitting",
+        "label": "Benign Overfitting"
+      },
+      {
         "id": "urn:ngm:class:bias-and-fairness",
         "label": "Bias and Fairness"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
       },
       {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Cards"
-      },
-      {
-        "id": "urn:ngm:class:overfitting",
-        "label": "Overfitting"
-      },
-      {
-        "id": "urn:ngm:class:software-testing",
-        "label": "Software Testing"
-      },
-      {
-        "id": "urn:ngm:class:benchmarking",
-        "label": "Benchmarking"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ]
   },

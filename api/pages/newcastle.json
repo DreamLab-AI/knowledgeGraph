@@ -24,6 +24,10 @@
       {
         "id": "urn:ngm:class:national-innovation-centre-for-data",
         "label": "National Innovation Centre for Data"
+      },
+      {
+        "id": "urn:ngm:class:science-central",
+        "label": "Science Central"
       }
     ],
     "requires": [],
@@ -61,10 +65,23 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ai-cluster",
+        "label": "AI Cluster"
       }
     ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regional-innovation",
+        "label": "Regional Innovation"
+      },
+      {
+        "id": "urn:ngm:class:public-sector-technology",
+        "label": "Public Sector Technology"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
@@ -281,6 +298,14 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -347,6 +372,10 @@
         "label": "Autonomous Agent"
       },
       {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
       },
@@ -365,10 +394,6 @@
       {
         "id": "urn:ngm:class:neural-symbolic-integration",
         "label": "Neural-Symbolic Integration"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
       }
     ]
   },

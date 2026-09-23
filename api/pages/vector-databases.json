@@ -60,7 +60,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -87,6 +87,10 @@
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
       }
     ],
     "uses": [
@@ -163,6 +167,10 @@
         "label": "Inverted File Index"
       },
       {
+        "id": "urn:ngm:class:metadata-filter",
+        "label": "Metadata Filter"
+      },
+      {
         "id": "urn:ngm:class:product-quantisation",
         "label": "Product Quantisation"
       },
@@ -181,10 +189,6 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
-      },
-      {
-        "id": "urn:ngm:class:model-serving",
-        "label": "Model Serving"
       }
     ],
     "requires": [
@@ -280,6 +284,10 @@
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:document-database",
+        "label": "Document Database"
+      },
       {
         "id": "urn:ngm:class:search-engine",
         "label": "Search Engine"

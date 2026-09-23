@@ -50,6 +50,11 @@
       "slug": "infra-legal-and-regulatory"
     },
     {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
@@ -142,6 +147,10 @@
         "label": "Risk Management"
       },
       {
+        "id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
+      },
+      {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
@@ -152,10 +161,6 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       }
     ],
     "dependsOn": [
@@ -240,6 +245,10 @@
         "label": "Digital Rights"
       },
       {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       },
@@ -288,6 +297,10 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
         "id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
       },
@@ -300,6 +313,10 @@
         "label": "GDPR"
       },
       {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
         "id": "urn:ngm:class:change-management",
         "label": "Change Management"
       },
@@ -310,14 +327,6 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
       }
     ]
   },

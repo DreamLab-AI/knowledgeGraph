@@ -14,6 +14,10 @@
     {
       "id": "urn:ngm:class:multivariate-statistics",
       "label": "Multivariate Statistics"
+    },
+    {
+      "id": "urn:ngm:class:statistical-object",
+      "label": "Statistical Object"
     }
   ],
   "entityType": "Class",
@@ -84,7 +88,16 @@
         "label": "Random Variable"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation-Maximisation"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:correlation-matrix",
@@ -134,9 +147,22 @@
       {
         "id": "urn:ngm:class:state-estimation",
         "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:probability-distribution",
@@ -171,6 +197,18 @@
       {
         "id": "urn:ngm:class:regularisation",
         "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
       }
     ]
   },
@@ -204,12 +242,24 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:eigenvalue",
+        "label": "Eigenvalue"
+      },
+      {
+        "id": "urn:ngm:class:matrix",
+        "label": "Matrix"
+      },
+      {
         "id": "urn:ngm:class:singular-value-decomposition",
         "label": "Singular Value Decomposition"
       },
       {
         "id": "urn:ngm:class:tensor",
         "label": "Tensor"
+      },
+      {
+        "id": "urn:ngm:class:vector-space",
+        "label": "Vector Space"
       },
       {
         "id": "urn:ngm:class:ai-alignment",
@@ -222,18 +272,6 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
       }
     ],
     "requires": [
@@ -276,6 +314,10 @@
         "label": "Computer Vision"
       },
       {
+        "id": "urn:ngm:class:computer-vision-domain",
+        "label": "Computer Vision Domain"
+      },
+      {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
       },
@@ -288,20 +330,16 @@
         "label": "Least Squares Regression"
       },
       {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
         "id": "urn:ngm:class:data-analysis",
         "label": "Data Analysis"
       },
       {
         "id": "urn:ngm:class:experimental-design",
         "label": "Experimental Design"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:statistical-learning-theory",
-        "label": "Statistical Learning Theory"
       }
     ],
     "dependsOn": [
@@ -312,6 +350,10 @@
       {
         "id": "urn:ngm:class:sampling-theory",
         "label": "Sampling Theory"
+      },
+      {
+        "id": "urn:ngm:class:lebesgue-integration",
+        "label": "Lebesgue Integration"
       },
       {
         "id": "urn:ngm:class:sigma-algebra",
@@ -326,13 +368,13 @@
       {
         "id": "urn:ngm:class:frequentist-inference",
         "label": "Frequentist Inference"
-      },
-      {
-        "id": "urn:ngm:class:maximum-likelihood-estimation",
-        "label": "Maximum Likelihood Estimation"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deterministic-computation",
+        "label": "Deterministic Computation"
+      },
       {
         "id": "urn:ngm:class:fuzzy-logic",
         "label": "Fuzzy Logic"
@@ -360,16 +402,16 @@
         "label": "Financial Modelling"
       },
       {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
         "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
       },
       {
-        "id": "urn:ngm:class:conformal-prediction",
-        "label": "Conformal Prediction"
-      },
-      {
-        "id": "urn:ngm:class:diffusion-models",
-        "label": "Diffusion Models"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -400,16 +442,26 @@
         "label": "Causal Inference"
       },
       {
+        "id": "urn:ngm:class:bayesian-networks",
+        "label": "Bayesian Networks"
+      },
+      {
         "id": "urn:ngm:class:graphical-model",
         "label": "Probabilistic Graphical Models"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:monte-carlo-methods",
         "label": "Monte Carlo Methods"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       }
     ],
     "relatedTo": [

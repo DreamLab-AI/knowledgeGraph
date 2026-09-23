@@ -60,7 +60,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -98,7 +98,7 @@
         "label": "Supply Chain Management"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       }
     ],
@@ -206,8 +206,8 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       }
     ],
     "requires": [
@@ -246,12 +246,16 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:self-sovereign-identity",
@@ -272,10 +276,6 @@
       {
         "id": "urn:ngm:class:high-availability",
         "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:horizontal-scalability",
-        "label": "Horizontal Scalability"
       }
     ],
     "dependsOn": [
@@ -342,12 +342,12 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:decentralised-governance",
-        "label": "Decentralised Governance"
-      },
-      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:spatial-computing",

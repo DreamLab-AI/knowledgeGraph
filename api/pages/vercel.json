@@ -32,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -147,12 +152,12 @@
         "label": "Platform Engineering"
       },
       {
-        "id": "urn:ngm:class:infrastructure-as-a-service",
-        "label": "Infrastructure as a Service"
+        "id": "urn:ngm:class:elasticity",
+        "label": "Elasticity"
       },
       {
-        "id": "urn:ngm:class:platform-as-a-service",
-        "label": "Platform as a Service"
+        "id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure as a Service"
       }
     ],
     "dependsOn": [
@@ -177,6 +182,10 @@
         "label": "Edge Computing"
       },
       {
+        "id": "urn:ngm:class:on-premise-infrastructure",
+        "label": "On-Premise Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:on-premises-infrastructure",
         "label": "On-Premises Infrastructure"
       },
@@ -186,6 +195,10 @@
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      },
       {
         "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Model"
@@ -261,7 +274,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "id": "urn:ngm:class:cncf",
         "label": "Cloud Native Computing Foundation"
       },
       {
@@ -281,10 +294,20 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:multi-cloud-strategy",
+        "label": "Multi-Cloud Strategy"
       },
       {
         "id": "urn:ngm:class:platform-governance",
@@ -309,10 +332,6 @@
       {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:infra-data-management",
-        "label": "Data Management"
       }
     ]
   },

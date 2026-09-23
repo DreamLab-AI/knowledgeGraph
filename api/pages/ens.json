@@ -54,6 +54,14 @@
       {
         "id": "urn:ngm:class:eip-3668",
         "label": "EIP-3668 CCIP-Read"
+      },
+      {
+        "id": "urn:ngm:class:eip-3668-ccip-read",
+        "label": "EIP-3668 CCIP-Read"
+      },
+      {
+        "id": "urn:ngm:class:slip-0044",
+        "label": "SLIP-0044"
       }
     ],
     "contrastsWith": [
@@ -74,6 +82,10 @@
       {
         "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
       }
     ],
     "uses": [
@@ -90,7 +102,7 @@
         "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:class:erc-721",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721"
       },
       {
@@ -101,6 +113,10 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      },
       {
         "id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
@@ -118,6 +134,10 @@
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:name-registry",
+        "label": "Name Registry"
       }
     ]
   },
@@ -162,6 +182,10 @@
         "label": "Decentralised Identifier"
       },
       {
+        "id": "urn:ngm:class:verifiable-claim",
+        "label": "Verifiable Claim"
+      },
+      {
         "id": "urn:ngm:class:verifiable-credential-standard",
         "label": "Credential"
       },
@@ -172,10 +196,6 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
       }
     ],
     "requires": [
@@ -196,16 +216,16 @@
         "label": "Credential Storage"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
         "id": "urn:ngm:class:privacy-controls",
         "label": "Privacy Controls"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:authentication",
@@ -238,12 +258,12 @@
         "label": "Authorization"
       },
       {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:digital-presence",
+        "label": "Digital Presence"
       },
       {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       }
     ],
     "dependsOn": [
@@ -314,6 +334,10 @@
         "label": "AI Agent Identity"
       },
       {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
@@ -332,10 +356,6 @@
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -452,7 +472,7 @@
         "label": "Trust Framework"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "KYC Know Your Customer"
       },
       {

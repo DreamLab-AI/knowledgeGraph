@@ -55,6 +55,10 @@
       {
         "id": "urn:ngm:class:planning",
         "label": "Autonomous Planning"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Autonomous Planning"
       }
     ],
     "dependsOn": [
@@ -80,12 +84,20 @@
       {
         "id": "urn:ngm:class:specification-gaming",
         "label": "Specification Gaming"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Robotic Task Planning"
       },
       {
         "id": "urn:ngm:class:task-planning",
@@ -133,6 +145,10 @@
       {
         "id": "urn:ngm:class:helpfulness",
         "label": "Helpfulness"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
       }
     ]
   },
@@ -212,6 +228,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

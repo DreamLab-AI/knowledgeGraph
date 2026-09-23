@@ -14,6 +14,10 @@
     {
       "id": "urn:ngm:class:neural-network-component",
       "label": "Neural Network Component"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",
@@ -52,6 +56,10 @@
       {
         "id": "urn:ngm:class:query-key-value",
         "label": "Query Key Value"
+      },
+      {
+        "id": "urn:ngm:class:attention-head",
+        "label": "Attention Head"
       }
     ],
     "requires": [
@@ -70,6 +78,10 @@
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
       }
     ],
     "enables": [
@@ -100,6 +112,22 @@
       {
         "id": "urn:ngm:class:diffusion-transformer",
         "label": "Diffusion Transformer"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-reasoning",
+        "label": "Multimodal Reasoning"
       }
     ],
     "dependsOn": [
@@ -114,6 +142,10 @@
       {
         "id": "urn:ngm:class:feed-forward-network",
         "label": "Feed Forward Network"
+      },
+      {
+        "id": "urn:ngm:class:lstm",
+        "label": "LSTM"
       }
     ],
     "implements": [
@@ -122,11 +154,63 @@
         "label": "AI Model Architecture"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "id": "urn:ngm:class:paged-attention",
+        "label": "Paged Attention"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:attention-aware-interaction",
+        "label": "Attention Aware Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -152,6 +236,30 @@
       {
         "id": "urn:ngm:class:speculative-decoding",
         "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:gemini-multimodal-language-model",
+        "label": "Gemini Multimodal Language Model"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-understanding",
+        "label": "Multimodal Understanding"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
       }
     ]
   },
@@ -178,10 +286,6 @@
         "label": "Activation Function"
       },
       {
-        "id": "urn:ngm:class:attention-head",
-        "label": "Attention Head"
-      },
-      {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
@@ -200,16 +304,16 @@
       {
         "id": "urn:ngm:class:encoder",
         "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:matrix-multiplication",
         "label": "Matrix Multiplication"
-      },
-      {
-        "id": "urn:ngm:class:positional-encoding",
-        "label": "Positional Encoding"
       },
       {
         "id": "urn:ngm:class:computational-infrastructure",
@@ -226,12 +330,12 @@
         "label": "Long-Range Dependency Modelling"
       },
       {
-        "id": "urn:ngm:class:machine-translation",
-        "label": "Machine Translation"
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       },
       {
         "id": "urn:ngm:class:autonomous-system",
@@ -274,10 +378,6 @@
       {
         "id": "urn:ngm:class:long-short-term-memory",
         "label": "Long Short Term Memory"
-      },
-      {
-        "id": "urn:ngm:class:recurrent-neural-network",
-        "label": "Recurrent Neural Network"
       }
     ],
     "bridgesTo": [
@@ -288,6 +388,22 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -326,16 +442,24 @@
         "label": "Neural Network Architecture"
       },
       {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
         "id": "urn:ngm:class:ai-application",
         "label": "AI Application"
       },
       {
         "id": "urn:ngm:class:ai-research-area",
         "label": "AI Research Area"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ]
   },

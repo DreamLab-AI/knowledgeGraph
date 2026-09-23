@@ -24,6 +24,22 @@
       {
         "id": "urn:ngm:class:warehouse-management-system",
         "label": "Warehouse Management System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:automated-storage-and-retrieval-system",
+        "label": "Automated Storage and Retrieval System"
+      },
+      {
+        "id": "urn:ngm:class:robotic-picking",
+        "label": "Robotic Picking"
+      },
+      {
+        "id": "urn:ngm:class:conveyor-system",
+        "label": "Conveyor System"
       }
     ],
     "requires": [
@@ -42,6 +58,10 @@
       {
         "id": "urn:ngm:class:fleet-management",
         "label": "Robot Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Robot Fleet Management"
       }
     ],
     "enables": [
@@ -52,6 +72,10 @@
       {
         "id": "urn:ngm:class:inventory-management",
         "label": "Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:order-fulfilment",
+        "label": "Order Fulfilment"
       }
     ],
     "dependsOn": [
@@ -66,6 +90,10 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
       }
     ],
     "implements": [],
@@ -73,6 +101,10 @@
       {
         "id": "urn:ngm:class:human-robot-collaboration",
         "label": "Human-Robot Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:manual-warehousing",
+        "label": "Manual Warehousing"
       }
     ],
     "bridgesTo": [
@@ -99,7 +131,7 @@
         "label": "Autonomous Navigation"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -209,16 +241,16 @@
         "label": "Hardware Abstraction Layer"
       },
       {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -331,7 +363,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -387,6 +419,10 @@
       {
         "id": "urn:ngm:class:digital-signal-processor",
         "label": "Digital Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-controller",
+        "label": "Interrupt Controller"
       }
     ],
     "supports": [
@@ -463,6 +499,10 @@
         "label": "Digital Twin"
       },
       {
+        "id": "urn:ngm:class:manufacturing-execution-system",
+        "label": "Manufacturing Execution System"
+      },
+      {
         "id": "urn:ngm:class:real-time-processing",
         "label": "Real-time Processing"
       },
@@ -481,10 +521,6 @@
       {
         "id": "urn:ngm:class:hardware-security",
         "label": "Hardware Security"
-      },
-      {
-        "id": "urn:ngm:class:compute-infrastructure",
-        "label": "Compute Infrastructure"
       }
     ]
   },

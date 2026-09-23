@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
+    },
+    {
+      "id": "urn:ngm:class:applied-artificial-intelligence",
+      "label": "Applied Artificial Intelligence"
+    },
+    {
+      "id": "urn:ngm:class:real-time-ai",
+      "label": "Real-Time AI"
+    },
+    {
+      "id": "urn:ngm:class:interactive-computing",
+      "label": "Interactive Computing"
+    },
+    {
+      "id": "urn:ngm:class:game-development",
+      "label": "Game Development"
+    },
+    {
+      "id": "urn:ngm:class:entertainment-technology",
+      "label": "Entertainment Technology"
     }
   ],
   "entityType": "Class",
@@ -56,6 +76,26 @@
       {
         "id": "urn:ngm:class:procedural-content-generation",
         "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-trees",
+        "label": "Behaviour Trees"
+      },
+      {
+        "id": "urn:ngm:class:goap",
+        "label": "GOAP"
+      },
+      {
+        "id": "urn:ngm:class:influence-map",
+        "label": "Influence Map"
+      },
+      {
+        "id": "urn:ngm:class:ai-game-agent",
+        "label": "Game-Playing Agents"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-system",
+        "label": "NPC Dialogue System"
       }
     ],
     "requires": [
@@ -74,6 +114,22 @@
       {
         "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:real-time-constraints",
+        "label": "Real-Time Constraints"
+      },
+      {
+        "id": "urn:ngm:class:spatial-reasoning",
+        "label": "Spatial Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:game-state-representation",
+        "label": "Game State Representation"
+      },
+      {
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Authoring Pipeline"
       }
     ],
     "enables": [
@@ -84,9 +140,70 @@
       {
         "id": "urn:ngm:class:emergent-gameplay",
         "label": "Emergent Gameplay"
+      },
+      {
+        "id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Dynamic Difficulty Adjustment"
+      },
+      {
+        "id": "urn:ngm:class:procedural-replayability",
+        "label": "Procedural Replayability"
+      },
+      {
+        "id": "urn:ngm:class:believable-npc-behaviour",
+        "label": "Believable NPC Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-narrative",
+        "label": "Dynamic Narrative"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-tutoring",
+        "label": "Adaptive Tutoring"
+      },
+      {
+        "id": "urn:ngm:class:automated-playtesting",
+        "label": "Automated Playtesting"
+      },
+      {
+        "id": "urn:ngm:class:personalised-game-experience",
+        "label": "Personalised Game Experience"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithms",
+        "label": "Search Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:planning-algorithms",
+        "label": "Planning Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:search-algorithm",
@@ -115,9 +232,62 @@
       {
         "id": "urn:ngm:class:wave-function-collapse",
         "label": "Wave Function Collapse"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "A* Search"
+      },
+      {
+        "id": "urn:ngm:class:recast-navmesh",
+        "label": "Recast Navmesh"
+      },
+      {
+        "id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimization"
+      },
+      {
+        "id": "urn:ngm:class:impala",
+        "label": "IMPALA"
+      },
+      {
+        "id": "urn:ngm:class:dreamerv3",
+        "label": "DreamerV3"
+      },
+      {
+        "id": "urn:ngm:class:alphazero",
+        "label": "AlphaZero"
+      },
+      {
+        "id": "urn:ngm:class:perlin-noise",
+        "label": "Perlin Noise"
+      },
+      {
+        "id": "urn:ngm:class:simplex-noise",
+        "label": "Simplex Noise"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:scripted-npcs",
+        "label": "Scripted NPCs"
+      },
+      {
+        "id": "urn:ngm:class:hand-authored-dialogue",
+        "label": "Hand-Authored Dialogue"
+      },
+      {
+        "id": "urn:ngm:class:static-quest-trees",
+        "label": "Static Quest Trees"
+      },
+      {
+        "id": "urn:ngm:class:classical-ai-without-learning",
+        "label": "Classical AI without Learning"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Rule-Based Expert Systems"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:game-development",
@@ -140,6 +310,18 @@
       {
         "id": "urn:ngm:class:imitation-learning",
         "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:partially-observable-mdp",
+        "label": "Partially Observable MDP"
+      },
+      {
+        "id": "urn:ngm:class:self-play",
+        "label": "Self-Play"
+      },
+      {
+        "id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomization"
       }
     ],
     "supports": [
@@ -166,6 +348,30 @@
       {
         "id": "urn:ngm:class:unreal-engine",
         "label": "Unreal Engine"
+      },
+      {
+        "id": "urn:ngm:class:unity",
+        "label": "Unity ML-Agents"
+      },
+      {
+        "id": "urn:ngm:class:bevy",
+        "label": "Bevy"
+      },
+      {
+        "id": "urn:ngm:class:cryengine",
+        "label": "CryEngine"
+      },
+      {
+        "id": "urn:ngm:class:gamemaker",
+        "label": "GameMaker"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-corporation",
+        "label": "NVIDIA ACE"
+      },
+      {
+        "id": "urn:ngm:class:convai",
+        "label": "Convai"
       }
     ],
     "standardizedBy": [
@@ -180,6 +386,22 @@
       {
         "id": "urn:ngm:class:open-usd",
         "label": "OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE Conference on Games"
+      },
+      {
+        "id": "urn:ngm:class:aaai-aiide",
+        "label": "AAAI AIIDE"
+      },
+      {
+        "id": "urn:ngm:class:fdg-conference",
+        "label": "FDG Conference"
+      },
+      {
+        "id": "urn:ngm:class:igda-ai-special-interest-group",
+        "label": "IGDA AI Special Interest Group"
       }
     ],
     "partOf": [],
@@ -199,6 +421,26 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:game-analytics",
+        "label": "Game Analytics"
+      },
+      {
+        "id": "urn:ngm:class:esports",
+        "label": "Esports"
+      },
+      {
+        "id": "urn:ngm:class:game-user-research",
+        "label": "Game User Research"
+      },
+      {
+        "id": "urn:ngm:class:speedrunning",
+        "label": "Speedrunning"
+      },
+      {
+        "id": "urn:ngm:class:twitch-plays",
+        "label": "Twitch Plays"
       }
     ]
   },
@@ -207,6 +449,111 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:real-time-computation",
+      "label": "Real-Time Computation",
+      "slug": "real-time-computation"
+    },
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets",
+      "slug": "sc-content-and-assets"
+    },
+    {
+      "id": "urn:ngm:class:real-time",
+      "label": "Real Time",
+      "slug": "real-time"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:cyber-physical-systems",
+      "label": "Cyber Physical Systems",
+      "slug": "cyber-physical-systems"
+    },
+    {
+      "id": "urn:ngm:class:embedded-systems",
+      "label": "Embedded Systems",
+      "slug": "embedded-systems"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:operating-system",
+      "label": "Operating System",
+      "slug": "operating-system"
+    },
+    {
+      "id": "urn:ngm:class:safety-critical-systems",
+      "label": "Safety-Critical Systems",
+      "slug": "safety-critical-systems"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
     }
   ],
   "inheritedRelations": {
@@ -246,6 +593,14 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:software-development-kit",
+        "label": "Software Development Kit"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -256,28 +611,188 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:determinism",
+        "label": "Determinism"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:priority-inheritance",
+        "label": "Priority Inheritance"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:npc-interaction",
+        "label": "NPC Interaction"
+      },
+      {
+        "id": "urn:ngm:class:serious-games",
+        "label": "Serious Games"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:hardware-timing-models",
+        "label": "Hardware Timing Models"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1588-ptp",
+        "label": "IEEE 1588 PTP"
+      },
+      {
+        "id": "urn:ngm:class:posix",
+        "label": "POSIX"
+      },
+      {
+        "id": "urn:ngm:class:scheduling-theory",
+        "label": "Scheduling Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:constant-bandwidth-server",
+        "label": "Constant Bandwidth Server"
+      },
+      {
+        "id": "urn:ngm:class:earliest-deadline-first",
+        "label": "Earliest Deadline First"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-scheduling",
+        "label": "Hierarchical Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:priority-ceiling-protocol",
+        "label": "Priority Ceiling Protocol"
+      },
+      {
+        "id": "urn:ngm:class:priority-inheritance-protocol",
+        "label": "Priority Inheritance Protocol"
+      },
+      {
+        "id": "urn:ngm:class:rate-monotonic-algorithm",
+        "label": "Rate Monotonic Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:best-effort-networking",
+        "label": "Best Effort Networking"
+      },
+      {
+        "id": "urn:ngm:class:garbage-collected-runtimes",
+        "label": "Garbage Collected Runtimes"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-operating-systems",
+        "label": "General Purpose Operating Systems"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:information-technology",
+        "label": "Information Technology"
+      },
+      {
+        "id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:robotics-simulation",
+        "label": "Robotics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
       }
     ],
     "uses": [
@@ -288,6 +803,98 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:npu",
+        "label": "NPU"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:avionics",
+        "label": "Avionics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:medical-devices",
+        "label": "Medical Devices"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:dds",
+        "label": "OMG DDS Specification"
+      },
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1588-ptp",
+        "label": "IEEE 1588"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-1-tsn",
+        "label": "IEEE 802.1 TSN"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:posix-1003-1b",
+        "label": "POSIX 1003.1b"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
       }
     ],
     "relatedTo": [
@@ -298,6 +905,30 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Interactive Software Development"
       }
     ]
   },

@@ -44,6 +44,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:automatic-failover",
+        "label": "Automatic Failover"
+      },
+      {
         "id": "urn:ngm:class:data-replication",
         "label": "Data Replication"
       },
@@ -70,10 +74,6 @@
       {
         "id": "urn:ngm:class:fpga",
         "label": "FPGA"
-      },
-      {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
       }
     ],
     "requires": [
@@ -258,7 +258,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
+    },
+    {
+      "id": "urn:ngm:class:image-editing",
+      "label": "Image Editing"
+    },
+    {
+      "id": "urn:ngm:class:image-synthesis",
+      "label": "Conditional Image Synthesis"
+    },
+    {
+      "id": "urn:ngm:class:image-restoration",
+      "label": "Image Restoration"
+    },
+    {
+      "id": "urn:ngm:class:computer-vision-task",
+      "label": "Computer Vision Task"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
   "entityType": "Class",
@@ -32,6 +52,18 @@
       {
         "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:mask",
+        "label": "Mask"
+      },
+      {
+        "id": "urn:ngm:class:context-region",
+        "label": "Context Region"
+      },
+      {
+        "id": "urn:ngm:class:conditioning-encoder",
+        "label": "Conditioning Encoder"
       }
     ],
     "requires": [
@@ -46,6 +78,14 @@
       {
         "id": "urn:ngm:class:training-data-distribution",
         "label": "Training Data Distribution"
+      },
+      {
+        "id": "urn:ngm:class:mask-specification",
+        "label": "Mask Specification"
+      },
+      {
+        "id": "urn:ngm:class:pretrained-generative-prior",
+        "label": "Pretrained Generative Prior"
       }
     ],
     "enables": [
@@ -60,9 +100,50 @@
       {
         "id": "urn:ngm:class:image-and-video-restoration",
         "label": "Photo Restoration"
+      },
+      {
+        "id": "urn:ngm:class:object-removal",
+        "label": "Object Removal"
+      },
+      {
+        "id": "urn:ngm:class:image-and-video-restoration",
+        "label": "Photo Restoration"
+      },
+      {
+        "id": "urn:ngm:class:disocclusion",
+        "label": "Disocclusion"
+      },
+      {
+        "id": "urn:ngm:class:garment-removal",
+        "label": "Garment Removal"
+      },
+      {
+        "id": "urn:ngm:class:scene-completion",
+        "label": "Scene Completion"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:conditional-generation",
@@ -71,9 +152,42 @@
       {
         "id": "urn:ngm:class:variational-inference",
         "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-reverse-process",
+        "label": "Diffusion Reverse Process"
+      },
+      {
+        "id": "urn:ngm:class:patch-synthesis",
+        "label": "Patch Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:pde-anisotropic-diffusion",
+        "label": "PDE Anisotropic Diffusion"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      },
+      {
+        "id": "urn:ngm:class:image-denoising",
+        "label": "Image Denoising"
+      },
+      {
+        "id": "urn:ngm:class:clone-stamp-tool",
+        "label": "Clone Stamp Tool"
+      },
+      {
+        "id": "urn:ngm:class:outpainting",
+        "label": "Outpainting"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:image-editing",
@@ -96,6 +210,18 @@
       {
         "id": "urn:ngm:class:cross-attention",
         "label": "Cross Attention"
+      },
+      {
+        "id": "urn:ngm:class:partial-convolution",
+        "label": "Partial Convolution"
+      },
+      {
+        "id": "urn:ngm:class:gated-convolution",
+        "label": "Gated Convolution"
+      },
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Fourier Convolution"
       }
     ],
     "supports": [
@@ -114,6 +240,22 @@
       {
         "id": "urn:ngm:class:video-production-pipeline",
         "label": "Video Post-Production"
+      },
+      {
+        "id": "urn:ngm:class:image-editing",
+        "label": "Photo Editing Software"
+      },
+      {
+        "id": "urn:ngm:class:video-production-pipeline",
+        "label": "Video Post-Production"
+      },
+      {
+        "id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Cultural Heritage Restoration"
+      },
+      {
+        "id": "urn:ngm:class:medical-image-reconstruction",
+        "label": "Medical Image Reconstruction"
       }
     ],
     "standardizedBy": [
@@ -167,10 +309,19 @@
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion Image Model"
+      },
+      {
+        "id": "urn:ngm:class:apple-inc-technology-corporation",
+        "label": "Apple Intelligence"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
@@ -180,6 +331,61 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:content-creation",
+      "label": "Content Creation",
+      "slug": "content-creation"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
+      "id": "urn:ngm:class:image-generation",
+      "label": "Image Generation",
+      "slug": "image-generation"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:digital-content",
+      "label": "Digital Content",
+      "slug": "digital-content"
+    },
+    {
+      "id": "urn:ngm:class:digital-content-creation",
+      "label": "Digital Content Creation",
+      "slug": "digital-content-creation"
+    },
+    {
+      "id": "urn:ngm:class:media-production",
+      "label": "Media Production",
+      "slug": "media-production"
+    },
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets",
+      "slug": "sc-content-and-assets"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
     }
   ],
   "inheritedRelations": {
@@ -231,16 +437,24 @@
         "label": "Pattern Recognition"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Datasets"
       }
     ],
     "enables": [
@@ -261,20 +475,264 @@
         "label": "Robotics Perception"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:content-curation",
+        "label": "Content Curation"
+      },
+      {
+        "id": "urn:ngm:class:user-generated-content",
+        "label": "User-Generated Content"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:colour-management",
+        "label": "Colour Management"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:raster-graphics",
+        "label": "Raster Graphics"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:brand-identity",
+        "label": "Brand Identity"
+      },
+      {
+        "id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "id": "urn:ngm:class:data-storytelling",
+        "label": "Data Storytelling"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi-domain-creative-media",
+        "label": "ETSI Domain: Creative Media"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
       }
     ],
     "relatedTo": [
@@ -291,16 +749,24 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:media-authenticity",
+        "label": "Media Authenticity"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
       }
     ]
   },

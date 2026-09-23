@@ -10,6 +10,14 @@
     {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "id": "urn:ngm:class:json-rpc-protocol",
+      "label": "JSON-RPC Protocol"
     }
   ],
   "entityType": "Class",
@@ -78,7 +86,20 @@
         "label": "Sandboxed Capability Discovery"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:json-schema-validator",
+        "label": "JSON Schema Validator"
+      },
+      {
+        "id": "urn:ngm:class:typescript-sdk",
+        "label": "TypeScript SDK"
+      },
+      {
+        "id": "urn:ngm:class:python-mcp-sdk",
+        "label": "Python MCP SDK"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:anthropic-mcp-specification-v0-1",
@@ -102,6 +123,22 @@
       {
         "id": "urn:ngm:class:agent-communication-protocol",
         "label": "Agent Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "id": "urn:ngm:class:solid-pod",
+        "label": "Solid Pod"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
       }
     ],
     "uses": [],
@@ -119,15 +156,39 @@
       {
         "id": "urn:ngm:class:vision-claw-agentic-container",
         "label": "VisionClaw Agentic Container"
+      },
+      {
+        "id": "urn:ngm:class:langchain-agent-framework",
+        "label": "LangChain Agent Framework"
       }
     ],
     "relatedTo": []
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:coordination-protocol",
+      "label": "Coordination Protocol",
+      "slug": "coordination-protocol"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
+      "id": "urn:ngm:class:interoperability",
+      "label": "Interoperability",
+      "slug": "interoperability"
+    },
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol",
+      "slug": "communication-protocol"
     },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -135,9 +196,59 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:communication-infrastructure",
+      "label": "Communication Infrastructure",
+      "slug": "communication-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:human-robot-interaction",
+      "label": "Human Robot Interaction",
+      "slug": "human-robot-interaction"
+    },
+    {
+      "id": "urn:ngm:class:information-architecture",
+      "label": "Information Architecture",
+      "slug": "information-architecture"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-organization-system",
+      "label": "Knowledge Organization System",
+      "slug": "knowledge-organization-system"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:roboticsdomain",
+      "label": "RoboticsDomain",
+      "slug": "roboticsdomain"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -167,12 +278,12 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:error-handling",
+        "label": "Error Handling"
       }
     ],
     "requires": [
@@ -189,24 +300,24 @@
         "label": "Networking Fabric"
       },
       {
-        "id": "urn:ngm:class:cooling-system",
-        "label": "Cooling Systems"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:power-grid",
-        "label": "Power Grid"
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:trust-management",
+        "label": "Trust Management"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:message-format",
+        "label": "Message Schema"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
       }
     ],
     "enables": [
@@ -223,24 +334,24 @@
         "label": "Real-Time Inference"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       },
       {
-        "id": "urn:ngm:class:orchestration",
-        "label": "Orchestration"
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ],
     "dependsOn": [
@@ -253,18 +364,62 @@
         "label": "Data Centre"
       },
       {
+        "id": "urn:ngm:class:concurrent-programming",
+        "label": "Concurrent Programming"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:formal-specification",
+        "label": "Formal Specification"
+      },
+      {
         "id": "urn:ngm:class:open-source-software",
         "label": "Open Source Software"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:containerisation",
-        "label": "Containerisation"
+        "id": "urn:ngm:class:agent-network-protocol",
+        "label": "Agent Network Protocol"
       },
       {
-        "id": "urn:ngm:class:infrastructure-as-code",
-        "label": "Infrastructure as Code"
+        "id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA ACL"
+      },
+      {
+        "id": "urn:ngm:class:kqml",
+        "label": "KQML"
+      },
+      {
+        "id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:ngm:class:speech-act-theory",
+        "label": "Speech Act Theory"
       }
     ],
     "contrastsWith": [
@@ -273,8 +428,32 @@
         "label": "General-Purpose Computing"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:agent",
+        "label": "Monolithic Agent"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:serialisation-format",
+        "label": "Data Serialisation Format"
+      },
+      {
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
       }
     ],
     "bridgesTo": [
@@ -287,16 +466,28 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:llm-application-framework",
+        "label": "LLM Agent Framework"
       }
     ],
     "uses": [
@@ -313,8 +504,24 @@
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:serverless-architecture",
-        "label": "Serverless Computing"
+        "id": "urn:ngm:class:concurrent-programming",
+        "label": "Concurrent Programming"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
+        "label": "JSON-RPC 2.0"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
       }
     ],
     "supports": [
@@ -331,23 +538,43 @@
         "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:error-handling",
+        "label": "Error Handling"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
       {
         "id": "urn:ngm:class:cncf",
         "label": "CNCF"
@@ -357,16 +584,18 @@
         "label": "IEEE"
       },
       {
-        "id": "urn:ngm:class:ietf",
-        "label": "IETF"
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      }
+    ],
+    "partOf": [
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "relatedTo": [
@@ -383,24 +612,24 @@
         "label": "Model Registry"
       },
       {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
       },
       {
-        "id": "urn:ngm:class:compute-infrastructure",
-        "label": "Compute Infrastructure"
+        "id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
-        "label": "Data Management"
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       },
       {
-        "id": "urn:ngm:class:infra-network-and-comms",
-        "label": "Network and Communication"
+        "id": "urn:ngm:class:bdi-architecture",
+        "label": "BDI Architecture"
       }
     ]
   },

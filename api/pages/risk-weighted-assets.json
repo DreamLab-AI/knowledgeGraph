@@ -163,6 +163,10 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:policy-management",
+        "label": "Policy Management"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -193,6 +197,10 @@
         "label": "Accountability"
       },
       {
+        "id": "urn:ngm:class:organisational-trust",
+        "label": "Organisational Trust"
+      },
+      {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       },
@@ -203,10 +211,6 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
       }
     ],
     "dependsOn": [
@@ -233,6 +237,12 @@
         "label": "NIST AI RMF"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voluntary-guidelines",
+        "label": "Voluntary Guidelines"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:climate-financial-risk",
@@ -249,6 +259,18 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "supports": [

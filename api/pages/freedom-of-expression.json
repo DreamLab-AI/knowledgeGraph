@@ -87,14 +87,39 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:human-centred-values",
+      "label": "Human Centred Values",
+      "slug": "human-centred-values"
+    },
+    {
       "id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety",
       "slug": "sc-governance-and-safety"
     },
     {
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding",
+      "slug": "metaverse-governance-and-safeguarding"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -128,8 +153,8 @@
         "label": "User Safety"
       },
       {
-        "id": "urn:ngm:class:6-do-f-tracking",
-        "label": "6DoF Tracking"
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ],
     "requires": [
@@ -146,6 +171,14 @@
         "label": "Transparency"
       },
       {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
         "id": "urn:ngm:class:privacy-framework",
         "label": "Privacy Framework"
       },
@@ -156,14 +189,6 @@
       {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
-      },
-      {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
-      },
-      {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
       }
     ],
     "enables": [
@@ -190,6 +215,14 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
       }
     ],
     "dependsOn": [
@@ -208,8 +241,16 @@
         "label": "Surveillance Technology"
       },
       {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -230,12 +271,20 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "uses": [
@@ -266,6 +315,28 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -310,24 +381,28 @@
         "label": "Algorithmic Bias"
       },
       {
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
         "id": "urn:ngm:class:informed-consent",
         "label": "Consent"
       },
       {
-        "id": "urn:ngm:class:compliance-framework",
-        "label": "Compliance Framework"
+        "id": "urn:ngm:class:privacy-rights",
+        "label": "Privacy Rights"
       },
       {
-        "id": "urn:ngm:class:regulatory-framework",
-        "label": "Regulatory Framework"
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
       },
       {
-        "id": "urn:ngm:class:sc-platform-and-environment",
-        "label": "Platform and Environment"
-      },
-      {
-        "id": "urn:ngm:class:sc-standards-and-interop",
-        "label": "Standards and Interoperability"
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
       }
     ]
   },

@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:dc-workspace-tools",
       "label": "Workspace Tools"
+    },
+    {
+      "id": "urn:ngm:class:organisational-governance",
+      "label": "Organisational Governance"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "id": "urn:ngm:class:collective-intelligence",
+      "label": "Collective Intelligence"
+    },
+    {
+      "id": "urn:ngm:class:social-choice-theory",
+      "label": "Social Choice Theory"
+    },
+    {
+      "id": "urn:ngm:class:coordination-mechanisms",
+      "label": "Coordination Mechanisms"
     }
   ],
   "entityType": "Class",
@@ -32,6 +52,30 @@
       {
         "id": "urn:ngm:class:voting-mechanism",
         "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocols",
+        "label": "Consensus Protocols"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanisms",
+        "label": "Voting Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:quorum-systems",
+        "label": "Quorum Systems"
+      },
+      {
+        "id": "urn:ngm:class:delegation-system",
+        "label": "Delegation Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:decision-documentation",
+        "label": "Decision Documentation"
+      },
+      {
+        "id": "urn:ngm:class:appeal-mechanism",
+        "label": "Appeal Mechanism"
       }
     ],
     "requires": [
@@ -42,6 +86,18 @@
       {
         "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:transparent-information-access",
+        "label": "Transparent Information Access"
+      },
+      {
+        "id": "urn:ngm:class:explicit-decision-criteria",
+        "label": "Explicit Decision Criteria"
+      },
+      {
+        "id": "urn:ngm:class:time-boxed-feedback-windows",
+        "label": "Time-boxed Feedback Windows"
       }
     ],
     "enables": [
@@ -56,9 +112,46 @@
       {
         "id": "urn:ngm:class:trustless-coordination",
         "label": "Trustless Coordination"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisations"
+      },
+      {
+        "id": "urn:ngm:class:equitable-voice-across-time-zones",
+        "label": "Equitable Voice Across Time Zones"
+      },
+      {
+        "id": "urn:ngm:class:decision-traceability",
+        "label": "Decision Traceability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:arrow-impossibility-theorem",
+        "label": "Arrow Impossibility Theorem"
+      },
+      {
+        "id": "urn:ngm:class:flp-impossibility",
+        "label": "FLP Impossibility"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:liquid-democracy",
@@ -83,9 +176,30 @@
       {
         "id": "urn:ngm:class:quadratic-voting",
         "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:lazy-consensus",
+        "label": "Lazy Consensus"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-decision-making",
+        "label": "Centralised Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-authority",
+        "label": "Hierarchical Authority"
+      },
+      {
+        "id": "urn:ngm:class:command-and-control-organisations",
+        "label": "Command-and-Control Organisations"
+      },
+      {
+        "id": "urn:ngm:class:single-point-of-control",
+        "label": "Single Point of Control"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:collective-intelligence",
@@ -116,6 +230,14 @@
       {
         "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:commit-reveal-scheme",
+        "label": "Commit-Reveal Schemes"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proofs"
       }
     ],
     "supports": [
@@ -134,6 +256,14 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "DAO Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:open-source-project-governance",
+        "label": "Open-Source Project Governance"
       }
     ],
     "standardizedBy": [
@@ -144,6 +274,18 @@
       {
         "id": "urn:ngm:class:iso-31000-risk-management",
         "label": "ISO 31000 Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:did",
+        "label": "W3C Decentralised Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-process",
+        "label": "IETF RFC Process"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposals"
       },
       {
         "id": "urn:ngm:class:decentralised-identifiers",
@@ -171,14 +313,146 @@
       {
         "id": "urn:ngm:class:multi-agent-reinforcement-learning",
         "label": "Multi-Agent Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration Patterns"
+      },
+      {
+        "id": "urn:ngm:class:collective-action",
+        "label": "Collective Action Problems"
+      },
+      {
+        "id": "urn:ngm:class:common-pool-resources",
+        "label": "Common-Pool Resource Governance"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:collective-intelligence-system",
+      "label": "Collective Intelligence System",
+      "slug": "collective-intelligence-system"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
       "id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration",
       "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics",
+      "slug": "economics"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:behavioural-economics",
+      "label": "Behavioural Economics",
+      "slug": "behavioural-economics"
+    },
+    {
+      "id": "urn:ngm:class:collaborative-systems-modality",
+      "label": "Collaborative Systems Modality",
+      "slug": "collaborative-systems-modality"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:distributed-artificial-intelligence",
+      "label": "Distributed Artificial Intelligence",
+      "slug": "distributed-artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory",
+      "slug": "information-theory"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:institutional-economics",
+      "label": "Institutional Economics",
+      "slug": "institutional-economics"
+    },
+    {
+      "id": "urn:ngm:class:multi-agent-system",
+      "label": "Multi-Agent System",
+      "slug": "multi-agent-system"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
+      "id": "urn:ngm:class:political-economy",
+      "label": "Political Economy",
+      "slug": "political-economy"
+    },
+    {
+      "id": "urn:ngm:class:social-science",
+      "label": "Social Science",
+      "slug": "social-science"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -212,22 +486,42 @@
         "label": "Virtual Office Spaces"
       },
       {
-        "id": "urn:ngm:class:shared-workspace",
-        "label": "Shared Workspace"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:preference-aggregation",
+        "label": "Preference Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
       {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:identity-and-access-management",
-        "label": "Identity and Access Management"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:data-synchronization",
+        "label": "Data Synchronization"
       }
     ],
     "enables": [
@@ -236,82 +530,288 @@
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:open-source-development",
-        "label": "Open Source Development"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:remote-work",
-        "label": "Remote Work"
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       },
       {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
+        "id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scalability"
       },
       {
-        "id": "urn:ngm:class:virtual-team",
-        "label": "Virtual Team"
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:consensus-algorithm",
-        "label": "Consensus Algorithm"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:latency-management-protocol",
-        "label": "Latency Management"
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:information-exchange",
+        "label": "Information Exchange"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:ant-colony-optimisation",
+        "label": "Ant Colony Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-agents",
+        "label": "Mixture of Agents"
+      },
+      {
+        "id": "urn:ngm:class:stigmergy",
+        "label": "Stigmergy"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:co-located-collaboration",
-        "label": "Co-Located Collaboration"
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "id": "urn:ngm:class:individual-rationality",
+        "label": "Individual Rationality"
+      },
+      {
+        "id": "urn:ngm:class:market-mechanism",
+        "label": "Market Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Monolithic Agent"
+      },
+      {
+        "id": "urn:ngm:class:centralised-ai",
+        "label": "Centralised AI"
+      },
+      {
+        "id": "urn:ngm:class:crowd-sourcing-platform",
+        "label": "Crowd-Sourcing Platform"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:ant-colony-optimisation",
+        "label": "Ant Colony Optimisation"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "Decentralized Autonomous Organization"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:conflict-free-replicated-data-type",
-        "label": "Conflict-Free Replicated Data Type"
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
       },
       {
-        "id": "urn:ngm:class:end-to-end-encryption",
-        "label": "End-to-End Encryption"
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
       },
-      {
-        "id": "urn:ngm:class:operational-transformation",
-        "label": "Operational Transformation"
-      },
-      {
-        "id": "urn:ngm:class:real-time-messaging",
-        "label": "Real-Time Messaging"
-      },
-      {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
-      }
-    ],
-    "supports": [
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
       },
       {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      },
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:public-choice-theory",
+        "label": "Public Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-2510",
+        "label": "IEEE Std 2510"
+      },
+      {
+        "id": "urn:ngm:class:w3c-web-of-things",
+        "label": "W3C Web of Things"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      },
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality",
+        "label": "Collaborative AI Platform"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:decision-science",
+        "label": "Decision Science"
       }
     ],
     "relatedTo": [
@@ -320,20 +820,32 @@
         "label": "Communication Technology"
       },
       {
-        "id": "urn:ngm:class:dc-telepresence",
-        "label": "Telepresence"
-      },
-      {
         "id": "urn:ngm:class:remote-collaboration",
         "label": "Remote Collaboration"
       },
       {
-        "id": "urn:ngm:class:computer-supported-cooperative-work",
-        "label": "Computer-Supported Cooperative Work"
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
       },
       {
-        "id": "urn:ngm:class:groupware",
-        "label": "Groupware"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-models",
+        "label": "Agent-Based Models"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Learning"
       }
     ]
   },

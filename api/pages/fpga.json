@@ -35,6 +35,10 @@
       {
         "id": "urn:ngm:class:real-time-signal-processing",
         "label": "Real-Time Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:custom-neural-architectures",
+        "label": "Custom Neural Architectures"
       }
     ],
     "dependsOn": [],
@@ -70,6 +74,14 @@
       {
         "id": "urn:ngm:class:high-frequency-trading",
         "label": "High-Frequency Trading"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [],
@@ -246,7 +258,7 @@
         "label": "Compiler Optimization"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {

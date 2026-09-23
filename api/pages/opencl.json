@@ -107,14 +107,44 @@
       "slug": "hardware-acceleration"
     },
     {
+      "id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure",
+      "slug": "computing-infrastructure"
+    },
+    {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering",
       "slug": "sc-display-and-rendering"
     },
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -136,20 +166,20 @@
         "label": "Tensor Core"
       },
       {
-        "id": "urn:ngm:class:display-hardware",
-        "label": "Display Hardware"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:foveated-rendering",
-        "label": "Foveated Rendering"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:neural-rendering",
-        "label": "Neural Rendering"
+        "id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
       },
       {
-        "id": "urn:ngm:class:physically-based-rendering",
-        "label": "Physically Based Rendering"
+        "id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
       }
     ],
     "requires": [
@@ -160,6 +190,10 @@
       {
         "id": "urn:ngm:class:high-bandwidth-memory",
         "label": "High Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:interconnect-fabric",
+        "label": "Interconnect Fabric"
       },
       {
         "id": "urn:ngm:class:device-drivers",
@@ -180,10 +214,6 @@
       {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
       }
     ],
     "enables": [
@@ -250,6 +280,14 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -278,12 +316,12 @@
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
       }
     ],
     "uses": [
@@ -328,6 +366,30 @@
       {
         "id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       }
     ],
     "standardizedBy": [
@@ -338,6 +400,14 @@
       {
         "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [
@@ -370,8 +440,8 @@
         "label": "Variable Rate Shading"
       },
       {
-        "id": "urn:ngm:class:ai-upscaling-and-super-resolution",
-        "label": "AI Upscaling and Super-Resolution"
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
       }
     ]
   },

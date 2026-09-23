@@ -16,8 +16,24 @@
       "label": "AI Agent System"
     },
     {
-      "id": "urn:ngm:class:ai-agent-system",
-      "label": "AI Agent System"
+      "id": "urn:ngm:class:tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "id": "urn:ngm:class:llm-capability",
+      "label": "LLM Capability"
+    },
+    {
+      "id": "urn:ngm:class:structured-output",
+      "label": "Structured Output Generation"
+    },
+    {
+      "id": "urn:ngm:class:agentic-capability",
+      "label": "Agentic Capability"
+    },
+    {
+      "id": "urn:ngm:class:language-model-augmentation",
+      "label": "Language Model Augmentation"
     }
   ],
   "entityType": "Class",
@@ -36,6 +52,34 @@
       {
         "id": "urn:ngm:class:tool-use",
         "label": "Tool Use Block"
+      },
+      {
+        "id": "urn:ngm:class:tool-definition",
+        "label": "Tool Choice Parameter"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use Block"
+      },
+      {
+        "id": "urn:ngm:class:tool-result-block",
+        "label": "Tool Result Block"
+      },
+      {
+        "id": "urn:ngm:class:function-registry",
+        "label": "Function Registry"
+      },
+      {
+        "id": "urn:ngm:class:argument-validator",
+        "label": "Argument Validator"
+      },
+      {
+        "id": "urn:ngm:class:tool-executor",
+        "label": "Tool Executor"
+      },
+      {
+        "id": "urn:ngm:class:conversation-loop",
+        "label": "Conversation Loop"
       }
     ],
     "requires": [
@@ -50,6 +94,26 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:conversation-context",
+        "label": "Conversation Context"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-application-platform",
+        "label": "Application Runtime"
+      },
+      {
+        "id": "urn:ngm:class:tool-implementation",
+        "label": "Tool Implementation"
+      },
+      {
+        "id": "urn:ngm:class:argument-parser",
+        "label": "Argument Parser"
       }
     ],
     "enables": [
@@ -80,9 +144,46 @@
       {
         "id": "urn:ngm:class:tool-augmented-reasoning",
         "label": "Tool-Augmented Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:code-execution",
+        "label": "Code Execution by LLMs"
+      },
+      {
+        "id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation by LLMs"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use Agents"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:json-schema-specification",
+        "label": "JSON Schema Specification"
+      },
+      {
+        "id": "urn:ngm:class:tokenizer-special-tokens",
+        "label": "Tokenizer Special Tokens"
+      },
+      {
+        "id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:plan-and-execute-pattern",
@@ -95,9 +196,46 @@
       {
         "id": "urn:ngm:class:structured-output",
         "label": "Structured Outputs Strict Mode"
+      },
+      {
+        "id": "urn:ngm:class:toolformer-paradigm",
+        "label": "Toolformer Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:parallel-tool-calls",
+        "label": "Parallel Tool Calls"
+      },
+      {
+        "id": "urn:ngm:class:structured-output",
+        "label": "Structured Outputs Strict Mode"
+      },
+      {
+        "id": "urn:ngm:class:streaming-tool-calls",
+        "label": "Streaming Tool Calls"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:structured-output",
+        "label": "Structured Output Generation"
+      },
+      {
+        "id": "urn:ngm:class:direct-api-integration",
+        "label": "Direct API Integration"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:hard-coded-workflow-automation",
+        "label": "Hard-Coded Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:pure-text-completion",
+        "label": "Pure Text Completion"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -115,6 +253,14 @@
       {
         "id": "urn:ngm:class:server-sent-events",
         "label": "Server-Sent Events"
+      },
+      {
+        "id": "urn:ngm:class:pydantic-models",
+        "label": "Pydantic Models"
+      },
+      {
+        "id": "urn:ngm:class:special-tokens",
+        "label": "Special Tokens"
       }
     ],
     "supports": [
@@ -141,6 +287,22 @@
       {
         "id": "urn:ngm:class:workflow-orchestration",
         "label": "Workflow Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation Agents"
+      },
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis Agents"
+      },
+      {
+        "id": "urn:ngm:class:personal-assistance",
+        "label": "Personal AI Assistants"
+      },
+      {
+        "id": "urn:ngm:class:scientific-discovery",
+        "label": "Scientific Discovery Agents"
       }
     ],
     "standardizedBy": [
@@ -167,6 +329,26 @@
       {
         "id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "OpenAI Function Calling API"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Anthropic Tool Use API"
+      },
+      {
+        "id": "urn:ngm:class:google-ai-technology-corporation-gemini",
+        "label": "Google Gemini Function Declarations"
+      },
+      {
+        "id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI 3.1"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema Draft 2020-12"
       }
     ],
     "partOf": [],
@@ -176,7 +358,7 @@
         "label": "Agent-to-Agent Protocol"
       },
       {
-        "id": "urn:ngm:class:chain-of-thought-prompting",
+        "id": "urn:ngm:class:chain-of-thought",
         "label": "Chain-of-Thought Prompting"
       },
       {
@@ -198,6 +380,10 @@
       {
         "id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:code-execution",
+        "label": "Code Interpreter"
       }
     ]
   },
@@ -259,12 +445,20 @@
         "label": "Action Space"
       },
       {
+        "id": "urn:ngm:class:api-access",
+        "label": "API Access"
+      },
+      {
         "id": "urn:ngm:class:authentication-system",
         "label": "Authentication System"
       },
       {
         "id": "urn:ngm:class:environment-model",
         "label": "Environment Model"
+      },
+      {
+        "id": "urn:ngm:class:resource-budget",
+        "label": "Resource Budget"
       },
       {
         "id": "urn:ngm:class:reward-function",
@@ -275,16 +469,8 @@
         "label": "Sensor Input"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:orchestration-layer",
+        "label": "Orchestration Layer"
       }
     ],
     "enables": [
@@ -301,24 +487,58 @@
         "label": "Code Generation"
       },
       {
+        "id": "urn:ngm:class:database-interaction",
+        "label": "Database Interaction"
+      },
+      {
         "id": "urn:ngm:class:file-system",
         "label": "File System Access"
+      },
+      {
+        "id": "urn:ngm:class:goal-achievement",
+        "label": "Goal Achievement"
       },
       {
         "id": "urn:ngm:class:multi-agent-coordination",
         "label": "Multi-Agent Coordination"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inference-time-computation",
+        "label": "Inference-Time Computation"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
       }
     ],
     "implements": [
@@ -343,6 +563,10 @@
         "label": "Meta-Learning"
       },
       {
+        "id": "urn:ngm:class:planning-algorithm",
+        "label": "Planning Algorithm"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
@@ -351,7 +575,87 @@
         "label": "Transfer Learning"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-economic-agent",
+        "label": "Autonomous Economic Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-trading-bot",
+        "label": "Bitcoin Trading Bot"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
     "uses": [
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:regular-expression",
+        "label": "Regular Expression"
+      },
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
@@ -359,6 +663,46 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Data Extraction"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [
@@ -375,24 +719,24 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:react-prompting",
+        "label": "ReAct Prompting"
       },
       {
-        "id": "urn:ngm:class:ai-agent-system",
-        "label": "AI Agent System"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
+        "id": "urn:ngm:class:openai-research-organisation-api",
+        "label": "OpenAI API"
       }
     ]
   },

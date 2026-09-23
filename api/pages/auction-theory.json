@@ -20,6 +20,18 @@
       {
         "id": "urn:ngm:class:dutch-auction",
         "label": "Dutch Auction"
+      },
+      {
+        "id": "urn:ngm:class:english-auction",
+        "label": "English Auction"
+      },
+      {
+        "id": "urn:ngm:class:vickrey-auction",
+        "label": "Vickrey Auction"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-auction",
+        "label": "Combinatorial Auction"
       }
     ],
     "requires": [
@@ -48,6 +60,10 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:spectrum-auction",
+        "label": "Spectrum Auction"
       }
     ],
     "dependsOn": [
@@ -65,6 +81,10 @@
       {
         "id": "urn:ngm:class:negotiation",
         "label": "Negotiation"
+      },
+      {
+        "id": "urn:ngm:class:posted-price-mechanism",
+        "label": "Posted Price Mechanism"
       }
     ],
     "bridgesTo": [
@@ -73,7 +93,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -119,6 +139,14 @@
       {
         "id": "urn:ngm:class:optimal-control",
         "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:revenue-equivalence-theorem",
+        "label": "Revenue Equivalence Theorem"
+      },
+      {
+        "id": "urn:ngm:class:myerson-optimal-auction",
+        "label": "Myerson Optimal Auction"
       }
     ]
   },
@@ -139,6 +167,10 @@
       {
         "id": "urn:ngm:class:cooperative-game-theory",
         "label": "Cooperative Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-game-theory",
+        "label": "Evolutionary Game Theory"
       },
       {
         "id": "urn:ngm:class:mechanism-design",
@@ -163,13 +195,13 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:rational-agency",
+        "label": "Rational Agency"
+      },
       {
         "id": "urn:ngm:class:utility-theory",
         "label": "Utility Theory"
@@ -239,6 +271,18 @@
       {
         "id": "urn:ngm:class:swarm-intelligence",
         "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "supports": [

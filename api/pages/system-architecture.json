@@ -135,6 +135,10 @@
       {
         "id": "urn:ngm:class:security-architecture",
         "label": "Security Architecture"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
       }
     ]
   },

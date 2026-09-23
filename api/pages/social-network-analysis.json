@@ -119,6 +119,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:centrality-measure",
+        "label": "Centrality Measure"
+      },
+      {
         "id": "urn:ngm:class:community-detection",
         "label": "Community Detection"
       },
@@ -135,20 +139,16 @@
         "label": "Graph Traversal"
       },
       {
+        "id": "urn:ngm:class:graph-colouring",
+        "label": "Graph Colouring"
+      },
+      {
         "id": "urn:ngm:class:path-planning",
         "label": "Shortest Path"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:tree",
+        "label": "Tree"
       }
     ],
     "requires": [
@@ -255,6 +255,18 @@
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-domain",
+        "label": "Distributed Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -315,7 +327,7 @@
         "label": "Linked Data"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

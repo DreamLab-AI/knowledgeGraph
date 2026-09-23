@@ -82,10 +82,19 @@
       {
         "id": "urn:ngm:class:software-defined-networking",
         "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:grid-infrastructure",
+        "label": "Power Grid Infrastructure"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:terrestrial-broadcast",
+        "label": "Terrestrial Broadcast"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:edge-ai",
@@ -103,7 +112,7 @@
         "label": "Latency Management Protocol"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -138,6 +147,10 @@
       {
         "id": "urn:ngm:class:open-ran",
         "label": "Open RAN"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualisation"
       }
     ]
   },
@@ -151,12 +164,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -265,7 +278,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

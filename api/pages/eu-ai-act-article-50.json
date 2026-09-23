@@ -89,6 +89,10 @@
         "label": "EU AI Office"
       },
       {
+        "id": "urn:ngm:class:ai-regulatory-sandbox",
+        "label": "AI Regulatory Sandbox"
+      },
+      {
         "id": "urn:ngm:class:general-purpose-ai-model",
         "label": "General Purpose AI Model"
       },
@@ -111,10 +115,6 @@
       {
         "id": "urn:ngm:class:ai-fairness",
         "label": "AI Fairness"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
       }
     ],
     "requires": [
@@ -131,6 +131,10 @@
         "label": "Notified Body"
       },
       {
+        "id": "urn:ngm:class:post-market-monitoring",
+        "label": "Post-Market Monitoring"
+      },
+      {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       },
@@ -145,16 +149,16 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-governance-framework",
         "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -179,16 +183,20 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:new-legislative-framework",
+        "label": "New Legislative Framework"
+      },
+      {
+        "id": "urn:ngm:class:product-safety-regulation",
+        "label": "Product Safety Regulation"
       }
     ],
     "implements": [
@@ -203,12 +211,24 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:self-regulatory-approach",
+        "label": "Self-Regulatory Approach"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-regulatory-approach",
+        "label": "UK AI Regulatory Approach"
+      },
+      {
         "id": "urn:ngm:class:us-ai-executive-order",
         "label": "US AI Executive Order"
       },
       {
         "id": "urn:ngm:class:ai-self-regulation",
         "label": "AI Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-ai-commitments",
+        "label": "Voluntary AI Commitments"
       }
     ],
     "bridgesTo": [
@@ -235,9 +255,21 @@
       {
         "id": "urn:ngm:class:product-liability",
         "label": "Product Liability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:audit-and-certification",
+        "label": "Audit and Certification"
+      },
       {
         "id": "urn:ngm:class:impact-assessment",
         "label": "Impact Assessment"
@@ -266,6 +298,10 @@
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:council-of-the-european-union",
+        "label": "Council of the European Union"
+      },
       {
         "id": "urn:ngm:class:european-commission",
         "label": "European Commission"
@@ -297,6 +333,10 @@
         "label": "AI Governance"
       },
       {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
       },
@@ -305,20 +345,16 @@
         "label": "Brussels Effect"
       },
       {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
         "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
-      },
-      {
-        "id": "urn:ngm:class:gdpr",
-        "label": "GDPR"
-      },
-      {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
       }
     ]
   },

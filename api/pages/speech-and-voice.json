@@ -14,6 +14,22 @@
     {
       "id": "urn:ngm:class:multimodal-ai-architecture-ai",
       "label": "Multimodal AI"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "id": "urn:ngm:class:audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
     }
   ],
   "entityType": "Class",
@@ -48,6 +64,14 @@
       {
         "id": "urn:ngm:class:text-to-speech",
         "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:speech-enhancement",
+        "label": "Speech Enhancement"
+      },
+      {
+        "id": "urn:ngm:class:prosody-modelling",
+        "label": "Prosody Modelling"
       }
     ],
     "requires": [
@@ -70,6 +94,18 @@
       {
         "id": "urn:ngm:class:streaming-infrastructure",
         "label": "Streaming Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:audio-data",
+        "label": "Audio Data"
+      },
+      {
+        "id": "urn:ngm:class:language-models",
+        "label": "Language Models"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       }
     ],
     "enables": [
@@ -100,9 +136,38 @@
       {
         "id": "urn:ngm:class:real-time-translation",
         "label": "Real-time Translation"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistants",
+        "label": "Voice Assistants"
+      },
+      {
+        "id": "urn:ngm:class:voice-security",
+        "label": "Voice Security"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:linguistics",
+        "label": "Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:state-space-models",
@@ -127,9 +192,26 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:vits",
+        "label": "VITS"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:text-interfaces",
+        "label": "Text Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:visual-ai",
+        "label": "Visual AI"
+      },
+      {
+        "id": "urn:ngm:class:sign-language-processing",
+        "label": "Sign Language Processing"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:audio-processing",
@@ -160,6 +242,10 @@
       {
         "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:rest-apis",
+        "label": "REST APIs"
       }
     ],
     "supports": [
@@ -182,6 +268,10 @@
       {
         "id": "urn:ngm:class:accessibility",
         "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:gaming-ai",
+        "label": "Gaming AI"
       }
     ],
     "standardizedBy": [
@@ -196,6 +286,14 @@
       {
         "id": "urn:ngm:class:w3-c-web-speech-api",
         "label": "W3C Web Speech API"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF WebRTC Standards"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE Audio Standards"
       }
     ],
     "partOf": [],
@@ -215,6 +313,10 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:emotional-ai",
+        "label": "Emotional AI"
       }
     ]
   },
@@ -223,6 +325,31 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:digital-signal-processing",
+      "label": "Digital Signal Processing",
+      "slug": "digital-signal-processing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing",
+      "slug": "signal-processing"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -262,12 +389,36 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:analogue-to-digital-conversion",
+        "label": "Analogue-to-Digital Conversion"
+      },
+      {
+        "id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:nyquist-shannon-sampling-theorem",
+        "label": "Nyquist-Shannon Sampling Theorem"
+      },
+      {
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      },
+      {
+        "id": "urn:ngm:class:spectrogram",
+        "label": "Spectrogram"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       }
     ],
     "enables": [
@@ -284,24 +435,160 @@
         "label": "Text-to-Image"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:nyquist-shannon-sampling-theorem",
+        "label": "Nyquist-Shannon Sampling Theorem"
+      },
+      {
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-state-tracking",
+        "label": "Dialogue State Tracking"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:response-generation",
+        "label": "Response Generation"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:analogue-signal-processing",
+        "label": "Analogue Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:form-based-interface",
+        "label": "Form-Based Interface"
+      },
+      {
+        "id": "urn:ngm:class:scripted-chatbot",
+        "label": "Scripted Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialisation",
+        "label": "Audio Spatialisation"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "uses": [
@@ -320,6 +607,92 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:music-information-retrieval",
+        "label": "Music Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:mpeg-h-audio",
+        "label": "MPEG-H Audio"
+      },
+      {
+        "id": "urn:ngm:class:opus-codec",
+        "label": "Opus Codec"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C Voice Browser Working Group"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multimedia-processing",
+        "label": "Multimedia Processing"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       }
     ],
     "relatedTo": [
@@ -342,6 +715,18 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
       }
     ]
   },

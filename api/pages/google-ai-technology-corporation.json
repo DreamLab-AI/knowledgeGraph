@@ -28,12 +28,20 @@
       {
         "id": "urn:ngm:class:vertex-ai",
         "label": "Vertex AI"
+      },
+      {
+        "id": "urn:ngm:class:google-brain",
+        "label": "Google Brain"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:tensor-processing-unit",
         "label": "Tensor Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Large-Scale Distributed Training"
       },
       {
         "id": "urn:ngm:class:distributed-training",
@@ -48,6 +56,14 @@
       {
         "id": "urn:ngm:class:ai-search",
         "label": "AI-Assisted Search"
+      },
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI-Assisted Search"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-ai-platform",
+        "label": "Enterprise AI Platform"
       }
     ],
     "dependsOn": [
@@ -56,7 +72,7 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -82,6 +98,18 @@
       {
         "id": "urn:ngm:class:meta-ai",
         "label": "Meta AI"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-ai",
+        "label": "Microsoft AI"
+      },
+      {
+        "id": "urn:ngm:class:amazon-web-services-ai",
+        "label": "Amazon Web Services AI"
       }
     ],
     "bridgesTo": [
@@ -92,6 +120,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
       }
     ],
     "uses": [
@@ -110,7 +142,12 @@
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:alphabet-inc",
+        "label": "Alphabet Inc"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:large-language-model",
@@ -202,6 +239,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

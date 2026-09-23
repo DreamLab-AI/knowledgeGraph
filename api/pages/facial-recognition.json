@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:face-detection",
+        "label": "Face Detection"
       }
     ],
     "enables": [
@@ -43,6 +47,10 @@
       {
         "id": "urn:ngm:class:surveillance",
         "label": "Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:border-control",
+        "label": "Border Control"
       }
     ],
     "dependsOn": [],
@@ -55,6 +63,10 @@
       {
         "id": "urn:ngm:class:iris-recognition",
         "label": "Iris Recognition"
+      },
+      {
+        "id": "urn:ngm:class:fingerprint-recognition",
+        "label": "Fingerprint Recognition"
       }
     ],
     "bridgesTo": [
@@ -87,6 +99,14 @@
       {
         "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour Search"
+      },
+      {
+        "id": "urn:ngm:class:face-embedding",
+        "label": "Face Embedding"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
       }
     ],
     "supports": [],
@@ -94,6 +114,10 @@
       {
         "id": "urn:ngm:class:iso-iec-19794",
         "label": "ISO/IEC 19794"
+      },
+      {
+        "id": "urn:ngm:class:nist-frvt",
+        "label": "NIST FRVT"
       }
     ],
     "partOf": [],
@@ -109,6 +133,10 @@
       {
         "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
@@ -203,6 +231,10 @@
         "label": "Robotics Perception"
       },
       {
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
+      },
+      {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
       },
@@ -213,10 +245,46 @@
       {
         "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

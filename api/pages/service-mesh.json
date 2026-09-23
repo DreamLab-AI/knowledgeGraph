@@ -222,6 +222,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:scalable-applications",
+        "label": "Scalable Applications"
+      },
+      {
         "id": "urn:ngm:class:autoscaling",
         "label": "Autoscaling"
       },
@@ -248,10 +252,6 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
       }
     ],
     "dependsOn": [
@@ -480,6 +480,10 @@
         "label": "Microservices Architecture"
       },
       {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
         "id": "urn:ngm:class:security-architecture",
         "label": "Security Architecture"
       },
@@ -490,10 +494,6 @@
       {
         "id": "urn:ngm:class:technical-debt",
         "label": "Technical Debt"
-      },
-      {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
       }
     ]
   },

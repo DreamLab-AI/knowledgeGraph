@@ -54,7 +54,7 @@
         "label": "Smart Contract Platform"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -77,6 +77,14 @@
       {
         "id": "urn:ngm:class:bitcoin-script",
         "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:wasm",
+        "label": "WASM"
+      },
+      {
+        "id": "urn:ngm:class:move-vm",
+        "label": "Move VM"
       }
     ],
     "bridgesTo": [
@@ -123,6 +131,10 @@
       {
         "id": "urn:ngm:class:optimistic-rollup",
         "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Layer 2 Rollup"
       }
     ],
     "standardizedBy": [
@@ -140,6 +152,14 @@
       {
         "id": "urn:ngm:class:vyper",
         "label": "Vyper"
+      },
+      {
+        "id": "urn:ngm:class:evm-object-format",
+        "label": "EVM Object Format"
+      },
+      {
+        "id": "urn:ngm:class:solidity-abi",
+        "label": "Solidity ABI"
       }
     ]
   },
@@ -281,7 +301,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {

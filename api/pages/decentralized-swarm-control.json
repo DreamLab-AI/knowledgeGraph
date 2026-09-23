@@ -14,6 +14,14 @@
     {
       "id": "urn:ngm:class:swarm-robotics",
       "label": "Swarm Robotics"
+    },
+    {
+      "id": "urn:ngm:class:swarm-control",
+      "label": "Swarm Control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
   "entityType": "Class",
@@ -24,6 +32,22 @@
       {
         "id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:local-decision-logic",
+        "label": "Local Decision Logic"
+      },
+      {
+        "id": "urn:ngm:class:neighbourhood-communication",
+        "label": "Neighbourhood Communication"
+      },
+      {
+        "id": "urn:ngm:class:emergent-behavior",
+        "label": "Emergent Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:agent-autonomy",
+        "label": "Agent Autonomy"
       }
     ],
     "requires": [
@@ -34,6 +58,14 @@
       {
         "id": "urn:ngm:class:inter-agent-communication",
         "label": "Inter-Agent Communication"
+      },
+      {
+        "id": "urn:ngm:class:local-sensing",
+        "label": "Local Sensing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-algorithm",
+        "label": "Distributed Algorithm"
       }
     ],
     "enables": [
@@ -48,12 +80,33 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-behaviour",
+        "label": "Adaptive Swarm Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:emergent-task-performance",
+        "label": "Emergent Task Performance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:biologically-inspired-robotics",
+        "label": "Biologically Inspired Robotics"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -62,9 +115,29 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics",
-      "slug": "robotics"
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain",
+      "slug": "robotics-domain"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -112,6 +185,10 @@
         "label": "Distributed Sensing"
       },
       {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
         "id": "urn:ngm:class:actuators",
         "label": "Actuators"
       },
@@ -122,6 +199,14 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
       }
     ],
     "enables": [
@@ -142,6 +227,10 @@
         "label": "Search and Rescue Robotics"
       },
       {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
         "id": "urn:ngm:class:autonomous-manufacturing",
         "label": "Autonomous Manufacturing"
       },
@@ -152,10 +241,6 @@
       {
         "id": "urn:ngm:class:industrial-automation",
         "label": "IndustrialAutomation"
-      },
-      {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
       }
     ],
     "dependsOn": [
@@ -166,6 +251,14 @@
       {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organization"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
       }
     ],
     "implements": [
@@ -186,6 +279,26 @@
       {
         "id": "urn:ngm:class:single-robot-system",
         "label": "Single Robot System"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
@@ -196,6 +309,30 @@
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:subsumption-architecture",
+        "label": "Subsumption Architecture"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
       }
     ],
     "uses": [
@@ -208,12 +345,76 @@
         "label": "Evolutionary Algorithm"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      },
+      {
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       },
       {
         "id": "urn:ngm:class:stigmergy",
         "label": "Stigmergy"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
@@ -240,6 +441,14 @@
       {
         "id": "urn:ngm:class:swarm-intelligence",
         "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },

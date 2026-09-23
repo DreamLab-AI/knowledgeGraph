@@ -8,7 +8,7 @@
   "definition": "A model training pipeline is the orchestrated sequence of stages that transforms raw data into a trained, validated machine-learning model ready for deployment. It typically chains data ingestion and preprocessing, feature engineering, model fitting, hyperparameter tuning and evaluation into a reproducible, automatable workflow. As a backbone of MLOps, the pipeline enforces consistency, versioning and repeatability across training runs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     },
     {
@@ -86,7 +86,7 @@
         "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -103,14 +103,29 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model",
+      "slug": "large-scale-pretrained-foundation-model"
     },
     {
       "id": "urn:ngm:class:neural-network",
@@ -128,6 +143,16 @@
       "slug": "ai-model-architecture"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
+    },
+    {
       "id": "urn:ngm:class:mathematical-foundations",
       "label": "Mathematical Foundations",
       "slug": "mathematical-foundations"
@@ -136,32 +161,17 @@
       "id": "urn:ngm:class:mathematical-science",
       "label": "Mathematical Science",
       "slug": "mathematical-science"
-    },
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
       },
       {
         "id": "urn:ngm:class:supervised-learning",
@@ -190,12 +200,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:optimisation-algorithm",
-        "label": "Optimisation Algorithm"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -214,6 +220,10 @@
         "label": "GPU Cluster"
       },
       {
+        "id": "urn:ngm:class:gpu-clusters",
+        "label": "GPU Clusters"
+      },
+      {
         "id": "urn:ngm:class:optimiser",
         "label": "Optimiser"
       },
@@ -228,6 +238,10 @@
         "label": "Computer Vision"
       },
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
       },
@@ -238,10 +252,6 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
-      },
-      {
-        "id": "urn:ngm:class:recommendation-system",
-        "label": "Recommendation System"
       },
       {
         "id": "urn:ngm:class:alignment",
@@ -262,12 +272,32 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
-      },
-      {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Models"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:numerical-computation",
+        "label": "Numerical Computation"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
       }
     ],
     "implements": [
@@ -306,24 +336,36 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
-      },
-      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
       },
       {
-        "id": "urn:ngm:class:decision-tree",
-        "label": "Decision Tree"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       },
       {
-        "id": "urn:ngm:class:support-vector-machine",
-        "label": "Support Vector Machine"
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
       },
       {
-        "id": "urn:ngm:class:satisfiability",
-        "label": "Satisfiability"
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
       }
     ],
     "bridgesTo": [
@@ -332,12 +374,24 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:smart-grid",
-        "label": "Smart Grid"
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:supply-chain-optimisation",
-        "label": "Supply Chain Optimisation"
+        "id": "urn:ngm:class:blockchain-validation",
+        "label": "Blockchain Validation"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
       {
         "id": "urn:ngm:class:edge-computing",
@@ -346,20 +400,12 @@
       {
         "id": "urn:ngm:class:robotics-perception",
         "label": "Robotics Perception"
-      },
-      {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:gradient-descent",
@@ -368,10 +414,6 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:probabilistic-model",
-        "label": "Probabilistic Model"
       },
       {
         "id": "urn:ngm:class:checkpoints",
@@ -388,20 +430,20 @@
       {
         "id": "urn:ngm:class:flash-attention",
         "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:jax",
+        "label": "JAX"
       }
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
         "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "label": "Decision Support System"
       },
       {
         "id": "urn:ngm:class:agent-frameworks",
@@ -422,17 +464,13 @@
       {
         "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:grok",
+        "label": "Grok"
       }
     ],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:iso-iec-23053-2022",
-        "label": "ISO-IEC 23053 2022"
-      },
-      {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
-      },
       {
         "id": "urn:ngm:class:aisi-frontier-ai-safety-framework",
         "label": "AISI Frontier AI Safety Framework"
@@ -448,9 +486,35 @@
       {
         "id": "urn:ngm:class:scaling-laws",
         "label": "Chinchilla Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
       {
         "id": "urn:ngm:class:artificial-general-intelligence",
         "label": "Artificial General Intelligence"
@@ -474,14 +538,6 @@
       {
         "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Evaluation benchmarks and leaderboards"
-      },
-      {
-        "id": "urn:ngm:class:hardware-and-edge",
-        "label": "Hardware and Edge"
-      },
-      {
-        "id": "urn:ngm:class:ai-application",
-        "label": "AI Application"
       }
     ]
   },

@@ -82,6 +82,10 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-auditing",
+        "label": "Smart Contract Auditing"
       }
     ],
     "uses": [],

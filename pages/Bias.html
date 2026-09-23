@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Bias</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Bias"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Bias"/><meta name="twitter:description" content="Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts."/><meta property="og:description" content="Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts."/><meta property="og:image:alt" content="Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Bias"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Bias"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Bias"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1098"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1098" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Bias</a></div></nav><h1 class="article-title">Bias</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.558Z">23 Sept 2026</time><span>25 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:bias</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Governance-and-Ethics" class="internal">AI Governance and Ethics</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../AI-Risks" class="internal">AI Risks</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Algorithmic-Bias" class="internal">Algorithmic Bias</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Bias-Detection-Methods" class="internal">Bias Detection Methods</a></li><li><a href="../pages/Fairness-Metrics" class="internal">Fairness Metrics</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Bias-Mitigation-Techniques" class="internal">Bias Mitigation Techniques</a></li><li><a href="../pages/Algorithmic-Auditing" class="internal">Algorithmic Auditing</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Data-Governance" class="internal">Data Governance</a></li><li><a href="../pages/Human-Rights" class="internal">Human Rights</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/AI-Fairness" class="internal">AI Fairness</a></li><li><a href="../pages/Algorithmic-Fairness" class="internal">Algorithmic Fairness</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Training-Data" class="internal">Training Data</a></li><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0066</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../confusion-matrices" class="internal">confusion matrices</a></li><li><a href="../gdpr-general-data-protection-regulation" class="internal">GDPR (General Data Protection Regulation)</a></li><li><a href="../ieee-institute-of-electrical-and-electronics-engineers" class="internal">IEEE (Institute of Electrical and Electronics Engineers)</a></li><li><a href="../iso-international-organization-for-standardization" class="internal">ISO (International Organization for Standardization)</a></li><li><a href="../nist-national-institute-of-standards-and-technology" class="internal">NIST (National Institute of Standards and Technology)</a></li><li><a href="../ai-risks" class="internal">AI Risks</a></li><li><a href="../artificial-intelligence" class="internal">ArtificialIntelligenceDomain</a></li><li><a href="../bias-in-large-language-models" class="internal">Bias in Large Language Models</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../eu-ai-act" class="internal">EU AI Act</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../safety-and-alignment" class="internal">Safety and alignment</a></li><li><a href="../update-cycle" class="internal">Update Cycle</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:6d07f2c4186c2e4e8a343c7acba998bb60e74f4178b09ee26578dde6b073b4c2</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../Bias-in-Large-Language-Models" class="internal">Bias in Large Language Models</a></li><li><a href="../AI-Risks" class="internal">AI Risks</a></li><li><a href="../pages/Transparency" class="internal">Transparency</a></li><li><a href="../pages/Accountability" class="internal">Accountability</a></li><li><a href="../Safety-and-alignment" class="internal">Safety and alignment</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/EU-AI-Act-Regulatory-Instrument" class="internal">EU AI Act</a></li><li><a href="../pages/NIST-AI-RMF" class="internal">NIST AI RMF</a></li><li><a href="../pages/ISO-IEC-TR-24027" class="internal">ISO-IEC TR 24027</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Confusion-Matrix" class="internal">Confusion Matrices</a></li><li><a href="../pages/Statistical-Testing" class="internal">Statistical Testing</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts.</p>
+<pre><code>- ## Predictive Surveillance
+	- AI systems at the Olympics will also employ predictive surveillance techniques:
+		- **Event Prediction:** Based on collected data, AI can predict potential security threats or incidents. However, these predictions can be problematic due to inherent biases and inaccuracies in the data.
+		- **Bias and Discrimination:** Predictive analytics can lead to discriminatory practices, particularly against individuals based on race, gender, or socio-economic status. The accuracy of these systems is often lower for individuals with darker skin tones, raising concerns about fairness and justice.
+
+- ## Reliability and Bias
+</code></pre>
+</li>
+<li>
+<h1 id="algorithmic-bias-and-variance">Algorithmic Bias and Variance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#algorithmic-bias-and-variance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p>In machine learning, bias and variance represent a trade-off in a model’s ability to generalize.</p>
+</li>
+<li>
+<h3 id="bias-and-fairness">Bias and Fairness<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-and-fairness" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- AI systems are trained on data, and if that data reflects existing societal biases, the AI can perpetuate and even amplify those biases.
+</code></pre>
+</li>
+<li>
+<h1 id="bias-in-large-language-models-llms">Bias in Large Language Models (LLMs)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-in-large-language-models-llms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p>Bias in Large Language Models (LLMs) takes on a critical dimension beyond the traditional machine learning concept of bias. These models aren’t just fitting curves; they’re processing the complexities and prejudices within massive amounts of human language data. Even a statistically “accurate” LLM can reflect the worst of human biases hidden within our own messy, real-world language.</p>
+</li>
+<li>
+<h3 id="economic-exclusion">Economic Exclusion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#economic-exclusion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- The nexus where payments, search, and AI converge marks a transformative period for the internet. The traditional model of free data access and ad-supported revenue is being challenged by AI capabilities necessitating paid data agreements and enhanced monetisation strategies. This evolution impacts everything from user behaviour and regulatory frameworks to financial viability and market competition, signalling a profound shift in the digital ecosystem.
+- AI-driven search engines are changing the fundamental economics of the web. [Search GPT](https://www.brookings.edu/articles/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/), developed by OpenAI, demonstrates this shift, relying less on traditional web crawling and more on curated, formalised partnerships with publishers to avoid legal issues over scraping. The new AI economy is increasingly creating a &quot;two-tier&quot; web, where access to valuable data and knowledge is controlled by those with the capital to enter into such partnerships, as noted by the [Brookings Institution](https://www.brookings.edu/articles/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/).
+	- **Global Accessibility**
+		- Meanwhile, [the International Telecommunication Union](https://www.itu.int/hub/publication/d-ind-idi-2021-01/) has pointed out that these AI tools are inaccessible to regions with weaker infrastructure, worsening digital divides. The burden of high costs and heavy energy use has disproportionately negative effects on developing nations, making AI-powered search a privilege of the wealthy and connected.
+		- [The impact of artificial intelligence on human society and bioethics - PMC (nih.gov)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7605294/)
+	- **Cost and Accessibility Barriers**:
+		- The high energy costs associated with GENAI data centers are passed on to users, making these services less accessible to those in lower-income regions or with limited internet infrastructure.
+		- The economic burden of GENAI adoption can further exacerbate existing digital divides, excluding those who cannot afford the necessary infrastructure or energy costs.
+	- **Alternative Approaches**:
+		- Researchers suggest that more specialized, less carbon-intensive models could be used for specific tasks, [reducing energy consumption](https://www.techtarget.com/sustainability/feature/Generative-AIs-sustainability-problems-explained) and making these tools more accessible to a broader audience.
+		- The only other option is a phase transition to a new internet paradigm, with higher signal to noise, through aligned incentives and cryptographically assured end points.
+</code></pre>
+</li>
+<li>
+<h3 id="bias-and-safety">Bias and Safety<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-and-safety" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- Meta has taken active steps to assess and mitigate potential biases and harmful outputs. This is usually &quot;undone&quot; by the community at some stage for performance gains, raising important questions.
+</code></pre>
+</li>
+<li>
+<p>What used to be called bias whet I was doing postgrad Machine Learning (2020) is now called <a href="../Safety-and-alignment" class="internal alias" data-slug="Safety-and-alignment">Safety and alignment</a>.</p>
+</li>
+<li>
+<p>Bias
+- <a href="https://arxiv.org/abs/2309.17012" class="external">[2309.17012] Benchmarking Cognitive Biases in Large Language Models as Evaluators (arxiv.org)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- <a href="https://en.wikipedia.org/wiki/Confusion_matrix" class="external">[confusion matrices]<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- <a href="https://www.anthropic.com/uk-government-internal-ai-safety-policy-response/responsible-capability-scaling" class="external">Responsible Capability Scaling \ Anthropic<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>This is potentially <a href="https://intelligence.org/2022/06/10/agi-ruin/?" class="external">existentially important<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<pre><code>- ### Ethical Considerations
+</code></pre>
+<ul>
+<li><strong>Bias and Discrimination:</strong> Discusses how AI can inherit and amplify human biases, leading to discriminatory outcomes in areas like hiring, law enforcement, and lending. Explores the ethical implications and the need for fair and transparent algorithms. He’s more cautious about opensource AI than I am.</li>
+<li><strong>First-Order Effects:</strong> Details the direct impacts of AI, such as job displacement and privacy concerns, emphasizing the immediate ethical and societal challenges they present.</li>
+<li><strong>Second-Order Effects:</strong> Societal and institutional changes. Explores how AI’s integration into every facet of life might alter human relationships, governance, and cultural values. Discusses the potential for AI to reshape societal hierarchies, influence global power dynamics, and challenge our notions of autonomy and agency.</li>
+</ul>
+</li>
+<li>
+<h4 id="the-soon-phase">The SOON Phase<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-soon-phase" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<pre><code>- **Digital Literacy, Data Privacy, and Algorithmic Bias** (sorting the data)
+	- Understanding AI and digital technologies for information and service access.
+	- Ensuring privacy and mitigating biases in AI algorithms.
+	- 2-5 years of integration with business processes.
+	- Models start to distribute across cloud and devices to find their correct scale **fit**.
+</code></pre>
+</li>
+<li>
+<h2 id="humans-are-horrible-at-forecasting">Humans are horrible at forecasting.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#humans-are-horrible-at-forecasting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- These are the same biases identified in [Confusion Of Confusions 1688 : Joseph de la Vega](https://archive.org/details/confusion-of-confusions-1688). We are just awful at it.
+	- Authority bias
+	- Recency bias
+	- Impatience and &quot;do something syndrome&quot;
+- ```With so much changing so quickly, we need to take predictions with a grain of salt, but that doesn’t mean we can’t say anything useful about the coming year in AI. To ground ourselves, we can start with two quotes that should inform any estimates about the future. The first is Amara’s Law “We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.” Social change is slower than technological change. We should not expect to see immediate global effects of AI in a major way, no matter how fast its adoption (and it is remarkably fast), yet we certainly will see it sooner than many people think.```
+	- - from [Signs and Portent by Ethan Mollick
+		- [One Useful Thing](https://www.oneusefulthing.org/p/signs-and-portents)
+- [[Knowledge Artefact Update Cycle]] reminder to update this page!
+	- [Roy Amara Oxford Reference](https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed4-00018679)
+	- [AI Index Report 2024 – Artificial Intelligence Index (stanford.edu)](https://aiindex.stanford.edu/report/)
+	- [I. From GPT-4 to AGI: Counting the OOMs - SITUATIONAL AWARENESS (situational-awareness.ai)](https://situational-awareness.ai/from-gpt-4-to-agi/)
+	- ![photo_2024-06-05_08-47-39.jpg](assets/photo_2024-06-05_08-47-39_1717573793476_0.jpg){:width 600}
+</code></pre>
+</li>
+<li>
+<h3 id="bias-and-fairness-1">Bias and Fairness<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-and-fairness-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- AI systems are trained on data, and if that data reflects existing societal biases, the AI can perpetuate and even amplify those biases.
+</code></pre>
+</li>
+<li>
+<h1 id="bias-in-large-language-models-llms-1">Bias in Large Language Models (LLMs)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-in-large-language-models-llms-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p>Bias in Large Language Models (LLMs) takes on a critical dimension beyond the traditional machine learning concept of bias. These models aren’t just fitting curves; they’re processing the complexities and prejudices within massive amounts of human language data. Even a statistically “accurate” LLM can reflect the worst of human biases hidden within our own messy, real-world language.</p>
+</li>
+<li>
+<p><strong>Associations:</strong> Models learn by statistical patterns. “If X then often Y” can replicate prejudices even if ‘X’ is a demographic and ‘Y’ is a negative or limiting assumption.</p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/1607.06520" class="external">Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>It’s not about elimination:</strong> Creating perfectly unbiased language models is unlikely. The focus is on:</p>
+</li>
+<li>
+<p><strong>Identifying bias:</strong> Thorough testing across diverse demographics is crucial.</p>
+</li>
+<li>
+<p><strong>Mitigation:</strong> De-biasing techniques, more representative training data, etc., can reduce harmful outputs.</p>
+</li>
+<li>
+<p><strong>Responsible use:</strong> Recognizing the potential for bias means we, as users, must stay critical, especially in sensitive areas.
+{{twitter <a href="https://twitter.com/bindureddy/status/1760343060985340368%7D%7D" class="external">https://twitter.com/bindureddy/status/1760343060985340368}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://twitter.com/IMAO_/status/1760093853430710557" class="external">twitter link to the render loading below<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+{{twitter <a href="https://twitter.com/IMAO_/status/1760093853430710557%7D%7D" class="external">https://twitter.com/IMAO_/status/1760093853430710557}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>Cultural Homogenization and Technology</strong>: Fairweather and Rogerson (2003) discuss the implications of global cultural homogenization in a technologically dependent world, examining how information and communication technologies contribute to this process <a href="https://consensus.app/papers/problems-homogenisation-technologically-world-fairweather/906e1d758b775c2a963acc4d52438a94/?utm_source=chatgpt" class="external">(Fairweather &amp; Rogerson, 2003)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+</li>
+<li>
+<p><strong>Cultural Consequences of Globalization</strong>: Holton (2000) analyzes cultural consequences of globalization, discussing homogenization, polarization, and hybridization theses. The study suggests that global culture is not becoming entirely standardized around Western patterns, highlighting cultural alternatives and resistance <a href="https://consensus.app/papers/globalizations-cultural-consequences-holton/ecdfbc4c728d55378e11dd54e01fe806/?utm_source=chatgpt" class="external">(Holton, 2000)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+</li>
+<li>
+<p><a href="https://www.amazon.com/Filterworld-How-Algorithms-Flattened-Culture/dp/0385548281" class="external">Filterworld: How Algorithms Flattened Culture: Chayka, Kyle: 9780385548281: Amazon.com: Books<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<h3 id="economic-exclusion-1">Economic Exclusion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#economic-exclusion-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- The nexus where payments, search, and AI converge marks a transformative period for the internet. The traditional model of free data access and ad-supported revenue is being challenged by AI capabilities necessitating paid data agreements and enhanced monetisation strategies. This evolution impacts everything from user behaviour and regulatory frameworks to financial viability and market competition, signalling a profound shift in the digital ecosystem.
+- AI-driven search engines are changing the fundamental economics of the web. [Search GPT](https://www.brookings.edu/articles/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/), developed by OpenAI, demonstrates this shift, relying less on traditional web crawling and more on curated, formalised partnerships with publishers to avoid legal issues over scraping. The new AI economy is increasingly creating a &quot;two-tier&quot; web, where access to valuable data and knowledge is controlled by those with the capital to enter into such partnerships, as noted by the [Brookings Institution](https://www.brookings.edu/articles/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/).
+	- **Global Accessibility**
+		- Meanwhile, [the International Telecommunication Union](https://www.itu.int/hub/publication/d-ind-idi-2021-01/) has pointed out that these AI tools are inaccessible to regions with weaker infrastructure, worsening digital divides. The burden of high costs and heavy energy use has disproportionately negative effects on developing nations, making AI-powered search a privilege of the wealthy and connected.
+		- [The impact of artificial intelligence on human society and bioethics - PMC (nih.gov)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7605294/)
+	- **Cost and Accessibility Barriers**:
+		- The high energy costs associated with GENAI data centers are passed on to users, making these services less accessible to those in lower-income regions or with limited internet infrastructure.
+	- The transition from free data access to paid partnerships reflects a deeper change in economic models within the digital landscape. OpenAI's partnerships with major publishers for Search GPT indicate a movement towards a more closed, monetised web. These partnerships enable OpenAI to offer its AI-driven services legally and more sustainably, albeit at a higher operational cost, potentially offset by future advertising revenues or subscription models.
+</code></pre>
+</li>
+<li>
+<h3 id="bias-and-safety-1">Bias and Safety<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-and-safety-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- Meta has taken active steps to assess and mitigate potential biases and harmful outputs. This is usually &quot;undone&quot; by the community at some stage for performance gains, raising important questions.
+</code></pre>
+</li>
+<li>
+<h1 id="a-look-at-2023">A look at 2023<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-look-at-2023" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<iframe src="https://spectrum.ieee.org/ai-index-2024" style="width:100%;height:600px;"></iframe>
+		- Authority bias
+		- Recency bias
+		- Impatience and &quot;do something syndrome&quot;
+		- - from [Signs and Portent by Ethan Mollick
+</li>
+<li>
+<h3 id="bias-and-fairness-2">Bias and Fairness<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-and-fairness-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- AI systems are trained on data, and if that data reflects existing societal biases, the AI can perpetuate and even amplify those biases.
+</code></pre>
+</li>
+<li>
+<h3 id="bias-and-safety-2">Bias and Safety<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-and-safety-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- Meta has taken active steps to assess and mitigate potential biases and harmful outputs. This is usually &quot;undone&quot; by the community at some stage for performance gains, raising important questions.
+</code></pre>
+</li>
+<li>
+<h3 id="bias-and-fairness-3">Bias and Fairness<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-and-fairness-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- AI systems are trained on data, and if that data reflects existing societal biases, the AI can perpetuate and even amplify those biases.
+- **The increasing integration of AI into our daily lives.**
+</code></pre>
+</li>
+<li>
+<p><a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a></p>
+</li>
+<li>
+<h2 id="bias-in-images">Bias in images<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-in-images" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Bias is really hard, and the current tools are blunt.</p>
+</li>
+<li>
+<p><a href="https://twitter.com/bindureddy/status/1760343060985340368" class="external">twitter link to the render loading below<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+{{twitter <a href="https://twitter.com/bindureddy/status/1760343060985340368%7D%7D" class="external">https://twitter.com/bindureddy/status/1760343060985340368}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://twitter.com/IMAO_/status/1760093853430710557" class="external">twitter link to the render loading below<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+{{twitter <a href="https://twitter.com/IMAO_/status/1760093853430710557%7D%7D" class="external">https://twitter.com/IMAO_/status/1760093853430710557}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<h2 id="addressing-the-problem">Addressing the problem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#addressing-the-problem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>It’s not about elimination:</strong> Creating perfectly unbiased language models is unlikely. The focus is on:</p>
+</li>
+<li>
+<p><strong>Identifying bias:</strong> Thorough testing across diverse demographics is crucial.</p>
+</li>
+<li>
+<p><strong>Mitigation:</strong> De-biasing techniques, more representative training data, etc., can reduce harmful outputs.</p>
+</li>
+<li>
+<p><strong>Responsible use:</strong> Recognizing the potential for bias means we, as users, must stay critical, especially in sensitive areas.</p>
+</li>
+<li>
+<h2 id="consequences-of-llm-bias">Consequences of LLM bias<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#consequences-of-llm-bias" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Perpetuation of stereotypes:</strong> When biased language is generated, it amplifies harmful misconceptions that already exist in society, harming marginalized groups.</p>
+</li>
+<li>
+<p><strong>Algorithmic decision-making:</strong> If LLMs are used in areas like hiring or risk assessment, bias can translate into real-world discrimination.</p>
+</li>
+<li>
+<h2 id="see-also">See Also<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#see-also" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><a href="../AI-Risks" class="internal alias" data-slug="AI-Risks">AI Risks</a></p>
+</li>
+<li>
+<p><a href="../Bias-in-Large-Language-Models" class="internal alias" data-slug="Bias-in-Large-Language-Models">Bias in Large Language Models</a></p>
+</li>
+<li>
+<p><a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a></p>
+</li>
+<li>
+<p><a href="../pages/Machine-Learning-Discipline" class="internal alias" data-slug="pages/Machine-Learning-Discipline">Machine Learning Discipline</a></p>
+</li>
+<li>
+<p><a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a></p>
+</li>
+<li>
+<h2 id="bias-and-discrimination">Bias and Discrimination<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bias-and-discrimination" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>AI systems can perpetuate and even amplify existing societal biases present in their training data. This can lead to discriminatory outcomes in areas like hiring, loan applications, and criminal justice. This is a huge and potentially unsolvable problem at scale. You can actually revert to using bias and very quickly get to a terrifying outcome if you simply cast AI as a near ubiquitous data helper, that carries racism and sexism very deep inside. This already is an existential risk to people suffering wrongful prosecution.</p>
+</li>
+</ul>
+<h2 id="formal-specification">Formal Specification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-specification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">term</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Bias</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">definition</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;Systematic deviation from fairness or expected outcomes in AI systems&quot;</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">domain</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">AI Ethics and Quality</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">System Property (undesirable)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">categories</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">data_bias</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">algorithmic_bias</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">interaction_bias</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">systemic_bias</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">sources</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">historical_data</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">measurement_error</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">sampling_issues</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">proxy_variables</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">feedback_loops</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">impact</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">unfairness</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">discrimination</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">reduced_accuracy</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">harm</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span></code></pre></figure>
+<h2 id="formal-ontology">Formal Ontology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-ontology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="key-characteristics">Key Characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<h3 id="types-of-bias-by-source">Types of Bias by Source<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#types-of-bias-by-source" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>    #### 1. Data Bias
+
+    **Historical Bias**
+    - **Definition**: Bias in data reflecting past societal prejudices
+    - **Example**: Historical hiring data showing gender imbalance in tech
+    - **Cause**: Systemic discrimination in the real world
+    - **Mitigation**: Cannot be solved by sampling alone; requires awareness
+
+    **Representation Bias**
+    - **Definition**: Underrepresentation or overrepresentation of populations
+    - **Example**: Facial recognition trained mostly on light-skinned faces
+    - **Cause**: Sampling from non-representative population
+    - **Mitigation**: Stratified sampling, data augmentation
+
+    **Measurement Bias**
+    - **Definition**: Systematic error in how features are measured
+    - **Example**: Self-reported data with social desirability bias
+    - **Cause**: Imperfect proxies, measurement tools
+    - **Mitigation**: Improved measurement, multiple indicators
+
+    **Aggregation Bias**
+    - **Definition**: Inappropriate combination of data from different groups
+    - **Example**: Diabetes model combining all ages (different physiology)
+    - **Cause**: One-size-fits-all approach to heterogeneous populations
+    - **Mitigation**: Stratified models, personalization
+
+    **Labeling Bias**
+    - **Definition**: Systematic errors in ground truth labels
+    - **Example**: Biased human annotators labeling training data
+    - **Cause**: Annotator prejudices, unclear guidelines
+    - **Mitigation**: Multiple annotators, bias training, clear guidelines
+
+    #### 2. Algorithmic Bias
+
+    **Selection Bias**
+    - **Definition**: Bias from selecting features or data
+    - **Example**: Using zip code (proxy for race) in credit scoring
+    - **Cause**: Feature engineering choices
+    - **Mitigation**: Careful feature selection, remove proxies
+
+    **Optimization Bias**
+    - **Definition**: Bias from objective function design
+    - **Example**: Optimizing for average accuracy (ignoring minorities)
+    - **Cause**: Objective function doesn't include fairness
+    - **Mitigation**: Fairness-aware objectives, constrained optimization
+
+    **Evaluation Bias**
+    - **Definition**: Bias in how model is evaluated
+    - **Example**: Testing on unrepresentative data
+    - **Cause**: Inappropriate benchmarks, biased test sets
+    - **Mitigation**: Diverse evaluation data, fairness metrics
+
+    **Inductive Bias**
+    - **Definition**: Assumptions built into learning algorithm
+    - **Example**: Linear models assuming linear relationships
+    - **Cause**: Model architecture choices
+    - **Impact**: May be beneficial (enables generalization) or harmful
+
+    #### 3. Interaction Bias
+
+    **User Interaction Bias**
+    - **Definition**: Bias introduced through user interactions
+    - **Example**: Microsoft Tay chatbot learning offensive language
+    - **Cause**: Users gaming or poisoning system
+    - **Mitigation**: Content filtering, rate limiting, human oversight
+
+    **Automation Bias**
+    - **Definition**: Over-reliance on automated decisions
+    - **Example**: Judges adopting risk scores without scrutiny
+    - **Cause**: Human deferral to algorithmic authority
+    - **Mitigation**: Training, appropriate skepticism, human oversight
+
+    **Presentation Bias**
+    - **Definition**: Bias from how results are displayed
+    - **Example**: Ranking bias in search results
+    - **Cause**: UI/UX design choices
+    - **Mitigation**: Randomization, awareness of defaults
+
+    #### 4. Systemic Bias
+
+    **Feedback Loop Bias**
+    - **Definition**: System reinforces its own biases over time
+    - **Example**: Predictive policing → more arrests → training data bias
+    - **Cause**: Circular causality, self-fulfilling prophecies
+    - **Mitigation**: Break feedback loops, diverse data sources
+
+    **Deployment Bias**
+    - **Definition**: Mismatch between development and deployment contexts
+    - **Example**: Model trained in one country deployed in another
+    - **Cause**: Distribution shift, population differences
+    - **Mitigation**: Context-specific validation, localization
+
+    ## Bias Detection Methods
+
+    ### Statistical Testing
+
+    1. **Disparate Impact Analysis**
+       ```python
+       # Four-fifths rule
+       disparate_impact = (positive_rate_protected /
+                          positive_rate_reference)
+       # DI &lt; 0.8 suggests bias
+       ```
+
+    2. **Fairness Metrics**
+       - Demographic parity difference
+       - Equalized odds difference
+       - See Fairness (AI-0066) for comprehensive metrics
+
+    3. **Subgroup Analysis**
+       - Performance across demographics
+       - Error rate disparities
+       - Calibration across groups
+
+    ### Model Inspection
+
+    1. **Feature Importance Analysis**
+       - Identify proxy variables
+       - Correlation with protected attributes
+       - Causal pathways
+
+    2. **Residual Analysis**
+       - Unexplained variance by group
+       - Systematic prediction errors
+
+    3. **Counterfactual Testing**
+       - Change protected attribute, observe output
+       - Measure sensitivity to demographics
+
+    ### Data Auditing
+
+    1. **Representation Analysis**
+       - Distribution across groups
+       - Sample sizes
+       - Coverage gaps
+
+    2. **Label Distribution**
+       - Class balance across demographics
+       - Labeling consistency
+       - Annotator agreement by subgroup
+
+    ## Bias Mitigation Strategies
+
+    ### Pre-Processing (Data)
+
+    1. **Re-sampling**
+       - Balance representation
+       - Oversample minorities
+       - Undersample majorities
+
+    2. **Re-weighting**
+       - Instance-level weights
+       - Inverse probability weighting
+       - Fairness-aware sampling
+
+    3. **Data Augmentation**
+       - Synthetic minority samples (SMOTE)
+       - Generative models
+       - Perturbations
+
+    4. **Fair Representation Learning**
+       - Learn unbiased encodings
+       - Adversarial debiasing
+       - Remove protected information
+
+    ### In-Processing (Algorithm)
+
+    1. **Fairness Constraints**
+       - Add to optimization
+       - Constrained learning
+       - Multi-objective optimization
+
+    2. **Adversarial Debiasing**
+       - GAN-style debiasing
+       - Predictor cannot use protected attributes
+       - Invariant representations
+
+    3. **Regularization**
+       - Fairness penalty terms
+       - Prejudice remover
+       - Calibrated equalized odds
+
+    ### Post-Processing (Output)
+
+    1. **Threshold Optimization**
+       - Group-specific thresholds
+       - ROC curve adjustment
+       - Achieve desired fairness metric
+
+    2. **Calibration**
+       - Platt scaling by group
+       - Isotonic regression
+       - Probability adjustment
+
+    3. **Output Modification**
+       - Reject option classification
+       - Preferential treatment
+       - Quota-based selection
+
+    ## Relationships
+
+    - **Opposed To**: Fairness (AI-0065)
+    - **Leads To**: Harmful Bias (AI-0084), Discrimination
+    - **Component Of**: AI Risk (AI-0077)
+    - **Addressed By**: Bias Mitigation, Fairness-Aware ML
+    - **Related To**: Transparency (AI-0062), Accountability (AI-0068)
+
+    ## Domain-Specific Bias
+
+    ### Healthcare
+
+    **Example**: Pulse oximeter bias
+    - Less accurate for darker skin tones
+    - Historical focus on lighter-skinned patients in development
+    - **Impact**: Misdiagnosis, unequal care
+
+    **Example**: Diagnostic algorithm bias
+    - Trained on non-diverse patient populations
+    - Different disease presentation by demographics
+    - **Impact**: Missed diagnoses in minorities
+
+    ### Criminal Justice
+
+    **Example**: COMPAS recidivism prediction
+    - Higher false positive rate for Black defendants
+    - Historical bias in arrest data
+    - **Impact**: Unjust sentencing recommendations
+
+    ### Employment
+
+    **Example**: Amazon hiring algorithm
+    - Penalized resumes with &quot;women's&quot; keywords
+    - Trained on historical (male-dominated) hiring
+    - **Impact**: Discrimination in recruitment
+
+    ### Finance
+
+    **Example**: Credit scoring bias
+    - Proxy variables (zip code) encode race
+    - Historical lending discrimination in data
+    - **Impact**: Unequal access to credit
+
+    ## Intersectionality and Compound Bias
+
+    ### Intersectional Bias
+
+    - Bias affecting individuals with multiple protected attributes
+    - **Example**: Black women face unique bias not captured by race or gender alone
+    - **Challenge**: Small sample sizes at intersections
+    - **Approach**: Intersectional fairness metrics, subgroup analysis
+
+    ### Compound Effects
+
+    - Multiple bias sources combining
+    - **Example**: Historical bias + representation bias + automation bias
+    - **Impact**: Amplified discrimination
+    - **Mitigation**: Holistic approach addressing all sources
+
+    ## Harmful vs. Benign Bias
+
+    ### Potentially Harmful Bias
+
+    - Leads to discrimination
+    - Violates rights or dignity
+    - Causes material harm
+    - **Example**: Loan denial based on protected characteristics
+
+    ### Benign Bias
+
+    - Inductive bias enabling learning
+    - Domain knowledge incorporation
+    - **Example**: Assuming spatial locality in image processing
+
+    **Key**: Context determines whether bias is harmful
+
+    ## Regulatory and Legal Context
+
+    ### EU AI Act
+
+    **Article 10(2): Bias Mitigation Requirements**
+    - Examine possible biases
+    - Appropriate data governance measures
+    - Ensure training datasets free from bias
+
+    ### GDPR
+
+    **Recital 71**: Protection against discriminatory effects
+    - Prevent discrimination based on protected characteristics
+
+    ### US Civil Rights Laws
+
+    - Title VII (Employment)
+    - Fair Housing Act
+    - Equal Credit Opportunity Act
+    - **Standard**: Disparate impact doctrine
+
+    ## Challenges in Addressing Bias
+
+    ### Technical Challenges
+
+    1. **Trade-offs**
+       - Fairness vs. accuracy
+       - Individual vs. group fairness
+       - Multiple fairness definitions incompatible
+
+    2. **Measurement**
+       - Protected attributes not available
+       - Proxy variable identification
+       - Statistical significance with small samples
+
+    3. **Causality**
+       - Distinguishing causation from correlation
+       - Identifying legitimate vs. illegitimate factors
+       - Confounding variables
+
+    ### Social Challenges
+
+    1. **Defining &quot;Fairness&quot;**
+       - No universal definition
+       - Cultural variations
+       - Stakeholder disagreement
+
+    2. **Conflicting Interests**
+       - Accuracy vs. equity
+       - Privacy vs. bias detection (need demographics)
+       - Individual vs. collective fairness
+
+    3. **Unintended Consequences**
+       - Well-intentioned fixes cause new problems
+       - Gaming of fairness measures
+       - Perverse incentives
+
+    ## Best Practices
+
+    1. **Bias Awareness from Design**
+       - Consider bias from project inception
+       - Diverse development teams
+       - Stakeholder engagement
+
+    2. **Comprehensive Bias Auditing**
+       - Test for multiple bias types
+       - Intersectional analysis
+       - Regular monitoring
+
+    3. **Multi-Method Mitigation**
+       - Address bias at all stages (pre, in, post)
+       - Use multiple mitigation techniques
+       - Validate effectiveness
+
+    4. **Documentation and Transparency**
+       - Document bias analysis
+       - Report limitations
+       - Enable external audit
+
+    5. **Human Oversight**
+       - Human-in-the-loop for high-stakes decisions
+       - Appeal mechanisms
+       - Continuous learning from errors
+
+    6. **Context-Specific Approaches**
+       - No one-size-fits-all solution
+       - Domain expertise required
+       - Stakeholder input essential
+
+    ## Tools for Bias Detection and Mitigation
+
+    1. **AI Fairness 360 (IBM)**
+       - Bias metrics and mitigation algorithms
+
+    2. **Fairlearn (Microsoft)**
+       - Fairness assessment and mitigation
+
+    3. **What-If Tool (Google)**
+       - Interactive bias exploration
+
+    4. **Aequitas (U. Chicago)**
+       - Bias auditing framework
+
+    5. **FairML**
+       - Model auditing for bias
+</code></pre>
+<h2 id="2024-2025-fairness-accuracy-trade-offs-and-post-processing-mitigation">2024-2025: Fairness-Accuracy Trade-Offs and Post-Processing Mitigation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2024-2025-fairness-accuracy-trade-offs-and-post-processing-mitigation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The period from 2024 through 2025 witnessed intensified research into bias mitigation techniques, with growing recognition of inherent <strong>fairness-accuracy trade-offs</strong>, proliferation of <strong>post-processing methods</strong>, and broader regulatory mandates requiring systematic bias assessment across AI systems.</p>
+<h3 id="fairness-metrics-standardisation">Fairness Metrics Standardisation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fairness-metrics-standardisation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Demographic parity</strong> ensures selection rates are consistent across different demographic groups, whilst <strong>equalised odds</strong> ensures true positive rate and false positive rate are similar across groups. Recent research established demographic parity, equal opportunity, equalised odds, and causal fairness as core metrics for quantifying and monitoring algorithmic bias.</p>
+<p>However, different fairness metrics frequently <strong>conflict</strong>, making it difficult to optimise for all fairness dimensions simultaneously. The application of bias mitigation approaches often results in a <strong>fairness-accuracy trade-off</strong>, as striving for equitable treatment across groups may reduce overall model accuracy.</p>
+<h3 id="pre-processing-and-post-processing-approaches">Pre-Processing and Post-Processing Approaches<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pre-processing-and-post-processing-approaches" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Pre-processing approaches</strong> gained traction through techniques including oversampling, undersampling, synthetic data generation, data augmentation to increase representation of underrepresented groups, and adversarial debiasing. These methods address bias at the data level before model training.</p>
+<p><strong>Post-processing methods</strong> emerged as particularly valuable for resource-constrained settings, as they are applied at the point of implementation, are less computationally intensive, and do not require re-building or training the model. Research from 2024-2025 demonstrated post-processing methods’ effectiveness across healthcare classification models and other high-stakes domains.</p>
+<h3 id="human-centric-mitigation-frameworks">Human-Centric Mitigation Frameworks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#human-centric-mitigation-frameworks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Mitigating AI bias increasingly required a <strong>human-centric approach</strong>: conducting data audits, re-evaluating algorithms, and grounding decisions in societal contexts. Long-term solutions emphasised continuous monitoring, interdisciplinary collaboration, and aligning AI outcomes with ethical principles and societal wellbeing, moving beyond purely technical solutions to incorporate organisational and social dimensions.</p>
+<h3 id="sensitive-attribute-challenges">Sensitive Attribute Challenges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sensitive-attribute-challenges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Most bias mitigation algorithms require datasets containing <strong>sensitive attribute values</strong> (race, gender, age, etc.). However, a 2025 study revealed that variations in inferred sensitive attribute uncertainty significantly impact bias mitigation algorithm performance, highlighting challenges when protected attributes are not directly available and must be inferred from proxy variables.</p>
+<h3 id="domain-specific-applications">Domain-Specific Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-specific-applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Bias mitigation research expanded across multiple domains in 2024-2025. Healthcare applications focused on electronic health record-based models, recruitment systems emphasised eliminating hiring bias, and criminal justice systems confronted legacy biases in risk assessment tools. Each domain revealed unique bias patterns requiring specialised detection and mitigation strategies.</p>
+<pre><code>    ## Related Terms
+
+    - **Fairness** (AI-0065)
+    - **Harmful Bias** (AI-0084)
+    - **AI Trustworthiness** (AI-0061)
+    - **Accountability** (AI-0068)
+    - **Non-discrimination** (AI-0038)
+    - **Data Quality** (AI-0053)
+
+    ## Version History
+
+    - **1.0** (2025-10-27): Initial definition based on ISO/IEC TR 24027:2021 and NIST AI RMF
+
+    ---
+
+    *This definition provides a comprehensive framework for understanding the multifaceted nature of bias in AI systems and approaches to address it.*
+</code></pre>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Brief contextual overview</li>
+<li>Bias in AI refers to systematic deviations from fairness, objectivity, or expected outcomes, resulting in prejudiced results that favour or disfavour particular groups, individuals, or outcomes</li>
+<li>The phenomenon arises from flaws in data, algorithms, or deployment contexts, and has become a central concern in both technical and ethical AI research</li>
+<li>Key developments and current state
+<ul>
+<li>The field has moved beyond simple definitions to nuanced typologies, including data bias, algorithmic bias, and deployment bias</li>
+<li>There is growing consensus that bias is not a single technical flaw but a multifaceted issue requiring interdisciplinary solutions</li>
+</ul>
+</li>
+<li>Academic foundations
+<ul>
+<li>Rooted in statistics, computer science, and social sciences, with foundational work by scholars such as Buolamwini, Noble, and Mehrabi</li>
+<li>The concept of “algorithmic fairness” has emerged as a key research area, with ongoing debates about how to define and measure fairness</li>
+</ul>
+</li>
+</ul>
+<h2 id="current-landscape-2025">Current Landscape (2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Industry adoption and implementations</li>
+<li>Many organisations now have dedicated AI ethics teams and bias mitigation protocols</li>
+<li>Notable organisations and platforms
+<ul>
+<li>Google, Microsoft, and IBM have developed open-source tools for bias detection and mitigation, such as AI Fairness 360 and Fairlearn</li>
+<li>UK-based companies like Faculty (acquired by Accenture in January 2026) and BenevolentAI have integrated bias audits into their AI development pipelines</li>
+</ul>
+</li>
+<li>UK and North England examples where relevant
+<ul>
+<li>In Manchester, the Alan Turing Institute has partnered with local authorities to audit AI systems used in public services</li>
+<li>Leeds City Council has piloted AI-driven recruitment tools with built-in bias detection, aiming to improve diversity in hiring</li>
+<li>Newcastle University’s Centre for Data Ethics and Innovation has contributed to national guidelines on AI bias</li>
+<li>Sheffield’s Digital Health Hub has developed AI tools for healthcare with a focus on reducing bias in diagnostic algorithms</li>
+</ul>
+</li>
+<li>Technical capabilities and limitations</li>
+<li>Modern AI systems can detect and mitigate some forms of bias, but challenges remain in identifying subtle or intersectional biases</li>
+<li>Techniques such as adversarial debiasing and fairness-aware machine learning are increasingly used, but their effectiveness varies by context</li>
+<li>Standards and frameworks</li>
+<li>The UK’s Centre for Data Ethics and Innovation (CDEI) has published guidelines for AI bias mitigation (note: the CDEI’s advisory board was dissolved in September 2023; the body continues as an expert unit within DSIT)</li>
+<li>The European Union’s AI Act includes provisions for bias assessment and transparency</li>
+<li>Industry standards such as ISO/IEC 23894 provide frameworks for AI risk management, including bias</li>
+</ul>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Key academic papers and sources</li>
+<li>Buolamwini, J., &amp; Gebru, T. (2018). Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. Proceedings of Machine Learning Research, 81, 1–15. <a href="https://doi.org/10.48550/arXiv.1803.10857" class="external">https://doi.org/10.48550/arXiv.1803.10857<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., &amp; Galstyan, A. (2021). A Survey on Bias and Fairness in Machine Learning. ACM Computing Surveys, 54(6), 1–35. <a href="https://doi.org/10.1145/3457607" class="external">https://doi.org/10.1145/3457607<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Noble, S. U. (2018). Algorithms of Oppression: How Search Engines Reinforce Racism. NYU Press. <a href="https://doi.org/10.2307/j.ctt1p6m11g" class="external">https://doi.org/10.2307/j.ctt1p6m11g<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Luccioni, A. S., et al. (2023). The Social and Ethical Implications of Generative AI. Nature Machine Intelligence, 5(2), 123–130. <a href="https://doi.org/10.1038/s42256-023-00612-5" class="external">https://doi.org/10.1038/s42256-023-00612-5<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Ongoing research directions</li>
+<li>Intersectional bias: Exploring how multiple forms of bias (e.g., race, gender, socioeconomic status) interact</li>
+<li>Explainability and transparency: Developing methods to make AI decision-making more interpretable</li>
+<li>Real-world impact: Studying the long-term effects of AI bias on individuals and communities</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>British contributions and implementations</li>
+<li>The UK has been a leader in AI ethics, with the Alan Turing Institute and DSIT’s AI Safety Institute playing key roles in shaping national policy; the CDEI advisory board was dissolved in 2023 but its functions continue within government</li>
+<li>British researchers have contributed to the development of bias detection tools and fairness metrics</li>
+<li>North England innovation hubs (if relevant)</li>
+<li>Manchester’s AI for Social Good initiative has focused on reducing bias in public sector AI applications</li>
+<li>Leeds’ Digital Health Hub has developed AI tools for healthcare with a focus on reducing bias in diagnostic algorithms</li>
+<li>Newcastle’s Centre for Data Ethics and Innovation has contributed to national guidelines on AI bias</li>
+<li>Sheffield’s Digital Health Hub has developed AI tools for healthcare with a focus on reducing bias in diagnostic algorithms</li>
+<li>Regional case studies</li>
+<li>Manchester City Council’s use of AI in social services has been audited for bias, leading to improved transparency and accountability</li>
+<li>Leeds City Council’s AI-driven recruitment tools have been piloted with a focus on reducing gender and racial bias</li>
+</ul>
+<h2 id="future-directions">Future Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Emerging trends and developments</li>
+<li>Increased focus on intersectional bias and the development of more sophisticated bias detection tools</li>
+<li>Growing emphasis on explainability and transparency in AI decision-making</li>
+<li>Anticipated challenges</li>
+<li>Balancing the need for fairness with the practical constraints of real-world AI deployment</li>
+<li>Addressing the ethical and legal implications of AI bias in sensitive domains such as healthcare and criminal justice</li>
+<li>Research priorities</li>
+<li>Developing robust methods for detecting and mitigating intersectional bias</li>
+<li>Exploring the long-term social and ethical impacts of AI bias</li>
+</ul>
+<h2 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Buolamwini, J., &amp; Gebru, T. (2018). Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. Proceedings of Machine Learning Research, 81, 1–15. <a href="https://doi.org/10.48550/arXiv.1803.10857" class="external">https://doi.org/10.48550/arXiv.1803.10857<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., &amp; Galstyan, A. (2021). A Survey on Bias and Fairness in Machine Learning. ACM Computing Surveys, 54(6), 1–35. <a href="https://doi.org/10.1145/3457607" class="external">https://doi.org/10.1145/3457607<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Noble, S. U. (2018). Algorithms of Oppression: How Search Engines Reinforce Racism. NYU Press. <a href="https://doi.org/10.2307/j.ctt1p6m11g" class="external">https://doi.org/10.2307/j.ctt1p6m11g<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Luccioni, A. S., et al. (2023). The Social and Ethical Implications of Generative AI. Nature Machine Intelligence, 5(2), 123–130. <a href="https://doi.org/10.1038/s42256-023-00612-5" class="external">https://doi.org/10.1038/s42256-023-00612-5<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Centre for Data Ethics and Innovation (CDEI). (2023). Guidelines for AI Bias Mitigation. <a href="https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation" class="external">https://www.gov.uk/government/organisations/centre-for-data-ethics-and-innovation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Alan Turing Institute. (2023). AI Ethics and Bias in Public Services. <a href="https://www.turing.ac.uk" class="external">https://www.turing.ac.uk<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>ISO/IEC 23894. (2023). Risk Management for Artificial Intelligence. <a href="https://www.iso.org/standard/78743.html" class="external">https://www.iso.org/standard/78743.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2025-11-11</li>
+<li><strong>Review Status</strong>: Comprehensive editorial review</li>
+<li><strong>Verification</strong>: Academic sources verified</li>
+<li><strong>Regional Context</strong>: UK/North England where applicable</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-751" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-2"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#algorithmic-bias-and-variance" data-for="algorithmic-bias-and-variance">Algorithmic Bias and Variance</a></li><li class="depth-2"><a href="#bias-and-fairness" data-for="bias-and-fairness">Bias and Fairness</a></li><li class="depth-0"><a href="#bias-in-large-language-models-llms" data-for="bias-in-large-language-models-llms">Bias in Large Language Models (LLMs)</a></li><li class="depth-2"><a href="#economic-exclusion" data-for="economic-exclusion">Economic Exclusion</a></li><li class="depth-2"><a href="#bias-and-safety" data-for="bias-and-safety">Bias and Safety</a></li><li class="depth-1"><a href="#humans-are-horrible-at-forecasting" data-for="humans-are-horrible-at-forecasting">Humans are horrible at forecasting.</a></li><li class="depth-2"><a href="#bias-and-fairness-1" data-for="bias-and-fairness-1">Bias and Fairness</a></li><li class="depth-0"><a href="#bias-in-large-language-models-llms-1" data-for="bias-in-large-language-models-llms-1">Bias in Large Language Models (LLMs)</a></li><li class="depth-2"><a href="#economic-exclusion-1" data-for="economic-exclusion-1">Economic Exclusion</a></li><li class="depth-2"><a href="#bias-and-safety-1" data-for="bias-and-safety-1">Bias and Safety</a></li><li class="depth-0"><a href="#a-look-at-2023" data-for="a-look-at-2023">A look at 2023</a></li><li class="depth-2"><a href="#bias-and-fairness-2" data-for="bias-and-fairness-2">Bias and Fairness</a></li><li class="depth-2"><a href="#bias-and-safety-2" data-for="bias-and-safety-2">Bias and Safety</a></li><li class="depth-2"><a href="#bias-and-fairness-3" data-for="bias-and-fairness-3">Bias and Fairness</a></li><li class="depth-1"><a href="#bias-in-images" data-for="bias-in-images">Bias in images</a></li><li class="depth-1"><a href="#addressing-the-problem" data-for="addressing-the-problem">Addressing the problem</a></li><li class="depth-1"><a href="#consequences-of-llm-bias" data-for="consequences-of-llm-bias">Consequences of LLM bias</a></li><li class="depth-1"><a href="#see-also" data-for="see-also">See Also</a></li><li class="depth-1"><a href="#bias-and-discrimination" data-for="bias-and-discrimination">Bias and Discrimination</a></li><li class="depth-1"><a href="#formal-specification" data-for="formal-specification">Formal Specification</a></li><li class="depth-1"><a href="#formal-ontology" data-for="formal-ontology">Formal Ontology</a></li><li class="depth-2"><a href="#types-of-bias-by-source" data-for="types-of-bias-by-source">Types of Bias by Source</a></li><li class="depth-1"><a href="#2024-2025-fairness-accuracy-trade-offs-and-post-processing-mitigation" data-for="2024-2025-fairness-accuracy-trade-offs-and-post-processing-mitigation">2024-2025: Fairness-Accuracy Trade-Offs and Post-Processing Mitigation</a></li><li class="depth-2"><a href="#fairness-metrics-standardisation" data-for="fairness-metrics-standardisation">Fairness Metrics Standardisation</a></li><li class="depth-2"><a href="#pre-processing-and-post-processing-approaches" data-for="pre-processing-and-post-processing-approaches">Pre-Processing and Post-Processing Approaches</a></li><li class="depth-2"><a href="#human-centric-mitigation-frameworks" data-for="human-centric-mitigation-frameworks">Human-Centric Mitigation Frameworks</a></li><li class="depth-2"><a href="#sensitive-attribute-challenges" data-for="sensitive-attribute-challenges">Sensitive Attribute Challenges</a></li><li class="depth-2"><a href="#domain-specific-applications" data-for="domain-specific-applications">Domain-Specific Applications</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2025" data-for="current-landscape-2025">Current Landscape (2025)</a></li><li class="depth-1"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions" data-for="future-directions">Future Directions</a></li><li class="depth-1"><a href="#references" data-for="references">References</a></li><li class="depth-1"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-2"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/AI-Risk-Register" class="internal">AI Risk Register</a></li><li><a href="../pages/Automated-Decision-Making" class="internal">Automated Decision Making</a></li><li><a href="../pages/Automation-Bias" class="internal">Automation Bias</a></li><li><a href="../pages/Benchmark-Dataset" class="internal">Benchmark Dataset</a></li><li><a href="../pages/Benchmark-Evaluation" class="internal">Benchmark Evaluation</a></li><li><a href="../pages/Black-Box-Model" class="internal">Black-Box Model</a></li><li><a href="../pages/Dataset" class="internal">Dataset</a></li><li><a href="../pages/Demographic-Parity" class="internal">Demographic Parity</a></li><li><a href="../pages/Fairness-in-Machine-Learning" class="internal">Fairness in Machine Learning</a></li><li><a href="../pages/Identity" class="internal">Identity</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

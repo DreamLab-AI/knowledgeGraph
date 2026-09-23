@@ -14,13 +14,50 @@
     {
       "id": "urn:ngm:class:personalised-learning",
       "label": "Personalised Learning"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:learner-model",
+        "label": "Learner Model"
+      },
+      {
+        "id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      },
+      {
+        "id": "urn:ngm:class:content-repository",
+        "label": "Content Repository"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:formative-assessment",
+        "label": "Formative Assessment"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-component-model",
+        "label": "Knowledge Component Model"
+      },
+      {
+        "id": "urn:ngm:class:computerised-adaptive-testing",
+        "label": "Computerised Adaptive Testing"
+      },
+      {
+        "id": "urn:ngm:class:scaffolding",
+        "label": "Scaffolding"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -45,6 +82,10 @@
       {
         "id": "urn:ngm:class:feedback-loop",
         "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:psychometrics",
+        "label": "Psychometrics"
       }
     ],
     "enables": [
@@ -67,6 +108,14 @@
       {
         "id": "urn:ngm:class:computerised-adaptive-testing",
         "label": "Computerised Adaptive Testing"
+      },
+      {
+        "id": "urn:ngm:class:differentiated-instruction",
+        "label": "Differentiated Instruction"
+      },
+      {
+        "id": "urn:ngm:class:metacognition",
+        "label": "Metacognition"
       }
     ],
     "dependsOn": [
@@ -81,6 +130,14 @@
       {
         "id": "urn:ngm:class:psychometrics",
         "label": "Psychometrics"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "implements": [
@@ -95,9 +152,26 @@
       {
         "id": "urn:ngm:class:bayesian-knowledge-tracing",
         "label": "Bayesian Knowledge Tracing"
+      },
+      {
+        "id": "urn:ngm:class:deep-knowledge-tracing",
+        "label": "Deep Knowledge Tracing"
+      },
+      {
+        "id": "urn:ngm:class:spaced-repetition",
+        "label": "Spaced Repetition"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:ngm:class:one-size-fits-all-instruction",
+        "label": "One-Size-Fits-All Instruction"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:large-language-model",
@@ -110,6 +184,10 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "uses": [
@@ -140,6 +218,18 @@
       {
         "id": "urn:ngm:class:graph-neural-network",
         "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "supports": [
@@ -150,9 +240,38 @@
       {
         "id": "urn:ngm:class:metacognition",
         "label": "Metacognition"
+      },
+      {
+        "id": "urn:ngm:class:differentiated-instruction",
+        "label": "Differentiated Instruction"
+      },
+      {
+        "id": "urn:ngm:class:zone-of-proximal-development",
+        "label": "Zone of Proximal Development"
+      },
+      {
+        "id": "urn:ngm:class:scaffolding",
+        "label": "Scaffolding"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ims-global-learning-consortium",
+        "label": "IMS Global Learning Consortium"
+      },
+      {
+        "id": "urn:ngm:class:ieee-ltsc",
+        "label": "IEEE LTSC"
+      },
+      {
+        "id": "urn:ngm:class:xapi-specification",
+        "label": "xAPI Specification"
+      },
+      {
+        "id": "urn:ngm:class:scorm",
+        "label": "SCORM"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -182,6 +301,18 @@
       {
         "id": "urn:ngm:class:gamification",
         "label": "Gamification"
+      },
+      {
+        "id": "urn:ngm:class:multi-modal-learning",
+        "label": "Multi-Modal Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
       }
     ]
   },
@@ -192,6 +323,31 @@
       "slug": "ai-application"
     },
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:digital-service",
+      "label": "Digital Service",
+      "slug": "digital-service"
+    },
+    {
+      "id": "urn:ngm:class:learning-system",
+      "label": "Learning System",
+      "slug": "learning-system"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -199,6 +355,18 @@
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-assessment",
+        "label": "Automated Assessment"
+      },
+      {
+        "id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
       {
         "id": "urn:ngm:class:intelligent-tutoring-system",
         "label": "Intelligent Tutoring System"
@@ -212,24 +380,12 @@
         "label": "Learning Management System"
       },
       {
-        "id": "urn:ngm:class:autonomous-driving",
-        "label": "Autonomous Driving"
+        "id": "urn:ngm:class:open-educational-resources",
+        "label": "Open Educational Resources"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
-      },
-      {
-        "id": "urn:ngm:class:fraud-detection",
-        "label": "Fraud Detection"
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
       }
     ],
     "requires": [
@@ -246,16 +402,24 @@
         "label": "Digital Infrastructure"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
       }
     ],
     "enables": [
@@ -268,8 +432,16 @@
         "label": "Competency-Based Education"
       },
       {
+        "id": "urn:ngm:class:lifelong-learning",
+        "label": "Lifelong Learning"
+      },
+      {
         "id": "urn:ngm:class:remote-education",
         "label": "Remote Education"
+      },
+      {
+        "id": "urn:ngm:class:scalable-education",
+        "label": "Scalable Education"
       },
       {
         "id": "urn:ngm:class:education-and-ai",
@@ -282,24 +454,96 @@
       {
         "id": "urn:ngm:class:intelligent-tutoring-system",
         "label": "Intelligent Tutoring Systems"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:broadband-connectivity",
+        "label": "Broadband Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "id": "urn:ngm:class:connectivism",
+        "label": "Connectivism"
+      },
+      {
+        "id": "urn:ngm:class:constructivism",
+        "label": "Constructivism"
+      },
+      {
+        "id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:correspondence-learning",
+        "label": "Correspondence Learning"
+      },
+      {
+        "id": "urn:ngm:class:didactic-instruction",
+        "label": "Didactic Instruction"
+      },
+      {
+        "id": "urn:ngm:class:traditional-classroom-instruction",
+        "label": "Traditional Classroom Instruction"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -322,15 +566,43 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
       {
         "id": "urn:ngm:class:immersive-learning",
         "label": "Immersive Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -340,38 +612,58 @@
       {
         "id": "urn:ngm:class:recommendation-systems",
         "label": "Recommendation Systems"
-      },
-      {
-        "id": "urn:ngm:class:speech-recognition",
-        "label": "Speech Recognition"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graph"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
       }
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:corporate-learning",
+        "label": "Corporate Learning"
+      },
+      {
+        "id": "urn:ngm:class:higher-education",
+        "label": "Higher Education"
+      },
+      {
+        "id": "urn:ngm:class:k-12-education",
+        "label": "K-12 Education"
+      },
+      {
+        "id": "urn:ngm:class:special-educational-needs",
+        "label": "Special Educational Needs"
+      },
+      {
+        "id": "urn:ngm:class:vocational-training",
+        "label": "Vocational Training"
+      },
+      {
         "id": "urn:ngm:class:competency-based-education",
         "label": "Competency-Based Education"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:scorm",
-        "label": "SCORM"
+        "id": "urn:ngm:class:ims-lti",
+        "label": "IMS LTI"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
       },
       {
         "id": "urn:ngm:class:xapi",
         "label": "xAPI"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [
@@ -380,8 +672,20 @@
         "label": "Cognitive Science"
       },
       {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:learning-science",
+        "label": "Learning Science"
+      },
+      {
+        "id": "urn:ngm:class:open-educational-resources",
+        "label": "Open Educational Resources"
       },
       {
         "id": "urn:ngm:class:digital-technology-access-equity",
@@ -394,18 +698,6 @@
       {
         "id": "urn:ngm:class:educational-methodology",
         "label": "Educational Methodology"
-      },
-      {
-        "id": "urn:ngm:class:learning-analytics",
-        "label": "Learning Analytics"
-      },
-      {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
       }
     ]
   },

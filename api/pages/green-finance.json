@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:blended-finance",
         "label": "Blended Finance"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-linked-loans",
+        "label": "Sustainability-Linked Loans"
       }
     ],
     "requires": [
@@ -46,6 +50,10 @@
       {
         "id": "urn:ngm:class:life-cycle-assessment",
         "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "Green Taxonomy"
       }
     ],
     "enables": [
@@ -80,7 +88,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -175,8 +183,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:conduct-regulation",
+        "label": "Conduct Regulation"
       },
       {
         "id": "urn:ngm:class:prudential-regulation",
@@ -201,10 +213,6 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
       }
     ],
     "requires": [
@@ -221,7 +229,7 @@
         "label": "Capital Adequacy"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -321,6 +329,10 @@
         "label": "Self-Regulation"
       },
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -339,7 +351,7 @@
         "label": "Tokenised Green Bonds"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -409,6 +421,10 @@
         "label": "Basel Committee"
       },
       {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
         "id": "urn:ngm:class:fatf",
         "label": "FATF"
       },
@@ -423,10 +439,6 @@
       {
         "id": "urn:ngm:class:iso-iec-38500",
         "label": "ISO-IEC 38500"
-      },
-      {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD Principles on AI"
       }
     ],
     "relatedTo": [
@@ -459,8 +471,8 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
       }
     ]
   },

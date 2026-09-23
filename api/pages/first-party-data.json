@@ -44,16 +44,6 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -81,14 +71,6 @@
       {
         "id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
-      },
-      {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
-      },
-      {
-        "id": "urn:ngm:class:data-lake",
-        "label": "Data Lake"
       }
     ],
     "requires": [
@@ -107,18 +89,6 @@
       {
         "id": "urn:ngm:class:data-security",
         "label": "Data Security"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -141,18 +111,6 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
       }
     ],
     "dependsOn": [
@@ -163,8 +121,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -179,14 +137,6 @@
       {
         "id": "urn:ngm:class:metaverse-technology",
         "label": "Metaverse Technology"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -215,18 +165,6 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
       }
     ],
     "standardizedBy": [
@@ -241,14 +179,6 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "relatedTo": [
@@ -275,14 +205,6 @@
       {
         "id": "urn:ngm:class:information-management",
         "label": "Information Management"
-      },
-      {
-        "id": "urn:ngm:class:infra-computing-and-cloud",
-        "label": "Computing and Cloud"
-      },
-      {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
       }
     ]
   },

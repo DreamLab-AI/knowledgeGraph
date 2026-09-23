@@ -24,6 +24,10 @@
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:image-reconstruction",
+        "label": "Image Reconstruction"
       }
     ],
     "requires": [
@@ -122,6 +126,14 @@
       {
         "id": "urn:ngm:class:electronic-health-record",
         "label": "Electronic Health Record"
+      },
+      {
+        "id": "urn:ngm:class:digital-pathology",
+        "label": "Digital Pathology"
+      },
+      {
+        "id": "urn:ngm:class:radiomics",
+        "label": "Radiomics"
       }
     ]
   },
@@ -186,6 +198,10 @@
         "label": "Model Explainability"
       },
       {
+        "id": "urn:ngm:class:health-data-governance",
+        "label": "Health Data Governance"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -202,6 +218,10 @@
       {
         "id": "urn:ngm:class:drug-discovery",
         "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:genomic-analysis",
+        "label": "Genomic Analysis"
       },
       {
         "id": "urn:ngm:class:patient-risk-stratification",
@@ -232,6 +252,10 @@
       {
         "id": "urn:ngm:class:differential-privacy",
         "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:health-data-interoperability",
+        "label": "Health Data Interoperability"
       }
     ],
     "contrastsWith": [
@@ -242,6 +266,24 @@
       {
         "id": "urn:ngm:class:expert-systems",
         "label": "Rule-Based Expert Systems"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-health-data",
+        "label": "Blockchain Health Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -256,6 +298,16 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-mdr",
+        "label": "EU MDR"
+      },
+      {
+        "id": "urn:ngm:class:fda-samd-regulation",
+        "label": "FDA SaMD Regulation"
       }
     ],
     "relatedTo": [

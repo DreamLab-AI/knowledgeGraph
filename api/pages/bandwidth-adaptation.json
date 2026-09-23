@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:network-quality-of-service",
+      "label": "Network Quality-of-Service"
+    },
+    {
+      "id": "urn:ngm:class:real-time-transport-optimisation",
+      "label": "Real-time Transport Optimisation"
+    },
+    {
+      "id": "urn:ngm:class:adaptive-bitrate-streaming",
+      "label": "Adaptive Bitrate Streaming"
+    },
+    {
+      "id": "urn:ngm:class:congestion-control",
+      "label": "Congestion Control"
+    },
+    {
+      "id": "urn:ngm:class:quality-of-experience",
+      "label": "Quality of Experience"
     }
   ],
   "entityType": "Class",
@@ -20,12 +40,64 @@
       {
         "id": "urn:ngm:class:rtcp-feedback",
         "label": "RTCP Feedback"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-estimator",
+        "label": "Bandwidth Estimator"
+      },
+      {
+        "id": "urn:ngm:class:abr-algorithm",
+        "label": "ABR Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:buffer-manager",
+        "label": "Buffer Manager"
+      },
+      {
+        "id": "urn:ngm:class:bitrate-ladder",
+        "label": "Bitrate Ladder"
+      },
+      {
+        "id": "urn:ngm:class:codec-parameter-controller",
+        "label": "Codec Parameter Controller"
+      },
+      {
+        "id": "urn:ngm:class:network-capacity-probing",
+        "label": "Network Capacity Probing"
+      },
+      {
+        "id": "urn:ngm:class:rate-distortion-optimisation",
+        "label": "Rate-Distortion Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:segment-scheduler",
+        "label": "Segment Scheduler"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:rtcp-feedback",
         "label": "RTCP Feedback"
+      },
+      {
+        "id": "urn:ngm:class:network-measurement",
+        "label": "Network Measurement"
+      },
+      {
+        "id": "urn:ngm:class:multi-bitrate-encoding",
+        "label": "Multi-bitrate Encoding"
+      },
+      {
+        "id": "urn:ngm:class:playback-buffer",
+        "label": "Playback Buffer"
+      },
+      {
+        "id": "urn:ngm:class:throughput-estimation",
+        "label": "Throughput Estimation"
+      },
+      {
+        "id": "urn:ngm:class:congestion-signal",
+        "label": "Congestion Signal"
       }
     ],
     "enables": [
@@ -44,9 +116,58 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Streaming"
+      },
+      {
+        "id": "urn:ngm:class:global-participation-across-networks",
+        "label": "Global Participation Across Networks"
+      },
+      {
+        "id": "urn:ngm:class:mobile-collaboration",
+        "label": "Mobile Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:emerging-market-accessibility",
+        "label": "Emerging Market Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Resilient Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing Streaming"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC Protocol"
+      },
+      {
+        "id": "urn:ngm:class:http3",
+        "label": "HTTP3"
+      },
+      {
+        "id": "urn:ngm:class:rtp-protocol",
+        "label": "RTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:codec-ecosystem",
+        "label": "Codec Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:cdn-infrastructure",
+        "label": "CDN Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Networks"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:congestion-control",
@@ -55,9 +176,58 @@
       {
         "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC Simulcast"
+      },
+      {
+        "id": "urn:ngm:class:dash-adaptive-streaming",
+        "label": "DASH Adaptive Streaming"
+      },
+      {
+        "id": "urn:ngm:class:hls-adaptive-bitrate",
+        "label": "HLS Adaptive Bitrate"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC Simulcast"
+      },
+      {
+        "id": "urn:ngm:class:scalable-video-coding",
+        "label": "Scalable Video Coding"
+      },
+      {
+        "id": "urn:ngm:class:bola-algorithm",
+        "label": "BOLA Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:mpc-algorithm",
+        "label": "MPC Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:pensieve-rl-policy",
+        "label": "Pensieve RL Policy"
+      },
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "BBR Congestion Control"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fixed-bitrate-streaming",
+        "label": "Fixed Bitrate Streaming"
+      },
+      {
+        "id": "urn:ngm:class:constant-bitrate-encoding",
+        "label": "Constant Bitrate Encoding"
+      },
+      {
+        "id": "urn:ngm:class:buffering-only-adaptation",
+        "label": "Buffering-Only Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:circuit-switching",
+        "label": "Circuit Switching"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:infra-network-and-comms",
@@ -92,6 +262,14 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:vmaf-metric",
+        "label": "VMAF Metric"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-optimisation",
+        "label": "Lyapunov Optimisation"
       }
     ],
     "supports": [
@@ -118,6 +296,10 @@
       {
         "id": "urn:ngm:class:video-conferencing",
         "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:ar-vr-streaming",
+        "label": "AR VR Streaming"
       }
     ],
     "standardizedBy": [
@@ -144,12 +326,36 @@
       {
         "id": "urn:ngm:class:web-rtc-w-3-c-specification",
         "label": "WebRTC W3C Standard"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "IETF RFC 9000 QUIC"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "MPEG DASH ISO 23009"
+      },
+      {
+        "id": "urn:ngm:class:apple-inc-technology-corporation",
+        "label": "Apple HLS RFC 8216"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc-w-3-c-specification",
+        "label": "WebRTC W3C Standard"
+      },
+      {
+        "id": "urn:ngm:class:3-gpp",
+        "label": "3GPP 5G Standards"
+      },
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T H.264 H.265"
       }
     ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -183,6 +389,31 @@
       "id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration",
       "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol",
+      "slug": "network-protocol"
+    },
+    {
+      "id": "urn:ngm:class:video-streaming",
+      "label": "Video Streaming",
+      "slug": "video-streaming"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure",
+      "slug": "network-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -208,19 +439,31 @@
         "label": "Version Control"
       },
       {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      },
+      {
+        "id": "urn:ngm:class:active-queue-management",
+        "label": "Active Queue Management"
+      },
+      {
         "id": "urn:ngm:class:asynchronous-collaboration",
         "label": "Asynchronous Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:shared-workspace",
-        "label": "Shared Workspace"
-      },
-      {
-        "id": "urn:ngm:class:synchronous-collaboration",
-        "label": "Synchronous Collaboration"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:packet-loss-recovery",
+        "label": "Packet Loss Detection"
+      },
+      {
+        "id": "urn:ngm:class:round-trip-time-measurement",
+        "label": "Round-Trip Time Measurement"
+      },
       {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
@@ -232,9 +475,29 @@
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-addressing",
+        "label": "Network Addressing"
+      },
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Network Fairness"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
       {
         "id": "urn:ngm:class:open-source-development",
         "label": "Open Source Development"
@@ -250,9 +513,25 @@
       {
         "id": "urn:ngm:class:virtual-team",
         "label": "Virtual Team"
+      },
+      {
+        "id": "urn:ngm:class:data-transmission",
+        "label": "Data Transmission"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
       {
         "id": "urn:ngm:class:consensus-algorithm",
         "label": "Consensus Algorithm"
@@ -260,15 +539,93 @@
       {
         "id": "urn:ngm:class:latency-management-protocol",
         "label": "Latency Management"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:bbr-algorithm",
+        "label": "BBR Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC Transport"
+      },
+      {
+        "id": "urn:ngm:class:tcp-cubic",
+        "label": "TCP CUBIC"
+      },
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip-model",
+        "label": "TCP/IP Model"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      },
+      {
+        "id": "urn:ngm:class:flow-control",
+        "label": "Flow Control"
+      },
+      {
+        "id": "urn:ngm:class:traffic-shaping",
+        "label": "Traffic Shaping"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-protocol",
+        "label": "Proprietary Protocol"
+      },
+      {
+        "id": "urn:ngm:class:broadcast-television",
+        "label": "Broadcast Television"
+      },
+      {
+        "id": "urn:ngm:class:file-download",
+        "label": "File Download"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
@@ -280,12 +637,32 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:decentralized-identifiers",
         "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:sliding-window-protocol",
+        "label": "Sliding Window Protocol"
       },
       {
         "id": "urn:ngm:class:conflict-free-replicated-data-type",
@@ -302,13 +679,25 @@
       {
         "id": "urn:ngm:class:real-time-messaging",
         "label": "Real-Time Messaging"
-      },
-      {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
@@ -316,6 +705,54 @@
       {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:mpeg-dash",
+        "label": "MPEG-DASH"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802 Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
       }
     ],
     "relatedTo": [
@@ -336,12 +773,20 @@
         "label": "Decentralized Storage"
       },
       {
-        "id": "urn:ngm:class:computer-supported-cooperative-work",
-        "label": "Computer-Supported Cooperative Work"
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
       },
       {
-        "id": "urn:ngm:class:groupware",
-        "label": "Groupware"
+        "id": "urn:ngm:class:lossy-compression",
+        "label": "Lossy Compression"
+      },
+      {
+        "id": "urn:ngm:class:mpeg",
+        "label": "MPEG"
+      },
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
       }
     ]
   },

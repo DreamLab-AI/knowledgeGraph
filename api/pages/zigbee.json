@@ -16,11 +16,28 @@
   "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zigbee-coordinator",
+        "label": "Zigbee Coordinator"
+      },
+      {
+        "id": "urn:ngm:class:zigbee-router",
+        "label": "Zigbee Router"
+      },
+      {
+        "id": "urn:ngm:class:zigbee-end-device",
+        "label": "Zigbee End Device"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:ieee-802-15-4",
         "label": "IEEE 802.15.4"
+      },
+      {
+        "id": "urn:ngm:class:aes-128",
+        "label": "AES-128"
       }
     ],
     "enables": [
@@ -39,6 +56,14 @@
       {
         "id": "urn:ngm:class:smart-metering",
         "label": "Smart Metering"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Home Automation"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "Wireless Sensor Network"
       }
     ],
     "dependsOn": [
@@ -52,6 +77,14 @@
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:mesh-routing-software",
+        "label": "Mesh Routing"
+      },
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "AODV Routing"
+      },
       {
         "id": "urn:ngm:class:mesh-routing-software",
         "label": "Mesh Routing"
@@ -73,9 +106,21 @@
       {
         "id": "urn:ngm:class:thread-protocol",
         "label": "Thread Protocol"
+      },
+      {
+        "id": "urn:ngm:class:wi-fi-halow",
+        "label": "Wi-Fi HaLow"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud IoT Platform"
+      },
+      {
+        "id": "urn:ngm:class:ip-networking",
+        "label": "IP Networking"
+      },
       {
         "id": "urn:ngm:class:cloud-platform",
         "label": "Cloud IoT Platform"
@@ -89,6 +134,10 @@
       {
         "id": "urn:ngm:class:csma-ca",
         "label": "CSMA-CA"
+      },
+      {
+        "id": "urn:ngm:class:direct-sequence-spread-spectrum",
+        "label": "Direct Sequence Spread Spectrum"
       }
     ],
     "supports": [
@@ -105,9 +154,17 @@
       {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:connectivity-standards-alliance",
+        "label": "Connectivity Standards Alliance"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:protocol-stack",
+        "label": "IoT Protocol Stack"
+      },
       {
         "id": "urn:ngm:class:protocol-stack",
         "label": "IoT Protocol Stack"
@@ -147,6 +204,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -263,8 +325,16 @@
         "label": "WirelessHART"
       },
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -379,6 +449,10 @@
       {
         "id": "urn:ngm:class:ieee-802-x",
         "label": "IEEE 802-X"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [
@@ -411,7 +485,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       }
     ]

@@ -140,6 +140,10 @@
         "label": "Carbon Credits"
       },
       {
+        "id": "urn:ngm:class:climate-risk-insurance",
+        "label": "Climate Risk Insurance"
+      },
+      {
         "id": "urn:ngm:class:green-bonds",
         "label": "Green Bonds"
       },
@@ -152,16 +156,12 @@
         "label": "Impact Investing"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:sustainability-linked-loans",
+        "label": "Sustainability-Linked Loans"
+      },
+      {
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
-      },
-      {
-        "id": "urn:ngm:class:prudential-regulation",
-        "label": "Prudential Regulation"
-      },
-      {
-        "id": "urn:ngm:class:securities-regulation",
-        "label": "Securities Regulation"
       }
     ],
     "requires": [
@@ -194,7 +194,7 @@
         "label": "Capital Adequacy"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       }
     ],
@@ -202,6 +202,10 @@
       {
         "id": "urn:ngm:class:carbon-markets",
         "label": "Carbon Markets"
+      },
+      {
+        "id": "urn:ngm:class:climate-adaptation",
+        "label": "Climate Adaptation"
       },
       {
         "id": "urn:ngm:class:carbon-credit-tracking",
@@ -226,16 +230,16 @@
       {
         "id": "urn:ngm:class:sustainability-linked-loan",
         "label": "Sustainability-Linked Loan"
-      },
-      {
-        "id": "urn:ngm:class:voluntary-carbon-market",
-        "label": "Carbon Credit Market"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:climate-policy",
         "label": "International Climate Policy"
+      },
+      {
+        "id": "urn:ngm:class:multilateral-development-banks",
+        "label": "Multilateral Development Banks"
       },
       {
         "id": "urn:ngm:class:paris-agreement",
@@ -274,6 +278,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:fossil-fuel-subsidies",
+        "label": "Fossil Fuel Subsidies"
+      },
+      {
         "id": "urn:ngm:class:conventional-finance",
         "label": "Conventional Finance"
       },
@@ -290,6 +298,10 @@
         "label": "Self-Regulation"
       },
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -300,8 +312,16 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-sustainability",
+        "label": "Supply Chain Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-carbon-credits",
+        "label": "Tokenised Carbon Credits"
       },
       {
         "id": "urn:ngm:class:blockchain-tokenisation",
@@ -320,16 +340,8 @@
         "label": "Tokenised Green Bonds"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
-      },
-      {
-        "id": "urn:ngm:class:distributed-ledger-technology",
-        "label": "Distributed Ledger Technology"
-      },
-      {
-        "id": "urn:ngm:class:regtech",
-        "label": "RegTech"
       }
     ],
     "uses": [
@@ -420,6 +432,10 @@
     ],
     "partOf": [
       {
+        "id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
         "id": "urn:ngm:class:capital-markets",
         "label": "Capital Markets"
       },
@@ -436,6 +452,10 @@
       {
         "id": "urn:ngm:class:impact-investing",
         "label": "Impact Investing"
+      },
+      {
+        "id": "urn:ngm:class:sovereign-green-bonds",
+        "label": "Sovereign Green Bonds"
       },
       {
         "id": "urn:ngm:class:climate-risk",
@@ -456,10 +476,6 @@
       {
         "id": "urn:ngm:class:monetary-policy",
         "label": "Monetary Policy"
-      },
-      {
-        "id": "urn:ngm:class:systemic-risk",
-        "label": "Systemic Risk"
       }
     ]
   },

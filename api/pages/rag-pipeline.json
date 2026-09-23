@@ -66,6 +66,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:context-window-management",
+        "label": "Context Window Management"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
@@ -92,10 +96,6 @@
       {
         "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
       }
     ],
     "requires": [
@@ -134,12 +134,20 @@
         "label": "Hallucination Mitigation"
       },
       {
+        "id": "urn:ngm:class:knowledge-grounding",
+        "label": "Knowledge Grounding"
+      },
+      {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
       },
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:source-attribution",
+        "label": "Source Attribution"
       },
       {
         "id": "urn:ngm:class:autonomous-system",
@@ -152,20 +160,16 @@
       {
         "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Automation"
-      },
-      {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
-      },
-      {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:parametric-knowledge",
+        "label": "Parametric Knowledge"
       }
     ],
     "bridgesTo": [
@@ -176,6 +180,22 @@
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

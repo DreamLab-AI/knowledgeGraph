@@ -16,11 +16,32 @@
   "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:usd-composition-arcs",
+        "label": "USD Composition Arcs"
+      },
+      {
+        "id": "urn:ngm:class:usd-schema-plugin",
+        "label": "USD Schema Plugin"
+      },
+      {
+        "id": "urn:ngm:class:usdz-package-format",
+        "label": "USDZ Package Format"
+      },
+      {
+        "id": "urn:ngm:class:usd-hydra-renderer",
+        "label": "USD Hydra Renderer"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:scene-graph",
         "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-data-model",
+        "label": "Hierarchical Data Model"
       }
     ],
     "enables": [
@@ -35,6 +56,14 @@
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-3d-editing",
+        "label": "Collaborative 3D Editing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-content",
+        "label": "Augmented Reality Content"
       }
     ],
     "dependsOn": [],
@@ -47,6 +76,14 @@
       {
         "id": "urn:ngm:class:fbx",
         "label": "FBX Format"
+      },
+      {
+        "id": "urn:ngm:class:fbx",
+        "label": "FBX Format"
+      },
+      {
+        "id": "urn:ngm:class:collada-format",
+        "label": "COLLADA Format"
       }
     ],
     "bridgesTo": [
@@ -67,6 +104,10 @@
       {
         "id": "urn:ngm:class:skeletal-animation",
         "label": "Skeletal Animation"
+      },
+      {
+        "id": "urn:ngm:class:mdl-material-definition-language",
+        "label": "MDL Material Definition Language"
       }
     ],
     "supports": [
@@ -77,12 +118,24 @@
       {
         "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:non-destructive-editing",
+        "label": "Non-Destructive Workflow"
+      },
+      {
+        "id": "urn:ngm:class:procedural-geometry",
+        "label": "Procedural Geometry"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:alliance-for-openusd",
         "label": "Alliance for OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22886",
+        "label": "ISO/IEC 22886"
       }
     ],
     "partOf": [],
@@ -102,6 +155,10 @@
       {
         "id": "urn:ngm:class:realitykit",
         "label": "RealityKit"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
+        "label": "NVIDIA Omniverse"
       }
     ]
   },
@@ -110,6 +167,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -163,6 +235,22 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -181,12 +269,32 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -195,12 +303,32 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -231,6 +359,20 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -263,6 +405,18 @@
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
       }
     ]
   },

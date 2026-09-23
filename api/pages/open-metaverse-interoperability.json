@@ -34,7 +34,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:gl-tf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -44,6 +44,10 @@
       {
         "id": "urn:ngm:class:identity-portability",
         "label": "Identity Portability"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "Universal Scene Description"
       }
     ],
     "implements": [
@@ -120,12 +124,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -262,7 +266,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
       },
       {
@@ -322,7 +326,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

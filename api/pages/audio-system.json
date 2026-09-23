@@ -85,14 +85,19 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:visual-rendering-system",
+        "label": "Visual Rendering System"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -124,7 +129,16 @@
         "label": "Telepresence"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:web-audio-api",
+        "label": "Web Audio API"
+      },
+      {
+        "id": "urn:ngm:class:openal",
+        "label": "OpenAL"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -160,6 +174,10 @@
         "label": "Digital Signal Processing"
       },
       {
+        "id": "urn:ngm:class:filter-design",
+        "label": "Filter Design"
+      },
+      {
         "id": "urn:ngm:class:fourier-transform",
         "label": "Fourier Transform"
       },
@@ -182,10 +200,6 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
       }
     ],
     "requires": [
@@ -258,6 +272,22 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -280,7 +310,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

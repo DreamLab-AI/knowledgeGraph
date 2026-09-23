@@ -21,6 +21,10 @@
       {
         "id": "urn:ngm:class:european-parliament",
         "label": "European Parliament"
+      },
+      {
+        "id": "urn:ngm:class:council-of-the-european-union",
+        "label": "Council of the European Union"
       }
     ],
     "enables": [
@@ -50,12 +54,24 @@
       {
         "id": "urn:ngm:class:data-protection-regulation",
         "label": "General Data Protection Regulation"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:data-act",
+        "label": "Data Act"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "General Data Protection Regulation"
       }
     ],
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -67,7 +83,16 @@
         "label": "Distributed Ledger Technology"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:horizon-europe",
+        "label": "Horizon Europe"
+      },
+      {
+        "id": "urn:ngm:class:european-blockchain-services-infrastructure",
+        "label": "European Blockchain Services Infrastructure"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:governance",
@@ -84,6 +109,10 @@
       {
         "id": "urn:ngm:class:open-data",
         "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:eu-digital-single-market",
+        "label": "Digital Single Market"
       }
     ],
     "standardizedBy": [
@@ -256,7 +285,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

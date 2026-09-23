@@ -10,13 +10,38 @@
     {
       "id": "urn:ngm:class:signal-processing",
       "label": "Signal Processing"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-operation",
+      "label": "Mathematical Operation"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kernel",
+        "label": "Kernel"
+      },
+      {
+        "id": "urn:ngm:class:feature-map",
+        "label": "Feature Map"
+      },
+      {
+        "id": "urn:ngm:class:receptive-field",
+        "label": "Receptive Field"
+      },
+      {
+        "id": "urn:ngm:class:stride",
+        "label": "Stride"
+      },
+      {
+        "id": "urn:ngm:class:padding",
+        "label": "Padding"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:linear-algebra",
@@ -25,6 +50,10 @@
       {
         "id": "urn:ngm:class:gpu-acceleration",
         "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
       }
     ],
     "enables": [
@@ -47,6 +76,10 @@
       {
         "id": "urn:ngm:class:audio-processing",
         "label": "Audio Processing"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
       }
     ],
     "dependsOn": [
@@ -59,7 +92,20 @@
         "label": "Fourier Analysis"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:translation-equivariance",
+        "label": "Translation Equivariance"
+      },
+      {
+        "id": "urn:ngm:class:weight-sharing",
+        "label": "Weight Sharing"
+      },
+      {
+        "id": "urn:ngm:class:local-connectivity",
+        "label": "Local Connectivity"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:self-attention",
@@ -68,6 +114,10 @@
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "bridgesTo": [
@@ -88,6 +138,14 @@
       {
         "id": "urn:ngm:class:matrix-multiplication",
         "label": "Matrix Multiplication"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
       }
     ],
     "supports": [
@@ -102,9 +160,18 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-signal-processing-society",
+        "label": "IEEE Signal Processing Society"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -122,6 +189,22 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:pooling-layer",
+        "label": "Pooling Layer"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ]
   },
@@ -142,6 +225,10 @@
       {
         "id": "urn:ngm:class:digital-signal-processing",
         "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:filter-design",
+        "label": "Filter Design"
       },
       {
         "id": "urn:ngm:class:fourier-transform",
@@ -166,10 +253,6 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
       }
     ],
     "requires": [
@@ -238,6 +321,22 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -256,7 +355,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -296,10 +395,6 @@
       {
         "id": "urn:ngm:class:ai-research-area",
         "label": "AI Research Area"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ]
   },

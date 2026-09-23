@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:avatar",
         "label": "Avatar Identity"
+      },
+      {
+        "id": "urn:ngm:class:identification-system",
+        "label": "Person Identification"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar Identity"
       }
     ],
     "requires": [
@@ -68,6 +76,10 @@
       {
         "id": "urn:ngm:class:reference-architecture",
         "label": "XR Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:reference-architecture",
+        "label": "XR Reference Architecture"
       }
     ],
     "contrastsWith": [
@@ -84,6 +96,10 @@
       {
         "id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:verifiable-credential-vc",
@@ -120,6 +136,10 @@
       {
         "id": "urn:ngm:class:ieee-p-2048",
         "label": "IEEE 2048"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p-2048",
+        "label": "IEEE 2048"
       }
     ],
     "relatedTo": [
@@ -142,6 +162,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -242,8 +267,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -330,6 +363,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -348,8 +387,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -358,10 +401,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

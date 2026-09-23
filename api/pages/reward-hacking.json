@@ -78,6 +78,18 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:emergent-behavior",
+        "label": "Emergent Behavior"
       }
     ]
   },
@@ -100,32 +112,32 @@
         "label": "AI Alignment"
       },
       {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:ai-fairness",
-        "label": "AI Fairness"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
-      },
-      {
-        "id": "urn:ngm:class:ai-risk-management",
-        "label": "AI Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:algorithmic-accountability",
-        "label": "Algorithmic Accountability"
       }
     ],
     "requires": [
@@ -138,8 +150,16 @@
         "label": "Formal Verification"
       },
       {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
       },
       {
         "id": "urn:ngm:class:computational-infrastructure",
@@ -158,6 +178,10 @@
       {
         "id": "urn:ngm:class:human-ai-collaboration",
         "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
       },
       {
         "id": "urn:ngm:class:responsible-ai",
@@ -182,16 +206,44 @@
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ai-capabilities-research",
         "label": "AI Capabilities Research"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
       }
     ],
     "bridgesTo": [
@@ -206,6 +258,22 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -220,6 +288,10 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:sparse-autoencoders",
+        "label": "Sparse Autoencoder"
       }
     ],
     "supports": [
@@ -228,12 +300,34 @@
         "label": "AI Ethics"
       },
       {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
       },
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
       }
     ],
     "partOf": [
@@ -248,32 +342,32 @@
         "label": "AI Regulation"
       },
       {
+        "id": "urn:ngm:class:ai-security-institute",
+        "label": "AI Security Institute"
+      },
+      {
+        "id": "urn:ngm:class:apollo-research",
+        "label": "Apollo Research"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
         "id": "urn:ngm:class:corrigibility",
         "label": "Corrigibility"
+      },
+      {
+        "id": "urn:ngm:class:distributional-shift",
+        "label": "Distributional Shift"
       },
       {
         "id": "urn:ngm:class:existential-risk",
         "label": "Existential Risk"
       },
       {
-        "id": "urn:ngm:class:mesa-optimisation",
-        "label": "Mesa-Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:robustness",
-        "label": "Robustness"
-      },
-      {
-        "id": "urn:ngm:class:scalable-oversight",
-        "label": "Scalable Oversight"
-      },
-      {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-framework",
-        "label": "AI Governance Framework"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ]
   },

@@ -71,14 +71,14 @@
       "slug": "content-addressing"
     },
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component (Blockchain)",
-      "slug": "bc-network-component"
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
     },
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
     }
   ],
   "inheritedRelations": {
@@ -92,28 +92,28 @@
         "label": "Deterministic Serialisation"
       },
       {
+        "id": "urn:ngm:class:hash-minting",
+        "label": "Hash Minting"
+      },
+      {
         "id": "urn:ngm:class:sha-256-hashing",
         "label": "SHA-256 Hashing"
       },
       {
-        "id": "urn:ngm:class:archival-node",
-        "label": "Archival Node"
+        "id": "urn:ngm:class:block",
+        "label": "Block"
       },
       {
-        "id": "urn:ngm:class:bootstrap-node",
-        "label": "Bootstrap Node"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:full-node",
-        "label": "Full Node"
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
       },
       {
-        "id": "urn:ngm:class:light-node",
-        "label": "Light Node"
-      },
-      {
-        "id": "urn:ngm:class:mempool",
-        "label": "Mempool"
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
       }
     ],
     "requires": [
@@ -130,12 +130,16 @@
         "label": "Deterministic Encoding"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
       }
     ],
     "enables": [
@@ -152,24 +156,24 @@
         "label": "Verifiable Data"
       },
       {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
         "id": "urn:ngm:class:immutability",
         "label": "Immutability"
       },
       {
-        "id": "urn:ngm:class:block-propagation",
-        "label": "Block Propagation"
+        "id": "urn:ngm:class:permanent-referenceability",
+        "label": "Permanent Referenceability"
       },
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       }
     ],
     "implements": [
@@ -180,6 +184,10 @@
       {
         "id": "urn:ngm:class:content-addressed-storage",
         "label": "Content-Addressed Storage Principles"
+      },
+      {
+        "id": "urn:ngm:class:git-object-addressing",
+        "label": "Git Object Addressing"
       },
       {
         "id": "urn:ngm:class:ipfs-content-addressing",
@@ -200,8 +208,24 @@
         "label": "Verifiable Credentials"
       },
       {
+        "id": "urn:ngm:class:blockchain-hash-functions",
+        "label": "Blockchain Hash Functions"
+      },
+      {
         "id": "urn:ngm:class:data-layer",
         "label": "Data Layer"
+      },
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
       }
     ],
     "uses": [
@@ -240,6 +264,14 @@
       {
         "id": "urn:ngm:class:ipld",
         "label": "IPLD"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ],
     "relatedTo": [
@@ -256,16 +288,8 @@
         "label": "NFT Metadata"
       },
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
       }
     ]
   },

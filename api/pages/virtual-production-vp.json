@@ -36,6 +36,14 @@
       {
         "id": "urn:ngm:class:virtual-camera",
         "label": "Virtual Camera"
+      },
+      {
+        "id": "urn:ngm:class:led-volume",
+        "label": "LED Volume"
+      },
+      {
+        "id": "urn:ngm:class:compositing-pipeline",
+        "label": "Compositing Pipeline"
       }
     ],
     "requires": [
@@ -50,6 +58,14 @@
       {
         "id": "urn:ngm:class:xr-hardware",
         "label": "XR Hardware"
+      },
+      {
+        "id": "urn:ngm:class:render-engine",
+        "label": "Render Engine"
+      },
+      {
+        "id": "urn:ngm:class:led-display-system",
+        "label": "LED Display System"
       }
     ],
     "enables": [
@@ -64,9 +80,34 @@
       {
         "id": "urn:ngm:class:virtual-scouting",
         "label": "Virtual Scouting"
+      },
+      {
+        "id": "urn:ngm:class:live-compositing",
+        "label": "Live Compositing"
+      },
+      {
+        "id": "urn:ngm:class:previsualization",
+        "label": "Previsualization"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-graphics",
+        "label": "Real-Time Graphics"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:color-grading",
+        "label": "Color Grading"
+      },
+      {
+        "id": "urn:ngm:class:virtual-set-design",
+        "label": "Virtual Set Design"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -81,6 +122,10 @@
       {
         "id": "urn:ngm:class:virtual-production-workflow",
         "label": "Film Production Workflow"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Film Production Workflow"
       }
     ],
     "relatedTo": []
@@ -90,6 +135,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -155,6 +215,10 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       }
     ],
     "enables": [
@@ -213,11 +277,15 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -229,12 +297,24 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -283,6 +363,14 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -315,6 +403,18 @@
       {
         "id": "urn:ngm:class:deferred-rendering",
         "label": "Deferred Rendering"
+      },
+      {
+        "id": "urn:ngm:class:screen-space-reflections",
+        "label": "Screen-Space Reflections"
+      },
+      {
+        "id": "urn:ngm:class:temporal-antialiasing",
+        "label": "Temporal Antialiasing"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
       }
     ]
   },

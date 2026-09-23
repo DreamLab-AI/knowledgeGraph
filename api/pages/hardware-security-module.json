@@ -21,11 +21,15 @@
       {
         "id": "urn:ngm:class:hardware-root-of-trust",
         "label": "Hardware Root of Trust"
+      },
+      {
+        "id": "urn:ngm:class:tamper-resistance",
+        "label": "Tamper Resistance"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -43,13 +47,17 @@
       {
         "id": "urn:ngm:class:secure-boot",
         "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:payment-security",
+        "label": "Payment Security"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       },
       {
@@ -59,12 +67,20 @@
       {
         "id": "urn:ngm:class:trusted-platform-module",
         "label": "Trusted Platform Module"
+      },
+      {
+        "id": "urn:ngm:class:software-keystore",
+        "label": "Software Keystore"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-key-custody",
+        "label": "Blockchain Key Custody"
       }
     ],
     "uses": [
@@ -91,6 +107,18 @@
       {
         "id": "urn:ngm:class:asymmetric-cryptography",
         "label": "Asymmetric Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:pkcs",
+        "label": "PKCS"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Key Cryptography"
       }
     ],
     "supports": [],
@@ -102,6 +130,14 @@
       {
         "id": "urn:ngm:class:pci-dss",
         "label": "PCI-DSS"
+      },
+      {
+        "id": "urn:ngm:class:fips-140-3",
+        "label": "FIPS 140"
+      },
+      {
+        "id": "urn:ngm:class:common-criteria",
+        "label": "Common Criteria"
       }
     ],
     "partOf": [],
@@ -117,6 +153,10 @@
       {
         "id": "urn:ngm:class:secure-element",
         "label": "Secure Element"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Cloud Key Management Service"
       },
       {
         "id": "urn:ngm:class:key-management",

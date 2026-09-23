@@ -121,6 +121,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:data-processing",
       "label": "Data Processing",
       "slug": "data-processing"
@@ -129,16 +134,6 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -152,28 +147,28 @@
         "label": "In-Memory Computing"
       },
       {
-        "id": "urn:ngm:class:batch-processing",
-        "label": "Batch Processing"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:etl-pipeline",
-        "label": "ETL"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:data-catalogue",
-        "label": "Data Catalogue"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:data-lineage",
-        "label": "Data Lineage"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
     "requires": [
@@ -186,6 +181,18 @@
         "label": "Message Queue"
       },
       {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
         "id": "urn:ngm:class:data-ingestion",
         "label": "Data Ingestion"
       },
@@ -196,18 +203,6 @@
       {
         "id": "urn:ngm:class:schema-management",
         "label": "Schema Management"
-      },
-      {
-        "id": "urn:ngm:class:access-control",
-        "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:data-security",
-        "label": "Data Security"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
       }
     ],
     "enables": [
@@ -224,24 +219,24 @@
         "label": "Predictive Maintenance"
       },
       {
-        "id": "urn:ngm:class:business-intelligence",
-        "label": "Business Intelligence"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:data-analytics",
-        "label": "Data Analytics"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [
@@ -272,8 +267,8 @@
         "label": "Raw Data"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -286,28 +281,28 @@
         "label": "Robotics Control"
       },
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:metaverse-technology",
-        "label": "Metaverse Technology"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -360,20 +355,16 @@
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:sql-standard",
+        "label": "SQL Standard"
+      },
+      {
         "id": "urn:ngm:class:dama-dmbok",
         "label": "DAMA DMBOK"
       },
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "partOf": [

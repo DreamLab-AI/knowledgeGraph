@@ -10,6 +10,38 @@
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "id": "urn:ngm:class:semantic-web-linked-data-standard",
+      "label": "Semantic Web Linked Data Standard"
+    },
+    {
+      "id": "urn:ngm:class:graph-databases",
+      "label": "Graph Databases"
+    },
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "id": "urn:ngm:class:ontology-engineering",
+      "label": "Ontology Engineering"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "id": "urn:ngm:class:data-engineering",
+      "label": "Data Engineering"
+    },
+    {
+      "id": "urn:ngm:class:artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
     }
   ],
   "entityType": "Class",
@@ -64,6 +96,10 @@
       {
         "id": "urn:ngm:class:sparql-endpoint",
         "label": "SPARQL Endpoint"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-embeddings",
+        "label": "Knowledge Graph Embeddings"
       }
     ],
     "requires": [
@@ -146,7 +182,40 @@
         "label": "Semantic Search"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logics"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:community-detection",
@@ -175,9 +244,54 @@
       {
         "id": "urn:ngm:class:algorithmic-bias-and-variance",
         "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:transe",
+        "label": "TransE"
+      },
+      {
+        "id": "urn:ngm:class:complex",
+        "label": "ComplEx"
+      },
+      {
+        "id": "urn:ngm:class:owl-reasoning",
+        "label": "OWL Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logics"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Databases"
+      },
+      {
+        "id": "urn:ngm:class:vector-databases",
+        "label": "Vector Databases"
+      },
+      {
+        "id": "urn:ngm:class:document-stores",
+        "label": "Document Stores"
+      },
+      {
+        "id": "urn:ngm:class:key-value-stores",
+        "label": "Key-Value Stores"
+      },
+      {
+        "id": "urn:ngm:class:columnar-databases",
+        "label": "Columnar Databases"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:data-engineering",
@@ -266,6 +380,10 @@
       {
         "id": "urn:ngm:class:clinical-decision-support",
         "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-research",
+        "label": "Biomedical Research"
       }
     ],
     "standardizedBy": [
@@ -288,6 +406,30 @@
       {
         "id": "urn:ngm:class:rdf",
         "label": "W3C RDF Standard"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "W3C RDF Standard"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL 2 W3C Recommendation"
+      },
+      {
+        "id": "urn:ngm:class:w-3-c-sparql-1-1",
+        "label": "SPARQL 1.1 W3C Recommendation"
+      },
+      {
+        "id": "urn:ngm:class:iso-gql-standard",
+        "label": "ISO GQL Standard"
+      },
+      {
+        "id": "urn:ngm:class:schema-org",
+        "label": "schema.org Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "partOf": [],
@@ -348,9 +490,74 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:database-systems",
+      "label": "Database Systems",
+      "slug": "database-systems"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model-capability",
+      "label": "Foundation Model Capability",
+      "slug": "foundation-model-capability"
+    },
+    {
+      "id": "urn:ngm:class:frontier-ai",
+      "label": "Frontier AI",
+      "slug": "frontier-ai"
+    },
+    {
+      "id": "urn:ngm:class:general-intelligence",
+      "label": "General Intelligence",
+      "slug": "general-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure-domain",
+      "label": "Infrastructure Domain",
+      "slug": "infrastructure-domain"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing",
+      "slug": "natural-language-processing"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer",
+      "slug": "foundation-model-layer"
+    },
+    {
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model",
+      "slug": "large-scale-pretrained-foundation-model"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
     }
   ],
   "inheritedRelations": {
@@ -390,38 +597,314 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
       },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      },
+      {
+        "id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
+      },
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:graph-data-model",
+        "label": "Graph Data Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:text-representation",
+        "label": "Text Representation"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:corpus",
+        "label": "Corpus"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metrics"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:bitter-lesson",
+        "label": "Bitter Lesson"
+      },
+      {
+        "id": "urn:ngm:class:compute-trends",
+        "label": "Compute Trends"
+      },
+      {
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:closed-world-assumption",
+        "label": "Closed World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
+      },
+      {
+        "id": "urn:ngm:class:inference-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture-of-Experts Architecture"
+      }
+    ],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:sub-symbolic-ai",
+        "label": "Sub-Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:domain-specific-ai",
+        "label": "Domain-Specific AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
-    "enables": [
+    "bridgesTo": [
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:database-schema",
+        "label": "Database Schema"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-networks",
+        "label": "Graph Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
+      },
+      {
+        "id": "urn:ngm:class:spatial-search",
+        "label": "Spatial Search"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:semantic-network",
+        "label": "Semantic Network"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL Web Ontology Language"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       },
       {
         "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "label": "Decision Support System"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:data-observability",
+        "label": "Data Observability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:deepmind-levels-of-agi-framework",
+        "label": "DeepMind Levels of AGI Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:openai-charter",
+        "label": "OpenAI Charter"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "relatedTo": [
@@ -436,6 +919,26 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:neural-symbolic-integration",
+        "label": "Neural-Symbolic Integration"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
       }
     ]
   },

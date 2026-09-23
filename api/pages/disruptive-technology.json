@@ -34,6 +34,22 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "GenerativeAI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "MachineLearning"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "EdgeComputing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "InternetOfThings"
       }
     ],
     "dependsOn": [],
@@ -42,6 +58,10 @@
       {
         "id": "urn:ngm:class:technology-stack",
         "label": "Technology Stack"
+      },
+      {
+        "id": "urn:ngm:class:technology-stack",
+        "label": "TechnologyStack"
       }
     ],
     "bridgesTo": [],
@@ -52,6 +72,10 @@
       {
         "id": "urn:ngm:class:infra-computing-and-cloud",
         "label": "Computing and Cloud"
+      },
+      {
+        "id": "urn:ngm:class:disruptivetechdomain",
+        "label": "DisruptiveTechDomain"
       }
     ],
     "relatedTo": [
@@ -70,6 +94,14 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:technology-adoption",
+        "label": "TechnologyAdoption"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "DigitalTransformation"
       }
     ]
   },
@@ -197,7 +229,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

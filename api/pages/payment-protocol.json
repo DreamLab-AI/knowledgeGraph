@@ -32,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -79,12 +84,12 @@
         "label": "Protocol Stack"
       },
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -92,6 +97,10 @@
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:data-encoding",
+        "label": "Data Encoding"
+      },
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
@@ -127,6 +136,10 @@
         "label": "Real-Time Communication"
       },
       {
+        "id": "urn:ngm:class:data-transmission",
+        "label": "Data Transmission"
+      },
+      {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
       },
@@ -141,10 +154,6 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       }
     ],
     "dependsOn": [
@@ -164,7 +173,7 @@
       },
       {
         "id": "urn:ngm:class:tcp-ip",
-        "label": "TCP/IP"
+        "label": "TCP-IP"
       },
       {
         "id": "urn:ngm:class:tcp-ip-model",
@@ -216,6 +225,10 @@
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-handshake",
+        "label": "Cryptographic Handshake"
+      },
       {
         "id": "urn:ngm:class:error-correction",
         "label": "Error Correction"

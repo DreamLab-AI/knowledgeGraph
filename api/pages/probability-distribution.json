@@ -87,7 +87,7 @@
         "label": "Stochastic Process"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]
@@ -132,16 +132,16 @@
         "label": "Stochastic Process"
       },
       {
+        "id": "urn:ngm:class:lebesgue-integral",
+        "label": "Lebesgue Integral"
+      },
+      {
         "id": "urn:ngm:class:sigma-algebra",
         "label": "Sigma-Algebra"
       },
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
       }
     ],
     "requires": [
@@ -210,6 +210,10 @@
     ],
     "dependsOn": [
       {
+        "id": "urn:ngm:class:lebesgue-integration",
+        "label": "Lebesgue Integration"
+      },
+      {
         "id": "urn:ngm:class:sigma-algebra",
         "label": "Sigma-Algebra"
       },
@@ -219,6 +223,10 @@
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deterministic-computation",
+        "label": "Deterministic Computation"
+      },
       {
         "id": "urn:ngm:class:fuzzy-logic",
         "label": "Fuzzy Logic"
@@ -234,6 +242,10 @@
         "label": "Diffusion Models"
       },
       {
+        "id": "urn:ngm:class:financial-mathematics",
+        "label": "Financial Mathematics"
+      },
+      {
         "id": "urn:ngm:class:functional-analysis",
         "label": "Functional Analysis"
       },
@@ -244,6 +256,14 @@
       {
         "id": "urn:ngm:class:quantum-mechanics",
         "label": "Quantum Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -254,11 +274,15 @@
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:bayesian-networks",
+        "label": "Bayesian Networks"
+      },
+      {
         "id": "urn:ngm:class:graphical-model",
         "label": "Probabilistic Graphical Models"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -270,6 +294,12 @@
         "label": "Monte Carlo Methods"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:bayesian-decision-theory",
@@ -278,6 +308,10 @@
       {
         "id": "urn:ngm:class:causal-inference",
         "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:information-geometry",
+        "label": "Information Geometry"
       },
       {
         "id": "urn:ngm:class:optimal-transport",
@@ -298,10 +332,6 @@
       {
         "id": "urn:ngm:class:ai-technique",
         "label": "AI Technique"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
       }
     ]
   },

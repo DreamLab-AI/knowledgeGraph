@@ -88,14 +88,14 @@
       "slug": "cryptocurrency-storage"
     },
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component (Blockchain)",
-      "slug": "bc-network-component"
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
     },
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
     }
   ],
   "inheritedRelations": {
@@ -109,28 +109,28 @@
         "label": "Public Key"
       },
       {
-        "id": "urn:ngm:class:archival-node",
-        "label": "Archival Node"
+        "id": "urn:ngm:class:block",
+        "label": "Block"
       },
       {
-        "id": "urn:ngm:class:bootstrap-node",
-        "label": "Bootstrap Node"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:full-node",
-        "label": "Full Node"
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
       },
       {
-        "id": "urn:ngm:class:light-node",
-        "label": "Light Node"
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:ngm:class:mempool",
-        "label": "Mempool"
+        "id": "urn:ngm:class:node",
+        "label": "Node"
       },
       {
-        "id": "urn:ngm:class:validator-node",
-        "label": "Validator Node"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "requires": [
@@ -147,6 +147,10 @@
         "label": "Digital Signature"
       },
       {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
@@ -155,16 +159,12 @@
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
       }
     ],
     "enables": [
@@ -177,33 +177,33 @@
         "label": "Decentralized Identity"
       },
       {
-        "id": "urn:ngm:class:transaction-signing",
-        "label": "Transaction Signing"
+        "id": "urn:ngm:class:defi-access",
+        "label": "DeFi Access"
       },
       {
-        "id": "urn:ngm:class:block-propagation",
-        "label": "Block Propagation"
+        "id": "urn:ngm:class:transaction-signing",
+        "label": "Transaction Signing"
       },
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Transparent Audit Trails"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:autonomous-governance",
+        "label": "Autonomous Governance"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -235,6 +235,14 @@
       {
         "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -265,6 +273,16 @@
         "label": "Digital Asset Management"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:hardware-security-module",
@@ -275,16 +293,8 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
       }
     ]
   },

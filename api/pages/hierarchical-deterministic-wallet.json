@@ -110,6 +110,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:certificate-lifecycle-management",
+        "label": "Certificate Lifecycle Management"
+      },
+      {
         "id": "urn:ngm:class:key-generation",
         "label": "Key Generation"
       },
@@ -136,10 +140,6 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ],
     "requires": [
@@ -220,6 +220,16 @@
         "label": "Transaction Signing"
       }
     ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:envelope-encryption",
+        "label": "Envelope Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-hierarchy",
+        "label": "Key Hierarchy"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:password-management",
@@ -236,7 +246,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
       },
       {
@@ -262,6 +272,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       },
@@ -272,10 +286,6 @@
       {
         "id": "urn:ngm:class:key-derivation-function",
         "label": "Key Derivation Function"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptographic-primitive",
@@ -328,7 +338,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
       }
     ],

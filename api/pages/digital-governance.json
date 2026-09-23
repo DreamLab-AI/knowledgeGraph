@@ -70,6 +70,10 @@
       {
         "id": "urn:ngm:class:rule-of-law",
         "label": "Rule of Law"
+      },
+      {
+        "id": "urn:ngm:class:institutional-capacity",
+        "label": "Institutional Capacity"
       }
     ],
     "implements": [
@@ -84,12 +88,20 @@
       {
         "id": "urn:ngm:class:digital-services-act",
         "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:deregulation",
         "label": "Deregulation"
+      },
+      {
+        "id": "urn:ngm:class:techno-solutionism",
+        "label": "Techno-Solutionism"
       }
     ],
     "bridgesTo": [
@@ -144,6 +156,14 @@
       {
         "id": "urn:ngm:class:net-neutrality",
         "label": "Net Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-policy",
+        "label": "Digital Policy"
       }
     ]
   },
@@ -223,6 +243,20 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

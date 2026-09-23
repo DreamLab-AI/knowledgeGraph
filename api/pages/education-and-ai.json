@@ -12,12 +12,20 @@
       "label": "AI Application"
     },
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:applied-ai",
+      "label": "Applied AI"
     },
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "id": "urn:ngm:class:human-centred-ai",
+      "label": "Human-Centred AI"
+    },
+    {
+      "id": "urn:ngm:class:conversational-ai-applications",
+      "label": "Conversational AI Applications"
     }
   ],
   "entityType": "Class",
@@ -48,6 +56,14 @@
       {
         "id": "urn:ngm:class:learning-analytics",
         "label": "Learning Analytics"
+      },
+      {
+        "id": "urn:ngm:class:automated-grading",
+        "label": "Automated Grading"
+      },
+      {
+        "id": "urn:ngm:class:ai-literacy-curriculum",
+        "label": "AI Literacy Curriculum"
       }
     ],
     "requires": [
@@ -58,6 +74,26 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:pedagogical-theory",
+        "label": "Pedagogical Theory"
+      },
+      {
+        "id": "urn:ngm:class:student-data",
+        "label": "Student Data"
+      },
+      {
+        "id": "urn:ngm:class:teacher-oversight",
+        "label": "Teacher Oversight"
+      },
+      {
+        "id": "urn:ngm:class:assessment-framework",
+        "label": "Assessment Framework"
+      },
+      {
+        "id": "urn:ngm:class:safeguarding-policy",
+        "label": "Safeguarding Policy"
       }
     ],
     "enables": [
@@ -72,9 +108,54 @@
       {
         "id": "urn:ngm:class:personalised-learning",
         "label": "Personalised Learning"
+      },
+      {
+        "id": "urn:ngm:class:scalable-tutoring",
+        "label": "Scalable Tutoring"
+      },
+      {
+        "id": "urn:ngm:class:formative-feedback",
+        "label": "Formative Feedback"
+      },
+      {
+        "id": "urn:ngm:class:teacher-time-recovery",
+        "label": "Teacher Time Recovery"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility Provisioning"
+      },
+      {
+        "id": "urn:ngm:class:differentiated-instruction",
+        "label": "Differentiated Instruction"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:learning-sciences",
+        "label": "Learning Sciences"
+      },
+      {
+        "id": "urn:ngm:class:constructivism",
+        "label": "Constructivism"
+      },
+      {
+        "id": "urn:ngm:class:educational-psychology",
+        "label": "Educational Psychology"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:bayesian-knowledge-tracing",
@@ -87,9 +168,42 @@
       {
         "id": "urn:ngm:class:spaced-repetition",
         "label": "Spaced Repetition"
+      },
+      {
+        "id": "urn:ngm:class:socratic-dialogue",
+        "label": "Socratic Dialogue"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-practice",
+        "label": "Retrieval Practice"
+      },
+      {
+        "id": "urn:ngm:class:worked-example-generation",
+        "label": "Worked Example Generation"
+      },
+      {
+        "id": "urn:ngm:class:rubric-based-assessment",
+        "label": "Rubric-Based Assessment"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-classroom-instruction",
+        "label": "Traditional Classroom Instruction"
+      },
+      {
+        "id": "urn:ngm:class:moocs-without-ai",
+        "label": "MOOCs Without AI"
+      },
+      {
+        "id": "urn:ngm:class:e-learning-lms",
+        "label": "E-Learning LMS"
+      },
+      {
+        "id": "urn:ngm:class:behaviourist-drill-and-practice",
+        "label": "Behaviourist Drill And Practice"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -107,13 +221,94 @@
       {
         "id": "urn:ngm:class:perplexity-ai-search-platform",
         "label": "Perplexity AI Search Platform"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-immersive-reader",
+        "label": "Microsoft Immersive Reader"
+      },
+      {
+        "id": "urn:ngm:class:perplexity-ai-search-platform",
+        "label": "Perplexity"
+      },
+      {
+        "id": "urn:ngm:class:khan-academy",
+        "label": "Khan Academy"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:khanmigo",
+        "label": "Khanmigo"
+      },
+      {
+        "id": "urn:ngm:class:carnegie-learning-mathia",
+        "label": "Carnegie Learning Mathia"
+      },
+      {
+        "id": "urn:ngm:class:aleks",
+        "label": "ALEKS"
+      },
+      {
+        "id": "urn:ngm:class:squirrel-ai",
+        "label": "Squirrel AI"
+      },
+      {
+        "id": "urn:ngm:class:duolingo-max",
+        "label": "Duolingo Max"
+      },
+      {
+        "id": "urn:ngm:class:magicschool",
+        "label": "MagicSchool"
+      },
+      {
+        "id": "urn:ngm:class:synthesis-tutor",
+        "label": "Synthesis Tutor"
+      },
+      {
+        "id": "urn:ngm:class:gradescope",
+        "label": "Gradescope"
+      },
+      {
+        "id": "urn:ngm:class:turnitin-ai-detection",
+        "label": "Turnitin AI Detection"
+      },
+      {
+        "id": "urn:ngm:class:century-tech",
+        "label": "Century Tech"
+      },
+      {
+        "id": "urn:ngm:class:tassomai",
+        "label": "Tassomai"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument-annex-iii",
         "label": "EU AI Act Annex III"
+      },
+      {
+        "id": "urn:ngm:class:unesco-ai-education-recommendation",
+        "label": "UNESCO AI Education Recommendation"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-literacy-framework",
+        "label": "OECD AI Literacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:ofqual-ai-guidance",
+        "label": "Ofqual AI Guidance"
+      },
+      {
+        "id": "urn:ngm:class:ib-ai-policy",
+        "label": "IB AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-annex-iii",
+        "label": "EU AI Act Annex III"
+      },
+      {
+        "id": "urn:ngm:class:dfe-generative-ai-guidance",
+        "label": "DfE Generative AI Guidance"
       }
     ],
     "partOf": [],
@@ -137,6 +332,14 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:assessment-integrity",
+        "label": "Assessment Integrity"
+      },
+      {
+        "id": "urn:ngm:class:datafication",
+        "label": "Datafication"
       }
     ]
   },
@@ -145,6 +348,36 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:metaverse-technology",
+      "label": "Metaverse Technology",
+      "slug": "metaverse-technology"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:technology-domain",
+      "label": "Technology Domain",
+      "slug": "technology-domain"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     }
   ],
   "inheritedRelations": {
@@ -184,6 +417,18 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -194,9 +439,33 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "id": "urn:ngm:class:skills-assessment",
+        "label": "Skills Assessment"
+      },
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
@@ -212,10 +481,50 @@
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "uses": [
@@ -226,6 +535,58 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:scorm",
+        "label": "SCORM"
+      },
+      {
+        "id": "urn:ngm:class:xapi",
+        "label": "xAPI"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
       }
     ],
     "relatedTo": [
@@ -240,6 +601,26 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ]
   },

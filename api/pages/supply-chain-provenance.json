@@ -185,8 +185,8 @@
         "label": "Procurement"
       },
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:supplier-relationship-management",
+        "label": "Supplier Relationship Management"
       }
     ],
     "requires": [
@@ -269,7 +269,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:w3-c-prov",
+        "id": "urn:ngm:class:provenance-standard",
         "label": "W3C PROV"
       }
     ],
@@ -281,6 +281,14 @@
       {
         "id": "urn:ngm:class:just-in-time-manufacturing",
         "label": "Just-In-Time Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:value-chain-management",
+        "label": "Value Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
       },
       {
         "id": "urn:ngm:class:co-located-collaboration",
@@ -301,12 +309,16 @@
         "label": "AI Agent"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
       },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
@@ -347,8 +359,8 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
       }
     ],
     "supports": [
@@ -369,6 +381,12 @@
       {
         "id": "urn:ngm:class:iso-28000",
         "label": "ISO 28000"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:operations-management",
+        "label": "Operations Management"
       }
     ],
     "relatedTo": [

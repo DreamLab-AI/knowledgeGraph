@@ -201,12 +201,12 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
       {
         "id": "urn:ngm:class:high-performance-computing",
@@ -353,12 +353,12 @@
         "label": "Microservices"
       },
       {
-        "id": "urn:ngm:class:colocation-services",
-        "label": "Colocation Services"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:colocation-services",
+        "label": "Colocation Services"
       },
       {
         "id": "urn:ngm:class:energy-and-power",

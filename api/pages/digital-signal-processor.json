@@ -132,16 +132,16 @@
         "label": "Digital Signal Processing"
       },
       {
+        "id": "urn:ngm:class:filter-design",
+        "label": "Filter Design"
+      },
+      {
         "id": "urn:ngm:class:fourier-transform",
         "label": "Fourier Transform"
       },
       {
         "id": "urn:ngm:class:sampling-theory",
         "label": "Sampling Theory"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
       }
     ],
     "requires": [
@@ -224,13 +224,17 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:visual-rendering-system",
+        "label": "Visual Rendering System"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -244,6 +248,22 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -290,7 +310,7 @@
         "label": "Virtual Reality"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -300,6 +320,16 @@
       {
         "id": "urn:ngm:class:telecommunications",
         "label": "Telecommunications"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openal",
+        "label": "OpenAL"
+      },
+      {
+        "id": "urn:ngm:class:web-audio-api",
+        "label": "Web Audio API"
       }
     ],
     "relatedTo": [

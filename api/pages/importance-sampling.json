@@ -51,7 +51,7 @@
         "label": "Path Tracing"
       },
       {
-        "id": "urn:ngm:class:particle-filter",
+        "id": "urn:ngm:class:monte-carlo-localization",
         "label": "Particle Filter"
       }
     ],
@@ -219,6 +219,16 @@
         "label": "Predictive Analytics"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deterministic-algorithms",
+        "label": "Deterministic Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:numerical-quadrature",
+        "label": "Numerical Quadrature"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:drug-discovery",
@@ -231,6 +241,22 @@
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -263,7 +289,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:particle-filter",
+        "id": "urn:ngm:class:monte-carlo-localization",
         "label": "Particle Filter"
       },
       {

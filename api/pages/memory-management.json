@@ -115,6 +115,14 @@
         "label": "Autoscaling"
       },
       {
+        "id": "urn:ngm:class:quota-management",
+        "label": "Quota Management"
+      },
+      {
+        "id": "urn:ngm:class:resource-pool",
+        "label": "Resource Pool"
+      },
+      {
         "id": "urn:ngm:class:scheduler",
         "label": "Scheduler"
       },
@@ -133,14 +141,6 @@
       {
         "id": "urn:ngm:class:storage-infrastructure",
         "label": "Storage Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:cloud-native-applications",
-        "label": "Cloud-Native Applications"
       }
     ],
     "requires": [
@@ -220,6 +220,10 @@
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:over-provisioning",
+        "label": "Over-Provisioning"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
@@ -309,7 +313,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {

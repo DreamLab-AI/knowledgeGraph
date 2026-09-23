@@ -28,6 +28,18 @@
       {
         "id": "urn:ngm:class:validator",
         "label": "Transaction Validator"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency-ledger",
+        "label": "Digital Currency Ledger"
+      },
+      {
+        "id": "urn:ngm:class:identity-system",
+        "label": "Identity System"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Transaction Validator"
       }
     ],
     "requires": [
@@ -70,7 +82,20 @@
         "label": "Monetary Policy Implementation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:banking-infrastructure",
+        "label": "Banking Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement System"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:payment-system",
@@ -78,7 +103,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -222,7 +252,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -53,6 +53,11 @@
       "slug": "ai-safety"
     },
     {
+      "id": "urn:ngm:class:ai-security-threats",
+      "label": "AI Security Threats",
+      "slug": "ai-security-threats"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -100,6 +105,14 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:crafted-perturbations",
+        "label": "Crafted Perturbations"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-of-target-model",
+        "label": "Knowledge of Target Model"
+      },
+      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
       },
@@ -108,26 +121,38 @@
         "label": "Formal Verification"
       },
       {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
       },
       {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
       }
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:model-evasion",
+        "label": "Model Evasion"
+      },
+      {
+        "id": "urn:ngm:class:system-manipulation",
+        "label": "System Manipulation"
+      },
+      {
         "id": "urn:ngm:class:human-ai-collaboration",
         "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
       },
       {
         "id": "urn:ngm:class:responsible-ai",
@@ -144,27 +169,55 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ai-capabilities-research",
         "label": "AI Capabilities Research"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
@@ -176,6 +229,22 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -190,6 +259,10 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:sparse-autoencoders",
+        "label": "Sparse Autoencoder"
       }
     ],
     "supports": [
@@ -198,12 +271,34 @@
         "label": "AI Ethics"
       },
       {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
       },
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
       }
     ],
     "partOf": [
@@ -230,20 +325,20 @@
         "label": "AI Regulation"
       },
       {
+        "id": "urn:ngm:class:ai-security-institute",
+        "label": "AI Security Institute"
+      },
+      {
+        "id": "urn:ngm:class:apollo-research",
+        "label": "Apollo Research"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
         "id": "urn:ngm:class:corrigibility",
         "label": "Corrigibility"
-      },
-      {
-        "id": "urn:ngm:class:existential-risk",
-        "label": "Existential Risk"
-      },
-      {
-        "id": "urn:ngm:class:mesa-optimisation",
-        "label": "Mesa-Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:robustness",
-        "label": "Robustness"
       }
     ]
   },

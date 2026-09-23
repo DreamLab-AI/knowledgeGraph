@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:model-architecture",
+      "label": "ModelArchitecture"
     }
   ],
   "entityType": "Class",
@@ -93,9 +97,19 @@
       "slug": "digital-infrastructure"
     },
     {
+      "id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture",
+      "slug": "system-architecture"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture",
+      "slug": "software-architecture"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -130,12 +144,12 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "requires": [
@@ -152,6 +166,14 @@
         "label": "Networking Fabric"
       },
       {
+        "id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resource"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
         "id": "urn:ngm:class:cooling-system",
         "label": "Cooling Systems"
       },
@@ -160,16 +182,8 @@
         "label": "Power Grid"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
       }
     ],
     "enables": [
@@ -186,24 +200,24 @@
         "label": "Real-Time Inference"
       },
       {
+        "id": "urn:ngm:class:ai-model-development",
+        "label": "AI Model Development"
+      },
+      {
+        "id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
       },
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
-      },
-      {
-        "id": "urn:ngm:class:orchestration",
-        "label": "Orchestration"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       }
     ],
     "dependsOn": [
@@ -216,11 +230,43 @@
         "label": "Data Centre"
       },
       {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
         "id": "urn:ngm:class:open-source-software",
         "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
       {
         "id": "urn:ngm:class:containerisation",
         "label": "Containerisation"
@@ -228,12 +274,40 @@
       {
         "id": "urn:ngm:class:infrastructure-as-code",
         "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      },
+      {
+        "id": "urn:ngm:class:design-pattern",
+        "label": "Design Pattern"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:general-purpose-computing",
         "label": "General-Purpose Computing"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Model"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
       },
       {
         "id": "urn:ngm:class:application-layer",
@@ -250,16 +324,28 @@
         "label": "Spatial Computing"
       },
       {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
       }
     ],
     "uses": [
@@ -276,8 +362,24 @@
         "label": "Kubernetes"
       },
       {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
         "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
       }
     ],
     "supports": [
@@ -294,20 +396,24 @@
         "label": "Machine Learning Discipline"
       },
       {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-modal-learning",
+        "label": "Multi-Modal Learning"
+      },
+      {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ],
     "standardizedBy": [
@@ -332,6 +438,16 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning-pipeline",
+        "label": "Deep Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cloud-infrastructure",
@@ -346,24 +462,24 @@
         "label": "Model Registry"
       },
       {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
       },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:compute-infrastructure",
-        "label": "Compute Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:infra-data-management",
-        "label": "Data Management"
-      },
-      {
-        "id": "urn:ngm:class:infra-network-and-comms",
-        "label": "Network and Communication"
       }
     ]
   },

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:design-pattern",
       "label": "Design Pattern"
+    },
+    {
+      "id": "urn:ngm:class:designpattern",
+      "label": "DesignPattern"
     }
   ],
   "entityType": "Class",
@@ -22,6 +26,10 @@
       {
         "id": "urn:ngm:class:multi-agent-orchestration",
         "label": "Multi-Agent Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:multiagentorchestration",
+        "label": "MultiAgentOrchestration"
       }
     ],
     "dependsOn": [],
@@ -32,6 +40,10 @@
       {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributedcomputing",
+        "label": "DistributedComputing"
       }
     ],
     "supports": [],
@@ -45,6 +57,14 @@
       {
         "id": "urn:ngm:class:data-parallelism",
         "label": "Data Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:taskdelegation",
+        "label": "TaskDelegation"
+      },
+      {
+        "id": "urn:ngm:class:dataparallelism",
+        "label": "DataParallelism"
       }
     ]
   },
@@ -58,16 +78,6 @@
       "id": "urn:ngm:class:systems-engineering",
       "label": "Systems Engineering",
       "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering (Infrastructure)",
-      "slug": "infra-software-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -89,20 +99,20 @@
         "label": "Software Architecture"
       },
       {
+        "id": "urn:ngm:class:software-design-patterns",
+        "label": "Software Design Patterns"
+      },
+      {
         "id": "urn:ngm:class:software-testing",
         "label": "Software Testing"
       },
       {
+        "id": "urn:ngm:class:interface-management",
+        "label": "Interface Management"
+      },
+      {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:system-architecture",
-        "label": "System Architecture"
-      },
-      {
-        "id": "urn:ngm:class:code-generation",
-        "label": "Code Generation"
       }
     ],
     "requires": [
@@ -129,14 +139,6 @@
       {
         "id": "urn:ngm:class:stakeholder-analysis",
         "label": "Stakeholder Analysis"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
       }
     ],
     "enables": [
@@ -165,12 +167,12 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:technical-architecture-framework",
-        "label": "Technical Architecture Framework"
+        "id": "urn:ngm:class:system-of-systems",
+        "label": "System of Systems"
       },
       {
-        "id": "urn:ngm:class:technology-infrastructure",
-        "label": "Technology Infrastructure"
+        "id": "urn:ngm:class:technical-architecture-framework",
+        "label": "Technical Architecture Framework"
       }
     ],
     "contrastsWith": [
@@ -179,16 +181,16 @@
         "label": "Computer Science"
       },
       {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
       },
       {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
-      },
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -211,14 +213,6 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -267,32 +261,28 @@
       {
         "id": "urn:ngm:class:robo-safety-and-standards",
         "label": "Safety and Standards"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "partOf": [

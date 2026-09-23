@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Proprietary Video</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Proprietary Video"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Proprietary Video"/><meta name="twitter:description" content="Proprietary Video denotes the class of video coding formats, digital rights management (DRM) systems, adaptive bitrate streaming protocols, and broadcast transmission standards whose specification, licensing, or enforcement mechanism is controlled by a corporation, patent pool, or standards body … S..."/><meta property="og:description" content="Proprietary Video denotes the class of video coding formats, digital rights management (DRM) systems, adaptive bitrate streaming protocols, and broadcast transmission standards whose specification, licensing, or enforcement mechanism is controlled by a corporation, patent pool, or standards body … S..."/><meta property="og:image:alt" content="Proprietary Video denotes the class of video coding formats, digital rights management (DRM) systems, adaptive bitrate streaming protocols, and broadcast transmission standards whose specification, licensing, or enforcement mechanism is controlled by a corporation, patent pool, or standards body … S..."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Proprietary-Video"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Proprietary-Video"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Proprietary Video denotes the class of video coding formats, digital rights management (DRM) systems, adaptive bitrate streaming protocols, and broadcast transmission standards whose specification, licensing, or enforcement mechanism is controlled by a corporation, patent pool, or standards body … S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Proprietary-Video"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6105"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6105" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Proprietary Video</a></div></nav><h1 class="article-title">Proprietary Video</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.742Z">23 Sept 2026</time><span>36 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:proprietary-video</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>infrastructure</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Network-and-Communication" class="internal">Network and Communication</a></li><li><a href="../Legal-and-Regulatory" class="internal">Legal and Regulatory</a></li><li><a href="../content-delivery-network" class="internal">Content Delivery Network</a></li><li><a href="../Video-Codec-Standards" class="internal">Video Codec Standards</a></li><li><a href="../pages/Digital-Rights-Management" class="internal">Digital Rights Management</a></li><li><a href="../Streaming-Protocols" class="internal">Streaming Protocols</a></li><li><a href="../Broadcast-Standards" class="internal">Broadcast Standards</a></li><li><a href="../pages/Intellectual-Property" class="internal">Intellectual Property</a></li><li><a href="../Patent-Licensing" class="internal">Patent Licensing</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/ARM-TrustZone" class="internal">ARM TrustZone</a></li><li><a href="../dolby-atmos" class="internal">Dolby Atmos</a></li><li><a href="../pages/H.264" class="internal">H.264</a></li><li><a href="../pages/HEVC" class="internal">HEVC</a></li><li><a href="../mpeg-dash" class="internal">MPEG-DASH</a></li><li><a href="../VVC-H.266" class="internal">VVC H.266</a></li><li><a href="../Dolby-Vision" class="internal">Dolby Vision</a></li><li><a href="../Widevine" class="internal">Widevine</a></li><li><a href="../FairPlay" class="internal">FairPlay</a></li><li><a href="../PlayReady" class="internal">PlayReady</a></li><li><a href="../HLS" class="internal">HLS</a></li><li><a href="../CMAF" class="internal">CMAF</a></li><li><a href="../ATSC-3.0" class="internal">ATSC 3.0</a></li><li><a href="../HbbTV" class="internal">HbbTV</a></li><li><a href="../UHD-Blu-ray" class="internal">UHD Blu-ray</a></li><li><a href="../HDCP" class="internal">HDCP</a></li><li><a href="../Common-Encryption" class="internal">Common Encryption</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/ARM-TrustZone" class="internal">ARM TrustZone</a></li><li><a href="../content-delivery-network" class="internal">Content Delivery Network</a></li><li><a href="../encryption" class="internal">Encryption</a></li><li><a href="../pages/Frand-Licensing" class="internal">FRAND Licensing</a></li><li><a href="../pages/Hardware-Security" class="internal">Hardware Security</a></li><li><a href="../key-management" class="internal">Key Management</a></li><li><a href="../pages/Patent" class="internal">Patent Licensing</a></li><li><a href="../pages/TEE" class="internal">TEE</a></li><li><a href="../Hardware-and-Edge" class="internal">Hardware and Edge</a></li><li><a href="../Patent-Licensing" class="internal">Patent Licensing</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Advertising" class="internal">Addressable Advertising</a></li><li><a href="../pages/Broadcast-Television" class="internal">Broadcast Television</a></li><li><a href="../pages/Digital-Cinema" class="internal">Digital Cinema</a></li><li><a href="../pages/Low-Latency" class="internal">Low Latency Streaming</a></li><li><a href="../Premium-Streaming" class="internal">Premium Streaming</a></li><li><a href="../4K-UHD-Delivery" class="internal">4K UHD Delivery</a></li><li><a href="../HDR-Video" class="internal">HDR Video</a></li><li><a href="../Pay-TV" class="internal">Pay TV</a></li><li><a href="../Over-The-Top-Streaming" class="internal">Over The Top Streaming</a></li><li><a href="../Addressable-Advertising" class="internal">Addressable Advertising</a></li><li><a href="../Low-Latency-Streaming" class="internal">Low Latency Streaming</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../AV1" class="internal">AV1</a></li><li><a href="../VP9" class="internal">VP9</a></li><li><a href="../pages/Open-Source-AI" class="internal">Open Source AI</a></li><li><a href="../pages/WebRTC" class="internal">WebRTC</a></li><li><a href="../pages/Open-Standards" class="internal">Open Standards</a></li><li><a href="../Royalty-Free-Codecs" class="internal">Royalty Free Codecs</a></li><li><a href="../MPEG-5-EVC-Baseline" class="internal">MPEG-5 EVC Baseline</a></li><li><a href="../AVS3" class="internal">AVS3</a></li><li><a href="../Ogg-Vorbis-Theora" class="internal">Ogg Vorbis Theora</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Patent-Pools" class="internal">Patent Pools</a></li><li><a href="../pages/Hardware-Security-Module" class="internal">Hardware Security Module</a></li><li><a href="../pages/ARM-TrustZone" class="internal">ARM TrustZone</a></li><li><a href="../pages/Content-Delivery-Network" class="internal">Content Delivery Network</a></li><li><a href="../pages/Encryption" class="internal">Encryption</a></li><li><a href="../pages/Key-Management" class="internal">Key Management</a></li><li><a href="../Codec-Licensing" class="internal">Codec Licensing</a></li><li><a href="../FRAND-Commitments" class="internal">FRAND Commitments</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../CompressionLayer" class="internal">CompressionLayer</a></li><li><a href="../ContentProtectionLayer" class="internal">ContentProtectionLayer</a></li><li><a href="../DeliveryLayer" class="internal">DeliveryLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li><li><a href="../HardwareSecurityLayer" class="internal">HardwareSecurityLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../etsi" class="internal">ETSI Standards</a></li><li><a href="../ISO/IEC" class="internal">ISO IEC Standards</a></li><li><a href="../pages/ITU-T" class="internal">ITU-T Standards</a></li><li><a href="../MPEG-Standards" class="internal">MPEG Standards</a></li><li><a href="../ITU-T-Standards" class="internal">ITU-T Standards</a></li><li><a href="../ISO-IEC-Standards" class="internal">ISO IEC Standards</a></li><li><a href="../ETSI-Standards" class="internal">ETSI Standards</a></li><li><a href="../ATSC-Standards" class="internal">ATSC Standards</a></li><li><a href="../DVB-Standards" class="internal">DVB Standards</a></li><li><a href="../Blu-ray-Disc-Standards" class="internal">Blu-ray Disc Standards</a></li><li><a href="../W3C-EME-Standards" class="internal">W3C EME Standards</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>IF-0210</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../4-k-uhd-delivery" class="internal">4K UHD Delivery</a></li><li><a href="../addressable-advertising" class="internal">Addressable Advertising</a></li><li><a href="../advertising-and-marketing" class="internal">Advertising and Marketing</a></li><li><a href="../alliance-for-open-media" class="internal">Alliance for Open Media</a></li><li><a href="../amazon-prime-video" class="internal">Amazon Prime Video</a></li><li><a href="../apple-tv-plus" class="internal">Apple TV Plus</a></li><li><a href="../arm-trust-zone" class="internal">ARM TrustZone</a></li><li><a href="../atsc" class="internal">ATSC</a></li><li><a href="../atsc-3-0" class="internal">ATSC 3.0</a></li><li><a href="../atsc-standards" class="internal">ATSC Standards</a></li><li><a href="../av1" class="internal">AV1</a></li><li><a href="../avs3" class="internal">AVS3</a></li><li><a href="../bbc-i-player" class="internal">BBC iPlayer</a></li><li><a href="../blu-ray-disc-association" class="internal">Blu-ray Disc Association</a></li><li><a href="../blu-ray-disc-standards" class="internal">Blu-ray Disc Standards</a></li><li><a href="../broadcast-domain" class="internal">BroadcastDomain</a></li><li><a href="../broadcast-standards" class="internal">Broadcast Standards</a></li><li><a href="../broadcast-television" class="internal">Broadcast Television</a></li><li><a href="../bt-sport" class="internal">BT Sport</a></li><li><a href="../cmaf" class="internal">CMAF</a></li><li><a href="../codec-licensing" class="internal">Codec Licensing</a></li><li><a href="../common-encryption" class="internal">Common Encryption</a></li><li><a href="../compression-layer" class="internal">CompressionLayer</a></li><li><a href="../content-delivery-domain" class="internal">ContentDeliveryDomain</a></li><li><a href="../content-delivery-network" class="internal">Content Delivery Network</a></li><li><a href="../content-protection-layer" class="internal">ContentProtectionLayer</a></li><li><a href="../delivery-layer" class="internal">DeliveryLayer</a></li><li><a href="../digital-cinema" class="internal">Digital Cinema</a></li><li><a href="../digital-rights-domain" class="internal">DigitalRightsDomain</a></li><li><a href="../disney-plus" class="internal">Disney Plus</a></li><li><a href="../dolby-atmos" class="internal">Dolby Atmos</a></li><li><a href="../dolby-laboratories" class="internal">Dolby Laboratories</a></li><li><a href="../dolby-vision" class="internal">Dolby Vision</a></li><li><a href="../dvb" class="internal">DVB</a></li><li><a href="../dvb-standards" class="internal">DVB Standards</a></li><li><a href="../encryption" class="internal">Encryption</a></li><li><a href="../etsi" class="internal">ETSI</a></li><li><a href="../etsi-standards" class="internal">ETSI Standards</a></li><li><a href="../f-mp4" class="internal">fMP4</a></li><li><a href="../fair-play" class="internal">FairPlay</a></li><li><a href="../frand-commitments" class="internal">FRAND Commitments</a></li><li><a href="../frand-licensing" class="internal">FRAND Licensing</a></li><li><a href="../h-264" class="internal">H.264</a></li><li><a href="../hardware-security" class="internal">Hardware Security</a></li><li><a href="../hardware-security-layer" class="internal">HardwareSecurityLayer</a></li><li><a href="../hardware-security-module" class="internal">Hardware Security Module</a></li><li><a href="../hbb-tv" class="internal">HbbTV</a></li><li><a href="../hdcp" class="internal">HDCP</a></li><li><a href="../hdr-video" class="internal">HDR Video</a></li><li><a href="../hevc" class="internal">HEVC</a></li><li><a href="../hls" class="internal">HLS</a></li><li><a href="../intellectual-property" class="internal">Intellectual Property</a></li><li><a href="../iso-iec" class="internal">ISO IEC</a></li><li><a href="../iso-iec-standards" class="internal">ISO IEC Standards</a></li><li><a href="../itu-t" class="internal">ITU-T</a></li><li><a href="../itu-t-standards" class="internal">ITU-T Standards</a></li><li><a href="../itvx" class="internal">ITVX</a></li><li><a href="../key-management" class="internal">Key Management</a></li><li><a href="../low-latency-streaming" class="internal">Low Latency Streaming</a></li><li><a href="../media-technology-domain" class="internal">MediaTechnologyDomain</a></li><li><a href="../microsoft" class="internal">Microsoft</a></li><li><a href="../mpeg" class="internal">MPEG</a></li><li><a href="../mpeg-5-evc-baseline" class="internal">MPEG-5 EVC Baseline</a></li><li><a href="../mpeg-dash" class="internal">MPEG-DASH</a></li><li><a href="../mpeg-standards" class="internal">MPEG Standards</a></li><li><a href="../netflix" class="internal">Netflix</a></li><li><a href="../ofdm" class="internal">OFDM</a></li><li><a href="../ogg-vorbis-theora" class="internal">Ogg Vorbis Theora</a></li><li><a href="../open-source-ai" class="internal">Open Source AI</a></li><li><a href="../open-standards" class="internal">Open Standards</a></li><li><a href="../over-the-top-streaming" class="internal">Over The Top Streaming</a></li><li><a href="../patent-licensing" class="internal">Patent Licensing</a></li><li><a href="../patent-pools" class="internal">Patent Pools</a></li><li><a href="../pay-tv" class="internal">Pay TV</a></li><li><a href="../play-ready" class="internal">PlayReady</a></li><li><a href="../premium-streaming" class="internal">Premium Streaming</a></li><li><a href="../regulatory-frameworks" class="internal">Regulatory Frameworks</a></li><li><a href="../royalty-free-codecs" class="internal">Royalty Free Codecs</a></li><li><a href="../sky-glass" class="internal">Sky Glass</a></li><li><a href="../streaming-protocols" class="internal">Streaming Protocols</a></li><li><a href="../streaming-services" class="internal">Streaming Services</a></li><li><a href="../tee" class="internal">TEE</a></li><li><a href="../uhd-blu-ray" class="internal">UHD Blu-ray</a></li><li><a href="../video-codec-standards" class="internal">Video Codec Standards</a></li><li><a href="../vp9" class="internal">VP9</a></li><li><a href="../vvc-h-266" class="internal">VVC H.266</a></li><li><a href="../w3-c" class="internal">W3C</a></li><li><a href="../w3-c-eme-standards" class="internal">W3C EME Standards</a></li><li><a href="../widevine" class="internal">Widevine</a></li><li><a href="../you-tube" class="internal">YouTube</a></li><li><a href="../ai-video" class="internal">AI Video</a></li><li><a href="../api-gateway" class="internal">API Gateway</a></li><li><a href="../apple" class="internal">Apple</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../blockchain-network" class="internal">Blockchain Network</a></li><li><a href="../competition-in-ai" class="internal">Competition in AI</a></li><li><a href="../digital-rights-management" class="internal">Digital Rights Management</a></li><li><a href="../google" class="internal">Google</a></li><li><a href="../hardware-and-edge" class="internal">Hardware and Edge</a></li><li><a href="../working/infrastructure" class="internal">InfrastructureDomain</a></li><li><a href="../proprietary-ai-video" class="internal">Proprietary AI Video</a></li><li><a href="../web-rtc" class="internal">WebRTC</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:10cad7f2faec1800ce1d53c792d23ce0b498e29c2fcd4aebeedfaf4d3a1c9e3e</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Advertising-and-Marketing" class="internal">Advertising and Marketing</a></li><li><a href="../content-delivery-network" class="internal">Content Delivery Network</a></li><li><a href="../pages/Digital-Cinema" class="internal">Digital Cinema</a></li><li><a href="../pages/Regulatory-Framework" class="internal">Regulatory Framework</a></li><li><a href="../AI-Video" class="internal">AI Video</a></li><li><a href="../pages/API-Gateway" class="internal">API Gateway</a></li><li><a href="../pages/Blockchain-Network" class="internal">Blockchain Network</a></li><li><a href="../Competition-in-AI" class="internal">Competition in AI</a></li><li><a href="../Hardware-and-Edge" class="internal">Hardware and Edge</a></li><li><a href="../Proprietary-AI-Video" class="internal">Proprietary AI Video</a></li><li><a href="../Streaming-Services" class="internal">Streaming Services</a></li><li><a href="../pages/Regulatory-Frameworks" class="internal">Regulatory Frameworks</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../alliance-for-open-media" class="internal">Alliance for Open Media</a></li><li><a href="../etsi" class="internal">ETSI</a></li><li><a href="../ISO/IEC" class="internal">ISO/IEC</a></li><li><a href="../pages/ITU-T" class="internal">ITU-T</a></li><li><a href="../pages/Microsoft" class="internal">Microsoft</a></li><li><a href="../pages/MPEG" class="internal">MPEG</a></li><li><a href="../pages/W3C" class="internal">W3C</a></li><li><a href="../pages/Apple-Inc-Technology-Corporation" class="internal">Apple Inc Technology Corporation</a></li><li><a href="../pages/Google-AI-Technology-Corporation" class="internal">Google AI Technology Corporation</a></li><li><a href="../ATSC" class="internal">ATSC</a></li><li><a href="../DVB" class="internal">DVB</a></li><li><a href="../Blu-ray-Disc-Association" class="internal">Blu-ray Disc Association</a></li><li><a href="../Dolby-Laboratories" class="internal">Dolby Laboratories</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Advertising-and-Marketing" class="internal">Advertising and Marketing</a></li><li><a href="../pages/Apple-Inc-Technology-Corporation" class="internal">Apple TV Plus</a></li><li><a href="../netflix" class="internal">Netflix</a></li><li><a href="../pages/Regulatory-Framework" class="internal">Regulatory Framework</a></li><li><a href="../you-tube" class="internal">YouTube</a></li><li><a href="../Disney-Plus" class="internal">Disney Plus</a></li><li><a href="../Amazon-Prime-Video" class="internal">Amazon Prime Video</a></li><li><a href="../Apple-TV-Plus" class="internal">Apple TV Plus</a></li><li><a href="../BBC-iPlayer" class="internal">BBC iPlayer</a></li><li><a href="../ITVX" class="internal">ITVX</a></li><li><a href="../Sky-Glass" class="internal">Sky Glass</a></li><li><a href="../BT-Sport" class="internal">BT Sport</a></li><li><a href="../YouTube" class="internal">YouTube</a></li><li><a href="../pages/Regulatory-Frameworks" class="internal">Regulatory Frameworks</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/ARM-TrustZone" class="internal">ARM TrustZone</a></li><li><a href="../pages/AV1-Codec" class="internal">AV1</a></li><li><a href="../content-delivery-network" class="internal">Content Delivery Network</a></li><li><a href="../encryption" class="internal">Encryption</a></li><li><a href="../pages/H.264" class="internal">H.264</a></li><li><a href="../pages/HEVC" class="internal">HEVC</a></li><li><a href="../pages/OFDM" class="internal">OFDM</a></li><li><a href="../pages/VP9-Codec" class="internal">VP9</a></li><li><a href="../Hardware-and-Edge" class="internal">Hardware and Edge</a></li><li><a href="../AV1" class="internal">AV1</a></li><li><a href="../VP9" class="internal">VP9</a></li><li><a href="../fMP4" class="internal">fMP4</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Proprietary Video denotes the class of video coding formats, digital rights management (DRM) systems, adaptive bitrate streaming protocols, and broadcast transmission standards whose specification, licensing, or enforcement mechanism is controlled by a corporation, patent pool, or standards body …</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:HEVCCodec))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:H264Codec))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:VVCCodec))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:DolbyVisionHDR))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:DolbyAtmosAudio))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:WidevineDRM))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:FairPlayDRM))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:PlayReadyDRM))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:MPEGDASHProtocol))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:HLSProtocol))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:CMAFContainer))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:ATSC30Standard))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:DVBHbbTVStandard))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:hasPart infra:UHDBluraySpec))
+
+  ## Dependency Relationships
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:requires infra:PatentLicensing))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:requires infra:HardwareTEESecurity))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:requires infra:ARMTrustZone))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:requires infra:ContentDeliveryNetwork))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:requires infra:AES128Encryption))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:requires infra:KeyManagementSystem))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:requires infra:HDCP22OutputProtection))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:dependsOn infra:MPEGPatentPool))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:dependsOn infra:FRANDLicensingCommitments))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:dependsOn infra:HardwareSecurityModule))
+
+  ## Capability Relationships
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:enables infra:4KUHDDelivery))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:enables infra:HDRVideoPlayback))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:enables infra:SpatialAudioDelivery))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:enables infra:PremiumContentMonetisation))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:enables infra:BroadcastHybridIPDelivery))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:enables infra:AdaptiveBitrateStreaming))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:enables infra:LowLatencyLiveStreaming))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:enables infra:ContentAccessControl))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:enables infra:AddressableAdvertising))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:enables infra:MultiDeviceEcosystemLockIn))
+
+  ## Implementation Relationships
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:implements infra:ITUTVideoStandards))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:implements infra:ISOIECMediaStandards))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:implements infra:ETSIAudioStandards))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:implements infra:ATSCBroadcastStandards))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:implements infra:DVBTransmissionStandards))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:implements infra:BDABluraySpec))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:implements infra:W3CEncryptedMediaExtensions))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:implements infra:CommonEncryptionCENC))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:implements infra:MPEG4ISOBaseMediaFileFormat))
+
+  ## Reduction Relationships
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:contrasts-with infra:AV1RoyaltyFreeCodec))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:contrasts-with infra:VP9GoogleOpenCodec))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:contrasts-with infra:MPEG5EVCBaselineRoyaltyFree))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:contrasts-with infra:AVS3ChineseOpenStandard))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:contrasts-with infra:WebRTCOpenProtocol))
+  SubClassOf(infra:ProprietaryVideo
+    ObjectSomeValuesFrom(infra:contrasts-with infra:OggVorbisTheoraRoyaltyFree))
+
+  ## Data Properties
+  DataPropertyAssertion(infra:hasIdentifier infra:ProprietaryVideo &quot;IF-0210&quot;^^xsd:string)
+  DataPropertyAssertion(infra:authorityScore infra:ProprietaryVideo &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(infra:globalPatentRoyaltyRevenue infra:ProprietaryVideo &quot;1000000000&quot;^^xsd:integer)
+  DataPropertyAssertion(infra:protectedStreamingRevenue infra:ProprietaryVideo &quot;280000000000&quot;^^xsd:integer)
+  DataPropertyAssertion(infra:widevineCertifiedDevices infra:ProprietaryVideo &quot;4000000000&quot;^^xsd:integer)
+  DataPropertyAssertion(infra:atsc30USMarketsDeployed infra:ProprietaryVideo &quot;84&quot;^^xsd:integer)
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label infra:ProprietaryVideo &quot;Proprietary Video&quot;@en)
+  AnnotationAssertion(rdfs:comment infra:ProprietaryVideo &quot;Patent-encumbered video codecs (H.264, HEVC, VVC), DRM systems (Widevine, FairPlay, PlayReady), adaptive streaming protocols (MPEG-DASH, HLS, CMAF), and broadcast standards (ATSC 3.0, DVB-T2/HbbTV) forming the layered IP stack governing premium video delivery globally; distinct from Proprietary AI Video (generative synthesis systems).&quot;@en)
+  AnnotationAssertion(dcterms:identifier infra:ProprietaryVideo &quot;IF-0210&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject infra:ProprietaryVideo &quot;Video Codecs, DRM, Streaming Protocols, Broadcast Standards, Patent Licensing, Infrastructure&quot;@en)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-proprietary-video">About Proprietary Video<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-proprietary-video" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Proprietary Video</strong> is the ontology class for the layered intellectual-property stack governing how digital moving image content is encoded, rights-protected, and delivered at scale.</p>
+</li>
+<li>
+<p>It is categorically distinct from <a href="../Proprietary-AI-Video" class="internal alias" data-slug="Proprietary-AI-Video">Proprietary AI Video</a>, which covers closed-source generative AI video synthesis systems (Sora, Veo, Runway, Kling).</p>
+</li>
+<li>
+<p>Proprietary Video applies universally to all premium video — live sport, broadcast television, digital cinema, and AI-generated video — through codec, DRM, streaming protocol, and broadcast specification layers.</p>
+</li>
+<li>
+<p>The defining characteristic is the patent-licence or contractual dependency: a device manufacturer, streaming service, or broadcaster cannot legally implement HEVC decoding, Widevine content protection, or ATSC 3.0 reception without entering licence agreements with the relevant patent-pool or technology licensor.</p>
+</li>
+<li>
+<p>This creates durable competitive moats for established players — ARM, Dolby, Google, Apple, Microsoft — and significant compliance cost for market entrants.</p>
+</li>
+<li>
+<p>The HEVC/H.265 patent landscape became the canonical case study in standards-essential patent fragmentation: three non-overlapping patent pools (MPEG LA, HEVC Advance, Velos Media) with cumulative royalties triggered industry-wide alarm.</p>
+</li>
+<li>
+<p>This directly motivated the Alliance for Open Media (AOM) founding in 2015, which produced the royalty-free AV1 codec adopted by Google, Netflix, Apple, Amazon, and Meta.</p>
+</li>
+<li>
+<p>The economic scale is substantial: MPEG LA, HEVC Advance, Sisvel, and Via Licensing collectively collect an estimated <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">800</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord">–</span></span></span></span>1.2B annually in video codec royalties (2024 aggregate estimates).</p>
+</li>
+<li>
+<p>DRM infrastructure (Widevine, FairPlay, PlayReady) protects approximately $280B in global premium streaming and broadcast revenue (PwC Global Entertainment &amp; Media Outlook 2025).</p>
+</li>
+<li>
+<p>HEVC is deployed in over 3 billion devices worldwide as of 2025; HDCP 2.2+ is mandated on all HDMI connections carrying 4K DRM-protected content.</p>
+</li>
+<li>
+<h2 id="core-technical-architecture-codec-layer">Core Technical Architecture: Codec Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-technical-architecture-codec-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="h264avc-itu-t-h264--isoiec-14496-10-2003">H.264/AVC (ITU-T H.264 | ISO/IEC 14496-10, 2003)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#h264avc-itu-t-h264--isoiec-14496-10-2003" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Standardised by the Joint Video Team (JVT) in 2003; foundational codec of the modern streaming era.</li>
+<li>Core innovations over MPEG-2: CABAC entropy coding (Context-Adaptive Binary Arithmetic Coding, 10–15% bitrate gain over CAVLC).</li>
+<li>Quarter-pixel motion compensation using 6-tap Wiener filter for half-pixel, bilinear for quarter-pixel interpolation.</li>
+<li>In-loop deblocking filter reducing block artefacts at low bitrate; 4×4 and 8×8 integer DCT transform.</li>
+<li>Multiple reference frames enabling bidirectional prediction (B-frames) and weighted prediction.</li>
+<li>Profiles: Baseline (mobile, no CABAC), Main (broadcast), High (Blu-ray/streaming), High 10 (10-bit), High 4:2:2, High 4:4:4 Predictive.</li>
+<li>MPEG LA pool: 40+ member companies including Dolby, Ericsson, Fraunhofer, LG, Microsoft, NTT, Panasonic, Qualcomm, Samsung, Sharp, Sony, Toshiba.</li>
+<li>Royalties: Free for internet streaming since 2016 Cisco announcement; per-device royalties (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.10–</span></span></span></span>0.30/unit on volume tiers) persist for hardware decode silicon shipped globally.</li>
+<li>Dominant for live streaming ingestion (RTMP/SRT contribution), camera recording, and compatibility with legacy set-top boxes built before 2013.</li>
+<li>Hardware decode support: universal — every device manufactured after 2006 includes H.264 hardware decode.</li>
+</ul>
+</li>
+<li>
+<h3 id="hevch265-itu-t-h265--isoiec-23008-2-2013">HEVC/H.265 (ITU-T H.265 | ISO/IEC 23008-2, 2013)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hevch265-itu-t-h265--isoiec-23008-2-2013" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Standardised 2013 by the Joint Collaborative Team on Video Coding (JCT-VC); achieves 40–50% better compression than H.264 at equivalent VMAF quality.</li>
+<li>Coding Tree Units (CTU) up to 64×64 replacing H.264’s fixed 16×16 macroblock structure, enabling adaptive block sizes from 4×4 to 64×64.</li>
+<li>Recursive quadtree partitioning: each CTU subdivides recursively into Coding Units (CU), Prediction Units (PU), and Transform Units (TU).</li>
+<li>35 intra-prediction modes (32 angular directions, DC, planar) vs H.264’s 9 — dramatically improves texture compression efficiency.</li>
+<li>CABAC entropy coding only (no CAVLC option); Sample Adaptive Offset (SAO) in-loop filter in addition to deblocking.</li>
+<li>Parallel processing-friendly wavefront and tile structures enabling GPU hardware decode at 4K/8K frame rates without software bottlenecks.</li>
+<li>Profiles: Main, Main 10 (10-bit for HDR10), Main Still Picture (HEIF images), Main 4:2:2 10-bit (broadcast production), Main 4:4:4 (cinema).</li>
+<li><strong>Three-pool patent fragmentation</strong> (the defining industry problem):
+<ul>
+<li>MPEG LA: minimum <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.20/</span><span class="mord mathnormal">u</span><span class="mord mathnormal">ni</span><span class="mord mathnormal">t</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">c</span><span class="mord mathnormal">a</span><span class="mord mathnormal">pp</span><span class="mord mathnormal">e</span><span class="mord mathnormal">d</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span></span></span></span>25M/yr aggregate for large-volume licensees.</li>
+<li>HEVC Advance (administered by Sisvel from 2020): 0.5% of revenue or flat fee per device.</li>
+<li>Velos Media (Ericsson-backed): separate structure and membership requirements.</li>
+</ul>
+</li>
+<li>Baron &amp; Pohlmann (2018, Journal of Competition Law &amp; Economics) documented 40–60% adoption delay attributable to three-pool uncertainty vs H.264 comparable adoption timeline.</li>
+<li>Mandatory codec: UHD Blu-ray (BDROM 3.1), DVB-T2 UHD tier (BBC Four HD, BBC Scotland HD), ATSC 3.0 primary video, HbbTV 2.0 for 4K.</li>
+<li>Hardware decode support: universal in devices manufactured after 2015; ARM Cortex-A55/A57/A72 and Mali-G52/G57 include HEVC hardware decode.</li>
+</ul>
+</li>
+<li>
+<h3 id="vvch266-itu-t-h266--isoiec-23090-3-2020">VVC/H.266 (ITU-T H.266 | ISO/IEC 23090-3, 2020)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vvch266-itu-t-h266--isoiec-23090-3-2020" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Ratified July 2020 by the Joint Video Experts Team (JVET); achieves 40–50% BD-rate reduction over HEVC at equivalent perceptual quality.</li>
+<li><strong>Flexible Multi-Type Tree (FEAT) partitioning</strong>: replaces quadtree with asymmetric binary and ternary splits at multiple hierarchy levels, enabling far more granular block size adaptation.</li>
+<li><strong>Affine motion compensation</strong>: models non-translational motion (rotation, zoom, shear) via 4-parameter or 6-parameter affine models, dramatically improving compression of zoom/pan/rotation camera movements.</li>
+<li>67 intra-prediction angles vs HEVC’s 35; BDOF (Bi-Directional Optical Flow) for sub-pixel motion refinement.</li>
+<li>LMCS (Luma Mapping with Chroma Scaling) for HDR content; subpicture support for 360° video and ROI delivery.</li>
+<li><strong>MC-IF single-pool licence (2022)</strong>: deliberately designed to avoid HEVC’s three-pool problem; FRAND commitments; targeting ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.30–</span></span></span></span>0.50/device.</li>
+<li>Hardware decode: ARM Mali-G720 Immortalis (Samsung Exynos 2400 / Galaxy S24 series, 2023); anticipated Snapdragon 8 Gen 5 full acceleration 2026–2027.</li>
+<li>Fast encoder: vvenc (Fraunhofer HHI, MIT licence, ~35 fps 1080p on 32-core Xeon, 2024 release).</li>
+<li>Fast decoder: vvdec (Fraunhofer HHI, MIT licence).</li>
+<li>First commercial ABR deployments: Harmonic Electra X2 VVC module (2025), Ateme Kyrion VVC option (2025).</li>
+<li>BBC R&amp;D Salford VVC field trial reporting 38% BD-rate reduction over HEVC on documentary content (IBC 2025, WHP 385 follow-up).</li>
+</ul>
+</li>
+<li>
+<h3 id="dolby-vision">Dolby Vision<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dolby-vision" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Dolby Laboratories closed proprietary HDR format; 12-bit precision throughout signal chain vs HDR10’s 10-bit static metadata.</li>
+<li>RPU (Reference Processing Unit) metadata embedded per-scene and per-frame providing dynamic tone-mapping instructions to the display.</li>
+<li>Profiles: 5 (OTT single-layer HEVC), 7 (dual-layer Blu-ray), 8 (single-layer backward-compatible OTT — dominant streaming profile), 9 (Blu-ray), 20 (cinema production).</li>
+<li>Profile 8 is backward-compatible with HDR10 displays via base HEVC layer + Dolby Vision enhancement: single stream serves both Dolby Vision and SDR/HDR10 displays without re-encoding.</li>
+<li>Licensed SoC IP: ARM Mali-D71/D77/G715/G720 GPU media blocks, Qualcomm Snapdragon display processor, Samsung Exynos display pipeline, MediaTek Dimensity 9000+ series.</li>
+<li>Present in 85%+ of premium 4K TVs as of 2025 (Dolby Annual Report 2024); approximately 12,000 Dolby Vision-certified titles on Netflix alone by 2025.</li>
+<li>Competing with <strong>HDR10+</strong> (Samsung/20th Century Studios/Amazon alliance, patent-free dynamic metadata alternative using scene-level tone mapping, adopted on Samsung TVs and Prime Video but not Apple TV+ or Netflix).</li>
+<li>Dolby Vision is Dolby’s primary IP moat in consumer display: provides ~$2–5/device royalty contribution to Dolby’s revenue base across all licensed silicon.</li>
+</ul>
+</li>
+<li>
+<h3 id="dolby-ac-4-and-atmos">Dolby AC-4 and Atmos<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dolby-ac-4-and-atmos" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>AC-4 (ETSI TS 103 190-1/2, IEC 62978): Dolby’s next-generation broadcast audio codec mandatory in ATSC 3.0 US alongside optional MPEG-H 3D Audio.</li>
+<li>Supports up to 7.1.4 channel layout with Atmos object-based spatial audio metadata; dialogue enhancement via object-based loudness; binaural rendering for headphone immersive audio.</li>
+<li>AC-4 is distinct from Dolby Digital Plus (E-AC-3), which remains the streaming Atmos carrier for Disney+, Netflix, Apple TV+.</li>
+<li>Deployed on ITVX from Q1 2024, Channel 4 streaming from Q1 2024, BBC iPlayer spatial audio trials 2024.</li>
+<li>ARM MediaTek Dimensity 9300 and Snapdragon 8 Gen 3 SoCs include licensed Dolby Atmos audio processing.</li>
+<li>Competing with <strong>MPEG-H Audio (ISO/IEC 23008-3)</strong>: optional in ATSC 3.0, mandatory consideration in HbbTV 3.0 — royalty-constrained but less fragmented than Dolby.</li>
+</ul>
+</li>
+<li>
+<h3 id="mpeg-5-evc-isoiec-23094-1-2020">MPEG-5 EVC (ISO/IEC 23094-1, 2020)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mpeg-5-evc-isoiec-23094-1-2020" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Two-profile architecture designed to provide a legally unambiguous royalty-free option.</li>
+<li>Baseline profile: uses only pre-2000 patented technologies — royalty-free, achieving approximately H.264-equivalent compression.</li>
+<li>Main profile: adds post-2000 techniques (patent-encumbered), similar pool structure to HEVC, achieving near-HEVC parity at lower royalty exposure.</li>
+<li>ETSI under evaluation for potential DVB deployment; niche in broadcast research as a licensing hedge.</li>
+<li>MPEG-5 Part 2 LCEVC (Low Complexity Enhancement Video Coding): complementary codec enhancement layer enabling super-resolution upscaling at decode time, standardised 2020, deployments in Agora, Phenix, Broadpeak 2024.</li>
+</ul>
+</li>
+<li>
+<h3 id="av1-alliance-for-open-media-2018--royalty-free-contrast-case">AV1 (Alliance for Open Media, 2018) — Royalty-Free Contrast Case<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#av1-alliance-for-open-media-2018--royalty-free-contrast-case" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>AV1 (AOMedia Video 1, specification released 2018) is the primary royalty-free response to HEVC patent fragmentation; directly contrasts-with Proprietary Video IP stack.</li>
+<li>Developed by Alliance for Open Media founding members: Google, Mozilla, Microsoft, Amazon, Netflix, Cisco, Intel, AMD, ARM, Apple (joined 2018), Qualcomm (joined 2018).</li>
+<li>AOM’s IPR policy: FRAND-free; members grant reciprocal royalty-free licences to the AV1 bitstream specification; no central royalty collection.</li>
+<li>Achieves 20–30% better compression than HEVC at equivalent VMAF quality (Netflix encoding analysis 2023; Bitmovin State of Video 2024).</li>
+<li>Hardware decode support in ARM Mali-G710+ (2021+), Apple A15 Bionic+ (limited), Apple M3 / A17 Pro (full hardware AV1), Intel Arc/Xe (2022+), AMD RDNA3 (2022+), Qualcomm Snapdragon 8 Gen 2+ / Adreno 740 (2022+).</li>
+<li>AV1 encode: SVT-AV1 v2.0 (50-fps 1080p on 32-core Xeon), NVIDIA RTX 4000 NVENC AV1 hardware encode (2022+), Intel Arc AV1 hardware encode (2022+).</li>
+<li>Limitation: AV1 has no Dolby Vision support pathway (RPU metadata requires HEVC/VVC carrier); Dolby Vision on AV1 is not part of any current standard — a structural IP dependency keeping HEVC relevant.</li>
+<li>VP9 (Google 2013, predecessor): deployed on YouTube for 1080p+ since 2015; hardware decode ubiquitous; no central royalty pool; being superseded by AV1 on modern devices.</li>
+</ul>
+</li>
+<li>
+<h3 id="rate-distortion-and-perceptual-quality-metrics">Rate-Distortion and Perceptual Quality Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rate-distortion-and-perceptual-quality-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Rate-distortion theory (Berger 1971): establishes the R(D) boundary — the minimum bitrate R required to achieve distortion D — as the fundamental limit of lossy compression.</li>
+<li>Shannon entropy H(X) = -∑ p(x) log₂ p(x) establishes lossless compression bound; video coding operates well above entropy due to practical complexity constraints.</li>
+<li>PSNR (Peak Signal-to-Noise Ratio): historically used codec evaluation metric; 40–50 dB range for broadcast quality; weakly correlated with human perception at low bitrate.</li>
+<li>SSIM (Structural Similarity Index, Wang et al. 2004 IEEE TIP): measures luminance, contrast, and structure similarity on 0–1 scale; better correlated with perceived quality than PSNR; 0.95+ for broadcast-quality video.</li>
+<li>MS-SSIM (Multi-Scale SSIM): extends SSIM across 5 spatial scales; used in HEVC quality evaluation framework (JCT-VC selection testing).</li>
+<li>VMAF (Video Multimethod Assessment Fusion, Netflix 2016): SVM regression model trained on MOS (Mean Opinion Score) from Netflix viewer studies; combines VIF (Visual Information Fidelity), DLM (Detail Loss Measure), and motion statistics; de facto industry standard for ABR ladder optimisation; open-sourced under BSD+Patent licence.</li>
+<li>XPSNR (Extended Perceptually Weighted PSNR, Fraunhofer HHI 2020): developed for VVC reference encoder (VTM) quality evaluation; accounts for spatial masking and temporal masking; adopted in vvenc as primary quality metric.</li>
+<li>Bjøntegaard Delta (BD-rate, BD-PSNR): standard metric for comparing codec compression efficiency; calculates the average bitrate saving at identical PSNR (BD-rate) or the average PSNR gain at identical bitrate (BD-PSNR) across 4 operating points; universal standard in ITU-T JVET and ISO/IEC MPEG codec comparison documents.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="drm-layer-content-protection-architecture">DRM Layer: Content Protection Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#drm-layer-content-protection-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="foundations-hardware-security-and-common-encryption">Foundations: Hardware Security and Common Encryption<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#foundations-hardware-security-and-common-encryption" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>All modern DRM systems rely on hardware-rooted security to ensure content keys never appear in plaintext in software-accessible memory.</li>
+<li>The security foundation is the GlobalPlatform TEE Specification v1.3.1 (2022) defining Trusted Application (TA) and TEE Client API within ARM TrustZone secure world.</li>
+<li>Common Encryption (CENC, ISO/IEC 23001-7): enables a single encrypted video track to be decrypted by Widevine, FairPlay, and PlayReady simultaneously.</li>
+<li>CENC mode: AES-128-CTR (cipher-block chaining transport mode, ‘cenc’ scheme) or AES-128-CBC (‘cbcs’ scheme for FairPlay SAMPLE-AES compatibility).</li>
+<li>CPIX (Content Protection Information Exchange Format, DASH-IF): XML-based protocol enabling head-end key management to provision keys for all DRM systems from single key exchange.</li>
+<li>CPIX deployed by EZDRM, BuyDRM, Axinom DRM, Irdeto, Verimatrix for UK broadcaster multi-DRM stacks, reducing integration complexity from O(N) per-DRM to O(1) CPIX.</li>
+</ul>
+</li>
+<li>
+<h3 id="widevine-google">Widevine (Google)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#widevine-google" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Three-tier hardware security model: L1 hardware key in ARM TrustZone TEE, hardware-protected video path, hardware-enforced HDCP 2.2+; L2 crypto in TEE but software video pipeline; L3 all-software.</li>
+<li>L1 required for: Netflix UHD, Disney+ UHD, Prime Video UHD, YouTube Premium 1080p.</li>
+<li>L3 software-only path: capped at 480p by major SVODs (Netflix, Disney+, Amazon, Apple via Widevine on Android).</li>
+<li>Widevine Modular Protocol: device certificate issued by Google Widevine CA; licence request signed with device private RSA-2048/ECC P-256 key; content key AES-128 encrypted to device public key; delivered to TEE for secure storage.</li>
+<li>HDCP 2.2+ negotiation mandatory for L1 4K HDMI output; HDCP 2.3 (2018) adds enhanced locality checks.</li>
+<li>CENC integration: Widevine PSSH UUID <code>edef8ba9-79d6-4ace-a3c8-27dcd51d21ed</code> embedded in fMP4 moov box.</li>
+<li>Certified SoCs 2024–2025: Qualcomm Snapdragon 8 Gen 3 / Elite, MediaTek Dimensity 9300, Samsung Exynos 2400, ARM Cortex-A715 reference platform, Amlogic S928X (Android TV / Google TV).</li>
+<li>Google Widevine Renewal System (WRS): remote revocation of compromised device certificates via server-side licence request validation.</li>
+<li>Deployed on 4B+ devices globally; mandatory on Netflix/Disney+/Prime Video/YouTube on Chrome, Android, Chromecast, Android TV, Google TV.</li>
+</ul>
+</li>
+<li>
+<h3 id="fairplay-apple">FairPlay (Apple)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fairplay-apple" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Mandatory for all DRM-protected content on iOS, iPadOS, macOS, tvOS, visionOS, and AirPlay targets.</li>
+<li>FairPlay Streaming (FPS) protocol: HLS with AES-128-CBC (SAMPLE-AES) or AES-128-CTR encrypted segments.</li>
+<li>Key Security Module (KSM) on licensor server exchanges SPC (Server Playback Context) from device’s Secure Enclave-bound certificate for CKC (Content Key Context) blob.</li>
+<li>Secure Enclave on A-series/M-series silicon stores device private key in hardware, inaccessible to iOS/macOS kernel.</li>
+<li>AIRCP (AirPlay Content Protection): enforces HDCP 2.2 on AirPlay video receivers; screen recording APIs denied for protected HLS streams.</li>
+<li>FairPlay EME in WebKit/Safari: enables browser-based FPS on macOS/iPadOS without native app installation.</li>
+<li>FPS SDK available under NDA to licenced partners: Netflix, BBC, ITV, Disney, Amazon, Sky, BT/TNT Sports.</li>
+<li>Apple FairPlay Extended (2025): offline licence expiry enforcement — mandatory re-validation every 30 days for offline rentals.</li>
+</ul>
+</li>
+<li>
+<h3 id="playready-microsoft">PlayReady (Microsoft)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#playready-microsoft" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>SL3000 hardware level: mandatory for UHD Blu-ray software playback on Windows 10/11 and Xbox Series X|S (Microsoft MDMF hardware security requirement).</li>
+<li>SL2000: software TEE (AMD PSP, Intel ME). PlayReady 4.0 (2020): 4K content protection, domain-based licence sharing, licence chaining, secure stop/delete.</li>
+<li>ARM PlayReady TEE client: jointly developed ARM/Microsoft, available for MediaTek MT8675 and NXP i.MX 8M/9M cable STB SoCs.</li>
+<li>PlayReady 4.2 (2023): enhanced hardware binding for Xbox cloud gaming DRM workflows; sustainable licence deletion for recycling device storage.</li>
+<li>Deployed: Sky Glass UK (SL3000 primary DRM for broadcast-integrated content), Xbox Series X|S, Virgin Media TiVo STBs (transitioning 2024–2026).</li>
+<li>CPIX integration: PlayReady rights objects (PRO XML) delivered alongside Widevine and FairPlay keys in single CPIX response for CMAF packaging.</li>
+</ul>
+</li>
+<li>
+<h3 id="hdcp-output-protection">HDCP Output Protection<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hdcp-output-protection" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>HDCP 1.4: required for HD (1080p) on HDMI 1.x / DisplayPort 1.x; AES-based link encryption of TMDS lanes.</li>
+<li>HDCP 2.2: mandatory for 4K UHD content via Widevine L1 and PlayReady SL3000; AES-128-CTR; mandatory SRM (System Renewability Message) revocation list distributed by Digital Content Protection LLC.</li>
+<li>HDCP 2.3 (2018): enhanced locality checks preventing long-distance HDCP tunnelling attacks; supported by W3C EME Level 2 (2024) HDCP negotiation APIs.</li>
+<li>HDCP 2.3 enforcement: HDMI 2.1 cables and source devices must support HDCP 2.3 for 8K UHD protected content (rare in consumer devices as of 2025, anticipated 2026–2027 proliferation).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="adaptive-streaming-layer-delivery-protocols">Adaptive Streaming Layer: Delivery Protocols<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adaptive-streaming-layer-delivery-protocols" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="mpeg-dash-isoiec-23009-1-5th-edition-2022">MPEG-DASH (ISO/IEC 23009-1 5th Edition 2022)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mpeg-dash-isoiec-23009-1-5th-edition-2022" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Media Presentation Description (MPD): XML manifest declaring Periods, AdaptationSets, Representations, and SegmentTemplate addressing.</li>
+<li>DASH segments: fMP4 (ISO Base Media File Format ISOBMFF, ISO/IEC 14496-12) or MPEG-2 TS; CENC encryption with Widevine + PlayReady PSSH boxes.</li>
+<li>BOLA ABR algorithm (Buffer Occupancy-based Lyapunov Algorithm, Spiteri et al. IEEE/ACM ToN 2020): utility-maximisation Lyapunov framework provably minimising rebuffering while maximising quality.</li>
+<li><strong>Low-Latency DASH (LL-DASH)</strong>: chunked transfer encoding (HTTP/1.1 Transfer-Encoding: chunked or HTTP/2 server push); MPD <code>availabilityTimeOffset</code> signals partial segment availability; target glass-to-glass latency &lt;1 sec.</li>
+<li>Deployed: Disney+ (DASH globally), YouTube (DASH for 1080p+ on non-Apple platforms), Akamai Media Services live CDN, BBC iPlayer R&amp;D Salford LL-DASH prototype 2023–2025, DAZN live sport DASH.</li>
+<li>Multi-period DASH: enables seamless splice-in of inserted content (advertising, news breaks) without encoder discontinuity; SCTE-35 cue markers mapped to DASH EventStream for CSAI.</li>
+</ul>
+</li>
+<li>
+<h3 id="hls-http-live-streaming-rfc-8216-2017">HLS (HTTP Live Streaming, RFC 8216 2017)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hls-http-live-streaming-rfc-8216-2017" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Apple-defined; Master Playlist lists variant streams by bandwidth, resolution, codec; Media Playlists list segment URIs.</li>
+<li>Segment format: MPEG-2 TS historically; fMP4 (CMAF-compatible) since HLS version 7 (2016) enabling CMAF alignment.</li>
+<li>Encryption: AES-128-CBC whole-segment (METHOD=AES-128) or SAMPLE-AES per-sample (FairPlay FPS, Widevine CENC via SAMPLE-AES-CTR).</li>
+<li><strong>Low-Latency HLS (LL-HLS, Apple WWDC 2019, standardised HLS v11 2020)</strong>: Partial Segments (#EXT-X-PART) of ~200ms duration; Blocking Playlist Reload (_HLS_msn + _HLS_part query params); Rendition Reports for multi-rendition latency coordination.</li>
+<li>LL-HLS target: &lt;2 sec end-to-end latency (vs 6–30 sec for conventional HLS).</li>
+<li>Mandatory for all Apple platform playback (iOS, macOS, tvOS, visionOS) and AirPlay targets.</li>
+<li>ITVX (Widevine/FairPlay CMAF), Now TV (Sky), BT Sport/TNT Sports, Apple TV+ all use LL-HLS for live streams.</li>
+</ul>
+</li>
+<li>
+<h3 id="cmaf-isoiec-23000-192022">CMAF (ISO/IEC 23000-19:2022)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cmaf-isoiec-23000-192022" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Common Media Application Format: defines single fMP4 container format compatible with both DASH (MPD manifest) and HLS (M3U8 playlist).</li>
+<li>Single CMAF-encoded asset with CENC encryption served simultaneously to DASH clients (Widevine/PlayReady) and HLS clients (FairPlay SAMPLE-AES-CTR) without re-encoding.</li>
+<li>Reduces CDN storage and encoder costs 30–50% vs maintaining separate DASH and HLS encoded assets.</li>
+<li><strong>Chunked CMAF</strong>: partial CMAF chunks written progressively as encoder produces them; enables LL-DASH + LL-HLS from single encoder output simultaneously.</li>
+<li>Adopted by ITV/ITVX, Channel 4, Sky Q/Glass, BT Sport/TNT Sports UK 2022–2024.</li>
+<li>Supported encoders: AWS Elemental MediaConvert, Azure Media Services, Harmonic Electra X2, Ateme Kyrion, Elemental Appliances, Wowza.</li>
+</ul>
+</li>
+<li>
+<h3 id="srt-and-contribution-protocols">SRT and Contribution Protocols<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#srt-and-contribution-protocols" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>SRT (Secure Reliable Transport, Haivision MIT licence 2017, IETF submission 2018): not strictly proprietary but co-deployed with proprietary DRM origin systems.</li>
+<li>AES-256 encryption, ARQ retransmission for reliability over UDP, connection bonding for multi-path redundancy.</li>
+<li>Adopted by BBC Sport as primary OB contribution protocol from Salford 2023–2025, replacing satellite C-band uplinks for studio-to-cloud feeds.</li>
+<li>RTMP/RTMPS (Adobe, spec published 2012): dominant live encoder-to-ingest-point protocol (OBS, Wirecast); H.264/AAC only, no native HEVC — a persistent interoperability constraint.</li>
+</ul>
+</li>
+<li>
+<h3 id="cpix-key-management">CPIX Key Management<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cpix-key-management" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Content Protection Information Exchange Format (DASH-IF/W3C): XML-based key management enabling single DRM-agnostic key request per asset.</li>
+<li>CPIX response includes Widevine content key, FairPlay content key (AES-128), PlayReady rights object (PRO XML) in a single XML document.</li>
+<li>Reduces DRM integration complexity from O(N) per-DRM integrations to O(1) CPIX integration per encoder.</li>
+<li>Deployed by EZDRM, BuyDRM, Axinom DRM, Irdeto, Verimatrix for ITV, Channel 4, Sky, BT Sport UK multi-DRM stacks.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="broadcast-standards-layer">Broadcast Standards Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#broadcast-standards-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="atsc-30--nextgen-tv-us-ansicta-ceb32-2017">ATSC 3.0 / NextGen TV (US, ANSI/CTA-CEB32 2017)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#atsc-30--nextgen-tv-us-ansicta-ceb32-2017" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Physical layer: OFDM modulation with LDPC (Low-Density Parity Check) + BCH (Bose-Chaudhuri-Hocquenghem) FEC; up to 25.4 Mbps per 6 MHz channel; SNR threshold as low as 0 dB.</li>
+<li>Video: HEVC Main 10 mandatory (720p, 1080i, 1080p, 2160p60 HDR10/Dolby Vision); VVC optional in ATSC 3.0 v2 revision (anticipated 2026–2027).</li>
+<li>Audio: AC-4 mandatory, MPEG-H 3D Audio optional.</li>
+<li>IP delivery via ROUTE (Real-time Object Delivery over Unidirectional Transport) and MMTP (MPEG Media Transport Protocol).</li>
+<li>Broadcast-broadband hybrid: ATSC A/360 Service Announcement via broadband synchronised with broadcast.</li>
+<li><strong>Addressable advertising</strong>: ATSC A/344 Signalling for Addressability enabling household-level ad targeting via broadband return path without satellite uplift.</li>
+<li>US deployment: 84 markets covering 77% of US TV households by December 2025 (Pearl TV / ATSC industry reports).</li>
+<li>Samsung US TVs (since 2021), LG US TVs (since 2022), Sony US TVs (since 2023) include ATSC 3.0 tuners.</li>
+<li>South Korea: KBS 8K ATSC 3.0 broadcasts from 2024.</li>
+<li>ATSC 3.0 v2 specification (anticipated 2026–2027): VVC video codec support, enhanced addressability A/344 extensions, 5G NR broadcast interoperability (3GPP Release 17 NR-based TV), WEA emergency alert enhancements.</li>
+</ul>
+</li>
+<li>
+<h3 id="dvb-t2--hbbtv-ukeurope-etsi-en-302-755">DVB-T2 / HbbTV (UK/Europe, ETSI EN 302 755)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dvb-t2--hbbtv-ukeurope-etsi-en-302-755" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>DVB-T2 physical layer: OFDM with LDPC+BCH (same family as ATSC 3.0); 32–50 Mbps per 8 MHz channel (European allocation).</li>
+<li>HEVC mandatory for UHD tier: BBC Four HD, BBC Scotland HD UHD transmissions on UK Freeview multiplexes.</li>
+<li>HbbTV 2.0.3 (ETSI TS 102 796 v1.4.7): CE-HTML + JavaScript application layer providing interactive RED button services, VOD catalogues, catch-up TV via broadband.</li>
+<li>BBC iPlayer, ITVX, Channel 4 (All 4), My5 all available as HbbTV applications on Freeview Play certified TVs.</li>
+<li>DIAL v2.2: smartphone-to-TV second-screen control protocol.</li>
+<li>Media Synchronisation API (W3C TPAC / EBU R138): synchronised auxiliary content (signing video, commentary) time-aligned with broadcast.</li>
+<li><strong>HbbTV 3.0 (2024 specification)</strong>: adds 5G broadcast (3GPP LTE-based Media Broadcast), improved DVB-I service discovery for IP-only delivery, HEVC + VVC codec profiles, enhanced DRM via embedded Widevine/FairPlay HbbTV CAS integration.</li>
+<li>DVB-I (ETSI TS 103 749 V1.2.1 2024): IP video service discovery compatible with HbbTV 3.0 for hybrid IP/broadcast delivery.</li>
+</ul>
+</li>
+<li>
+<h3 id="uhd-blu-ray-bda-bdrom-31">UHD Blu-ray (BDA BDROM 3.1)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uhd-blu-ray-bda-bdrom-31" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>HEVC Main 10 mandatory primary codec: 4K HDR at 66–82 Mbps average bitrate.</li>
+<li>H.264 legacy support for 1080p content; VVC under evaluation in BDROM specification revision (BDROM 4.0, anticipated 2025–2026).</li>
+<li>Dolby Vision (dual-layer or single-layer Profile 7/8) and HDR10+ both supported via metadata tracks.</li>
+<li>AACS 2.1 (Advanced Access Content System): AES-128-CBC content encryption; online revocation of compromised player keys; Managed Copy allowance (one digital copy authorised per Blu-ray purchase).</li>
+<li>BD+ (Blu-ray Disc Plus): Java sandbox executing per-title custom code to detect and defeat ripping software; periodically updated via BD-Live online update channel.</li>
+<li>BDXL triple-layer disc: up to 100 GB capacity for 4K extended-cut feature films.</li>
+</ul>
+</li>
+<li>
+<h3 id="digital-cinema-dci-specification">Digital Cinema (DCI Specification)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#digital-cinema-dci-specification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>DCI (Digital Cinema Initiatives, major studio consortium) mandates JPEG 2000 video (ISO/IEC 15444-1) — not H.264 or HEVC.</li>
+<li>JPEG 2000 at 250 Mbps constant bitrate for 2K/4K digital cinema; AES-128-CBC content encryption.</li>
+<li>KDM (Key Delivery Message): per-screen decryption key bound to specific projector certificate for specific screening window.</li>
+<li>DCP (Digital Cinema Package): MXF container, JPEG 2000 video, DTS-HD / Dolby Atmos audio, XML composition playlist.</li>
+<li>SMPTE ST 2067 IMF (Interoperable Master Format): mastering-side complement enabling single-master adaptive packaging for cinema, VOD, and broadcast from one IMF package.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="premium-svod-streaming">Premium SVOD Streaming<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#premium-svod-streaming" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Netflix (230M+ subscribers 2025)</strong>: definitive multi-DRM CMAF reference — Widevine L1 (Android/Chrome/LG/Samsung), FairPlay (iOS/macOS/tvOS/Apple TV), PlayReady SL3000 (Xbox/Windows).</li>
+<li>Netflix per-title HEVC encoding: shot-level ML-based Dynamic Optimizer (10–20% bitrate reduction vs fixed QP ladder, deployed since 2018).</li>
+<li>Netflix AV1: covers all Android and LG webOS watch-time (Netflix Tech Blog 2023); HEVC retained for Apple platforms pending AV1 hardware decode on older A-series silicon.</li>
+<li>Netflix 4K content: Dolby Vision + HDR10 dual-tagged via Profile 8 on compatible displays; 12,000+ Dolby Vision titles by 2025.</li>
+<li>Netflix 2017 CMAF transition (from DASH-only to CMAF dual-manifest) directly catalysed CMAF industry standardisation.</li>
+<li><strong>Disney+, Amazon Prime Video, Apple TV+</strong>: each deploy identical multi-DRM CMAF stacks. Apple TV+ FairPlay-primary on Apple; Widevine on Android/web.</li>
+<li>Amazon Prime Video AV1: deployed on Fire TV Stick 4K 2nd Gen (2021 hardware decode support) and select Android devices.</li>
+<li><strong>Peacock, Paramount+, Max (Warner Bros Discovery)</strong>: all CMAF + multi-DRM, HLS-primary for iOS, DASH-primary for Android/web.</li>
+</ul>
+</li>
+<li>
+<h3 id="uk-public-service-broadcasting">UK Public Service Broadcasting<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-public-service-broadcasting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>BBC iPlayer</strong>: Multi-protocol CMAF — LL-HLS for iOS/macOS/tvOS (FairPlay FPS), MPEG-DASH + Widevine L1 for Android/Chrome/Chromecast/Samsung TIZEN/LG webOS, HbbTV 2.0 application for Freeview Play smart TVs.</li>
+<li>BBC R&amp;D Salford LL-DASH prototype: &lt;2.5 sec glass-to-glass for Premier League football (2023 trials, BBC R&amp;D Blog).</li>
+<li>Hybrid Log-Gamma (HLG): BBC/NHK jointly developed (ARIB STD-B67 2015, ITU-R BT.2100 2016); UK HDR broadcast standard; the only HDR format backward-compatible with legacy SDR displays without metadata.</li>
+<li><strong>ITVX</strong>: CMAF + MPEG-DASH (Widevine/PlayReady) + HLS (FairPlay), encoded at AWS Elemental MediaConvert. Dolby Atmos enabled Q1 2024. HDR10 originals from 2023.</li>
+<li><strong>Channel 4</strong>: CMAF + DASH + Widevine/FairPlay. HDR10 drama originals (Gangs of London S3, Adolescence). AWS Elemental MediaConvert Sheffield region.</li>
+</ul>
+</li>
+<li>
+<h3 id="pay-tv-and-satellite">Pay TV and Satellite<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pay-tv-and-satellite" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Sky Glass (UK, 2021–2025)</strong>: ARM-based OTT-only device; PlayReady SL3000 primary (Sky Sports/Cinema originals), Widevine L1 secondary (Netflix/Disney+/YouTube app ecosystem).</li>
+<li><strong>Now TV</strong> (Sky subsidiary): Widevine/FairPlay CMAF, HEVC+H.264 dual encoding.</li>
+<li><strong>BT Sport / TNT Sports UK</strong>: CMAF LL-HLS for Champions League and Premier League 2024 season, targeting &lt;5 sec end-to-end latency. 4K HDR10 for select matches.</li>
+<li><strong>Virgin Media TiVo / O2</strong>: legacy MPEG-2 TS + Marlin DRM cable delivery, transitioning to CMAF PlayReady for Virgin Media 360 OTT tier 2024–2026.</li>
+</ul>
+</li>
+<li>
+<h3 id="professional-production-and-post-production">Professional Production and Post-Production<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#professional-production-and-post-production" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>XAVC (Sony)</strong>: MXF-wrapped H.264/HEVC professional camera codec family; XAVC HS (HEVC Main 10) for 4K HDR acquisition on Venice 2, FX9, FX6, PXW-Z280; used in BBC Drama, ITV Studios productions.</li>
+<li><strong>Apple ProRes</strong>: Intra-frame codec (ProRes 4444 XQ / HQ, ProRes 422 HQ / LT / Proxy); ISO 22745 annex profile 2021 (partial open spec); hardware encode/decode in M1/M2/M3 Media Engine.</li>
+<li><strong>DNxHD/DNxHR (Avid)</strong>: MXF-wrapped intra-frame editing codec; DNxHR HQX (12-bit 4K); dominant in UK broadcast post (ITV Studios Leeds, Pinewood, Molinare, Warner Bros Leavesden).</li>
+<li><strong>REDCODE RAW (RED Digital Cinema)</strong>: Proprietary wavelet-based RAW codec; R3D format; compressed RAW at 3:1–22:1 ratios; patent dispute with Nikon settled 2023; used in Netflix 4K originals shot on RED Monstro/V-RAPTOR.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The economics of standards-essential patents (SEPs) in video coding constitute a significant strand of competition law and industrial organisation scholarship.</li>
+<li><strong>Shapley value allocation</strong> (Layne-Farrar &amp; Lerner 2011, Journal of Law, Economics &amp; Organization): theoretical benchmark against which FRAND (Fair, Reasonable and Non-Discriminatory) commitments are evaluated for patent pool royalty division.</li>
+<li><strong>Hold-up problem</strong> (Lemley &amp; Shapiro 2007, Georgetown Law Journal): FRAND commitments are economically insufficient to prevent excessive royalties ex post; empirically confirmed in HEVC case.</li>
+<li>Baron &amp; Pohlmann (2018, Journal of Competition Law &amp; Economics): documented 40–60% HEVC adoption delay; analysed patent density (HEVC ~6,000 SEP families vs H.264 ~1,500) showing pool fragmentation scales super-linearly with patent count.</li>
+<li><strong>UK Supreme Court: Unwired Planet v Huawei [2020] UKSC 37</strong>: established that UK courts have jurisdiction to set global FRAND rates enforceable against SEP holders — directly affecting Ericsson, Nokia, Qualcomm SEP negotiations in the video codec space.</li>
+<li><strong>Optis Wireless v Apple [2021] EWHC 3121</strong>: extended Unwired Planet principle; UK IPO published SEP policy recommendations 2022 recommending mandatory FRAND rate-setting mechanism, directly relevant to VVC/MC-IF licensing design.</li>
+<li><strong>Codec compression theory</strong>: rate-distortion theory (Berger 1971 rate-distortion functions); Shannon 1948 source coding theorem (lossless compression cannot exceed entropy H(X) = -∑ p(x) log₂ p(x)); Bjøntegaard delta (BD-rate, BD-PSNR) as universal comparative efficiency metric.</li>
+<li><strong>Perceptual quality science</strong>: SSIM (Wang et al. 2004 IEEE TIP); VMAF (Netflix 2016, de facto industry standard for ABR ladder optimisation, trained via SVR regression on MOS scores); XPSNR (Fraunhofer HHI 2020, adopted in VVC reference encoder).</li>
+<li><strong>DRM hardware security</strong>: TrustZone architecture (Alves &amp; Felton 2004 ARM White Paper); formal TEE security survey (Pinto &amp; Santos 2019 ACM Computing Surveys documenting TrustZone attack surfaces and defences); Widevine L3 key extraction (Tencent Security Lab Black Hat EU 2019); HDCP master key extraction 2010 (prompting HDCP 2.x redesign).</li>
+<li><strong>ABR algorithms</strong>: BOLA (Spiteri et al. IEEE/ACM ToN 2020, utility-maximisation Lyapunov framework); MPC (Model Predictive Control, Yin et al. SIGCOMM 2015); Pensieve (Mao et al. SIGCOMM 2017, reinforcement learning for ABR).</li>
+<li>Codec standardisation bodies and their IP governance:
+<ul>
+<li><strong>ITU-T Study Group 16</strong>: video coding (H.264, H.265/HEVC, H.266/VVC), operates under ITU-T Annex 1 patent policy requiring FRAND licensing declarations before standardisation.</li>
+<li><strong>ISO/IEC JTC 1/SC 29/WG 11 (MPEG)</strong>: video/audio/systems (MPEG-4, HEVC, VVC, EVC, LCEVC, VCM), operates under ISO/IEC patent policy with equivalent FRAND declaration requirements.</li>
+<li><strong>Alliance for Open Media (AOM)</strong>: FRAND-free royalty-free licence model; IPR policy drafted by EFF to maximise defensive patent protection while ensuring zero royalty obligation.</li>
+<li><strong>ETSI</strong>: AC-4 (Dolby), DVB standards, HbbTV; operates under ETSI IPR Policy requiring FRAND declarations; Dolby AC-4 declared as FRAND with complex royalty structure.</li>
+<li><strong>ATSC</strong>: US standards body; ATSC 3.0 incorporates HEVC and AC-4 under respective pool licences; separate ATSC A/DRM specification for conditional access.</li>
+<li><strong>Blu-ray Disc Association (BDA)</strong>: controls BDROM specification; mandates HEVC, AACS 2.1, BD+; consortium includes Samsung, Sony, Panasonic, Sharp, TDK, Hitachi, Pioneer, Philips.</li>
+</ul>
+</li>
+<li>Standards-essential patent (SEP) economics quantified:
+<ul>
+<li>HEVC patent density: approximately 6,000 declared SEP families across three pools as of 2018 (Baron &amp; Pohlmann 2018).</li>
+<li>Cumulative HEVC royalty exposure for a device shipping 1M units/year at commercial license terms: potentially <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">200</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mord">–</span></span></span></span>600K/year across three pools, more than 3× H.264 cumulative exposure.</li>
+<li>AV1 adoption speed: 0 to 50%+ YouTube watch-time in 7 years (2018–2025) vs HEVC reaching 50% smartphone penetration in approximately 6 years (2013–2019) — comparable adoption despite AV1’s encoding complexity disadvantage.</li>
+<li>FRAND litigation costs: Unwired Planet v Huawei litigation lasted approximately 8 years (2014–2020 UK proceedings) costing both parties estimated £50M+ in legal fees — illustrating the systemic cost of proprietary video IP enforcement.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="codec-adoption-equilibrium">Codec Adoption Equilibrium<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#codec-adoption-equilibrium" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>AV1 hardware decode support</strong> (2024–2025): ARM Cortex-A78+ / Mali-G710+, Apple A15 Bionic+ (A17 Pro full decode), Intel Arc/Xe, AMD RDNA3/Navi 31, Qualcomm Snapdragon 8 Gen 2+ / Adreno 740.</li>
+<li><strong>AV1 encode</strong>: SVT-AV1 v2.0 (Intel/Netflix, 50-fps 1080p on 32-core Xeon); NVIDIA RTX 4000 NVENC AV1 (2022+); Intel Arc NVENC AV1 (2022+) — enabling real-time AV1 live streaming.</li>
+<li>Netflix AV1 covers all Android and LG webOS watch-time; YouTube >50% watch-time in AV1 (Google I/O 2025).</li>
+<li>HEVC remains dominant in: UHD Blu-ray (mandatory), DVB-T2 UHD broadcast (mandatory), ATSC 3.0 (mandatory), professional camera recording (XAVC HS), and Dolby Vision delivery (Profile 8 rides on HEVC).</li>
+<li>Dual-ecosystem persistence expected through 2027–2028: AV1 for web/Android/streaming; HEVC for broadcast/Blu-ray/Apple-ecosystem (hardware decode on A-series silicon dating back to A12 Bionic 2018 for HEVC).</li>
+</ul>
+</li>
+<li>
+<h3 id="vvc-commercial-status">VVC Commercial Status<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vvc-commercial-status" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Hardware decode: ARM Mali-G720 Immortalis (Samsung Exynos 2400 / Galaxy S24/S25 series, 2023–2024).</li>
+<li>MC-IF licence pool active with FRAND commitments; approximately 20+ MC-IF member companies by 2025.</li>
+<li>vvenc 2.0 (MIT, 2024): ~35 fps 1080p on 32-core Xeon — 3× faster than VTM reference encoder but still ~2× slower than SVT-HEVC.</li>
+<li>First commercial ABR encoder products: Harmonic Electra X2 VVC module (2025), Ateme Kyrion VVC (2025).</li>
+<li>BBC R&amp;D Salford field trial (IBC 2025, WHP 385 follow-up): 38% BD-rate reduction over HEVC on documentary content.</li>
+<li>Broadcast VVC delivery over DVB-T2 remains speculative for UK until 2028+ given 8–10 year installed device lifecycle.</li>
+</ul>
+</li>
+<li>
+<h3 id="drm-hardening">DRM Hardening<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#drm-hardening" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>W3C EME Level 2 (2024): hardware security attestation APIs and HDCP 2.3 negotiation for browser-based players; potential browser-native Widevine L1 equivalent without native app.</li>
+<li>Google Widevine L1 attestation extended to MediaDRM API level 32 (Android 12+, 2024): deprecated software attestation paths.</li>
+<li>Apple FairPlay Extended (2025): offline licence expiry enforcement — 30-day re-validation window for offline rentals.</li>
+<li>PlayReady 4.2 (2023): enhanced Xbox cloud gaming hardware binding; sustainable licence deletion.</li>
+<li>Netflix/Disney+ 4K AI-generated content (Sora sequences, AI-upscaled archive) delivered via identical Widevine/FairPlay CMAF DRM pipeline as traditional content.</li>
+</ul>
+</li>
+<li>
+<h3 id="uk-specific-20252026">UK-Specific 2025–2026<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-specific-20252026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Ofcom Future of TV Distribution Final Statement (2024): DTT/Freeview maintained through 2034 minimum; HbbTV/IP-only transition deferred.</li>
+<li>BBC R&amp;D Salford (2024–2025): LL-DASH &lt;2.5 sec prototype; VVC vs AV1 evaluation (IBC 2025 WHP 385); MPEG-H vs Dolby Atmos listener trial 2024; 5G broadcast Ofcom experimental licence 2024 for Salford 5G-MBMS trial.</li>
+<li>BT/TNT Sports: CMAF LL-HLS Champions League live from 2024; &lt;5 sec target latency.</li>
+<li>ITVX: Dolby Atmos Q1 2024; HDR10 originals 2023.</li>
+<li>Channel 4: CMAF DASH, HDR10 drama slate (Leeds HQ from 2023).</li>
+</ul>
+</li>
+<li>
+<h3 id="ai-accelerated-encoding-integration">AI-Accelerated Encoding Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-accelerated-encoding-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Netflix Dynamic Optimizer: shot-level ML QP optimisation, 10–20% bitrate reduction over fixed-ladder HEVC, deployed since 2018.</li>
+<li>Bitmovin AI codec parameter selection: 2024 product launch, per-scene quantisation parameter ML inference.</li>
+<li>Fraunhofer VVC encoder: experimental learned intra-prediction candidates (2024 academic publication).</li>
+<li><strong>MPEG VCM (Video Coding for Machines, ISO/IEC 23090-11, anticipated ratification 2026–2027)</strong>: optimises video compression for machine vision rather than human viewing; encodes feature maps (HOG descriptors, deep feature tensors) rather than pixel data; 100× reduction vs raw video for detection/classification with &lt;5% accuracy degradation.</li>
+<li>Future bifurcation: traditional proprietary pixel codecs (HEVC/VVC/AV1) for human viewing; VCM for AI inference pipelines — both subject to same patent-pool and licensing dynamics.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context-imperial--edinburgh--ucl--cambridge--manchester-academic-northern-english-industrial--manchester--leeds--sheffield--newcastle">UK Context (Imperial / Edinburgh / UCL / Cambridge / Manchester academic; Northern English industrial — Manchester / Leeds / Sheffield / Newcastle)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context-imperial--edinburgh--ucl--cambridge--manchester-academic-northern-english-industrial--manchester--leeds--sheffield--newcastle" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="bbc-rd-mediacityuk-salford-greater-manchester">BBC R&amp;D, MediaCityUK, Salford (Greater Manchester)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bbc-rd-mediacityuk-salford-greater-manchester" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>BBC’s principal R&amp;D facility (relocated from Kingswood Warren 2011); one of the world’s most significant broadcast technology research centres.</li>
+<li><strong>LL-DASH prototype</strong>: &lt;2.5 sec glass-to-glass for Premier League football (BBC R&amp;D Blog 2023, internal trial results IBC 2023).</li>
+<li><strong>BBC White Paper WHP 385 (IBC 2025)</strong>: VVC vs AV1 perceptual quality at UHD — finding VVC 38% BD-rate superior on natural video, documentary, and sports sequences; using VMAF, XPSNR, and listener MOS.</li>
+<li><strong>MPEG-H vs Dolby Atmos</strong>: immersive audio binaural rendering listener trial (BBC R&amp;D 2024), informing iPlayer spatial audio roadmap.</li>
+<li><strong>Hybrid Log-Gamma (HLG)</strong>: BBC R&amp;D / NHK jointly developed (ARIB STD-B67 2015, ITU-R BT.2100 2016); UK’s HDR broadcast standard; only HDR format backward-compatible with legacy SDR displays without metadata — a deliberate public-service design choice contrasting with Dolby Vision’s forward-only approach.</li>
+<li><strong>5G broadcast</strong>: Ofcom experimental licence 2024 for Salford 5G-MBMS trial integrated with HbbTV 3.0 service discovery.</li>
+<li><strong>SRT contribution</strong>: adopted as primary live OB contribution protocol 2023–2025, replacing C-band satellite uplinks.</li>
+</ul>
+</li>
+<li>
+<h3 id="arm-ltd-cambridge">ARM Ltd, Cambridge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#arm-ltd-cambridge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Cambridge headquarters is the design origin of TrustZone hardware security architecture (ARM DDI 0406, first deployed in ARM1176JZ-S 2003).</li>
+<li>TrustZone underpins Widevine L1 and PlayReady SL3000 on virtually every mobile and connected-TV SoC globally.</li>
+<li><strong>ARM Mali GPU IP codec acceleration</strong>:
+<ul>
+<li>Mali-G710 (2021): HEVC + AV1 hardware decode</li>
+<li>Mali-G715 Immortalis (2022): HEVC + AV1 + optional HDR10/Dolby Vision decode</li>
+<li>Mali-G720 Immortalis (2023, Samsung Exynos 2400 / Galaxy S24/S25): HEVC + AV1 + VVC hardware decode — first commercial VVC hardware decode SoC globally</li>
+</ul>
+</li>
+<li>ARM Compute Library (Apache 2.0): HEVC/AV1 decode acceleration for non-GPU decode paths on Cortex-A series.</li>
+<li>ARM TrustZone + PlayReady TEE client (ARM/Microsoft co-developed): available for MediaTek MT8675, NXP i.MX 8M/9M cable STB SoCs.</li>
+<li>ARM’s Immortalis-G720 making Cambridge the global enabler of first-wave VVC hardware adoption.</li>
+</ul>
+</li>
+<li>
+<h3 id="university-of-bristol--centre-for-digital-entertainment">University of Bristol — Centre for Digital Entertainment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-bristol--centre-for-digital-entertainment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>EPSRC-funded FAST (Future Adaptive Streaming Technologies) project: open-source BOLA-E (enhanced BOLA) ABR algorithm for LL-DASH.</li>
+<li>Contributions to IEEE Transactions on Multimedia and ACM Multimedia on ABR algorithm design.</li>
+<li>Visual Information Laboratory (Prof. David Bull): perceptual video quality, HEVC compression, neural network-based codec enhancement (super-resolution post-processing for HEVC, IEEE Signal Processing Letters 2022–2024).</li>
+</ul>
+</li>
+<li>
+<h3 id="university-of-sheffield--eee-department">University of Sheffield — EEE Department<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-sheffield--eee-department" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Research on perceptual video quality at low bitrates and ML-based video quality assessment (VQA).</li>
+<li>Deep learning VQA models published in IEEE Transactions on Broadcasting and Signal Processing Letters 2022–2024.</li>
+<li>Industrial partnership with Arqiva (broadcast transmission infrastructure) for network-assisted ABR research.</li>
+</ul>
+</li>
+<li>
+<h3 id="itv--itvx-leeds">ITV / ITVX, Leeds<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#itv--itvx-leeds" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>ITV’s digital hub relocated to Leeds (Channel 4 HQ also Leeds from 2023).</li>
+<li>ITV Studios (drama and factual production): uses XAVC HS (Sony HEVC) for acquisition, DNxHR MXF for post-production.</li>
+<li>ITVX encoding: AWS Elemental MediaConvert EU (West, Ireland) and EU (North) regions.</li>
+<li>ITVX Adlite FAST tier: SCTE-35 cue markers in DASH for CSAI integrated with Freewheel ad decisioning.</li>
+<li>Dolby Atmos enabled Q1 2024 (Trigger Point S2, Mr Bates vs The Post Office); HDR10 originals from 2023.</li>
+</ul>
+</li>
+<li>
+<h3 id="channel-4-leeds">Channel 4, Leeds<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#channel-4-leeds" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Channel 4 HQ relocated Leeds 2023; 4Studio digital production hub.</li>
+<li>Streaming infrastructure: CMAF + MPEG-DASH, Widevine L1 (Certificate-based approach replacing SWF hash 2023), FairPlay FPS (iOS), PlayReady SL2000 (web).</li>
+<li>HDR10 drama originals: Gangs of London S3, Adolescence; encoded at AWS Elemental MediaConvert.</li>
+<li>Channel 4 commissions 35%+ of programming from UK nations/regions outside London — streaming stack directly enables UK regional creative economy.</li>
+</ul>
+</li>
+<li>
+<h3 id="bt-labs--adastral-park-ipswich-suffolk">BT Labs / Adastral Park, Ipswich (Suffolk)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bt-labs--adastral-park-ipswich-suffolk" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Published on 5G MEC CDN integration for low-latency sports streaming (IEEE ICC 2023): &lt;3 sec latency for live sport via MEC-assisted CMAF chunked delivery to 5G standalone devices.</li>
+<li>Relevant to TNT Sports UK 5G distribution strategy following Warner Bros Discovery BT Sport acquisition 2023.</li>
+</ul>
+</li>
+<li>
+<h3 id="arqiva-winchester-and-emley-moor-yorkshire">Arqiva, Winchester and Emley Moor (Yorkshire)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#arqiva-winchester-and-emley-moor-yorkshire" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>UK’s sole broadcast transmission infrastructure provider; 1,150+ transmission sites including Emley Moor supertransmitter (Yorkshire, 330m, covering 3.8M homes).</li>
+<li>Manages UK Freeview DVB-T2 multiplex network for BBC/ITV/Channel 4/Channel 5; operates national HbbTV 2.0 infrastructure.</li>
+<li>Satellite uplink services from Chalfont St Peter facility; satellite contribution for ATSC 3.0 analogue (research evaluation).</li>
+<li>Arqiva research on DVB-T2 link budget optimisation and HbbTV application caching directly relevant to UK DTT future-proofing through 2034 commitment window.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="vvc-mass-market-transition-20272029">VVC Mass-Market Transition (2027–2029)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vvc-mass-market-transition-20272029" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>MC-IF FRAND licensing achieving broad uptake anticipated 2026–2027; ARM Immortalis-class VVC hardware decode proliferation expected in Snapdragon 8 Gen 5 / Exynos 2600 generation.</li>
+<li>BBC, ITV, Channel 4 formally evaluating VVC transition roadmaps following IBC 2025 trials.</li>
+<li>Primary resistance: installed base of HEVC-only smart TVs (8–10 year lifecycle means 2022-vintage HEVC-only TVs persist to 2030–2032) requiring dual HEVC+VVC ABR ladder encoding during transition.</li>
+<li>CDN bandwidth cost reduction motivator: 40–50% reduction enabling VVC amortisation of dual-encode cost within 3–5 years of transition.</li>
+</ul>
+</li>
+<li>
+<h3 id="evc-baseline-and-avs3-as-geopolitical-hedges">EVC Baseline and AVS3 as Geopolitical Hedges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evc-baseline-and-avs3-as-geopolitical-hedges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>MPEG-5 EVC Baseline (royalty-free pre-2000 IP only): relevant for markets seeking alternative to AOM IP dependencies.</li>
+<li>AVS3 (China Audio Video Standard 3, royalty-free under Chinese national standard): deployed by Douyin/iQIYI/Tencent Video; gaining international deployment interest as US-China technology decoupling hedge.</li>
+<li>Neither expected to displace AV1 or VVC in UK/EU markets but relevant for UK technology export to APAC.</li>
+</ul>
+</li>
+<li>
+<h3 id="jpeg-xs-for-production-low-latency-workflows">JPEG XS for Production Low-Latency Workflows<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#jpeg-xs-for-production-low-latency-workflows" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>JPEG XS (ISO/IEC 21122, intoPIX, standardised 2019): visually lossless, &lt;1 ms encode/decode latency for contribution and production.</li>
+<li>AIMS (Alliance for IP Media Solutions) and SMPTE ST 2110 IP production networks adopting JPEG XS, replacing SDI in REMI (Remote Production) workflows.</li>
+<li>BBC Sport Salford: JPEG XS for studio-to-cloud live contribution feeds (2024–2025 trials replacing satellite C-band uplinks).</li>
+<li>Apple Vision Pro / Meta Quest 4 spatial video streaming over Wi-Fi 6E uses JPEG XS-inspired low-latency approaches.</li>
+</ul>
+</li>
+<li>
+<h3 id="5g-broadcast-integration-20262028">5G Broadcast Integration (2026–2028)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5g-broadcast-integration-20262028" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>3GPP Release 17 (2022) NR-based TV / 5G-MBMS: cellular broadcast to unmodified 5G devices without SIM card, using 5G NR OFDM physical layer.</li>
+<li>ATSC 3.0 v2 (2026–2027): integrates 5G NR broadcast, VVC video support, enhanced addressability.</li>
+<li>DVB-I (ETSI TS 103 749 V1.2.1): IP video service discovery for HbbTV 3.0 over 5G unicast/multicast.</li>
+<li>UK Ofcom experimental 5G broadcast spectrum licensed to BBC R&amp;D 2024 for Salford MediaCityUK trials.</li>
+<li>Commercial deployment requires Ofcom spectrum allocation decisions (consultation 2025–2026) and new SoC integration of 5G broadcast tuners alongside DVB-T2 in smart TV silicon.</li>
+</ul>
+</li>
+<li>
+<h3 id="post-quantum-drm-20282032">Post-Quantum DRM (2028–2032)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#post-quantum-drm-20282032" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>NIST PQC standards finalised 2024: ML-KEM (CRYSTALS-Kyber), ML-DSA (CRYSTALS-Dilithium), SLH-DSA (SPHINCS+).</li>
+<li>DRM key exchange protocols must migrate from RSA-2048 and ECC P-256 to ML-KEM-1024 within 5–10 year window.</li>
+<li>W3C EME Level 3 (anticipated 2026–2027): expected to include PQC algorithm negotiation hooks.</li>
+<li>Google Widevine v4 (speculative 2026–2028): ML-KEM-based key wrapping for L1 content key delivery to TEE.</li>
+<li>Apple Secure Enclave PQC migration: A-series silicon already supports SHA-3 / ECDH P-521; PQC Kyber lattice operations require new secure enclave hardware in A19 / A20 generation (anticipated 2026–2027).</li>
+</ul>
+</li>
+<li>
+<h3 id="mpeg-vcm-and-ai-codec-convergence">MPEG VCM and AI Codec Convergence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mpeg-vcm-and-ai-codec-convergence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>MPEG VCM (Video Coding for Machines, ISO/IEC 23090-11, ratification 2026–2027): encodes feature maps rather than pixel data; 100× reduction for detection/classification with &lt;5% accuracy degradation.</li>
+<li>Future MediaPipe / ONNX ML inference pipelines may ingest VCM directly, bypassing pixel-domain decode.</li>
+<li>Two-tier codec landscape: traditional proprietary pixel codecs (HEVC/VVC/AV1) for human viewing; VCM for AI inference — both subject to patent-pool and licensing dynamics defining Proprietary Video.</li>
+<li>MPEG-5 LCEVC + ML super-resolution: complement codecs with learned upscaling at decode time, reducing encode bitrate 20–30% for equivalent perceived quality on ML-enhanced displays.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Sullivan, G.J., Ohm, J.-R., Han, W.-J., Wiegand, T. (2012). Overview of the High Efficiency Video Coding (HEVC) Standard. <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 22(12), 1649–1668.</li>
+<li>Bross, B., Wang, Y.-K., Ye, Y., Liu, S., Chen, J., Sullivan, G.J., Ohm, J.-R. (2021). Overview of the Versatile Video Coding (VVC) Standard and its Applications. <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 31(10), 3736–3764.</li>
+<li>Wiegand, T., Sullivan, G.J., Bjøntegaard, G., Luthra, A. (2003). Overview of the H.264/AVC Video Coding Standard. <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 13(7), 560–576.</li>
+<li>Baron, J., Pohlmann, K. (2018). Comparative analysis of patent pool licensing: HEVC vs H.264 adoption dynamics. <em>Journal of Competition Law &amp; Economics</em>, 14(3), 341–380.</li>
+<li>Lemley, M.A., Shapiro, C. (2007). Patent holdup and royalty stacking. <em>Texas Law Review</em>, 85(7), 1991–2049.</li>
+<li>Layne-Farrar, A., Lerner, J. (2011). To join or not to join: examining patent pool participation and rent sharing rules. <em>International Journal of Industrial Organization</em>, 29(2), 294–303.</li>
+<li>Spiteri, K., Sitaraman, R., Sparacio, D. (2020). From theory to practice: improving bitrate adaptation in the BOLA DASH video streaming algorithm. <em>IEEE/ACM Transactions on Networking</em>, 28(4), 1561–1575.</li>
+<li>Wang, Z., Bovik, A.C., Sheikh, H.R., Simoncelli, E.P. (2004). Image quality assessment: from error visibility to structural similarity. <em>IEEE Transactions on Image Processing</em>, 13(4), 600–612.</li>
+<li>Ohm, J.-R., Sullivan, G.J. (2024). VVC standardization and implementation status update. <em>IEEE Signal Processing Magazine</em>, 41(2), 18–29.</li>
+<li>Alves, T., Felton, D. (2004). TrustZone: Integrated hardware and software security. <em>ARM White Paper</em>, IQ Quarter 3.</li>
+<li>Pinto, S., Santos, J. (2019). Demystifying Arm TrustZone: A comprehensive survey. <em>ACM Computing Surveys</em>, 51(6), Article 130.</li>
+<li>Perlman, R., Kaufman, C. (1999). Key exchange in IPsec: analysis of IKE. <em>IEEE Network</em>, 13(6), 11–20.</li>
+<li>Netflix Technology Blog (2023). Bringing AV1 streaming to Netflix members’ TVs. <a href="https://netflixtechblog.com/bringing-av1-streaming-to-netflix-members-tvs-b7fc88e42320" class="external">https://netflixtechblog.com/bringing-av1-streaming-to-netflix-members-tvs-b7fc88e42320<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>BBC Research &amp; Development White Paper WHP 385 (2025). Perceptual quality comparison of VVC and AV1 for UHD streaming. BBC R&amp;D, MediaCityUK Salford.</li>
+<li>Bitmovin (2024). State of Video Encoding Report 2024. <a href="https://bitmovin.com/state-of-video/" class="external">https://bitmovin.com/state-of-video/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>ETSI TS 103 190-1 V2.1.1 (2023). Digital Audio Compression (AC-4); Part 1: Channel Based Coding. ETSI.</li>
+<li>ETSI EN 302 755 V1.4.1 (2015). Frame structure channel coding and modulation for DVB-T2. ETSI.</li>
+<li>ATSC Standard A/322:2023. Physical Layer Protocol. Advanced Television Systems Committee.</li>
+<li>ISO/IEC 23000-19:2022. Common Media Application Format (CMAF). ISO/IEC JTC 1/SC 29.</li>
+<li>ISO/IEC 23001-7:2022. Common Encryption in ISO Base Media File Format Files (CENC). ISO/IEC JTC 1/SC 29.</li>
+<li>ISO/IEC 23090-3:2020. Versatile Video Coding (VVC). ISO/IEC JTC 1/SC 29.</li>
+<li>ISO/IEC 23094-1:2020. Essential Video Coding (EVC). ISO/IEC JTC 1/SC 29.</li>
+<li>GlobalPlatform (2022). TEE System Architecture v1.3.1. <a href="https://globalplatform.org/" class="external">https://globalplatform.org/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>UK Supreme Court (2020). Unwired Planet International Ltd v Huawei Technologies (UK) Co Ltd [2020] UKSC 37.</li>
+<li>3GPP TS 26.346 Release 17 (2022). MBMS Protocols and Codecs. 3rd Generation Partnership Project.</li>
+<li>Ofcom (2024). Future of TV Distribution: Final Statement. <a href="https://www.ofcom.org.uk/" class="external">https://www.ofcom.org.uk/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>PwC (2025). Global Entertainment &amp; Media Outlook 2025–2029. PricewaterhouseCoopers.</li>
+<li>Dolby Laboratories (2024). Dolby Vision Technical Specification v1.3.3. Dolby Inc.</li>
+</ul>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Domain Correction</strong>: None required. Domain <code>infrastructure</code> is correct for Proprietary Video (codec, DRM, streaming protocol, broadcast standards stack). Distinct from <a href="../Proprietary-AI-Video" class="internal alias" data-slug="Proprietary-AI-Video">Proprietary AI Video</a> (domain: <code>artificial-intelligence</code>, legacy-term-id: AI-0640, enriched separately). Original stub body contained AI generative video content (Pika Labs, Runway ML, Midjourney, HeyGen notes) misfile under this page; that content belongs to the sibling page. This enrichment replaces contaminated stub with the correct infrastructure ontology concept.</li>
+<li><strong>Legacy Term ID</strong>: IF-0210 (Infrastructure domain, codec/DRM/streaming standards family)</li>
+<li><strong>OWL Axiom count</strong>: 46 (14 Compositional + 10 Dependency + 10 Capability + 9 Implementation + 6 Reduction + 6 Data Properties + 4 Annotations)</li>
+<li><strong>Relationship count</strong>: 72 wikilinks across 11 relationship types</li>
+<li><strong>Reference count</strong>: 27 entries in Research &amp; Literature; 27 entries in Provenance</li>
+<li><strong>Worker model</strong>: claude-sonnet-4-6</li>
+<li><strong>Enrichment phase</strong>: Phase 6 Bulk Run</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-4481" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-proprietary-video" data-for="about-proprietary-video">About Proprietary Video</a></li><li class="depth-0"><a href="#core-technical-architecture-codec-layer" data-for="core-technical-architecture-codec-layer">Core Technical Architecture: Codec Layer</a></li><li class="depth-1"><a href="#h264avc-itu-t-h264--isoiec-14496-10-2003" data-for="h264avc-itu-t-h264--isoiec-14496-10-2003">H.264/AVC (ITU-T H.264 | ISO/IEC 14496-10, 2003)</a></li><li class="depth-1"><a href="#hevch265-itu-t-h265--isoiec-23008-2-2013" data-for="hevch265-itu-t-h265--isoiec-23008-2-2013">HEVC/H.265 (ITU-T H.265 | ISO/IEC 23008-2, 2013)</a></li><li class="depth-1"><a href="#vvch266-itu-t-h266--isoiec-23090-3-2020" data-for="vvch266-itu-t-h266--isoiec-23090-3-2020">VVC/H.266 (ITU-T H.266 | ISO/IEC 23090-3, 2020)</a></li><li class="depth-1"><a href="#dolby-vision" data-for="dolby-vision">Dolby Vision</a></li><li class="depth-1"><a href="#dolby-ac-4-and-atmos" data-for="dolby-ac-4-and-atmos">Dolby AC-4 and Atmos</a></li><li class="depth-1"><a href="#mpeg-5-evc-isoiec-23094-1-2020" data-for="mpeg-5-evc-isoiec-23094-1-2020">MPEG-5 EVC (ISO/IEC 23094-1, 2020)</a></li><li class="depth-1"><a href="#av1-alliance-for-open-media-2018--royalty-free-contrast-case" data-for="av1-alliance-for-open-media-2018--royalty-free-contrast-case">AV1 (Alliance for Open Media, 2018) — Royalty-Free Contrast Case</a></li><li class="depth-1"><a href="#rate-distortion-and-perceptual-quality-metrics" data-for="rate-distortion-and-perceptual-quality-metrics">Rate-Distortion and Perceptual Quality Metrics</a></li><li class="depth-0"><a href="#drm-layer-content-protection-architecture" data-for="drm-layer-content-protection-architecture">DRM Layer: Content Protection Architecture</a></li><li class="depth-1"><a href="#foundations-hardware-security-and-common-encryption" data-for="foundations-hardware-security-and-common-encryption">Foundations: Hardware Security and Common Encryption</a></li><li class="depth-1"><a href="#widevine-google" data-for="widevine-google">Widevine (Google)</a></li><li class="depth-1"><a href="#fairplay-apple" data-for="fairplay-apple">FairPlay (Apple)</a></li><li class="depth-1"><a href="#playready-microsoft" data-for="playready-microsoft">PlayReady (Microsoft)</a></li><li class="depth-1"><a href="#hdcp-output-protection" data-for="hdcp-output-protection">HDCP Output Protection</a></li><li class="depth-0"><a href="#adaptive-streaming-layer-delivery-protocols" data-for="adaptive-streaming-layer-delivery-protocols">Adaptive Streaming Layer: Delivery Protocols</a></li><li class="depth-1"><a href="#mpeg-dash-isoiec-23009-1-5th-edition-2022" data-for="mpeg-dash-isoiec-23009-1-5th-edition-2022">MPEG-DASH (ISO/IEC 23009-1 5th Edition 2022)</a></li><li class="depth-1"><a href="#hls-http-live-streaming-rfc-8216-2017" data-for="hls-http-live-streaming-rfc-8216-2017">HLS (HTTP Live Streaming, RFC 8216 2017)</a></li><li class="depth-1"><a href="#cmaf-isoiec-23000-192022" data-for="cmaf-isoiec-23000-192022">CMAF (ISO/IEC 23000-19:2022)</a></li><li class="depth-1"><a href="#srt-and-contribution-protocols" data-for="srt-and-contribution-protocols">SRT and Contribution Protocols</a></li><li class="depth-1"><a href="#cpix-key-management" data-for="cpix-key-management">CPIX Key Management</a></li><li class="depth-0"><a href="#broadcast-standards-layer" data-for="broadcast-standards-layer">Broadcast Standards Layer</a></li><li class="depth-1"><a href="#atsc-30--nextgen-tv-us-ansicta-ceb32-2017" data-for="atsc-30--nextgen-tv-us-ansicta-ceb32-2017">ATSC 3.0 / NextGen TV (US, ANSI/CTA-CEB32 2017)</a></li><li class="depth-1"><a href="#dvb-t2--hbbtv-ukeurope-etsi-en-302-755" data-for="dvb-t2--hbbtv-ukeurope-etsi-en-302-755">DVB-T2 / HbbTV (UK/Europe, ETSI EN 302 755)</a></li><li class="depth-1"><a href="#uhd-blu-ray-bda-bdrom-31" data-for="uhd-blu-ray-bda-bdrom-31">UHD Blu-ray (BDA BDROM 3.1)</a></li><li class="depth-1"><a href="#digital-cinema-dci-specification" data-for="digital-cinema-dci-specification">Digital Cinema (DCI Specification)</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-1"><a href="#premium-svod-streaming" data-for="premium-svod-streaming">Premium SVOD Streaming</a></li><li class="depth-1"><a href="#uk-public-service-broadcasting" data-for="uk-public-service-broadcasting">UK Public Service Broadcasting</a></li><li class="depth-1"><a href="#pay-tv-and-satellite" data-for="pay-tv-and-satellite">Pay TV and Satellite</a></li><li class="depth-1"><a href="#professional-production-and-post-production" data-for="professional-production-and-post-production">Professional Production and Post-Production</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#codec-adoption-equilibrium" data-for="codec-adoption-equilibrium">Codec Adoption Equilibrium</a></li><li class="depth-1"><a href="#vvc-commercial-status" data-for="vvc-commercial-status">VVC Commercial Status</a></li><li class="depth-1"><a href="#drm-hardening" data-for="drm-hardening">DRM Hardening</a></li><li class="depth-1"><a href="#uk-specific-20252026" data-for="uk-specific-20252026">UK-Specific 2025–2026</a></li><li class="depth-1"><a href="#ai-accelerated-encoding-integration" data-for="ai-accelerated-encoding-integration">AI-Accelerated Encoding Integration</a></li><li class="depth-0"><a href="#uk-context-imperial--edinburgh--ucl--cambridge--manchester-academic-northern-english-industrial--manchester--leeds--sheffield--newcastle" data-for="uk-context-imperial--edinburgh--ucl--cambridge--manchester-academic-northern-english-industrial--manchester--leeds--sheffield--newcastle">UK Context (Imperial / Edinburgh / UCL / Cambridge / Manchester academic; Northern English industrial — Manchester / Leeds / Sheffield / Newcastle)</a></li><li class="depth-1"><a href="#bbc-rd-mediacityuk-salford-greater-manchester" data-for="bbc-rd-mediacityuk-salford-greater-manchester">BBC R&amp;D, MediaCityUK, Salford (Greater Manchester)</a></li><li class="depth-1"><a href="#arm-ltd-cambridge" data-for="arm-ltd-cambridge">ARM Ltd, Cambridge</a></li><li class="depth-1"><a href="#university-of-bristol--centre-for-digital-entertainment" data-for="university-of-bristol--centre-for-digital-entertainment">University of Bristol — Centre for Digital Entertainment</a></li><li class="depth-1"><a href="#university-of-sheffield--eee-department" data-for="university-of-sheffield--eee-department">University of Sheffield — EEE Department</a></li><li class="depth-1"><a href="#itv--itvx-leeds" data-for="itv--itvx-leeds">ITV / ITVX, Leeds</a></li><li class="depth-1"><a href="#channel-4-leeds" data-for="channel-4-leeds">Channel 4, Leeds</a></li><li class="depth-1"><a href="#bt-labs--adastral-park-ipswich-suffolk" data-for="bt-labs--adastral-park-ipswich-suffolk">BT Labs / Adastral Park, Ipswich (Suffolk)</a></li><li class="depth-1"><a href="#arqiva-winchester-and-emley-moor-yorkshire" data-for="arqiva-winchester-and-emley-moor-yorkshire">Arqiva, Winchester and Emley Moor (Yorkshire)</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-1"><a href="#vvc-mass-market-transition-20272029" data-for="vvc-mass-market-transition-20272029">VVC Mass-Market Transition (2027–2029)</a></li><li class="depth-1"><a href="#evc-baseline-and-avs3-as-geopolitical-hedges" data-for="evc-baseline-and-avs3-as-geopolitical-hedges">EVC Baseline and AVS3 as Geopolitical Hedges</a></li><li class="depth-1"><a href="#jpeg-xs-for-production-low-latency-workflows" data-for="jpeg-xs-for-production-low-latency-workflows">JPEG XS for Production Low-Latency Workflows</a></li><li class="depth-1"><a href="#5g-broadcast-integration-20262028" data-for="5g-broadcast-integration-20262028">5G Broadcast Integration (2026–2028)</a></li><li class="depth-1"><a href="#post-quantum-drm-20282032" data-for="post-quantum-drm-20282032">Post-Quantum DRM (2028–2032)</a></li><li class="depth-1"><a href="#mpeg-vcm-and-ai-codec-convergence" data-for="mpeg-vcm-and-ai-codec-convergence">MPEG VCM and AI Codec Convergence</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

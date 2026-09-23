@@ -132,6 +132,10 @@
         "label": "Directory Services"
       },
       {
+        "id": "urn:ngm:class:identity-governance-and-administration",
+        "label": "Identity Governance and Administration"
+      },
+      {
         "id": "urn:ngm:class:privileged-access-management",
         "label": "Privileged Access Management"
       },
@@ -146,10 +150,6 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ],
     "requires": [
@@ -166,16 +166,16 @@
         "label": "Privacy By Design"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:digital-certificate",
@@ -270,6 +270,10 @@
         "label": "Password Authentication"
       },
       {
+        "id": "urn:ngm:class:token-based-authentication",
+        "label": "Token-Based Authentication"
+      },
+      {
         "id": "urn:ngm:class:anonymity",
         "label": "Anonymity"
       },
@@ -292,7 +296,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -338,6 +342,10 @@
         "label": "Secure Enclave"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
@@ -348,10 +356,6 @@
       {
         "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
-      },
-      {
-        "id": "urn:ngm:class:open-id-connect",
-        "label": "OpenID Connect"
       }
     ],
     "supports": [
@@ -420,20 +424,20 @@
         "label": "Self Sovereign Identity"
       },
       {
+        "id": "urn:ngm:class:biometrics",
+        "label": "Biometrics"
+      },
+      {
         "id": "urn:ngm:class:federation",
         "label": "Federation"
       },
       {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
         "id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"
-      },
-      {
-        "id": "urn:ngm:class:threat-model",
-        "label": "Threat Model"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ]
   },

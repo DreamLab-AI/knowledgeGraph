@@ -54,6 +54,14 @@
       {
         "id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management (AI-0062)"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework (AI-0035)"
       }
     ],
     "enables": [
@@ -64,6 +72,14 @@
       {
         "id": "urn:ngm:class:human-ai-collaboration",
         "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI (AI-0033)"
+      },
+      {
+        "id": "urn:ngm:class:ai-assurance-ai-0102",
+        "label": "AI Assurance (AI-0102)"
       }
     ],
     "dependsOn": [
@@ -78,7 +94,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -210,6 +226,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

@@ -33,7 +33,7 @@
       },
       {
         "id": "urn:ngm:class:tcp-ip",
-        "label": "TCP/IP"
+        "label": "TCP-IP"
       }
     ],
     "enables": [
@@ -68,7 +68,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:tcp-ip",
-        "label": "TCP/IP"
+        "label": "TCP-IP"
       }
     ],
     "supports": [
@@ -130,7 +130,7 @@
         "label": "Routing Protocol"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -242,6 +242,10 @@
         "label": "Air Gap"
       },
       {
+        "id": "urn:ngm:class:network-isolation",
+        "label": "Network Isolation"
+      },
+      {
         "id": "urn:ngm:class:overlay-network",
         "label": "Overlay Network"
       },
@@ -278,7 +282,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -364,7 +368,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -32,6 +32,14 @@
       {
         "id": "urn:ngm:class:ai-office",
         "label": "EU AI Office"
+      },
+      {
+        "id": "urn:ngm:class:ai-office",
+        "label": "EU AI Office"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulatory-sandbox",
+        "label": "AI Regulatory Sandbox"
       }
     ],
     "requires": [
@@ -54,6 +62,10 @@
       {
         "id": "urn:ngm:class:technical-documentation",
         "label": "Technical Documentation"
+      },
+      {
+        "id": "urn:ngm:class:post-market-monitoring",
+        "label": "Post-Market Monitoring"
       }
     ],
     "enables": [
@@ -68,12 +80,24 @@
       {
         "id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:product-safety-regulation",
+        "label": "Product Safety Regulation"
+      },
+      {
+        "id": "urn:ngm:class:new-legislative-framework",
+        "label": "New Legislative Framework"
       }
     ],
     "implements": [],
@@ -81,6 +105,14 @@
       {
         "id": "urn:ngm:class:us-ai-executive-order",
         "label": "US AI Executive Order"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-regulatory-approach",
+        "label": "UK AI Regulatory Approach"
+      },
+      {
+        "id": "urn:ngm:class:self-regulatory-approach",
+        "label": "Self-Regulatory Approach"
       }
     ],
     "bridgesTo": [
@@ -107,6 +139,10 @@
       {
         "id": "urn:ngm:class:european-parliament",
         "label": "European Parliament"
+      },
+      {
+        "id": "urn:ngm:class:council-of-the-european-union",
+        "label": "Council of the European Union"
       }
     ],
     "partOf": [],
@@ -126,6 +162,18 @@
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
       }
     ]
   },
@@ -246,6 +294,10 @@
       {
         "id": "urn:ngm:class:ai-self-regulation",
         "label": "AI Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-ai-commitments",
+        "label": "Voluntary AI Commitments"
       }
     ],
     "bridgesTo": [
@@ -260,9 +312,29 @@
       {
         "id": "urn:ngm:class:product-liability",
         "label": "Product Liability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:audit-and-certification",
+        "label": "Audit and Certification"
+      },
       {
         "id": "urn:ngm:class:impact-assessment",
         "label": "Impact Assessment"

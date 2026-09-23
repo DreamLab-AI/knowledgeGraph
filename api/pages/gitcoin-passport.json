@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:trust-score-metric",
         "label": "Trust Score"
+      },
+      {
+        "id": "urn:ngm:class:trust-score-metric",
+        "label": "Trust Score"
       }
     ],
     "requires": [
@@ -56,6 +60,10 @@
       {
         "id": "urn:ngm:class:decentralized-governance",
         "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:token-airdrop",
+        "label": "Token Airdrop"
       }
     ],
     "dependsOn": [
@@ -72,6 +80,10 @@
       {
         "id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:identity-aggregation",
+        "label": "Identity Aggregation"
       }
     ],
     "contrastsWith": [
@@ -92,6 +104,10 @@
       {
         "id": "urn:ngm:class:federated-identity",
         "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:content-authenticity",
+        "label": "AI Content Authenticity"
       }
     ],
     "uses": [
@@ -106,6 +122,14 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:bright-id",
+        "label": "BrightID"
+      },
+      {
+        "id": "urn:ngm:class:ens",
+        "label": "ENS (Ethereum Name Service)"
       }
     ],
     "supports": [],
@@ -154,6 +178,10 @@
         "label": "DID Resolver"
       },
       {
+        "id": "urn:ngm:class:did-uri",
+        "label": "DID URI"
+      },
+      {
         "id": "urn:ngm:class:verifiable-data-registry",
         "label": "Verifiable Data Registry"
       },
@@ -172,13 +200,13 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
       {
         "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
@@ -186,10 +214,6 @@
       {
         "id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -205,6 +229,10 @@
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:cross-domain-identity",
+        "label": "Cross-Domain Identity"
+      },
       {
         "id": "urn:ngm:class:decentralized-authentication",
         "label": "Decentralized Authentication"
@@ -232,10 +260,16 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
       }
     ],
     "contrastsWith": [
@@ -245,6 +279,10 @@
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
       {
         "id": "urn:ngm:class:data",
         "label": "Data"

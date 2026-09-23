@@ -20,6 +20,18 @@
       {
         "id": "urn:ngm:class:saml-assertion",
         "label": "SAML Assertion"
+      },
+      {
+        "id": "urn:ngm:class:saml-protocol",
+        "label": "SAML Protocol"
+      },
+      {
+        "id": "urn:ngm:class:saml-binding",
+        "label": "SAML Binding"
+      },
+      {
+        "id": "urn:ngm:class:saml-metadata",
+        "label": "SAML Metadata"
       }
     ],
     "requires": [
@@ -28,7 +40,7 @@
         "label": "XML"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -83,12 +95,28 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:cloud-identity",
+        "label": "Cloud Identity"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:xml-encryption",
         "label": "XML Encryption"
+      },
+      {
+        "id": "urn:ngm:class:xml-signature",
+        "label": "XML Signature"
+      },
+      {
+        "id": "urn:ngm:class:http-redirect-binding",
+        "label": "HTTP Redirect Binding"
+      },
+      {
+        "id": "urn:ngm:class:http-post-binding",
+        "label": "HTTP POST Binding"
       }
     ],
     "supports": [],
@@ -107,6 +135,14 @@
       {
         "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Access Management"
       },
       {
         "id": "urn:ngm:class:zero-trust-architecture",
@@ -142,6 +178,10 @@
         "label": "Service Provider"
       },
       {
+        "id": "urn:ngm:class:security-assertion",
+        "label": "Security Assertion"
+      },
+      {
         "id": "urn:ngm:class:trust-framework",
         "label": "Trust Framework"
       },
@@ -160,10 +200,6 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
       }
     ],
     "requires": [
@@ -386,6 +422,12 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
       }
     ],
     "relatedTo": [

@@ -246,7 +246,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -282,6 +282,10 @@
       {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:bus-interface",
+        "label": "Bus Interface"
       },
       {
         "id": "urn:ngm:class:communication-protocol",
@@ -358,6 +362,10 @@
         "label": "Edge Computing Node"
       },
       {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
@@ -376,6 +384,10 @@
         "label": "Field-Programmable Gate Array"
       },
       {
+        "id": "urn:ngm:class:printed-circuit-board",
+        "label": "Printed Circuit Board"
+      },
+      {
         "id": "urn:ngm:class:system-on-chip",
         "label": "System-on-Chip"
       },
@@ -384,16 +396,12 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
         "id": "urn:ngm:class:infra-network-and-comms",
         "label": "Network and Communication"
-      },
-      {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
       }
     ]
   },

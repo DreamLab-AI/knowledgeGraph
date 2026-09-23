@@ -34,11 +34,20 @@
       {
         "id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:open-peer-review",
+        "label": "Open Peer Review"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:closed-peer-review",
+        "label": "Closed Peer Review"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:neuroscience",
@@ -86,7 +95,16 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:academic-conference-series",
+        "label": "Academic Conference Series"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-community",
+        "label": "AI Research Community"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:icml",
@@ -111,6 +129,10 @@
       {
         "id": "urn:ngm:class:open-source-ai",
         "label": "Open-Source AI"
+      },
+      {
+        "id": "urn:ngm:class:openreview",
+        "label": "OpenReview"
       }
     ]
   },
@@ -190,6 +212,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

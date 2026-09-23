@@ -61,9 +61,24 @@
       "slug": "robotics"
     },
     {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
       "id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type",
       "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -179,22 +194,58 @@
         "label": "Localisation"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:power-systems",
         "label": "Power System"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fixed-base-robot",
+        "label": "Fixed-Base Robot"
+      },
       {
         "id": "urn:ngm:class:manipulator",
         "label": "Industrial Manipulator"
       },
       {
+        "id": "urn:ngm:class:automated-machine",
+        "label": "Automated Machine"
+      },
+      {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
       }
     ],
     "bridgesTo": [
@@ -217,6 +268,18 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
       }
     ],
     "uses": [
@@ -233,7 +296,7 @@
         "label": "Path Planning"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       },
       {
@@ -253,6 +316,32 @@
         "label": "Inertial Measurement Unit"
       }
     ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:iec-61508",
@@ -261,6 +350,10 @@
       {
         "id": "urn:ngm:class:iso-13482",
         "label": "ISO 13482"
+      },
+      {
+        "id": "urn:ngm:class:ansi-ria-r15-08",
+        "label": "ANSI/RIA R15.08"
       },
       {
         "id": "urn:ngm:class:iso-8373-2021",
@@ -277,6 +370,10 @@
       {
         "id": "urn:ngm:class:iso-8373",
         "label": "ISO 8373"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
       }
     ],
     "partOf": [
@@ -315,6 +412,10 @@
         "label": "ROS Navigation Stack"
       },
       {
+        "id": "urn:ngm:class:autonomous-underwater-vehicle",
+        "label": "Autonomous Underwater Vehicle"
+      },
+      {
         "id": "urn:ngm:class:legged-robot",
         "label": "Legged Robot"
       },
@@ -325,10 +426,6 @@
       {
         "id": "urn:ngm:class:unmanned-aerial-vehicle",
         "label": "Unmanned Aerial Vehicle"
-      },
-      {
-        "id": "urn:ngm:class:drone",
-        "label": "Drone"
       }
     ]
   },

@@ -128,6 +128,10 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
       },
@@ -182,10 +186,32 @@
         "label": "Decision Support"
       }
     ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
       },
       {
         "id": "urn:ngm:class:oecd-ai-principles",
@@ -196,10 +222,86 @@
         "label": "Value Alignment"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-growth",
+        "label": "Inclusive Growth"
+      }
+    ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:g7-hiroshima-ai-process",
+        "label": "G7 Hiroshima AI Process"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",
@@ -232,8 +334,16 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
         "id": "urn:ngm:class:responsible-ai-principles",
         "label": "Responsible AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:societal-impact",
+        "label": "Societal Impact"
       }
     ]
   },

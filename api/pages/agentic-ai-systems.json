@@ -46,14 +46,14 @@
       "slug": "systems-theory"
     },
     {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering (Infrastructure)",
-      "slug": "infra-software-engineering"
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -97,6 +97,10 @@
         "label": "Compute Infrastructure"
       },
       {
+        "id": "urn:ngm:class:learning-algorithm",
+        "label": "Machine Learning Algorithm"
+      },
+      {
         "id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
       },
@@ -113,19 +117,19 @@
         "label": "Network Theory"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
       {
         "id": "urn:ngm:class:ai-risk-assessment",
         "label": "AI Risk Assessment"
@@ -153,10 +157,6 @@
       {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
-      },
-      {
-        "id": "urn:ngm:class:api-gateway",
-        "label": "API Gateway"
       }
     ],
     "dependsOn": [
@@ -165,8 +165,16 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:llmops",
+        "label": "LLMOps"
+      },
+      {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
       },
       {
         "id": "urn:ngm:class:model-serving",
@@ -183,8 +191,24 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
         "id": "urn:ngm:class:learning-algorithm",
         "label": "Machine Learning Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
@@ -197,8 +221,20 @@
         "label": "Sociotechnical Harm"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
@@ -227,24 +263,56 @@
         "label": "Economics"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:cybernetics",
+        "label": "Cybernetics"
       }
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
         "id": "urn:ngm:class:organisational-theory",
         "label": "Organisational Theory"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       },
       {
         "id": "urn:ngm:class:explainability",
@@ -259,16 +327,16 @@
         "label": "Swarm Intelligence"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
       }
     ],
     "standardizedBy": [
@@ -281,22 +349,50 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
       {
         "id": "urn:ngm:class:ai-system-eu-definition",
         "label": "AI System (EU Definition)"
       },
       {
+        "id": "urn:ngm:class:compound-ai-system",
+        "label": "Compound AI System"
+      },
+      {
         "id": "urn:ngm:class:edge-ai-system",
         "label": "Edge AI System"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:multi-agent-system",
@@ -309,18 +405,6 @@
       {
         "id": "urn:ngm:class:sociotechnical-analysis",
         "label": "Sociotechnical Analysis"
-      },
-      {
-        "id": "urn:ngm:class:sociotechnical-risk",
-        "label": "Sociotechnical Risk"
-      },
-      {
-        "id": "urn:ngm:class:chaos-theory",
-        "label": "Chaos Theory"
-      },
-      {
-        "id": "urn:ngm:class:cybernetics",
-        "label": "Cybernetics"
       }
     ]
   },

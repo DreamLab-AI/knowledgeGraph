@@ -122,6 +122,10 @@
         "label": "Authorisation Code Flow"
       },
       {
+        "id": "urn:ngm:class:client-credentials-flow",
+        "label": "Client Credentials Flow"
+      },
+      {
         "id": "urn:ngm:class:pkce",
         "label": "PKCE"
       },
@@ -140,10 +144,6 @@
       {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
-      },
-      {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
       }
     ],
     "requires": [

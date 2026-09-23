@@ -82,7 +82,16 @@
         "label": "Trustworthy AI"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:iso-31000",
@@ -93,8 +102,12 @@
         "label": "ISO/IEC 23894:2023"
       },
       {
-        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23894-2023",
+        "label": "ISO/IEC 23894:2023"
       }
     ],
     "contrastsWith": [],
@@ -115,6 +128,10 @@
       {
         "id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection"
       }
     ],
     "supports": [
@@ -131,7 +148,12 @@
         "label": "Model Governance"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -159,7 +181,7 @@
         "label": "Model Drift"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -285,10 +307,6 @@
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
-      },
-      {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
       }
     ],
     "bridgesTo": [
@@ -299,6 +317,22 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       },
       {
         "id": "urn:ngm:class:financial-risk-management",
@@ -381,6 +415,10 @@
       {
         "id": "urn:ngm:class:incident-response",
         "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ]
   },

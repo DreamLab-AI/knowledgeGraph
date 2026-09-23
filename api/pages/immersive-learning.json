@@ -31,7 +31,12 @@
         "label": "Spatial Computing"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:experiential-education",
+        "label": "Experiential Education"
+      }
+    ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:head-mounted-display",
@@ -100,9 +105,29 @@
       "slug": "sc-platform-and-environment"
     },
     {
+      "id": "urn:ngm:class:technology-domain",
+      "label": "Technology Domain",
+      "slug": "technology-domain"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -164,6 +189,14 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
       }
     ],
     "enables": [
@@ -180,6 +213,10 @@
         "label": "Remote Education"
       },
       {
+        "id": "urn:ngm:class:skills-assessment",
+        "label": "Skills Assessment"
+      },
+      {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
@@ -194,16 +231,20 @@
       {
         "id": "urn:ngm:class:immersive-computing",
         "label": "Immersive Computing"
-      },
-      {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:traditional-classroom-instruction",
+        "label": "Traditional Classroom Instruction"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -212,7 +253,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -220,16 +261,24 @@
         "label": "Natural Language Processing"
       },
       {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
-      },
-      {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
       }
     ],
     "uses": [
@@ -264,6 +313,16 @@
       {
         "id": "urn:ngm:class:geospatial-technology",
         "label": "Geospatial Technology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [

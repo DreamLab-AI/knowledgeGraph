@@ -8,7 +8,7 @@
   "definition": "Data handling practices that are openly disclosed to users, specifying what data is collected, how it is processed, who has access, and for what purposes, so as to enable informed consent and meaningful accountability. GDPR codifies this as the principle of lawfulness, fairness, and transparency; in metaverse and XR contexts it extends to immersive data streams including gaze tracking, movement patterns, and biometric signals. Implementation relies on audit trails, data flow mapping, privacy notices, and increasingly on zero-knowledge proofs for privacy-preserving verification.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     },
     {
@@ -65,66 +65,43 @@
       }
     ]
   },
-  "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:data-management",
-      "label": "Data Management",
-      "slug": "data-management"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
-    }
-  ],
+  "inferredSuperClasses": [],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
       },
       {
-        "id": "urn:ngm:class:data-lake",
-        "label": "Data Lake"
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
       },
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:data-storage",
-        "label": "Data Storage"
-      },
-      {
-        "id": "urn:ngm:class:database-system",
-        "label": "Database System"
-      },
-      {
         "id": "urn:ngm:class:etl-pipeline",
-        "label": "ETL Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:graph-database",
-        "label": "Graph Database"
+        "label": "ETL"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:data-ingestion",
-        "label": "Data Ingestion"
-      },
-      {
-        "id": "urn:ngm:class:data-storage",
-        "label": "Data Storage"
-      },
-      {
-        "id": "urn:ngm:class:schema-management",
-        "label": "Schema Management"
-      },
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
@@ -134,34 +111,22 @@
         "label": "Data Security"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:schema-management",
+        "label": "Schema Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:business-intelligence",
-        "label": "Business Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
         "id": "urn:ngm:class:data-analytics",
         "label": "Data Analytics"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:federated-learning",
@@ -176,8 +141,12 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "dependsOn": [
@@ -192,23 +161,15 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:raw-data",
-        "label": "Raw Data"
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:raw-data",
+        "label": "Raw Data"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
-      },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
@@ -218,12 +179,12 @@
         "label": "Metaverse Technology"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       }
     ],
     "uses": [
@@ -246,14 +207,6 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:data-lineage",
-        "label": "Data Lineage"
-      },
-      {
-        "id": "urn:ngm:class:real-time-analytics",
-        "label": "Real-Time Analytics"
-      },
-      {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
       },
@@ -266,16 +219,12 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
       }
     ],
     "standardizedBy": [
@@ -288,12 +237,8 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:sql-standard",
+        "label": "SQL Standard"
       }
     ],
     "partOf": [
@@ -304,12 +249,20 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:infra-computing-and-cloud",
-        "label": "Computing and Cloud"
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
+      },
+      {
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       },
       {
         "id": "urn:ngm:class:data-lake",
@@ -322,18 +275,6 @@
       {
         "id": "urn:ngm:class:data-warehouse",
         "label": "Data Warehouse"
-      },
-      {
-        "id": "urn:ngm:class:data-architecture",
-        "label": "Data Architecture"
-      },
-      {
-        "id": "urn:ngm:class:distributed-system",
-        "label": "Distributed System"
-      },
-      {
-        "id": "urn:ngm:class:etl-pipeline",
-        "label": "ETL"
       }
     ]
   },

@@ -20,6 +20,14 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-reference-architecture",
+        "label": "Blockchain Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:dlt-node",
+        "label": "DLT Node"
       }
     ],
     "requires": [
@@ -40,6 +48,14 @@
       {
         "id": "urn:ngm:class:standards-conformance",
         "label": "System Conformance"
+      },
+      {
+        "id": "urn:ngm:class:standards-conformance",
+        "label": "System Conformance"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutral-procurement",
+        "label": "Vendor-Neutral Procurement"
       }
     ],
     "dependsOn": [],
@@ -53,6 +69,10 @@
       {
         "id": "urn:ngm:class:iso-22739",
         "label": "ISO 22739"
+      },
+      {
+        "id": "urn:ngm:class:nist-blockchain-technology-overview",
+        "label": "NIST Blockchain Framework"
       },
       {
         "id": "urn:ngm:class:nist-blockchain-technology-overview",
@@ -111,6 +131,10 @@
       {
         "id": "urn:ngm:class:iso-tc-307",
         "label": "ISO TC 307"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-standards",
+        "label": "Blockchain Standards"
       }
     ],
     "relatedTo": [
@@ -121,6 +145,10 @@
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:iso-24643",
+        "label": "ISO 24643"
       }
     ]
   },
@@ -129,6 +157,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -229,8 +262,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -317,6 +358,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -335,8 +382,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -345,10 +396,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },
@@ -372,16 +419,16 @@
       "label": "ETSI Domain Immersive + Reality Capture Crossover"
     },
     {
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
+    },
+    {
       "slug": "etsi-domain-governance-economy",
       "label": "ETSI_Domain_Governance___Economy"
     },
     {
       "slug": "etsi-domain-governance-society",
       "label": "ETSI_Domain_Governance___Society"
-    },
-    {
-      "slug": "etsi-domain-governance-security",
-      "label": "ETSI_Domain_Governance_Security"
     },
     {
       "slug": "etsi-domain-human-interface-governance",

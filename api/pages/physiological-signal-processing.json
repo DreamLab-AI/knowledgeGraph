@@ -79,16 +79,16 @@
         "label": "Digital Signal Processing"
       },
       {
+        "id": "urn:ngm:class:filter-design",
+        "label": "Filter Design"
+      },
+      {
         "id": "urn:ngm:class:fourier-transform",
         "label": "Fourier Transform"
       },
       {
         "id": "urn:ngm:class:sampling-theory",
         "label": "Sampling Theory"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
       }
     ],
     "requires": [
@@ -97,8 +97,16 @@
         "label": "Algorithm"
       },
       {
+        "id": "urn:ngm:class:algorithms",
+        "label": "Algorithms"
+      },
+      {
         "id": "urn:ngm:class:analog-to-digital-converter",
         "label": "Analog-to-Digital Conversion"
+      },
+      {
+        "id": "urn:ngm:class:dsp-hardware",
+        "label": "DSP Hardware"
       },
       {
         "id": "urn:ngm:class:sampling-theory",
@@ -109,20 +117,12 @@
         "label": "Sensor"
       },
       {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
-      },
-      {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -191,6 +191,22 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -221,7 +237,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

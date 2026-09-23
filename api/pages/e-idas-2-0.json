@@ -24,16 +24,32 @@
       {
         "id": "urn:ngm:class:qualified-electronic-signature",
         "label": "Qualified Electronic Signature"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "European Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:qualified-electronic-attestation-of-attributes",
+        "label": "Qualified Electronic Attestation of Attributes"
+      },
+      {
+        "id": "urn:ngm:class:architecture-and-reference-framework",
+        "label": "Architecture and Reference Framework"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Conformance Testing"
       },
       {
         "id": "urn:ngm:class:standards-conformance-testing",
@@ -74,7 +90,7 @@
         "label": "Verifiable Credentials"
       },
       {
-        "id": "urn:ngm:class:decentralised-identifiers",
+        "id": "urn:ngm:class:did",
         "label": "Decentralised Identifiers"
       },
       {
@@ -94,12 +110,20 @@
       {
         "id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralised Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralised Identity Provider"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence-act",
+        "label": "Artificial Intelligence Act"
       }
     ],
     "uses": [
@@ -110,6 +134,10 @@
       {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-18013-5-m-dl",
+        "label": "mDoc ISO 18013-5"
       },
       {
         "id": "urn:ngm:class:iso-iec-18013-5-m-dl",
@@ -192,6 +220,10 @@
         "label": "Authentication Standards"
       },
       {
+        "id": "urn:ngm:class:identity-policies",
+        "label": "Identity Policies"
+      },
+      {
         "id": "urn:ngm:class:privacy-controls",
         "label": "Privacy Controls"
       },
@@ -214,10 +246,6 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ],
     "requires": [
@@ -226,8 +254,16 @@
         "label": "Cryptographic System"
       },
       {
+        "id": "urn:ngm:class:cryptographic-systems",
+        "label": "Cryptographic Systems"
+      },
+      {
         "id": "urn:ngm:class:policy-framework",
         "label": "Policy Framework"
+      },
+      {
+        "id": "urn:ngm:class:policy-frameworks",
+        "label": "Policy Frameworks"
       },
       {
         "id": "urn:ngm:class:standardization-bodies",
@@ -254,6 +290,10 @@
       {
         "id": "urn:ngm:class:privacy-protection",
         "label": "Privacy Protection"
+      },
+      {
+        "id": "urn:ngm:class:secure-authentication",
+        "label": "Secure Authentication"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -283,6 +323,10 @@
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
       {
         "id": "urn:ngm:class:data",
         "label": "Data"

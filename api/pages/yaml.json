@@ -23,7 +23,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {
@@ -38,7 +38,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:openapi",
+        "id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI"
       },
       {
@@ -57,16 +57,6 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -132,10 +122,6 @@
       {
         "id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
       }
     ],
     "enables": [
@@ -174,11 +160,19 @@
     ],
     "dependsOn": [
       {
+        "id": "urn:ngm:class:character-encoding",
+        "label": "Character Encoding"
+      },
+      {
         "id": "urn:ngm:class:type-system",
         "label": "Type System"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:interface-definition-language",
+        "label": "Interface Definition Language"
+      },
       {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
@@ -186,8 +180,16 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:binary-format",
+        "label": "Binary Format"
+      },
+      {
+        "id": "urn:ngm:class:text-format",
+        "label": "Text Format"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -196,8 +198,12 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -214,14 +220,6 @@
       {
         "id": "urn:ngm:class:metaverse-technology",
         "label": "Metaverse Technology"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -266,14 +264,6 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
       }
     ],
     "standardizedBy": [
@@ -300,14 +290,6 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "partOf": [

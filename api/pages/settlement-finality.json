@@ -128,7 +128,11 @@
         "label": "Delivery-Versus-Payment"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:netting",
+        "label": "Netting"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -150,10 +154,6 @@
       {
         "id": "urn:ngm:class:governance-model",
         "label": "Governance Model"
-      },
-      {
-        "id": "urn:ngm:class:governance-token",
-        "label": "Governance Token"
       }
     ],
     "requires": [
@@ -208,6 +208,10 @@
         "label": "Monetary Policy"
       },
       {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
@@ -218,10 +222,6 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       }
     ],
     "dependsOn": [
@@ -280,7 +280,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -314,7 +314,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -360,12 +360,24 @@
       {
         "id": "urn:ngm:class:financial-infrastructure",
         "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure-domain",
+        "label": "Financial Infrastructure Domain"
+      },
+      {
+        "id": "urn:ngm:class:post-trade-processing",
+        "label": "Post-Trade Processing"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:correspondent-banking",
         "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:systemic-risk",
@@ -390,10 +402,6 @@
       {
         "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
-      },
-      {
-        "id": "urn:ngm:class:compute-infrastructure",
-        "label": "Compute Infrastructure"
       }
     ]
   },

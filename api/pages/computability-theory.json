@@ -10,6 +10,18 @@
     {
       "id": "urn:ngm:class:mathematical-logic",
       "label": "Mathematical Logic"
+    },
+    {
+      "id": "urn:ngm:class:computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "id": "urn:ngm:class:proof-theory",
+      "label": "Proof Theory"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Theoretical Computer Science"
     }
   ],
   "entityType": "Class",
@@ -44,6 +56,34 @@
       {
         "id": "urn:ngm:class:turing-degree",
         "label": "Turing Degree"
+      },
+      {
+        "id": "urn:ngm:class:halting-problem",
+        "label": "Halting Problem"
+      },
+      {
+        "id": "urn:ngm:class:semi-decidability",
+        "label": "Semi-Decidability"
+      },
+      {
+        "id": "urn:ngm:class:post-correspondence-problem",
+        "label": "Post Correspondence Problem"
+      },
+      {
+        "id": "urn:ngm:class:rice-s-theorem",
+        "label": "Rice's Theorem"
+      },
+      {
+        "id": "urn:ngm:class:church-turing-thesis",
+        "label": "Church-Turing Thesis"
+      },
+      {
+        "id": "urn:ngm:class:oracle-computation",
+        "label": "Oracle Computation"
+      },
+      {
+        "id": "urn:ngm:class:kolmogorov-complexity",
+        "label": "Kolmogorov Complexity"
       }
     ],
     "requires": [
@@ -58,6 +98,10 @@
       {
         "id": "urn:ngm:class:proof-theory",
         "label": "Proof Theory"
+      },
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
       }
     ],
     "enables": [
@@ -80,6 +124,26 @@
       {
         "id": "urn:ngm:class:model-checking",
         "label": "Model Checking"
+      },
+      {
+        "id": "urn:ngm:class:descriptive-complexity",
+        "label": "Descriptive Complexity"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:compiler-theory",
+        "label": "Compiler Theory"
       }
     ],
     "dependsOn": [
@@ -90,6 +154,14 @@
       {
         "id": "urn:ngm:class:set-theory",
         "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:g-del-incompleteness-theorems",
+        "label": "G\u00f6del Incompleteness Theorems"
+      },
+      {
+        "id": "urn:ngm:class:peano-arithmetic",
+        "label": "Peano Arithmetic"
       }
     ],
     "implements": [
@@ -100,6 +172,18 @@
       {
         "id": "urn:ngm:class:reduction",
         "label": "Reduction"
+      },
+      {
+        "id": "urn:ngm:class:enumeration",
+        "label": "Enumeration"
+      },
+      {
+        "id": "urn:ngm:class:semi-decidability",
+        "label": "Semi-Decidability"
+      },
+      {
+        "id": "urn:ngm:class:formal-ontology",
+        "label": "Formal Ontology"
       }
     ],
     "contrastsWith": [
@@ -110,6 +194,10 @@
       {
         "id": "urn:ngm:class:hypercomputation",
         "label": "Hypercomputation"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-computing",
+        "label": "Probabilistic Computing"
       }
     ],
     "bridgesTo": [
@@ -118,7 +206,40 @@
         "label": "Artificial Intelligence"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:g-del-incompleteness-theorems",
+        "label": "G\u00f6del Incompleteness Theorems"
+      },
+      {
+        "id": "urn:ngm:class:fixed-point-theorem",
+        "label": "Fixed-Point Theorem"
+      },
+      {
+        "id": "urn:ngm:class:enumeration",
+        "label": "Enumeration"
+      },
+      {
+        "id": "urn:ngm:class:oracle-computation",
+        "label": "Oracle Computation"
+      },
+      {
+        "id": "urn:ngm:class:reduction",
+        "label": "Reduction"
+      },
+      {
+        "id": "urn:ngm:class:kolmogorov-complexity",
+        "label": "Kolmogorov Complexity"
+      },
+      {
+        "id": "urn:ngm:class:diagonalisation",
+        "label": "Diagonalisation"
+      },
+      {
+        "id": "urn:ngm:class:category-theory",
+        "label": "Category Theory"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:knowledge-representation",
@@ -131,9 +252,42 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:reverse-mathematics",
+        "label": "Reverse Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:association-for-computing-machinery",
+        "label": "Association for Computing Machinery"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -157,7 +311,7 @@
         "label": "Kolmogorov Complexity"
       },
       {
-        "id": "urn:ngm:class:quantum-computing",
+        "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
@@ -167,14 +321,81 @@
       {
         "id": "urn:ngm:class:type-theory",
         "label": "Type Theory"
+      },
+      {
+        "id": "urn:ngm:class:descriptive-complexity",
+        "label": "Descriptive Complexity"
+      },
+      {
+        "id": "urn:ngm:class:reverse-mathematics",
+        "label": "Reverse Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:post-correspondence-problem",
+        "label": "Post Correspondence Problem"
+      },
+      {
+        "id": "urn:ngm:class:programming-language-theory",
+        "label": "Programming Language Theory"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:oracle-computation",
+        "label": "Oracle Computation"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:cellular-automata",
+        "label": "Cellular Automata"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
       "id": "urn:ngm:class:logic",
       "label": "Logic",
       "slug": "logic"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:knowledge-representation",
@@ -182,14 +403,9 @@
       "slug": "knowledge-representation"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -203,28 +419,28 @@
         "label": "Set Theory"
       },
       {
-        "id": "urn:ngm:class:description-logic",
-        "label": "Description Logic"
+        "id": "urn:ngm:class:approximation-algorithms",
+        "label": "Approximation Algorithms"
       },
       {
-        "id": "urn:ngm:class:modal-logic",
-        "label": "Modal Logic"
+        "id": "urn:ngm:class:average-case-complexity",
+        "label": "Average-Case Complexity"
       },
       {
-        "id": "urn:ngm:class:predicate-logic",
-        "label": "Predicate Logic"
+        "id": "urn:ngm:class:circuit-complexity",
+        "label": "Circuit Complexity"
       },
       {
-        "id": "urn:ngm:class:propositional-logic",
-        "label": "Propositional Logic"
+        "id": "urn:ngm:class:communication-complexity",
+        "label": "Communication Complexity"
       },
       {
-        "id": "urn:ngm:class:temporal-logic",
-        "label": "Temporal Logic"
+        "id": "urn:ngm:class:counting-complexity",
+        "label": "Counting Complexity"
       },
       {
-        "id": "urn:ngm:class:ontology",
-        "label": "Ontology"
+        "id": "urn:ngm:class:derandomisation",
+        "label": "Derandomisation"
       }
     ],
     "requires": [
@@ -233,28 +449,32 @@
         "label": "Computer Science"
       },
       {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      },
+      {
+        "id": "urn:ngm:class:boolean-algebra",
+        "label": "Boolean Algebra"
+      },
+      {
         "id": "urn:ngm:class:formal-language",
         "label": "Formal Language"
       },
       {
-        "id": "urn:ngm:class:controlled-vocabulary",
-        "label": "Controlled Vocabulary"
+        "id": "urn:ngm:class:turing-machine",
+        "label": "Turing Machine"
       },
       {
-        "id": "urn:ngm:class:formal-logic",
-        "label": "Formal Logic"
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
       }
     ],
     "enables": [
@@ -263,41 +483,73 @@
         "label": "Automated Reasoning"
       },
       {
-        "id": "urn:ngm:class:formal-methods",
-        "label": "Formal Methods"
-      },
-      {
         "id": "urn:ngm:class:theorem-proving",
         "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:approximation-algorithms",
+        "label": "Approximation Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:computational-learning-theory",
+        "label": "Computational Learning Theory"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hardness-assumption",
+        "label": "Cryptographic Hardness Assumption"
       },
       {
         "id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
       },
       {
-        "id": "urn:ngm:class:knowledge-representation",
-        "label": "Knowledge Representation"
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
-      },
-      {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:logic",
         "label": "Logic"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:boolean-satisfiability",
+        "label": "Boolean Satisfiability"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:graph-algorithm",
+        "label": "Graph Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graph-isomorphism",
+        "label": "Graph Isomorphism"
+      },
+      {
+        "id": "urn:ngm:class:integer-programming",
+        "label": "Integer Programming"
+      },
+      {
+        "id": "urn:ngm:class:randomised-algorithms",
+        "label": "Randomised Algorithms"
+      },
       {
         "id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
@@ -305,20 +557,20 @@
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
-      },
-      {
-        "id": "urn:ngm:class:closed-world-assumption",
-        "label": "Closed World Assumption"
-      },
-      {
-        "id": "urn:ngm:class:open-world-assumption",
-        "label": "Open World Assumption"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:algorithm-design",
+        "label": "Algorithm Design"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
       },
       {
         "id": "urn:ngm:class:fuzzy-logic",
@@ -329,34 +581,50 @@
         "label": "Probabilistic Reasoning"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
       },
       {
-        "id": "urn:ngm:class:sub-symbolic-ai",
-        "label": "Sub-Symbolic AI"
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:information-theory",
-        "label": "Information Theory"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:database-schema",
-        "label": "Database Schema"
+        "id": "urn:ngm:class:quantum-information",
+        "label": "Quantum Information"
       },
       {
-        "id": "urn:ngm:class:linked-data",
-        "label": "Linked Data"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -369,28 +637,28 @@
         "label": "Reasoning"
       },
       {
+        "id": "urn:ngm:class:cryptographic-proof-system",
+        "label": "Proof System"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      },
+      {
         "id": "urn:ngm:class:model-theory",
         "label": "Model Theory"
-      },
-      {
-        "id": "urn:ngm:class:set-theory",
-        "label": "Set Theory"
-      },
-      {
-        "id": "urn:ngm:class:description-logic",
-        "label": "Description Logic"
-      },
-      {
-        "id": "urn:ngm:class:first-order-logic",
-        "label": "First-Order Logic"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graph"
-      },
-      {
-        "id": "urn:ngm:class:ontology",
-        "label": "Ontology"
       }
     ],
     "supports": [
@@ -399,24 +667,66 @@
         "label": "Description Logic"
       },
       {
+        "id": "urn:ngm:class:constraint-satisfaction-problem",
+        "label": "Constraint Satisfaction Problem"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:constraint-satisfaction",
         "label": "Constraint Satisfaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:clay-mathematics-institute",
+        "label": "Clay Mathematics Institute"
       },
       {
-        "id": "urn:ngm:class:programming-language-semantics",
-        "label": "Programming Language Semantics"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:knowledge-management",
-        "label": "Knowledge Management"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "partOf": [
@@ -439,28 +749,28 @@
         "label": "Knowledge Base"
       },
       {
-        "id": "urn:ngm:class:computational-complexity-theory",
-        "label": "Computational Complexity"
+        "id": "urn:ngm:class:algebraic-geometry",
+        "label": "Algebraic Geometry"
       },
       {
-        "id": "urn:ngm:class:mathematics",
-        "label": "Mathematics"
+        "id": "urn:ngm:class:coding-theory",
+        "label": "Coding Theory"
       },
       {
-        "id": "urn:ngm:class:philosophy",
-        "label": "Philosophy"
+        "id": "urn:ngm:class:computer-science",
+        "label": "Theoretical Computer Science"
       },
       {
-        "id": "urn:ngm:class:information-extraction",
-        "label": "Information Extraction"
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
       },
       {
-        "id": "urn:ngm:class:knowledge-management",
-        "label": "Knowledge Management"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:neural-symbolic-integration",
-        "label": "Neural-Symbolic Integration"
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
       }
     ]
   },

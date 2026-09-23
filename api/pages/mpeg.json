@@ -87,6 +87,10 @@
         "label": "Conformance Test Suite"
       },
       {
+        "id": "urn:ngm:class:technical-working-group",
+        "label": "Technical Working Group"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
@@ -105,10 +109,6 @@
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property Rights Framework"
-      },
-      {
-        "id": "urn:ngm:class:legal-framework",
-        "label": "Legal Framework"
       }
     ],
     "requires": [
@@ -261,6 +261,10 @@
         "label": "Governance"
       },
       {
+        "id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
+      },
+      {
         "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
       }
@@ -291,7 +295,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:complexity-science",
       "label": "Complexity Science"
+    },
+    {
+      "id": "urn:ngm:class:social-science",
+      "label": "Social Science"
+    },
+    {
+      "id": "urn:ngm:class:political-economy",
+      "label": "Political Economy"
+    },
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "id": "urn:ngm:class:institutional-economics",
+      "label": "Institutional Economics"
+    },
+    {
+      "id": "urn:ngm:class:behavioural-economics",
+      "label": "Behavioural Economics"
     }
   ],
   "entityType": "Class",
@@ -44,6 +64,30 @@
       {
         "id": "urn:ngm:class:tokenomics",
         "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:labour-economics",
+        "label": "Labour Economics"
+      },
+      {
+        "id": "urn:ngm:class:productivity-measurement",
+        "label": "Productivity Measurement"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-theory",
+        "label": "Public Goods Theory"
+      },
+      {
+        "id": "urn:ngm:class:transaction-cost-theory",
+        "label": "Transaction Cost Theory"
+      },
+      {
+        "id": "urn:ngm:class:industrial-organisation",
+        "label": "Industrial Organisation"
+      },
+      {
+        "id": "urn:ngm:class:monetary-economics",
+        "label": "Monetary Economics"
       }
     ],
     "requires": [
@@ -70,6 +114,10 @@
       {
         "id": "urn:ngm:class:property-rights",
         "label": "Property Rights"
+      },
+      {
+        "id": "urn:ngm:class:market-institutions",
+        "label": "Market Institutions"
       }
     ],
     "enables": [
@@ -92,9 +140,58 @@
       {
         "id": "urn:ngm:class:dao-governance",
         "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:token-design",
+        "label": "Token Design"
+      },
+      {
+        "id": "urn:ngm:class:labour-market-policy",
+        "label": "Labour Market Policy"
+      },
+      {
+        "id": "urn:ngm:class:welfare-analysis",
+        "label": "Welfare Analysis"
+      },
+      {
+        "id": "urn:ngm:class:antitrust-policy",
+        "label": "Antitrust Policy"
+      },
+      {
+        "id": "urn:ngm:class:carbon-market-design",
+        "label": "Carbon Market Design"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-science",
+        "label": "Behavioural Science"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:auction-theory",
@@ -119,9 +216,34 @@
       {
         "id": "urn:ngm:class:social-choice-theory",
         "label": "Social Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:matching-theory",
+        "label": "Matching Theory"
+      },
+      {
+        "id": "urn:ngm:class:optimal-taxation",
+        "label": "Optimal Taxation"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pure-computer-science",
+        "label": "Pure Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:pure-engineering",
+        "label": "Pure Engineering"
+      },
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "id": "urn:ngm:class:legal-reasoning",
+        "label": "Legal Reasoning"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -139,6 +261,18 @@
       {
         "id": "urn:ngm:class:network-analysis",
         "label": "Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:general-equilibrium-models",
+        "label": "General Equilibrium Models"
+      },
+      {
+        "id": "urn:ngm:class:empirical-io",
+        "label": "Empirical IO"
+      },
+      {
+        "id": "urn:ngm:class:complexity-modelling",
+        "label": "Complexity Modelling"
       }
     ],
     "supports": [
@@ -211,6 +345,18 @@
       {
         "id": "urn:ngm:class:hm-treasury",
         "label": "UK HM Treasury"
+      },
+      {
+        "id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
+      },
+      {
+        "id": "urn:ngm:class:hm-treasury",
+        "label": "UK HM Treasury"
+      },
+      {
+        "id": "urn:ngm:class:uk-competition-and-markets-authority",
+        "label": "UK Competition and Markets Authority"
       }
     ],
     "partOf": [],
@@ -267,9 +413,34 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -309,38 +480,286 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:bounded-rationality",
+        "label": "Bounded Rationality"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      },
+      {
+        "id": "urn:ngm:class:experimental-economics",
+        "label": "Experimental Economics"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correcting Code"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:development-economics",
+        "label": "Development Economics"
+      },
+      {
+        "id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-policy",
+        "label": "Regulatory Policy"
+      },
+      {
+        "id": "urn:ngm:class:choice-architecture",
+        "label": "Choice Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:path-dependence",
+        "label": "Path Dependence"
+      },
+      {
+        "id": "urn:ngm:class:transaction-costs",
+        "label": "Transaction Costs"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-science",
+        "label": "Mathematical Science"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:neoclassical-economics",
+        "label": "Neoclassical Economics"
+      },
+      {
+        "id": "urn:ngm:class:expected-utility-theory",
+        "label": "Expected Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:rational-choice-theory",
+        "label": "Rational Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:network-coding",
+        "label": "Network Coding"
+      },
+      {
+        "id": "urn:ngm:class:quantum-information",
+        "label": "Quantum Information"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Digital Platform Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:principal-agent-theory",
+        "label": "Principal-Agent Theory"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:randomised-controlled-trial",
+        "label": "Randomised Controlled Trial"
+      },
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:organisational-theory",
+        "label": "Organisational Theory"
+      },
+      {
+        "id": "urn:ngm:class:political-economy",
+        "label": "Political Economy"
+      },
+      {
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decision-science",
+        "label": "Decision Science"
       }
     ],
     "relatedTo": [
@@ -359,6 +778,22 @@
       {
         "id": "urn:ngm:class:emergence",
         "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:coding-theory",
+        "label": "Coding Theory"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:commons-governance",
+        "label": "Commons Governance"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-economics",
+        "label": "Evolutionary Economics"
       }
     ]
   },

@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:bis-innovation-hub",
         "label": "BIS Innovation Hub"
+      },
+      {
+        "id": "urn:ngm:class:committee-on-payments-and-market-infrastructures",
+        "label": "Committee on Payments and Market Infrastructures"
       }
     ],
     "requires": [],
@@ -54,6 +58,10 @@
       {
         "id": "urn:ngm:class:basel-accords",
         "label": "Basel Accords"
+      },
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy Framework"
       },
       {
         "id": "urn:ngm:class:capital-adequacy",
@@ -88,6 +96,10 @@
       {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       }
     ],
     "supports": [
@@ -112,7 +124,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -120,7 +132,7 @@
         "label": "Financial Regulation"
       },
       {
-        "id": "urn:ngm:class:international-monetary-fund",
+        "id": "urn:ngm:class:imf",
         "label": "International Monetary Fund"
       },
       {
@@ -130,6 +142,10 @@
       {
         "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
       }
     ]
   },
@@ -269,7 +285,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

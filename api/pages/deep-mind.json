@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     }
   ],
   "entityType": "Class",
@@ -28,6 +32,50 @@
       {
         "id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
+      },
+      {
+        "id": "urn:ngm:class:alphazero",
+        "label": "AlphaZero"
+      },
+      {
+        "id": "urn:ngm:class:alphacode",
+        "label": "AlphaCode"
+      },
+      {
+        "id": "urn:ngm:class:alphadev",
+        "label": "AlphaDev"
+      },
+      {
+        "id": "urn:ngm:class:alphageometry",
+        "label": "AlphaGeometry"
+      },
+      {
+        "id": "urn:ngm:class:alphaproof",
+        "label": "AlphaProof"
+      },
+      {
+        "id": "urn:ngm:class:alphaevolve",
+        "label": "AlphaEvolve"
+      },
+      {
+        "id": "urn:ngm:class:gato",
+        "label": "Gato"
+      },
+      {
+        "id": "urn:ngm:class:flamingo",
+        "label": "Flamingo"
+      },
+      {
+        "id": "urn:ngm:class:sparrow",
+        "label": "Sparrow"
+      },
+      {
+        "id": "urn:ngm:class:graphcast",
+        "label": "GraphCast"
+      },
+      {
+        "id": "urn:ngm:class:gemini-robotics",
+        "label": "Gemini Robotics"
       }
     ],
     "requires": [
@@ -42,11 +90,31 @@
       {
         "id": "urn:ngm:class:large-scale-compute",
         "label": "Large-Scale Compute"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -60,9 +128,58 @@
       {
         "id": "urn:ngm:class:scientific-discovery-acceleration",
         "label": "Scientific Discovery Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:game-ai",
+        "label": "Game-Playing AI"
+      },
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:google-ai-technology-corporation",
+        "label": "Google AI Technology Corporation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-compute",
+        "label": "Large-Scale Compute"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:neural-network",
@@ -75,6 +192,18 @@
       {
         "id": "urn:ngm:class:monte-carlo-tree-search",
         "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient Methods"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
       }
     ],
     "contrastsWith": [
@@ -85,6 +214,18 @@
       {
         "id": "urn:ngm:class:meta-ai",
         "label": "Meta AI"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI"
+      },
+      {
+        "id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:microsoft",
+        "label": "Microsoft Research"
       }
     ],
     "bridgesTo": [
@@ -95,11 +236,74 @@
       {
         "id": "urn:ngm:class:ai-energy-optimisation",
         "label": "Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:materials-science-ai",
+        "label": "Materials Science AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:nuclear-fusion",
+        "label": "Nuclear Fusion"
+      },
+      {
+        "id": "urn:ngm:class:weather-prediction",
+        "label": "Weather Prediction"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient Methods"
+      },
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:materials-science-ai",
+        "label": "Materials Science AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-opportunities-action-plan-jan-2025",
+        "label": "UK AI Opportunities Action Plan Jan 2025"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:ai-ecosystem",
@@ -122,16 +326,58 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:deep-research",
+        "label": "Deep Research"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
       }
     ]
   },
-  "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    }
-  ],
+  "inferredSuperClasses": [],
   "inheritedRelations": {
     "hasPart": [
       {
@@ -173,10 +419,6 @@
         "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
@@ -201,6 +443,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

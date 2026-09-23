@@ -249,7 +249,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -326,6 +326,10 @@
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-1801-upf",
+        "label": "IEEE 1801 (UPF)"
+      },
       {
         "id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO TS 15066"

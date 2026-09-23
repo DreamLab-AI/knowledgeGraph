@@ -68,9 +68,149 @@
       "slug": "bc-governance-and-regulation"
     },
     {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization",
+      "slug": "decentralized-autonomous-organization"
+    },
+    {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     }
   ],
   "inheritedRelations": {
@@ -80,7 +220,15 @@
         "label": "BIP-141 SegWit"
       },
       {
+        "id": "urn:ngm:class:bip-141-segwit",
+        "label": "BIP-141 SegWit"
+      },
+      {
         "id": "urn:ngm:class:bip-173",
+        "label": "BIP-173 Bech32"
+      },
+      {
+        "id": "urn:ngm:class:bip-173-bech32",
         "label": "BIP-173 Bech32"
       },
       {
@@ -88,24 +236,16 @@
         "label": "BIP-32 HD Wallets"
       },
       {
+        "id": "urn:ngm:class:bip-32-hd-wallets",
+        "label": "BIP-32 HD Wallets"
+      },
+      {
         "id": "urn:ngm:class:bip-340",
         "label": "BIP-340"
       },
       {
-        "id": "urn:ngm:class:bip-341",
-        "label": "BIP-341"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-entity",
-        "label": "Blockchain Entity"
-      },
-      {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO Structure"
-      },
-      {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
-        "label": "Decentralized Organization"
+        "id": "urn:ngm:class:bip-340-schnorr-signatures",
+        "label": "BIP-340 Schnorr Signatures"
       }
     ],
     "requires": [
@@ -134,12 +274,12 @@
         "label": "Voting Mechanism"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
       }
     ],
     "enables": [
@@ -150,6 +290,10 @@
       {
         "id": "urn:ngm:class:hard-fork",
         "label": "Hard Fork"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
       },
       {
         "id": "urn:ngm:class:protocol-upgrades",
@@ -168,12 +312,8 @@
         "label": "Taproot"
       },
       {
-        "id": "urn:ngm:class:decentralised-decision-making",
-        "label": "Decentralized Decision-Making"
-      },
-      {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:community-alignment",
+        "label": "Community Alignment"
       }
     ],
     "dependsOn": [
@@ -196,15 +336,59 @@
       {
         "id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:standards-process",
+        "label": "Standards Process"
+      },
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:channel-isolation-pattern",
+        "label": "Channel Isolation Pattern"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:eip",
+        "label": "Ethereum Improvement Proposals"
+      },
       {
         "id": "urn:ngm:class:ethereum-improvement-proposal",
         "label": "Ethereum Improvement Proposals"
@@ -224,6 +408,14 @@
       {
         "id": "urn:ngm:class:corporate-governance",
         "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:traditional-corporation",
+        "label": "Traditional Corporation"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralized Database"
       }
     ],
     "bridgesTo": [
@@ -246,12 +438,28 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:git-hub",
         "label": "GitHub"
+      },
+      {
+        "id": "urn:ngm:class:miner-signalling",
+        "label": "Miner Signalling"
       },
       {
         "id": "urn:ngm:class:user-activated-soft-fork",
@@ -268,18 +476,116 @@
       {
         "id": "urn:ngm:class:token",
         "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:retail-cbdc",
+        "label": "Retail CBDC"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-deposits",
+        "label": "Tokenised Deposits"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real World Assets"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:blockchain-protocol",
         "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:eu-dlt-pilot-regime",
+        "label": "EU DLT Pilot Regime"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2418",
+        "label": "IEEE P2418"
+      },
+      {
+        "id": "urn:ngm:class:isda-common-domain-model",
+        "label": "ISDA Common Domain Model"
+      },
+      {
+        "id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "id": "urn:ngm:class:iso-tr-23244",
+        "label": "ISO TR 23244"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:open-source-governance",
         "label": "Open Source Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
       }
     ],
     "relatedTo": [

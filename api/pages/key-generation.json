@@ -90,7 +90,7 @@
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -121,9 +121,24 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -168,32 +183,36 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital-Signature"
       },
       {
         "id": "urn:ngm:class:encryption-scheme",
         "label": "Encryption Scheme"
       },
       {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash-Function"
+      },
+      {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       }
     ],
     "enables": [
@@ -246,6 +265,22 @@
       {
         "id": "urn:ngm:class:number-theory",
         "label": "Number Theory"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
       }
     ],
     "implements": [
@@ -262,7 +297,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -280,8 +315,24 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "id": "urn:ngm:class:threat-actor",
+        "label": "Threat Actor"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
       }
     ],
     "bridgesTo": [
@@ -294,7 +345,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -314,8 +365,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
       }
     ],
     "uses": [
@@ -342,6 +393,10 @@
         "label": "Data Protection"
       },
       {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       },
@@ -364,10 +419,6 @@
       {
         "id": "urn:ngm:class:decentralised-application",
         "label": "Decentralised Application"
-      },
-      {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
       }
     ],
     "standardizedBy": [
@@ -382,6 +433,22 @@
       {
         "id": "urn:ngm:class:ietf",
         "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD Principles on AI"
       },
       {
         "id": "urn:ngm:class:open-standards",
@@ -432,8 +499,8 @@
         "label": "Threat Model"
       },
       {
-        "id": "urn:ngm:class:confidential-computing",
-        "label": "Confidential Computing"
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
       }
     ]
   },

@@ -14,6 +14,10 @@
     {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "id": "urn:ngm:class:intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
     }
   ],
   "entityType": "Class",
@@ -48,6 +52,10 @@
       {
         "id": "urn:ngm:class:npc-dialogue-system",
         "label": "NPC Dialogue System"
+      },
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding System"
       }
     ],
     "requires": [
@@ -92,9 +100,30 @@
       {
         "id": "urn:ngm:class:automated-playtesting",
         "label": "Automated Playtesting"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-gameplay",
+        "label": "Dynamic Gameplay"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-challenge",
+        "label": "Adaptive Challenge"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:navigation-mesh",
+        "label": "Navigation Mesh"
+      },
+      {
+        "id": "urn:ngm:class:partially-observable-mdp",
+        "label": "Partially Observable MDP"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -129,7 +158,12 @@
         "label": "HTN Planning"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:scripted-npcs",
+        "label": "Scripted NPCs"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:intelligent-virtual-entity",
@@ -138,6 +172,14 @@
       {
         "id": "urn:ngm:class:ai-in-games",
         "label": "AI in Games"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
       }
     ],
     "uses": [
@@ -164,6 +206,18 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimization"
+      },
+      {
+        "id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomization"
+      },
+      {
+        "id": "urn:ngm:class:generative-agents",
+        "label": "Generative Agents"
       }
     ],
     "supports": [
@@ -182,9 +236,22 @@
       {
         "id": "urn:ngm:class:unreal-engine",
         "label": "Unreal Engine"
+      },
+      {
+        "id": "urn:ngm:class:unity",
+        "label": "Unity ML-Agents"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-cig",
+        "label": "IEEE CIG"
+      },
+      {
+        "id": "urn:ngm:class:aaai-aiide",
+        "label": "AAAI AIIDE"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -206,6 +273,14 @@
       {
         "id": "urn:ngm:class:procedural-content-generation",
         "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      },
+      {
+        "id": "urn:ngm:class:game-analytics",
+        "label": "Game Analytics"
       }
     ]
   },
@@ -221,9 +296,29 @@
       "slug": "artificial-intelligence-core"
     },
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     }
   ],
   "inheritedRelations": {
@@ -267,12 +362,20 @@
         "label": "Action Space"
       },
       {
+        "id": "urn:ngm:class:api-access",
+        "label": "API Access"
+      },
+      {
         "id": "urn:ngm:class:authentication-system",
         "label": "Authentication System"
       },
       {
         "id": "urn:ngm:class:environment-model",
         "label": "Environment Model"
+      },
+      {
+        "id": "urn:ngm:class:resource-budget",
+        "label": "Resource Budget"
       },
       {
         "id": "urn:ngm:class:reward-function",
@@ -283,16 +386,8 @@
         "label": "Sensor Input"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:ai-framework",
+        "label": "AI Framework"
       }
     ],
     "enables": [
@@ -313,20 +408,54 @@
         "label": "Code Generation"
       },
       {
+        "id": "urn:ngm:class:database-interaction",
+        "label": "Database Interaction"
+      },
+      {
         "id": "urn:ngm:class:file-system",
         "label": "File System Access"
       },
       {
+        "id": "urn:ngm:class:goal-achievement",
+        "label": "Goal Achievement"
+      },
+      {
         "id": "urn:ngm:class:multi-agent-coordination",
         "label": "Multi-Agent Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:machine-learning-discipline-platform",
+        "label": "Machine Learning Platform"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       }
     ],
     "implements": [
@@ -347,8 +476,72 @@
         "label": "Meta-Learning"
       },
       {
+        "id": "urn:ngm:class:planning-algorithm",
+        "label": "Planning Algorithm"
+      },
+      {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-economic-agent",
+        "label": "Autonomous Economic Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-trading-bot",
+        "label": "Bitcoin Trading Bot"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
       }
     ],
     "uses": [
@@ -359,6 +552,88 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:adaptive-virtual-world",
+        "label": "Adaptive Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:ai-ecosystem",
+        "label": "AI Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-environment",
+        "label": "Intelligent Environment"
       }
     ],
     "relatedTo": [
@@ -375,24 +650,24 @@
         "label": "Machine Learning Discipline"
       },
       {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
         "id": "urn:ngm:class:ai-agent-system",
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
       },
       {
-        "id": "urn:ngm:class:ai-application",
-        "label": "AI Application"
-      },
-      {
-        "id": "urn:ngm:class:ai-research-area",
-        "label": "AI Research Area"
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
       }
     ]
   },

@@ -16,7 +16,20 @@
   "qualityScore": 0.76,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cpython",
+        "label": "CPython"
+      },
+      {
+        "id": "urn:ngm:class:python-standard-library",
+        "label": "Python Standard Library"
+      },
+      {
+        "id": "urn:ngm:class:python-package-index",
+        "label": "Python Package Index"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:virtual-environment",
@@ -29,7 +42,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -55,7 +68,16 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:r-language",
+        "label": "R Language"
+      },
+      {
+        "id": "urn:ngm:class:julia-language",
+        "label": "Julia Language"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -90,6 +112,14 @@
       {
         "id": "urn:ngm:class:jupyter-notebook",
         "label": "Jupyter Notebook"
+      },
+      {
+        "id": "urn:ngm:class:pandas",
+        "label": "Pandas"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
       }
     ],
     "supports": [
@@ -100,6 +130,10 @@
       {
         "id": "urn:ngm:class:infrastructure-as-code",
         "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:web-framework",
+        "label": "Web Framework"
       }
     ],
     "standardizedBy": [],
@@ -120,19 +154,33 @@
       {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "Python and PyTorch"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering (Infrastructure)",
-      "slug": "infra-software-engineering"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -142,32 +190,32 @@
         "label": "Type System"
       },
       {
-        "id": "urn:ngm:class:code-generation",
-        "label": "Code Generation"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:microservices-architecture",
-        "label": "Microservices Architecture"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:programming-language",
-        "label": "Programming Language"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:software-architecture",
-        "label": "Software Architecture"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:software-development-process",
-        "label": "Software Development Process"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:software-testing",
-        "label": "Software Testing"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:testing-process",
-        "label": "Testing Process"
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
       }
     ],
     "requires": [
@@ -180,16 +228,28 @@
         "label": "Runtime Environment"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -202,28 +262,28 @@
         "label": "Parallel Computing"
       },
       {
-        "id": "urn:ngm:class:api-gateway",
-        "label": "API Gateway"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:testing-infrastructure",
-        "label": "Testing Infrastructure"
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "dependsOn": [
@@ -244,18 +304,50 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
       }
     ],
     "uses": [
@@ -266,6 +358,30 @@
       {
         "id": "urn:ngm:class:package-manager",
         "label": "Package Manager"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
       }
     ],
     "supports": [
@@ -278,16 +394,16 @@
         "label": "GPU Acceleration"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
       }
     ],
     "standardizedBy": [
@@ -296,12 +412,24 @@
         "label": "ISO Standard"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
@@ -322,20 +450,20 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
       },
       {
-        "id": "urn:ngm:class:distributed-system",
-        "label": "Distributed System"
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
       },
       {
-        "id": "urn:ngm:class:infra-legal-and-regulatory",
-        "label": "Legal and Regulatory"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
       }
     ]
   },

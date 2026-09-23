@@ -20,12 +20,20 @@
       {
         "id": "urn:ngm:class:registration-authority",
         "label": "Registration Authority"
+      },
+      {
+        "id": "urn:ngm:class:digital-token-identifier",
+        "label": "Digital Token Identifier"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Digital Token"
       },
       {
         "id": "urn:ngm:class:token",
@@ -40,6 +48,10 @@
       {
         "id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Financial Data Aggregation"
       },
       {
         "id": "urn:ngm:class:data-aggregation",
@@ -62,7 +74,16 @@
         "label": "Unique Identifier"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:isin",
+        "label": "ISIN"
+      },
+      {
+        "id": "urn:ngm:class:figi",
+        "label": "FIGI"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:financial-instruments",
@@ -71,6 +92,10 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instrument"
       }
     ],
     "uses": [
@@ -95,12 +120,20 @@
       {
         "id": "urn:ngm:class:tokenized-asset",
         "label": "Tokenised Asset"
+      },
+      {
+        "id": "urn:ngm:class:tokenized-asset",
+        "label": "Tokenised Asset"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:iso",
         "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:digital-token-identifier-foundation",
+        "label": "Digital Token Identifier Foundation"
       }
     ],
     "partOf": [
@@ -115,12 +148,16 @@
         "label": "Legal Entity Identifier"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:lei-system",
+        "label": "Legal Entity Identifier"
       }
     ]
   },
@@ -129,6 +166,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -229,8 +271,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -317,6 +367,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -335,8 +391,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -345,10 +405,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

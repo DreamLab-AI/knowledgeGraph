@@ -1,0 +1,16 @@
+---
+okf_version: "0.2"
+type: Class
+title: Distributed Validator Technology
+resource: urn:ngm:class:distributed-validator-technology
+domain: blockchain
+description: Distributed Validator Technology (DVT) splits the signing key and duties of a single blockchain validator across multiple independent nodes, so that consensus on each validator action requires threshold agreement among the participating operators. It uses threshold cryptography to reconstruct or aggregate signatures without any single node holding the complete private key, removing single points o
+maturity: emerging
+quality: 0
+is-a:
+  - urn:ngm:class:validator
+---
+
+# Distributed Validator Technology
+
+Distributed Validator Technology (DVT) splits the signing key and duties of a single blockchain validator across multiple independent nodes, so that consensus on each validator action requires threshold agreement among the participating operators. It uses threshold cryptography to reconstruct or aggregate signatures without any single node holding the complete private key, removing single points of failure. DVT is used in proof-of-stake networks such as Ethereum to improve validator fault tolerance, decentralisation, and resilience against slashing from individual node outages.

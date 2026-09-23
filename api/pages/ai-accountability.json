@@ -10,6 +10,14 @@
     {
       "id": "urn:ngm:class:accountability",
       "label": "Accountability"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "id": "urn:ngm:class:responsible-ai",
+      "label": "Responsible AI"
     }
   ],
   "entityType": "Class",
@@ -44,6 +52,14 @@
       {
         "id": "urn:ngm:class:redress-mechanism",
         "label": "Redress Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics-board",
+        "label": "AI Ethics Board"
       }
     ],
     "requires": [
@@ -62,6 +78,14 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "enables": [
@@ -76,9 +100,42 @@
       {
         "id": "urn:ngm:class:fairness",
         "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:liability",
+        "label": "Liability"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
@@ -99,11 +156,53 @@
       {
         "id": "urn:ngm:class:oecd-ai-principles",
         "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voluntary-transparency",
+        "label": "Voluntary Transparency"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:redress-mechanism",
+        "label": "Redress Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:post-market-monitoring",
+        "label": "Post-Market Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -120,9 +219,30 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -144,15 +264,34 @@
       {
         "id": "urn:ngm:class:liability",
         "label": "Liability"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics-board",
+        "label": "AI Ethics Board"
+      },
+      {
+        "id": "urn:ngm:class:information-commissioner-s-office",
+        "label": "Information Commissioner's Office"
+      },
+      {
+        "id": "urn:ngm:class:centre-for-data-ethics-and-innovation",
+        "label": "Centre for Data Ethics and Innovation"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
       }
     ]
   },
   "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:ai-governance",
-      "label": "AI Governance",
-      "slug": "ai-governance"
-    },
     {
       "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework",
@@ -162,6 +301,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -176,10 +320,6 @@
         "label": "AI Audit"
       },
       {
-        "id": "urn:ngm:class:ai-ethics-board",
-        "label": "AI Ethics Board"
-      },
-      {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
       },
@@ -188,20 +328,24 @@
         "label": "Accountability"
       },
       {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
         "id": "urn:ngm:class:compliance-management",
         "label": "Compliance Management"
       },
       {
         "id": "urn:ngm:class:decision-rights",
         "label": "Decision Rights"
-      },
-      {
-        "id": "urn:ngm:class:policy-enforcement",
-        "label": "Policy Enforcement"
-      },
-      {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
       }
     ],
     "requires": [
@@ -218,24 +362,24 @@
         "label": "Regulatory Compliance"
       },
       {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
         "id": "urn:ngm:class:audit",
         "label": "Audit and Oversight"
       },
       {
         "id": "urn:ngm:class:executive-sponsorship",
         "label": "Executive Sponsorship"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -264,12 +408,12 @@
         "label": "Trustworthy AI"
       },
       {
-        "id": "urn:ngm:class:resource-management",
-        "label": "Resource Management"
+        "id": "urn:ngm:class:public-trust-in-ai",
+        "label": "Public Trust in AI"
       },
       {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
+        "id": "urn:ngm:class:social-licence-for-ai",
+        "label": "social licence for AI"
       }
     ],
     "dependsOn": [
@@ -283,6 +427,10 @@
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
+      },
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
@@ -302,6 +450,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
@@ -320,27 +472,27 @@
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:ngm:class:ai-governance-and-ethics",
-        "label": "AI Governance and Ethics"
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
       },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:ai-trustworthiness",
-        "label": "AI Trustworthiness"
-      },
       {
         "id": "urn:ngm:class:fairness",
         "label": "Fairness"
@@ -376,12 +528,8 @@
         "label": "ISO/IEC 38500:2024"
       },
       {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD AI Principles"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-42001",
-        "label": "ISO IEC 42001"
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:cobit",
@@ -398,6 +546,16 @@
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ],
     "relatedTo": [
@@ -414,24 +572,24 @@
         "label": "Governance Framework"
       },
       {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:gdpr",
-        "label": "GDPR"
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       },
       {
-        "id": "urn:ngm:class:change-management",
-        "label": "Change Management"
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:enterprise-architecture",
-        "label": "Enterprise Architecture"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
       }
     ]
   },

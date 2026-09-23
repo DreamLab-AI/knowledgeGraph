@@ -51,6 +51,10 @@
       {
         "id": "urn:ngm:class:user-centred-design",
         "label": "User Centered Design"
+      },
+      {
+        "id": "urn:ngm:class:user-centred-design",
+        "label": "User Centered Design"
       }
     ],
     "contrastsWith": [
@@ -216,6 +220,18 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -224,7 +240,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

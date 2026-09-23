@@ -98,6 +98,11 @@
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics",
       "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:labour-market-policy",
+      "label": "Labour Market Policy",
+      "slug": "labour-market-policy"
     }
   ],
   "inheritedRelations": {
@@ -153,8 +158,20 @@
         "label": "AI Regulation"
       },
       {
+        "id": "urn:ngm:class:collective-bargaining",
+        "label": "Collective Bargaining"
+      },
+      {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:labour-law",
+        "label": "Labour Law"
+      },
+      {
+        "id": "urn:ngm:class:social-insurance",
+        "label": "Social Insurance"
       }
     ],
     "enables": [
@@ -179,40 +196,106 @@
         "label": "Predictive Analytics"
       },
       {
+        "id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Legitimacy"
+      },
+      {
+        "id": "urn:ngm:class:economic-redistribution",
+        "label": "Economic Redistribution"
+      },
+      {
         "id": "urn:ngm:class:just-transition",
         "label": "Workforce Transition"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:collective-bargaining",
+        "label": "Collective Bargaining"
+      },
+      {
+        "id": "urn:ngm:class:labour-law",
+        "label": "Labour Law"
+      },
+      {
+        "id": "urn:ngm:class:labour-market-policy",
+        "label": "Labour Market Policy"
+      },
+      {
+        "id": "urn:ngm:class:social-insurance",
+        "label": "Social Insurance"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:gig-economy",
         "label": "Gig Economy"
+      },
+      {
+        "id": "urn:ngm:class:technological-unemployment",
+        "label": "Technological Unemployment"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
         "id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-management",
+        "label": "Algorithmic Management"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:democratic-governance",
         "label": "Democratic Legitimacy"
+      },
+      {
+        "id": "urn:ngm:class:human-dignity",
+        "label": "Human Dignity"
+      },
+      {
+        "id": "urn:ngm:class:social-cohesion",
+        "label": "Social Cohesion"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-driven-workforce-displacement-registry",
         "label": "Job Displacement"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-management",
+        "label": "Algorithmic Management"
+      },
+      {
+        "id": "urn:ngm:class:human-dignity",
+        "label": "Human Dignity"
       },
       {
         "id": "urn:ngm:class:income-inequality",
@@ -223,20 +306,16 @@
         "label": "Platform Economy"
       },
       {
+        "id": "urn:ngm:class:reskilling",
+        "label": "Reskilling"
+      },
+      {
         "id": "urn:ngm:class:universal-basic-income",
         "label": "Universal Basic Income"
       },
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-framework",
-        "label": "AI Governance Framework"
-      },
-      {
-        "id": "urn:ngm:class:ai-transparency-framework",
-        "label": "Ai Transparency Framework"
       }
     ]
   },

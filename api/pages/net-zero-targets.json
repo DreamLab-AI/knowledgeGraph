@@ -39,6 +39,10 @@
       {
         "id": "urn:ngm:class:green-finance",
         "label": "Green Finance"
+      },
+      {
+        "id": "urn:ngm:class:low-carbon-transition",
+        "label": "Low-Carbon Transition"
       }
     ],
     "dependsOn": [
@@ -60,6 +64,10 @@
       {
         "id": "urn:ngm:class:carbon-neutrality",
         "label": "Carbon Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:climate-pledges",
+        "label": "Climate Pledges"
       }
     ],
     "bridgesTo": [
@@ -95,6 +103,14 @@
       {
         "id": "urn:ngm:class:science-based-targets",
         "label": "Science Based Targets Initiative"
+      },
+      {
+        "id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets Initiative"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-sustainability-standards",
+        "label": "IFRS Sustainability Standards"
       }
     ],
     "partOf": [
@@ -119,6 +135,10 @@
       {
         "id": "urn:ngm:class:greenwashing",
         "label": "Greenwashing"
+      },
+      {
+        "id": "urn:ngm:class:nationally-determined-contributions",
+        "label": "Nationally Determined Contributions"
       }
     ]
   },
@@ -147,8 +167,16 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:economic-sustainability",
+        "label": "Economic Sustainability"
+      },
+      {
         "id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:social-sustainability",
+        "label": "Social Sustainability"
       },
       {
         "id": "urn:ngm:class:accountability",
@@ -169,14 +197,6 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
-      },
-      {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
-      },
-      {
-        "id": "urn:ngm:class:compliance-framework",
-        "label": "Compliance Framework"
       }
     ],
     "requires": [
@@ -267,6 +287,18 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:planned-obsolescence",
+        "label": "Planned Obsolescence"
+      },
+      {
+        "id": "urn:ngm:class:rebound-effect",
+        "label": "Rebound Effect"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -345,6 +377,10 @@
         "label": "ISO 14001"
       },
       {
+        "id": "urn:ngm:class:w3c-sustainable-web-design",
+        "label": "W3C Sustainable Web Design"
+      },
+      {
         "id": "urn:ngm:class:iso-iec-38500",
         "label": "ISO-IEC 38500"
       },
@@ -387,12 +423,12 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
       }
     ]
   },

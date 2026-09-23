@@ -104,13 +104,40 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:colour-reference-chart",
+        "label": "Colour Reference Chart"
+      },
+      {
         "id": "urn:ngm:class:fiducial-marker",
         "label": "Fiducial Marker"
+      },
+      {
+        "id": "urn:ngm:class:grey-scale-step-wedge",
+        "label": "Grey-Scale Step Wedge"
+      },
+      {
+        "id": "urn:ngm:class:resolution-target",
+        "label": "Resolution Target"
       },
       {
         "id": "urn:ngm:class:display-hardware",
@@ -127,18 +154,6 @@
       {
         "id": "urn:ngm:class:physically-based-rendering",
         "label": "Physically Based Rendering"
-      },
-      {
-        "id": "urn:ngm:class:rasterization",
-        "label": "Rasterization"
-      },
-      {
-        "id": "urn:ngm:class:ray-tracing",
-        "label": "Ray Tracing"
-      },
-      {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
       }
     ],
     "requires": [
@@ -165,12 +180,28 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:colour-management",
         "label": "Colour Management"
+      },
+      {
+        "id": "urn:ngm:class:optical-system-accuracy",
+        "label": "Optical System Accuracy"
+      },
+      {
+        "id": "urn:ngm:class:stereo-camera-calibration",
+        "label": "Stereo Camera Calibration"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -187,12 +218,34 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:photometric-standards",
+        "label": "Photometric Standards"
+      },
+      {
+        "id": "urn:ngm:class:substrate-material-stability",
+        "label": "Substrate Material Stability"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:radiometric-calibration-panel",
+        "label": "Radiometric Calibration Panel"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -209,15 +262,31 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:sinusoidal-grating",
+        "label": "Sinusoidal Grating"
+      },
       {
         "id": "urn:ngm:class:visual-marker",
         "label": "ArUco Marker"
@@ -245,10 +314,6 @@
       {
         "id": "urn:ngm:class:hand-tracking",
         "label": "Hand Tracking"
-      },
-      {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
       }
     ],
     "supports": [
@@ -275,6 +340,14 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -306,6 +379,10 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:icc-colour-profile",
+        "label": "ICC Colour Profile"
+      },
       {
         "id": "urn:ngm:class:sensor-calibration",
         "label": "Depth Sensor Calibration"

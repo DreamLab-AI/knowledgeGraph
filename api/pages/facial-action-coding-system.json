@@ -140,7 +140,20 @@
         "label": "Intelligent Tutoring System"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ekman-friesen-1978-facs-manual",
+        "label": "Ekman Friesen 1978 FACS Manual"
+      },
+      {
+        "id": "urn:ngm:class:emfacs",
+        "label": "EMFACS"
+      },
+      {
+        "id": "urn:ngm:class:facs-plus",
+        "label": "FACS Plus"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -166,6 +179,22 @@
       {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:facial-action-coding-system",
+        "label": "Facial Action Coding System"
+      },
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
       }
     ]
   },
@@ -176,18 +205,57 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science",
+      "slug": "cognitive-science"
+    },
+    {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction",
       "slug": "human-computer-interaction"
     },
     {
+      "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+      "label": "Multimodal AI",
+      "slug": "multimodal-ai-architecture-ai"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:biometric-sensing",
+        "label": "Biometric Sensing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-feedback-interface",
+        "label": "Cognitive Feedback Interface"
+      },
+      {
+        "id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "id": "urn:ngm:class:emotional-analytics-engine",
+        "label": "Emotional Analytics Engine"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal Fusion"
+      },
+      {
+        "id": "urn:ngm:class:physiological-signal-processing",
+        "label": "Physiological Signal Processing"
+      },
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
@@ -195,36 +263,16 @@
       {
         "id": "urn:ngm:class:image-classification",
         "label": "Image Classification"
-      },
-      {
-        "id": "urn:ngm:class:motion-tracking",
-        "label": "Motion Tracking"
-      },
-      {
-        "id": "urn:ngm:class:object-detection",
-        "label": "Object Detection"
-      },
-      {
-        "id": "urn:ngm:class:semantic-segmentation",
-        "label": "Semantic Segmentation"
-      },
-      {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:annotated-training-data",
         "label": "Annotated Dataset"
+      },
+      {
+        "id": "urn:ngm:class:data-labelling",
+        "label": "Data Labelling"
       },
       {
         "id": "urn:ngm:class:emotion-recognition",
@@ -235,6 +283,10 @@
         "label": "Multimodal Fusion"
       },
       {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
         "id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
       },
@@ -243,16 +295,8 @@
         "label": "Pattern Recognition"
       },
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
-      },
-      {
-        "id": "urn:ngm:class:user-research",
-        "label": "User Research"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
       }
     ],
     "enables": [
@@ -263,6 +307,10 @@
       {
         "id": "urn:ngm:class:cognitive-feedback-interface",
         "label": "Cognitive Feedback Interface"
+      },
+      {
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
       },
       {
         "id": "urn:ngm:class:driver-monitoring-system",
@@ -281,15 +329,15 @@
         "label": "Human-Robot Interaction"
       },
       {
-        "id": "urn:ngm:class:autonomous-navigation",
-        "label": "Autonomous Vehicle Navigation"
-      },
-      {
-        "id": "urn:ngm:class:medical-imaging-ai",
-        "label": "Medical Imaging AI"
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
       {
         "id": "urn:ngm:class:data-labelling",
         "label": "Data Labelling"
@@ -299,12 +347,54 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
       },
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
@@ -313,8 +403,20 @@
         "label": "Rational Agent"
       },
       {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
       },
       {
         "id": "urn:ngm:class:autonomous-agent",
@@ -335,6 +437,10 @@
         "label": "Extended Reality"
       },
       {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
       },
@@ -343,16 +449,12 @@
         "label": "Social Robotics"
       },
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -373,36 +475,94 @@
         "label": "Deep Learning"
       },
       {
+        "id": "urn:ngm:class:eeg",
+        "label": "EEG"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
-      },
-      {
-        "id": "urn:ngm:class:physiological-signal-processing",
-        "label": "Physiological Signal Processing"
-      },
-      {
-        "id": "urn:ngm:class:sentiment-analysis",
-        "label": "Sentiment Analysis"
-      },
-      {
-        "id": "urn:ngm:class:speech-recognition",
-        "label": "Speech Recognition"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p7014",
+        "label": "IEEE P7014"
       }
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:appraisal-theory",
+        "label": "Appraisal Theory"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:bdi-model",
+        "label": "BDI Architecture"
+      },
+      {
         "id": "urn:ngm:class:biometric-sensing",
         "label": "Biometric Sensing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:dimensional-model-of-affect",
+        "label": "Dimensional Model of Affect"
       },
       {
         "id": "urn:ngm:class:emotional-intelligence",
@@ -411,26 +571,6 @@
       {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
-      },
-      {
-        "id": "urn:ngm:class:user-experience-design",
-        "label": "User Experience Design"
-      },
-      {
-        "id": "urn:ngm:class:wearable-computing",
-        "label": "Wearable Computing"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
       }
     ]
   },

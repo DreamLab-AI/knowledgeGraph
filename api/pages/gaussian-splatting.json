@@ -14,6 +14,22 @@
     {
       "id": "urn:ngm:class:3-d-scene-reconstruction",
       "label": "3D Scene Reconstruction"
+    },
+    {
+      "id": "urn:ngm:class:neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "id": "urn:ngm:class:novel-view-synthesis",
+      "label": "Novel View Synthesis"
+    },
+    {
+      "id": "urn:ngm:class:differentiable-rendering",
+      "label": "Differentiable Rendering"
+    },
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "entityType": "Class",
@@ -32,6 +48,30 @@
       {
         "id": "urn:ngm:class:spherical-harmonics",
         "label": "Spherical Harmonics"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rasterizer",
+        "label": "Differentiable Rasterizer"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-densification",
+        "label": "Adaptive Densification"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "SfM Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:depth-sorting",
+        "label": "Depth Sorting"
+      },
+      {
+        "id": "urn:ngm:class:alpha-compositing",
+        "label": "Alpha Compositing"
+      },
+      {
+        "id": "urn:ngm:class:tile-based-renderer",
+        "label": "Tile-Based Renderer"
       }
     ],
     "requires": [
@@ -96,9 +136,38 @@
       {
         "id": "urn:ngm:class:volumetric-capture",
         "label": "Volumetric Capture"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:alpha-blending",
@@ -111,9 +180,46 @@
       {
         "id": "urn:ngm:class:spherical-harmonics",
         "label": "Spherical Harmonics"
+      },
+      {
+        "id": "urn:ngm:class:ewa-splatting",
+        "label": "EWA Splatting"
+      },
+      {
+        "id": "urn:ngm:class:tile-rasterisation",
+        "label": "Tile Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:covariance-decomposition",
+        "label": "Covariance Decomposition"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:mesh-based-rendering",
+        "label": "Mesh-Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:voxel-grid-representation",
+        "label": "Voxel Grid Representation"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:differentiable-rendering",
@@ -178,9 +284,25 @@
       {
         "id": "urn:ngm:class:apple-inc-technology-corporation-mixed-reality-headset",
         "label": "Vision Pro"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-system",
+        "label": "Spatial Computing System"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:siggraph",
+        "label": "ACM SIGGRAPH"
+      },
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "IEEE CVPR"
+      },
+      {
+        "id": "urn:ngm:class:iccv",
+        "label": "IEEE ICCV"
+      },
       {
         "id": "urn:ngm:class:siggraph",
         "label": "ACM SIGGRAPH"
@@ -245,14 +367,64 @@
       "slug": "3-d-reconstruction"
     },
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics",
+      "slug": "computer-graphics"
+    },
+    {
+      "id": "urn:ngm:class:computer-vision-task",
+      "label": "Computer Vision Task",
+      "slug": "computer-vision-task"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
+      "id": "urn:ngm:class:inverse-rendering",
+      "label": "Inverse Rendering",
+      "slug": "inverse-rendering"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets",
       "slug": "sc-content-and-assets"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -292,28 +464,36 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:feature-matching",
-        "label": "Feature Matching"
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
       },
       {
-        "id": "urn:ngm:class:image-processing",
-        "label": "Image Processing"
+        "id": "urn:ngm:class:implicit-neural-representation",
+        "label": "Implicit Neural Representation"
       },
       {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
+        "id": "urn:ngm:class:multi-view-imaging",
+        "label": "Multi-View Imaging"
       },
       {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
+        "id": "urn:ngm:class:camera-pose-estimation",
+        "label": "Camera Pose Estimation"
       },
       {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
+        "id": "urn:ngm:class:multi-view-images",
+        "label": "Multi-View Images"
       },
       {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "enables": [
@@ -330,37 +510,123 @@
         "label": "Digital Twin Creation"
       },
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:environmental-mapping",
-        "label": "Environmental Mapping"
+        "id": "urn:ngm:class:avatar",
+        "label": "Photorealistic Avatar"
       },
       {
-        "id": "urn:ngm:class:point-cloud-generation",
-        "label": "Point Cloud Generation"
+        "id": "urn:ngm:class:immersive-environment",
+        "label": "Immersive Environment"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:free-viewpoint-video",
+        "label": "Free-Viewpoint Video"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:media-production",
+        "label": "Immersive Media Production"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:ray-marching",
+        "label": "Ray Marching"
+      },
+      {
+        "id": "urn:ngm:class:ray-casting",
+        "label": "Ray Casting"
+      },
+      {
+        "id": "urn:ngm:class:scene-representation",
+        "label": "Scene Representation"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-rendering",
+        "label": "Volumetric Rendering"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "Stereo Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:classical-rendering",
+        "label": "Classical Rendering"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
@@ -368,28 +634,36 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:3-d-reconstruction",
-        "label": "3D Reconstruction"
+        "id": "urn:ngm:class:autonomous-driving-simulation",
+        "label": "Autonomous Driving Simulation"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "uses": [
@@ -402,31 +676,77 @@
         "label": "Simultaneous Localisation and Mapping"
       },
       {
-        "id": "urn:ngm:class:lidar",
-        "label": "Lidar"
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
       },
       {
         "id": "urn:ngm:class:neural-radiance-field",
         "label": "Neural Radiance Field"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:volume-rendering",
+        "label": "Volume Rendering"
       },
       {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
       },
       {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
       {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
@@ -434,12 +754,20 @@
       {
         "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:photogrammetry",
         "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "relatedTo": [
@@ -464,16 +792,16 @@
         "label": "NeRF"
       },
       {
+        "id": "urn:ngm:class:light-field",
+        "label": "Light Field Imaging"
+      },
+      {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      },
-      {
-        "id": "urn:ngm:class:avatar-system",
-        "label": "Avatar System"
+        "id": "urn:ngm:class:3-d-scene-reconstruction",
+        "label": "3D Scene Reconstruction"
       }
     ]
   },

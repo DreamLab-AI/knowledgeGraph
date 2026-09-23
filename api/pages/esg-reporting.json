@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
+    },
+    {
+      "id": "urn:ngm:class:corporate-disclosure",
+      "label": "Corporate Disclosure"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "id": "urn:ngm:class:non-financial-reporting",
+      "label": "Non-Financial Reporting"
+    },
+    {
+      "id": "urn:ngm:class:sustainability-disclosure",
+      "label": "Sustainability Disclosure"
+    },
+    {
+      "id": "urn:ngm:class:stakeholder-reporting",
+      "label": "Stakeholder Reporting"
     }
   ],
   "entityType": "Class",
@@ -48,6 +68,38 @@
       {
         "id": "urn:ngm:class:xbrl",
         "label": "XBRL Digital Tagging"
+      },
+      {
+        "id": "urn:ngm:class:double-materiality-assessment",
+        "label": "Double Materiality Assessment"
+      },
+      {
+        "id": "urn:ngm:class:transition-plan",
+        "label": "Transition Plan"
+      },
+      {
+        "id": "urn:ngm:class:science-based-target",
+        "label": "Science-Based Target"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-statement",
+        "label": "Sustainability Statement"
+      },
+      {
+        "id": "urn:ngm:class:limited-assurance-opinion",
+        "label": "Limited Assurance Opinion"
+      },
+      {
+        "id": "urn:ngm:class:reasonable-assurance-opinion",
+        "label": "Reasonable Assurance Opinion"
+      },
+      {
+        "id": "urn:ngm:class:xbrl",
+        "label": "XBRL Digital Tagging"
+      },
+      {
+        "id": "urn:ngm:class:principal-adverse-impact-statement",
+        "label": "Principal Adverse Impact Statement"
       }
     ],
     "requires": [
@@ -62,15 +114,104 @@
       {
         "id": "urn:ngm:class:stakeholder-engagement",
         "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-data-collection",
+        "label": "Sustainability Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Internal Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:value-chain-mapping",
+        "label": "Value Chain Mapping"
+      },
+      {
+        "id": "urn:ngm:class:independent-assurance-provider",
+        "label": "Independent Assurance Provider"
+      },
+      {
+        "id": "urn:ngm:class:reporting-framework-selection",
+        "label": "Reporting Framework Selection"
+      },
+      {
+        "id": "urn:ngm:class:materiality-threshold",
+        "label": "Materiality Threshold"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Investor Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Investor Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:capital-allocation-efficiency",
+        "label": "Capital Allocation Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk-pricing",
+        "label": "Climate Risk Pricing"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-investment-identification",
+        "label": "Sustainable Investment Identification"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing-detection",
+        "label": "Greenwashing Detection"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-pathway-tracking",
+        "label": "Net Zero Pathway Tracking"
+      },
+      {
+        "id": "urn:ngm:class:carbon-border-adjustment-compliance",
+        "label": "Carbon Border Adjustment Compliance"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-linked-loan-pricing",
+        "label": "Sustainability-Linked Loan Pricing"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:greenhouse-gas-protocol",
+        "label": "Greenhouse Gas Protocol"
+      },
+      {
+        "id": "urn:ngm:class:emission-factor-database",
+        "label": "Emission Factor Database"
+      },
+      {
+        "id": "urn:ngm:class:value-chain-data",
+        "label": "Value Chain Data"
+      },
+      {
+        "id": "urn:ngm:class:climate-scenario-database",
+        "label": "Climate Scenario Database"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-data-platform",
+        "label": "Sustainability Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:third-party-esg-ratings",
+        "label": "Third-Party ESG Ratings"
+      },
+      {
+        "id": "urn:ngm:class:sector-specific-guidance",
+        "label": "Sector-Specific Guidance"
+      },
+      {
+        "id": "urn:ngm:class:national-inventory-reports",
+        "label": "National Inventory Reports"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:eu-taxonomy",
@@ -99,9 +240,66 @@
       {
         "id": "urn:ngm:class:tnfd",
         "label": "TNFD Recommendations"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD Recommendations"
+      },
+      {
+        "id": "urn:ngm:class:esrs-standards",
+        "label": "ESRS Standards"
+      },
+      {
+        "id": "urn:ngm:class:sasb-standards",
+        "label": "SASB Standards"
+      },
+      {
+        "id": "urn:ngm:class:cdp-questionnaires",
+        "label": "CDP Questionnaires"
+      },
+      {
+        "id": "urn:ngm:class:tnfd",
+        "label": "TNFD Recommendations"
+      },
+      {
+        "id": "urn:ngm:class:pcaf-methodology",
+        "label": "PCAF Methodology"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voluntary-csr-report",
+        "label": "Voluntary CSR Report"
+      },
+      {
+        "id": "urn:ngm:class:pre-2014-sustainability-report",
+        "label": "Pre-2014 Sustainability Report"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-financial-reporting",
+        "label": "IFRS Financial Reporting"
+      },
+      {
+        "id": "urn:ngm:class:uk-gaap-financial-reporting",
+        "label": "UK GAAP Financial Reporting"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      },
+      {
+        "id": "urn:ngm:class:esg-rating-inflation",
+        "label": "ESG Rating Inflation"
+      },
+      {
+        "id": "urn:ngm:class:single-materiality-reporting",
+        "label": "Single Materiality Reporting"
+      },
+      {
+        "id": "urn:ngm:class:shareholder-primacy-reporting",
+        "label": "Shareholder Primacy Reporting"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -124,12 +322,72 @@
       {
         "id": "urn:ngm:class:xbrl",
         "label": "XBRL Inline Reporting"
+      },
+      {
+        "id": "urn:ngm:class:xbrl",
+        "label": "XBRL Inline Reporting"
+      },
+      {
+        "id": "urn:ngm:class:esg-data-management-platform",
+        "label": "ESG Data Management Platform"
+      },
+      {
+        "id": "urn:ngm:class:nlp-regulatory-monitoring",
+        "label": "NLP Regulatory Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:satellite-emissions-inventory",
+        "label": "Satellite Emissions Inventory"
+      },
+      {
+        "id": "urn:ngm:class:materiality-heatmap",
+        "label": "Materiality Heatmap"
+      },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Scenario Modelling"
+      },
+      {
+        "id": "urn:ngm:class:ai-sustainability-copilot",
+        "label": "AI Sustainability Copilot"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:carbon-border-adjustment-mechanism",
         "label": "Carbon Border Adjustment Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-finance-disclosure-regulation",
+        "label": "Sustainable Finance Disclosure Regulation"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-due-diligence",
+        "label": "Corporate Sustainability Due Diligence"
+      },
+      {
+        "id": "urn:ngm:class:article-8-fund-classification",
+        "label": "Article 8 Fund Classification"
+      },
+      {
+        "id": "urn:ngm:class:article-9-fund-classification",
+        "label": "Article 9 Fund Classification"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-linked-bond-issuance",
+        "label": "Sustainability-Linked Bond Issuance"
+      },
+      {
+        "id": "urn:ngm:class:green-bond-issuance",
+        "label": "Green Bond Issuance"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-banking-alliance",
+        "label": "Net-Zero Banking Alliance"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-asset-managers-initiative",
+        "label": "Net Zero Asset Managers Initiative"
       }
     ],
     "standardizedBy": [
@@ -152,6 +410,46 @@
       {
         "id": "urn:ngm:class:ifrs-s2",
         "label": "IFRS S2"
+      },
+      {
+        "id": "urn:ngm:class:csrd-directive-2022-2464",
+        "label": "CSRD Directive 2022/2464"
+      },
+      {
+        "id": "urn:ngm:class:esrs-delegated-regulation-2023-2772",
+        "label": "ESRS Delegated Regulation 2023/2772"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy Regulation 2020/852"
+      },
+      {
+        "id": "urn:ngm:class:sfdr-2019-2088",
+        "label": "SFDR 2019/2088"
+      },
+      {
+        "id": "urn:ngm:class:sec-climate-rule-33-11275",
+        "label": "SEC Climate Rule 33-11275"
+      },
+      {
+        "id": "urn:ngm:class:fca-sdr-ps23-16",
+        "label": "FCA SDR PS23/16"
+      },
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI Universal Standards 2021"
+      },
+      {
+        "id": "urn:ngm:class:issa-5000-assurance-standard",
+        "label": "ISSA 5000 Assurance Standard"
+      },
+      {
+        "id": "urn:ngm:class:isae-3000",
+        "label": "ISAE 3000"
+      },
+      {
+        "id": "urn:ngm:class:isae-3410",
+        "label": "ISAE 3410"
       }
     ],
     "partOf": [],
@@ -191,6 +489,74 @@
       {
         "id": "urn:ngm:class:tnfd",
         "label": "TNFD"
+      },
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI"
+      },
+      {
+        "id": "urn:ngm:class:cdp",
+        "label": "CDP"
+      },
+      {
+        "id": "urn:ngm:class:sasb",
+        "label": "SASB"
+      },
+      {
+        "id": "urn:ngm:class:efrag",
+        "label": "EFRAG"
+      },
+      {
+        "id": "urn:ngm:class:frc",
+        "label": "FRC"
+      },
+      {
+        "id": "urn:ngm:class:workiva",
+        "label": "Workiva"
+      },
+      {
+        "id": "urn:ngm:class:persefoni",
+        "label": "Persefoni"
+      },
+      {
+        "id": "urn:ngm:class:watershed",
+        "label": "Watershed"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-sustainability-manager",
+        "label": "Microsoft Sustainability Manager"
+      },
+      {
+        "id": "urn:ngm:class:msci-esg",
+        "label": "MSCI ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainalytics",
+        "label": "Sustainalytics"
+      },
+      {
+        "id": "urn:ngm:class:gfanz",
+        "label": "GFANZ"
+      },
+      {
+        "id": "urn:ngm:class:mark-carney",
+        "label": "Mark Carney"
+      },
+      {
+        "id": "urn:ngm:class:emmanuel-faber",
+        "label": "Emmanuel Faber"
+      },
+      {
+        "id": "urn:ngm:class:eu-omnibus-2025",
+        "label": "EU Omnibus 2025"
+      },
+      {
+        "id": "urn:ngm:class:dws-greenwashing-settlement",
+        "label": "DWS Greenwashing Settlement"
+      },
+      {
+        "id": "urn:ngm:class:texas-anti-esg-legislation",
+        "label": "Texas Anti-ESG Legislation"
       }
     ]
   },
@@ -199,6 +565,216 @@
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance",
+      "slug": "data-governance"
+    },
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services",
+      "slug": "financial-services"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance",
+      "slug": "regulatory-compliance"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-technology",
+      "label": "Regulatory Technology",
+      "slug": "regulatory-technology"
+    },
+    {
+      "id": "urn:ngm:class:supervisory-technology",
+      "label": "Supervisory Technology",
+      "slug": "supervisory-technology"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-principle",
+      "label": "AI Governance Principle",
+      "slug": "ai-governance-principle"
+    },
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework",
+      "slug": "compliance-framework"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:economic-systems",
+      "label": "Economic Systems",
+      "slug": "economic-systems"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
     }
   ],
   "inheritedRelations": {
@@ -216,7 +792,7 @@
         "label": "Blockchain Governance"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
       },
       {
@@ -238,38 +814,342 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:lei-system",
+        "label": "Legal Entity Identifier"
+      },
+      {
+        "id": "urn:ngm:class:trade-repository",
+        "label": "Trade Repository"
+      },
+      {
+        "id": "urn:ngm:class:xbrl",
+        "label": "XBRL"
+      },
+      {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
       },
       {
         "id": "urn:ngm:class:distributed-consensus",
         "label": "Distributed Consensus"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Sharing"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime Detection"
+      },
+      {
+        "id": "urn:ngm:class:market-abuse-detection",
+        "label": "Market Abuse Detection"
+      },
+      {
+        "id": "urn:ngm:class:prudential-capital-oversight",
+        "label": "Prudential Capital Oversight"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-analytics",
+        "label": "Supervisory Analytics"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk-monitoring",
+        "label": "Systemic Risk Monitoring"
+      },
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      },
+      {
+        "id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "id": "urn:ngm:class:organisational-policy",
+        "label": "Organisational Policy"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:basel-iv",
+        "label": "Basel IV"
+      },
+      {
+        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:do-ra",
+        "label": "DORA"
+      },
+      {
+        "id": "urn:ngm:class:emir-refit",
+        "label": "EMIR Refit"
+      },
+      {
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:fatf-recommendations",
+        "label": "FATF Recommendations"
+      },
+      {
+        "id": "urn:ngm:class:mi-fid-ii",
+        "label": "MiFID II"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:principles-based-regulation",
+        "label": "Principles-Based Regulation"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-disclosure",
+        "label": "Voluntary Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:data-anarchy",
+        "label": "Data Anarchy"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:legal-technology",
+        "label": "Legal Technology"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:fix-protocol",
+        "label": "FIX Protocol"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:lei-system",
+        "label": "LEI System"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:sftp",
+        "label": "SFTP"
+      },
+      {
+        "id": "urn:ngm:class:api-economy",
+        "label": "API Economy"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      },
+      {
+        "id": "urn:ngm:class:eba",
+        "label": "EBA"
+      },
+      {
+        "id": "urn:ngm:class:esma",
+        "label": "ESMA"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "id": "urn:ngm:class:gleif",
+        "label": "GLEIF"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "id": "urn:ngm:class:mas",
+        "label": "MAS"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
       }
     ],
     "relatedTo": [
@@ -284,6 +1164,26 @@
       {
         "id": "urn:ngm:class:regulatory-technology",
         "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:digital-tax-compliance-node",
+        "label": "Digital Tax Compliance Node"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
       }
     ]
   },

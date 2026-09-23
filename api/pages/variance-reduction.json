@@ -59,7 +59,7 @@
         "label": "Stochastic Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -235,8 +235,16 @@
         "label": "Financial Risk Modeling"
       },
       {
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
         "id": "urn:ngm:class:physical-simulation",
         "label": "Physical Simulation"
+      },
+      {
+        "id": "urn:ngm:class:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
       },
       {
         "id": "urn:ngm:class:computer-graphics",
@@ -245,6 +253,10 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
         "id": "urn:ngm:class:motion-planning",

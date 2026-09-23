@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:search-engine-optimisation",
   "domain": "data",
-  "definition": "Search engine optimisation (SEO) is the discipline of improving a website's visibility and ranking in organic search results. It combines technical optimisation, content relevance, structured data, and authority signals to align pages with how search engines crawl, [private], and rank content. SEO bridges marketing intent with the indexing and ranking machinery of search engines to attract qualified, unpaid traffic.",
+  "definition": "Search engine optimisation (SEO) is the discipline of improving a website's visibility and ranking in organic search results. It combines technical optimisation, content relevance, structured data, and authority signals to align pages with how search engines crawl, index, and rank content. SEO bridges marketing intent with the indexing and ranking machinery of search engines to attract qualified, unpaid traffic.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-marketing",
@@ -52,7 +52,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -99,52 +99,51 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:content-marketing",
+        "label": "Content Marketing"
+      },
+      {
+        "id": "urn:ngm:class:email-marketing",
+        "label": "Email Marketing"
+      },
+      {
         "id": "urn:ngm:class:programmatic-advertising",
         "label": "Programmatic Advertising"
+      },
+      {
+        "id": "urn:ngm:class:social-media-marketing",
+        "label": "Social Media Marketing"
+      },
+      {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
       },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
       },
       {
-        "id": "urn:ngm:class:data-lake",
-        "label": "Data Lake"
-      },
-      {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:data-storage",
-        "label": "Data Storage"
-      },
-      {
-        "id": "urn:ngm:class:database-system",
-        "label": "Database System"
-      },
-      {
-        "id": "urn:ngm:class:etl-pipeline",
-        "label": "ETL Pipeline"
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:attribution-modelling",
+        "label": "Attribution Modelling"
+      },
       {
         "id": "urn:ngm:class:audience-segmentation",
         "label": "Audience Segmentation"
@@ -154,16 +153,16 @@
         "label": "Data Infrastructure"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "enables": [
@@ -180,30 +179,26 @@
         "label": "Loyalty Programs"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -224,12 +219,8 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
       }
     ],
     "uses": [
@@ -246,7 +237,7 @@
         "label": "Digital Content"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -256,32 +247,32 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:a-b-testing",
-        "label": "A/B Testing"
+        "label": "A-B Testing"
       },
       {
         "id": "urn:ngm:class:brand-identity",
@@ -296,20 +287,20 @@
         "label": "User Experience"
       },
       {
-        "id": "urn:ngm:class:infra-computing-and-cloud",
-        "label": "Computing and Cloud"
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       }
     ]
   },

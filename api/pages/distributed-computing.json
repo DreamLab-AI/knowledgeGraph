@@ -16,8 +16,20 @@
       "label": "Network and Communication"
     },
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems"
     }
   ],
   "entityType": "Class",
@@ -52,6 +64,18 @@
       {
         "id": "urn:ngm:class:gossip-protocol",
         "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-lock",
+        "label": "Distributed Lock"
+      },
+      {
+        "id": "urn:ngm:class:coordination-layer",
+        "label": "Coordination Service"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication Mechanism"
       }
     ],
     "requires": [
@@ -74,6 +98,14 @@
       {
         "id": "urn:ngm:class:time-synchronisation",
         "label": "Time Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Partial Failure Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-naming",
+        "label": "Identity and Naming"
       }
     ],
     "enables": [
@@ -96,9 +128,42 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:elastic-capacity",
+        "label": "Elastic Capacity"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:lamport-timestamps",
+        "label": "Lamport Timestamps"
+      },
+      {
+        "id": "urn:ngm:class:vector-clocks",
+        "label": "Vector Clocks"
+      },
+      {
+        "id": "urn:ngm:class:flp-impossibility",
+        "label": "FLP Impossibility"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:pacelc",
+        "label": "PACELC"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
+      },
+      {
+        "id": "urn:ngm:class:two-generals-problem",
+        "label": "Two Generals Problem"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:actor-model",
@@ -131,9 +196,34 @@
       {
         "id": "urn:ngm:class:crdt",
         "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:mapreduce",
+        "label": "MapReduce"
+      },
+      {
+        "id": "urn:ngm:class:bulk-synchronous-parallel",
+        "label": "Bulk Synchronous Parallel"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:single-machine-multiprocessing",
+        "label": "Single-Machine Multiprocessing"
+      },
+      {
+        "id": "urn:ngm:class:embarrassingly-parallel-batch",
+        "label": "Embarrassingly Parallel Batch"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -163,6 +253,14 @@
       {
         "id": "urn:ngm:class:service-mesh",
         "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:ray",
+        "label": "Ray"
+      },
+      {
+        "id": "urn:ngm:class:zookeeper",
+        "label": "ZooKeeper"
       }
     ],
     "supports": [
@@ -185,6 +283,10 @@
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:streaming-analytics",
+        "label": "Streaming Analytics"
       }
     ],
     "standardizedBy": [
@@ -207,6 +309,18 @@
       {
         "id": "urn:ngm:class:open-telemetry",
         "label": "OpenTelemetry"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "IETF QUIC"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC Specification"
+      },
+      {
+        "id": "urn:ngm:class:mpi-forum",
+        "label": "MPI Forum"
       }
     ],
     "partOf": [],
@@ -230,6 +344,10 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Computing"
       }
     ]
   },
@@ -277,6 +395,14 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:gpu-architecture",
+        "label": "GPU Architecture"
+      },
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
@@ -291,6 +417,26 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning Training"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:scientific-simulation",
+        "label": "Scientific Simulation"
+      },
+      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
       },
@@ -301,17 +447,23 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cache-coherence",
+        "label": "Cache Coherence"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:synchronisation-primitive",
+        "label": "Synchronisation Primitive"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sequential-computing",
+        "label": "Sequential Computing"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
@@ -319,12 +471,46 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:message-passing-interface",
+        "label": "Message Passing Interface"
+      },
+      {
+        "id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
       }
     ],
     "supports": [
@@ -351,13 +537,19 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -373,12 +565,16 @@
         "label": "Security and Identity"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
       },
       {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
       }
     ]
   },

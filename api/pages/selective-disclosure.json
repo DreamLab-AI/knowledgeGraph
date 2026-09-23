@@ -29,6 +29,10 @@
       {
         "id": "urn:ngm:class:commitment-scheme",
         "label": "Cryptographic Commitment Scheme"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Cryptographic Commitment Scheme"
       }
     ],
     "enables": [
@@ -68,6 +72,10 @@
       {
         "id": "urn:ngm:class:bearer-token",
         "label": "Bearer Token"
+      },
+      {
+        "id": "urn:ngm:class:full-credential-presentation",
+        "label": "Full Credential Presentation"
       }
     ],
     "bridgesTo": [
@@ -116,6 +124,14 @@
       {
         "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
         "label": "W3C Verifiable Credentials Data Model"
+      },
+      {
+        "id": "urn:ngm:class:sd-jwt",
+        "label": "IETF SD-JWT"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralised Identity Foundation"
       },
       {
         "id": "urn:ngm:class:sd-jwt",
@@ -173,7 +189,7 @@
         "label": "Secure Multi-Party Computation"
       },
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       },
       {
@@ -191,12 +207,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       },
       {
         "id": "urn:ngm:class:data-centre",

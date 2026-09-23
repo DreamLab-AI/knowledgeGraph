@@ -20,6 +20,18 @@
       {
         "id": "urn:ngm:class:conduit",
         "label": "Conduit"
+      },
+      {
+        "id": "urn:ngm:class:security-management-system",
+        "label": "Security Management System"
+      },
+      {
+        "id": "urn:ngm:class:security-level",
+        "label": "Security Level"
+      },
+      {
+        "id": "urn:ngm:class:security-zone",
+        "label": "Security Zone"
       }
     ],
     "requires": [
@@ -64,7 +76,16 @@
         "label": "Network Segmentation"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cybersecurity-governance",
+        "label": "Cybersecurity Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-security",
+        "label": "Risk-Based Security"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:nist-sp-800-82",
@@ -83,6 +104,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "IT Security"
       }
     ],
     "uses": [],
@@ -98,12 +123,20 @@
       {
         "id": "urn:ngm:class:operational-technology",
         "label": "Operational Technology"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Industrial Control System"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:iec",
         "label": "IEC"
+      },
+      {
+        "id": "urn:ngm:class:isa",
+        "label": "ISA"
       }
     ],
     "partOf": [
@@ -136,6 +169,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -236,8 +274,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -328,6 +374,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -346,8 +398,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -356,10 +412,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

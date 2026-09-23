@@ -68,7 +68,16 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:videoconferencing",
+        "label": "Videoconferencing"
+      },
+      {
+        "id": "urn:ngm:class:text-based-communication",
+        "label": "Text-Based Communication"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:human-computer-interaction",
@@ -105,6 +114,10 @@
       {
         "id": "urn:ngm:class:distributed-teamwork",
         "label": "Distributed Teamwork"
+      },
+      {
+        "id": "urn:ngm:class:virtual-education",
+        "label": "Virtual Education"
       }
     ],
     "standardizedBy": [],
@@ -131,9 +144,24 @@
       "slug": "dc-communication"
     },
     {
+      "id": "urn:ngm:class:distributed-work",
+      "label": "Distributed Work",
+      "slug": "distributed-work"
+    },
+    {
       "id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration",
       "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -159,16 +187,16 @@
         "label": "Virtual Workspace"
       },
       {
+        "id": "urn:ngm:class:virtual-workspaces",
+        "label": "Virtual Workspaces"
+      },
+      {
         "id": "urn:ngm:class:asynchronous-communication",
         "label": "Asynchronous Communication"
       },
       {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
-      },
-      {
-        "id": "urn:ngm:class:mqtt",
-        "label": "MQTT"
       }
     ],
     "requires": [
@@ -185,6 +213,14 @@
         "label": "Real-Time Protocols"
       },
       {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       },
@@ -199,6 +235,26 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:cross-cultural-teamwork",
+        "label": "Cross-Cultural Teamwork"
+      },
+      {
+        "id": "urn:ngm:class:distributed-knowledge-work",
+        "label": "Distributed Knowledge Work"
+      },
+      {
+        "id": "urn:ngm:class:global-research-collaboration",
+        "label": "Global Research Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:remote-team-productivity",
+        "label": "Remote Team Productivity"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
         "id": "urn:ngm:class:open-source-development",
         "label": "Open Source Development"
       },
@@ -209,10 +265,6 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
-      },
-      {
-        "id": "urn:ngm:class:virtual-team",
-        "label": "Virtual Team"
       }
     ],
     "dependsOn": [
@@ -227,11 +279,47 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
@@ -239,6 +327,14 @@
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
       }
     ],
     "uses": [
@@ -249,6 +345,14 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:xr-meeting-space",
+        "label": "XR Meeting Space"
       },
       {
         "id": "urn:ngm:class:conflict-free-replicated-data-type",
@@ -265,10 +369,6 @@
       {
         "id": "urn:ngm:class:real-time-messaging",
         "label": "Real-Time Messaging"
-      },
-      {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
       }
     ],
     "supports": [
@@ -279,6 +379,40 @@
       {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
@@ -295,12 +429,24 @@
         "label": "Telecollaboration"
       },
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
         "id": "urn:ngm:class:computer-supported-cooperative-work",
         "label": "Computer-Supported Cooperative Work"
       },
       {
         "id": "urn:ngm:class:groupware",
         "label": "Groupware"
+      },
+      {
+        "id": "urn:ngm:class:social-software",
+        "label": "Social Software"
       }
     ]
   },

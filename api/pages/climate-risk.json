@@ -40,6 +40,10 @@
       {
         "id": "urn:ngm:class:disclosure-requirements",
         "label": "Disclosure Requirements"
+      },
+      {
+        "id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
       }
     ],
     "dependsOn": [
@@ -58,6 +62,10 @@
       {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
       }
     ],
     "uses": [],
@@ -120,8 +128,16 @@
         "label": "Risk Assessment"
       },
       {
+        "id": "urn:ngm:class:risk-communication",
+        "label": "Risk Communication"
+      },
+      {
         "id": "urn:ngm:class:risk-mitigation",
         "label": "Risk Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:risk-monitoring",
+        "label": "Risk Monitoring"
       },
       {
         "id": "urn:ngm:class:ai-alignment",
@@ -138,14 +154,6 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
-      },
-      {
-        "id": "urn:ngm:class:ai-risk-management",
-        "label": "AI Risk Management"
       }
     ],
     "requires": [
@@ -240,6 +248,22 @@
       {
         "id": "urn:ngm:class:financial-risk-management",
         "label": "Financial Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -294,6 +318,10 @@
       {
         "id": "urn:ngm:class:incident-response",
         "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       },
       {
         "id": "urn:ngm:class:accountability",

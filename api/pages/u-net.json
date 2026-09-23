@@ -38,6 +38,14 @@
       {
         "id": "urn:ngm:class:batch-normalisation",
         "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "Decoder"
       }
     ],
     "enables": [
@@ -83,6 +91,10 @@
       {
         "id": "urn:ngm:class:robotics-perception",
         "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
       }
     ],
     "uses": [
@@ -251,6 +263,22 @@
       {
         "id": "urn:ngm:class:autonomous-driving-perception",
         "label": "Autonomous Vehicle Perception"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -265,6 +293,10 @@
       {
         "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       },
       {
         "id": "urn:ngm:class:transfer-learning",

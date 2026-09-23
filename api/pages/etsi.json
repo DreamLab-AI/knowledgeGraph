@@ -28,12 +28,24 @@
       {
         "id": "urn:ngm:class:etsi-eni-008",
         "label": "ETSI ENI"
+      },
+      {
+        "id": "urn:ngm:class:etsi-eni-008",
+        "label": "ETSI ENI"
+      },
+      {
+        "id": "urn:ngm:class:etsi-isg",
+        "label": "ETSI ISG"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:technical-committee",
         "label": "Technical Committee"
+      },
+      {
+        "id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Conformance Testing"
       },
       {
         "id": "urn:ngm:class:standards-conformance-testing",
@@ -71,6 +83,10 @@
       {
         "id": "urn:ngm:class:european-cybersecurity-act",
         "label": "European Cybersecurity Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       }
     ],
     "contrastsWith": [],
@@ -86,6 +102,10 @@
       {
         "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Functions Virtualisation"
       }
     ],
     "uses": [],
@@ -105,6 +125,10 @@
       {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Quantum-Safe Cryptography"
       }
     ],
     "standardizedBy": [],
@@ -159,6 +183,10 @@
         "label": "Conformance Test Suite"
       },
       {
+        "id": "urn:ngm:class:technical-working-group",
+        "label": "Technical Working Group"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
@@ -177,10 +205,6 @@
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property Rights Framework"
-      },
-      {
-        "id": "urn:ngm:class:legal-framework",
-        "label": "Legal Framework"
       }
     ],
     "requires": [
@@ -333,6 +357,10 @@
         "label": "Governance"
       },
       {
+        "id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
+      },
+      {
         "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
       }
@@ -363,7 +391,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
@@ -415,6 +443,10 @@
       "label": "ETSI GS MEC 003"
     },
     {
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
+    },
+    {
       "slug": "etsi-domain-governance-economy",
       "label": "ETSI_Domain_Governance___Economy"
     },
@@ -423,8 +455,8 @@
       "label": "ETSI_Domain_Governance___Society"
     },
     {
-      "slug": "etsi-domain-governance-security",
-      "label": "ETSI_Domain_Governance_Security"
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
     },
     {
       "slug": "etsi-domain-human-interface-governance",
@@ -433,10 +465,6 @@
     {
       "slug": "etsi-domain-human-interface-ux",
       "label": "ETSI_Domain_Human_Interface___UX"
-    },
-    {
-      "slug": "etsi-domain-human-interface",
-      "label": "ETSI_Domain_Human_Interface"
     },
     {
       "slug": "etsi-domain-immersive-experiences",

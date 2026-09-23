@@ -8,8 +8,12 @@
   "definition": "Gnosis Safe, later rebranded as Safe, is a smart-contract wallet for Ethereum and compatible networks that requires multiple signatures to authorise transactions. Rather than relying on a single private key, it enforces a configurable threshold, such as three of five owners, before funds move or contract calls execute. It is widely used by decentralised autonomous organisations, projects and individuals to manage treasuries and reduce the risk of a single compromised key.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
+      "id": "urn:ngm:class:network-component",
       "label": "Network Component"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
     }
   ],
   "entityType": "Class",
@@ -55,6 +59,10 @@
       {
         "id": "urn:ngm:class:social-recovery",
         "label": "Social Recovery Wallet"
+      },
+      {
+        "id": "urn:ngm:class:multisignature-wallets",
+        "label": "Multisignature Wallet"
       }
     ],
     "dependsOn": [],
@@ -82,6 +90,14 @@
       {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       }
     ],
     "uses": [
@@ -92,7 +108,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:defi-protocol",
+        "id": "urn:ngm:class:de-fi-protocol",
         "label": "DeFi Protocol"
       },
       {
@@ -115,37 +131,13 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
-      {
-        "id": "urn:ngm:class:archival-node",
-        "label": "Archival Node"
-      },
-      {
-        "id": "urn:ngm:class:bootstrap-node",
-        "label": "Bootstrap Node"
-      },
-      {
-        "id": "urn:ngm:class:full-node",
-        "label": "Full Node"
-      },
-      {
-        "id": "urn:ngm:class:light-node",
-        "label": "Light Node"
-      },
-      {
-        "id": "urn:ngm:class:mempool",
-        "label": "Mempool"
-      },
-      {
-        "id": "urn:ngm:class:validator-node",
-        "label": "Validator Node"
-      },
       {
         "id": "urn:ngm:class:block",
         "label": "Block"
@@ -153,64 +145,96 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:block-propagation",
-        "label": "Block Propagation"
-      },
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Transparent Audit Trails"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:autonomous-governance",
+        "label": "Autonomous Governance"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
+        "id": "urn:ngm:class:distributed-trust",
+        "label": "Distributed Trust"
       }
     ],
-    "relatedTo": [
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
-      },
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "relatedTo": [
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
       }
     ]
   },

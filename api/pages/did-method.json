@@ -31,8 +31,12 @@
         "label": "Verifiable Data Registry"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "enables": [
@@ -62,6 +66,10 @@
       {
         "id": "urn:ngm:class:did-resolution",
         "label": "DID Resolution Protocol"
+      },
+      {
+        "id": "urn:ngm:class:did-resolution",
+        "label": "DID Resolution Protocol"
       }
     ],
     "contrastsWith": [
@@ -76,6 +84,10 @@
       {
         "id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralised Identity Provider"
       }
     ],
     "bridgesTo": [
@@ -130,6 +142,10 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Identity Wallet"
       }
     ]
   },
@@ -250,12 +266,12 @@
         "label": "Authorization"
       },
       {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:digital-presence",
+        "label": "Digital Presence"
       },
       {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       }
     ],
     "dependsOn": [
@@ -314,8 +330,16 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:iot-device-authentication",
+        "label": "IoT Device Authentication"
+      },
+      {
         "id": "urn:ngm:class:web3",
         "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -344,12 +368,12 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-keys",
-        "label": "Cryptographic Keys"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
       },
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
@@ -444,7 +468,7 @@
         "label": "Trust Framework"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "KYC Know Your Customer"
       },
       {

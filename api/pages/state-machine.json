@@ -14,6 +14,22 @@
     {
       "id": "urn:ngm:class:automata-theory",
       "label": "Automata Theory"
+    },
+    {
+      "id": "urn:ngm:class:computational-model",
+      "label": "Computational Model"
+    },
+    {
+      "id": "urn:ngm:class:formal-method",
+      "label": "Formal Method"
+    },
+    {
+      "id": "urn:ngm:class:concurrency-theory",
+      "label": "Concurrency Theory"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
     }
   ],
   "entityType": "Class",
@@ -32,6 +48,34 @@
       {
         "id": "urn:ngm:class:state-transition-function",
         "label": "Transition Function"
+      },
+      {
+        "id": "urn:ngm:class:state-transition-function",
+        "label": "Transition Function"
+      },
+      {
+        "id": "urn:ngm:class:input-alphabet",
+        "label": "Input Alphabet"
+      },
+      {
+        "id": "urn:ngm:class:output-function",
+        "label": "Output Function"
+      },
+      {
+        "id": "urn:ngm:class:start-state",
+        "label": "Start State"
+      },
+      {
+        "id": "urn:ngm:class:accepting-state",
+        "label": "Accepting State"
+      },
+      {
+        "id": "urn:ngm:class:stack",
+        "label": "Stack"
+      },
+      {
+        "id": "urn:ngm:class:tape",
+        "label": "Tape"
       }
     ],
     "requires": [
@@ -50,6 +94,10 @@
       {
         "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:event-model",
+        "label": "Event Model"
       }
     ],
     "enables": [
@@ -72,9 +120,38 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:protocol-verification",
+        "label": "Protocol Verification"
+      },
+      {
+        "id": "urn:ngm:class:parser",
+        "label": "Parser"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:formal-language-theory",
+        "label": "Formal Language Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:state-machine-replication",
@@ -83,9 +160,54 @@
       {
         "id": "urn:ngm:class:turing-machine",
         "label": "Turing Machine"
+      },
+      {
+        "id": "urn:ngm:class:finite-automaton",
+        "label": "Finite Automaton"
+      },
+      {
+        "id": "urn:ngm:class:pushdown-automaton",
+        "label": "Pushdown Automaton"
+      },
+      {
+        "id": "urn:ngm:class:statecharts",
+        "label": "Statecharts"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      },
+      {
+        "id": "urn:ngm:class:xstate",
+        "label": "XState"
+      },
+      {
+        "id": "urn:ngm:class:spring-state-machine",
+        "label": "Spring State Machine"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:dataflow-model",
+        "label": "Dataflow Model"
+      },
+      {
+        "id": "urn:ngm:class:actor-model",
+        "label": "Actor Model"
+      },
+      {
+        "id": "urn:ngm:class:reactive-programming",
+        "label": "Reactive Programming"
+      },
+      {
+        "id": "urn:ngm:class:petri-net",
+        "label": "Petri Net"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:neural-network",
@@ -112,6 +234,14 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:uml",
+        "label": "UML"
+      },
+      {
+        "id": "urn:ngm:class:scxml",
+        "label": "SCXML"
       }
     ],
     "supports": [
@@ -142,12 +272,32 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:state-management",
+        "label": "UI State Management"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:ieee-802-x",
         "label": "IEEE 802-X"
+      },
+      {
+        "id": "urn:ngm:class:omg-uml-2-5-1",
+        "label": "OMG UML 2.5.1"
+      },
+      {
+        "id": "urn:ngm:class:w3c-scxml",
+        "label": "W3C SCXML"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-9562",
+        "label": "IETF RFC 9562"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-10746-rm-odp",
+        "label": "ISO/IEC 10746 RM-ODP"
       }
     ],
     "partOf": [],
@@ -188,14 +338,79 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering (Infrastructure)",
-      "slug": "infra-software-engineering"
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
     },
     {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation",
+      "slug": "simulation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin",
+      "slug": "digital-twin"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -235,51 +450,179 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Partial Failure Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-naming",
+        "label": "Identity and Naming"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "id": "urn:ngm:class:serialisation-format",
+        "label": "Serialisation Format"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:api-gateway",
-        "label": "API Gateway"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:testing-infrastructure",
-        "label": "Testing Infrastructure"
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      },
+      {
+        "id": "urn:ngm:class:elastic-capacity",
+        "label": "Elastic Capacity"
+      },
+      {
+        "id": "urn:ngm:class:geographic-distribution",
+        "label": "Geographic Distribution"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scalability"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:flp-impossibility",
+        "label": "FLP Impossibility"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:lamport-timestamps",
+        "label": "Lamport Timestamps"
+      },
+      {
+        "id": "urn:ngm:class:pacelc",
+        "label": "PACELC"
+      },
+      {
+        "id": "urn:ngm:class:two-generals-problem",
+        "label": "Two Generals Problem"
+      },
+      {
+        "id": "urn:ngm:class:vector-clocks",
+        "label": "Vector Clocks"
+      },
+      {
+        "id": "urn:ngm:class:cache-coherence",
+        "label": "Cache Coherence"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:actor-model",
+        "label": "Actor Model"
+      },
+      {
+        "id": "urn:ngm:class:bulk-synchronous-parallel",
+        "label": "Bulk Synchronous Parallel"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:map-reduce",
+        "label": "MapReduce"
+      },
+      {
+        "id": "urn:ngm:class:mapreduce",
+        "label": "MapReduce"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:pbft",
+        "label": "PBFT"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:embarrassingly-parallel-batch",
+        "label": "Embarrassingly Parallel Batch"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      },
+      {
+        "id": "urn:ngm:class:single-machine-multiprocessing",
+        "label": "Single-Machine Multiprocessing"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:sequential-computing",
+        "label": "Sequential Computing"
+      },
+      {
+        "id": "urn:ngm:class:emulation",
+        "label": "Emulation"
+      },
+      {
+        "id": "urn:ngm:class:physical-prototype",
+        "label": "Physical Prototype"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
@@ -287,23 +630,121 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:apache-flink",
+        "label": "Apache Flink"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:etcd",
+        "label": "etcd"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:ray",
+        "label": "Ray"
       }
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:autonomous-vehicle-testing",
+        "label": "Autonomous Vehicle Testing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      },
+      {
+        "id": "urn:ngm:class:distributed-databases",
+        "label": "Distributed Databases"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:streaming-analytics",
+        "label": "Streaming Analytics"
+      },
+      {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:apache-software-foundation",
+        "label": "Apache Software Foundation"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC Specification"
+      },
+      {
+        "id": "urn:ngm:class:mpi-forum",
+        "label": "MPI Forum"
+      },
+      {
+        "id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "IETF QUIC"
+      },
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
@@ -313,13 +754,23 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -331,20 +782,20 @@
         "label": "AI Research Area"
       },
       {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
       },
       {
-        "id": "urn:ngm:class:distributed-system",
-        "label": "Distributed System"
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
       },
       {
-        "id": "urn:ngm:class:infra-legal-and-regulatory",
-        "label": "Legal and Regulatory"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
       }
     ]
   },

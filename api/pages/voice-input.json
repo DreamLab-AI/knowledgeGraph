@@ -8,7 +8,7 @@
   "definition": "Voice input is an interaction modality in which spoken language is captured, recognised, and interpreted as commands or content, allowing users to control systems and enter data hands-free. It combines microphone capture, speech recognition, and natural-language understanding to map utterances onto actions or text. In spatial computing, voice input is a primary modality for immersive and accessible interfaces where conventional keyboards and pointers are impractical.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:multimodal-interaction",
+      "id": "urn:ngm:class:multimodal-ai-architecture",
       "label": "Multimodal Interaction"
     }
   ],
@@ -67,7 +67,7 @@
         "label": "Speech Recognition"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -84,7 +84,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:multimodal-interaction",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
       },
       {
@@ -109,9 +109,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -127,46 +127,46 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:cognitive-ergonomics",
-        "label": "Cognitive Ergonomics"
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:interaction-design",
-        "label": "Interaction Design"
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
       },
       {
-        "id": "urn:ngm:class:usability-engineering",
-        "label": "Usability Engineering"
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture-of-Experts Architecture"
       },
       {
-        "id": "urn:ngm:class:user-interface-design",
-        "label": "User Interface Design"
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       },
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:user-research",
-        "label": "User Research"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       },
       {
         "id": "urn:ngm:class:computational-infrastructure",
@@ -183,24 +183,20 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
       },
       {
-        "id": "urn:ngm:class:virtual-reality",
-        "label": "Virtual Reality"
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
       },
       {
-        "id": "urn:ngm:class:adaptive-user-interface",
-        "label": "Adaptive User Interface"
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:human-ai-collaboration",
-        "label": "Human-AI Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:user-experience",
-        "label": "User Experience"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       },
       {
         "id": "urn:ngm:class:autonomous-system",
@@ -213,100 +209,62 @@
       {
         "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Automation"
-      }
-    ],
-    "implements": [
+      },
       {
-        "id": "urn:ngm:class:interaction-design",
-        "label": "Interaction Design"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
-      },
-      {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      }
-    ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
-      }
-    ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:universal-design",
-        "label": "Universal Design"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
-      }
-    ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:user-interface",
-        "label": "User Interface"
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
       },
       {
-        "id": "urn:ngm:class:interaction-design",
-        "label": "Interaction Design"
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
       },
       {
-        "id": "urn:ngm:class:affective-computing",
-        "label": "Affective Computing"
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
       },
       {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:user-experience-design",
-        "label": "User Experience Design"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
       }
     ]
   },

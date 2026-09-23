@@ -26,6 +26,10 @@
       {
         "id": "urn:ngm:class:power-efficient-ai",
         "label": "Ultra-Low-Power AI"
+      },
+      {
+        "id": "urn:ngm:class:power-efficient-ai",
+        "label": "Ultra-Low-Power AI"
       }
     ],
     "dependsOn": [],
@@ -182,7 +186,7 @@
         "label": "Compiler Optimization"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {
@@ -250,6 +254,10 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Autonomous Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
       },
       {
         "id": "urn:ngm:class:blockchain",

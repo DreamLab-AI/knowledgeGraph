@@ -28,12 +28,28 @@
       {
         "id": "urn:ngm:class:ucl-gatsby-computational-neuroscience-unit",
         "label": "Gatsby Computational Neuroscience Unit"
+      },
+      {
+        "id": "urn:ngm:class:gatsby-computational-neuroscience-unit",
+        "label": "Gatsby Computational Neuroscience Unit"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "UCL Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "UCL Centre for Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:ucl-quantum-science-and-technology-institute",
+        "label": "UCL Quantum Science and Technology Institute"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -77,6 +93,10 @@
       {
         "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
       }
     ],
     "uses": [
@@ -101,6 +121,10 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ],
     "standardizedBy": [],
@@ -112,6 +136,10 @@
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:russell-group",
+        "label": "Russell Group"
       }
     ],
     "relatedTo": [
@@ -138,6 +166,10 @@
       {
         "id": "urn:ngm:class:uk-research-and-innovation",
         "label": "UK Research and Innovation"
+      },
+      {
+        "id": "urn:ngm:class:ellis",
+        "label": "ELLIS"
       }
     ]
   },
@@ -217,6 +249,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

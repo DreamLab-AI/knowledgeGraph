@@ -64,7 +64,7 @@
         "label": "RDF"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
@@ -144,9 +144,49 @@
       "slug": "sc-standards-and-interop"
     },
     {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards",
+      "slug": "standards"
+    },
+    {
+      "id": "urn:ngm:class:metaverse",
+      "label": "Metaverse",
+      "slug": "metaverse"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:multiverse",
+      "label": "Multiverse",
+      "slug": "multiverse"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:semantic-spatial-web-layer",
+      "label": "Semantic Spatial Web Layer",
+      "slug": "semantic-spatial-web-layer"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -186,6 +226,10 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:implementation-libraries",
+        "label": "Implementation Libraries"
+      },
+      {
         "id": "urn:ngm:class:standards-body",
         "label": "Standards Body"
       },
@@ -202,20 +246,16 @@
         "label": "Conformance Testing"
       },
       {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       },
       {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Protocols"
       },
       {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
+        "id": "urn:ngm:class:3-d-rendering",
+        "label": "3D Rendering"
       }
     ],
     "enables": [
@@ -260,11 +300,35 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards Process"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-distribution-network",
+        "label": "Content Distribution Network"
+      },
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:internet",
+        "label": "Internet"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:gl-tf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -274,6 +338,10 @@
       {
         "id": "urn:ngm:class:usd",
         "label": "USD"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ],
     "contrastsWith": [
@@ -292,6 +360,10 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -316,16 +388,16 @@
         "label": "Security Standard"
       },
       {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
-      },
-      {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       }
     ],
     "uses": [
@@ -338,6 +410,18 @@
         "label": "JSON Serialisation"
       },
       {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
@@ -348,18 +432,6 @@
       {
         "id": "urn:ngm:class:geospatial-technology",
         "label": "Geospatial Technology"
-      },
-      {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:hand-tracking",
-        "label": "Hand Tracking"
-      },
-      {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
       }
     ],
     "supports": [
@@ -370,6 +442,22 @@
       {
         "id": "urn:ngm:class:virtual-production",
         "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -398,18 +486,30 @@
         "label": "ISO"
       },
       {
-        "id": "urn:ngm:class:open-xr",
-        "label": "OpenXR"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       },
       {
-        "id": "urn:ngm:class:web-xr",
-        "label": "WebXR"
+        "id": "urn:ngm:class:standards-development-organisation",
+        "label": "Standards Development Organisation"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:interoperability-framework",
         "label": "Interoperability Framework"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:multiverse",
+        "label": "Multiverse"
+      },
+      {
+        "id": "urn:ngm:class:semantic-spatial-web-layer",
+        "label": "Semantic Spatial Web Layer"
       }
     ],
     "relatedTo": [
@@ -418,7 +518,7 @@
         "label": "OpenUSD"
       },
       {
-        "id": "urn:ngm:class:universal-scene-description",
+        "id": "urn:ngm:class:usd",
         "label": "Scene Description Language"
       },
       {
@@ -440,6 +540,10 @@
       {
         "id": "urn:ngm:class:sc-platform-and-environment",
         "label": "Platform and Environment"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ]
   },

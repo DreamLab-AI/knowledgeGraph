@@ -10,6 +10,14 @@
     {
       "id": "urn:ngm:class:decision-making",
       "label": "Decision Making"
+    },
+    {
+      "id": "urn:ngm:class:behavioural-economics",
+      "label": "Behavioural Economics"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science"
     }
   ],
   "entityType": "Class",
@@ -32,6 +40,18 @@
       {
         "id": "urn:ngm:class:aspiration-level",
         "label": "Aspiration Level"
+      },
+      {
+        "id": "urn:ngm:class:fast-and-frugal-heuristics",
+        "label": "Fast and Frugal Heuristics"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-toolbox",
+        "label": "Adaptive Toolbox"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-constraints",
+        "label": "Cognitive Constraints"
       }
     ],
     "requires": [
@@ -42,6 +62,14 @@
       {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       }
     ],
     "enables": [
@@ -60,6 +88,18 @@
       {
         "id": "urn:ngm:class:llm-alignment",
         "label": "LLM Alignment"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support Systems"
+      },
+      {
+        "id": "urn:ngm:class:nudge-theory",
+        "label": "Nudge Theory"
       }
     ],
     "dependsOn": [
@@ -70,9 +110,34 @@
       {
         "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:satisficing",
+        "label": "Satisficing"
+      },
+      {
+        "id": "urn:ngm:class:fast-and-frugal-heuristics",
+        "label": "Fast and Frugal Heuristics"
+      },
+      {
+        "id": "urn:ngm:class:resource-rational-computation",
+        "label": "Resource-Rational Computation"
+      },
+      {
+        "id": "urn:ngm:class:approximate-inference",
+        "label": "Approximate Inference"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:optimisation",
@@ -85,6 +150,14 @@
       {
         "id": "urn:ngm:class:rational-choice-theory",
         "label": "Rational Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-decision-theory",
+        "label": "Bayesian Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:homo-economicus",
+        "label": "Homo Economicus"
       }
     ],
     "bridgesTo": [
@@ -99,6 +172,18 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:choice-architecture",
+        "label": "Choice Architecture"
       }
     ],
     "uses": [
@@ -113,6 +198,18 @@
       {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
       }
     ],
     "supports": [
@@ -131,9 +228,22 @@
       {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:decision-making",
@@ -168,6 +278,38 @@
       {
         "id": "urn:ngm:class:dual-process-theory",
         "label": "Dual-Process Theory"
+      },
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ]
   },
@@ -181,6 +323,96 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:decision-theory",
+      "label": "Decision Theory",
+      "slug": "decision-theory"
+    },
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics",
+      "slug": "economics"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
+    },
+    {
+      "id": "urn:ngm:class:operations-research",
+      "label": "Operations Research",
+      "slug": "operations-research"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory",
+      "slug": "information-theory"
+    },
+    {
+      "id": "urn:ngm:class:institutional-economics",
+      "label": "Institutional Economics",
+      "slug": "institutional-economics"
+    },
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation",
+      "slug": "optimisation"
+    },
+    {
+      "id": "urn:ngm:class:political-economy",
+      "label": "Political Economy",
+      "slug": "political-economy"
+    },
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory",
+      "slug": "probability-theory"
+    },
+    {
+      "id": "urn:ngm:class:social-science",
+      "label": "Social Science",
+      "slug": "social-science"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-foundations",
+      "label": "Mathematical Foundations",
+      "slug": "mathematical-foundations"
+    },
+    {
+      "id": "urn:ngm:class:measure-theory",
+      "label": "Measure Theory",
+      "slug": "measure-theory"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -206,16 +438,16 @@
         "label": "Value Function"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:loss-aversion",
+        "label": "Loss Aversion"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:nudge-theory",
+        "label": "Nudge Theory"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:present-bias",
+        "label": "Present Bias"
       }
     ],
     "requires": [
@@ -228,31 +460,31 @@
         "label": "Objective Function"
       },
       {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
+        "id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
       },
       {
-        "id": "urn:ngm:class:uncertainty-quantification",
-        "label": "Uncertainty Quantification"
+        "id": "urn:ngm:class:experimental-economics",
+        "label": "Experimental Economics"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
-      },
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
@@ -262,24 +494,28 @@
         "label": "Policy Optimisation"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:choice-architecture",
+        "label": "Choice Architecture"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
       }
     ],
     "dependsOn": [
@@ -296,14 +532,92 @@
         "label": "Optimisation"
       },
       {
+        "id": "urn:ngm:class:linguistics",
+        "label": "Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      },
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      },
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:behavioural-economics",
         "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:legal-reasoning",
+        "label": "Legal Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:pure-computer-science",
+        "label": "Pure Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:pure-engineering",
+        "label": "Pure Engineering"
+      },
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
       }
     ],
     "bridgesTo": [
@@ -314,6 +628,30 @@
       {
         "id": "urn:ngm:class:supply-chain-management",
         "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-recommendation",
+        "label": "Algorithmic Recommendation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
       }
     ],
     "uses": [
@@ -322,7 +660,11 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:heuristics",
+        "label": "Heuristics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -332,6 +674,18 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:randomised-controlled-trial",
+        "label": "Randomised Controlled Trial"
       }
     ],
     "supports": [
@@ -342,6 +696,78 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:savage-expected-utility",
+        "label": "Savage Expected Utility"
+      },
+      {
+        "id": "urn:ngm:class:von-neumann-morgenstern-axioms",
+        "label": "Von Neumann-Morgenstern Axioms"
+      },
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      },
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      },
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      },
+      {
+        "id": "urn:ngm:class:hm-treasury",
+        "label": "UK HM Treasury"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decision-science",
+        "label": "Decision Science"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       }
     ],
     "relatedTo": [
@@ -354,24 +780,28 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:operations-research",
-        "label": "Operations Research"
-      },
-      {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioral Analytics"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:development-economics",
+        "label": "Development Economics"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
       }
     ]
   },

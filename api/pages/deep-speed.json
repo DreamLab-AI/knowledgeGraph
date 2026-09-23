@@ -10,6 +10,22 @@
     {
       "id": "urn:ngm:class:distributed-training",
       "label": "Distributed Training"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ai-training",
+      "label": "Distributed AI Training"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:ngm:class:high-performance-computing",
+      "label": "High Performance Computing"
     }
   ],
   "entityType": "Class",
@@ -28,6 +44,22 @@
       {
         "id": "urn:ngm:class:sparse-attention",
         "label": "Sparse Attention"
+      },
+      {
+        "id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed-Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      },
+      {
+        "id": "urn:ngm:class:zero-optimizer",
+        "label": "ZeRO Optimizer"
       }
     ],
     "requires": [
@@ -38,6 +70,14 @@
       {
         "id": "urn:ngm:class:gpu-cluster",
         "label": "GPU Cluster"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "NVIDIA CUDA"
       }
     ],
     "enables": [
@@ -52,6 +92,26 @@
       {
         "id": "urn:ngm:class:inference",
         "label": "Inference at Scale"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:distributed-inference",
+        "label": "Distributed Inference"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
       }
     ],
     "dependsOn": [
@@ -62,13 +122,54 @@
       {
         "id": "urn:ngm:class:message-passing-interface",
         "label": "Message Passing Interface"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed-Precision Training"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:megatron-lm",
         "label": "Megatron-LM"
+      },
+      {
+        "id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "id": "urn:ngm:class:fully-sharded-data-parallel",
+        "label": "Fully Sharded Data Parallel"
+      },
+      {
+        "id": "urn:ngm:class:horovod",
+        "label": "Horovod"
       }
     ],
     "bridgesTo": [
@@ -97,10 +198,52 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "NVIDIA CUDA"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:message-passing-interface",
+        "label": "Message Passing Interface"
+      },
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "id": "urn:ngm:class:azure-machine-learning",
+        "label": "Azure Machine Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:microsoft",
+        "label": "Microsoft Research"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -114,57 +257,145 @@
       {
         "id": "urn:ngm:class:model-quantization",
         "label": "Model Quantization"
+      },
+      {
+        "id": "urn:ngm:class:distributed-inference",
+        "label": "Distributed Inference"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Artificial Intelligence)",
-      "slug": "cat-ai-infrastructure"
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure",
+      "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure",
+      "slug": "computing-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:all-reduce-algorithm",
+        "label": "All-Reduce Algorithm"
+      },
+      {
         "id": "urn:ngm:class:data-parallelism",
         "label": "Data Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:gradient-synchronisation",
+        "label": "Gradient Synchronisation"
       },
       {
         "id": "urn:ngm:class:model-parallelism",
         "label": "Model Parallelism"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:zero-redundancy-optimiser",
+        "label": "ZeRO Redundancy Optimiser"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:all-reduce",
+        "label": "All-Reduce"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:gradient-compression",
+        "label": "Gradient Compression"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
-      },
-      {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:sequence-parallelism",
+        "label": "Sequence Parallelism"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      },
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
@@ -174,16 +405,24 @@
         "label": "Gradient Synchronisation"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:high-speed-interconnect",
+        "label": "High-Speed Interconnect"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
     "enables": [
@@ -192,60 +431,168 @@
         "label": "Foundation Model"
       },
       {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
         "id": "urn:ngm:class:model-scaling",
         "label": "Model Scaling"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:scientific-machine-learning",
+        "label": "Scientific Machine Learning"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
       {
         "id": "urn:ngm:class:collective-communication",
         "label": "Collective Communication"
       },
       {
-        "id": "urn:ngm:class:distributed-computing",
-        "label": "Distributed Computing"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
         "id": "urn:ngm:class:mixed-precision-training",
         "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:infiniband",
+        "label": "InfiniBand"
+      },
+      {
+        "id": "urn:ngm:class:megatron-lm",
+        "label": "Megatron-LM"
+      },
+      {
+        "id": "urn:ngm:class:nccl",
+        "label": "NCCL"
+      },
+      {
+        "id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
       }
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:all-reduce-algorithm",
+        "label": "All-Reduce Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
         "id": "urn:ngm:class:gradient-checkpointing",
         "label": "Gradient Checkpointing"
+      },
+      {
+        "id": "urn:ngm:class:ring-allreduce",
+        "label": "Ring-Allreduce"
+      },
+      {
+        "id": "urn:ngm:class:sequence-parallelism",
+        "label": "Sequence Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:di-lo-co",
+        "label": "DiLoCo"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:actor-model",
+        "label": "Actor Model"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:single-device-training",
+        "label": "Single-Device Training"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-training",
+        "label": "Edge AI Training"
+      },
+      {
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:embarrassingly-parallel-batch",
+        "label": "Embarrassingly Parallel Batch"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      },
+      {
+        "id": "urn:ngm:class:single-machine-multiprocessing",
+        "label": "Single-Machine Multiprocessing"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "uses": [
@@ -254,8 +601,32 @@
         "label": "JAX"
       },
       {
+        "id": "urn:ngm:class:megatron-lm",
+        "label": "Megatron-LM"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-nccl",
+        "label": "NVIDIA NCCL"
+      },
+      {
         "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:torchtitan",
+        "label": "TorchTitan"
+      },
+      {
+        "id": "urn:ngm:class:activation-recomputation",
+        "label": "Activation Recomputation"
+      },
+      {
+        "id": "urn:ngm:class:fsdp",
+        "label": "FSDP"
+      },
+      {
+        "id": "urn:ngm:class:ring-allreduce",
+        "label": "Ring-AllReduce"
       }
     ],
     "supports": [
@@ -266,6 +637,70 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:mlcommons",
+        "label": "MLCommons"
+      },
+      {
+        "id": "urn:ngm:class:mpi-standard",
+        "label": "MPI Standard"
+      },
+      {
+        "id": "urn:ngm:class:mlperf-training-benchmark",
+        "label": "MLPerf Training Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:mlsys-conference",
+        "label": "MLSys Conference"
+      },
+      {
+        "id": "urn:ngm:class:neurips-systems-track",
+        "label": "NeurIPS Systems Track"
+      },
+      {
+        "id": "urn:ngm:class:apache-software-foundation",
+        "label": "Apache Software Foundation"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC Specification"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [
@@ -274,8 +709,32 @@
         "label": "Checkpoint Recovery"
       },
       {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:hpc-cluster",
+        "label": "HPC Cluster"
+      },
+      {
         "id": "urn:ngm:class:megatron-lm",
         "label": "Megatron-LM"
+      },
+      {
+        "id": "urn:ngm:class:mlperf",
+        "label": "MLPerf"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:zero-redundancy-optimiser",
+        "label": "ZeRO Redundancy Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:di-lo-co",
+        "label": "DiLoCo"
       }
     ]
   },

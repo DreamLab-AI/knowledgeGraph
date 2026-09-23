@@ -21,6 +21,18 @@
       {
         "id": "urn:ngm:class:process",
         "label": "Maintenance Process"
+      },
+      {
+        "id": "urn:ngm:class:term-governance",
+        "label": "Term Governance"
+      },
+      {
+        "id": "urn:ngm:class:domain-expertise",
+        "label": "Domain Expertise"
+      },
+      {
+        "id": "urn:ngm:class:process",
+        "label": "Maintenance Process"
       }
     ],
     "enables": [
@@ -39,6 +51,14 @@
       {
         "id": "urn:ngm:class:faceted-classification",
         "label": "Faceted Classification"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Accurate Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:data-standardization",
+        "label": "Data Standardization"
       }
     ],
     "dependsOn": [
@@ -154,6 +174,14 @@
         "label": "Metadata Standard"
       },
       {
+        "id": "urn:ngm:class:navigation-schema",
+        "label": "Navigation Schema"
+      },
+      {
+        "id": "urn:ngm:class:search-system",
+        "label": "Search System"
+      },
+      {
         "id": "urn:ngm:class:taxonomy",
         "label": "Taxonomy"
       },
@@ -172,14 +200,6 @@
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
-      },
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
-      },
-      {
-        "id": "urn:ngm:class:model-serving",
-        "label": "Model Serving"
       }
     ],
     "requires": [
@@ -418,6 +438,10 @@
         "label": "Human Computer Interaction"
       },
       {
+        "id": "urn:ngm:class:library-science",
+        "label": "Library Science"
+      },
+      {
         "id": "urn:ngm:class:knowledge-organization",
         "label": "Knowledge Organization"
       },
@@ -436,10 +460,6 @@
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
       }
     ]
   },

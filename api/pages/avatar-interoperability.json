@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:appearance-translation",
         "label": "Appearance Translation"
+      },
+      {
+        "id": "urn:ngm:class:behavior-mapping",
+        "label": "Behavior Mapping"
       }
     ],
     "requires": [
@@ -38,18 +42,56 @@
       {
         "id": "urn:ngm:class:avatar-standard",
         "label": "Avatar Standard"
+      },
+      {
+        "id": "urn:ngm:class:identity-protocol",
+        "label": "Identity Protocol"
+      },
+      {
+        "id": "urn:ngm:class:platform-api",
+        "label": "Platform API"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:universal-avatar",
         "label": "Universal Avatar"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-presence",
+        "label": "Cross-Platform Presence"
+      },
+      {
+        "id": "urn:ngm:class:persistent-identity",
+        "label": "Persistent Identity"
+      },
+      {
+        "id": "urn:ngm:class:seamless-migration",
+        "label": "Seamless Migration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hanim-standard",
+        "label": "HAnim Standard"
+      },
+      {
+        "id": "urn:ngm:class:vrm-format",
+        "label": "VRM Format"
+      },
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -66,12 +108,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -180,7 +222,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

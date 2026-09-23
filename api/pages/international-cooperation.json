@@ -227,6 +227,10 @@
         "label": "Internet Protocol"
       },
       {
+        "id": "urn:ngm:class:institutional-capacity",
+        "label": "Institutional Capacity"
+      },
+      {
         "id": "urn:ngm:class:rule-of-law",
         "label": "Rule of Law"
       }
@@ -249,6 +253,10 @@
       {
         "id": "urn:ngm:class:deregulation",
         "label": "Deregulation"
+      },
+      {
+        "id": "urn:ngm:class:techno-solutionism",
+        "label": "Techno-Solutionism"
       }
     ],
     "bridgesTo": [
@@ -271,6 +279,18 @@
       {
         "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -323,8 +343,16 @@
         "label": "Data Protection"
       },
       {
+        "id": "urn:ngm:class:digital-policy",
+        "label": "Digital Policy"
+      },
+      {
         "id": "urn:ngm:class:e-government",
         "label": "E-Government"
+      },
+      {
+        "id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
       },
       {
         "id": "urn:ngm:class:net-neutrality",
@@ -337,14 +365,6 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-framework",
-        "label": "AI Governance Framework"
-      },
-      {
-        "id": "urn:ngm:class:ai-transparency-framework",
-        "label": "Ai Transparency Framework"
       }
     ]
   },

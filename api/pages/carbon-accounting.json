@@ -72,6 +72,10 @@
       {
         "id": "urn:ngm:class:esg-reporting",
         "label": "ESG Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:climate-action-planning",
+        "label": "Climate Action Planning"
       }
     ],
     "dependsOn": [],
@@ -158,6 +162,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -368,16 +377,16 @@
         "label": "Digital Twin"
       },
       {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
         "id": "urn:ngm:class:esg",
         "label": "ESG"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-and-ethics",
-        "label": "AI Governance and Ethics"
       }
     ],
     "uses": [

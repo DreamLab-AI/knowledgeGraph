@@ -8,8 +8,28 @@
   "definition": "Carbon Credit Tracking is the application of Blockchain and distributed ledger technology to record, verify, transfer, and permanently retire carbon emission reduction credits across their full lifecycle \u2014 from project origination through third-party verification to final environmental claim ...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
+      "id": "urn:ngm:class:network-component",
       "label": "Network Component"
+    },
+    {
+      "id": "urn:ngm:class:real-world-asset-tokenisation",
+      "label": "Real World Asset Tokenisation"
+    },
+    {
+      "id": "urn:ngm:class:environmental-finance",
+      "label": "Environmental Finance"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-application",
+      "label": "Distributed Ledger Application"
+    },
+    {
+      "id": "urn:ngm:class:carbon-markets",
+      "label": "Carbon Markets"
+    },
+    {
+      "id": "urn:ngm:class:green-finance",
+      "label": "Green Finance"
     }
   ],
   "entityType": "Class",
@@ -20,6 +40,30 @@
       {
         "id": "urn:ngm:class:carbon-credit-token",
         "label": "Carbon Credit Token"
+      },
+      {
+        "id": "urn:ngm:class:mrv-oracle",
+        "label": "MRV Oracle"
+      },
+      {
+        "id": "urn:ngm:class:retirement-smart-contract",
+        "label": "Retirement Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:carbon-registry-bridge",
+        "label": "Carbon Registry Bridge"
+      },
+      {
+        "id": "urn:ngm:class:credit-issuance-engine",
+        "label": "Credit Issuance Engine"
+      },
+      {
+        "id": "urn:ngm:class:permanence-buffer-pool",
+        "label": "Permanence Buffer Pool"
+      },
+      {
+        "id": "urn:ngm:class:corresponding-adjustment-record",
+        "label": "Corresponding Adjustment Record"
       }
     ],
     "requires": [
@@ -46,6 +90,14 @@
       {
         "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:verified-emissions-data",
+        "label": "Verified Emissions Data"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Immutable Audit Trail"
       }
     ],
     "enables": [
@@ -60,9 +112,62 @@
       {
         "id": "urn:ngm:class:voluntary-carbon-market",
         "label": "Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Markets"
+      },
+      {
+        "id": "urn:ngm:class:article-6-compliance",
+        "label": "Article 6 Compliance"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Corporate Carbon Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:fractional-carbon-credit-ownership",
+        "label": "Fractional Carbon Credit Ownership"
+      },
+      {
+        "id": "urn:ngm:class:automated-carbon-accounting",
+        "label": "Automated Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:real-time-carbon-offsetting",
+        "label": "Real-Time Carbon Offsetting"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:oracle-networks",
+        "label": "Oracle Networks"
+      },
+      {
+        "id": "urn:ngm:class:satellite-remote-sensing",
+        "label": "Satellite Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:carbon-registries",
+        "label": "Carbon Registries"
+      },
+      {
+        "id": "urn:ngm:class:mrv",
+        "label": "MRV"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:icvcm-core-carbon-principles",
@@ -75,9 +180,42 @@
       {
         "id": "urn:ngm:class:verra-vcs-methodology",
         "label": "Verra VCS Methodology"
+      },
+      {
+        "id": "urn:ngm:class:gold-standard-certification",
+        "label": "Gold Standard Certification"
+      },
+      {
+        "id": "urn:ngm:class:corsia-aviation-offsets",
+        "label": "CORSIA Aviation Offsets"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy-green-finance",
+        "label": "EU Taxonomy Green Finance"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-carbon-registry",
+        "label": "Traditional Carbon Registry"
+      },
+      {
+        "id": "urn:ngm:class:centralised-carbon-exchange",
+        "label": "Centralised Carbon Exchange"
+      },
+      {
+        "id": "urn:ngm:class:offset-broker",
+        "label": "Offset Broker"
+      },
+      {
+        "id": "urn:ngm:class:redd-paper-certificates",
+        "label": "REDD+ Paper Certificates"
+      },
+      {
+        "id": "urn:ngm:class:compliance-cap-and-trade-registry",
+        "label": "Compliance Cap-and-Trade Registry"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:carbon-markets",
@@ -90,7 +228,7 @@
         "label": "Chainlink Oracles"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -98,7 +236,7 @@
         "label": "ERC-20 Tokens"
       },
       {
-        "id": "urn:ngm:class:erc-721",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721 NFTs"
       },
       {
@@ -112,6 +250,14 @@
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721 NFTs"
+      },
+      {
+        "id": "urn:ngm:class:polygon",
+        "label": "Polygon Network"
       }
     ],
     "supports": [
@@ -134,6 +280,14 @@
       {
         "id": "urn:ngm:class:sustainability",
         "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:corporate-climate-commitments",
+        "label": "Corporate Climate Commitments"
+      },
+      {
+        "id": "urn:ngm:class:biodiversity-credits",
+        "label": "Biodiversity Credits"
       }
     ],
     "standardizedBy": [
@@ -156,6 +310,10 @@
       {
         "id": "urn:ngm:class:verra-vcs-standard",
         "label": "Verra VCS Standard"
+      },
+      {
+        "id": "urn:ngm:class:eu-corporate-sustainability-reporting-directive",
+        "label": "EU Corporate Sustainability Reporting Directive"
       }
     ],
     "partOf": [],
@@ -195,107 +353,620 @@
       {
         "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFTs"
+      },
+      {
+        "id": "urn:ngm:class:environmental-finance",
+        "label": "Environmental Finance"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Markets"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:environmental-asset-market",
+      "label": "Environmental Asset Market",
+      "slug": "environmental-asset-market"
+    },
+    {
+      "id": "urn:ngm:class:sustainable-finance",
+      "label": "Sustainable Finance",
+      "slug": "sustainable-finance"
+    },
+    {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:digital-asset-market",
+      "label": "Digital Asset Market",
+      "slug": "digital-asset-market"
+    },
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation",
+      "slug": "financial-regulation"
+    },
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety",
+      "slug": "sc-governance-and-safety"
+    },
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:archival-node",
-        "label": "Archival Node"
+        "id": "urn:ngm:class:redemption-mechanism",
+        "label": "Redemption Mechanism"
       },
       {
-        "id": "urn:ngm:class:bootstrap-node",
-        "label": "Bootstrap Node"
+        "id": "urn:ngm:class:token-issuance",
+        "label": "Token Issuance"
       },
       {
-        "id": "urn:ngm:class:full-node",
-        "label": "Full Node"
+        "id": "urn:ngm:class:transfer-restriction-mechanism",
+        "label": "Transfer Restriction Mechanism"
       },
       {
-        "id": "urn:ngm:class:light-node",
-        "label": "Light Node"
+        "id": "urn:ngm:class:carbon-price-discovery",
+        "label": "Carbon Price Discovery"
       },
       {
-        "id": "urn:ngm:class:mempool",
-        "label": "Mempool"
+        "id": "urn:ngm:class:compliance-carbon-market",
+        "label": "Compliance Carbon Market"
       },
       {
-        "id": "urn:ngm:class:validator-node",
-        "label": "Validator Node"
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
       },
       {
-        "id": "urn:ngm:class:block",
-        "label": "Block"
+        "id": "urn:ngm:class:blended-finance",
+        "label": "Blended Finance"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:special-purpose-vehicle",
+        "label": "Special Purpose Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:additionality-assessment",
+        "label": "Additionality Assessment"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:third-party-verification",
+        "label": "Third-Party Verification"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "Green Taxonomy"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:block-propagation",
-        "label": "Block Propagation"
-      },
-      {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-collateral",
+        "label": "On-Chain Collateral"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offset-trading",
+        "label": "Carbon Offset Trading"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "UN Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:custodial-settlement",
+        "label": "Custodial Settlement"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      },
+      {
+        "id": "urn:ngm:class:eu-sustainable-finance-disclosure-regulation",
+        "label": "EU Sustainable Finance Disclosure Regulation"
+      },
+      {
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:channel-isolation-pattern",
+        "label": "Channel Isolation Pattern"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:conventional-finance",
+        "label": "Conventional Finance"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralized Database"
+      },
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:environmental-monitoring",
+        "label": "IoT Environmental Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-tokenisation",
+        "label": "Blockchain Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-token-standard",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      },
+      {
+        "id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      },
+      {
+        "id": "urn:ngm:class:emissions-allowance",
+        "label": "Emissions Allowance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:retail-cbdc",
+        "label": "Retail CBDC"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bis-innovation-hub",
+        "label": "BIS Innovation Hub"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "id": "urn:ngm:class:verified-carbon-standard",
+        "label": "Verified Carbon Standard"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:icma-green-bond-principles",
+        "label": "ICMA Green Bond Principles"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-ecosystem",
+        "label": "Digital Asset Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Global Financial System"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
       },
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
-      }
-    ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
       },
       {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:tokenised-fund",
+        "label": "Tokenised Fund"
+      },
+      {
+        "id": "urn:ngm:class:carbon-tax",
+        "label": "Carbon Tax"
+      },
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
       }
     ]
   },

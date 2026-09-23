@@ -113,6 +113,11 @@
       "slug": "infra-legal-and-regulatory"
     },
     {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
@@ -120,6 +125,10 @@
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:enforcement",
+        "label": "Enforcement"
+      },
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
@@ -147,10 +156,6 @@
       {
         "id": "urn:ngm:class:data-protection-regulation",
         "label": "Data Protection Regulation"
-      },
-      {
-        "id": "urn:ngm:class:gdpr-compliance",
-        "label": "GDPR Compliance"
       }
     ],
     "requires": [
@@ -197,6 +202,10 @@
         "label": "Risk Management"
       },
       {
+        "id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
+      },
+      {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
@@ -211,10 +220,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
       }
     ],
     "implements": [

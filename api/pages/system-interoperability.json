@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
+    },
+    {
+      "id": "urn:ngm:class:system-capability",
+      "label": "System Capability"
     }
   ],
   "entityType": "Class",
@@ -56,6 +60,10 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-connectivity",
+        "label": "Enterprise Connectivity"
       }
     ],
     "dependsOn": [],
@@ -67,6 +75,14 @@
       {
         "id": "urn:ngm:class:restful-api",
         "label": "RESTful API"
+      },
+      {
+        "id": "urn:ngm:class:standard-protocols",
+        "label": "Standard Protocols"
+      },
+      {
+        "id": "urn:ngm:class:standardized-formats",
+        "label": "Common Data Formats"
       }
     ],
     "contrastsWith": [
@@ -135,12 +151,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -241,7 +257,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

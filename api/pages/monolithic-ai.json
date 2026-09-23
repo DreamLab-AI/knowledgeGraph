@@ -68,6 +68,10 @@
       {
         "id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservice"
       }
     ],
     "bridgesTo": [
@@ -97,6 +101,14 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ]
   },
@@ -178,6 +190,24 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

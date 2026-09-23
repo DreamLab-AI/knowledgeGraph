@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:remediation-process",
+        "label": "Remediation Process"
       }
     ],
     "requires": [
@@ -42,15 +46,48 @@
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:user-agreement",
+        "label": "User Agreement"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanisms"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:risk-mitigation",
         "label": "Risk Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:platform-safety",
+        "label": "Platform Safety"
+      },
+      {
+        "id": "urn:ngm:class:policy-adherence",
+        "label": "Policy Adherence"
+      },
+      {
+        "id": "urn:ngm:class:user-accountability",
+        "label": "User Accountability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:behavior-analytics",
+        "label": "Behavior Analytics"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -61,6 +98,10 @@
       {
         "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:platform-management",
+        "label": "Platform Management"
       }
     ],
     "relatedTo": []
@@ -141,6 +182,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

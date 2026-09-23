@@ -36,7 +36,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -50,50 +55,87 @@
       "slug": "ai-application"
     },
     {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:safety-critical-systems",
+      "label": "Safety-Critical Systems",
+      "slug": "safety-critical-systems"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:autonomous-driving-perception",
+        "label": "Autonomous Driving Perception"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-prediction",
+        "label": "Behaviour Prediction"
+      },
+      {
+        "id": "urn:ngm:class:hd-maps",
+        "label": "HD Maps"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:vehicle-control",
+        "label": "Vehicle Control"
+      },
+      {
         "id": "urn:ngm:class:autonomous-driving",
         "label": "Autonomous Driving"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
-      },
-      {
-        "id": "urn:ngm:class:fraud-detection",
-        "label": "Fraud Detection"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:healthcare-ai",
-        "label": "Healthcare AI"
-      },
-      {
-        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
-        "label": "Multimodal AI"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:autonomous-driving-perception",
         "label": "Autonomous Driving Perception"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:gnss",
+        "label": "GNSS"
       },
       {
         "id": "urn:ngm:class:hd-maps",
@@ -110,21 +152,17 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
-      },
-      {
-        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
-        "label": "Simultaneous Localisation and Mapping"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-freight",
+        "label": "Autonomous Freight"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-shuttle",
+        "label": "Autonomous Shuttle"
+      },
       {
         "id": "urn:ngm:class:last-mile-delivery",
         "label": "Last-Mile Delivery"
@@ -138,24 +176,16 @@
         "label": "Smart City Infrastructure"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
-      },
-      {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
-      },
-      {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
       }
     ],
     "dependsOn": [
@@ -172,8 +202,42 @@
         "label": "GNSS"
       },
       {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:hd-maps",
+        "label": "HD Maps"
+      },
+      {
         "id": "urn:ngm:class:v2x-communication",
         "label": "V2X Communication"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:end-to-end-driving",
+        "label": "End-to-End Driving"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-prediction",
+        "label": "Occupancy Prediction"
+      },
+      {
+        "id": "urn:ngm:class:sae-j-3016",
+        "label": "SAE J3016"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       }
     ],
     "contrastsWith": [
@@ -182,8 +246,32 @@
         "label": "Advanced Driver Assistance Systems"
       },
       {
+        "id": "urn:ngm:class:manual-driving",
+        "label": "Manual Driving"
+      },
+      {
         "id": "urn:ngm:class:teleoperation",
         "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
       }
     ],
     "bridgesTo": [
@@ -202,9 +290,29 @@
       {
         "id": "urn:ngm:class:smart-city-infrastructure",
         "label": "Smart City Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
       {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
@@ -232,10 +340,40 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Networks"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:zero-emission-vehicles",
+        "label": "Zero Emission Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
       }
     ],
     "standardizedBy": [
@@ -244,8 +382,32 @@
         "label": "ISO 26262"
       },
       {
+        "id": "urn:ngm:class:iso-sae-pas-21448",
+        "label": "ISO/SAE PAS 21448"
+      },
+      {
         "id": "urn:ngm:class:sae-j-3016",
         "label": "SAE J3016"
+      },
+      {
+        "id": "urn:ngm:class:un-ece-wp-29",
+        "label": "UN ECE WP.29"
+      },
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
@@ -256,6 +418,14 @@
       {
         "id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:safety-critical-systems",

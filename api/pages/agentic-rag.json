@@ -14,6 +14,14 @@
     {
       "id": "urn:ngm:class:retrieval-augmented-generation",
       "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "id": "urn:ngm:class:agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",
@@ -40,6 +48,14 @@
       {
         "id": "urn:ngm:class:corrective-rag",
         "label": "Corrective RAG"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:evidence-accumulator",
+        "label": "Evidence Accumulator"
       }
     ],
     "requires": [
@@ -62,6 +78,10 @@
       {
         "id": "urn:ngm:class:embedding-model",
         "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:chunking",
+        "label": "Document Chunking"
       }
     ],
     "enables": [
@@ -84,6 +104,14 @@
       {
         "id": "urn:ngm:class:source-attribution",
         "label": "Source Attribution"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
       }
     ],
     "dependsOn": [
@@ -96,11 +124,48 @@
         "label": "RAG Pipeline"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:query-rewriting",
+        "label": "Query Rewriting"
+      },
+      {
+        "id": "urn:ngm:class:reranking",
+        "label": "Reranking"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-retrieval",
+        "label": "Hybrid Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-rag",
+        "label": "Adaptive RAG"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:rag-pipeline",
@@ -109,6 +174,10 @@
       {
         "id": "urn:ngm:class:fine-tuning",
         "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:parametric-knowledge",
+        "label": "Parametric Knowledge"
       }
     ],
     "bridgesTo": [],
@@ -136,10 +205,64 @@
       {
         "id": "urn:ngm:class:hybrid-retrieval",
         "label": "Hybrid Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
+      },
+      {
+        "id": "urn:ngm:class:chunking",
+        "label": "Document Chunking"
+      },
+      {
+        "id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "id": "urn:ngm:class:context-window-management",
+        "label": "Context Window Management"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:source-attribution",
+        "label": "Source Attribution"
+      },
+      {
+        "id": "urn:ngm:class:hallucination-reduction",
+        "label": "Hallucination Mitigation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -173,6 +296,26 @@
       {
         "id": "urn:ngm:class:agentic-workflow",
         "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:streaming-rag",
+        "label": "Streaming RAG"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
       }
     ]
   },
@@ -183,19 +326,24 @@
       "slug": "ai-technique"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing",
       "slug": "natural-language-processing"
     },
     {
+      "id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation",
+      "slug": "workflow-automation"
+    },
+    {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -213,54 +361,58 @@
         "label": "Relevance Ranking"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:context-window-management",
+        "label": "Context Window Management"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
+        "id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan and Execute Pattern"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:reflection-pattern",
+        "label": "Reflection Pattern"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:tokenization",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:chunking",
-        "label": "Document Chunking"
+        "id": "urn:ngm:class:text-representation",
+        "label": "Text Representation"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour Search"
       },
       {
-        "id": "urn:ngm:class:language-model",
-        "label": "Language Model"
+        "id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
       }
     ],
     "enables": [
@@ -281,20 +433,20 @@
         "label": "Hallucination Mitigation"
       },
       {
-        "id": "urn:ngm:class:semantic-search",
-        "label": "Semantic Search"
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:information-extraction",
-        "label": "Information Extraction"
+        "id": "urn:ngm:class:ai-research-assistant",
+        "label": "AI Research Assistant"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       },
       {
-        "id": "urn:ngm:class:named-entity-recognition",
-        "label": "Named Entity Recognition"
+        "id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
       }
     ],
     "dependsOn": [
@@ -307,18 +459,64 @@
         "label": "Evaluation Metrics"
       },
       {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "LLM Inference"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:ngm:class:reflection-pattern",
+        "label": "Reflection Pattern"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
         "id": "urn:ngm:class:database-query",
         "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:single-turn-inference",
+        "label": "Single-Turn Inference"
+      },
+      {
+        "id": "urn:ngm:class:traditional-workflow-orchestration",
+        "label": "Traditional Workflow Orchestration"
       },
       {
         "id": "urn:ngm:class:rule-based-systems",
@@ -327,6 +525,10 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
       }
     ],
     "bridgesTo": [
@@ -347,12 +549,20 @@
         "label": "Knowledge Management"
       },
       {
-        "id": "urn:ngm:class:knowledge-graphs",
-        "label": "Knowledge Graphs"
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
-        "label": "Multimodal AI"
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -385,8 +595,42 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bpmn",
+        "label": "BPMN"
+      },
+      {
+        "id": "urn:ngm:class:dmn",
+        "label": "DMN"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "relatedTo": [
@@ -395,7 +639,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -419,8 +663,8 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:prompt-engineering",
-        "label": "Prompt Engineering"
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
       }
     ]
   },

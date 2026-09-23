@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
+    },
+    {
+      "id": "urn:ngm:class:design-thinking",
+      "label": "Design Thinking"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "id": "urn:ngm:class:systems-thinking",
+      "label": "Systems Thinking"
+    },
+    {
+      "id": "urn:ngm:class:engineering-design",
+      "label": "Engineering Design"
+    },
+    {
+      "id": "urn:ngm:class:creative-practice",
+      "label": "Creative Practice"
     }
   ],
   "entityType": "Class",
@@ -52,6 +72,18 @@
       {
         "id": "urn:ngm:class:user-research",
         "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:design-tokens",
+        "label": "Design Tokens"
+      },
+      {
+        "id": "urn:ngm:class:service-blueprint",
+        "label": "Service Blueprint"
+      },
+      {
+        "id": "urn:ngm:class:designops",
+        "label": "DesignOps"
       }
     ],
     "requires": [
@@ -70,6 +102,22 @@
       {
         "id": "urn:ngm:class:user-research",
         "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:prototyping-tools",
+        "label": "Prototyping Tools"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-constraints",
+        "label": "Manufacturing Constraints"
+      },
+      {
+        "id": "urn:ngm:class:brand-guidelines",
+        "label": "Brand Guidelines"
+      },
+      {
+        "id": "urn:ngm:class:competitive-analysis",
+        "label": "Competitive Analysis"
       }
     ],
     "enables": [
@@ -88,9 +136,58 @@
       {
         "id": "urn:ngm:class:digital-transformation",
         "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:product-development",
+        "label": "Product Development"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-design",
+        "label": "Sustainable Design"
+      },
+      {
+        "id": "urn:ngm:class:product-market-fit",
+        "label": "Product-Market Fit"
+      },
+      {
+        "id": "urn:ngm:class:customer-satisfaction",
+        "label": "Customer Satisfaction"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "id": "urn:ngm:class:visual-design",
+        "label": "Visual Design"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:material-science",
+        "label": "Material Science"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-processes",
+        "label": "Manufacturing Processes"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      },
+      {
+        "id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:design-thinking",
@@ -99,12 +196,57 @@
       {
         "id": "urn:ngm:class:human-centred-design",
         "label": "Human-Centred Design"
+      },
+      {
+        "id": "urn:ngm:class:agile-design",
+        "label": "Agile Design"
+      },
+      {
+        "id": "urn:ngm:class:design-sprints",
+        "label": "Design Sprints"
+      },
+      {
+        "id": "urn:ngm:class:jobs-to-be-done-framework",
+        "label": "Jobs-to-be-Done Framework"
+      },
+      {
+        "id": "urn:ngm:class:continuous-discovery",
+        "label": "Continuous Discovery"
+      },
+      {
+        "id": "urn:ngm:class:double-diamond-process",
+        "label": "Double Diamond Process"
+      },
+      {
+        "id": "urn:ngm:class:lean-ux",
+        "label": "Lean UX"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:engineering-led-design",
+        "label": "Engineering-Led Design"
+      },
+      {
+        "id": "urn:ngm:class:feature-led-development",
+        "label": "Feature-Led Development"
+      },
+      {
+        "id": "urn:ngm:class:waterfall-product-development",
+        "label": "Waterfall Product Development"
+      },
+      {
+        "id": "urn:ngm:class:tech-push-innovation",
+        "label": "Tech-Push Innovation"
+      },
+      {
+        "id": "urn:ngm:class:technology-first-design",
+        "label": "Technology-First Design"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
@@ -128,6 +270,34 @@
       {
         "id": "urn:ngm:class:miro",
         "label": "Miro"
+      },
+      {
+        "id": "urn:ngm:class:autodesk-fusion-360",
+        "label": "Autodesk Fusion 360"
+      },
+      {
+        "id": "urn:ngm:class:sketch",
+        "label": "Sketch"
+      },
+      {
+        "id": "urn:ngm:class:invision",
+        "label": "InVision"
+      },
+      {
+        "id": "urn:ngm:class:zeplin",
+        "label": "Zeplin"
+      },
+      {
+        "id": "urn:ngm:class:principle",
+        "label": "Principle"
+      },
+      {
+        "id": "urn:ngm:class:protopie",
+        "label": "ProtoPie"
+      },
+      {
+        "id": "urn:ngm:class:v0-dev",
+        "label": "V0.dev"
       }
     ],
     "supports": [
@@ -146,9 +316,46 @@
       {
         "id": "urn:ngm:class:sustainability",
         "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:marketing",
+        "label": "Marketing"
+      },
+      {
+        "id": "urn:ngm:class:business-strategy",
+        "label": "Business Strategy"
+      },
+      {
+        "id": "urn:ngm:class:brand-management",
+        "label": "Brand Management"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-9241-ergonomics",
+        "label": "ISO 9241 Ergonomics"
+      },
+      {
+        "id": "urn:ngm:class:w3c-wcag",
+        "label": "W3C WCAG"
+      },
+      {
+        "id": "urn:ngm:class:w3c-design-tokens-community-group",
+        "label": "W3C Design Tokens Community Group"
+      },
+      {
+        "id": "urn:ngm:class:bsi-design-standards",
+        "label": "BSI Design Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-13407",
+        "label": "ISO 13407"
+      },
+      {
+        "id": "urn:ngm:class:bs-en-iso-9241-210",
+        "label": "BS EN ISO 9241-210"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -162,14 +369,53 @@
       {
         "id": "urn:ngm:class:service-design",
         "label": "Service Design"
+      },
+      {
+        "id": "urn:ngm:class:ux-design",
+        "label": "UX Design"
+      },
+      {
+        "id": "urn:ngm:class:ui-design",
+        "label": "UI Design"
+      },
+      {
+        "id": "urn:ngm:class:industrial-design",
+        "label": "Industrial Design"
+      },
+      {
+        "id": "urn:ngm:class:design-research",
+        "label": "Design Research"
+      },
+      {
+        "id": "urn:ngm:class:design-operations",
+        "label": "Design Operations"
+      },
+      {
+        "id": "urn:ngm:class:cad-software",
+        "label": "CAD"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation",
+      "slug": "knowledge-representation"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -199,15 +445,27 @@
         "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:ngm:class:6-do-f-tracking",
-        "label": "6DoF Tracking"
+        "id": "urn:ngm:class:cognitive-ergonomics",
+        "label": "Cognitive Ergonomics"
       },
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:usability-engineering",
+        "label": "Usability Engineering"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      },
       {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
@@ -223,6 +481,10 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
@@ -231,23 +493,57 @@
         "label": "Immersive Entertainment"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
       },
       {
-        "id": "urn:ngm:class:scene-understanding",
-        "label": "Scene Understanding"
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:closed-world-assumption",
+        "label": "Closed World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:sub-symbolic-ai",
+        "label": "Sub-Symbolic AI"
+      },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
@@ -255,46 +551,88 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:database-schema",
+        "label": "Database Schema"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-design",
+        "label": "Collaborative Design"
+      },
+      {
+        "id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
       },
       {
-        "id": "urn:ngm:class:hand-tracking",
-        "label": "Hand Tracking"
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:head-mounted-display",
-        "label": "Head-Mounted Display"
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "standardizedBy": [
@@ -327,6 +665,18 @@
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:accessible-design",
+        "label": "Accessible Design"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-human-interface-ux",
+        "label": "ETSI_Domain_Human_Interface___UX"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
       }
     ]
   },

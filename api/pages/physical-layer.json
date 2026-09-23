@@ -12,12 +12,28 @@
       "label": "Network and Communication"
     },
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
-    },
-    {
       "id": "urn:ngm:class:hardware-layer",
       "label": "Hardware Layer"
+    },
+    {
+      "id": "urn:ngm:class:osi-model",
+      "label": "OSI Model"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture"
+    },
+    {
+      "id": "urn:ngm:class:telecommunications",
+      "label": "Telecommunications"
+    },
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "id": "urn:ngm:class:communications-engineering",
+      "label": "Communications Engineering"
     }
   ],
   "entityType": "Class",
@@ -60,6 +76,42 @@
       {
         "id": "urn:ngm:class:lo-ra",
         "label": "Lo RA"
+      },
+      {
+        "id": "urn:ngm:class:ethernet-phy",
+        "label": "Ethernet PHY"
+      },
+      {
+        "id": "urn:ngm:class:serdes",
+        "label": "SerDes"
+      },
+      {
+        "id": "urn:ngm:class:modulation",
+        "label": "Modulation"
+      },
+      {
+        "id": "urn:ngm:class:transceiver",
+        "label": "Transceiver"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LoRa"
+      },
+      {
+        "id": "urn:ngm:class:photonic-integrated-circuit",
+        "label": "Photonic Integrated Circuit"
+      },
+      {
+        "id": "urn:ngm:class:co-packaged-optics",
+        "label": "Co-Packaged Optics"
+      },
+      {
+        "id": "urn:ngm:class:cable-plant",
+        "label": "Cable Plant"
+      },
+      {
+        "id": "urn:ngm:class:line-coding",
+        "label": "Line Coding"
       }
     ],
     "requires": [
@@ -74,6 +126,26 @@
       {
         "id": "urn:ngm:class:forward-error-correction",
         "label": "Forward Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:signal-encoding",
+        "label": "Signal Encoding"
+      },
+      {
+        "id": "urn:ngm:class:power-budget",
+        "label": "Power Budget"
+      },
+      {
+        "id": "urn:ngm:class:physical-medium",
+        "label": "Physical Medium"
+      },
+      {
+        "id": "urn:ngm:class:signal-integrity",
+        "label": "Signal Integrity"
+      },
+      {
+        "id": "urn:ngm:class:channel-equalisation",
+        "label": "Channel Equalisation"
       }
     ],
     "enables": [
@@ -112,9 +184,50 @@
       {
         "id": "urn:ngm:class:network-layer",
         "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:5-g",
+        "label": "5G NR"
+      },
+      {
+        "id": "urn:ngm:class:hyperscale-data-centre",
+        "label": "Hyperscale Data Centre"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Fabrication"
+      },
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC Design"
+      },
+      {
+        "id": "urn:ngm:class:signal-integrity",
+        "label": "Signal Integrity"
+      },
+      {
+        "id": "urn:ngm:class:photonics",
+        "label": "Photonics"
+      },
+      {
+        "id": "urn:ngm:class:rf-engineering",
+        "label": "RF Engineering"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:electromagnetic-compatibility",
+        "label": "Electromagnetic Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:channel-coding-theory",
+        "label": "Channel Coding Theory"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:ieee-802-15-4",
@@ -127,9 +240,54 @@
       {
         "id": "urn:ngm:class:lo-ra-wan",
         "label": "LoRaWAN Specification"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-11be",
+        "label": "IEEE 802.11be"
+      },
+      {
+        "id": "urn:ngm:class:itu-t-g-694-1",
+        "label": "ITU-T G.694.1"
+      },
+      {
+        "id": "urn:ngm:class:oif-common-electrical-interface",
+        "label": "OIF Common Electrical Interface"
+      },
+      {
+        "id": "urn:ngm:class:3gpp-nr",
+        "label": "3GPP NR"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-wan",
+        "label": "LoRaWAN Specification"
+      },
+      {
+        "id": "urn:ngm:class:bluetooth-core-specification",
+        "label": "Bluetooth Core Specification"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-link-layer",
+        "label": "Data Link Layer"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -147,6 +305,26 @@
       {
         "id": "urn:ngm:class:reed-solomon-codes",
         "label": "Reed-Solomon Codes"
+      },
+      {
+        "id": "urn:ngm:class:pam-4-modulation",
+        "label": "PAM-4 Modulation"
+      },
+      {
+        "id": "urn:ngm:class:nrz-signalling",
+        "label": "NRZ Signalling"
+      },
+      {
+        "id": "urn:ngm:class:qam",
+        "label": "QAM"
+      },
+      {
+        "id": "urn:ngm:class:dsp",
+        "label": "DSP"
+      },
+      {
+        "id": "urn:ngm:class:chirp-spread-spectrum",
+        "label": "Chirp Spread Spectrum"
       }
     ],
     "supports": [
@@ -177,6 +355,14 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:financial-trading-networks",
+        "label": "Financial Trading Networks"
       }
     ],
     "standardizedBy": [
@@ -199,6 +385,22 @@
       {
         "id": "urn:ngm:class:lo-ra-alliance",
         "label": "LoRa Alliance"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-3-task-force",
+        "label": "IEEE 802.3 Task Force"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-11-working-group",
+        "label": "IEEE 802.11 Working Group"
+      },
+      {
+        "id": "urn:ngm:class:itu-t-sg15",
+        "label": "ITU-T SG15"
+      },
+      {
+        "id": "urn:ngm:class:oif",
+        "label": "OIF"
       }
     ],
     "partOf": [],
@@ -222,10 +424,32 @@
       {
         "id": "urn:ngm:class:radio-access-network",
         "label": "Radio Access Network"
+      },
+      {
+        "id": "urn:ngm:class:switch-fabric",
+        "label": "Switch Fabric"
+      },
+      {
+        "id": "urn:ngm:class:propagation-loss",
+        "label": "Propagation Loss"
+      },
+      {
+        "id": "urn:ngm:class:dispersion-compensation",
+        "label": "Dispersion Compensation"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
@@ -235,17 +459,27 @@
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure",
+      "slug": "network-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -274,16 +508,36 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:architecture",
+        "label": "Layered Architecture"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:spectrum-management",
+        "label": "Spectrum Management"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -292,57 +546,215 @@
         "label": "Compute Layer"
       },
       {
+        "id": "urn:ngm:class:network-troubleshooting",
+        "label": "Network Troubleshooting"
+      },
+      {
+        "id": "urn:ngm:class:protocol-interoperability",
+        "label": "Protocol Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:power-infrastructure",
+        "label": "Power Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:separation-of-concerns",
+        "label": "Separation of Concerns"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tcp-ip-model",
+        "label": "TCP/IP Model"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-architecture",
+        "label": "Computer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      },
+      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
-    "contrastsWith": [
+    "uses": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:encapsulation",
+        "label": "Encapsulation"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:protocol-data-unit",
+        "label": "Protocol Data Unit"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:compressed-sensing",
+        "label": "Compressed Sensing"
+      },
+      {
+        "id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
       }
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec",
+        "label": "IEC"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:international-telecommunication-union",
+        "label": "International Telecommunication Union"
+      },
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
@@ -350,6 +762,32 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802 Standards"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
+      },
+      {
+        "id": "urn:ngm:class:critical-national-infrastructure",
+        "label": "Critical National Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
       }
     ],
     "relatedTo": [
@@ -358,7 +796,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -366,24 +804,24 @@
         "label": "Security and Identity"
       },
       {
-        "id": "urn:ngm:class:compute-infrastructure",
-        "label": "Compute Infrastructure"
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
       },
       {
-        "id": "urn:ngm:class:infra-network-and-comms",
-        "label": "Network and Communication"
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
       },
       {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
       }
     ]
   },

@@ -29,6 +29,10 @@
       {
         "id": "urn:ngm:class:fairness-metrics",
         "label": "Algorithmic Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Algorithmic Fairness Metrics"
       }
     ],
     "enables": [
@@ -54,6 +58,10 @@
       {
         "id": "urn:ngm:class:fairness-by-design",
         "label": "Fairness by Design"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation"
       }
     ],
     "contrastsWith": [
@@ -84,6 +92,10 @@
       {
         "id": "urn:ngm:class:model-documentation",
         "label": "Model Documentation"
+      },
+      {
+        "id": "urn:ngm:class:protected-characteristics",
+        "label": "Protected Characteristics"
       }
     ],
     "supports": [
@@ -98,6 +110,10 @@
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       }
     ],
     "standardizedBy": [
@@ -114,6 +130,10 @@
       {
         "id": "urn:ngm:class:responsible-ai-standards",
         "label": "Responsible AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:ieee-7000",
+        "label": "IEEE 7000 Series"
       }
     ],
     "relatedTo": [
@@ -128,6 +148,14 @@
       {
         "id": "urn:ngm:class:machine-learning-fairness",
         "label": "Machine Learning Fairness"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE P7001-2021"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p7002-2022",
+        "label": "IEEE P7002-2022"
       }
     ]
   },
@@ -136,6 +164,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -236,8 +269,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -324,6 +365,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -342,8 +389,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -352,10 +403,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

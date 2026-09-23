@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
+    },
+    {
+      "id": "urn:ngm:class:digital-governance",
+      "label": "Digital Governance"
     }
   ],
   "entityType": "Class",
@@ -39,6 +43,14 @@
       {
         "id": "urn:ngm:class:community-decision-making",
         "label": "Community Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:virtual-voting",
+        "label": "Virtual Voting"
+      },
+      {
+        "id": "urn:ngm:class:civic-participation",
+        "label": "Civic Engagement"
       }
     ],
     "dependsOn": [],
@@ -48,6 +60,10 @@
       {
         "id": "urn:ngm:class:digital-governance",
         "label": "Digital Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [],
@@ -58,9 +74,29 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     }
   ],
   "inheritedRelations": {
@@ -94,8 +130,8 @@
         "label": "User Safety"
       },
       {
-        "id": "urn:ngm:class:6-do-f-tracking",
-        "label": "6DoF Tracking"
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
       }
     ],
     "requires": [
@@ -108,6 +144,18 @@
         "label": "Risk Assessment"
       },
       {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
       },
@@ -118,13 +166,21 @@
       {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      },
+      {
+        "id": "urn:ngm:class:open-government",
+        "label": "Open Government"
+      },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
@@ -140,18 +196,74 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:institutional-capacity",
+        "label": "Institutional Capacity"
+      },
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:deregulation",
+        "label": "Deregulation"
+      },
+      {
+        "id": "urn:ngm:class:techno-solutionism",
+        "label": "Techno-Solutionism"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
         "id": "urn:ngm:class:extended-reality-xr",
@@ -160,6 +272,10 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -190,9 +306,35 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO/IEC JTC 1"
+      },
+      {
+        "id": "urn:ngm:class:itu",
+        "label": "ITU"
+      },
       {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
@@ -200,6 +342,12 @@
       {
         "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
       }
     ],
     "relatedTo": [
@@ -218,6 +366,22 @@
       {
         "id": "urn:ngm:class:sc-standards-and-interop",
         "label": "Standards and Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:digital-policy",
+        "label": "Digital Policy"
+      },
+      {
+        "id": "urn:ngm:class:e-government",
+        "label": "E-Government"
+      },
+      {
+        "id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
+      },
+      {
+        "id": "urn:ngm:class:net-neutrality",
+        "label": "Net Neutrality"
       }
     ]
   },

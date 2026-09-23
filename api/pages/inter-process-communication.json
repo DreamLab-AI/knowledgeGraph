@@ -121,8 +121,16 @@
         "label": "File System"
       },
       {
+        "id": "urn:ngm:class:kernel",
+        "label": "Kernel"
+      },
+      {
         "id": "urn:ngm:class:memory-management-unit",
         "label": "Memory Management Unit"
+      },
+      {
+        "id": "urn:ngm:class:network-stack",
+        "label": "Network Stack"
       },
       {
         "id": "urn:ngm:class:process-scheduler",
@@ -135,14 +143,6 @@
       {
         "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:cloud-native-applications",
-        "label": "Cloud-Native Applications"
-      },
-      {
-        "id": "urn:ngm:class:distributed-computing",
-        "label": "Distributed Computing"
       }
     ],
     "requires": [
@@ -209,6 +209,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:bare-metal",
+        "label": "Bare Metal"
+      },
+      {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
       },
@@ -219,7 +223,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       },
       {
@@ -249,6 +253,10 @@
       {
         "id": "urn:ngm:class:multithreading",
         "label": "Multithreading"
+      },
+      {
+        "id": "urn:ngm:class:security-isolation",
+        "label": "Security Isolation"
       },
       {
         "id": "urn:ngm:class:fault-tolerance",
@@ -291,7 +299,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

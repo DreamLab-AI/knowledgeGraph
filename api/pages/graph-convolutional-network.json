@@ -221,6 +221,18 @@
       {
         "id": "urn:ngm:class:robotics-perception",
         "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -249,12 +261,12 @@
         "label": "Backpropagation"
       },
       {
-        "id": "urn:ngm:class:regularisation",
-        "label": "Regularisation"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:stochastic-gradient-descent",
-        "label": "Stochastic Gradient Descent"
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
       }
     ],
     "supports": [

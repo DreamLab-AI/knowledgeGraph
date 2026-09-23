@@ -73,6 +73,11 @@
       "slug": "infra-legal-and-regulatory"
     },
     {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
@@ -157,6 +162,10 @@
         "label": "Commons Management"
       },
       {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
         "id": "urn:ngm:class:protocol-upgrades",
         "label": "Protocol Upgrade"
       },
@@ -175,10 +184,6 @@
       {
         "id": "urn:ngm:class:resource-management",
         "label": "Resource Management"
-      },
-      {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
       }
     ],
     "dependsOn": [
@@ -269,20 +274,20 @@
         "label": "Collective Intelligence"
       },
       {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
       },
       {
         "id": "urn:ngm:class:ai-governance-and-ethics",
         "label": "AI Governance and Ethics"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
       }
     ],
     "uses": [
@@ -315,6 +320,10 @@
       {
         "id": "urn:ngm:class:open-source",
         "label": "Open-Source Project"
+      },
+      {
+        "id": "urn:ngm:class:platform-cooperative",
+        "label": "Platform Cooperative"
       },
       {
         "id": "urn:ngm:class:distributed-collaboration",
@@ -379,6 +388,14 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:metagovernance",
+        "label": "Metagovernance"
+      },
+      {
+        "id": "urn:ngm:class:ostrom-principles",
+        "label": "Ostrom Principles"
+      },
+      {
         "id": "urn:ngm:class:rough-consensus",
         "label": "Rough Consensus"
       },
@@ -401,14 +418,6 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
       }
     ]
   },

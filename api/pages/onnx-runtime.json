@@ -21,6 +21,10 @@
       {
         "id": "urn:ngm:class:onnx",
         "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:onnx-model-format",
+        "label": "ONNX Model Format"
       }
     ],
     "enables": [
@@ -35,12 +39,24 @@
       {
         "id": "urn:ngm:class:real-time-inference",
         "label": "Real-Time Inference"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model-inference",
+        "label": "Large Language Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-inference",
+        "label": "Mixed-Precision Inference"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:cuda",
         "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:directml",
+        "label": "DirectML"
       }
     ],
     "implements": [
@@ -61,9 +77,30 @@
       {
         "id": "urn:ngm:class:openvino",
         "label": "OpenVINO"
+      },
+      {
+        "id": "urn:ngm:class:tensorrt-llm",
+        "label": "TensorRT-LLM"
+      },
+      {
+        "id": "urn:ngm:class:v-llm",
+        "label": "vLLM"
+      },
+      {
+        "id": "urn:ngm:class:llama-cpp",
+        "label": "llama.cpp"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:windows-copilot",
+        "label": "Windows Copilot+"
+      },
+      {
+        "id": "urn:ngm:class:mobile-machine-learning",
+        "label": "Mobile Machine Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:graph-optimisation",
@@ -80,6 +117,14 @@
       {
         "id": "urn:ngm:class:kv-cache",
         "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:execution-provider",
+        "label": "Execution Provider"
       }
     ],
     "supports": [
@@ -98,9 +143,21 @@
       {
         "id": "urn:ngm:class:scikit-learn",
         "label": "scikit-learn"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Hugging Face Transformers"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX Community"
+      },
       {
         "id": "urn:ngm:class:onnx",
         "label": "ONNX Community"
@@ -115,6 +172,14 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-compilation",
+        "label": "Neural Network Compilation"
       }
     ]
   },
@@ -176,7 +241,7 @@
         "label": "Hardware Acceleration"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {
@@ -282,6 +347,22 @@
       {
         "id": "urn:ngm:class:spatial-ai",
         "label": "Spatial AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

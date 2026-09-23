@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:tool-call-loop",
         "label": "Tool Call Loop"
+      },
+      {
+        "id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
       }
     ],
     "requires": [
@@ -42,6 +50,14 @@
       {
         "id": "urn:ngm:class:agent-memory",
         "label": "Agent Memory"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
       }
     ],
     "enables": [
@@ -60,6 +76,26 @@
       {
         "id": "urn:ngm:class:autonomous-coding",
         "label": "Autonomous Coding"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-assistant",
+        "label": "AI Research Assistant"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:scientific-discovery",
+        "label": "Scientific Discovery"
+      },
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
       }
     ],
     "dependsOn": [
@@ -70,13 +106,46 @@
       {
         "id": "urn:ngm:class:api-integration",
         "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "LLM Inference"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "id": "urn:ngm:class:reflection-pattern",
+        "label": "Reflection Pattern"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:single-turn-inference",
         "label": "Single-Turn Inference"
+      },
+      {
+        "id": "urn:ngm:class:traditional-workflow-orchestration",
+        "label": "Traditional Workflow Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
       }
     ],
     "bridgesTo": [
@@ -117,10 +186,52 @@
       {
         "id": "urn:ngm:class:re-act-pattern",
         "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -146,6 +257,42 @@
       {
         "id": "urn:ngm:class:robotic-process-automation",
         "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:lang-graph",
+        "label": "LangGraph"
+      },
+      {
+        "id": "urn:ngm:class:crew-ai",
+        "label": "CrewAI"
+      },
+      {
+        "id": "urn:ngm:class:auto-gen",
+        "label": "AutoGen"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation-agents-sdk",
+        "label": "OpenAI Agents SDK"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:swe-bench",
+        "label": "SWE-bench"
+      },
+      {
+        "id": "urn:ngm:class:gaia",
+        "label": "GAIA"
+      },
+      {
+        "id": "urn:ngm:class:webarena",
+        "label": "WebArena"
       }
     ]
   },
@@ -236,10 +383,6 @@
         "label": "Intelligent Process Automation"
       },
       {
-        "id": "urn:ngm:class:multi-agent-systems",
-        "label": "Multi-Agent Systems"
-      },
-      {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
       },
@@ -274,6 +417,10 @@
       {
         "id": "urn:ngm:class:batch-processing",
         "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:manual-processing",
+        "label": "Manual Processing"
       }
     ],
     "bridgesTo": [
@@ -284,6 +431,22 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -316,6 +479,10 @@
       {
         "id": "urn:ngm:class:bpmn",
         "label": "BPMN"
+      },
+      {
+        "id": "urn:ngm:class:dmn",
+        "label": "DMN"
       }
     ],
     "relatedTo": [

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
     }
   ],
   "entityType": "Class",
@@ -84,6 +88,10 @@
       {
         "id": "urn:ngm:class:privacy-by-design",
         "label": "Data Protection by Design"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security Obligations"
       }
     ],
     "contrastsWith": [
@@ -169,19 +177,31 @@
         "label": "Risk Management"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       },
       {
-        "id": "urn:ngm:class:data-storage",
-        "label": "Data Storage"
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
       },
       {
-        "id": "urn:ngm:class:identity-management",
-        "label": "Identity Management"
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
       {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
@@ -205,33 +225,69 @@
         "label": "Privacy Framework"
       },
       {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legal-jurisdiction",
+        "label": "Legal Jurisdiction"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:genius-act",
+        "label": "GENIUS Act"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralized Finance"
+      },
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
@@ -257,6 +313,18 @@
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:international-organization-of-securities-commissions",
+        "label": "International Organization of Securities Commissions"
+      },
+      {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
       },
@@ -275,8 +343,20 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptoasset",
+        "label": "Cryptoasset"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -285,10 +365,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

@@ -28,12 +28,20 @@
       {
         "id": "urn:ngm:class:world-model",
         "label": "World Model"
+      },
+      {
+        "id": "urn:ngm:class:reference-architecture",
+        "label": "AR Reference Architecture"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:coordinate-system",
         "label": "Coordinate System"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "Scene Description"
       },
       {
         "id": "urn:ngm:class:universal-scene-description",
@@ -44,6 +52,14 @@
       {
         "id": "urn:ngm:class:ar-interoperability",
         "label": "AR Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:shared-ar-experiences",
+        "label": "Shared AR Experience"
+      },
+      {
+        "id": "urn:ngm:class:multi-device-ar",
+        "label": "Multi-Device AR"
       },
       {
         "id": "urn:ngm:class:shared-ar-experiences",
@@ -93,6 +109,14 @@
       {
         "id": "urn:ngm:class:physical-virtual-registration",
         "label": "3D Registration"
+      },
+      {
+        "id": "urn:ngm:class:tracking",
+        "label": "Tracking"
+      },
+      {
+        "id": "urn:ngm:class:physical-virtual-registration",
+        "label": "3D Registration"
       }
     ],
     "supports": [],
@@ -136,6 +160,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -236,8 +265,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -328,6 +365,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -346,8 +389,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -356,10 +403,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

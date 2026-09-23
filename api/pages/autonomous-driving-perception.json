@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:perception-system",
       "label": "Perception System"
+    },
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "entityType": "Class",
@@ -36,9 +40,42 @@
       {
         "id": "urn:ngm:class:bird-eye-view",
         "label": "Bird's Eye View"
+      },
+      {
+        "id": "urn:ngm:class:bird-s-eye-view",
+        "label": "Bird's Eye View"
+      },
+      {
+        "id": "urn:ngm:class:lane-detection",
+        "label": "Lane Detection"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-prediction",
+        "label": "Occupancy Prediction"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:camera-sensor",
+        "label": "Camera Sensor"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:autonomous-driving",
@@ -51,6 +88,14 @@
       {
         "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:robotaxi",
+        "label": "Robotaxi"
       }
     ],
     "dependsOn": [
@@ -61,10 +106,52 @@
       {
         "id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bird-s-eye-view",
+        "label": "Bird's Eye View"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-prediction",
+        "label": "Occupancy Prediction"
+      },
+      {
+        "id": "urn:ngm:class:multi-sensor-fusion",
+        "label": "Multi-Sensor Fusion"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-vision",
+        "label": "Rule-Based Vision"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -98,10 +185,36 @@
       {
         "id": "urn:ngm:class:hd-maps",
         "label": "HD Maps"
+      },
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-prediction",
+        "label": "Behaviour Prediction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:iso-sae-pas-21448",
+        "label": "ISO/SAE PAS 21448"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -111,10 +224,35 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:v2x-communication",
+        "label": "V2X Communication"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:sotif",
+        "label": "SOTIF"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
@@ -141,24 +279,24 @@
         "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ],
     "requires": [
@@ -167,8 +305,16 @@
         "label": "Sensor Data"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
       },
       {
         "id": "urn:ngm:class:computational-infrastructure",
@@ -201,22 +347,30 @@
         "label": "Situational Awareness"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       }
     ],
     "contrastsWith": [
@@ -233,6 +387,30 @@
       {
         "id": "urn:ngm:class:smart-cities",
         "label": "Smart Cities"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -245,10 +423,6 @@
       {
         "id": "urn:ngm:class:iso-21448",
         "label": "ISO 21448"
-      },
-      {
-        "id": "urn:ngm:class:iso-26262",
-        "label": "ISO 26262"
       },
       {
         "id": "urn:ngm:class:sae-j-3016",
@@ -265,6 +439,10 @@
         "label": "Autonomous System"
       },
       {
+        "id": "urn:ngm:class:intelligent-virtual-entity",
+        "label": "Intelligent Virtual Entity"
+      },
+      {
         "id": "urn:ngm:class:robotics-systems",
         "label": "Robotics Systems"
       }
@@ -273,6 +451,18 @@
       {
         "id": "urn:ngm:class:adversarial-robustness",
         "label": "Adversarial Robustness"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       },
       {
         "id": "urn:ngm:class:ai-application",

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Epidemiological Modelling</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Epidemiological Modelling"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Epidemiological Modelling"/><meta name="twitter:description" content="Epidemiological modelling is the use of mathematical and computational models to describe how infectious diseases spread through populations over time."/><meta property="og:description" content="Epidemiological modelling is the use of mathematical and computational models to describe how infectious diseases spread through populations over time."/><meta property="og:image:alt" content="Epidemiological modelling is the use of mathematical and computational models to describe how infectious diseases spread through populations over time."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Epidemiological-Modelling"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Epidemiological-Modelling"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Epidemiological modelling is the use of mathematical and computational models to describe how infectious diseases spread through populations over time."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Epidemiological-Modelling"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-2997"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-2997" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Epidemiological Modelling</a></div></nav><h1 class="article-title">Epidemiological Modelling</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.631Z">23 Sept 2026</time><span>24 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:epidemiological-modelling</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.62</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Computational-Modelling" class="internal">Computational Modelling</a></li><li><a href="../Mathematical-Biology" class="internal">Mathematical Biology</a></li><li><a href="../pages/Simulation" class="internal">Simulation</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/Computational-Modelling" class="internal">Computational Modelling</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Differential-Equations" class="internal">Differential Equation</a></li><li><a href="../Ordinary-Differential-Equations" class="internal">Ordinary Differential Equations</a></li><li><a href="../pages/Stochastic-Process" class="internal">Stochastic Process</a></li><li><a href="../Basic-Reproduction-Number" class="internal">Basic Reproduction Number</a></li><li><a href="../Next-Generation-Matrix" class="internal">Next Generation Matrix</a></li><li><a href="../Compartmental-Model" class="internal">Compartmental Model</a></li><li><a href="../Contact-Network" class="internal">Contact Network</a></li><li><a href="../pages/Bayesian-Inference" class="internal">Bayesian Inference</a></li><li><a href="../Data-Assimilation" class="internal">Data Assimilation</a></li><li><a href="../pages/Sensitivity-Analysis" class="internal">Sensitivity Analysis</a></li><li><a href="../pages/Uncertainty-Quantification" class="internal">Uncertainty Quantification</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../Differential-Equation" class="internal">Differential Equation</a></li><li><a href="../pages/Bayesian-Inference" class="internal">Bayesian Inference</a></li><li><a href="../pages/Statistics" class="internal">Statistics</a></li><li><a href="../pages/Stochastic-Process" class="internal">Stochastic Process</a></li><li><a href="../pages/Network-Analysis" class="internal">Network Analysis</a></li><li><a href="../pages/Simulation" class="internal">Simulation</a></li><li><a href="../pages/Monte-Carlo-Simulation" class="internal">Monte Carlo Simulation</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Public-Health" class="internal">Public Health</a></li><li><a href="../Time-Series-Forecasting" class="internal">Time Series Forecasting</a></li><li><a href="../pages/Pandemic-Preparedness" class="internal">Pandemic Preparedness</a></li><li><a href="../Vaccine-Allocation" class="internal">Vaccine Allocation</a></li><li><a href="../Contact-Tracing" class="internal">Contact Tracing</a></li><li><a href="../Wastewater-Surveillance" class="internal">Wastewater Surveillance</a></li><li><a href="../Healthcare-Demand-Forecasting" class="internal">Healthcare Demand Forecasting</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Public-Health" class="internal">Public Health</a></li><li><a href="../pages/Network-Analysis" class="internal">Network Analysis</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/System-Dynamics" class="internal">System Dynamics</a></li><li><a href="../Equation-Based-Modelling" class="internal">Equation-Based Modelling</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Computational-Modelling" class="internal">Computational Modelling</a></li><li><a href="../Differential-Equation" class="internal">Differential Equation</a></li><li><a href="../pages/Graph-Theory" class="internal">Graph Theory</a></li><li><a href="../Data-Assimilation" class="internal">Data Assimilation</a></li><li><a href="../pages/High-Performance-Computing" class="internal">High-Performance Computing</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/Simulation" class="internal">Simulation</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../SIR-Model" class="internal">SIR Model</a></li><li><a href="../SEIR-Model" class="internal">SEIR Model</a></li><li><a href="../pages/Agent-Based-Modelling" class="internal">Agent-Based Modelling</a></li><li><a href="../pages/Probabilistic-Modelling" class="internal">Probabilistic Modelling</a></li><li><a href="../pages/Bayesian-Inference" class="internal">Bayesian Inference</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:epidemiological-modelling</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Agent-Based-Modelling" class="internal">Agent-Based Modelling</a></li><li><a href="../pages/Graph-Theory" class="internal">Graph Theory</a></li><li><a href="../Time-Series-Forecasting" class="internal">Time Series Forecasting</a></li><li><a href="../pages/Computational-Biology" class="internal">Computational Biology</a></li><li><a href="../Systems-Biology" class="internal">Systems Biology</a></li><li><a href="../pages/Complex-Systems" class="internal">Complex Systems</a></li><li><a href="../pages/Digital-Twin" class="internal">Digital Twin</a></li><li><a href="../Wastewater-Surveillance" class="internal">Wastewater Surveillance</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../WHO" class="internal">WHO</a></li><li><a href="../ECDC" class="internal">ECDC</a></li><li><a href="../UKHSA" class="internal">UKHSA</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Public-Health" class="internal">Public Health</a></li><li><a href="../pages/Policy-Simulation" class="internal">Policy Simulation</a></li><li><a href="../pages/Digital-Twin" class="internal">Digital Twin</a></li><li><a href="../pages/Pandemic-Preparedness" class="internal">Pandemic Preparedness</a></li><li><a href="../Vaccination-Strategy" class="internal">Vaccination Strategy</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Differential-Equations" class="internal">Differential Equation</a></li><li><a href="../pages/Simulation" class="internal">Simulation</a></li><li><a href="../pages/Agent-Based-Modelling" class="internal">Agent-Based Modelling</a></li><li><a href="../Differential-Equation" class="internal">Differential Equation</a></li><li><a href="../pages/Monte-Carlo-Simulation" class="internal">Monte Carlo Simulation</a></li><li><a href="../pages/Network-Analysis" class="internal">Network Analysis</a></li><li><a href="../pages/Graph-Theory" class="internal">Graph Theory</a></li><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li><li><a href="../pages/Bayesian-Inference" class="internal">Bayesian Inference</a></li><li><a href="../pages/Sensitivity-Analysis" class="internal">Sensitivity Analysis</a></li><li><a href="../pages/Surrogate-Model" class="internal">Surrogate Model</a></li><li><a href="../Physics-Informed-Neural-Network" class="internal">Physics-Informed Neural Network</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Epidemiological modelling is the use of mathematical and computational models to describe how infectious diseases spread through populations over time. Compartmental models partition a population into states such as susceptible, infected, and recovered, and use differential equations to govern transitions between them, while network and agent-based models capture heterogeneous contact structures. These models inform forecasting, intervention design, and public-health policy.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:hasPart epi:CompartmentalModel))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:hasPart epi:BasicReproductionNumber))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:hasPart epi:ContactNetwork))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:hasPart sci:StochasticProcess))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:hasPart sci:BayesianInference))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:hasPart sci:SensitivityAnalysis))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:hasPart sci:DataAssimilation))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:hasPart sci:UncertaintyQuantification))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:requires sci:DifferentialEquation))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:requires sci:BayesianInference))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:requires sci:Statistics))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:requires sci:MonteCarloSimulation))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:requires sci:NetworkAnalysis))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:dependsOn sci:ComputationalModelling))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:dependsOn sci:HighPerformanceComputing))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:enables epi:PandemicPreparedness))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:enables epi:VaccineAllocation))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:enables epi:ContactTracing))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:enables epi:HealthcareDemandForecasting))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:enables sci:TimeSeriesForecasting))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:enables epi:WastewaterSurveillance))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:supports epi:PublicHealth))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:implements epi:SIRModel))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:implements epi:SEIRModel))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:implements ai:AgentBasedModelling))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:implements sci:ProbabilisticModelling))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:implements sci:BayesianInference))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:uses ai:MachineLearning))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:uses sci:DataAssimilation))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:reducesTo epi:CompartmentalModel))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:reducesTo sci:DifferentialEquation))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:reducesTo epi:SIRModel))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:reducesTo sci:StochasticProcess))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="support-relationships">Support Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#support-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:supports epi:PublicHealth))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:supports epi:PolicySimulation))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:supports sci:DigitalTwin))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:supports epi:VaccinationStrategy))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:supports epi:PandemicPreparedness))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:relatedTo sci:ComputationalBiology))
+SubClassOf(epi:EpidemiologicalModelling
+  ObjectSomeValuesFrom(ai:relatedTo sci:ComplexSystems))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Epidemiological Modelling sits at the intersection of <a href="../Mathematical-Biology" class="internal alias" data-slug="Mathematical-Biology">Mathematical Biology</a>, <a href="../pages/Computational-Modelling" class="internal alias" data-slug="pages/Computational-Modelling">Computational Modelling</a>, and <a href="../pages/Public-Health" class="internal alias" data-slug="pages/Public-Health">Public Health</a> policy, constituting one of the most consequential applications of applied mathematics to human welfare. Its intellectual lineage runs from Daniel Bernoulli’s 1760 analysis of smallpox inoculation — the first mathematical treatment of an infectious disease — through William Farr’s statistical law of epidemic rise and decline (1840), to the landmark Kermack-McKendrick series of papers (1927–1939) that established the threshold theorem and the SIR framework that still underpins the field. The threshold theorem proved that an epidemic in a homogeneous population only occurs if the initial fraction susceptible exceeds a critical threshold 1/R₀, providing the theoretical basis for herd immunity calculations that guide vaccination coverage targets. The mid-twentieth century saw the development of more refined mathematical epidemiology under Norman Bailey, George Macdonald (who derived the Ross-Macdonald model for malaria transmission), and Klaus Dietz, establishing the analytical apparatus of next-generation matrices, threshold conditions in heterogeneous populations, and the theory of endemic equilibria.</li>
+<li>The modern era of Epidemiological Modelling is defined by three converging forces: increased computational power enabling stochastic simulation at population scale; the proliferation of digital surveillance data streams beyond traditional case counts; and the integration of statistical and machine learning methods into the modelling workflow. The SIR-family of deterministic ODE models, while analytically tractable and valuable for intuition, rests on the assumption of homogeneous mixing — every individual contacts every other at the same rate — which is epidemiologically unrealistic for most real populations with household structure, age-assortative contact patterns, geographic heterogeneity, and behavioural heterogeneity. Age-structured compartmental models address demographic heterogeneity through contact matrices (derived from social contact surveys such as the POLYMOD study, Mossong et al. 2008) that specify age-assortative contact rates between age groups, enabling R₀ to be computed as the spectral radius of the next-generation matrix. <a href="../pages/Network-Analysis" class="internal alias" data-slug="pages/Network-Analysis">Network Analysis</a> models encode the contact structure as an explicit graph, enabling the study of how degree distribution, clustering, and community structure affect epidemic dynamics and intervention efficacy. The configuration model and random geometric graphs provide tractable network ensembles for analytical study, while empirical contact networks from proximity sensors, mobile phone data, and social network records provide realistic substrates for simulation. <a href="../pages/Agent-Based-Modelling" class="internal alias" data-slug="pages/Agent-Based-Modelling">Agent-Based Modelling</a> frameworks — exemplified by CovidSim (Imperial College London) and EpiModel — provide the highest resolution representation of population heterogeneity and spatial structure, at the cost of computational expense and the challenge of parameter calibration in high-dimensional systems.</li>
+<li><a href="../Data-Assimilation" class="internal alias" data-slug="Data-Assimilation">Data Assimilation</a> from the meteorological tradition has been adapted for epidemic models to continuously update model state and parameters as new surveillance data arrive, addressing a fundamental challenge of real-time outbreak response: models parameterised from early outbreak data become misspecified as the epidemic evolves, behaviour changes, and new variants emerge. Ensemble Kalman filter methods and particle filters enable online state estimation, tracking latent compartment sizes and effective reproduction number Rₜ in near-real-time from reported case counts. <a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a> via Markov chain Monte Carlo (MCMC) or sequential Monte Carlo (SMC) provides the principled framework for jointly estimating transmission parameters, observation processes (reporting rates, testing sensitivity), and intervention effects from multiple heterogeneous data streams simultaneously. The challenge of identifiability — multiple parameter combinations producing similar observational signatures — motivates <a href="../pages/Sensitivity-Analysis" class="internal alias" data-slug="pages/Sensitivity-Analysis">Sensitivity Analysis</a> using Sobol indices or Morris screening to identify which parameters are estimable from available data and which must be fixed at prior values from biological studies or meta-analyses.</li>
+<li>The COVID-19 pandemic (2020–2023) was a watershed moment for Epidemiological Modelling, demonstrating both its power and its limitations at the level of global public policy. The landmark Imperial College London Report 9 (Ferguson et al., 16 March 2020) used a large-scale <a href="../pages/Agent-Based-Modelling" class="internal alias" data-slug="pages/Agent-Based-Modelling">Agent-Based Modelling</a> framework with 66 million synthetic UK agents and 330 million synthetic US agents, parameterised from social contact survey data, to project approximately 510,000 deaths in Great Britain and 2.2 million in the United States under unmitigated spread. Crucially, it quantified that combinations of household isolation, school closure, and social distancing could reduce peak intensive care unit (ICU) demand by over 60 per cent. This analysis directly informed the UK government’s announcement of a national lockdown on 23 March 2020 — one of the most consequential applications of Epidemiological Modelling in modern policy history. The SPI-M-O (Scientific Pandemic Influenza Group on Modelling, Operational sub-group) coordinated the UK’s multiple modelling groups (Imperial, LSHTM, Warwick, Cambridge) during the pandemic, synthesising ensemble projections across models with different structures and assumptions, producing the consensus medium-term scenario planning that informed Cabinet Office and NHS England capacity planning throughout 2020–2022. Simultaneously, the pandemic drove rapid methodological innovations: the EpiNow2 R package enabling near-real-time Rₜ estimation from case reports; digital wastewater-based epidemiology (WBE) providing population-level infection prevalence independent of testing behaviour; genomic surveillance via COG-UK integrating phylogenetic analysis with epidemiological modelling to track variant emergence and spread; and neural network surrogate models that dramatically accelerated MCMC sampling by replacing expensive forward model evaluations with fast emulators.</li>
+<li>The period 2024–2026 has witnessed accelerating integration of artificial intelligence into Epidemiological Modelling workflows. A landmark February 2025 Nature paper from the MRC Centre for Global Infectious Disease Analysis at Imperial College London outlined how recent advances in AI can accelerate breakthroughs in answering key epidemiological questions and can be applied to routinely collected infectious disease surveillance data. Physics-informed neural networks (PINNs) have been applied to learn SIR and SEIR ODE dynamics from sparse case count data, providing a meshless, differentiable alternative to traditional ODE solvers that enables gradient-based inference of transmission parameters. Neural parameter calibration methods — combining deep learning with <a href="../pages/Uncertainty-Quantification" class="internal alias" data-slug="pages/Uncertainty-Quantification">Uncertainty Quantification</a> — have been demonstrated for epidemic forecasting with improved accuracy over MCMC baselines, particularly in data-sparse outbreak scenarios. Universal Differential Equations (Rackauckas et al.) provide a hybrid framework combining mechanistic ODE compartmental structure with learned neural network terms that capture unmeasured biological or behavioural processes, enabling adaptive transmission rate estimation that responds to behavioural changes and variant dynamics without explicit re-parameterisation.</li>
+</ul>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Compartmental Model Layer</strong>
+<ul>
+<li>SIR model — Susceptible, Infectious, Recovered; governed by dS/dt = -βSI/N, dI/dt = βSI/N - γI, dR/dt = γI; R₀ = β/γ; threshold condition for epidemic: R₀ > 1</li>
+<li>SEIR model — adds Exposed (latent period E); dE/dt = βSI/N - σE, dI/dt = σE - γI; mean latent period 1/σ</li>
+<li>SEIRD — adds Deceased compartment D with mortality rate δ</li>
+<li>SEIQR — adds Quarantine compartment for contact-traced exposed individuals</li>
+<li>SEIHRD — adds Hospitalised compartment H for healthcare demand modelling</li>
+<li>Metapopulation models — spatial patches (districts, regions, countries) coupled by mobility flux; used for multi-country pandemic spread modelling</li>
+<li>Age-stratified SEIR — next-generation matrix formalism; contact matrices from POLYMOD survey (Mossong et al.); R₀ = spectral radius of K = G · F, where G is the generation time distribution and F the force of infection matrix</li>
+</ul>
+</li>
+<li><strong>Stochastic Simulation Layer</strong>
+<ul>
+<li>Continuous-time Markov chain (CTMC) SIR — exact stochastic simulation via Gillespie algorithm; essential for small populations where demographic stochasticity determines outbreak fate</li>
+<li>Tau-leaping — approximate stochastic simulation; Poisson or negative-binomial transition counts; 100–1,000 times faster than Gillespie for large populations</li>
+<li>Branching process approximation — near extinction or near threshold; enables closed-form probability of outbreak establishment given importation of k infectious cases</li>
+<li>Individual-based stochastic simulation — each agent drawn as a realisation of the stochastic process; enables heterogeneous transmission rates, contact duration distributions, and importation events</li>
+</ul>
+</li>
+<li><strong>Network and Spatial Layer</strong>
+<ul>
+<li>Static contact network — configuration model, Barabási-Albert scale-free, Watts-Strogatz small-world; analytical SIR results via cavity methods and heterogeneous mean-field theory</li>
+<li>Dynamic contact network — adaptive network where susceptibles rewire away from infectious neighbours; models behaviour change during epidemics</li>
+<li>Geographic information system (GIS) layer — spatial population density rasters, road network distance matrices, transport flow data; enables spatial heterogeneity in force of infection and intervention reach</li>
+<li>Mobility data integration — mobile phone GPS traces, commuter flow surveys, air travel itinerary data (IATA); parameterises spatial transmission kernels in metapopulation and network models</li>
+</ul>
+</li>
+<li><strong>Agent-Based Epidemiological Layer</strong>
+<ul>
+<li>Synthetic population generation — census microdata, household survey imputation, land use data; creates agents with age, sex, household composition, workplace/school assignment, and contact group membership</li>
+<li>Transmission events — contacts drawn from age-stratified contact matrices; per-contact transmission probability depends on viral load, setting (household vs. workplace vs. community), and host immune status</li>
+<li>Intervention modules — mass vaccination (coverage, schedule, dose interval, waning), targeted NPIs (school closure, workplace closure, household quarantine, shielding), test-trace-isolate (testing capacity, turnaround time, compliance fraction)</li>
+<li>Platforms: CovidSim (C++, Imperial College), EpiModel (R, University of Washington), OpenABM-Covid19 (C++, Oxford/Edinburgh), Epiabm (Python/C++, Cambridge), FLAME GPU 2 (GPU-accelerated, Sheffield)</li>
+</ul>
+</li>
+<li><strong>Statistical Inference and Calibration Layer</strong>
+<ul>
+<li><a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a> via MCMC — Metropolis-Hastings, Hamiltonian Monte Carlo (Stan/CmdStan), Sequential Monte Carlo (SMC2, PMMH); joint posterior over transmission parameters, reporting rates, seeding dates</li>
+<li>Approximate Bayesian Computation (ABC) — simulation-based inference without explicit likelihood; fits summary statistics of simulated epidemics to observed data; computationally feasible for individual-based models</li>
+<li>Neural posterior estimation — normalising flows trained on simulation-observation pairs; amortised inference enabling rapid posterior evaluation for new outbreak data without re-running MCMC</li>
+<li>EpiNow2 / EpiEstim — Bayesian Rₜ estimation frameworks in R; widely deployed by UKHSA and WHO during COVID-19; nowcasting corrects for reporting delays and right-censoring of recent case counts</li>
+<li><a href="../Data-Assimilation" class="internal alias" data-slug="Data-Assimilation">Data Assimilation</a> — ensemble Kalman filter (EnKF) and particle filter for real-time state estimation; fuses daily surveillance counts into running model state; analogous to numerical weather prediction assimilation</li>
+</ul>
+</li>
+<li><strong>Surveillance Data Integration Layer</strong>
+<ul>
+<li>Case count time series — PCR/LFT positive tests stratified by age, region, setting; right-censored and subject to testing behaviour confounding</li>
+<li>Genomic surveillance — COG-UK sequencing programme; variant frequencies by region and time; integrated with phylogenetic trees to estimate variant-specific transmission advantages</li>
+<li>Seroprevalence surveys — REACT-2, ONS Infection Survey; population-level antibody prevalence; corrects for under-reporting and enables attack rate estimation</li>
+<li><a href="../Wastewater-Surveillance" class="internal alias" data-slug="Wastewater-Surveillance">Wastewater Surveillance</a> — SARS-CoV-2 RNA concentration in sewage; early warning signal 3–7 days ahead of clinical case counts; UKHSA expanding to 11 high-priority pathogens under £1.3 million Integrated Security Fund (2025)</li>
+<li>Hospital admissions, ICU occupancy, deaths — direct demand metrics for NHS capacity modelling; lag behind infection events by 1–3 weeks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Pandemic response planning</strong> — SIR/SEIR compartmental models and ABMs jointly provide the epidemic curve projections, healthcare demand forecasts, and intervention efficacy estimates required for governments to plan hospital surge capacity, procure personal protective equipment, and calibrate non-pharmaceutical intervention stringency. During COVID-19, the UK’s SPI-M-O ensemble combined outputs from Imperial College London (CovidSim ABM), London School of Hygiene and Tropical Medicine (LSHTM Epi model), Warwick University (WM model), and Cambridge University (PHE-MRC model) into consensus scenarios used for Cabinet Office Briefing Room (COBR) planning. Ensemble spread across models provided probabilistic uncertainty ranges that prevented over-reliance on any single model’s projection.</li>
+<li><strong>Vaccine allocation and deployment strategy</strong> — Age-structured epidemiological models with explicit vaccine efficacy parameters enable optimisation of vaccination priority ordering. Priority allocation to older age groups was validated by models showing that vaccinating the highest-contact versus highest-mortality groups produces qualitatively different epidemic trajectories, and that age-prioritised vaccination minimised deaths per dose administered under supply constraints. Network models capture the indirect (herd immunity) protection conferred by vaccinating highly connected nodes before peripheral nodes.</li>
+<li><strong>Endemic disease burden and control</strong> — Long-term endemic equilibrium analysis using SIS and SEIRS models (allowing waning immunity) estimates the ongoing disease burden at steady state and the vaccination coverage threshold required for elimination (herd immunity threshold = 1 - 1/R₀). Applied to seasonal influenza (R₀ ≈ 1.2–1.4; herd immunity threshold 17–29%), measles (R₀ ≈ 12–18; herd immunity threshold 92–94%), and polio. WHO’s Global Polio Eradication Initiative uses metapopulation models with real mobility data to identify high-risk transmission corridors and plan supplementary immunisation activity campaigns.</li>
+<li><strong>Emerging pathogen surveillance and early warning</strong> — During the first weeks of a novel outbreak, near-real-time Rₜ estimation from case report time series (corrected for reporting delays using EpiNow2) provides early situational awareness. Phylogenetic molecular clock models using pathogen genomic sequences estimate the date of origin and geographic source of emergence. Branching process models estimate the probability that initial imported cases will lead to sustained transmission chains, informing quarantine and border control policies. UKHSA’s wastewater epidemiology programme (2025) targets 11 high-priority pathogens for early detection in sewage before clinical cases present.</li>
+<li><strong>Non-pharmaceutical intervention (NPI) evaluation</strong> — Counterfactual modelling quantifies the effect of specific NPIs by comparing observed epidemic trajectories against model projections under the NPI-free scenario. Difference-in-differences analyses using geographic variation in NPI timing exploit natural experiments. Comprehensive NPI effect meta-analyses (Flaxman et al., 2020; Brauner et al., 2021) used Bayesian hierarchical epidemiological models across multiple European countries to simultaneously estimate the effectiveness of school closure, workplace closure, social gathering bans, and lockdown, finding that lockdowns and business closure had the largest effects on Rₜ reduction.</li>
+<li><strong>Tropical and vector-borne disease modelling</strong> — Ross-Macdonald malaria transmission models parameterise the mosquito-human transmission cycle, enabling optimal vector control targeting and insecticide resistance management. Dengue and Zika metapopulation models with Aedes aegypti density data and temperature-dependent transmission rates project outbreak risk under climate change scenarios. Leishmaniasis and Chagas disease models incorporate zoonotic reservoir hosts (dogs, domestic animals) as transmission sources requiring veterinary intervention alongside human treatment.</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Epidemiological Modelling as a formalised discipline traces its origins to two traditions: the theoretical mathematical epidemiology pioneered by Ross, Kermack, and McKendrick in the early twentieth century, and the statistical epidemiology of Farr, Snow, and Greenwood focused on empirical analysis of disease surveillance data. These traditions converged in the second half of the twentieth century as computing enabled both large-scale numerical solution of ODE systems and statistical fitting of models to data.</li>
+<li>Key theoretical milestones include: Ross (1911) demonstrating mathematically that malaria eradication does not require eliminating every mosquito but reducing the mosquito density below a threshold — the first proof that an epidemic threshold concept governs disease persistence; Kermack and McKendrick (1927) deriving the SIR threshold theorem and the final size relation between R₀ and the fraction ultimately infected; MacDonald (1952) extending Ross’s malaria model to include the extrinsic incubation period in mosquitoes and vector survival; Bailey (1957) formalising stochastic epidemic models; Anderson and May (1979, 1982, 1991) establishing the theoretical framework for age-structured transmission dynamics, parasite-host coevolution, and vaccination theory in a series of papers culminating in the monograph “Infectious Diseases of Humans: Dynamics and Control” (1991) — the definitive reference for mathematical epidemiology.</li>
+<li>The computational revolution of the 1990s–2000s enabled agent-based epidemic simulation at realistic population scales. Ferguson et al. (2005) published the first large-scale pandemic influenza ABM calibrated to UK and US demographic data, directly influencing the 2009 H1N1 pandemic response. Halloran et al. (2008) validated ABM for community influenza interventions. Eubank et al. (2004) modelled smallpox spread across the real social contact network of Portland, Oregon using mobility data.</li>
+<li>The journal Epidemics (founded 2009, Elsevier) and the Journal of Mathematical Biology, Bulletin of Mathematical Biology, and PLOS Computational Biology are the primary venues for Epidemiological Modelling research. The Society for Mathematical Biology (SMB) and the European Society for Mathematical and Theoretical Biology (ESMTB) are the primary professional communities. The MRC Centre for Global Infectious Disease Analysis at Imperial College London (directed by Azra Ghani and previously Neil Ferguson) is the world’s most cited academic Epidemiological Modelling group. The Centre for Mathematical Modelling of Infectious Diseases (CMMID) at London School of Hygiene and Tropical Medicine is a close second, and the interdisciplinary Warwick Institute for the Science of Cities contributes substantially to network and spatial epidemic models.</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The post-COVID-19 period 2024–2026 is characterised by consolidation of pandemic-era methodological advances into standard operational practice, alongside rapid expansion of AI-augmented modelling. The UK government’s 2023 COVID-19 Preparedness Review explicitly listed improved Epidemiological Modelling capacity as a national security priority, leading to sustained investment in modelling infrastructure at UKHSA, the MRC Centre at Imperial, and CMMID at LSHTM.</li>
+<li>A February 2025 Nature paper from the MRC Centre for Global Infectious Disease Analysis systematically reviewed how advances in AI — including deep learning surrogate models, physics-informed neural networks, and neural posterior estimation — can accelerate answering key epidemiological questions using routinely collected surveillance data. By mid-2025, AI-based forecasting models were operationally incorporated into national response dashboards for multiple respiratory pathogens, demonstrating lead times of up to two weeks for hospitalisation peak prediction. The EditoriAl in PMC (2025) reviewing AI’s journey through COVID-19 identified neural network calibration, wastewater signal integration, and generative model-based synthetic data augmentation as the three highest-impact AI contributions to Epidemiological Modelling.</li>
+<li><a href="../Physics-Informed-Neural-Network" class="internal alias" data-slug="Physics-Informed-Neural-Network">Physics-Informed Neural Network</a>s applied to epidemic ODEs have been demonstrated to simultaneously infer transmission parameters and solve forward epidemic trajectories from sparse case count data, with computational advantages over MCMC for problems with smooth transmission dynamics. A 2025 ScienceDirect paper applied PINNs to COVID-19 data assimilation across multiple UK regions with promising accuracy. Neural parameter calibration with <a href="../pages/Uncertainty-Quantification" class="internal alias" data-slug="pages/Uncertainty-Quantification">Uncertainty Quantification</a> (PMC12007818, 2025) demonstrated improved accuracy over traditional MCMC for epidemic forecasting under data scarcity, particularly relevant for novel pathogen emergence scenarios.</li>
+<li>UKHSA’s wastewater epidemiology programme expanded in 2025 from a COVID-19 polio surveillance network of 28 sites to a broader R&amp;D programme targeting 11 high-priority pathogens — including Crimean-Congo haemorrhagic fever, Lassa fever, Mpox, West Nile virus, and hypervirulent Klebsiella pneumoniae — funded by £1.3 million from the UK Integrated Security Fund. This programme integrates wastewater environmental signals directly into Bayesian epidemiological models as an additional data stream alongside clinical case counts, enabling earlier outbreak detection independent of healthcare-seeking behaviour.</li>
+<li>Gaussian Markov random field (GMRF) spatial models have been applied to the UK population (stratified by NHS region and age group) to provide computationally efficient Bayesian inference for epidemic parameters at geographic resolution previously requiring full MCMC chains on HPC clusters (arXiv:2505.03938, 2025). Differentiable epidemic simulation via Universal Differential Equations in the Julia SciML ecosystem enables gradient-based calibration of SIR models with learned neural network terms for time-varying transmission rates (arXiv:2310.16804).</li>
+<li>The global landscape shows parallel advances: the US CDC’s FluSight ensemble now routinely incorporates both mechanistic epidemiological models and <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> regression models; ECDC operates a multi-country epidemic intelligence platform integrating modelling with genomic surveillance; WHO’s Epidemic Intelligence from Open Sources (EIOS) platform aggregates outbreak signals from web and social media for early warning model initialisation.</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The United Kingdom holds a globally pre-eminent position in Epidemiological Modelling, with world-leading academic groups, national public health institutions, and a policy infrastructure for integrating modelling into government decision-making that was significantly strengthened following COVID-19.</li>
+<li><strong>Imperial College London</strong> — The MRC Centre for Global Infectious Disease Analysis (Azra Ghani, previously Neil Ferguson) is the world’s most cited Epidemiological Modelling group. CovidSim (C++, 66 million synthetic UK agents) directly informed the March 2020 lockdown. Imperial also hosts the VIMC (Vaccine Impact Modelling Consortium) coordinating global vaccine burden estimation for Gavi and UNICEF across 10 pathogens in 112 countries, providing the modelled evidence base for the global vaccine investment portfolio.</li>
+<li><strong>London School of Hygiene and Tropical Medicine (LSHTM)</strong> — The Centre for Mathematical Modelling of Infectious Diseases (CMMID) — one of the largest infectious disease modelling groups globally, with over 100 researchers — was instrumental in UK COVID-19 SPI-M-O modelling. CMMID maintains widely used open-source tools including EpiNow2 (real-time Rₜ estimation), epidemia (Bayesian renewal process models), and socialmixr (contact matrix estimation). Strong tradition in global health <a href="../pages/Epidemiological-Modelling" class="internal alias" data-slug="pages/Epidemiological-Modelling">Epidemiological Modelling</a>: malaria (Malaria Atlas Project), tuberculosis, neglected tropical diseases.</li>
+<li><strong>University of Warwick</strong> — Warwick Mathematics Institute hosts a major infectious disease modelling group (Matt Keeling, Mike Tildesley) contributing the WM (Warwick Model) to SPI-M-O. Keeling’s textbook “Modeling Infectious Diseases in Humans and Animals” (with Rohani, 2007) is a standard graduate reference. Strong tradition in foot-and-mouth disease modelling informing DEFRA veterinary policy.</li>
+<li><strong>University of Cambridge</strong> — Department of Applied Mathematics and Theoretical Physics (DAMTP) and MRC Biostatistics Unit contribute Bayesian epidemic methodology. Cambridge developed the Epiabm open-source Python/C++ framework for spatially explicit ABM at local-authority resolution, used in UKHSA pandemic preparedness infrastructure. Julia Gog (St John’s College) is a leader in network epidemiology.</li>
+<li><strong>University of Edinburgh</strong> — Roslin Institute and the Usher Institute contribute veterinary and human epidemiological modelling, including spatial spread of livestock disease and zoonotic transmission risk assessment. Edinburgh’s access to ARCHER2 HPC (750,000 AMD EPYC cores, 48 PetaFLOPs) enables large-scale ensemble runs for stochastic individual-based epidemic models.</li>
+<li><strong>UKHSA (UK Health Security Agency)</strong> — The national public health agency operates the Epidemiology Modelling Review Group (EMRG) and maintains operational modelling capacity for seasonal influenza, respiratory syncytial virus, COVID-19, and emerging pathogens. UKHSA’s Joint Biosecurity Centre (JBC) uses real-time epidemiological models to monitor threat levels. The wastewater epidemiology expansion (2025, £1.3 million ISF funding) targets 11 high-priority pathogens.</li>
+<li><strong>Northern England</strong> — Manchester’s Centre for Epidemiology at the University of Manchester contributes to chronic disease epidemiology and health economic modelling. Sheffield’s FLAME GPU platform (Paul Richmond, Computer Science) provides world-leading GPU-accelerated simulation infrastructure applicable to large-scale epidemic ABMs. Leeds’ School of Medicine contributes methodological work on infectious disease surveillance design and reporting fraction estimation. Newcastle University’s Institute for Ageing contributes age-stratified epidemic modelling for care home outbreak dynamics.</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Real-time digital epidemiological twins</strong> — Integration of continuously calibrated epidemiological models with live multi-stream surveillance data (clinical cases, wastewater, genomic surveillance, mobility data) to produce real-time <a href="../pages/Digital-Twin" class="internal alias" data-slug="pages/Digital-Twin">Digital Twin</a> representations of outbreak dynamics across spatial scales from individual households to national populations. These twins will enable automated Rₜ monitoring with alert triggers, dynamic hospital capacity demand forecasting, and near-real-time counterfactual evaluation of emerging interventions.</li>
+<li><strong>AI-augmented parameter inference</strong> — Neural posterior estimation (NPE) and simulation-based inference frameworks (sbi, BayesFlow) will replace computationally expensive MCMC for ABM calibration, enabling full Bayesian parameter estimation for models with millions of agents within hours rather than weeks. Differentiable epidemic ABMs (JAX-based, analogous to ABMax) will enable gradient-based optimisation of intervention parameters directly through the simulation graph.</li>
+<li><strong>Multi-pathogen surveillance modelling</strong> — Simultaneous multi-pathogen epidemiological models that track co-circulation of seasonal influenza, RSV, COVID-19, and emerging pathogens within a unified framework, accounting for immunological interactions (cross-protection, immune landscape) and shared healthcare demand. Integration with wastewater multi-pathogen surveillance (UKHSA 2025 programme) will provide environmental leading indicators feeding directly into ensemble model nowcasts.</li>
+<li><strong>Climate-epidemic coupling</strong> — Epidemiological models coupled to climate projections will forecast how temperature, rainfall, and urbanisation trends affect the geographic range and seasonality of vector-borne diseases (malaria, dengue, Lyme disease, West Nile virus) under 2°C and 4°C warming scenarios, informing UK border health screening priorities and global health investment decisions.</li>
+<li><strong>Pathogen genomics integration</strong> — Full phylogenetic-epidemiological models (PhyDyn, BEAST2 phylodynamic frameworks) will routinely integrate genomic surveillance into transmission parameter estimation, enabling variant-specific Rₜ estimation and geographic origin inference within hours of sequence availability. Neural network phylogenetic models will dramatically accelerate the Bayesian phylodynamic inference currently bottlenecked by MCMC on large sequence datasets.</li>
+<li><strong>Behavioural and social media data integration</strong> — Incorporating mobility indices (Google Mobility Reports, mobile phone aggregates), social media risk perception signals, and digital contact tracing data as model covariates will improve behavioural realism in epidemiological models and enable anticipatory modelling of compliance changes. <a href="../pages/Agent-Based-Modelling" class="internal alias" data-slug="pages/Agent-Based-Modelling">Agent-Based Modelling</a> with <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> as agent behavioural engines (Park et al. 2023 paradigm) offers a pathway to realistic heterogeneous behavioural responses to epidemic communication.</li>
+</ul>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<ol>
+<li>Kermack, W. O., &amp; McKendrick, A. G. (1927). “A Contribution to the Mathematical Theory of Epidemics.” Proceedings of the Royal Society of London A, 115(772), 700–721. [Foundation SIR threshold theorem]</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Ross, R. (1911). The Prevention of Malaria (2nd ed.). John Murray. [First mathematical epidemic threshold proof]</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Anderson, R. M., &amp; May, R. M. (1991). Infectious Diseases of Humans: Dynamics and Control. Oxford University Press. [Canonical mathematical epidemiology reference]</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Bailey, N. T. J. (1957). The Mathematical Theory of Infectious Diseases. Griffin. [Stochastic epidemic theory]</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Keeling, M. J., &amp; Rohani, P. (2007). Modeling Infectious Diseases in Humans and Animals. Princeton University Press. [Graduate-level textbook; <a href="../pages/Network-Analysis" class="internal alias" data-slug="pages/Network-Analysis">Network Analysis</a> and <a href="../pages/Agent-Based-Modelling" class="internal alias" data-slug="pages/Agent-Based-Modelling">Agent-Based Modelling</a> coverage]</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Mossong, J., et al. (2008). “Social Contacts and Mixing Patterns Relevant to the Spread of Infectious Diseases.” PLOS Medicine, 5(3), e74. [POLYMOD contact matrix survey; underpins age-structured models]</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Ferguson, N. M., et al. (2006). “Strategies for Mitigating an Influenza Pandemic.” Nature, 442(7101), 448–452. [First large-scale pandemic ABM with UK/US synthetic populations]</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Ferguson, N. M., et al. (2020). “Impact of Non-Pharmaceutical Interventions (NPIs) to Reduce COVID-19 Mortality and Healthcare Demand.” Imperial College COVID-19 Response Team Report 9. [Policy-defining COVID-19 ABM]</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Flaxman, S., et al. (2020). “Estimating the Effects of Non-Pharmaceutical Interventions on COVID-19 in Europe.” Nature, 584(7820), 257–261. [Bayesian hierarchical epidemic model; NPI effect estimation]</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Brauner, J. M., et al. (2021). “Inferring the Effectiveness of Government Interventions Against COVID-19.” Science, 371(6531), eabd9338. [Multi-country <a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a> for NPI effects]</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Cori, A., et al. (2013). “A New Framework and Software to Estimate Time-Varying Reproduction Numbers During Epidemics.” American Journal of Epidemiology, 178(9), 1505–1512. [EpiEstim Rₜ estimation; basis of EpiNow2]</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Eubank, S., et al. (2004). “Modelling Disease Outbreaks in Realistic Urban Social Networks.” Nature, 429(6988), 180–184. [First contact-network epidemic ABM using real mobility data]</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Diekmann, O., Heesterbeek, J. A. P., &amp; Metz, J. A. J. (1990). “On the Definition and the Computation of the Basic Reproduction Ratio R₀ in Models for Infectious Diseases.” Journal of Mathematical Biology, 28(4), 365–382. [Next-generation matrix framework for R₀]</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Evensen, G. (1994). “Sequential Data Assimilation with a Nonlinear Quasi-Geostrophic Model.” Journal of Geophysical Research: Oceans, 99(C5), 10143–10162. [Ensemble Kalman Filter; adapted for epidemic <a href="../Data-Assimilation" class="internal alias" data-slug="Data-Assimilation">Data Assimilation</a>]</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Raissi, M., Perdikaris, P., &amp; Karniadakis, G. E. (2019). “Physics-Informed Neural Networks.” Journal of Computational Physics, 378, 686–707. [<a href="../Physics-Informed-Neural-Network" class="internal alias" data-slug="Physics-Informed-Neural-Network">Physics-Informed Neural Network</a> framework; applied to epidemic ODEs]</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Rackauckas, C., et al. (2020). “Universal Differential Equations for Scientific Machine Learning.” arXiv:2001.04385. [Hybrid neural-ODE epidemic modelling in Julia SciML]</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Thompson, R. N., et al. (2019). “Improved Inference of Time-Varying Reproduction Numbers During Infectious Disease Outbreaks.” Epidemics, 29, 100356. [EpiNow2 methodology]</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Cranmer, K., Brehmer, J., &amp; Louppe, G. (2020). “The Frontier of Simulation-Based Inference.” PNAS, 117(48), 30055–30062. [Neural posterior estimation for complex simulators; applicable to epidemic ABMs]</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Pullano, G., et al. (2021). “Underdetection of COVID-19 Cases in France Threatens Epidemic Control.” Nature, 590(7844), 134–139. [Bayesian epidemic model integrating multiple surveillance streams]</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>arXiv:2505.03938 (2025). “A computationally efficient framework for realistic epidemic modelling through Gaussian Markov random fields.” [GMRF spatial epidemic modelling; UK case study]</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>arXiv:2310.16804. “Learning COVID-19 Regional Transmission Using Universal Differential Equations in a SIR Model.” [Differentiable SIR with learned transmission rates]</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>PMC12007818 (2025). “Neural parameter calibration and uncertainty quantification for epidemic forecasting.” [AI-augmented Bayesian inference for epidemic forecasting]</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>PMC11695538 (2025). “The role of AI in pandemic responses: from epidemiological modelling to vaccine development.” NCBl review. [Comprehensive AI/ML integration review]</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>PMC12203812 (2025). “Outbreak oracles: how AI’s journey through COVID-19 shapes future epidemic strategy.” Editorial review. [AI integration in epidemic forecasting post-COVID]</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>UKHSA (2025). “UKHSA launches development programme for wastewater monitoring techniques.” GOV.UK. [Wastewater epidemiology expansion to 11 pathogens; £1.3M ISF funding]</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>ScienceDirect (2024). “Approaching epidemiological dynamics of COVID-19 with physics-informed neural networks.” Journal of the Franklin Institute. [PINNs for epidemic parameter inference]</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>Chopra, A., et al. (2023). “Differentiable Agent-Based Epidemiology.” AAMAS 2023. [Gradient-based calibration of epidemic ABMs]</li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>Nature Research Intelligence (2025). “Epidemiological Modelling” topic summary. <a href="https://www.nature.com/research-intelligence/nri-topic-summaries/epidemiological-modelling-for-l3-420205" class="external">https://www.nature.com/research-intelligence/nri-topic-summaries/epidemiological-modelling-for-l3-420205<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Current research landscape overview]</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-2195" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#support-relationships" data-for="support-relationships">Support Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Agent-Based-Modelling" class="internal">Agent-Based Modelling</a></li><li><a href="../pages/Agent-Based-Models" class="internal">Agent-Based Models</a></li><li><a href="../pages/Computational-Modelling" class="internal">Computational Modelling</a></li><li><a href="../pages/Emergent-Behavior" class="internal">Emergent Behavior</a></li><li><a href="../pages/Epidemiological-Modelling" class="internal">Epidemiological Modelling</a></li><li><a href="../pages/Network-Analysis" class="internal">Network Analysis</a></li><li><a href="../pages/Public-Health" class="internal">Public Health</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

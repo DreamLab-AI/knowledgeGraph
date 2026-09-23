@@ -40,9 +40,24 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
+    {
       "id": "urn:ngm:class:autonomous-agent",
       "label": "Autonomous Agent",
       "slug": "autonomous-agent"
+    },
+    {
+      "id": "urn:ngm:class:goal-directed-system",
+      "label": "Goal-Directed System",
+      "slug": "goal-directed-system"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -53,44 +68,66 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:action-executor",
-        "label": "Action Executor"
+        "id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
       },
       {
-        "id": "urn:ngm:class:decision-engine",
-        "label": "Decision Engine"
+        "id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
       },
       {
-        "id": "urn:ngm:class:goal-system",
-        "label": "Goal System"
+        "id": "urn:ngm:class:observation-interface",
+        "label": "Observation Interface"
       },
       {
-        "id": "urn:ngm:class:learning-component",
-        "label": "Learning Component"
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
       },
       {
-        "id": "urn:ngm:class:perception-module",
-        "label": "Perception Module"
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
       },
       {
-        "id": "urn:ngm:class:game-engine",
-        "label": "Game Engine"
+        "id": "urn:ngm:class:sandboxing",
+        "label": "Sandboxing"
       },
       {
-        "id": "urn:ngm:class:middleware",
-        "label": "Middleware"
+        "id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
@@ -110,18 +147,6 @@
       {
         "id": "urn:ngm:class:computational-resources",
         "label": "Computational Resources"
-      },
-      {
-        "id": "urn:ngm:class:goal-specification",
-        "label": "Goal Specification"
-      },
-      {
-        "id": "urn:ngm:class:runtime-environment",
-        "label": "Runtime Environment"
-      },
-      {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
       }
     ],
     "enables": [
@@ -130,8 +155,16 @@
         "label": "Automated Planning"
       },
       {
+        "id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision Making"
+      },
+      {
         "id": "urn:ngm:class:multi-agent-systems",
         "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:software-development-automation",
+        "label": "Software Engineering Automation"
       },
       {
         "id": "urn:ngm:class:task-automation",
@@ -148,30 +181,62 @@
       {
         "id": "urn:ngm:class:content-moderation",
         "label": "Content Moderation"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
-      },
-      {
-        "id": "urn:ngm:class:npc-interaction",
-        "label": "NPC Interaction"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
       {
         "id": "urn:ngm:class:api",
         "label": "API Interface"
       },
       {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
         "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:ai-framework",
+        "label": "AI Framework"
+      },
+      {
+        "id": "urn:ngm:class:data-source",
+        "label": "Data Source"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
       }
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:belief-desire-intention",
+        "label": "Belief-Desire-Intention"
+      },
+      {
+        "id": "urn:ngm:class:plan-and-execute",
+        "label": "Plan and Execute"
+      },
+      {
         "id": "urn:ngm:class:re-act-pattern",
         "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:ngm:class:reflexion",
+        "label": "Reflexion Pattern"
+      },
+      {
+        "id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thoughts"
       }
     ],
     "contrastsWith": [
@@ -180,37 +245,65 @@
         "label": "Chatbot"
       },
       {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
         "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisations"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
         "id": "urn:ngm:class:robotic-process-automation",
         "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:scientific-discovery",
+        "label": "Scientific Discovery"
       },
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:3-d-reconstruction",
-        "label": "3D Reconstruction"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
-      },
-      {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
       {
         "id": "urn:ngm:class:chain-of-thought",
         "label": "Chain of Thought"
@@ -220,31 +313,69 @@
         "label": "Function Calling"
       },
       {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
       },
       {
+        "id": "urn:ngm:class:sandboxing",
+        "label": "Sandboxing"
+      },
+      {
         "id": "urn:ngm:class:vector-database",
         "label": "Vector Database"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
       },
       {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
       },
       {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
       {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
@@ -274,20 +405,32 @@
         "label": "Agentic AI"
       },
       {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
-      },
-      {
-        "id": "urn:ngm:class:sc-display-and-rendering",
-        "label": "Display and Rendering"
-      },
-      {
-        "id": "urn:ngm:class:sc-interaction",
-        "label": "Interaction Technology"
-      },
-      {
-        "id": "urn:ngm:class:sc-standards-and-interop",
-        "label": "Standards and Interoperability"
       }
     ]
   },

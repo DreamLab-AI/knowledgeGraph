@@ -29,24 +29,44 @@
       {
         "id": "urn:ngm:class:safety-lifecycle",
         "label": "Safety Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Hazard and Risk Assessment"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:ce-marking",
         "label": "CE Marking"
+      },
+      {
+        "id": "urn:ngm:class:machinery-directive",
+        "label": "Machinery Directive"
+      },
+      {
+        "id": "urn:ngm:class:safety-validation",
+        "label": "Safety Validation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:failure-mode-and-effects-analysis",
+        "id": "urn:ngm:class:fmea",
         "label": "Failure Mode and Effects Analysis"
+      },
+      {
+        "id": "urn:ngm:class:diagnostic-coverage",
+        "label": "Diagnostic Coverage"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:iec-61508",
         "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:risk-reduction",
+        "label": "Risk Reduction"
       }
     ],
     "contrastsWith": [
@@ -67,15 +87,36 @@
       {
         "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:programmable-electronic-system",
+        "label": "Programmable Electronic System"
+      },
+      {
+        "id": "urn:ngm:class:safety-related-control-system",
+        "label": "Safety-Related Control System"
+      },
+      {
+        "id": "urn:ngm:class:probability-of-failure-on-demand",
+        "label": "Probability of Failure on Demand"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:machinery-safety",
+        "label": "Machinery Safety"
       }
     ],
     "relatedTo": [
@@ -94,6 +135,10 @@
       {
         "id": "urn:ngm:class:safety-instrumented-system",
         "label": "Safety Instrumented System"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Hardware Fault Tolerance"
       }
     ]
   },
@@ -102,6 +147,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -202,8 +252,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -294,6 +352,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -312,8 +376,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -322,10 +390,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

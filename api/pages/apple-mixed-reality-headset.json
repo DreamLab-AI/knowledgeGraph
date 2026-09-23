@@ -21,6 +21,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       }
     ],
     "enables": [
@@ -32,7 +36,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:apple-inc-technology-corporation",
+        "label": "Apple Inc Technology Corporation"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -41,14 +50,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:immersive-computing",
-      "label": "Immersive Computing",
-      "slug": "immersive-computing"
-    },
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment",
-      "slug": "sc-platform-and-environment"
+      "id": "urn:ngm:class:augmented-reality",
+      "label": "Augmented Reality",
+      "slug": "augmented-reality"
     },
     {
       "id": "urn:ngm:class:extended-reality",
@@ -56,14 +60,49 @@
       "slug": "extended-reality"
     },
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing",
-      "slug": "spatial-computing"
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:immersive-computing",
+      "label": "Immersive Computing",
+      "slug": "immersive-computing"
+    },
+    {
+      "id": "urn:ngm:class:perceptual-computing",
+      "label": "Perceptual Computing",
+      "slug": "perceptual-computing"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing-paradigm",
+      "label": "Spatial Computing Paradigm",
+      "slug": "spatial-computing-paradigm"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     },
     {
       "id": "urn:ngm:class:extended-reality-xr",
       "label": "Extended Reality (XR)",
       "slug": "extended-reality-xr"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:immersive-technology",
@@ -107,8 +146,8 @@
         "label": "Occlusion Rendering"
       },
       {
-        "id": "urn:ngm:class:scene-understanding",
-        "label": "Scene Understanding"
+        "id": "urn:ngm:class:pass-through-video",
+        "label": "Pass-Through Video"
       }
     ],
     "requires": [
@@ -121,6 +160,10 @@
         "label": "6DoF Tracking"
       },
       {
+        "id": "urn:ngm:class:compute-soc",
+        "label": "Compute SoC"
+      },
+      {
         "id": "urn:ngm:class:display-calibration",
         "label": "Display Calibration"
       },
@@ -129,26 +172,34 @@
         "label": "Inside-Out Tracking"
       },
       {
+        "id": "urn:ngm:class:latency-budget",
+        "label": "Latency Budget"
+      },
+      {
         "id": "urn:ngm:class:slam",
         "label": "SLAM"
       },
       {
         "id": "urn:ngm:class:spatial-mesh",
         "label": "Spatial Mesh"
-      },
-      {
-        "id": "urn:ngm:class:visual-inertial-odometry",
-        "label": "Visual-Inertial Odometry"
-      },
-      {
-        "id": "urn:ngm:class:waveguide-optics",
-        "label": "Waveguide Optics"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:architectural-visualisation",
         "label": "Architectural Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:avatar-presence",
+        "label": "Avatar Presence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-overlay",
+        "label": "Digital Twin Overlay"
+      },
+      {
+        "id": "urn:ngm:class:holographic-training",
+        "label": "Holographic Training"
       },
       {
         "id": "urn:ngm:class:immersive-collaboration",
@@ -165,32 +216,40 @@
       {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio Experience"
-      },
-      {
-        "id": "urn:ngm:class:surgical-navigation",
-        "label": "Surgical Navigation"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:virtual-training",
-        "label": "Virtual Training Simulation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:graphics-processing-unit",
-        "label": "Graphics Processing Unit"
+        "id": "urn:ngm:class:cloud-anchor-infrastructure",
+        "label": "Cloud Anchor Infrastructure"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:spatial-audio",
-        "label": "Spatial Audio"
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:slam-algorithms",
+        "label": "SLAM Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio-processing",
+        "label": "Spatial Audio Processing"
       }
     ],
     "implements": [
@@ -201,6 +260,10 @@
       {
         "id": "urn:ngm:class:occlusion-rendering",
         "label": "Occlusion Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physics-coherent-holography",
+        "label": "Physics Coherent Holography"
       },
       {
         "id": "urn:ngm:class:reality-virtuality-continuum",
@@ -217,16 +280,36 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:desktop-computing",
-        "label": "Desktop Computing"
+        "id": "urn:ngm:class:flat-screen-computing",
+        "label": "Flat Screen Computing"
       },
       {
-        "id": "urn:ngm:class:pervasive-computing",
-        "label": "Pervasive Computing"
+        "id": "urn:ngm:class:non-spatial-computing",
+        "label": "Non-Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:display-technology",
-        "label": "Traditional Display Technology"
+        "id": "urn:ngm:class:screen-based-collaboration",
+        "label": "Screen-Based Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:traditional-2d-interface",
+        "label": "Traditional 2D Interface"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:two-dimensional-interface",
+        "label": "Two-Dimensional Interface"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -235,38 +318,42 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:3-d-reconstruction",
-        "label": "3D Reconstruction"
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:gaussian-splatting",
         "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:lidar-scanner",
+        "label": "LiDAR Scanner"
       },
       {
         "id": "urn:ngm:class:micro-oled-display",
@@ -277,24 +364,20 @@
         "label": "Neural Radiance Field"
       },
       {
+        "id": "urn:ngm:class:pancake-lens",
+        "label": "Pancake Lens"
+      },
+      {
+        "id": "urn:ngm:class:silicon-carbide-waveguide",
+        "label": "Silicon Carbide Waveguide"
+      },
+      {
         "id": "urn:ngm:class:time-of-flight-sensor",
         "label": "Time-of-Flight Sensor"
       },
       {
         "id": "urn:ngm:class:vision-transformer",
         "label": "Transformer Vision Model"
-      },
-      {
-        "id": "urn:ngm:class:waveguide-optics",
-        "label": "Diffractive Waveguide"
-      },
-      {
-        "id": "urn:ngm:class:3-d-rendering",
-        "label": "3D Rendering"
-      },
-      {
-        "id": "urn:ngm:class:open-xr",
-        "label": "OpenXR"
       }
     ],
     "supports": [
@@ -305,6 +388,10 @@
       {
         "id": "urn:ngm:class:horizon-workrooms",
         "label": "Horizon Workrooms"
+      },
+      {
+        "id": "urn:ngm:class:meta-spatial-anchors",
+        "label": "Meta Spatial Anchors"
       },
       {
         "id": "urn:ngm:class:microsoft-mesh",
@@ -325,16 +412,16 @@
       {
         "id": "urn:ngm:class:unreal-engine",
         "label": "Unreal Engine XR"
-      },
-      {
-        "id": "urn:ngm:class:web-xr",
-        "label": "WebXR"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:ieee-vr",
         "label": "IEEE VR"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-159-ergonomics",
+        "label": "ISO TC 159 Ergonomics"
       },
       {
         "id": "urn:ngm:class:khronos-group",
@@ -349,26 +436,38 @@
         "label": "OpenXR Standard"
       },
       {
-        "id": "urn:ngm:class:w-3-c-web-xr-device-api",
-        "label": "W3C WebXR Device API"
+        "id": "urn:ngm:class:openxr-scene-understanding-extension",
+        "label": "OpenXR Scene Understanding Extension"
       },
       {
-        "id": "urn:ngm:class:web-xr",
-        "label": "WebXR"
+        "id": "urn:ngm:class:openxr-standard",
+        "label": "OpenXR Standard"
+      },
+      {
+        "id": "urn:ngm:class:w-3-c-web-xr-device-api",
+        "label": "W3C WebXR Device API"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
         "id": "urn:ngm:class:immersive-technology",
         "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       }
     ],
     "relatedTo": [

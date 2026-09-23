@@ -14,6 +14,10 @@
     {
       "id": "urn:ngm:class:creative-ai",
       "label": "Creative AI"
+    },
+    {
+      "id": "urn:ngm:class:image-generation",
+      "label": "Image Generation"
     }
   ],
   "entityType": "Class",
@@ -44,6 +48,14 @@
       {
         "id": "urn:ngm:class:vae",
         "label": "VAE"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:super-resolution",
+        "label": "Super-Resolution"
       }
     ],
     "requires": [
@@ -58,6 +70,18 @@
       {
         "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Datasets"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "enables": [
@@ -76,11 +100,70 @@
       {
         "id": "urn:ngm:class:creative-expression",
         "label": "Creative Expression"
+      },
+      {
+        "id": "urn:ngm:class:gan-virtual-landscape-art",
+        "label": "GAN Virtual Landscape Art"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -102,10 +185,84 @@
       {
         "id": "urn:ngm:class:vision-transformer",
         "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "Kohya, DreamBooth and Similar"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:image-processing-software",
+        "label": "Image Processing Software"
+      },
+      {
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:image-and-video-restoration",
+        "label": "Image and Video Restoration"
+      },
+      {
+        "id": "urn:ngm:class:creative-expression",
+        "label": "Creative Expression"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:creative-industries",
+        "label": "Creative Industries"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:super-resolution",
+        "label": "Super-Resolution"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -119,6 +276,66 @@
       {
         "id": "urn:ngm:class:multimodal-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-to-image",
+        "label": "Image-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:stability-ai",
+        "label": "Stability AI"
+      },
+      {
+        "id": "urn:ngm:class:midjourney-text-to-image-service",
+        "label": "Midjourney"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-editing",
+        "label": "Image Editing"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "id": "urn:ngm:class:super-resolution",
+        "label": "Super-Resolution"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:image-preprocessing",
+        "label": "Image Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      },
+      {
+        "id": "urn:ngm:class:gan-virtual-landscape-art",
+        "label": "GAN Virtual Landscape Art"
       }
     ]
   },
@@ -129,19 +346,19 @@
       "slug": "ai-application"
     },
     {
-      "id": "urn:ngm:class:deep-learning",
-      "label": "Deep Learning",
-      "slug": "deep-learning"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:computational-creativity",
+      "label": "Computational Creativity",
+      "slug": "computational-creativity"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
     },
     {
       "id": "urn:ngm:class:machine-learning-discipline",
@@ -154,17 +371,28 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science",
+      "slug": "cognitive-science"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
-      {
-        "id": "urn:ngm:class:diffusion-models",
-        "label": "Diffusion Models"
-      },
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
@@ -178,27 +406,27 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:autonomous-driving",
-        "label": "Autonomous Driving"
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:large-scale-datasets",
-        "label": "Large-Scale Datasets"
-      },
       {
         "id": "urn:ngm:class:model-architecture",
         "label": "Model Architecture"
@@ -212,20 +440,24 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:deep-learning-framework",
-        "label": "Deep Learning Framework"
-      },
-      {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:hyperparameter-tuning",
-        "label": "Hyperparameter Tuning"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       },
       {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ],
     "enables": [
@@ -264,12 +496,36 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
       }
     ],
     "implements": [
@@ -294,16 +550,16 @@
         "label": "Video Generation"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:conceptual-blending",
+        "label": "Conceptual Blending"
       },
       {
-        "id": "urn:ngm:class:self-supervised-learning",
-        "label": "Self-Supervised Learning"
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
       }
     ],
     "contrastsWith": [
@@ -316,11 +572,47 @@
         "label": "Rule-Based Systems"
       },
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:classical-ai-planning",
+        "label": "Classical AI Planning"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
@@ -334,12 +626,8 @@
         "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
       }
     ],
     "uses": [
@@ -364,16 +652,16 @@
         "label": "Latent Space"
       },
       {
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
         "id": "urn:ngm:class:style-transfer",
         "label": "Neural Style Transfer"
-      },
-      {
-        "id": "urn:ngm:class:variational-autoencoder",
-        "label": "Variational Autoencoder"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
       }
     ],
     "supports": [
@@ -390,12 +678,46 @@
         "label": "Game Development"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal"
+      },
+      {
+        "id": "urn:ngm:class:open-generative-ai-tools",
+        "label": "Open Generative AI tools"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:creative-expression",
+        "label": "Creative Expression"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2pa-provenance-standard",
+        "label": "C2PA Provenance Standard"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [

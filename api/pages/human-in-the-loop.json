@@ -55,6 +55,10 @@
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Decision Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "ethical alignment"
       }
     ],
     "dependsOn": [
@@ -140,6 +144,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -242,12 +251,12 @@
         "label": "Risk Management"
       },
       {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
+        "id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
       },
       {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
       }
     ],
     "dependsOn": [
@@ -358,6 +367,10 @@
         "label": "Digital Rights"
       },
       {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       },
@@ -426,16 +439,16 @@
         "label": "GDPR"
       },
       {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
         "id": "urn:ngm:class:change-management",
         "label": "Change Management"
       },
       {
         "id": "urn:ngm:class:enterprise-architecture",
         "label": "Enterprise Architecture"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
       }
     ]
   },
@@ -495,6 +508,10 @@
     {
       "slug": "risk-management",
       "label": "Risk Management"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
     }
   ],
   "backlinks": [

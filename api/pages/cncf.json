@@ -66,7 +66,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -180,8 +180,8 @@
         "label": "Conformance Test Suite"
       },
       {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
+        "id": "urn:ngm:class:technical-working-group",
+        "label": "Technical Working Group"
       }
     ],
     "requires": [
@@ -372,6 +372,10 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
       },
       {
         "id": "urn:ngm:class:regulatory-framework",

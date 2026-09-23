@@ -93,6 +93,14 @@
       {
         "id": "urn:ngm:class:audit-logging",
         "label": "Logging System"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Logging System"
+      },
+      {
+        "id": "urn:ngm:class:tracing-system",
+        "label": "Tracing System"
       }
     ],
     "bridgesTo": [
@@ -107,6 +115,10 @@
       {
         "id": "urn:ngm:class:model-drift-detection",
         "label": "Model Drift Detection"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ],
     "uses": [
@@ -282,7 +294,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

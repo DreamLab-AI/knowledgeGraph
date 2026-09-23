@@ -60,6 +60,10 @@
       {
         "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Process Automation"
       }
     ],
     "dependsOn": [
@@ -81,6 +85,10 @@
       {
         "id": "urn:ngm:class:batch-processing",
         "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:manual-processing",
+        "label": "Manual Processing"
       }
     ],
     "bridgesTo": [
@@ -120,6 +128,10 @@
       {
         "id": "urn:ngm:class:bpmn",
         "label": "BPMN"
+      },
+      {
+        "id": "urn:ngm:class:dmn",
+        "label": "DMN"
       }
     ],
     "partOf": [],
@@ -131,6 +143,10 @@
       {
         "id": "urn:ngm:class:integration-platform-as-a-service",
         "label": "Integration Platform as a Service"
+      },
+      {
+        "id": "urn:ngm:class:low-code-platform",
+        "label": "Low-Code Platforms"
       }
     ]
   },
@@ -206,6 +222,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

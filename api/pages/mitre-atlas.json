@@ -32,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -168,6 +173,10 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-auditing",
+        "label": "Smart Contract Auditing"
       },
       {
         "id": "urn:ngm:class:data",

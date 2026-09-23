@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:user-satisfaction",
         "label": "User Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:learnability",
+        "label": "Learnability"
+      },
+      {
+        "id": "urn:ngm:class:memorability",
+        "label": "Memorability"
+      },
+      {
+        "id": "urn:ngm:class:error-prevention",
+        "label": "Error Prevention"
       }
     ],
     "requires": [
@@ -74,7 +86,16 @@
         "label": "Heuristic Evaluation"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:functionality",
+        "label": "Functionality"
+      },
+      {
+        "id": "urn:ngm:class:aesthetics",
+        "label": "Aesthetics"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:explainability",
@@ -83,6 +104,10 @@
       {
         "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:spatial-user-interfaces",
+        "label": "Spatial User Interface"
       },
       {
         "id": "urn:ngm:class:spatial-user-interfaces",
@@ -117,6 +142,10 @@
       {
         "id": "urn:ngm:class:iso-9241",
         "label": "ISO 9241"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
       },
       {
         "id": "urn:ngm:class:wcag-2-2",
@@ -312,6 +341,14 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -324,11 +361,15 @@
         "label": "Journey Mapping"
       },
       {
+        "id": "urn:ngm:class:personas",
+        "label": "Personas"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

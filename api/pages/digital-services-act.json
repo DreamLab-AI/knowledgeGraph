@@ -37,6 +37,10 @@
       {
         "id": "urn:ngm:class:algorithmic-transparency",
         "label": "Algorithmic Transparency"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Moderation Infrastructure"
       }
     ],
     "enables": [
@@ -239,6 +243,10 @@
     ],
     "dependsOn": [
       {
+        "id": "urn:ngm:class:enforcement",
+        "label": "Enforcement"
+      },
+      {
         "id": "urn:ngm:class:policy-framework",
         "label": "Policy Framework"
       },
@@ -263,6 +271,10 @@
       {
         "id": "urn:ngm:class:self-regulation",
         "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
       },
       {
         "id": "urn:ngm:class:self-organisation",
@@ -377,8 +389,8 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
       }
     ]
   },

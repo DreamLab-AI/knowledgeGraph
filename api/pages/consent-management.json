@@ -32,6 +32,14 @@
       {
         "id": "urn:ngm:class:user-interface",
         "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:permission-controller",
+        "label": "Permission Controller"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logger"
       }
     ],
     "requires": [
@@ -77,7 +85,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -225,7 +238,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

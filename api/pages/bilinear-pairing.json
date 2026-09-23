@@ -52,6 +52,10 @@
       {
         "id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature"
       }
     ],
     "dependsOn": [
@@ -88,7 +92,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:snark",
+        "id": "urn:ngm:class:zk-snark",
         "label": "SNARK"
       }
     ],
@@ -231,12 +235,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -263,6 +267,10 @@
       {
         "id": "urn:ngm:class:threat-actor",
         "label": "Threat Actor"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
       },
       {
         "id": "urn:ngm:class:self-organisation",
@@ -381,16 +389,16 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
       }
     ]
   },

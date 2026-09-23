@@ -21,6 +21,14 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:verifiability",
+        "label": "Verifiability"
+      },
+      {
+        "id": "urn:ngm:class:integrity",
+        "label": "Integrity"
       }
     ],
     "enables": [
@@ -64,6 +72,10 @@
       {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distrust",
+        "label": "Distrust"
       }
     ],
     "bridgesTo": [
@@ -142,10 +154,19 @@
       {
         "id": "urn:ngm:class:legitimacy",
         "label": "Legitimacy"
+      },
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
@@ -160,39 +181,51 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
-      },
-      {
-        "id": "urn:ngm:class:data-protection-regulation",
-        "label": "Data Protection Regulation"
-      },
-      {
-        "id": "urn:ngm:class:gdpr-compliance",
-        "label": "GDPR Compliance"
-      },
-      {
-        "id": "urn:ngm:class:intellectual-property-rights-framework",
-        "label": "Intellectual Property Rights Framework"
-      },
-      {
-        "id": "urn:ngm:class:legal-framework",
-        "label": "Legal Framework"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-framework",
-        "label": "Regulatory Framework"
-      },
-      {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
       {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
@@ -212,32 +245,32 @@
         "label": "Civil Society"
       },
       {
+        "id": "urn:ngm:class:constitutional-law",
+        "label": "Constitutional Law"
+      },
+      {
         "id": "urn:ngm:class:democratic-governance",
         "label": "Democratic Governance"
       },
       {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
       }
     ],
     "contrastsWith": [
@@ -247,6 +280,22 @@
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
@@ -290,7 +339,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

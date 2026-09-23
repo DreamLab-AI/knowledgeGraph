@@ -38,7 +38,7 @@
         "label": "Secure Multi-Party Computation"
       },
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       }
     ],
@@ -48,7 +48,7 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -89,6 +89,10 @@
       {
         "id": "urn:ngm:class:pseudonymisation",
         "label": "Pseudonymisation"
+      },
+      {
+        "id": "urn:ngm:class:anonymisation",
+        "label": "Data Anonymisation"
       }
     ],
     "bridgesTo": [
@@ -103,6 +107,10 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Decentralised Data Marketplace"
       },
       {
         "id": "urn:ngm:class:marketplace",
@@ -130,6 +138,14 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Biometric Data Protection"
       },
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",

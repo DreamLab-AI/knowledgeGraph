@@ -42,12 +42,20 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:deployment-infrastructure",
+        "label": "Deployment infrastructure"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-monitoring",
         "label": "AI Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:ai-system-use-by-ai-users-and-ai-operators",
+        "label": "AI system use by AI Users and AI Operators"
       }
     ],
     "dependsOn": [
@@ -80,6 +88,10 @@
       {
         "id": "urn:ngm:class:security",
         "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
       }
     ],
     "uses": [
@@ -111,7 +123,7 @@
         "label": "ISO-IEC 5338 2023"
       },
       {
-        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -151,6 +163,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -257,8 +274,8 @@
         "label": "Risk Management"
       },
       {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
+        "id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
       }
     ],
     "dependsOn": [
@@ -415,6 +432,10 @@
         "label": "Continuous Integration"
       },
       {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
         "id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
       },
@@ -427,20 +448,16 @@
         "label": "GDPR"
       },
       {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
         "id": "urn:ngm:class:change-management",
         "label": "Change Management"
       },
       {
         "id": "urn:ngm:class:enterprise-architecture",
         "label": "Enterprise Architecture"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
       }
     ]
   },

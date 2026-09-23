@@ -48,6 +48,10 @@
       {
         "id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterisation"
       }
     ],
     "bridgesTo": [
@@ -100,6 +104,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -111,6 +130,14 @@
       {
         "id": "urn:ngm:class:environment-mapping",
         "label": "Environment Map"
+      },
+      {
+        "id": "urn:ngm:class:image-based-lighting",
+        "label": "Image-Based Lighting"
+      },
+      {
+        "id": "urn:ngm:class:microfacet-model",
+        "label": "Microfacet Model"
       },
       {
         "id": "urn:ngm:class:normal-map",
@@ -127,14 +154,6 @@
       {
         "id": "urn:ngm:class:rasterization",
         "label": "Rasterization"
-      },
-      {
-        "id": "urn:ngm:class:display-hardware",
-        "label": "Display Hardware"
-      },
-      {
-        "id": "urn:ngm:class:foveated-rendering",
-        "label": "Foveated Rendering"
       }
     ],
     "requires": [
@@ -207,12 +226,30 @@
     ],
     "dependsOn": [
       {
+        "id": "urn:ngm:class:energy-conservation",
+        "label": "Energy Conservation"
+      },
+      {
+        "id": "urn:ngm:class:radiometry",
+        "label": "Radiometry"
+      },
+      {
         "id": "urn:ngm:class:graphics-api",
         "label": "Graphics API"
       },
       {
         "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cook-torrance-model",
+        "label": "Cook-Torrance Model"
+      },
+      {
+        "id": "urn:ngm:class:fresnel-equation",
+        "label": "Fresnel Equation"
       }
     ],
     "contrastsWith": [
@@ -227,6 +264,10 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -239,7 +280,7 @@
         "label": "Neural Radiance Field"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -249,6 +290,10 @@
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
         "id": "urn:ngm:class:extended-reality-xr",
@@ -263,6 +308,10 @@
       {
         "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:hdri",
+        "label": "HDRI"
       },
       {
         "id": "urn:ngm:class:monte-carlo-integration",
@@ -287,10 +336,6 @@
       {
         "id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
-      },
-      {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
       }
     ],
     "supports": [
@@ -305,6 +350,14 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -347,16 +400,16 @@
         "label": "Deferred Rendering"
       },
       {
+        "id": "urn:ngm:class:screen-space-reflections",
+        "label": "Screen-Space Reflections"
+      },
+      {
+        "id": "urn:ngm:class:temporal-antialiasing",
+        "label": "Temporal Antialiasing"
+      },
+      {
         "id": "urn:ngm:class:ai-upscaling-and-super-resolution",
         "label": "AI Upscaling and Super-Resolution"
-      },
-      {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:virtual-reality",
-        "label": "Virtual Reality"
       }
     ]
   },

@@ -10,14 +10,60 @@
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "id": "urn:ngm:class:management-science",
+      "label": "Management Science"
+    },
+    {
+      "id": "urn:ngm:class:entrepreneurship-research",
+      "label": "Entrepreneurship Research"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:co-intelligence-framework",
+        "label": "Co-Intelligence Framework"
+      },
+      {
+        "id": "urn:ngm:class:jagged-technological-frontier",
+        "label": "Jagged Technological Frontier"
+      },
+      {
+        "id": "urn:ngm:class:one-useful-thing-newsletter",
+        "label": "One Useful Thing Newsletter"
+      },
+      {
+        "id": "urn:ngm:class:wharton-generative-ai-lab",
+        "label": "Wharton Generative AI Lab"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:empirical-research-methods",
+        "label": "Empirical Research Methods"
+      },
+      {
+        "id": "urn:ngm:class:field-experimentation",
+        "label": "Field Experimentation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-adoption",
@@ -30,11 +76,66 @@
       {
         "id": "urn:ngm:class:human-ai-collaboration",
         "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-work-augmentation",
+        "label": "Knowledge Work Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "AI in Education"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:wharton-school",
+        "label": "Wharton School"
+      },
+      {
+        "id": "urn:ngm:class:university-of-pennsylvania",
+        "label": "University of Pennsylvania"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:co-intelligence-framework",
+        "label": "Co-Intelligence Framework"
+      },
+      {
+        "id": "urn:ngm:class:empirical-ai-research",
+        "label": "Empirical AI Research"
+      },
+      {
+        "id": "urn:ngm:class:public-ai-communication",
+        "label": "Public AI Communication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-doomerism",
+        "label": "AI Doomerism"
+      },
+      {
+        "id": "urn:ngm:class:ai-scepticism",
+        "label": "AI Scepticism"
+      },
+      {
+        "id": "urn:ngm:class:techno-pessimism",
+        "label": "Techno-Pessimism"
+      },
+      {
+        "id": "urn:ngm:class:ai-replacement-narrative",
+        "label": "AI Replacement Narrative"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:educational-technology",
@@ -57,15 +158,52 @@
       {
         "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:field-experiments",
+        "label": "Field Experiments"
+      },
+      {
+        "id": "urn:ngm:class:randomised-controlled-trials",
+        "label": "Randomised Controlled Trials"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:education-and-ai",
         "label": "AI in Education"
+      },
+      {
+        "id": "urn:ngm:class:entrepreneurship",
+        "label": "Entrepreneurship"
+      },
+      {
+        "id": "urn:ngm:class:innovation-management",
+        "label": "Innovation Management"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "AI in Education"
+      },
+      {
+        "id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      },
+      {
+        "id": "urn:ngm:class:future-of-work",
+        "label": "Future of Work"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:wharton-school-management-department",
+        "label": "Wharton School Management Department"
+      },
+      {
+        "id": "urn:ngm:class:mit-sloan-school-of-management",
+        "label": "MIT Sloan School of Management"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -79,6 +217,34 @@
       {
         "id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:wharton-school",
+        "label": "Wharton School"
+      },
+      {
+        "id": "urn:ngm:class:chatgpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:co-intelligence",
+        "label": "Co-Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-capability-complementarity",
+        "label": "Human-AI Capability Complementarity"
       }
     ]
   },
@@ -144,6 +310,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ]
   },

@@ -268,8 +268,20 @@
         "label": "Application Layer"
       },
       {
+        "id": "urn:ngm:class:bare-metal",
+        "label": "Bare Metal"
+      },
+      {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      },
+      {
+        "id": "urn:ngm:class:on-premises-computing",
+        "label": "On-Premises Computing"
       },
       {
         "id": "urn:ngm:class:centralised-computing",
@@ -294,7 +306,7 @@
         "label": "Governance"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       },
       {
@@ -310,8 +322,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:decentralised-governance",
-        "label": "Decentralised Governance"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -397,6 +409,10 @@
       },
       {
         "id": "urn:ngm:class:nist-cloud-computing",
+        "label": "NIST Cloud Computing Definition"
+      },
+      {
+        "id": "urn:ngm:class:nist-cloud-computing-definition",
         "label": "NIST Cloud Computing Definition"
       },
       {

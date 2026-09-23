@@ -64,6 +64,10 @@
       {
         "id": "urn:ngm:class:high-availability",
         "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "System Scalability"
       }
     ],
     "dependsOn": [
@@ -263,7 +267,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:multi-agent-orchestration",
       "label": "Multi-Agent Orchestration"
+    },
+    {
+      "id": "urn:ngm:class:multiagentorchestration",
+      "label": "MultiAgentOrchestration"
     }
   ],
   "entityType": "Class",
@@ -21,6 +25,10 @@
       {
         "id": "urn:ngm:class:multi-agent-system",
         "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "MultiAgentSystem"
       }
     ],
     "enables": [],
@@ -32,6 +40,10 @@
       {
         "id": "urn:ngm:class:memory-bank",
         "label": "Memory Bank"
+      },
+      {
+        "id": "urn:ngm:class:memorybank",
+        "label": "MemoryBank"
       }
     ],
     "supports": [],
@@ -45,6 +57,14 @@
       {
         "id": "urn:ngm:class:task-delegation",
         "label": "Task Delegation"
+      },
+      {
+        "id": "urn:ngm:class:supervisorworkerpattern",
+        "label": "SupervisorWorkerPattern"
+      },
+      {
+        "id": "urn:ngm:class:taskdelegation",
+        "label": "TaskDelegation"
       }
     ]
   },
@@ -308,7 +328,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:traffic-classification",
+        "label": "Traffic Classification"
       }
     ],
     "enables": [
@@ -53,10 +57,28 @@
       {
         "id": "urn:ngm:class:routing-protocol",
         "label": "Routing"
+      },
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:differentiated-services",
+        "label": "Differentiated Services"
+      },
+      {
+        "id": "urn:ngm:class:integrated-services",
+        "label": "Integrated Services"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:best-effort-delivery",
+        "label": "Best-Effort Delivery"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:extended-reality",
@@ -71,6 +93,14 @@
       {
         "id": "urn:ngm:class:traffic-shaping",
         "label": "Traffic Shaping"
+      },
+      {
+        "id": "urn:ngm:class:queuing-discipline",
+        "label": "Queuing Discipline"
+      },
+      {
+        "id": "urn:ngm:class:admission-control",
+        "label": "Admission Control"
       }
     ],
     "supports": [
@@ -91,6 +121,10 @@
       {
         "id": "urn:ngm:class:ietf",
         "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802.1"
       },
       {
         "id": "urn:ngm:class:ieee-802-x",
@@ -132,7 +166,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -322,7 +356,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -14,6 +14,18 @@
     {
       "id": "urn:ngm:class:retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "id": "urn:ngm:class:agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "id": "urn:ngm:class:web-dev-and-consumer-tooling",
+      "label": "WebDev and Consumer Tooling"
     }
   ],
   "entityType": "Class",
@@ -44,6 +56,10 @@
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion Image Model"
+      },
+      {
+        "id": "urn:ngm:class:local-llm-runtime-platform",
+        "label": "Ollama"
       }
     ],
     "requires": [
@@ -62,6 +78,10 @@
       {
         "id": "urn:ngm:class:local-llm-runtime-platform",
         "label": "Local LLM Runtime Platform"
+      },
+      {
+        "id": "urn:ngm:class:local-llm-runtime-platform",
+        "label": "Ollama"
       }
     ],
     "enables": [
@@ -86,7 +106,24 @@
         "label": "Reasoning"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:docker-containerisation-platform",
+        "label": "Docker Containerisation Platform"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:function-calling",
@@ -105,7 +142,24 @@
         "label": "Speech and Voice"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
+        "label": "Instruction-Following Conversational AI System"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-copilot",
+        "label": "Microsoft Copilot"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
+        "label": "Constitutional AI Language Model Family"
+      },
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-infrastructure",
@@ -132,6 +186,10 @@
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion Image Model"
+      },
+      {
+        "id": "urn:ngm:class:local-llm-runtime-platform",
+        "label": "Ollama"
       }
     ],
     "supports": [
@@ -202,9 +260,64 @@
       "slug": "ai-application"
     },
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous System",
+      "slug": "autonomous-system"
+    },
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI",
+      "slug": "conversational-ai"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
       "id": "urn:ngm:class:dialogue-system",
       "label": "Dialogue System",
       "slug": "dialogue-system"
+    },
+    {
+      "id": "urn:ngm:class:dialogue-systems",
+      "label": "Dialogue Systems",
+      "slug": "dialogue-systems"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI",
+      "slug": "generative-ai"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-intensive-nlp",
+      "label": "Knowledge-Intensive NLP",
+      "slug": "knowledge-intensive-nlp"
+    },
+    {
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model",
+      "slug": "large-scale-pretrained-foundation-model"
+    },
+    {
+      "id": "urn:ngm:class:llm-orchestration",
+      "label": "LLM Orchestration",
+      "slug": "llm-orchestration"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
     },
     {
       "id": "urn:ngm:class:natural-language-processing",
@@ -212,9 +325,44 @@
       "slug": "natural-language-processing"
     },
     {
+      "id": "urn:ngm:class:neural-information-retrieval",
+      "label": "Neural Information Retrieval",
+      "slug": "neural-information-retrieval"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:open-domain-question-answering",
+      "label": "Open Domain Question Answering",
+      "slug": "open-domain-question-answering"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:software-framework",
+      "label": "Software Framework",
+      "slug": "software-framework"
+    },
+    {
+      "id": "urn:ngm:class:workflow-engine",
+      "label": "Workflow Engine",
+      "slug": "workflow-engine"
+    },
+    {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -227,9 +375,29 @@
       "slug": "artificial-intelligence-core"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
     }
   ],
   "inheritedRelations": {
@@ -327,30 +495,46 @@
         "label": "Voice Interfaces"
       },
       {
-        "id": "urn:ngm:class:domain-adaptation",
-        "label": "Domain Adaptation Without Fine-Tuning"
+        "id": "urn:ngm:class:citation-generation",
+        "label": "Citation Generation"
       },
       {
-        "id": "urn:ngm:class:factual-grounding",
-        "label": "Factual Grounding"
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation Without Fine-Tuning"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
+        "id": "urn:ngm:class:embedding-models",
+        "label": "Embedding Models"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Networks"
+        "id": "urn:ngm:class:vector-databases",
+        "label": "Vector Databases"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
       }
     ],
     "implements": [
@@ -389,41 +573,77 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      },
+      {
+        "id": "urn:ngm:class:form-based-interfaces",
+        "label": "Form-Based Interfaces"
+      },
+      {
         "id": "urn:ngm:class:rule-based-systems",
-        "label": "Rule-Based System"
+        "label": "Rule-Based Systems"
       },
       {
-        "id": "urn:ngm:class:search-engine",
-        "label": "Search Engine"
+        "id": "urn:ngm:class:search-engines",
+        "label": "Search Engines"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:parametric-knowledge",
+        "label": "Parametric Knowledge"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human-Computer Interaction"
+        "id": "urn:ngm:class:autonomous-economic-agents",
+        "label": "Autonomous Economic Agents"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:l402-payment-protocol",
+        "label": "L402 Payment Protocol"
       },
       {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
       },
       {
-        "id": "urn:ngm:class:knowledge-graphs",
-        "label": "Knowledge Graphs"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
-        "label": "Multimodal AI"
+        "id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Engine"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-economic-agent",
+        "label": "Autonomous Economic Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:bertscore",
+        "label": "BERTScore"
+      },
       {
         "id": "urn:ngm:class:bleu-score",
         "label": "BLEU"
@@ -451,10 +671,6 @@
       {
         "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Evaluation benchmarks and leaderboards"
-      },
-      {
-        "id": "urn:ngm:class:function-calling",
-        "label": "Function Calling"
       }
     ],
     "supports": [
@@ -479,16 +695,16 @@
         "label": "Healthcare AI"
       },
       {
+        "id": "urn:ngm:class:code-navigation",
+        "label": "Code Navigation"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
       {
         "id": "urn:ngm:class:customer-support-automation",
         "label": "Customer Support Automation"
-      },
-      {
-        "id": "urn:ngm:class:legal-ai",
-        "label": "Legal AI"
       }
     ],
     "standardizedBy": [
@@ -505,12 +721,30 @@
         "label": "W3C Voice Browser Working Group"
       },
       {
+        "id": "urn:ngm:class:ares-framework",
+        "label": "ARES Framework"
+      },
+      {
         "id": "urn:ngm:class:beir-benchmark",
         "label": "BEIR Benchmark"
       },
       {
         "id": "urn:ngm:class:mteb-benchmark",
         "label": "MTEB Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:ragas-framework",
+        "label": "RAGAS Framework"
+      },
+      {
+        "id": "urn:ngm:class:trec-deep-learning-track",
+        "label": "TREC Deep Learning Track"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "relatedTo": [

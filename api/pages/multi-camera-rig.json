@@ -44,6 +44,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -55,6 +70,10 @@
       {
         "id": "urn:ngm:class:feature-detection",
         "label": "Feature Detection"
+      },
+      {
+        "id": "urn:ngm:class:image-matching",
+        "label": "Image Matching"
       },
       {
         "id": "urn:ngm:class:mesh-reconstruction",
@@ -75,10 +94,6 @@
       {
         "id": "urn:ngm:class:avatar",
         "label": "Avatar"
-      },
-      {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
       }
     ],
     "requires": [
@@ -103,16 +118,16 @@
         "label": "Image Processing Software"
       },
       {
+        "id": "urn:ngm:class:multiple-images",
+        "label": "Multiple Images"
+      },
+      {
+        "id": "urn:ngm:class:overlapping-coverage",
+        "label": "Overlapping Coverage"
+      },
+      {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
-      },
-      {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
       }
     ],
     "enables": [
@@ -137,16 +152,16 @@
         "label": "Immersive Media"
       },
       {
+        "id": "urn:ngm:class:3d-model-creation",
+        "label": "3D Model Creation"
+      },
+      {
         "id": "urn:ngm:class:asset-digitization",
         "label": "Asset Digitization"
       },
       {
         "id": "urn:ngm:class:digital-twin-construction",
         "label": "Digital Twin Construction"
-      },
-      {
-        "id": "urn:ngm:class:spatial-measurement",
-        "label": "Spatial Measurement"
       }
     ],
     "dependsOn": [
@@ -157,6 +172,22 @@
       {
         "id": "urn:ngm:class:mesh-reconstruction",
         "label": "Mesh Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:camera-models",
+        "label": "Camera Models"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-algorithms",
+        "label": "Computer Vision Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:multi-view-geometry",
+        "label": "Multi-View Geometry"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
       }
     ],
     "contrastsWith": [
@@ -165,8 +196,16 @@
         "label": "360-Degree Video"
       },
       {
+        "id": "urn:ngm:class:stereoscopic-3d",
+        "label": "Stereoscopic 3D"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -175,12 +214,16 @@
         "label": "Gaussian Splatting"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
         "id": "urn:ngm:class:extended-reality-xr",
@@ -189,6 +232,14 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -237,6 +288,14 @@
       {
         "id": "urn:ngm:class:virtual-production",
         "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [

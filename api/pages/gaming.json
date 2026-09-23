@@ -32,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -49,13 +54,40 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:audio-engineering",
+        "label": "Audio Engineering"
+      },
+      {
+        "id": "urn:ngm:class:game-design",
+        "label": "Game Design"
+      },
+      {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:game-physics",
+        "label": "Game Physics"
       },
       {
         "id": "urn:ngm:class:quality-assurance",
@@ -72,18 +104,6 @@
       {
         "id": "urn:ngm:class:avatar",
         "label": "Avatar"
-      },
-      {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
-      },
-      {
-        "id": "urn:ngm:class:digital-content-creation",
-        "label": "Digital Content Creation"
-      },
-      {
-        "id": "urn:ngm:class:nft",
-        "label": "NFT"
       }
     ],
     "requires": [
@@ -110,6 +130,14 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
       }
     ],
     "enables": [
@@ -126,6 +154,10 @@
         "label": "NPC Interaction"
       },
       {
+        "id": "urn:ngm:class:serious-games",
+        "label": "Serious Games"
+      },
+      {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
       },
@@ -140,10 +172,6 @@
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
-      },
-      {
-        "id": "urn:ngm:class:scene-understanding",
-        "label": "Scene Understanding"
       }
     ],
     "dependsOn": [
@@ -160,11 +188,15 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -180,12 +212,20 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "uses": [
@@ -220,6 +260,16 @@
       {
         "id": "urn:ngm:class:geospatial-technology",
         "label": "Geospatial Technology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [

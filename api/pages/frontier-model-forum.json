@@ -69,6 +69,10 @@
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "International AI Governance"
       }
     ],
     "uses": [
@@ -104,6 +108,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance Ecosystem"
       }
     ],
     "relatedTo": [
@@ -130,6 +138,10 @@
       {
         "id": "urn:ngm:class:oecd-ai-policy-observatory",
         "label": "OECD AI Policy Observatory"
+      },
+      {
+        "id": "urn:ngm:class:g7-hiroshima-ai-process",
+        "label": "G7 Hiroshima AI Process"
       }
     ]
   },
@@ -209,6 +221,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

@@ -32,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -41,14 +46,34 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
       "id": "urn:ngm:class:data-management-system",
       "label": "Data Management System",
       "slug": "data-management-system"
     },
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
+      "id": "urn:ngm:class:database",
+      "label": "Database",
+      "slug": "database"
+    },
+    {
+      "id": "urn:ngm:class:nosql-database",
+      "label": "NoSQL Database",
+      "slug": "nosql-database"
+    },
+    {
+      "id": "urn:ngm:class:persistent-data-store",
+      "label": "Persistent Data Store",
+      "slug": "persistent-data-store"
+    },
+    {
+      "id": "urn:ngm:class:database-management-system",
+      "label": "Database Management System",
+      "slug": "database-management-system"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -67,6 +92,10 @@
         "label": "Graph Query Language"
       },
       {
+        "id": "urn:ngm:class:node-storage",
+        "label": "Node Storage"
+      },
+      {
         "id": "urn:ngm:class:property-schema",
         "label": "Property Schema"
       },
@@ -75,20 +104,16 @@
         "label": "Query Optimiser"
       },
       {
+        "id": "urn:ngm:class:relationship-indexing",
+        "label": "Relationship Indexing"
+      },
+      {
         "id": "urn:ngm:class:storage-engine",
         "label": "Storage Engine"
       },
       {
         "id": "urn:ngm:class:transaction-manager",
         "label": "Transaction Manager"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
       }
     ],
     "requires": [
@@ -113,16 +138,16 @@
         "label": "Query Parser"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "enables": [
@@ -159,10 +184,48 @@
         "label": "Semantic Search"
       }
     ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:b-tree-indexing",
+        "label": "B-Tree Indexing"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-theory",
+        "label": "Distributed Systems Theory"
+      },
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:hash-indexing",
+        "label": "Hash Indexing"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:cypher-query-language",
         "label": "Cypher Query Language"
+      },
+      {
+        "id": "urn:ngm:class:gql-standard",
+        "label": "GQL Standard"
       },
       {
         "id": "urn:ngm:class:graph-algorithms",
@@ -191,11 +254,47 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:columnar-database",
+        "label": "Columnar Database"
+      },
+      {
+        "id": "urn:ngm:class:document-store",
+        "label": "Document Store"
+      },
+      {
+        "id": "urn:ngm:class:key-value-store",
+        "label": "Key-Value Store"
+      },
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
@@ -241,7 +340,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -279,6 +378,10 @@
         "label": "Apache TinkerPop"
       },
       {
+        "id": "urn:ngm:class:apache-tinkerpop",
+        "label": "Apache TinkerPop"
+      },
+      {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC 39075:2024 GQL"
       },
@@ -299,8 +402,14 @@
         "label": "W3C SHACL"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
       }
     ],
     "relatedTo": [
@@ -329,12 +438,12 @@
         "label": "Semantic Web Linked Data Standard"
       },
       {
-        "id": "urn:ngm:class:graph-database",
-        "label": "Graph Database"
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       },
       {
-        "id": "urn:ngm:class:metadata-standard",
-        "label": "Metadata Standard"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       }
     ]
   },

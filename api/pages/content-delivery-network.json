@@ -60,6 +60,14 @@
       {
         "id": "urn:ngm:class:ddos-mitigation",
         "label": "DDoS Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low-Latency Delivery"
+      },
+      {
+        "id": "urn:ngm:class:origin-offload",
+        "label": "Origin Offload"
       }
     ],
     "dependsOn": [],
@@ -82,6 +90,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge AI Inference"
       }
     ],
     "uses": [
@@ -100,6 +112,10 @@
       {
         "id": "urn:ngm:class:anycast-routing",
         "label": "Anycast Routing"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "HTTP/3 QUIC"
       }
     ],
     "supports": [
@@ -139,6 +155,10 @@
       {
         "id": "urn:ngm:class:caching",
         "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:web-performance",
+        "label": "Web Performance"
       }
     ]
   },
@@ -156,6 +176,10 @@
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
@@ -183,10 +207,6 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
-      },
-      {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency"
       }
     ],
     "requires": [
@@ -359,7 +379,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

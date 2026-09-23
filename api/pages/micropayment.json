@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:transaction-validation",
         "label": "Transaction Validation"
+      },
+      {
+        "id": "urn:ngm:class:fee-calculation",
+        "label": "Fee Calculation"
+      },
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement Mechanism"
       }
     ],
     "requires": [
@@ -42,6 +50,14 @@
       {
         "id": "urn:ngm:class:payment-channel",
         "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Cryptographic Authentication"
       }
     ],
     "enables": [
@@ -56,6 +72,14 @@
       {
         "id": "urn:ngm:class:content-monetisation",
         "label": "Content Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:pay-per-use-models",
+        "label": "Pay-Per-Use Models"
+      },
+      {
+        "id": "urn:ngm:class:instant-settlement",
+        "label": "Instant Settlements"
       }
     ],
     "dependsOn": [
@@ -66,6 +90,10 @@
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency"
       }
     ],
     "implements": [],
@@ -81,7 +109,7 @@
         "label": "Virtual Economy"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -95,7 +123,7 @@
         "label": "Digital Currency"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       }
     ],
@@ -172,7 +200,7 @@
         "label": "Settlement Layer"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -206,6 +234,10 @@
         "label": "KYC/AML Compliance"
       },
       {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
       },
@@ -216,10 +248,6 @@
       {
         "id": "urn:ngm:class:network-security",
         "label": "Network Security"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
       }
     ],
     "enables": [
@@ -240,6 +268,10 @@
         "label": "Monetary Policy"
       },
       {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
@@ -250,10 +282,6 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       }
     ],
     "dependsOn": [
@@ -278,7 +306,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -326,7 +354,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -398,7 +426,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ]

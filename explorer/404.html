@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Narrative Goldmine</title>
+  <script>
+    // GitHub Pages SPA deep-link recovery, scoped to the explorer's own base.
+    //
+    // In production this file is NOT the one that runs: GitHub Pages serves the
+    // SITE ROOT 404.html for every unknown path, and that is now Quartz's,
+    // which carries the same logic (quartz/quartz/components/pages/404.tsx).
+    // This copy is what makes `vite preview` and any host that does serve a
+    // per-directory 404 behave the same way.
+    (function () {
+      var base = document.querySelector('base');
+      // BASE_URL is baked into index.html at build time; fall back to the path
+      // this file was served from.
+      var dir = location.pathname.replace(/[^/]*$/, '');
+      sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
+      location.replace(location.origin + (base ? base.getAttribute('href') : dir));
+    })();
+  </script>
+</head>
+<body></body>
+</html>

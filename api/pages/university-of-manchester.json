@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Department of Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:manchester-institute-of-biotechnology",
+        "label": "Manchester Institute of Biotechnology"
       }
     ],
     "requires": [
@@ -210,6 +218,20 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

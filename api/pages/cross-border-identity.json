@@ -45,14 +45,229 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component (Blockchain)",
-      "slug": "bc-network-component"
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol",
+      "slug": "cryptographic-protocol"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-identity",
+      "label": "Decentralised Identity",
+      "slug": "decentralised-identity"
+    },
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity",
+      "slug": "digital-identity"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:privacy-enhancing-technologies",
+      "label": "Privacy Enhancing Technologies",
+      "slug": "privacy-enhancing-technologies"
+    },
+    {
+      "id": "urn:ngm:class:trust-framework",
+      "label": "Trust Framework",
+      "slug": "trust-framework"
+    },
+    {
+      "id": "urn:ngm:class:user-centric-identity",
+      "label": "User-Centric Identity",
+      "slug": "user-centric-identity"
+    },
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:certification-scheme",
+      "label": "Certification Scheme",
+      "slug": "certification-scheme"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:framework",
+      "label": "Framework",
+      "slug": "framework"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:identity",
+      "label": "Identity",
+      "slug": "identity"
+    },
+    {
+      "id": "urn:ngm:class:policy-framework",
+      "label": "Policy Framework",
+      "slug": "policy-framework"
+    },
+    {
+      "id": "urn:ngm:class:privacy-preserving-technology",
+      "label": "Privacy Preserving Technology",
+      "slug": "privacy-preserving-technology"
     },
     {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework",
+      "slug": "compliance-framework"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -82,12 +297,12 @@
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:ngm:class:revocation-registry",
-        "label": "Revocation Registry"
+        "id": "urn:ngm:class:link-secret",
+        "label": "Link Secret"
       },
       {
-        "id": "urn:ngm:class:selective-disclosure",
-        "label": "Selective Disclosure"
+        "id": "urn:ngm:class:revocation-registry",
+        "label": "Revocation Registry"
       }
     ],
     "requires": [
@@ -104,6 +319,10 @@
         "label": "Governance Framework"
       },
       {
+        "id": "urn:ngm:class:issuer-agent",
+        "label": "Issuer Agent"
+      },
+      {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
@@ -118,13 +337,13 @@
       {
         "id": "urn:ngm:class:verifiable-data-registry",
         "label": "Verifiable Data Registry"
-      },
-      {
-        "id": "urn:ngm:class:wallet",
-        "label": "Wallet Software"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:correlation-resistance",
+        "label": "Correlation Resistance"
+      },
       {
         "id": "urn:ngm:class:holder-binding",
         "label": "Holder Binding"
@@ -142,20 +361,50 @@
         "label": "Portable Identity"
       },
       {
+        "id": "urn:ngm:class:privacy-preserving-kyc",
+        "label": "Privacy-Preserving KYC"
+      },
+      {
         "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Predicate Proof"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
       },
       {
-        "id": "urn:ngm:class:block-propagation",
-        "label": "Block Propagation"
+        "id": "urn:ngm:class:cbor",
+        "label": "CBOR"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:e-idas",
+        "label": "eIDAS"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:w-3-c-standards",
+        "label": "W3C Standards"
       }
     ],
     "implements": [
@@ -176,6 +425,10 @@
         "label": "ISO 18013-5"
       },
       {
+        "id": "urn:ngm:class:openid-for-verifiable-credentials",
+        "label": "OpenID for Verifiable Credentials"
+      },
+      {
         "id": "urn:ngm:class:sd-jwt",
         "label": "SD-JWT"
       },
@@ -186,16 +439,74 @@
       {
         "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-identity",
+        "label": "Centralised Identity"
       },
       {
-        "id": "urn:ngm:class:w3-c-verifiable-credentials",
-        "label": "W3C Verifiable Credentials"
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:x-509-pki",
+        "label": "X.509 PKI"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:privacy-enhancing-technologies",
         "label": "Privacy Enhancing Technologies"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum-Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-identity",
+        "label": "AI Agent Identity"
+      },
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "uses": [
@@ -208,6 +519,10 @@
         "label": "Bitstring Status List"
       },
       {
+        "id": "urn:ngm:class:camenisch-lysyanskaya-signatures",
+        "label": "Camenisch-Lysyanskaya Signatures"
+      },
+      {
         "id": "urn:ngm:class:cbor",
         "label": "CBOR"
       },
@@ -216,20 +531,16 @@
         "label": "XChacha20Poly1305"
       },
       {
+        "id": "urn:ngm:class:ecdh-1pu",
+        "label": "ECDH-1PU"
+      },
+      {
         "id": "urn:ngm:class:ed-dsa",
         "label": "EdDSA"
       },
       {
         "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
-      },
-      {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
-        "label": "JSON-LD"
-      },
-      {
-        "id": "urn:ngm:class:sidetree-protocol",
-        "label": "Sidetree Protocol"
       }
     ],
     "supports": [
@@ -240,6 +551,10 @@
       {
         "id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:digital-government",
+        "label": "Digital Government"
       },
       {
         "id": "urn:ngm:class:e-idas",
@@ -254,8 +569,12 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:supply-chain-provenance",
-        "label": "Supply Chain Provenance"
+        "id": "urn:ngm:class:healthcare-identity",
+        "label": "Healthcare Identity"
+      },
+      {
+        "id": "urn:ngm:class:iot-security",
+        "label": "IoT Security"
       }
     ],
     "standardizedBy": [
@@ -290,6 +609,40 @@
       {
         "id": "urn:ngm:class:w3-c",
         "label": "W3C"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
     "relatedTo": [

@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:high-bandwidth-memory",
         "label": "High Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA Kernel"
       }
     ],
     "requires": [
@@ -38,6 +42,14 @@
       {
         "id": "urn:ngm:class:nvlink",
         "label": "NVLink"
+      },
+      {
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:gpu-memory-management",
+        "label": "GPU Memory Management"
       }
     ],
     "enables": [
@@ -60,6 +72,10 @@
       {
         "id": "urn:ngm:class:scientific-computing",
         "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
       }
     ],
     "dependsOn": [],
@@ -72,6 +88,10 @@
       {
         "id": "urn:ngm:class:cpu-compute",
         "label": "CPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
       }
     ],
     "bridgesTo": [
@@ -110,6 +130,10 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
     "standardizedBy": [],
@@ -178,12 +202,12 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -406,7 +430,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -14,6 +14,14 @@
     {
       "id": "urn:ngm:class:ai-safety",
       "label": "AI Safety"
+    },
+    {
+      "id": "urn:ngm:class:platform-governance-system",
+      "label": "Platform Governance System"
+    },
+    {
+      "id": "urn:ngm:class:responsible-ai",
+      "label": "Responsible AI"
     }
   ],
   "entityType": "Class",
@@ -40,6 +48,18 @@
       {
         "id": "urn:ngm:class:content-classification-system",
         "label": "Content Classification System"
+      },
+      {
+        "id": "urn:ngm:class:reporting-system",
+        "label": "Reporting System"
+      },
+      {
+        "id": "urn:ngm:class:dsa-transparency-database",
+        "label": "DSA Transparency Database"
+      },
+      {
+        "id": "urn:ngm:class:reviewer-training-program",
+        "label": "Reviewer Training Program"
       }
     ],
     "requires": [
@@ -58,6 +78,22 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline-models",
         "label": "Machine Learning Models"
+      },
+      {
+        "id": "urn:ngm:class:reviewer-training-program",
+        "label": "Reviewer Training Program"
+      },
+      {
+        "id": "urn:ngm:class:decision-framework",
+        "label": "Decision Framework"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "enables": [
@@ -76,9 +112,42 @@
       {
         "id": "urn:ngm:class:community-guidelines-enforcement",
         "label": "Community Guidelines Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:platform-governance-system",
+        "label": "Platform Governance System"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-models",
+        "label": "Machine Learning Models"
+      },
+      {
+        "id": "urn:ngm:class:human-moderators",
+        "label": "Human Moderators"
+      },
+      {
+        "id": "urn:ngm:class:reporting-system",
+        "label": "Reporting System"
+      },
+      {
+        "id": "urn:ngm:class:decision-framework",
+        "label": "Decision Framework"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-ai",
+        "label": "Bias in AI"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -91,6 +160,18 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "contrastsWith": [
@@ -103,11 +184,92 @@
         "label": "Freedom of Expression"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-analysis-tools",
+        "label": "Content Analysis Tools"
+      },
+      {
+        "id": "urn:ngm:class:dsa-transparency-database",
+        "label": "DSA Transparency Database"
+      },
+      {
+        "id": "urn:ngm:class:watermarking-service",
+        "label": "Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-ai",
+        "label": "Bias in AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:etsi-gr-arf-010",
+        "label": "ETSI GR ARF 010"
+      },
+      {
+        "id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:platform-governance-system",
+        "label": "Platform Governance System"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety-infrastructure",
+        "label": "Trust and Safety Infrastructure"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -124,14 +286,67 @@
       {
         "id": "urn:ngm:class:synthetic-media",
         "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance",
+      "slug": "ai-governance"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -179,26 +394,38 @@
         "label": "Formal Verification"
       },
       {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "risk management processes"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:human-ai-collaboration",
         "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
       },
       {
         "id": "urn:ngm:class:responsible-ai",
@@ -209,30 +436,98 @@
         "label": "Trustworthy AI"
       },
       {
+        "id": "urn:ngm:class:public-trust-in-ai",
+        "label": "Public Trust in AI"
+      },
+      {
+        "id": "urn:ngm:class:social-licence-for-ai",
+        "label": "social licence for AI"
+      },
+      {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
       },
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:decision-rights",
+        "label": "Decision Rights"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ai-capabilities-research",
         "label": "AI Capabilities Research"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -247,6 +542,26 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -261,20 +576,78 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:sparse-autoencoders",
+        "label": "Sparse Autoencoder"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
       },
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:cobit",
+        "label": "COBIT"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:itil",
+        "label": "ITIL"
+      },
+      {
+        "id": "urn:ngm:class:togaf",
+        "label": "TOGAF"
       }
     ],
     "partOf": [
@@ -301,20 +674,20 @@
         "label": "AI Regulation"
       },
       {
+        "id": "urn:ngm:class:ai-security-institute",
+        "label": "AI Security Institute"
+      },
+      {
+        "id": "urn:ngm:class:apollo-research",
+        "label": "Apollo Research"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
         "id": "urn:ngm:class:corrigibility",
         "label": "Corrigibility"
-      },
-      {
-        "id": "urn:ngm:class:existential-risk",
-        "label": "Existential Risk"
-      },
-      {
-        "id": "urn:ngm:class:mesa-optimisation",
-        "label": "Mesa-Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:robustness",
-        "label": "Robustness"
       }
     ]
   },

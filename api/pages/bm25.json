@@ -14,13 +14,42 @@
     {
       "id": "urn:ngm:class:information-retrieval",
       "label": "Information Retrieval"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-relevance-model",
+      "label": "Probabilistic Relevance Model"
+    },
+    {
+      "id": "urn:ngm:class:keyword-search",
+      "label": "Keyword Search"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.93,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tf-idf",
+        "label": "TF-IDF"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:tokenization",
@@ -33,6 +62,18 @@
       {
         "id": "urn:ngm:class:document-corpus",
         "label": "Document Corpus"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
       }
     ],
     "enables": [
@@ -59,10 +100,52 @@
       {
         "id": "urn:ngm:class:ai-search",
         "label": "AI Search"
+      },
+      {
+        "id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:tf-idf",
+        "label": "TF-IDF"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:dense-retrieval",
@@ -75,6 +158,10 @@
       {
         "id": "urn:ngm:class:dense-passage-retrieval",
         "label": "Dense Passage Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
       }
     ],
     "bridgesTo": [
@@ -99,6 +186,18 @@
       {
         "id": "urn:ngm:class:inverted-index",
         "label": "Inverted Index"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:tf-idf",
+        "label": "TF-IDF"
+      },
+      {
+        "id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
       }
     ],
     "supports": [
@@ -117,9 +216,30 @@
       {
         "id": "urn:ngm:class:cross-encoder-reranking",
         "label": "Cross-Encoder Reranking"
+      },
+      {
+        "id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:trec-evaluation-programme",
+        "label": "TREC Evaluation Programme"
+      },
+      {
+        "id": "urn:ngm:class:sigir-community",
+        "label": "SIGIR Community"
+      },
+      {
+        "id": "urn:ngm:class:beir-benchmark",
+        "label": "BEIR Benchmark"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -161,6 +281,22 @@
       {
         "id": "urn:ngm:class:document-retrieval",
         "label": "Document Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:keyword-search",
+        "label": "Keyword Search"
+      },
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
       }
     ]
   },
@@ -193,10 +329,6 @@
         "label": "Informed Search"
       },
       {
-        "id": "urn:ngm:class:inverted-index",
-        "label": "Inverted Index"
-      },
-      {
         "id": "urn:ngm:class:query-processing",
         "label": "Query Processing"
       },
@@ -219,12 +351,24 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:state-space",
         "label": "State Space"
+      },
+      {
+        "id": "urn:ngm:class:text-representation",
+        "label": "Text Representation"
+      },
+      {
+        "id": "urn:ngm:class:query-processing",
+        "label": "Query Processing"
       },
       {
         "id": "urn:ngm:class:language-model",
@@ -311,6 +455,10 @@
       {
         "id": "urn:ngm:class:depth-first-search",
         "label": "Depth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:full-text-search",
+        "label": "Full-Text Search"
       }
     ],
     "contrastsWith": [
@@ -323,8 +471,16 @@
         "label": "Random Sampling"
       },
       {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
         "id": "urn:ngm:class:database-query",
         "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
       },
       {
         "id": "urn:ngm:class:rule-based-systems",
@@ -353,12 +509,20 @@
         "label": "Spatial Search"
       },
       {
+        "id": "urn:ngm:class:hybrid-search",
+        "label": "Hybrid Search"
+      },
+      {
         "id": "urn:ngm:class:knowledge-graphs",
         "label": "Knowledge Graphs"
       },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -395,6 +559,22 @@
         "label": "Vector Database"
       }
     ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:combinatorial-optimisation",
@@ -417,7 +597,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -425,8 +605,8 @@
         "label": "Approximate Nearest Neighbour"
       },
       {
-        "id": "urn:ngm:class:ai-application",
-        "label": "AI Application"
+        "id": "urn:ngm:class:full-text-search",
+        "label": "Full-Text Search"
       }
     ]
   },

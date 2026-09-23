@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:risk-treatment",
         "label": "Risk Treatment Plan"
+      },
+      {
+        "id": "urn:ngm:class:risk-treatment",
+        "label": "Risk Treatment Plan"
       }
     ],
     "requires": [
@@ -38,6 +42,10 @@
       {
         "id": "urn:ngm:class:internal-audit",
         "label": "Internal Audit"
+      },
+      {
+        "id": "urn:ngm:class:management-review",
+        "label": "Management Review"
       }
     ],
     "enables": [
@@ -113,6 +121,10 @@
       {
         "id": "urn:ngm:class:iso-iec-27001",
         "label": "ISO/IEC 27000 Family"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27000 Family"
       }
     ],
     "relatedTo": [
@@ -131,6 +143,10 @@
       {
         "id": "urn:ngm:class:gdpr-compliance",
         "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:cyber-essentials",
+        "label": "Cyber Essentials"
       }
     ]
   },
@@ -146,9 +162,69 @@
       "slug": "robot-standard"
     },
     {
+      "id": "urn:ngm:class:security-standards",
+      "label": "Security Standards",
+      "slug": "security-standards"
+    },
+    {
+      "id": "urn:ngm:class:industrial-safety",
+      "label": "Industrial Safety",
+      "slug": "industrial-safety"
+    },
+    {
+      "id": "urn:ngm:class:normative-framework",
+      "label": "Normative Framework",
+      "slug": "normative-framework"
+    },
+    {
+      "id": "urn:ngm:class:product-regulation",
+      "label": "Product Regulation",
+      "slug": "product-regulation"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:safety-regulation",
+      "label": "Safety Regulation",
+      "slug": "safety-regulation"
+    },
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard",
+      "slug": "technical-standard"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -222,6 +298,26 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:compliance-assurance",
+        "label": "Compliance Assurance"
+      },
+      {
+        "id": "urn:ngm:class:malicious-control-prevention",
+        "label": "Malicious Control Prevention"
+      },
+      {
+        "id": "urn:ngm:class:protected-data-transmission",
+        "label": "Protected Data Transmission"
+      },
+      {
+        "id": "urn:ngm:class:secure-teleoperation",
+        "label": "Secure Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robot-safety",
+        "label": "Autonomous Mobile Robot Safety"
+      },
+      {
         "id": "urn:ngm:class:ce-marking",
         "label": "CE Marking"
       },
@@ -232,29 +328,51 @@
       {
         "id": "urn:ngm:class:digital-product-passport",
         "label": "Digital Product Passport"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Cryptographic Infrastructure"
       },
       {
-        "id": "urn:ngm:class:human-robot-collaboration",
-        "label": "Safe Human-Robot Collaboration"
+        "id": "urn:ngm:class:device-hardening",
+        "label": "Device Hardening"
       },
       {
-        "id": "urn:ngm:class:io-t-integration",
-        "label": "IIoT Integration"
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
       },
       {
-        "id": "urn:ngm:class:market-access",
-        "label": "Market Access"
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
       },
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
       },
       {
-        "id": "urn:ngm:class:humanoid-robotics",
-        "label": "Humanoid Robotics"
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:iso-13849",
+        "label": "ISO 13849"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:ehsr-framework",
+        "label": "EHSR Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-machinery-regulation",
+        "label": "EU Machinery Regulation"
+      },
       {
         "id": "urn:ngm:class:force-control",
         "label": "Force Control"
@@ -262,6 +380,10 @@
       {
         "id": "urn:ngm:class:iso-tc-299",
         "label": "ISO/TC 299"
+      },
+      {
+        "id": "urn:ngm:class:opc-ua-nodeset",
+        "label": "OPC UA NodeSet"
       },
       {
         "id": "urn:ngm:class:owl-2-web-ontology-language",
@@ -274,16 +396,74 @@
       {
         "id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
         "label": "Speed and Separation Monitoring"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:de-facto-standard",
+        "label": "De Facto Standard"
       },
       {
-        "id": "urn:ngm:class:safety-integrity-level",
-        "label": "Safety Integrity Level"
+        "id": "urn:ngm:class:domain-specific-framework",
+        "label": "Domain-Specific Framework"
+      },
+      {
+        "id": "urn:ngm:class:open-source-middleware",
+        "label": "Open Source Middleware"
+      },
+      {
+        "id": "urn:ngm:class:ros-industrial",
+        "label": "ROS Industrial"
+      },
+      {
+        "id": "urn:ngm:class:self-certification",
+        "label": "Self-Certification"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-guideline",
+        "label": "Voluntary Guideline"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-specification",
+        "label": "Proprietary Specification"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
         "id": "urn:ngm:class:security-standards",
         "label": "Security Standards"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
       }
     ],
     "uses": [
@@ -312,12 +492,12 @@
         "label": "Performance Level"
       },
       {
-        "id": "urn:ngm:class:safety-integrity-level",
-        "label": "Safety Integrity Level"
+        "id": "urn:ngm:class:risk-graph-method",
+        "label": "Risk Graph Method"
       },
       {
-        "id": "urn:ngm:class:time-sensitive-networking",
-        "label": "Time-Sensitive Networking"
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
       }
     ],
     "supports": [
@@ -330,20 +510,28 @@
         "label": "Collaborative Robot"
       },
       {
+        "id": "urn:ngm:class:driverless-industrial-trucks",
+        "label": "Driverless Industrial Trucks"
+      },
+      {
         "id": "urn:ngm:class:exoskeleton",
         "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:exoskeletons",
+        "label": "Exoskeletons"
       },
       {
         "id": "urn:ngm:class:industrial-robot",
         "label": "Industrial Robot"
       },
       {
-        "id": "urn:ngm:class:surgical-robot",
-        "label": "Surgical Robot"
+        "id": "urn:ngm:class:industrial-robots",
+        "label": "Industrial Robots"
       },
       {
-        "id": "urn:ngm:class:swarm-robotics",
-        "label": "Swarm Robotics"
+        "id": "urn:ngm:class:modular-robots",
+        "label": "Modular Robots"
       }
     ],
     "standardizedBy": [
@@ -354,6 +542,10 @@
       {
         "id": "urn:ngm:class:bsi-germany",
         "label": "BSI"
+      },
+      {
+        "id": "urn:ngm:class:din",
+        "label": "DIN"
       },
       {
         "id": "urn:ngm:class:european-commission",
@@ -370,6 +562,16 @@
       {
         "id": "urn:ngm:class:opc-foundation",
         "label": "OPC Foundation"
+      },
+      {
+        "id": "urn:ngm:class:ria",
+        "label": "RIA"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [
@@ -394,16 +596,16 @@
         "label": "Robot Type"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:amrc",
+        "label": "AMRC"
       },
       {
-        "id": "urn:ngm:class:iec-61508",
-        "label": "IEC 61508"
+        "id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
       },
       {
-        "id": "urn:ngm:class:iec-62443",
-        "label": "IEC 62443"
+        "id": "urn:ngm:class:bara",
+        "label": "BARA"
       }
     ]
   },

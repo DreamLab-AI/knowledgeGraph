@@ -200,6 +200,10 @@
         "label": "AI Auditing"
       },
       {
+        "id": "urn:ngm:class:contestability-ai-0043",
+        "label": "Contestability (AI-0043)"
+      },
+      {
         "id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight"
       },
@@ -218,15 +222,11 @@
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
-      },
-      {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -258,6 +258,22 @@
       {
         "id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -290,7 +306,7 @@
         "label": "ISO-IEC 23894"
       },
       {
-        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       }
     ],

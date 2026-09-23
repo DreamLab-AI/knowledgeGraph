@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:systemic-risk-management",
   "domain": "finance",
-  "definition": "Systemic risk management is the set of practices, institutions and policy tools aimed at identifying, monitoring and mitigating risks that [private] destabilise an entire financial system rather than a single firm. It combines macroprudential regulation, stress testing, capital and liquidity buffers, and resolution regimes to limit contagion across interconnected institutions and markets. Coordinated by bodies such as the Financial Stability Board and central banks, it seeks to preserve financial stability and prevent crises from cascading through the economy.",
+  "definition": "Systemic risk management is the set of practices, institutions and policy tools aimed at identifying, monitoring and mitigating risks that could destabilise an entire financial system rather than a single firm. It combines macroprudential regulation, stress testing, capital and liquidity buffers, and resolution regimes to limit contagion across interconnected institutions and markets. Coordinated by bodies such as the Financial Stability Board and central banks, it seeks to preserve financial stability and prevent crises from cascading through the economy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-stability",
@@ -137,8 +137,12 @@
         "label": "Systemic Risk Monitoring"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:conduct-regulation",
+        "label": "Conduct Regulation"
       },
       {
         "id": "urn:ngm:class:prudential-regulation",
@@ -155,10 +159,6 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:policy",
-        "label": "Policy"
       }
     ],
     "requires": [
@@ -175,7 +175,7 @@
         "label": "Liquidity Management"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -196,6 +196,10 @@
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:credit-intermediation",
+        "label": "Credit Intermediation"
+      },
       {
         "id": "urn:ngm:class:economic-growth",
         "label": "Economic Growth"
@@ -223,10 +227,6 @@
       {
         "id": "urn:ngm:class:legitimacy",
         "label": "Legitimacy"
-      },
-      {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
       }
     ],
     "dependsOn": [
@@ -261,6 +261,14 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:bank-run",
+        "label": "Bank Run"
+      },
+      {
+        "id": "urn:ngm:class:financial-contagion",
+        "label": "Financial Contagion"
+      },
+      {
         "id": "urn:ngm:class:systemic-risk",
         "label": "Systemic Risk"
       },
@@ -273,6 +281,10 @@
         "label": "Self-Regulation"
       },
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -283,7 +295,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -291,7 +303,7 @@
         "label": "Crypto-Asset Regulation"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -335,8 +347,16 @@
         "label": "Basel Committee"
       },
       {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
         "id": "urn:ngm:class:financial-stability-board",
         "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:imf-financial-sector-assessment-programme",
+        "label": "IMF Financial Sector Assessment Programme"
       },
       {
         "id": "urn:ngm:class:fatf",
@@ -353,19 +373,11 @@
       {
         "id": "urn:ngm:class:oecd-ai-principles",
         "label": "OECD Principles on AI"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {

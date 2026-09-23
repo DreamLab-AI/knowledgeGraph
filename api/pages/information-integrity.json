@@ -108,16 +108,6 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -143,19 +133,23 @@
         "label": "Provenance Recorder"
       },
       {
+        "id": "urn:ngm:class:signature-validator",
+        "label": "Signature Validator"
+      },
+      {
         "id": "urn:ngm:class:timestamp-service",
         "label": "Timestamp Service"
       },
       {
         "id": "urn:ngm:class:data-catalogue",
         "label": "Data Catalogue"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
@@ -163,10 +157,6 @@
       {
         "id": "urn:ngm:class:digital-signatures",
         "label": "Digital Signatures"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:audit-trail",
@@ -191,8 +181,16 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:disinformation-detection",
+        "label": "Disinformation Detection"
+      },
+      {
         "id": "urn:ngm:class:media-authentication",
         "label": "Media Authentication"
+      },
+      {
+        "id": "urn:ngm:class:trust-signals",
+        "label": "Trust Signals"
       },
       {
         "id": "urn:ngm:class:accountability",
@@ -211,16 +209,8 @@
         "label": "Trust"
       },
       {
-        "id": "urn:ngm:class:compliance-audit",
-        "label": "Compliance Audit"
-      },
-      {
-        "id": "urn:ngm:class:provenance-verification",
-        "label": "Provenance Verification"
-      },
-      {
-        "id": "urn:ngm:class:data-analytics",
-        "label": "Data Analytics"
+        "id": "urn:ngm:class:attribution",
+        "label": "Attribution"
       }
     ],
     "dependsOn": [
@@ -231,11 +221,23 @@
       {
         "id": "urn:ngm:class:metadata",
         "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:event-logging",
+        "label": "Event Logging"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:w3-c-prov",
+        "id": "urn:ngm:class:provenance-standard",
         "label": "W3C PROV"
       }
     ],
@@ -253,8 +255,8 @@
         "label": "Anonymisation"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -271,6 +273,10 @@
         "label": "Generative AI"
       },
       {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
         "id": "urn:ngm:class:reproducibility",
         "label": "Scientific Reproducibility"
       },
@@ -281,17 +287,13 @@
       {
         "id": "urn:ngm:class:metaverse-technology",
         "label": "Metaverse Technology"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:hashing",
+        "label": "Hashing"
+      },
       {
         "id": "urn:ngm:class:metadata-standards",
         "label": "Metadata Standards"
@@ -357,7 +359,7 @@
         "label": "PROV-O Ontology"
       },
       {
-        "id": "urn:ngm:class:w3-c-prov",
+        "id": "urn:ngm:class:provenance-standard",
         "label": "W3C PROV"
       },
       {
@@ -367,14 +369,6 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "partOf": [

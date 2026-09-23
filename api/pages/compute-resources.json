@@ -161,6 +161,10 @@
         "label": "Network Fabric"
       },
       {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
         "id": "urn:ngm:class:storage-systems",
         "label": "Storage"
       },
@@ -171,10 +175,6 @@
       {
         "id": "urn:ngm:class:cloud-native-applications",
         "label": "Cloud-Native Applications"
-      },
-      {
-        "id": "urn:ngm:class:distributed-computing",
-        "label": "Distributed Computing"
       }
     ],
     "requires": [
@@ -273,7 +273,7 @@
         "label": "Distributed Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -333,7 +333,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

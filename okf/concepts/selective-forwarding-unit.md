@@ -1,0 +1,21 @@
+---
+okf_version: "0.2"
+type: Class
+title: Selective Forwarding Unit
+resource: urn:ngm:class:selective-forwarding-unit
+domain: distributed-collaboration
+description: "A Selective Forwarding Unit (SFU) is a media server architecture used in multi-party real-time communication that receives media streams from each participant and selectively forwards them to other participants without mixing or decoding the content. This approach reduces server-side computational cost compared to Multipoint Control Units (MCUs) while still enabling scalable group video and audio "
+maturity: established
+quality: 0.7
+is-a:
+  - urn:ngm:class:dc-protocol-and-infra
+enables:
+  - urn:ngm:class:web-rtc
+  - urn:ngm:class:real-time-synchronisation
+relatedTo:
+  - urn:ngm:class:signaling-server
+---
+
+# Selective Forwarding Unit
+
+A Selective Forwarding Unit (SFU) is a media server architecture used in multi-party real-time communication that receives media streams from each participant and selectively forwards them to other participants without mixing or decoding the content. This approach reduces server-side computational cost compared to Multipoint Control Units (MCUs) while still enabling scalable group video and audio sessions. SFUs allow clients to subscribe to individual streams, supporting adaptive bitrate and simulcast strategies.

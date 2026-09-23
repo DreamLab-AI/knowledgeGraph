@@ -8,8 +8,12 @@
   "definition": "A neural rendering technique that represents 3D scenes as continuous volumetric radiance functions encoded by multilayer perceptrons, mapping 5D inputs (3D spatial position plus 2D viewing direction) to colour and volume density. Novel viewpoints are synthesised by volumetric ray marching through the learned representation, enabling photorealistic view synthesis from sparse photograph sets without explicit 3D geometry. Introduced by Mildenhall et al. (ECCV 2020), NeRF has driven a generation of implicit neural scene representations spanning telepresence, virtual production, and robotics.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:dc-telepresence",
+      "id": "urn:ngm:class:telepresence",
       "label": "Telepresence"
+    },
+    {
+      "id": "urn:ngm:class:real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
     }
   ],
   "entityType": "Class",
@@ -94,76 +98,166 @@
       "id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration",
       "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:render-pipeline",
+      "label": "Render Pipeline",
+      "slug": "render-pipeline"
+    },
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering",
+      "slug": "sc-display-and-rendering"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:haptic-feedback-telepresence",
-        "label": "Haptic Feedback Telepresence"
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
       },
       {
-        "id": "urn:ngm:class:immersive-communication",
-        "label": "Immersive Communication"
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:presence",
-        "label": "Presence"
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
       },
       {
-        "id": "urn:ngm:class:robotic-telepresence",
-        "label": "Robotic Telepresence"
+        "id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
       },
       {
-        "id": "urn:ngm:class:social-presence",
-        "label": "Social Presence"
+        "id": "urn:ngm:class:fragment-shading",
+        "label": "Fragment Shading"
       },
       {
-        "id": "urn:ngm:class:spatial-presence",
-        "label": "Spatial Presence"
+        "id": "urn:ngm:class:frame-buffer-operations",
+        "label": "Frame Buffer Operations"
       },
       {
-        "id": "urn:ngm:class:teleoperation-systems",
-        "label": "Teleoperation Systems"
+        "id": "urn:ngm:class:geometry-processing",
+        "label": "Geometry Processing"
       },
       {
-        "id": "urn:ngm:class:asynchronous-collaboration",
-        "label": "Asynchronous Collaboration"
+        "id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
       },
       {
-        "id": "urn:ngm:class:identity-and-access-management",
-        "label": "Identity and Access Management"
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
       },
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "id": "urn:ngm:class:3d-models",
+        "label": "3D Models"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:open-source-development",
-        "label": "Open Source Development"
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:remote-surgery",
+        "label": "Remote Surgery"
       },
       {
         "id": "urn:ngm:class:remote-work",
         "label": "Remote Work"
       },
       {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
       },
       {
-        "id": "urn:ngm:class:virtual-team",
-        "label": "Virtual Team"
+        "id": "urn:ngm:class:dynamic-lighting",
+        "label": "Dynamic Lighting"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      },
+      {
+        "id": "urn:ngm:class:interactive-3d-graphics",
+        "label": "Interactive 3D Graphics"
+      },
+      {
+        "id": "urn:ngm:class:real-time-visualization",
+        "label": "Real-Time Visualization"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Networks"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
       {
         "id": "urn:ngm:class:consensus-algorithm",
         "label": "Consensus Algorithm"
@@ -175,14 +269,50 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:co-location",
+        "label": "Co-location"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:offline-rendering",
+        "label": "Offline Rendering"
+      },
+      {
+        "id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:metaverse-telepresence-bridge",
-        "label": "Metaverse-Telepresence Bridge"
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Systems"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
       },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
@@ -195,16 +325,36 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-accelerator",
+        "label": "Machine Learning Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:avatar-system",
-        "label": "Avatar System"
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:haptics",
-        "label": "Haptics"
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
       },
       {
         "id": "urn:ngm:class:conflict-free-replicated-data-type",
@@ -217,17 +367,21 @@
       {
         "id": "urn:ngm:class:operational-transformation",
         "label": "Operational Transformation"
-      },
-      {
-        "id": "urn:ngm:class:real-time-messaging",
-        "label": "Real-Time Messaging"
-      },
-      {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:hybrid-work",
+        "label": "Hybrid Work"
+      },
+      {
+        "id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
@@ -235,20 +389,72 @@
       {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:graphics-rendering-system",
+        "label": "Graphics Rendering System"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:dc-communication",
-        "label": "Communication Technology"
+        "id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
       },
       {
-        "id": "urn:ngm:class:dc-workspace-tools",
-        "label": "Workspace Tools"
+        "id": "urn:ngm:class:presence-technology",
+        "label": "Presence Technology"
       },
       {
-        "id": "urn:ngm:class:robotics-telepresence-bridge",
-        "label": "Robotics-Telepresence Bridge"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
       {
         "id": "urn:ngm:class:computer-supported-cooperative-work",
@@ -257,6 +463,18 @@
       {
         "id": "urn:ngm:class:groupware",
         "label": "Groupware"
+      },
+      {
+        "id": "urn:ngm:class:social-software",
+        "label": "Social Software"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
       }
     ]
   },

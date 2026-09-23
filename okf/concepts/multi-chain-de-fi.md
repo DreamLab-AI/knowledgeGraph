@@ -1,0 +1,19 @@
+---
+okf_version: "0.2"
+type: Class
+title: Multi-Chain DeFi
+resource: urn:ngm:class:multi-chain-de-fi
+domain: blockchain
+description: Multi-chain DeFi refers to decentralised finance applications and liquidity that operate across multiple independent blockchains rather than being confined to a single network. It relies on cross-chain bridges, messaging protocols, and interoperability standards to move assets and data between chains, letting users access yields and markets wherever they reside. It expands capital efficiency but i
+maturity: emerging
+quality: 0.72
+is-a:
+  - urn:ngm:class:de-fi
+relatedTo:
+  - urn:ngm:class:cross-chain-bridge
+  - urn:ngm:class:blockchain-interoperability
+---
+
+# Multi-Chain DeFi
+
+Multi-chain DeFi refers to decentralised finance applications and liquidity that operate across multiple independent blockchains rather than being confined to a single network. It relies on cross-chain bridges, messaging protocols, and interoperability standards to move assets and data between chains, letting users access yields and markets wherever they reside. It expands capital efficiency but introduces bridge and composability risks.

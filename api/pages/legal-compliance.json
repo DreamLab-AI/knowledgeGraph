@@ -72,6 +72,14 @@
       {
         "id": "urn:ngm:class:self-regulation",
         "label": "Voluntary Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Voluntary Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ethics-washing",
+        "label": "Ethics Washing"
       }
     ],
     "bridgesTo": [
@@ -104,6 +112,10 @@
       {
         "id": "urn:ngm:class:explainability",
         "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       }
     ],
     "supports": [
@@ -136,6 +148,10 @@
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       }
     ],
     "partOf": [],
@@ -147,6 +163,14 @@
       {
         "id": "urn:ngm:class:bias-and-fairness",
         "label": "Bias and Fairness"
+      },
+      {
+        "id": "urn:ngm:class:liability",
+        "label": "Liability"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property"
       }
     ]
   },
@@ -226,6 +250,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

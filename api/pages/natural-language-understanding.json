@@ -32,12 +32,20 @@
       {
         "id": "urn:ngm:class:relation-extraction",
         "label": "Relation Extraction"
+      },
+      {
+        "id": "urn:ngm:class:semantic-role-labelling",
+        "label": "Semantic Role Labelling"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:semantic-parsing",
         "label": "Semantic Parsing"
+      },
+      {
+        "id": "urn:ngm:class:syntactic-parsing",
+        "label": "Syntactic Parsing"
       }
     ],
     "enables": [
@@ -252,6 +260,22 @@
       {
         "id": "urn:ngm:class:knowledge-graphs",
         "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

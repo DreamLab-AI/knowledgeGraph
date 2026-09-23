@@ -152,6 +152,10 @@
         "label": "Function Calling"
       },
       {
+        "id": "urn:ngm:class:tool-selection",
+        "label": "Tool Selection"
+      },
+      {
         "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
       },
@@ -166,10 +170,6 @@
       {
         "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Automation"
-      },
-      {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
       }
     ],
     "dependsOn": [
@@ -210,9 +210,33 @@
       {
         "id": "urn:ngm:class:restful-api",
         "label": "RESTful API"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-description",
+        "label": "Natural Language Description"
+      },
+      {
+        "id": "urn:ngm:class:parameter-validation",
+        "label": "Parameter Validation"
+      },
       {
         "id": "urn:ngm:class:type-system",
         "label": "Type System"
@@ -229,6 +253,10 @@
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:capability-manifest",
+        "label": "Capability Manifest"
+      },
       {
         "id": "urn:ngm:class:multi-agent-orchestration",
         "label": "Agent Orchestration"

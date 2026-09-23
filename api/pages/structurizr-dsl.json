@@ -63,29 +63,39 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:declarative-specification",
+      "label": "Declarative Specification",
+      "slug": "declarative-specification"
+    },
+    {
       "id": "urn:ngm:class:documentation-as-code",
       "label": "Documentation As Code",
       "slug": "documentation-as-code"
     },
     {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering (Infrastructure)",
-      "slug": "infra-software-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:software-development",
-      "label": "Software Development",
-      "slug": "software-development"
+      "id": "urn:ngm:class:domain-specific-language",
+      "label": "Domain-Specific Language",
+      "slug": "domain-specific-language"
     },
     {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:text-based-authoring",
+      "label": "Text-Based Authoring",
+      "slug": "text-based-authoring"
+    },
+    {
+      "id": "urn:ngm:class:version-controlled-artefact",
+      "label": "Version-Controlled Artefact",
+      "slug": "version-controlled-artefact"
+    },
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development",
+      "slug": "software-development"
     },
     {
       "id": "urn:ngm:class:systems-engineering",
@@ -96,36 +106,36 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:build-pipeline",
+        "label": "Build Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:diagram-grammar",
+        "label": "Diagram Grammar"
+      },
+      {
+        "id": "urn:ngm:class:icon-library",
+        "label": "Icon Library"
+      },
+      {
         "id": "urn:ngm:class:layout-engine",
         "label": "Layout Engine"
+      },
+      {
+        "id": "urn:ngm:class:preview-plugin",
+        "label": "Preview Plugin"
       },
       {
         "id": "urn:ngm:class:renderer",
         "label": "Renderer"
       },
       {
-        "id": "urn:ngm:class:code-generation",
-        "label": "Code Generation"
+        "id": "urn:ngm:class:source-file",
+        "label": "Source File"
       },
       {
-        "id": "urn:ngm:class:microservices-architecture",
-        "label": "Microservices Architecture"
-      },
-      {
-        "id": "urn:ngm:class:programming-language",
-        "label": "Programming Language"
-      },
-      {
-        "id": "urn:ngm:class:software-architecture",
-        "label": "Software Architecture"
-      },
-      {
-        "id": "urn:ngm:class:software-development-process",
-        "label": "Software Development Process"
-      },
-      {
-        "id": "urn:ngm:class:software-testing",
-        "label": "Software Testing"
+        "id": "urn:ngm:class:theme",
+        "label": "Theme"
       }
     ],
     "requires": [
@@ -138,31 +148,35 @@
         "label": "Markdown"
       },
       {
+        "id": "urn:ngm:class:render-toolchain",
+        "label": "Render Toolchain"
+      },
+      {
+        "id": "urn:ngm:class:text-editor",
+        "label": "Text Editor"
+      },
+      {
         "id": "urn:ngm:class:version-control",
         "label": "Version Control"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
       },
       {
         "id": "urn:ngm:class:programming-paradigm",
         "label": "Programming Paradigm"
-      },
-      {
-        "id": "urn:ngm:class:agile-software-development",
-        "label": "Agile Methodology"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:architectural-decision-records",
+        "label": "Architectural Decision Records"
+      },
       {
         "id": "urn:ngm:class:c4-model",
         "label": "C4 Model"
@@ -176,27 +190,47 @@
         "label": "Continuous Integration"
       },
       {
+        "id": "urn:ngm:class:living-documentation",
+        "label": "Living Documentation"
+      },
+      {
+        "id": "urn:ngm:class:refactor-time-consistency",
+        "label": "Refactor-Time Consistency"
+      },
+      {
         "id": "urn:ngm:class:runbook",
         "label": "Runbook"
       },
       {
-        "id": "urn:ngm:class:api-gateway",
-        "label": "API Gateway"
-      },
-      {
-        "id": "urn:ngm:class:testing-infrastructure",
-        "label": "Testing Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:eclipse-layout-kernel",
+        "label": "Eclipse Layout Kernel"
+      },
+      {
+        "id": "urn:ngm:class:force-directed-layout",
+        "label": "Force-Directed Layout"
+      },
+      {
+        "id": "urn:ngm:class:markdown",
+        "label": "Markdown"
+      },
+      {
+        "id": "urn:ngm:class:sugiyama-algorithm",
+        "label": "Sugiyama Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:svg",
+        "label": "SVG"
+      },
+      {
+        "id": "urn:ngm:class:unicode",
+        "label": "Unicode"
+      },
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
@@ -208,45 +242,73 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:d2",
+        "label": "D2"
+      },
+      {
+        "id": "urn:ngm:class:graphviz-dot",
+        "label": "Graphviz DOT"
+      },
+      {
         "id": "urn:ngm:class:markdown-diagramming-as-code-tool",
         "label": "Markdown Diagramming As Code Tool"
+      },
+      {
+        "id": "urn:ngm:class:penrose",
+        "label": "Penrose"
+      },
+      {
+        "id": "urn:ngm:class:pikchr",
+        "label": "Pikchr"
+      },
+      {
+        "id": "urn:ngm:class:plantuml",
+        "label": "PlantUML"
+      },
+      {
+        "id": "urn:ngm:class:tikz",
+        "label": "TikZ"
+      },
+      {
+        "id": "urn:ngm:class:vega-lite",
+        "label": "Vega-Lite"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:generative-models",
+        "label": "Generative Image Models"
       },
       {
-        "id": "urn:ngm:class:waterfall-model",
-        "label": "Waterfall Model"
+        "id": "urn:ngm:class:lucidchart-drag-drop",
+        "label": "Lucidchart Drag-Drop"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-visio",
+        "label": "Microsoft Visio"
+      },
+      {
+        "id": "urn:ngm:class:whiteboard-photographs",
+        "label": "Whiteboard Photographs"
+      },
+      {
+        "id": "urn:ngm:class:wysiwyg-editor",
+        "label": "WYSIWYG Editor"
       },
       {
         "id": "urn:ngm:class:computer-science",
         "label": "Computer Science"
       },
       {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
       },
       {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:waterfall-model",
+        "label": "Waterfall Model"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
-      },
-      {
-        "id": "urn:ngm:class:code-generation",
-        "label": "AI Code Generation"
-      },
       {
         "id": "urn:ngm:class:machine-learning-engineering",
         "label": "Machine Learning Engineering"
@@ -254,6 +316,14 @@
       {
         "id": "urn:ngm:class:security-engineering",
         "label": "Security Engineering"
+      },
+      {
+        "id": "urn:ngm:class:ai-code-generation",
+        "label": "AI Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "AI Code Generation"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -274,24 +344,20 @@
         "label": "JSON Schema"
       },
       {
+        "id": "urn:ngm:class:markdown-code-fence",
+        "label": "Markdown Code Fence"
+      },
+      {
         "id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
       },
       {
-        "id": "urn:ngm:class:continuous-integration",
-        "label": "Continuous Integration"
+        "id": "urn:ngm:class:web-components",
+        "label": "Web Components"
       },
       {
-        "id": "urn:ngm:class:programming-language",
-        "label": "Programming Language"
-      },
-      {
-        "id": "urn:ngm:class:software-development-process",
-        "label": "Software Development Process"
-      },
-      {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
+        "id": "urn:ngm:class:yaml-frontmatter",
+        "label": "YAML Frontmatter"
       },
       {
         "id": "urn:ngm:class:containerisation",
@@ -300,40 +366,44 @@
       {
         "id": "urn:ngm:class:infrastructure-as-code",
         "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:class-diagram",
+        "label": "Class Diagram"
+      },
+      {
+        "id": "urn:ngm:class:deployment-diagram",
+        "label": "Deployment Diagram"
+      },
+      {
+        "id": "urn:ngm:class:entity-relationship-diagram",
+        "label": "Entity-Relationship Diagram"
+      },
+      {
+        "id": "urn:ngm:class:flowchart",
+        "label": "Flowchart"
+      },
+      {
+        "id": "urn:ngm:class:gantt-chart",
+        "label": "Gantt Chart"
+      },
       {
         "id": "urn:ngm:class:mind-map",
         "label": "Mind Map"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:sequence-diagram",
+        "label": "Sequence Diagram"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
-      },
-      {
-        "id": "urn:ngm:class:digital-transformation",
-        "label": "Digital Transformation"
-      },
-      {
-        "id": "urn:ngm:class:software-supply-chain",
-        "label": "Software Supply Chain"
-      },
-      {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:state-diagram",
+        "label": "State Diagram"
       }
     ],
     "standardizedBy": [
@@ -350,23 +420,37 @@
         "label": "Object Management Group"
       },
       {
+        "id": "urn:ngm:class:omg",
+        "label": "OMG"
+      },
+      {
+        "id": "urn:ngm:class:thoughtworks-tech-radar",
+        "label": "ThoughtWorks Tech Radar"
+      },
+      {
         "id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
-      },
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      }
+    ],
+    "partOf": [
       {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:adr",
+        "label": "ADR"
+      },
       {
         "id": "urn:ngm:class:ai-diagram-tools",
         "label": "AI Diagram Tools"
@@ -374,6 +458,10 @@
       {
         "id": "urn:ngm:class:c4-model",
         "label": "C4 Model"
+      },
+      {
+        "id": "urn:ngm:class:diagrams-py",
+        "label": "Diagrams.py"
       },
       {
         "id": "urn:ngm:class:documentation-as-code",
@@ -384,20 +472,12 @@
         "label": "Excalidraw"
       },
       {
+        "id": "urn:ngm:class:kroki",
+        "label": "Kroki"
+      },
+      {
         "id": "urn:ngm:class:logseq",
         "label": "Logseq"
-      },
-      {
-        "id": "urn:ngm:class:notion",
-        "label": "Notion"
-      },
-      {
-        "id": "urn:ngm:class:diagrams-as-code",
-        "label": "Diagrams as Code"
-      },
-      {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
       }
     ]
   },

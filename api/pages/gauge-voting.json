@@ -52,7 +52,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
       }
     ],
@@ -74,8 +74,12 @@
         "label": "Governance"
       },
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
       }
     ],
     "uses": [
@@ -117,13 +121,202 @@
       "slug": "bc-token-and-asset"
     },
     {
+      "id": "urn:ngm:class:coordination-primitive",
+      "label": "Coordination Primitive",
+      "slug": "coordination-primitive"
+    },
+    {
+      "id": "urn:ngm:class:crypto-asset",
+      "label": "Crypto-Asset",
+      "slug": "crypto-asset"
+    },
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset",
+      "slug": "digital-asset"
+    },
+    {
+      "id": "urn:ngm:class:erc-20-tokens",
+      "label": "ERC-20 Tokens",
+      "slug": "erc-20-tokens"
+    },
+    {
+      "id": "urn:ngm:class:fungible-token",
+      "label": "Fungible Token",
+      "slug": "fungible-token"
+    },
+    {
+      "id": "urn:ngm:class:voting-instrument",
+      "label": "Voting Instrument",
+      "slug": "voting-instrument"
+    },
+    {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard",
+      "slug": "technical-standard"
+    },
+    {
+      "id": "urn:ngm:class:token",
+      "label": "Token",
+      "slug": "token"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
+    },
+    {
+      "id": "urn:ngm:class:transferable-right",
+      "label": "Transferable Right",
+      "slug": "transferable-right"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:checkpoint-mapping",
+        "label": "Checkpoint Mapping"
+      },
       {
         "id": "urn:ngm:class:delegation-system",
         "label": "Delegation Mechanism"
@@ -149,12 +342,8 @@
         "label": "Timelock Controller"
       },
       {
-        "id": "urn:ngm:class:vesting-schedule",
-        "label": "Vesting Schedule"
-      },
-      {
-        "id": "urn:ngm:class:voting-power",
-        "label": "Voting Power"
+        "id": "urn:ngm:class:token-treasury",
+        "label": "Token Treasury"
       }
     ],
     "requires": [
@@ -187,14 +376,22 @@
         "label": "Wallet"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
         "id": "urn:ngm:class:decentralized-governance",
         "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:gauge-weight-allocation",
+        "label": "Gauge Weight Allocation"
       },
       {
         "id": "urn:ngm:class:liquid-democracy",
@@ -205,24 +402,50 @@
         "label": "On Chain Voting"
       },
       {
+        "id": "urn:ngm:class:protocol-parameter-control",
+        "label": "Protocol Parameter Control"
+      },
+      {
         "id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
       },
       {
         "id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:ngm:class:vote-delegation",
-        "label": "Vote Delegation"
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "implements": [
@@ -259,13 +482,81 @@
         "label": "Vote-Escrow Model"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:citizen-voting-rights",
+        "label": "Citizen Voting Rights"
+      },
+      {
+        "id": "urn:ngm:class:co-operative-member-rights",
+        "label": "Co-operative Member Rights"
+      },
+      {
+        "id": "urn:ngm:class:corporate-equity-share",
+        "label": "Corporate Equity Share"
+      },
+      {
+        "id": "urn:ngm:class:meme-token",
+        "label": "Meme Token"
+      },
+      {
+        "id": "urn:ngm:class:payment-token",
+        "label": "Payment Token"
+      },
+      {
+        "id": "urn:ngm:class:reward-token",
+        "label": "Reward Token"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:shareholder-voting-rights",
+        "label": "Shareholder Voting Rights"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-economy",
+        "label": "Metaverse Economy"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:eip-712",
         "label": "EIP-712 Typed Signatures"
       },
       {
-        "id": "urn:ngm:class:erc-20",
+        "id": "urn:ngm:class:erc-20-token-standard",
         "label": "ERC-20"
       },
       {
@@ -289,8 +580,8 @@
         "label": "Timelock"
       },
       {
-        "id": "urn:ngm:class:blockchain-transaction",
-        "label": "Blockchain Transaction"
+        "id": "urn:ngm:class:vesting-contract",
+        "label": "Vesting Contract"
       }
     ],
     "supports": [
@@ -317,6 +608,14 @@
       {
         "id": "urn:ngm:class:meta-governance",
         "label": "Meta-Governance"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-airdrops",
+        "label": "Retroactive Airdrops"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralised Finance"
       }
     ],
     "standardizedBy": [
@@ -329,7 +628,7 @@
         "label": "EIP-712"
       },
       {
-        "id": "urn:ngm:class:erc-20",
+        "id": "urn:ngm:class:erc-20-token-standard",
         "label": "ERC-20"
       },
       {
@@ -341,14 +640,72 @@
         "label": "ERC-2612 Permit"
       },
       {
+        "id": "urn:ngm:class:erc-5805-voting-token",
+        "label": "ERC-5805 Voting Token"
+      },
+      {
+        "id": "urn:ngm:class:erc20votes",
+        "label": "ERC20Votes"
+      },
+      {
         "id": "urn:ngm:class:open-zeppelin-governor-contracts",
         "label": "OpenZeppelin Governor Contracts"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:defi-summer",
+        "label": "DeFi Summer"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-airdrop",
+        "label": "Retroactive Airdrop"
+      },
       {
         "id": "urn:ngm:class:sybil-attack",
         "label": "Sybil Attack"
+      },
+      {
+        "id": "urn:ngm:class:vote-bribing",
+        "label": "Vote Bribing"
+      },
+      {
+        "id": "urn:ngm:class:whale-plutocracy",
+        "label": "Whale Plutocracy"
       },
       {
         "id": "urn:ngm:class:yield-farming",
@@ -361,14 +718,6 @@
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
-      },
-      {
-        "id": "urn:ngm:class:erc-20",
-        "label": "ERC-20"
-      },
-      {
-        "id": "urn:ngm:class:erc-721",
-        "label": "ERC-721"
       }
     ]
   },

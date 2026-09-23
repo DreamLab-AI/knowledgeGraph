@@ -14,6 +14,10 @@
     {
       "id": "urn:ngm:class:loss-function",
       "label": "Loss Function"
+    },
+    {
+      "id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
     }
   ],
   "entityType": "Class",
@@ -46,6 +50,18 @@
       {
         "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "enables": [
@@ -74,13 +90,22 @@
         "label": "Digital Identity Verification"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -122,6 +147,18 @@
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "supports": [
@@ -132,6 +169,10 @@
       {
         "id": "urn:ngm:class:anomaly-detection",
         "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
       }
     ],
     "standardizedBy": [],
@@ -166,8 +207,24 @@
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ]
   },
@@ -183,6 +240,11 @@
       "slug": "computer-vision"
     },
     {
+      "id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique",
+      "slug": "machine-learning-discipline-technique"
+    },
+    {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
@@ -191,6 +253,16 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -202,6 +274,14 @@
       {
         "id": "urn:ngm:class:mean-squared-error",
         "label": "Mean Squared Error"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
       },
       {
         "id": "urn:ngm:class:computer-vision",
@@ -218,17 +298,13 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
-      },
-      {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:face-detection",
+        "label": "Face Detection"
+      },
       {
         "id": "urn:ngm:class:image-preprocessing",
         "label": "Image Preprocessing"
@@ -242,6 +318,10 @@
         "label": "Ground Truth Label"
       },
       {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
         "id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
       },
@@ -250,11 +330,15 @@
         "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:border-control",
+        "label": "Border Control"
+      },
       {
         "id": "urn:ngm:class:surveillance",
         "label": "Surveillance"
@@ -272,20 +356,16 @@
         "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:autonomous-navigation",
-        "label": "Autonomous Vehicle Navigation"
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
       },
       {
-        "id": "urn:ngm:class:medical-imaging-ai",
-        "label": "Medical Imaging AI"
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
       },
       {
-        "id": "urn:ngm:class:quality-control",
-        "label": "Quality Control"
-      },
-      {
-        "id": "urn:ngm:class:robotics-perception",
-        "label": "Robotics Perception"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ],
     "dependsOn": [
@@ -296,12 +376,74 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:deepfake-detection",
         "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:ngm:class:fingerprint-recognition",
+        "label": "Fingerprint Recognition"
       },
       {
         "id": "urn:ngm:class:iris-recognition",
@@ -314,6 +456,18 @@
       {
         "id": "urn:ngm:class:overfitting",
         "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -328,6 +482,26 @@
       {
         "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
       }
     ],
     "uses": [
@@ -340,12 +514,28 @@
         "label": "Camera"
       },
       {
+        "id": "urn:ngm:class:face-embedding",
+        "label": "Face Embedding"
+      },
+      {
         "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour Search"
       },
       {
         "id": "urn:ngm:class:automatic-differentiation",
         "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Neural Network Latent Space"
       }
     ],
     "supports": [
@@ -360,6 +550,26 @@
       {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
       }
     ],
     "standardizedBy": [
@@ -368,8 +578,16 @@
         "label": "ISO/IEC 19794"
       },
       {
+        "id": "urn:ngm:class:nist-frvt",
+        "label": "NIST FRVT"
+      },
+      {
         "id": "urn:ngm:class:iso-iec-22989-2022",
         "label": "ISO-IEC 22989 2022"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "partOf": [
@@ -382,14 +600,6 @@
       {
         "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
-      },
-      {
-        "id": "urn:ngm:class:data-protection",
-        "label": "Data Protection"
-      },
-      {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:privacy",
@@ -408,8 +618,16 @@
         "label": "Regularisation"
       },
       {
-        "id": "urn:ngm:class:ai-application",
-        "label": "AI Application"
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
       }
     ]
   },

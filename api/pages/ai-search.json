@@ -18,6 +18,22 @@
     {
       "id": "urn:ngm:class:retrieval-augmented-generation",
       "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "id": "urn:ngm:class:question-answering-system",
+      "label": "Question Answering System"
+    },
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "id": "urn:ngm:class:search-engine",
+      "label": "Search Engine"
     }
   ],
   "entityType": "Class",
@@ -32,6 +48,42 @@
       {
         "id": "urn:ngm:class:reranker",
         "label": "Reranker"
+      },
+      {
+        "id": "urn:ngm:class:query-understanding-module",
+        "label": "Query Understanding Module"
+      },
+      {
+        "id": "urn:ngm:class:web-index",
+        "label": "Web Index"
+      },
+      {
+        "id": "urn:ngm:class:embedding-index",
+        "label": "Embedding Index"
+      },
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retriever"
+      },
+      {
+        "id": "urn:ngm:class:sparse-retriever",
+        "label": "Sparse Retriever"
+      },
+      {
+        "id": "urn:ngm:class:llm-generator",
+        "label": "LLM Generator"
+      },
+      {
+        "id": "urn:ngm:class:citation-grounding-layer",
+        "label": "Citation Grounding Layer"
+      },
+      {
+        "id": "urn:ngm:class:answer-synthesiser",
+        "label": "Answer Synthesiser"
+      },
+      {
+        "id": "urn:ngm:class:follow-up-suggester",
+        "label": "Follow-up Suggester"
       }
     ],
     "requires": [
@@ -62,10 +114,72 @@
       {
         "id": "urn:ngm:class:web-crawler",
         "label": "Web Crawler"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:content-licensing",
+        "label": "Content Licensing Agreement"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:conversational-web-access",
+        "label": "Conversational Web Access"
+      },
+      {
+        "id": "urn:ngm:class:citation-grounded-answers",
+        "label": "Citation-Grounded Answers"
+      },
+      {
+        "id": "urn:ngm:class:multi-source-synthesis",
+        "label": "Multi-Source Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:zero-click-information-access",
+        "label": "Zero-Click Information Access"
+      },
+      {
+        "id": "urn:ngm:class:agentic-browsing",
+        "label": "Agentic Browsing"
+      },
+      {
+        "id": "urn:ngm:class:research-workflows",
+        "label": "Research Workflows"
+      },
+      {
+        "id": "urn:ngm:class:programmatic-knowledge-lookup",
+        "label": "Programmatic Knowledge Lookup"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "id": "urn:ngm:class:hnsw-indexing",
+        "label": "HNSW Indexing"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
+      },
+      {
+        "id": "urn:ngm:class:web-crawling",
+        "label": "Web Crawling"
+      },
+      {
+        "id": "urn:ngm:class:common-crawl",
+        "label": "Common Crawl"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:chain-of-thought-reasoning",
@@ -92,7 +206,32 @@
         "label": "Tool Use"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:keyword-search",
+        "label": "Keyword Search"
+      },
+      {
+        "id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
+      },
+      {
+        "id": "urn:ngm:class:classical-information-retrieval",
+        "label": "Classical Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-lookup",
+        "label": "Knowledge Graph Lookup"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai-without-retrieval",
+        "label": "Conversational AI without Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:boolean-search",
+        "label": "Boolean Search"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -118,6 +257,14 @@
       {
         "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Sentence Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:streaming-generation",
+        "label": "Streaming Generation"
       }
     ],
     "supports": [
@@ -136,6 +283,22 @@
       {
         "id": "urn:ngm:class:software-development",
         "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      },
+      {
+        "id": "urn:ngm:class:journalism",
+        "label": "Journalism"
+      },
+      {
+        "id": "urn:ngm:class:medical-information-retrieval",
+        "label": "Medical Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Enterprise Knowledge Management"
       }
     ],
     "standardizedBy": [
@@ -158,6 +321,18 @@
       {
         "id": "urn:ngm:class:uk-online-safety-act",
         "label": "UK Online Safety Act 2023"
+      },
+      {
+        "id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act 2023"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:trec-rag-track",
+        "label": "TREC RAG Track"
       }
     ],
     "partOf": [],
@@ -185,6 +360,18 @@
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:agentic-browser",
+        "label": "Agentic Browser"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },
@@ -203,6 +390,11 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
     }
   ],
   "inheritedRelations": {
@@ -262,12 +454,16 @@
         "label": "Approximate Nearest Neighbour Search"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:text-representation",
+        "label": "Text Representation"
+      },
+      {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
       }
     ],
     "enables": [
@@ -300,8 +496,8 @@
         "label": "Hallucination Mitigation"
       },
       {
-        "id": "urn:ngm:class:semantic-search",
-        "label": "Semantic Search"
+        "id": "urn:ngm:class:knowledge-grounding",
+        "label": "Knowledge Grounding"
       }
     ],
     "dependsOn": [
@@ -312,6 +508,52 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:corpus",
+        "label": "Corpus"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metrics"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:pre-trained-language-model",
+        "label": "Pre-trained Language Model"
+      },
+      {
+        "id": "urn:ngm:class:speech-processing",
+        "label": "Speech Processing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-state-tracking",
+        "label": "Dialogue State Tracking"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:response-generation",
+        "label": "Response Generation"
       }
     ],
     "contrastsWith": [
@@ -326,6 +568,26 @@
       {
         "id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:parametric-knowledge",
+        "label": "Parametric Knowledge"
+      },
+      {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:form-based-interface",
+        "label": "Form-Based Interface"
       }
     ],
     "bridgesTo": [
@@ -344,6 +606,22 @@
       {
         "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-search",
+        "label": "Spatial Search"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -378,6 +656,60 @@
       {
         "id": "urn:ngm:class:dense-retrieval",
         "label": "Dense Retrieval"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C Voice Browser Working Group"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
       }
     ],
     "relatedTo": [

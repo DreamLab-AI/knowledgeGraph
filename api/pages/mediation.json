@@ -59,6 +59,11 @@
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework",
+      "slug": "regulatory-framework"
     }
   ],
   "inheritedRelations": {
@@ -80,20 +85,20 @@
         "label": "E-Contract Arbitration"
       },
       {
+        "id": "urn:ngm:class:evidence-submission-system",
+        "label": "Evidence Submission System"
+      },
+      {
+        "id": "urn:ngm:class:mediation-process",
+        "label": "Mediation Process"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
-      },
-      {
-        "id": "urn:ngm:class:data-protection-regulation",
-        "label": "Data Protection Regulation"
-      },
-      {
-        "id": "urn:ngm:class:gdpr-compliance",
-        "label": "GDPR Compliance"
       }
     ],
     "requires": [
@@ -110,6 +115,10 @@
         "label": "Procedural Fairness"
       },
       {
+        "id": "urn:ngm:class:evidence-management",
+        "label": "Evidence Management"
+      },
+      {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
@@ -124,10 +133,6 @@
       {
         "id": "urn:ngm:class:data-protection-officer",
         "label": "Data Protection Officer"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-framework",
-        "label": "Regulatory Framework"
       }
     ],
     "enables": [
@@ -144,6 +149,10 @@
         "label": "E-Contract Arbitration"
       },
       {
+        "id": "urn:ngm:class:automated-enforcement",
+        "label": "Automated Enforcement"
+      },
+      {
         "id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution"
       },
@@ -158,10 +167,6 @@
       {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
-      },
-      {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
       }
     ],
     "dependsOn": [
@@ -174,8 +179,24 @@
         "label": "Escrow"
       },
       {
+        "id": "urn:ngm:class:dispute-classification-system",
+        "label": "Dispute Classification System"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
         "id": "urn:ngm:class:jurisdiction",
         "label": "Jurisdiction"
+      },
+      {
+        "id": "urn:ngm:class:legal-jurisdiction",
+        "label": "Legal Jurisdiction"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
       }
     ],
     "implements": [
@@ -190,6 +211,14 @@
       {
         "id": "urn:ngm:class:security",
         "label": "Security Obligations"
+      },
+      {
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:genius-act",
+        "label": "GENIUS Act"
       }
     ],
     "contrastsWith": [
@@ -200,6 +229,10 @@
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
       }
     ],
     "bridgesTo": [
@@ -304,6 +337,18 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:international-organization-of-securities-commissions",
+        "label": "International Organization of Securities Commissions"
       }
     ],
     "partOf": [
@@ -330,7 +375,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

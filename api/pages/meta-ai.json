@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:imagebind",
         "label": "ImageBind"
+      },
+      {
+        "id": "urn:ngm:class:meta-llama-model-family",
+        "label": "LLaMA"
       }
     ],
     "requires": [
@@ -71,6 +75,10 @@
       {
         "id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       }
     ],
     "contrastsWith": [
@@ -85,6 +93,10 @@
       {
         "id": "urn:ngm:class:anthropic",
         "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI"
       }
     ],
     "bridgesTo": [
@@ -116,6 +128,10 @@
       },
       {
         "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       }
     ],
@@ -234,6 +250,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

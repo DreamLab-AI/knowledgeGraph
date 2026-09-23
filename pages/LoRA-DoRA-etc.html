@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>LoRA DoRA etc</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="LoRA DoRA etc"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="LoRA DoRA etc"/><meta name="twitter:description" content="Parameter-Efficient Fine-Tuning (PEFT) is a family of machine learning techniques enabling adaptation of large pre-trained neural networks — particularly Large Language Models and diffusion models — to downstream tasks by updating only a small fraction (0.01–) of total model parameters rather… Seman..."/><meta property="og:description" content="Parameter-Efficient Fine-Tuning (PEFT) is a family of machine learning techniques enabling adaptation of large pre-trained neural networks — particularly Large Language Models and diffusion models — to downstream tasks by updating only a small fraction (0.01–) of total model parameters rather… Seman..."/><meta property="og:image:alt" content="Parameter-Efficient Fine-Tuning (PEFT) is a family of machine learning techniques enabling adaptation of large pre-trained neural networks — particularly Large Language Models and diffusion models — to downstream tasks by updating only a small fraction (0.01–) of total model parameters rather… Seman..."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/LoRA-DoRA-etc"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/LoRA-DoRA-etc"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Parameter-Efficient Fine-Tuning (PEFT) is a family of machine learning techniques enabling adaptation of large pre-trained neural networks — particularly Large Language Models and diffusion models — to downstream tasks by updating only a small fraction (0.01–) of total model parameters rather… Seman..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/LoRA-DoRA-etc"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-4594"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-4594" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>LoRA DoRA etc</a></div></nav><h1 class="article-title">LoRA DoRA etc</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.689Z">23 Sept 2026</time><span>38 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:lo-ra-do-ra-etc</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Technique" class="internal">AI Technique</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../pages/Machine-Learning-Discipline" class="internal">Machine Learning Discipline</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../pages/Fine-Tuning" class="internal">Fine Tuning</a></li><li><a href="../pages/Model-Adaptation" class="internal">Model Adaptation</a></li><li><a href="../Neural-Networks" class="internal">Neural Networks</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Adapter-Tuning" class="internal">Adapter Tuning</a></li><li><a href="../pages/DoRA" class="internal">DoRA</a></li><li><a href="../pages/Lo-RA" class="internal">LongLoRA</a></li><li><a href="../pages/LyCORIS" class="internal">LyCORIS</a></li><li><a href="../pages/Prefix-Tuning" class="internal">Prefix Tuning</a></li><li><a href="../pages/Prompt-Tuning" class="internal">Prompt Tuning</a></li><li><a href="../pages/QLoRA" class="internal">QLoRA</a></li><li><a href="../LoRA" class="internal">LoRA</a></li><li><a href="../LongLoRA" class="internal">LongLoRA</a></li><li><a href="../VeRA" class="internal">VeRA</a></li><li><a href="../GaLore" class="internal">GaLore</a></li><li><a href="../IA3" class="internal">IA3</a></li><li><a href="../ReLoRA" class="internal">ReLoRA</a></li><li><a href="../X-LoRA" class="internal">X-LoRA</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Low-Rank-Decomposition" class="internal">Low-Rank Decomposition</a></li><li><a href="../pages/Pretrained-Model" class="internal">Pretrained Model</a></li><li><a href="../pages/Task-Specific-Dataset" class="internal">Task-Specific Dataset</a></li><li><a href="../pages/Gradient-Descent" class="internal">Gradient Descent</a></li><li><a href="../pages/Transformer-Architecture" class="internal">Transformer Architecture</a></li><li><a href="../Pre-trained-Model" class="internal">Pre-trained Model</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Diffusion-Model" class="internal">Diffusion Model Customisation</a></li><li><a href="../domain-adaptation" class="internal">Domain Adaptation</a></li><li><a href="../pages/Fine-Tuning" class="internal">LLM Fine-Tuning</a></li><li><a href="../pages/Memory-Efficient-Training" class="internal">Memory-Efficient Training</a></li><li><a href="../pages/Multi-Task-Learning" class="internal">Multi Task Learning</a></li><li><a href="../LLM-Fine-Tuning" class="internal">LLM Fine-Tuning</a></li><li><a href="../Diffusion-Model-Customisation" class="internal">Diffusion Model Customisation</a></li><li><a href="../On-Device-Training" class="internal">On-Device Training</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/AI-Infrastructure" class="internal">AI Infrastructure</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Full-Fine-Tuning" class="internal">Full Fine Tuning</a></li><li><a href="../pages/Feature-Extraction" class="internal">Feature Extraction</a></li><li><a href="../pages/Prompt-Engineering" class="internal">Prompt Engineering</a></li><li><a href="../pages/In-Context-Learning" class="internal">In-Context Learning</a></li><li><a href="../pages/Retrieval-Augmented-Generation" class="internal">Retrieval Augmented Generation</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Transformers" class="internal">Transformers</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/PyTorch" class="internal">PyTorch</a></li><li><a href="../pages/CUDA" class="internal">CUDA</a></li><li><a href="../Hugging-Face-PEFT" class="internal">Hugging Face PEFT</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../FrameworkLayer" class="internal">FrameworkLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Matrix-Factorisation" class="internal">Matrix Factorisation</a></li><li><a href="../quantisation" class="internal">Quantisation</a></li><li><a href="../pages/Singular-Value-Decomposition" class="internal">Singular Value Decomposition</a></li><li><a href="../pages/Attention-Mechanism" class="internal">Attention Mechanism</a></li><li><a href="../pages/Knowledge-Distillation" class="internal">Knowledge Distillation</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-1042</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../adapter-tuning" class="internal">Adapter Tuning</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../cuda" class="internal">CUDA</a></li><li><a href="../diffusion-model-customisation" class="internal">Diffusion Model Customisation</a></li><li><a href="../do-ra" class="internal">DoRA</a></li><li><a href="../domain-adaptation" class="internal">Domain Adaptation</a></li><li><a href="../framework-layer" class="internal">FrameworkLayer</a></li><li><a href="../ga-lore" class="internal">GaLore</a></li><li><a href="../gradient-checkpointing" class="internal">Gradient Checkpointing</a></li><li><a href="../hugging-face" class="internal">Hugging Face</a></li><li><a href="../hugging-face-peft" class="internal">Hugging Face PEFT</a></li><li><a href="../ia3" class="internal">IA3</a></li><li><a href="../in-context-learning" class="internal">In-Context Learning</a></li><li><a href="../llama" class="internal">Llama</a></li><li><a href="../llm-fine-tuning" class="internal">LLM Fine-Tuning</a></li><li><a href="../long-lo-ra" class="internal">LongLoRA</a></li><li><a href="../low-rank-decomposition" class="internal">Low-Rank Decomposition</a></li><li><a href="../ly-coris" class="internal">LyCORIS</a></li><li><a href="../machine-learning-domain" class="internal">MachineLearningDomain</a></li><li><a href="../matrix-factorisation" class="internal">Matrix Factorisation</a></li><li><a href="../memory-efficient-training" class="internal">Memory-Efficient Training</a></li><li><a href="../meta-ai-research" class="internal">Meta AI Research</a></li><li><a href="../microsoft-research" class="internal">Microsoft Research</a></li><li><a href="../model-adaptation" class="internal">Model Adaptation</a></li><li><a href="../neural-network-optimisation-domain" class="internal">NeuralNetworkOptimisationDomain</a></li><li><a href="../neural-networks" class="internal">Neural Networks</a></li><li><a href="../on-device-training" class="internal">On-Device Training</a></li><li><a href="../parameter-sharing" class="internal">Parameter Sharing</a></li><li><a href="../pre-trained-model" class="internal">Pre-trained Model</a></li><li><a href="../py-torch" class="internal">PyTorch</a></li><li><a href="../quantisation" class="internal">Quantisation</a></li><li><a href="../rank-decomposition" class="internal">Rank Decomposition</a></li><li><a href="../re-lo-ra" class="internal">ReLoRA</a></li><li><a href="../retrieval-augmented-generation" class="internal">Retrieval Augmented Generation</a></li><li><a href="../singular-value-decomposition" class="internal">Singular Value Decomposition</a></li><li><a href="../task-specific-dataset" class="internal">Task-Specific Dataset</a></li><li><a href="../transfer-learning" class="internal">Transfer Learning</a></li><li><a href="../ve-ra" class="internal">VeRA</a></li><li><a href="../x-lo-ra" class="internal">X-LoRA</a></li><li><a href="../agent-frameworks" class="internal">Agent Frameworks</a></li><li><a href="../agents" class="internal">Agents</a></li><li><a href="../ai-adoption" class="internal">AI Adoption</a></li><li><a href="../pages/ai-technique" class="internal">AI-GroundedDomain</a></li><li><a href="../anthropic-claude" class="internal">Anthropic Claude</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../attention-mechanism" class="internal">Attention Mechanism</a></li><li><a href="../chat-gpt" class="internal">ChatGPT</a></li><li><a href="../cognitive-ai" class="internal">Cognitive AI</a></li><li><a href="../comfy-ui" class="internal">ComfyUI</a></li><li><a href="../comfy-ui-workflows" class="internal">ComfyUI Workflows</a></li><li><a href="../computer-vision" class="internal">Computer Vision</a></li><li><a href="../feature-extraction" class="internal">Feature Extraction</a></li><li><a href="../fine-tuning" class="internal">Fine Tuning</a></li><li><a href="../full-fine-tuning" class="internal">Full Fine Tuning</a></li><li><a href="../gradient-descent" class="internal">Gradient Descent</a></li><li><a href="../knowledge-distillation" class="internal">Knowledge Distillation</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../lo-ra" class="internal">LoRA</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../mixed-precision-training" class="internal">Mixed Precision Training</a></li><li><a href="../multi-task-learning" class="internal">Multi Task Learning</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../nvidia" class="internal">NVIDIA</a></li><li><a href="../prefix-tuning" class="internal">Prefix Tuning</a></li><li><a href="../prompt-engineering" class="internal">Prompt Engineering</a></li><li><a href="../prompt-tuning" class="internal">Prompt Tuning</a></li><li><a href="../qlo-ra" class="internal">QLoRA</a></li><li><a href="../stable-diffusion" class="internal">Stable Diffusion</a></li><li><a href="../transformer-architecture" class="internal">Transformer Architecture</a></li><li><a href="../transformers" class="internal">Transformers</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:a4f29c9929fa794210f3d5ea9cfc713e60ec1a6b971e118b7ee233776278ae60</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Agent-Frameworks" class="internal">Agent Frameworks</a></li><li><a href="../Agents" class="internal">Agents</a></li><li><a href="../pages/AI-Adoption" class="internal">AI Adoption</a></li><li><a href="../pages/Cognitive-AI" class="internal">Cognitive AI</a></li><li><a href="../pages/ComfyUI-Workflows" class="internal">ComfyUI Workflows</a></li></ul></td></tr><tr><th scope="row">Slug</th><td><ul class="properties-values"><li><span>lo-ra-do-ra-etc</span></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../hugging-face" class="internal">Hugging Face</a></li><li><a href="../meta-ai" class="internal">Meta AI Research</a></li><li><a href="../pages/Microsoft" class="internal">Microsoft Research</a></li><li><a href="../pages/NVIDIA-Corporation" class="internal">NVIDIA Corporation</a></li><li><a href="../Microsoft-Research" class="internal">Microsoft Research</a></li><li><a href="../Meta-AI-Research" class="internal">Meta AI Research</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Meta-Llama-Model-Family" class="internal">Meta Llama Model Family</a></li><li><a href="../pages/Constitutional-AI-Language-Model-Family" class="internal">Constitutional AI Language Model Family</a></li><li><a href="../pages/Instruction-Following-Conversational-AI-System" class="internal">Instruction-Following Conversational AI System</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../pages/Stable-Diffusion-Image-Model" class="internal">Stable Diffusion Image Model</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Gradient-Checkpointing" class="internal">Gradient Checkpointing</a></li><li><a href="../pages/Low-Rank-Adaptation" class="internal">Rank Decomposition</a></li><li><a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal">Node-Based Diffusion Pipeline Interface</a></li><li><a href="../pages/Mixed-Precision-Training" class="internal">Mixed Precision Training</a></li><li><a href="../Rank-Decomposition" class="internal">Rank Decomposition</a></li><li><a href="../Parameter-Sharing" class="internal">Parameter Sharing</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Parameter-Efficient Fine-Tuning (PEFT) is a family of machine learning techniques enabling adaptation of large pre-trained neural networks — particularly Large Language Models and diffusion models — to downstream tasks by updating only a small fraction (0.01–) of total model parameters rather…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:hasPart ai:LoRA))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:hasPart ai:DoRA))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:hasPart ai:QLoRA))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:hasPart ai:LongLoRA))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:hasPart ai:VeRA))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:hasPart ai:GaLore))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:hasPart ai:AdapterTuning))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:hasPart ai:PrefixTuning))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:hasPart ai:PromptTuning))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:hasPart ai:IA3))
+
+  ## Dependency Relationships
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:requires ai:PretrainedModel))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:requires ai:LowRankDecomposition))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:requires ai:TransformerArchitecture))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:requires ai:TaskSpecificDataset))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:dependsOn ai:SingularValueDecomposition))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:dependsOn ai:MatrixFactorisation))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:dependsOn ai:MixedPrecisionTraining))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:dependsOn ai:GradientCheckpointing))
+
+  ## Capability Relationships
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:enables ai:LLMFineTuning))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:enables ai:DiffusionModelCustomisation))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:enables ai:OnDeviceTraining))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:enables ai:DomainAdaptation))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:enables ai:MultiTaskLearning))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:enables ai:MemoryEfficientTraining))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:supports ai:StableDiffusionCustomisation))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:supports ai:PersonalisedLanguageModel))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:supports ai:EdgeDeployment))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:supports ai:CommunityModelSharing))
+
+  ## Implementation Relationships
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:implements ai:RankDecompositionUpdate))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:implements ai:WeightMagnitudeDirectionDecomposition))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:implements ai:NF4Quantisation))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:implements ai:GradientProjection))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:implements ai:AdapterBottleneck))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:implements ai:SoftPromptPrepending))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:implements ai:ActivationScaling))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:uses ai:HuggingFacePEFT))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:uses ai:KohyaSSTrainer))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:uses ai:BitsAndBytes))
+
+  ## Reduction Relationships
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:reduces ai:TrainableParameterCount))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:reduces ai:GPUMemoryRequirement))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:reduces ai:TrainingComputeCost))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:reduces ai:StorageOverhead))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:reduces ai:CatastrophicForgetting))
+  SubClassOf(ai:LoRADoRAEtc
+    ObjectSomeValuesFrom(ai:reduces ai:InferenceLatencyOverhead))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ai:LoRADoRAEtc &quot;LoRA DoRA etc (Parameter-Efficient Fine-Tuning)&quot;@en)
+  AnnotationAssertion(rdfs:comment ai:LoRADoRAEtc &quot;PEFT family adapting large pre-trained models by updating 0.01-10% of parameters; LoRA (rank decomposition), DoRA (magnitude-direction decomposition), QLoRA (4-bit base model), LongLoRA, VeRA, GaLore, Adapter Tuning, Prefix Tuning, Prompt Tuning, IA3, LyCORIS; unified in Hugging Face PEFT library 25M+ monthly downloads.&quot;@en)
+  AnnotationAssertion(dcterms:identifier ai:LoRADoRAEtc &quot;AI-1042&quot;^^xsd:string)
+  DataPropertyAssertion(ai:hasIdentifier ai:LoRADoRAEtc &quot;AI-1042&quot;^^xsd:string)
+  DataPropertyAssertion(ai:authorityScore ai:LoRADoRAEtc &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:parameterReductionFactor ai:LoRADoRAEtc &quot;100&quot;^^xsd:integer)
+  DataPropertyAssertion(ai:memoryReductionFactor ai:LoRADoRAEtc &quot;4&quot;^^xsd:integer)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-lora-dora-and-the-peft-ecosystem">About LoRA, DoRA, and the PEFT Ecosystem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-lora-dora-and-the-peft-ecosystem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Parameter-Efficient Fine-Tuning (PEFT)</strong> emerged from a central tension in modern deep learning: large pre-trained models contain vast general knowledge encoded across billions of weights, yet adapting them to specific downstream tasks through full fine-tuning requires gradient computation and optimiser state storage for every parameter — at 65B parameters with Adam this demands ~1TB of GPU memory, placing task-specific adaptation entirely beyond academic labs, startups, and individual practitioners working with consumer hardware.</p>
+</li>
+<li>
+<p>PEFT addresses this by exploiting the <strong>intrinsic dimensionality</strong> of fine-tuning objectives:</p>
+<ul>
+<li>Li et al. (2018) empirically demonstrated that objective landscapes can be optimised by random projection into d* dimensions far below total parameter count</li>
+<li>Aghajanyan et al. (2020) applied this to fine-tuning: d* = 200 suffices for BERT-base downstream tasks; d* ≈ 1,000 for GPT-2 — meaning effective adaptation requires moving in a 200–1,000 dimensional submanifold of a 125M–1.5B parameter space</li>
+<li>This justifies constraining weight updates to low-dimensional subspaces: rather than traversing the full O(mn) parameter manifold, fine-tuning can stay in an O(r(m+n)) subspace with r ≪ min(m,n)</li>
+</ul>
+</li>
+<li>
+<p>The <strong>ecosystem scale</strong> by mid-2025 confirms PEFT’s dominance:</p>
+<ul>
+<li>Hugging Face PEFT library: 25M+ monthly downloads; 500,000+ LoRA adapter weights on Model Hub</li>
+<li>Civitai: 400,000+ community LoRA/LyCORIS weights for Stable Diffusion — world’s largest distributed fine-tuned model repository</li>
+<li>All major commercial LLM APIs (OpenAI, Anthropic, Google, Mistral, Cohere) offer PEFT-based custom fine-tuning</li>
+<li>Every major open-weight model release (Llama-3, Mistral, Gemma, Phi-3, Qwen, DeepSeek) ships LoRA-compatible architecture and community fine-tuning tutorials</li>
+</ul>
+</li>
+<li>
+<h2 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="lora-low-rank-adaptation">LoRA: Low-Rank Adaptation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lora-low-rank-adaptation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>LoRA</strong> (Hu et al. 2021/2022, Microsoft Research, “LoRA: Low-Rank Adaptation of Large Language Models”, ICLR 2022, arXiv:2106.09685) established the canonical PEFT approach for transformers.</p>
+<h4 id="core-formulation">Core Formulation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-formulation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>For weight matrix W₀ ∈ ℝᵐˣⁿ (query/key/value/output projections, FFN matrices):</p>
+<ul>
+<li>Freeze W₀; add parallel low-rank bypass: <strong>h = W₀x + ΔWx = W₀x + BAx</strong></li>
+<li>B ∈ ℝᵐˣʳ initialised Gaussian; A ∈ ℝʳˣⁿ initialised zero (so ΔW = 0 at training start)</li>
+<li>Scale: ΔW weighted by α/r (α scalar hyperparameter, typically equal to r)</li>
+<li>Inference merge: <strong>W = W₀ + αBA/r</strong> — zero additional inference latency</li>
+</ul>
+<h4 id="parameter-efficiency">Parameter Efficiency<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#parameter-efficiency" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Full fine-tuning: m×n parameters per layer (e.g. 4096×4096 = 16.8M per LLaMA attention weight)</li>
+<li>LoRA r=8: r×(m+n) = 8×8192 = 65,536 parameters — 256× reduction</li>
+<li>LLaMA-7B example (r=8, all attention QKVo): ~8.4M trainable / 7B total = 0.12%; fits single 24GB RTX 4090</li>
+</ul>
+<h4 id="rank-selection-and-targeting">Rank Selection and Targeting<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rank-selection-and-targeting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>r=1–4: single-task style/format adaptation; r=8–16: most NLP tasks; r=32–64: complex generation; r=128+ approaches full-rank</li>
+<li>Layer targeting: applying to q_proj + v_proj only (Hu et al. original); all attention + FFN gate/up/down (community best practice for LLMs) gives 5–12% better performance</li>
+<li>AdaLoRA (Zhang et al. 2023): SVD-parameterised ΔW = PΛQᵀ with learned singular value magnitudes; prunes low-importance singular triplets progressively; 1.2–2.5% gain over fixed-rank LoRA at same parameter budget</li>
+</ul>
+<h4 id="empirical-results-hu-et-al-2022">Empirical Results (Hu et al. 2022)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#empirical-results-hu-et-al-2022" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>GPT-3 LoRA fine-tuning on SuperGLUE: matched or exceeded full fine-tuning on MNLI (90.6%), SST-2, MRPC, CoLA, QNLI</li>
+<li>3× less GPU memory; 25% faster training; adapter file ~8MB vs 350GB full model</li>
+<li>RoBERTa/DeBERTa/GPT-2 experiments across 5 NLP tasks all demonstrated parity or improvement</li>
+</ul>
+</li>
+<li>
+<h3 id="lora-variants-and-extensions">LoRA Variants and Extensions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lora-variants-and-extensions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>rsLoRA</strong> (Kalajdzic et al. 2023): standard α/r scaling is suboptimal as r increases — gradient variance grows proportional to r, destabilising training at high ranks. <strong>Proposal</strong>: α/√r scaling maintains consistent signal magnitude. Enables effective use of ranks r=64–256 previously unstable; important when close approximation of full fine-tuning gradient is needed.</p>
+</li>
+<li>
+<p><strong>LoRA+</strong> (Hayou et al. 2024, ICML 2024): A and B play asymmetric roles — A projects input features into low-rank subspace (acts like an encoder); B projects back out (acts like decoder). Maximal Update Parameterisation (μP) analysis motivates <strong>different learning rates</strong>: η_B = λ × η_A, optimal λ = 2–16. Achieves 1.3–2× training efficiency improvement on LLaMA-7B and Mistral-7B benchmarks at no added parameter cost.</p>
+</li>
+<li>
+<p><strong>AdaLoRA</strong> (Zhang et al. 2023, Microsoft Research, ICLR 2023): Adaptive rank allocation. Parameterises ΔW = PΛQᵀ (SVD form); importance score s_i per singular triplet based on magnitude and sensitivity; budget scheduler prunes low-importance components. Outperforms fixed-rank LoRA by 1.2–2.5% on GLUE/NLG at identical parameter budgets; critical insight: early attention layers deserve higher rank than FFN in LLaMA.</p>
+</li>
+<li>
+<p><strong>LoRA-FA</strong> (Zhang et al. 2023): Frozen-A LoRA — freezes matrix A after random initialisation; only trains B. Reduces activation memory 1.4× (no A gradients stored); &lt;0.5% performance degradation; viable for highly memory-constrained deployments including mobile fine-tuning and edge device adaptation.</p>
+</li>
+<li>
+<p><strong>ReLoRA</strong> (Lialin et al. 2023, UMass Lowell, NeurIPS 2023 Workshop): Enables high-rank cumulative training. Periodically merges trained LoRA (W ← W + BA), then reinitialises fresh adapters. Over T cycles accumulates effective rank-r×T update. ReLoRA pre-trains LLaMA-350M matching full-rank AdamW at 50% memory cost — extending PEFT to pre-training (not only fine-tuning).</p>
+</li>
+<li>
+<p><strong>VeRA</strong> (Kopiczko et al. 2023, ICLR 2024): Shares frozen random matrices globally — single A ∈ ℝʳˣⁿ and B ∈ ℝᵐˣʳ across all layers; only small per-layer scaling vectors d ∈ ℝʳ and b ∈ ℝᵐ trained. Reduces trainable parameters 10× vs LoRA (LLaMA-7B: 1.4M VeRA vs 14M LoRA at r=8). VeRA matches LoRA on commonsense reasoning benchmarks at identical parameter count, demonstrating shared random projections preserve task-relevant subspace structure.</p>
+</li>
+<li>
+<p><strong>DyLoRA</strong> (Valipour et al. 2022): Trains all ranks r ∈ {1,…,r_max} simultaneously by uniform rank sampling per step; post-hoc rank selection without retraining. Enables deployment of variable-rank adapters for different inference resource budgets from a single training run.</p>
+</li>
+<li>
+<p><strong>X-LoRA</strong> (Buehler 2024): Mixture-of-Experts LoRA. K independently fine-tuned LoRA adapters; learned gating network produces per-position convex combination weights; enables specialised expertise combination without full model duplication.</p>
+</li>
+<li>
+<p><strong>Flora</strong> (Han et al. 2024): Replaces learned A/B projections with Johnson-Lindenstrauss random projections — theory guarantees near-optimal distance preservation; further reduces parameters; combined with quantisation for extreme-memory edge deployment.</p>
+</li>
+<li>
+<h3 id="dora-weight-decomposition-low-rank-adaptation">DoRA: Weight-Decomposition Low-Rank Adaptation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dora-weight-decomposition-low-rank-adaptation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>DoRA</strong> (Liu et al. 2024, “DoRA: Weight-Decomposition Low-Rank Adaptation”, ICML 2024, NVIDIA Research, arXiv:2402.09353) — the key advance over vanilla LoRA.</p>
+<h4 id="motivation-fine-tuning-dynamics-analysis">Motivation: Fine-Tuning Dynamics Analysis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#motivation-fine-tuning-dynamics-analysis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Liu et al. analysed weight change patterns during full fine-tuning across LLaMA/LLaVA models:</p>
+<ul>
+<li><strong>Phase 1 (early training)</strong>: primarily <strong>magnitude</strong> changes (column norms ‖w‖₂ shift substantially); directional changes small</li>
+<li><strong>Phase 2 (later training)</strong>: primarily <strong>direction</strong> changes (column orientations rotate); magnitude changes diminish</li>
+<li>Vanilla LoRA couples magnitude and direction via single product BA — its update trajectory diverges from this two-phase pattern, limiting performance</li>
+<li>DoRA separates these by explicit decomposition</li>
+</ul>
+<h4 id="mathematical-formulation">Mathematical Formulation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mathematical-formulation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Decompose weight: <strong>W = m ⊙ V/‖V‖_c</strong></p>
+<ul>
+<li>m ∈ ℝ¹ˣᵏ: trainable magnitude vector (one scalar per output dimension/column)</li>
+<li>V ∈ ℝᵐˣⁿ: directional matrix normalised column-wise</li>
+<li>⊙: element-wise multiplication broadcast over columns</li>
+<li>‖·‖_c: column-wise L2 normalisation</li>
+</ul>
+<p>Update: <strong>ΔW = m ⊙ (V + ΔV)/‖V + ΔV‖_c − m₀ ⊙ V/‖V‖_c</strong> where ΔV = BA (standard LoRA factor pair)</p>
+<p>Magnitude m updates as unconstrained scalar; direction updates follow low-rank LoRA constraint — decoupled optimisation.</p>
+<h4 id="empirical-results">Empirical Results<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#empirical-results" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>LLaMA-7B CommonsenseQA: 79.3% DoRA vs 77.6% LoRA (same parameter budget)</li>
+<li>LLaMA-7B MATH benchmark: +2.1% vs LoRA</li>
+<li>LLaVA-1.5 vision-language benchmarks (VQAv2, GQA, POPE, MMBench): DoRA consistently +1–3%</li>
+<li>Integrated into Hugging Face PEFT v0.9.0 (April 2024); recommended for complex generation tasks</li>
+</ul>
+</li>
+<li>
+<h3 id="qlora-quantised-low-rank-adaptation">QLoRA: Quantised Low-Rank Adaptation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#qlora-quantised-low-rank-adaptation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>QLoRA</strong> (Dettmers et al. 2023, University of Washington / HuggingFace, “QLoRA: Efficient Finetuning of Quantized LLMs”, NeurIPS 2023, arXiv:2305.14314) — breakthrough enabling 65B model fine-tuning on single consumer GPU.</p>
+<h4 id="three-technical-innovations">Three Technical Innovations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#three-technical-innovations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>1. NormalFloat 4-bit (NF4) Quantisation</strong></p>
+<ul>
+<li>Pre-trained weights follow approximately normal distribution N(0, σ²)</li>
+<li>Dettmers derived information-theoretically optimal 4-bit type: quantise to 16 equally-spaced quantiles of N(0,1)</li>
+<li>These codes align with actual weight distribution probability mass — vs INT4’s uniform codes that waste capacity on improbable magnitudes</li>
+<li>Each 64-weight block independently normalised to [-1,1] absorbing scale variation before quantisation</li>
+</ul>
+<p><strong>2. Double Quantisation</strong></p>
+<ul>
+<li>Quantisation constants (one 32-bit float per 64-weight block) are themselves quantised: 8-bit with second set of constants</li>
+<li>Saves 0.37 bits per parameter — on 65B model recovers ~3GB of GPU memory with negligible quality impact</li>
+</ul>
+<p><strong>3. Paged Optimisers</strong></p>
+<ul>
+<li>NVIDIA unified memory used to transparently page Adam optimiser states (first/second moments) between GPU and CPU RAM</li>
+<li>Prevents OOM spikes during gradient checkpointing of long sequences without permanently allocating all states on GPU</li>
+<li>Compatible with PyTorch memory management; no code changes required beyond flag</li>
+</ul>
+<h4 id="guanaco-results">Guanaco Results<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#guanaco-results" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>QLoRA fine-tunes LLaMA-65B on single 48GB A40 GPU (previously required 8×A100)</li>
+<li>Guanaco-65B: 99.3% of ChatGPT-3.5 performance on Vicuna benchmark (human preference eval)</li>
+<li>Training time: 24 hours single GPU vs weeks on multi-GPU full fine-tuning</li>
+<li>bitsandbytes library (Dettmers, MIT): transparent <code>load_in_4bit=True</code> flag in Hugging Face <code>from_pretrained()</code></li>
+</ul>
+</li>
+<li>
+<h3 id="galore-gradient-low-rank-projection">GaLore: Gradient Low-Rank Projection<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#galore-gradient-low-rank-projection" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>GaLore</strong> (Zhao et al. 2024, “GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection”, ICML 2024, arXiv:2403.03507) — extends memory-efficient training to full-parameter updates and pre-training.</p>
+<h4 id="core-algorithm">Core Algorithm<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-algorithm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Unlike LoRA which restricts weights to a fixed low-rank subspace, GaLore allows full-parameter updates but projects gradients:</p>
+<ol>
+<li>For gradient G ∈ ℝᵐˣⁿ, compute left singular vectors P ∈ ℝᵐˣʳ via SVD of G every T=200 steps</li>
+<li>Accumulate only projected gradient PᵀG ∈ ℝʳˣⁿ in Adam’s first/second moment states</li>
+<li>Recover full-rank update: G_full = P(PᵀG) for weight step W ← W − η × G_full</li>
+<li>Result: Adam moment memory reduced from O(mn) to O(rn) per layer — identical to LoRA’s memory footprint</li>
+</ol>
+<h4 id="key-advantages-over-lora">Key Advantages Over LoRA<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-advantages-over-lora" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Full weight updates</strong>: every weight updated at each step (vs LoRA’s fixed-subspace constraint), enabling better approximation of full fine-tuning</li>
+<li><strong>Pre-training applicable</strong>: GaLore pre-trains LLaMA-7B on C4 matching full AdamW perplexity at 65.5% less memory</li>
+<li><strong>LLaMA-3B on single 24GB GPU</strong>: regime previously impossible for pre-training — opens academic pre-training from scratch</li>
+<li><strong>Periodic SVD cost</strong>: recomputing P every 200 steps adds ~3% training overhead (amortised) — acceptable for 65% memory saving</li>
+</ul>
+</li>
+<li>
+<h3 id="longlora-context-window-extension">LongLoRA: Context Window Extension<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#longlora-context-window-extension" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>LongLoRA</strong> (Chen et al. 2023, MIT, “LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models”, ICLR 2024, arXiv:2309.12307) — enables 100K-token context from 4K-pretrained LLMs via PEFT.</p>
+<h4 id="problem">Problem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#problem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Pre-training context: 2K–4K tokens for Llama-2; extending to 100K requires O(n²) = 10¹⁰ attention ops per layer — computationally infeasible for fine-tuning on standard hardware</li>
+<li>Position interpolation (Chen et al. 2023) extends RoPE encodings but requires attention pattern re-learning</li>
+</ul>
+<h4 id="shifted-sparse-attention-s-attn">Shifted Sparse Attention (S²-Attn)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#shifted-sparse-attention-s-attn" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>During fine-tuning training only (not inference):</p>
+<ul>
+<li>Partition sequence into G groups of w = n/G tokens each; apply local attention within groups</li>
+<li>Cyclically shift groups by w/2 tokens to enable cross-boundary information flow</li>
+<li>Complexity: O(n × w) vs O(n²) — 100K-token context 100× faster than full attention</li>
+<li>At inference: full standard attention used (no accuracy-efficiency trade-off at deployment)</li>
+</ul>
+<h4 id="results">Results<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#results" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Fine-tunes LLaMA-2-7B from 4K to 100K context in 18 hours on 8×A100 GPUs (vs weeks for full fine-tuning of context extension)</li>
+<li>Achieves perplexity on long-document benchmarks within 5% of full attention fine-tuning whilst using 90% less memory during training</li>
+<li>Applications enabled: book-length QA (NarrativeQA, QuALITY benchmarks), repository-level code generation (RepoEval), long-document summarisation (arXiv/PubMed abstracts to full-paper scale)</li>
+<li>Combined with LoRA adapters on all weight matrices; total trainable parameters &lt;1% of base model; merged adapter deployable without any inference-time attention modification</li>
+<li><strong>Subsequent work</strong>: LonLoRA-2 (Chen et al. 2024) extends to 1M-token context on LLaMA-3 70B; YaRN (Peng et al. 2023) combines NTK-aware RoPE scaling with LoRA fine-tuning for more efficient context extension; LLaMA-3.1 (Meta 2024) includes 128K context natively, partially motivated by LongLoRA demonstrating feasibility</li>
+</ul>
+</li>
+<li>
+<h3 id="adapter-tuning-prefix-tuning-prompt-tuning-and-ia">Adapter Tuning, Prefix Tuning, Prompt Tuning, and IA³<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adapter-tuning-prefix-tuning-prompt-tuning-and-ia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Adapter Tuning</strong> (Houlsby et al. 2019, Google Brain, ICML 2019): pre-LoRA standard — inserts bottleneck MLP layers between transformer sub-layers.</p>
+<ul>
+<li>Architecture: down-projection W_down ∈ ℝᵈˣᵏ (d model dim, k bottleneck 8–256) → non-linearity → up-projection W_up ∈ ℝᵏˣᵈ with residual: h ← h + W_up(ReLU(W_down(h)))</li>
+<li>Only ~0.5–8% parameters trained; near-full-fine-tuning performance on GLUE benchmarks</li>
+<li>Main limitation: serial bottleneck adds ~1–2ms inference latency per layer — decisive disadvantage vs LoRA</li>
+<li>AdapterHub (Pfeiffer et al. 2020) provides centralised 400+ pre-trained adapter repository for 50+ languages/tasks</li>
+<li>AdapterFusion (Pfeiffer et al. 2021): attention over K task-specific adapter outputs enables non-destructive multi-task composition</li>
+</ul>
+</li>
+<li>
+<p><strong>Prefix Tuning</strong> (Li and Liang 2021, Stanford, ACL 2021): prepends learnable KV token pairs to every attention layer.</p>
+<ul>
+<li>K′ = [P_K; K], V′ = [P_V; V] where P_K, P_V ∈ ℝˡˣᵈ (l=10–100 virtual tokens); no change to weight matrices</li>
+<li>Attention over extended sequence allows per-layer task steering independently of input</li>
+<li>Matches fine-tuning on XSUM summarisation, E2E/WebNLG table-to-text with 1,000× fewer params than GPT-2 full fine-tuning</li>
+</ul>
+</li>
+<li>
+<p><strong>Prompt Tuning</strong> (Lester et al. 2021, Google, EMNLP 2021): soft prompt tokens at input embedding layer only.</p>
+<ul>
+<li>Simplest PEFT: x′ = [P; x] where P ∈ ℝˡˣᵈ; only input-layer prefix trained (no KV modifications)</li>
+<li>Critical scaling finding: prompt tuning matches full fine-tuning at T5-XXL (11B parameters) — implying models large enough need only input steering for task adaptation</li>
+<li>Below 11B: performance gap exists; above 11B: eliminated — motivates PEFT for largest models</li>
+</ul>
+</li>
+<li>
+<p><strong>P-Tuning v2</strong> (Liu et al. 2022, Tsinghua, ACL 2022): deep prompt — applies prompts to all transformer layers not only input.</p>
+<ul>
+<li>Enables matching fine-tuning on NER and SRL at BERT-large (340M) scale where shallow prompt tuning fails</li>
+<li>Bridges gap between prompt tuning (input-only) and prefix tuning (all KV layers) with unified framework</li>
+</ul>
+</li>
+<li>
+<p><strong>IA³</strong> (Liu et al. 2022, “Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning”, NeurIPS 2022): element-wise activation rescaling.</p>
+<ul>
+<li>Rescales: K′ = l_K ⊙ K; V′ = l_V ⊙ V; h′_FFN = l_FF ⊙ γ(W₁h)</li>
+<li>Vectors l_K, l_V ∈ ℝᵈ; l_FF ∈ ℝᵈ_FFN — three d-dimensional vectors per layer total</li>
+<li>~0.01% trainable parameters — 10× fewer than LoRA at r=4</li>
+<li>Competitive with LoRA on T0 few-shot benchmarks; ideal for many-task serving (O(d) storage per task vs O(rd) LoRA)</li>
+</ul>
+</li>
+<li>
+<h3 id="lycoris-and-diffusion-model-peft">LyCORIS and Diffusion Model PEFT<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lycoris-and-diffusion-model-peft" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>LyCORIS</strong> (LoRA beYond Conventional methods for Stable Diffusion, Ko et al. 2023, github.com/KohakuBlueleaf/LyCORIS) extends PEFT to diffusion fine-tuning with variants optimised for 2D convolutional and cross-attention layers.</p>
+<h4 id="loha-lora-with-hadamard-product">LoHa (LoRA with Hadamard Product)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#loha-lora-with-hadamard-product" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Parameterises ΔW = (W₁ ⊗ W₂) ⊙ (W₃ ⊗ W₄) using four factor matrices</li>
+<li>Combines Hadamard and Kronecker products enabling rank-equivalent updates with fewer parameters</li>
+<li>Particularly effective for 2D convolutional kernels where spatial structure aids factorisation</li>
+</ul>
+<h4 id="lokr-lora-with-kronecker-product">LoKr (LoRA with Kronecker Product)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lokr-lora-with-kronecker-product" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>ΔW = A ⊗ B where A ∈ ℝᵃˣᵃ, B ∈ ℝᵇˣᵇ, ab = mn</li>
+<li>Expresses full-matrix updates with (a²+b²) parameters vs mn for direct ΔW — dramatically more efficient for structured matrices</li>
+<li>Popular for SDXL cross-attention layers where weight matrices exhibit block structure</li>
+</ul>
+<h4 id="oft-and-boft">OFT and BOFT<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#oft-and-boft" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>OFT (Orthogonal Fine-Tuning, Liu et al. 2023): orthogonal transformation matrices Q applied to weight rows; W′ = QW; Q trained constrained to rotation group SO(d)</li>
+<li>Preserves hyperspherical energy of pre-trained features whilst enabling directional adjustment</li>
+<li>BOFT: block-diagonal OFT applying independent orthogonal transforms per block — more expressive than full-matrix OFT at comparable parameter count</li>
+</ul>
+<h4 id="diffusion-fine-tuning-ecosystem">Diffusion Fine-Tuning Ecosystem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#diffusion-fine-tuning-ecosystem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>kohya_ss</strong> scripts (github.com/kohya-tech/kohya_ss): standard community tool supporting all LyCORIS variants; integrates with Automatic1111 WebUI and <a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal alias" data-slug="pages/Node-Based-Diffusion-Pipeline-Interface">Node-Based Diffusion Pipeline Interface</a> for inference</li>
+<li><strong>DreamBooth-LoRA</strong>: 20–50 training images; 10–30 minutes on A100; 50MB adapter; high-fidelity subject representation generalising across styles and prompts</li>
+<li><strong>Civitai</strong> marketplace: 400,000+ LoRA/LyCORIS weights covering character likenesses, artistic styles, clothing, environments, objects — world’s largest distributed fine-tuned model repository</li>
+<li>Style LoRAs: transfer ArtStation styles, anime aesthetics, photographic techniques to SDXL generation</li>
+<li><a href="../pages/ComfyUI-Workflows" class="internal alias" data-slug="pages/ComfyUI-Workflows">ComfyUI Workflows</a> provides visual LoRA stack composition — multiple adapters applied simultaneously with per-adapter weight sliders</li>
+</ul>
+</li>
+<li>
+<h3 id="hugging-face-peft-library">Hugging Face PEFT Library<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hugging-face-peft-library" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The <strong>Hugging Face PEFT library</strong> (github.com/huggingface/peft, MIT, released February 2022) is the primary unifying interface for PEFT in Python and the de facto standard for production LLM fine-tuning globally.</p>
+</li>
+<li>
+<p><strong>Methods implemented</strong> (by May 2025): LoRA, DoRA, QLoRA (via bitsandbytes), AdaLoRA, IA³, Adapter Tuning, Prefix Tuning, Prompt Tuning, P-Tuning v2, LoftQ, OFT, BOFT, LoHa, LoKr, VB-LoRA, VeRA — comprehensive coverage of all major PEFT variants.</p>
+</li>
+<li>
+<p><strong>API design</strong>: <code>get_peft_model(model, LoraConfig(r=8, lora_alpha=16, target_modules=[&quot;q_proj&quot;,&quot;v_proj&quot;]))</code> returns adapter-augmented model with frozen base and trainable LoRA parameters in one function call; compatible with any Hugging Face <code>PreTrainedModel</code>.</p>
+</li>
+<li>
+<p><strong>Model Hub integration</strong>: adapter weights (~10–50MB .safetensors) stored separately from base model weights (7–70GB); users download base once, apply multiple task adapters; monthly adapter downloads exceeded 200 million by late 2024.</p>
+</li>
+<li>
+<p><strong>Training ecosystem</strong>: <code>SFTTrainer</code> from trl library combines PEFT with instruction formatting; <code>DPOTrainer</code> and <code>PPOTrainer</code> support PEFT for preference alignment; 3-line fine-tuning workflows for open-weight models.</p>
+</li>
+<li>
+<p><strong>Scale</strong>: 25M+ monthly PEFT library downloads by late 2024 — most widely used model fine-tuning library globally, ahead of DeepSpeed (~7M/month) and Megatron-LM (~500K/month) for fine-tuning.</p>
+</li>
+<li>
+<h2 id="mathematical-foundations-and-practical-training">Mathematical Foundations and Practical Training<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mathematical-foundations-and-practical-training" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="core-mathematical-properties-of-lora">Core Mathematical Properties of LoRA<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-mathematical-properties-of-lora" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="subspace-geometry">Subspace Geometry<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#subspace-geometry" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>LoRA’s update ΔW = BA lives in a rank-r subspace of ℝᵐˣⁿ. The key mathematical question is whether this subspace contains the gradient directions relevant for task adaptation. Empirical evidence from Hu et al. (2022):</p>
+<ul>
+<li>SVD analysis of full fine-tuning ΔW matrices compared with LoRA-learned ΔW matrices across GPT-3 layers</li>
+<li>Cosine similarity between LoRA subspace and top-r singular vectors of full fine-tuning ΔW: 0.3–0.7 for r=4–64</li>
+<li>Higher similarity in attention layers (0.5–0.7) than FFN layers (0.2–0.4) — motivating attention-focused LoRA targeting</li>
+<li>Overlap increases with rank r, confirming LoRA discovers near-optimal subspace directions even with moderate rank</li>
+</ul>
+<h4 id="initialisation-matters">Initialisation Matters<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#initialisation-matters" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>A initialised Gaussian (random projection into low-rank space); B initialised zero (so ΔW = BA = 0 at start)</li>
+<li>Alternative: LoftQ (Liu et al. 2023) initialises A/B via SVD of difference between original and quantised weights — reduces performance gap from quantisation; important for QLoRA-style workflows where base model precision matters</li>
+<li>Alternative: PiSSA (Meng et al. 2024) initialises LoRA matrices from top singular components of W₀ itself (not zero B) — faster convergence but requires SVD of original weights upfront</li>
+</ul>
+<h4 id="rank-and-parameterisation-budgets">Rank and Parameterisation Budgets<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rank-and-parameterisation-budgets" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Typical parameter budgets across model scales:</p>
+<ul>
+<li>125M model (BERT-base): r=8 on all attention layers → ~0.3M trainable / 125M total = 0.24%</li>
+<li>1.3B model: r=8 → ~1.5M trainable = 0.12%; r=16 → ~3M = 0.23%</li>
+<li>7B model: r=8 attention-only → ~4.7M = 0.067%; r=8 all-linear → ~8.4M = 0.12%</li>
+<li>70B model: r=8 all-linear → ~84M = 0.12%; equivalent to training BERT-base from scratch in memory footprint</li>
+<li>405B model (Llama-3.1): r=8 → ~485M trainable = 0.12%; still fits on 2×A100 80GB with QLoRA</li>
+</ul>
+</li>
+<li>
+<h3 id="training-recipe-best-practices-2025-community-consensus">Training Recipe Best Practices (2025 Community Consensus)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#training-recipe-best-practices-2025-community-consensus" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="hyperparameter-guidance">Hyperparameter Guidance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hyperparameter-guidance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>From aggregated community experiments on Hugging Face, Civitai forums, and LLM fine-tuning leaderboard ablations:</p>
+<ul>
+<li><strong>Rank r</strong>: start with r=8 for most tasks; increase to r=16–32 if validation loss plateau; decrease to r=4 for style/format-only adaptation</li>
+<li><strong>lora_alpha</strong>: set equal to r (α=r gives unit scaling); some practitioners use α=2r for stronger adaptation signal</li>
+<li><strong>Target modules</strong>: “q_proj,v_proj” (Hu et al. original); “q_proj,k_proj,v_proj,o_proj” (attention-complete); add “gate_proj,up_proj,down_proj” for full-layer adaptation</li>
+<li><strong>Dropout</strong>: lora_dropout=0.05–0.1 for small datasets (&lt;10K examples); 0 for large datasets (>100K)</li>
+<li><strong>Learning rate</strong>: 1e-4 to 3e-4 for most LLM fine-tuning; lower (1e-5) for sensitive alignment tasks; linear warmup 3–5% of total steps</li>
+</ul>
+<h4 id="dataset-size-guidelines">Dataset Size Guidelines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dataset-size-guidelines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Style/format adaptation: 500–2,000 examples; r=4 sufficient; 30–60 minutes on single A100</li>
+<li>Domain knowledge injection: 5,000–50,000 examples; r=8–16; 2–8 hours single A100</li>
+<li>Instruction following: 10,000–100,000 examples; r=8; 4–24 hours single A100</li>
+<li>Preference alignment (DPO): 5,000–20,000 preference pairs; r=8; 2–6 hours single A100</li>
+<li>Full capability uplift: 100,000–1,000,000 examples; r=16–32; multi-GPU required</li>
+</ul>
+<h4 id="evaluation-and-overfitting-signals">Evaluation and Overfitting Signals<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-and-overfitting-signals" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Monitor train/validation loss divergence: overfitting onset typically visible at 1.5–3 epochs for small datasets</li>
+<li>Qualitative evaluation via held-out prompt set: critical for generative tasks where loss plateau ≠ quality plateau</li>
+<li>Perplexity on base model holdout: ensure LoRA fine-tuning doesn’t significantly increase perplexity on non-task-domain text (catastrophic forgetting of general knowledge)</li>
+<li>Merge and evaluate: always evaluate the merged model (W + αBA/r) not the adapter alone to confirm merge correctness</li>
+</ul>
+</li>
+<li>
+<h3 id="peft-comparison-matrix">PEFT Comparison Matrix<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#peft-comparison-matrix" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Systematic comparison across key dimensions (2025 consensus):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Method</th><th>Parameters</th><th>Inference Overhead</th><th>Memory vs Full FT</th><th>Best For</th></tr></thead><tbody><tr><td>LoRA r=8</td><td>~0.12%</td><td>None (merge)</td><td>8–15× less</td><td>NLP, code, chat</td></tr><tr><td>DoRA</td><td>~0.14%</td><td>None (merge)</td><td>8–15× less</td><td>Complex generation, vision-language</td></tr><tr><td>QLoRA</td><td>~0.12% + 4-bit base</td><td>None (merge)</td><td>25–60× less</td><td>Single-GPU large model</td></tr><tr><td>AdaLoRA</td><td>~0.12% (adaptive)</td><td>None (merge)</td><td>8–15× less</td><td>Mixed-difficulty tasks</td></tr><tr><td>IA³</td><td>~0.01%</td><td>None (merge)</td><td>50–100× less</td><td>Few-shot, many tasks</td></tr><tr><td>Adapter</td><td>~2–8%</td><td>+1–2ms/layer</td><td>5–10× less</td><td>Multi-task NLP</td></tr><tr><td>Prefix Tuning</td><td>~0.1%</td><td>Sequence extend</td><td>3–5× less</td><td>Generation, summarisation</td></tr><tr><td>Prompt Tuning</td><td>~0.01%</td><td>Sequence extend</td><td>3–5× less</td><td>Large models (>10B) only</td></tr><tr><td>GaLore</td><td>100% (full params)</td><td>None</td><td>4–8× less</td><td>Pre-training, complex FT</td></tr><tr><td>VeRA</td><td>~0.01%</td><td>None (merge)</td><td>50–100× less</td><td>Parameter budget constrained</td></tr></tbody></table></div>
+</li>
+<li>
+<h2 id="use-cases-and-major-families">Use Cases and Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases-and-major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Domain-specific LLM adaptation</strong>: primary commercial use case across legal NLP (contract analysis, document extraction, jurisdiction-specific compliance), medical NLP (clinical notes summarisation, ICD-10/11 coding, radiology report generation), financial NLP (earnings call analysis, XBRL extraction, regulatory document parsing), code generation (language-specific idiom adaptation, repository API completion).</p>
+<ul>
+<li>Medical NLP example: LoRA fine-tuning LLaMA-7B for medical summarisation — 100K PubMed abstracts, ~4 hours single A100, ~8MB adapter; performance competitive with GPT-3.5-turbo on clinical NLP benchmarks (ROUGE-1: 0.42 vs 0.44 GPT-3.5) whilst maintaining data residency on NHS/HIPAA-controlled infrastructure — no patient data egress</li>
+<li>Legal NLP example: Contract analysis fine-tuning on 50K annotated contracts (CUAD dataset + proprietary augmentation); LoRA r=16 on Llama-3-8B; F1=0.87 on clause extraction vs 0.83 for in-context-learning GPT-4 at 10× cost; adapter deployable on-premise to meet UK Solicitor Regulation Authority data handling guidance</li>
+<li>Code generation example: Repository-specific LoRA fine-tuning on internal codebase — 20K files, 8 hours single A100, r=32; reduces suggestion irrelevance (wrong API versions, incorrect function signatures) by 60% vs vanilla model; model size unchanged for IDE plugin deployment</li>
+<li>Financial NLP example: QLoRA fine-tuning Llama-3-70B on XBRL-tagged SEC/FCA filings; runs on single 48GB A100; extracts financial figures with 94% accuracy vs 87% GPT-4 on Bloomberg regulatory corpus benchmark</li>
+<li>Enterprise cost comparison: GPT-4 fine-tuning API pricing ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">25/</span><span class="mord mathnormal">Mt</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">s</span><span class="mord mathnormal">in</span><span class="mord mathnormal">p</span><span class="mord mathnormal">u</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">in</span><span class="mord mathnormal">e</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">u</span><span class="mord mathnormal">nin</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span>2–8M for sufficient domain data; LoRA fine-tuning open-weight model on-premise <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">500–</span></span></span></span>5,000 GPU cost + $0 API fees perpetually — 3–4 orders of magnitude TCO difference over 3 years</li>
+</ul>
+</li>
+<li>
+<p><strong>Instruction following and chat alignment</strong>: LoRA-based instruction tuning triggered 2023 open-source LLM renaissance.</p>
+<ul>
+<li>Alpaca (Stanford, 52K GPT-3.5 instructions, LLaMA-7B LoRA, training cost under $100): demonstrated competitive instruction following from cheap supervised fine-tuning</li>
+<li>Vicuna (ShareGPT conversations, LLaMA fine-tuning): 90% ChatGPT performance per human preference evaluation — confirmed LoRA-tuned open models rival proprietary APIs</li>
+<li>OpenHermes, WizardLM, Nous-Hermes, countless community models: all produced via LoRA-based instruction tuning on modest datasets</li>
+</ul>
+</li>
+<li>
+<p><strong>RLHF and preference alignment</strong>: LoRA-based DPO and PPO are standard by 2025.</p>
+<ul>
+<li>DPO-LoRA (Direct Preference Optimisation with LoRA adapters): removes need for separate reward model; trains policy directly from preference pairs; trl library DPOTrainer supports PEFT models transparently</li>
+<li>Safety alignment LoRAs: community-produced safety-focused adapters enabling open-weight model behavioural guardrails without full RLHF infrastructure</li>
+</ul>
+</li>
+<li>
+<p><strong>Image diffusion customisation</strong>: democratised representation of specific subjects, styles, concepts.</p>
+<ul>
+<li>DreamBooth-LoRA: 20–50 training images, 10–30 minutes A100, 50MB adapter, subject recognition across arbitrary prompts and styles</li>
+<li>Style LoRAs (ArtStation aesthetic, anime style, photographic lighting, architectural rendering): consistently transferable across SDXL model releases</li>
+<li>Composition via <a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal alias" data-slug="pages/Node-Based-Diffusion-Pipeline-Interface">Node-Based Diffusion Pipeline Interface</a> LoRA nodes: multiple adapters with independent weight sliders; merge LoRAs pre-inference</li>
+</ul>
+</li>
+<li>
+<p><strong>Multi-adapter composition and merging</strong>: post-hoc combination of independently trained adapters without retraining.</p>
+<ul>
+<li>Scalar addition: W = W_base + α₁ΔW₁ + α₂ΔW₂ (simple weighting — often works surprisingly well for capability combination within related domains; less effective across very different domains)</li>
+<li>TIES merging (Yadav et al. 2023): (1) trim low-magnitude parameters (set bottom 20% magnitudes to zero); (2) elect sign via majority vote across merged adapters; (3) disjoint merge — only include parameters with winning sign. Reduces destructive interference significantly vs naive linear interpolation</li>
+<li>DARE (Yu et al. 2023): randomly drops LoRA delta parameters before merging (drop probability p=0.7–0.9) with magnitude rescaling by 1/(1-p) — reduces interference while preserving expected update magnitude; can be composed with TIES</li>
+<li>SLERP (spherical linear interpolation): interpolates between two adapter weight sets along the geodesic on the unit hypersphere rather than linear interpolation — produces smoother capability blending for style/tone adapters</li>
+<li>mergekit (github.com/arcee-ai/mergekit): CLI tool implementing all major merge algorithms; GUI wrapper enables non-researchers to compose adapter capabilities visually; used by Mistral AI and community to produce merged model families (NeuralHermes, OpenHermes-2.5, etc.)</li>
+</ul>
+</li>
+<li>
+<p><strong>Federated fine-tuning</strong>: privacy-preserving adaptation.</p>
+<ul>
+<li>FedLoRA: each client trains LoRA adapter on private local data; aggregation server receives only low-rank matrices — communication overhead 100–1000× lower than federated full fine-tuning</li>
+<li>DP-LoRA (differential privacy): adds calibrated Gaussian noise to LoRA gradient updates providing (ε,δ)-differential privacy guarantees; mathematical privacy proof for GDPR/HIPAA compliance</li>
+<li>Healthcare consortia use case: multiple hospitals co-train clinical NLP adapter without sharing patient data; final shared adapter inherits distributed medical knowledge</li>
+</ul>
+</li>
+<li>
+<p><strong>Continual learning and multi-task serving</strong>: LoRA enables modular capability extension.</p>
+<ul>
+<li>New tasks receive new adapters trained against frozen base — catastrophic forgetting eliminated by design (base never modified)</li>
+<li>O(r(m+n)) storage per task vs O(mn) for per-task full model — at r=8, 256× smaller per-task footprint enabling practical many-task libraries</li>
+<li>Multi-LoRA serving: load base model once, hot-swap adapter per request — Hugging Face Endpoints supports per-request LoRA switching; adapter load latency &lt;1ms vs model reload ~30 seconds; enables single A100 serving 100+ task variants simultaneously</li>
+<li>LoRA composability: arithmetic combination of adapters from same base model (W_base + α₁ΔW₁ + α₂ΔW₂) often preserves both task capabilities simultaneously — demonstrated for code + medical knowledge, formal tone + domain terminology</li>
+</ul>
+</li>
+<li>
+<p><strong>Safety fine-tuning and alignment via PEFT</strong>:</p>
+<ul>
+<li>Constitutional AI / RLHF without full model access: LoRA adapters can apply safety fine-tuning to open-weight models without touching base weights; safety adapters easily combined with capability adapters post-hoc</li>
+<li>DPO-LoRA (Direct Preference Optimisation + LoRA): trains preference alignment using only ~100–5,000 preference pairs; trl library implementation enables 2-hour safety fine-tuning on consumer GPU</li>
+<li>Unlearning via PEFT: targeted forgetting of harmful knowledge through gradient ascent on toxic examples with LoRA; experimental but promising for regulatory compliance (GDPR right to be forgotten applied to model knowledge)</li>
+<li>Red-team adversarial robustness LoRA: fine-tuning models to resist jailbreaks whilst preserving capability — PEFT enables this without stability risks of full RLHF on large models</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The PEFT field crystallised around several intellectual lineages flowing into Hu et al.’s LoRA.</p>
+</li>
+<li>
+<p><strong>Transfer learning foundations</strong>: Devlin et al. (2019) BERT demonstrated pre-trained representations are broadly reusable across NLP tasks with minimal task-specific tuning — establishing that the bottleneck is not representation quality but annotation cost and adaptation overhead. Radford et al. (2018/2019) GPT/GPT-2 showed language modelling pre-training enables zero-shot and few-shot task transfer — implying general knowledge is encoded in pre-trained weights and task adaptation is a search problem over a small parameter subspace. Howard and Ruder (2018) ULMFiT established discriminative fine-tuning (lower learning rates for earlier layers) and gradual unfreezing as practical recipes for avoiding catastrophic forgetting — conceptual precursors to PEFT’s more principled approaches.</p>
+</li>
+<li>
+<p><strong>Adapter literature</strong>: Houlsby et al. (2019) first demonstrated that inserting small (~1% parameter) bottleneck modules between frozen transformer layers achieves near-full-fine-tuning performance — the existence proof that minimal parameter updates suffice. Bapna and Firat (2019) proposed simpler single-layer adapters for multilingual NMT, demonstrating cross-lingual transfer via adapter composition. Pfeiffer et al. (2020) AdapterHub institutionalised modular fine-tuning as a research discipline with the first large-scale pre-trained adapter repository, demonstrating that adapters are composable across tasks and languages without destructive interference.</p>
+</li>
+<li>
+<p><strong>Intrinsic dimensionality</strong>: Li et al. (2018) measured intrinsic dimensionality d* of neural network objective landscapes — the minimum-dimension random projection subspace within which SGD achieves 90% of full-parameter performance — finding d* ≪ total parameters. Aghajanyan et al. (2020/2021) applied this to pre-trained model fine-tuning specifically: d* = 200 for BERT-base (125M params), d* ≈ 1,000 for GPT-2 (1.5B params), d* ≈ 10,000 for GPT-3 (175B params) — with larger models having proportionally smaller d*/total_params ratios. This provided the key theoretical justification for LoRA: if effective fine-tuning requires moving in only 200–10,000 dimensions, then rank-8 LoRA (spanning O(8×hidden_dim) dimensions per layer summed across layers) provides a sufficient learned subspace far exceeding d*.</p>
+</li>
+<li>
+<p><strong>LoRA synthesis and citation trajectory</strong>: Hu et al. (2022) synthesised adapters + intrinsic dimensionality + zero-inference-overhead into a clean deployable method; exceeded 10,000 citations by 2024 and 25,000 by 2025, among the most cited AI papers of the 2020s. QLoRA exceeded 10,000 citations within 18 months — reflecting the community fine-tuning explosion. The combination of LoRA + QLoRA effectively democratised LLM fine-tuning: from requiring a corporate ML team with <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">GP</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord mathnormal">c</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">er</span><span class="mord mathnormal">t</span><span class="mord mathnormal">o</span><span class="mord mathnormal">b</span><span class="mord mathnormal">e</span><span class="mord mathnormal">in</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord mathnormal">hi</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">ab</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">e</span><span class="mord mathnormal">b</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">h</span><span class="mord mathnormal">Ds</span><span class="mord mathnormal">t</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">o</span><span class="mord mathnormal">na</span><span class="mord mathnormal">s</span><span class="mord mathnormal">in</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">e</span></span></span></span>10K workstation.</p>
+</li>
+<li>
+<p><strong>Post-LoRA theoretical analysis</strong>: Zeng and Lee (2023) analysed LoRA’s implicit nuclear norm regularisation — showing LoRA’s low-rank constraint acts as a nuclear norm penalty on ΔW, favouring smooth low-rank updates, explaining why LoRA generalises well despite parameter efficiency. Hayou et al. (2024) used Maximal Update Parameterisation (μP) to characterise LoRA’s feature learning dynamics: standard LoRA scaling puts A in the “lazy training” regime (features don’t evolve); LoRA+ fixes this by assigning higher η_B enabling proper feature learning. Zhao et al. (2024) connected GaLore’s gradient projection to Oja’s online SVD algorithm — establishing GaLore as principled streaming principal component extraction rather than ad hoc compression.</p>
+</li>
+<li>
+<p><strong>Benchmarking and evaluation community</strong>: Open LLM Leaderboard (HuggingFace) tracks PEFT fine-tuned models alongside full fine-tuned and proprietary models on ARC, HellaSwag, MMLU, TruthfulQA, Winogrande, GSM8K — creating direct performance comparisons enabling community-driven quality control. AlpacaEval and MT-Bench provide automated instruction-following evaluation enabling rapid iteration on fine-tuning recipes without expensive human annotation.</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>By early 2026, PEFT is the <strong>default paradigm for LLM adaptation</strong> — full fine-tuning of models >7B reserved for specialised pre-training use cases.</p>
+</li>
+<li>
+<p><strong>Commercial integration</strong>: AWS SageMaker JumpStart offers one-click LoRA fine-tuning for Llama-3, Mistral-7B, Phi-3; Google Vertex AI uses LoRA-based supervised tuning for Gemini 1.5 Flash; Azure AI Studio fine-tuning for Phi-3/Llama defaults to QLoRA; Hugging Face Endpoints supports per-request LoRA adapter switching for multi-task serving.</p>
+</li>
+<li>
+<p><strong>2025-2026 emerging methods</strong>:</p>
+<ul>
+<li><strong>FLORA</strong>: full-rank LoRA via Oja’s online SVD — iteratively updating projection without periodic recomputation, enabling continuous rank adaptation</li>
+<li><strong>MoRA</strong>: high-rank updating using fewer parameters — square ΔW ∈ ℝʳˣʳ with input/output compression achieving higher-rank updates within LoRA budget; particularly effective for knowledge-intensive fine-tuning</li>
+<li><strong>HydraLoRA</strong>: asymmetric structure sharing matrix A across tasks — multiple B matrices per-task, shared A reduces storage whilst maintaining per-task directional specialisation</li>
+<li><strong>LoRAM</strong> (LoRA on Mobile): targeting ARM NPU INT4 for on-device personalisation; Apple CoreML LoRA research and ARM INT4 LoRA inference toolchain enabling smartphone fine-tuning</li>
+</ul>
+</li>
+<li>
+<p><strong>Regulatory drivers</strong>: EU AI Act (full application August 2026), UK AI Regulation Bill, US Executive Orders on AI privacy create demand for federated PEFT with differential privacy guarantees — particularly in healthcare, finance, and legal sectors.</p>
+</li>
+<li>
+<p><strong>Open ecosystem maturation</strong>: standardised adapter formats (safetensors + PEFT config.json) enable cross-library portability — any PEFT-trained adapter can be loaded by HuggingFace Transformers, llama.cpp (with GGUF LoRA extension), vLLM, and TGI without conversion; community merging tools (mergekit, mergekit-gui) make model capability composition accessible to non-researchers with GUI-driven TIES/DARE/SLERP merging workflows. The <strong>LM Evaluation Harness</strong> (EleutherAI) provides standardised evaluation of fine-tuned models across 70+ benchmarks, enabling objective quality comparison between fine-tuning recipes without bespoke evaluation infrastructure.</p>
+</li>
+<li>
+<p><strong>Quantitative landscape metrics (2025)</strong>: PEFT’s footprint in the ML ecosystem by mid-2025: 500,000+ LoRA adapter weights on Hugging Face Hub (growing ~15,000/week); 400,000+ LoRA models on Civitai (growing ~5,000/week); PEFT library has 15,000+ GitHub stars and 25M+ monthly PyPI downloads; at least 5,000 academic papers citing LoRA as a methodological component in 2024 alone — PEFT has transitioned from a specialised technique to an assumed default methodology reported without detailed justification in ML papers, analogous to Adam optimiser adoption in 2016-2018.</p>
+</li>
+<li>
+<p><strong>Competitive landscape (2026)</strong>: The boundary between PEFT and full fine-tuning is blurring for very small models (1–3B parameters): at this scale, full fine-tuning is feasible on a single consumer GPU, and some practitioners prefer it for maximum expressiveness; however, LoRA’s storage advantages (adapter files vs full model copies) remain decisive for deployment and distribution. For models ≥7B, PEFT is the unambiguous default. The competitive landscape among PEFT methods themselves is stabilising around LoRA (general purpose), DoRA (complex generation), QLoRA (single-GPU large model), and IA³ (extreme efficiency) as the four primary choices — with LyCORIS variants dominating diffusion model use cases specifically.</p>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Imperial College London</strong> (Computing Dept, Bayesian ML / medical AI groups): uncertainty-aware LoRA methods — Bayesian low-rank adaptation modelling ΔW posterior over task-relevant directions; collaborating with NHS Imperial College Healthcare Trust on radiology report generation; Hamlyn Centre for Robotic Surgery applies LoRA to surgical video understanding models.</p>
+</li>
+<li>
+<p><strong>University of Edinburgh</strong> (ILCC — Lapata/Lopez groups): cross-lingual adapter transfer and multilingual PEFT for low-resource languages building on AdapterHub; Ustun et al. (2022) multilingual adapter tuning for cross-lingual transfer; Edinburgh NLP group actively benchmarks PEFT methods for 50+ language NLP tasks.</p>
+</li>
+<li>
+<p><strong>University of Cambridge</strong> (Computer Lab / former Ghahramani group, now Google DeepMind Cambridge): Bayesian LoRA — modelling low-rank updates as structured priors over weight matrices; principled rank selection via marginal likelihood estimation; Cambridge Accelerate Programme funds PEFT applications in climate science and computational biology.</p>
+</li>
+<li>
+<p><strong>UCL</strong> (Centre for AI, Barber group): PEFT for continual learning and sequential task adaptation in embodied AI — DoRA variants for robot manipulation policies trained in simulation with real-world domain adaptation via LoRA.</p>
+</li>
+<li>
+<p><strong>Alan Turing Institute</strong> (London, national AI institute): PEFT working group examining public sector applications — HMRC document processing, NHS clinical NLP, DVLA record extraction — under UK Government AI adoption framework and ICO guidance; published guidance on PEFT for data-minimisation-by-design in government AI systems.</p>
+</li>
+<li>
+<p><strong>Manchester ecosystem</strong>: Textkernel (Randstad NV subsidiary, HR AI) deploys LoRA for multilingual CV parsing across 24 European job markets; Manchester Metropolitan University’s MAIS group investigates adapter-based dialect-aware NLP.</p>
+</li>
+<li>
+<p><strong>Leeds ecosystem</strong>: Aire (credit risk AI) uses QLoRA on-premise for FCA regulatory document understanding — GDPR-compliant processing with zero cloud data egress; Connexin (Hull, IoT/AI) uses LoRA for customer service LLM adaptation meeting NCSC cloud security guidance.</p>
+</li>
+<li>
+<p><strong>ARM Cambridge</strong>: INT4 quantisation research for Cortex-A and Ethos NPU series; LoRA-merged weight deployment maps favourably to ARM NEON SIMD 4-bit dot-product operations; ExecuTorch integration supports LoRA weight merging for Cortex-A78AE automotive deployment.</p>
+</li>
+<li>
+<p><strong>Sheffield NLP Group</strong> (Prof Mark Stevenson group): long-standing specialisation in domain adaptation for medical/scientific text; early contributions to adapter fine-tuning for biomedical entity recognition (Sheffield NLP published on adapter tuning for clinical NLP predating LoRA); active in cross-domain PEFT evaluation for UK clinical NLP, including NHS Digital’s National Language Intelligence Centre pilot for clinical coding automation.</p>
+</li>
+<li>
+<p><strong>Newcastle / Northumbria AI ecosystem</strong>: Newcastle University’s School of Computing applies LoRA fine-tuning for industrial inspection NLP — defect report categorisation for manufacturing sector (Siemens UK collaboration); Northumbria’s AI Research Centre investigates PEFT for geospatial and environmental monitoring data from satellite imagery, adapting vision-language foundation models to UK-specific land use classification via LoRA on SAR and multispectral imagery.</p>
+</li>
+<li>
+<p><strong>Bristol</strong> (University of Bristol, Visual Information Laboratory): applies LoRA/DoRA to video understanding models for UK broadcasting and media sector; BBC Research &amp; Development collaboration on fine-tuning speech/language models for UK accents and dialects using adapter tuning, addressing the significant performance degradation of US-trained ASR models on Scottish, Welsh, Northern English and West Midlands speech patterns.</p>
+</li>
+<li>
+<p><strong>UK AI Safety Institute</strong> (AISI, est. 2023, now DSIT): conducts systematic evaluation of PEFT-based fine-tuning for safety risk — specifically whether LoRA fine-tuning can be used to remove safety guardrails from open-weight models (jailbreak LoRAs) and at what parameter count / training data size safety alignment is reversible. AISI published technical reports on fine-tuning risk in 2024 informing UK AI governance framework development under the proposed AI Regulation Bill. This work directly shapes licensing requirements for open-weight model releases in the UK.</p>
+</li>
+<li>
+<p><strong>Scottish Enterprise and Highland/Islands clusters</strong>: Scottish Government’s Digital Economy strategy includes AI adoption funding for LoRA fine-tuning of Gaelic and Scots language NLP — adaptation of multilingual models (mBERT, mT5) for low-resource Scottish languages using Adapter Tuning and prefix tuning methods; University of the Highlands and Islands leads the GAELIC-NLP project adapting speech recognition and machine translation for Gaelic broadcasting (MG ALBA) using adapter-based transfer from Irish Gaelic resources.</p>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Rank-adaptive and curvature-aware training</strong>: AdaLoRA and GaLore represent early steps; next generation will use Hessian curvature information (Fisher information matrix diagonal, efficiently estimated via Hutch++ stochastic trace estimation) to continuously assign rank budget during training — layers with high loss curvature indicating task-relevant directions receive higher rank allocation; flat landscape layers compressed to r=1 or frozen entirely. This eliminates the r hyperparameter entirely and may yield 10–20% parameter savings vs AdaLoRA at equal task performance. Kronecker-factored approximate curvature (K-FAC) applied to LoRA factors offers a complementary approach — using the Kronecker product structure of A and B to approximate the Fisher information matrix for each adapter pair efficiently.</p>
+</li>
+<li>
+<p><strong>On-device personalisation (2027 milestone)</strong>: flagship smartphones in 2025 exceed 16GB RAM + ~40 TOPS NPU (Apple A18 Pro, Snapdragon 8 Gen 4). LoRA fine-tuning on-device becomes feasible for small models (1–3B parameters). Apple CoreML LoRA adaptation pipeline and ARM INT4 LoRA inference suggest personalised on-device LLMs — adapted to individual writing style, vocabulary, private contacts, preferences — with no server-side data transmission by 2027.</p>
+</li>
+<li>
+<p><strong>Multimodal PEFT expansion</strong>: vision-language models (LLaVA, Flamingo, Gemini variants) adopt LoRA/DoRA for cross-modal adapter layers connecting vision encoders to language decoders; audio-language PEFT (Whisper-LoRA for domain-specific ASR); video understanding temporal LoRA adapters; protein structure prediction LoRA for ESMFold/AlphaFold variants.</p>
+</li>
+<li>
+<p><strong>Federated PEFT at scale</strong>: EU AI Act enforcement (August 2026) and UK AI Regulation Bill will drive healthcare consortia, financial services groups, and legal firms to adopt FedLoRA with formal DP guarantees as the standard compliance mechanism for collective intelligence from private datasets.</p>
+</li>
+<li>
+<p><strong>PEFT for reasoning and alignment (2025-2027)</strong>: chain-of-thought LoRA — fine-tuning specifically on reasoning traces to distil thinking patterns from large reasoning models (o1-style, DeepSeek-R1) into smaller efficient models; reward-model LoRA enabling community-driven safety alignment of open-weight models.</p>
+</li>
+<li>
+<p><strong>Theoretical unification</strong>: connections between LoRA, NTK parameterisation, and MDL compression principles will yield principled design rules; PAC-Bayes bounds for LoRA generalisation as function of rank and training set size; information-theoretic optimal rank selection replacing empirical grid search.</p>
+</li>
+<li>
+<p><strong>Hardware-software co-design</strong>: next-generation accelerators (Groq LPU-2, Cerebras CS-3, ARM Ethos-U85) are exposing PEFT-aware execution modes — base model weights loaded once into high-bandwidth memory (HBM3e); adapter weight tensors (A, B matrices) cached in L2 SRAM enabling per-request sub-millisecond adapter switching; dedicated silicon for the W₀x and BAx path separation enabling simultaneous computation of both terms. AMD’s ROCm ecosystem and NVIDIA’s TensorRT-LLM both added LoRA-aware optimised kernels in 2024-2025, enabling multi-LoRA batch inference (serving requests for different adapters in the same batch without adapter reloading) — critical for multi-tenant PEFT serving at hyperscaler scale where thousands of adapters may be concurrently active.</p>
+</li>
+<li>
+<p><strong>Cross-modal LoRA composition</strong>: vision-language models (LLaVA, InternVL, Idefics3) use separate LoRA adapters for vision encoder and language model components — adapters can be independently trained then composed, enabling vision domain specialisation (medical imaging, satellite imagery, industrial inspection) to combine with language domain specialisation (medical terminology, regulatory language) without joint fine-tuning. This modular decomposition enables fine-grained capability construction for enterprise multimodal AI deployments.</p>
+</li>
+<li>
+<p><strong>PEFT for protein and molecular biology (2026-2030)</strong>: ESMFold and AlphaFold variant fine-tuning via LoRA for specific protein families (membrane proteins, intrinsically disordered regions, post-translational modification prediction); molecular property prediction fine-tuning of chemical foundation models (ChemBERTa, MolBERT) via adapters trained on proprietary wet-lab assay data without sharing training compounds; genomic sequence model adaptation (Nucleotide Transformer LoRA) for species-specific regulatory region prediction. These applications inherit all PEFT advantages — data residency, compute efficiency, adapter composability — with particular value in competitive biotechnology where training data is proprietary and cannot be shared with cloud providers.</p>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Foundational LoRA/PEFT papers:</strong></p>
+<ul>
+<li>Houlsby et al. (2019). “Parameter-Efficient Transfer Learning for NLP.” ICML 2019. Google Brain.</li>
+<li>Li and Liang (2021). “Prefix-Tuning: Optimizing Continuous Prompts for Generation.” ACL 2021. Stanford.</li>
+<li>Lester et al. (2021). “The Power of Scale for Parameter-Efficient Prompt Tuning.” EMNLP 2021. Google.</li>
+<li>Hu et al. (2022). “LoRA: Low-Rank Adaptation of Large Language Models.” ICLR 2022. arXiv:2106.09685. Microsoft Research.</li>
+<li>Liu et al. (2022). “Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning.” NeurIPS 2022. (IA³)</li>
+<li>Zhang et al. (2023). “AdaLoRA: Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning.” ICLR 2023. Microsoft Research.</li>
+<li>Dettmers et al. (2023). “QLoRA: Efficient Finetuning of Quantized LLMs.” NeurIPS 2023. arXiv:2305.14314.</li>
+<li>Chen et al. (2023). “LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models.” ICLR 2024. arXiv:2309.12307. MIT.</li>
+<li>Kopiczko et al. (2023). “VeRA: Vector-Based Random Matrix Adaptation.” ICLR 2024.</li>
+<li>Lialin et al. (2023). “ReLoRA: High-Rank Training Through Low-Rank Updates.” NeurIPS 2023 Workshop. UMass Lowell.</li>
+<li>Liu et al. (2024). “DoRA: Weight-Decomposition Low-Rank Adaptation.” ICML 2024. arXiv:2402.09353. NVIDIA Research.</li>
+<li>Zhao et al. (2024). “GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection.” ICML 2024. arXiv:2403.03507.</li>
+<li>Hayou et al. (2024). “LoRA+: Efficient Low-Rank Adaptation of Large Models.” ICML 2024.</li>
+</ul>
+</li>
+<li>
+<p><strong>Theoretical foundations:</strong></p>
+<ul>
+<li>Li et al. (2018). “Measuring the Intrinsic Dimension of Objective Landscapes.” ICLR 2018.</li>
+<li>Aghajanyan et al. (2021). “Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning.” ACL 2021. Facebook AI.</li>
+<li>Devlin et al. (2019). “BERT: Pre-training of Deep Bidirectional Transformers.” NAACL 2019. Google AI.</li>
+<li>Brown et al. (2020). “Language Models are Few-Shot Learners.” NeurIPS 2020. OpenAI.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ecosystem and implementation:</strong></p>
+<ul>
+<li>Pfeiffer et al. (2020). “AdapterHub: A Framework for Adapting Transformers.” EMNLP 2020. TU Darmstadt/Edinburgh.</li>
+<li>Pfeiffer et al. (2021). “AdapterFusion: Non-Destructive Task Composition for Transfer Learning.” EACL 2021.</li>
+<li>Hugging Face PEFT Library. github.com/huggingface/peft. MIT Licence. v0.14+ (2025).</li>
+<li>Dettmers et al. bitsandbytes library. github.com/TimDettmers/bitsandbytes. NF4/INT8.</li>
+<li>kohya_ss. LoRA training for diffusion models. github.com/kohya-tech/kohya_ss.</li>
+<li>NVIDIA Developer Blog. “Introducing DoRA.” developer.nvidia.com/blog/introducing-dora. 2024.</li>
+<li>Hugging Face Blog. “LoRA training scripts of the world, unite!” 2023.</li>
+</ul>
+</li>
+<li>
+<p><strong>Merging and composition:</strong></p>
+<ul>
+<li>Yadav et al. (2023). “TIES-Merging: Resolving Interference When Merging Models.” NeurIPS 2023.</li>
+<li>Yu et al. (2023). “DARE: Language Model Fine-Tuning via Merging.” arXiv:2311.03099.</li>
+<li>Wortsman et al. (2022). “Model Soups: averaging weights of fine-tuned models.” ICML 2022.</li>
+</ul>
+</li>
+<li>
+<p><strong>UK and European research:</strong></p>
+<ul>
+<li>Ustun et al. (2022). “Multi-lingual Adapter Tuning.” EMNLP 2022. Edinburgh/UvA.</li>
+<li>Lauscher et al. (2020). “Limitations of Zero-Shot Multilingual Transfer.” EMNLP 2020. Edinburgh.</li>
+</ul>
+</li>
+<li>
+<p><strong>Benchmarks:</strong></p>
+<ul>
+<li>Open LLM Leaderboard. huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard. HuggingFace 2024.</li>
+<li>Vicuna Benchmark. lmsys.org/blog/2023-03-30-vicuna. LMSYS 2023.</li>
+<li>GLUE/SuperGLUE. Wang et al. (2019/2022). Standard NLP evaluation.</li>
+</ul>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Legacy Term ID</strong>: AI-1042</li>
+<li><strong>Domain correction</strong>: <code>infrastructure</code> → <code>artificial-intelligence</code> (original stub misclassified; LoRA/PEFT is a core AI/ML algorithm family; IRI, URI, same-as, owl-class all updated accordingly)</li>
+<li><strong>IRI</strong>: <code>http://narrativegoldmine.com/artificial-intelligence#LoRADoRAEtc</code></li>
+<li><strong>URI</strong>: <code>urn:visionclaw:concept:artificial-intelligence:lora-dora-etc</code></li>
+<li><strong>Version</strong>: 2.0.0 → 2.1.0</li>
+<li><strong>Enrichment model</strong>: claude-sonnet-4-6</li>
+<li><strong>Phase</strong>: Phase 6 bulk run, 2026-05-17</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Hu et al. (2022). “LoRA: Low-Rank Adaptation of Large Language Models.” ICLR 2022. arXiv:2106.09685. Microsoft Research.</li>
+<li>Dettmers et al. (2023). “QLoRA: Efficient Finetuning of Quantized LLMs.” NeurIPS 2023. arXiv:2305.14314. University of Washington.</li>
+<li>Liu et al. (2024). “DoRA: Weight-Decomposition Low-Rank Adaptation.” ICML 2024. arXiv:2402.09353. NVIDIA Research.</li>
+<li>Zhao et al. (2024). “GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection.” ICML 2024. arXiv:2403.03507.</li>
+<li>Hayou et al. (2024). “LoRA+: Efficient Low-Rank Adaptation of Large Models.” ICML 2024.</li>
+<li>Houlsby et al. (2019). “Parameter-Efficient Transfer Learning for NLP.” ICML 2019. Google Brain.</li>
+<li>Li and Liang (2021). “Prefix-Tuning: Optimizing Continuous Prompts for Generation.” ACL 2021. Stanford.</li>
+<li>Lester et al. (2021). “The Power of Scale for Parameter-Efficient Prompt Tuning.” EMNLP 2021. Google.</li>
+<li>Liu et al. (2022). “Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning.” NeurIPS 2022. (IA³)</li>
+<li>Zhang et al. (2023). “AdaLoRA: Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning.” ICLR 2023. Microsoft Research.</li>
+<li>Chen et al. (2023). “LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models.” ICLR 2024. arXiv:2309.12307. MIT.</li>
+<li>Kopiczko et al. (2023). “VeRA: Vector-Based Random Matrix Adaptation.” ICLR 2024.</li>
+<li>Lialin et al. (2023). “ReLoRA: High-Rank Training Through Low-Rank Updates.” NeurIPS 2023 Workshop. UMass Lowell.</li>
+<li>Aghajanyan et al. (2021). “Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning.” ACL 2021. Facebook AI.</li>
+<li>Li et al. (2018). “Measuring the Intrinsic Dimension of Objective Landscapes.” ICLR 2018.</li>
+<li>Pfeiffer et al. (2020). “AdapterHub: A Framework for Adapting Transformers.” EMNLP 2020.</li>
+<li>Pfeiffer et al. (2021). “AdapterFusion: Non-Destructive Task Composition for Transfer Learning.” EACL 2021.</li>
+<li>Ustun et al. (2022). “Multi-lingual Adapter Tuning for Cross-lingual Transfer.” EMNLP 2022. Edinburgh/UvA.</li>
+<li>Devlin et al. (2019). “BERT: Pre-training of Deep Bidirectional Transformers.” NAACL 2019. Google AI.</li>
+<li>Brown et al. (2020). “Language Models are Few-Shot Learners.” NeurIPS 2020. OpenAI.</li>
+<li>Hugging Face PEFT Library. github.com/huggingface/peft. v0.14+ 2025.</li>
+<li>NVIDIA Developer Blog. “Introducing DoRA.” developer.nvidia.com/blog. 2024.</li>
+<li>kohya_ss documentation. github.com/kohya-tech/kohya_ss. 2024.</li>
+<li>Civitai LoRA Marketplace. civitai.com. 400,000+ models. 2025.</li>
+<li>Yadav et al. (2023). “TIES-Merging: Resolving Interference When Merging Models.” NeurIPS 2023.</li>
+<li>Yu et al. (2023). “DARE: Language Model Fine-Tuning via Merging.” arXiv:2311.03099.</li>
+<li>Wortsman et al. (2022). “Model Soups: averaging weights of fine-tuned models.” ICML 2022.</li>
+<li><strong>domain-correction:</strong> infrastructure <span>→</span> artificial-intelligence (original stub domain misclassified; IRI, URI, same-as, owl-class all updated)</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-3355" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-lora-dora-and-the-peft-ecosystem" data-for="about-lora-dora-and-the-peft-ecosystem">About LoRA, DoRA, and the PEFT Ecosystem</a></li><li class="depth-0"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-1"><a href="#lora-low-rank-adaptation" data-for="lora-low-rank-adaptation">LoRA: Low-Rank Adaptation</a></li><li class="depth-1"><a href="#lora-variants-and-extensions" data-for="lora-variants-and-extensions">LoRA Variants and Extensions</a></li><li class="depth-1"><a href="#dora-weight-decomposition-low-rank-adaptation" data-for="dora-weight-decomposition-low-rank-adaptation">DoRA: Weight-Decomposition Low-Rank Adaptation</a></li><li class="depth-1"><a href="#qlora-quantised-low-rank-adaptation" data-for="qlora-quantised-low-rank-adaptation">QLoRA: Quantised Low-Rank Adaptation</a></li><li class="depth-1"><a href="#galore-gradient-low-rank-projection" data-for="galore-gradient-low-rank-projection">GaLore: Gradient Low-Rank Projection</a></li><li class="depth-1"><a href="#longlora-context-window-extension" data-for="longlora-context-window-extension">LongLoRA: Context Window Extension</a></li><li class="depth-1"><a href="#adapter-tuning-prefix-tuning-prompt-tuning-and-ia" data-for="adapter-tuning-prefix-tuning-prompt-tuning-and-ia">Adapter Tuning, Prefix Tuning, Prompt Tuning, and IA³</a></li><li class="depth-1"><a href="#lycoris-and-diffusion-model-peft" data-for="lycoris-and-diffusion-model-peft">LyCORIS and Diffusion Model PEFT</a></li><li class="depth-1"><a href="#hugging-face-peft-library" data-for="hugging-face-peft-library">Hugging Face PEFT Library</a></li><li class="depth-0"><a href="#mathematical-foundations-and-practical-training" data-for="mathematical-foundations-and-practical-training">Mathematical Foundations and Practical Training</a></li><li class="depth-1"><a href="#core-mathematical-properties-of-lora" data-for="core-mathematical-properties-of-lora">Core Mathematical Properties of LoRA</a></li><li class="depth-1"><a href="#training-recipe-best-practices-2025-community-consensus" data-for="training-recipe-best-practices-2025-community-consensus">Training Recipe Best Practices (2025 Community Consensus)</a></li><li class="depth-1"><a href="#peft-comparison-matrix" data-for="peft-comparison-matrix">PEFT Comparison Matrix</a></li><li class="depth-0"><a href="#use-cases-and-major-families" data-for="use-cases-and-major-families">Use Cases and Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

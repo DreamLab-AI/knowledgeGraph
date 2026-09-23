@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:working-group",
         "label": "Working Group"
+      },
+      {
+        "id": "urn:ngm:class:internet-engineering-steering-group",
+        "label": "Internet Engineering Steering Group"
+      },
+      {
+        "id": "urn:ngm:class:internet-architecture-board",
+        "label": "Internet Architecture Board"
       }
     ],
     "requires": [
@@ -74,6 +82,10 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:software-attestation",
+        "label": "Software Attestation"
       }
     ],
     "uses": [],
@@ -115,6 +127,10 @@
       {
         "id": "urn:ngm:class:dns",
         "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:smtp",
+        "label": "SMTP"
       }
     ],
     "partOf": [],
@@ -160,6 +176,10 @@
         "label": "Conformance Test Suite"
       },
       {
+        "id": "urn:ngm:class:technical-working-group",
+        "label": "Technical Working Group"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
@@ -178,10 +198,6 @@
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property Rights Framework"
-      },
-      {
-        "id": "urn:ngm:class:legal-framework",
-        "label": "Legal Framework"
       }
     ],
     "requires": [
@@ -334,6 +350,10 @@
         "label": "Governance"
       },
       {
+        "id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
+      },
+      {
         "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
       }
@@ -364,7 +384,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

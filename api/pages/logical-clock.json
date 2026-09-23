@@ -183,6 +183,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
         "id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
       },
@@ -209,10 +213,6 @@
       {
         "id": "urn:ngm:class:orchestration",
         "label": "Orchestration"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
       }
     ],
     "dependsOn": [

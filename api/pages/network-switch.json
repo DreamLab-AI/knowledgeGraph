@@ -108,7 +108,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -148,6 +148,10 @@
       {
         "id": "urn:ngm:class:quality-of-service",
         "label": "Quality Of Service"
+      },
+      {
+        "id": "urn:ngm:class:traffic-engineering",
+        "label": "Traffic Engineering"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -230,6 +234,10 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:ai-inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:decentralised-network",
         "label": "Decentralised Network"
       },
@@ -308,7 +316,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -38,7 +38,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
       }
     ],
@@ -81,7 +81,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
       },
       {
@@ -118,18 +118,22 @@
       "slug": "blockchain-oracle"
     },
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component (Blockchain)",
-      "slug": "bc-network-component"
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
     },
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:aggregator-feed",
+        "label": "Aggregator Feed"
+      },
       {
         "id": "urn:ngm:class:data-aggregation",
         "label": "Data Aggregation Layer"
@@ -147,20 +151,16 @@
         "label": "Price Oracle"
       },
       {
-        "id": "urn:ngm:class:archival-node",
-        "label": "Archival Node"
+        "id": "urn:ngm:class:block",
+        "label": "Block"
       },
       {
-        "id": "urn:ngm:class:bootstrap-node",
-        "label": "Bootstrap Node"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:full-node",
-        "label": "Full Node"
-      },
-      {
-        "id": "urn:ngm:class:light-node",
-        "label": "Light Node"
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
       }
     ],
     "requires": [
@@ -185,16 +185,16 @@
         "label": "Staking"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
       }
     ],
     "enables": [
@@ -263,6 +263,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:centralised-exchange-feed",
+        "label": "Centralised Exchange Feed"
+      },
+      {
         "id": "urn:ngm:class:price-discovery",
         "label": "Spot Price"
       },
@@ -273,7 +277,11 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:financial-data-api",
+        "label": "Financial Data API"
+      },
+      {
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       },
       {
@@ -287,6 +295,18 @@
       {
         "id": "urn:ngm:class:traditional-finance",
         "label": "Traditional Finance"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -299,7 +319,7 @@
         "label": "Digital Signatures"
       },
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       },
       {
@@ -309,7 +329,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:defi-protocol",
+        "id": "urn:ngm:class:de-fi-protocol",
         "label": "DeFi Protocol"
       },
       {
@@ -323,12 +343,20 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:defi-infrastructure",
         "label": "DeFi Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ],
     "relatedTo": [
@@ -357,12 +385,8 @@
         "label": "Smart Contract Platform"
       },
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
       }
     ]
   },

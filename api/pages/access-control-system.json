@@ -12,12 +12,20 @@
       "label": "Security and Identity"
     },
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
+      "id": "urn:ngm:class:security-control",
+      "label": "Security Control"
     },
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
+      "id": "urn:ngm:class:authorisation-mechanism",
+      "label": "Authorisation Mechanism"
+    },
+    {
+      "id": "urn:ngm:class:information-security-system",
+      "label": "Information Security System"
+    },
+    {
+      "id": "urn:ngm:class:governance-control",
+      "label": "Governance Control"
     }
   ],
   "entityType": "Class",
@@ -60,6 +68,14 @@
       {
         "id": "urn:ngm:class:policy-engine",
         "label": "Policy Engine"
+      },
+      {
+        "id": "urn:ngm:class:attribute-evaluation",
+        "label": "Attribute Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:identity-system",
+        "label": "Identity Store"
       }
     ],
     "requires": [
@@ -86,6 +102,14 @@
       {
         "id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "id": "urn:ngm:class:trusted-timestamping",
+        "label": "Trusted Time Source"
       }
     ],
     "enables": [
@@ -122,10 +146,94 @@
         "label": "Risk Assessment"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:directory-service",
+        "label": "Directory Service"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:secure-logging",
+        "label": "Secure Logging"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rbac",
+        "label": "RBAC"
+      },
+      {
+        "id": "urn:ngm:class:abac",
+        "label": "ABAC"
+      },
+      {
+        "id": "urn:ngm:class:rebac",
+        "label": "ReBAC"
+      },
+      {
+        "id": "urn:ngm:class:dac",
+        "label": "DAC"
+      },
+      {
+        "id": "urn:ngm:class:mac",
+        "label": "MAC"
+      },
+      {
+        "id": "urn:ngm:class:pbac",
+        "label": "PBAC"
+      },
+      {
+        "id": "urn:ngm:class:capability-based-security",
+        "label": "Capability-Based Security"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:capability-based-security",
+        "label": "Capability-Based Security"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:kerberos",
@@ -158,6 +266,10 @@
       {
         "id": "urn:ngm:class:xacml",
         "label": "XACML"
+      },
+      {
+        "id": "urn:ngm:class:zanzibar",
+        "label": "Zanzibar"
       }
     ],
     "supports": [
@@ -210,6 +322,26 @@
       {
         "id": "urn:ngm:class:web-authn",
         "label": "W3C WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST SP 800-162"
+      },
+      {
+        "id": "urn:ngm:class:oasis",
+        "label": "OASIS XACML"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-6749",
+        "label": "IETF RFC 6749"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF RFC 4120"
+      },
+      {
+        "id": "urn:ngm:class:web-authn",
+        "label": "W3C WebAuthn"
       }
     ],
     "partOf": [],
@@ -237,6 +369,10 @@
       {
         "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Customer Identity and Access Management"
       }
     ]
   },

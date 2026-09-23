@@ -81,6 +81,10 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-networks",
+        "label": "Sensor Network"
       }
     ],
     "standardizedBy": [],

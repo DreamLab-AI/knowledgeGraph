@@ -56,6 +56,10 @@
       {
         "id": "urn:ngm:class:cryptocurrency-investigation",
         "label": "Cryptocurrency Investigation"
+      },
+      {
+        "id": "urn:ngm:class:ransomware-attribution",
+        "label": "Ransomware Attribution"
       }
     ],
     "dependsOn": [],
@@ -124,7 +128,7 @@
         "label": "FATF Travel Rule"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -148,14 +152,9 @@
       "slug": "data-analytics"
     },
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     }
   ],
   "inheritedRelations": {
@@ -177,20 +176,20 @@
         "label": "Prescriptive Analytics"
       },
       {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
+      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
       },
       {
-        "id": "urn:ngm:class:data-lake",
-        "label": "Data Lake"
-      },
-      {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
       }
     ],
     "requires": [
@@ -207,16 +206,16 @@
         "label": "Data Quality Management"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "enables": [
@@ -245,12 +244,12 @@
         "label": "Real-Time Analytics"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
     "dependsOn": [
@@ -273,8 +272,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -291,12 +290,12 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
       }
     ],
     "uses": [
@@ -335,29 +334,33 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
+        "label": "MiCA Regulation"
+      },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
@@ -373,10 +376,6 @@
       {
         "id": "urn:ngm:class:decentralized-finance-de-fi",
         "label": "Decentralized Finance (DeFi)"
-      },
-      {
-        "id": "urn:ngm:class:mi-ca-regulation",
-        "label": "MiCA Regulation"
       },
       {
         "id": "urn:ngm:class:big-data",

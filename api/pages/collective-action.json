@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:collective-action",
   "domain": "governance",
-  "definition": "Coordinated behaviour by a group of individuals or organisations toward a shared goal that no single actor [private] achieve unilaterally. It is characterised by interdependence, the risk of free-riding, and the need for mechanisms \u2014 such as incentives, norms, or contracts \u2014 to align individual contributions with the group objective.",
+  "definition": "Coordinated behaviour by a group of individuals or organisations toward a shared goal that no single actor could achieve unilaterally. It is characterised by interdependence, the risk of free-riding, and the need for mechanisms \u2014 such as incentives, norms, or contracts \u2014 to align individual contributions with the group objective.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:coordination-mechanisms",
@@ -76,7 +76,7 @@
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
       },
       {
@@ -138,6 +138,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -224,16 +229,16 @@
         "label": "Risk Management"
       },
       {
+        "id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
+      },
+      {
         "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
       {
         "id": "urn:ngm:class:privacy-framework",
         "label": "Privacy Framework"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
       }
     ],
     "dependsOn": [

@@ -20,9 +20,38 @@
       {
         "id": "urn:ngm:class:scope-definition",
         "label": "Goal and Scope Definition"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-inventory",
+        "label": "Life Cycle Inventory"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-impact-assessment",
+        "label": "Life Cycle Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:scope-definition",
+        "label": "Goal and Scope Definition"
+      },
+      {
+        "id": "urn:ngm:class:lca-interpretation",
+        "label": "LCA Interpretation"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:functional-unit",
+        "label": "Functional Unit"
+      },
+      {
+        "id": "urn:ngm:class:system-boundary",
+        "label": "System Boundary"
+      },
+      {
+        "id": "urn:ngm:class:inventory-data",
+        "label": "Inventory Data"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:carbon-footprint-assessment",
@@ -31,6 +60,18 @@
       {
         "id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:environmental-product-declaration",
+        "label": "Environmental Product Declaration"
+      },
+      {
+        "id": "urn:ngm:class:eco-design",
+        "label": "Eco-design"
+      },
+      {
+        "id": "urn:ngm:class:green-public-procurement",
+        "label": "Green Public Procurement"
       }
     ],
     "dependsOn": [],
@@ -39,6 +80,10 @@
       {
         "id": "urn:ngm:class:material-flow-analysis",
         "label": "Material Flow Analysis"
+      },
+      {
+        "id": "urn:ngm:class:environmental-assessment",
+        "label": "Environmental Impact Assessment"
       }
     ],
     "bridgesTo": [
@@ -53,12 +98,24 @@
       {
         "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial Internet of Things"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:material-flow-analysis",
         "label": "Material Flow Analysis"
+      },
+      {
+        "id": "urn:ngm:class:ecoinvent-database",
+        "label": "Ecoinvent Database"
+      },
+      {
+        "id": "urn:ngm:class:characterisation-factors",
+        "label": "Characterisation Factors"
       }
     ],
     "supports": [
@@ -83,6 +140,10 @@
       {
         "id": "urn:ngm:class:iso-14044",
         "label": "ISO 14044"
+      },
+      {
+        "id": "urn:ngm:class:product-environmental-footprint",
+        "label": "Product Environmental Footprint"
       }
     ],
     "partOf": [],
@@ -98,6 +159,10 @@
       {
         "id": "urn:ngm:class:carbon-accounting",
         "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:environmental-assessment",
+        "label": "Environmental Impact Assessment"
       }
     ]
   },
@@ -111,6 +176,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -172,6 +252,14 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
       }
     ],
     "enables": [
@@ -194,18 +282,42 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
         "id": "urn:ngm:class:extended-reality-xr",
@@ -214,6 +326,18 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -250,6 +374,16 @@
         "label": "Head-Mounted Display"
       }
     ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:open-xr",
@@ -280,6 +414,18 @@
       {
         "id": "urn:ngm:class:sc-standards-and-interop",
         "label": "Standards and Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
       }
     ]
   },

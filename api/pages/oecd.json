@@ -16,7 +16,24 @@
   "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-principles",
+        "label": "AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:crypto-asset-reporting-framework",
+        "label": "Crypto-Asset Reporting Framework"
+      },
+      {
+        "id": "urn:ngm:class:base-erosion-and-profit-shifting",
+        "label": "Base Erosion and Profit Shifting"
+      },
+      {
+        "id": "urn:ngm:class:programme-for-international-student-assessment",
+        "label": "Programme for International Student Assessment"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:international-cooperation",
@@ -25,6 +42,10 @@
       {
         "id": "urn:ngm:class:data-sharing",
         "label": "Data Sharing"
+      },
+      {
+        "id": "urn:ngm:class:multilateral-cooperation",
+        "label": "Multilateral Cooperation"
       }
     ],
     "enables": [
@@ -35,17 +56,38 @@
       {
         "id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:automatic-exchange-of-information",
+        "label": "Automatic Exchange of Information"
+      },
+      {
+        "id": "urn:ngm:class:corporate-tax-compliance-framework",
+        "label": "International Tax Compliance"
+      },
+      {
+        "id": "urn:ngm:class:policy-harmonisation",
+        "label": "Policy Harmonisation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:common-reporting-standard",
+        "label": "Common Reporting Standard"
+      },
+      {
+        "id": "urn:ngm:class:global-minimum-tax",
+        "label": "Global Minimum Tax"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:world-trade-organization",
         "label": "World Trade Organization"
       },
       {
-        "id": "urn:ngm:class:international-monetary-fund",
+        "id": "urn:ngm:class:imf",
         "label": "International Monetary Fund"
       }
     ],
@@ -71,6 +113,10 @@
       {
         "id": "urn:ngm:class:statistics",
         "label": "Comparative Statistics"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Comparative Statistics"
       }
     ],
     "supports": [
@@ -85,15 +131,28 @@
       {
         "id": "urn:ngm:class:digital-economy",
         "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-domain",
+        "label": "Regulatory Domain"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:g20",
         "label": "G20"
+      },
+      {
+        "id": "urn:ngm:class:oecd-council",
+        "label": "OECD Council"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:international-governance-institutions",
+        "label": "International Governance Institutions"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:fatf",
@@ -106,6 +165,10 @@
       {
         "id": "urn:ngm:class:financial-stability-board",
         "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       }
     ]
   },
@@ -228,6 +291,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -308,6 +375,10 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
@@ -316,16 +387,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
       "label": "Node-Based Diffusion Pipeline Interface"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai-pipeline",
+      "label": "Generative AI Pipeline"
+    },
+    {
+      "id": "urn:ngm:class:node-based-visual-programming",
+      "label": "Node-Based Visual Programming"
+    },
+    {
+      "id": "urn:ngm:class:workflow-execution-engine",
+      "label": "Workflow Execution Engine"
+    },
+    {
+      "id": "urn:ngm:class:inference-orchestration-system",
+      "label": "Inference Orchestration System"
+    },
+    {
+      "id": "urn:ngm:class:diffusion-model-interface",
+      "label": "Diffusion Model Interface"
     }
   ],
   "entityType": "Class",
@@ -24,6 +44,46 @@
       {
         "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
+      },
+      {
+        "id": "urn:ngm:class:workflow-node",
+        "label": "Workflow Node"
+      },
+      {
+        "id": "urn:ngm:class:node-link",
+        "label": "Node Link"
+      },
+      {
+        "id": "urn:ngm:class:latent-tensor",
+        "label": "Latent Tensor"
+      },
+      {
+        "id": "urn:ngm:class:ksampler",
+        "label": "KSampler"
+      },
+      {
+        "id": "urn:ngm:class:checkpointloader",
+        "label": "CheckpointLoader"
+      },
+      {
+        "id": "urn:ngm:class:vaedecode",
+        "label": "VAEDecode"
+      },
+      {
+        "id": "urn:ngm:class:cliptextencode",
+        "label": "CLIPTextEncode"
+      },
+      {
+        "id": "urn:ngm:class:controlnet-node",
+        "label": "ControlNet Node"
+      },
+      {
+        "id": "urn:ngm:class:lora-loader",
+        "label": "LoRA Loader"
+      },
+      {
+        "id": "urn:ngm:class:workflow-json-format",
+        "label": "Workflow JSON Format"
       }
     ],
     "requires": [
@@ -80,16 +140,106 @@
       {
         "id": "urn:ngm:class:style-transfer",
         "label": "Style Transfer"
+      },
+      {
+        "id": "urn:ngm:class:image-to-image",
+        "label": "Image-to-Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-upscaling",
+        "label": "Image Upscaling"
+      },
+      {
+        "id": "urn:ngm:class:face-restoration",
+        "label": "Face Restoration"
+      },
+      {
+        "id": "urn:ngm:class:lora-stacking",
+        "label": "LoRA Stacking"
+      },
+      {
+        "id": "urn:ngm:class:latent-upscaling",
+        "label": "Latent Upscaling"
+      },
+      {
+        "id": "urn:ngm:class:batch-image-processing",
+        "label": "Batch Image Processing"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Image Model"
+      },
+      {
+        "id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "id": "urn:ngm:class:sdxl",
+        "label": "SDXL"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:vae-encoder",
+        "label": "VAE Encoder"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:directed-acyclic-graph-execution",
         "label": "Directed Acyclic Graph Execution"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model-inference",
+        "label": "Diffusion Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion-pipeline",
+        "label": "Latent Diffusion Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:workflow-serialisation",
+        "label": "Workflow Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:api-server-protocol",
+        "label": "API Server Protocol"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:automatic-1111-web-ui",
+        "label": "AUTOMATIC1111 WebUI"
+      },
+      {
+        "id": "urn:ngm:class:invoke-ai",
+        "label": "InvokeAI"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Diffusers Library"
+      },
+      {
+        "id": "urn:ngm:class:fooocus",
+        "label": "Fooocus"
+      },
+      {
+        "id": "urn:ngm:class:draw-things",
+        "label": "Draw Things"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-infrastructure",
@@ -124,6 +274,14 @@
       {
         "id": "urn:ngm:class:web-socket-protocol",
         "label": "WebSocket Protocol"
+      },
+      {
+        "id": "urn:ngm:class:png-metadata-embedding",
+        "label": "PNG Metadata Embedding"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
       }
     ],
     "supports": [
@@ -158,12 +316,40 @@
       {
         "id": "urn:ngm:class:lo-ra",
         "label": "Lo RA"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:wan2-1-video",
+        "label": "Wan2.1 Video"
+      },
+      {
+        "id": "urn:ngm:class:real-esrgan",
+        "label": "ESRGAN Upscaling"
+      },
+      {
+        "id": "urn:ngm:class:gfpgan",
+        "label": "GFPGAN Face Restoration"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
         "label": "ComfyUI API Specification"
+      },
+      {
+        "id": "urn:ngm:class:comfy-org-github-organisation",
+        "label": "Comfy-Org GitHub Organisation"
+      },
+      {
+        "id": "urn:ngm:class:openart-workflow-registry",
+        "label": "OpenArt Workflow Registry"
+      },
+      {
+        "id": "urn:ngm:class:civitai-workflow-sharing",
+        "label": "Civitai Workflow Sharing"
       }
     ],
     "partOf": [],
@@ -282,7 +468,7 @@
         "label": "Normalising Flow"
       },
       {
-        "id": "urn:ngm:class:variational-autoencoder",
+        "id": "urn:ngm:class:vae",
         "label": "Variational Autoencoder"
       }
     ],
@@ -374,6 +560,18 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "implements": [
@@ -384,6 +582,30 @@
       {
         "id": "urn:ngm:class:execution-model",
         "label": "Dataflow Execution Model"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
       }
     ],
     "contrastsWith": [
@@ -396,8 +618,16 @@
         "label": "Supervised Learning"
       },
       {
+        "id": "urn:ngm:class:imperative-inference-script",
+        "label": "Imperative Inference Script"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -418,12 +648,20 @@
         "label": "Visual Effects Node Graph"
       },
       {
+        "id": "urn:ngm:class:shader-graph",
+        "label": "Shader Graph"
+      },
+      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -444,7 +682,7 @@
         "label": "Latent Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:lora-adapter",
+        "id": "urn:ngm:class:lo-ra",
         "label": "LoRA Adapter"
       },
       {
@@ -468,6 +706,42 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-ai-toolchain",
+        "label": "Generative AI Toolchain"
       }
     ],
     "relatedTo": [
@@ -484,6 +758,14 @@
         "label": "Transformer"
       },
       {
+        "id": "urn:ngm:class:animatediff",
+        "label": "AnimateDiff"
+      },
+      {
+        "id": "urn:ngm:class:dataflow-programming",
+        "label": "Dataflow Programming"
+      },
+      {
         "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
@@ -494,14 +776,6 @@
       {
         "id": "urn:ngm:class:node-graph-visual-programming-interface",
         "label": "Visual Programming Environment"
-      },
-      {
-        "id": "urn:ngm:class:open-source-software",
-        "label": "Open Source Software"
-      },
-      {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
       }
     ]
   },

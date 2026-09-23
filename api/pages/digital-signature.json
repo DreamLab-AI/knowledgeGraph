@@ -8,8 +8,20 @@
   "definition": "A Digital Signature is a cryptographic primitive consisting of three probabilistic polynomial-time algorithms (KeyGen, Sign, Verify) operating over an asymmetric keypair (sk, pk) such that, for any message m drawn from the message space M, Sign(sk, m) produces a signature \u03c3 that Verify(pk, m,...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "id": "urn:ngm:class:cryptographic-primitive",
       "label": "Cryptographic Primitive"
+    },
+    {
+      "id": "urn:ngm:class:asymmetric-cryptography",
+      "label": "Asymmetric Cryptography"
+    },
+    {
+      "id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism"
+    },
+    {
+      "id": "urn:ngm:class:public-key-cryptosystem",
+      "label": "Public-Key Cryptosystem"
     }
   ],
   "entityType": "Class",
@@ -40,6 +52,22 @@
       {
         "id": "urn:ngm:class:public-key",
         "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signing",
+        "label": "Signing Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:verification-algorithm",
+        "label": "Verification Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:signature-value",
+        "label": "Signature Value"
+      },
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Random Nonce"
       }
     ],
     "requires": [
@@ -56,8 +84,16 @@
         "label": "Hash Function"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generator",
+        "label": "Cryptographically Secure Random Number Generator"
+      },
+      {
+        "id": "urn:ngm:class:trusted-key-distribution",
+        "label": "Trusted Key Distribution"
       }
     ],
     "enables": [
@@ -88,9 +124,38 @@
       {
         "id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:document-signing",
+        "label": "Document Signing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Software Supply Chain Integrity"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-theory",
+        "label": "Elliptic Curve Theory"
+      },
+      {
+        "id": "urn:ngm:class:lattice-cryptography",
+        "label": "Lattice Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
+      },
+      {
+        "id": "urn:ngm:class:random-oracle-model",
+        "label": "Random Oracle Model"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:discrete-logarithm-problem",
@@ -103,9 +168,50 @@
       {
         "id": "urn:ngm:class:lattice-cryptography",
         "label": "Lattice Trapdoor"
+      },
+      {
+        "id": "urn:ngm:class:existential-unforgeability",
+        "label": "Existential Unforgeability"
+      },
+      {
+        "id": "urn:ngm:class:euf-cma-security",
+        "label": "EUF-CMA Security"
+      },
+      {
+        "id": "urn:ngm:class:integer-factorisation-problem",
+        "label": "Integer Factorisation Problem"
+      },
+      {
+        "id": "urn:ngm:class:lattice-cryptography",
+        "label": "Lattice Trapdoor"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:hash-based-commitment",
+        "label": "Hash-Based Commitment"
+      },
+      {
+        "id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-authenticator",
+        "label": "Symmetric Authenticator"
+      },
+      {
+        "id": "urn:ngm:class:wet-signature",
+        "label": "Wet Signature"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:asymmetric-cryptography",
@@ -140,6 +246,14 @@
       {
         "id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:base58-encoding",
+        "label": "Base58 Encoding"
+      },
+      {
+        "id": "urn:ngm:class:der-encoding",
+        "label": "DER Encoding"
       }
     ],
     "supports": [
@@ -162,6 +276,18 @@
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:openpgp",
+        "label": "OpenPGP"
+      },
+      {
+        "id": "urn:ngm:class:eidas-qes",
+        "label": "eIDAS QES"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-authorisation",
+        "label": "Smart Contract Authorisation"
       }
     ],
     "standardizedBy": [
@@ -200,6 +326,14 @@
       {
         "id": "urn:ngm:class:rfc-8032",
         "label": "RFC 8032"
+      },
+      {
+        "id": "urn:ngm:class:ansi-x9",
+        "label": "ANSI X9"
+      },
+      {
+        "id": "urn:ngm:class:fips-204",
+        "label": "FIPS 204"
       }
     ],
     "partOf": [],
@@ -228,9 +362,49 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication",
+      "slug": "authentication"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:identity-and-access-management",
+      "label": "Identity and Access Management",
+      "slug": "identity-and-access-management"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -240,24 +414,8 @@
         "label": "Asymmetric Encryption"
       },
       {
-        "id": "urn:ngm:class:cryptographic-commitment",
-        "label": "Cryptographic Commitment"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:elliptic-curve-cryptography",
-        "label": "Elliptic Curve Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:merkle-tree",
-        "label": "Merkle Tree"
-      },
-      {
-        "id": "urn:ngm:class:public-key-cryptography",
-        "label": "Public-Key Cryptography"
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
       },
       {
         "id": "urn:ngm:class:random-number-generation",
@@ -266,60 +424,384 @@
       {
         "id": "urn:ngm:class:symmetric-encryption",
         "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-pair",
+        "label": "Key Pair"
+      },
+      {
+        "id": "urn:ngm:class:challenge-response-protocol",
+        "label": "Challenge-Response Protocol"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-standard",
+        "label": "Credential"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:trapdoor-function",
+        "label": "Trapdoor Function"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:secure-channel",
+        "label": "Secure Channel"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:encryption-scheme",
+        "label": "Encryption Scheme"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:rsa",
+        "label": "RSA"
+      },
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2 WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-cryptography",
+        "label": "Symmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      },
+      {
+        "id": "urn:ngm:class:network-access-control",
+        "label": "Network Access Control"
+      },
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "id": "urn:ngm:class:biometric-data",
+        "label": "Biometric Data"
+      },
+      {
+        "id": "urn:ngm:class:one-time-password",
+        "label": "One-Time Password"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-53",
+        "label": "NIST SP 800-53"
+      },
+      {
+        "id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:security-protocol",
+        "label": "Security Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
       {
         "id": "urn:ngm:class:homomorphic-encryption",
         "label": "Homomorphic Encryption"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
       }
     ]
   },

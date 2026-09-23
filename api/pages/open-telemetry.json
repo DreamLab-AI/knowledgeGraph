@@ -85,13 +85,13 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "id": "urn:ngm:class:cncf",
         "label": "Cloud Native Computing Foundation"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "id": "urn:ngm:class:cncf",
         "label": "Cloud Native Computing Foundation"
       }
     ],
@@ -233,6 +233,10 @@
         "label": "Logging System"
       },
       {
+        "id": "urn:ngm:class:tracing-system",
+        "label": "Tracing System"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
@@ -244,6 +248,10 @@
       },
       {
         "id": "urn:ngm:class:machine-learning-operations",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
         "label": "MLOps"
       },
       {
@@ -323,7 +331,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

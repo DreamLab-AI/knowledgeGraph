@@ -71,7 +71,7 @@
         "label": "Transmission Delay"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -93,8 +93,16 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:measurement-tools",
+        "label": "Measurement Tools"
+      },
+      {
         "id": "urn:ngm:class:monitoring-system",
         "label": "Monitoring System"
+      },
+      {
+        "id": "urn:ngm:class:timestamp-synchronization",
+        "label": "Timestamp Synchronization"
       },
       {
         "id": "urn:ngm:class:network-infrastructure",
@@ -105,24 +113,16 @@
         "label": "Network Protocol"
       },
       {
+        "id": "urn:ngm:class:traffic-classification",
+        "label": "Traffic Classification"
+      },
+      {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity and Access Management"
       },
       {
         "id": "urn:ngm:class:network-security",
         "label": "Network Security"
-      },
-      {
-        "id": "urn:ngm:class:physical-layer",
-        "label": "Physical Layer"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
       }
     ],
     "enables": [
@@ -131,8 +131,20 @@
         "label": "Performance Optimization"
       },
       {
+        "id": "urn:ngm:class:quality-assessment",
+        "label": "Quality Assessment"
+      },
+      {
         "id": "urn:ngm:class:real-time-control",
         "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:sla-monitoring",
+        "label": "SLA Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-tuning",
+        "label": "User Experience Tuning"
       },
       {
         "id": "urn:ngm:class:latency-aware-edge-ai",
@@ -145,18 +157,6 @@
       {
         "id": "urn:ngm:class:real-time",
         "label": "Real Time"
-      },
-      {
-        "id": "urn:ngm:class:service-level-agreement",
-        "label": "Service Level Agreement"
-      },
-      {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
       }
     ],
     "dependsOn": [
@@ -177,20 +177,30 @@
         "label": "Physical Layer"
       },
       {
+        "id": "urn:ngm:class:processing-delay",
+        "label": "Processing Delay"
+      },
+      {
+        "id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      },
+      {
         "id": "urn:ngm:class:routing-protocol",
         "label": "Routing Protocol"
       },
       {
         "id": "urn:ngm:class:packet-switching",
         "label": "Packet Switching"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:differentiated-services",
+        "label": "Differentiated Services"
       },
       {
-        "id": "urn:ngm:class:power-infrastructure",
-        "label": "Power Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:telecommunications-infrastructure",
-        "label": "Telecommunications Infrastructure"
+        "id": "urn:ngm:class:integrated-services",
+        "label": "Integrated Services"
       }
     ],
     "contrastsWith": [
@@ -201,6 +211,10 @@
       {
         "id": "urn:ngm:class:throughput",
         "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:best-effort-delivery",
+        "label": "Best-Effort Delivery"
       },
       {
         "id": "urn:ngm:class:overlay-network",
@@ -246,6 +260,14 @@
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:admission-control",
+        "label": "Admission Control"
+      },
+      {
+        "id": "urn:ngm:class:queuing-discipline",
+        "label": "Queuing Discipline"
+      },
       {
         "id": "urn:ngm:class:traffic-shaping",
         "label": "Traffic Shaping"
@@ -323,7 +345,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {

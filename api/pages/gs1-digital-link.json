@@ -75,7 +75,7 @@
         "label": "Interoperability"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -248,6 +248,14 @@
         "label": "Just-In-Time Manufacturing"
       },
       {
+        "id": "urn:ngm:class:value-chain-management",
+        "label": "Value Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
       }
@@ -266,12 +274,16 @@
         "label": "AI Agent"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
       },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
@@ -288,11 +300,15 @@
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -310,13 +326,13 @@
       {
         "id": "urn:ngm:class:conflict-free-replicated-data-type",
         "label": "Conflict-Free Replicated Data Type"
-      },
-      {
-        "id": "urn:ngm:class:end-to-end-encryption",
-        "label": "End-to-End Encryption"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:automated-identification",
+        "label": "Automated Identification"
+      },
       {
         "id": "urn:ngm:class:digital-product-passport",
         "label": "Digital Product Passport"
@@ -348,7 +364,21 @@
         "label": "ISO 28000"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:global-standards-infrastructure",
+        "label": "Global Standards Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:operations-management",
+        "label": "Operations Management"
+      }
+    ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:healthcare-supply-chain",
+        "label": "Healthcare Supply Chain"
+      },
       {
         "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimization"
@@ -356,6 +386,10 @@
       {
         "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:retail-technology",
+        "label": "Retail Technology"
       },
       {
         "id": "urn:ngm:class:supply-chain",
@@ -372,14 +406,6 @@
       {
         "id": "urn:ngm:class:resilience-engineering",
         "label": "Resilience Engineering"
-      },
-      {
-        "id": "urn:ngm:class:trade-compliance",
-        "label": "Trade Compliance"
-      },
-      {
-        "id": "urn:ngm:class:asynchronous-collaboration",
-        "label": "Asynchronous Collaboration"
       }
     ]
   },

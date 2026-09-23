@@ -43,12 +43,20 @@
       {
         "id": "urn:ngm:class:low-latency",
         "label": "Low-Latency Serving"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low-Latency Serving"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:deep-learning-framework",
         "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA Toolkit"
       },
       {
         "id": "urn:ngm:class:cuda",
@@ -83,6 +91,10 @@
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:robotics-inference",
+        "label": "Robotics Inference"
       }
     ],
     "uses": [
@@ -127,6 +139,14 @@
       {
         "id": "urn:ngm:class:tensor-flow",
         "label": "TensorFlow"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-corporation-jetson",
+        "label": "Jetson"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
       },
       {
         "id": "urn:ngm:class:nvidia-corporation-jetson",
@@ -188,7 +208,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {
@@ -294,6 +314,22 @@
       {
         "id": "urn:ngm:class:spatial-ai",
         "label": "Spatial AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

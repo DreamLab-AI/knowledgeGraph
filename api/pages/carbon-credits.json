@@ -42,6 +42,10 @@
       {
         "id": "urn:ngm:class:additionality",
         "label": "Additionality"
+      },
+      {
+        "id": "urn:ngm:class:measurement-reporting-and-verification",
+        "label": "Measurement Reporting and Verification"
       }
     ],
     "enables": [
@@ -52,6 +56,14 @@
       {
         "id": "urn:ngm:class:carbon-accounting",
         "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Strategy"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions Reporting"
       },
       {
         "id": "urn:ngm:class:net-zero-targets",
@@ -89,7 +101,7 @@
         "label": "Blockchain Tokenisation"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -109,6 +121,10 @@
       {
         "id": "urn:ngm:class:remote-sensing",
         "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
       }
     ],
     "supports": [
@@ -137,6 +153,10 @@
       {
         "id": "urn:ngm:class:paris-agreement-article-6",
         "label": "Article 6 Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:paris-agreement-article-6",
+        "label": "Article 6 Paris Agreement"
       }
     ],
     "partOf": [
@@ -147,6 +167,10 @@
       {
         "id": "urn:ngm:class:emissions-trading-scheme",
         "label": "Emissions Trading Scheme"
+      },
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Market"
       }
     ],
     "relatedTo": [
@@ -296,7 +320,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

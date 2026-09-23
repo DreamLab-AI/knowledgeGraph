@@ -24,12 +24,20 @@
       {
         "id": "urn:ngm:class:technical-committee",
         "label": "Technical Committee"
+      },
+      {
+        "id": "urn:ngm:class:iso-high-level-structure",
+        "label": "ISO High Level Structure"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:consensus-process",
         "label": "Consensus Process"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "National Standards Body"
       },
       {
         "id": "urn:ngm:class:standards-body",
@@ -48,10 +56,23 @@
       {
         "id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:mutual-recognition-agreement",
+        "label": "Mutual Recognition Agreement"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:voluntary-standard",
+        "label": "Voluntary Standard"
+      },
+      {
+        "id": "urn:ngm:class:management-system-standard",
+        "label": "Management System Standard"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ieee",
@@ -78,6 +99,10 @@
       {
         "id": "urn:ngm:class:cybersecurity-framework",
         "label": "Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
       }
     ],
     "uses": [
@@ -119,6 +144,10 @@
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "International Standards Ecosystem"
+      },
       {
         "id": "urn:ngm:class:standards",
         "label": "International Standards Ecosystem"
@@ -166,6 +195,10 @@
         "label": "Conformance Test Suite"
       },
       {
+        "id": "urn:ngm:class:technical-working-group",
+        "label": "Technical Working Group"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
@@ -184,10 +217,6 @@
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property Rights Framework"
-      },
-      {
-        "id": "urn:ngm:class:legal-framework",
-        "label": "Legal Framework"
       }
     ],
     "requires": [
@@ -332,6 +361,10 @@
         "label": "Governance"
       },
       {
+        "id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
+      },
+      {
         "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
       }
@@ -362,7 +395,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

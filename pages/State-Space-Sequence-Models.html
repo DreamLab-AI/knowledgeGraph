@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>State Space Sequence Models</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="State Space Sequence Models"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="State Space Sequence Models"/><meta name="twitter:description" content="State Space and Other Approaches encompasses structured state space models (SSMs) and related sequence modelling architectures, most notably the Mamba family, which apply selective state-space mechanisms to achieve linear-time sequence processing."/><meta property="og:description" content="State Space and Other Approaches encompasses structured state space models (SSMs) and related sequence modelling architectures, most notably the Mamba family, which apply selective state-space mechanisms to achieve linear-time sequence processing."/><meta property="og:image:alt" content="State Space and Other Approaches encompasses structured state space models (SSMs) and related sequence modelling architectures, most notably the Mamba family, which apply selective state-space mechanisms to achieve linear-time sequence processing."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/State-Space-Sequence-Models"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/State-Space-Sequence-Models"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="State Space and Other Approaches encompasses structured state space models (SSMs) and related sequence modelling architectures, most notably the Mamba family, which apply selective state-space mechanisms to achieve linear-time sequence processing."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/State-Space-Sequence-Models"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-7304"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-7304" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>State Space Sequence Models</a></div></nav><h1 class="article-title">State Space Sequence Models</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.784Z">23 Sept 2026</time><span>19 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:state-space-sequence-models</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>infrastructure</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Computing-and-Cloud" class="internal">Computing and Cloud</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Mixture-of-Experts-Architecture" class="internal">Mixture-of-Experts Architecture</a></li><li><a href="../pages/Recurrent-Neural-Network" class="internal">Recurrent Neural Network</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Transformer" class="internal">Transformer</a></li><li><a href="../pages/Transformer-Architecture" class="internal">Transformer Architecture</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:4a4b48f3167a7fc6e262790159a8aaf11c16fea61e124ae019fd443d2bece332</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Neural-Rendering" class="internal">Neural Rendering</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Machine-Learning-Discipline" class="internal">Machine Learning Discipline</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>State Space and Other Approaches encompasses structured state space models (SSMs) and related sequence modelling architectures, most notably the Mamba family, which apply selective state-space mechanisms to achieve linear-time sequence processing. These approaches offer a compelling alternative to Transformers by combining efficient recurrence with hardware-aware algorithms, enabling superior throughput on long sequences across language, vision, and genomics domains.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h1 id="mamba-linear-time-sequence-modelling-with-selective-state-spaces">Mamba: Linear-Time Sequence Modelling with Selective State Spaces<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mamba-linear-time-sequence-modelling-with-selective-state-spaces" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code>- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/pdf/2312.00752.pdf)
+- **Research Design &amp; Rationale**: The study introduces a new architecture, Mamba, which incorporates a selection mechanism and hardware-aware computation into structured state space models.
+- **Significance**: Addresses the inefficiency of Transformer models with a novel architecture that scales linearly and achieves superior performance.
+- **Real-world Implications**: Potential to improve a wide range of applications in natural language processing, bioinformatics, and other areas where sequence data is prevalent.
+- **Takeaways**: Mamba architecture improves upon structured state space models (SSMs) by adding selectivity and hardware-aware algorithms, achieving linear-time modeling with high-quality performance across several modalities.
+- **Practical Implications**: Provides a more efficient alternative to Transformers, especially beneficial for long sequence data.
+- **Potential Impact**: Could influence future developments in sequence modeling and foundational models across various domains.
+- **Abstract in a nutshell**: Mamba is a novel architecture for sequence modeling that enhances structured state space models (SSMs) with selective mechanisms and hardware-aware algorithms, achieving superior performance and efficiency.
+- **Gap/Need**: Traditional Transformer models have significant computational inefficiency, especially for long sequences. Mamba addresses this by incorporating a selection mechanism and hardware-aware computation in SSMs.
+- **Innovation**: Introduces a selection mechanism in SSMs, allowing input-dependent parameterization and a simplified architecture without attention or MLP blocks, enabling linear-time computation with maintained or enhanced performance.
+- &quot;Mamba enjoys fast inference (5× higher throughput than Transformers) and linear scaling in sequence length and its performance improves on real data up to million-length sequences.&quot;
+- **&quot;This class of models can be computed very efficiently as either a recurrence or convolution with linear or near-linear scaling in sequence length.&quot;**
+- &quot;Selective SSMs and by extension the Mamba architecture are fully recurrent models with key properties that make them suitable as the backbone of general foundation models operating on sequences.&quot;
+- **How does Mamba achieve linear-time modeling?**: By introducing a selection mechanism in structured state space models and designing a hardware-aware algorithm that avoids materializing expanded states, thereby enhancing computational efficiency.
+- **What improvements does Mamba offer over traditional models?**: It achieves faster inference, linear scaling with sequence length, and competitive or superior performance across various data modalities including language, audio, and genomics.
+- **Can Mamba handle long sequences efficiently?**: Yes, it is specifically designed to address the computational inefficiencies of traditional models like Transformers in handling long sequences, offering linear scaling and improved performance.
+- Mamba outperforms Transformers of the same size in language modelling and matches Transformers twice its size both in pretraining and downstream evaluation, demonstrating its efficiency and effectiveness.
+- **Authors' Views**: The authors propose Mamba as a significant step forward in sequence modeling, addressing the inefficiency of Transformers while maintaining or improving performance.
+- **Comparative Analysis**: Mamba is positioned as superior to existing models, particularly Transformers, in terms of efficiency and scalability
+</code></pre>
+</li>
+<li>
+<p>Over 30 new papers and projects since original Mamba paper, with new ones coming out every 1-2 days</p>
+</li>
+<li>
+<p>60% of papers address vision/image processing, 25% natural language, and the rest cover various applications</p>
+</li>
+<li>
+<p>80% of papers modified the original Mamba architecture in some way</p>
+</li>
+<li>
+<p>73% of papers reported state-of-the-art results (though not independently verified yet)</p>
+</li>
+<li>
+<p>Handling of state in Mamba architecture is not always clear in papers, more research needed</p>
+</li>
+<li>
+<p>Swapping out selective state space portion of Mamba in MoE architectures could be an interesting avenue to explore</p>
+</li>
+<li>
+<p>Infrastructure and capital advantages for big tech incumbents in deploying large-scale MoE models
+- Mamba can do in-context learning, gradually optimizing internal representations through layers
+- Similar pattern to Transformers: elevation of concepts and more accurate activations through layers, then collapse at final prediction
+- Mamba learns rules of Othello from just a sequence of moves, achieving higher board accuracy than OthelloGPT
+- More data efficient, but becomes less accurate as game progresses and requires longer training than same-sized Transformer
+- Mamba outperforms Transformers on tasks with irrelevance and noise
+- Mamba struggles with high-precision memory recall compared to Transformers
+- Hybrid MambaFormer model outperforms both Transformer and Mamba on various evaluation tasks
+- Major force driving frontier models (e.g., GPT-4, Gemini 1.5)
+- MoE-Mamba (MoE-Mamba) achieved same loss as original Mamba with 2.2x less training steps, scaling up to 32 experts
+- BlackMamba scaled up to 2.8B parameters and 8 experts, with generation latency well below Transformer, Transformer MoE, and Mamba</p>
+</li>
+<li>
+<h1 id="vision-mamba">Vision Mamba<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vision-mamba" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code>- Majority of Mamba papers (over 60%) address vision/image processing, especially biomedical image segmentation
+- Key themes:
+	- Representing data as sequences is crucial
+	- Images are not inherently sequential like language, music, or DNA
+	- Multi-scan approaches enable handling non-sequential data
+	- Hybrid architectures leverage strengths of different models
+- Open questions and challenges:
+	- Scaling to larger models and datasets
+	- Developing state regularization methods
+	- Integrating Mamba with other architectural advances (e.g., memory tokens)
+- Potential for transformative impact, especially in biology and vision applications
+- Approaches:
+	- U-Mamba (U-Mamba): Hybrid CNN-SSM architecture outperforming CNN and Transformers in biomedical image segmentation
+	- Swin-UMamba (Swin-UMamba): Combines Mamba with ImageNet pre-training, outperforms U-Mamba
+	- Vision Mamba: Bidirectional (forward and backward) scanning for learning visual representations
+	- VMamba: Four-way &quot;cross-scan&quot; starting at each corner, combining representations
+	- VM-UNet (VM-UNet): Applies VMamba's four-way scan to medical image segmentation
+	- Mamba-ND: Multi-dimensional sequencing for video and weather data, using sequential SSMs
+	- SegMamba: 3D image segmentation with three-way scan, handling long sequences
+	- Vivim: Three-way scan for video
+	- MambaMorph: Aligns two input images by generating deformation field
+- Key insights:
+	- Turning images into sequences is crucial, can be done through multi-scan approaches
+	- Combining scans sequentially may be more effective than parallel
+	- Mamba enables memory-efficient processing of high-resolution images, promising for edge applications (e.g., robotics)
+</code></pre>
+</li>
+<li>
+<h1 id="mixture-of-experts-moe-architectures">Mixture of Experts (MoE) Architectures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mixture-of-experts-moe-architectures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code>- Major force in frontier models (GPT-4, Gemini 1.5)
+- MoE-Mamba and BlackMamba demonstrate MoE's effectiveness with Mamba
+- Open questions around scaling and infrastructure requirements for large-scale MoE-Mamba models
+- [Introducing Jamba: AI21's Groundbreaking SSM-Transformer Model](https://www.ai21.com/blog/announcing-jamba)
+</code></pre>
+</li>
+<li>
+<h1 id="long-context-modeling">Long Context Modeling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#long-context-modeling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code>- LongMamba (LongMamba): Generalizes to 40k tokens after training on 16k, nearly perfect on &quot;needle in a haystack&quot; task
+- Evo: Models long DNA sequences, learning a &quot;cell model&quot; analogous to language models' &quot;world model&quot;
+- Potential challenges:
+	- Eventual &quot;rotting&quot; of internal states with extreme context lengths
+	- Need for state regularization or &quot;pruning&quot; to maintain performance
+- Implications for biology: Foundation models could revolutionize drug discovery and biological research
+</code></pre>
+</li>
+<li>
+<h1 id="potential-applications">Potential Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#potential-applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code>	- To approach the problem of using Mamba to analyze space-acquired time series image-based climate data from multi-spectrum sensors, we can draw upon several techniques and architectures discussed in the Mamba literature. Here's a proposed approach:
+		- Data Preprocessing:
+			- Combine multi-spectrum sensor data:
+				- Use techniques like MambaMorph to align and merge data from different sensors
+				- Generate deformation fields to spatially align images from various sources
+		- Normalize data to ensure consistent scales and ranges across sensors
+			- Temporal alignment:
+				- Use techniques like dynamic time warping (DTW) to align time series data temporally
+				- Handle missing data points and inconsistent sampling frequencies
+		- Create a unified temporal grid for all data sources
+			- Incorporate historical data:
+				- Preprocess and align historical records (e.g., weather station data, satellite imagery) with the space-acquired data
+				- Use techniques like transfer learning or domain adaptation to handle differences in data modalities and distributions
+		- Mamba Architecture:
+			- Multi-dimensional sequencing (Mamba-ND):
+				- Treat the aligned and preprocessed data as a multi-dimensional sequence (e.g., spatial dimensions, time, and spectral channels)
+				- Apply Mamba-ND to capture dependencies across all dimensions
+			- Cross-scanning (VMamba or SegMamba):
+				- Perform multi-directional scans (e.g., four-way or three-way) to capture spatial dependencies
+				- Combine the representations from different scans to obtain a comprehensive understanding of the data
+			- Hybrid architectures (U-Mamba or Swin-UMamba):
+				- Incorporate convolutional layers (CNN) for local feature extraction
+				- Use Mamba layers for capturing long-range dependencies and global context
+	- Leverage pre-training on large-scale datasets (e.g., ImageNet) to improve performance
+	  high-level diagram of the proposed approach using Mermaid:
+	- ```mermaid
+	  graph TD
+	      A[Multi-spectrum Sensor Data] --> B{Data Preprocessing}
+	      C[Historical Data] --> B
+	      subgraph Data Preprocessing
+	          B --> D[Combine Multi-spectrum Data]
+	          B --> E[Temporal Alignment]
+	          B --> F[Incorporate Historical Data]
+	          D --> G[MambaMorph for Alignment]
+	          D --> H[Generate Deformation Fields]
+	          D --> I[Normalize Data]
+	          E --> J[Dynamic Time Warping]
+	          E --> K[Handle Missing Data]
+	          E --> L[Create Unified Temporal Grid]
+	          F --> M[Align Historical Records]
+	          F --> N[Transfer Learning/Domain Adaptation]
+	      end
+	      B --> O{Mamba Architecture}
+	      subgraph Mamba Architecture
+	          O --> P[Multi-dimensional Sequencing]
+	          O --> Q[Cross-scanning]
+	          O --> R[Hybrid Architectures]
+	          P --> S[Mamba-ND]
+	          P --> T[Capture Dependencies Across Dimensions]
+	          Q --> U[VMamba/SegMamba]
+	          Q --> V[Multi-directional Scans]
+	          Q --> W[Combine Scan Representations]
+	          R --> X[U-Mamba/Swin-UMamba]
+	          R --> Y[Convolutional Layers for Local Features]
+	          R --> Z[Mamba Layers for Long-range Dependencies]
+	          R --> AA[Pre-training on Large-scale Datasets]
+	      end
+	      O --> AB[Comprehensive Data Representation]
+	      AB --> AC[Predictive Component]
+	      AB --> AD[Up-to-date Data vs. Historical Context]
+	      subgraph Additional Considerations
+	          AE[Handle Data Quality Issues]
+	          AF[Incorporate Domain Knowledge]
+	          AG[Leverage Transfer Learning]
+	          AH[Evaluate Model Performance]
+	          AI[Interpret and Visualize Representations]
+	      end
+	      AC --> AJ{Output Formats}
+	      AJ --> AK[Short-term Forecasts]
+	      AJ --> AL[Long-term Projections]
+	      AE --> AB
+	      AF --> AB
+	      AG --> AB
+	      AH --> AB
+	      AI --> AB
+	   ```
+		- TODO What are the specific ontologies being used (e.g., RDF, OWL)?
+		- TODO Are there any domain-specific requirements or constraints to consider?
+		- TODO What are the desired output tasks (e.g., ontology alignment, knowledge graph completion, semantic similarity)?
+		- TODO How large and complex are the ontological graphs being analyzed?
+		- TODO Handling scalability issues for large-scale ontological graphs
+		- TODO Incorporating domain knowledge and ontology-specific constraints
+		- TODO Leveraging transfer learning from pre-trained models on similar ontological graphs
+		- TODO Evaluating the model's performance using appropriate graph-based metrics and validation techniques
+		- TODO Interpreting and visualizing the learned graph representations for ontology engineers and domain experts
+</code></pre>
+</li>
+<li>
+<p><a href="https://www.statespace.info/" class="external">https://www.statespace.info/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>  Lots of tracked projects here. This is the best place.</p>
+</li>
+<li>
+<p>Can use the <a href="https://huggingface.co/docs/accelerate/usage_guides/fsdp" class="external">https://huggingface.co/docs/accelerate/usage_guides/fsdp<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> for sharded training</p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/2401.04081" class="external">[2401.04081] MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts (arxiv.org)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://github.com/havenhq/mamba-chat" class="external">havenhq/mamba-chat: Mamba-Chat: A chat LLM based on the state-space model architecture 🐍 (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/2401.13660" class="external">[2401.13660] MambaByte: Token-free Selective State Space Model (arxiv.org)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> doesn’t need tokens!!</p>
+</li>
+<li>
+<h1 id="kolmogorov-arnold-networks-kans">Kolmogorov-Arnold Networks (KANs)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#kolmogorov-arnold-networks-kans" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p>A novel type of neural network architecture that has recently gained attention in the field of artificial intelligence. Here are the key points about KANs:</p>
+</li>
+<li>
+<p>Inspiration and design:
+- KANs are inspired by the Kolmogorov-Arnold representation theorem from the 1950s<a href="https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a href="https://arxiv.org/html/2404.19756v4" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+- Unlike traditional Multi-Layer Perceptrons (MLPs) that have fixed activation functions on nodes, KANs have learnable activation functions on edges<a href="https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a href="https://arxiv.org/html/2404.19756v4" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+</li>
+<li>
+<p>Key differences from MLPs:
+- KANs replace linear weights with univariate functions parametrized as splines<a href="https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+- They have no linear weights at all - every weight parameter is a learnable univariate function<a href="https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+</li>
+<li>
+<p>Potential advantages:
+- Improved accuracy: Smaller KANs can achieve comparable or better accuracy than larger MLPs in data fitting and PDE solving<a href="https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+- Better interpretability: KANs can be intuitively visualized and easily interact with human users<a href="https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+- Faster neural scaling laws: KANs potentially scale better than traditional neural networks<a href="https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a href="https://arxiv.org/html/2404.19756v4" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+</li>
+<li>
+<p>Applications:
+- KANs show promise in image processing, speech recognition, and financial modeling<a href="https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+- They have been used to help scientists (re)discover mathematical and physical laws<a href="https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+</li>
+<li>
+<p>Challenges:
+- KANs are more complex to design and implement than traditional neural networks<a href="https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+- They require specialized knowledge and are not yet widely adopted<a href="https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+- Training speed is currently slower (about 10 times) compared to MLPs of the same size<a href="https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+</li>
+<li>
+<p>Implementation:
+- A Python library called “pykan” is available for implementing KANs<a href="https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/" class="external"><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+4
+.
+While KANs show promising results and potential advantages over traditional neural networks, they are still in the early stages of development and research. Further studies and real-world applications are needed to fully understand their capabilities and limitations compared to established neural network architectures.</p>
+</li>
+<li>
+<h3 id="key-quotes">Key Quotes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-quotes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h2 id="quick-lit-survey--based-on-mamba-palooza">Quick lit survey.  (based on <a href="https://www.youtube.com/watch?v=Bg1LQ_jWliU" class="external">Mamba-Palooza<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#quick-lit-survey--based-on-mamba-palooza" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="mamba-learning-theory-and-interpretability">Mamba Learning Theory and Interpretability<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mamba-learning-theory-and-interpretability" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- ### In-Context Learning (Is Mamba Capable of In-Context Learning?)
+- ### Learning Rules from Sequences (Othello Mamba)
+- ### Strengths and Weaknesses (Can Mamba Learn How to Learn?)
+</code></pre>
+</li>
+<li>
+<h2 id="mixture-of-experts-moe-architectures-1">Mixture of Experts (MoE) Architectures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mixture-of-experts-moe-architectures-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- ## Climate Science?
+	- # Mamba2: A Deep Dive into Enhanced Efficiency and Scalability
+		- [Mamba2](https://arxiv.org/abs/2405.21060) represents a significant advancement in the realm of structured state space models (SSMs), cleverly marrying theoretical elegance with practical efficiency. Building upon the foundation laid by its predecessor, Mamba, this architecture tackles the inherent computational challenges of sequence modelling, particularly for long sequences, by introducing a series of innovations that leverage the power of modern hardware. This section delves into the technical intricacies of Mamba2, guided by the insights from the paper &quot;Transformers are SSMs: Generalised Models and Efficient Algorithms Through Structured State Space Duality&quot;.
+		- ## Bridging the Gap: SSMs, Attention, and Structured Matrices
+			- Before diving into the specifics of Mamba2, the paper establishes a crucial theoretical framework that connects three seemingly disparate concepts: structured state space models (SSMs), attention mechanisms, and structured matrices. This framework, termed &quot;structured state space duality&quot; (SSD), lays the groundwork for understanding the core innovations of Mamba2 and its relationship to existing sequence modelling paradigms.
+			- The paper reveals a fundamental truth about SSMs: they can be viewed as matrix transformations operating on input sequences. This insight reframes the computation of SSMs as a matrix multiplication problem, where the matrix itself exhibits a specific structure known as semiseparability. Semiseparable matrices are characterized by low-rank submatrices, a property that Mamba2 cleverly exploits for efficiency gains.
+			- A particularly important class of semiseparable matrices, the 1-semiseparable matrices, take center stage in understanding the efficiency of autoregressive sequence modelling. These matrices correspond to simple scalar recurrences, the building blocks of many efficient SSM algorithms. The paper demonstrates that the efficient computation of autoregressive attention, a crucial capability for language modelling, is intrinsically linked to the properties of semiseparable matrices.
+		- ## Mamba2's Core: The State Space Dual (SSD) Layer
+			- The heart of Mamba2 lies in the State Space Dual (SSD) layer, a refined core SSM layer that replaces the S6 layer from Mamba. This layer embodies the principle of sacrificing some expressivity for substantial gains in computational efficiency, achieved by:
+			- Unlike Mamba, which allows each element in the state vector to decay independently, Mamba2 groups these elements into chunks and applies the same decay factor to each chunk. This seemingly minor modification unlocks significant speedups by allowing the algorithm to leverage matrix multiplications, operations highly optimised on modern hardware like GPUs with their specialised tensor cores.
+			- The chunking strategy in the SSD layer allows Mamba2 to embrace the computational power of matrix multiplications. This shift away from element-wise operations, which are less efficient on modern hardware, results in substantial reductions in training time. The paper's benchmarks show the SSD algorithm to be 2-8x faster than Mamba's optimised selective scan implementation.
+			- While the reduced granularity of state decay in the SSD layer might appear to limit the model's expressivity, the paper argues that this can also be viewed as a form of inductive bias. By constraining the model's flexibility, the chunking strategy might actually guide it towards learning more generalisable representations, potentially improving performance on certain tasks.
+		- ## Beyond the SSD Layer: Architectural Enhancements
+			- Mamba2 goes beyond the SSD layer, incorporating architectural refinements inspired by the established techniques and understanding of attention mechanisms in Transformers:
+				- **Sequence Parallelism:** Mamba2 enables splitting the input sequence into smaller chunks and processing them concurrently across multiple devices. This technique is a natural extension of the block decomposition strategy used in the SSD algorithm, further enhancing efficiency for long sequences.
+				- **Tensor Parallelism:** The computationally intensive matrix multiplications within Mamba2 are distributed across multiple devices, accelerating training and paving the way for training even larger models. The Mamba2 block is specifically designed to minimise synchronisation points, reducing communication overhead and maximising parallel efficiency.
+				- **Parallel Parameter Projections:** Mamba2 streamlines the computation of SSM parameters (A, B, C, X) by computing them in parallel at the beginning of the block, a departure from Mamba's sequential approach. This simplification contributes to faster training and aligns better with parallelisation strategies commonly used in Transformers.
+				- **Extra Normalisation:** An additional normalisation layer, such as LayerNorm, GroupNorm, or RMSNorm, is strategically placed before the final output projection to enhance training stability. This addition proves especially beneficial for larger Mamba2 models, mitigating potential instabilities that can arise during training.
+		- ## Multi-head Patterns: Learning from Transformers
+			- Mamba2 leverages the concept of multi-head attention, a cornerstone of Transformer architectures, to create multiple &quot;heads&quot; of its sequence transformation. Each head operates on a portion of the input sequence with its own set of parameters, allowing the model to capture diverse aspects of the sequential data.
+			- The paper reveals a key difference between SSMs and Transformers in how they implement multi-head computations. Mamba2, like its predecessor, adopts a &quot;multi-value attention&quot; (MVA) pattern, where the expansion and contraction matrices (B and C) are shared across all heads. This pattern, a natural outcome of the SSM formulation, stands in contrast to the multi-query attention (MQA) pattern commonly used in Transformers. Empirical evidence suggests that the MVA pattern, unique to SSMs, might contribute to Mamba2's strong performance.
+		- ## Trade-offs, Potentials, and Open Questions
+			- Despite its advancements, Mamba2 is not without its trade-offs and areas for further exploration.
+			- While Mamba2 excels in training efficiency, its impact on inference speed remains an open question. This aspect is particularly crucial for real-world applications where fast inference is paramount. Further research is needed to investigate how to optimise Mamba2 specifically for inference, potentially through state size adjustments or by leveraging specialised hardware.
+			- The reduced expressivity of the SSD layer, a consequence of its chunking strategy, is an area that demands deeper understanding. While the paper offers a compelling argument for this as a form of inductive bias, a more detailed analysis is needed to ascertain its impact on specific tasks. Exploring whether this trade-off consistently yields benefits across diverse sequence modelling problems is a crucial direction for future research.
+			- The paper hints at the potential of hybrid architectures that combine the strengths of both SSD layers and attention mechanisms. Initial results suggest that a judicious blend of these two paradigms can lead to models that outperform both pure Transformer and pure Mamba2 architectures. Further research into the optimal balance and placement of these layers within a hybrid architecture is a promising avenue for achieving even better performance and efficiency.
+	- # Things to do
+		- TODO What is the spatial and temporal resolution of the space-acquired data?
+		- TODO How far back does the historical data go, and at what resolution?
+		- TODO Are there any specific climate variables or phenomena of interest (e.g., temperature, precipitation, extreme events)?
+		- TODO What is the desired output format for the predictive component (e.g., short-term forecasts, long-term projections)?
+		- TODO Handling data quality issues (e.g., cloud cover, sensor noise)
+		- TODO Incorporating domain knowledge (e.g., physical constraints, climate models)
+		- TODO Leveraging transfer learning from pre-trained models on similar datasets
+		- TODO Evaluating the model's performance using appropriate metrics and validation techniques
+		- TODO Interpreting and visualizing the learned representations for stakeholder communication
+- ## Ontological Layer for Metaverse
+	- To approach the problem of using Mamba to analyze formal ontological graphs as used by the W3C, we can draw upon several techniques and architectures discussed in the Mamba literature. Here's a proposed approach:
+	- Data Preprocessing:
+		- Graph Normalization:
+			- Ensure consistent formatting and structure of the ontological graphs
+			- Handle missing or inconsistent data
+			- Normalize node and edge labels
+		- Graph Merging:
+			- Combine multiple ontological graphs into a single unified graph
+			- Resolve conflicts and inconsistencies between different ontologies
+			- Establish mappings between equivalent concepts across ontologies
+		- Graph Embedding:
+			- Generate low-dimensional vector representations of nodes and edges
+			- Preserve the semantic relationships and structure of the ontological graphs
+			- Use techniques like RDF2Vec, TransE, or Graph Convolutional Networks (GCNs)
+	- Mamba Architecture:
+		- Graph-Mamba:
+			- Adapt the Mamba architecture to handle graph-structured data
+			- Utilize the selective state space mechanism to capture long-range dependencies in the ontological graphs
+			- Achieve efficient memory usage and reduced computational complexity compared to traditional graph neural networks (GNNs)
+		- Multi-dimensional Sequencing (Mamba-ND):
+			- Treat the ontological graphs as multi-dimensional sequences (e.g., node features, edge types, and graph structure)
+			- Apply Mamba-ND to capture dependencies across all dimensions
+	- Hybrid Architectures:
+		- Combine Graph-Mamba with other graph neural network architectures (e.g., GCNs, GraphSAGE)
+		- Leverage the strengths of both approaches to capture local and global patterns in the ontological graphs
+	- ```mermaid
+	  graph TD
+	   A[Ontological Graphs] --> B(Data Preprocessing)
+	   B --> C{Mamba Architecture}
+	   C --> D[Graph-Mamba]
+	   C --> E[Multi-dimensional Sequencing Mamba-ND]
+	   C --> F[Hybrid Architectures]
+	   D --> G[Comprehensive Graph Representation]
+	   E --> G
+	   F --> G
+	   G --> H[Ontology Alignment]
+	   G --> I[Knowledge Graph Completion]
+	   G --> J[Semantic Similarity]
+	   ```
+</code></pre>
+</li>
+<li>
+<h2 id="implementations">Implementations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="2026-ecosystem-update">2026 Ecosystem Update<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-ecosystem-update" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>As of mid-2026, SSMs have moved from research curiosity to practical production option. Mamba-3 was released in March 2026 by researchers from CMU, Princeton, Cartesia AI, and Together AI, designed specifically for real-world deployment efficiency rather than training throughput. The Jamba family (AI21 Labs) of hybrid SSM-Transformer models also matured significantly. For workloads with long context windows (64K–128K tokens), SSMs can achieve superior GPU economics compared to equivalent-scale transformers. Non-transformer architectures have reached parity with Transformers on key language benchmarks, and in some domains have surpassed them. The note that Mamba papers were arriving “every 1-2 days” accurately described early 2024; by 2026 the research pace has settled but deepened into applications including PDE solving (Mamba neural operators) and production deployment on GPU clouds.</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-5329" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-2"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#mamba-linear-time-sequence-modelling-with-selective-state-spaces" data-for="mamba-linear-time-sequence-modelling-with-selective-state-spaces">Mamba: Linear-Time Sequence Modelling with Selective State Spaces</a></li><li class="depth-0"><a href="#vision-mamba" data-for="vision-mamba">Vision Mamba</a></li><li class="depth-0"><a href="#mixture-of-experts-moe-architectures" data-for="mixture-of-experts-moe-architectures">Mixture of Experts (MoE) Architectures</a></li><li class="depth-0"><a href="#long-context-modeling" data-for="long-context-modeling">Long Context Modeling</a></li><li class="depth-0"><a href="#potential-applications" data-for="potential-applications">Potential Applications</a></li><li class="depth-0"><a href="#kolmogorov-arnold-networks-kans" data-for="kolmogorov-arnold-networks-kans">Kolmogorov-Arnold Networks (KANs)</a></li><li class="depth-2"><a href="#key-quotes" data-for="key-quotes">Key Quotes</a></li><li class="depth-1"><a href="#quick-lit-survey--based-on-mamba-palooza" data-for="quick-lit-survey--based-on-mamba-palooza">Quick lit survey.  (based on Mamba-Palooza)</a></li><li class="depth-1"><a href="#mamba-learning-theory-and-interpretability" data-for="mamba-learning-theory-and-interpretability">Mamba Learning Theory and Interpretability</a></li><li class="depth-1"><a href="#mixture-of-experts-moe-architectures-1" data-for="mixture-of-experts-moe-architectures-1">Mixture of Experts (MoE) Architectures</a></li><li class="depth-1"><a href="#implementations" data-for="implementations">Implementations</a></li><li class="depth-1"><a href="#2026-ecosystem-update" data-for="2026-ecosystem-update">2026 Ecosystem Update</a></li><li class="depth-2"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

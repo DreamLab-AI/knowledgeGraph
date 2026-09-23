@@ -224,7 +224,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -368,6 +368,10 @@
         "label": "5G"
       },
       {
+        "id": "urn:ngm:class:device-management",
+        "label": "Device Management"
+      },
+      {
         "id": "urn:ngm:class:fog-computing",
         "label": "Fog Computing"
       },
@@ -382,10 +386,6 @@
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ]
   },

@@ -36,7 +36,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -93,21 +98,21 @@
         "label": "Directory Services"
       },
       {
+        "id": "urn:ngm:class:identity-governance-and-administration",
+        "label": "Identity Governance and Administration"
+      },
+      {
         "id": "urn:ngm:class:privileged-access-management",
         "label": "Privileged Access Management"
       },
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

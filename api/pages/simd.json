@@ -50,6 +50,16 @@
       "slug": "distributed-computing"
     },
     {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
@@ -58,6 +68,11 @@
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -88,16 +103,16 @@
         "label": "Coordination Service"
       },
       {
+        "id": "urn:ngm:class:distributed-lock",
+        "label": "Distributed Lock"
+      },
+      {
         "id": "urn:ngm:class:gossip-protocol",
         "label": "Gossip Protocol"
       },
       {
         "id": "urn:ngm:class:leader-election",
         "label": "Leader Election"
-      },
-      {
-        "id": "urn:ngm:class:logical-clock",
-        "label": "Logical Clock"
       }
     ],
     "requires": [
@@ -114,6 +129,10 @@
         "label": "Partial Failure Tolerance"
       },
       {
+        "id": "urn:ngm:class:identity-and-naming",
+        "label": "Identity and Naming"
+      },
+      {
         "id": "urn:ngm:class:message-passing",
         "label": "Message Passing"
       },
@@ -128,10 +147,6 @@
       {
         "id": "urn:ngm:class:time-synchronisation",
         "label": "Time Synchronisation"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
       }
     ],
     "enables": [
@@ -142,6 +157,10 @@
       {
         "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
       },
       {
         "id": "urn:ngm:class:real-time-rendering",
@@ -156,16 +175,12 @@
         "label": "Distributed AI Training"
       },
       {
+        "id": "urn:ngm:class:elastic-capacity",
+        "label": "Elastic Capacity"
+      },
+      {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:geographic-distribution",
-        "label": "Geographic Distribution"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
       }
     ],
     "dependsOn": [
@@ -176,6 +191,30 @@
       {
         "id": "urn:ngm:class:synchronisation-primitive",
         "label": "Synchronisation Primitive"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:flp-impossibility",
+        "label": "FLP Impossibility"
+      },
+      {
+        "id": "urn:ngm:class:lamport-timestamps",
+        "label": "Lamport Timestamps"
+      },
+      {
+        "id": "urn:ngm:class:pacelc",
+        "label": "PACELC"
+      },
+      {
+        "id": "urn:ngm:class:two-generals-problem",
+        "label": "Two Generals Problem"
       }
     ],
     "implements": [
@@ -184,11 +223,19 @@
         "label": "Actor Model"
       },
       {
+        "id": "urn:ngm:class:bulk-synchronous-parallel",
+        "label": "Bulk Synchronous Parallel"
+      },
+      {
         "id": "urn:ngm:class:crdt",
         "label": "CRDT"
       },
       {
         "id": "urn:ngm:class:map-reduce",
+        "label": "MapReduce"
+      },
+      {
+        "id": "urn:ngm:class:mapreduce",
         "label": "MapReduce"
       },
       {
@@ -202,14 +249,6 @@
       {
         "id": "urn:ngm:class:raft",
         "label": "Raft"
-      },
-      {
-        "id": "urn:ngm:class:saga-pattern",
-        "label": "Saga Pattern"
-      },
-      {
-        "id": "urn:ngm:class:two-phase-commit",
-        "label": "Two-Phase Commit"
       }
     ],
     "contrastsWith": [
@@ -218,13 +257,37 @@
         "label": "Sequential Computing"
       },
       {
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:embarrassingly-parallel-batch",
+        "label": "Embarrassingly Parallel Batch"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      },
+      {
+        "id": "urn:ngm:class:single-machine-multiprocessing",
+        "label": "Single-Machine Multiprocessing"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -296,16 +359,16 @@
         "label": "Microservices"
       },
       {
+        "id": "urn:ngm:class:streaming-analytics",
+        "label": "Streaming Analytics"
+      },
+      {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       },
       {
         "id": "urn:ngm:class:high-availability",
         "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
       }
     ],
     "standardizedBy": [
@@ -320,6 +383,10 @@
       {
         "id": "urn:ngm:class:g-rpc",
         "label": "gRPC Specification"
+      },
+      {
+        "id": "urn:ngm:class:mpi-forum",
+        "label": "MPI Forum"
       },
       {
         "id": "urn:ngm:class:open-telemetry",

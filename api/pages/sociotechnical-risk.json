@@ -22,7 +22,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:existential-ai-risk",
+        "label": "Existential AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -69,16 +78,16 @@
         "label": "Risk Assessment"
       },
       {
+        "id": "urn:ngm:class:risk-communication",
+        "label": "Risk Communication"
+      },
+      {
         "id": "urn:ngm:class:risk-mitigation",
         "label": "Risk Mitigation"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:risk-monitoring",
+        "label": "Risk Monitoring"
       }
     ],
     "requires": [
@@ -199,6 +208,22 @@
       {
         "id": "urn:ngm:class:financial-risk-management",
         "label": "Financial Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

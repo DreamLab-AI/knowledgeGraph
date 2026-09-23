@@ -16,8 +16,20 @@
       "label": "Animation"
     },
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing-paradigm",
+      "label": "Spatial Computing Paradigm"
+    },
+    {
+      "id": "urn:ngm:class:biomechanics",
+      "label": "Biomechanics"
+    },
+    {
+      "id": "urn:ngm:class:performance-capture",
+      "label": "Performance Capture"
     }
   ],
   "entityType": "Class",
@@ -48,6 +60,18 @@
       {
         "id": "urn:ngm:class:volumetric-capture",
         "label": "Volumetric Capture"
+      },
+      {
+        "id": "urn:ngm:class:optical-tracking",
+        "label": "Optical Tracking System"
+      },
+      {
+        "id": "urn:ngm:class:retargeting-solver",
+        "label": "Retargeting Solver"
+      },
+      {
+        "id": "urn:ngm:class:animation-rig",
+        "label": "Blendshape Rig"
       }
     ],
     "requires": [
@@ -66,6 +90,18 @@
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:infrared-light-source",
+        "label": "Infrared Lighting"
+      },
+      {
+        "id": "urn:ngm:class:body-rig",
+        "label": "Body Rig"
+      },
+      {
+        "id": "urn:ngm:class:temporal-filtering",
+        "label": "Temporal Filtering"
       }
     ],
     "enables": [
@@ -92,9 +128,46 @@
       {
         "id": "urn:ngm:class:virtual-production",
         "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:digital-humans",
+        "label": "Digital Human"
+      },
+      {
+        "id": "urn:ngm:class:video-games",
+        "label": "Games"
+      },
+      {
+        "id": "urn:ngm:class:robotics-training-data",
+        "label": "Robotics Training Data"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:geometric-algebra",
+        "label": "Geometric Algebra"
+      },
+      {
+        "id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      },
+      {
+        "id": "urn:ngm:class:unity",
+        "label": "Unity"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:facial-action-coding-system",
@@ -119,9 +192,30 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:facial-action-coding-system",
+        "label": "Action Unit Encoding"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-body-pose-estimation",
+        "label": "AI Body Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:video-rotoscoping",
+        "label": "Video Rotoscoping"
+      },
+      {
+        "id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
+      },
+      {
+        "id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -143,6 +237,10 @@
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "IMU Sensor Fusion"
       }
     ],
     "supports": [
@@ -161,6 +259,14 @@
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twins"
+      },
+      {
+        "id": "urn:ngm:class:cinematics",
+        "label": "Cinematics"
       }
     ],
     "standardizedBy": [
@@ -179,6 +285,18 @@
       {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:bvh-format",
+        "label": "BVH Format"
+      },
+      {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "C3D Format"
+      },
+      {
+        "id": "urn:ngm:class:fbx",
+        "label": "FBX Format"
       }
     ],
     "partOf": [],
@@ -207,14 +325,64 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
       "id": "urn:ngm:class:animation-technique",
       "label": "Animation Technique",
       "slug": "animation-technique"
     },
     {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics",
+      "slug": "computer-graphics"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering",
+      "slug": "sc-display-and-rendering"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -262,20 +430,28 @@
         "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
       },
       {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
       },
       {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
       },
       {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
+        "id": "urn:ngm:class:dynamics",
+        "label": "Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:3-d-geometry",
+        "label": "3D Geometry"
       }
     ],
     "enables": [
@@ -292,20 +468,24 @@
         "label": "User Presence"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Vehicle Navigation"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
       },
       {
-        "id": "urn:ngm:class:scene-understanding",
-        "label": "Scene Understanding"
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
       }
     ],
     "dependsOn": [
@@ -316,12 +496,56 @@
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
@@ -334,16 +558,28 @@
         "label": "Neural Motion Synthesis"
       },
       {
-        "id": "urn:ngm:class:3-d-reconstruction",
-        "label": "3D Reconstruction"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
       }
     ],
     "uses": [
@@ -356,28 +592,28 @@
         "label": "Rendering Engine"
       },
       {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
       },
       {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
+        "id": "urn:ngm:class:open-gl",
+        "label": "OpenGL"
       },
       {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
-      },
-      {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:hand-tracking",
-        "label": "Hand Tracking"
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
       }
     ],
     "supports": [
@@ -390,14 +626,62 @@
         "label": "Virtual Reality"
       },
       {
+        "id": "urn:ngm:class:locomotion",
+        "label": "Locomotion"
+      },
+      {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:siggraph",
+        "label": "SIGGRAPH"
+      },
+      {
         "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "partOf": [
@@ -440,8 +724,8 @@
         "label": "Simulation"
       },
       {
-        "id": "urn:ngm:class:3-d-animation",
-        "label": "3D Animation"
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
       }
     ]
   },

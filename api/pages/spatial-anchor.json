@@ -36,6 +36,18 @@
       {
         "id": "urn:ngm:class:visual-marker",
         "label": "Visual Marker"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Data"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS Reference"
+      },
+      {
+        "id": "urn:ngm:class:tracking-features",
+        "label": "Tracking Features"
       }
     ],
     "requires": [
@@ -66,7 +78,20 @@
         "label": "Shared Ar Experiences"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:world-coordinate-frame",
+        "label": "World Coordinate Frame"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -81,6 +106,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-system",
+        "label": "Spatial Computing System"
       }
     ],
     "relatedTo": []
@@ -95,6 +124,41 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:spatial-data-structure",
+      "label": "Spatial Data Structure",
+      "slug": "spatial-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -142,6 +206,10 @@
         "label": "Object Detection"
       },
       {
+        "id": "urn:ngm:class:spatial-relationships",
+        "label": "Spatial Relationships"
+      },
+      {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
       },
@@ -156,6 +224,10 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Indexing"
       }
     ],
     "enables": [
@@ -172,6 +244,10 @@
         "label": "Retargetable AR Experiences"
       },
       {
+        "id": "urn:ngm:class:context-aware-ar",
+        "label": "Context-Aware AR"
+      },
+      {
         "id": "urn:ngm:class:semantic-scene-understanding",
         "label": "Semantic Scene Understanding"
       },
@@ -186,19 +262,57 @@
       {
         "id": "urn:ngm:class:immersive-computing",
         "label": "Immersive Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:memory-allocation",
+        "label": "Memory Allocation"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:brute-force-collision",
+        "label": "Brute-Force Collision"
+      },
+      {
+        "id": "urn:ngm:class:uniform-grid",
+        "label": "Uniform Grid"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
       {
         "id": "urn:ngm:class:spatial-data-structure",
         "label": "Spatial Data Structure"
@@ -208,12 +322,24 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:lidar-mapping",
+        "label": "LiDAR Mapping"
+      },
+      {
+        "id": "urn:ngm:class:spatial-ai",
+        "label": "Spatial AI"
       }
     ],
     "uses": [
@@ -244,6 +370,44 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-database",
+        "label": "Spatial Database"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:sparse-matrix",
+        "label": "Sparse Matrix"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       }
     ],
     "standardizedBy": [
@@ -254,6 +418,32 @@
       {
         "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
       }
     ],
     "relatedTo": [

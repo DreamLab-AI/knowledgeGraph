@@ -16,7 +16,24 @@
   "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computer-laboratory",
+        "label": "Computer Laboratory"
+      },
+      {
+        "id": "urn:ngm:class:cavendish-laboratory",
+        "label": "Cavendish Laboratory"
+      },
+      {
+        "id": "urn:ngm:class:machine-intelligence-laboratory",
+        "label": "Machine Intelligence Laboratory"
+      },
+      {
+        "id": "urn:ngm:class:cambridge-centre-for-ai-in-medicine",
+        "label": "Cambridge Centre for AI in Medicine"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -38,6 +55,10 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
       }
     ],
     "dependsOn": [],
@@ -77,6 +98,10 @@
       {
         "id": "urn:ngm:class:russell-group",
         "label": "Russell Group"
+      },
+      {
+        "id": "urn:ngm:class:cambridge-cluster",
+        "label": "Cambridge Cluster"
       }
     ],
     "relatedTo": [
@@ -103,6 +128,10 @@
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:mit",
+        "label": "MIT"
       }
     ]
   },
@@ -182,6 +211,20 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

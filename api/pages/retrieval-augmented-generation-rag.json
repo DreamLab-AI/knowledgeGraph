@@ -16,8 +16,24 @@
       "label": "Natural Language Processing"
     },
     {
-      "id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing"
+      "id": "urn:ngm:class:neural-information-retrieval",
+      "label": "Neural Information Retrieval"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-intensive-nlp",
+      "label": "Knowledge-Intensive NLP"
+    },
+    {
+      "id": "urn:ngm:class:open-domain-question-answering",
+      "label": "Open Domain Question Answering"
+    },
+    {
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model"
     }
   ],
   "entityType": "Class",
@@ -56,6 +72,18 @@
       {
         "id": "urn:ngm:class:vector-index",
         "label": "Vector Index"
+      },
+      {
+        "id": "urn:ngm:class:retriever",
+        "label": "Retriever"
+      },
+      {
+        "id": "urn:ngm:class:chunking",
+        "label": "Chunking Strategy"
+      },
+      {
+        "id": "urn:ngm:class:passage-encoder",
+        "label": "Passage Encoder"
       }
     ],
     "requires": [
@@ -86,6 +114,10 @@
       {
         "id": "urn:ngm:class:transformers",
         "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Corpus Preprocessing"
       }
     ],
     "enables": [
@@ -104,9 +136,50 @@
       {
         "id": "urn:ngm:class:multi-hop-reasoning",
         "label": "Multi-Hop Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:citation-generation",
+        "label": "Citation Generation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-currency",
+        "label": "Knowledge Currency"
+      },
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation Without Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-ai-outputs",
+        "label": "Verifiable AI Outputs"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:agentic-rag",
@@ -131,9 +204,46 @@
       {
         "id": "urn:ngm:class:hybrid-search",
         "label": "Hybrid Search"
+      },
+      {
+        "id": "urn:ngm:class:colbertv2",
+        "label": "ColBERTv2"
+      },
+      {
+        "id": "urn:ngm:class:self-rag",
+        "label": "Self-RAG"
+      },
+      {
+        "id": "urn:ngm:class:hyde",
+        "label": "HyDE"
+      },
+      {
+        "id": "urn:ngm:class:raptor",
+        "label": "RAPTOR"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:parametric-knowledge",
+        "label": "Parametric Knowledge"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -189,6 +299,14 @@
       {
         "id": "urn:ngm:class:medical-ai",
         "label": "Medical AI"
+      },
+      {
+        "id": "urn:ngm:class:scientific-literature-mining",
+        "label": "Scientific Literature Mining"
+      },
+      {
+        "id": "urn:ngm:class:code-navigation",
+        "label": "Code Navigation"
       }
     ],
     "standardizedBy": [
@@ -199,6 +317,18 @@
       {
         "id": "urn:ngm:class:mteb-benchmark",
         "label": "MTEB Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:ragas-framework",
+        "label": "RAGAS Framework"
+      },
+      {
+        "id": "urn:ngm:class:ares-framework",
+        "label": "ARES Framework"
+      },
+      {
+        "id": "urn:ngm:class:trec-deep-learning-track",
+        "label": "TREC Deep Learning Track"
       }
     ],
     "partOf": [],
@@ -243,6 +373,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
@@ -251,6 +386,31 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -302,12 +462,24 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Datasets"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
@@ -336,12 +508,12 @@
         "label": "Text Generation"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:ai-art-generation",
+        "label": "AI Art"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:automated-design",
+        "label": "Automated Design"
       }
     ],
     "dependsOn": [
@@ -352,6 +524,64 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
       }
     ],
     "contrastsWith": [
@@ -362,6 +592,14 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -372,6 +610,30 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -402,6 +664,58 @@
       {
         "id": "urn:ngm:class:word-embeddings",
         "label": "Word Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [
@@ -422,16 +736,20 @@
         "label": "Machine Translation"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ]
   },

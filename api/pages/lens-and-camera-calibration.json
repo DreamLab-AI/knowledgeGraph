@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
+    },
+    {
+      "id": "urn:ngm:class:geometric-camera-models",
+      "label": "Geometric Camera Models"
+    },
+    {
+      "id": "urn:ngm:class:photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "id": "urn:ngm:class:sensor-calibration",
+      "label": "Sensor Calibration"
+    },
+    {
+      "id": "urn:ngm:class:3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "id": "urn:ngm:class:computational-photography",
+      "label": "Computational Photography"
     }
   ],
   "entityType": "Class",
@@ -56,6 +76,14 @@
       {
         "id": "urn:ngm:class:calibration-target",
         "label": "Calibration Target"
+      },
+      {
+        "id": "urn:ngm:class:charuco-board",
+        "label": "ChArUco Board"
+      },
+      {
+        "id": "urn:ngm:class:apriltag",
+        "label": "AprilTag"
       }
     ],
     "requires": [
@@ -86,6 +114,10 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Nonlinear Optimisation"
       }
     ],
     "enables": [
@@ -120,9 +152,46 @@
       {
         "id": "urn:ngm:class:slam",
         "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Stereo Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:metric-reconstruction",
+        "label": "Metric Reconstruction"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:projective-geometry",
+        "label": "Projective Geometry"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:nonlinear-least-squares",
+        "label": "Nonlinear Least Squares"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:homogeneous-coordinates",
+        "label": "Homogeneous Coordinates"
+      },
+      {
+        "id": "urn:ngm:class:singular-value-decomposition",
+        "label": "Singular Value Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:calibration",
@@ -131,9 +200,50 @@
       {
         "id": "urn:ngm:class:optimisation",
         "label": "Levenberg-Marquardt Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:zhang-calibration-method",
+        "label": "Zhang Calibration Method"
+      },
+      {
+        "id": "urn:ngm:class:brown-conrady-distortion-model",
+        "label": "Brown-Conrady Distortion Model"
+      },
+      {
+        "id": "urn:ngm:class:kannala-brandt-fisheye-model",
+        "label": "Kannala-Brandt Fisheye Model"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Levenberg-Marquardt Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:direct-linear-transform",
+        "label": "Direct Linear Transform"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Dual Quaternion Hand-Eye Calibration"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:uncalibrated-reconstruction",
+        "label": "Uncalibrated Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:projective-reconstruction",
+        "label": "Projective Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:model-based-rendering",
+        "label": "Model-Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:uncalibrated-structure-from-motion",
+        "label": "Uncalibrated Structure from Motion"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:sensor-calibration",
@@ -164,6 +274,22 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:fiducial-markers",
+        "label": "Fiducial Markers"
+      },
+      {
+        "id": "urn:ngm:class:kalibr",
+        "label": "Kalibr"
+      },
+      {
+        "id": "urn:ngm:class:aruco",
+        "label": "ArUco"
+      },
+      {
+        "id": "urn:ngm:class:apriltag",
+        "label": "AprilTag"
       }
     ],
     "supports": [
@@ -194,6 +320,18 @@
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Industrial Machine Vision"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Drone Photogrammetry"
       }
     ],
     "standardizedBy": [
@@ -212,6 +350,22 @@
       {
         "id": "urn:ngm:class:open-cv",
         "label": "OpenCV Documentation"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:open-cv",
+        "label": "OpenCV Documentation"
+      },
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "ISO 10110 Optics Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO TC172 Optics Standardisation"
       }
     ],
     "partOf": [],
@@ -247,6 +401,18 @@
       {
         "id": "urn:ngm:class:depth-estimation",
         "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar Calibration"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Photometric Calibration"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU Preintegration"
       }
     ]
   },
@@ -260,6 +426,66 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:calibration",
+      "label": "Calibration",
+      "slug": "calibration"
+    },
+    {
+      "id": "urn:ngm:class:computational-imaging",
+      "label": "Computational Imaging",
+      "slug": "computational-imaging"
+    },
+    {
+      "id": "urn:ngm:class:image-processing",
+      "label": "Image Processing",
+      "slug": "image-processing"
+    },
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets",
+      "slug": "sc-content-and-assets"
+    },
+    {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing",
+      "slug": "robo-perception"
+    },
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing",
+      "slug": "signal-processing"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -311,16 +537,24 @@
         "label": "Pattern Recognition"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resources"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:image-processing-software",
+        "label": "Image Processing Software"
+      },
+      {
+        "id": "urn:ngm:class:multiple-images",
+        "label": "Multiple Images"
+      },
+      {
+        "id": "urn:ngm:class:overlapping-coverage",
+        "label": "Overlapping Coverage"
       }
     ],
     "enables": [
@@ -341,20 +575,280 @@
         "label": "Robotics Perception"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:3d-model-creation",
+        "label": "3D Model Creation"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:asset-digitization",
+        "label": "Asset Digitization"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:digital-twin-construction",
+        "label": "Digital Twin Construction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:camera-models",
+        "label": "Camera Models"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-algorithms",
+        "label": "Computer Vision Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:multi-view-geometry",
+        "label": "Multi-View Geometry"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:colour-science",
+        "label": "Colour Science"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor Validation"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:optics",
+        "label": "Optics"
+      },
+      {
+        "id": "urn:ngm:class:traditional-film-photography",
+        "label": "Traditional Film Photography"
+      },
+      {
+        "id": "urn:ngm:class:validation-process",
+        "label": "Validation"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "VERIFICATION"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:video-processing",
+        "label": "Video Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:allan-variance",
+        "label": "Allan Variance"
+      },
+      {
+        "id": "urn:ngm:class:calibration-target",
+        "label": "Calibration Target"
+      },
+      {
+        "id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "id": "urn:ngm:class:levenberg-marquardt-algorithm",
+        "label": "Levenberg-Marquardt Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Least-Squares Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:smartphone",
+        "label": "Smartphone"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:ieee-signal-processing-society",
+        "label": "IEEE Signal Processing Society"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc29",
+        "label": "ISO/IEC JTC1 SC29"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:reality-capture-workflow",
+        "label": "Reality Capture Workflow"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:sensor-pipeline",
+        "label": "Sensor Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
       }
     ],
     "relatedTo": [
@@ -371,16 +865,24 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:computational-imaging",
+        "label": "Computational Imaging"
       }
     ]
   },

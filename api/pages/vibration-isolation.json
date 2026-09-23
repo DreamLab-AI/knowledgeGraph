@@ -265,7 +265,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -379,6 +379,12 @@
         "label": "MISRA C"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:digital-fabrication",
@@ -405,12 +411,12 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Manufacturing"
+        "id": "urn:ngm:class:manufacturing-execution-system",
+        "label": "Manufacturing Execution System"
       },
       {
-        "id": "urn:ngm:class:smart-manufacturing",
-        "label": "Smart Manufacturing"
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Manufacturing"
       }
     ]
   },

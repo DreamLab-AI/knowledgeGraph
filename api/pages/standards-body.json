@@ -24,12 +24,24 @@
       {
         "id": "urn:ngm:class:specification-document",
         "label": "Specification Document"
+      },
+      {
+        "id": "urn:ngm:class:technical-working-group",
+        "label": "Technical Working Group"
+      },
+      {
+        "id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Conformance Test Suite"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:consensus-process",
         "label": "Consensus Process"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-licence-instrument",
+        "label": "Intellectual Property Licensing"
       },
       {
         "id": "urn:ngm:class:intellectual-property-licence-instrument",
@@ -88,6 +100,10 @@
       {
         "id": "urn:ngm:class:blockchain-protocol",
         "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing Standard"
       }
     ],
     "uses": [],
@@ -114,6 +130,10 @@
       {
         "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
       }
     ],
     "relatedTo": [
@@ -271,7 +291,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

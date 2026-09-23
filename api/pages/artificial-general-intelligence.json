@@ -12,12 +12,20 @@
       "label": "AI Research Area"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    },
-    {
       "id": "urn:ngm:class:frontier-ai",
       "label": "Frontier AI"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "id": "urn:ngm:class:general-intelligence",
+      "label": "General Intelligence"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model-capability",
+      "label": "Foundation Model Capability"
     }
   ],
   "entityType": "Class",
@@ -40,6 +48,22 @@
       {
         "id": "urn:ngm:class:world-model",
         "label": "World Model"
+      },
+      {
+        "id": "urn:ngm:class:generalisation-capability",
+        "label": "Generalisation Capability"
+      },
+      {
+        "id": "urn:ngm:class:cross-domain-transfer",
+        "label": "Cross-Domain Transfer"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-reasoning",
+        "label": "Autonomous Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use Capability"
       }
     ],
     "requires": [
@@ -58,6 +82,14 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:frontier-training-data",
+        "label": "Frontier Training Data"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-infrastructure",
+        "label": "Evaluation Infrastructure"
       }
     ],
     "enables": [
@@ -76,9 +108,42 @@
       {
         "id": "urn:ngm:class:transformative-ai",
         "label": "Transformative AI"
+      },
+      {
+        "id": "urn:ngm:class:economic-automation",
+        "label": "Economic Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agents"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:compute-trends",
+        "label": "Compute Trends"
+      },
+      {
+        "id": "urn:ngm:class:bitter-lesson",
+        "label": "Bitter Lesson"
+      },
+      {
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:chain-of-thought-reasoning",
@@ -99,14 +164,67 @@
       {
         "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture-of-Experts Architecture"
+      },
+      {
+        "id": "urn:ngm:class:scaling-hypothesis",
+        "label": "Scaling Hypothesis"
+      },
+      {
+        "id": "urn:ngm:class:inference-compute",
+        "label": "Inference-Time Compute"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      },
+      {
+        "id": "urn:ngm:class:weak-ai",
+        "label": "Weak AI"
+      },
+      {
+        "id": "urn:ngm:class:domain-specific-ai",
+        "label": "Domain-Specific AI"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:arc-agi",
         "label": "ARC-AGI"
+      },
+      {
+        "id": "urn:ngm:class:mmlu",
+        "label": "MMLU"
+      },
+      {
+        "id": "urn:ngm:class:gpqa",
+        "label": "GPQA"
+      },
+      {
+        "id": "urn:ngm:class:frontiermath",
+        "label": "FrontierMath"
+      },
+      {
+        "id": "urn:ngm:class:swe-bench",
+        "label": "SWE-bench"
+      },
+      {
+        "id": "urn:ngm:class:humanity-s-last-exam",
+        "label": "Humanity's Last Exam"
+      },
+      {
+        "id": "urn:ngm:class:metr-evaluations",
+        "label": "METR Evaluations"
       }
     ],
     "supports": [
@@ -125,6 +243,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk-studies",
+        "label": "Existential Risk Studies"
       }
     ],
     "standardizedBy": [
@@ -139,6 +261,14 @@
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:openai-charter",
+        "label": "OpenAI Charter"
+      },
+      {
+        "id": "urn:ngm:class:deepmind-levels-of-agi-framework",
+        "label": "DeepMind Levels of AGI Framework"
       }
     ],
     "partOf": [],
@@ -170,15 +300,14 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ]
   },
   "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    },
     {
       "id": "urn:ngm:class:foundation-model-layer",
       "label": "Foundation Model Layer",
@@ -195,19 +324,14 @@
       "slug": "ai-model-architecture"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline-model",
-      "label": "Machine Learning Model",
-      "slug": "machine-learning-discipline-model"
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
     },
     {
       "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning Discipline",
       "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline-models",
-      "label": "Machine Learning Models",
-      "slug": "machine-learning-discipline-models"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
@@ -337,12 +461,8 @@
         "label": "Transformers"
       },
       {
-        "id": "urn:ngm:class:optimisation-algorithm",
-        "label": "Optimisation Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
       },
       {
         "id": "urn:ngm:class:data-pipeline",
@@ -353,58 +473,78 @@
         "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:data-preprocessing",
-        "label": "Data Preprocessing"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:statistical-learning-theory",
-        "label": "Statistical Learning Theory"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
-      },
-      {
-        "id": "urn:ngm:class:unsupervised-learning",
-        "label": "Unsupervised Learning"
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:edge-ai",
         "label": "Edge AI"
-      },
-      {
-        "id": "urn:ngm:class:narrow-ai",
-        "label": "Narrow AI"
-      },
-      {
-        "id": "urn:ngm:class:rule-based-systems",
-        "label": "Rule-Based System"
-      },
-      {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       },
       {
         "id": "urn:ngm:class:data-governance",
@@ -413,18 +553,6 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "uses": [
@@ -457,8 +585,8 @@
         "label": "Scaling Laws"
       },
       {
-        "id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Network"
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
       }
     ],
     "supports": [
@@ -467,36 +595,34 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:edge-deployment",
-        "label": "Edge Deployment"
-      },
-      {
-        "id": "urn:ngm:class:model-inference",
-        "label": "Model Inference"
-      },
-      {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:frontier-model-forum",
         "label": "Frontier Model Forum"
-      }
-    ],
-    "partOf": [
+      },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
-        "label": "Machine Learning Pipeline"
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [

@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:bounding-volume-hierarchy",
         "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-z-buffer",
+        "label": "Hierarchical Z-Buffer"
+      },
+      {
+        "id": "urn:ngm:class:occlusion-query",
+        "label": "Occlusion Query"
       }
     ],
     "requires": [
@@ -66,6 +74,10 @@
       {
         "id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterisation"
       }
     ],
     "implements": [],
@@ -77,6 +89,10 @@
       {
         "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:back-face-culling",
+        "label": "Back-Face Culling"
       }
     ],
     "bridgesTo": [
@@ -97,6 +113,10 @@
       {
         "id": "urn:ngm:class:frustum-culling",
         "label": "Frustum Culling"
+      },
+      {
+        "id": "urn:ngm:class:potential-visibility-set",
+        "label": "Potential Visibility Set"
       }
     ],
     "supports": [],
@@ -105,6 +125,10 @@
       {
         "id": "urn:ngm:class:render-pipeline",
         "label": "Render Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:visibility-determination",
+        "label": "Visibility Determination"
       }
     ],
     "relatedTo": [
@@ -115,6 +139,14 @@
       {
         "id": "urn:ngm:class:spatial-partitioning",
         "label": "Spatial Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:draw-call-batching",
+        "label": "Draw Call Batching"
+      },
+      {
+        "id": "urn:ngm:class:indirect-rendering",
+        "label": "Indirect Rendering"
       }
     ]
   },
@@ -328,7 +360,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

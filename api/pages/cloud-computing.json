@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
+      },
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
       }
     ],
     "requires": [
@@ -85,7 +89,16 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:on-premises-computing",
+        "label": "On-Premises Computing"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:federated-learning",
@@ -114,7 +127,7 @@
         "label": "Object Storage"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       }
     ],
@@ -140,6 +153,10 @@
       {
         "id": "urn:ngm:class:iso-iec-17788",
         "label": "ISO/IEC 17788"
+      },
+      {
+        "id": "urn:ngm:class:nist-cloud-computing-definition",
+        "label": "NIST Cloud Computing Definition"
       }
     ],
     "partOf": [
@@ -199,12 +216,12 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -315,12 +332,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-governance",
-        "label": "Decentralised Governance"
-      },
-      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:data",
@@ -419,7 +436,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

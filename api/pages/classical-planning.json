@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:automated-planning",
       "label": "Automated Planning"
+    },
+    {
+      "id": "urn:ngm:class:planning-and-scheduling",
+      "label": "Planning and Scheduling"
     }
   ],
   "entityType": "Class",
@@ -32,6 +36,10 @@
       {
         "id": "urn:ngm:class:pddl",
         "label": "PDDL"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-task-network",
+        "label": "Hierarchical Task Network"
       }
     ],
     "requires": [
@@ -42,6 +50,14 @@
       {
         "id": "urn:ngm:class:search-algorithm",
         "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ],
     "enables": [
@@ -66,8 +82,34 @@
         "label": "Multi-Agent Coordination"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:strips",
+        "label": "STRIPS"
+      },
+      {
+        "id": "urn:ngm:class:pddl",
+        "label": "PDDL"
+      },
+      {
+        "id": "urn:ngm:class:a-star-algorithm",
+        "label": "A Star Algorithm"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -113,9 +155,18 @@
       {
         "id": "urn:ngm:class:logistics-optimisation",
         "label": "Logistics Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:pddl",
+        "label": "PDDL"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:automated-planning",
@@ -150,15 +201,14 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:a-star-algorithm",
+        "label": "A Star Algorithm"
       }
     ]
   },
   "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:planning-and-scheduling",
-      "label": "Planning and Scheduling",
-      "slug": "planning-and-scheduling"
-    },
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
@@ -172,10 +222,6 @@
   ],
   "inheritedRelations": {
     "hasPart": [
-      {
-        "id": "urn:ngm:class:hierarchical-task-network",
-        "label": "Hierarchical Task Network"
-      },
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
@@ -203,17 +249,13 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:formal-logic",
-        "label": "Formal Logic"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-representation",
-        "label": "Knowledge Representation"
-      },
       {
         "id": "urn:ngm:class:search-algorithms",
         "label": "Search Algorithms"
@@ -263,22 +305,12 @@
         "label": "Heuristic Function"
       },
       {
-        "id": "urn:ngm:class:search-algorithm",
-        "label": "Search Algorithm"
-      },
-      {
         "id": "urn:ngm:class:optimisation",
         "label": "Optimization"
       },
       {
         "id": "urn:ngm:class:state-space-search",
         "label": "State Space Search"
-      }
-    ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:strips",
-        "label": "STRIPS"
       }
     ],
     "contrastsWith": [
@@ -288,6 +320,10 @@
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
@@ -307,6 +343,14 @@
       {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [

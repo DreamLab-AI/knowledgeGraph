@@ -10,6 +10,18 @@
     {
       "id": "urn:ngm:class:probability-theory",
       "label": "Probability Theory"
+    },
+    {
+      "id": "urn:ngm:class:measure-theory",
+      "label": "Measure Theory"
+    },
+    {
+      "id": "urn:ngm:class:limit-theorems",
+      "label": "Limit Theorems"
+    },
+    {
+      "id": "urn:ngm:class:statistical-theory",
+      "label": "Statistical Theory"
     }
   ],
   "entityType": "Class",
@@ -20,9 +32,54 @@
       {
         "id": "urn:ngm:class:inference",
         "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
+      },
+      {
+        "id": "urn:ngm:class:convergence-in-distribution",
+        "label": "Convergence in Distribution"
+      },
+      {
+        "id": "urn:ngm:class:berry-esseen-theorem",
+        "label": "Berry-Esseen Theorem"
+      },
+      {
+        "id": "urn:ngm:class:characteristic-function",
+        "label": "Characteristic Function"
+      },
+      {
+        "id": "urn:ngm:class:sampling-distribution",
+        "label": "Sampling Distribution"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
+      },
+      {
+        "id": "urn:ngm:class:independent-and-identically-distributed",
+        "label": "Independent and Identically Distributed"
+      },
+      {
+        "id": "urn:ngm:class:finite-variance",
+        "label": "Finite Variance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:statistical-testing",
@@ -35,6 +92,26 @@
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:confidence-interval",
+        "label": "Confidence Interval"
+      },
+      {
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      },
+      {
+        "id": "urn:ngm:class:significance-testing",
+        "label": "Significance Testing"
+      },
+      {
+        "id": "urn:ngm:class:error-bar-estimation",
+        "label": "Error Bar Estimation"
+      },
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A-B Testing"
       }
     ],
     "dependsOn": [
@@ -45,10 +122,52 @@
       {
         "id": "urn:ngm:class:sampling",
         "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma-Algebra"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gaussian-approximation",
+        "label": "Gaussian Approximation"
+      },
+      {
+        "id": "urn:ngm:class:normal-approximation",
+        "label": "Normal Approximation"
+      },
+      {
+        "id": "urn:ngm:class:law-of-large-numbers",
+        "label": "Law of Large Numbers"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:heavy-tailed-distribution",
+        "label": "Heavy-Tailed Distribution"
+      },
+      {
+        "id": "urn:ngm:class:stable-distribution",
+        "label": "Stable Distribution"
+      },
+      {
+        "id": "urn:ngm:class:alpha-stable-processes",
+        "label": "Alpha-Stable Processes"
+      },
+      {
+        "id": "urn:ngm:class:extreme-value-theory",
+        "label": "Extreme Value Theory"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -58,6 +177,14 @@
       {
         "id": "urn:ngm:class:statistics",
         "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:characteristic-function",
+        "label": "Characteristic Function"
+      },
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
       }
     ],
     "supports": [
@@ -68,9 +195,42 @@
       {
         "id": "urn:ngm:class:monte-carlo-integration",
         "label": "Monte Carlo Integration"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-resampling",
+        "label": "Bootstrap Resampling"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:kolmogorov-1933",
+        "label": "Kolmogorov 1933"
+      },
+      {
+        "id": "urn:ngm:class:l-vy-1937",
+        "label": "L\u00e9vy 1937"
+      },
+      {
+        "id": "urn:ngm:class:berry-1941",
+        "label": "Berry 1941"
+      },
+      {
+        "id": "urn:ngm:class:esseen-1956",
+        "label": "Esseen 1956"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -86,17 +246,32 @@
         "label": "Uncertainty Quantification"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:law-of-large-numbers",
+        "label": "Law of Large Numbers"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ]
   },
   "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:measure-theory",
-      "label": "Measure Theory",
-      "slug": "measure-theory"
-    },
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
@@ -131,23 +306,19 @@
         "label": "Stochastic Process"
       },
       {
+        "id": "urn:ngm:class:lebesgue-integral",
+        "label": "Lebesgue Integral"
+      },
+      {
         "id": "urn:ngm:class:sigma-algebra",
         "label": "Sigma-Algebra"
       },
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:measure-theory",
-        "label": "Measure Theory"
-      },
       {
         "id": "urn:ngm:class:real-analysis",
         "label": "Real Analysis"
@@ -209,8 +380,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:sigma-algebra",
-        "label": "Sigma-Algebra"
+        "id": "urn:ngm:class:lebesgue-integration",
+        "label": "Lebesgue Integration"
       },
       {
         "id": "urn:ngm:class:set-theory",
@@ -218,6 +389,10 @@
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deterministic-computation",
+        "label": "Deterministic Computation"
+      },
       {
         "id": "urn:ngm:class:fuzzy-logic",
         "label": "Fuzzy Logic"
@@ -233,6 +408,10 @@
         "label": "Diffusion Models"
       },
       {
+        "id": "urn:ngm:class:financial-mathematics",
+        "label": "Financial Mathematics"
+      },
+      {
         "id": "urn:ngm:class:functional-analysis",
         "label": "Functional Analysis"
       },
@@ -243,6 +422,14 @@
       {
         "id": "urn:ngm:class:quantum-mechanics",
         "label": "Quantum Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -253,11 +440,15 @@
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:bayesian-networks",
+        "label": "Bayesian Networks"
+      },
+      {
         "id": "urn:ngm:class:graphical-model",
         "label": "Probabilistic Graphical Models"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -269,6 +460,12 @@
         "label": "Monte Carlo Methods"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:bayesian-decision-theory",
@@ -277,6 +474,10 @@
       {
         "id": "urn:ngm:class:causal-inference",
         "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:information-geometry",
+        "label": "Information Geometry"
       },
       {
         "id": "urn:ngm:class:optimal-transport",
@@ -297,10 +498,6 @@
       {
         "id": "urn:ngm:class:ai-technique",
         "label": "AI Technique"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
       }
     ]
   },

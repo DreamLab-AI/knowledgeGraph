@@ -112,6 +112,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:automatic-failover",
+        "label": "Automatic Failover"
+      },
+      {
         "id": "urn:ngm:class:data-replication",
         "label": "Data Replication"
       },
@@ -138,10 +142,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:fpga",
-        "label": "FPGA"
       }
     ],
     "requires": [
@@ -326,7 +326,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

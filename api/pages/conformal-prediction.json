@@ -14,6 +14,14 @@
     {
       "id": "urn:ngm:class:uncertainty-quantification",
       "label": "Uncertainty Quantification"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning"
+    },
+    {
+      "id": "urn:ngm:class:statistical-learning-theory",
+      "label": "Statistical Learning"
     }
   ],
   "entityType": "Class",
@@ -36,6 +44,18 @@
       {
         "id": "urn:ngm:class:coverage-guarantee",
         "label": "Coverage Guarantee"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:exchangeability",
+        "label": "Exchangeability"
+      },
+      {
+        "id": "urn:ngm:class:prediction-set",
+        "label": "Prediction Set"
       }
     ],
     "requires": [
@@ -50,6 +70,10 @@
       {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross Validation"
       }
     ],
     "enables": [
@@ -68,9 +92,34 @@
       {
         "id": "urn:ngm:class:selective-prediction",
         "label": "Selective Prediction"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:frequentist-statistics",
@@ -79,6 +128,10 @@
       {
         "id": "urn:ngm:class:hypothesis-testing",
         "label": "Hypothesis Testing"
+      },
+      {
+        "id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
       }
     ],
     "contrastsWith": [
@@ -89,10 +142,55 @@
       {
         "id": "urn:ngm:class:gaussian-process",
         "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-calibration",
+        "label": "Model Calibration"
+      },
+      {
+        "id": "urn:ngm:class:semantic-entropy",
+        "label": "Semantic Entropy"
       }
     ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:mc-dropout",
+        "label": "MC Dropout"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:medical-imaging",
@@ -109,9 +207,38 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:multi-label-classification",
+        "label": "Multi-Label Classification"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -133,19 +260,72 @@
       {
         "id": "urn:ngm:class:model-calibration",
         "label": "Model Calibration"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:distribution-shift",
+        "label": "Distribution Shift"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross Validation"
+      },
+      {
+        "id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness in Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-inference",
+        "label": "Natural Language Inference"
+      },
+      {
+        "id": "urn:ngm:class:logistic-regression",
+        "label": "Logistic Regression"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     },
     {
       "id": "urn:ngm:class:probabilistic-model",
@@ -153,19 +333,19 @@
       "slug": "probabilistic-model"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
+      "id": "urn:ngm:class:bayesian-inference",
+      "label": "Bayesian Inference",
+      "slug": "bayesian-inference"
+    },
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model",
+      "slug": "generative-model"
     },
     {
       "id": "urn:ngm:class:neural-network",
@@ -176,6 +356,31 @@
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture",
       "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-inference",
+      "label": "Probabilistic Inference",
+      "slug": "probabilistic-inference"
+    },
+    {
+      "id": "urn:ngm:class:statistical-inference",
+      "label": "Statistical Inference",
+      "slug": "statistical-inference"
+    },
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics",
+      "slug": "statistics"
+    },
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory",
+      "slug": "probability-theory"
+    },
+    {
+      "id": "urn:ngm:class:measure-theory",
+      "label": "Measure Theory",
+      "slug": "measure-theory"
     }
   ],
   "inheritedRelations": {
@@ -209,8 +414,8 @@
         "label": "Unsupervised Learning"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
       }
     ],
     "requires": [
@@ -223,38 +428,34 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:automatic-differentiation",
-        "label": "Automatic Differentiation"
-      },
-      {
-        "id": "urn:ngm:class:computational-graph",
-        "label": "Computational Graph"
+        "id": "urn:ngm:class:concentration-inequalities",
+        "label": "Concentration Inequalities"
       },
       {
         "id": "urn:ngm:class:measure-theory",
         "label": "Measure Theory"
       },
       {
-        "id": "urn:ngm:class:monte-carlo-methods",
-        "label": "Monte Carlo Methods"
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       },
       {
-        "id": "urn:ngm:class:numerical-linear-algebra",
-        "label": "Numerical Linear Algebra"
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-fairness",
         "label": "AI Fairness"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
       },
       {
         "id": "urn:ngm:class:model-robustness",
@@ -279,6 +480,10 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
       }
     ],
     "dependsOn": [
@@ -293,40 +498,60 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:hypothesis-class",
+        "label": "Hypothesis Class"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:bayes-theorem",
-        "label": "Bayes Theorem"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       },
       {
-        "id": "urn:ngm:class:evidence-lower-bound",
-        "label": "Evidence Lower Bound"
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:expectation-maximisation",
-        "label": "Expectation Maximisation"
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       },
       {
-        "id": "urn:ngm:class:hamiltonian-monte-carlo",
-        "label": "Hamiltonian Monte Carlo"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
-        "id": "urn:ngm:class:markov-chain-monte-carlo",
-        "label": "Markov Chain Monte Carlo"
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
       },
       {
-        "id": "urn:ngm:class:message-passing",
-        "label": "Message Passing"
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
       },
       {
-        "id": "urn:ngm:class:score-matching",
-        "label": "Score Matching"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:variational-inference",
-        "label": "Variational Inference"
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
@@ -339,12 +564,28 @@
         "label": "Symbolic AI"
       },
       {
-        "id": "urn:ngm:class:decision-tree",
-        "label": "Decision Tree"
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
       },
       {
-        "id": "urn:ngm:class:support-vector-machine",
-        "label": "Support Vector Machine"
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-model",
+        "label": "Deterministic Model"
+      },
+      {
+        "id": "urn:ngm:class:frequentist-statistics",
+        "label": "Frequentist Statistics"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
       }
     ],
     "bridgesTo": [
@@ -357,12 +598,28 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:algorithmic-complexity",
+        "label": "Algorithmic Complexity"
       },
       {
-        "id": "urn:ngm:class:robotics-perception",
-        "label": "Robotics Perception"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -379,24 +636,24 @@
         "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       },
       {
-        "id": "urn:ngm:class:belief-propagation",
-        "label": "Belief Propagation"
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
       },
       {
-        "id": "urn:ngm:class:diffusion-model",
-        "label": "Diffusion Model"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:gaussian-process",
-        "label": "Gaussian Process"
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       },
       {
-        "id": "urn:ngm:class:hamiltonian-monte-carlo",
-        "label": "Hamiltonian Monte Carlo"
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
       }
     ],
     "supports": [
@@ -421,18 +678,60 @@
         "label": "Decision Support System"
       },
       {
-        "id": "urn:ngm:class:climate-modelling",
-        "label": "Climate Modelling"
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:aistats",
+        "label": "AISTATS"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-analysis-journal",
+        "label": "Bayesian Analysis Journal"
+      },
+      {
         "id": "urn:ngm:class:journal-of-machine-learning-research",
         "label": "Journal of Machine Learning Research"
+      },
+      {
+        "id": "urn:ngm:class:journal-of-the-american-statistical-association",
+        "label": "Journal of the American Statistical Association"
+      },
+      {
+        "id": "urn:ngm:class:neurips-probabilistic-track",
+        "label": "NeurIPS Probabilistic Track"
+      },
+      {
+        "id": "urn:ngm:class:uai-conference",
+        "label": "UAI Conference"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       }
     ],
     "relatedTo": [
@@ -457,16 +756,16 @@
         "label": "Monte Carlo Methods"
       },
       {
-        "id": "urn:ngm:class:ai-application",
-        "label": "AI Application"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-research-area",
-        "label": "AI Research Area"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ]
   },

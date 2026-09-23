@@ -34,6 +34,10 @@
       {
         "id": "urn:ngm:class:worst-case-execution-time",
         "label": "Worst-Case Execution Time"
+      },
+      {
+        "id": "urn:ngm:class:embedded-processor",
+        "label": "Embedded Processor"
       }
     ],
     "enables": [
@@ -63,9 +67,26 @@
       {
         "id": "urn:ngm:class:inter-process-communication",
         "label": "Inter-Process Communication"
+      },
+      {
+        "id": "urn:ngm:class:preemptive-scheduling",
+        "label": "Preemptive Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:priority-inversion-prevention",
+        "label": "Priority Inversion Prevention"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:general-purpose-operating-system",
+        "label": "General-Purpose Operating System"
+      },
+      {
+        "id": "urn:ngm:class:soft-real-time-system",
+        "label": "Soft Real-Time System"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:edge-ai",
@@ -88,6 +109,10 @@
       {
         "id": "urn:ngm:class:message-queue",
         "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:semaphore",
+        "label": "Semaphore"
       }
     ],
     "supports": [
@@ -106,22 +131,35 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       },
       {
         "id": "urn:ngm:class:freertos",
         "label": "FreeRTOS"
+      },
+      {
+        "id": "urn:ngm:class:zephyr-rtos",
+        "label": "Zephyr RTOS"
       }
     ]
   },
@@ -148,6 +186,14 @@
         "label": "File System"
       },
       {
+        "id": "urn:ngm:class:kernel",
+        "label": "Kernel"
+      },
+      {
+        "id": "urn:ngm:class:network-stack",
+        "label": "Network Stack"
+      },
+      {
         "id": "urn:ngm:class:process-scheduler",
         "label": "Process Scheduler"
       },
@@ -162,14 +208,6 @@
       {
         "id": "urn:ngm:class:cloud-native-applications",
         "label": "Cloud-Native Applications"
-      },
-      {
-        "id": "urn:ngm:class:distributed-computing",
-        "label": "Distributed Computing"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ],
     "requires": [
@@ -240,13 +278,17 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:bare-metal",
+        "label": "Bare Metal"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
       },
       {
@@ -280,6 +322,10 @@
       {
         "id": "urn:ngm:class:multithreading",
         "label": "Multithreading"
+      },
+      {
+        "id": "urn:ngm:class:security-isolation",
+        "label": "Security Isolation"
       },
       {
         "id": "urn:ngm:class:fault-tolerance",
@@ -322,7 +368,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

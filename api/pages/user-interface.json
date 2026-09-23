@@ -109,11 +109,19 @@
       {
         "id": "urn:ngm:class:design-systems",
         "label": "Design System"
+      },
+      {
+        "id": "urn:ngm:class:design-systems",
+        "label": "Design System"
+      },
+      {
+        "id": "urn:ngm:class:widget-toolkit",
+        "label": "Widget Toolkit"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:multimodal-interaction",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
       },
       {
@@ -125,6 +133,10 @@
       {
         "id": "urn:ngm:class:w-3-c-standards",
         "label": "W3C Standards"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
       },
       {
         "id": "urn:ngm:class:wcag-2-2",
@@ -269,6 +281,18 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -277,7 +301,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

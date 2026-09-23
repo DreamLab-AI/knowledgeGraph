@@ -46,6 +46,10 @@
       {
         "id": "urn:ngm:class:w-3-c-vocabulary",
         "label": "W3C Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:http-endpoint",
+        "label": "HTTP Endpoint"
       }
     ],
     "enables": [
@@ -64,6 +68,18 @@
       {
         "id": "urn:ngm:class:linked-data-consumption",
         "label": "Linked Data Consumption"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Automated Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle Integration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-federation",
+        "label": "Knowledge Graph Federation"
       }
     ],
     "dependsOn": [],
@@ -78,7 +94,20 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:data-portal",
+        "label": "Data Portal"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -100,12 +129,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -228,10 +257,6 @@
         "label": "Oracle Network"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      },
-      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -302,7 +327,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -318,16 +343,16 @@
         "label": "Enterprise Service Bus"
       },
       {
+        "id": "urn:ngm:class:integration-platform",
+        "label": "Integration Platform"
+      },
+      {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
         "id": "urn:ngm:class:infra-network-and-comms",
         "label": "Network and Communication"
-      },
-      {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
       }
     ]
   },

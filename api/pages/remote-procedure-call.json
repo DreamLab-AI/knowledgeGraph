@@ -46,6 +46,10 @@
       {
         "id": "urn:ngm:class:message-passing",
         "label": "Message Passing Protocol"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing Protocol"
       }
     ],
     "contrastsWith": [
@@ -120,12 +124,12 @@
         "label": "Protocol Stack"
       },
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -168,6 +172,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:data-transmission",
+        "label": "Data Transmission"
+      },
+      {
         "id": "urn:ngm:class:internet-connectivity",
         "label": "Internet Connectivity"
       },
@@ -194,10 +202,6 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
       }
     ],
     "dependsOn": [
@@ -320,7 +324,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -16,15 +16,60 @@
       "label": "Blockchain"
     },
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:systemic-risk",
+      "label": "Systemic Risk"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-governance-risk",
+      "label": "Blockchain Governance Risk"
+    },
+    {
+      "id": "urn:ngm:class:decentralisation",
+      "label": "Decentralisation"
+    },
+    {
+      "id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    },
+    {
+      "id": "urn:ngm:class:concentration-risk",
+      "label": "Concentration Risk"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mining-pool-concentration",
+        "label": "Mining Pool Concentration"
+      },
+      {
+        "id": "urn:ngm:class:asic-manufacturer-duopoly",
+        "label": "ASIC Manufacturer Duopoly"
+      },
+      {
+        "id": "urn:ngm:class:geographic-hashrate-concentration",
+        "label": "Geographic Hashrate Concentration"
+      },
+      {
+        "id": "urn:ngm:class:custodial-concentration",
+        "label": "Custodial Concentration"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network-hub-centralisation",
+        "label": "Lightning Network Hub Centralisation"
+      },
+      {
+        "id": "urn:ngm:class:developer-centralisation",
+        "label": "Developer Centralisation"
+      },
+      {
+        "id": "urn:ngm:class:institutional-holder-concentration",
+        "label": "Institutional Holder Concentration"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:asic",
@@ -79,9 +124,42 @@
       {
         "id": "urn:ngm:class:sybil-attack",
         "label": "Sybil Attack"
+      },
+      {
+        "id": "urn:ngm:class:protocol-capture",
+        "label": "Protocol Capture"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:exchange",
+        "label": "Exchange"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:gini-coefficient",
@@ -90,9 +168,46 @@
       {
         "id": "urn:ngm:class:nakamoto-coefficient",
         "label": "Nakamoto Coefficient"
+      },
+      {
+        "id": "urn:ngm:class:hashrate-distribution-analysis",
+        "label": "Hashrate Distribution Analysis"
+      },
+      {
+        "id": "urn:ngm:class:gini-coefficient",
+        "label": "Gini Coefficient Analysis"
+      },
+      {
+        "id": "urn:ngm:class:herfindahl-hirschman-index",
+        "label": "Herfindahl-Hirschman Index"
+      },
+      {
+        "id": "urn:ngm:class:network-topology-analysis",
+        "label": "Network Topology Analysis"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "id": "urn:ngm:class:permissionlessness",
+        "label": "Permissionlessness"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:trustless-system",
+        "label": "Trustless System"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -110,6 +225,14 @@
       {
         "id": "urn:ngm:class:mining-pool",
         "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:hash-power",
+        "label": "Hash Power"
+      },
+      {
+        "id": "urn:ngm:class:lightning-channel",
+        "label": "Lightning Channel"
       }
     ],
     "supports": [
@@ -120,12 +243,36 @@
       {
         "id": "urn:ngm:class:stratum-v2",
         "label": "Stratum V2"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation-monitoring",
+        "label": "Decentralisation Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:network-security-analysis",
+        "label": "Network Security Analysis"
+      },
+      {
+        "id": "urn:ngm:class:governance-reform",
+        "label": "Governance Reform"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:nakamoto-coefficient",
         "label": "Nakamoto Coefficient"
+      },
+      {
+        "id": "urn:ngm:class:cambridge-centre-for-alternative-finance-mining-reports",
+        "label": "Cambridge Centre for Alternative Finance Mining Reports"
+      },
+      {
+        "id": "urn:ngm:class:fsb-crypto-asset-monitoring-framework",
+        "label": "FSB Crypto Asset Monitoring Framework"
+      },
+      {
+        "id": "urn:ngm:class:bis-crypto-risk-assessment-framework",
+        "label": "BIS Crypto Risk Assessment Framework"
       }
     ],
     "partOf": [],
@@ -193,10 +340,188 @@
       {
         "id": "urn:ngm:class:sybil-attack",
         "label": "Sybil Attack"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-risk",
+        "label": "Regulatory Risk"
+      },
+      {
+        "id": "urn:ngm:class:exchange",
+        "label": "Exchange"
+      },
+      {
+        "id": "urn:ngm:class:foundry-usa",
+        "label": "Foundry USA"
       }
     ]
   },
-  "inferredSuperClasses": [],
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity",
+      "slug": "cybersecurity"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:information-security",
+      "label": "Information Security",
+      "slug": "information-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    }
+  ],
   "inheritedRelations": {
     "hasPart": [
       {
@@ -212,7 +537,7 @@
         "label": "Blockchain Governance"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
       },
       {
@@ -244,6 +569,26 @@
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
       }
     ],
     "enables": [
@@ -252,7 +597,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -266,6 +611,290 @@
       {
         "id": "urn:ngm:class:token-economics",
         "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:compute-threshold",
+        "label": "Compute Threshold"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-safety-framework",
+        "label": "AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:channel-isolation-pattern",
+        "label": "Channel Isolation Pattern"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:limited-risk-ai",
+        "label": "Limited Risk AI"
+      },
+      {
+        "id": "urn:ngm:class:minimal-risk-ai",
+        "label": "Minimal Risk AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-system",
+        "label": "Federated Architecture"
+      },
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralized Database"
+      },
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:deep-packet-inspection",
+        "label": "Deep Packet Inspection"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-office",
+        "label": "AI Office"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:eu-dlt-pilot-regime",
+        "label": "EU DLT Pilot Regime"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2418",
+        "label": "IEEE P2418"
+      },
+      {
+        "id": "urn:ngm:class:isda-common-domain-model",
+        "label": "ISDA Common Domain Model"
+      },
+      {
+        "id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "General-Purpose AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
       }
     ],
     "relatedTo": [
@@ -280,6 +909,26 @@
       {
         "id": "urn:ngm:class:regulatory-technology",
         "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ]
   },

@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
+    },
+    {
+      "id": "urn:ngm:class:robotics-systems",
+      "label": "Robotics Systems"
+    },
+    {
+      "id": "urn:ngm:class:manufacturing-automation",
+      "label": "Manufacturing Automation"
+    },
+    {
+      "id": "urn:ngm:class:electromechanical-systems",
+      "label": "Electromechanical Systems"
+    },
+    {
+      "id": "urn:ngm:class:cyber-physical-systems",
+      "label": "Cyber Physical Systems"
+    },
+    {
+      "id": "urn:ngm:class:programmable-logic-controller",
+      "label": "Programmable Logic Controller"
     }
   ],
   "entityType": "Class",
@@ -72,8 +92,12 @@
         "label": "Motion Planning"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
+        "id": "urn:ngm:class:ros",
         "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:safety-standards",
+        "label": "Safety Standards"
       }
     ],
     "enables": [
@@ -88,9 +112,38 @@
       {
         "id": "urn:ngm:class:quality-inspection",
         "label": "Quality Inspection"
+      },
+      {
+        "id": "urn:ngm:class:high-speed-assembly",
+        "label": "High Speed Assembly"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-automation",
+        "label": "Collaborative Automation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:computer-vision",
@@ -113,7 +166,24 @@
         "label": "Trajectory Planning"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:fixed-automation",
+        "label": "Fixed Automation"
+      },
+      {
+        "id": "urn:ngm:class:manual-assembly",
+        "label": "Manual Assembly"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:manufacturing-automation",
@@ -140,12 +210,32 @@
       {
         "id": "urn:ngm:class:ros-industrial",
         "label": "ROS-Industrial"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT Protocol"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:logistics-automation",
         "label": "Logistics Automation"
+      },
+      {
+        "id": "urn:ngm:class:automotive-manufacturing",
+        "label": "Automotive Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:electronics-assembly",
+        "label": "Electronics Assembly"
+      },
+      {
+        "id": "urn:ngm:class:food-processing-automation",
+        "label": "Food Processing Automation"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-manufacturing",
+        "label": "Pharmaceutical Manufacturing"
       }
     ],
     "standardizedBy": [
@@ -164,6 +254,10 @@
       {
         "id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:en-60204",
+        "label": "EN 60204"
       }
     ],
     "partOf": [],
@@ -183,14 +277,58 @@
       {
         "id": "urn:ngm:class:teleoperation-systems",
         "label": "Teleoperation Systems"
+      },
+      {
+        "id": "urn:ngm:class:computer-numerical-control",
+        "label": "Computer Numerical Control"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:embedded-systems",
+      "label": "Embedded Systems",
+      "slug": "embedded-systems"
+    },
+    {
+      "id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation",
+      "slug": "industrial-automation"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:technology-domain",
+      "label": "Technology Domain",
+      "slug": "technology-domain"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -230,42 +368,194 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:actuators",
-        "label": "Actuators"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:control-system",
-        "label": "Control System"
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
       },
       {
-        "id": "urn:ngm:class:kinematics",
-        "label": "Kinematics"
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
       },
       {
-        "id": "urn:ngm:class:humanoid-robotics",
-        "label": "Humanoid Robotics"
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
       },
       {
         "id": "urn:ngm:class:industrial-automation",
         "label": "IndustrialAutomation"
       },
       {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
+        "id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
       },
       {
-        "id": "urn:ngm:class:smart-manufacturing",
-        "label": "Smart Manufacturing"
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
       },
       {
-        "id": "urn:ngm:class:warehouse-automation",
-        "label": "Warehouse Automation"
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocols"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:industrial-ethernet",
+        "label": "Industrial Ethernet"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:information-technology",
+        "label": "Information Technology"
+      },
+      {
+        "id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
+      },
+      {
+        "id": "urn:ngm:class:manual-manufacturing",
+        "label": "Manual Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -276,6 +566,104 @@
       {
         "id": "urn:ngm:class:servo-motor",
         "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:over-the-air-update",
+        "label": "Over-the-Air Update"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:isa-95",
+        "label": "ISA-95"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:misra-c",
+        "label": "MISRA C"
+      },
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131"
+      },
+      {
+        "id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
       }
     ],
     "relatedTo": [
@@ -306,6 +694,10 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ]
   },

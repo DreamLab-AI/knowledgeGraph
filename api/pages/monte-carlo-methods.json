@@ -72,11 +72,24 @@
       {
         "id": "urn:ngm:class:probabilistic-programming",
         "label": "Probabilistic Programming"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Monte Carlo Localisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deterministic-algorithms",
+        "label": "Deterministic Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:numerical-quadrature",
+        "label": "Numerical Quadrature"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:financial-modelling",
@@ -123,7 +136,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:particle-filter",
+        "id": "urn:ngm:class:monte-carlo-localization",
         "label": "Particle Filter"
       },
       {
@@ -212,6 +225,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

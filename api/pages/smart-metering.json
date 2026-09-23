@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:sensor-networks",
+        "label": "Sensor Network"
       }
     ],
     "enables": [
@@ -38,6 +42,10 @@
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:sensor-networks",
+        "label": "Sensor Network"
+      },
       {
         "id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
@@ -159,16 +167,16 @@
         "label": "Hardware Abstraction Layer"
       },
       {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
       },
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -277,7 +285,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -354,6 +362,10 @@
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-1801-upf",
+        "label": "IEEE 1801 (UPF)"
+      },
       {
         "id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO TS 15066"

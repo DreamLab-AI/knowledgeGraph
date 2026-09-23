@@ -16,8 +16,12 @@
       "label": "Robotics"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:robotic-middleware",
+      "label": "Robotic Middleware"
+    },
+    {
+      "id": "urn:ngm:class:publish-subscribe-framework",
+      "label": "Publish-Subscribe Framework"
     }
   ],
   "entityType": "Class",
@@ -36,6 +40,26 @@
       {
         "id": "urn:ngm:class:urdf-robot-model",
         "label": "URDF Robot Model"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "ROS Node"
+      },
+      {
+        "id": "urn:ngm:class:ros-topic",
+        "label": "ROS Topic"
+      },
+      {
+        "id": "urn:ngm:class:ros-service",
+        "label": "ROS Service"
+      },
+      {
+        "id": "urn:ngm:class:ros-action",
+        "label": "ROS Action"
+      },
+      {
+        "id": "urn:ngm:class:ros-package",
+        "label": "ROS Package"
       }
     ],
     "requires": [
@@ -46,6 +70,10 @@
       {
         "id": "urn:ngm:class:python-3",
         "label": "Python 3"
+      },
+      {
+        "id": "urn:ngm:class:cmake-build-system",
+        "label": "CMake Build System"
       }
     ],
     "enables": [
@@ -70,15 +98,57 @@
         "label": "Sensor Fusion"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:eprosima-fast-dds",
+        "label": "eProsima Fast DDS"
+      },
+      {
+        "id": "urn:ngm:class:cyclonedds",
+        "label": "CycloneDDS"
+      },
+      {
+        "id": "urn:ngm:class:python-rclpy",
+        "label": "Python rclpy"
+      },
+      {
+        "id": "urn:ngm:class:c-rclcpp",
+        "label": "C++ rclcpp"
+      }
+    ],
     "implements": [
+      {
+        "id": "urn:ngm:class:ros-rep",
+        "label": "REP Standards"
+      },
+      {
+        "id": "urn:ngm:class:dds-rtps-protocol",
+        "label": "DDS RTPS Protocol"
+      },
+      {
+        "id": "urn:ngm:class:sros2-security",
+        "label": "SROS2 Security"
+      },
       {
         "id": "urn:ngm:class:ros-rep",
         "label": "REP Standards"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -86,11 +156,35 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems Platform"
+      },
+      {
+        "id": "urn:ngm:class:robotic-software-stack",
+        "label": "Robotic Software Stack"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems Platform"
       }
     ],
     "relatedTo": []
   },
-  "inferredSuperClasses": [],
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    }
+  ],
   "inheritedRelations": {
     "hasPart": [
       {
@@ -138,6 +232,26 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
       }
     ],
     "enables": [
@@ -164,6 +278,80 @@
       {
         "id": "urn:ngm:class:warehouse-automation",
         "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
       }
     ],
     "uses": [
@@ -174,6 +362,78 @@
       {
         "id": "urn:ngm:class:servo-motor",
         "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
@@ -188,6 +448,26 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       }
     ]
   },

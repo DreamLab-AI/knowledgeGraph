@@ -109,6 +109,11 @@
       "slug": "sensor"
     },
     {
+      "id": "urn:ngm:class:visualperception",
+      "label": "VisualPerception",
+      "slug": "visualperception"
+    },
+    {
       "id": "urn:ngm:class:hardware-component",
       "label": "Hardware Component",
       "slug": "hardware-component"
@@ -135,8 +140,16 @@
         "label": "Image Sensor"
       },
       {
+        "id": "urn:ngm:class:imagesensor",
+        "label": "ImageSensor"
+      },
+      {
         "id": "urn:ngm:class:lens",
         "label": "Lens"
+      },
+      {
+        "id": "urn:ngm:class:processingunit",
+        "label": "ProcessingUnit"
       },
       {
         "id": "urn:ngm:class:camera",
@@ -149,14 +162,6 @@
       {
         "id": "urn:ngm:class:force-torque-sensor",
         "label": "Force Torque Sensor"
-      },
-      {
-        "id": "urn:ngm:class:imu",
-        "label": "IMU"
-      },
-      {
-        "id": "urn:ngm:class:lidar",
-        "label": "Lidar"
       }
     ],
     "requires": [
@@ -199,6 +204,10 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:3dreconstruction",
+        "label": "3DReconstruction"
+      },
+      {
         "id": "urn:ngm:class:depth-estimation",
         "label": "Depth Estimation"
       },
@@ -221,10 +230,6 @@
       {
         "id": "urn:ngm:class:visual-servoing",
         "label": "VisualServoing"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-navigation",
-        "label": "Autonomous Navigation"
       }
     ],
     "dependsOn": [
@@ -295,7 +300,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -323,6 +328,10 @@
       {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:bus-interface",
+        "label": "Bus Interface"
       },
       {
         "id": "urn:ngm:class:communication-protocol",
@@ -407,6 +416,10 @@
         "label": "Edge Computing Node"
       },
       {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
@@ -433,16 +446,16 @@
         "label": "Field-Programmable Gate Array"
       },
       {
+        "id": "urn:ngm:class:printed-circuit-board",
+        "label": "Printed Circuit Board"
+      },
+      {
         "id": "urn:ngm:class:system-on-chip",
         "label": "System-on-Chip"
       },
       {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:infra-data-management",
-        "label": "Data Management"
       }
     ]
   },

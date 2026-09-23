@@ -66,6 +66,21 @@
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -73,6 +88,18 @@
       {
         "id": "urn:ngm:class:balance-control",
         "label": "Balance Control"
+      },
+      {
+        "id": "urn:ngm:class:foothold-selection",
+        "label": "Foothold Selection"
+      },
+      {
+        "id": "urn:ngm:class:gait-planning",
+        "label": "Gait Planning"
+      },
+      {
+        "id": "urn:ngm:class:swing-leg-control",
+        "label": "Swing Leg Control"
       },
       {
         "id": "urn:ngm:class:autonomous-navigation",
@@ -89,18 +116,6 @@
       {
         "id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
-      },
-      {
-        "id": "urn:ngm:class:path-planning",
-        "label": "Path Planning"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
-      },
-      {
-        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
-        "label": "Simultaneous Localisation and Mapping"
       }
     ],
     "requires": [
@@ -131,6 +146,10 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
       }
     ],
     "enables": [
@@ -147,6 +166,10 @@
         "label": "Search and Rescue Robotics"
       },
       {
+        "id": "urn:ngm:class:terrain-traversal",
+        "label": "Terrain Traversal"
+      },
+      {
         "id": "urn:ngm:class:autonomous-manufacturing",
         "label": "Autonomous Manufacturing"
       },
@@ -161,16 +184,46 @@
       {
         "id": "urn:ngm:class:precision-manufacturing",
         "label": "Precision Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
       },
       {
-        "id": "urn:ngm:class:smart-manufacturing",
-        "label": "Smart Manufacturing"
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:aerial-robotics",
         "label": "Aerial Robotics"
+      },
+      {
+        "id": "urn:ngm:class:wheeled-locomotion",
+        "label": "Wheeled Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
@@ -181,6 +234,30 @@
       {
         "id": "urn:ngm:class:robot-simulation",
         "label": "Robot Simulation"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
       }
     ],
     "uses": [
@@ -199,12 +276,80 @@
       {
         "id": "urn:ngm:class:navigation",
         "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:biomechanics",
         "label": "Biomechanics"
+      },
+      {
+        "id": "urn:ngm:class:bipedal-robot",
+        "label": "Bipedal Robot"
       },
       {
         "id": "urn:ngm:class:quadruped-robot",
@@ -217,6 +362,10 @@
       {
         "id": "urn:ngm:class:sim-to-real-transfer",
         "label": "Sim-to-Real Transfer"
+      },
+      {
+        "id": "urn:ngm:class:zero-moment-point",
+        "label": "Zero-Moment Point"
       },
       {
         "id": "urn:ngm:class:robo-actuation-and-control",

@@ -18,6 +18,18 @@
     {
       "id": "urn:ngm:class:object-recognition",
       "label": "Object Recognition"
+    },
+    {
+      "id": "urn:ngm:class:scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "id": "urn:ngm:class:image-analysis",
+      "label": "Image Analysis"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
     }
   ],
   "entityType": "Class",
@@ -52,6 +64,26 @@
       {
         "id": "urn:ngm:class:semantic-segmentation",
         "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Promptable Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:open-vocabulary-segmentation",
+        "label": "Open-Vocabulary Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:pixel-classification-head",
+        "label": "Pixel Classification Head"
+      },
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "Mask Decoder"
       }
     ],
     "requires": [
@@ -74,6 +106,14 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:backbone-network",
+        "label": "Backbone Network"
       }
     ],
     "enables": [
@@ -96,9 +136,54 @@
       {
         "id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics Vision"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics Vision"
+      },
+      {
+        "id": "urn:ngm:class:ar-content-removal",
+        "label": "AR Content Removal"
+      },
+      {
+        "id": "urn:ngm:class:satellite-monitoring",
+        "label": "Satellite Earth Observation"
+      },
+      {
+        "id": "urn:ngm:class:quality-control",
+        "label": "Industrial Quality Control"
+      },
+      {
+        "id": "urn:ngm:class:video-editing-automation",
+        "label": "Video Editing Automation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "id": "urn:ngm:class:image-embeddings",
+        "label": "Image Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:visual-foundation-models",
+        "label": "Visual Foundation Models"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:detr",
@@ -115,9 +200,70 @@
       {
         "id": "urn:ngm:class:decoder",
         "label": "X-Decoder"
+      },
+      {
+        "id": "urn:ngm:class:deeplab",
+        "label": "DeepLab"
+      },
+      {
+        "id": "urn:ngm:class:mask2former",
+        "label": "Mask2Former"
+      },
+      {
+        "id": "urn:ngm:class:segformer",
+        "label": "SegFormer"
+      },
+      {
+        "id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic FPN"
+      },
+      {
+        "id": "urn:ngm:class:segment-anything-model",
+        "label": "Segment Anything Model"
+      },
+      {
+        "id": "urn:ngm:class:sam-2",
+        "label": "SAM 2"
+      },
+      {
+        "id": "urn:ngm:class:nnunet",
+        "label": "nnUNet"
+      },
+      {
+        "id": "urn:ngm:class:medsam",
+        "label": "MedSAM"
+      },
+      {
+        "id": "urn:ngm:class:grounded-sam",
+        "label": "Grounded SAM"
+      },
+      {
+        "id": "urn:ngm:class:owlv2",
+        "label": "OWLv2"
+      },
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "X-Decoder"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -135,6 +281,18 @@
       {
         "id": "urn:ngm:class:panoptic-quality-metric",
         "label": "Panoptic Quality Metric"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Dice Loss"
+      },
+      {
+        "id": "urn:ngm:class:iou-metric",
+        "label": "IoU Metric"
+      },
+      {
+        "id": "urn:ngm:class:hungarian-matching",
+        "label": "Hungarian Matching"
       }
     ],
     "supports": [
@@ -153,6 +311,18 @@
       {
         "id": "urn:ngm:class:medical-segmentation-decathlon",
         "label": "Medical Segmentation Decathlon"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Cityscapes Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:bdd100k",
+        "label": "BDD100K"
+      },
+      {
+        "id": "urn:ngm:class:nuscenes",
+        "label": "nuScenes"
       }
     ],
     "standardizedBy": [
@@ -167,6 +337,18 @@
       {
         "id": "urn:ngm:class:medical-segmentation-decathlon",
         "label": "Medical Segmentation Decathlon"
+      },
+      {
+        "id": "urn:ngm:class:coco-dataset",
+        "label": "COCO Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:pascal-voc-protocol",
+        "label": "Pascal VOC Protocol"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Cityscapes Evaluation"
       }
     ],
     "partOf": [],
@@ -200,6 +382,11 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -208,6 +395,21 @@
       "id": "urn:ngm:class:computer-vision-task",
       "label": "Computer Vision Task",
       "slug": "computer-vision-task"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:perception-system",
+      "label": "Perception System",
+      "slug": "perception-system"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -259,16 +461,24 @@
         "label": "Pattern Recognition"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       }
     ],
     "enables": [
@@ -285,6 +495,10 @@
         "label": "Robotics Perception"
       },
       {
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
+      },
+      {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
       },
@@ -299,19 +513,111 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:visual-question-answering",
-        "label": "Visual Question Answering"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:image-classification",
-        "label": "Image Classification"
+        "id": "urn:ngm:class:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-learning",
+        "label": "End-to-End Learning"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
@@ -319,6 +625,18 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-validation",
+        "label": "Blockchain Validation"
       }
     ],
     "uses": [
@@ -349,12 +667,96 @@
       {
         "id": "urn:ngm:class:vision-transformer",
         "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-21448",
+        "label": "ISO 21448"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:sae-j-3016",
+        "label": "SAE J3016"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "partOf": [
       {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-virtual-entity",
+        "label": "Intelligent Virtual Entity"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
       }
     ],
     "relatedTo": [

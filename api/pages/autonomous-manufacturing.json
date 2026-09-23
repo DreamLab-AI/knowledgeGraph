@@ -252,7 +252,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -298,7 +298,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -370,6 +370,12 @@
         "label": "ISO/IEC"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:collaborative-systems-modality-robotics",
@@ -378,6 +384,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-execution-system",
+        "label": "Manufacturing Execution System"
       },
       {
         "id": "urn:ngm:class:precision-manufacturing",
@@ -398,10 +408,6 @@
       {
         "id": "urn:ngm:class:scada",
         "label": "SCADA"
-      },
-      {
-        "id": "urn:ngm:class:security",
-        "label": "Cyber Security"
       }
     ]
   },

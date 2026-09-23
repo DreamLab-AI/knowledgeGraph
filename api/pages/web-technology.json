@@ -61,7 +61,7 @@
       },
       {
         "id": "urn:ngm:class:tcp-ip",
-        "label": "TCP/IP"
+        "label": "TCP-IP"
       }
     ],
     "enables": [
@@ -84,14 +84,23 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:native-application",
+        "label": "Native Application"
+      },
+      {
+        "id": "urn:ngm:class:centralised-cloud",
+        "label": "Centralised Cloud"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -126,6 +135,10 @@
       {
         "id": "urn:ngm:class:ietf",
         "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:whatwg",
+        "label": "WHATWG"
       }
     ],
     "partOf": [],
@@ -135,8 +148,12 @@
         "label": "Web Browser"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:web-server",
+        "label": "Web Server"
       }
     ]
   },
@@ -264,7 +281,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

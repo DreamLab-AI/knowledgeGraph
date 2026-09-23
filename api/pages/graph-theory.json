@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
     }
   ],
   "entityType": "Class",
@@ -24,6 +28,18 @@
       {
         "id": "urn:ngm:class:graph-algorithms",
         "label": "Graph Traversal"
+      },
+      {
+        "id": "urn:ngm:class:tree",
+        "label": "Tree"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Shortest Path"
+      },
+      {
+        "id": "urn:ngm:class:graph-colouring",
+        "label": "Graph Colouring"
       }
     ],
     "requires": [
@@ -82,6 +98,14 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-domain",
+        "label": "Distributed Systems Domain"
       }
     ],
     "uses": [
@@ -197,6 +221,20 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

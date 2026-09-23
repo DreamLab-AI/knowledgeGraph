@@ -10,6 +10,14 @@
     {
       "id": "urn:ngm:class:autonomous-system",
       "label": "Autonomous System"
+    },
+    {
+      "id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "id": "urn:ngm:class:process-automation",
+      "label": "Process Automation"
     }
   ],
   "entityType": "Class",
@@ -32,6 +40,22 @@
       {
         "id": "urn:ngm:class:decision-engine",
         "label": "Decision Engine"
+      },
+      {
+        "id": "urn:ngm:class:perception-module",
+        "label": "Perception Module"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerant-control",
+        "label": "Fault-Tolerant Control"
+      },
+      {
+        "id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      },
+      {
+        "id": "urn:ngm:class:mape-k-loop",
+        "label": "MAPE-K Loop"
       }
     ],
     "requires": [
@@ -54,6 +78,14 @@
       {
         "id": "urn:ngm:class:fault-tolerant-control",
         "label": "Fault-Tolerant Control"
+      },
+      {
+        "id": "urn:ngm:class:operational-design-domain",
+        "label": "Operational Design Domain"
+      },
+      {
+        "id": "urn:ngm:class:situation-awareness",
+        "label": "Situation Awareness"
       }
     ],
     "enables": [
@@ -76,6 +108,18 @@
       {
         "id": "urn:ngm:class:process-automation",
         "label": "Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:aiops",
+        "label": "AIOps"
+      },
+      {
+        "id": "urn:ngm:class:self-healing-system",
+        "label": "Self-Healing System"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
       }
     ],
     "dependsOn": [
@@ -90,9 +134,46 @@
       {
         "id": "urn:ngm:class:cognitive-architecture",
         "label": "Cognitive Architecture"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:sensor-networks",
+        "label": "Sensor Networks"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:autonomic-computing",
+        "label": "Autonomic Computing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "id": "urn:ngm:class:mape-k-loop",
+        "label": "MAPE-K Loop"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:human-in-the-loop",
@@ -101,10 +182,72 @@
       {
         "id": "urn:ngm:class:robotic-process-automation",
         "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:supervised-automation",
+        "label": "Supervised Automation"
+      },
+      {
+        "id": "urn:ngm:class:manual-control",
+        "label": "Manual Control"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:distributed-control-system",
+        "label": "Distributed Control System"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:functional-safety",
@@ -117,11 +260,19 @@
       {
         "id": "urn:ngm:class:human-in-the-loop",
         "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerant-control",
+        "label": "Fault-Tolerant Control"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -131,6 +282,14 @@
       {
         "id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:sae-j-3016",
+        "label": "SAE J3016"
       }
     ],
     "partOf": [],
@@ -154,26 +313,71 @@
       {
         "id": "urn:ngm:class:operational-design-domain",
         "label": "Operational Design Domain"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      },
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
+    },
     {
       "id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type",
       "slug": "robo-robot-type"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:perception-module",
-        "label": "Perception Module"
+        "id": "urn:ngm:class:actuation-system",
+        "label": "Actuation System"
       },
       {
         "id": "urn:ngm:class:planning-module",
@@ -188,20 +392,20 @@
         "label": "World Model"
       },
       {
-        "id": "urn:ngm:class:aerial-robot",
-        "label": "Aerial Robot"
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
       },
       {
-        "id": "urn:ngm:class:autonomous-robot",
-        "label": "Autonomous Robot"
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
       },
       {
-        "id": "urn:ngm:class:collaborative-systems-modality-robot",
-        "label": "Collaborative Robot"
+        "id": "urn:ngm:class:task-scheduling",
+        "label": "Task Scheduling"
       },
       {
-        "id": "urn:ngm:class:humanoid-robot",
-        "label": "Humanoid Robot"
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
       }
     ],
     "requires": [
@@ -222,16 +426,20 @@
         "label": "State Estimation"
       },
       {
-        "id": "urn:ngm:class:actuators",
-        "label": "Actuators"
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
       },
       {
-        "id": "urn:ngm:class:control-system",
-        "label": "Control System"
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:kinematics",
-        "label": "Kinematics"
+        "id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
       }
     ],
     "enables": [
@@ -244,28 +452,28 @@
         "label": "Autonomous Vehicle"
       },
       {
+        "id": "urn:ngm:class:autonomous-warehouse-robot",
+        "label": "Autonomous Warehouse Robot"
+      },
+      {
         "id": "urn:ngm:class:unmanned-aerial-vehicle",
         "label": "Unmanned Aerial Vehicle"
       },
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
       },
       {
-        "id": "urn:ngm:class:humanoid-robotics",
-        "label": "Humanoid Robotics"
+        "id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
       },
       {
-        "id": "urn:ngm:class:industrial-automation",
-        "label": "IndustrialAutomation"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Process Automation"
       },
       {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
-      },
-      {
-        "id": "urn:ngm:class:smart-manufacturing",
-        "label": "Smart Manufacturing"
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
       }
     ],
     "dependsOn": [
@@ -276,12 +484,64 @@
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:business-rules-engine",
+        "label": "Business Rules Engine"
+      },
+      {
+        "id": "urn:ngm:class:low-code-platform",
+        "label": "Low-Code Platform"
+      },
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:semi-autonomous-system",
+        "label": "Semi-Autonomous System"
+      },
+      {
         "id": "urn:ngm:class:teleoperated-robot",
         "label": "Teleoperated System"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:manual-processing",
+        "label": "Manual Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
@@ -292,6 +552,30 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -310,6 +594,22 @@
       {
         "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
       }
     ],
     "supports": [
@@ -320,6 +620,30 @@
       {
         "id": "urn:ngm:class:multi-robot-systems",
         "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
       }
     ],
     "standardizedBy": [
@@ -328,8 +652,32 @@
         "label": "ISO/IEC 42010"
       },
       {
-        "id": "urn:ngm:class:sae-j-3016",
-        "label": "SAE Levels of Driving Automation"
+        "id": "urn:ngm:class:bpmn",
+        "label": "BPMN"
+      },
+      {
+        "id": "urn:ngm:class:dmn",
+        "label": "DMN"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
@@ -346,20 +694,24 @@
         "label": "Robot Safety"
       },
       {
-        "id": "urn:ngm:class:human-robot-interaction",
-        "label": "Human-Robot Interaction"
+        "id": "urn:ngm:class:integration-platform-as-a-service",
+        "label": "Integration Platform as a Service"
       },
       {
-        "id": "urn:ngm:class:robo-actuation-and-control",
-        "label": "Actuation and Control"
+        "id": "urn:ngm:class:low-code-platform",
+        "label": "Low-Code Platforms"
       },
       {
-        "id": "urn:ngm:class:robo-navigation-and-planning",
-        "label": "Navigation and Planning"
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
       },
       {
-        "id": "urn:ngm:class:robo-safety-and-standards",
-        "label": "Safety and Standards"
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance-automation",
+        "label": "Trade Finance Automation"
       }
     ]
   },

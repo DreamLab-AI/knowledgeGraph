@@ -42,7 +42,7 @@
         "label": "Biometric Authentication"
       },
       {
-        "id": "urn:ngm:class:zero-trust",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust"
       }
     ],
@@ -128,6 +128,10 @@
         "label": "One-Time Password"
       },
       {
+        "id": "urn:ngm:class:push-notification-authentication",
+        "label": "Push Notification Authentication"
+      },
+      {
         "id": "urn:ngm:class:challenge-response-protocol",
         "label": "Challenge-Response Protocol"
       },
@@ -142,24 +146,28 @@
       {
         "id": "urn:ngm:class:authorisation",
         "label": "Authorisation"
-      },
-      {
-        "id": "urn:ngm:class:directory-service",
-        "label": "Directory Services"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:credential-management",
+        "label": "Credential Management"
+      },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
-        "id": "urn:ngm:class:cryptographic-keys",
-        "label": "Cryptographic Keys"
+        "id": "urn:ngm:class:shared-secret",
+        "label": "Shared Secret"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
       },
       {
         "id": "urn:ngm:class:secure-channel",
@@ -172,14 +180,6 @@
       {
         "id": "urn:ngm:class:digital-certificate",
         "label": "Digital Certificates"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
       }
     ],
     "enables": [
@@ -218,12 +218,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-keys",
-        "label": "Cryptographic Keys"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
       },
       {
         "id": "urn:ngm:class:secure-channel",
@@ -282,6 +282,10 @@
         "label": "Password Authentication"
       },
       {
+        "id": "urn:ngm:class:single-factor-authentication",
+        "label": "Single-Factor Authentication"
+      },
+      {
         "id": "urn:ngm:class:anonymity",
         "label": "Anonymity"
       },
@@ -334,6 +338,10 @@
         "label": "FIDO2 WebAuthn"
       },
       {
+        "id": "urn:ngm:class:time-based-one-time-password",
+        "label": "Time-Based One-Time Password"
+      },
+      {
         "id": "urn:ngm:class:authentication-standards",
         "label": "Authentication Standards"
       },
@@ -346,16 +354,12 @@
         "label": "One-Time Password"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
-      },
-      {
-        "id": "urn:ngm:class:multi-factor-authentication",
-        "label": "Multi-Factor Authentication"
-      },
-      {
-        "id": "urn:ngm:class:oauth-2-0",
-        "label": "OAuth 2.0"
       }
     ],
     "supports": [
@@ -428,6 +432,10 @@
     ],
     "partOf": [
       {
+        "id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      },
+      {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity and Access Management"
       },
@@ -462,12 +470,12 @@
         "label": "Session Management"
       },
       {
-        "id": "urn:ngm:class:federation",
-        "label": "Federation"
+        "id": "urn:ngm:class:biometrics",
+        "label": "Biometrics"
       },
       {
-        "id": "urn:ngm:class:multi-factor-authentication",
-        "label": "Multi-Factor Authentication"
+        "id": "urn:ngm:class:federation",
+        "label": "Federation"
       }
     ]
   },

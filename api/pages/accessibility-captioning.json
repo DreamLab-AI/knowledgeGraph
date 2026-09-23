@@ -112,6 +112,10 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:co-design",
+        "label": "Co-Design"
+      },
+      {
         "id": "urn:ngm:class:participatory-design",
         "label": "Participatory Design"
       },
@@ -222,6 +226,18 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -269,6 +285,10 @@
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:european-accessibility-act",
+        "label": "European Accessibility Act"
+      },
       {
         "id": "urn:ngm:class:wai-aria",
         "label": "WAI-ARIA"

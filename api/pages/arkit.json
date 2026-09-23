@@ -122,9 +122,24 @@
       "slug": "digital-technology"
     },
     {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets",
       "slug": "sc-content-and-assets"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -198,6 +213,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:contextual-information-display",
+        "label": "Contextual Information Display"
+      },
+      {
         "id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
       },
@@ -224,10 +243,6 @@
       {
         "id": "urn:ngm:class:remote-collaboration",
         "label": "Remote Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:spatial-audio",
-        "label": "Spatial Audio"
       }
     ],
     "dependsOn": [
@@ -244,16 +259,24 @@
         "label": "Simultaneous Localisation and Mapping"
       },
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing",
+        "label": "Graphics Processing"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
         "id": "urn:ngm:class:graphics-processing-unit",
         "label": "Graphics Processing Unit"
-      },
-      {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
-      },
-      {
-        "id": "urn:ngm:class:spatial-audio",
-        "label": "Spatial Audio"
       }
     ],
     "contrastsWith": [
@@ -266,6 +289,10 @@
         "label": "Virtual Reality"
       },
       {
+        "id": "urn:ngm:class:two-dimensional-interface",
+        "label": "Two-Dimensional Interface"
+      },
+      {
         "id": "urn:ngm:class:localisation",
         "label": "Localization"
       },
@@ -276,12 +303,20 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
         "id": "urn:ngm:class:internet-of-things",
@@ -292,11 +327,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -322,7 +353,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -358,6 +389,14 @@
       {
         "id": "urn:ngm:class:enterprise-training",
         "label": "Enterprise Training"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -386,6 +425,10 @@
       {
         "id": "urn:ngm:class:immersive-technology",
         "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       },
       {
         "id": "urn:ngm:class:knowledge-management-system",

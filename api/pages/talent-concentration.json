@@ -45,6 +45,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-research-talent",
+      "label": "AI Research Talent",
+      "slug": "ai-research-talent"
+    },
+    {
       "id": "urn:ngm:class:human-capital",
       "label": "Human Capital",
       "slug": "human-capital"
@@ -70,9 +75,34 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:behavioural-economics",
+      "label": "Behavioural Economics",
+      "slug": "behavioural-economics"
+    },
+    {
       "id": "urn:ngm:class:complexity-science",
       "label": "Complexity Science",
       "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory",
+      "slug": "information-theory"
+    },
+    {
+      "id": "urn:ngm:class:institutional-economics",
+      "label": "Institutional Economics",
+      "slug": "institutional-economics"
+    },
+    {
+      "id": "urn:ngm:class:political-economy",
+      "label": "Political Economy",
+      "slug": "political-economy"
+    },
+    {
+      "id": "urn:ngm:class:social-science",
+      "label": "Social Science",
+      "slug": "social-science"
     },
     {
       "id": "urn:ngm:class:spatial-computing",
@@ -80,9 +110,39 @@
       "slug": "spatial-computing"
     },
     {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -104,91 +164,23 @@
         "label": "Data Science"
       },
       {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
         "id": "urn:ngm:class:ml-engineering",
         "label": "ML Engineering"
       },
       {
-        "id": "urn:ngm:class:macroeconomics",
-        "label": "Macroeconomics"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:market-design",
-        "label": "Market Design"
-      },
-      {
-        "id": "urn:ngm:class:mechanism-design",
-        "label": "Mechanism Design"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:contract-theory",
-        "label": "Contract Theory"
-      },
-      {
-        "id": "urn:ngm:class:game-theory",
-        "label": "Game Theory"
-      },
-      {
-        "id": "urn:ngm:class:incentive-structures",
-        "label": "Incentive Structures"
-      },
-      {
-        "id": "urn:ngm:class:information-asymmetry",
-        "label": "Information Asymmetry"
-      },
-      {
-        "id": "urn:ngm:class:property-rights",
-        "label": "Property Rights"
-      },
-      {
-        "id": "urn:ngm:class:social-choice-theory",
-        "label": "Social Choice Theory"
-      },
-      {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
-      },
-      {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
-      }
-    ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:ai-model-development",
-        "label": "AI Model Development"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
-      },
-      {
-        "id": "urn:ngm:class:frontier-ai",
-        "label": "Frontier AI"
-      },
-      {
-        "id": "urn:ngm:class:technological-leadership",
-        "label": "Technological Leadership"
-      },
-      {
-        "id": "urn:ngm:class:augmented-connected-workforce",
-        "label": "Augmented Connected Workforce"
-      },
-      {
-        "id": "urn:ngm:class:education-metaverse",
-        "label": "Education Metaverse"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:dao-governance",
-        "label": "DAO Governance"
-      }
-    ],
-    "dependsOn": [
       {
         "id": "urn:ngm:class:ai-investment",
         "label": "AI Investment"
@@ -202,15 +194,107 @@
         "label": "Education and AI"
       },
       {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:incentive-structures",
+        "label": "Incentive Structures"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-model-development",
+        "label": "AI Model Development"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:technological-leadership",
+        "label": "Technological Leadership"
+      },
+      {
+        "id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
         "id": "urn:ngm:class:education-technology",
         "label": "Education Technology"
       },
       {
         "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-science",
+        "label": "Behavioural Science"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:immigration-policy",
+        "label": "Immigration Policy"
+      },
+      {
+        "id": "urn:ngm:class:national-ai-strategies",
+        "label": "National AI Strategies"
+      },
       {
         "id": "urn:ngm:class:auction-theory",
         "label": "Auction Theory"
@@ -224,39 +308,103 @@
         "label": "Game Theory"
       },
       {
+        "id": "urn:ngm:class:matching-theory",
+        "label": "Matching Theory"
+      },
+      {
         "id": "urn:ngm:class:mechanism-design",
         "label": "Mechanism Design"
-      },
-      {
-        "id": "urn:ngm:class:quadratic-funding",
-        "label": "Quadratic Funding"
-      },
-      {
-        "id": "urn:ngm:class:social-choice-theory",
-        "label": "Social Choice Theory"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:pervasive-computing",
-        "label": "Pervasive Computing"
+        "id": "urn:ngm:class:ai-talent-war",
+        "label": "AI Talent War"
+      },
+      {
+        "id": "urn:ngm:class:legal-reasoning",
+        "label": "Legal Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:pure-computer-science",
+        "label": "Pure Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:pure-engineering",
+        "label": "Pure Engineering"
+      },
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "id": "urn:ngm:class:expected-utility-theory",
+        "label": "Expected Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:rational-choice-theory",
+        "label": "Rational Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:3-d-reconstruction",
-        "label": "3D Reconstruction"
+        "id": "urn:ngm:class:algorithmic-recommendation",
+        "label": "Algorithmic Recommendation"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:network-coding",
+        "label": "Network Coding"
+      },
+      {
+        "id": "urn:ngm:class:quantum-information",
+        "label": "Quantum Information"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
       {
         "id": "urn:ngm:class:immersive-learning",
         "label": "Immersive Learning"
@@ -268,32 +416,20 @@
       {
         "id": "urn:ngm:class:agent-based-models",
         "label": "Agent-Based Models"
-      },
-      {
-        "id": "urn:ngm:class:causal-inference",
-        "label": "Causal Inference"
-      },
-      {
-        "id": "urn:ngm:class:econometrics",
-        "label": "Econometrics"
-      },
-      {
-        "id": "urn:ngm:class:network-analysis",
-        "label": "Network Analysis"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
       }
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
         "id": "urn:ngm:class:ai-governance-framework",
         "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:bias-and-fairness",
+        "label": "Bias and Fairness"
       },
       {
         "id": "urn:ngm:class:economic-competitiveness",
@@ -314,17 +450,17 @@
       {
         "id": "urn:ngm:class:algorithmic-bias-and-variance",
         "label": "Algorithmic Bias and Variance"
-      },
-      {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
-        "label": "Bitcoin Value Proposition"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:national-ai-strategies",
+        "label": "National AI Strategies"
+      },
       {
         "id": "urn:ngm:class:bank-of-england",
         "label": "Bank of England"
@@ -348,48 +484,46 @@
       {
         "id": "urn:ngm:class:oecd",
         "label": "OECD"
-      },
+      }
+    ],
+    "partOf": [
       {
-        "id": "urn:ngm:class:open-xr",
-        "label": "OpenXR"
-      },
-      {
-        "id": "urn:ngm:class:web-xr",
-        "label": "WebXR"
+        "id": "urn:ngm:class:decision-science",
+        "label": "Decision Science"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
       {
         "id": "urn:ngm:class:education-and-ai",
         "label": "Education and AI"
       },
       {
-        "id": "urn:ngm:class:agents",
-        "label": "Agents"
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
       },
       {
-        "id": "urn:ngm:class:ai-liability",
-        "label": "AI Liability"
+        "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
+        "label": "Google DeepMind"
       },
       {
-        "id": "urn:ngm:class:ai-risks",
-        "label": "AI Risks"
+        "id": "urn:ngm:class:immigration-policy",
+        "label": "Immigration Policy"
       },
       {
-        "id": "urn:ngm:class:aml-kyc-compliance",
-        "label": "AML KYC Compliance"
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
       },
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
-        "label": "Bitcoin Environmental Issues"
-      },
-      {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
-        "label": "Bitcoin Value Proposition"
-      },
-      {
-        "id": "urn:ngm:class:call-centres",
-        "label": "Call Centres"
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
       }
     ]
   },

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "ArtificialIntelligenceDomain"
     }
   ],
   "entityType": "Class",
@@ -25,11 +29,26 @@
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-capability",
+        "label": "AI Capability"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:industry-vertical",
+        "label": "Industry Vertical"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:application-domain",
+        "label": "Application Domain"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
@@ -39,7 +58,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -52,13 +71,7 @@
       }
     ]
   },
-  "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    }
-  ],
+  "inferredSuperClasses": [],
   "inheritedRelations": {
     "hasPart": [
       {
@@ -126,6 +139,24 @@
         "label": "Personalisation"
       }
     ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:deep-learning",
@@ -144,10 +175,6 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
       }
     ]
   },

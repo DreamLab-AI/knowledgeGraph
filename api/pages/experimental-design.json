@@ -62,7 +62,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:a-b-testing",
-        "label": "A/B Testing"
+        "label": "A-B Testing"
       }
     ],
     "supports": [
@@ -89,7 +89,7 @@
       },
       {
         "id": "urn:ngm:class:a-b-testing",
-        "label": "A/B Testing"
+        "label": "A-B Testing"
       },
       {
         "id": "urn:ngm:class:data-analysis",
@@ -208,6 +208,24 @@
       {
         "id": "urn:ngm:class:logic",
         "label": "Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

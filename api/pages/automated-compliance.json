@@ -186,6 +186,10 @@
         "label": "Audit Trail"
       },
       {
+        "id": "urn:ngm:class:policy-management",
+        "label": "Policy Management"
+      },
+      {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       },
@@ -206,6 +210,10 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:organisational-trust",
+        "label": "Organisational Trust"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -230,10 +238,6 @@
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
-      },
-      {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
       }
     ],
     "implements": [
@@ -250,6 +254,12 @@
         "label": "NIST AI RMF"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voluntary-guidelines",
+        "label": "Voluntary Guidelines"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:explainable-ai",
@@ -258,6 +268,18 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "supports": [

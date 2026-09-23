@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "id": "urn:ngm:class:web-crawler",
+      "label": "Web Crawler"
+    },
+    {
+      "id": "urn:ngm:class:automated-agent",
+      "label": "Automated Agent"
+    },
+    {
+      "id": "urn:ngm:class:data-acquisition-pipeline",
+      "label": "Data Acquisition Pipeline"
+    },
+    {
+      "id": "urn:ngm:class:regulated-data-processor",
+      "label": "Regulated Data Processor"
+    },
+    {
+      "id": "urn:ngm:class:internet-bot",
+      "label": "Internet Bot"
     }
   ],
   "entityType": "Class",
@@ -66,6 +86,10 @@
       {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:public-web-content",
+        "label": "Public Web Content"
       }
     ],
     "enables": [
@@ -94,7 +118,28 @@
         "label": "Synthetic Data Curation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:common-crawl",
+        "label": "Common Crawl"
+      },
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:public-web-architecture",
+        "label": "Public Web Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cdn-layer",
+        "label": "CDN Layer"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:content-type-negotiation",
@@ -117,7 +162,24 @@
         "label": "Robots Exclusion Protocol"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classic-search-crawler",
+        "label": "Classic Search Crawler"
+      },
+      {
+        "id": "urn:ngm:class:web-archive-crawler",
+        "label": "Web Archive Crawler"
+      },
+      {
+        "id": "urn:ngm:class:academic-crawler",
+        "label": "Academic Crawler"
+      },
+      {
+        "id": "urn:ngm:class:personal-web-scraper",
+        "label": "Personal Web Scraper"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-infrastructure",
@@ -170,6 +232,14 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-model-training",
+        "label": "Multimodal Model Training"
+      },
+      {
+        "id": "urn:ngm:class:rag-pipelines",
+        "label": "RAG Pipelines"
       }
     ],
     "standardizedBy": [
@@ -234,6 +304,11 @@
       "slug": "artificial-intelligence-core"
     },
     {
+      "id": "urn:ngm:class:search-engine",
+      "label": "Search Engine",
+      "slug": "search-engine"
+    },
+    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
@@ -242,6 +317,21 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval",
+      "slug": "information-retrieval"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing",
+      "slug": "natural-language-processing"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     }
   ],
   "inheritedRelations": {
@@ -259,6 +349,10 @@
         "label": "Decision Engine"
       },
       {
+        "id": "urn:ngm:class:goal-planner",
+        "label": "Goal Planner"
+      },
+      {
         "id": "urn:ngm:class:knowledge-base",
         "label": "Knowledge Base"
       },
@@ -267,22 +361,22 @@
         "label": "Learning Module"
       },
       {
+        "id": "urn:ngm:class:memory-system",
+        "label": "Memory System"
+      },
+      {
         "id": "urn:ngm:class:perception-system",
         "label": "Perception System"
-      },
-      {
-        "id": "urn:ngm:class:tool-use",
-        "label": "Tool Use System"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-driving",
-        "label": "Autonomous Driving"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:action-space",
         "label": "Action Space"
+      },
+      {
+        "id": "urn:ngm:class:api-access",
+        "label": "API Access"
       },
       {
         "id": "urn:ngm:class:authentication-system",
@@ -293,6 +387,10 @@
         "label": "Environment Model"
       },
       {
+        "id": "urn:ngm:class:resource-budget",
+        "label": "Resource Budget"
+      },
+      {
         "id": "urn:ngm:class:reward-function",
         "label": "Reward Function"
       },
@@ -301,16 +399,8 @@
         "label": "Sensor Input"
       },
       {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
-      },
-      {
-        "id": "urn:ngm:class:optimisation",
-        "label": "Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
       }
     ],
     "enables": [
@@ -331,20 +421,54 @@
         "label": "Code Generation"
       },
       {
+        "id": "urn:ngm:class:database-interaction",
+        "label": "Database Interaction"
+      },
+      {
         "id": "urn:ngm:class:file-system",
         "label": "File System Access"
       },
       {
+        "id": "urn:ngm:class:goal-achievement",
+        "label": "Goal Achievement"
+      },
+      {
         "id": "urn:ngm:class:multi-agent-coordination",
         "label": "Multi-Agent Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       },
       {
-        "id": "urn:ngm:class:agentic-ai",
-        "label": "Agentic AI"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:artificial-general-intelligence",
-        "label": "Artificial General Intelligence"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:corpus",
+        "label": "Corpus"
       }
     ],
     "implements": [
@@ -369,12 +493,80 @@
         "label": "Meta-Learning"
       },
       {
+        "id": "urn:ngm:class:planning-algorithm",
+        "label": "Planning Algorithm"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-economic-agent",
+        "label": "Autonomous Economic Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-trading-bot",
+        "label": "Bitcoin Trading Bot"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
       }
     ],
     "uses": [
@@ -385,6 +577,76 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "relatedTo": [
@@ -401,24 +663,24 @@
         "label": "Machine Learning Discipline"
       },
       {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
         "id": "urn:ngm:class:ai-agent-system",
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
       },
       {
-        "id": "urn:ngm:class:ai-application",
-        "label": "AI Application"
-      },
-      {
-        "id": "urn:ngm:class:ai-research-area",
-        "label": "AI Research Area"
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
       }
     ]
   },

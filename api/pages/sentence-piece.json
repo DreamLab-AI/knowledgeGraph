@@ -163,9 +163,23 @@
       {
         "id": "urn:ngm:class:language-model",
         "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:unicode-text-encoding",
+        "label": "Unicode Text Encoding"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:text-segmentation-algorithm",
+        "label": "Text Segmentation Algorithm"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:character-level-tokenisation",
+        "label": "Character-Level Tokenisation"
+      },
       {
         "id": "urn:ngm:class:word-level-tokenisation",
         "label": "Word-Level Tokenisation"
@@ -179,6 +193,22 @@
       {
         "id": "urn:ngm:class:computational-linguistics",
         "label": "Computational Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

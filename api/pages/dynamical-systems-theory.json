@@ -10,6 +10,18 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-physics",
+      "label": "Mathematical Physics"
     }
   ],
   "entityType": "Class",
@@ -20,6 +32,46 @@
       {
         "id": "urn:ngm:class:phase-space",
         "label": "Phase Space"
+      },
+      {
+        "id": "urn:ngm:class:attractor",
+        "label": "Attractor"
+      },
+      {
+        "id": "urn:ngm:class:fixed-point",
+        "label": "Fixed Point"
+      },
+      {
+        "id": "urn:ngm:class:limit-cycle",
+        "label": "Limit Cycle"
+      },
+      {
+        "id": "urn:ngm:class:bifurcation",
+        "label": "Bifurcation"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-exponent",
+        "label": "Lyapunov Exponent"
+      },
+      {
+        "id": "urn:ngm:class:poincare-map",
+        "label": "Poincare Map"
+      },
+      {
+        "id": "urn:ngm:class:invariant-manifold",
+        "label": "Invariant Manifold"
+      },
+      {
+        "id": "urn:ngm:class:basin-of-attraction",
+        "label": "Basin of Attraction"
+      },
+      {
+        "id": "urn:ngm:class:strange-attractor",
+        "label": "Strange Attractor"
+      },
+      {
+        "id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
       }
     ],
     "requires": [
@@ -38,6 +90,14 @@
       {
         "id": "urn:ngm:class:calculus",
         "label": "Calculus"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       }
     ],
     "enables": [
@@ -56,14 +116,84 @@
       {
         "id": "urn:ngm:class:stability-analysis",
         "label": "Stability Analysis"
+      },
+      {
+        "id": "urn:ngm:class:neural-ordinary-differential-equation",
+        "label": "Neural Ordinary Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:koopman-operator",
+        "label": "Koopman Operator"
+      },
+      {
+        "id": "urn:ngm:class:ergodic-theory",
+        "label": "Ergodic Theory"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
+      },
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:lyapunov-stability-theory",
+        "label": "Lyapunov Stability Theory"
+      },
+      {
+        "id": "urn:ngm:class:bifurcation-theory",
+        "label": "Bifurcation Theory"
+      },
+      {
+        "id": "urn:ngm:class:poincare-analysis",
+        "label": "Poincare Analysis"
+      },
+      {
+        "id": "urn:ngm:class:floquet-theory",
+        "label": "Floquet Theory"
+      },
+      {
+        "id": "urn:ngm:class:ergodic-theory",
+        "label": "Ergodic Theory"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:stochastic-processes",
         "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:static-optimisation",
+        "label": "Static Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:equilibrium-analysis",
+        "label": "Equilibrium Analysis"
+      },
+      {
+        "id": "urn:ngm:class:algebraic-topology",
+        "label": "Algebraic Topology"
       }
     ],
     "bridgesTo": [
@@ -92,6 +222,14 @@
       {
         "id": "urn:ngm:class:numerical-methods",
         "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-exponent",
+        "label": "Lyapunov Exponent"
       }
     ],
     "supports": [
@@ -102,9 +240,50 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "id": "urn:ngm:class:fluid-dynamics",
+        "label": "Fluid Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:dynamical-systems-theory",
+        "label": "Dynamical Systems Theory"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:henri-poincare",
+        "label": "Henri Poincare"
+      },
+      {
+        "id": "urn:ngm:class:aleksandr-lyapunov",
+        "label": "Aleksandr Lyapunov"
+      },
+      {
+        "id": "urn:ngm:class:stephen-smale",
+        "label": "Stephen Smale"
+      },
+      {
+        "id": "urn:ngm:class:vladimir-arnold",
+        "label": "Vladimir Arnold"
+      },
+      {
+        "id": "urn:ngm:class:george-birkhoff",
+        "label": "George Birkhoff"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -114,6 +293,122 @@
       {
         "id": "urn:ngm:class:information-theory",
         "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:nonlinear-dynamics",
+        "label": "Nonlinear Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:nonlinear-systems",
+        "label": "Nonlinear Systems"
+      },
+      {
+        "id": "urn:ngm:class:systems-dynamics",
+        "label": "Systems Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:dynamical-systems",
+        "label": "Dynamical Systems"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      },
+      {
+        "id": "urn:ngm:class:attractor",
+        "label": "Attractor"
+      },
+      {
+        "id": "urn:ngm:class:bifurcation",
+        "label": "Bifurcation"
+      },
+      {
+        "id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-exponent",
+        "label": "Lyapunov Exponent"
+      },
+      {
+        "id": "urn:ngm:class:limit-cycle",
+        "label": "Limit Cycle"
+      },
+      {
+        "id": "urn:ngm:class:strange-attractor",
+        "label": "Strange Attractor"
+      },
+      {
+        "id": "urn:ngm:class:fixed-point",
+        "label": "Fixed Point"
+      },
+      {
+        "id": "urn:ngm:class:neural-ordinary-differential-equation",
+        "label": "Neural Ordinary Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:koopman-operator",
+        "label": "Koopman Operator"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-mode-decomposition",
+        "label": "Dynamic Mode Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:sindy-algorithm",
+        "label": "SINDy Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
       }
     ]
   },
@@ -122,6 +417,26 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -161,6 +476,18 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -171,28 +498,234 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-science",
+        "label": "Mathematical Science"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:tensor-decomposition",
+        "label": "Tensor Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [
@@ -207,6 +740,26 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ]
   },

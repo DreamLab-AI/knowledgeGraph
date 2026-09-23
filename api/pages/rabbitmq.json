@@ -57,7 +57,7 @@
         "label": "Message Queue"
       },
       {
-        "id": "urn:ngm:class:routing",
+        "id": "urn:ngm:class:routing-protocol",
         "label": "Routing"
       }
     ],
@@ -130,12 +130,12 @@
         "label": "Service Registry"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -198,6 +198,10 @@
         "label": "Interoperability"
       },
       {
+        "id": "urn:ngm:class:resource-abstraction",
+        "label": "Resource Abstraction"
+      },
+      {
         "id": "urn:ngm:class:service-integration",
         "label": "Service Integration"
       },
@@ -208,13 +212,21 @@
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
-      },
-      {
-        "id": "urn:ngm:class:orchestration",
-        "label": "Orchestration"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
       {
         "id": "urn:ngm:class:open-source-software",
         "label": "Open Source Software"
@@ -376,7 +388,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

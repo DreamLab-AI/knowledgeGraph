@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:sampling-theory",
         "label": "Sampling Theory"
+      },
+      {
+        "id": "urn:ngm:class:filter-design",
+        "label": "Filter Design"
       }
     ],
     "requires": [
@@ -60,6 +64,10 @@
       {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar Sensing"
       }
     ],
     "dependsOn": [],
@@ -100,7 +108,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -213,6 +221,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

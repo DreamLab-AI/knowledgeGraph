@@ -24,6 +24,10 @@
       {
         "id": "urn:ngm:class:digital-literacy",
         "label": "Digital Literacy"
+      },
+      {
+        "id": "urn:ngm:class:affordable-access",
+        "label": "Affordable Access"
       }
     ],
     "requires": [
@@ -100,6 +104,14 @@
       {
         "id": "urn:ngm:class:itu-t",
         "label": "ITU Standards"
+      },
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU Standards"
+      },
+      {
+        "id": "urn:ngm:class:un-broadband-commission",
+        "label": "UN Broadband Commission"
       }
     ],
     "partOf": [
@@ -120,6 +132,10 @@
       {
         "id": "urn:ngm:class:data-sovereignty",
         "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights and Technology"
       },
       {
         "id": "urn:ngm:class:human-rights",
@@ -203,6 +219,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

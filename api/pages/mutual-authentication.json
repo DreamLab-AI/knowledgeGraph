@@ -125,6 +125,10 @@
         "label": "Directory Services"
       },
       {
+        "id": "urn:ngm:class:identity-governance-and-administration",
+        "label": "Identity Governance and Administration"
+      },
+      {
         "id": "urn:ngm:class:privileged-access-management",
         "label": "Privileged Access Management"
       },
@@ -139,13 +143,13 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
@@ -153,10 +157,6 @@
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -291,6 +291,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
@@ -305,10 +309,6 @@
       {
         "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:saml",
@@ -369,8 +369,16 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:biometrics",
+        "label": "Biometrics"
+      },
+      {
         "id": "urn:ngm:class:federation",
         "label": "Federation"
+      },
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
       },
       {
         "id": "urn:ngm:class:multi-factor-authentication",
@@ -391,14 +399,6 @@
       {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
-      },
-      {
-        "id": "urn:ngm:class:public-key-cryptography",
-        "label": "Public-Key Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
       }
     ]
   },

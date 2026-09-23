@@ -34,6 +34,14 @@
       {
         "id": "urn:ngm:class:monitoring-system",
         "label": "Monitoring System"
+      },
+      {
+        "id": "urn:ngm:class:measurement-tools",
+        "label": "Measurement Tools"
+      },
+      {
+        "id": "urn:ngm:class:timestamp-synchronization",
+        "label": "Timestamp Synchronization"
       }
     ],
     "enables": [
@@ -44,6 +52,18 @@
       {
         "id": "urn:ngm:class:real-time-control",
         "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:quality-assessment",
+        "label": "Quality Assessment"
+      },
+      {
+        "id": "urn:ngm:class:sla-monitoring",
+        "label": "SLA Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-tuning",
+        "label": "User Experience Tuning"
       }
     ],
     "dependsOn": [
@@ -66,6 +86,14 @@
       {
         "id": "urn:ngm:class:network-layer",
         "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:processing-delay",
+        "label": "Processing Delay"
+      },
+      {
+        "id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
       }
     ],
     "implements": [],
@@ -116,7 +144,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       }
     ]
@@ -146,7 +174,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -188,6 +216,10 @@
         "label": "Network Protocol"
       },
       {
+        "id": "urn:ngm:class:traffic-classification",
+        "label": "Traffic Classification"
+      },
+      {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity and Access Management"
       },
@@ -206,10 +238,6 @@
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -260,7 +288,21 @@
         "label": "Telecommunications Infrastructure"
       }
     ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:differentiated-services",
+        "label": "Differentiated Services"
+      },
+      {
+        "id": "urn:ngm:class:integrated-services",
+        "label": "Integrated Services"
+      }
+    ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:best-effort-delivery",
+        "label": "Best-Effort Delivery"
+      },
       {
         "id": "urn:ngm:class:overlay-network",
         "label": "Overlay Network"
@@ -293,6 +335,14 @@
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:admission-control",
+        "label": "Admission Control"
+      },
+      {
+        "id": "urn:ngm:class:queuing-discipline",
+        "label": "Queuing Discipline"
+      },
       {
         "id": "urn:ngm:class:traffic-shaping",
         "label": "Traffic Shaping"

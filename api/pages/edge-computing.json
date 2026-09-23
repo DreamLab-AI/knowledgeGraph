@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "id": "urn:ngm:class:network-function-virtualization",
+      "label": "Network Function Virtualisation"
+    },
+    {
+      "id": "urn:ngm:class:latency-sensitive-infrastructure",
+      "label": "Latency-Sensitive Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-architecture",
+      "label": "Decentralised Architecture"
     }
   ],
   "entityType": "Class",
@@ -40,6 +60,22 @@
       {
         "id": "urn:ngm:class:edge-ai-accelerator",
         "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:edge-orchestrator",
+        "label": "Edge Orchestrator"
+      },
+      {
+        "id": "urn:ngm:class:local-processing",
+        "label": "Local Processing"
+      },
+      {
+        "id": "urn:ngm:class:fallback-mechanism",
+        "label": "Fallback Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:edge-application-server",
+        "label": "Edge Application Server"
       }
     ],
     "requires": [
@@ -92,9 +128,50 @@
       {
         "id": "urn:ngm:class:resilience",
         "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Reduced Latency"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-efficiency",
+        "label": "Bandwidth Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-processing",
+        "label": "Decentralised Processing"
+      },
+      {
+        "id": "urn:ngm:class:offline-operation",
+        "label": "Offline Operation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:5g-core",
+        "label": "5G Core"
+      },
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:edge-inference",
@@ -111,9 +188,42 @@
       {
         "id": "urn:ngm:class:network-slicing",
         "label": "Network Slicing"
+      },
+      {
+        "id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "Multi-access Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloudlet-architecture",
+        "label": "Cloudlet Architecture"
+      },
+      {
+        "id": "urn:ngm:class:edge-caching",
+        "label": "Edge Caching"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge AI Inference"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-cloud-computing",
+        "label": "Centralised Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:pure-on-device-computing",
+        "label": "Pure On-Device Computing"
+      },
+      {
+        "id": "urn:ngm:class:traditional-cdn",
+        "label": "Traditional CDN"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -140,6 +250,18 @@
       {
         "id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
+      },
+      {
+        "id": "urn:ngm:class:kubeedge",
+        "label": "KubeEdge"
+      },
+      {
+        "id": "urn:ngm:class:openyurt",
+        "label": "OpenYurt"
+      },
+      {
+        "id": "urn:ngm:class:v8-isolates",
+        "label": "V8 Isolates"
       }
     ],
     "supports": [
@@ -148,7 +270,7 @@
         "label": "Autonomous Vehicle"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -178,6 +300,10 @@
       {
         "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
       }
     ],
     "standardizedBy": [
@@ -200,6 +326,18 @@
       {
         "id": "urn:ngm:class:o-ran-alliance",
         "label": "O-RAN Alliance"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1934-openfog",
+        "label": "IEEE 1934 OpenFog"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation Edge"
+      },
+      {
+        "id": "urn:ngm:class:itu-t-y-3508",
+        "label": "ITU-T Y.3508"
       }
     ],
     "partOf": [],
@@ -227,14 +365,63 @@
       {
         "id": "urn:ngm:class:tiny-ml",
         "label": "TinyML"
+      },
+      {
+        "id": "urn:ngm:class:6g",
+        "label": "6G"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -274,47 +461,199 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Partial Failure Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-naming",
+        "label": "Identity and Naming"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "id": "urn:ngm:class:serialisation-format",
+        "label": "Serialisation Format"
+      },
+      {
         "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "label": "Data Centre"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:elastic-capacity",
+        "label": "Elastic Capacity"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:geographic-distribution",
+        "label": "Geographic Distribution"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scalability"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:flp-impossibility",
+        "label": "FLP Impossibility"
+      },
+      {
+        "id": "urn:ngm:class:lamport-timestamps",
+        "label": "Lamport Timestamps"
+      },
+      {
+        "id": "urn:ngm:class:pacelc",
+        "label": "PACELC"
+      },
+      {
+        "id": "urn:ngm:class:two-generals-problem",
+        "label": "Two Generals Problem"
+      },
+      {
+        "id": "urn:ngm:class:vector-clocks",
+        "label": "Vector Clocks"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:actor-model",
+        "label": "Actor Model"
+      },
+      {
+        "id": "urn:ngm:class:bulk-synchronous-parallel",
+        "label": "Bulk Synchronous Parallel"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:map-reduce",
+        "label": "MapReduce"
+      },
+      {
+        "id": "urn:ngm:class:mapreduce",
+        "label": "MapReduce"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:embarrassingly-parallel-batch",
+        "label": "Embarrassingly Parallel Batch"
+      },
+      {
+        "id": "urn:ngm:class:single-machine-multiprocessing",
+        "label": "Single-Machine Multiprocessing"
+      },
+      {
+        "id": "urn:ngm:class:on-premises-computing",
+        "label": "On-Premises Computing"
+      },
+      {
+        "id": "urn:ngm:class:network-appliance",
+        "label": "Network Appliance"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-hardware",
+        "label": "Proprietary Hardware"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
@@ -324,28 +663,120 @@
         "label": "Governance"
       }
     ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-flink",
+        "label": "Apache Flink"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:etcd",
+        "label": "etcd"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:ray",
+        "label": "Ray"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:zookeeper",
+        "label": "ZooKeeper"
+      }
+    ],
     "supports": [
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      },
+      {
+        "id": "urn:ngm:class:distributed-databases",
+        "label": "Distributed Databases"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:streaming-analytics",
+        "label": "Streaming Analytics"
+      },
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-cloud",
+        "label": "Hybrid Cloud"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:apache-software-foundation",
+        "label": "Apache Software Foundation"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC Specification"
+      },
+      {
+        "id": "urn:ngm:class:mpi-forum",
+        "label": "MPI Forum"
+      },
+      {
+        "id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "IETF QUIC"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-17788",
+        "label": "ISO/IEC 17788"
+      },
+      {
+        "id": "urn:ngm:class:nist-cloud-computing",
+        "label": "NIST Cloud Computing Definition"
+      },
+      {
+        "id": "urn:ngm:class:nist-cloud-computing-definition",
+        "label": "NIST Cloud Computing Definition"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [
@@ -354,7 +785,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -370,12 +801,16 @@
         "label": "Security and Identity"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
       },
       {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Computing"
       }
     ]
   },

@@ -33,6 +33,10 @@
       {
         "id": "urn:ngm:class:power-infrastructure",
         "label": "Power Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cooling-system",
+        "label": "Cooling Systems"
       }
     ],
     "enables": [
@@ -43,12 +47,21 @@
       {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ai-processing",
+        "label": "AI Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -195,7 +208,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

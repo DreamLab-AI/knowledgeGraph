@@ -26,12 +26,16 @@
         "label": "Securities Regulation"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
         "id": "urn:ngm:class:stablecoin-regulation",
         "label": "Stablecoin Regulation"
+      },
+      {
+        "id": "urn:ngm:class:conduct-regulation",
+        "label": "Conduct Regulation"
       }
     ],
     "requires": [
@@ -40,7 +44,7 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -70,6 +74,10 @@
       {
         "id": "urn:ngm:class:supervisory-authority",
         "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Frameworks"
       }
     ],
     "implements": [],
@@ -85,7 +93,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -93,7 +101,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -119,6 +127,10 @@
       {
         "id": "urn:ngm:class:fatf",
         "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
       }
     ],
     "partOf": [],
@@ -130,6 +142,10 @@
       {
         "id": "urn:ngm:class:systemic-risk",
         "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime"
       },
       {
         "id": "urn:ngm:class:financial-crime-detection",
@@ -256,6 +272,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -336,6 +356,10 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
@@ -344,16 +368,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

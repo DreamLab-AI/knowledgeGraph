@@ -137,16 +137,16 @@
         "label": "Investment Banking"
       },
       {
+        "id": "urn:ngm:class:securities-exchange",
+        "label": "Securities Exchange"
+      },
+      {
         "id": "urn:ngm:class:traditional-banking",
         "label": "Commercial Banking"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
-      },
-      {
-        "id": "urn:ngm:class:central-securities-depository",
-        "label": "Central Securities Depository"
       }
     ],
     "requires": [
@@ -209,12 +209,12 @@
         "label": "Monetary Policy"
       },
       {
-        "id": "urn:ngm:class:tokenization",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:virtual-economy-market-framing",
-        "label": "Virtual Economy Market Framing"
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
       }
     ],
     "dependsOn": [
@@ -249,10 +249,6 @@
         "label": "DeFi"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
-      },
-      {
         "id": "urn:ngm:class:shadow-banking",
         "label": "Shadow Banking"
       },
@@ -271,8 +267,12 @@
         "label": "Blockchain Interoperability"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:tokenised-real-world-assets",
@@ -289,10 +289,6 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
       }
     ],
     "uses": [
@@ -311,7 +307,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {

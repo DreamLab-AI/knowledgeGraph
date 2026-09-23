@@ -42,6 +42,10 @@
       {
         "id": "urn:ngm:class:numerical-integration",
         "label": "Numerical Integration"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
       }
     ],
     "enables": [
@@ -76,12 +80,16 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:3-d-engine",
+        "label": "3D Engine"
       }
     ],
     "uses": [
@@ -145,6 +153,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -196,6 +219,10 @@
         "label": "Real-Time Computing"
       },
       {
+        "id": "urn:ngm:class:3d-visualisation",
+        "label": "3D Visualisation"
+      },
+      {
         "id": "urn:ngm:class:data-aggregation",
         "label": "Data Aggregation"
       },
@@ -210,10 +237,6 @@
       {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
-      },
-      {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
       }
     ],
     "enables": [
@@ -246,8 +269,8 @@
         "label": "Predictive Maintenance"
       },
       {
-        "id": "urn:ngm:class:virtual-commissioning",
-        "label": "Virtual Commissioning"
+        "id": "urn:ngm:class:process-optimisation",
+        "label": "Process Optimisation"
       }
     ],
     "dependsOn": [
@@ -266,12 +289,20 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:emulation",
+        "label": "Emulation"
+      },
+      {
         "id": "urn:ngm:class:physical-prototype",
         "label": "Physical Prototype"
       },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -284,20 +315,28 @@
         "label": "Synthetic Data"
       },
       {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:digital-twin-technology",
         "label": "Digital Twin Technology"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       },
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
-      },
-      {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       }
     ],
     "uses": [
@@ -332,6 +371,16 @@
       {
         "id": "urn:ngm:class:geospatial-technology",
         "label": "Geospatial Technology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -372,6 +421,10 @@
       {
         "id": "urn:ngm:class:sc-standards-and-interop",
         "label": "Standards and Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
       }
     ]
   },

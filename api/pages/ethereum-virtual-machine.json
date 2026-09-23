@@ -24,6 +24,10 @@
       {
         "id": "urn:ngm:class:evm-memory",
         "label": "EVM Memory"
+      },
+      {
+        "id": "urn:ngm:class:world-state",
+        "label": "World State"
       }
     ],
     "requires": [
@@ -46,7 +50,7 @@
         "label": "Ethereum Smart Contracts"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -86,6 +90,10 @@
       {
         "id": "urn:ngm:class:move-virtual-machine",
         "label": "Move Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:solana-sealevel",
+        "label": "Solana Sealevel"
       }
     ],
     "bridgesTo": [
@@ -106,6 +114,10 @@
       {
         "id": "urn:ngm:class:keccak-256",
         "label": "Keccak-256"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-bytecode",
+        "label": "Ethereum Bytecode"
       }
     ],
     "supports": [],
@@ -115,6 +127,10 @@
       {
         "id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:evm-compatible-blockchain",
+        "label": "EVM-Compatible Chain"
       },
       {
         "id": "urn:ngm:class:evm-compatible-blockchain",
@@ -260,7 +276,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -366,7 +382,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ]

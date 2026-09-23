@@ -20,6 +20,14 @@
       {
         "id": "urn:ngm:class:iso-20022",
         "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:mt-message-types",
+        "label": "MT Message Types"
+      },
+      {
+        "id": "urn:ngm:class:swiftnet",
+        "label": "SWIFTNet"
       }
     ],
     "requires": [
@@ -52,6 +60,10 @@
       {
         "id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payment"
       }
     ],
     "dependsOn": [
@@ -60,7 +72,7 @@
         "label": "Real-Time Gross Settlement"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -74,10 +86,23 @@
         "label": "CPMI-IOSCO PFMI"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ripple-network",
+        "label": "Ripple Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-payment",
+        "label": "Blockchain Payment"
+      },
+      {
+        "id": "urn:ngm:class:fedwire",
+        "label": "Fedwire"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -89,11 +114,15 @@
       {
         "id": "urn:ngm:class:message-authentication-code",
         "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:financial-cryptography",
+        "label": "Financial Cryptography"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -101,7 +130,7 @@
         "label": "Sanctions Screening"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       }
     ],
@@ -109,12 +138,20 @@
       {
         "id": "urn:ngm:class:swift",
         "label": "SWIFT"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc68",
+        "label": "ISO TC68"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:swift",
         "label": "SWIFT"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Global Financial Infrastructure"
       },
       {
         "id": "urn:ngm:class:financial-infrastructure",
@@ -129,6 +166,10 @@
       {
         "id": "urn:ngm:class:financial-market-infrastructure",
         "label": "Financial Market Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:nostro-vostro-account",
+        "label": "Nostro/Vostro Account"
       }
     ]
   },
@@ -142,12 +183,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -256,7 +297,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

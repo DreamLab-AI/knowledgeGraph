@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:digital-asset-ecosystem",
       "label": "Digital Asset Ecosystem"
+    },
+    {
+      "id": "urn:ngm:class:digital-economy",
+      "label": "Digital Economy"
     }
   ],
   "entityType": "Class",
@@ -30,7 +34,7 @@
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -52,6 +56,26 @@
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centres"
+      },
+      {
+        "id": "urn:ngm:class:ai-startups",
+        "label": "AI Startups"
+      },
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
       }
     ],
     "requires": [
@@ -64,8 +88,28 @@
         "label": "Data Centres"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centres"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
       }
     ],
     "enables": [
@@ -84,13 +128,109 @@
       {
         "id": "urn:ngm:class:digital-economy",
         "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:ai-documentation-standards",
+        "label": "AI Documentation Standards"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:national-ai-strategy",
+        "label": "National AI Strategy"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sovereign-ai",
+        "label": "Sovereign AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-ecosystem",
+        "label": "Digital Asset Ecosystem"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-governance",
@@ -103,9 +243,46 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-documentation-standards",
+        "label": "AI Documentation Standards"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:sovereign-ai",
+        "label": "Sovereign AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-standards",
+        "label": "AI Standards"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:ai-standards",
+        "label": "AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -113,20 +290,56 @@
         "label": "AI Policy"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:sovereign-ai",
         "label": "Sovereign AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-startups",
+        "label": "AI Startups"
+      },
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:ai-standards",
+        "label": "AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:digital-economy",
-      "label": "Digital Economy",
-      "slug": "digital-economy"
+      "id": "urn:ngm:class:economic-systems",
+      "label": "Economic Systems",
+      "slug": "economic-systems"
     },
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -134,14 +347,24 @@
       "slug": "sc-platform-and-environment"
     },
     {
-      "id": "urn:ngm:class:economic-systems",
-      "label": "Economic Systems",
-      "slug": "economic-systems"
-    },
-    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -163,7 +386,7 @@
         "label": "Cryptocurrency Exchange"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -175,8 +398,8 @@
         "label": "Token Economics"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
       }
     ],
     "requires": [
@@ -189,8 +412,16 @@
         "label": "Cryptographic Key Management"
       },
       {
+        "id": "urn:ngm:class:exchange-platforms",
+        "label": "Exchange Platforms"
+      },
+      {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:wallet-infrastructure",
+        "label": "Wallet Infrastructure"
       },
       {
         "id": "urn:ngm:class:blockchain-infrastructure",
@@ -203,14 +434,6 @@
       {
         "id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
-      },
-      {
-        "id": "urn:ngm:class:smart-contracts",
-        "label": "Smart Contracts"
-      },
-      {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
       }
     ],
     "enables": [
@@ -239,12 +462,12 @@
         "label": "Creator Monetisation"
       },
       {
-        "id": "urn:ngm:class:play-to-earn-p2-e",
-        "label": "Play-to-Earn"
+        "id": "urn:ngm:class:digital-value-exchange",
+        "label": "Digital Value Exchange"
       },
       {
-        "id": "urn:ngm:class:virtual-commerce",
-        "label": "Virtual Commerce"
+        "id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn"
       }
     ],
     "dependsOn": [
@@ -281,6 +504,10 @@
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -309,12 +536,12 @@
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
       }
     ],
     "uses": [
@@ -345,6 +572,10 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "supports": [
@@ -363,6 +594,14 @@
       {
         "id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -381,7 +620,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:decentralized-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralized Finance"
       },
       {
@@ -405,8 +644,8 @@
         "label": "Platform Economy"
       },
       {
-        "id": "urn:ngm:class:sc-display-and-rendering",
-        "label": "Display and Rendering"
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
       }
     ]
   },

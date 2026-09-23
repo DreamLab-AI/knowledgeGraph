@@ -12,12 +12,32 @@
       "label": "Legal and Regulatory"
     },
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:regulation",
+      "label": "Regulation"
     },
     {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory"
+      "id": "urn:ngm:class:market-regulation",
+      "label": "Market Regulation"
+    },
+    {
+      "id": "urn:ngm:class:digital-regulation",
+      "label": "Digital Regulation"
+    },
+    {
+      "id": "urn:ngm:class:platform-governance",
+      "label": "Platform Governance"
+    },
+    {
+      "id": "urn:ngm:class:product-liability",
+      "label": "Product Liability"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "id": "urn:ngm:class:competition-law",
+      "label": "Competition Law"
     }
   ],
   "entityType": "Class",
@@ -48,6 +68,38 @@
       {
         "id": "urn:ngm:class:redress-procedure",
         "label": "Redress Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:statutory-rights",
+        "label": "Statutory Rights"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Powers"
+      },
+      {
+        "id": "urn:ngm:class:redress-procedure",
+        "label": "Redress Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:dark-pattern-prohibition",
+        "label": "Dark Pattern Prohibition"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability Rules"
+      },
+      {
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Product Safety Standards"
+      },
+      {
+        "id": "urn:ngm:class:adr-schemes",
+        "label": "ADR Schemes"
+      },
+      {
+        "id": "urn:ngm:class:collective-redress",
+        "label": "Collective Redress"
       }
     ],
     "requires": [
@@ -62,6 +114,22 @@
       {
         "id": "urn:ngm:class:regulatory-authority",
         "label": "Regulatory Authority"
+      },
+      {
+        "id": "urn:ngm:class:evidence-standards",
+        "label": "Evidence Standards"
+      },
+      {
+        "id": "urn:ngm:class:judicial-oversight",
+        "label": "Judicial Oversight"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-cooperation",
+        "label": "Cross-border Cooperation"
+      },
+      {
+        "id": "urn:ngm:class:technical-audit-capability",
+        "label": "Technical Audit Capability"
       }
     ],
     "enables": [
@@ -72,9 +140,62 @@
       {
         "id": "urn:ngm:class:trust-in-digital-platforms",
         "label": "Trust in Digital Platforms"
+      },
+      {
+        "id": "urn:ngm:class:redress-procedure",
+        "label": "Consumer Redress"
+      },
+      {
+        "id": "urn:ngm:class:market-fairness",
+        "label": "Market Fairness"
+      },
+      {
+        "id": "urn:ngm:class:informed-purchasing-decisions",
+        "label": "Informed Purchasing Decisions"
+      },
+      {
+        "id": "urn:ngm:class:ai-product-safety",
+        "label": "AI Product Safety"
+      },
+      {
+        "id": "urn:ngm:class:fair-algorithmic-pricing",
+        "label": "Fair Algorithmic Pricing"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-content-accountability",
+        "label": "Synthetic Content Accountability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:competition-law",
+        "label": "Competition Law"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:contract-law",
+        "label": "Contract Law"
+      },
+      {
+        "id": "urn:ngm:class:product-liability-law",
+        "label": "Product Liability Law"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Information Economics"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:fca-consumer-duty",
@@ -83,9 +204,54 @@
       {
         "id": "urn:ngm:class:digital-services-act",
         "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:cma-strategic-market-status",
+        "label": "CMA Strategic Market Status"
+      },
+      {
+        "id": "urn:ngm:class:ftc-unfair-and-deceptive-practices",
+        "label": "FTC Unfair and Deceptive Practices"
+      },
+      {
+        "id": "urn:ngm:class:eu-consumer-rights-directive",
+        "label": "EU Consumer Rights Directive"
+      },
+      {
+        "id": "urn:ngm:class:digital-markets-competition-and-consumers-act-2024",
+        "label": "Digital Markets Competition and Consumers Act 2024"
+      },
+      {
+        "id": "urn:ngm:class:ai-act-product-safety",
+        "label": "AI Act Product Safety"
+      },
+      {
+        "id": "urn:ngm:class:fca-consumer-duty",
+        "label": "Consumer Duty FCA"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:industry-self-regulation",
+        "label": "Industry Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:platform-terms-of-service",
+        "label": "Platform Terms of Service"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-codes-of-conduct",
+        "label": "Voluntary Codes of Conduct"
+      },
+      {
+        "id": "urn:ngm:class:co-regulation",
+        "label": "Co-regulation"
+      },
+      {
+        "id": "urn:ngm:class:sandbox-approaches",
+        "label": "Sandbox Approaches"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -95,6 +261,26 @@
       {
         "id": "urn:ngm:class:enforcement-action",
         "label": "Enforcement Action"
+      },
+      {
+        "id": "urn:ngm:class:dark-pattern-detection",
+        "label": "Dark Pattern Detection"
+      },
+      {
+        "id": "urn:ngm:class:complaint-analytics",
+        "label": "Complaint Analytics"
+      },
+      {
+        "id": "urn:ngm:class:market-investigations",
+        "label": "Market Investigations"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-content-detection",
+        "label": "Synthetic Content Detection"
+      },
+      {
+        "id": "urn:ngm:class:collective-proceedings",
+        "label": "Collective Proceedings"
       }
     ],
     "supports": [
@@ -117,6 +303,14 @@
       {
         "id": "urn:ngm:class:market-efficiency",
         "label": "Market Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:fair-trading",
+        "label": "Fair Trading"
+      },
+      {
+        "id": "urn:ngm:class:vulnerable-consumer-protection",
+        "label": "Vulnerable Consumer Protection"
       }
     ],
     "standardizedBy": [
@@ -131,6 +325,30 @@
       {
         "id": "urn:ngm:class:ofcom",
         "label": "Ofcom"
+      },
+      {
+        "id": "urn:ngm:class:cma",
+        "label": "CMA"
+      },
+      {
+        "id": "urn:ngm:class:ftc",
+        "label": "FTC"
+      },
+      {
+        "id": "urn:ngm:class:eu-consumer-protection-cooperation-network",
+        "label": "EU Consumer Protection Cooperation Network"
+      },
+      {
+        "id": "urn:ngm:class:trading-standards",
+        "label": "Trading Standards"
+      },
+      {
+        "id": "urn:ngm:class:asa",
+        "label": "ASA"
+      },
+      {
+        "id": "urn:ngm:class:opss",
+        "label": "OPSS"
       }
     ],
     "partOf": [],
@@ -179,9 +397,29 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:decentralised-governance",
+      "label": "Decentralised Governance",
+      "slug": "decentralised-governance"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     }
   ],
   "inheritedRelations": {
@@ -221,16 +459,36 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:quorum-mechanism",
+        "label": "Quorum Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-participation",
+        "label": "Stakeholder Participation"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
       }
     ],
     "enables": [
@@ -243,27 +501,127 @@
         "label": "Privacy Framework"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk-management",
+        "label": "Systemic Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:community-coordination",
+        "label": "Community Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legislation",
+        "label": "Legislation"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:enforcement",
+        "label": "Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
       },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:cryptographic-identity",
+        "label": "Cryptographic Identity"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Product Safety Standards"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "id": "urn:ngm:class:delegated-representation",
+        "label": "Delegated Representation"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deregulation",
+        "label": "Deregulation"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-organisation",
+        "label": "Hierarchical Organisation"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
@@ -271,36 +629,148 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "id": "urn:ngm:class:soulbound-tokens",
+        "label": "Soulbound Token"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
       },
       {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      },
+      {
+        "id": "urn:ngm:class:market-competition",
+        "label": "Market Competition"
+      },
+      {
+        "id": "urn:ngm:class:accountability-mechanism",
+        "label": "Accountability Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standards"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:product-liability-directive",
+        "label": "Product Liability Directive"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:cobit",
+        "label": "COBIT"
+      },
+      {
+        "id": "urn:ngm:class:itil",
+        "label": "ITIL"
+      },
+      {
+        "id": "urn:ngm:class:togaf",
+        "label": "TOGAF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
       }
     ],
     "relatedTo": [
@@ -313,20 +783,28 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
       },
       {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
       }
     ]
   },

@@ -28,6 +28,18 @@
       {
         "id": "urn:ngm:class:whisper",
         "label": "Whisper"
+      },
+      {
+        "id": "urn:ngm:class:chatgpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:dall-e-3",
+        "label": "DALL-E"
+      },
+      {
+        "id": "urn:ngm:class:sora",
+        "label": "Sora"
       }
     ],
     "requires": [],
@@ -61,6 +73,10 @@
       {
         "id": "urn:ngm:class:azure",
         "label": "Microsoft Azure"
+      },
+      {
+        "id": "urn:ngm:class:azure",
+        "label": "Microsoft Azure"
       }
     ],
     "implements": [],
@@ -72,6 +88,10 @@
       {
         "id": "urn:ngm:class:deep-mind",
         "label": "DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI Research"
       },
       {
         "id": "urn:ngm:class:meta-ai",
@@ -217,6 +237,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

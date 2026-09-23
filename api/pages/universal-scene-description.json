@@ -14,6 +14,22 @@
     {
       "id": "urn:ngm:class:3-d-file-format",
       "label": "3D File Format"
+    },
+    {
+      "id": "urn:ngm:class:asset-pipeline",
+      "label": "Asset Pipeline"
+    },
+    {
+      "id": "urn:ngm:class:scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "id": "urn:ngm:class:open-standard",
+      "label": "Open Standard"
+    },
+    {
+      "id": "urn:ngm:class:interoperability",
+      "label": "Interoperability"
     }
   ],
   "entityType": "Class",
@@ -28,6 +44,38 @@
       {
         "id": "urn:ngm:class:material-x",
         "label": "MaterialX"
+      },
+      {
+        "id": "urn:ngm:class:hydra",
+        "label": "Hydra"
+      },
+      {
+        "id": "urn:ngm:class:opensubdiv",
+        "label": "OpenSubdiv"
+      },
+      {
+        "id": "urn:ngm:class:composition-arcs",
+        "label": "Composition Arcs"
+      },
+      {
+        "id": "urn:ngm:class:layer-stack",
+        "label": "Layer Stack"
+      },
+      {
+        "id": "urn:ngm:class:variant-sets",
+        "label": "Variant Sets"
+      },
+      {
+        "id": "urn:ngm:class:usdskel",
+        "label": "UsdSkel"
+      },
+      {
+        "id": "urn:ngm:class:serialisation-format",
+        "label": "Crate Format"
+      },
+      {
+        "id": "urn:ngm:class:usdz",
+        "label": "USDZ"
       }
     ],
     "requires": [
@@ -46,6 +94,10 @@
       {
         "id": "urn:ngm:class:schema-registry",
         "label": "Schema Registry"
+      },
+      {
+        "id": "urn:ngm:class:layer-resolution",
+        "label": "Layer Resolution"
       }
     ],
     "enables": [
@@ -76,16 +128,98 @@
       {
         "id": "urn:ngm:class:virtual-production",
         "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twins"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Cross-DCC Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality",
+        "label": "Collaborative Scene Assembly"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:layer-composition-algorithm",
+        "label": "Layer Composition Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:schema-system",
+        "label": "Schema System"
+      },
+      {
+        "id": "urn:ngm:class:asset-resolution",
+        "label": "Asset Resolution"
+      },
+      {
+        "id": "urn:ngm:class:sdfpath-addressing",
+        "label": "SdfPath Addressing"
+      },
+      {
+        "id": "urn:ngm:class:opencolorio",
+        "label": "OpenColorIO"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:material-x",
         "label": "MaterialX Shading"
+      },
+      {
+        "id": "urn:ngm:class:livrps-composition",
+        "label": "LIVRPS Composition"
+      },
+      {
+        "id": "urn:ngm:class:hydra-scene-delegate",
+        "label": "Hydra Scene Delegate"
+      },
+      {
+        "id": "urn:ngm:class:material-x",
+        "label": "MaterialX Shading"
+      },
+      {
+        "id": "urn:ngm:class:opensubdiv-refinement",
+        "label": "OpenSubdiv Refinement"
+      },
+      {
+        "id": "urn:ngm:class:openpbr-material-model",
+        "label": "OpenPBR Material Model"
+      },
+      {
+        "id": "urn:ngm:class:variant-selection",
+        "label": "Variant Selection"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:fbx",
+        "label": "FBX"
+      },
+      {
+        "id": "urn:ngm:class:alembic",
+        "label": "Alembic"
+      },
+      {
+        "id": "urn:ngm:class:obj",
+        "label": "OBJ"
+      },
+      {
+        "id": "urn:ngm:class:collada",
+        "label": "COLLADA"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -99,6 +233,22 @@
       {
         "id": "urn:ngm:class:vulkan",
         "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:python-api",
+        "label": "Python API"
+      },
+      {
+        "id": "urn:ngm:class:c-api",
+        "label": "C++ API"
+      },
+      {
+        "id": "urn:ngm:class:glsl",
+        "label": "GLSL Shaders"
+      },
+      {
+        "id": "urn:ngm:class:openvdb",
+        "label": "OpenVDB"
       }
     ],
     "supports": [
@@ -113,6 +263,22 @@
       {
         "id": "urn:ngm:class:robotics-simulation",
         "label": "Robotics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:film-and-animation-pipeline",
+        "label": "Film and Animation Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:ar-quick-look",
+        "label": "AR Quick Look"
+      },
+      {
+        "id": "urn:ngm:class:industrial-simulation",
+        "label": "Industrial Simulation"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platforms",
+        "label": "Metaverse Platforms"
       }
     ],
     "standardizedBy": [
@@ -127,6 +293,10 @@
       {
         "id": "urn:ngm:class:pixar-animation-studios",
         "label": "Pixar Animation Studios"
+      },
+      {
+        "id": "urn:ngm:class:alliance-for-openusd",
+        "label": "Alliance for OpenUSD"
       }
     ],
     "partOf": [],
@@ -146,14 +316,41 @@
       {
         "id": "urn:ngm:class:unreal-engine",
         "label": "Unreal Engine"
+      },
+      {
+        "id": "urn:ngm:class:houdini",
+        "label": "Houdini"
+      },
+      {
+        "id": "urn:ngm:class:autodesk-maya",
+        "label": "Autodesk Maya"
+      },
+      {
+        "id": "urn:ngm:class:aousd",
+        "label": "AOUSD"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:content-pipeline",
+      "label": "Content Pipeline",
+      "slug": "content-pipeline"
+    },
+    {
       "id": "urn:ngm:class:data-format-standard",
       "label": "Data Format Standard",
       "slug": "data-format-standard"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets",
+      "slug": "sc-content-and-assets"
     },
     {
       "id": "urn:ngm:class:spatial-computing",
@@ -161,9 +358,74 @@
       "slug": "spatial-computing"
     },
     {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard",
+      "slug": "technical-standard"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:production-pipeline",
+      "label": "Production Pipeline",
+      "slug": "production-pipeline"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
+    },
+    {
       "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards",
       "slug": "technical-standards"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards",
+      "slug": "standards"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:metaverse",
+      "label": "Metaverse",
+      "slug": "metaverse"
+    },
+    {
+      "id": "urn:ngm:class:multiverse",
+      "label": "Multiverse",
+      "slug": "multiverse"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:semantic-spatial-web-layer",
+      "label": "Semantic Spatial Web Layer",
+      "slug": "semantic-spatial-web-layer"
     }
   ],
   "inheritedRelations": {
@@ -203,36 +465,36 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:animation-keyframes",
+        "label": "Animation Keyframes"
+      },
+      {
         "id": "urn:ngm:class:coordinate-system",
         "label": "Coordinate System"
       },
       {
-        "id": "urn:ngm:class:standards-body",
-        "label": "Standards Body"
+        "id": "urn:ngm:class:material-definition",
+        "label": "Material Definition"
       },
       {
-        "id": "urn:ngm:class:validation-tools",
-        "label": "Validation Tools"
+        "id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
       },
       {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
       },
       {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
+        "id": "urn:ngm:class:dependency-graph",
+        "label": "Dependency Graph"
       },
       {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
       },
       {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
-      },
-      {
-        "id": "urn:ngm:class:reference-implementation",
-        "label": "Reference Implementation"
+        "id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
       }
     ],
     "enables": [
@@ -257,57 +519,121 @@
         "label": "Real-Time Graphics"
       },
       {
-        "id": "urn:ngm:class:asset-interoperability",
-        "label": "3D Asset Interoperability"
+        "id": "urn:ngm:class:content-delivery",
+        "label": "Streaming Content Delivery"
       },
       {
-        "id": "urn:ngm:class:content-portability",
-        "label": "Content Portability"
+        "id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:khronos-group",
-        "label": "Khronos Group"
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards Process"
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:gl-tf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
         "id": "urn:ngm:class:usd",
-        "label": "USD"
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
+        "id": "urn:ngm:class:specification",
+        "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:closed-specification",
+        "label": "Closed Specification"
+      },
       {
         "id": "urn:ngm:class:proprietary-format",
         "label": "Proprietary Format"
       },
       {
         "id": "urn:ngm:class:vendor-lock-in",
-        "label": "Vendor Lock-In"
+        "label": "Vendor Lock-in"
       },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
       },
       {
-        "id": "urn:ngm:class:proprietary-protocol",
-        "label": "Proprietary Protocol"
+        "id": "urn:ngm:class:de-facto-standard",
+        "label": "De Facto Standard"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-specification",
+        "label": "Proprietary Specification"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
       {
         "id": "urn:ngm:class:data-format-standard",
         "label": "Data Format Standard"
@@ -321,24 +647,16 @@
         "label": "Metaverse Infrastructure"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:content-generation",
+        "label": "AI Content Generation"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
       },
       {
-        "id": "urn:ngm:class:technical-standards",
-        "label": "Technical Standards"
-      },
-      {
-        "id": "urn:ngm:class:3-d-reconstruction",
-        "label": "3D Reconstruction"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
       }
     ],
     "uses": [
@@ -351,28 +669,28 @@
         "label": "Compression Algorithm"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-serialisation",
-        "label": "JSON Serialisation"
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
       },
       {
-        "id": "urn:ngm:class:eye-tracking",
-        "label": "Eye Tracking"
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
       },
       {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
       },
       {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
+        "id": "urn:ngm:class:usd",
+        "label": "Universal Scene Description"
       },
       {
-        "id": "urn:ngm:class:hand-tracking",
-        "label": "Hand Tracking"
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
       }
     ],
     "supports": [
@@ -385,12 +703,28 @@
         "label": "Physics Simulation"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
       },
       {
-        "id": "urn:ngm:class:virtual-production",
-        "label": "Virtual Production"
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:multi-chain-ecosystem",
+        "label": "Multi-Chain Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
       }
     ],
     "standardizedBy": [
@@ -403,28 +737,28 @@
         "label": "Khronos Group"
       },
       {
-        "id": "urn:ngm:class:metaverse-standards-forum",
-        "label": "Metaverse Standards Forum"
+        "id": "urn:ngm:class:open-usd",
+        "label": "Pixar USD"
       },
       {
-        "id": "urn:ngm:class:open-xr",
-        "label": "OpenXR"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       },
       {
-        "id": "urn:ngm:class:web-xr",
-        "label": "WebXR"
-      },
-      {
-        "id": "urn:ngm:class:ieee-standards-association",
-        "label": "IEEE Standards Association"
-      },
-      {
-        "id": "urn:ngm:class:interoperability-standard",
-        "label": "Interoperability Standard"
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
       },
       {
         "id": "urn:ngm:class:iso",
         "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:standards-development-organisation",
+        "label": "Standards Development Organisation"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
       }
     ],
     "partOf": [
@@ -433,8 +767,32 @@
         "label": "Asset Pipeline"
       },
       {
+        "id": "urn:ngm:class:3-d-engine",
+        "label": "3D Engine"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:gl-tf-3-d-file-format",
+        "label": "glTF (3D File Format)"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
         "id": "urn:ngm:class:interoperability-framework",
         "label": "Interoperability Framework"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [
@@ -447,6 +805,10 @@
         "label": "Platform and Environment"
       },
       {
+        "id": "urn:ngm:class:usd",
+        "label": "Universal Scene Description"
+      },
+      {
         "id": "urn:ngm:class:3-d-model",
         "label": "3D Model"
       },
@@ -455,20 +817,16 @@
         "label": "Point Cloud"
       },
       {
-        "id": "urn:ngm:class:open-usd",
-        "label": "OpenUSD"
+        "id": "urn:ngm:class:asset-format-standards",
+        "label": "Asset Format Standards"
       },
       {
-        "id": "urn:ngm:class:3-d-file-format",
-        "label": "3D File Format"
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
       },
       {
-        "id": "urn:ngm:class:metaverse-standards-forum",
-        "label": "Metaverse Standards Forum"
-      },
-      {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:vfx-tools",
+        "label": "VFX Tools"
       }
     ]
   },

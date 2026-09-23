@@ -20,6 +20,14 @@
       {
         "id": "urn:ngm:class:nationally-determined-contribution",
         "label": "Nationally Determined Contribution"
+      },
+      {
+        "id": "urn:ngm:class:transparency-framework",
+        "label": "Transparency Framework"
+      },
+      {
+        "id": "urn:ngm:class:global-stocktake",
+        "label": "Global Stocktake"
       }
     ],
     "requires": [
@@ -30,6 +38,10 @@
       {
         "id": "urn:ngm:class:climate-finance",
         "label": "Climate Finance"
+      },
+      {
+        "id": "urn:ngm:class:emissions-monitoring",
+        "label": "Emissions Monitoring"
       }
     ],
     "enables": [
@@ -48,6 +60,10 @@
       {
         "id": "urn:ngm:class:carbon-offsetting",
         "label": "Carbon Offsetting"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net-Zero Target"
       }
     ],
     "dependsOn": [],
@@ -75,6 +91,10 @@
       {
         "id": "urn:ngm:class:supply-chain-decarbonisation",
         "label": "Supply Chain Decarbonisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-mrv",
+        "label": "Digital MRV"
       }
     ],
     "uses": [],
@@ -93,6 +113,10 @@
       {
         "id": "urn:ngm:class:unfccc",
         "label": "UNFCCC"
+      },
+      {
+        "id": "urn:ngm:class:multilateral-environmental-agreement",
+        "label": "Multilateral Environmental Agreement"
       }
     ],
     "relatedTo": [
@@ -107,6 +131,14 @@
       {
         "id": "urn:ngm:class:just-transition",
         "label": "Just Transition"
+      },
+      {
+        "id": "urn:ngm:class:cop26",
+        "label": "COP26"
+      },
+      {
+        "id": "urn:ngm:class:loss-and-damage",
+        "label": "Loss and Damage"
       }
     ]
   },
@@ -246,7 +278,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

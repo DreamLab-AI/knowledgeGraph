@@ -60,6 +60,10 @@
       {
         "id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behaviour"
+      },
+      {
+        "id": "urn:ngm:class:emergent-behavior",
+        "label": "Emergent Behaviour"
       }
     ],
     "dependsOn": [
@@ -119,6 +123,10 @@
       {
         "id": "urn:ngm:class:llm-orchestration",
         "label": "LLM Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
       }
     ],
     "standardizedBy": [],
@@ -192,12 +200,12 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       }
     ],
     "requires": [
@@ -284,6 +292,10 @@
         "label": "Belief-Desire-Intention"
       },
       {
+        "id": "urn:ngm:class:reactive-agents",
+        "label": "Reactive Agents"
+      },
+      {
         "id": "urn:ngm:class:cap-theorem",
         "label": "CAP Theorem"
       },
@@ -328,16 +340,20 @@
         "label": "Digital Twins"
       },
       {
+        "id": "urn:ngm:class:iot-networks",
+        "label": "IoT Networks"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:spatial-computing",

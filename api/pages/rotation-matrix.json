@@ -121,12 +121,24 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:eigenvalue",
+        "label": "Eigenvalue"
+      },
+      {
+        "id": "urn:ngm:class:matrix",
+        "label": "Matrix"
+      },
+      {
         "id": "urn:ngm:class:singular-value-decomposition",
         "label": "Singular Value Decomposition"
       },
       {
         "id": "urn:ngm:class:tensor",
         "label": "Tensor"
+      },
+      {
+        "id": "urn:ngm:class:vector-space",
+        "label": "Vector Space"
       },
       {
         "id": "urn:ngm:class:ai-alignment",
@@ -139,18 +151,6 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
       }
     ],
     "requires": [
@@ -181,6 +181,10 @@
         "label": "Computer Vision"
       },
       {
+        "id": "urn:ngm:class:computer-vision-domain",
+        "label": "Computer Vision Domain"
+      },
+      {
         "id": "urn:ngm:class:dimensionality-reduction",
         "label": "Dimensionality Reduction"
       },
@@ -203,10 +207,6 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
       }
     ],
     "bridgesTo": [
@@ -221,6 +221,22 @@
       {
         "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

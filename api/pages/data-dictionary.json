@@ -104,19 +104,64 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:data-quality",
-      "label": "Data Quality",
-      "slug": "data-quality"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance",
+      "slug": "data-governance"
     },
     {
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:data-quality",
+      "label": "Data Quality",
+      "slug": "data-quality"
+    },
+    {
+      "id": "urn:ngm:class:enterprise-architecture",
+      "label": "Enterprise Architecture",
+      "slug": "enterprise-architecture"
+    },
+    {
+      "id": "urn:ngm:class:information-architecture",
+      "label": "Information Architecture",
+      "slug": "information-architecture"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-management",
+      "label": "Knowledge Management",
+      "slug": "knowledge-management"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-organization-system",
+      "label": "Knowledge Organization System",
+      "slug": "knowledge-organization-system"
+    },
+    {
+      "id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture",
+      "slug": "system-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure",
+      "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture",
+      "slug": "software-architecture"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -126,6 +171,10 @@
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:business-glossary",
+        "label": "Business Glossary"
+      },
       {
         "id": "urn:ngm:class:data-catalog",
         "label": "Data Catalog"
@@ -147,16 +196,12 @@
         "label": "Data Observability"
       },
       {
+        "id": "urn:ngm:class:metadata-model",
+        "label": "Metadata Model"
+      },
+      {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
-      },
-      {
-        "id": "urn:ngm:class:schema-registry",
-        "label": "Schema Registry"
-      },
-      {
-        "id": "urn:ngm:class:semantic-layer",
-        "label": "Semantic Layer"
       }
     ],
     "requires": [
@@ -189,8 +234,8 @@
         "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ],
     "enables": [
@@ -229,12 +274,36 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
       },
       {
-        "id": "urn:ngm:class:etl-pipeline",
-        "label": "ETL"
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:schema-evolution",
+        "label": "Schema Evolution"
+      },
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       }
     ],
     "implements": [
@@ -247,18 +316,62 @@
         "label": "AWS Glue Data Catalog"
       },
       {
+        "id": "urn:ngm:class:datahub",
+        "label": "DataHub"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-purview",
+        "label": "Microsoft Purview"
+      },
+      {
         "id": "urn:ngm:class:open-lineage",
         "label": "OpenLineage"
       },
       {
         "id": "urn:ngm:class:open-metadata",
         "label": "OpenMetadata"
+      },
+      {
+        "id": "urn:ngm:class:openmetadata",
+        "label": "OpenMetadata"
+      },
+      {
+        "id": "urn:ngm:class:unity-catalog",
+        "label": "Unity Catalog"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:ad-hoc-data-access",
+        "label": "Ad Hoc Data Access"
+      },
+      {
+        "id": "urn:ngm:class:data-silo",
+        "label": "Data Silos"
+      },
+      {
+        "id": "urn:ngm:class:shadow-it",
+        "label": "Shadow IT"
+      },
+      {
+        "id": "urn:ngm:class:ungoverned-data-lake",
+        "label": "Ungoverned Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:data-anarchy",
+        "label": "Data Anarchy"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
+      },
+      {
+        "id": "urn:ngm:class:dark-data",
+        "label": "Dark Data"
       }
     ],
     "bridgesTo": [
@@ -267,28 +380,32 @@
         "label": "Enterprise Architecture"
       },
       {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
       },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
         "id": "urn:ngm:class:metaverse-technology",
         "label": "Metaverse Technology"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "uses": [
@@ -297,12 +414,16 @@
         "label": "Apache Kafka"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
         "id": "urn:ngm:class:owl",
         "label": "OWL"
+      },
+      {
+        "id": "urn:ngm:class:provenance-standard",
+        "label": "W3C PROV"
       },
       {
         "id": "urn:ngm:class:rdf",
@@ -315,10 +436,6 @@
       {
         "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
-      },
-      {
-        "id": "urn:ngm:class:w3-c-prov",
-        "label": "W3C PROV"
       },
       {
         "id": "urn:ngm:class:entity-resolution",
@@ -355,14 +472,18 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:data-warehouse",
-        "label": "Data Warehouse"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:apache-atlas",
         "label": "Apache Atlas"
+      },
+      {
+        "id": "urn:ngm:class:datahub-metadata-model",
+        "label": "DataHub Metadata Model"
       },
       {
         "id": "urn:ngm:class:dcat",
@@ -373,27 +494,41 @@
         "label": "Dublin Core"
       },
       {
+        "id": "urn:ngm:class:iso-gql",
+        "label": "ISO GQL"
+      },
+      {
         "id": "urn:ngm:class:open-lineage",
         "label": "OpenLineage"
       },
       {
-        "id": "urn:ngm:class:w3-c-prov",
+        "id": "urn:ngm:class:provenance-standard",
         "label": "W3C PROV"
       },
       {
         "id": "urn:ngm:class:dama-dmbok",
         "label": "DAMA DMBOK"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
       },
       {
-        "id": "urn:ngm:class:iso-8000",
-        "label": "ISO 8000"
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       },
       {
-        "id": "urn:ngm:class:gdpr",
-        "label": "GDPR"
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:active-metadata",
+        "label": "Active Metadata"
+      },
       {
         "id": "urn:ngm:class:data-contracts",
         "label": "Data Contracts"
@@ -411,20 +546,16 @@
         "label": "Data Observability"
       },
       {
+        "id": "urn:ngm:class:dataops",
+        "label": "DataOps"
+      },
+      {
         "id": "urn:ngm:class:feature-store",
         "label": "Feature Store"
       },
       {
-        "id": "urn:ngm:class:infra-computing-and-cloud",
-        "label": "Computing and Cloud"
-      },
-      {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
-      },
-      {
-        "id": "urn:ngm:class:data-architecture",
-        "label": "Data Architecture"
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
       }
     ]
   },

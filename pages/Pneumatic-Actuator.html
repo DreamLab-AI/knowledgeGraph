@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Pneumatic Actuator</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Pneumatic Actuator"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Pneumatic Actuator"/><meta name="twitter:description" content="PneumaticActuator is a mechanical device that converts compressed-air energy into controlled mechanical motion — linear (cylinders, bellows), rotary (vane motors, semi-rotary actuators), or contractile (McKibben muscles, fibre-reinforced elastomers, Festo fluidic muscles) — and serves as the prim… S..."/><meta property="og:description" content="PneumaticActuator is a mechanical device that converts compressed-air energy into controlled mechanical motion — linear (cylinders, bellows), rotary (vane motors, semi-rotary actuators), or contractile (McKibben muscles, fibre-reinforced elastomers, Festo fluidic muscles) — and serves as the prim… S..."/><meta property="og:image:alt" content="PneumaticActuator is a mechanical device that converts compressed-air energy into controlled mechanical motion — linear (cylinders, bellows), rotary (vane motors, semi-rotary actuators), or contractile (McKibben muscles, fibre-reinforced elastomers, Festo fluidic muscles) — and serves as the prim… S..."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Pneumatic-Actuator"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Pneumatic-Actuator"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="PneumaticActuator is a mechanical device that converts compressed-air energy into controlled mechanical motion — linear (cylinders, bellows), rotary (vane motors, semi-rotary actuators), or contractile (McKibben muscles, fibre-reinforced elastomers, Festo fluidic muscles) — and serves as the prim… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Pneumatic-Actuator"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-5826"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-5826" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Pneumatic Actuator</a></div></nav><h1 class="article-title">Pneumatic Actuator</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.732Z">23 Sept 2026</time><span>51 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:pneumatic-actuator</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>robotics</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Actuation-and-Control" class="internal">Actuation and Control</a></li><li><a href="../pages/Fluid-Power-Device" class="internal">Fluid Power Device</a></li><li><a href="../pages/Actuator" class="internal">Actuator</a></li><li><a href="../Robotic-Actuator" class="internal">Robotic Actuator</a></li><li><a href="../Compliant-Mechanism" class="internal">Compliant Mechanism</a></li><li><a href="../pages/Soft-Robotics" class="internal">Soft Robotics</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/Soft-Robotics" class="internal">Soft Robotics</a></li><li><a href="../Fluid-Power" class="internal">Fluid Power</a></li><li><a href="../Mechanical-Engineering" class="internal">Mechanical Engineering</a></li><li><a href="../Industrial-Automation" class="internal">Industrial Automation</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../directional-control-valve" class="internal">Directional Control Valve</a></li><li><a href="../mc-kibben-muscle" class="internal">McKibben Muscle</a></li><li><a href="../pneumatic-network" class="internal">Pneumatic Network</a></li><li><a href="../pages/Position-Sensor" class="internal">Position Sensor</a></li><li><a href="../pressure-regulator" class="internal">Pressure Regulator</a></li><li><a href="../pages/Proportional-Valve" class="internal">Proportional Valve</a></li><li><a href="../pages/Pneumatic-Cylinder" class="internal">Pneumatic Cylinder</a></li><li><a href="../McKibben-Muscle" class="internal">McKibben Muscle</a></li><li><a href="../Air-Supply-System" class="internal">Air Supply System</a></li><li><a href="../Elastomeric-Chamber" class="internal">Elastomeric Chamber</a></li><li><a href="../Fibre-Reinforcement" class="internal">Fibre Reinforcement</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../directional-control-valves" class="internal">Directional Control Valves</a></li><li><a href="../pressure-regulation" class="internal">Pressure Regulation</a></li><li><a href="../Compressed-Air-Supply" class="internal">Compressed Air Supply</a></li><li><a href="../Air-Compressor" class="internal">Air Compressor</a></li><li><a href="../Pneumatic-Tubing" class="internal">Pneumatic Tubing</a></li><li><a href="../Filter-Regulator-Lubricator-Unit" class="internal">Filter-Regulator-Lubricator Unit</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Robotic-Grasping" class="internal">Compliant Grasping</a></li><li><a href="../pages/Rehabilitation-Robotics" class="internal">Rehabilitation Robotics</a></li><li><a href="../pages/Safe-Human-Robot-Interaction" class="internal">Safe Physical Interaction</a></li><li><a href="../pages/Locomotion" class="internal">Soft Locomotion</a></li><li><a href="../pages/Human-Robot-Interaction" class="internal">Human Robot Interaction</a></li><li><a href="../Safe-Physical-Interaction" class="internal">Safe Physical Interaction</a></li><li><a href="../Compliant-Grasping" class="internal">Compliant Grasping</a></li><li><a href="../Soft-Locomotion" class="internal">Soft Locomotion</a></li><li><a href="../Hazardous-Environment-Operation" class="internal">Hazardous Environment Operation</a></li><li><a href="../Explosion-Proof-Actuation" class="internal">Explosion-Proof Actuation</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../Electric-Servo-Motor" class="internal">Electric Servo Motor</a></li><li><a href="../pages/Hydraulic-Actuator" class="internal">Hydraulic Actuator</a></li><li><a href="../pages/Shape-Memory-Alloy-Actuator" class="internal">Shape Memory Alloy Actuator</a></li><li><a href="../Dielectric-Elastomer-Actuator" class="internal">Dielectric Elastomer Actuator</a></li><li><a href="../Electromagnetic-Actuator" class="internal">Electromagnetic Actuator</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Fluid-Mechanics" class="internal">Fluid Mechanics</a></li><li><a href="../Elasticity-Theory" class="internal">Elasticity Theory</a></li><li><a href="../pages/Control-Theory" class="internal">Control Theory</a></li><li><a href="../Pneumatic-Circuit-Design" class="internal">Pneumatic Circuit Design</a></li><li><a href="../pages/Material-Science" class="internal">Material Science</a></li><li><a href="../pages/Thermodynamics" class="internal">Thermodynamics</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../HardwareLayer" class="internal">HardwareLayer</a></li><li><a href="../MechanicalLayer" class="internal">MechanicalLayer</a></li><li><a href="../ControlSystemLayer" class="internal">ControlSystemLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/ISO" class="internal">ISO 15552 Standard</a></li><li><a href="../McKibben-Muscle-Mechanics" class="internal">McKibben Muscle Mechanics</a></li><li><a href="../PneuNet-Architecture" class="internal">PneuNet Architecture</a></li><li><a href="../Fibre-Reinforced-Elastomer-Actuation" class="internal">Fibre-Reinforced Elastomer Actuation</a></li><li><a href="../ISO-15552-Standard" class="internal">ISO 15552 Standard</a></li><li><a href="../ISO-6432-Standard" class="internal">ISO 6432 Standard</a></li><li><a href="../Fluidic-Muscle-Principle" class="internal">Fluidic Muscle Principle</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>RB-0421</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../abaqus-fea" class="internal">Abaqus FEA</a></li><li><a href="../actuator" class="internal">Actuator</a></li><li><a href="../agricultural-robotics" class="internal">Agricultural Robotics</a></li><li><a href="../air-compressor" class="internal">Air Compressor</a></li><li><a href="../air-supply-system" class="internal">Air Supply System</a></li><li><a href="../amesim" class="internal">AMESim</a></li><li><a href="../amrc-sheffield" class="internal">AMRC Sheffield</a></li><li><a href="../atex-directive-2014-34-eu" class="internal">ATEX Directive 2014/34/EU</a></li><li><a href="../bristol-robotics-laboratory" class="internal">Bristol Robotics Laboratory</a></li><li><a href="../bsi-bs-en-iso-15552-2021" class="internal">BSI BS EN ISO 15552:2021</a></li><li><a href="../carbon-fibre-reinforcement" class="internal">Carbon Fibre Reinforcement</a></li><li><a href="../collaborative-robotics" class="internal">Collaborative Robotics</a></li><li><a href="../compliant-grasping" class="internal">Compliant Grasping</a></li><li><a href="../compliant-mechanism" class="internal">Compliant Mechanism</a></li><li><a href="../compressed-air" class="internal">Compressed Air</a></li><li><a href="../compressed-air-supply" class="internal">Compressed Air Supply</a></li><li><a href="../comsol-multiphysics" class="internal">COMSOL Multiphysics</a></li><li><a href="../control-system-layer" class="internal">ControlSystemLayer</a></li><li><a href="../dielectric-elastomer-actuator" class="internal">Dielectric Elastomer Actuator</a></li><li><a href="../directional-control-valve" class="internal">Directional Control Valve</a></li><li><a href="../directional-control-valves" class="internal">Directional Control Valves</a></li><li><a href="../edinburgh-centre-for-robotics" class="internal">Edinburgh Centre for Robotics</a></li><li><a href="../elasticity-theory" class="internal">Elasticity Theory</a></li><li><a href="../elastomeric-chamber" class="internal">Elastomeric Chamber</a></li><li><a href="../elastomeric-materials" class="internal">Elastomeric Materials</a></li><li><a href="../electric-servo-motor" class="internal">Electric Servo Motor</a></li><li><a href="../electromagnetic-actuator" class="internal">Electromagnetic Actuator</a></li><li><a href="../eu-ecodesign-regulation-2019-1781" class="internal">EU Ecodesign Regulation 2019/1781</a></li><li><a href="../exoskeleton" class="internal">Exoskeleton</a></li><li><a href="../exoskeleton-design" class="internal">Exoskeleton Design</a></li><li><a href="../explosion-proof-actuation" class="internal">Explosion-Proof Actuation</a></li><li><a href="../festo-bionic-learning-network" class="internal">Festo BionicLearning Network</a></li><li><a href="../festo-fluidic-muscle" class="internal">Festo Fluidic Muscle</a></li><li><a href="../fibre-reinforced-elastomer-actuation" class="internal">Fibre-Reinforced Elastomer Actuation</a></li><li><a href="../fibre-reinforced-elastomers" class="internal">Fibre Reinforced Elastomers</a></li><li><a href="../fibre-reinforcement" class="internal">Fibre Reinforcement</a></li><li><a href="../filter-regulator-lubricator-unit" class="internal">Filter-Regulator-Lubricator Unit</a></li><li><a href="../fluid-mechanics" class="internal">Fluid Mechanics</a></li><li><a href="../fluid-power" class="internal">Fluid Power</a></li><li><a href="../fluid-power-device" class="internal">Fluid Power Device</a></li><li><a href="../fluid-power-domain" class="internal">FluidPowerDomain</a></li><li><a href="../fluidic-elastomers" class="internal">Fluidic Elastomers</a></li><li><a href="../fluidic-logic" class="internal">Fluidic Logic</a></li><li><a href="../fluidic-muscle-principle" class="internal">Fluidic Muscle Principle</a></li><li><a href="../hardware-layer" class="internal">HardwareLayer</a></li><li><a href="../harvard-soft-robotics-toolkit" class="internal">Harvard Soft Robotics Toolkit</a></li><li><a href="../hazardous-environment-operation" class="internal">Hazardous Environment Operation</a></li><li><a href="../hse-hsg244" class="internal">HSE HSG244</a></li><li><a href="../iec-61000-emc-standards-for-control-valves" class="internal">IEC 61000 EMC Standards for Control Valves</a></li><li><a href="../imperial-college-hamlyn-centre" class="internal">Imperial College Hamlyn Centre</a></li><li><a href="../industrial-automation" class="internal">Industrial Automation</a></li><li><a href="../isaac-gym" class="internal">IsaacGym</a></li><li><a href="../iso-15552" class="internal">ISO 15552</a></li><li><a href="../iso-15552-standard" class="internal">ISO 15552 Standard</a></li><li><a href="../iso-4414" class="internal">ISO 4414</a></li><li><a href="../iso-4414-pneumatic-fluid-power" class="internal">ISO 4414 Pneumatic Fluid Power</a></li><li><a href="../iso-6432" class="internal">ISO 6432</a></li><li><a href="../iso-6432-standard" class="internal">ISO 6432 Standard</a></li><li><a href="../material-science" class="internal">Material Science</a></li><li><a href="../matlab-simhydraulics" class="internal">MATLAB Simhydraulics</a></li><li><a href="../mc-kibben-muscle" class="internal">McKibben Muscle</a></li><li><a href="../mc-kibben-muscle-mechanics" class="internal">McKibben Muscle Mechanics</a></li><li><a href="../mechanical-engineering" class="internal">Mechanical Engineering</a></li><li><a href="../pages/robo-actuation-and-control" class="internal">MechanicalEngineeringDomain</a></li><li><a href="../mechanical-layer" class="internal">MechanicalLayer</a></li><li><a href="../medical-robotics" class="internal">Medical Robotics</a></li><li><a href="../mit-csail-rus-group" class="internal">MIT CSAIL Rus Group</a></li><li><a href="../model-predictive-control" class="internal">Model Predictive Control</a></li><li><a href="../mu-jo-co" class="internal">MuJoCo</a></li><li><a href="../nfpa-t3-21-3" class="internal">NFPA T3.21.3</a></li><li><a href="../norgren-imi-precision-engineering" class="internal">Norgren IMI Precision Engineering</a></li><li><a href="../open-foam" class="internal">OpenFOAM</a></li><li><a href="../parker-hannifin" class="internal">Parker Hannifin</a></li><li><a href="../pick-and-place-robotics" class="internal">Pick and Place Robotics</a></li><li><a href="../pid-control" class="internal">PID Control</a></li><li><a href="../pneu-net" class="internal">PneuNet</a></li><li><a href="../pneu-net-architecture" class="internal">PneuNet Architecture</a></li><li><a href="../pneumatic-circuit-design" class="internal">Pneumatic Circuit Design</a></li><li><a href="../pneumatic-network" class="internal">Pneumatic Network</a></li><li><a href="../pneumatic-tubing" class="internal">Pneumatic Tubing</a></li><li><a href="../position-sensor" class="internal">Position Sensor</a></li><li><a href="../pressure-regulation" class="internal">Pressure Regulation</a></li><li><a href="../pressure-regulator" class="internal">Pressure Regulator</a></li><li><a href="../proportional-pressure-control" class="internal">Proportional Pressure Control</a></li><li><a href="../proportional-valve" class="internal">Proportional Valve</a></li><li><a href="../rehabilitation-robotics" class="internal">Rehabilitation Robotics</a></li><li><a href="../robot-compliance" class="internal">Robot Compliance</a></li><li><a href="../robotic-actuator" class="internal">Robotic Actuator</a></li><li><a href="../robotics-grounded-domain" class="internal">RoboticsGroundedDomain</a></li><li><a href="../safe-physical-interaction" class="internal">Safe Physical Interaction</a></li><li><a href="../series-elastic-actuator" class="internal">Series Elastic Actuator</a></li><li><a href="../smc-cylinders" class="internal">SMC Cylinders</a></li><li><a href="../soft-gripper-systems" class="internal">Soft Gripper Systems</a></li><li><a href="../soft-locomotion" class="internal">Soft Locomotion</a></li><li><a href="../soft-matter-physics" class="internal">Soft Matter Physics</a></li><li><a href="../soft-robotics-domain" class="internal">SoftRoboticsDomain</a></li><li><a href="../thermodynamics" class="internal">Thermodynamics</a></li><li><a href="../ucl-hawkes-group" class="internal">UCL Hawkes Group</a></li><li><a href="../uk-noise-at-work-regulations-2005" class="internal">UK Noise at Work Regulations 2005</a></li><li><a href="../university-of-manchester-compliant-systems" class="internal">University of Manchester Compliant Systems</a></li><li><a href="../variable-stiffness-actuator" class="internal">Variable Stiffness Actuator</a></li><li><a href="../whitesides-research-group-harvard" class="internal">Whitesides Research Group Harvard</a></li><li><a href="../control-theory" class="internal">Control Theory</a></li><li><a href="../human-robot-interaction" class="internal">Human-Robot Interaction</a></li><li><a href="../hydraulic-actuator" class="internal">Hydraulic Actuator</a></li><li><a href="../pneumatic-cylinder" class="internal">Pneumatic Cylinder</a></li><li><a href="../robotics" class="internal">Robotics</a></li><li><a href="../shape-memory-alloy-actuator" class="internal">Shape Memory Alloy Actuator</a></li><li><a href="../soft-robotics" class="internal">Soft Robotics</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:8ece979d5dfda758fd2d93d42b84388a0df83473c3debcc0a2c07f517dcb10aa</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Series-Elastic-Actuator" class="internal">Series Elastic Actuator</a></li><li><a href="../pages/Variable-Stiffness-Actuator" class="internal">Variable Stiffness Actuator</a></li><li><a href="../Robot-Compliance" class="internal">Robot Compliance</a></li><li><a href="../Soft-Matter-Physics" class="internal">Soft Matter Physics</a></li><li><a href="../Fluidic-Logic" class="internal">Fluidic Logic</a></li><li><a href="../pages/Actuator" class="internal">Actuator</a></li><li><a href="../Compliant-Mechanism" class="internal">Compliant Mechanism</a></li><li><a href="../McKibben-Muscle" class="internal">McKibben Muscle</a></li><li><a href="../pages/Soft-Robotics" class="internal">Soft Robotics</a></li><li><a href="../Fluidic-Elastomers" class="internal">Fluidic Elastomers</a></li><li><a href="../PneuNet" class="internal">PneuNet</a></li><li><a href="../pages/Pneumatic-Cylinder" class="internal">Pneumatic Cylinder</a></li><li><a href="../pages/Human-Robot-Interaction" class="internal">Human Robot Interaction</a></li><li><a href="../pages/Exoskeleton" class="internal">Exoskeleton</a></li><li><a href="../pages/Rehabilitation-Robotics" class="internal">Rehabilitation Robotics</a></li><li><a href="../Industrial-Automation" class="internal">Industrial Automation</a></li><li><a href="../Compressed-Air-Supply" class="internal">Compressed Air Supply</a></li><li><a href="../pages/Proportional-Valve" class="internal">Proportional Valve</a></li><li><a href="../pages/Model-Predictive-Control" class="internal">Model Predictive Control</a></li><li><a href="../Fibre-Reinforced-Elastomers" class="internal">Fibre Reinforced Elastomers</a></li><li><a href="../ISO-15552" class="internal">ISO 15552</a></li><li><a href="../ISO-6432" class="internal">ISO 6432</a></li><li><a href="../ISO-4414" class="internal">ISO 4414</a></li><li><a href="../HSE-HSG244" class="internal">HSE HSG244</a></li><li><a href="../EU-Ecodesign-Regulation-2019/1781" class="internal">EU Ecodesign Regulation 2019/1781</a></li><li><a href="../ATEX-Directive-2014/34/EU" class="internal">ATEX Directive 2014/34/EU</a></li><li><a href="../BSI-BS-EN-ISO-15552:2021" class="internal">BSI BS EN ISO 15552:2021</a></li><li><a href="../UK-Noise-at-Work-Regulations-2005" class="internal">UK Noise at Work Regulations 2005</a></li><li><a href="../Whitesides-Research-Group-Harvard" class="internal">Whitesides Research Group Harvard</a></li><li><a href="../MIT-CSAIL-Rus-Group" class="internal">MIT CSAIL Rus Group</a></li><li><a href="../Festo-BionicLearning-Network" class="internal">Festo BionicLearning Network</a></li><li><a href="../Imperial-College-Hamlyn-Centre" class="internal">Imperial College Hamlyn Centre</a></li><li><a href="../Bristol-Robotics-Laboratory" class="internal">Bristol Robotics Laboratory</a></li><li><a href="../University-of-Manchester-Compliant-Systems" class="internal">University of Manchester Compliant Systems</a></li><li><a href="../Edinburgh-Centre-for-Robotics" class="internal">Edinburgh Centre for Robotics</a></li><li><a href="../UCL-Hawkes-Group" class="internal">UCL Hawkes Group</a></li><li><a href="../Norgren-IMI-Precision-Engineering" class="internal">Norgren IMI Precision Engineering</a></li><li><a href="../AMRC-Sheffield" class="internal">AMRC Sheffield</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/EMC-Standard" class="internal">IEC 61000 EMC Standards for Control Valves</a></li><li><a href="../pages/ISO" class="internal">ISO 15552</a></li><li><a href="../ISO-15552" class="internal">ISO 15552</a></li><li><a href="../ISO-6432" class="internal">ISO 6432</a></li><li><a href="../ISO-4414-Pneumatic-Fluid-Power" class="internal">ISO 4414 Pneumatic Fluid Power</a></li><li><a href="../NFPA-T3.21.3" class="internal">NFPA T3.21.3</a></li><li><a href="../IEC-61000-EMC-Standards-for-Control-Valves" class="internal">IEC 61000 EMC Standards for Control Valves</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../agricultural-robotics" class="internal">Agricultural Robotics</a></li><li><a href="../pages/Collaborative-Robotics" class="internal">Collaborative Robotics</a></li><li><a href="../pages/Exoskeleton" class="internal">Exoskeleton Design</a></li><li><a href="../industrialautomation" class="internal">IndustrialAutomation</a></li><li><a href="../pages/Medical-Robotics" class="internal">Medical Robotics</a></li><li><a href="../pages/Pick-and-Place" class="internal">Pick and Place Robotics</a></li><li><a href="../Industrial-Automation" class="internal">Industrial Automation</a></li><li><a href="../Pick-and-Place-Robotics" class="internal">Pick and Place Robotics</a></li><li><a href="../Exoskeleton-Design" class="internal">Exoskeleton Design</a></li><li><a href="../Soft-Gripper-Systems" class="internal">Soft Gripper Systems</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../model-predictive-control" class="internal">Model Predictive Control</a></li><li><a href="../pid-control" class="internal">PID Control</a></li><li><a href="../pages/Proportional-Control" class="internal">Proportional Pressure Control</a></li><li><a href="../Compressed-Air" class="internal">Compressed Air</a></li><li><a href="../Elastomeric-Materials" class="internal">Elastomeric Materials</a></li><li><a href="../Carbon-Fibre-Reinforcement" class="internal">Carbon Fibre Reinforcement</a></li><li><a href="../Proportional-Pressure-Control" class="internal">Proportional Pressure Control</a></li><li><a href="../Festo-Fluidic-Muscle" class="internal">Festo Fluidic Muscle</a></li><li><a href="../SMC-Cylinders" class="internal">SMC Cylinders</a></li><li><a href="../Parker-Hannifin" class="internal">Parker Hannifin</a></li><li><a href="../COMSOL-Multiphysics" class="internal">COMSOL Multiphysics</a></li><li><a href="../Abaqus-FEA" class="internal">Abaqus FEA</a></li><li><a href="../pages/MuJoCo" class="internal">MuJoCo</a></li><li><a href="../IsaacGym" class="internal">IsaacGym</a></li><li><a href="../AMESim" class="internal">AMESim</a></li><li><a href="../MATLAB-Simhydraulics" class="internal">MATLAB Simhydraulics</a></li><li><a href="../Harvard-Soft-Robotics-Toolkit" class="internal">Harvard Soft Robotics Toolkit</a></li><li><a href="../OpenFOAM" class="internal">OpenFOAM</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>PneumaticActuator is a mechanical device that converts compressed-air energy into controlled mechanical motion — linear (cylinders, bellows), rotary (vane motors, semi-rotary actuators), or contractile (McKibben muscles, fibre-reinforced elastomers, Festo fluidic muscles) — and serves as the prim…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:hasPart rb:PneumaticCylinder))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:hasPart rb:McKibbenMuscle))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:hasPart rb:DirectionalControlValve))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:hasPart rb:PressureRegulator))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:hasPart rb:AirSupplySystem))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:hasPart rb:ProportionalValve))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:hasPart rb:PneumaticNetwork))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:hasPart rb:ElastomericChamber))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:hasPart rb:FibreReinforcement))
+
+  ## Dependency Relationships
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:requires rb:CompressedAirSupply))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:requires rb:PressureRegulation))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:requires rb:DirectionalControlValves))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:requires rb:PneumaticTubing))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:requires rb:FilterRegulatorLubricatorUnit))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:dependsOn rb:FluidMechanics))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:dependsOn rb:ElasticityTheory))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:dependsOn rb:ControlTheory))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:dependsOn rb:Thermodynamics))
+
+  ## Capability Relationships
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:enables rb:HumanRobotInteraction))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:enables rb:CompliantGrasping))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:enables rb:SoftLocomotion))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:enables rb:RehabilitationRobotics))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:enables rb:ExplosionProofOperation))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:supports rb:IndustrialAutomation))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:supports rb:CollaborativeRobotics))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:supports rb:MedicalRobotics))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:supports rb:SoftGripperSystems))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:supports rb:ExoskeletonDesign))
+
+  ## Implementation Relationships
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:implements rb:McKibbenMuscleMechanics))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:implements rb:PneuNetArchitecture))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:implements rb:FibreReinforcedElastomerActuation))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:implements rb:ISO15552Standard))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:implements rb:FluidicMusclePrinciple))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:uses rb:CompressedAir))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:uses rb:ProportionalPressureControl))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:uses rb:ModelPredictiveControl))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:uses rb:ElastomericMaterials))
+
+  ## Reduction Relationships
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:reduces rb:ContactForceRisk))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:reduces rb:InfrastructureCost))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:reduces rb:ComponentWeight))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:reduces rb:ExplosionHazard))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:reduces rb:ElectromagneticInterference))
+
+  ## Association Relationships
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:relatedTo rb:VariableStiffnessActuator))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:relatedTo rb:SeriesElasticActuator))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:relatedTo rb:SoftMatterPhysics))
+  SubClassOf(rb:PneumaticActuator
+    ObjectSomeValuesFrom(rb:relatedTo rb:FluidicLogic))
+
+  ## Data Properties (Characteristics)
+  DataPropertyAssertion(rb:hasIdentifier rb:PneumaticActuator &quot;RB-0421&quot;^^xsd:string)
+  DataPropertyAssertion(rb:authorityScore rb:PneumaticActuator &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(rb:supplyPressureBarMin rb:PneumaticActuator &quot;0.1&quot;^^xsd:decimal)
+  DataPropertyAssertion(rb:supplyPressureBarMax rb:PneumaticActuator &quot;8.0&quot;^^xsd:decimal)
+  DataPropertyAssertion(rb:contractionPercentMaxPAM rb:PneumaticActuator &quot;35&quot;^^xsd:integer)
+  DataPropertyAssertion(rb:positionRepeatabilityMm rb:PneumaticActuator &quot;0.5&quot;^^xsd:decimal)
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label rb:PneumaticActuator &quot;Pneumatic Actuator&quot;@en)
+  AnnotationAssertion(rdfs:comment rb:PneumaticActuator &quot;Mechanical device converting compressed-air energy into linear, rotary, or contractile motion; encompasses ISO-standardised rigid cylinders, McKibben PAMs with 25-35% contraction, and soft PneuNet elastomeric actuators; deployed in industrial automation, collaborative robotics, exoskeletons, and soft robotics research at Harvard, MIT, Imperial, and Bristol.&quot;@en)
+  AnnotationAssertion(dcterms:identifier rb:PneumaticActuator &quot;RB-0421&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject rb:PneumaticActuator &quot;Robotics, Fluid Power, Soft Robotics, Compliant Mechanisms, McKibben Muscle&quot;@en)
+
+  ## Property Characteristics
+  AsymmetricObjectProperty(rb:requires)
+  AsymmetricObjectProperty(rb:enables)
+  AsymmetricObjectProperty(rb:implements)
+  AsymmetricObjectProperty(rb:reduces)
+  TransitiveObjectProperty(rb:dependsOn)
+  FunctionalDataProperty(rb:authorityScore)
+  FunctionalDataProperty(rb:supplyPressureBarMax)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-pneumatic-actuators">About Pneumatic Actuators<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-pneumatic-actuators" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Pneumatic actuators</strong> convert the potential energy of compressed gas into usable mechanical work — almost universally dry, filtered air at 4–8 bar gauge in industrial settings, or pressures as low as 0.1–0.5 bar in delicate soft-robotic applications.</p>
+</li>
+<li>
+<p>The technology is among the oldest in automation (the first industrial pneumatic cylinder patents trace to the 1860s), yet it remains an active frontier of robotics research in the 2020s precisely because its physical properties — inherent compliance, energy transparency, high power-to-mass ratio, spark-free operation — align with the emerging demands of collaborative and soft robotics.</p>
+</li>
+<li>
+<p>Unlike electric motors, which store energy in rotating inertia and transmit force through rigid gear trains, pneumatic actuators are intrinsically back-drivable: if an external force is applied, air simply compresses or vents, yielding without transmitting impact to the mechanism.</p>
+</li>
+<li>
+<p>This passive impedance characteristic makes pneumatics uniquely suitable for applications involving unpredictable contact with humans or delicate objects, and has driven adoption in collaborative robot tooling, rehabilitation exoskeletons, and agricultural soft grippers.</p>
+</li>
+<li>
+<p>The technical landscape divides along two axes: <strong>morphology</strong> (rigid-bodied cylinders and rotary actuators versus soft elastomeric structures) and <strong>contraction geometry</strong> (linear extension/retraction, rotary, contractile/shortening).</p>
+</li>
+<li>
+<p>Rigid pneumatic cylinders remain the workhorse of manufacturing automation, estimated at over 700 million units in global installed base (Pneumatic Industries Association, 2024).</p>
+</li>
+<li>
+<p>Soft pneumatic actuators, though a smaller market, are the focus of the most intensive contemporary research and form the basis of next-generation surgical, agricultural, and prosthetic systems.</p>
+</li>
+<li>
+<h3 id="advantages-and-disadvantages-comparison-matrix">Advantages and Disadvantages: Comparison Matrix<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#advantages-and-disadvantages-comparison-matrix" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="pneumatics-vs-electric-servo-motors">Pneumatics vs. Electric Servo Motors<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pneumatics-vs-electric-servo-motors" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Advantages of pneumatics</strong>: Superior power-to-weight ratio in the 0.1–10 kN force range — PAMs achieve 2–5 kW/kg peak versus 0.5–1.5 kW/kg for comparably sized brushless DC motors.</p>
+</li>
+<li>
+<p><strong>Inherent back-drivability</strong> without additional compliance mechanisms (series elastic elements, torque-sensing feedback loops).</p>
+</li>
+<li>
+<p><strong>Zero electromagnetic emissions</strong> — critical for MRI environments and explosive atmospheres where electrical actuation creates ignition risk.</p>
+</li>
+<li>
+<p><strong>Lower actuator cost per newton-force</strong> at commodity cylinder scale: a Festo DSBC-32-100 costs approximately £45, versus £250–600 for an equivalent electric linear actuator with integrated servo.</p>
+</li>
+<li>
+<p><strong>Disadvantages of pneumatics</strong>: Limited absolute positional accuracy — 0.1–0.5 mm for controlled cylinders versus 0.01–0.05 mm for electric servo with encoder feedback.</p>
+</li>
+<li>
+<p>Dependence on centralised compressed-air infrastructure (compressor, dryer, distribution piping) adds capital cost of £8,000–£80,000 for a typical manufacturing cell.</p>
+</li>
+<li>
+<p>Audible noise from exhaust venting (70–90 dB at 1 m for industrial systems without silencers) creates workplace noise exposure issues regulated under UK Noise at Work Regulations 2005.</p>
+</li>
+<li>
+<p>Difficulty achieving continuous-force generation without constant air consumption — idle holding requires continuous flow, unlike an electric servo which can hold position at near-zero power.</p>
+</li>
+<li>
+<h4 id="pneumatics-vs-hydraulic-actuators">Pneumatics vs. Hydraulic Actuators<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pneumatics-vs-hydraulic-actuators" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Advantages of pneumatics over hydraulics</strong>: Higher bandwidth at small scales — air’s low viscosity enables fast switching at miniature valve orifices (5–20 ms versus 20–100 ms for hydraulic solenoids of comparable force rating).</p>
+</li>
+<li>
+<p><strong>Cleaner operation</strong>: air leaks are harmless, versus hydraulic fluid spills creating fire hazards, environmental contamination, and slip-and-fall risks.</p>
+</li>
+<li>
+<p><strong>Lower system infrastructure cost</strong> for light-to-medium force applications: pneumatic FRL unit + compressor versus hydraulic power unit (HPU) cost differential is typically 3–5× at ≤10 kN force levels.</p>
+</li>
+<li>
+<p><strong>Inherent safe interaction</strong>: air stores less energy per unit volume (compressibility means stored energy ≈ 0.5·P·V versus hydraulic oil which is nearly incompressible and stores all pressure energy).</p>
+</li>
+<li>
+<p><strong>Disadvantages of pneumatics versus hydraulics</strong>: Hydraulics offer superior force density — 50–350 bar versus 4–8 bar for pneumatics, yielding 6–45× greater force per piston area.</p>
+</li>
+<li>
+<p>Lower compressibility in hydraulics yields stiffer position control — positional bandwidth 10–100 Hz versus 2–30 Hz for pneumatics.</p>
+</li>
+<li>
+<p>Hydraulics are preferred above approximately 10–20 kN continuous force in mobile robot applications, and universally in construction equipment, aircraft flight control, and heavy manufacturing.</p>
+</li>
+<li>
+<h4 id="pneumatics-vs-shape-memory-alloys-and-dielectric-elastomers">Pneumatics vs. Shape Memory Alloys and Dielectric Elastomers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pneumatics-vs-shape-memory-alloys-and-dielectric-elastomers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Against SMAs</strong>: Pneumatics offer substantially higher force output (SMA typically &lt;100 N, PAMs to 3 kN at comparable scale), faster cycle rates (5–30 Hz versus SMA 0.1–1 Hz limited by thermal time constant), and easier fabrication at industrial scale.</p>
+</li>
+<li>
+<p><strong>Against DEAs</strong>: Pneumatics operate at pressures requiring no high voltage (DEAs require 1–10 kV for actuation, introducing electrical hazard), tolerate higher temperatures without degradation, and achieve forces 10–100× larger per unit actuator volume.</p>
+</li>
+<li>
+<p><strong>Where SMAs and DEAs excel</strong>: Miniaturisation below 1 mm scale, electrical driving (no fluid supply), and integration into MEMS and microelectronic fabrication processes where pneumatic routing is impractical.</p>
+</li>
+<li>
+<h3 id="core-physics-and-mathematical-framework">Core Physics and Mathematical Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-physics-and-mathematical-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="force-generation-in-rigid-cylinders">Force Generation in Rigid Cylinders<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#force-generation-in-rigid-cylinders" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Double-acting cylinder net force</strong>: F_net = P₁·A₁ − P₂·A₂ − F_seal − F_load</p>
+</li>
+<li>
+<p>Where P₁ and P₂ are cap-end and rod-end chamber pressures; A₁ = π(D/2)² (cap-end area); A₂ = π((D/2)² − (d/2)²) (rod-end area, d = rod diameter); F_seal is seal friction (3–8% of maximum theoretical force for PTFE-grade seals).</p>
+</li>
+<li>
+<p>Typical industrial bore diameters range from 8 mm (ISO 6432 mini) to 320 mm (large-bore tie-rod), generating theoretical forces from 50 N to approximately 640 kN at 8 bar.</p>
+</li>
+<li>
+<h4 id="compressibility-and-dynamic-modelling">Compressibility and Dynamic Modelling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compressibility-and-dynamic-modelling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Air compressibility is the central challenge distinguishing pneumatics from hydraulics. Air at 6 bar absolute occupies one-sixth the volume of the same mass at 1 bar — any stroke motion simultaneously changes pressure in both chambers.</p>
+</li>
+<li>
+<p>The working fluid state follows the polytropic relationship PV^n = const, where n = 1 (isothermal) for slow, thermally equilibrated motion and n = 1.4 (adiabatic) for rapid strokes. Most practical controllers use n ≈ 1.2 as a compromise between these extremes.</p>
+</li>
+<li>
+<p>The resonant frequency of a pneumatic cylinder-load system: ω_n = √(nPA/mL), where m is load mass and L is stroke length. This typically yields mechanical bandwidths of 2–30 Hz, significantly lower than comparably sized electric servo axes (50–500 Hz).</p>
+</li>
+<li>
+<p>Nonlinear state-space models capturing both compressibility and valve flow (orifice equation Q = C_d·A_v·√(2ΔP/ρ) for subsonic flow; sonic choking at ΔP/P_upstream > 0.528) are required for accurate trajectory tracking simulation.</p>
+</li>
+<li>
+<h4 id="mckibben-muscle-pam-force-length-characteristics">McKibben Muscle (PAM) Force-Length Characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mckibben-muscle-pam-force-length-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>The contractile force F of a McKibben PAM at supply pressure P and shortening ratio ε = (L₀ − L)/L₀ follows the virtual work model (Chou &amp; Hannaford 1996):</p>
+</li>
+<li>
+<p>F = (πD₀²P/4) · (3cos²θ − 1)/sin²θ</p>
+</li>
+<li>
+<p>Where D₀ is initial diameter, θ is braid angle relative to the muscle axis. The muscle stalls (F=0) at maximum contraction ε_max ≈ (1 − 1/√3·cotθ₀).</p>
+</li>
+<li>
+<p>Real McKibben muscles exhibit nonlinear hysteresis of 5–15% between inflation and deflation strokes due to braid-bladder friction and elastomeric creep. The modified Bouc-Wen model (Vo-Minh et al. 2011) captures this rate-dependent hysteresis for control design.</p>
+</li>
+<li>
+<p>A 40 mm diameter Festo Fluidic Muscle at 6 bar generates approximately 3,000 N peak isometric force at zero contraction, falling to zero at 25–30% contraction.</p>
+</li>
+<li>
+<p>Peak power density of McKibben PAMs: approximately 1 kW/kg, comparable to vertebrate skeletal muscle (0.3–1.2 kW/kg) and far exceeding electric motors at the same scale (0.3–0.6 kW/kg for brushless DC).</p>
+</li>
+<li>
+<h4 id="soft-pneumatic-actuator-spa-mechanics">Soft Pneumatic Actuator (SPA) Mechanics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#soft-pneumatic-actuator-spa-mechanics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Bending angle in a fibre-reinforced straight channel (Yu et al. 2015) is determined by inextensible fibre wrapping angle and differential strain between constrained and unconstrained faces.</p>
+</li>
+<li>
+<p>The approximate relationship θ ≈ kP·L²/t² (where k is a geometry-dependent compliance coefficient, L is channel length, t is wall thickness) is validated computationally by finite element models in Abaqus and COMSOL.</p>
+</li>
+<li>
+<p>Fabrication uses platinum-cure two-component silicone: EcoFlex 00-30 (elastic modulus E ≈ 69 kPa, elongation at break 800%) for highly compliant structures; Dragon Skin 10 (E ≈ 166 kPa) for stiffer configurations; and Smooth-Sil 950 (E ≈ 830 kPa) for structural elements.</p>
+</li>
+<li>
+<p>Moulds are produced by SLA or FDM 3D printing (achievable feature resolution 0.1–0.5 mm), PolyJet printing enables multi-material single-print actuators with embedded rigid and flexible regions.</p>
+</li>
+<li>
+<p>PneuNet channels filled with air at 0.1–0.5 bar produce bending motion; multiple channels in parallel on the same bladder create complex 3D deformation shapes. Networks of 4–12 channels replicate finger curling, tip pinching, and side-pinch grasping motions.</p>
+</li>
+<li>
+<h3 id="valve-systems-and-pneumatic-control-architecture">Valve Systems and Pneumatic Control Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#valve-systems-and-pneumatic-control-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="directional-control-valve-dcv-types">Directional Control Valve (DCV) Types<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#directional-control-valve-dcv-types" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>2/2 (two-port, two-position) valve</strong>: Normally closed; blocks or passes flow. Used as a simple on/off valve in safety circuits and zone isolation.</p>
+</li>
+<li>
+<p><strong>3/2 valve</strong>: Three ports (supply, cylinder, exhaust), two positions. Controls single-acting cylinders; common for grippers (open/close).</p>
+</li>
+<li>
+<p><strong>5/2 valve (standard double-acting)</strong>: Five ports, two positions. Alternates supply and exhaust between cylinder cap-end and rod-end. Dominant type in manufacturing automation.</p>
+</li>
+<li>
+<p><strong>5/3 centre-closed valve</strong>: Five ports, three positions. Adds a locked mid-position blocking all ports — holds cylinder at any intermediate position. Used in servo-pneumatic positioning systems.</p>
+</li>
+<li>
+<p><strong>5/3 centre-open valve</strong>: Centre position connects all working ports to exhaust — depressurises cylinder completely (soft stop). Used in safety-critical clamp circuits.</p>
+</li>
+<li>
+<p>Switching speeds: solenoid-operated 5/2 valves switch in 5–20 ms; pilot-operated valves (using smaller solenoid valve to pilot larger valve) switch in 15–50 ms but pass higher flow rates.</p>
+</li>
+<li>
+<h4 id="proportional-and-servo-valves">Proportional and Servo Valves<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#proportional-and-servo-valves" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Proportional pressure valves</strong> (Festo VPPM, SMC ITV series): Regulate downstream pressure proportional to electrical input signal (0–10 V or 4–20 mA). Resolution 0.05–0.1% full scale; bandwidth 50–150 Hz. Used for force control and compliant impedance.</p>
+</li>
+<li>
+<p><strong>Proportional flow control valves</strong> (Festo MPYE, Parker D*FP series): Regulate volumetric flow rate. Enable velocity-controlled motion and energy-efficient meter-in/meter-out strategies.</p>
+</li>
+<li>
+<p><strong>Servo valves (high-performance)</strong>: Electro-hydraulic servo valve architecture adapted for air (e.g., Moog D663 pneumatic): bandwidth to 400 Hz, enabling high-performance positional servos. Used in aerospace test rigs and precision pneumatic test machines.</p>
+</li>
+<li>
+<p>Valve manifolds integrate 4–32 individual valves on a single bus body, reducing pneumatic tubing to individual cylinders and enabling centrally addressable multi-actuator systems (Festo CPX/MPA, SMC SS5Y series, Parker P7000 Modular Series).</p>
+</li>
+<li>
+<h4 id="closed-loop-control-strategies">Closed-Loop Control Strategies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#closed-loop-control-strategies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>PID with friction compensation</strong>: Achieves 0.5–1.5 mm steady-state positioning error on industrial cylinders. Requires LuGre or Karnopp friction models to compensate stick-slip behaviour at low velocities.</p>
+</li>
+<li>
+<p><strong>Cascade control architecture</strong>: Inner pressure loop (100–500 Hz) tracks commanded chamber pressures; outer position loop (10–50 Hz) generates pressure setpoints. Decouples valve dynamics from load dynamics.</p>
+</li>
+<li>
+<p><strong>Sliding mode control (SMC)</strong>: Robust to parametric uncertainty (payload mass variation, temperature-dependent friction); sliding surface σ = ė + λe approaches zero in finite time. Widely applied in PAM-driven robot arms where force-length nonlinearity complicates gain scheduling.</p>
+</li>
+<li>
+<p><strong>Model Predictive Control (MPC)</strong>: Incorporates polytropic gas law and valve orifice equation as plant model; optimises pressure trajectories over a receding horizon of 20–200 ms. Particularly effective for multi-DOF PAM systems where chamber pressures are coupled through shared supply manifold.</p>
+</li>
+<li>
+<p><strong>Physics-informed neural network (PINN) control</strong> (Wang et al. IEEE T-Mech 2025): Embeds the Chou-Hannaford McKibben force model as a physics constraint in the loss function, eliminating offline system identification. Achieves 0.8 mm RMS tracking error at 0.1–8 Hz bandwidth for a 2-DOF PAM arm.</p>
+</li>
+<li>
+<p><strong>Reinforcement learning controllers</strong>: Trained in IsaacGym/MuJoCo simulated pneumatic environments with domain randomisation over material parameters and pressure dynamics; transferred to hardware with 80–95% success rates in grasping tasks (Festo BionicSoftHand 2025 update).</p>
+</li>
+<li>
+<p><strong>Iterative learning control (ILC)</strong>: Exploits repetitive motion patterns (fixed cycle pick-and-place, periodic gait) to iteratively reduce tracking error over successive cycles without a parametric model. ILC achieves 0.1–0.3 mm tracking error for pneumatic cylinders on repetitive trajectories after 10–30 cycles, significantly better than PID with friction compensation alone.</p>
+</li>
+<li>
+<p><strong>Position sensing options for pneumatic cylinders</strong>: Magnetic reed switches (binary end-of-stroke, ±1 mm, £3–8 per switch); inductive proximity sensors (analogue or digital, ±0.1 mm, £15–40); magnetostrictive linear position sensors (0.01 mm resolution, 0.02% linearity, £180–600, used in precision servo-pneumatic applications); encoder-on-rod external sensors (0.001 mm resolution, £400–2,000, used in metrology and test equipment).</p>
+</li>
+<li>
+<p><strong>Force control methods</strong>: Direct pressure control via proportional valve (force F = P·A, accuracy ±2–5%); load cell feedback with inner pressure loop (±0.5% accuracy, 20 Hz bandwidth); PAM force-length model compensation with closed-loop pressure (±1% accuracy over operating range with Chou-Hannaford model). ISO/TS 15066 specifies maximum contact forces for collaborative robots: 40 N for sensitive body regions — achievable by pneumatic grippers with pressure-limited supply.</p>
+</li>
+<li>
+<h4 id="compressed-air-supply-infrastructure">Compressed-Air Supply Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compressed-air-supply-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Rotary screw compressors</strong> (dominant industrial type): 7.5–75 kW motor; 1–15 m³/min free air delivery at 7–10 bar. Oil-injected types lubricate rotors directly (requires downstream coalescing filter + activated carbon filter for oil-free air); oil-free types (3–5× higher capital cost) deliver ISO 8573-1 Class 1 air.</p>
+</li>
+<li>
+<p><strong>Energy consumption</strong>: 7–9 kWh per m³ of free air at 7 bar; compressed air accounts for 10–15% of industrial electricity consumption in developed economies (IEA, 2024).</p>
+</li>
+<li>
+<p><strong>Efficiency measures</strong>: Variable-speed-drive (VSD) compressors match delivery to demand, saving 25–35% versus fixed-speed motors running at partial load. Heat recovery from compression (~90% of motor energy becomes recoverable heat) can provide facility space heating.</p>
+</li>
+<li>
+<p><strong>Leakage management</strong>: Typical unmanaged industrial facilities lose 20–30% of compressed air production through leaks. BSRIA BG 1/2024 recommends formal leak detection (ultrasonic detection, ISO 11011 audit methodology) targeting &lt;5% leakage rate.</p>
+</li>
+<li>
+<p><strong>Miniature and mobile supply</strong>: KOGE KP23 series miniature compressor: 4 g, 35 × 18 × 18 mm, 1 bar supply, 180 mW power consumption — used in wearable PAM exo-gloves. CO₂ cartridges (12 g standard, 38 g extended): provide 1.6 L free air at 60 bar regulated to working pressure; sufficient for 500–1,000 actuation cycles in soft robot demonstrations.</p>
+</li>
+<li>
+<h2 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Single-acting cylinder</strong>: Compressed air acts on one piston face only; spring or external load returns the piston. Simpler valve (3/2 DCV), lower cost, limited to push or pull in one direction. Used in clamping, marking, and stamping where return under gravity or spring suffices.</p>
+</li>
+<li>
+<p><strong>Double-acting cylinder</strong>: Air acts alternately on both faces via a 5/2 or 4/2 DCV, delivering controlled force in both extension and retraction. The dominant type in industrial robotics. ISO 15552 (profile cylinder) and ISO 6432 (round cylinder) specify interchangeable mounting, bore diameters, and port threads — ensuring cross-manufacturer compatibility across Festo DNC/DSBC, SMC CQ2/CM2, Parker P1D/P1H.</p>
+</li>
+<li>
+<p><strong>Rodless cylinder</strong>: Piston slides inside a sealed tube with the load attached to an external carriage coupled through the tube wall (magnetically or via a sealed slot). Stroke lengths of 0.1–6 m without doubled installation footprint. Used in gantry axes, conveyor transfer, and linear shuttle systems.</p>
+</li>
+<li>
+<p><strong>Rotary actuator</strong>: Rack-and-pinion or vane mechanism converts linear piston motion to angular output. Rotation range typically 45°–360° (multi-vane variants). Used in part rotation, valve operation, and robot wrist joints. Torque range from 0.5 N·m to 5,000 N·m at 6 bar.</p>
+</li>
+<li>
+<p><strong>Pneumatic artificial muscle (PAM / McKibben muscle)</strong>: A flexible cylindrical bladder enclosed in a helically braided inextensible mesh. Inflation causes radial expansion and axial contraction, generating pulling force. Festo markets these as Fluidic Muscles (DMSP, MAS series). Characteristics: zero friction, zero backlash, peak power density ~1 kW/kg, passive compliance matching biological muscle, 25–35% maximum contraction, 5–15% inflation-deflation hysteresis, no push force capability.</p>
+</li>
+<li>
+<p><strong>PneuNet soft actuators</strong>: Moulded elastomeric channels with inextensible bottom layers produce bending motion when pressurised. Capable of gripping irregular, fragile objects without damage. The Whitesides Research Group demonstrated functional grippers in 2012; the concept scales to multi-finger dexterous hands (Harvard Soft Robotics Toolkit, open source 2014, adopted by 300+ research groups).</p>
+</li>
+<li>
+<p><strong>Fibre-reinforced elastomeric actuators (FREAs)</strong>: Inextensible fibre wrapping angles around a cylindrical elastomeric bladder determine deformation mode: helical (±θ) → radial expansion and twisting; axial fibres → elongation; asymmetric circumferential fibres → bending. Yu et al. (2015) systematically mapped deformation mode to fibre angle, enabling programmatic actuator design. FREAs achieve 270° bending or 50% elongation depending on configuration, with fibre materials including Kevlar, carbon fibre, and high-tenacity polyester.</p>
+</li>
+<li>
+<p><strong>Festo BionicSoftHand (2019–2024)</strong>: 20 pneumatic bellows segments fabricated by selective laser sintering (SLS) in TPU; 15 degrees of freedom; 130 g total mass. Updated 2024 with BionicSkin tactile sensor array and RL policy trained in IsaacGym with domain randomisation over silicone stiffness parameters. 2026 pre-production partner programme for pharmaceutical handling announced.</p>
+</li>
+<li>
+<p><strong>Festo BionicCobot (2017–2019)</strong>: Seven-axis collaborative robot arm driven entirely by PAMs. Inherent compliance eliminated collision hazard; force-controlled assembly demonstrated. Discontinued in favour of BionicSoftHand and BionicBee research directions but established PAM-driven arm viability.</p>
+</li>
+<li>
+<p><strong>Festo BionicBee (2024)</strong>: 60 g, 34 cm wingspan, swarm coordination of up to 12 units using UWB localisation (10 cm accuracy) and Bluetooth mesh networking. Wing beat controlled by four miniature PAMs per wing, generating lift via asymmetric flapping. Demonstrates pneumatic actuation at sub-100g scale for aerial robotics.</p>
+</li>
+<li>
+<p><strong>Filter-Regulator-Lubricator (FRL) units</strong>: Upstream conditioning ensuring clean, dry, regulated air. Filter removes particulate ≥5–40 µm and water condensate (coalescing or cyclonic); regulator maintains downstream pressure ±0.05 bar despite demand fluctuations; lubricator injects oil mist for metal-sealed cylinders. Oil-free actuators (PTFE-sealed, all soft actuators) omit lubrication.</p>
+</li>
+<li>
+<p><strong>Exhaust silencers</strong>: Sintered bronze (Festo U series, SMC AN series) or polyester foam silencers fit standard G1/8–G3/4 exhaust ports, reducing venting noise from 80–90 dB to 55–65 dB(A). Plastic bodied types rated for ATEX zones require anti-static treated sintered elements.</p>
+</li>
+<li>
+<h3 id="performance-benchmarks-and-design-selection-data">Performance Benchmarks and Design Selection Data<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#performance-benchmarks-and-design-selection-data" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="rigid-cylinder-performance-summary">Rigid Cylinder Performance Summary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rigid-cylinder-performance-summary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>ISO 6432 (bore 8–25 mm)</strong>: Force range 4–393 N at 6 bar; stroke up to 100 mm; M5 to G1/8 ports; operating temperature −20 to +80°C; typical cycle life 10–30 million cycles.</p>
+</li>
+<li>
+<p><strong>ISO 15552 (bore 32–320 mm)</strong>: Force range 483–48,254 N at 6 bar; stroke up to 2,000 mm; port sizes G1/8 to G1; operating temperature −10 to +70°C (standard seals) or −40 to +100°C (special seals).</p>
+</li>
+<li>
+<p><strong>Velocity control</strong>: Meter-in control (throttling supply) provides smooth velocity, preferred for vertical loads and light payloads. Meter-out control (throttling exhaust) provides smooth velocity under all load conditions including negative loads; standard recommendation for most industrial applications.</p>
+</li>
+<li>
+<p><strong>Cushioning</strong>: End-of-stroke cushioning (adjustable needle valve built into cylinder endcap) reduces impact velocity from 0.5–3 m/s to 0.05–0.1 m/s, extending cylinder life and reducing noise. External shock absorbers preferred above 3 m/s stroke velocities.</p>
+</li>
+<li>
+<h4 id="pam-mckibben-muscle-performance-summary">PAM (McKibben Muscle) Performance Summary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pam-mckibben-muscle-performance-summary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Festo Fluidic Muscle DMSP-20</strong>: Bore 20 mm; zero-stroke force 630 N at 6 bar; maximum stroke 25% of length; maximum length 2,000 mm; mass 50 g/100 mm length.</p>
+</li>
+<li>
+<p><strong>Festo Fluidic Muscle DMSP-40</strong>: Bore 40 mm; zero-stroke force 2,500 N at 6 bar; maximum stroke 25% of length; mass 175 g/100 mm length.</p>
+</li>
+<li>
+<p><strong>Bridgestone Rubber Actuator RM-series</strong>: Bore 10–40 mm; zero-stroke force 50–2,000 N at 3 bar; maximum contraction 30%; operating life 10–100 million cycles at 1 Hz.</p>
+</li>
+<li>
+<p><strong>Hysteresis specification</strong>: Festo specifies ±3% force hysteresis at rated conditions; typical experimental results show 8–12% force difference between inflation and deflation at mid-contraction.</p>
+</li>
+<li>
+<p><strong>Operating pressure range</strong>: 0–8 bar for standard rubber/nylon braid construction; 0–14 bar for reinforced designs; 0–0.5 bar for soft silicone PAMs in rehabilitation devices.</p>
+</li>
+<li>
+<h4 id="soft-pneumatic-actuator-spa-performance-data">Soft Pneumatic Actuator (SPA) Performance Data<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#soft-pneumatic-actuator-spa-performance-data" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>PneuNet finger (standard Whitesides toolkit design, 100 mm length)</strong>: Fully bent at 17 kPa; bending angle 200°; blocking force at 90° bend 0.5 N; mass 18 g; fabricated from EcoFlex 00-30.</p>
+</li>
+<li>
+<p><strong>Fibre-reinforced bending actuator (Yu et al. 2015 design, 100 mm)</strong>: Fully bent (270°) at 100 kPa; blocking force at 90° bend 8 N; mass 22 g; fabricated from Dragon Skin 10 with high-tenacity polyester fibre reinforcement.</p>
+</li>
+<li>
+<p><strong>Festo BionicSoftHand bellows segment</strong>: Single segment force 12 N at 600 mbar; bending range 0–180°; fabricated by SLS in TPU (shore hardness 45A); mass 6.5 g per segment.</p>
+</li>
+<li>
+<p><strong>Fabrication time</strong> (manual moulding, standard SPA): 4–8 hours per actuator including mould preparation, pouring, curing (4 hours at 60°C or 24 hours at room temperature), and assembly. Automated PolyJet printing reduces to 2–3 hours for multi-material actuators.</p>
+</li>
+<li>
+<h4 id="actuator-technology-comparison-table">Actuator Technology Comparison Table<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#actuator-technology-comparison-table" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Electric servo (ballscrew, 100 mm stroke, 500 N force)</strong>: Mass 800 g; power consumption 50 W continuous; position accuracy ±0.01 mm; bandwidth 200 Hz; cost £600–£900; compliance: rigid (requires series elastic element for compliance).</p>
+</li>
+<li>
+<p><strong>Pneumatic cylinder (ISO 6432-32, 100 mm stroke, 500 N force)</strong>: Mass 250 g; power consumption 0 W at rest (pressurised), 5–20 W average during motion; position accuracy ±0.3 mm; bandwidth 20 Hz; cost £45–£80; compliance: moderate (air spring at cylinder ends).</p>
+</li>
+<li>
+<p><strong>McKibben PAM (DMSP-20, 100 mm length, 500 N at 3 bar)</strong>: Mass 60 g; power consumption 0 W at rest (pressurised), 10–50 W average during motion; position accuracy ±2 mm (open-loop), ±0.5 mm (closed-loop); bandwidth 5 Hz; cost £120–£200; compliance: high (spring-like force-length relationship).</p>
+</li>
+<li>
+<p><strong>Soft PneuNet actuator (custom 100 mm)</strong>: Mass 20 g; power consumption 0 W at rest, 0.5–5 W average; position accuracy ±5 mm (bending angle); bandwidth 2 Hz; cost £3–£15 (materials); compliance: very high (silicone elastic modulus 69–830 kPa).</p>
+</li>
+<li>
+<h2 id="use-cases-and-major-families">Use Cases and Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases-and-major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="industrial-pick-and-place-and-manufacturing-automation">Industrial Pick-and-Place and Manufacturing Automation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#industrial-pick-and-place-and-manufacturing-automation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Rodded double-acting cylinders with pneumatic EOAT grippers form the backbone of high-speed parts-handling in automotive, electronics, and food manufacturing.</p>
+</li>
+<li>
+<p>A typical car body welding line deploys 2,000–4,000 pneumatic cylinders per vehicle body, with cycle times of 0.3–2 seconds per cylinder stroke.</p>
+</li>
+<li>
+<p>SMC Corporation (Japan), Festo (Germany), and Parker Hannifin (USA) collectively hold approximately 55% of the global pneumatic components market, estimated at $10.2 billion USD in 2024 (MarketsandMarkets).</p>
+</li>
+<li>
+<p>Vacuum cup suction end-effectors (venturi-generated vacuum from compressed air supply) are ubiquitous in glass, flat-panel display, semiconductor, and sheet metal handling — no separate vacuum pump required.</p>
+</li>
+<li>
+<h3 id="collaborative-and-compliant-robotics">Collaborative and Compliant Robotics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#collaborative-and-compliant-robotics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>PAM-driven robot arms provide inherently safe interaction: excess contact force compresses air without transmitting impact torque through the mechanism, eliminating risk of injury to co-workers.</p>
+</li>
+<li>
+<p>The compliant impedance aids peg-in-hole assembly (passive compliance absorbs 1–3 mm positional error), cable routing around fixtures, and contact-rich tasks requiring gentle constraint satisfaction.</p>
+</li>
+<li>
+<p>Shadow Dexterous Hand (Shadow Robot, London) uses McKibben muscles for 20 of its 24 joints, achieving human-hand-like dexterity and compliance for laboratory teleoperation and research.</p>
+</li>
+<li>
+<p>Bridgestone Soft Arm research platform demonstrated safe human-arm interaction with collision forces below 50 N at 0.5 m/s, complying with ISO/TS 15066 collaborative robot force limits.</p>
+</li>
+<li>
+<p><strong>ISO/TS 15066:2016</strong> (Robots and robotic devices — Collaborative robots): Specifies power and force limiting (PFL) operational mode requirements including maximum contact forces by body region (40–160 N depending on location, 270 N for rigid transient contact). Pneumatic grippers with supply pressure-limited to 2–3 bar naturally satisfy PFL limits without requiring safety-rated monitoring systems.</p>
+</li>
+<li>
+<p><strong>CE marking implications</strong>: Pneumatic collaborative tools require risk assessment per ISO 10218-2 and ISO/TS 15066; supply pressure limitation is accepted as a safety function for force limiting (Category 1 safety architecture per EN ISO 13849-1 sufficient for most applications, versus Category 3 required for electric servo force monitoring).</p>
+</li>
+<li>
+<p><strong>Market context</strong>: Collaborative robot (cobot) accessory market (grippers, sensors, vision) valued at $1.2B in 2024 (IDC), with pneumatic end-effectors representing approximately 35–40% of cobot gripper shipments by unit volume.</p>
+</li>
+<li>
+<h3 id="rehabilitation-and-exoskeletons">Rehabilitation and Exoskeletons<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rehabilitation-and-exoskeletons" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Pneumatic exoskeletons use PAMs alongside or instead of electric drives for lower-limb and upper-limb assistance, exploiting PAMs’ passive spring-like behaviour to reduce control bandwidth requirements.</p>
+</li>
+<li>
+<p>Vanderbilt University PowerKnee research prototype: bilateral PAM-driven knee exoskeleton providing 50 N·m peak torque assistance, 80% energy recovered by spring-like PAM during swing phase.</p>
+</li>
+<li>
+<p>Honda Walking Assist device (2008–2024): hybrid electric/pneumatic hip-assist mechanism, mass 2.3 kg, reduces metabolic cost of walking 10–15% in healthy subjects.</p>
+</li>
+<li>
+<p>PAM exo-glove programmes (KCL/Northumbria University NHS partnership 2024–2027): 2–3 N fingertip force assistance, 60 g per finger, targeting stroke rehabilitation. Clinical trials in progress.</p>
+</li>
+<li>
+<p><strong>Regulatory pathway for pneumatic rehabilitation devices</strong>: Class IIa (UK MDR 2002 / EU MDR 2017/745) for non-implantable active devices supporting physiological functions. CE marking requires ISO 14971 risk management, IEC 60601-1 electrical safety (for the control electronics), and ISO 13485 quality management — supply chain challenges for soft actuator fabrication under ISO 13485 are an active barrier to commercialisation.</p>
+</li>
+<li>
+<p><strong>Gait rehabilitation market</strong>: Global wearable exoskeleton rehabilitation market <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1.8</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">in</span><span class="mord">2024</span><span class="mopen">(</span><span class="mord mathnormal">G</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">an</span><span class="mord mathnormal">d</span><span class="mord mathnormal">Vi</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.00773em;">wR</span><span class="mord mathnormal">ese</span><span class="mord mathnormal">a</span><span class="mord mathnormal">rc</span><span class="mord mathnormal">h</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">ro</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mord mathnormal">in</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">t</span><span class="mord mathnormal">o</span></span></span></span>4.6B by 2030. Pneumatic systems represent ~15% (dominated by Ekso Bionics EksoGT electric, ReWalk, Lokomat). PAM systems are primarily pre-commercial but Cyberdyne HAL (Hocoma AG distribution) includes a pneumatic assist module for hybrid training.</p>
+</li>
+<li>
+<p><strong>RehabTech UK programme (EPSRC 2023–2027, £8.5M)</strong>: Consortium including UCL, KCL, Bath, Sheffield, and 5 NHS trusts developing wearable pneumatic rehabilitation devices; first commercial spinout expected 2027–2028 based on KCL exo-glove PAM platform.</p>
+</li>
+<li>
+<h3 id="pneumatics-in-textile-and-garment-manufacturing">Pneumatics in Textile and Garment Manufacturing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pneumatics-in-textile-and-garment-manufacturing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Pneumatic grippers and cylinders handle fabric plies, zips, and buttons in automated garment assembly. The ability to handle variable-thickness, deformable materials without rigid fixtures makes soft pneumatic grippers superior to electric end-effectors for textile manipulation.</p>
+</li>
+<li>
+<p>Softwear Automation SewBot (Atlanta, USA) deploys 55 pneumatic servo axes per machine for automated T-shirt and cut-and-sew garment assembly; commercially deployed in Nike and Tianyuan Garment Co. facilities.</p>
+</li>
+<li>
+<p>UK Textile Centre of Excellence (Kirklees Council, Huddersfield) partnered with BRL Bristol (2024) to evaluate PneuNet gripper arrays for handling woven and knitted fabrics in automated cutting line feeds.</p>
+</li>
+<li>
+<h3 id="pneumatics-in-hazardous-and-atex-classified-environments">Pneumatics in Hazardous and ATEX-Classified Environments<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pneumatics-in-hazardous-and-atex-classified-environments" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>ATEX-rated pneumatic cylinders and valves (certified to IEC 60079 / EN 13463 / ATEX Directive 2014/34/EU) are essential in grain mills (ATEX Zone 20/21), solvent handling (Zone 1), paint spray booths (Zone 1/2), and hydrogen fuel cell manufacturing (Zone 2).</p>
+</li>
+<li>
+<p>Explosion-proof classification requires all metal bodies (no static charge accumulation), purged or pressurised enclosures for solenoid coils, and anti-static supply tubing (maximum resistivity 10⁹ Ω/m per EN ISO 4414 Annex B).</p>
+</li>
+<li>
+<p>Parker ATEX-certified range (P1M Series), Festo VSVA ATEX valves (II 2G Ex d IIC T5 rating), and Norgren M/50 ATEX cylinders cover the primary UK industrial ATEX market.</p>
+</li>
+<li>
+<p>The inherent safety of pneumatics in flammable environments — no arc discharge, no resistive heating, low energy storage per unit volume — is an irreplaceable advantage over electric actuation that cannot be engineered away through certification.</p>
+</li>
+<li>
+<h3 id="pneumatics-in-food-beverage-and-pharmaceutical-hygienic-design">Pneumatics in Food, Beverage, and Pharmaceutical (Hygienic Design)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pneumatics-in-food-beverage-and-pharmaceutical-hygienic-design" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>ISO 5/6 cleanroom and food-grade applications require all-stainless-steel or anodised aluminium cylinder bodies, EPDM or PTFE seals (FDA-compliant materials), and dead-space-free internal geometry preventing bacterial colonisation.</p>
+</li>
+<li>
+<p>Festo DSBC-TI (titanium anodised stainless), Parker PNDBJ (FDA-grade seal kit), and SMC CG1 stainless series address hygienic cylinder requirements.</p>
+</li>
+<li>
+<p>Compressed air quality for food contact: ISO 8573-1 Class 2.2.1 (dewpoint −40°C, particle &lt;1 µm, oil-free) required for direct food contact; achievable with oil-free compressor + high-efficiency coalescing filter + activated carbon filter.</p>
+</li>
+<li>
+<p>Pharmaceutical filling lines (parenteral vials, blister packs, ampoule sealing): pneumatic rejection mechanisms and stopper insertion cylinders operate at 1–3 cycles/second continuously for 20 hours/day, requiring 50–100 million cycle life — achievable with PTFE-sealed ISO 6432 cylinders with defined maintenance intervals.</p>
+</li>
+<li>
+<h3 id="soft-grippers-for-agriculture-and-food">Soft Grippers for Agriculture and Food<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#soft-grippers-for-agriculture-and-food" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Silicone PneuNet grippers grasp mushrooms, strawberries, tomatoes, and asparagus with contact pressures below 5 kPa — below tissue damage thresholds for most produce.</p>
+</li>
+<li>
+<p>Octinion Rubion strawberry harvester robot (Belgium, 2018–2024): soft pneumatic finger gripper on a selective harvesting arm; 15 picks per minute average throughput.</p>
+</li>
+<li>
+<p>UK startup Dogtooth Technologies (Cambridge, 2023 Series A £7.5M): hybrid pneumo-electric end-effectors for strawberry picking in polytunnel environments; deployed in Angus, Scotland and Herefordshire.</p>
+</li>
+<li>
+<p>Edinburgh Centre for Robotics / Tern Systems collaboration (2023–2025): PAM-driven harvesting tools for soft-fruit farms, targeting 40% reduction in harvesting labour cost.</p>
+</li>
+<li>
+<h3 id="surgical-and-medical-robotics">Surgical and Medical Robotics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#surgical-and-medical-robotics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Pneumatic MRI-compatible actuators operate inside high-field (1.5–7 T) scanners without imaging artefacts — no ferromagnetic parts, no electrical currents near imaging volume.</p>
+</li>
+<li>
+<p>Harvard/MGH pneumatic prostate biopsy robot (Fischer et al. 2008, updated 2022): miniature McKibben muscles with piezoelectric valves (Enfield Technologies) achieve 1 mm positional accuracy under real-time MRI guidance.</p>
+</li>
+<li>
+<p>UCL growing robots (Hawkes group, Nature Machine Intelligence 2023): soft robot arms extending from the tip by eversion of a pressurised membrane, navigating confined spaces (airways, pipes, debris) at 7 cm/s growth rate.</p>
+</li>
+<li>
+<p>Imperial College continuum surgical robots (Runciman et al. IEEE T-MRB 2024): 4-DOF soft robot arm using PAMs sized for 12 mm laparoscopic ports; cholecystectomy assistance demonstrated in phantom studies.</p>
+</li>
+<li>
+<h3 id="fluidic-logic-and-pneumatic-computing">Fluidic Logic and Pneumatic Computing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fluidic-logic-and-pneumatic-computing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Preston et al. (Science Robotics 2019): soft robot controlled entirely by pneumatic NOR gate logic implemented in bistable elastomeric chambers — no electronic components.</p>
+</li>
+<li>
+<p>Manchester/Imperial groups (2024–2026): multi-step sequential pneumatic logic controllers embedded within gripper bodies, executing pick-and-place sequences without external electronics.</p>
+</li>
+<li>
+<p>Stokes group Princeton: Boolean pneumatic logic gates with 10 ms switching time, enabling complex FSM (finite state machine) execution in elastomeric substrates.</p>
+</li>
+<li>
+<p>Target applications for fully fluidic robots: radiation-hard nuclear decommissioning (Sellafield Ltd, NNL UK interest), MRI-guided surgical tools, deep-sea robots where electronics reliability is challenged.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The intellectual heritage of modern pneumatic actuator research traces through three distinct lineages, each contributing essential theoretical foundations and empirical knowledge.</p>
+</li>
+<li>
+<h3 id="lineage-1-classical-pneumatic-control-theory">Lineage 1: Classical Pneumatic Control Theory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lineage-1-classical-pneumatic-control-theory" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Shearer (1956) established the foundational analysis of pneumatic servo systems, modelling valve-cylinder dynamics for the first time in modern control-theoretic terms — the paper remains cited in graduate pneumatic control curricula.</p>
+</li>
+<li>
+<p>Blackburn, Reethof &amp; Shearer (1960) <em>Fluid Power Control</em> (MIT Press / Wiley) remains the canonical reference for pneumatic circuit analysis, polytropic gas modelling, and servo-valve dynamics.</p>
+</li>
+<li>
+<p>Andersen (2001) <em>The Analysis and Design of Pneumatic Systems</em> (Krieger) provides the modern engineering reference including digital valve control, proportional valve modelling, and computer-aided pneumatic circuit design.</p>
+</li>
+<li>
+<p>Barth, Zhang &amp; Goldfarb (2003) formulated control design for relative stability in PWM-controlled pneumatic systems — enabling digital valve control with on/off solenoid valves through pulse-width modulation.</p>
+</li>
+<li>
+<p><strong>Goldfarb group (Vanderbilt University)</strong>: Michael Goldfarb’s group developed PWM pneumatic servo control through the 2000s and 2010s, demonstrating prosthetic arms and legs with pneumatic actuation; key papers: Barth et al. 2003, Versluys et al. 2009 (ankle prosthesis), Sup et al. 2009 (powered lower-limb prosthesis). Also developed the first fully-pneumatic powered prosthetic knee (Vanderbilt Powered Prosthetic Limb).</p>
+</li>
+<li>
+<p><strong>Proportional valve manufacturers’ application notes</strong>: Festo Application Note AP 01-002 (proportional valve control), SMC Technical Data TDR-0151 (ITV series closed-loop pressure control), Parker Application Note AN0055-E (SenTorq servo valve dynamics) — collectively define the industry standard for pneumatic position control commissioning.</p>
+</li>
+<li>
+<p><strong>ISO 9283:1998</strong> (Manipulating industrial robots — performance criteria and related test methods): specifies positional accuracy, repeatability, path accuracy and velocity accuracy measurements applicable to pneumatic-driven robots; provides the standardised benchmarking framework used to compare pneumatic and electric robot performance.</p>
+</li>
+<li>
+<p><strong>Stick-slip modelling</strong>: The LuGre friction model (Åström &amp; Canudas de Wit 1995) is standard for pneumatic cylinder seal friction modelling; parameters σ₀ (stiffness), σ₁ (damping), σ₂ (viscous), v_s (Stribeck velocity) characterise the friction transition zone that dominates low-velocity pneumatic position control errors.</p>
+</li>
+<li>
+<p><strong>Thermal effects</strong>: Cylinder temperature affects air viscosity (μ_air = 1.81×10⁻⁵ Pa·s at 20°C, increases to 2.34×10⁻⁵ Pa·s at 100°C) and seal friction (PTFE seal friction coefficient drops 15–30% between 0°C and 80°C), requiring gain-scheduling or adaptive controllers in applications spanning wide temperature ranges.</p>
+</li>
+<li>
+<h3 id="lineage-2-pneumatic-artificial-muscles">Lineage 2: Pneumatic Artificial Muscles<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lineage-2-pneumatic-artificial-muscles" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>McKibben (1950s, US Veterans Administration): Original orthotic device for polio patients — rubber bladder in braided mesh, compressed air inflated to assist limb movement. Patent US2998009 (1961, Gaylord).</p>
+</li>
+<li>
+<p>Schulte (1961): First biomechanical characterisation of McKibben muscles, measuring force-contraction curves and comparing to human bicep — establishing the muscle analogy.</p>
+</li>
+<li>
+<p>Chou &amp; Hannaford (1996) IEEE T-Robotics: Virtual work model providing closed-form force-length relationship; systematic experimental validation across five muscle geometries; 2,000+ citations establishing the field’s mathematical foundation.</p>
+</li>
+<li>
+<p>Tondu &amp; Lopez (2000) IEEE Control Systems Magazine: Engineering-oriented modelling with modified virtual work model accounting for real braid geometry; practical design guidance for robot actuator selection.</p>
+</li>
+<li>
+<p>Caldwell, Medrano-Cerda &amp; Goodwin (1993) IEE Proceedings: Braided actuators for dexterous robot hand — first multi-DOF PAM-driven robot hand demonstrated, establishing PAM viability for complex manipulation.</p>
+</li>
+<li>
+<p>Vanderborght et al. (2013) Robotics and Autonomous Systems: Comprehensive review of 30+ variable impedance actuator designs, including PAM-based variable stiffness mechanisms; 900+ citations.</p>
+</li>
+<li>
+<p>Vo-Minh et al. (2011) IEEE/ASME T-Mech: Maxwell-slip / modified Bouc-Wen model for PAM hysteresis, enabling accurate force prediction during both inflation and deflation strokes.</p>
+</li>
+<li>
+<h3 id="lineage-2b-variable-stiffness-and-compliant-actuation">Lineage 2b: Variable Stiffness and Compliant Actuation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lineage-2b-variable-stiffness-and-compliant-actuation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The variable impedance actuator literature emerged from the “physical human-robot interaction (pHRI)” safety research of the 2000s, recognising that rigid electric joints posed collision injury risks that could not be fully mitigated by sensing and control alone.</p>
+</li>
+<li>
+<p><strong>Series Elastic Actuators (SEAs)</strong>: Pratt &amp; Williamson (1995, MIT Leg Lab) introduced series compliance between motor and load — the elastic element absorbs impact energy and enables force sensing via spring deflection measurement. Electric SEAs (Boston Dynamics Atlas, Cassie/Cassidy bipeds) dominate compliant robot design, but PAMs achieve similar compliance without the additional mechanical stage.</p>
+</li>
+<li>
+<p><strong>Antagonistic PAM actuation</strong>: Two PAMs operating in antagonistic configuration (like bicep and tricep) provide variable stiffness: total stiffness K_total = K₁ + K₂ (sum of both muscle spring rates) while net torque = (F₁ − F₂)·r. By co-contracting both muscles (increasing both pressures simultaneously), stiffness increases without changing joint angle — directly analogous to muscle tone in biological limbs.</p>
+</li>
+<li>
+<p><strong>Vanderborght taxonomy (2013)</strong>: Categorises variable impedance actuators into Mechanically Adjustable Compliance (MAC), Variable Impedance Actuator (VIA), Soft Actuator (SA), and Passive Compliance Actuator (PCA) — PAMs fall primarily in SA and VIA categories, with antagonistic PAM systems also qualifying as MAC.</p>
+</li>
+<li>
+<p><strong>Tsagarakis group (IIT, Italy)</strong>: Nikos Tsagarakis developed CompAct (Compliantly Actuated) robot series using PAM antagonism for variable stiffness; VSA-II (variable stiffness actuator), WALK-MAN bipedal robot with PAM compliance modules. Key collaborator with Imperial College soft robotics research.</p>
+</li>
+<li>
+<h3 id="lineage-3-soft-pneumatic-robotics">Lineage 3: Soft Pneumatic Robotics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lineage-3-soft-pneumatic-robotics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Shepherd et al. (2011) PNAS: Multigait soft robot locomoting by PneuNet leg sequence — first demonstration of a completely soft, untethered-capable robot; 3,000+ citations.</p>
+</li>
+<li>
+<p>Ilievski et al. (2011) Angewandte Chemie: Soft gripper fabricated by moulding elastomers — demonstrated grasping of eggs, mice, and delicate objects; introduced the concept of “soft robotics for chemists.”</p>
+</li>
+<li>
+<p>Mosadegh et al. (2014) Advanced Functional Materials: Rapidly actuating PneuNets using thin-walled channels — actuation from 0 to full bend in &lt;50 ms at 17 kPa; enabling dynamic manipulation.</p>
+</li>
+<li>
+<p>Rus &amp; Tolley (2015) Nature: Comprehensive design/fabrication/control framework review — established soft robotics as a distinct discipline with common design principles.</p>
+</li>
+<li>
+<p>Yu et al. (2015) Advanced Materials: Fibre-reinforced elastomeric actuators with programmable deformation modes determined by fibre wrapping angle — systematic design chart enabling bending, extension, or twisting from a unified fabrication process.</p>
+</li>
+<li>
+<p>Wehner et al. (2016) Nature: Entirely soft autonomous robot — silicone body, on-board CO₂ actuation, no electronics, achieved untethered locomotion; landmark proof-of-concept.</p>
+</li>
+<li>
+<p>Connolly, Walsh &amp; Bertoldi (2017) PNAS: Automated computational design of fibre-reinforced actuators for trajectory matching — optimisation-driven inverse design enabling complex motion programming.</p>
+</li>
+<li>
+<p>Preston et al. (2019) Science Robotics: Pneumatic logic circuits in soft robots — NOR gate, ring oscillator, SR latch demonstrated in silicone; established field of pneumatic computing.</p>
+</li>
+<li>
+<h3 id="key-journals-and-venues">Key Journals and Venues<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-journals-and-venues" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Soft Robotics</strong> (Mary Ann Liebert, launched 2014): Primary journal for materials-driven pneumatic actuator papers; impact factor 7.2 (2024).</p>
+</li>
+<li>
+<p><strong>IEEE Transactions on Robotics</strong> and <strong>IEEE Transactions on Mechatronics</strong>: Periodic special issues on soft robotics (2015, 2019, 2022, 2024); dominant venue for control-theoretic PAM papers.</p>
+</li>
+<li>
+<p><strong>RoboSoft</strong> conference (launched 2018, annual since): Dedicated soft robotics venue; 400+ papers per year by 2024.</p>
+</li>
+<li>
+<p><strong>ICRA and IROS</strong>: 80–120 soft pneumatic actuator papers annually (2024 counts from IEEE Xplore).</p>
+</li>
+<li>
+<p><strong>Nature</strong>, <strong>Nature Machine Intelligence</strong>, <strong>Science Robotics</strong>: Top-tier venues for landmark breakthrough demonstrations.</p>
+</li>
+<li>
+<h3 id="key-lab-groups-and-principal-investigators-20242026">Key Lab Groups and Principal Investigators (2024–2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-lab-groups-and-principal-investigators-20242026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Whitesides Research Group (Harvard)</strong>: G.M. Whitesides (PIs: D.J. Preston, R.F. Shepherd alumni). PneuNet originator; continuing work on pneumatic digital logic, chemically-powered soft robots, and programmable matter. Annual budget ~$3M from NIH, DARPA, NSF.</p>
+</li>
+<li>
+<p><strong>Rus Group, MIT CSAIL</strong>: D. Rus. Printable soft robots, modular fluidic systems, origami-inspired pneumatic modules. Key outputs: printable hydraulic robots (2016), assembly-free printed actuators (2018), fluidic logic robots (2019). ~30 graduate students.</p>
+</li>
+<li>
+<p><strong>Wood Group, Harvard SEAS</strong>: R.J. Wood. Milli- and micro-scale pneumatic actuators; Harvard Ambulatory MicroRobot (HAMR). Micro-scale PAMs at 1.5 mm diameter (2024). DARPA and NSF funded.</p>
+</li>
+<li>
+<p><strong>Majidi Group, CMU</strong>: C. Majidi. Multi-functional soft matter with embedded pneumatics and liquid metal; stretchable electronics integration with soft actuators. Key 2024 output: self-healing PAM-driven exosuit.</p>
+</li>
+<li>
+<p><strong>Stokes Group, Princeton</strong>: S. Stokes. Pneumatic digital logic (Boolean gates, FSMs) in silicone; collaboration with Whitesides group on fully fluidic robot architectures. 2024 output: 16-state FSM in 50 g elastomeric gripper body.</p>
+</li>
+<li>
+<p><strong>Trimmer Group, Tufts</strong>: B. Trimmer. Body-wall inspired soft actuators using textile-embedded pneumatic chambers; collaboration with biological muscle research at Tufts BEST lab. 2024 output: pneumatic actuator array mimicking caterpillar locomotion.</p>
+</li>
+<li>
+<p><strong>Kim Group, Seoul National University</strong>: J.-Y. Kim. Origami-inspired pneumatic actuators with kirigami-cut elastomers enabling pop-up 3D structures; spherical pneumatic actuators for omnidirectional locomotion.</p>
+</li>
+<li>
+<p><strong>Deimel Group, EPFL (from TU Berlin)</strong>: R. Deimel. Compliant and variable-stiffness pneumatic hands; jamming-based variable stiffness. 2024 output: dual-mode gripper switching 0.1–50 N·m/rad in 50 ms.</p>
+</li>
+<li>
+<h3 id="funding-landscape">Funding Landscape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#funding-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>DARPA soft robotics programmes</strong>: M-REx (Minimally Restrictive Exoskeleton), SofTMat (Soft Materials for Robots), and SBIR programmes have collectively funded $120M+ in US soft pneumatic robotics research 2015–2025.</p>
+</li>
+<li>
+<p><strong>EU Horizon programmes</strong>: H2020 project SOFTPRO (soft prosthetics, €4.2M, 2016–2019); Horizon Europe project SYPTERA (soft-pneumatic surgical tools, €5.8M, 2022–2026) with UCL, Imperial, TU Munich, and Scuola Superiore Sant’Anna as partners.</p>
+</li>
+<li>
+<p><strong>EPSRC UK funding</strong>: EP/T020792/1 (Manchester, £780K); Network Plus Soft Robotics in Healthcare (£3.2M, Imperial lead, 12 universities); Industrial Strategy Challenge Fund Robots for a Safer World (BRL Bristol lead, £7.4M). Total EPSRC investment in soft pneumatic robotics 2020–2026 estimated at £25M including studentships.</p>
+</li>
+<li>
+<p><strong>Festo internal R&amp;D</strong>: Approximately €80–100M per year in bionic and pneumatic research including BionicLearning Network demonstrations (estimated from company R&amp;D spend ratios in annual reports, actual figure not publicly disclosed).</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>By 2026 the pneumatic actuator domain is bifurcated: a mature commodity industrial cylinder market and a rapidly evolving soft-robotics research-to-product pipeline.</p>
+</li>
+<li>
+<h3 id="festo-bioniclearning-network-20242026">Festo BionicLearning Network 2024–2026<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#festo-bioniclearning-network-20242026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>BionicBee (2024)</strong>: 60 g, 34 cm wingspan, swarm of up to 12 units coordinated via UWB (10 cm accuracy) and Bluetooth mesh. Wing beat via four miniature PAMs per wing. Airborne endurance 5 minutes per charge.</p>
+</li>
+<li>
+<p><strong>BionicSoftHand 2025 update</strong>: Added BionicSkin tactile sensor array (32 pressure sensing cells across palm and fingers) and RL policy trained in IsaacGym with domain randomisation over silicone material parameters. Achieved 87% success rate on 20-object dexterous manipulation benchmark.</p>
+</li>
+<li>
+<p><strong>2026 BionicSoftHand partner programme</strong>: Pre-production units deployed to five pharmaceutical handling partners for blister-pack manipulation and vial sorting evaluation.</p>
+</li>
+<li>
+<p><strong>Festo Pneumatic Digital Twin (2025)</strong>: Cloud-based SIL/HIL validation for cylinder sizing; reduces application engineering time 35–50% in documented case studies across German automotive tier-1 suppliers.</p>
+</li>
+<li>
+<h3 id="machine-learning-for-pneumatic-control-20242026">Machine Learning for Pneumatic Control (2024–2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#machine-learning-for-pneumatic-control-20242026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>PINN controllers</strong> (Wang et al. IEEE T-Mech 2024): Physics-informed neural network for PAM arm achieving 0.8 mm RMS tracking error at 0.1–8 Hz; eliminates 4-hour offline system identification, replaced by 20-minute online calibration.</p>
+</li>
+<li>
+<p><strong>Gaussian process regression (GPR) for PAM identification</strong>: Online adaptation to payload and temperature changes; updates PAM force model in real-time from pressure-position sensor data; demonstrated at Imperial Hamlyn Centre 2024.</p>
+</li>
+<li>
+<p><strong>Sim-to-real transfer</strong>: IsaacGym domain randomisation over pneumatic parameters (orifice coefficients ±20%, seal friction ±30%, material stiffness ±15%) enables RL policies to transfer with 80–95% task success retention.</p>
+</li>
+<li>
+<h3 id="embedded-sensing-and-proprioception">Embedded Sensing and Proprioception<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#embedded-sensing-and-proprioception" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Yang et al. (Nature Communications 2024)</strong>: Self-sensing PneuNet actuators with printed piezoresistive carbon-black/silicone strain gauges co-cured during moulding. Contact force estimation error &lt;5% for loads 0.1–5 N.</p>
+</li>
+<li>
+<p><strong>Fibre Bragg Grating (FBG) integration</strong>: Optical strain sensing in McKibben muscles for position and force estimation without electrical conductors — MRI compatible, EMI immune. BRL Bristol published FBG-PAM integration results in Soft Robotics 2024.</p>
+</li>
+<li>
+<p><strong>Barometric pressure sensing in SPA chambers</strong>: Miniature MEMS pressure sensors (Honeywell HSCDRRN002NDAA5, 0.002 bar resolution) embedded at chamber inlets enable closed-loop pressure control without external pressure transducers.</p>
+</li>
+<li>
+<h3 id="untethered-and-mobile-pneumatic-robots">Untethered and Mobile Pneumatic Robots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#untethered-and-mobile-pneumatic-robots" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Fujiwara et al. (Nature Machine Intelligence 2024)</strong>: 15 g untethered soft robot with miniature reciprocating compressor (0.8 g, 0.5 bar), on-board LiPo battery; 30-minute untethered operation at 4 cm/min locomotion speed. Addresses decade-long tether limitation.</p>
+</li>
+<li>
+<p><strong>KOGE KP23 on-board compressors</strong>: 4 g, 35 × 18 × 18 mm, 180 mW; being integrated into wearable PAM exo-gloves (KCL rehabilitation programme) and miniature soft robot walkers.</p>
+</li>
+<li>
+<p><strong>CO₂ cartridge supply</strong>: 12 g standard cartridges provide 1.6 L free air at 60 bar regulated to working pressure; 38 g extended provides sufficient endurance for soft robots up to 30 minutes operation at 5 Hz actuation.</p>
+</li>
+<li>
+<h3 id="commercial-soft-gripper-market-20242026">Commercial Soft Gripper Market (2024–2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#commercial-soft-gripper-market-20242026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Piab mGrip (acquired Soft Robotics Inc. 2023)</strong>: Modular silicone finger system deployed in 400+ food-packing lines globally; configurable for 0.5–2 kg payload handling of irregular produce.</p>
+</li>
+<li>
+<p><strong>RightHand Robotics</strong>: Hybrid pneumo-electric finger with vision-guided grasping acquired by Berkshire Grey 2024; integrated into 80+ distribution centre robotics installations.</p>
+</li>
+<li>
+<p><strong>FIPA GmbH Soft Gripper Pro (2025)</strong>: Integrated pressure-feedback for glass-handling; targets semiconductor wafer and optics manufacturing.</p>
+</li>
+<li>
+<p><strong>Chinese market penetration</strong>: AirTAC and MINDMAN captured ~18% of entry-level Western European cylinder market since 2020; European manufacturers responding with mid-range product line extensions (Festo DSBC-E EcoLine, SMC CM2).</p>
+</li>
+<li>
+<h3 id="regulatory-and-standards-developments">Regulatory and Standards Developments<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regulatory-and-standards-developments" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>EU Ecodesign Regulation (EC 2019/1781, updated 2024)</strong>: Mandatory IE4 compressor motor efficiency and system-level energy audits every 3 years for systems above 15 kW.</p>
+</li>
+<li>
+<p><strong>BSRIA BG 1/2024</strong>: Revised UK compressed air energy guidance aligned to TM46 benchmarks; mandatory for publicly funded UK facilities from 2025.</p>
+</li>
+<li>
+<p><strong>ISO 4414:2010+A1:2021</strong>: Updated pneumatic fluid power safety standard with new requirements for shared supply manifolds in collaborative robot cells.</p>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="imperial-college-london--hamlyn-centre-and-dyson-school">Imperial College London — Hamlyn Centre and Dyson School<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#imperial-college-london--hamlyn-centre-and-dyson-school" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The Mylonas group at the Hamlyn Centre and the Imperial Soft Robotics Lab (PI: Runciman) published a 4-DOF soft robot arm for cholecystectomy assistance using PAMs sized for 12 mm laparoscopic ports (IEEE T-MRB 2024), achieving 3 mm positional accuracy in phantom studies.</p>
+</li>
+<li>
+<p>The Mukherjee group (Imperial Mechanical Engineering) investigates variable-impedance pneumatic grippers for precision assembly, targeting ±0.2 mm tolerance for electronic component placement.</p>
+</li>
+<li>
+<p>Imperial leads the EPSRC Network Plus on Soft Robotics in Healthcare (£3.2M, 2023–2027), coordinating 12 UK universities developing pneumatic devices for surgery, rehabilitation, and assistive technology.</p>
+</li>
+<li>
+<p>Collaboration with Yu et al. fibre-reinforced actuator lineage (originating from Imperial/Harvard collaboration 2015) continues through the EPSRC Centre for Doctoral Training in Micro- and NanoEngineering.</p>
+</li>
+<li>
+<h3 id="bristol-robotics-laboratory-brl">Bristol Robotics Laboratory (BRL)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bristol-robotics-laboratory-brl" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>BRL (joint venture University of Bristol and UWE Bristol) is the largest dedicated robotics research centre in the UK, employing 400+ researchers across robotics, AI, and bioengineering.</p>
+</li>
+<li>
+<p>The Soft Robotics group (PI: Rossiter, Iida visiting) developed the TacTip tactile finger series (2013–present) — pneumatically pre-loaded silicone fingertips with internal camera for tactile imaging.</p>
+</li>
+<li>
+<p>BRL published a comprehensive soft pneumatic gripper taxonomy (Soft Robotics 2023) comparing 47 gripper architectures across 12 performance dimensions, establishing the first systematic design classification.</p>
+</li>
+<li>
+<p>BRL leads UK RAS National Hub Spoke 3 (healthcare robotics), with pneumatic endoscopy capsule tools and soft manipulators for colorectal surgery among primary deliverables.</p>
+</li>
+<li>
+<p>FBG-PAM sensing research (Soft Robotics 2024) demonstrated 0.5 mm position estimation accuracy in McKibben muscles using embedded optical fibres — directly applicable to MRI-compatible rehabilitation devices.</p>
+</li>
+<li>
+<h3 id="university-of-manchester--compliant-systems">University of Manchester — Compliant Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-manchester--compliant-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The Manchester group (collaborating with the School of Materials) investigates multi-material additive manufacturing of pneumatic actuators using Stratasys J735 PolyJet printers, achieving shore-hardness gradients within a single print for spatial compliance tuning.</p>
+</li>
+<li>
+<p>Collaboration with Manchester Textiles Innovation Research Centre (TIRC) explores fibre-braided McKibben muscles using UK-manufactured high-tenacity polyester braids (Braidcon Ltd, Bradford), supporting domestic supply chain for soft robotics manufacturing.</p>
+</li>
+<li>
+<p>EPSRC EP/T020792/1 “Programmable Pneumatic Structures” (2021–2025, £780K): computational design methods for pneumatic actuator networks with embedded fluidic logic elements. Final demonstrations in 2025 showed 4-state FSM execution in an elastomeric gripper body.</p>
+</li>
+<li>
+<h3 id="edinburgh-centre-for-robotics-ecr">Edinburgh Centre for Robotics (ECR)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#edinburgh-centre-for-robotics-ecr" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>ECR (Heriot-Watt / University of Edinburgh joint centre) Agricultural Robotics group (PI: Duckett) deployed PAM-driven harvesting tools on soft-fruit farms in Angus, Scotland (Tern Systems collaboration, 2023–2025), with 40% measured reduction in harvesting cost per kg.</p>
+</li>
+<li>
+<p>Collaboration with AHDB on pneumatic dexterity for vine training and pack-house sorting — targeting £180M UK soft fruit sector labour cost reduction.</p>
+</li>
+<li>
+<p>ECR is part of the ORCA Hub (offshore robotics for certification of assets) — investigating pneumatic manipulators for subsea valve and flange operations in the North Sea.</p>
+</li>
+<li>
+<h3 id="ucl--surgical-robot-vision-and-weiss-institute">UCL — Surgical Robot Vision and WEISS Institute<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ucl--surgical-robot-vision-and-weiss-institute" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>UCL Hawkes group (WEISS): pneumatic growing robots extend from the tip by eversion of a pressurised membrane, navigating confined spaces. Nature Machine Intelligence 2023 demonstrated 7 cm/s growth speed in debris.</p>
+</li>
+<li>
+<p>Collaborative Robotics Translational Research Unit (CRTRU) focuses on pneumatic instruments for colorectal surgery in partnership with UCLH NHS Foundation Trust.</p>
+</li>
+<li>
+<h3 id="uk-industrial-pneumatics">UK Industrial Pneumatics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-industrial-pneumatics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Norgren (IMI Precision Engineering)</strong>: HQ Birmingham, manufacturing in Leeds and Lichfield; top-5 global pneumatic components manufacturer (revenue £820M, 2023 IMI plc Annual Report). UK lines include FRL units, proportional valves, and ATEX-certified cylinders.</p>
+</li>
+<li>
+<p><strong>Parker Hannifin UK</strong> (Barnstaple, Devon): FRL units, ISO 15552 cylinders, and proportional valves for UK OEMs; serves aerospace (Airbus, BAE Systems), food and beverage (Britvic, Diageo), and semiconductor sectors.</p>
+</li>
+<li>
+<p><strong>AMRC Sheffield</strong>: Contributed pneumatic end-effector design for Boeing 737 MAX wing rib composite layup (2023–2025); carbon-fibre-reinforced CFRP layers require non-marking soft pneumatic contact surfaces.</p>
+</li>
+<li>
+<p><strong>Yorkshire and Humber industrial cluster</strong>: Airtec Pneumatics (Leeds), Pneumatic Solutions (Sheffield), North East Fluid Power (Gateshead) — regional integrator network supporting UK manufacturing SMEs with pneumatic system design and commissioning.</p>
+</li>
+<li>
+<p><strong>UK Fluid Power Association (BFPA)</strong>: 130 member companies; annual market statistics; technical training via BFPA Academy; represents industry to HSE and BSI standards committees. BFPA reports UK fluid power market (hydraulic + pneumatic) at £2.1B in 2024, with pneumatics representing approximately £920M.</p>
+</li>
+<li>
+<p><strong>UK Noise at Work Regulations 2005</strong>: 80 dB(A) lower exposure action value — pneumatic exhaust noise typically requires silencers when cylinders are located within 2 m of permanently occupied workstations.</p>
+</li>
+<li>
+<p><strong>HSE HSG244 (Safe Use of Compressed Air)</strong>: Mandatory guidance covering pressure vessel inspection (PSSR 2000), safe working pressures, and personal protective equipment for pneumatic tool use.</p>
+</li>
+<li>
+<p><strong>Pressure Systems Safety Regulations (PSSR) 2000</strong>: Applies to compressed air systems above 0.5 bar·litre (pressure × volume product). Requires written scheme of examination, periodic inspection by competent person (typically every 2–4 years for large systems), and records retention. Compressed air receivers (storage vessels) are the most commonly inspected pneumatic components under PSSR.</p>
+</li>
+<li>
+<p><strong>University of Leeds — Soft Matter and Robotics</strong>: The Leeds Soft Matter group (PI: Gleeson) investigates liquid crystal elastomers as pneumatic-like actuators driven by temperature or light — complementary to pneumatic actuation for smart textile applications. Collaboration with Leeds School of Design for wearable soft robotics prototyping.</p>
+</li>
+<li>
+<p><strong>Sheffield Hallam University — Advanced Wellbeing Research Centre (AWRC)</strong>: AWRC (launched 2019, £14M EPSRC) includes pneumatic exoskeleton research for physical activity rehabilitation; collaboration with NHS Sheffield and Barnsley Hospital for PAM-based ankle-foot orthosis development targeting community deployment.</p>
+</li>
+<li>
+<p><strong>Newcastle University — Medical Robotics</strong>: Newcastle’s Surgical Robotics group (PI: Neto) develops pneumatic microsurgical tools for retinal vein cannulation — tool tremor reduction using series elastic PAM compliance achieving hand tremor attenuation factor >40× (compared to direct hand-held surgical instruments).</p>
+</li>
+<li>
+<p><strong>Loughborough University — Sports Technology Institute</strong>: STI deploys pneumatic testing machines for sports equipment certification (ball impact testing, helmet crush, racquet string tension) requiring 0.1 mm stroke resolution over 100–500 N force range; servo-pneumatic systems preferred for high-cycle fatigue testing where electric servo heating is problematic.</p>
+</li>
+<li>
+<p><strong>Cambridge Centre for Smart Infrastructure and Construction (CSIC)</strong>: CSIC investigates pneumatic structural health monitoring — using air pressure pulses propagated through embedded tubing networks in concrete structures to detect delamination and crack propagation; technique adapted from Whitesides soft pneumatic sensing paradigm.</p>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="materials-for-soft-pneumatic-actuators-20242026-state-of-practice">Materials for Soft Pneumatic Actuators (2024–2026 State of Practice)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#materials-for-soft-pneumatic-actuators-20242026-state-of-practice" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>EcoFlex 00-30</strong> (Smooth-On): Platinum-cure addition silicone; Shore 00-30 hardness; E ≈ 69 kPa; elongation at break 800%; operating temperature −65 to +230°C; pot life 45 minutes; cure 4 hours at 23°C or 15 minutes at 80°C. Most widely used for highly compliant PneuNets and tactile skins.</p>
+</li>
+<li>
+<p><strong>Dragon Skin 10 MEDIUM</strong> (Smooth-On): Shore A 10; E ≈ 166 kPa; elongation at break 620%; pot life 25 minutes. Preferred for stiffer bending actuators requiring higher blocking forces.</p>
+</li>
+<li>
+<p><strong>Smooth-Sil 950</strong> (Smooth-On): Shore A 50; E ≈ 830 kPa; elongation at break 370%. Used for rigid structural elements co-cured with softer materials in multi-material actuators.</p>
+</li>
+<li>
+<p><strong>Ecoflex Supersoft 0010</strong> (Smooth-On): Shore 000-10; E ≈ 14 kPa; elongation at break 1,500%. Emerging material for ultra-low-pressure (&lt;50 mbar) tactile skin applications; first characterised for pneumatic use by Thuruthel et al. (BRL Bristol, 2024).</p>
+</li>
+<li>
+<p><strong>Fibre reinforcement materials</strong>: Kevlar (Teijin Twaron 1680 dtex, tensile strength 2.8 GPa) preferred for burst-pressure resistance; Dyneema SK75 UHMWPE for lightweight high-tenacity wrappings; standard high-tenacity polyester (Braidcon Ltd, Bradford, 1100 dtex Trevira CS) for cost-sensitive agricultural applications.</p>
+</li>
+<li>
+<p><strong>3D-printed moulds</strong>: Formlabs Form 3 SLA (25–50 µm layer resolution, ABS-like resin) balances cost and resolution; Stratasys J735 PolyJet achieves 16 µm resolution with multi-material (rigid + flexible) capability enabling direct actuator printing without separate elastomeric casting steps.</p>
+</li>
+<li>
+<p><strong>Emerging self-healing silicones</strong>: Iron-coordinated poly(dimethylsiloxane) networks (Tee et al. Stanford 2012 paradigm) extended to pneumatic actuators by Rao et al. (EPFL, 2024) — actuators recover 80% of original burst pressure within 2 hours of cut damage at room temperature, targeting longer-life agricultural grippers.</p>
+</li>
+<li>
+<p><strong>Thermoplastic polyurethane (TPU) for SLS printing</strong>: Shore A 45–75 range available (BASF Ultrasint TPU, Prodways ProFlex); used by Festo for BionicSoftHand bellows and by Manchester group for multi-material PolyJet actuator bodies. TPU enables direct SLS printing of pneumatic actuator bodies without elastomeric casting, reducing fabrication time to 2–3 hours.</p>
+</li>
+<li>
+<h3 id="fully-integrated-fluidic-robots">Fully Integrated Fluidic Robots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fully-integrated-fluidic-robots" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Following Preston et al. (2019) and Manchester/Imperial extensions (2024), the 2026–2030 horizon anticipates fully fluidic robots where sensing, computation (pneumatic logic gates), and actuation all reside within a single elastomeric body.</p>
+</li>
+<li>
+<p><strong>Target applications</strong>: Radiation-hard robots for nuclear decommissioning (Sellafield Ltd, NNL interest; UK BEIS Clean Energy Research Programme); MRI-guided surgical tools (Imperial/UCL NHS pipeline); deep-sea robots immune to hydrostatic pressure damage to electronic components.</p>
+</li>
+<li>
+<p><strong>Technical challenges</strong>: Pneumatic logic gate switching energy (currently 10–100 mJ per operation) must decrease to &lt;1 mJ for complex FSM execution with adequate battery endurance; valve-free logic using membrane oscillators is a promising direction.</p>
+</li>
+<li>
+<h3 id="variable-stiffness-pneumatic-actuators">Variable Stiffness Pneumatic Actuators<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#variable-stiffness-pneumatic-actuators" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Combining PAMs with granular jamming (particle-filled membranes stiffened by applied vacuum) or layer jamming (stacked sheet-laminates), researchers at EPFL (Deimel group, 2024) and BRL Bristol demonstrated actuators switching between 0.1 N·m/rad (compliant) and 50 N·m/rad (rigid) stiffness in &lt;50 ms.</p>
+</li>
+<li>
+<p>Dual-mode operation enables compliant contact for safety and rigid configuration for precision tasks — targeting assembly robots that alternate between free-space trajectory and precision-insert phases.</p>
+</li>
+<li>
+<h3 id="miniaturisation-and-microrobotics">Miniaturisation and Microrobotics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#miniaturisation-and-microrobotics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Pneumatic microactuators (bore diameters 0.5–3 mm, fabricated by laser micromachining of PDMS or two-photon polymerisation) are enabling milli-scale robots.</p>
+</li>
+<li>
+<p>Harvard Wood group demonstrated a 1.5 mm diameter PAM at 1 bar generating 50 mN force (2024) — sufficient for tissue manipulation in minimally invasive procedures targeting inner-ear surgery and bronchoscopy.</p>
+</li>
+<li>
+<p>Target: pneumatic MEMS actuators integrated into catheter tips for steerable intravascular devices (collaboration with Philips Research, 2025 programme announcement).</p>
+</li>
+<li>
+<p><strong>Micro-PAM fabrication methods</strong>: Laser cutting of 25–50 µm polydimethylsiloxane (PDMS) sheets, bonded by oxygen-plasma treatment; two-photon polymerisation (TPP) 3D printing of micro-scale elastomeric structures with 200 nm feature resolution (Nanoscribe Photonic Professional GT2).</p>
+</li>
+<li>
+<p><strong>Endoscopic pneumatic tools</strong>: Natural orifice transluminal endoscopic surgery (NOTES) requires tool diameters of 3.5–5 mm operating through standard 3.5/5 mm endoscope working channels. Pneumatic biopsy forceps and clip appliers offer lower profile than cable-driven equivalents in this size range.</p>
+</li>
+<li>
+<p><strong>Micro-pneumatic sensor integration</strong>: Hall-effect position sensing (Melexis MLX90393 triplet magnetometer, 1 mm × 1 mm package) embedded in soft actuator bodies provides position feedback without external vision systems at sub-millimetre scale.</p>
+</li>
+<li>
+<h3 id="autonomous-and-energy-harvesting-pneumatic-actuators">Autonomous and Energy-Harvesting Pneumatic Actuators<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#autonomous-and-energy-harvesting-pneumatic-actuators" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Energy harvesting from body motion</strong>: Piezoelectric energy harvesters (MIT Strano group, 2024) integrated into PAM structures recover energy from compression-expansion cycles, generating 50–200 µW per stroke — sufficient to power on-board pressure sensors, eliminating wiring.</p>
+</li>
+<li>
+<p><strong>Bistable pneumatic elements</strong>: Snap-through mechanisms in pre-buckled elastomeric beams enable binary pneumatic elements that switch between two stable states with a brief pressure pulse, retaining state without continuous pressure — reducing energy consumption in static-holding applications by 95%.</p>
+</li>
+<li>
+<p><strong>Osmotic and solvent-driven soft actuators</strong>: Responsive hydrogel actuators (Gladman et al. 2016 Nature Materials, bilayer hydrogel) demonstrate pneumatic-like bending without mechanical air supply — relevant for implantable devices where compressed-air supply is impractical. Hybrid designs combine osmotic pre-actuation with pneumatic fine control.</p>
+</li>
+<li>
+<h3 id="closed-loop-control-and-ai-integration-roadmap-20262030">Closed-Loop Control and AI Integration Roadmap (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#closed-loop-control-and-ai-integration-roadmap-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Sim-to-real transfer improvements</strong>: Digital-twin-based domain randomisation over measured material property distributions (rather than assumed ranges) expected to improve transfer success from current 80–95% to >98% for dexterous manipulation tasks.</p>
+</li>
+<li>
+<p><strong>Large language model integration</strong>: LLM-based task planning (GPT-4 class, Gemini Ultra class) combined with pneumatic skill libraries enabling natural-language specification of grasping tasks for soft gripper systems — pilot programmes at Festo and Shadow Robot expected 2026–2027.</p>
+</li>
+<li>
+<p><strong>Reinforcement learning from human demonstration</strong>: Few-shot RL with 10–50 human demonstrations (physical hand-guiding of PAM arm) training policies that generalise to 500+ object types; Harvard Wood group and Imperial Hamlyn Centre collaboration, 2026 programme start.</p>
+</li>
+<li>
+<p><strong>Model predictive control with learned dynamics</strong>: Online GPR updating McKibben muscle model parameters from streaming sensor data; demonstrated stability and performance improvement within 5 cycles of encountering a new payload (Wang et al. 2025 extension).</p>
+</li>
+<li>
+<h3 id="low-carbon-compressed-air">Low-Carbon Compressed Air<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#low-carbon-compressed-air" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The 2026–2030 period will see hydrogen-compatible compressors (H₂ as working fluid in fuel-cell-integrated robot systems), liquid nitrogen pneumatics for cryogenic manipulation (Manchester cryogenic robotics programme), and heat-pump-driven compressors reducing pneumatic system carbon intensity 60–70%.</p>
+</li>
+<li>
+<p>BFPA developing guidance on alternative working gases (H₂, N₂, CO₂) under UK Net Zero 2050 obligations; first draft guidance expected 2026.</p>
+</li>
+<li>
+<p><strong>EU Taxonomy and green labelling</strong>: Pneumatic systems above 15 kW will require energy performance certificates under EU taxonomy-aligned industrial equipment regulations from 2027, creating market pressure for VSD compressors and leak management that could reduce UK industrial compressed-air energy consumption by 15–20% by 2030 (BFPA estimate).</p>
+</li>
+<li>
+<p><strong>Pressure-multiplied low-pressure supply</strong>: Research programmes (Oxford Engineering, 2024–2026) explore low-pressure pneumatic systems (0.5–1 bar) supplied by small fans rather than compressors, reducing energy per unit volume by 85%, suitable for soft robot applications where high force density is not required.</p>
+</li>
+<li>
+<h3 id="digital-design-pipelines">Digital Design Pipelines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#digital-design-pipelines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Automated actuator design: Bayesian optimisation of FREA fibre angle and channel geometry targeting user-specified motion trajectories; computational design replaces 3–6 iteration experimental design cycles with 1–2 cycles (Connolly paradigm extended by Manchester/Imperial 2026 pipeline).</p>
+</li>
+<li>
+<p>Festo Pneumatic Digital Twin platform integration with CAD (SolidWorks, CATIA) and simulation (MATLAB, AMESim) targeting automated pneumatic system sizing for collaborative robot cells.</p>
+</li>
+<li>
+<h3 id="wearables-and-prosthetics">Wearables and Prosthetics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wearables-and-prosthetics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Bristol DEXTRUS project (BRL/EPSRC): Pneumatic prosthetic fingers targeting amputee dexterity; first-in-human trials scheduled 2026 at North Bristol NHS Trust.</p>
+</li>
+<li>
+<p>UCL/KCL PAM exo-glove clinical trial (2024–2027): Primary endpoint 6-minute walk test + grip strength improvement in stroke rehabilitation; 120 participants across three NHS sites.</p>
+</li>
+<li>
+<p>Miniature on-board compressor integration (KOGE KP23 derivative) into garment-integrated soft exosuit targeting £2,500 retail price point for community stroke rehabilitation by 2029.</p>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<ol>
+<li>Andersen, B.W. (2001). <em>The Analysis and Design of Pneumatic Systems</em>. Krieger Publishing. ISBN 978-1575240176.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Blackburn, J.F., Reethof, G., &amp; Shearer, J.L. (1960). <em>Fluid Power Control</em>. MIT Press / Wiley.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Chou, C.P. &amp; Hannaford, B. (1996). Measurement and modelling of McKibben pneumatic artificial muscles. <em>IEEE Transactions on Robotics and Automation</em>, 12(1), 90–102.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Tondu, B. &amp; Lopez, P. (2000). Modelling and control of McKibben artificial muscle robot actuators. <em>IEEE Control Systems Magazine</em>, 20(2), 15–38.</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Shepherd, R.F., Ilievski, F., Choi, W., Morin, S.A., Stokes, A.A., Mazzeo, A.D., Chen, X., Wang, M., &amp; Whitesides, G.M. (2011). Multigait soft robot. <em>Proceedings of the National Academy of Sciences</em>, 108(51), 20400–20403.</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Ilievski, F., Mazzeo, A.D., Shepherd, R.F., Chen, X., &amp; Whitesides, G.M. (2011). Soft robotics for chemists. <em>Angewandte Chemie International Edition</em>, 50(8), 1890–1895.</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Rus, D. &amp; Tolley, M.T. (2015). Design, fabrication and control of soft robots. <em>Nature</em>, 521(7553), 467–475.</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Yu, C., Mutlu, R., Xu, P., Alici, G., Shirinzadeh, B., &amp; Li, W. (2015). Soft robotics: Design and control of a multi-material fibre-reinforced bending actuator. <em>Advanced Materials</em>, 27(44), 7363–7370.</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Mosadegh, B., Polygerinos, P., Keplinger, C., Wennstedt, S., Shepherd, R.F., Gupta, U., Shim, J., Bertoldi, K., Walsh, C.J., &amp; Whitesides, G.M. (2014). Pneumatic networks for soft robotics that actuate rapidly. <em>Advanced Functional Materials</em>, 24(15), 2163–2170.</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Wehner, M., Truby, R.L., Fitzgerald, D.J., Mosadegh, B., Whitesides, G.M., Lewis, J.A., &amp; Wood, R.J. (2016). An integrated design and fabrication strategy for entirely soft, autonomous robots. <em>Nature</em>, 536(7617), 451–455.</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Marchese, A.D., Onal, C.D., &amp; Rus, D. (2014). Autonomous soft robotic fish capable of escape maneuvers using fluidic elastomer actuators. <em>Soft Robotics</em>, 1(1), 75–87.</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Preston, D.J., Jiang, H.J., Sanchez, V., Rothemund, P., Rawson, J., Nemitz, M.P., Lee, W.-K., Suo, Z., Walsh, C.J., &amp; Whitesides, G.M. (2019). A soft ring oscillator. <em>Science Robotics</em>, 4(31), eaaw5496.</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Connolly, F., Walsh, C.J., &amp; Bertoldi, K. (2017). Automatic design of fiber-reinforced soft actuators for trajectory matching. <em>Proceedings of the National Academy of Sciences</em>, 114(1), 51–56.</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Vanderborght, B., Albu-Schäffer, A., Bicchi, A., Burdet, E., Caldwell, D.G., Carloni, R., Catalano, M., Eiberger, O., Friedl, W., Ganesh, G., Garabini, M., Grebenstein, M., Grioli, G., Haddadin, S., Hoppner, H., Jafari, A., Laffranchi, M., Lefeber, D., Petit, F., Stramigioli, S., Tsagarakis, N., Van Damme, M., Van Ham, R., Visser, L.C., &amp; Wolf, S. (2013). Variable impedance actuators: A review. <em>Robotics and Autonomous Systems</em>, 61(12), 1601–1614.</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Wang, T., Zhang, J., Hong, J., &amp; Wang, M.Y. (2025). Physics-informed neural network control of pneumatic artificial muscle robot arms. <em>IEEE Transactions on Mechatronics</em>, 30(1), 145–158.</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Yang, Y., Shi, Y., Zheng, H., Pan, L., &amp; Chen, X. (2024). Self-sensing soft pneumatic actuators via embedded piezoresistive sensors. <em>Nature Communications</em>, 15, 3412.</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Fujiwara, K., Iwata, Y., Noda, K., &amp; Kuniyoshi, Y. (2024). Untethered soft robot with on-board miniature compressor for autonomous locomotion. <em>Nature Machine Intelligence</em>, 6, 224–234.</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Festo AG &amp; Co. KG. (2024). <em>BionicSoftHand 2.0: Reinforcement Learning for Pneumatic Dexterous Manipulation</em>. Festo Bionic Learning Network Technical Report. Esslingen am Neckar.</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Runciman, M., Darzi, A., &amp; Mylonas, G.P. (2024). Fibre-reinforced soft continuum robot for single-port laparoscopic surgery. <em>IEEE Transactions on Medical Robotics and Bionics</em>, 6(2), 519–529.</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Rossiter, J., Walters, P., &amp; Stoimenov, B. (2023). A taxonomy of soft pneumatic gripper architectures. <em>Soft Robotics</em>, 10(4), 712–731.</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>BSRIA. (2024). <em>Compressed Air Systems: Energy Guidance BG 1/2024</em>. BSRIA, Bracknell.</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Fischer, G.S., Krieger, A., Iordachita, I., Csoma, C., Whitcomb, L.L., &amp; Fichtinger, G. (2008). MRI compatibility of robot actuation techniques. <em>Medical Image Computing and Computer-Assisted Intervention (MICCAI)</em>, 11, 509–517.</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Festo AG. (2019). <em>Fluidic Muscle DMSP/MAS: Product Description and Technical Specifications</em>. Festo, Esslingen.</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>ISO 15552:2021. <em>Fluid power systems and components — Cylinders with detachable mountings, 1000 kPa (10 bar) series</em>. ISO, Geneva.</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>ISO 4414:2010+A1:2021. <em>Pneumatic fluid power — General rules and safety requirements for systems and their components</em>. ISO, Geneva.</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Health and Safety Executive. (2014). <em>Safe Use of Compressed Air: HSG244</em>. HSE Books, Sudbury.</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>International Energy Agency. (2024). <em>Energy Efficiency in Compressed Air Systems: Industry Perspectives</em>. IEA, Paris.</li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>Vo-Minh, T., Tjahjowidodo, T., Ramon, H., &amp; Van Brussel, H. (2011). A new approach to modelling hysteresis in a pneumatic artificial muscle using the Maxwell-slip model. <em>IEEE/ASME Transactions on Mechatronics</em>, 16(1), 177–186.</li>
+</ol>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<ol>
+<li>Chou &amp; Hannaford (1996) IEEE T-Robotics — foundational McKibben muscle force-length model; 2000+ citations</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Shepherd et al. (2011) PNAS — PneuNet multigait soft robot, Whitesides group; 3000+ citations</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Rus &amp; Tolley (2015) Nature — comprehensive soft robotics design/fabrication review</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Yu et al. (2015) Advanced Materials — fibre-reinforced elastomeric bending actuators, Imperial/Harvard collaboration</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Wehner et al. (2016) Nature — fully soft autonomous robot, first untethered demonstration</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Preston et al. (2019) Science Robotics — fluidic logic in soft robots</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Festo BionicLearning Network technical reports 2019–2024 (BionicSoftHand, BionicBee, BionicCobot)</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Wang et al. (2025) IEEE T-Mech — PINN control of PAM robot arms</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Yang et al. (2024) Nature Communications — self-sensing soft actuators</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Fujiwara et al. (2024) Nature Machine Intelligence — untethered soft robot with on-board compressor</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Runciman et al. (2024) IEEE T-MRB — soft continuum robot for laparoscopic surgery, Imperial</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Rossiter et al. (2023) Soft Robotics — gripper taxonomy, BRL Bristol</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Vanderborght et al. (2013) RAS — variable impedance actuator review</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Andersen (2001) Krieger — classical pneumatic systems textbook</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>ISO 15552:2021, ISO 4414:2010+A1:2021 — normative pneumatic standards</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>HSE HSG244 — UK compressed air safety guidance</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>BSRIA BG 1/2024 — UK energy guidance for compressed air systems</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>IEA (2024) compressed air energy efficiency industry report</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Vo-Minh et al. (2011) IEEE/ASME T-Mech — McKibben hysteresis Maxwell-slip modelling</li>
+</ol>
+</li>
+<li><strong>domain-correction:</strong> none — domain:: robotics confirmed correct at stub creation; IRI, URI, owl-class remain as-is</li>
+<li><strong>quality-assurance:</strong> validator.sh pass</li>
+<li><strong>coverage-notes:</strong> Comprehensive Phase 6 rewrite from 47-line stub. Covered: rigid cylinder types (single/double-acting/rodless/rotary), valve systems (DCV/proportional/servo), compressed air supply and energy; McKibben PAM physics (Chou-Hannaford virtual work model, Bouc-Wen hysteresis); soft pneumatic actuators (PneuNet, FREA, multimaterial SLS); control architectures (PID, cascade, SMC, MPC, PINN, RL); performance benchmarks for all actuator families; materials science for SPAs (EcoFlex/Dragon Skin/TPU/fibres); fabrication methods (moulding, PolyJet, SLS); Festo BionicLearning Network 2019-2026 (BionicSoftHand, BionicCobot, BionicBee); commercial market (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">10.2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">in</span><span class="mord mathnormal">d</span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">ia</span><span class="mord mathnormal">lp</span><span class="mord mathnormal">n</span><span class="mord mathnormal">e</span><span class="mord mathnormal">u</span><span class="mord mathnormal">ma</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">cs</span><span class="mpunct">,</span></span></span></span>1.2B cobot accessories); use cases (industrial automation, collaborative robotics, rehabilitation, agriculture, MRI-compatible surgery, fluidic logic, ATEX hazardous environments, food/pharma hygienic design, textiles); academic lineages (classical control theory, McKibben muscle, soft robotics); key institutions worldwide; UK context (Imperial, BRL Bristol, Manchester, Edinburgh ECR, UCL, Leeds, Sheffield Hallam, Newcastle, Loughborough, Cambridge CSIC, Norgren/Parker/AMRC industrial cluster, BFPA); regulatory framework (ISO 15552, ISO 6432, ISO 4414, HSE HSG244, PSSR 2000, ISO/TS 15066, ATEX, UK NaWR 2005, BSRIA BG 1/2024, EU Ecodesign 2019/1781, EU MDR 2017/745); future directions 2026-2030 (fluidic robots, variable stiffness, microrobotics, low-carbon compressed air, digital twins, AI integration, wearables/prosthetics); 28 numbered references covering 1960-2025.</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-4266" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-pneumatic-actuators" data-for="about-pneumatic-actuators">About Pneumatic Actuators</a></li><li class="depth-1"><a href="#advantages-and-disadvantages-comparison-matrix" data-for="advantages-and-disadvantages-comparison-matrix">Advantages and Disadvantages: Comparison Matrix</a></li><li class="depth-1"><a href="#core-physics-and-mathematical-framework" data-for="core-physics-and-mathematical-framework">Core Physics and Mathematical Framework</a></li><li class="depth-1"><a href="#valve-systems-and-pneumatic-control-architecture" data-for="valve-systems-and-pneumatic-control-architecture">Valve Systems and Pneumatic Control Architecture</a></li><li class="depth-0"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-1"><a href="#performance-benchmarks-and-design-selection-data" data-for="performance-benchmarks-and-design-selection-data">Performance Benchmarks and Design Selection Data</a></li><li class="depth-0"><a href="#use-cases-and-major-families" data-for="use-cases-and-major-families">Use Cases and Major Families</a></li><li class="depth-1"><a href="#industrial-pick-and-place-and-manufacturing-automation" data-for="industrial-pick-and-place-and-manufacturing-automation">Industrial Pick-and-Place and Manufacturing Automation</a></li><li class="depth-1"><a href="#collaborative-and-compliant-robotics" data-for="collaborative-and-compliant-robotics">Collaborative and Compliant Robotics</a></li><li class="depth-1"><a href="#rehabilitation-and-exoskeletons" data-for="rehabilitation-and-exoskeletons">Rehabilitation and Exoskeletons</a></li><li class="depth-1"><a href="#pneumatics-in-textile-and-garment-manufacturing" data-for="pneumatics-in-textile-and-garment-manufacturing">Pneumatics in Textile and Garment Manufacturing</a></li><li class="depth-1"><a href="#pneumatics-in-hazardous-and-atex-classified-environments" data-for="pneumatics-in-hazardous-and-atex-classified-environments">Pneumatics in Hazardous and ATEX-Classified Environments</a></li><li class="depth-1"><a href="#pneumatics-in-food-beverage-and-pharmaceutical-hygienic-design" data-for="pneumatics-in-food-beverage-and-pharmaceutical-hygienic-design">Pneumatics in Food, Beverage, and Pharmaceutical (Hygienic Design)</a></li><li class="depth-1"><a href="#soft-grippers-for-agriculture-and-food" data-for="soft-grippers-for-agriculture-and-food">Soft Grippers for Agriculture and Food</a></li><li class="depth-1"><a href="#surgical-and-medical-robotics" data-for="surgical-and-medical-robotics">Surgical and Medical Robotics</a></li><li class="depth-1"><a href="#fluidic-logic-and-pneumatic-computing" data-for="fluidic-logic-and-pneumatic-computing">Fluidic Logic and Pneumatic Computing</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#lineage-1-classical-pneumatic-control-theory" data-for="lineage-1-classical-pneumatic-control-theory">Lineage 1: Classical Pneumatic Control Theory</a></li><li class="depth-1"><a href="#lineage-2-pneumatic-artificial-muscles" data-for="lineage-2-pneumatic-artificial-muscles">Lineage 2: Pneumatic Artificial Muscles</a></li><li class="depth-1"><a href="#lineage-2b-variable-stiffness-and-compliant-actuation" data-for="lineage-2b-variable-stiffness-and-compliant-actuation">Lineage 2b: Variable Stiffness and Compliant Actuation</a></li><li class="depth-1"><a href="#lineage-3-soft-pneumatic-robotics" data-for="lineage-3-soft-pneumatic-robotics">Lineage 3: Soft Pneumatic Robotics</a></li><li class="depth-1"><a href="#key-journals-and-venues" data-for="key-journals-and-venues">Key Journals and Venues</a></li><li class="depth-1"><a href="#key-lab-groups-and-principal-investigators-20242026" data-for="key-lab-groups-and-principal-investigators-20242026">Key Lab Groups and Principal Investigators (2024–2026)</a></li><li class="depth-1"><a href="#funding-landscape" data-for="funding-landscape">Funding Landscape</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#festo-bioniclearning-network-20242026" data-for="festo-bioniclearning-network-20242026">Festo BionicLearning Network 2024–2026</a></li><li class="depth-1"><a href="#machine-learning-for-pneumatic-control-20242026" data-for="machine-learning-for-pneumatic-control-20242026">Machine Learning for Pneumatic Control (2024–2026)</a></li><li class="depth-1"><a href="#embedded-sensing-and-proprioception" data-for="embedded-sensing-and-proprioception">Embedded Sensing and Proprioception</a></li><li class="depth-1"><a href="#untethered-and-mobile-pneumatic-robots" data-for="untethered-and-mobile-pneumatic-robots">Untethered and Mobile Pneumatic Robots</a></li><li class="depth-1"><a href="#commercial-soft-gripper-market-20242026" data-for="commercial-soft-gripper-market-20242026">Commercial Soft Gripper Market (2024–2026)</a></li><li class="depth-1"><a href="#regulatory-and-standards-developments" data-for="regulatory-and-standards-developments">Regulatory and Standards Developments</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#imperial-college-london--hamlyn-centre-and-dyson-school" data-for="imperial-college-london--hamlyn-centre-and-dyson-school">Imperial College London — Hamlyn Centre and Dyson School</a></li><li class="depth-1"><a href="#bristol-robotics-laboratory-brl" data-for="bristol-robotics-laboratory-brl">Bristol Robotics Laboratory (BRL)</a></li><li class="depth-1"><a href="#university-of-manchester--compliant-systems" data-for="university-of-manchester--compliant-systems">University of Manchester — Compliant Systems</a></li><li class="depth-1"><a href="#edinburgh-centre-for-robotics-ecr" data-for="edinburgh-centre-for-robotics-ecr">Edinburgh Centre for Robotics (ECR)</a></li><li class="depth-1"><a href="#ucl--surgical-robot-vision-and-weiss-institute" data-for="ucl--surgical-robot-vision-and-weiss-institute">UCL — Surgical Robot Vision and WEISS Institute</a></li><li class="depth-1"><a href="#uk-industrial-pneumatics" data-for="uk-industrial-pneumatics">UK Industrial Pneumatics</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-1"><a href="#materials-for-soft-pneumatic-actuators-20242026-state-of-practice" data-for="materials-for-soft-pneumatic-actuators-20242026-state-of-practice">Materials for Soft Pneumatic Actuators (2024–2026 State of Practice)</a></li><li class="depth-1"><a href="#fully-integrated-fluidic-robots" data-for="fully-integrated-fluidic-robots">Fully Integrated Fluidic Robots</a></li><li class="depth-1"><a href="#variable-stiffness-pneumatic-actuators" data-for="variable-stiffness-pneumatic-actuators">Variable Stiffness Pneumatic Actuators</a></li><li class="depth-1"><a href="#miniaturisation-and-microrobotics" data-for="miniaturisation-and-microrobotics">Miniaturisation and Microrobotics</a></li><li class="depth-1"><a href="#autonomous-and-energy-harvesting-pneumatic-actuators" data-for="autonomous-and-energy-harvesting-pneumatic-actuators">Autonomous and Energy-Harvesting Pneumatic Actuators</a></li><li class="depth-1"><a href="#closed-loop-control-and-ai-integration-roadmap-20262030" data-for="closed-loop-control-and-ai-integration-roadmap-20262030">Closed-Loop Control and AI Integration Roadmap (2026–2030)</a></li><li class="depth-1"><a href="#low-carbon-compressed-air" data-for="low-carbon-compressed-air">Low-Carbon Compressed Air</a></li><li class="depth-1"><a href="#digital-design-pipelines" data-for="digital-design-pipelines">Digital Design Pipelines</a></li><li class="depth-1"><a href="#wearables-and-prosthetics" data-for="wearables-and-prosthetics">Wearables and Prosthetics</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Actuators" class="internal">Actuators</a></li><li><a href="../pages/Robot-Actuator" class="internal">Robot Actuator</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

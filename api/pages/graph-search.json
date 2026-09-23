@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:dijkstra-algorithm",
         "label": "Dijkstra Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "A* Search"
       }
     ],
     "requires": [
@@ -42,6 +46,10 @@
       {
         "id": "urn:ngm:class:heuristic-function",
         "label": "Heuristic Function"
+      },
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Graph Data Structure"
       }
     ],
     "enables": [
@@ -70,6 +78,10 @@
       {
         "id": "urn:ngm:class:data-structure",
         "label": "Data Structures"
+      },
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structures"
       }
     ],
     "implements": [],
@@ -87,6 +99,10 @@
       {
         "id": "urn:ngm:class:graph-neural-network",
         "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Indexing"
       },
       {
         "id": "urn:ngm:class:spatial-index",
@@ -232,6 +248,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

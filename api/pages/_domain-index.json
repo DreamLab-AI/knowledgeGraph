@@ -12503,7 +12503,7 @@
     },
     {
       "slug": "complete-ontology-index",
-      "title": "COMPLETE ONTOLOGY [private]",
+      "title": "COMPLETE ONTOLOGY INDEX",
       "qualityScore": 0.4
     },
     {
@@ -13427,13 +13427,13 @@
       "qualityScore": 0.72
     },
     {
-      "slug": "etsi-domain-human-interface-ux",
-      "title": "ETSI_Domain_Human_Interface___UX",
+      "slug": "etsi-domain-human-interface",
+      "title": "ETSI_Domain_Human_Interface",
       "qualityScore": 0.0
     },
     {
-      "slug": "etsi-domain-human-interface",
-      "title": "ETSI_Domain_Human_Interface",
+      "slug": "etsi-domain-human-interface-ux",
+      "title": "ETSI_Domain_Human_Interface___UX",
       "qualityScore": 0.0
     },
     {
@@ -13442,13 +13442,13 @@
       "qualityScore": 0.0
     },
     {
-      "slug": "etsi-domain-reality-capture-creative",
-      "title": "ETSI_Domain_Reality_Capture___Creative",
+      "slug": "etsi-domain-reality-capture",
+      "title": "ETSI_Domain_Reality_Capture",
       "qualityScore": 0.0
     },
     {
-      "slug": "etsi-domain-reality-capture",
-      "title": "ETSI_Domain_Reality_Capture",
+      "slug": "etsi-domain-reality-capture-creative",
+      "title": "ETSI_Domain_Reality_Capture___Creative",
       "qualityScore": 0.0
     },
     {
@@ -16218,7 +16218,7 @@
     },
     {
       "slug": "term-index",
-      "title": "TERM [private]",
+      "title": "TERM INDEX",
       "qualityScore": 0.0
     },
     {
@@ -20056,6 +20056,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "etsi-domain-governance-security",
+      "title": "ETSI_Domain_Governance_Security",
+      "qualityScore": 0.4
+    },
+    {
       "slug": "etsi-domain-governance-economy",
       "title": "ETSI_Domain_Governance___Economy",
       "qualityScore": 0.4
@@ -20063,11 +20068,6 @@
     {
       "slug": "etsi-domain-governance-society",
       "title": "ETSI_Domain_Governance___Society",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "etsi-domain-governance-security",
-      "title": "ETSI_Domain_Governance_Security",
       "qualityScore": 0.4
     },
     {
@@ -20276,7 +20276,7 @@
       "qualityScore": 0.52
     },
     {
-      "slug": "experiment-tracking",
+      "slug": "empirical-experimental-design-tracking",
       "title": "Experiment Tracking",
       "qualityScore": 0.72
     },
@@ -21701,7 +21701,7 @@
       "qualityScore": 0.5
     },
     {
-      "slug": "multimodal-ai",
+      "slug": "multimodal-ai-architecture-ai",
       "title": "Multimodal AI",
       "qualityScore": 0.75
     },
@@ -25483,6 +25483,16 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "etsi-domain-infrastructure",
+      "title": "ETSI_Domain_Infrastructure",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "etsi-domain-infrastructure-data",
+      "title": "ETSI_Domain_Infrastructure_Data",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "etsi-domain-infrastructure-immersive",
       "title": "ETSI_Domain_Infrastructure___Immersive",
       "qualityScore": 0.5
@@ -25498,23 +25508,13 @@
       "qualityScore": 0.0
     },
     {
-      "slug": "etsi-domain-infrastructure",
-      "title": "ETSI_Domain_Infrastructure",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "etsi-domain-infrastructure-data",
-      "title": "ETSI_Domain_Infrastructure_Data",
+      "slug": "etsi-domain-interoperability",
+      "title": "ETSI_Domain_Interoperability",
       "qualityScore": 0.0
     },
     {
       "slug": "etsi-domain-interoperability-creative",
       "title": "ETSI_Domain_Interoperability___Creative",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "etsi-domain-interoperability",
-      "title": "ETSI_Domain_Interoperability",
       "qualityScore": 0.0
     },
     {
@@ -30840,7 +30840,7 @@
       "qualityScore": 0.8
     },
     {
-      "slug": "machine-learning-model",
+      "slug": "machine-learning-discipline-model",
       "title": "Machine Learning Model",
       "qualityScore": 0.72
     },
@@ -35166,7 +35166,7 @@
       "qualityScore": 0.62
     },
     {
-      "slug": "heatmap-regression",
+      "slug": "risk-intensity-heatmap-regression",
       "title": "Heatmap Regression",
       "qualityScore": 0.72
     },

@@ -41,6 +41,11 @@
       "slug": "decision-theory"
     },
     {
+      "id": "urn:ngm:class:statistical-decision-theory",
+      "label": "Statistical Decision Theory",
+      "slug": "statistical-decision-theory"
+    },
+    {
       "id": "urn:ngm:class:statistics",
       "label": "Statistics",
       "slug": "statistics"
@@ -56,6 +61,11 @@
       "slug": "decision-making"
     },
     {
+      "id": "urn:ngm:class:operations-research",
+      "label": "Operations Research",
+      "slug": "operations-research"
+    },
+    {
       "id": "urn:ngm:class:probability-theory",
       "label": "Probability Theory",
       "slug": "probability-theory"
@@ -66,13 +76,65 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science",
+      "slug": "cognitive-science"
+    },
+    {
       "id": "urn:ngm:class:measure-theory",
       "label": "Measure Theory",
       "slug": "measure-theory"
+    },
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation",
+      "slug": "optimisation"
+    },
+    {
+      "id": "urn:ngm:class:interdisciplinary-science",
+      "label": "Interdisciplinary Science",
+      "slug": "interdisciplinary-science"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-foundations",
+      "label": "Mathematical Foundations",
+      "slug": "mathematical-foundations"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
       {
         "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
@@ -92,24 +154,16 @@
       {
         "id": "urn:ngm:class:risk-minimisation",
         "label": "Risk Minimisation"
-      },
-      {
-        "id": "urn:ngm:class:utility-function",
-        "label": "Utility Function"
-      },
-      {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
-      },
-      {
-        "id": "urn:ngm:class:heuristics",
-        "label": "Heuristics"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:bayes-theorem",
         "label": "Bayes Theorem"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
         "id": "urn:ngm:class:loss-function",
@@ -134,10 +188,6 @@
       {
         "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
-      },
-      {
-        "id": "urn:ngm:class:calculus",
-        "label": "Calculus"
       }
     ],
     "enables": [
@@ -158,6 +208,10 @@
         "label": "Markov Decision Process"
       },
       {
+        "id": "urn:ngm:class:optimal-classifier",
+        "label": "Optimal Classifier"
+      },
+      {
         "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
       },
@@ -168,13 +222,33 @@
       {
         "id": "urn:ngm:class:planning",
         "label": "Planning"
-      },
-      {
-        "id": "urn:ngm:class:policy-optimisation",
-        "label": "Policy Optimisation"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes Theorem"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
       {
         "id": "urn:ngm:class:data-collection",
         "label": "Data Collection"
@@ -182,33 +256,29 @@
       {
         "id": "urn:ngm:class:sampling-theory",
         "label": "Sampling Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes Theorem"
       },
       {
-        "id": "urn:ngm:class:decision-theory",
-        "label": "Decision Theory"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
-        "id": "urn:ngm:class:game-theory",
-        "label": "Game Theory"
-      },
-      {
-        "id": "urn:ngm:class:optimisation",
-        "label": "Optimisation"
+        "id": "urn:ngm:class:expected-utility-theory",
+        "label": "Expected Utility Theory"
       },
       {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
       },
       {
-        "id": "urn:ngm:class:sigma-algebra",
-        "label": "Sigma-Algebra"
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
       },
-      {
-        "id": "urn:ngm:class:set-theory",
-        "label": "Axiomatic Set Theory"
-      }
-    ],
-    "implements": [
       {
         "id": "urn:ngm:class:frequentist-inference",
         "label": "Frequentist Inference"
@@ -216,6 +286,10 @@
       {
         "id": "urn:ngm:class:maximum-likelihood-estimation",
         "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
       }
     ],
     "contrastsWith": [
@@ -238,6 +312,14 @@
       {
         "id": "urn:ngm:class:game-theory",
         "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-computation",
+        "label": "Deterministic Computation"
       },
       {
         "id": "urn:ngm:class:fuzzy-logic",
@@ -270,12 +352,12 @@
         "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:signal-processing",
-        "label": "Signal Processing"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       }
     ],
     "uses": [
@@ -288,6 +370,10 @@
         "label": "Expected Utility Theory"
       },
       {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
         "id": "urn:ngm:class:information-theory",
         "label": "Information Theory"
       },
@@ -296,20 +382,16 @@
         "label": "Causal Reasoning"
       },
       {
+        "id": "urn:ngm:class:heuristics",
+        "label": "Heuristics"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
       }
     ],
     "supports": [
@@ -318,7 +400,7 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -346,6 +428,42 @@
         "label": "Causal Inference"
       }
     ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:savage-expected-utility",
+        "label": "Savage Expected Utility"
+      },
+      {
+        "id": "urn:ngm:class:von-neumann-morgenstern-axioms",
+        "label": "Von Neumann-Morgenstern Axioms"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:game-theory",
@@ -360,6 +478,10 @@
         "label": "Information Theory"
       },
       {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
         "id": "urn:ngm:class:statistical-decision-theory",
         "label": "Statistical Decision Theory"
       },
@@ -372,12 +494,8 @@
         "label": "Bayesian Inference"
       },
       {
-        "id": "urn:ngm:class:control-theory",
-        "label": "Control Theory"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-representation",
-        "label": "Knowledge Representation"
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       }
     ]
   },

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Layer2</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Layer2"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Layer2"/><meta name="twitter:description" content="Secondary protocols built atop Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit aggregated state changes to the main chain."/><meta property="og:description" content="Secondary protocols built atop Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit aggregated state changes to the main chain."/><meta property="og:image:alt" content="Secondary protocols built atop Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit aggregated state changes to the main chain."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Layer2"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Layer2"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Secondary protocols built atop Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit aggregated state changes to the main chain."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Layer2"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-4474"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-4474" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Layer2</a></div></nav><h1 class="article-title">Layer2</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.685Z">23 Sept 2026</time><span>22 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:layer2</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>blockchain</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.8</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Network-Component" class="internal">Network Component</a></li><li><a href="../pages/Smart-Contract-Platform" class="internal">Smart Contract Platform</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/State-Channel" class="internal">State Channel</a></li><li><a href="../pages/Sidechain" class="internal">Sidechain</a></li><li><a href="../pages/Lightning-Network" class="internal">Lightning Network</a></li><li><a href="../Lightning-and-Similar-L2" class="internal">Lightning and Similar L2</a></li><li><a href="../pages/Layer2Scaling" class="internal">Layer2Scaling</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Blockchain-Scalability" class="internal">Blockchain Scalability</a></li><li><a href="../pages/Blockchain-Interoperability" class="internal">Blockchain Interoperability</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>BC-4001</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../across-protocol" class="internal">Across-Protocol</a></li><li><a href="../agg-layer" class="internal">AggLayer</a></li><li><a href="../ai-inference" class="internal">AI-inference</a></li><li><a href="../alchemy" class="internal">Alchemy</a></li><li><a href="../alex" class="internal">ALEX</a></li><li><a href="../alt-layer" class="internal">AltLayer</a></li><li><a href="../amp" class="internal">AMP</a></li><li><a href="../anoma" class="internal">Anoma</a></li><li><a href="../arbitrum" class="internal">Arbitrum</a></li><li><a href="../arbitrum-bridge" class="internal">Arbitrum-Bridge</a></li><li><a href="../arbitrum-nitro" class="internal">Arbitrum-Nitro</a></li><li><a href="../arbitrum-one" class="internal">Arbitrum-One</a></li><li><a href="../arbitrum-orbit" class="internal">Arbitrum-Orbit</a></li><li><a href="../argent" class="internal">Argent</a></li><li><a href="../ark" class="internal">Ark</a></li><li><a href="../arkadiko" class="internal">Arkadiko</a></li><li><a href="../astria" class="internal">Astria</a></li><li><a href="../atomic-swaps" class="internal">Atomic-Swaps</a></li><li><a href="../avail" class="internal">Avail</a></li><li><a href="../axelar" class="internal">Axelar</a></li><li><a href="../axie-infinity" class="internal">Axie-Infinity</a></li><li><a href="../aztec" class="internal">Aztec</a></li><li><a href="../base" class="internal">Base</a></li><li><a href="../bit-vm" class="internal">BitVM</a></li><li><a href="../bitcoin-ordinals" class="internal">Bitcoin-Ordinals</a></li><li><a href="../bitcoin-triggers" class="internal">Bitcoin-Triggers</a></li><li><a href="../bitfinex" class="internal">Bitfinex</a></li><li><a href="../bitlight-wallet" class="internal">Bitlight-Wallet</a></li><li><a href="../blast" class="internal">Blast</a></li><li><a href="../blockchain-scaling" class="internal">BlockchainScaling</a></li><li><a href="../blockchain-trilemma" class="internal">Blockchain-Trilemma</a></li><li><a href="../boba-network" class="internal">Boba-Network</a></li><li><a href="../bolt" class="internal">BOLT</a></li><li><a href="../braavos" class="internal">Braavos</a></li><li><a href="../brc-20" class="internal">BRC-20</a></li><li><a href="../breez" class="internal">Breez</a></li><li><a href="../bridge" class="internal">Bridge</a></li><li><a href="../bridge-hacks" class="internal">bridge-hacks</a></li><li><a href="../bridge-security" class="internal">bridge-security</a></li><li><a href="../bungee" class="internal">Bungee</a></li><li><a href="../c" class="internal">C++</a></li><li><a href="../cairo" class="internal">Cairo</a></li><li><a href="../cairo-1-0" class="internal">Cairo-1.0</a></li><li><a href="../caldera" class="internal">Caldera</a></li><li><a href="../camelot" class="internal">Camelot</a></li><li><a href="../canonical-bridge" class="internal">canonical-bridge</a></li><li><a href="../cash-app" class="internal">Cash-App</a></li><li><a href="../celer-network" class="internal">Celer-Network</a></li><li><a href="../celestia" class="internal">Celestia</a></li><li><a href="../centralized-operators" class="internal">centralized-operators</a></li><li><a href="../chainlink-ccip" class="internal">Chainlink-CCIP</a></li><li><a href="../chainlink-fss" class="internal">Chainlink-FSS</a></li><li><a href="../channel-factories" class="internal">channel-factories</a></li><li><a href="../chaumian-e-cash" class="internal">Chaumian-e-cash</a></li><li><a href="../checktemplateverify" class="internal">CHECKTEMPLATEVERIFY</a></li><li><a href="../clarity" class="internal">Clarity</a></li><li><a href="../client-side-validation" class="internal">client-side-validation</a></li><li><a href="../coinbase" class="internal">Coinbase</a></li><li><a href="../compliance-oracles" class="internal">Compliance-Oracles</a></li><li><a href="../conduit" class="internal">Conduit</a></li><li><a href="../confidential-transactions" class="internal">Confidential-Transactions</a></li><li><a href="../connext" class="internal">Connext</a></li><li><a href="../consensus-mechanisms" class="internal">consensus-mechanisms</a></li><li><a href="../consensus-mechanisms" class="internal">Consensus-Mechanisms</a></li><li><a href="../consumer-applications" class="internal">consumer-applications</a></li><li><a href="../consumer-crypto" class="internal">consumer-crypto</a></li><li><a href="../cosmos" class="internal">Cosmos</a></li><li><a href="../covenant-opcodes" class="internal">Covenant-opcodes</a></li><li><a href="../cross-chain-amms" class="internal">cross-chain-AMMs</a></li><li><a href="../cross-chain-smart-contracts" class="internal">cross-chain-smart-contracts</a></li><li><a href="../cross-l2-messaging" class="internal">cross-L2-messaging</a></li><li><a href="../cryptocurrency-infrastructure" class="internal">CryptocurrencyInfrastructure</a></li><li><a href="../cryptoeconomic-security" class="internal">cryptoeconomic-security</a></li><li><a href="../cryptographic-primitives" class="internal">cryptographic-primitives</a></li><li><a href="../d-yd-x" class="internal">dYdX</a></li><li><a href="../danksharding" class="internal">Danksharding</a></li><li><a href="../daos" class="internal">DAOs</a></li><li><a href="../das" class="internal">DAS</a></li><li><a href="../data-availability" class="internal">Data-Availability</a></li><li><a href="../data-availability-problem" class="internal">data-availability-problem</a></li><li><a href="../de-fi" class="internal">DeFi</a></li><li><a href="../de-fi-llama" class="internal">DeFiLlama</a></li><li><a href="../decentralized-prover-network" class="internal">decentralized-prover-network</a></li><li><a href="../decentralized-sequencers" class="internal">decentralized-sequencers</a></li><li><a href="../decentralized-systems" class="internal">DecentralizedSystems</a></li><li><a href="../deterministic-execution" class="internal">deterministic-execution</a></li><li><a href="../distributed-proving" class="internal">distributed-proving</a></li><li><a href="../dune-analytics" class="internal">Dune-Analytics</a></li><li><a href="../eigen-da" class="internal">EigenDA</a></li><li><a href="../eigen-layer" class="internal">EigenLayer</a></li><li><a href="../eip-4844" class="internal">EIP-4844</a></li><li><a href="../eltoo" class="internal">eltoo</a></li><li><a href="../encrypted-mempools" class="internal">encrypted-mempools</a></li><li><a href="../erc-20" class="internal">ERC-20</a></li><li><a href="../erc-4337" class="internal">ERC-4337</a></li><li><a href="../escape-hatches" class="internal">escape-hatches</a></li><li><a href="../espresso" class="internal">Espresso</a></li><li><a href="../evm" class="internal">EVM</a></li><li><a href="../evm-equivalence" class="internal">EVM-equivalence</a></li><li><a href="../ezkl" class="internal">EZKL</a></li><li><a href="../fair-sequencing-service" class="internal">Fair-Sequencing-Service</a></li><li><a href="../farcaster" class="internal">Farcaster</a></li><li><a href="../fedimint" class="internal">Fedimint</a></li><li><a href="../flashbots-suave" class="internal">Flashbots-SUAVE</a></li><li><a href="../foundry" class="internal">Foundry</a></li><li><a href="../fpga-acceleration" class="internal">FPGA-acceleration</a></li><li><a href="../fraud-proof" class="internal">fraud-proof</a></li><li><a href="../fraud-proof-games" class="internal">fraud-proof-games</a></li><li><a href="../fraud-proofs" class="internal">fraud-proofs</a></li><li><a href="../fraxtal" class="internal">Fraxtal</a></li><li><a href="../friend-tech" class="internal">friend.tech</a></li><li><a href="../fuel" class="internal">Fuel</a></li><li><a href="../functionaries" class="internal">functionaries</a></li><li><a href="../functionary" class="internal">functionary</a></li><li><a href="../fungible-assets" class="internal">Fungible-Assets</a></li><li><a href="../pages/gaming" class="internal">gaming</a></li><li><a href="../pages/gaming" class="internal">Gaming</a></li><li><a href="../gamma" class="internal">Gamma</a></li><li><a href="../gas-fees" class="internal">gas-fees</a></li><li><a href="../gasless-transactions" class="internal">gasless-transactions</a></li><li><a href="../gelato" class="internal">Gelato</a></li><li><a href="../giza" class="internal">Giza</a></li><li><a href="../gmx" class="internal">GMX</a></li><li><a href="../gnosis" class="internal">Gnosis</a></li><li><a href="../gnosis-chain" class="internal">Gnosis-Chain</a></li><li><a href="../gpu-proving" class="internal">GPU-proving</a></li><li><a href="../groth16" class="internal">Groth16</a></li><li><a href="../growthepie" class="internal">Growthepie</a></li><li><a href="../hardhat" class="internal">Hardhat</a></li><li><a href="../hop-protocol" class="internal">Hop-Protocol</a></li><li><a href="../hot-shot" class="internal">HotShot</a></li><li><a href="../hsms" class="internal">HSMs</a></li><li><a href="../htlc" class="internal">HTLC</a></li><li><a href="../hyperchains" class="internal">Hyperchains</a></li><li><a href="../immutable-x" class="internal">ImmutableX</a></li><li><a href="../intent-based-protocols" class="internal">intent-based-protocols</a></li><li><a href="../intent-solvers" class="internal">intent-solvers</a></li><li><a href="../interactive-fraud-proofs" class="internal">interactive-fraud-proofs</a></li><li><a href="../issued-assets" class="internal">Issued-Assets</a></li><li><a href="../jumper-exchange" class="internal">Jumper.exchange</a></li><li><a href="../kakarot" class="internal">Kakarot</a></li><li><a href="../keysend" class="internal">Keysend</a></li><li><a href="../kraken" class="internal">Kraken</a></li><li><a href="../kzg-commitments" class="internal">KZG-commitments</a></li><li><a href="../l2-beat" class="internal">L2Beat</a></li><li><a href="../layer-zero" class="internal">LayerZero</a></li><li><a href="../layer1" class="internal">Layer1</a></li><li><a href="../layer2-finance" class="internal">layer2.finance</a></li><li><a href="../layer3" class="internal">Layer3</a></li><li><a href="../light-client-bridges" class="internal">Light-Client-Bridges</a></li><li><a href="../linea" class="internal">Linea</a></li><li><a href="../liquid" class="internal">Liquid</a></li><li><a href="../liquid-network" class="internal">Liquid-Network</a></li><li><a href="../liquidity-networks" class="internal">Liquidity-Networks</a></li><li><a href="../lnurl" class="internal">LNURL</a></li><li><a href="../lock-and-mint" class="internal">Lock-and-Mint</a></li><li><a href="../mantle" class="internal">Mantle</a></li><li><a href="../mass-exit" class="internal">mass-exit</a></li><li><a href="../matic-network" class="internal">Matic-Network</a></li><li><a href="../merge-mining" class="internal">merge-mining</a></li><li><a href="../merkle-proofs" class="internal">Merkle-proofs</a></li><li><a href="../merkle-roots" class="internal">Merkle-roots</a></li><li><a href="../meta-mask" class="internal">MetaMask</a></li><li><a href="../metis" class="internal">Metis</a></li><li><a href="../mode" class="internal">Mode</a></li><li><a href="../modular-architecture" class="internal">modular-architecture</a></li><li><a href="../modular-data-availability" class="internal">modular-data-availability</a></li><li><a href="../modulus-labs" class="internal">Modulus-Labs</a></li><li><a href="../multi-sig" class="internal">multi-sig</a></li><li><a href="../multi-signature" class="internal">multi-signature</a></li><li><a href="../nakamoto-release" class="internal">Nakamoto-Release</a></li><li><a href="../nft" class="internal">NFT</a></li><li><a href="../nfts" class="internal">NFTs</a></li><li><a href="../nil-foundation" class="internal">=nil; Foundation</a></li><li><a href="../nitro" class="internal">Nitro</a></li><li><a href="../nomic" class="internal">Nomic</a></li><li><a href="../nxtp" class="internal">NXTP</a></li><li><a href="../omg-network" class="internal">OMG-Network</a></li><li><a href="../on-chain-ai" class="internal">on-chain-AI</a></li><li><a href="../onion-routing" class="internal">onion-routing</a></li><li><a href="../op-cat" class="internal">OP_CAT</a></li><li><a href="../op-stack" class="internal">OP-Stack</a></li><li><a href="../optimism" class="internal">Optimism</a></li><li><a href="../optimism-bridge" class="internal">Optimism-Bridge</a></li><li><a href="../optimism-mainnet" class="internal">Optimism-Mainnet</a></li><li><a href="../optimism-superchain" class="internal">Optimism-Superchain</a></li><li><a href="../optimistic-bridges" class="internal">Optimistic-Bridges</a></li><li><a href="../orbiter-finance" class="internal">Orbiter-Finance</a></li><li><a href="../ordinals" class="internal">Ordinals</a></li><li><a href="../pathfinding-algorithms" class="internal">pathfinding-algorithms</a></li><li><a href="../pay-pal" class="internal">PayPal</a></li><li><a href="../paymasters" class="internal">Paymasters</a></li><li><a href="../payment-channel" class="internal">payment-channel</a></li><li><a href="../pedersen-commitments" class="internal">Pedersen-commitments</a></li><li><a href="../perpetual-protocol" class="internal">Perpetual-Protocol</a></li><li><a href="../phoenix" class="internal">Phoenix</a></li><li><a href="../plasma" class="internal">Plasma</a></li><li><a href="../plonk" class="internal">PLONK</a></li><li><a href="../polygon" class="internal">Polygon</a></li><li><a href="../polygon-2-0" class="internal">Polygon-2.0</a></li><li><a href="../polygon-agg-layer" class="internal">Polygon-AggLayer</a></li><li><a href="../polygon-hermez" class="internal">Polygon-Hermez</a></li><li><a href="../polygon-plasma" class="internal">Polygon-Plasma</a></li><li><a href="../polygon-po-s" class="internal">Polygon-PoS</a></li><li><a href="../polygon-proof-aggregation" class="internal">Polygon-proof-aggregation</a></li><li><a href="../polygon-zk-evm" class="internal">Polygon-zkEVM</a></li><li><a href="../powpeg" class="internal">Powpeg</a></li><li><a href="../prediction-markets" class="internal">prediction-markets</a></li><li><a href="../private-state" class="internal">private-state</a></li><li><a href="../proof-markets" class="internal">proof-markets</a></li><li><a href="../proof-of-play" class="internal">Proof-of-Play</a></li><li><a href="../proof-of-transfer" class="internal">Proof-of-Transfer</a></li><li><a href="../ptlcs" class="internal">PTLCs</a></li><li><a href="../public-goods-network" class="internal">Public-Goods-Network</a></li><li><a href="../public-state" class="internal">public-state</a></li><li><a href="../quick-node" class="internal">QuickNode</a></li><li><a href="../rabby" class="internal">Rabby</a></li><li><a href="../radiant-capital" class="internal">Radiant-Capital</a></li><li><a href="../radius" class="internal">Radius</a></li><li><a href="../raiden-network" class="internal">Raiden-Network</a></li><li><a href="../rainbow-wallet" class="internal">Rainbow-Wallet</a></li><li><a href="../rari-chain" class="internal">Rari-Chain</a></li><li><a href="../retro-pgf" class="internal">RetroPGF</a></li><li><a href="../rgb-core" class="internal">RGB-Core</a></li><li><a href="../rgb-node" class="internal">RGB-Node</a></li><li><a href="../rgb-protocol" class="internal">RGB-Protocol</a></li><li><a href="../risc-zero" class="internal">RISC-Zero</a></li><li><a href="../rollkit" class="internal">Rollkit</a></li><li><a href="../rollup" class="internal">rollup</a></li><li><a href="../rollup" class="internal">Rollup</a></li><li><a href="../ronin" class="internal">Ronin</a></li><li><a href="../rootstock" class="internal">Rootstock</a></li><li><a href="../s-btc" class="internal">sBTC</a></li><li><a href="../scaffold-eth" class="internal">scaffold-eth</a></li><li><a href="../scaling-solutions" class="internal">scaling-solutions</a></li><li><a href="../scroll" class="internal">Scroll</a></li><li><a href="../sequencer" class="internal">sequencer</a></li><li><a href="../sequencer" class="internal">Sequencer</a></li><li><a href="../sequencer-censorship" class="internal">sequencer-censorship</a></li><li><a href="../session-keys" class="internal">session-keys</a></li><li><a href="../shared-liquidity-layers" class="internal">shared-liquidity-layers</a></li><li><a href="../shared-sequencers" class="internal">shared-sequencers</a></li><li><a href="../shopify" class="internal">Shopify</a></li><li><a href="../sighash-anyprevout" class="internal">SIGHASH_ANYPREVOUT</a></li><li><a href="../single-use-seals" class="internal">single-use-seals</a></li><li><a href="../smart-contract-bugs" class="internal">smart-contract-bugs</a></li><li><a href="../smart-contract-wallets" class="internal">smart-contract-wallets</a></li><li><a href="../social-recovery" class="internal">social-recovery</a></li><li><a href="../solidity" class="internal">Solidity</a></li><li><a href="../soneium" class="internal">Soneium</a></li><li><a href="../sony" class="internal">Sony</a></li><li><a href="../sorare" class="internal">Sorare</a></li><li><a href="../stablecoins" class="internal">Stablecoins</a></li><li><a href="../stacks" class="internal">Stacks</a></li><li><a href="../stargate" class="internal">Stargate</a></li><li><a href="../stark-ex" class="internal">StarkEx</a></li><li><a href="../starknet" class="internal">Starknet</a></li><li><a href="../starknet-recursive-proofs" class="internal">Starknet-recursive-proofs</a></li><li><a href="../starknet-stack" class="internal">Starknet-Stack</a></li><li><a href="../streaming-payments" class="internal">streaming-payments</a></li><li><a href="../strike" class="internal">Strike</a></li><li><a href="../strong-federation" class="internal">Strong-Federation</a></li><li><a href="../stylus" class="internal">Stylus</a></li><li><a href="../suave" class="internal">SUAVE</a></li><li><a href="../superchain" class="internal">Superchain</a></li><li><a href="../synapse" class="internal">Synapse</a></li><li><a href="../synthetix" class="internal">Synthetix</a></li><li><a href="../taiko" class="internal">Taiko</a></li><li><a href="../taproot" class="internal">Taproot</a></li><li><a href="../taproot-channels" class="internal">Taproot-Channels</a></li><li><a href="../tether" class="internal">tether</a></li><li><a href="../third-party-bridges" class="internal">third-party-bridges</a></li><li><a href="../thirdweb" class="internal">thirdweb</a></li><li><a href="../threshold-encryption" class="internal">threshold-encryption</a></li><li><a href="../threshold-network" class="internal">Threshold-Network</a></li><li><a href="../token-terminal" class="internal">Token-Terminal</a></li><li><a href="../trampoline-routing" class="internal">Trampoline-routing</a></li><li><a href="../turing-complete" class="internal">Turing-complete</a></li><li><a href="../tvl" class="internal">TVL</a></li><li><a href="../twitter-tips" class="internal">Twitter-Tips</a></li><li><a href="../two-way-peg" class="internal">two-way-peg</a></li><li><a href="../utxo" class="internal">UTXO</a></li><li><a href="../validator" class="internal">validator</a></li><li><a href="../validity-proofs" class="internal">validity-proofs</a></li><li><a href="../validium" class="internal">Validium</a></li><li><a href="../velodrome" class="internal">Velodrome</a></li><li><a href="../verifier" class="internal">Verifier</a></li><li><a href="../virtual-utxo" class="internal">Virtual-UTXO</a></li><li><a href="../visa" class="internal">Visa</a></li><li><a href="../volition" class="internal">Volition</a></li><li><a href="../wallet-of-satoshi" class="internal">Wallet-of-Satoshi</a></li><li><a href="../wasm" class="internal">WASM</a></li><li><a href="../wormhole" class="internal">Wormhole</a></li><li><a href="../x-dai" class="internal">xDai</a></li><li><a href="../xai" class="internal">Xai</a></li><li><a href="../zk-evm" class="internal">zkEVM</a></li><li><a href="../zk-kyc" class="internal">zk-KYC</a></li><li><a href="../zk-ml" class="internal">zkML</a></li><li><a href="../zk-porter" class="internal">zkPorter</a></li><li><a href="../zk-snark" class="internal">zkSNARK</a></li><li><a href="../zk-stark" class="internal">zkSTARK</a></li><li><a href="../zk-sync" class="internal">zkSync</a></li><li><a href="../zk-sync-bridge" class="internal">zkSync-Bridge</a></li><li><a href="../zk-sync-era" class="internal">zkSync-Era</a></li><li><a href="../zk-sync-hyperchains" class="internal">zkSync-Hyperchains</a></li><li><a href="../zk-sync-proof-compression" class="internal">zkSync-proof-compression</a></li><li><a href="../zora" class="internal">Zora</a></li><li><a href="../account-abstraction" class="internal">account-abstraction</a></li><li><a href="../asset-tokenization" class="internal">asset-tokenization</a></li><li><a href="../bitcoin" class="internal">Bitcoin</a></li><li><a href="../blockchain" class="internal">blockchain</a></li><li><a href="../cross-chain-messaging" class="internal">cross-chain-messaging</a></li><li><a href="../ethereum" class="internal">Ethereum</a></li><li><a href="../lightning-network" class="internal">Lightning-Network</a></li><li><a href="../mev" class="internal">MEV</a></li><li><a href="../micropayments" class="internal">micropayments</a></li><li><a href="../proof-of-stake" class="internal">Proof-of-Stake</a></li><li><a href="../proof-of-work" class="internal">Proof-of-Work</a></li><li><a href="../rust" class="internal">Rust</a></li><li><a href="../script" class="internal">Script</a></li><li><a href="../sidechain" class="internal">Sidechain</a></li><li><a href="../smart-contract" class="internal">smart-contract</a></li><li><a href="../smart-contracts" class="internal">smart-contracts</a></li><li><a href="../state-channel" class="internal">StateChannel</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:4faf9199f5a7fb2797979540a85a2aef8715f073ec326b4c1d934095bd1cc7e4</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Cross-Chain-Messaging" class="internal">Cross-Chain Messaging</a></li><li><a href="../pages/Transaction-Confirmation" class="internal">Transaction Confirmation</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Zero-Knowledge-Proof" class="internal">Zero-Knowledge Proof</a></li><li><a href="../pages/Smart-Contract" class="internal">Smart Contract</a></li><li><a href="../pages/Cross-Chain-Bridge" class="internal">Cross-Chain Bridge</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Secondary protocols built atop Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit aggregated state changes to the main chain. Layer 2 solutions achieve dramatically higher throughput, lower fees, and improved user experience while inheriting the security guarantees of the underlying base layer. Principal approaches include rollups (optimistic and ZK), state channels, and sidechains.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="layer-2-definition--core-architecture">Layer 2 Definition &amp; Core Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-2-definition--core-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Layer 2 (L2)</strong> represents a category of <a href="../blockchain" class="internal" data-slug="blockchain">blockchain</a> <a href="../scaling-solutions" class="internal" data-slug="scaling-solutions">scaling-solutions</a> that operate as secondary frameworks built atop <a href="../Layer1" class="internal" data-slug="Layer1">Layer1</a> base chains like <a href="../pages/Ethereum-Smart-Contract-Platform" class="internal alias" data-slug="pages/Ethereum-Smart-Contract-Platform">Ethereum Smart Contract Platform</a>, <a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal alias" data-slug="pages/Bitcoin-Proof-of-Work-Protocol">Bitcoin Proof-of-Work Protocol</a>, or <a href="../pages/Polygon" class="internal" data-slug="pages/Polygon">Polygon</a>, executing transactions off the main chain while leveraging the security and finality of the underlying Layer 1.</p>
+</li>
+<li>
+<h3 id="fundamental-architecture-principles">Fundamental Architecture Principles<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fundamental-architecture-principles" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Off-Chain Execution**: Transactions are processed outside the main chain by [[sequencer|sequencers]] or [[validator|validators]], dramatically reducing computational load on Layer 1
+- **On-Chain Settlement**: Final state commitments and [[fraud-proofs]] or [[validity-proofs]] are periodically posted to Layer 1 for security anchoring
+- **Security Inheritance**: L2 solutions derive their ultimate security from Layer 1 [[consensus-mechanisms]] and [[cryptographic-primitives]]
+- **Data Availability**: Transaction data is either posted on-chain ([[rollup|rollups]]) or kept off-chain with commitments ([[Plasma]], [[Validium]])
+- **Bridge Mechanisms**: [[canonical-bridge|Canonical bridges]] or [[third-party-bridges]] enable asset transfers between Layer 1 and Layer 2
+</code></pre>
+</li>
+<li>
+<h3 id="why-layer-2-solutions-are-essential">Why Layer 2 Solutions Are Essential<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-layer-2-solutions-are-essential" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Scalability Bottleneck**: [[Ethereum Smart Contract Platform]] processes ~15-30 TPS, [[Bitcoin Proof-of-Work Protocol]] ~7 TPS - insufficient for global-scale adoption
+- **High Transaction Costs**: During network congestion, [[gas-fees]] on Ethereum can exceed $50-200 per transaction
+- **User Experience**: Slow confirmation times (10-15 minutes for Bitcoin, 12-15 seconds for Ethereum) hinder real-time applications
+- **Environmental Impact**: Layer 1 [[Proof-of-Work]] and [[Proof-of-Stake]] consume significant energy; L2 amortizes this across thousands of transactions
+- **Economic Efficiency**: L2 enables [[micropayments]], [[NFT]] minting, [[DeFi]] operations, and [[gaming]] at fraction of Layer 1 costs
+</code></pre>
+</li>
+<li>
+<h3 id="layer-2-vs-layer-1-fundamental-differences">Layer 2 vs Layer 1 Fundamental Differences<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-2-vs-layer-1-fundamental-differences" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Execution Environment**: L1 = every node validates every transaction; L2 = centralized or semi-decentralized sequencers batch transactions
+- **Security Model**: L1 = direct consensus; L2 = derived security through [[fraud-proofs]], [[validity-proofs]], or [[multi-signature]] schemes
+- **Finality**: L1 = probabilistic (Bitcoin) or deterministic (Ethereum); L2 = soft finality (instant) + hard finality (after L1 settlement)
+- **Decentralization Trade-off**: Most L2s sacrifice some decentralization for performance, though [[decentralized-sequencers]] are emerging
+</code></pre>
+</li>
+<li>
+<h2 id="layer-2-categories--technical-approaches">Layer 2 Categories &amp; Technical Approaches<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-2-categories--technical-approaches" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="1-rollups-most-secure--popular">1. Rollups (Most Secure &amp; Popular)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-rollups-most-secure--popular" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Definition**: Bundle hundreds of transactions into a single batch, execute off-chain, post compressed data + state root to Layer 1
+- **Security**: Inherits full Layer 1 security through [[fraud-proofs]] (Optimistic) or [[validity-proofs]] (ZK)
+- **Data Availability**: All transaction data posted on-chain, enabling anyone to reconstruct state
+- #### Optimistic Rollups
+	- **Mechanism**: Assume transactions are valid by default; use [[fraud-proof]] challenges during 7-day dispute window
+	- **Proof System**: [[interactive-fraud-proofs]] where challengers and asserters engage in binary search to identify disputed instruction
+	- **Withdrawal Delay**: 7 days for [[Arbitrum]], [[Optimism]]; required for security of fraud proof game
+	- **EVM Compatibility**: Near-perfect [[EVM-equivalence]] enabling seamless [[Solidity]] contract migration
+	- **Leading Implementations**:
+		- **[[Arbitrum]]**: Largest L2 by [[TVL]] ($3.2B as of 2025), uses [[Nitro]] architecture with [[WASM]]-based fraud proofs
+		- **[[Optimism]]**: Pioneer of [[OP-Stack]] modular framework, powers [[Base]], [[Zora]], [[Mode]]
+		- **[[Base]]**: Coinbase's L2 built on OP-Stack, $1.8B TVL, focus on [[consumer-applications]]
+		- **[[Mantle]]**: Uses [[modular-data-availability]] and [[EigenDA]] for enhanced throughput
+	- **Advantages**: Low proof generation costs, high EVM compatibility, mature tooling
+	- **Disadvantages**: 7-day withdrawal delay, vulnerable to [[sequencer-censorship]], higher on-chain data costs
+- #### ZK-Rollups (Zero-Knowledge Rollups)
+	- **Mechanism**: Generate [[validity-proofs]] ([[zkSNARK]], [[zkSTARK]], [[PLONK]]) proving correct state transition
+	- **Proof Verification**: Layer 1 verifies cryptographic proof in single transaction, providing instant finality
+	- **Withdrawal Speed**: Minutes to hours (no challenge period needed)
+	- **Privacy Potential**: ZK proofs can hide transaction details while proving validity ([[Aztec]], [[zkSync]])
+	- **Leading Implementations**:
+		- **[[zkSync-Era]]**: [[zkEVM]] using [[PLONK]] proofs, $230M TVL, native [[account-abstraction]]
+		- **[[Starknet]]**: Uses [[Cairo]] programming language and [[zkSTARK]] proofs (no trusted setup, quantum-resistant)
+		- **[[Polygon-zkEVM]]**: Type 2 zkEVM, high EVM equivalence, $85M TVL
+		- **[[Scroll]]**: Type 2 zkEVM optimizing for EVM compatibility, $65M TVL
+		- **[[Linea]]**: ConsenSys zkEVM, [[zkSTARK]]-based, integrated with [[MetaMask]]
+		- **[[Taiko]]**: Type 1 zkEVM (full Ethereum equivalence), decentralized prover network
+	- **Advantages**: Fast withdrawals, higher privacy potential, lower on-chain data in some designs
+	- **Disadvantages**: Complex proof generation (high computational cost), EVM compatibility challenges, immature tooling
+- #### Hybrid &amp; Next-Gen Rollups
+	- **[[Metis]]**: Optimistic rollup with decentralized sequencer rotation
+	- **[[Boba-Network]]**: Optimistic rollup with fast exit via liquidity pools
+	- **[[Aztec]]**: Privacy-focused zkRollup with encrypted transaction execution
+	- **[[Fuel]]**: Modular execution layer using [[UTXO]] model for parallel transaction processing
+</code></pre>
+</li>
+<li>
+<h3 id="2-state-channels">2. State Channels<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-state-channels" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Definition**: Multi-party off-chain agreements secured by on-chain [[smart-contracts]], enabling unlimited transactions with only 2 on-chain txs (open/close)
+- **Security Model**: [[cryptoeconomic-security]] through [[multi-signature]] and punishment mechanisms
+- **Use Cases**: High-frequency bidirectional payments, [[gaming]] state updates, [[streaming-payments]]
+- **Limitations**: Require online participation from all parties, capital lockup, complex channel management
+- #### Leading State Channel Implementations
+	- **[[Lightning-Network]]**: Bitcoin's premier L2 with 15,000+ nodes, $300M+ capacity, enables instant BTC payments
+		- **Architecture**: [[HTLC]] (Hash Time-Locked Contracts) for trustless routing across multi-hop channels
+		- **Routing**: [[pathfinding-algorithms]] find optimal payment routes through network graph
+		- **Watchtowers**: Third-party services monitor channels for fraud attempts while users are offline
+		- **Recent Innovations**: [[Taproot]] integration, [[PTLCs]] (Point Time-Locked Contracts), [[channel-factories]]
+		- **Adoption**: Major exchanges (Kraken, Bitfinex) and apps (Strike, Cash App) integrate Lightning
+	- **[[Raiden-Network]]**: Ethereum state channel network for ERC-20 token transfers
+	- **[[Connext]]**: [[NXTP]] protocol for cross-chain liquidity using state channels
+	- **[[Celer-Network]]**: Generalized state channel platform with [[layer2.finance]] DeFi aggregation
+</code></pre>
+</li>
+<li>
+<h3 id="3-sidechains">3. Sidechains<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-sidechains" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Definition**: Independent blockchains with their own [[consensus-mechanisms]], connected to Layer 1 via [[two-way-peg]] bridges
+- **Security Model**: **Independent security** - does NOT inherit Layer 1 security; relies on own validator set
+- **Trade-off**: Higher performance and flexibility, but weaker security guarantees than rollups
+- **Use Cases**: [[Gaming]], high-throughput applications, experimentation with new consensus
+- #### Leading Sidechain Implementations
+	- **[[Polygon-PoS]]**: Largest sidechain with $1.1B TVL, [[Proof-of-Stake]] consensus, 100+ validators
+	- **[[Gnosis-Chain]]**: Ethereum sidechain for [[prediction-markets]] and [[DAOs]], uses [[xDai]] stablecoin
+	- **[[Ronin]]**: Gaming-focused sidechain for [[Axie-Infinity]], recovered from $625M bridge hack
+	- **[[Liquid-Network]]**: Bitcoin sidechain for institutional settlement, 2-minute blocks, [[Confidential-Transactions]]
+		- **Use Case**: Exchange-to-exchange transfers, [[tether]] issuance, [[asset-tokenization]]
+		- **Federation**: 15-member [[functionary]] group controls peg
+	- **[[Rootstock]] (RSK)**: Bitcoin sidechain with [[EVM]] compatibility, [[merge-mining]] with Bitcoin
+		- **Smart Contracts**: Enables Solidity contracts secured by Bitcoin hashrate
+		- **[[Powpeg]]**: Hybrid security model with [[HSMs]] and Bitcoin full nodes
+</code></pre>
+</li>
+<li>
+<h3 id="4-plasma">4. Plasma<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-plasma" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Definition**: Framework for creating child chains that periodically commit [[Merkle-roots]] to Layer 1
+- **Data Availability**: Off-chain (only commitments on Layer 1), reducing costs but requiring users to watch chain
+- **Exit Mechanism**: Users submit [[Merkle-proofs]] to withdraw; 7-14 day challenge period
+- **Limitation**: [[data-availability-problem]] and [[mass-exit]] scenarios led to decline in favor of rollups
+- **Historical Implementations**: [[OMG-Network]], [[Polygon-Plasma]] (deprecated), [[Matic-Network]] (migrated to PoS)
+</code></pre>
+</li>
+<li>
+<h3 id="5-validium">5. Validium<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-validium" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Definition**: Hybrid of zkRollup (validity proofs) + Plasma (off-chain data availability)
+- **Security**: Validity proofs ensure state correctness, but off-chain data creates availability risk
+- **Use Cases**: High-throughput applications where some data availability risk is acceptable
+- **Implementations**: [[StarkEx]] (powers [[dYdX]], [[Sorare]], [[ImmutableX]]), [[zkPorter]]
+</code></pre>
+</li>
+<li>
+<h2 id="ethereum-layer-2-ecosystem-2025-landscape">Ethereum Layer 2 Ecosystem (2025 Landscape)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ethereum-layer-2-ecosystem-2025-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="market-overview--adoption-metrics">Market Overview &amp; Adoption Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#market-overview--adoption-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Total L2 TVL**: $12.4 billion (as of Q1 2025)
+- **Daily Transactions**: 8.5 million across all Ethereum L2s (vs 1.2M on Ethereum mainnet)
+- **Average Transaction Cost**: $0.02-0.15 on L2 vs $3-25 on Ethereum L1
+- **User Adoption**: 4.2 million daily active addresses across L2 ecosystem
+</code></pre>
+</li>
+<li>
+<h3 id="top-ethereum-l2s-by-tvl-q1-2025">Top Ethereum L2s by TVL (Q1 2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#top-ethereum-l2s-by-tvl-q1-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **1. [[Arbitrum-One]]**: $3.2B TVL
+	- [[Arbitrum-Nitro]] upgrade delivers 10x performance improvement
+	- [[Stylus]] enables [[Rust Systems Programming Language]], [[C++]] smart contracts alongside Solidity
+	- [[Arbitrum-Orbit]]: Framework for custom L3 chains (gaming, enterprise)
+	- Ecosystem: 400+ dApps including [[GMX]], [[Camelot]], [[Radiant-Capital]]
+- **2. [[Optimism-Mainnet]]**: $2.1B TVL
+	- [[OP-Stack]]: Modular framework powering 15+ L2s and L3s
+	- [[Superchain]] vision: Network of interoperable OP-Stack chains
+	- [[RetroPGF]]: Novel public goods funding mechanism ($30M distributed)
+	- Ecosystem: [[Velodrome]], [[Synthetix]], [[Perpetual-Protocol]]
+- **3. [[Base]]**: $1.8B TVL
+	- Coinbase-backed L2, onboarded 2M+ users in 6 months
+	- Focus on [[consumer-crypto]]: [[Farcaster]], [[friend.tech]], [[Zora]]
+	- Seamless fiat on-ramp integration via Coinbase
+- **4. [[Blast]]**: $1.4B TVL
+	- Native yield for ETH and stablecoins (4% ETH, 5% stablecoin)
+	- Controversial early launch with TVL locked for 3 months
+- **5. [[zkSync-Era]]**: $230M TVL
+	- Leading zkEVM with native [[account-abstraction]] (AA)
+	- [[Paymasters]] enable gasless transactions and [[ERC-20]] fee payment
+	- [[Hyperchains]]: Customizable zkSync-powered L3s launching 2025
+- **6. [[Polygon-zkEVM]]**: $85M TVL
+	- Type 2 zkEVM prioritizing EVM compatibility
+	- [[Polygon-2.0]] upgrade: Unified liquidity layer connecting all Polygon chains
+- **7. [[Starknet]]**: $1.1B TVL
+	- [[Cairo-1.0]]: Safer, more expressive smart contract language
+	- [[Starknet-Stack]]: Build custom appchains (StarkEx → Starknet migration path)
+	- [[Volition]]: Hybrid data availability (on-chain + off-chain per-user choice)
+- **8. [[Linea]]**: $450M TVL
+	- ConsenSys zkEVM with deep MetaMask integration
+	- [[Verifier]]: Decentralized proof verification network (launching Q2 2025)
+- **9. [[Scroll]]**: $65M TVL
+	- Type 2 zkEVM with focus on decentralization
+	- [[decentralized-prover-network]] distributes proof generation
+- **10. [[Mantle]]**: $1.2B TVL
+	- [[modular-architecture]]: Separate execution, settlement, data availability
+	- [[EigenDA]] integration for ultra-low-cost data availability
+</code></pre>
+</li>
+<li>
+<h3 id="emerging-ethereum-l2-technologies">Emerging Ethereum L2 Technologies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#emerging-ethereum-l2-technologies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[[OP-Stack]] Chains**: [[Mode]], [[Zora]], [[Public-Goods-Network]], [[Fraxtal]] - all sharing Optimism's security
+- **[[Arbitrum-Orbit]] Chains**: [[Xai]] (gaming), [[Proof-of-Play]] (gaming), [[Rari-Chain]] (NFTs)
+- **[[Taiko]]**: Type 1 zkEVM achieving full Ethereum equivalence (can verify Ethereum blocks)
+- **[[Kakarot]]**: zkEVM built with Cairo, combining Starknet and Ethereum ecosystems
+- **[[Aztec]]**: Encrypted L2 enabling private DeFi with [[private-state]] and [[public-state]]
+</code></pre>
+</li>
+<li>
+<h2 id="bitcoin-layer-2-ecosystem-2025-landscape">Bitcoin Layer 2 Ecosystem (2025 Landscape)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bitcoin-layer-2-ecosystem-2025-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="bitcoin-l2-landscape-overview">Bitcoin L2 Landscape Overview<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bitcoin-l2-landscape-overview" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Unique Challenges**: Bitcoin's [[UTXO]] model, limited [[Script]] functionality, and [[Proof-of-Work]] consensus create different constraints than Ethereum
+- **Security Philosophy**: Bitcoin L2s prioritize inheriting Bitcoin's unmatched security over rapid innovation
+- **Market Opportunity**: Bitcoin holds $1.2 trillion market cap but lacks native [[smart-contract]] and [[DeFi]] capabilities
+</code></pre>
+</li>
+<li>
+<h3 id="1-lightning-network-premier-bitcoin-l2">1. Lightning Network (Premier Bitcoin L2)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-lightning-network-premier-bitcoin-l2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Architecture**: [[payment-channel]] network using [[HTLC]] for trustless multi-hop routing
+- **Statistics (Q1 2025)**:
+	- **15,432 active nodes** across global network
+	- **48,200 payment channels** with total capacity of **$310 million**
+	- **Average channel capacity**: 6.4M satoshis (~$4,000)
+	- **Payment success rate**: 94.7% for payments under $100
+- **Technical Components**:
+	- **[[BOLT]] Specifications**: Lightning's technical standards (BOLT 1-11)
+	- **[[onion-routing]]**: Privacy-preserving payment routing (similar to Tor)
+	- **[[AMP]]** (Atomic Multi-Path Payments): Split large payments across multiple routes
+	- **[[Keysend]]**: Spontaneous payments without invoices
+	- **[[LNURL]]**: Simplified UX protocol for Lightning apps
+- **Recent Innovations**:
+	- **[[Taproot-Channels]]**: Enhanced privacy and reduced on-chain footprint
+	- **[[PTLCs]]** (Point Time-Locked Contracts): Replacing HTLCs for better privacy
+	- **[[channel-factories]]**: Hierarchical channels reducing on-chain transactions
+	- **[[eltoo]]**: Simplified channel update mechanism (requires [[SIGHASH_ANYPREVOUT]])
+	- **[[Trampoline-routing]]**: Outsourced pathfinding for mobile wallets
+- **Ecosystem Applications**:
+	- **[[Strike]]**: Fiat-to-Lightning bridge, powering [[Twitter-Tips]] and [[Shopify]] payments
+	- **[[Cash-App]]**: Square's integration brings Lightning to 40M+ users
+	- **[[Kraken]]**, **[[Bitfinex]]**: Major exchange integrations
+	- **[[Wallet-of-Satoshi]]**: Custodial Lightning wallet with 500K+ users (shut down in USA)
+	- **[[Breez]]**: Non-custodial mobile wallet with integrated Lightning Service Provider
+	- **[[Phoenix]]**: Self-custodial mobile wallet with automated channel management
+- **Challenges**:
+	- **Liquidity Management**: Channels require balanced inbound/outbound capacity
+	- **Routing Failures**: Large payments (>$500) have lower success rates
+	- **Online Requirement**: Requires periodic connectivity for security
+	- **UX Complexity**: Channel management intimidates non-technical users
+</code></pre>
+</li>
+<li>
+<h3 id="2-rgb-protocol-bitcoin-smart-contracts">2. RGB Protocol (Bitcoin Smart Contracts)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-rgb-protocol-bitcoin-smart-contracts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Architecture**: [[client-side-validation]] framework for smart contracts with Bitcoin as commitment layer
+- **How It Works**: Contract state stored off-chain; Bitcoin blockchain used only for [[single-use-seals]] (UTXO-based commitments)
+- **Privacy**: Contract details only visible to participants, not global broadcast
+- **Use Cases**:
+	- **[[Fungible-Assets]]**: Issue tokens (RGB20 standard, similar to ERC-20)
+	- **[[NFTs]]**: Collectibles and digital art (RGB21 standard)
+	- **[[DeFi]]**: Decentralized exchanges, lending protocols
+	- **[[Stablecoins]]**: USDT considering RGB for Bitcoin-native issuance
+- **Technical Features**:
+	- **[[Turing-complete]] contracts**: More expressive than Bitcoin Script
+	- **[[deterministic-execution]]**: No consensus required for state transitions
+	- **Lightning integration**: RGB contracts compatible with Lightning channels
+- **Development Status**: Mainnet beta launched Q4 2024, growing developer adoption
+- **Implementations**: [[RGB-Node]], [[RGB-Core]], [[Bitlight-Wallet]]
+</code></pre>
+</li>
+<li>
+<h3 id="3-liquid-network-institutional-bitcoin-l2">3. Liquid Network (Institutional Bitcoin L2)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-liquid-network-institutional-bitcoin-l2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Purpose**: Fast, confidential Bitcoin transactions for exchanges and institutions
+- **Consensus**: [[Strong-Federation]] of 15 [[functionaries]] (Blockstream, exchanges, financial institutions)
+- **Features**:
+	- **[[Confidential-Transactions]]**: Blinded amounts using [[Pedersen-commitments]]
+	- **[[Issued-Assets]]**: Create tokens on Liquid (USDT has $100M+ on Liquid)
+	- **2-minute blocks**: 30x faster than Bitcoin
+	- **[[Atomic-Swaps]]**: Trustless trades between L-BTC and Liquid assets
+- **Statistics (Q1 2025)**:
+	- **$280 million** in L-BTC (pegged Bitcoin)
+	- **$150 million** in Tether (USDt) on Liquid
+	- **45,000** transactions per month
+- **Use Cases**: Exchange settlements, OTC trading, tokenized securities
+- **Trade-off**: Centralized federation vs Lightning's decentralization
+</code></pre>
+</li>
+<li>
+<h3 id="4-stacks-bitcoin-smart-contract-layer">4. Stacks (Bitcoin Smart Contract Layer)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-stacks-bitcoin-smart-contract-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Architecture**: Separate blockchain that settles to Bitcoin via [[Proof-of-Transfer]] (PoX)
+- **[[Clarity]] Language**: Decidable smart contract language (knows outcomes before execution)
+- **Bitcoin Integration**:
+	- All Stacks blocks hash to Bitcoin blockchain
+	- [[sBTC]]: Decentralized Bitcoin peg (launching Q2 2025)
+	- Bitcoin can trigger Stacks contracts ([[Bitcoin-Triggers]])
+- **Statistics (Q1 2025)**:
+	- **$140 million TVL** (post-sBTC launch estimate)
+	- **300+ dApps** including [[ALEX]], [[Arkadiko]], [[Gamma]]
+	- **$180 million** market cap of STX token
+- **Use Cases**: [[DeFi]], [[NFTs]] ([[Bitcoin-Ordinals]] integration), [[DAOs]]
+- **[[Nakamoto-Release]]** (2024): 5-second block times, 100% Bitcoin finality
+</code></pre>
+</li>
+<li>
+<h3 id="5-rootstock-rsk---bitcoin-evm-sidechain">5. Rootstock (RSK) - Bitcoin EVM Sidechain<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-rootstock-rsk---bitcoin-evm-sidechain" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Architecture**: Merged-mined sidechain with [[EVM]] compatibility
+- **Security**: Secured by ~45% of Bitcoin hashrate through merge-mining
+- **[[Powpeg]]**: Hybrid custody using Bitcoin full nodes + [[HSMs]]
+- **Statistics**: $110M TVL, 2,500 daily active users
+- **Use Cases**: Port Ethereum dApps to Bitcoin ecosystem
+- **Challenges**: Lower adoption compared to Ethereum L2s
+</code></pre>
+</li>
+<li>
+<h3 id="6-emerging-bitcoin-l2-solutions">6. Emerging Bitcoin L2 Solutions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-emerging-bitcoin-l2-solutions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[[BitVM]]**: Enable arbitrary computation on Bitcoin using fraud proofs (theoretical framework, in research)
+- **[[Ark]]**: [[Virtual-UTXO]] protocol for scalable, privacy-preserving payments
+- **[[Fedimint]]**: [[Chaumian-e-cash]] federations for community banks on Bitcoin
+- **[[Nomic]]**: Decentralized Bitcoin bridge to [[Cosmos]] ecosystem
+- **[[Threshold-Network]]**: Decentralized bridge bringing Bitcoin to Ethereum (tBTC)
+- **[[Rollkit]]**: Sovereign rollups using Bitcoin for data availability
+</code></pre>
+</li>
+<li>
+<h3 id="bitcoin-l2-comparison-matrix">Bitcoin L2 Comparison Matrix<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bitcoin-l2-comparison-matrix" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Lightning**: Best for payments, high decentralization, requires liquidity management
+- **RGB**: Best for smart contracts and privacy, experimental stage
+- **Liquid**: Best for institutions, fast settlement, centralized federation
+- **Stacks**: Best for DeFi/NFTs, established ecosystem, indirect Bitcoin security
+- **Rootstock**: Best for EVM compatibility, moderate adoption
+</code></pre>
+</li>
+<li>
+<h2 id="layer-2-performance-metrics--benchmarks">Layer 2 Performance Metrics &amp; Benchmarks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-2-performance-metrics--benchmarks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="throughput-comparison-transactions-per-second">Throughput Comparison (Transactions Per Second)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#throughput-comparison-transactions-per-second" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Ethereum L1**: 15-30 TPS
+- **Bitcoin L1**: 7 TPS
+- **[[Arbitrum]]**: 4,000 TPS (theoretical), 40-50 TPS (current)
+- **[[Optimism]]**: 2,000 TPS (theoretical), 30-40 TPS (current)
+- **[[zkSync-Era]]**: 2,000+ TPS
+- **[[Starknet]]**: 10,000+ TPS (with recursive proofs)
+- **[[Polygon-zkEVM]]**: 2,000 TPS
+- **[[Lightning-Network]]**: Unlimited TPS (within channels), 10,000+ TPS (network-wide)
+- **[[Liquid-Network]]**: 140 TPS (2-minute blocks)
+</code></pre>
+</li>
+<li>
+<h3 id="transaction-cost-comparison-usd-q1-2025">Transaction Cost Comparison (USD, Q1 2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#transaction-cost-comparison-usd-q1-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Ethereum L1**: $3-25 (simple transfer), $50-200 (complex DeFi)
+- **Bitcoin L1**: $1-5 (standard priority)
+- **Arbitrum**: $0.10-0.30
+- **Optimism/Base**: $0.05-0.20
+- **zkSync Era**: $0.15-0.40
+- **Starknet**: $0.02-0.10 (lowest among zkEVMs)
+- **Polygon zkEVM**: $0.08-0.25
+- **Lightning Network**: $0.001-0.01 (sub-cent routing fees)
+- **Liquid Network**: $0.10-0.20
+</code></pre>
+</li>
+<li>
+<h3 id="finality-time-comparison">Finality Time Comparison<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#finality-time-comparison" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Ethereum L1**: 12-15 minutes (2 epochs)
+- **Bitcoin L1**: 60 minutes (6 confirmations)
+- **Optimistic Rollups (soft)**: 1-2 seconds (sequencer confirmation)
+- **Optimistic Rollups (hard)**: 7 days (fraud proof window)
+- **ZK-Rollups (soft)**: 1-2 seconds (sequencer)
+- **ZK-Rollups (hard)**: 15 minutes - 2 hours (proof generation + L1 verification)
+- **Lightning Network**: &lt;1 second (instant settlement within channel)
+- **Liquid Network**: 2 minutes (block time)
+- **Stacks**: 5 seconds (Nakamoto upgrade), anchored to Bitcoin every ~10 minutes
+</code></pre>
+</li>
+<li>
+<h3 id="withdrawal-time-l2--l1">Withdrawal Time (L2 → L1)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#withdrawal-time-l2--l1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Optimistic Rollups**: 7 days (challenge period)
+- **ZK-Rollups**: 15 minutes - 4 hours (proof generation time)
+- **Lightning**: 1-2 hours (cooperative close) or 1-2 weeks (force close with timelock)
+- **Liquid**: 2 hours - 24 hours (federation signature collection)
+- **Polygon PoS**: 3 hours (checkpoint finality)
+</code></pre>
+</li>
+<li>
+<h3 id="security-score-derived-from-l2beatcom">Security Score (Derived from L2Beat.com)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#security-score-derived-from-l2beatcom" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Stage 2 Rollups** (Full L1 security): None yet (as of Q1 2025)
+- **Stage 1 Rollups** (Fraud/validity proofs live, some training wheels): [[zkSync-Era]], [[Starknet]]
+- **Stage 0 Rollups** (Proofs in development): [[Arbitrum]], [[Optimism]], [[Base]]
+- **Sidechains** (Independent security): [[Polygon-PoS]], [[Gnosis]], [[Liquid]], [[Rootstock]]
+- **State Channels** (Cryptoeconomic security): [[Lightning-Network]]
+</code></pre>
+</li>
+<li>
+<h2 id="layer-1-vs-layer-2-trade-offs">Layer 1 vs Layer 2 Trade-Offs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-1-vs-layer-2-trade-offs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="security">Security<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#security" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **L1 Advantages**: Direct consensus validation, battle-tested security, no additional trust assumptions
+- **L2 Trade-offs**: Rollups inherit L1 security but add sequencer and bridge risks; sidechains have independent security
+- **Risk Vectors**: [[sequencer-censorship]], [[bridge-hacks]], [[smart-contract-bugs]], [[centralized-operators]]
+</code></pre>
+</li>
+<li>
+<h3 id="decentralization">Decentralization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#decentralization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **L1**: Thousands of independent nodes (Ethereum: 7,000+, Bitcoin: 15,000+)
+- **L2 Current State**: Most L2s have centralized sequencers (single point of failure/censorship)
+- **L2 Roadmap**: [[decentralized-sequencers]] (Metis launched Q4 2024), [[shared-sequencers]] ([[Astria]], [[Espresso]])
+</code></pre>
+</li>
+<li>
+<h3 id="speed--user-experience">Speed &amp; User Experience<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#speed--user-experience" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **L1 Limitations**: 10-15 second block times (Ethereum), 10-minute blocks (Bitcoin), frequent congestion
+- **L2 Benefits**: Sub-second confirmations, instant feedback, consistent performance
+</code></pre>
+</li>
+<li>
+<h3 id="cost-efficiency">Cost Efficiency<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cost-efficiency" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **L1**: High costs during demand spikes (NFT mints, DeFi volatility)
+- **L2**: 90-99.9% cost reduction by amortizing L1 verification across hundreds of transactions
+</code></pre>
+</li>
+<li>
+<h3 id="composability">Composability<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#composability" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **L1 Advantages**: Atomic composability - all dApps can interact within single transaction
+- **L2 Challenges**: Cross-L2 composability requires bridges, breaking atomic execution
+- **Emerging Solutions**: [[shared-sequencers]], [[cross-L2-messaging]] ([[LayerZero]], [[Chainlink-CCIP]])
+</code></pre>
+</li>
+<li>
+<h3 id="censorship-resistance">Censorship Resistance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#censorship-resistance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **L1**: Maximum censorship resistance (anyone can submit transaction via P2P network)
+- **L2**: Sequencer can censor/reorder transactions; forced inclusion mechanisms mitigate this
+- **Fallback**: All L2s must provide &quot;escape hatch&quot; to withdraw directly from L1 contract
+</code></pre>
+</li>
+<li>
+<h2 id="bridges--cross-chain-interoperability">Bridges &amp; Cross-Chain Interoperability<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bridges--cross-chain-interoperability" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="bridge-architectures">Bridge Architectures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bridge-architectures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- #### Canonical Bridges (Native L2 Bridges)
+	- **Design**: Deployed by L2 team, tightly integrated with L2 protocol
+	- **Security**: Inherits L2's security model (fraud proofs or validity proofs)
+	- **Examples**: [[Arbitrum-Bridge]], [[Optimism-Bridge]], [[zkSync-Bridge]]
+	- **Advantages**: Most secure, official support, aligned incentives
+	- **Disadvantages**: Slow withdrawals (7 days for Optimistic Rollups), limited to single L2
+- #### Third-Party Bridges
+	- **Design**: Independent protocols connecting multiple chains
+	- **Security Models**:
+		- **[[Lock-and-Mint]]**: Lock asset on source chain, mint wrapped version on destination
+		- **[[Liquidity-Networks]]**: Use liquidity pools on both chains for instant swaps
+		- **[[Optimistic-Bridges]]**: Use fraud proofs to verify cross-chain messages
+		- **[[Light-Client-Bridges]]**: Verify source chain headers on destination
+	- **Examples**: [[Hop-Protocol]], [[Across-Protocol]], [[Stargate]], [[Synapse]]
+	- **Advantages**: Fast withdrawals (minutes), multi-chain support, better UX
+	- **Disadvantages**: Additional trust assumptions, smart contract risk, [[bridge-hacks]] ($2.5B stolen in 2022)
+- #### Token Bridges vs Message Bridges
+	- **Token Bridges**: Transfer only assets (ERC-20, NFTs)
+	- **Message Bridges**: Pass arbitrary data enabling [[cross-chain-smart-contracts]]
+	- **Leading Message Bridges**: [[LayerZero]], [[Chainlink-CCIP]], [[Axelar]], [[Wormhole]]
+</code></pre>
+</li>
+<li>
+<h3 id="bridge-security-incidents--lessons">Bridge Security Incidents &amp; Lessons<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bridge-security-incidents--lessons" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Ronin Bridge** (2022): $625M stolen via compromised validator keys
+- **Wormhole** (2022): $320M exploit in signature verification
+- **Nomad Bridge** (2022): $190M drained due to implementation bug
+- **Key Lessons**: Bridges are critical attack vectors; prefer canonical bridges or battle-tested third-party options
+</code></pre>
+</li>
+<li>
+<h3 id="cross-l2-communication-protocols">Cross-L2 Communication Protocols<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-l2-communication-protocols" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[[Superchain]]** (Optimism): Shared [[OP-Stack]] enables native interoperability
+- **[[AggLayer]]** (Polygon): Unified liquidity and state across Polygon chains
+- **[[shared-sequencers]]**: [[Astria]], [[Espresso]] enable atomic cross-L2 transactions
+- **[[intent-based-protocols]]**: [[Anoma]], [[SUAVE]] abstract cross-chain complexity
+</code></pre>
+</li>
+<li>
+<h2 id="2025-layer-2-statistics--market-data">2025 Layer 2 Statistics &amp; Market Data<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2025-layer-2-statistics--market-data" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="ethereum-l2-ecosystem-metrics">Ethereum L2 Ecosystem Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ethereum-l2-ecosystem-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Total Value Locked**: $12.4 billion across all L2s
+- **Daily Active Addresses**: 4.2 million (vs 400K on Ethereum L1)
+- **Daily Transaction Volume**: 8.5 million transactions
+- **Transaction Cost Savings**: $4.2 billion saved vs L1 fees (2024 estimate)
+- **L2 as % of Ethereum Activity**: 87% of transactions, 23% of economic value
+</code></pre>
+</li>
+<li>
+<h3 id="bitcoin-l2-ecosystem-metrics">Bitcoin L2 Ecosystem Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bitcoin-l2-ecosystem-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Lightning Network Capacity**: $310 million
+- **Lightning Active Nodes**: 15,432
+- **Lightning Payment Channels**: 48,200
+- **Liquid Network L-BTC**: $280 million
+- **Stacks TVL**: $140 million (post-sBTC estimate)
+- **Rootstock TVL**: $110 million
+</code></pre>
+</li>
+<li>
+<h3 id="top-l2s-by-transaction-count-daily-q1-2025">Top L2s by Transaction Count (Daily, Q1 2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#top-l2s-by-transaction-count-daily-q1-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Base**: 3.2M transactions/day (consumer apps)
+- **Arbitrum**: 1.8M transactions/day
+- **Optimism**: 850K transactions/day
+- **Polygon zkEVM**: 420K transactions/day
+- **zkSync Era**: 380K transactions/day
+</code></pre>
+</li>
+<li>
+<h3 id="institutional-adoption-indicators">Institutional Adoption Indicators<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#institutional-adoption-indicators" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[[Coinbase]]**: Launched Base L2, onboarding mainstream users
+- **[[Visa]]**: Piloting stablecoin settlements on Ethereum L2s
+- **[[PayPal]]**: PYUSD stablecoin deployed on Base and Ethereum
+- **[[Sony]]**: Building [[Soneium]] L2 for gaming and entertainment
+- **[[Kraken]]**: Lightning Network integration for Bitcoin withdrawals
+</code></pre>
+</li>
+<li>
+<h3 id="developer-activity-github-commits-2024">Developer Activity (GitHub Commits, 2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#developer-activity-github-commits-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Arbitrum**: 12,400 commits
+- **Optimism/OP-Stack**: 18,200 commits (modular framework activity)
+- **zkSync**: 8,600 commits
+- **Starknet**: 7,300 commits
+- **Lightning Network**: 5,800 commits (across implementations)
+</code></pre>
+</li>
+</ul>
+<h4 id="future-directions">Future Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<h3 id="1-layer-3-and-application-specific-chains">1. Layer 3 and Application-Specific Chains<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-layer-3-and-application-specific-chains" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Definition**: L3 protocols built on top of L2s, inheriting security while adding customization
+- **Use Cases**:
+	- **Gaming**: Custom gas tokens, instant finality, high throughput
+	- **Enterprise**: Permissioned execution with public settlement
+	- **Privacy**: App-specific privacy guarantees
+- **Frameworks**:
+	- **[[Arbitrum-Orbit]]**: Customizable L3s on Arbitrum (Xai for gaming, Proof-of-Play)
+	- **[[OP-Stack]]**: Modular L3s with alternative DA layers
+	- **[[zkSync-Hyperchains]]**: ZK-powered L3s with unified liquidity
+- **Architecture**: L3 posts to L2, L2 posts to L1 (recursive security)
+</code></pre>
+</li>
+<li>
+<h3 id="2-decentralized-sequencers">2. Decentralized Sequencers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-decentralized-sequencers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Current Problem**: Most L2s have single centralized sequencer (censorship risk, downtime)
+- **Solutions in Development**:
+	- **[[Metis]]**: Sequencer rotation among decentralized pool
+	- **[[Taiko]]**: Based sequencing (Ethereum validators sequence L2 blocks)
+	- **[[Astria]]**: Shared decentralized sequencer for multiple rollups
+	- **[[Espresso]]**: Decentralized sequencer with [[HotShot]] consensus
+- **Benefits**: Censorship resistance, liveness guarantees, credible neutrality
+</code></pre>
+</li>
+<li>
+<h3 id="3-shared-sequencers--atomic-cross-l2">3. Shared Sequencers &amp; Atomic Cross-L2<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-shared-sequencers--atomic-cross-l2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Vision**: Single sequencer network ordering transactions for multiple L2s
+- **Benefits**: Atomic cross-L2 transactions, unified liquidity, simplified UX
+- **Projects**: [[Astria]], [[Espresso]], [[Radius]]
+</code></pre>
+</li>
+<li>
+<h3 id="4-data-availability-innovations">4. Data Availability Innovations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-data-availability-innovations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Problem**: Posting rollup data to Ethereum L1 is expensive ($0.01-0.05 per transaction)
+- **Solutions**:
+	- **[[EIP-4844]]** (Proto-Danksharding): Introduced &quot;blob&quot; transactions, 10x cheaper DA (launched March 2024)
+	- **[[Danksharding]]**: Full sharding with 16MB/block DA (2025-2026)
+	- **[[EigenDA]]**: Off-chain DA secured by [[EigenLayer]] restaking (used by Mantle)
+	- **[[Celestia]]**: Modular DA layer for rollups (150+ integrations)
+	- **[[Avail]]**: Standalone DA network with [[validity-proofs]]
+- **Impact**: 100x cost reduction enabling sub-cent transactions
+</code></pre>
+</li>
+<li>
+<h3 id="5-zk-evm-maturity--equivalence-ladder">5. ZK-EVM Maturity &amp; Equivalence Ladder<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-zk-evm-maturity--equivalence-ladder" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Type 1** (Fully Ethereum-equivalent): [[Taiko]], [[Scroll]] - can verify Ethereum blocks
+- **Type 2** (EVM-equivalent): [[Polygon-zkEVM]], [[Linea]] - equivalent at bytecode level
+- **Type 3** (Almost EVM-equivalent): Minor modifications to enable efficient proving
+- **Type 4** (High-level language equivalent): [[zkSync-Era]], [[Starknet]] - compile Solidity to custom VM
+- **Trend**: Convergence toward Type 1-2 for maximum compatibility
+</code></pre>
+</li>
+<li>
+<h3 id="6-account-abstraction-at-l2-scale">6. Account Abstraction at L2 Scale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-account-abstraction-at-l2-scale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[[ERC-4337]]**: Standard for [[smart-contract-wallets]] deployed on Ethereum L1
+- **Native AA**: zkSync Era, Starknet have account abstraction built into protocol
+- **Use Cases**: [[social-recovery]], [[gasless-transactions]], [[multi-sig]] as default, [[session-keys]]
+- **Adoption**: Base, Arbitrum, Optimism all support ERC-4337 infrastructure
+</code></pre>
+</li>
+<li>
+<h3 id="7-bitcoin-l2-renaissance">7. Bitcoin L2 Renaissance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-bitcoin-l2-renaissance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Drivers**: [[Ordinals]] and [[BRC-20]] showed demand for Bitcoin blockspace beyond payments
+- **Innovations**:
+	- **[[BitVM]]**: Enable complex contracts with fraud proofs (theoretical, in research)
+	- **[[OP_CAT]] restoration**: Enable covenants and enhanced smart contracts
+	- **[[Covenant-opcodes]]**: BIP-119 ([[CHECKTEMPLATEVERIFY]]), BIP-118 ([[SIGHASH_ANYPREVOUT]])
+	- **RGB + Lightning**: Combine smart contracts with payment channels
+- **Vision**: Bitcoin as settlement layer for diverse L2 ecosystem (payments, DeFi, NFTs, governance)
+</code></pre>
+</li>
+<li>
+<h3 id="8-regulatory--compliance-l2s">8. Regulatory &amp; Compliance L2s<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-regulatory--compliance-l2s" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Trend**: Institutions require KYC, compliance without sacrificing performance
+- **Approaches**:
+	- **Permissioned L2s**: Whitelisted participants on private chains
+	- **[[zk-KYC]]**: Prove compliance without revealing identity
+	- **[[Compliance-Oracles]]**: On-chain verification of off-chain credentials
+- **Projects**: [[Liquid]] (for institutions), custom Orbit/OP-Stack chains
+</code></pre>
+</li>
+<li>
+<h3 id="9-rollup-as-a-service-raas">9. Rollup-as-a-Service (RaaS)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-rollup-as-a-service-raas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Vision**: No-code deployment of custom L2s for specific applications
+- **Providers**:
+	- **[[Caldera]]**: Arbitrum/OP-Stack rollups with custom DA
+	- **[[Conduit]]**: Managed OP-Stack rollups (powers Base infrastructure)
+	- **[[Gelato]]**: Web3 Functions + RaaS for automated L2s
+	- **[[AltLayer]]**: Restaked rollups with [[EigenLayer]] security
+- **Use Cases**: Gaming studios, enterprises, DAOs launching custom chains
+</code></pre>
+</li>
+<li>
+<h3 id="10-ai--l2-convergence">10. AI + L2 Convergence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-ai--l2-convergence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[[on-chain-AI]]**: L2s provide cheap computation for [[AI-inference]] and [[zkML]] (zero-knowledge machine learning)
+- **[[zkML]]**: Prove AI model executed correctly without revealing model or data
+- **Projects**: [[Giza]] (zkML), [[EZKL]] (ZK for neural networks), [[Modulus-Labs]]
+- **Vision**: Decentralized AI models verified on rollups
+</code></pre>
+</li>
+<li>
+<h2 id="technical-challenges--research-frontiers">Technical Challenges &amp; Research Frontiers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#technical-challenges--research-frontiers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="1-mev-maximal-extractable-value-on-l2">1. MEV (Maximal Extractable Value) on L2<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-mev-maximal-extractable-value-on-l2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Problem**: Sequencers can extract MEV by reordering transactions
+- **Solutions**: [[encrypted-mempools]], [[Fair-Sequencing-Service]], [[threshold-encryption]]
+- **Projects**: [[Flashbots-SUAVE]], [[Chainlink-FSS]]
+</code></pre>
+</li>
+<li>
+<h3 id="2-prover-decentralization">2. Prover Decentralization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-prover-decentralization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Problem**: ZK-Rollups currently rely on centralized provers (high compute requirements)
+- **Solutions**: [[distributed-proving]], [[proof-markets]], [[FPGA-acceleration]], [[GPU-proving]]
+- **Projects**: [[RISC-Zero]], [[=nil; Foundation]], [[Polygon-Hermez]] prover network
+</code></pre>
+</li>
+<li>
+<h3 id="3-cross-l2-liquidity-fragmentation">3. Cross-L2 Liquidity Fragmentation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-cross-l2-liquidity-fragmentation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Problem**: Each L2 fragments liquidity, harming DeFi efficiency
+- **Solutions**: [[shared-liquidity-layers]], [[intent-solvers]], [[cross-chain-AMMs]]
+- **Projects**: [[Polygon-AggLayer]], [[Optimism-Superchain]], [[Chainlink-CCIP]]
+</code></pre>
+</li>
+<li>
+<h3 id="4-proof-recursion--aggregation">4. Proof Recursion &amp; Aggregation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-proof-recursion--aggregation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Concept**: Generate proof that verifies multiple other proofs
+- **Benefits**: Verify 1000s of L2s in single L1 transaction
+- **Implementations**: [[Starknet-recursive-proofs]], [[Polygon-proof-aggregation]], [[zkSync-proof-compression]]
+</code></pre>
+</li>
+<li>
+<h3 id="5-data-availability-sampling">5. Data Availability Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-data-availability-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **Concept**: Light clients verify data availability without downloading full data
+- **Technology**: [[DAS]] (Data Availability Sampling) with [[KZG-commitments]]
+- **Implementations**: Ethereum Danksharding, [[Celestia]]
+</code></pre>
+</li>
+<li>
+<h2 id="ecosystem-tools--infrastructure">Ecosystem Tools &amp; Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ecosystem-tools--infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="l2-aggregators--bridges">L2 Aggregators &amp; Bridges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l2-aggregators--bridges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[[Jumper.exchange]]**: Meta-aggregator for cross-chain swaps
+- **[[Bungee]]**: Bridge aggregator comparing routes
+- **[[Orbiter-Finance]]**: Fast L2-to-L2 transfers
+- **[[Hop-Protocol]]**: AMM-based cross-rollup bridge
+- **[[Across-Protocol]]**: Optimistic bridge with instant transfers
+</code></pre>
+</li>
+<li>
+<h3 id="l2-data--analytics">L2 Data &amp; Analytics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l2-data--analytics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[[L2Beat]]**: Comprehensive L2 risk analysis and TVL tracking
+- **[[DeFiLlama]]**: Multi-chain TVL and protocol analytics
+- **[[Dune-Analytics]]**: Community dashboards for L2 metrics
+- **[[Growthepie]]**: L2 fundamental analysis and comparisons
+- **[[Token-Terminal]]**: L2 revenue and financial metrics
+</code></pre>
+</li>
+<li>
+<h3 id="developer-tools">Developer Tools<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#developer-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[[Hardhat]]**: Ethereum development environment with L2 plugins
+- **[[Foundry]]**: Fast Solidity framework with L2 fork testing
+- **[[thirdweb]]**: Full-stack web3 development with L2 SDKs
+- **[[scaffold-eth]]**: Rapid prototyping for L2 dApps
+- **[[Alchemy]]**: Node infrastructure for 15+ L2s
+- **[[QuickNode]]**: Multi-chain RPC with L2 support
+</code></pre>
+</li>
+<li>
+<h3 id="l2-wallets">L2 Wallets<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l2-wallets" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- **[[MetaMask]]**: Leading browser wallet with auto-network detection
+- **[[Rainbow-Wallet]]**: Mobile-first with seamless L2 bridging
+- **[[Rabby]]**: Multi-chain wallet with L2 transaction simulation
+- **[[Argent]]**: Smart contract wallet with zkSync integration
+- **[[Braavos]]**: Starknet-native wallet with account abstraction
+</code></pre>
+</li>
+</ul>
+<h4 id="related-concepts">Related Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><strong>Core Infrastructure</strong>: <a href="../Layer1" class="internal" data-slug="Layer1">Layer1</a>, <a href="../pages/Ethereum-Smart-Contract-Platform" class="internal alias" data-slug="pages/Ethereum-Smart-Contract-Platform">Ethereum Smart Contract Platform</a>, <a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal alias" data-slug="pages/Bitcoin-Proof-of-Work-Protocol">Bitcoin Proof-of-Work Protocol</a>, <a href="../pages/Consensus-Mechanisms" class="internal" data-slug="pages/Consensus-Mechanisms">Consensus-Mechanisms</a>, <a href="../Blockchain-Trilemma" class="internal" data-slug="Blockchain-Trilemma">Blockchain-Trilemma</a></p>
+</li>
+<li>
+<p><strong>Scaling Technologies</strong>: <a href="../pages/Rollup" class="internal" data-slug="pages/Rollup">Rollup</a>, <a href="../StateChannel" class="internal" data-slug="StateChannel">StateChannel</a>, <a href="../pages/Sidechain" class="internal" data-slug="pages/Sidechain">Sidechain</a>, <a href="../pages/Plasma" class="internal" data-slug="pages/Plasma">Plasma</a>, <a href="../Validium" class="internal" data-slug="Validium">Validium</a>, <a href="../Volition" class="internal" data-slug="Volition">Volition</a></p>
+</li>
+<li>
+<p><strong>Proof Systems</strong>: <a href="../fraud-proofs" class="internal" data-slug="fraud-proofs">fraud-proofs</a>, <a href="../validity-proofs" class="internal" data-slug="validity-proofs">validity-proofs</a>, <a href="../zkSNARK" class="internal" data-slug="zkSNARK">zkSNARK</a>, <a href="../zkSTARK" class="internal" data-slug="zkSTARK">zkSTARK</a>, <a href="../pages/PLONK" class="internal" data-slug="pages/PLONK">PLONK</a>, <a href="../pages/Groth16" class="internal" data-slug="pages/Groth16">Groth16</a></p>
+</li>
+<li>
+<p><strong>Cross-Chain</strong>: <a href="../pages/Bridge" class="internal" data-slug="pages/Bridge">Bridge</a>, <a href="../cross-chain-messaging" class="internal" data-slug="cross-chain-messaging">cross-chain-messaging</a>, <a href="../pages/LayerZero" class="internal" data-slug="pages/LayerZero">LayerZero</a>, <a href="../pages/Chainlink-CCIP" class="internal" data-slug="pages/Chainlink-CCIP">Chainlink-CCIP</a>, <a href="../pages/Wormhole" class="internal" data-slug="pages/Wormhole">Wormhole</a></p>
+</li>
+<li>
+<p><strong>Bitcoin L2</strong>: <a href="../pages/Lightning-Network" class="internal" data-slug="pages/Lightning-Network">Lightning-Network</a>, <a href="../pages/RGB-Protocol" class="internal" data-slug="pages/RGB-Protocol">RGB-Protocol</a>, <a href="../pages/Liquid-Network" class="internal" data-slug="pages/Liquid-Network">Liquid-Network</a>, <a href="../pages/Stacks" class="internal" data-slug="pages/Stacks">Stacks</a>, <a href="../pages/Rootstock" class="internal" data-slug="pages/Rootstock">Rootstock</a></p>
+</li>
+<li>
+<p><strong>Ethereum L2</strong>: <a href="../pages/Arbitrum" class="internal" data-slug="pages/Arbitrum">Arbitrum</a>, <a href="../pages/Optimism" class="internal" data-slug="pages/Optimism">Optimism</a>, <a href="../pages/Base" class="internal" data-slug="pages/Base">Base</a>, <a href="../zkSync-Era" class="internal" data-slug="zkSync-Era">zkSync-Era</a>, <a href="../pages/Starknet" class="internal" data-slug="pages/Starknet">Starknet</a>, <a href="../Polygon-zkEVM" class="internal" data-slug="Polygon-zkEVM">Polygon-zkEVM</a></p>
+</li>
+<li>
+<p><strong>Advanced Concepts</strong>: <a href="../pages/Data-Availability" class="internal" data-slug="pages/Data-Availability">Data-Availability</a>, <a href="../pages/Sequencer" class="internal" data-slug="pages/Sequencer">Sequencer</a>, <a href="../shared-sequencers" class="internal" data-slug="shared-sequencers">shared-sequencers</a>, <a href="../account-abstraction" class="internal" data-slug="account-abstraction">account-abstraction</a>, <a href="../pages/MEV" class="internal" data-slug="pages/MEV">MEV</a></p>
+</li>
+<li>
+<p><strong>Future Tech</strong>: <a href="../Layer3" class="internal" data-slug="Layer3">Layer3</a>, <a href="../pages/Danksharding" class="internal" data-slug="pages/Danksharding">Danksharding</a>, <a href="../pages/EIP-4844" class="internal" data-slug="pages/EIP-4844">EIP-4844</a>, <a href="../zkEVM" class="internal" data-slug="zkEVM">zkEVM</a>, <a href="../pages/BitVM" class="internal" data-slug="pages/BitVM">BitVM</a>, <a href="../OP-Stack" class="internal" data-slug="OP-Stack">OP-Stack</a></p>
+</li>
+<li>
+<p><strong>Security</strong>: <a href="../bridge-security" class="internal" data-slug="bridge-security">bridge-security</a>, <a href="../sequencer-censorship" class="internal" data-slug="sequencer-censorship">sequencer-censorship</a>, <a href="../fraud-proof-games" class="internal" data-slug="fraud-proof-games">fraud-proof-games</a>, <a href="../escape-hatches" class="internal" data-slug="escape-hatches">escape-hatches</a></p>
+</li>
+<li>
+<p><strong>Standards</strong>: <a href="../pages/ERC-4337" class="internal" data-slug="pages/ERC-4337">ERC-4337</a>, <a href="../pages/BOLT" class="internal" data-slug="pages/BOLT">BOLT</a>, <a href="../OP-Stack" class="internal" data-slug="OP-Stack">OP-Stack</a>, <a href="../Arbitrum-Orbit" class="internal" data-slug="Arbitrum-Orbit">Arbitrum-Orbit</a>, <a href="../Cairo" class="internal" data-slug="Cairo">Cairo</a>, <a href="../pages/Clarity" class="internal" data-slug="pages/Clarity">Clarity</a></p>
+</li>
+<li>
+<h2 id="key-resources--documentation">Key Resources &amp; Documentation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-resources--documentation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Ethereum L2 Research</strong>: <a href="https://l2beat.com" class="external">L2Beat.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://ethereum.org/en/layer-2/" class="external">Ethereum.org/L2<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>Arbitrum</strong>: <a href="https://docs.arbitrum.io" class="external">docs.arbitrum.io<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>Optimism</strong>: <a href="https://docs.optimism.io" class="external">docs.optimism.io<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://specs.optimism.io" class="external">OP-Stack specs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>zkSync</strong>: <a href="https://docs.zksync.io" class="external">docs.zksync.io<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>Starknet</strong>: <a href="https://docs.starknet.io" class="external">docs.starknet.io<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://book.cairo-lang.org" class="external">Cairo book<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>Lightning Network</strong>: <a href="https://lightning.network" class="external">lightning.network<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://github.com/lightning/bolts" class="external">BOLT specs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>RGB Protocol</strong>: <a href="https://rgb.tech" class="external">rgb.tech<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>Stacks</strong>: <a href="https://docs.stacks.co" class="external">docs.stacks.co<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>Academic</strong>: <a href="https://l2beat.com/scaling/summary" class="external">L2Beat Risk Framework<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://vitalik.ca/general/2021/01/05/rollup.html" class="external">Vitalik’s Rollup Guide<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-3270" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#layer-2-definition--core-architecture" data-for="layer-2-definition--core-architecture">Layer 2 Definition &amp; Core Architecture</a></li><li class="depth-1"><a href="#fundamental-architecture-principles" data-for="fundamental-architecture-principles">Fundamental Architecture Principles</a></li><li class="depth-1"><a href="#why-layer-2-solutions-are-essential" data-for="why-layer-2-solutions-are-essential">Why Layer 2 Solutions Are Essential</a></li><li class="depth-1"><a href="#layer-2-vs-layer-1-fundamental-differences" data-for="layer-2-vs-layer-1-fundamental-differences">Layer 2 vs Layer 1 Fundamental Differences</a></li><li class="depth-0"><a href="#layer-2-categories--technical-approaches" data-for="layer-2-categories--technical-approaches">Layer 2 Categories &amp; Technical Approaches</a></li><li class="depth-1"><a href="#1-rollups-most-secure--popular" data-for="1-rollups-most-secure--popular">1. Rollups (Most Secure &amp; Popular)</a></li><li class="depth-1"><a href="#2-state-channels" data-for="2-state-channels">2. State Channels</a></li><li class="depth-1"><a href="#3-sidechains" data-for="3-sidechains">3. Sidechains</a></li><li class="depth-1"><a href="#4-plasma" data-for="4-plasma">4. Plasma</a></li><li class="depth-1"><a href="#5-validium" data-for="5-validium">5. Validium</a></li><li class="depth-0"><a href="#ethereum-layer-2-ecosystem-2025-landscape" data-for="ethereum-layer-2-ecosystem-2025-landscape">Ethereum Layer 2 Ecosystem (2025 Landscape)</a></li><li class="depth-1"><a href="#market-overview--adoption-metrics" data-for="market-overview--adoption-metrics">Market Overview &amp; Adoption Metrics</a></li><li class="depth-1"><a href="#top-ethereum-l2s-by-tvl-q1-2025" data-for="top-ethereum-l2s-by-tvl-q1-2025">Top Ethereum L2s by TVL (Q1 2025)</a></li><li class="depth-1"><a href="#emerging-ethereum-l2-technologies" data-for="emerging-ethereum-l2-technologies">Emerging Ethereum L2 Technologies</a></li><li class="depth-0"><a href="#bitcoin-layer-2-ecosystem-2025-landscape" data-for="bitcoin-layer-2-ecosystem-2025-landscape">Bitcoin Layer 2 Ecosystem (2025 Landscape)</a></li><li class="depth-1"><a href="#bitcoin-l2-landscape-overview" data-for="bitcoin-l2-landscape-overview">Bitcoin L2 Landscape Overview</a></li><li class="depth-1"><a href="#1-lightning-network-premier-bitcoin-l2" data-for="1-lightning-network-premier-bitcoin-l2">1. Lightning Network (Premier Bitcoin L2)</a></li><li class="depth-1"><a href="#2-rgb-protocol-bitcoin-smart-contracts" data-for="2-rgb-protocol-bitcoin-smart-contracts">2. RGB Protocol (Bitcoin Smart Contracts)</a></li><li class="depth-1"><a href="#3-liquid-network-institutional-bitcoin-l2" data-for="3-liquid-network-institutional-bitcoin-l2">3. Liquid Network (Institutional Bitcoin L2)</a></li><li class="depth-1"><a href="#4-stacks-bitcoin-smart-contract-layer" data-for="4-stacks-bitcoin-smart-contract-layer">4. Stacks (Bitcoin Smart Contract Layer)</a></li><li class="depth-1"><a href="#5-rootstock-rsk---bitcoin-evm-sidechain" data-for="5-rootstock-rsk---bitcoin-evm-sidechain">5. Rootstock (RSK) - Bitcoin EVM Sidechain</a></li><li class="depth-1"><a href="#6-emerging-bitcoin-l2-solutions" data-for="6-emerging-bitcoin-l2-solutions">6. Emerging Bitcoin L2 Solutions</a></li><li class="depth-1"><a href="#bitcoin-l2-comparison-matrix" data-for="bitcoin-l2-comparison-matrix">Bitcoin L2 Comparison Matrix</a></li><li class="depth-0"><a href="#layer-2-performance-metrics--benchmarks" data-for="layer-2-performance-metrics--benchmarks">Layer 2 Performance Metrics &amp; Benchmarks</a></li><li class="depth-1"><a href="#throughput-comparison-transactions-per-second" data-for="throughput-comparison-transactions-per-second">Throughput Comparison (Transactions Per Second)</a></li><li class="depth-1"><a href="#transaction-cost-comparison-usd-q1-2025" data-for="transaction-cost-comparison-usd-q1-2025">Transaction Cost Comparison (USD, Q1 2025)</a></li><li class="depth-1"><a href="#finality-time-comparison" data-for="finality-time-comparison">Finality Time Comparison</a></li><li class="depth-1"><a href="#withdrawal-time-l2--l1" data-for="withdrawal-time-l2--l1">Withdrawal Time (L2 → L1)</a></li><li class="depth-1"><a href="#security-score-derived-from-l2beatcom" data-for="security-score-derived-from-l2beatcom">Security Score (Derived from L2Beat.com)</a></li><li class="depth-0"><a href="#layer-1-vs-layer-2-trade-offs" data-for="layer-1-vs-layer-2-trade-offs">Layer 1 vs Layer 2 Trade-Offs</a></li><li class="depth-1"><a href="#security" data-for="security">Security</a></li><li class="depth-1"><a href="#decentralization" data-for="decentralization">Decentralization</a></li><li class="depth-1"><a href="#speed--user-experience" data-for="speed--user-experience">Speed &amp; User Experience</a></li><li class="depth-1"><a href="#cost-efficiency" data-for="cost-efficiency">Cost Efficiency</a></li><li class="depth-1"><a href="#composability" data-for="composability">Composability</a></li><li class="depth-1"><a href="#censorship-resistance" data-for="censorship-resistance">Censorship Resistance</a></li><li class="depth-0"><a href="#bridges--cross-chain-interoperability" data-for="bridges--cross-chain-interoperability">Bridges &amp; Cross-Chain Interoperability</a></li><li class="depth-1"><a href="#bridge-architectures" data-for="bridge-architectures">Bridge Architectures</a></li><li class="depth-1"><a href="#bridge-security-incidents--lessons" data-for="bridge-security-incidents--lessons">Bridge Security Incidents &amp; Lessons</a></li><li class="depth-1"><a href="#cross-l2-communication-protocols" data-for="cross-l2-communication-protocols">Cross-L2 Communication Protocols</a></li><li class="depth-0"><a href="#2025-layer-2-statistics--market-data" data-for="2025-layer-2-statistics--market-data">2025 Layer 2 Statistics &amp; Market Data</a></li><li class="depth-1"><a href="#ethereum-l2-ecosystem-metrics" data-for="ethereum-l2-ecosystem-metrics">Ethereum L2 Ecosystem Metrics</a></li><li class="depth-1"><a href="#bitcoin-l2-ecosystem-metrics" data-for="bitcoin-l2-ecosystem-metrics">Bitcoin L2 Ecosystem Metrics</a></li><li class="depth-1"><a href="#top-l2s-by-transaction-count-daily-q1-2025" data-for="top-l2s-by-transaction-count-daily-q1-2025">Top L2s by Transaction Count (Daily, Q1 2025)</a></li><li class="depth-1"><a href="#institutional-adoption-indicators" data-for="institutional-adoption-indicators">Institutional Adoption Indicators</a></li><li class="depth-1"><a href="#developer-activity-github-commits-2024" data-for="developer-activity-github-commits-2024">Developer Activity (GitHub Commits, 2024)</a></li><li class="depth-1"><a href="#1-layer-3-and-application-specific-chains" data-for="1-layer-3-and-application-specific-chains">1. Layer 3 and Application-Specific Chains</a></li><li class="depth-1"><a href="#2-decentralized-sequencers" data-for="2-decentralized-sequencers">2. Decentralized Sequencers</a></li><li class="depth-1"><a href="#3-shared-sequencers--atomic-cross-l2" data-for="3-shared-sequencers--atomic-cross-l2">3. Shared Sequencers &amp; Atomic Cross-L2</a></li><li class="depth-1"><a href="#4-data-availability-innovations" data-for="4-data-availability-innovations">4. Data Availability Innovations</a></li><li class="depth-1"><a href="#5-zk-evm-maturity--equivalence-ladder" data-for="5-zk-evm-maturity--equivalence-ladder">5. ZK-EVM Maturity &amp; Equivalence Ladder</a></li><li class="depth-1"><a href="#6-account-abstraction-at-l2-scale" data-for="6-account-abstraction-at-l2-scale">6. Account Abstraction at L2 Scale</a></li><li class="depth-1"><a href="#7-bitcoin-l2-renaissance" data-for="7-bitcoin-l2-renaissance">7. Bitcoin L2 Renaissance</a></li><li class="depth-1"><a href="#8-regulatory--compliance-l2s" data-for="8-regulatory--compliance-l2s">8. Regulatory &amp; Compliance L2s</a></li><li class="depth-1"><a href="#9-rollup-as-a-service-raas" data-for="9-rollup-as-a-service-raas">9. Rollup-as-a-Service (RaaS)</a></li><li class="depth-1"><a href="#10-ai--l2-convergence" data-for="10-ai--l2-convergence">10. AI + L2 Convergence</a></li><li class="depth-0"><a href="#technical-challenges--research-frontiers" data-for="technical-challenges--research-frontiers">Technical Challenges &amp; Research Frontiers</a></li><li class="depth-1"><a href="#1-mev-maximal-extractable-value-on-l2" data-for="1-mev-maximal-extractable-value-on-l2">1. MEV (Maximal Extractable Value) on L2</a></li><li class="depth-1"><a href="#2-prover-decentralization" data-for="2-prover-decentralization">2. Prover Decentralization</a></li><li class="depth-1"><a href="#3-cross-l2-liquidity-fragmentation" data-for="3-cross-l2-liquidity-fragmentation">3. Cross-L2 Liquidity Fragmentation</a></li><li class="depth-1"><a href="#4-proof-recursion--aggregation" data-for="4-proof-recursion--aggregation">4. Proof Recursion &amp; Aggregation</a></li><li class="depth-1"><a href="#5-data-availability-sampling" data-for="5-data-availability-sampling">5. Data Availability Sampling</a></li><li class="depth-0"><a href="#ecosystem-tools--infrastructure" data-for="ecosystem-tools--infrastructure">Ecosystem Tools &amp; Infrastructure</a></li><li class="depth-1"><a href="#l2-aggregators--bridges" data-for="l2-aggregators--bridges">L2 Aggregators &amp; Bridges</a></li><li class="depth-1"><a href="#l2-data--analytics" data-for="l2-data--analytics">L2 Data &amp; Analytics</a></li><li class="depth-1"><a href="#developer-tools" data-for="developer-tools">Developer Tools</a></li><li class="depth-1"><a href="#l2-wallets" data-for="l2-wallets">L2 Wallets</a></li><li class="depth-0"><a href="#key-resources--documentation" data-for="key-resources--documentation">Key Resources &amp; Documentation</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Gas-Price" class="internal">Gas Price</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

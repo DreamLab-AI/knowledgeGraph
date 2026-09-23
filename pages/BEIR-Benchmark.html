@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>BEIR Benchmark</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="BEIR Benchmark"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="BEIR Benchmark"/><meta name="twitter:description" content="BEIR (Benchmarking IR) is a heterogeneous benchmark suite for evaluating the zero-shot generalisation of information retrieval models across eighteen diverse datasets spanning domains including biomedical, legal, financial, and Wikipedia text."/><meta property="og:description" content="BEIR (Benchmarking IR) is a heterogeneous benchmark suite for evaluating the zero-shot generalisation of information retrieval models across eighteen diverse datasets spanning domains including biomedical, legal, financial, and Wikipedia text."/><meta property="og:image:alt" content="BEIR (Benchmarking IR) is a heterogeneous benchmark suite for evaluating the zero-shot generalisation of information retrieval models across eighteen diverse datasets spanning domains including biomedical, legal, financial, and Wikipedia text."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/BEIR-Benchmark"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/BEIR-Benchmark"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="BEIR (Benchmarking IR) is a heterogeneous benchmark suite for evaluating the zero-shot generalisation of information retrieval models across eighteen diverse datasets spanning domains including biomedical, legal, financial, and Wikipedia text."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/BEIR-Benchmark"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-979"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-979" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>BEIR Benchmark</a></div></nav><h1 class="article-title">BEIR Benchmark</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.553Z">23 Sept 2026</time><span>53 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:beir-benchmark</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.92</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Information-Retrieval" class="internal">Information Retrieval</a></li><li><a href="../Evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../Evaluation-Benchmark" class="internal">Evaluation Benchmark</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../ms-marco" class="internal">MS MARCO</a></li><li><a href="../trec-covid" class="internal">TREC-COVID</a></li><li><a href="../nfcorpus" class="internal">NFCorpus</a></li><li><a href="../fiqa" class="internal">FiQA-2018</a></li><li><a href="../arguana" class="internal">ArguAna</a></li><li><a href="../scifact" class="internal">SciFact</a></li><li><a href="../hotpotqa" class="internal">HotpotQA</a></li><li><a href="../FiQA-2018" class="internal">FiQA-2018</a></li><li><a href="../Natural-Questions" class="internal">Natural Questions</a></li><li><a href="../Quora-Question-Pairs" class="internal">Quora Question Pairs</a></li><li><a href="../DBPedia-Entity" class="internal">DBPedia Entity</a></li><li><a href="../FEVER" class="internal">FEVER</a></li><li><a href="../Climate-FEVER" class="internal">Climate-FEVER</a></li><li><a href="../Biomedical-TREC" class="internal">Biomedical TREC</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../nDCG@10" class="internal">nDCG@10</a></li><li><a href="../Recall@100" class="internal">Recall@100</a></li><li><a href="../Relevance-Judgement" class="internal">Relevance Judgement</a></li><li><a href="../Document-Corpus" class="internal">Document Corpus</a></li><li><a href="../Query-Set" class="internal">Query Set</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Semantic-Search" class="internal">Semantic Search</a></li><li><a href="../pages/Dense-Passage-Retrieval" class="internal">Dense Passage Retrieval</a></li><li><a href="../retrieval-augmented-generation" class="internal">Retrieval-Augmented Generation</a></li><li><a href="../zero-shot-generalisation" class="internal">Zero-Shot Generalisation</a></li><li><a href="../pages/Cross-Encoder-Reranking" class="internal">Cross-Encoder Reranking</a></li><li><a href="../pages/Hybrid-Search" class="internal">Hybrid Search</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../ms-marco-benchmark" class="internal">MS MARCO Benchmark</a></li><li><a href="../pages/GLUE-Benchmark" class="internal">GLUE Benchmark</a></li><li><a href="../squad" class="internal">SQuAD</a></li><li><a href="../TriviaQA" class="internal">TriviaQA</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Embedding-Model" class="internal">Embedding Model</a></li><li><a href="../pages/BM25" class="internal">BM25</a></li><li><a href="../pages/Transformer" class="internal">Transformer</a></li><li><a href="../pages/FAISS" class="internal">FAISS</a></li><li><a href="../pages/Inverted-Index" class="internal">Inverted Index</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../Zero-Shot-Evaluation-Protocol" class="internal">Zero-Shot Evaluation Protocol</a></li><li><a href="../Normalised-Discounted-Cumulative-Gain" class="internal">Normalised Discounted Cumulative Gain</a></li><li><a href="../Heterogeneous-Domain-Testing" class="internal">Heterogeneous Domain Testing</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../information-retrieval" class="internal">Information Retrieval</a></li><li><a href="../embedding-model" class="internal">Embedding Model</a></li><li><a href="../semantic-search" class="internal">Semantic Search</a></li><li><a href="../dense-passage-retrieval" class="internal">Dense Passage Retrieval</a></li><li><a href="../bm25" class="internal">BM25</a></li><li><a href="../retrieval-augmented-generation" class="internal">Retrieval-Augmented Generation</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../transformer" class="internal">Transformer</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:beir-benchmark</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Hybrid-Search" class="internal">Hybrid Search</a></li><li><a href="../pages/Cross-Encoder-Reranking" class="internal">Cross-Encoder Reranking</a></li><li><a href="../pages/MTEB-Benchmark" class="internal">MTEB Benchmark</a></li><li><a href="../pages/ColBERT" class="internal">ColBERT</a></li><li><a href="../splade" class="internal">SPLADE</a></li><li><a href="../pages/Question-Answering" class="internal">Question Answering</a></li><li><a href="../pages/Dense-Passage-Retrieval" class="internal">Dense Passage Retrieval</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../NeurIPS-2021" class="internal">NeurIPS 2021</a></li><li><a href="../ACL-Anthology" class="internal">ACL Anthology</a></li><li><a href="../SIGIR" class="internal">SIGIR</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../RAG-Pipeline-Development" class="internal">RAG Pipeline Development</a></li><li><a href="../Neural-Retrieval-Research" class="internal">Neural Retrieval Research</a></li><li><a href="../pages/Model-Comparison" class="internal">Model Comparison</a></li><li><a href="../Benchmark-Driven-Development" class="internal">Benchmark-Driven Development</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../embedding-model" class="internal">Embedding Model</a></li><li><a href="../pages/BM25" class="internal">BM25</a></li><li><a href="../pages/Transformer" class="internal">Transformer</a></li><li><a href="../ndcg-metric" class="internal">nDCG@10</a></li><li><a href="../recall-metric" class="internal">Recall@100</a></li><li><a href="../pages/FAISS" class="internal">FAISS</a></li><li><a href="../pages/ColBERT" class="internal">ColBERT</a></li><li><a href="../SPLADE" class="internal">SPLADE</a></li><li><a href="../E5" class="internal">E5</a></li><li><a href="../BGE" class="internal">BGE</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>BEIR (Benchmarking IR) is a heterogeneous benchmark suite for evaluating the zero-shot generalisation of information retrieval models across eighteen diverse datasets spanning domains including biomedical, legal, financial, and Wikipedia text. It measures how well retrieval systems transfer across topic domains and retrieval task types without domain-specific fine-tuning, providing a standardised framework for comparing dense, sparse, and hybrid retrieval approaches.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:hasPart ai:TRECCOVIDDataset))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:hasPart ai:NFCorpusDataset))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:hasPart ai:FiQADataset))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:hasPart ai:ScifactDataset))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:hasPart ai:ArguAnaDataset))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:hasPart ai:HotpotQADataset))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:hasPart ai:RelevanceJudgements))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:hasPart ai:EvaluationQuerySet))
+</code></pre>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:requires ai:EmbeddingModel))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:requires ai:BM25Retriever))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:requires ai:RelevanceJudgement))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:requires ai:NDCG10Metric))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:requires ai:DocumentCorpus))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:requires ai:QuerySet))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:requires ai:FAISSIndex))
+</code></pre>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:enables ai:ZeroShotGeneralisation))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:enables ai:SemanticSearch))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:enables ai:DensePasageRetrieval))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:enables ai:HybridSearchEvaluation))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:enables ai:CrossEncoderReranking))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:enables ai:NeuralIRResearch))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:enables ai:ModelComparisonAtScale))
+</code></pre>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:implements ai:ZeroShotEvaluationProtocol))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:implements ai:NormalisedDiscountedCumulativeGain))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:implements ai:HeterogeneousDomainTesting))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:implements ai:ReproducibleRetrievalEvaluation))
+</code></pre>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:reducesTo ai:InformationRetrieval))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:reducesTo ai:EvaluationBenchmark))
+SubClassOf(ai:MTEBBenchmark
+  ObjectSomeValuesFrom(ai:hasPart ai:BEIRBenchmark))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:reducesTo ai:ZeroShotBenchmark))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:reducesTo ai:NLPEvaluationFramework))
+</code></pre>
+</li>
+<li>
+<h2 id="support-relationships">Support Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#support-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:supports ai:RAGPipelineDevelopment))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:supports ai:NeuralRetrievalResearch))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:supports ai:ModelComparison))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:supports ai:BenchmarkDrivenDevelopment))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:supports ai:EmbeddingModelSelection))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:supports ai:HybridRetrievalDesign))
+SubClassOf(ai:BEIRBenchmark
+  ObjectSomeValuesFrom(ai:supports ai:DomainAdaptationResearch))
+</code></pre>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>BEIR (Benchmarking Information Retrieval) arose from a practical crisis in the neural retrieval community. By 2020-2021, the release of Dense Passage Retrieval (DPR; Karpukhin et al. 2020) and related dense neural encoders had demonstrated that transformer-based bi-encoders could substantially outperform classical BM25 on standard benchmarks such as MS MARCO and Natural Questions. However, practitioners and researchers noted that these models, trained exclusively on MS MARCO’s web question-answering data, performed poorly or inconsistently when applied to out-of-domain corpora — medical literature, legal documents, scientific papers, or debate arguments. The generalisation gap was real but lacked a systematic, publicly reproducible measurement framework. Thakur et al. (2021) — Nandan Thakur, Nils Reimers, Andreas Rücklé, Abhishek Srivastava, and Iryna Gurevych, based at the UKP Lab at TU Darmstadt and the sentence-transformers ecosystem — addressed this by assembling eighteen existing retrieval-oriented datasets into a unified evaluation suite with a consistent preprocessing pipeline, the open-source <code>beir</code> Python library, and standardised metrics.</li>
+<li>The name “heterogeneous benchmark” reflects the deliberate diversity of BEIR’s constituent tasks. Unlike MS MARCO, which comprises web search queries answered by short passages from Bing results, BEIR spans nine distinct retrieval task types: fact verification (FEVER, Climate-FEVER, SciFact), question answering (Natural Questions, HotpotQA, FiQA, MSMARCO), duplicate question finding (Quora Question Pairs), biomedical retrieval (NFCorpus, TREC-COVID), argument retrieval (ArguAna, Touche-2020), entity retrieval (DBPedia), citation prediction (SCIDOCS), tweet retrieval (Signal-1M), and news retrieval (TREC-NEWS). Corpus sizes range from around 5,000 documents (SciFact) to 21 million passages (MS MARCO full corpus), and query counts range from 50 to 10,000, creating varying challenges for both corpus indexing and query understanding. The diversity ensures that no single retrieval strategy dominates across all tasks, making BEIR a genuine stress test for generalisation rather than overfitting to one retrieval paradigm.</li>
+<li>A seminal finding from the original BEIR paper was that BM25 — despite being a decades-old lexical matching algorithm with no neural components — remained competitive with or outperformed many dense retrieval models on out-of-domain BEIR datasets, particularly those with specialised vocabularies (NFCorpus for nutrition science, TREC-COVID for biomedical literature). This was a significant challenge to the prevailing narrative that neural dense retrieval was categorically superior, and motivated substantial follow-on research into models that could combine the lexical precision of sparse retrieval with the semantic flexibility of dense retrieval.</li>
+</ul>
+</li>
+<li>
+<h2 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Dataset Collection Pipeline</strong> — the <code>beir</code> Python library (open-sourced at github.com/beir-cellar/beir) provides consistent preprocessing: each dataset is delivered as a JSON-lines corpus file, a query file, and a query-relevant-passage mapping (qrels) in TREC format. All datasets use a standard split into test queries for evaluation.</li>
+<li><strong>Retrieval Systems Evaluated</strong> — the benchmark was originally evaluated on: (1) sparse lexical models: BM25 (Elasticsearch/Pyserini), DocT5Query (expanded BM25); (2) dense bi-encoder models: DPR, ANCE, TAS-B, SBERT variants; (3) late-interaction models: ColBERT; (4) cross-encoder re-rankers; (5) learned sparse models: SPLADE, uniCOIL.</li>
+<li><strong>Evaluation Metrics</strong> — nDCG@10 is the primary metric; it rewards models that place the most relevant documents highest, weighted by a log discount factor for rank position. Recall@100 measures how many of all relevant documents appear in the top 100 results, assessing whether the first-stage retrieval provides sufficient coverage for a re-ranking stage. MRR@10 (mean reciprocal rank) is sometimes reported for question-answering subtasks.</li>
+<li><strong><a href="../nDCG@10" class="internal" data-slug="nDCG@10">nDCG@10</a> Computation</strong> — for a ranked list of 10 retrieved documents with relevance grades rᵢ: nDCG@10 = DCG@10 / IDCG@10 where DCG@10 = ∑ᵢ₌₁¹⁰ (2^rᵢ - 1) / log₂(i+1) and IDCG@10 is the DCG of the ideal ranking.</li>
+<li><strong>Indexing Infrastructure</strong> — FAISS (Facebook AI Similarity Search) is the standard approximate nearest-neighbour index for dense retrieval experiments; BM25 experiments use Elasticsearch or the Pyserini/Lucene-based retrieval toolkit.</li>
+<li><strong>The Eighteen Datasets</strong> — grouped by task type:
+<ul>
+<li><em>Question Answering</em>: MS MARCO Dev, Natural Questions, HotpotQA, FiQA-2018</li>
+<li><em>Fact Verification</em>: FEVER, Climate-FEVER, SciFact</li>
+<li><em>Argument Retrieval</em>: ArguAna, Touche-2020</li>
+<li><em>Entity Retrieval</em>: DBPedia Entity</li>
+<li><em>Duplicate Detection</em>: Quora Question Pairs</li>
+<li><em>Biomedical</em>: TREC-COVID, NFCorpus, BioASQ (optional)</li>
+<li><em>Citation Prediction</em>: SCIDOCS</li>
+<li><em>News</em>: TREC-NEWS (optional), Signal-1M (optional)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="key-models-and-results">Key Models and Results<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-models-and-results" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The original BEIR paper (2021) revealed a stark performance pattern. On easy in-domain tasks (MS MARCO Dev), dense models like ANCE and TAS-B significantly outperformed BM25 (e.g. nDCG@10 0.646 vs 0.228 for TAS-B vs BM25 on MSMARCO). On out-of-domain datasets, however, BM25 frequently matched or exceeded dense bi-encoders: BM25 achieved nDCG@10 0.328 on SciFact while ANCE achieved 0.507 (dense winning), but BM25 achieved 0.325 on NFCorpus while ANCE achieved only 0.297 (dense losing). This heterogeneous pattern confirmed that dense model superiority was dataset-dependent and that domain transfer was the critical challenge.</li>
+<li>Models designed to improve BEIR generalisation have driven substantial progress. Key developments:
+<ul>
+<li><strong>SPLADE</strong> (Formal et al. 2021-2022) — a learned sparse model using BERT-based neural term expansion; achieves average BEIR nDCG@10 around 0.507-0.540 across public datasets, substantially outperforming BM25 (typically 0.42-0.44 average) while retaining the lexical matching property that aids out-of-domain transfer.</li>
+<li><strong>ColBERT v2</strong> (Santhanam et al. 2022) — multi-vector late-interaction dense retrieval; each query and document token is represented by its own embedding, with relevance computed via MaxSim across all token pairs; achieves strong zero-shot performance across BEIR by capturing fine-grained lexical-semantic interactions.</li>
+<li><strong>E5 / E5-Mistral</strong> (Wang et al. 2022, 2024) — contrastively trained text embeddings with instruction-tuned generalisation; E5-Mistral (based on the Mistral 7B LLM backbone) achieves MTEB retrieval average around 56-58 nDCG@10.</li>
+<li><strong>BGE / BGE-M3</strong> (BAAI, 2023-2024) — FlagEmbedding models supporting multi-lingual dense retrieval; BGE-M3 uses a unified architecture for dense, sparse, and multi-vector (ColBERT-style) retrieval, achieving BEIR-competitive performance across 100+ languages.</li>
+<li><strong>Gemini Embedding 2</strong> (Google DeepMind, 2026) — leads MTEB retrieval (which includes BEIR datasets) with average nDCG@10 of 68.32 as of April 2026, the current state of the art.</li>
+<li><strong>Voyage 4 Large</strong> (Voyage AI, 2025-2026) — second on MTEB retrieval, optimised for long-document embedding and instruction-following retrieval.</li>
+<li><strong>NV-Embed-v2</strong> (NVIDIA, 2024) — latent embedding model designed for high-recall retrieval; competitive on BEIR and MTEB.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="beir-in-the-rag-ecosystem">BEIR in the RAG Ecosystem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#beir-in-the-rag-ecosystem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>BEIR has become the primary evaluation foundation for <a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a> (RAG) system benchmarking. Since 2022-2023, the RAG paradigm — pairing a retriever (typically a dense bi-encoder over a vector store) with a generative <a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a> reader — has become the dominant architecture for knowledge-intensive NLP applications including enterprise search, document QA, and open-domain question answering. The retrieval component in RAG systems is directly assessed using BEIR-derived metrics.</li>
+<li>FeB4RAG (Wang et al. 2024) constructs a federated retrieval benchmark from sixteen BEIR sub-collections with LLM-graded relevance judgements, specifically targeting the multi-domain RAG setting where queries may span heterogeneous corpora. CUBO (2025) benchmarks self-contained RAG systems running on consumer hardware (16 GB RAM, single device) against BEIR-scale corpora, demonstrating that BEIR’s practical scope extends from cloud-scale enterprise deployments to edge inference.</li>
+<li>The connection between BEIR retriever quality and RAG end-task accuracy is strong but non-linear: improving nDCG@10 from 0.40 to 0.60 on a BEIR-like retrieval task typically translates to a substantial improvement in downstream answer accuracy, but at very high retrieval quality (>0.65 nDCG@10), diminishing returns emerge as reader model capability becomes the bottleneck. This motivates joint training of retriever and reader components (Atlas, REALM, RA-DIT) and re-ranking pipelines using <a href="../pages/Cross-Encoder-Reranking" class="internal alias" data-slug="pages/Cross-Encoder-Reranking">Cross-Encoder Reranking</a> models that improve precision from the top-100 recall set.</li>
+</ul>
+</li>
+<li>
+<h2 id="mteb-integration-and-expansion">MTEB Integration and Expansion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mteb-integration-and-expansion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>In 2023, Muennighoff et al. introduced MTEB (Massive Text Embedding Benchmark), which incorporated all BEIR datasets as the retrieval task category of a broader text embedding evaluation covering 56+ tasks across 8 task types: retrieval, classification, clustering, pair classification, reranking, semantic textual similarity (STS), summarisation, and bitext mining. The MTEB HuggingFace leaderboard has become the primary community reference for comparing embedding model performance, with BEIR’s 18 datasets constituting its most-watched retrieval subset.</li>
+<li>MTEB v2 (Enevoldsen et al. 2025, arxiv:2506.21182) extends and maintains MTEB, focusing on long-term usability, dataset integrity, and expanding to new task types and languages. As of June 2025, MTEB v2 has been updated with new datasets addressing long-document retrieval, cross-lingual zero-shot retrieval, and instruction-following retrieval (where the model receives a task description alongside the query).</li>
+<li>Community-contributed extensions beyond BEIR include: BEIR-NL (Dutch BEIR, 14 datasets, 2025 ACL-BUCC), BEIR-PL (Polish BEIR), M-BEIR (multilingual multimodal retrieval including image-text pairs, Wei et al. 2024), and LMEB (Long-horizon Memory Embedding Benchmark, 2025) for evaluating embeddings over long document collections.</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>BEIR was introduced by Nandan Thakur, Nils Reimers, Andreas Rücklé, Abhishek Srivastava, and Iryna Gurevych (UKP Lab, TU Darmstadt) at NeurIPS 2021 Datasets and Benchmarks Track. Nils Reimers subsequently joined Hugging Face, where sentence-transformers and BEIR became central to the open-source embedding ecosystem. The paper “Resources for Brewing BEIR: Reproducible Reference Models and an Official Leaderboard” (2023) formalised the BEIR leaderboard infrastructure and provided canonical baseline models.</li>
+<li>Key theoretical contributions surrounding BEIR address the generalisation challenge. Formal et al. (2021, 2022) at NAVER Labs Paris introduced SPLADE, showing that learning sparse representations via masked language modelling could yield better out-of-domain transfer than dense retrievers. Santhanam et al. (Stanford) introduced ColBERT v2 with compressed multi-vector representations that achieved strong BEIR performance. Wang et al. (Microsoft Research) introduced E5 (Embeddings from Bidirectional Encoder Representations), demonstrating that fine-tuning with diverse web data and text-matching tasks substantially improves BEIR generalisation. The instruction-tuned embedding paradigm (INSTRUCTOR, Su et al. 2023; E5-Mistral, Wang et al. 2024) further advances zero-shot transfer by conditioning the encoder on a natural-language description of the retrieval task.</li>
+<li>The “generalisation versus specialisation” tension exposed by BEIR has generated rich theoretical debate. Sur et al. (2022) showed that dense models learn query-document matching functions that are highly dataset-specific, explaining poor transfer; Thakur et al. responded with BEIR-AugSPLADE and data augmentation strategies. The discovery that BM25 was competitive on out-of-domain tasks led to renewed interest in hybrid retrieval — combining BM25’s exact-match lexical precision with dense semantic embeddings — a strategy now universally adopted in production RAG systems via Reciprocal Rank Fusion (RRF) or learned fusion weights.</li>
+<li>SIGIR (ACM Special Interest Group on Information Retrieval) and ECIR (European Conference on Information Retrieval) are the primary publication venues for BEIR-related systems research, with substantial overlap with ACL/EMNLP/NAACL for neural retrieval papers. The TREC (Text REtrieval Conference) track at NIST has independently developed complementary evaluation frameworks for biomedical and news retrieval that contributed datasets to BEIR.</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>As of mid-2026, BEIR remains the gold-standard benchmark for retrieval generalisation evaluation, though its role has partially shifted from a research frontier to an industry quality gate. Most commercial embedding model providers — OpenAI (text-embedding-3-large), Cohere (Embed v3), Voyage AI (Voyage 3, 4), Google (Gemini Embedding 2), Amazon (Titan Embed v2), NVIDIA (NV-Embed-v2), and BAAI (BGE-M3) — publicly report MTEB/BEIR scores as primary quality metrics in model cards and API documentation.</li>
+<li>The MTEB retrieval leaderboard as of April 2026 shows Gemini Embedding 2 at 68.32 average nDCG@10 across the MTEB retrieval tasks (which include BEIR datasets), a dramatic improvement from the best 2021 baseline (~0.42 for BM25 and 0.45-0.50 for top dense models on average across 18 BEIR datasets). This improvement reflects advances in model scale (7B+ parameter LLM backbones used as encoders), instruction tuning for task-specific retrieval, contrastive pre-training data scale, and the replacement of single-vector bi-encoders with more expressive architectures (multi-vector ColBERT-style, late-interaction, hybrid dense-sparse).</li>
+<li>The hybrid dense-sparse retrieval paradigm — combining BM25 or SPLADE scores with dense embedding scores via Reciprocal Rank Fusion or learned fusion — has become the de facto production standard for enterprise RAG systems, directly validated by BEIR showing that neither approach dominates across all domains. Elastic (Elasticsearch ELSER), Weaviate, Pinecone, and Milvus all support hybrid retrieval out of the box as of 2025.</li>
+<li>Long-context retrieval is an emerging BEIR-adjacent challenge: standard BEIR datasets use 512-token document chunks, but production corpora increasingly contain multi-page documents (contracts, scientific papers, books) that require embedding models with extended context windows. Benchmarks like LMEB (2025) and Loong (2024) address this gap.</li>
+<li>Instruction-following retrieval — where the query is accompanied by a natural-language description of the retrieval task type — has emerged as a significant performance lever: models like E5-Mistral, Gecko (Google), and INSTRUCTOR achieve substantial BEIR gains by conditioning the encoder on the task description, effectively using chain-of-thought-style prompting within the embedding model.</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>UK academic contributions to information retrieval evaluation are substantial. The University of Glasgow’s Terrier IR platform and the associated information retrieval research group (Keith van Rijsbergen, Mounia Lalmas, Iadh Ounis) developed foundational probabilistic retrieval models underpinning BM25 and its extensions; Robertson and Zaragoza’s “The Probabilistic Relevance Framework: BM25 and Beyond” (2009) originated from Microsoft Research Cambridge (MSRC). The University of Glasgow continues to contribute to evaluation methodology in the SIGIR community.</li>
+<li>Microsoft Research Cambridge (MSRC) has been particularly relevant to the BEIR ecosystem: the Bing search team’s MS MARCO dataset (which BEIR includes as a sub-task) was created at MSRC, and researchers there have contributed substantially to learned sparse retrieval (SPLADE-like approaches) and to evaluation methodology. The Alan Turing Institute in London has research programmes on fair and robust IR evaluation, including bias in BEIR-style retrieval benchmarks and evaluation of retrieval systems in high-stakes settings such as legal document review.</li>
+<li>University College London’s Information Studies department and the UCL Centre for Digital Humanities have used BEIR-style evaluation for domain-specific retrieval in archival science and cultural heritage contexts. The University of Edinburgh’s Institute for Language, Cognition and Computation has active research in cross-lingual retrieval relevant to BEIR-NL and BEIR-multilingual extensions. Sheffield NLP (University of Sheffield) and the Manchester IR group have contributed to low-resource and domain-adapted retrieval research evaluated against BEIR.</li>
+<li>In the Northern English industrial context, NHS Digital (Leeds/London) and the National Institute for Health and Care Research (NIHR) have adopted BEIR-validated retrieval models for clinical literature search, systematic review assistance, and health technology assessment document retrieval — high-stakes applications where zero-shot generalisation is critical as medical literature continually evolves beyond any fixed fine-tuning dataset.</li>
+<li>UK-based startups in the enterprise search and RAG space — including Jina AI (London office), Cohere (London office), and numerous healthcare AI companies — benchmark retrieval components against BEIR as standard product quality practice.</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Multilingual and cross-lingual BEIR</strong> — BEIR-NL, BEIR-PL, and M-BEIR are early steps; a comprehensive multilingual BEIR covering 50+ languages with native (non-translated) queries and corpora will be essential for evaluating global-scale retrieval systems. Models like BGE-M3 and Gecko-multilingual are already designed for this evaluation regime.</li>
+<li><strong>Long-document and long-context retrieval</strong> — standard BEIR uses 512-token document chunks; future benchmarks must assess retrieval over full documents (10,000+ tokens) as LLM context windows expand and applications shift from passage-level to document-level retrieval. LMEB and similar efforts point toward this frontier.</li>
+<li><strong>Instruction-following and task-conditioned retrieval</strong> — the success of instruction-tuned retrievers (E5-Mistral, INSTRUCTOR, Gecko) suggests that future BEIR-like benchmarks will explicitly condition evaluation on task descriptions, testing whether models correctly adapt their retrieval strategy based on query type metadata.</li>
+<li><strong>Agentic retrieval evaluation</strong> — as LLM agents perform multi-step retrieval (query reformulation, iterative retrieval, structured search across multiple corpora), BEIR-style single-query evaluation is insufficient; benchmarks like FRAMES (2024) and TREC-RAG (2024) address multi-hop, multi-source retrieval in agentic workflows.</li>
+<li><strong>Code and multimodal retrieval</strong> — extending BEIR to code search (given the scale of code retrieval in software engineering), image-text retrieval (M-BEIR), and audio document retrieval will be necessary as multimodal <a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a> systems become the primary consumer of retrieved content.</li>
+<li><strong>Dynamic and temporal evaluation</strong> — BEIR datasets are static snapshots; real-world retrieval must handle rapidly changing document corpora (news, social media, scientific preprints). Temporal BEIR variants that test retrieval on newly published documents will assess whether models generalise temporally as well as domain-wise.</li>
+<li><strong>Evaluation of RAG end-to-end systems</strong> — moving beyond first-stage retrieval nDCG@10 to joint retriever-reader evaluation, where the final answer accuracy depends on both retrieval and generation quality; TREC-RAG and KILT (Knowledge-Intensive Language Tasks) pioneered this direction.</li>
+</ul>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<ol>
+<li>Thakur, N., Reimers, N., Rücklé, A., Srivastava, A. and Gurevych, I. (2021). “BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models.” NeurIPS 2021 Datasets and Benchmarks Track. — The founding paper.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Karpukhin, V., Oguz, B., Min, S. et al. (2020). “Dense Passage Retrieval for Open-Domain Question Answering.” EMNLP 2020. — DPR, the canonical dense retriever baseline for BEIR.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Robertson, S. and Zaragoza, H. (2009). “The Probabilistic Relevance Framework: BM25 and Beyond.” Foundations and Trends in Information Retrieval. — BM25, the primary sparse BEIR baseline.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Formal, T., Piwowarski, B. and Clinchant, S. (2021). “SPLADE: Sparse Lexical and Expansion Model for First Stage Ranking.” SIGIR 2021. — Learned sparse retrieval achieving strong BEIR transfer.</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Formal, T., Piwowarski, B., Lassance, C. and Clinchant, S. (2022). “From Distillation to Hard Negative Sampling: Making Sparse Neural IR Models More Effective.” SIGIR 2022. — SPLADE v2: improved BEIR performance.</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Santhanam, K., Khattab, O., Saad-Falcon, J., Potts, C. and Zaharia, M. (2022). “ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction.” NAACL 2022. — ColBERT v2 on BEIR.</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Xiong, L., Xiong, C., Li, Y. et al. (2021). “Approximate Nearest Neighbor Negative Contrastive Estimation for Dense Text Retrieval.” ICLR 2021. — ANCE: hard-negative training for dense retrieval.</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Reimers, N. and Gurevych, I. (2019). “Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks.” EMNLP 2019. — SBERT, foundational bi-encoder architecture evaluated on BEIR.</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Muennighoff, N., Tazi, N., Magne, L. and Reimers, N. (2023). “MTEB: Massive Text Embedding Benchmark.” EACL 2023. — MTEB incorporates BEIR as its retrieval track.</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Wang, L., Yang, N., Huang, X. et al. (2022). “Text Embeddings by Weakly-Supervised Contrastive Pre-training.” arXiv:2212.03533. — E5 embeddings; strong BEIR performance.</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Wang, L., Yang, N., Huang, X. et al. (2024). “Improving Text Embeddings with Large Language Models.” arXiv:2401.00368. — E5-Mistral: LLM backbone for instruction-tuned BEIR retrieval.</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Su, H., Kasner, Z., Gatt, A. et al. (2023). “One Embedder, Any Task: Instruction-Finetuned Text Embeddings.” ACL 2023 Findings. — INSTRUCTOR: instruction-conditioned embedding for BEIR.</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Chen, J., Xiao, S., Zhang, P. et al. (2024). “BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation.” arXiv:2309.07597. — BGE-M3: multilingual BEIR-competitive model.</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Lin, J., Ma, X., Lin, S. et al. (2021). “Pyserini: A Python Toolkit for Reproducible Information Retrieval Research with Sparse and Dense Representations.” SIGIR 2021. — Pyserini: toolkit underlying many BEIR experiments.</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Lewis, P., Perez, E., Piktus, A. et al. (2020). “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” NeurIPS 2020. — RAG: canonical use case of BEIR-validated retrieval.</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Izacard, G., Lewis, P., Lomeli, M. et al. (2022). “Few-Shot Learning with Retrieval Augmented Language Models.” JMLR 2023. — Atlas: joint retriever-reader training for RAG.</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Thakur, N., Reimers, N., Rücklé, A. and Gurevych, I. (2023). “Resources for Brewing BEIR: Reproducible Reference Models and an Official Leaderboard.” arXiv:2306.07471. — BEIR leaderboard and canonical baselines.</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Khattab, O. and Zaharia, M. (2020). “ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT.” SIGIR 2020. — Original ColBERT.</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Lassance, C. and Clinchant, S. (2022). “SPLATE: Sparse Late Interaction Retrieval.” SIGIR 2024 (extended work). — Combining late interaction and sparse representations on BEIR.</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Wang, F., Liu, J., Jiao, M. et al. (2024). “M-BEIR: A Large-Scale Multimodal Retrieval Benchmark.” arXiv:2402.12176. — Multimodal extension of BEIR.</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Enevoldsen, K., Bhatt, I., Chalkidis, I. et al. (2025). “Maintaining MTEB: Towards Long Term Usability and Reproducibility of Text Embedding Benchmarks.” arXiv:2506.21182. — MTEB v2 maintenance paper.</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Thakur, N. et al. (2025). “BEIR-NL: Zero-shot Information Retrieval Benchmark for the Dutch Language.” ACL BUCC 2025. — Multilingual BEIR extension.</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Wang, R., Ma, H., Liu, P. et al. (2024). “FeB4RAG: Evaluating Federated Search in the Context of RAG.” SIGIR 2024. — BEIR-derived federated retrieval benchmark for RAG.</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Nogueira, R. and Cho, K. (2019). “Passage Re-ranking with BERT.” arXiv:1901.04085. — Cross-encoder reranking, widely used post-first-stage in BEIR pipelines.</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>Nguyen, T., Rosenberg, M., Song, X. et al. (2016). “MS MARCO: A Human Generated Machine Reading Comprehension Dataset.” NeurIPS 2016 Workshop. — MS MARCO, the origin domain for most BEIR baselines.</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Voorhees, E. M. and Harman, D. (eds.) (2005). “TREC: Experiment and Evaluation in Information Retrieval.” MIT Press. — TREC methodology underlying BEIR’s evaluation design.</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>Ailog RAG (2026). “BEIR Benchmark Leaderboard 2025 &amp; 2026: NDCG@10 Scores &amp; Rankings.” <a href="https://app.ailog.fr/en/blog/news/beir-benchmark-update" class="external">https://app.ailog.fr/en/blog/news/beir-benchmark-update<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> — Current leaderboard tracking including Gemini Embedding 2 results.</li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>Elastic (2025). “Use the BEIR benchmark to evaluate search relevance.” Elasticsearch Labs. <a href="https://www.elastic.co/search-labs/blog/evaluating-search-relevance-part-1" class="external">https://www.elastic.co/search-labs/blog/evaluating-search-relevance-part-1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> — Production deployment guidance using BEIR.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="overview">Overview<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#overview" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>BEIR is a heterogeneous benchmark suite comprising eighteen retrieval datasets from nine task types.</li>
+<li>It evaluates zero-shot generalisation of <a href="../pages/Information-Retrieval" class="internal alias" data-slug="pages/Information-Retrieval">Information Retrieval</a> models across domains including
+biomedical (TREC-COVID, NFCorpus), legal-adjacent (Climate-FEVER), financial (FiQA-2018),
+scientific (SciFact, SCIDOCS), encyclopaedic (DBPedia Entity, Natural Questions), argumentative
+(ArguAna, Touche-2020), and multi-hop (HotpotQA) retrieval.</li>
+<li>The central evaluation metric is nDCG@10, measuring ranking quality in the top-10 retrieved results.</li>
+<li>Released with an open-source Python toolkit (<code>beir</code>, pip-installable) for consistent preprocessing,
+retrieval, and scoring across all datasets.</li>
+<li>Now incorporated as the retrieval task subset of the <a href="../pages/MTEB-Benchmark" class="internal alias" data-slug="pages/MTEB-Benchmark">MTEB Benchmark</a>, the primary leaderboard
+for comparing <a href="../pages/Embedding-Model" class="internal alias" data-slug="pages/Embedding-Model">Embedding Model</a> quality as of 2024-2026.</li>
+<li>As of April 2026, Gemini Embedding 2 leads MTEB retrieval (which uses BEIR datasets)
+at 68.32 average nDCG@10, more than 25 points above the original 2021 BM25 baseline (~0.43).</li>
+<li>The benchmark drove development of key models: SPLADE (learned sparse retrieval),
+ColBERT v2 (multi-vector late interaction), E5-Mistral (LLM-backbone dense embeddings),
+and BGE-M3 (multilingual multi-granularity), each specifically designed to improve BEIR scores.</li>
+<li>BEIR’s core finding — that dense models trained on MS MARCO fail to generalise to out-of-domain
+corpora, sometimes performing worse than BM25 — permanently changed how IR researchers
+approach model evaluation and training data diversity.</li>
+<li>The BEIR leaderboard (arxiv:2306.07471) and MTEB HuggingFace leaderboard are the community
+reference points; Gemini Embedding 2, Voyage 4 Large, NV-Embed-v2, BGE-M3, E5-Mistral,
+and Cohere Embed v3 are the leading models as of June 2026.</li>
+<li>Key related concepts: <a href="../pages/Semantic-Search" class="internal alias" data-slug="pages/Semantic-Search">Semantic Search</a>, <a href="../pages/Dense-Passage-Retrieval" class="internal alias" data-slug="pages/Dense-Passage-Retrieval">Dense Passage Retrieval</a>, <a href="../pages/Hybrid-Search" class="internal alias" data-slug="pages/Hybrid-Search">Hybrid Search</a>,
+<a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a>, <a href="../pages/Cross-Encoder-Reranking" class="internal alias" data-slug="pages/Cross-Encoder-Reranking">Cross-Encoder Reranking</a>, <a href="../pages/MTEB-Benchmark" class="internal alias" data-slug="pages/MTEB-Benchmark">MTEB Benchmark</a>,
+<a href="../pages/Embedding-Model" class="internal alias" data-slug="pages/Embedding-Model">Embedding Model</a>, <a href="../pages/BM25" class="internal" data-slug="pages/BM25">BM25</a>, <a href="../SPLADE" class="internal" data-slug="SPLADE">SPLADE</a>, <a href="../pages/ColBERT" class="internal" data-slug="pages/ColBERT">ColBERT</a>, <a href="../pages/Natural-Language-Processing" class="internal alias" data-slug="pages/Natural-Language-Processing">Natural Language Processing</a>.</li>
+<li>The benchmark is maintained at <a href="https://github.com/beir-cellar/beir" class="external">https://github.com/beir-cellar/beir<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> and its official leaderboard
+is hosted on HuggingFace as part of the MTEB retrieval track leaderboard.</li>
+<li>BEIR represents one of the most impactful evaluation framework contributions in the neural IR era,
+cited over 2,500 times and adopted universally in both academic and industrial retrieval research.</li>
+</ul>
+</li>
+<li>
+<h2 id="historical-development-and-context">Historical Development and Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#historical-development-and-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The BEIR benchmark was published in the context of a rapidly evolving neural IR landscape.</li>
+<li>In 2017-2018, BERT (Devlin et al. 2019) transformed NLP, and by 2019-2020 IR researchers
+were adapting BERT-based models to document retrieval.</li>
+<li>The MonoBERT and MonoT5 cross-encoders (Nogueira et al. 2019-2020) achieved state-of-the-art
+on MS MARCO by jointly encoding query and document.</li>
+<li>However, cross-encoders are impractical for first-stage retrieval at corpus scale (millions of docs),
+so bi-encoder dense retrievers (DPR, ANCE, TAS-B) emerged as the scalable neural alternative.</li>
+<li>These dense retrievers proved very strong on MS MARCO but showed worrying fragility in evaluation
+across other domains, a gap that motivated the BEIR paper.</li>
+<li>The NeurIPS Datasets and Benchmarks Track (launched 2021) provided the ideal venue — BEIR was
+accepted as one of the inaugural papers, rapidly becoming one of the most cited NeurIPS 2021 papers.</li>
+<li>Within one year of publication, BEIR had become the standard evaluation suite for new retrieval
+papers at SIGIR 2022, EMNLP 2022, NAACL 2022, and ACL 2022.</li>
+<li>The <code>beir</code> GitHub repository exceeded 2,000 stars within six months and is now used by both
+academic researchers and commercial ML teams worldwide.</li>
+<li>The close coupling of BEIR to the sentence-transformers ecosystem (Reimers, co-author of BEIR)
+accelerated adoption: BEIR evaluation was integrated directly into the sentence-transformers
+documentation and tutorials, reaching the large practitioner community that uses that library.</li>
+</ul>
+</li>
+<li>
+<h2 id="model-architecture-trends-on-beir-2021-2026">Model Architecture Trends on BEIR (2021-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#model-architecture-trends-on-beir-2021-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Understanding how model architectures have evolved on BEIR reveals the empirical story of neural IR progress.</li>
+<li><strong>2021 (BEIR launch)</strong>: Top models are BM25 (average ~0.43), SBERT (average ~0.45),
+and TAS-B (average ~0.50). DPR and ANCE underperform BM25 on most out-of-domain datasets.
+The finding that BM25 beats dense retrievers on many BEIR datasets shocks the community.</li>
+<li><strong>2022</strong>: SPLADE (NAVER Labs) improves sparse retrieval substantially (average ~0.52).
+ColBERT v2 achieves strong cross-domain performance (~0.50+ average) via late-interaction.
+Contriever (Izacard et al. 2022, Meta) uses contrastive pre-training without supervision,
+achieving ~0.50 average on BEIR — showing that unsupervised training on diverse web text
+improves cross-domain transfer.</li>
+<li><strong>2023</strong>: Instruction-tuned embeddings emerge as the dominant paradigm. INSTRUCTOR (Su et al.),
+E5 (Wang et al.), and GTE (GenTex Embeddings) achieve averages of 0.52-0.55 by conditioning
+the encoder on task-type descriptions. The HuggingFace MTEB leaderboard launches and becomes
+the authoritative ranking, incorporating BEIR as the retrieval subset.</li>
+<li><strong>2024</strong>: LLM-backbone embedding models begin dominating the leaderboard. E5-Mistral (Wang et al.
+2024) uses a 7B Mistral LLM fine-tuned for embedding, achieving MTEB retrieval ~0.56-0.58.
+NV-Embed-v2 (NVIDIA) and Gecko (Google) enter the top-5. BGE-M3 provides multilingual parity.
+Voyage AI’s Voyage 3 achieves top-tier performance with minimal public technical disclosure.</li>
+<li><strong>2025-2026</strong>: Gemini Embedding 2 (Google DeepMind) leads MTEB retrieval at 68.32 average
+nDCG@10 as of April 2026, more than 25 points above the original 2021 BM25 baseline.
+Voyage 4 Large is the second-best public model. The gap between proprietary (Gemini, Voyage)
+and open-weight (BGE-M3, E5-Mistral) models has widened to approximately 8-12 points,
+driven by training data scale and the use of large proprietary model backbones.</li>
+<li><strong>Open vs closed</strong>: The open-weight model landscape has BGE-M3 and multilingual E5 as
+the strongest freely available models (MTEB retrieval ~56-58), competitive with 2023-era
+top proprietary models but lagging 2026 proprietary leaders. For privacy-sensitive applications
+where data cannot leave the organisation (NHS, legal firms, financial institutions), open
+models evaluated via BEIR remain the default choice.</li>
+</ul>
+</li>
+<li>
+<h2 id="beir-and-the-broader-evaluation-ecosystem">BEIR and the Broader Evaluation Ecosystem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#beir-and-the-broader-evaluation-ecosystem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>BEIR occupies a specific and well-defined position in the hierarchy of <a href="../pages/Information-Retrieval" class="internal alias" data-slug="pages/Information-Retrieval">Information Retrieval</a> and <a href="../pages/Natural-Language-Processing" class="internal alias" data-slug="pages/Natural-Language-Processing">Natural Language Processing</a> evaluation frameworks. Understanding its relationship to adjacent benchmarks clarifies both its strengths and limitations.</li>
+<li><strong>MS MARCO vs BEIR</strong>: MS MARCO (Microsoft Machine Reading Comprehension) is the dominant in-domain retrieval training and evaluation dataset, containing 8.8 million web passages and ~1 million training queries derived from Bing search logs. MS MARCO Dev (6,980 queries) is included as one of BEIR’s eighteen datasets. The critical difference is that most BEIR-evaluated models are fine-tuned on MS MARCO’s training split, so their performance on MS MARCO Dev within BEIR measures in-domain generalisation rather than true zero-shot transfer. BEIR’s value lies in the other seventeen datasets, which represent true held-out domains.</li>
+<li><strong>BEIR vs GLUE/SuperGLUE</strong>: GLUE (Wang et al. 2018) and SuperGLUE (Wang et al. 2019) benchmark language model understanding via classification and inference tasks over sentence pairs. These benchmarks primarily evaluate <a href="../pages/Encoder" class="internal" data-slug="pages/Encoder">Encoder</a> representations rather than retrieval systems; they do not measure document retrieval quality or semantic search capability. BEIR specifically fills the gap between pure NLU benchmarks (GLUE) and full end-task benchmarks (TriviaQA, HotpotQA), focusing on the first-stage retrieval step.</li>
+<li><strong>BEIR vs TREC</strong>: The TREC (Text REtrieval Conference) evaluation framework, run annually by NIST since 1992, provides authoritative deep relevance judgements (pooled from multiple systems) with multi-grade relevance labels. TREC datasets are of very high evaluation quality but cover narrow topic domains (news, web, bio-medical) in each year’s track. BEIR aggregates existing TREC datasets (TREC-COVID, TREC-NEWS) alongside non-TREC collections, providing breadth that annual TREC tracks cannot match while accepting the limitation of shallower relevance judgements.</li>
+<li><strong>BEIR vs MTEB</strong>: MTEB (Massive Text Embedding Benchmark; Muennighoff et al. 2023) is a superset: it incorporates BEIR’s 18 retrieval datasets as its retrieval category and adds 38+ additional tasks across classification, clustering, semantic textual similarity, reranking, bitext mining, and summarisation. MTEB is the primary leaderboard for <a href="../pages/Embedding-Model" class="internal alias" data-slug="pages/Embedding-Model">Embedding Model</a> comparison in 2024-2026; a model’s MTEB retrieval score is exactly its average performance across the BEIR retrieval datasets, making BEIR and MTEB retrieval interchangeable in current literature.</li>
+<li><strong>BEIR vs KILT</strong>: KILT (Knowledge-Intensive Language Tasks; Petroni et al. 2021) evaluates models on knowledge-intensive tasks including fact verification, entity linking, slot filling, and open-domain QA, measuring whether the correct document is retrieved as well as whether the final answer is correct. KILT is more demanding than BEIR because it requires end-to-end success (correct retrieval followed by correct answer extraction), whereas BEIR measures only retrieval quality. KILT tasks (FEVER, HotpotQA) overlap with BEIR but evaluate a joint retrieval-extraction pipeline.</li>
+<li><strong>BEIR vs RAG benchmarks</strong>: TREC-RAG (2024), FRAMES (Falsification, Retrieval, And Multi-hop Evaluation Suite, Google, 2024), and similar benchmarks evaluate full RAG pipelines including multi-hop reasoning, citation accuracy, and answer faithfulness — capabilities that go beyond what BEIR’s nDCG@10 metric measures. BEIR remains the retrieval-component benchmark even in RAG-centric evaluation stacks: practitioners first validate retriever quality with BEIR/MTEB, then validate the full pipeline with FRAMES or TREC-RAG.</li>
+</ul>
+</li>
+<li>
+<h2 id="detailed-dataset-profiles">Detailed Dataset Profiles<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#detailed-dataset-profiles" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>BEIR’s eighteen datasets span fundamentally different retrieval challenges. Understanding each dataset’s properties is essential for interpreting per-dataset nDCG@10 scores, which vary enormously across models and retrieval paradigms.</li>
+<li><strong>MS MARCO Dev</strong> — 6,980 queries drawn from Bing web search logs; 8.8 million passages; human-annotated with sparse relevance judgements (typically one relevant passage per query); the training domain for most BEIR-evaluated models, so in-domain performance on MS MARCO is inflated relative to true zero-shot capability. Dense models perform best here (BM25 nDCG@10 ≈ 0.228; top dense models >0.65).</li>
+<li><strong>TREC-COVID</strong> (Voorhees et al. 2021) — 50 queries about COVID-19 research; 171,332 biomedical papers from CORD-19; expert-annotated relevance judgements with binary and graded labels. Dense models trained on web data struggle because biomedical entity vocabularies and query types (clinical, mechanistic, epidemiological) differ sharply from MS MARCO. BM25 achieves nDCG@10 ≈ 0.656, competitive with many dense retrievers.</li>
+<li><strong>NFCorpus</strong> (Boteva et al. 2016) — 3,237 queries derived from NutritionFacts.org; 3,633 medical documents; multi-label relevance annotations. Queries are very short (1-2 words) compared to documents (full medical abstracts); this vocabulary mismatch challenges dense bi-encoders. BM25 is exceptionally strong here (nDCG@10 ≈ 0.325) compared to many dense models.</li>
+<li><strong>Natural Questions (NQ)</strong> (Kwiatkowski et al. 2019) — 3,452 test queries from Google search; 2.68M Wikipedia passages; open-domain question answering. Dense models trained with NQ data have an advantage; the out-of-domain challenge is modest compared to biomedical datasets.</li>
+<li><strong>HotpotQA</strong> (Yang et al. 2018) — 7,405 questions requiring multi-hop reasoning across two Wikipedia passages; the multi-document nature of relevance is unusual for single-stage retrieval. Models must retrieve multiple passages; standard single-vector retrieval is a limiting factor, motivating multi-hop and iterative retrieval approaches.</li>
+<li><strong>FiQA-2018</strong> (Maia et al. 2018) — 648 financial opinion questions from StackExchange; 57,638 financial document passages. Domain shift to finance reveals models’ inability to transfer web-trained semantic understanding to financial jargon and investment analysis discourse.</li>
+<li><strong>ArguAna</strong> (Wachsmuth et al. 2018) — 1,406 queries where each query is one argument and the relevant passage is a counter-argument; 8,674 passages. The retrieval task is argument matching (find the best counter-argument), not standard fact retrieval; this unusual task type exposes the domain inflexibility of models pre-trained on factoid QA.</li>
+<li><strong>Touche-2020</strong> (Bondarenko et al. 2020) — 49 controversial question queries (e.g. “Is climate change real?”); 382,545 web page passages; relevance judged by argument quality and topical relevance. Models must retrieve high-quality argumentative content rather than factual passages. BM25 is competitive due to keyword overlap in argumentative text.</li>
+<li><strong>DBPedia Entity</strong> (Hasibi et al. 2017) — 400 entity-seeking queries; 4.6M DBPedia entity descriptions. Entity retrieval differs from passage retrieval: the relevant document for “Albert Einstein” is a structured entity description, not a factoid passage. Neural models that understand entity names and descriptions outperform BM25 on most queries.</li>
+<li><strong>SCIDOCS</strong> (Cohan et al. 2020) — 1,000 paper abstract queries; 25,657 scientific paper abstracts; relevance defined by co-citation and co-author relationships. The task is finding scientifically related papers, not direct question-answering; semantic embedding models that capture research topic similarity perform well.</li>
+<li><strong>FEVER</strong> (Thorne et al. 2018) — 6,666 queries that are factual claims to be verified; 5.4M Wikipedia sentences as the corpus. For each claim, the relevant evidence passages either support or refute it; standard retrieval evaluates whether evidence is found, not whether it confirms or contradicts.</li>
+<li><strong>Climate-FEVER</strong> (Diggelmann et al. 2020) — 1,535 climate science fact-checking queries against 5.4M Wikipedia sentences. Domain specificity of climate science (glaciology, atmospheric chemistry) challenges web-trained models.</li>
+<li><strong>SciFact</strong> (Wadden et al. 2020) — 300 scientific claim queries; 5,183 scientific paper abstracts; binary relevance (supports/refutes). Scientific language model fine-tuning (BioLinkBERT, SciBERT) substantially improves performance on SciFact; standard MS MARCO-tuned models underperform.</li>
+<li><strong>Quora Question Pairs</strong> (QQP) — 10,000 duplicate question detection queries; 522,931 questions. Models retrieve questions semantically similar to the query question; measures paraphrase detection in retrieval form. Dense semantic models excel; BM25 is relatively weak due to paraphrase not sharing keywords.</li>
+<li><strong>Signal-1M</strong> (Suarez et al. 2018, optional) — 97 Twitter/news queries; 2.8M news article passages; relevance defined by tweet engagement. The small query set limits statistical reliability.</li>
+<li><strong>TREC-NEWS</strong> (Soboroff et al. 2019, optional) — 57 news background link queries; 594,977 news passages. The task is finding background reading for a news article, testing encyclopaedic and contextual retrieval.</li>
+</ul>
+</li>
+<li>
+<h2 id="relationship-to-retrieval-augmented-generation">Relationship to Retrieval-Augmented Generation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-retrieval-augmented-generation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>BEIR’s most significant practical impact has been as the evaluation standard for the retrieval component of <a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a> (RAG) systems. The RAG paradigm (Lewis et al. 2020) combines a neural retriever with a generative <a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a> reader: for each user query, a retriever selects relevant passages from a corpus, and the LLM generates an answer conditioned on those passages alongside the original query. The quality of the final RAG system output is bounded by retrieval quality — if the retriever fails to return the most relevant documents, the LLM cannot compensate regardless of its generation quality.</li>
+<li>The explosion of RAG adoption in 2022-2025 created enormous demand for retrieval system evaluation standards, and BEIR fulfilled this demand precisely. Enterprise RAG developers — building customer-facing question-answering systems over proprietary document corpora — use BEIR-validated embedding models as the default starting point for retrieval component selection. The standard practice is: (1) baseline evaluation on BEIR datasets most similar to the target domain (e.g. FiQA-2018 for financial RAG, TREC-COVID for medical RAG, SciFact for scientific RAG); (2) domain-specific fine-tuning if BEIR baseline performance is insufficient; (3) production deployment with monitoring of proxy retrieval metrics aligned with nDCG@10.</li>
+<li>The connection between retrieval and generation quality in RAG is complex. Izacard &amp; Grave (2020) showed in their Fusion-in-Decoder architecture that LLM readers can aggregate information across many retrieved passages and partially compensate for lower-ranked relevant documents — but only up to a point. Shi et al. (2023) demonstrated in “Lost in the Middle” that LLMs disproportionately use information from the beginning and end of the context window, making the ranking quality of retrieved passages (exactly what nDCG@10 measures) directly relevant to RAG answer quality even when retrieval recall is high. This justifies BEIR’s nDCG@10 metric as a proxy for downstream RAG performance.</li>
+<li>Advanced RAG architectures have extended beyond the basic retrieve-then-read pattern: <strong>Iterative RAG</strong> (multi-hop retrieval) iteratively reformulates queries based on previously retrieved information, requiring multiple rounds of retrieval; <strong>Agentic RAG</strong> allows the LLM to decide when to retrieve and what to query; <strong>Self-RAG</strong> (Asai et al. 2023) trains the LLM to generate special retrieval tokens and to reflect on retrieved evidence. Each of these patterns still relies on a BEIR-validated retriever as its underlying information access component. FeB4RAG (Wang et al. 2024) specifically evaluates federated retrieval across multiple BEIR-derived corpora in multi-hop RAG scenarios.</li>
+<li>Long-context LLMs (Gemini 1.5 at 1M tokens, Claude 3 at 200K tokens) have prompted debate about whether RAG remains necessary when the entire document collection can fit within the model’s context window. In practice, most enterprise corpora (millions of documents, terabytes of text) far exceed any current context window, and latency and cost constraints make in-context retrieval impractical even for smaller corpora. BEIR-validated dense retrievers therefore remain relevant and necessary for large-scale retrieval regardless of LLM context window size.</li>
+</ul>
+</li>
+<li>
+<h2 id="retrieval-paradigms-evaluated-by-beir">Retrieval Paradigms Evaluated by BEIR<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#retrieval-paradigms-evaluated-by-beir" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>BEIR’s most significant contribution is providing a common evaluation ground for three fundamentally different retrieval paradigms, enabling direct comparison under identical conditions.</li>
+<li><strong>Sparse Retrieval</strong> uses term-based representations where both queries and documents are represented as high-dimensional sparse vectors over a term vocabulary. Classical BM25 assigns each term a weight combining term frequency (TF), inverse document frequency (IDF), and document length normalisation; queries and documents are represented as TF-IDF-weighted term vectors, and similarity is computed by the dot product of overlapping terms. BM25’s primary advantage is lexical precision: if a query contains a rare technical term (e.g. “CRISPR-Cas9 off-target activity”) that appears in the relevant document, BM25 will rank it highly regardless of semantic context, because exact string matching is strong. Its limitation is that it cannot handle synonymy (a document discussing “cardiovascular events” will not match a query for “heart attacks”) or paraphrase (a document using formal language will not match a colloquial query). On BEIR, BM25’s average nDCG@10 across all 18 datasets is approximately 0.42-0.44; it leads dense models on NFCorpus, TREC-COVID, and argument retrieval datasets. <a href="../SPLADE" class="internal" data-slug="SPLADE">SPLADE</a> (Formal et al. 2021, 2022) extends sparse retrieval with neural term expansion: a <a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a> encoder computes term-weight vectors using BERT-style masked language modelling, expanding queries and documents with related vocabulary. SPLADE achieves approximately 0.50-0.54 average nDCG@10 on BEIR, consistently outperforming BM25 while retaining the inverted-index efficiency of sparse retrieval.</li>
+<li><strong>Dense Retrieval</strong> uses bi-encoder architectures where a <a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a> encoder maps queries and documents to fixed-dimensional dense vectors (typically 768-1024 dimensions), and similarity is measured by cosine distance or dot product. The key advantage is semantic matching: similar meanings map to nearby vectors regardless of surface form differences. Dense models trained on MS MARCO with contrastive learning (TAS-B, ANCE, DPR) achieve strong performance on question-answering BEIR datasets but often underperform BM25 on out-of-domain corpora with specialised vocabulary, as the <a href="../pages/Embedding-Model" class="internal alias" data-slug="pages/Embedding-Model">Embedding Model</a> has not seen the relevant terminology in training. State-of-the-art dense models in 2024-2026 (E5-Mistral, BGE-M3, Gemini Embedding 2, Voyage 4) use LLM backbones with instruction-tuned retrieval, achieving BEIR averages of 60-68 nDCG@10 — a dramatic improvement over the 0.45-0.50 achieved by the best 2021 dense models. The improvement comes from three sources: (1) much larger encoder models (7B parameter LLMs vs. 110M BERT); (2) instruction tuning that tells the encoder what type of retrieval task it is performing; (3) contrastive training on vastly larger and more diverse data collections.</li>
+<li><strong>Multi-Vector (Late Interaction) Retrieval</strong> — ColBERT (Khattab &amp; Zaharia 2020) and ColBERT v2 (Santhanam et al. 2022) represent each query and document as a matrix of per-token dense vectors (one embedding per token, not one per document). Relevance is computed via MaxSim: for each query token, find the maximum similarity across all document tokens, then sum these per-token maxima. This late interaction approach is more expressive than single-vector bi-encoders (it captures fine-grained lexical-semantic token matching) while still allowing offline pre-computation of document token matrices, unlike cross-encoders which require a full transformer forward pass per query-document pair. ColBERT v2 achieves consistently strong BEIR performance by combining the semantic expressiveness of neural representations with the lexical matching capability of token-level interaction.</li>
+<li><strong>Cross-Encoder Re-ranking</strong> — a cross-encoder takes a query-document pair as joint input to a <a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a>, producing a single relevance score after attending across both texts simultaneously. This is the most accurate (but most expensive) retrieval paradigm because the model can consider complex query-document interactions. Cross-encoders are never used for first-stage retrieval over million-document corpora (too expensive), but are universally applied as second-stage re-rankers on the top-100 candidates from a bi-encoder or BM25 first stage. On BEIR, adding a cross-encoder re-ranking stage consistently improves nDCG@10 by 3-8 points over first-stage dense retrieval alone.</li>
+<li><strong>Hybrid Retrieval</strong> — combining sparse and dense retrieval signals. Reciprocal Rank Fusion (RRF; Cormack et al. 2009) merges the ranked lists from BM25 and a dense retriever by assigning each document a score of ∑ 1/(k + rank_r(doc)) where k=60 and the sum is over retrievers r. RRF is parameter-free, robust, and consistently outperforms either component on BEIR. Learned score fusion uses a linear or learned combination of BM25 and dense scores, requiring a small labelled validation set. Hybrid retrieval has become the universal production recommendation based on BEIR evidence.</li>
+</ul>
+</li>
+<li>
+<h2 id="evaluation-methodology-and-reproducibility">Evaluation Methodology and Reproducibility<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-methodology-and-reproducibility" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>BEIR’s methodological contribution extends beyond dataset aggregation to the definition of a reproducible evaluation protocol. The <code>beir</code> Python library provides: (1) a unified <code>GenericDataLoader</code> that loads any BEIR dataset from a consistent directory structure; (2) a <code>EvaluateRetrieval</code> class wrapping FAISS-based dense retrieval or BM25-based sparse retrieval; (3) automatic metric computation (nDCG@k, MAP@k, Recall@k, MRR@k) via the <code>pytrec_eval</code> library binding to the reference TREC evaluation tool; (4) standardised preprocessing (lowercasing, punctuation handling) applied consistently across all datasets and models.</li>
+<li>Reproducibility challenges in BEIR include: (1) dataset-specific corpus sizes that require different computational resources (MS MARCO at 8.8M passages vs. SciFact at 5,183 passages span 3 orders of magnitude); (2) relevance judgement density — most BEIR datasets have sparse (binary, one-relevant-document) judgements whereas the original retrieval literature uses dense (multi-grade) judgements; (3) the official BEIR paper evaluated models with FAISS flat (exact) nearest-neighbour search, while production systems use approximate search (HNSW, IVF), introducing small discrepancies.</li>
+<li>The “Brewing BEIR” paper (Thakur et al. 2023) addressed reproducibility by providing: (1) canonical Docker containers with pinned library versions; (2) pre-built FAISS indices for all 18 datasets; (3) reference model checkpoints for BM25, SBERT, and DPR baselines; (4) an official hosted leaderboard on HuggingFace. This infrastructure reduced the barrier for new model submissions from days of computation to hours.</li>
+<li>A subtle but important methodological note: BEIR’s nDCG@10 scores are computed using the test-split queries and their associated relevance judgements, while most BEIR models are not trained on any BEIR data. However, models trained on Natural Questions or MS MARCO — which appear as BEIR sub-tasks — have an implicit advantage on those specific sub-datasets, partially violating the “zero-shot” claim. Pure zero-shot evaluation excludes MS MARCO and NQ from averaging, yielding a stricter cross-domain transfer score.</li>
+</ul>
+</li>
+<li>
+<h2 id="practical-deployment-guidance">Practical Deployment Guidance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#practical-deployment-guidance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>For practitioners building <a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a> systems, BEIR benchmarking provides actionable model selection guidance. The dominant insight from five years of BEIR evaluation is that <strong>no single retrieval paradigm dominates across all domain types</strong>: dense bi-encoders lead on question-answering domains (NQ, MS MARCO, FiQA); BM25 leads or ties on technical vocabulary domains (NFCorpus, TREC-COVID); late-interaction models (ColBERT v2) provide the most consistent performance across both domain types; and hybrid dense-sparse fusion with Reciprocal Rank Fusion (RRF) or learned score fusion consistently outperforms either pure approach.</li>
+<li>For production RAG deployments as of 2025-2026, the recommended stack validated against BEIR benchmarks is: (1) a hybrid first-stage retriever combining BM25/SPLADE with a dense bi-encoder (E5-Mistral, BGE-M3, or Gemini Embedding 2) using RRF for score fusion; (2) a cross-encoder re-ranker (MonoT5, BGE reranker, or Cohere Rerank) applied to the top-100 candidates from the hybrid retriever; (3) a reader <a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a> conditioned on the top-k re-ranked passages. This three-stage pipeline achieves state-of-the-art BEIR performance on most sub-datasets while maintaining sub-second end-to-end latency through FAISS HNSW approximate search.</li>
+<li>Domain adaptation remains the primary practical challenge exposed by BEIR: a model achieving 0.65 nDCG@10 on MS MARCO Dev may achieve only 0.30 on NFCorpus. Practitioners deploying RAG in specialised domains (medical, legal, financial) should: (a) evaluate first-stage retriever quality on domain-specific held-out queries before deployment; (b) consider fine-tuning or adapting an embedding model on domain-specific data; (c) use cross-encoder reranking aggressively, as rerankers generalise better than bi-encoders to new domains; (d) maintain an ongoing evaluation loop re-running BEIR-style metrics against query logs from production traffic.</li>
+</ul>
+</li>
+<li>
+<h2 id="industry-adoption-and-open-source-ecosystem">Industry Adoption and Open-Source Ecosystem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#industry-adoption-and-open-source-ecosystem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The BEIR benchmark has driven the development of a mature open-source ecosystem for evaluating and deploying retrieval systems. The <code>beir</code> Python package (github.com/beir-cellar/beir) provides the canonical implementation, with integrated support for BM25 (Elasticsearch, BM25S), dense retrieval (Sentence Transformers, HuggingFace Transformers), and evaluation metrics via <code>pytrec_eval</code>. The package is pip-installable (<code>pip install beir</code>) and provides automated dataset download from HuggingFace Datasets Hub, making BEIR evaluation accessible to practitioners with moderate ML infrastructure.</li>
+<li>Commercial embedding model providers universally report BEIR/MTEB scores as primary quality metrics in their product documentation and API announcements. OpenAI (text-embedding-3-large), Cohere (Embed v3), Google (text-embedding-004, Gecko, Gemini Embedding 2), Voyage AI (Voyage 3, Voyage 4), Amazon (Titan Embed v2), Jina AI (Jina-Embeddings-v3), BAAI (BGE series), and NVIDIA (NV-Embed-v2) all include BEIR/MTEB scores in model cards, making BEIR the lingua franca of commercial embedding API comparison. As of April 2026, the MTEB Retrieval leaderboard hosted on HuggingFace tracks over 200 models, with Gemini Embedding 2 leading at 68.32 average nDCG@10.</li>
+<li>Vector database providers — Pinecone, Weaviate, Milvus, Qdrant, Chroma, and Elasticsearch — use BEIR benchmarks to validate retrieval quality in their integration guides and product documentation. Elastic’s ELSER (Elastic Learned Sparse EncodeR) model, a SPLADE-like sparse neural retrieval model integrated into Elasticsearch, is evaluated against BEIR and positioned explicitly as a BEIR-validated alternative to dense retrieval for general-purpose enterprise search. Weaviate’s hybrid search documentation presents BEIR evaluations showing that their RRF-based hybrid retrieval outperforms either dense or BM25 alone across BEIR datasets.</li>
+<li>Observability and monitoring for production retrieval systems increasingly use BEIR-derived proxy metrics. Arize AI, WhyLabs, and similar ML observability platforms provide dashboards for tracking embedding similarity distributions and retrieval quality proxies that align with BEIR’s nDCG-based evaluation methodology. The ability to compare production retrieval metrics against BEIR baselines provides a calibration reference for detecting distribution shift in deployed RAG systems.</li>
+<li>The transition from BEIR to domain-specific evaluation is a recognised challenge for practitioners. BEIR’s eighteen datasets are effective for general-purpose model selection but may not represent a specific deployment domain well. Best practice from the ML engineering community is: (1) run BEIR evaluation on the most similar publicly available datasets to understand model ranking; (2) collect 100-500 representative domain queries with relevance labels; (3) run the top-3 BEIR models on this domain-specific set; (4) select the model that optimises domain-specific nDCG@10, which may differ from the BEIR ranking. This two-stage evaluation process ensures that BEIR provides an efficient starting filter while domain-specific data provides the final selection signal.</li>
+</ul>
+</li>
+<li>
+<h2 id="beir-in-scientific-and-medical-information-retrieval">BEIR in Scientific and Medical Information Retrieval<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#beir-in-scientific-and-medical-information-retrieval" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Scientific and medical retrieval represent two of the most consequential applications of <a href="../pages/Information-Retrieval" class="internal alias" data-slug="pages/Information-Retrieval">Information Retrieval</a> systems, and BEIR includes four specialised datasets targeting these domains: TREC-COVID, NFCorpus, SciFact, and SCIDOCS. The consistent finding across these four datasets is that models pre-trained on general web text or MS MARCO question-answering fail to transfer well to specialised scientific vocabulary, making scientific information retrieval a persistent benchmark stress test that motivates domain adaptation research.</li>
+<li><strong>Biomedical retrieval</strong> presents unique challenges because: (1) terminology is highly specialised (disease mechanisms, drug names, gene symbols, anatomical terminology); (2) queries from clinicians, researchers, and patients differ significantly in vocabulary and specificity; (3) relevance often requires expert knowledge to judge correctly. TREC-COVID illustrates these challenges: a query for “COVID-19 and cardiovascular complications” requires a retrieval model to understand that “SARS-CoV-2 myocarditis” is relevant even though the query terms do not literally appear. Domain-adapted biomedical models such as BioLinkBERT, PubMedBERT, and SapBERT substantially improve over general-purpose dense retrievers on TREC-COVID and NFCorpus, validating the need for domain-specific embedding models in clinical settings.</li>
+<li>Clinical and NHS applications in the UK context illustrate why BEIR generalisation matters at a societal level. NHS Digital’s evidence synthesis teams use systematic search over MEDLINE, EMBASE, and NICE evidence bases to support clinical guideline development (NICE guidance). BEIR-validated retrieval models are increasingly used to automate parts of this systematic search process, where the cost of false negatives (missing a relevant study) is potentially harm to patients. The heterogeneous nature of BEIR’s biomedical datasets provides a reasonable proxy for evaluating retrieval across different clinical question types (diagnostic, therapeutic, epidemiological).</li>
+<li>Academic literature search — the task of finding prior work relevant to a research question — is directly evaluated by SCIDOCS (citation prediction as retrieval proxy). The CORD-19 dataset underlying TREC-COVID was assembled in 48 hours in March 2020 from multiple publisher APIs as an emergency response to the COVID-19 pandemic; its integration into BEIR enabled timely evaluation of whether IR models could assist researchers navigating a rapidly growing literature. By 2022, models fine-tuned on CORD-19 citation data significantly improved upon general-purpose retrievers on TREC-COVID, demonstrating the effectiveness of in-domain adaptation even with limited supervision.</li>
+<li>Legal document retrieval represents another high-stakes application of zero-shot <a href="../pages/Information-Retrieval" class="internal alias" data-slug="pages/Information-Retrieval">Information Retrieval</a>, though BEIR’s original eighteen datasets do not include a dedicated legal corpus. BEIRLegal (proposed but not official) and COLIEE (Competition on Legal Information Extraction/Entailment) extend the BEIR evaluation philosophy to case law and statute retrieval. The BEIR methodology — testing on held-out domains — is directly applicable to legal retrieval where the training domain (web text, Wikipedia) differs substantially from the evaluation domain (judicial opinions, legislative texts).</li>
+</ul>
+</li>
+<li>
+<h2 id="technical-implementation-details">Technical Implementation Details<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#technical-implementation-details" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Running BEIR evaluations requires attention to several technical details that significantly affect reported scores. Understanding these details is essential for fair comparison between systems.</li>
+<li><strong>Document chunking</strong> — BEIR datasets provide corpus documents at varying granularities. MS MARCO provides passages already chunked at ~100 tokens; TREC-COVID provides full paper abstracts (~200 tokens); NFCorpus provides variable-length documents. Dense bi-encoders trained on 512-token sequences need documents pre-truncated at that limit; full documents from longer datasets are typically truncated, potentially losing relevant content in later portions. Long-context embedding models (Jina-Embeddings-v3 at 8192 tokens, SFR-Embedding-Mistral, various Voyage models) improve on this by embedding full documents without truncation.</li>
+<li><strong>Batch inference</strong> — encoding millions of documents requires efficient batching. GPU memory limits batch sizes (typically 32-512 passages per batch depending on passage length and model size); larger models require smaller batches or gradient checkpointing during encoding. The <code>beir</code> library handles this automatically but practitioners running large models on multi-GPU setups may need to adjust batch sizes, use data parallelism across GPUs, or shard the corpus across devices.</li>
+<li><strong>Index building</strong> — the <code>beir</code> evaluation pipeline builds a FAISS flat index (exact nearest-neighbour search) for reproducibility. FAISS flat search is O(n) per query (brute force over all corpus vectors), which is feasible for BEIR’s largest corpora (~21M passages for MS MARCO Dev) on modern GPUs but may take 30-60 minutes. Production systems use FAISS HNSW or IVF-PQ approximate indices that achieve sub-millisecond query latency at the cost of small recall losses (typically &lt;1% nDCG@10 loss versus exact search).</li>
+<li><strong>BM25 implementation</strong> — the <code>beir</code> library originally used Elasticsearch for BM25 baselines; the “Brewing BEIR” paper (2023) standardised on Pyserini/Anserini (Lucene-based) for reproducibility. BM25 parameter choices (k1, b) affect scores: the BEIR defaults (k1=0.9, b=0.4 for SPLADE; k1=1.2, b=0.75 for standard BM25) follow Pyserini defaults optimised over web retrieval. Dataset-specific BM25 parameter tuning can improve individual dataset scores but reduces comparability across datasets.</li>
+<li><strong>Relevance threshold</strong> — BEIR datasets use varying relevance threshold conventions. Binary datasets (SciFact, ArguAna) treat all judged-relevant documents as grade 1 and unjudged as grade 0. Multi-grade datasets (TREC-COVID uses 0/1/2 grades; FEVER uses 0/1/2/3 grades) compute nDCG using exponential relevance (2^grade - 1). When comparing systems across BEIR papers, it is essential to verify that the same relevance thresholding is applied.</li>
+<li><strong>Negative document handling</strong> — BEIR evaluates only on judged documents (those with explicit relevance labels). Unjudged documents are treated as irrelevant, which can underestimate true model performance for models that retrieve genuinely relevant unjudged documents. This “pooling bias” is a known limitation of BEIR and other TREC-style benchmarks; it is mitigated by deep pooling in the original TREC tracks but is unavoidable in BEIR’s re-use of datasets with limited pools.</li>
+</ul>
+</li>
+<li>
+<h2 id="connections-to-adjacent-ontology-concepts">Connections to Adjacent Ontology Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#connections-to-adjacent-ontology-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>BEIR Benchmark connects to a rich graph of <a href="../pages/Information-Retrieval" class="internal alias" data-slug="pages/Information-Retrieval">Information Retrieval</a> and <a href="../pages/Natural-Language-Processing" class="internal alias" data-slug="pages/Natural-Language-Processing">Natural Language Processing</a>
+concepts that together constitute the modern neural IR ecosystem.</li>
+<li><strong><a href="../pages/Embedding-Model" class="internal alias" data-slug="pages/Embedding-Model">Embedding Model</a></strong> — the primary system type evaluated by BEIR;
+maps text to dense vectors; trained contrastively on query-document pairs.
+BEIR is the canonical evaluation benchmark for comparing <a href="../pages/Embedding-Model" class="internal alias" data-slug="pages/Embedding-Model">Embedding Model</a> quality across domains.</li>
+<li><strong><a href="../pages/BM25" class="internal" data-slug="pages/BM25">BM25</a></strong> — the baseline sparse retrieval model against which all BEIR results are compared.
+BM25 was developed at City University London (Robertson &amp; Jones) and is implemented in
+Lucene/Elasticsearch. On BEIR, BM25 achieves approximately 0.42-0.44 average nDCG@10,
+remaining competitive with many neural dense retrievers on out-of-domain datasets.</li>
+<li><strong><a href="../pages/Dense-Passage-Retrieval" class="internal alias" data-slug="pages/Dense-Passage-Retrieval">Dense Passage Retrieval</a></strong> — the original neural dense retrieval approach (DPR, Karpukhin et al.
+2020, Facebook/Meta). DPR was one of the primary models evaluated in the original BEIR paper;
+its poor out-of-domain performance relative to BM25 on several BEIR datasets provided
+the empirical motivation for the benchmark’s existence.</li>
+<li><strong><a href="../pages/Semantic-Search" class="internal alias" data-slug="pages/Semantic-Search">Semantic Search</a></strong> — the application capability that BEIR evaluates; finding documents
+semantically relevant to a query without requiring exact keyword matches.
+BEIR demonstrates that semantic search quality varies dramatically across domains,
+motivating domain-adaptive training and hybrid retrieval strategies.</li>
+<li><strong><a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a></strong> — the primary downstream application of BEIR-validated
+retrieval models; RAG systems pair a BEIR-evaluated retriever with a generative LLM reader.
+BEIR quality directly proxies for RAG retrieval component quality.</li>
+<li><strong><a href="../pages/Cross-Encoder-Reranking" class="internal alias" data-slug="pages/Cross-Encoder-Reranking">Cross-Encoder Reranking</a></strong> — the second-stage re-ranking component in production retrieval
+pipelines; always applied on top of a BEIR-validated first-stage retriever to improve precision
+from the top-100 candidates retrieved by the bi-encoder or BM25 stage.</li>
+<li><strong><a href="../pages/Hybrid-Search" class="internal alias" data-slug="pages/Hybrid-Search">Hybrid Search</a></strong> — the combination of BM25 and dense retrieval via Reciprocal Rank Fusion;
+BEIR evidence motivates hybrid search as consistently outperforming either alone,
+particularly in out-of-domain settings. Now the universal production recommendation.</li>
+<li><strong><a href="../pages/MTEB-Benchmark" class="internal alias" data-slug="pages/MTEB-Benchmark">MTEB Benchmark</a></strong> — the superset benchmark incorporating all 18 BEIR retrieval datasets
+alongside classification, clustering, STS, and other tasks. MTEB is the primary leaderboard
+for comparing <a href="../pages/Embedding-Model" class="internal alias" data-slug="pages/Embedding-Model">Embedding Model</a> performance; its retrieval subset is exactly BEIR.</li>
+<li><strong><a href="../pages/ColBERT" class="internal" data-slug="pages/ColBERT">ColBERT</a></strong> — a multi-vector late-interaction retrieval model achieving strong BEIR performance
+by computing per-token similarity between query and document tokens (MaxSim operation);
+bridges dense and sparse retrieval paradigms by retaining token-level granularity.</li>
+<li><strong><a href="../SPLADE" class="internal" data-slug="SPLADE">SPLADE</a></strong> — the leading learned sparse retrieval model on BEIR; uses neural term expansion
+to produce sparse, high-dimensional document and query representations;
+achieves better out-of-domain transfer than standard dense bi-encoders on many BEIR datasets.</li>
+<li><strong><a href="../pages/Natural-Language-Processing" class="internal alias" data-slug="pages/Natural-Language-Processing">Natural Language Processing</a></strong> — the parent discipline within which BEIR operates;
+BEIR is a specialised evaluation framework within the NLP evaluation ecosystem,
+sitting below GLUE/SuperGLUE (general NLU) and above application-specific benchmarks.</li>
+<li><strong><a href="../pages/Information-Retrieval" class="internal alias" data-slug="pages/Information-Retrieval">Information Retrieval</a></strong> — the parent sub-discipline directly addressed by BEIR;
+BEIR represents the application of the IR evaluation paradigm (TREC methodology) to
+zero-shot generalisation across heterogeneous domains and retrieval task types.</li>
+<li><strong><a href="../pages/Vector-Database" class="internal alias" data-slug="pages/Vector-Database">Vector Database</a></strong> — the infrastructure technology enabling dense retrieval at corpus scale;
+BEIR experiments use FAISS (Facebook AI Similarity Search) as the reference vector store;
+production deployments use Pinecone, Weaviate, Milvus, Chroma, or Qdrant.</li>
+<li><strong><a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a></strong> — the underlying architecture of all state-of-the-art BEIR retrieval models;
+both dense bi-encoders (BERT, E5, BGE, Gemini Embedding) and cross-encoder rerankers
+(MonoBERT, MonoT5, BGE Reranker) are Transformer-based.</li>
+<li><strong><a href="../pages/Question-Answering" class="internal alias" data-slug="pages/Question-Answering">Question Answering</a></strong> — one of the primary BEIR task types (Natural Questions, HotpotQA,
+FiQA, MS MARCO); QA retrieval requires finding passages that directly answer specific questions,
+the task most aligned with MS MARCO training data and most easily mastered by dense retrievers.</li>
+<li><strong><a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a></strong> — LLMs now serve as both the backbone for state-of-the-art
+embedding models (E5-Mistral uses Mistral 7B; Gecko uses Gecko-base; Gemini Embedding 2 uses
+Gemini architecture) and as the reader component in RAG systems whose retrieval quality BEIR evaluates.</li>
+</ul>
+</li>
+<li>
+<h2 id="key-terminology-glossary">Key Terminology Glossary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology-glossary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>BEIR</strong> — Benchmarking Information Retrieval; a heterogeneous zero-shot evaluation benchmark comprising 18 retrieval datasets across 9 task types, introduced at NeurIPS 2021 by Thakur et al.</li>
+<li><strong><a href="../pages/BM25" class="internal" data-slug="pages/BM25">BM25</a></strong> — Best Match 25; a probabilistic sparse retrieval model that scores documents based on term frequency, inverse document frequency, and document length normalisation; the canonical sparse retrieval baseline in BEIR; originated in the Okapi project at City University London.</li>
+<li><strong><a href="../Bi-Encoder" class="internal" data-slug="Bi-Encoder">Bi-Encoder</a></strong> — a dual-encoder architecture encoding queries and documents independently into dense vectors for similarity search; the standard architecture for dense first-stage retrieval; also called a bi-encoder or dual-encoder.</li>
+<li><strong><a href="../pages/ColBERT" class="internal" data-slug="pages/ColBERT">ColBERT</a></strong> — Contextualized Late Interaction over BERT; a multi-vector retrieval model in which each token of the query attends to the token most similar across all document tokens (MaxSim); balances the efficiency of bi-encoders with the expressiveness of cross-encoders.</li>
+<li><strong>Contrastive Learning</strong> — the training paradigm used for embedding models: a positive query-document pair is pushed together in embedding space while negative pairs are pushed apart; hard negatives (retrieved by BM25 but not relevant) improve training quality.</li>
+<li><strong><a href="../pages/Cross-Encoder-Reranking" class="internal alias" data-slug="pages/Cross-Encoder-Reranking">Cross-Encoder Reranking</a></strong> — a re-ranking model that takes a query-document pair as joint input to a <a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a>, producing a single relevance score; expensive at scale but produces more accurate relevance scores than bi-encoders; used as a second stage after first-stage retrieval in production pipelines.</li>
+<li><strong><a href="../pages/Dense-Passage-Retrieval" class="internal alias" data-slug="pages/Dense-Passage-Retrieval">Dense Passage Retrieval</a></strong> (DPR) — the original Facebook/Meta dense bi-encoder retrieval model (Karpukhin et al. 2020); trained on Natural Questions with in-batch negatives; the model that proved dense retrieval could outperform BM25 on in-domain QA, motivating BEIR’s cross-domain evaluation.</li>
+<li><strong>FAISS</strong> — Facebook AI Similarity Search; an open-source library for efficient similarity search over dense vector collections; provides flat (exact), IVF (inverted file, approximate), and HNSW (hierarchical navigable small world graph) indices; the standard indexing backend for BEIR dense retrieval experiments.</li>
+<li><strong><a href="../pages/Hybrid-Search" class="internal alias" data-slug="pages/Hybrid-Search">Hybrid Search</a></strong> — a retrieval strategy that combines sparse (BM25/SPLADE) and dense (bi-encoder) retrieval scores; typically fused via Reciprocal Rank Fusion (RRF) or learned score weighting; consistently achieves better BEIR scores than either approach alone.</li>
+<li><strong><a href="../pages/Information-Retrieval" class="internal alias" data-slug="pages/Information-Retrieval">Information Retrieval</a></strong> — the discipline of representing, storing, and providing access to documents so that user information needs expressed as queries can be satisfied; BEIR is the primary zero-shot evaluation benchmark for modern neural IR.</li>
+<li><strong>MTEB</strong> — Massive Text Embedding Benchmark; extends BEIR to 56+ tasks across 8 task types (retrieval, classification, clustering, STS, summarisation, etc.); incorporates all 18 BEIR datasets as its retrieval subset; the primary community leaderboard for comparing <a href="../pages/Embedding-Model" class="internal alias" data-slug="pages/Embedding-Model">Embedding Model</a> quality.</li>
+<li><strong>nDCG@10</strong> — Normalised Discounted Cumulative Gain at rank 10; the primary BEIR evaluation metric; measures ranking quality by weighting relevance of retrieved documents by a log discount of their position; normalised to [0,1] against the ideal ranking.</li>
+<li><strong><a href="../pages/Embedding-Model" class="internal alias" data-slug="pages/Embedding-Model">Embedding Model</a></strong> — a model that maps text (query or document) to a dense vector representation; used in dense retrieval for semantic similarity search; BEIR evaluates bi-encoder embedding models as the primary dense retrieval component.</li>
+<li><strong>Qrels</strong> — query-relevance judgements; a mapping from (query_id, document_id) pairs to integer relevance grades; the ground truth data that BEIR uses to compute nDCG@10 and Recall@100.</li>
+<li><strong>Recall@100</strong> — the fraction of all relevant documents for a query that appear in the top-100 retrieved results; measures the coverage of the first-stage retriever before re-ranking; a high Recall@100 is necessary (though not sufficient) for a high-quality RAG pipeline.</li>
+<li><strong><a href="../pages/Semantic-Search" class="internal alias" data-slug="pages/Semantic-Search">Semantic Search</a></strong> — search based on the semantic meaning of the query and documents rather than keyword matching; enabled by dense embedding models trained with contrastive objectives; BEIR measures the cross-domain quality of semantic search models.</li>
+<li><strong><a href="../SPLADE" class="internal" data-slug="SPLADE">SPLADE</a></strong> — Sparse Lexical and Expansion model; a learned sparse retrieval model that uses a <a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a> encoder to produce sparse, high-dimensional term-weight vectors; combines the interpretability and lexical precision of sparse retrieval with neural term expansion for improved recall; achieves strong BEIR cross-domain transfer.</li>
+<li><strong>Zero-Shot Generalisation</strong> — the ability of a model to perform well on tasks or domains not seen during training; the central property measured by BEIR; a model achieving high average nDCG@10 across all 18 BEIR datasets demonstrates strong zero-shot retrieval generalisation.</li>
+</ul>
+</li>
+<li>
+<h2 id="limitations-and-criticisms-of-beir">Limitations and Criticisms of BEIR<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#limitations-and-criticisms-of-beir" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Despite its dominant position in the retrieval evaluation ecosystem, BEIR has received substantive
+methodological criticism that practitioners should understand before treating nDCG@10 as a
+proxy for real-world retrieval quality.</li>
+<li><strong>Shallow relevance judgements</strong> — most BEIR datasets have binary relevance labels collected for
+a small pool of documents, not the dense multi-grade pools of TREC tracks.
+Unjudged documents are treated as irrelevant, which can unfairly penalise models that retrieve
+genuinely relevant documents outside the judgement pool.</li>
+<li><strong>MS MARCO contamination</strong> — both MS MARCO Dev and Natural Questions are included in BEIR
+while also being the primary training datasets for most BEIR-evaluated models.
+Evaluating on training-domain data inflates scores for those sub-datasets, biasing overall averages.</li>
+<li><strong>Static snapshot</strong> — BEIR datasets were collected at specific points in time; corpora age.
+The COVID-19 literature in TREC-COVID is now 5+ years old, and queries about recent developments
+are absent. Static benchmarks systematically underestimate the challenges of real-time information
+retrieval over evolving corpora.</li>
+<li><strong>English-only</strong> — the original 18 BEIR datasets are English-only, excluding the majority of
+global information retrieval use cases. Multilingual variants (BEIR-NL, BEIR-PL) exist but
+are not yet standardised into a single multi-BEIR evaluation.</li>
+<li><strong>Text-only</strong> — BEIR evaluates only text retrieval; multimodal retrieval (image+text, audio,
+video) is not covered. M-BEIR (Wei et al. 2024) extends BEIR to multimodal settings.</li>
+<li><strong>No temporal/conversational queries</strong> — BEIR queries are single-turn; real-world retrieval often
+involves multi-turn conversations where context from previous queries affects retrieval intent.</li>
+<li><strong>Small test sets</strong> — several BEIR datasets have fewer than 100 test queries (SciFact: 300,
+ArguAna: 1406, Signal-1M: 97). Small test sets lead to high variance in nDCG@10 estimates,
+making statistically meaningful comparisons difficult without significance testing.</li>
+<li><strong>Benchmark saturation</strong> — as model performance approaches 0.65-0.70 average nDCG@10,
+the BEIR datasets approach saturation on some sub-tasks, reducing their discriminative power
+for comparing frontier embedding models. This motivates harder benchmark extensions (LMEB,
+long-context benchmarks, instruction-following retrieval).</li>
+<li>Despite these limitations, BEIR remains the best available standard for zero-shot retrieval
+generalisation evaluation. The research community has responded to each criticism constructively:
+MTEB expands the task coverage; BEIR-NL and BEIR-PL address monolinguality; FeB4RAG addresses
+multi-hop and conversational evaluation; TREC-RAG addresses end-to-end quality. BEIR’s
+foundational contribution — establishing that in-domain performance on MS MARCO does not
+predict cross-domain generalisation — has permanently altered how the IR community
+evaluates retrieval systems.</li>
+</ul>
+</li>
+<li>
+<h2 id="integration-with-vector-databases-and-production-search-systems">Integration with Vector Databases and Production Search Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-with-vector-databases-and-production-search-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The BEIR benchmark has directly influenced the feature roadmap of commercial vector database
+and search infrastructure providers.</li>
+<li><strong>Elasticsearch / ELSER</strong> — Elastic developed ELSER (Elastic Learned Sparse EncodeR),
+a SPLADE-like neural sparse model optimised for Elasticsearch’s inverted-index architecture.
+ELSER was benchmarked against BEIR to demonstrate that sparse neural retrieval achieves better
+zero-shot generalisation than BM25 while being deployable within existing Elasticsearch infra.</li>
+<li><strong>Pinecone</strong> — the leading commercial vector database provides native BEIR evaluation scripts
+and reports MTEB scores for recommended embedding models in its documentation, using BEIR
+generalisation scores to justify multi-index hybrid search recommendations.</li>
+<li><strong>Weaviate</strong> — documents hybrid search (BM25 + dense vectors with RRF fusion) using BEIR as
+the primary evidence base; specifically cites BEIR findings that BM25 outperforms dense models
+on several out-of-domain datasets as motivation for hybrid retrieval.</li>
+<li><strong>Milvus / Zilliz</strong> — the open-source and commercial Milvus vector database platform publishes
+BEIR evaluation guides and uses BEIR scores to benchmark its embedded embedding model
+integrations (bgm-m3, e5-large-v2, etc.).</li>
+<li><strong>Cohere Rerank</strong> — Cohere’s cross-encoder reranking API is positioned as a BEIR-compatible
+second-stage component; Cohere publishes experiments showing that adding Cohere Rerank
+after any dense first-stage retriever improves nDCG@10 across BEIR datasets by 3-8 points.</li>
+<li><strong>Qdrant</strong> — the Rust-based vector database provides native hybrid search and benchmarks
+embedding models against BEIR via its integration with HuggingFace Sentence Transformers.</li>
+<li>The convergence of BEIR as the shared evaluation language across these competing products
+represents a rare instance of academic benchmark adoption by industry at scale,
+validating BEIR’s design choices and the importance of the zero-shot generalisation problem.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-663" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#support-relationships" data-for="support-relationships">Support Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-0"><a href="#key-models-and-results" data-for="key-models-and-results">Key Models and Results</a></li><li class="depth-0"><a href="#beir-in-the-rag-ecosystem" data-for="beir-in-the-rag-ecosystem">BEIR in the RAG Ecosystem</a></li><li class="depth-0"><a href="#mteb-integration-and-expansion" data-for="mteb-integration-and-expansion">MTEB Integration and Expansion</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#overview" data-for="overview">Overview</a></li><li class="depth-0"><a href="#historical-development-and-context" data-for="historical-development-and-context">Historical Development and Context</a></li><li class="depth-0"><a href="#model-architecture-trends-on-beir-2021-2026" data-for="model-architecture-trends-on-beir-2021-2026">Model Architecture Trends on BEIR (2021-2026)</a></li><li class="depth-0"><a href="#beir-and-the-broader-evaluation-ecosystem" data-for="beir-and-the-broader-evaluation-ecosystem">BEIR and the Broader Evaluation Ecosystem</a></li><li class="depth-0"><a href="#detailed-dataset-profiles" data-for="detailed-dataset-profiles">Detailed Dataset Profiles</a></li><li class="depth-0"><a href="#relationship-to-retrieval-augmented-generation" data-for="relationship-to-retrieval-augmented-generation">Relationship to Retrieval-Augmented Generation</a></li><li class="depth-0"><a href="#retrieval-paradigms-evaluated-by-beir" data-for="retrieval-paradigms-evaluated-by-beir">Retrieval Paradigms Evaluated by BEIR</a></li><li class="depth-0"><a href="#evaluation-methodology-and-reproducibility" data-for="evaluation-methodology-and-reproducibility">Evaluation Methodology and Reproducibility</a></li><li class="depth-0"><a href="#practical-deployment-guidance" data-for="practical-deployment-guidance">Practical Deployment Guidance</a></li><li class="depth-0"><a href="#industry-adoption-and-open-source-ecosystem" data-for="industry-adoption-and-open-source-ecosystem">Industry Adoption and Open-Source Ecosystem</a></li><li class="depth-0"><a href="#beir-in-scientific-and-medical-information-retrieval" data-for="beir-in-scientific-and-medical-information-retrieval">BEIR in Scientific and Medical Information Retrieval</a></li><li class="depth-0"><a href="#technical-implementation-details" data-for="technical-implementation-details">Technical Implementation Details</a></li><li class="depth-0"><a href="#connections-to-adjacent-ontology-concepts" data-for="connections-to-adjacent-ontology-concepts">Connections to Adjacent Ontology Concepts</a></li><li class="depth-0"><a href="#key-terminology-glossary" data-for="key-terminology-glossary">Key Terminology Glossary</a></li><li class="depth-0"><a href="#limitations-and-criticisms-of-beir" data-for="limitations-and-criticisms-of-beir">Limitations and Criticisms of BEIR</a></li><li class="depth-0"><a href="#integration-with-vector-databases-and-production-search-systems" data-for="integration-with-vector-databases-and-production-search-systems">Integration with Vector Databases and Production Search Systems</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Autoregressive-Model" class="internal">Autoregressive Model</a></li><li><a href="../pages/Benchmark-Dataset" class="internal">Benchmark Dataset</a></li><li><a href="../pages/Benchmark-Evaluation" class="internal">Benchmark Evaluation</a></li><li><a href="../pages/ColBERT" class="internal">ColBERT</a></li><li><a href="../pages/GLUE-Benchmark" class="internal">GLUE Benchmark</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

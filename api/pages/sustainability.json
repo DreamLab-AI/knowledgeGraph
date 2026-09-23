@@ -20,6 +20,14 @@
       {
         "id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:social-sustainability",
+        "label": "Social Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:economic-sustainability",
+        "label": "Economic Sustainability"
       }
     ],
     "requires": [
@@ -65,7 +73,16 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:planned-obsolescence",
+        "label": "Planned Obsolescence"
+      },
+      {
+        "id": "urn:ngm:class:rebound-effect",
+        "label": "Rebound Effect"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:federated-learning",
@@ -89,6 +106,10 @@
       {
         "id": "urn:ngm:class:net-zero",
         "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Digital Accessibility"
       }
     ],
     "standardizedBy": [
@@ -99,6 +120,10 @@
       {
         "id": "urn:ngm:class:ghg-protocol",
         "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:ngm:class:w3c-sustainable-web-design",
+        "label": "W3C Sustainable Web Design"
       }
     ],
     "partOf": [],
@@ -110,6 +135,10 @@
       {
         "id": "urn:ngm:class:scope-3-emissions",
         "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Equity"
       },
       {
         "id": "urn:ngm:class:digital-technology-access-equity",
@@ -236,6 +265,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -316,6 +349,10 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
@@ -324,16 +361,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

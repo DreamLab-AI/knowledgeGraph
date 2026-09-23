@@ -16,7 +16,24 @@
   "qualityScore": 0.76,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cybersecurity-framework-core",
+        "label": "Cybersecurity Framework Core"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-framework-tiers",
+        "label": "Cybersecurity Framework Tiers"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-framework-profile",
+        "label": "Cybersecurity Framework Profile"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-framework-govern-function",
+        "label": "Cybersecurity Framework Govern Function"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:risk-assessment",
@@ -39,6 +56,10 @@
       {
         "id": "urn:ngm:class:threat-detection",
         "label": "Threat Detection"
+      },
+      {
+        "id": "urn:ngm:class:security-governance",
+        "label": "Security Governance"
       }
     ],
     "dependsOn": [
@@ -85,6 +106,10 @@
       {
         "id": "urn:ngm:class:risk-register",
         "label": "Risk Register"
+      },
+      {
+        "id": "urn:ngm:class:control-mapping",
+        "label": "Control Mapping"
       }
     ],
     "supports": [
@@ -95,6 +120,10 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:cyber-insurance",
+        "label": "Cyber Insurance"
       }
     ],
     "standardizedBy": [
@@ -104,6 +133,10 @@
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST Special Publications"
+      },
       {
         "id": "urn:ngm:class:nist",
         "label": "NIST Special Publications"
@@ -257,6 +290,10 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-auditing",
+        "label": "Smart Contract Auditing"
       },
       {
         "id": "urn:ngm:class:data",

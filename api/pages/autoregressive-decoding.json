@@ -119,19 +119,14 @@
       "slug": "ai-model-architecture"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline-model",
-      "label": "Machine Learning Model",
-      "slug": "machine-learning-discipline-model"
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model (Artefact)",
+      "slug": "machine-learning-model"
     },
     {
       "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning Discipline",
       "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline-models",
-      "label": "Machine Learning Models",
-      "slug": "machine-learning-discipline-models"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -269,34 +264,50 @@
         "label": "Transfer Learning"
       },
       {
-        "id": "urn:ngm:class:optimisation-algorithm",
-        "label": "Optimisation Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
       },
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:statistical-learning-theory",
-        "label": "Statistical Learning Theory"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
-      },
-      {
-        "id": "urn:ngm:class:unsupervised-learning",
-        "label": "Unsupervised Learning"
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
@@ -305,16 +316,16 @@
         "label": "Recurrent Neural Network"
       },
       {
+        "id": "urn:ngm:class:small-language-model",
+        "label": "Small Language Model"
+      },
+      {
         "id": "urn:ngm:class:narrow-ai",
         "label": "Narrow AI"
       },
       {
         "id": "urn:ngm:class:task-specific-model",
         "label": "Task-Specific Model"
-      },
-      {
-        "id": "urn:ngm:class:rule-based-systems",
-        "label": "Rule-Based System"
       },
       {
         "id": "urn:ngm:class:symbolic-ai",
@@ -339,30 +350,34 @@
         "label": "Multi-Agent System"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:compute-governance",
-        "label": "Compute Governance"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:instruction-tuning",
         "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:prompt-engineering",
@@ -387,10 +402,6 @@
       {
         "id": "urn:ngm:class:rlhf",
         "label": "RLHF"
-      },
-      {
-        "id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Network"
       }
     ],
     "supports": [
@@ -407,14 +418,6 @@
         "label": "Prompt Engineering"
       },
       {
-        "id": "urn:ngm:class:edge-deployment",
-        "label": "Edge Deployment"
-      },
-      {
-        "id": "urn:ngm:class:model-inference",
-        "label": "Model Inference"
-      },
-      {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
       },
@@ -423,14 +426,22 @@
         "label": "Decision Support System"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
       }
     ],
-    "partOf": [
+    "standardizedBy": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
-        "label": "Machine Learning Pipeline"
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [
@@ -451,6 +462,10 @@
         "label": "Hallucination"
       },
       {
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
         "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
@@ -461,10 +476,6 @@
       {
         "id": "urn:ngm:class:ai-application",
         "label": "AI Application"
-      },
-      {
-        "id": "urn:ngm:class:ai-research-area",
-        "label": "AI Research Area"
       }
     ]
   },

@@ -86,7 +86,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:erc-721",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721"
       },
       {
@@ -129,7 +129,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -230,7 +230,7 @@
         "label": "Creator Economy"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -274,8 +274,16 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:commons",
+        "label": "Commons"
+      },
+      {
         "id": "urn:ngm:class:open-access",
         "label": "Open Access"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
       },
       {
         "id": "urn:ngm:class:self-organisation",
@@ -380,6 +388,10 @@
         "label": "Intellectual Property Rights Framework"
       },
       {
+        "id": "urn:ngm:class:land-registry",
+        "label": "Land Registry"
+      },
+      {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       },
@@ -396,12 +408,8 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
       }
     ]
   },

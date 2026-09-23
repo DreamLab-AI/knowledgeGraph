@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:distributed-sensing",
   "domain": "robotics",
-  "definition": "Distributed sensing is the collection and fusion of environmental information from multiple spatially separated sensing agents, such as the robots in a multi-robot system or swarm, rather than from a single centralised sensor. It exploits the combined spatial coverage and redundancy of many sensors to build a more complete, robust picture of the environment than any single agent [private] obtain alone. Distributed sensing is central to swarm robotics applications such as environmental monitoring, search and rescue, and cooperative mapping.",
+  "definition": "Distributed sensing is the collection and fusion of environmental information from multiple spatially separated sensing agents, such as the robots in a multi-robot system or swarm, rather than from a single centralised sensor. It exploits the combined spatial coverage and redundancy of many sensors to build a more complete, robust picture of the environment than any single agent could obtain alone. Distributed sensing is central to swarm robotics applications such as environmental monitoring, search and rescue, and cooperative mapping.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:multi-robot-systems",
@@ -44,6 +44,21 @@
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -69,16 +84,16 @@
         "label": "Task Allocation Mechanism"
       },
       {
+        "id": "urn:ngm:class:actuation-system",
+        "label": "Actuation System"
+      },
+      {
         "id": "urn:ngm:class:perception-module",
         "label": "Perception Module"
       },
       {
         "id": "urn:ngm:class:planning-module",
         "label": "Planning Module"
-      },
-      {
-        "id": "urn:ngm:class:sensor",
-        "label": "Sensor"
       }
     ],
     "requires": [
@@ -141,12 +156,12 @@
         "label": "Autonomous Vehicle"
       },
       {
-        "id": "urn:ngm:class:unmanned-aerial-vehicle",
-        "label": "Unmanned Aerial Vehicle"
+        "id": "urn:ngm:class:autonomous-warehouse-robot",
+        "label": "Autonomous Warehouse Robot"
       },
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
+        "id": "urn:ngm:class:unmanned-aerial-vehicle",
+        "label": "Unmanned Aerial Vehicle"
       }
     ],
     "dependsOn": [
@@ -169,6 +184,14 @@
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
       }
     ],
     "contrastsWith": [
@@ -181,8 +204,28 @@
         "label": "Teleoperation"
       },
       {
+        "id": "urn:ngm:class:semi-autonomous-system",
+        "label": "Semi-Autonomous System"
+      },
+      {
         "id": "urn:ngm:class:teleoperated-robot",
         "label": "Teleoperated System"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
       }
     ],
     "bridgesTo": [
@@ -201,6 +244,22 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
       }
     ],
     "uses": [
@@ -213,12 +272,12 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:robot-operating-system",
-        "label": "Robot Operating System"
-      },
-      {
         "id": "urn:ngm:class:robotic-control",
         "label": "Robotic Control"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "Robot Operating System"
       },
       {
         "id": "urn:ngm:class:computer-vision",
@@ -231,6 +290,10 @@
       {
         "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "supports": [
@@ -241,6 +304,30 @@
       {
         "id": "urn:ngm:class:multi-robot-systems",
         "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
       }
     ],
     "standardizedBy": [
@@ -251,6 +338,26 @@
       {
         "id": "urn:ngm:class:sae-j-3016",
         "label": "SAE Levels of Driving Automation"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [

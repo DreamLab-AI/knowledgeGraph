@@ -57,6 +57,10 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:market-surveillance",
+        "label": "Post-Market Surveillance"
       }
     ],
     "implements": [
@@ -67,6 +71,14 @@
       {
         "id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-17000",
+        "label": "ISO/IEC 17000"
       }
     ],
     "contrastsWith": [
@@ -101,6 +113,10 @@
       {
         "id": "urn:ngm:class:robustness-testing",
         "label": "Robustness Testing"
+      },
+      {
+        "id": "urn:ngm:class:bias-testing",
+        "label": "Bias Testing"
       }
     ],
     "supports": [
@@ -136,6 +152,10 @@
       {
         "id": "urn:ngm:class:certification",
         "label": "Certification"
+      },
+      {
+        "id": "urn:ngm:class:accreditation",
+        "label": "Accreditation"
       }
     ]
   },
@@ -215,6 +235,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

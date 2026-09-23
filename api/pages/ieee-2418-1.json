@@ -52,6 +52,18 @@
       {
         "id": "urn:ngm:class:interoperability",
         "label": "IoT Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "IoT Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Device Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "IoT Interoperability"
       }
     ],
     "dependsOn": [],
@@ -60,6 +72,10 @@
       {
         "id": "urn:ngm:class:iso-iec-30141",
         "label": "ISO/IEC 30141"
+      },
+      {
+        "id": "urn:ngm:class:w3c-web-of-things",
+        "label": "W3C Web of Things"
       }
     ],
     "bridgesTo": [
@@ -82,7 +98,7 @@
         "label": "Cryptographic Hash"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -106,7 +122,12 @@
         "label": "IEEE"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:oneM2M",
@@ -115,6 +136,14 @@
       {
         "id": "urn:ngm:class:hyperledger-fabric",
         "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:ieee-2418-2",
+        "label": "IEEE 2418.2"
+      },
+      {
+        "id": "urn:ngm:class:ieee-2418-3",
+        "label": "IEEE 2418.3"
       }
     ]
   },
@@ -123,6 +152,11 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -223,8 +257,16 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -311,6 +353,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -329,8 +377,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       },
       {
         "id": "urn:ngm:class:devops",
@@ -339,10 +391,6 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ]
   },

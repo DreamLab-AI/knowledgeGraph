@@ -20,6 +20,18 @@
       {
         "id": "urn:ngm:class:3-d-asset",
         "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-text",
+        "label": "Synthetic Text"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-image",
+        "label": "Synthetic Image"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-audio",
+        "label": "Synthetic Audio"
       }
     ],
     "requires": [
@@ -65,6 +77,10 @@
       {
         "id": "urn:ngm:class:procedural-content",
         "label": "Procedural Content"
+      },
+      {
+        "id": "urn:ngm:class:human-authored-content",
+        "label": "Human-Authored Content"
       }
     ],
     "bridgesTo": [
@@ -115,6 +131,14 @@
       {
         "id": "urn:ngm:class:content-provenance",
         "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property"
+      },
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfake"
       },
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
@@ -198,6 +222,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

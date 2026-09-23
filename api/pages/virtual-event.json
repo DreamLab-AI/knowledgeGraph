@@ -32,6 +32,10 @@
       {
         "id": "urn:ngm:class:breakout-room",
         "label": "Breakout Room"
+      },
+      {
+        "id": "urn:ngm:class:virtual-venue",
+        "label": "Virtual Venue"
       }
     ],
     "requires": [
@@ -44,7 +48,7 @@
         "label": "Avatar"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       }
     ],
@@ -56,6 +60,14 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-networking",
+        "label": "Virtual Networking"
+      },
+      {
+        "id": "urn:ngm:class:digital-exhibition",
+        "label": "Digital Exhibition"
       }
     ],
     "dependsOn": [
@@ -73,7 +85,16 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:physical-event",
+        "label": "Physical Event"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-event",
+        "label": "Hybrid Event"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:metaverse",
@@ -126,6 +147,10 @@
       {
         "id": "urn:ngm:class:presence",
         "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event-platform",
+        "label": "Event Platform"
       }
     ]
   },
@@ -134,6 +159,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -141,6 +181,10 @@
       {
         "id": "urn:ngm:class:asynchronous-collaboration",
         "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:presence-mechanism",
+        "label": "Presence Mechanism"
       },
       {
         "id": "urn:ngm:class:shared-workspace",
@@ -165,10 +209,6 @@
       {
         "id": "urn:ngm:class:mixed-reality-platform",
         "label": "Mixed Reality Platform"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "requires": [
@@ -199,6 +239,10 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       }
     ],
     "enables": [
@@ -247,15 +291,27 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
       },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
@@ -271,6 +327,10 @@
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
         "id": "urn:ngm:class:extended-reality-xr",
@@ -323,6 +383,14 @@
       {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -345,6 +413,10 @@
         "label": "Groupware"
       },
       {
+        "id": "urn:ngm:class:social-software",
+        "label": "Social Software"
+      },
+      {
         "id": "urn:ngm:class:sc-display-and-rendering",
         "label": "Display and Rendering"
       },
@@ -355,6 +427,14 @@
       {
         "id": "urn:ngm:class:sc-standards-and-interop",
         "label": "Standards and Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
       }
     ]
   },

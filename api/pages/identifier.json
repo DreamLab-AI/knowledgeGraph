@@ -186,7 +186,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:electronic-signature",
+        "id": "urn:ngm:class:digital-signature-verification",
         "label": "Electronic Signature"
       },
       {

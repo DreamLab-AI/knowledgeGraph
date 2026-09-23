@@ -36,7 +36,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gnosis-safe",
+        "label": "Gnosis Safe"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -55,14 +64,14 @@
       "slug": "cryptocurrency-storage"
     },
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component (Blockchain)",
-      "slug": "bc-network-component"
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
     },
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
     }
   ],
   "inheritedRelations": {
@@ -88,16 +97,16 @@
         "label": "Seed Phrase"
       },
       {
-        "id": "urn:ngm:class:archival-node",
-        "label": "Archival Node"
+        "id": "urn:ngm:class:block",
+        "label": "Block"
       },
       {
-        "id": "urn:ngm:class:bootstrap-node",
-        "label": "Bootstrap Node"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:full-node",
-        "label": "Full Node"
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
       }
     ],
     "requires": [
@@ -130,8 +139,8 @@
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
       }
     ],
     "enables": [
@@ -164,8 +173,8 @@
         "label": "Decentralized Identity"
       },
       {
-        "id": "urn:ngm:class:transaction-signing",
-        "label": "Transaction Signing"
+        "id": "urn:ngm:class:defi-access",
+        "label": "DeFi Access"
       }
     ],
     "dependsOn": [
@@ -182,7 +191,7 @@
         "label": "Key Management"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -238,6 +247,14 @@
       {
         "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -272,7 +289,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -286,6 +303,16 @@
       {
         "id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ],
     "relatedTo": [
@@ -314,12 +341,8 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
       }
     ]
   },

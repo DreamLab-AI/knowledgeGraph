@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vector-index",
   "domain": "ai",
-  "definition": "A vector [private] is a data structure that organises high-dimensional embedding vectors to enable fast approximate nearest-neighbour search over large collections. Using methods such as HNSW graphs, IVF partitioning or product quantisation, it trades a small amount of recall for large gains in query latency and scalability. Vector indexes are the retrieval engine behind semantic search and retrieval-augmented generation.",
+  "definition": "A vector index is a data structure that organises high-dimensional embedding vectors to enable fast approximate nearest-neighbour search over large collections. Using methods such as HNSW graphs, IVF partitioning or product quantisation, it trades a small amount of recall for large gains in query latency and scalability. Vector indexes are the retrieval engine behind semantic search and retrieval-augmented generation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:information-retrieval",
@@ -92,6 +92,14 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:text-representation",
+        "label": "Text Representation"
+      },
+      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
@@ -166,6 +174,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
         "id": "urn:ngm:class:database-query",
         "label": "Database Query"
       },
@@ -194,6 +206,22 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -230,13 +258,19 @@
         "label": "Transfer Learning"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

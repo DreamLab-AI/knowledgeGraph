@@ -52,23 +52,40 @@
       {
         "id": "urn:ngm:class:sovereign-debt-restructuring",
         "label": "Sovereign Debt Restructuring"
+      },
+      {
+        "id": "urn:ngm:class:exchange-rate-stability",
+        "label": "Exchange Rate Stability"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
+      },
+      {
+        "id": "urn:ngm:class:brics-payment-system",
+        "label": "BRICS Payment System"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:finternet",
         "label": "Finternet"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Tokenised Central Bank Money"
       },
       {
         "id": "urn:ngm:class:digital-currency-multilateral-platform",
         "label": "Digital Currency Multilateral Platform"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Tokenised Central Bank Money"
       }
     ],
     "uses": [],
@@ -90,11 +107,20 @@
         "label": "Macroprudential Policy"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:articles-of-agreement",
+        "label": "Articles of Agreement"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:international-financial-architecture",
         "label": "International Financial Architecture"
+      },
+      {
+        "id": "urn:ngm:class:bretton-woods-system",
+        "label": "Bretton Woods System"
       }
     ],
     "relatedTo": [
@@ -117,6 +143,14 @@
       {
         "id": "urn:ngm:class:intergovernmental-organisation",
         "label": "Intergovernmental Organisation"
+      },
+      {
+        "id": "urn:ngm:class:global-financial-stability-report",
+        "label": "Global Financial Stability Report"
+      },
+      {
+        "id": "urn:ngm:class:world-economic-outlook",
+        "label": "World Economic Outlook"
       }
     ]
   },
@@ -256,7 +290,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

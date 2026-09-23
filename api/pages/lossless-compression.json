@@ -36,6 +36,10 @@
       {
         "id": "urn:ngm:class:backup-and-recovery",
         "label": "Backup and Recovery"
+      },
+      {
+        "id": "urn:ngm:class:backup",
+        "label": "Backup"
       }
     ],
     "dependsOn": [
@@ -208,6 +212,22 @@
       {
         "id": "urn:ngm:class:storage-optimisation",
         "label": "Storage Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

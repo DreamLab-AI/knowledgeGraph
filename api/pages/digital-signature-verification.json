@@ -35,8 +35,12 @@
         "label": "Asymmetric Cryptography"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Hash Algorithm"
       }
     ],
     "enables": [
@@ -51,6 +55,14 @@
       {
         "id": "urn:ngm:class:message-authentication",
         "label": "Secure Message Authentication"
+      },
+      {
+        "id": "urn:ngm:class:transaction-authentication",
+        "label": "Transaction Authentication"
+      },
+      {
+        "id": "urn:ngm:class:document-integrity",
+        "label": "Document Integrity"
       }
     ],
     "dependsOn": [],
@@ -200,7 +212,7 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:trusted-execution-environment",
+        "id": "urn:ngm:class:tee",
         "label": "Trusted Execution Environment"
       },
       {
@@ -272,6 +284,10 @@
         "label": "Cryptographic Hash Function"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
@@ -282,10 +298,6 @@
       {
         "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptographic-primitive",
@@ -346,7 +358,7 @@
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:transport-layer-security",
+        "id": "urn:ngm:class:tls",
         "label": "Transport Layer Security"
       },
       {

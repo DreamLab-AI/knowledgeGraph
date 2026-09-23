@@ -10,6 +10,14 @@
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
+    },
+    {
+      "id": "urn:ngm:class:digital-service",
+      "label": "Digital Service"
+    },
+    {
+      "id": "urn:ngm:class:learning-system",
+      "label": "Learning System"
     }
   ],
   "entityType": "Class",
@@ -32,6 +40,26 @@
       {
         "id": "urn:ngm:class:learning-analytics",
         "label": "Learning Analytics"
+      },
+      {
+        "id": "urn:ngm:class:automated-assessment",
+        "label": "Automated Assessment"
+      },
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "id": "urn:ngm:class:open-educational-resources",
+        "label": "Open Educational Resources"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
       }
     ],
     "requires": [
@@ -46,6 +74,14 @@
       {
         "id": "urn:ngm:class:accessibility",
         "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "enables": [
@@ -64,11 +100,74 @@
       {
         "id": "urn:ngm:class:competency-based-education",
         "label": "Competency-Based Education"
+      },
+      {
+        "id": "urn:ngm:class:lifelong-learning",
+        "label": "Lifelong Learning"
+      },
+      {
+        "id": "urn:ngm:class:scalable-education",
+        "label": "Scalable Education"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:broadband-connectivity",
+        "label": "Broadband Connectivity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:constructivism",
+        "label": "Constructivism"
+      },
+      {
+        "id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "id": "urn:ngm:class:connectivism",
+        "label": "Connectivism"
+      },
+      {
+        "id": "urn:ngm:class:spaced-repetition",
+        "label": "Spaced Repetition"
+      },
+      {
+        "id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-classroom-instruction",
+        "label": "Traditional Classroom Instruction"
+      },
+      {
+        "id": "urn:ngm:class:didactic-instruction",
+        "label": "Didactic Instruction"
+      },
+      {
+        "id": "urn:ngm:class:correspondence-learning",
+        "label": "Correspondence Learning"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:augmented-reality",
@@ -93,7 +192,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -107,9 +206,46 @@
       {
         "id": "urn:ngm:class:recommendation-systems",
         "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:k-12-education",
+        "label": "K-12 Education"
+      },
+      {
+        "id": "urn:ngm:class:higher-education",
+        "label": "Higher Education"
+      },
+      {
+        "id": "urn:ngm:class:corporate-learning",
+        "label": "Corporate Learning"
+      },
+      {
+        "id": "urn:ngm:class:special-educational-needs",
+        "label": "Special Educational Needs"
+      },
+      {
+        "id": "urn:ngm:class:vocational-training",
+        "label": "Vocational Training"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:scorm",
@@ -118,6 +254,18 @@
       {
         "id": "urn:ngm:class:xapi",
         "label": "xAPI"
+      },
+      {
+        "id": "urn:ngm:class:ims-lti",
+        "label": "IMS LTI"
+      },
+      {
+        "id": "urn:ngm:class:ieee-ltsc",
+        "label": "IEEE LTSC"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
       }
     ],
     "partOf": [],
@@ -133,6 +281,18 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:open-educational-resources",
+        "label": "Open Educational Resources"
+      },
+      {
+        "id": "urn:ngm:class:learning-science",
+        "label": "Learning Science"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
       }
     ]
   },
@@ -214,14 +374,24 @@
         "label": "Predictive Analytics"
       }
     ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
       }
     ],
     "relatedTo": [

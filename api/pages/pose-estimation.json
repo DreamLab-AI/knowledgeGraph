@@ -18,6 +18,18 @@
     {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction"
+    },
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing-paradigm",
+      "label": "Spatial Computing Paradigm"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
     }
   ],
   "entityType": "Class",
@@ -34,7 +46,7 @@
         "label": "Body Model"
       },
       {
-        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
+        "id": "urn:ngm:class:heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
@@ -48,6 +60,18 @@
       {
         "id": "urn:ngm:class:temporal-smoothing",
         "label": "Temporal Smoothing"
+      },
+      {
+        "id": "urn:ngm:class:skeleton-graph",
+        "label": "Skeleton Graph"
+      },
+      {
+        "id": "urn:ngm:class:smpl-body-model",
+        "label": "Body Model"
+      },
+      {
+        "id": "urn:ngm:class:6dof-estimation",
+        "label": "6DoF Estimation"
       }
     ],
     "requires": [
@@ -74,6 +98,10 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
       }
     ],
     "enables": [
@@ -104,9 +132,34 @@
       {
         "id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:rehabilitation-monitoring",
+        "label": "Rehabilitation Monitoring"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:body-shape-models",
+        "label": "Body Shape Models"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-benchmarks",
+        "label": "Computer Vision Benchmarks"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:4-d-humans",
@@ -151,9 +204,54 @@
       {
         "id": "urn:ngm:class:vi-tpose",
         "label": "ViTPose"
+      },
+      {
+        "id": "urn:ngm:class:mediapipe-pose",
+        "label": "MediaPipe Pose"
+      },
+      {
+        "id": "urn:ngm:class:vitpose",
+        "label": "ViTPose"
+      },
+      {
+        "id": "urn:ngm:class:smpl-body-model",
+        "label": "SMPL"
+      },
+      {
+        "id": "urn:ngm:class:smpl-x",
+        "label": "SMPL-X"
+      },
+      {
+        "id": "urn:ngm:class:4d-humans",
+        "label": "4D-Humans"
+      },
+      {
+        "id": "urn:ngm:class:foundationpose",
+        "label": "FoundationPose"
+      },
+      {
+        "id": "urn:ngm:class:centerpose",
+        "label": "CenterPose"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optical-motion-capture",
+        "label": "Optical Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit-mocap",
+        "label": "Inertial Measurement Unit MoCap"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensor-pose",
+        "label": "Depth Sensor Pose"
+      },
+      {
+        "id": "urn:ngm:class:marker-based-tracking",
+        "label": "Marker-Based Tracking"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -165,7 +263,7 @@
         "label": "Direct Coordinate Regression"
       },
       {
-        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
+        "id": "urn:ngm:class:heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
@@ -178,6 +276,10 @@
       },
       {
         "id": "urn:ngm:class:vi-t-backbone",
+        "label": "ViT Backbone"
+      },
+      {
+        "id": "urn:ngm:class:vit-backbone",
         "label": "ViT Backbone"
       }
     ],
@@ -205,6 +307,14 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
       }
     ],
     "standardizedBy": [
@@ -231,6 +341,14 @@
       {
         "id": "urn:ngm:class:ycb-video-dataset",
         "label": "YCB-Video Dataset"
+      },
+      {
+        "id": "urn:ngm:class:3dpw-benchmark",
+        "label": "3DPW Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:human3-6m",
+        "label": "Human3.6M"
       }
     ],
     "partOf": [],
@@ -258,6 +376,10 @@
       {
         "id": "urn:ngm:class:depth-estimation",
         "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:hand-pose-estimation",
+        "label": "Hand Pose Estimation"
       }
     ]
   },
@@ -283,9 +405,234 @@
       "slug": "embodied-ai"
     },
     {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:agent",
+      "label": "Agent",
+      "slug": "agent"
+    },
+    {
+      "id": "urn:ngm:class:agent-based-modelling",
+      "label": "Agent-Based Modelling",
+      "slug": "agent-based-modelling"
+    },
+    {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture",
       "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous System",
+      "slug": "autonomous-system"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:complex-systems-science",
+      "label": "Complex Systems Science",
+      "slug": "complex-systems-science"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:computational-modelling",
+      "label": "Computational Modelling",
+      "slug": "computational-modelling"
+    },
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation",
+      "slug": "simulation"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin",
+      "slug": "digital-twin"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
+    },
+    {
+      "id": "urn:ngm:class:scientific-machine-learning",
+      "label": "Scientific Machine Learning",
+      "slug": "scientific-machine-learning"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:scientific-discovery",
+      "label": "Scientific Discovery",
+      "slug": "scientific-discovery"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     }
   ],
   "inheritedRelations": {
@@ -345,16 +692,16 @@
         "label": "User Research"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
       },
       {
-        "id": "urn:ngm:class:knowledge-representation",
-        "label": "Knowledge Representation"
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
       }
     ],
     "enables": [
@@ -401,16 +748,62 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:imitation-learning",
-        "label": "Imitation Learning"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:global-workspace-theory",
+        "label": "Global Workspace Theory"
       }
     ],
     "contrastsWith": [
@@ -427,6 +820,14 @@
         "label": "Autonomous Agent"
       },
       {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
@@ -437,10 +838,6 @@
       {
         "id": "urn:ngm:class:task-specific-model",
         "label": "Task-Specific Model"
-      },
-      {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -461,16 +858,20 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:brain-computer-interfaces",
-        "label": "Brain-Computer Interface"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:multi-agent-systems",
-        "label": "Multi-Agent Systems"
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
       },
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-validation",
+        "label": "Blockchain Validation"
       }
     ],
     "uses": [
@@ -495,7 +896,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -503,8 +904,8 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
+        "id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
       }
     ],
     "supports": [
@@ -515,6 +916,98 @@
       {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:darpa-xai-programme",
+        "label": "DARPA XAI Programme"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p7001",
+        "label": "IEEE P7001"
+      },
+      {
+        "id": "urn:ngm:class:open-x-embodiment-dataset",
+        "label": "Open X-Embodiment Dataset"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI Gym"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "ROS"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems-science",
+        "label": "Complex Systems Science"
+      },
+      {
+        "id": "urn:ngm:class:complexity-science",
+        "label": "Complexity Science"
+      },
+      {
+        "id": "urn:ngm:class:computational-social-science",
+        "label": "Computational Social Science"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ],
     "relatedTo": [
@@ -1013,7 +1506,7 @@
     },
     {
       "slug": "heatmap-regression",
-      "label": "Heatmap Regression"
+      "label": "Heatmap Regression (Keypoint Localisation)"
     },
     {
       "slug": "lens-and-camera-calibration",

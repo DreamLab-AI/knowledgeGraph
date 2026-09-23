@@ -76,6 +76,14 @@
       {
         "id": "urn:ngm:class:localisation",
         "label": "GPS Localisation"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Lidar Odometry"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "GPS Localisation"
       }
     ],
     "bridgesTo": [
@@ -86,6 +94,10 @@
       {
         "id": "urn:ngm:class:mixed-reality",
         "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
       },
       {
         "id": "urn:ngm:class:autonomous-vehicle",
@@ -150,6 +162,10 @@
       {
         "id": "urn:ngm:class:factor-graph-optimisation",
         "label": "Factor Graph Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:visual-place-recognition",
+        "label": "Place Recognition"
       }
     ]
   },
@@ -229,6 +245,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

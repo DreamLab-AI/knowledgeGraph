@@ -44,7 +44,7 @@
         "label": "Identity Verification"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -60,6 +60,10 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:digital-presence",
+        "label": "Digital Presence"
       }
     ],
     "dependsOn": [
@@ -96,6 +100,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
       }
     ],
     "uses": [
@@ -136,7 +144,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "KYC Know Your Customer"
       }
     ]
@@ -158,6 +166,10 @@
       {
         "id": "urn:ngm:class:decentralised-identifier",
         "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-claim",
+        "label": "Verifiable Claim"
       },
       {
         "id": "urn:ngm:class:verifiable-credential-standard",
@@ -182,10 +194,6 @@
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
       }
     ],
     "requires": [

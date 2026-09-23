@@ -14,6 +14,22 @@
     {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "id": "urn:ngm:class:web-architecture",
+      "label": "Web Architecture"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "id": "urn:ngm:class:agent-oriented-computing",
+      "label": "Agent-Oriented Computing"
+    },
+    {
+      "id": "urn:ngm:class:sociotechnical-system",
+      "label": "Sociotechnical System"
     }
   ],
   "entityType": "Class",
@@ -48,6 +64,22 @@
       {
         "id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:capability-token",
+        "label": "Capability Token"
+      },
+      {
+        "id": "urn:ngm:class:agent-marketplace",
+        "label": "Agent Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Browser Agent"
+      },
+      {
+        "id": "urn:ngm:class:agentic-commerce-layer",
+        "label": "Agentic Commerce Layer"
       }
     ],
     "requires": [
@@ -78,10 +110,84 @@
       {
         "id": "urn:ngm:class:transport-layer",
         "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:discovery-protocol",
+        "label": "Discovery Protocol"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-to-machine-commerce",
+        "label": "Machine-to-Machine Commerce"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-workflows",
+        "label": "Autonomous Workflows"
+      },
+      {
+        "id": "urn:ngm:class:programmatic-service-composition",
+        "label": "Programmatic Service Composition"
+      },
+      {
+        "id": "urn:ngm:class:long-horizon-task-execution",
+        "label": "Long-Horizon Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:cross-vendor-agent-interoperability",
+        "label": "Cross-Vendor Agent Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:api-first-web",
+        "label": "API-First Web"
+      },
+      {
+        "id": "urn:ngm:class:agentic-search",
+        "label": "Agentic Search"
+      },
+      {
+        "id": "urn:ngm:class:personal-ai",
+        "label": "Personal AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "id": "urn:ngm:class:web-sockets",
+        "label": "WebSockets"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:json-data-interchange-format-rpc",
@@ -98,9 +204,50 @@
       {
         "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:capability-discovery",
+        "label": "Capability Discovery"
+      },
+      {
+        "id": "urn:ngm:class:task-lifecycle-management",
+        "label": "Task Lifecycle Management"
+      },
+      {
+        "id": "urn:ngm:class:streaming-responses",
+        "label": "Streaming Responses"
+      },
+      {
+        "id": "urn:ngm:class:elicitation",
+        "label": "Elicitation"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:web-2-0-saas",
+        "label": "Web 2.0 SaaS"
+      },
+      {
+        "id": "urn:ngm:class:static-web",
+        "label": "Static Web"
+      },
+      {
+        "id": "urn:ngm:class:walled-garden",
+        "label": "Walled Garden"
+      },
+      {
+        "id": "urn:ngm:class:browser-centric-internet",
+        "label": "Browser-Centric Internet"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop-workflow",
+        "label": "Human-in-the-Loop Workflow"
+      },
+      {
+        "id": "urn:ngm:class:web3-blockchain-agents",
+        "label": "Web3 Blockchain Agents"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:sociotechnical-system",
@@ -139,6 +286,14 @@
       {
         "id": "urn:ngm:class:mistral",
         "label": "Mistral"
+      },
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "OpenAI GPT"
+      },
+      {
+        "id": "urn:ngm:class:meta-llama-model-family",
+        "label": "Meta Llama"
       }
     ],
     "supports": [
@@ -157,6 +312,26 @@
       {
         "id": "urn:ngm:class:software-engineering-agents",
         "label": "Software Engineering Agents"
+      },
+      {
+        "id": "urn:ngm:class:shopping-agents",
+        "label": "Shopping Agents"
+      },
+      {
+        "id": "urn:ngm:class:booking-agents",
+        "label": "Booking Agents"
+      },
+      {
+        "id": "urn:ngm:class:procurement-agents",
+        "label": "Procurement Agents"
+      },
+      {
+        "id": "urn:ngm:class:personal-assistance",
+        "label": "Personal Assistants"
+      },
+      {
+        "id": "urn:ngm:class:coding-copilots",
+        "label": "Coding Copilots"
       }
     ],
     "standardizedBy": [
@@ -183,6 +358,10 @@
       {
         "id": "urn:ngm:class:w3-c",
         "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:agntcy",
+        "label": "AGNTCY"
       }
     ],
     "partOf": [],
@@ -214,6 +393,26 @@
       {
         "id": "urn:ngm:class:ai-search",
         "label": "AI Search"
+      },
+      {
+        "id": "urn:ngm:class:agentic-economy",
+        "label": "Agentic Economy"
+      },
+      {
+        "id": "urn:ngm:class:death-of-the-internet",
+        "label": "Death of the Internet"
+      },
+      {
+        "id": "urn:ngm:class:zero-click-search",
+        "label": "Zero-Click Search"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agents"
+      },
+      {
+        "id": "urn:ngm:class:browser-automation",
+        "label": "Browser Use"
       }
     ]
   },
@@ -234,9 +433,64 @@
       "slug": "artificial-intelligence-core"
     },
     {
+      "id": "urn:ngm:class:complex-systems",
+      "label": "Complex Systems",
+      "slug": "complex-systems"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:systems-theory",
+      "label": "Systems Theory",
+      "slug": "systems-theory"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -280,12 +534,20 @@
         "label": "Action Space"
       },
       {
+        "id": "urn:ngm:class:api-access",
+        "label": "API Access"
+      },
+      {
         "id": "urn:ngm:class:authentication-system",
         "label": "Authentication System"
       },
       {
         "id": "urn:ngm:class:environment-model",
         "label": "Environment Model"
+      },
+      {
+        "id": "urn:ngm:class:resource-budget",
+        "label": "Resource Budget"
       },
       {
         "id": "urn:ngm:class:reward-function",
@@ -296,16 +558,8 @@
         "label": "Sensor Input"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Partial Failure Tolerance"
       }
     ],
     "enables": [
@@ -326,20 +580,54 @@
         "label": "Code Generation"
       },
       {
+        "id": "urn:ngm:class:database-interaction",
+        "label": "Database Interaction"
+      },
+      {
         "id": "urn:ngm:class:file-system",
         "label": "File System Access"
       },
       {
+        "id": "urn:ngm:class:goal-achievement",
+        "label": "Goal Achievement"
+      },
+      {
         "id": "urn:ngm:class:multi-agent-coordination",
         "label": "Multi-Agent Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:flp-impossibility",
+        "label": "FLP Impossibility"
+      },
+      {
+        "id": "urn:ngm:class:lamport-timestamps",
+        "label": "Lamport Timestamps"
+      },
+      {
+        "id": "urn:ngm:class:pacelc",
+        "label": "PACELC"
+      },
+      {
+        "id": "urn:ngm:class:two-generals-problem",
+        "label": "Two Generals Problem"
+      },
+      {
+        "id": "urn:ngm:class:vector-clocks",
+        "label": "Vector Clocks"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       }
     ],
     "implements": [
@@ -364,6 +652,10 @@
         "label": "Meta-Learning"
       },
       {
+        "id": "urn:ngm:class:planning-algorithm",
+        "label": "Planning Algorithm"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
@@ -372,14 +664,180 @@
         "label": "Transfer Learning"
       }
     ],
-    "uses": [
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:embarrassingly-parallel-batch",
+        "label": "Embarrassingly Parallel Batch"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      },
+      {
+        "id": "urn:ngm:class:single-machine-multiprocessing",
+        "label": "Single-Machine Multiprocessing"
+      },
+      {
+        "id": "urn:ngm:class:sociotechnical-harm",
+        "label": "Sociotechnical Harm"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:sequential-computing",
+        "label": "Sequential Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-economic-agent",
+        "label": "Autonomous Economic Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-trading-bot",
+        "label": "Bitcoin Trading Bot"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-flink",
+        "label": "Apache Flink"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:etcd",
+        "label": "etcd"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:ray",
+        "label": "Ray"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      },
+      {
+        "id": "urn:ngm:class:distributed-databases",
+        "label": "Distributed Databases"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:streaming-analytics",
+        "label": "Streaming Analytics"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:apache-software-foundation",
+        "label": "Apache Software Foundation"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC Specification"
+      },
+      {
+        "id": "urn:ngm:class:mpi-forum",
+        "label": "MPI Forum"
+      },
+      {
+        "id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "IETF QUIC"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [
@@ -396,24 +854,24 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-agent-system",
-        "label": "AI Agent System"
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       },
       {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Computing"
       }
     ]
   },

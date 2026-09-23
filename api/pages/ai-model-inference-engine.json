@@ -12,8 +12,16 @@
       "label": "Inference Serving"
     },
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Artificial Intelligence)"
+    },
+    {
+      "id": "urn:ngm:class:ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning-framework",
+      "label": "Deep Learning Framework"
     }
   ],
   "entityType": "Class",
@@ -36,6 +44,14 @@
       {
         "id": "urn:ngm:class:operator-fusion",
         "label": "Operator Fusion"
+      },
+      {
+        "id": "urn:ngm:class:prefix-caching",
+        "label": "Prefix Caching"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
       }
     ],
     "requires": [
@@ -54,6 +70,10 @@
       {
         "id": "urn:ngm:class:hardware-accelerator",
         "label": "Hardware Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
       }
     ],
     "enables": [
@@ -72,6 +92,22 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agents"
+      },
+      {
+        "id": "urn:ngm:class:on-device-ai",
+        "label": "On-Device AI"
       }
     ],
     "dependsOn": [
@@ -82,10 +118,56 @@
       {
         "id": "urn:ngm:class:ai-model-development",
         "label": "AI Model Development"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-development",
+        "label": "AI Model Development"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -99,43 +181,95 @@
       {
         "id": "urn:ngm:class:flash-attention",
         "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning",
+      "slug": "deep-learning"
     },
     {
-      "id": "urn:ngm:class:model-serving",
-      "label": "Model Serving",
-      "slug": "model-serving"
+      "id": "urn:ngm:class:deep-learning-domain",
+      "label": "Deep Learning Domain",
+      "slug": "deep-learning-domain"
     },
     {
-      "id": "urn:ngm:class:inference-layer",
-      "label": "Inference Layer",
-      "slug": "inference-layer"
-    },
-    {
-      "id": "urn:ngm:class:model-deployment",
-      "label": "Model Deployment",
-      "slug": "model-deployment"
-    },
-    {
-      "id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture",
-      "slug": "ai-model-architecture"
-    },
-    {
-      "id": "urn:ngm:class:mlops",
-      "label": "MLOps",
-      "slug": "mlops"
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:machine-learning-discipline",
@@ -143,9 +277,39 @@
       "slug": "machine-learning-discipline"
     },
     {
+      "id": "urn:ngm:class:machine-learning-software",
+      "label": "Machine Learning Software",
+      "slug": "machine-learning-software"
+    },
+    {
+      "id": "urn:ngm:class:model-serving",
+      "label": "Model Serving",
+      "slug": "model-serving"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
@@ -153,9 +317,39 @@
       "slug": "artificial-intelligence-core"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
+      "id": "urn:ngm:class:inference-layer",
+      "label": "Inference Layer",
+      "slug": "inference-layer"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:model-deployment",
+      "label": "Model Deployment",
+      "slug": "model-deployment"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:mlops",
+      "label": "MLOps",
+      "slug": "mlops"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -181,16 +375,16 @@
         "label": "Request Queue"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       }
     ],
     "requires": [
@@ -203,28 +397,28 @@
         "label": "Load Balancer"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:networking-fabric",
+        "label": "Networking Fabric"
       },
       {
-        "id": "urn:ngm:class:load-balancing",
-        "label": "Load Balancing"
+        "id": "urn:ngm:class:inference-runtime",
+        "label": "Inference Runtime"
       },
       {
-        "id": "urn:ngm:class:model-deployment",
-        "label": "Model Deployment"
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
       },
       {
-        "id": "urn:ngm:class:rest-api",
-        "label": "REST API"
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
       }
     ],
     "enables": [
@@ -241,24 +435,24 @@
         "label": "Real-Time Inference"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "dependsOn": [
@@ -271,60 +465,96 @@
         "label": "Model Registry"
       },
       {
-        "id": "urn:ngm:class:feature-store",
-        "label": "Feature Store"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency"
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
       },
       {
-        "id": "urn:ngm:class:model-versioning",
-        "label": "Model Versioning"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:model-training",
-        "label": "Model Training"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:ai-monitoring",
-        "label": "AI Monitoring"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:g-rpc",
-        "label": "gRPC"
+        "id": "urn:ngm:class:distributed-inference",
+        "label": "Distributed Inference"
       },
       {
-        "id": "urn:ngm:class:openapi",
-        "label": "OpenAPI"
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:model-training",
-        "label": "Model Training"
-      },
       {
         "id": "urn:ngm:class:offline-batch-processing",
         "label": "Offline Batch Processing"
       },
       {
-        "id": "urn:ngm:class:model-evaluation",
-        "label": "Model Evaluation"
-      },
-      {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
       },
       {
         "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "label": "Symbolic AI System"
+      },
+      {
+        "id": "urn:ngm:class:shallow-machine-learning",
+        "label": "Shallow Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
       }
     ],
     "bridgesTo": [
@@ -337,24 +567,28 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:serverless-architecture",
-        "label": "Serverless Computing"
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
       },
       {
-        "id": "urn:ngm:class:data-engineering",
-        "label": "Data Engineering"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:platform-engineering",
-        "label": "Platform Engineering"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference Runtime"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving Infrastructure"
       }
     ],
     "uses": [
@@ -363,62 +597,100 @@
         "label": "KV Cache"
       },
       {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantisation"
+      },
+      {
         "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
         "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:model-quantization",
-        "label": "Model Quantization"
-      },
-      {
-        "id": "urn:ngm:class:docker-containerisation-platform",
-        "label": "Docker"
-      },
-      {
-        "id": "urn:ngm:class:g-rpc",
-        "label": "gRPC"
+        "label": "Accelerated Computing"
       },
       {
         "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:rest-api",
-        "label": "REST API"
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-architecture",
+        "label": "AI Model Architecture"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:a-b-testing",
-        "label": "A/B Testing"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:canary-deployment",
-        "label": "Canary Deployment"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:model-monitoring",
-        "label": "Model Monitoring"
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
       },
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:explainability",
-        "label": "Model Explainability"
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
       },
       {
-        "id": "urn:ngm:class:reproducibility",
-        "label": "Reproducibility"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-ai",
+        "label": "Decentralized AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-standards",
+        "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
       }
     ],
     "partOf": [
@@ -437,8 +709,8 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency"
+        "id": "urn:ngm:class:ray-serve",
+        "label": "Ray Serve"
       },
       {
         "id": "urn:ngm:class:service-level-objective",
@@ -453,20 +725,20 @@
         "label": "Triton Inference Server"
       },
       {
-        "id": "urn:ngm:class:kubernetes",
-        "label": "Kubernetes"
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:continuous-delivery",
-        "label": "Continuous Delivery"
+        "id": "urn:ngm:class:empirical-experimental-design-tracking",
+        "label": "Experiment Tracking"
       },
       {
-        "id": "urn:ngm:class:data-drift",
-        "label": "Data Drift"
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
       },
       {
-        "id": "urn:ngm:class:model-versioning",
-        "label": "Model Versioning"
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought"
       }
     ]
   },

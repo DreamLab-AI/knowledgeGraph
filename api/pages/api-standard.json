@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:api-versioning",
         "label": "API Versioning"
+      },
+      {
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Specification"
+      },
+      {
+        "id": "urn:ngm:class:authentication-schema",
+        "label": "Authentication Schema"
       }
     ],
     "requires": [
@@ -38,6 +46,10 @@
       {
         "id": "urn:ngm:class:schema-definition",
         "label": "Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Specification Document"
       }
     ],
     "enables": [
@@ -48,6 +60,10 @@
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:component-integration",
+        "label": "Component Integration"
       }
     ],
     "dependsOn": [
@@ -142,7 +158,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -256,7 +272,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

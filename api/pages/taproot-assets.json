@@ -18,13 +18,66 @@
     {
       "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
       "label": "Bitcoin Proof-of-Work Protocol"
+    },
+    {
+      "id": "urn:ngm:class:bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    },
+    {
+      "id": "urn:ngm:class:asset-issuance-protocol",
+      "label": "Asset Issuance Protocol"
+    },
+    {
+      "id": "urn:ngm:class:client-side-validation",
+      "label": "Client-Side Validation"
+    },
+    {
+      "id": "urn:ngm:class:lightning-network-extension",
+      "label": "Lightning Network Extension"
+    },
+    {
+      "id": "urn:ngm:class:commitment-scheme",
+      "label": "Cryptographic Commitment Scheme"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:merkle-sum-sparse-merkle-tree",
+        "label": "Merkle Sum Sparse Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:universe-registry",
+        "label": "Universe Registry"
+      },
+      {
+        "id": "urn:ngm:class:asset-witness-proof",
+        "label": "Asset Witness Proof"
+      },
+      {
+        "id": "urn:ngm:class:taproot-script-leaf",
+        "label": "Taproot Script Leaf"
+      },
+      {
+        "id": "urn:ngm:class:asset-group-key",
+        "label": "Asset Group Key"
+      },
+      {
+        "id": "urn:ngm:class:rfq-market",
+        "label": "RFQ Market"
+      },
+      {
+        "id": "urn:ngm:class:tapd-daemon",
+        "label": "tapd Daemon"
+      },
+      {
+        "id": "urn:ngm:class:lightning-asset-channel",
+        "label": "Lightning Asset Channel"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:bip-341",
@@ -53,6 +106,14 @@
       {
         "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
       }
     ],
     "enables": [
@@ -67,9 +128,58 @@
       {
         "id": "urn:ngm:class:tokenised-securities",
         "label": "Tokenised Securities on Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:multi-asset-lightning-payments",
+        "label": "Multi-Asset Lightning Payments"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-native-stablecoins",
+        "label": "Bitcoin-Native Stablecoins"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-securities",
+        "label": "Tokenised Securities on Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:nfts-on-bitcoin",
+        "label": "NFTs on Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Cross-Asset Swaps"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:ngm:class:mast",
+        "label": "MAST"
+      },
+      {
+        "id": "urn:ngm:class:merkle-sum-tree",
+        "label": "Merkle-Sum Tree"
+      },
+      {
+        "id": "urn:ngm:class:sparse-merkle-tree",
+        "label": "Sparse Merkle Tree"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:bip-327",
@@ -98,10 +208,72 @@
       {
         "id": "urn:ngm:class:gossip-protocol",
         "label": "Universe Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "MS-SMT Commitment Scheme"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Universe Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:rfq-multi-asset-routing",
+        "label": "RFQ Multi-Asset Routing"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ordinals",
+        "label": "Ordinals Protocol"
+      },
+      {
+        "id": "urn:ngm:class:brc-20-tokens",
+        "label": "BRC-20 Tokens"
+      },
+      {
+        "id": "urn:ngm:class:runes-protocol",
+        "label": "Runes Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-erc-20",
+        "label": "Ethereum ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:omni-layer",
+        "label": "Omni Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-economies",
+        "label": "AI Agent Economies"
+      },
+      {
+        "id": "urn:ngm:class:stable-coins",
+        "label": "Stablecoins"
+      },
+      {
+        "id": "urn:ngm:class:usdt",
+        "label": "Tether USDt"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swaps"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:htlc",
@@ -118,6 +290,22 @@
       {
         "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:taproot-transactions",
+        "label": "Taproot Transactions"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:ngm:class:lightning-channels",
+        "label": "Lightning Channels"
+      },
+      {
+        "id": "urn:ngm:class:universe-servers",
+        "label": "Universe Servers"
       }
     ],
     "supports": [
@@ -132,6 +320,22 @@
       {
         "id": "urn:ngm:class:stablecoins-on-bitcoin",
         "label": "Stablecoins on Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:tether-usdt-on-lightning",
+        "label": "Tether USDt on Lightning"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-economies",
+        "label": "AI Agent Economies"
+      },
+      {
+        "id": "urn:ngm:class:programmable-assets",
+        "label": "Programmable Assets"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       }
     ],
     "standardizedBy": [
@@ -189,6 +393,42 @@
       {
         "id": "urn:ngm:class:btc-layer-3",
         "label": "BTC Layer 3"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swaps"
+      },
+      {
+        "id": "urn:ngm:class:x402-and-l402-payment-protocols",
+        "label": "X402 Protocol"
+      },
+      {
+        "id": "urn:ngm:class:joltz-wallet",
+        "label": "Joltz Wallet"
+      },
+      {
+        "id": "urn:ngm:class:lightning-terminal",
+        "label": "Lightning Terminal"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ordinals",
+        "label": "Ordinals Protocol"
       }
     ]
   },
@@ -204,9 +444,179 @@
       "slug": "cryptocurrency"
     },
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component (Blockchain)",
-      "slug": "bc-network-component"
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:data-integrity",
+      "label": "Data Integrity",
+      "slug": "data-integrity"
+    },
+    {
+      "id": "urn:ngm:class:bearer-instrument",
+      "label": "Bearer Instrument",
+      "slug": "bearer-instrument"
+    },
+    {
+      "id": "urn:ngm:class:cryptoasset",
+      "label": "Cryptoasset",
+      "slug": "cryptoasset"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:data-quality",
+      "label": "Data Quality",
+      "slug": "data-quality"
+    },
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset",
+      "slug": "digital-asset"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-native-token",
+      "label": "Distributed Ledger Native Token",
+      "slug": "distributed-ledger-native-token"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:permissionless-asset",
+      "label": "Permissionless Asset",
+      "slug": "permissionless-asset"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -246,8 +656,28 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      },
+      {
+        "id": "urn:ngm:class:randomness",
+        "label": "Randomness"
       },
       {
         "id": "urn:ngm:class:distributed-consensus",
@@ -256,26 +686,6 @@
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-stake",
-        "label": "Proof of Stake"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof Of Work"
-      },
-      {
-        "id": "urn:ngm:class:sybil-resistance",
-        "label": "Sybil Resistance"
       }
     ],
     "enables": [
@@ -296,23 +706,81 @@
         "label": "Bitcoin Standard"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
+        "id": "urn:ngm:class:peer-to-peer-payment",
+        "label": "Peer-to-Peer Payment"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:block-trails",
+        "label": "Block Trails"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:internet",
+        "label": "Internet"
+      },
+      {
+        "id": "urn:ngm:class:mining-hardware",
+        "label": "Mining Hardware"
+      },
+      {
+        "id": "urn:ngm:class:node-operator",
+        "label": "Node Operator"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public-Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:validator-stake",
+        "label": "Validator Stake"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:kzg-polynomial-commitment",
+        "label": "KZG Polynomial Commitment"
+      },
+      {
+        "id": "urn:ngm:class:pedersen-commitment",
+        "label": "Pedersen Commitment"
+      },
+      {
+        "id": "urn:ngm:class:vector-commitment",
+        "label": "Vector Commitment"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-ownership",
+        "label": "Cryptographic Ownership"
+      },
       {
         "id": "urn:ngm:class:double-spend-prevention",
         "label": "Double-Spending Prevention"
@@ -320,14 +788,6 @@
       {
         "id": "urn:ngm:class:emission-schedule",
         "label": "Predictable Issuance Schedule"
-      },
-      {
-        "id": "urn:ngm:class:hard-money",
-        "label": "Hard Money Property"
-      },
-      {
-        "id": "urn:ngm:class:trustless-settlement",
-        "label": "Trustless Settlement"
       }
     ],
     "contrastsWith": [
@@ -338,6 +798,64 @@
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-centralisation-risks",
         "label": "Bitcoin Centralisation Risks"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Protocol"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
+        "label": "Ethereum Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:encryption-scheme",
+        "label": "Encryption Scheme"
+      },
+      {
+        "id": "urn:ngm:class:bank-deposit",
+        "label": "Bank Deposit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -358,26 +876,46 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:bip-32-hd-wallet",
-        "label": "BIP-32 HD Wallet"
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
       },
       {
-        "id": "urn:ngm:class:bip-39-mnemonic",
-        "label": "BIP-39 Mnemonic"
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
       },
       {
-        "id": "urn:ngm:class:ecdsa",
-        "label": "ECDSA"
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
       },
       {
-        "id": "urn:ngm:class:ed25519",
-        "label": "Ed25519"
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature"
+      },
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "zkSNARK"
+      },
+      {
+        "id": "urn:ngm:class:zk-starks",
+        "label": "zkSTARK"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:depin",
+        "label": "DePIN"
       },
       {
         "id": "urn:ngm:class:neural-network-text-tokenisation",
@@ -386,21 +924,13 @@
       {
         "id": "urn:ngm:class:non-fungible-token",
         "label": "Non-Fungible Token"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      },
-      {
-        "id": "urn:ngm:class:stablecoin",
-        "label": "Stablecoin"
-      },
-      {
-        "id": "urn:ngm:class:web3",
-        "label": "Web3"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
+        "label": "MiCA Regulation"
+      },
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposals"
@@ -418,12 +948,50 @@
         "label": "FATF Travel Rule"
       },
       {
+        "id": "urn:ngm:class:fca-cryptoasset-promotions-regime-ps23-6",
+        "label": "FCA Cryptoasset Promotions Regime PS23-6"
+      },
+      {
         "id": "urn:ngm:class:iso-24165",
         "label": "ISO 24165 Digital Token Identifier"
       },
       {
-        "id": "urn:ngm:class:mi-ca-regulation",
-        "label": "MiCA Regulation"
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ],
     "relatedTo": [
@@ -448,11 +1016,11 @@
         "label": "Digital Asset"
       },
       {
-        "id": "urn:ngm:class:erc-20",
+        "id": "urn:ngm:class:erc-20-token-standard",
         "label": "ERC-20"
       },
       {
-        "id": "urn:ngm:class:erc-721",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721"
       },
       {

@@ -14,6 +14,22 @@
     {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
+    },
+    {
+      "id": "urn:ngm:class:inverse-problems",
+      "label": "Inverse Problems"
+    },
+    {
+      "id": "urn:ngm:class:computational-photography",
+      "label": "Computational Photography"
+    },
+    {
+      "id": "urn:ngm:class:image-processing",
+      "label": "Image Processing"
+    },
+    {
+      "id": "urn:ngm:class:signal-recovery",
+      "label": "Signal Recovery"
     }
   ],
   "entityType": "Class",
@@ -52,6 +68,14 @@
       {
         "id": "urn:ngm:class:super-resolution",
         "label": "Super-Resolution Model"
+      },
+      {
+        "id": "urn:ngm:class:super-resolution",
+        "label": "Super-Resolution Model"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting Model"
       }
     ],
     "requires": [
@@ -102,7 +126,32 @@
         "label": "Video Production Pipeline"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:perceptual-loss",
+        "label": "Perceptual Loss"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "id": "urn:ngm:class:self-attention-mechanism",
+        "label": "Self-Attention Mechanism"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:code-former",
@@ -119,9 +168,54 @@
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion Inpaint"
+      },
+      {
+        "id": "urn:ngm:class:swinir",
+        "label": "SwinIR"
+      },
+      {
+        "id": "urn:ngm:class:nafnet",
+        "label": "NAFNet"
+      },
+      {
+        "id": "urn:ngm:class:lama-inpainting",
+        "label": "LaMa Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Inpaint"
+      },
+      {
+        "id": "urn:ngm:class:dncnn",
+        "label": "DnCNN"
+      },
+      {
+        "id": "urn:ngm:class:stablesr",
+        "label": "StableSR"
+      },
+      {
+        "id": "urn:ngm:class:difface",
+        "label": "DifFace"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:image-compression",
+        "label": "Image Compression"
+      },
+      {
+        "id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:image-processing",
@@ -182,6 +276,10 @@
       {
         "id": "urn:ngm:class:remote-sensing",
         "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film and Television Production"
       }
     ],
     "standardizedBy": [
@@ -200,6 +298,14 @@
       {
         "id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:ntire-workshop",
+        "label": "NTIRE Workshop"
+      },
+      {
+        "id": "urn:ngm:class:pirm-challenge",
+        "label": "PIRM Challenge"
       }
     ],
     "partOf": [],
@@ -240,6 +346,16 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:computational-imaging",
+      "label": "Computational Imaging",
+      "slug": "computational-imaging"
+    },
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing",
+      "slug": "signal-processing"
     }
   ],
   "inheritedRelations": {
@@ -291,16 +407,24 @@
         "label": "Pattern Recognition"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:image-formation-model",
+        "label": "Image Formation Model"
+      },
+      {
+        "id": "urn:ngm:class:image-sensor",
+        "label": "Image Sensor"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:optics",
+        "label": "Optics"
       }
     ],
     "enables": [
@@ -321,20 +445,212 @@
         "label": "Robotics Perception"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:image-sensor",
+        "label": "Image Sensor"
+      },
+      {
+        "id": "urn:ngm:class:optics",
+        "label": "Optics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:colour-science",
+        "label": "Colour Science"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:optics",
+        "label": "Optics"
+      },
+      {
+        "id": "urn:ngm:class:traditional-film-photography",
+        "label": "Traditional Film Photography"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:video-processing",
+        "label": "Video Processing"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:light-field-camera",
+        "label": "Light Field Camera"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:plenoptic-camera",
+        "label": "Plenoptic Camera"
+      },
+      {
+        "id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:smartphone",
+        "label": "Smartphone"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:ieee-signal-processing-society",
+        "label": "IEEE Signal Processing Society"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc29",
+        "label": "ISO/IEC JTC1 SC29"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
       }
     ],
     "relatedTo": [
@@ -351,16 +667,24 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:face-detection",
+        "label": "Face Detection"
+      },
+      {
+        "id": "urn:ngm:class:image-noise-reduction",
+        "label": "Image Noise Reduction"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
       }
     ]
   },

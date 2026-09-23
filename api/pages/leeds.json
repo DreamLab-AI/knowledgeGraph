@@ -10,14 +10,40 @@
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
+    },
+    {
+      "id": "urn:ngm:class:urban-centre",
+      "label": "Urban Centre"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:university-of-leeds",
+        "label": "University of Leeds"
+      },
+      {
+        "id": "urn:ngm:class:leeds-bradford-airport",
+        "label": "Leeds Bradford Airport"
+      },
+      {
+        "id": "urn:ngm:class:leeds-city-region",
+        "label": "Leeds City Region"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regional-governance",
+        "label": "Regional Governance"
+      },
+      {
+        "id": "urn:ngm:class:skilled-workforce",
+        "label": "Skilled Workforce"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:financial-technology",
@@ -26,27 +52,52 @@
       {
         "id": "urn:ngm:class:innovation",
         "label": "Innovation"
+      },
+      {
+        "id": "urn:ngm:class:health-data",
+        "label": "Health Data"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:london",
+        "label": "London"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:smart-city",
         "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-healthcare",
+        "label": "Data-Driven Healthcare"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:broadband-connectivity",
         "label": "Broadband Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:rail-infrastructure",
+        "label": "Rail Infrastructure"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:research-and-development",
         "label": "Research and Development"
+      },
+      {
+        "id": "urn:ngm:class:legal-services",
+        "label": "Legal Services"
+      },
+      {
+        "id": "urn:ngm:class:professional-services",
+        "label": "Professional Services"
       }
     ],
     "standardizedBy": [],
@@ -54,6 +105,10 @@
       {
         "id": "urn:ngm:class:northern-powerhouse",
         "label": "Northern Powerhouse"
+      },
+      {
+        "id": "urn:ngm:class:west-yorkshire",
+        "label": "West Yorkshire"
       }
     ],
     "relatedTo": [
@@ -64,6 +119,14 @@
       {
         "id": "urn:ngm:class:sheffield",
         "label": "Sheffield"
+      },
+      {
+        "id": "urn:ngm:class:bradford",
+        "label": "Bradford"
+      },
+      {
+        "id": "urn:ngm:class:yorkshire",
+        "label": "Yorkshire"
       }
     ]
   },
@@ -203,7 +266,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {

@@ -102,6 +102,11 @@
       "slug": "extended-reality-xr"
     },
     {
+      "id": "urn:ngm:class:immersive-technology-applications",
+      "label": "Immersive Technology Applications",
+      "slug": "immersive-technology-applications"
+    },
+    {
       "id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment",
       "slug": "sc-platform-and-environment"
@@ -120,6 +125,21 @@
       "id": "urn:ngm:class:digital-technology",
       "label": "Digital Technology",
       "slug": "digital-technology"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -175,6 +195,10 @@
         "label": "Ar Display Device"
       },
       {
+        "id": "urn:ngm:class:ar-display-devices",
+        "label": "AR Display Devices"
+      },
+      {
         "id": "urn:ngm:class:spatial-mapping",
         "label": "Spatial Mapping"
       },
@@ -185,13 +209,13 @@
       {
         "id": "urn:ngm:class:xr-hardware",
         "label": "XR Hardware"
-      },
-      {
-        "id": "urn:ngm:class:head-mounted-display",
-        "label": "Head-Mounted Display"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:contextual-information-display",
+        "label": "Contextual Information Display"
+      },
       {
         "id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
@@ -209,20 +233,16 @@
         "label": "Surgical Guidance"
       },
       {
+        "id": "urn:ngm:class:contextual-information",
+        "label": "Contextual Information"
+      },
+      {
+        "id": "urn:ngm:class:enhanced-visualization",
+        "label": "Enhanced Visualization"
+      },
+      {
         "id": "urn:ngm:class:interactive-learning",
         "label": "Interactive Learning"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:immersive-experience",
-        "label": "Immersive Experience"
-      },
-      {
-        "id": "urn:ngm:class:remote-collaboration",
-        "label": "Remote Collaboration"
       }
     ],
     "dependsOn": [
@@ -239,16 +259,24 @@
         "label": "Simultaneous Localisation and Mapping"
       },
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing",
+        "label": "Graphics Processing"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
         "id": "urn:ngm:class:graphics-processing-unit",
         "label": "Graphics Processing Unit"
-      },
-      {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
-      },
-      {
-        "id": "urn:ngm:class:spatial-audio",
-        "label": "Spatial Audio"
       }
     ],
     "contrastsWith": [
@@ -261,12 +289,20 @@
         "label": "Virtual Reality"
       },
       {
+        "id": "urn:ngm:class:two-dimensional-interface",
+        "label": "Two-Dimensional Interface"
+      },
+      {
         "id": "urn:ngm:class:display-technology",
         "label": "Traditional Display Technology"
       },
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -275,19 +311,23 @@
         "label": "Artificial Intelligence"
       },
       {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
       },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -297,10 +337,6 @@
       {
         "id": "urn:ngm:class:5-g-network",
         "label": "5G Network"
-      },
-      {
-        "id": "urn:ngm:class:3-d-reconstruction",
-        "label": "3D Reconstruction"
       }
     ],
     "uses": [
@@ -313,7 +349,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -349,6 +385,14 @@
       {
         "id": "urn:ngm:class:enterprise-training",
         "label": "Enterprise Training"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -377,6 +421,10 @@
       {
         "id": "urn:ngm:class:immersive-technology",
         "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       }
     ],
     "relatedTo": [
@@ -405,12 +453,12 @@
         "label": "Presence"
       },
       {
-        "id": "urn:ngm:class:sc-display-and-rendering",
-        "label": "Display and Rendering"
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:sc-interaction",
-        "label": "Interaction Technology"
+        "id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
       }
     ]
   },

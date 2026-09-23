@@ -18,6 +18,10 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:behavioural-science",
+      "label": "Behavioural Science"
     }
   ],
   "entityType": "Class",
@@ -48,6 +52,18 @@
       {
         "id": "urn:ngm:class:language-processing",
         "label": "Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:episodic-memory",
+        "label": "Episodic Memory"
+      },
+      {
+        "id": "urn:ngm:class:semantic-memory",
+        "label": "Semantic Memory"
+      },
+      {
+        "id": "urn:ngm:class:procedural-memory",
+        "label": "Procedural Memory"
       }
     ],
     "requires": [
@@ -62,6 +78,10 @@
       {
         "id": "urn:ngm:class:computational-modelling",
         "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       }
     ],
     "enables": [
@@ -84,10 +104,52 @@
       {
         "id": "urn:ngm:class:user-experience-design",
         "label": "User Experience Design"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring Systems"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-rehabilitation",
+        "label": "Cognitive Rehabilitation"
+      },
+      {
+        "id": "urn:ngm:class:clinical-assessment",
+        "label": "Clinical Assessment"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      },
+      {
+        "id": "urn:ngm:class:linguistics",
+        "label": "Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:information-processing",
+        "label": "Information Processing"
+      },
+      {
+        "id": "urn:ngm:class:experimental-methods",
+        "label": "Experimental Methods"
+      },
+      {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:behaviourism",
@@ -100,6 +162,10 @@
       {
         "id": "urn:ngm:class:connectionism",
         "label": "Connectionism"
+      },
+      {
+        "id": "urn:ngm:class:situated-cognition",
+        "label": "Situated Cognition"
       }
     ],
     "bridgesTo": [],
@@ -115,6 +181,22 @@
       {
         "id": "urn:ngm:class:reaction-time",
         "label": "Reaction Time Methods"
+      },
+      {
+        "id": "urn:ngm:class:reaction-time-methods",
+        "label": "Reaction Time Methods"
+      },
+      {
+        "id": "urn:ngm:class:signal-detection-theory",
+        "label": "Signal Detection Theory"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:dual-task-paradigm",
+        "label": "Dual Task Paradigm"
       }
     ],
     "supports": [
@@ -133,9 +215,26 @@
       {
         "id": "urn:ngm:class:cognitive-architecture",
         "label": "Cognitive Architecture"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:american-psychological-association",
+        "label": "American Psychological Association"
+      },
+      {
+        "id": "urn:ngm:class:british-psychological-society",
+        "label": "British Psychological Society"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -157,6 +256,30 @@
       {
         "id": "urn:ngm:class:decision-making",
         "label": "Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:computational-linguistics",
+        "label": "Computational Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ]
   },
@@ -187,24 +310,24 @@
         "label": "Computational Linguistics"
       },
       {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:developmental-cognition",
+        "label": "Developmental Cognition"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:social-cognition",
+        "label": "Social Cognition"
+      },
+      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
       }
     ],
     "requires": [
@@ -239,10 +362,6 @@
         "label": "Cognitive AI"
       },
       {
-        "id": "urn:ngm:class:intelligent-tutoring-systems",
-        "label": "Intelligent Tutoring Systems"
-      },
-      {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       },
@@ -261,12 +380,82 @@
       {
         "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:information-processing",
+        "label": "Information Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
       }
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:brain-computer-interface",
+        "label": "Brain Computer Interface"
+      },
+      {
         "id": "urn:ngm:class:computational-modelling",
         "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:experimental-methods",
+        "label": "Experimental Methods"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       },
       {
         "id": "urn:ngm:class:probabilistic-reasoning",
@@ -275,12 +464,12 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       },
       {
         "id": "urn:ngm:class:representation-learning",
@@ -293,8 +482,8 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:behavioural-economics",
-        "label": "Behavioural Economics"
+        "id": "urn:ngm:class:cognitive-bias",
+        "label": "Cognitive Bias"
       },
       {
         "id": "urn:ngm:class:consciousness",

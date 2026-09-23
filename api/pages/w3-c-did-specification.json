@@ -103,7 +103,7 @@
         "label": "Public Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
@@ -205,13 +205,13 @@
         "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-standard",
-        "label": "Credential"
+        "id": "urn:ngm:class:verifiable-claim",
+        "label": "Verifiable Claim"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
@@ -231,16 +231,16 @@
         "label": "Credential Storage"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
         "id": "urn:ngm:class:privacy-controls",
         "label": "Privacy Controls"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
@@ -323,12 +323,12 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:open-id-connect",
-        "label": "OpenID Connect"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
       },
       {
         "id": "urn:ngm:class:centralized-identity-provider",
@@ -377,12 +377,12 @@
         "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "uses": [
@@ -499,6 +499,10 @@
         "label": "Sidetree Protocol"
       },
       {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralised Identity Foundation"
+      },
+      {
         "id": "urn:ngm:class:linked-data-proofs",
         "label": "Linked Data Proofs"
       },
@@ -517,10 +521,6 @@
       {
         "id": "urn:ngm:class:trust-framework",
         "label": "Trust Framework"
-      },
-      {
-        "id": "urn:ngm:class:know-your-customer",
-        "label": "KYC Know Your Customer"
       }
     ]
   },

@@ -80,6 +80,10 @@
         "label": "Modality-Specific Encoder"
       },
       {
+        "id": "urn:ngm:class:projection-layer",
+        "label": "Projection Layer"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
@@ -98,10 +102,6 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
       }
     ],
     "requires": [
@@ -140,6 +140,10 @@
         "label": "Image Captioning"
       },
       {
+        "id": "urn:ngm:class:multimodal-retrieval",
+        "label": "Multimodal Retrieval"
+      },
+      {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Audio-Visual Speech Recognition"
       },
@@ -154,10 +158,6 @@
       {
         "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
       }
     ],
     "dependsOn": [
@@ -170,6 +170,12 @@
         "label": "Self-Supervised Learning"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:unimodal-models",
+        "label": "Unimodal Models"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:human-computer-interaction",
@@ -178,6 +184,22 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

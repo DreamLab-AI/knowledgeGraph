@@ -48,7 +48,7 @@
         "label": "Public Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       }
     ],
@@ -87,7 +87,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:cryptographic-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -192,16 +192,16 @@
         "label": "Decentralised Identifier"
       },
       {
+        "id": "urn:ngm:class:verifiable-claim",
+        "label": "Verifiable Claim"
+      },
+      {
         "id": "urn:ngm:class:verifiable-credential-standard",
         "label": "Credential"
       },
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
       }
     ],
     "requires": [
@@ -226,16 +226,16 @@
         "label": "Credential Storage"
       },
       {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
         "id": "urn:ngm:class:privacy-controls",
         "label": "Privacy Controls"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
@@ -268,8 +268,8 @@
         "label": "Authorization"
       },
       {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:digital-presence",
+        "label": "Digital Presence"
       }
     ],
     "dependsOn": [
@@ -356,6 +356,10 @@
         "label": "Access Control"
       },
       {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
@@ -366,10 +370,6 @@
       {
         "id": "urn:ngm:class:ai-agent",
         "label": "AI Agent"
-      },
-      {
-        "id": "urn:ngm:class:avatar",
-        "label": "Avatar"
       }
     ],
     "uses": [
@@ -378,7 +378,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
@@ -482,6 +482,10 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralised Identity Foundation"
+      },
+      {
         "id": "urn:ngm:class:linked-data-proofs",
         "label": "Linked Data Proofs"
       },
@@ -502,16 +506,12 @@
         "label": "Trust Framework"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "KYC Know Your Customer"
       },
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
       }
     ]
   },

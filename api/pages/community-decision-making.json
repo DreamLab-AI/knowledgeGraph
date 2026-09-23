@@ -77,18 +77,72 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:behavioural-economics",
+      "label": "Behavioural Economics",
+      "slug": "behavioural-economics"
+    },
+    {
       "id": "urn:ngm:class:complexity-science",
       "label": "Complexity Science",
       "slug": "complexity-science"
     },
     {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory",
+      "slug": "information-theory"
+    },
+    {
+      "id": "urn:ngm:class:institutional-economics",
+      "label": "Institutional Economics",
+      "slug": "institutional-economics"
+    },
+    {
+      "id": "urn:ngm:class:political-economy",
+      "label": "Political Economy",
+      "slug": "political-economy"
+    },
+    {
+      "id": "urn:ngm:class:social-science",
+      "label": "Social Science",
+      "slug": "social-science"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:proposal-process",
+        "label": "Proposal Process"
+      },
       {
         "id": "urn:ngm:class:quorum-requirement",
         "label": "Quorum Requirement"
@@ -96,6 +150,14 @@
       {
         "id": "urn:ngm:class:arrows-impossibility-theorem",
         "label": "Arrow's Impossibility Theorem"
+      },
+      {
+        "id": "urn:ngm:class:industrial-organisation",
+        "label": "Industrial Organisation"
+      },
+      {
+        "id": "urn:ngm:class:labour-economics",
+        "label": "Labour Economics"
       },
       {
         "id": "urn:ngm:class:macroeconomics",
@@ -108,21 +170,13 @@
       {
         "id": "urn:ngm:class:mechanism-design",
         "label": "Mechanism Design"
-      },
-      {
-        "id": "urn:ngm:class:principal-agent-theory",
-        "label": "Principal-Agent Theory"
-      },
-      {
-        "id": "urn:ngm:class:tokenomics",
-        "label": "Tokenomics"
-      },
-      {
-        "id": "urn:ngm:class:welfare-economics",
-        "label": "Welfare Economics"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:deliberation-protocol",
+        "label": "Deliberation Protocol"
+      },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
@@ -148,12 +202,8 @@
         "label": "Information Asymmetry"
       },
       {
-        "id": "urn:ngm:class:property-rights",
-        "label": "Property Rights"
-      },
-      {
-        "id": "urn:ngm:class:social-choice-theory",
-        "label": "Social Choice Theory"
+        "id": "urn:ngm:class:market-institutions",
+        "label": "Market Institutions"
       }
     ],
     "enables": [
@@ -164,6 +214,14 @@
       {
         "id": "urn:ngm:class:on-chain-governance",
         "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:participatory-democracy",
+        "label": "Participatory Democracy"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
       },
       {
         "id": "urn:ngm:class:protocol-upgrades",
@@ -180,14 +238,6 @@
       {
         "id": "urn:ngm:class:ranked-choice-voting",
         "label": "Ranked-Choice Voting"
-      },
-      {
-        "id": "urn:ngm:class:voting-mechanism",
-        "label": "Voting Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
       }
     ],
     "dependsOn": [
@@ -198,6 +248,30 @@
       {
         "id": "urn:ngm:class:mechanism-design",
         "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-science",
+        "label": "Behavioural Science"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       }
     ],
     "implements": [
@@ -214,8 +288,16 @@
         "label": "Game Theory"
       },
       {
+        "id": "urn:ngm:class:matching-theory",
+        "label": "Matching Theory"
+      },
+      {
         "id": "urn:ngm:class:mechanism-design",
         "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:optimal-taxation",
+        "label": "Optimal Taxation"
       },
       {
         "id": "urn:ngm:class:quadratic-funding",
@@ -228,12 +310,36 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:autocratic-governance",
+        "label": "Autocratic Governance"
+      },
+      {
+        "id": "urn:ngm:class:centralised-authority",
+        "label": "Centralised Authority"
+      },
+      {
         "id": "urn:ngm:class:individual-rationality",
         "label": "Individual Rationality"
       },
       {
         "id": "urn:ngm:class:market-mechanism",
         "label": "Market Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:legal-reasoning",
+        "label": "Legal Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:pure-computer-science",
+        "label": "Pure Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:pure-engineering",
+        "label": "Pure Engineering"
+      },
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
       }
     ],
     "bridgesTo": [
@@ -258,12 +364,16 @@
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
       },
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-recommendation",
+        "label": "Algorithmic Recommendation"
       }
     ],
     "uses": [
@@ -358,9 +468,27 @@
       {
         "id": "urn:ngm:class:oecd",
         "label": "OECD"
+      },
+      {
+        "id": "urn:ngm:class:uk-competition-and-markets-authority",
+        "label": "UK Competition and Markets Authority"
+      },
+      {
+        "id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decision-science",
+        "label": "Decision Science"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:arrow-impossibility-theorem",
+        "label": "Arrow Impossibility Theorem"
+      },
       {
         "id": "urn:ngm:class:collective-intelligence-system",
         "label": "Collective Intelligence System"
@@ -388,10 +516,6 @@
       {
         "id": "urn:ngm:class:political-science",
         "label": "Political Science"
-      },
-      {
-        "id": "urn:ngm:class:agents",
-        "label": "Agents"
       }
     ]
   },

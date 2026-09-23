@@ -50,6 +50,10 @@
       {
         "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard Protocol"
       }
     ],
     "enables": [
@@ -70,7 +74,20 @@
         "label": "NFT Minting"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [
@@ -86,6 +103,10 @@
       {
         "id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economy",
+        "label": "Blockchain Economy"
       }
     ],
     "relatedTo": []
@@ -166,6 +187,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

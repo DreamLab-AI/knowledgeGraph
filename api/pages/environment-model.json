@@ -155,13 +155,48 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:camera-node",
+        "label": "Camera Node"
+      },
+      {
+        "id": "urn:ngm:class:geometry-node",
+        "label": "Geometry Node"
+      },
+      {
+        "id": "urn:ngm:class:group-node",
+        "label": "Group Node"
+      },
+      {
         "id": "urn:ngm:class:light-node",
         "label": "Light Node"
+      },
+      {
+        "id": "urn:ngm:class:scene-node",
+        "label": "Scene Node"
+      },
+      {
+        "id": "urn:ngm:class:transform-node",
+        "label": "Transform Node"
       },
       {
         "id": "urn:ngm:class:3-d-asset",
@@ -170,26 +205,6 @@
       {
         "id": "urn:ngm:class:avatar",
         "label": "Avatar"
-      },
-      {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
-      },
-      {
-        "id": "urn:ngm:class:digital-content-creation",
-        "label": "Digital Content Creation"
-      },
-      {
-        "id": "urn:ngm:class:nft",
-        "label": "NFT"
-      },
-      {
-        "id": "urn:ngm:class:rendering-pipeline",
-        "label": "Rendering Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:6-do-f-tracking",
-        "label": "6DoF Tracking"
       }
     ],
     "requires": [
@@ -220,6 +235,10 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       }
     ],
     "enables": [
@@ -236,6 +255,10 @@
         "label": "Level of Detail"
       },
       {
+        "id": "urn:ngm:class:scene-rendering",
+        "label": "Scene Rendering"
+      },
+      {
         "id": "urn:ngm:class:spatial-queries",
         "label": "Spatial Queries"
       },
@@ -250,16 +273,30 @@
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
       },
       {
-        "id": "urn:ngm:class:scene-understanding",
-        "label": "Scene Understanding"
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -268,12 +305,32 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -304,6 +361,20 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
@@ -358,6 +429,18 @@
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
       }
     ]
   },

@@ -152,6 +152,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:clinical-documentation",
+        "label": "Clinical Documentation"
+      },
+      {
         "id": "urn:ngm:class:language-translation",
         "label": "Language Translation"
       },
@@ -178,10 +182,6 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
       }
     ],
     "dependsOn": [
@@ -226,7 +226,7 @@
         "label": "Accessibility Technology"
       },
       {
-        "id": "urn:ngm:class:multimodal-interaction",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
       },
       {
@@ -234,12 +234,24 @@
         "label": "Voice User Interface"
       },
       {
-        "id": "urn:ngm:class:knowledge-graphs",
-        "label": "Knowledge Graphs"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
-        "label": "Multimodal AI"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
       }
     ],
     "uses": [

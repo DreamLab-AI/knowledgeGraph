@@ -75,7 +75,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -116,6 +116,16 @@
       "slug": "distributed-computing"
     },
     {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
@@ -124,6 +134,11 @@
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
     }
   ],
   "inheritedRelations": {
@@ -187,12 +202,12 @@
         "label": "Partial Failure Tolerance"
       },
       {
-        "id": "urn:ngm:class:message-passing",
-        "label": "Message Passing"
+        "id": "urn:ngm:class:identity-and-naming",
+        "label": "Identity and Naming"
       },
       {
-        "id": "urn:ngm:class:network-communication",
-        "label": "Network Communication"
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
       }
     ],
     "enables": [
@@ -225,8 +240,8 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
       }
     ],
     "dependsOn": [
@@ -237,6 +252,30 @@
       {
         "id": "urn:ngm:class:synchronisation-primitive",
         "label": "Synchronisation Primitive"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:flp-impossibility",
+        "label": "FLP Impossibility"
+      },
+      {
+        "id": "urn:ngm:class:lamport-timestamps",
+        "label": "Lamport Timestamps"
+      },
+      {
+        "id": "urn:ngm:class:pacelc",
+        "label": "PACELC"
+      },
+      {
+        "id": "urn:ngm:class:two-generals-problem",
+        "label": "Two Generals Problem"
       }
     ],
     "implements": [
@@ -245,11 +284,19 @@
         "label": "Actor Model"
       },
       {
+        "id": "urn:ngm:class:bulk-synchronous-parallel",
+        "label": "Bulk Synchronous Parallel"
+      },
+      {
         "id": "urn:ngm:class:crdt",
         "label": "CRDT"
       },
       {
         "id": "urn:ngm:class:map-reduce",
+        "label": "MapReduce"
+      },
+      {
+        "id": "urn:ngm:class:mapreduce",
         "label": "MapReduce"
       },
       {
@@ -263,14 +310,6 @@
       {
         "id": "urn:ngm:class:raft",
         "label": "Raft"
-      },
-      {
-        "id": "urn:ngm:class:saga-pattern",
-        "label": "Saga Pattern"
-      },
-      {
-        "id": "urn:ngm:class:two-phase-commit",
-        "label": "Two-Phase Commit"
       }
     ],
     "contrastsWith": [
@@ -281,6 +320,22 @@
       {
         "id": "urn:ngm:class:sequential-computing",
         "label": "Sequential Computing"
+      },
+      {
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:embarrassingly-parallel-batch",
+        "label": "Embarrassingly Parallel Batch"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      },
+      {
+        "id": "urn:ngm:class:single-machine-multiprocessing",
+        "label": "Single-Machine Multiprocessing"
       }
     ],
     "bridgesTo": [
@@ -293,7 +348,15 @@
         "label": "Governance"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

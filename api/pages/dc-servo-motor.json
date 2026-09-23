@@ -28,6 +28,18 @@
       {
         "id": "urn:ngm:class:position-encoder",
         "label": "Position Encoder"
+      },
+      {
+        "id": "urn:ngm:class:dc-motor",
+        "label": "DC Motor"
+      },
+      {
+        "id": "urn:ngm:class:control-electronics",
+        "label": "Control Electronics"
+      },
+      {
+        "id": "urn:ngm:class:current-driver",
+        "label": "Current Driver"
       }
     ],
     "requires": [
@@ -46,18 +58,52 @@
       {
         "id": "urn:ngm:class:servo-amplifier",
         "label": "Servo Amplifier"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "DC Power Supply"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:trajectory-tracking",
         "label": "Trajectory Tracking"
+      },
+      {
+        "id": "urn:ngm:class:precise-positioning",
+        "label": "Precise Positioning"
+      },
+      {
+        "id": "urn:ngm:class:load-adaptation",
+        "label": "Load Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-control",
+        "label": "Dynamic Control"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:motor-shaft",
+        "label": "Motor Shaft"
+      },
+      {
+        "id": "urn:ngm:class:bearings",
+        "label": "Bearings"
+      },
+      {
+        "id": "urn:ngm:class:cooling-system",
+        "label": "Cooling System"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -76,9 +122,34 @@
       "slug": "robotics"
     },
     {
+      "id": "urn:ngm:class:rotating-machinery",
+      "label": "Rotating Machinery",
+      "slug": "rotating-machinery"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:electromechanical-systems",
+      "label": "Electromechanical Systems",
+      "slug": "electromechanical-systems"
+    },
+    {
       "id": "urn:ngm:class:robot-actuator",
       "label": "Robot Actuator",
       "slug": "robot-actuator"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -118,6 +189,10 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:heat-dissipation",
+        "label": "Heat Dissipation"
+      },
+      {
         "id": "urn:ngm:class:motor-driver",
         "label": "Motor Driver Electronics"
       },
@@ -130,30 +205,34 @@
         "label": "Electrical Power"
       },
       {
+        "id": "urn:ngm:class:load-support",
+        "label": "Load Support"
+      },
+      {
+        "id": "urn:ngm:class:thermal-dissipation",
+        "label": "Thermal Dissipation"
+      },
+      {
         "id": "urn:ngm:class:actuators",
         "label": "Actuators"
       },
       {
         "id": "urn:ngm:class:control-system",
         "label": "Control System"
-      },
-      {
-        "id": "urn:ngm:class:kinematics",
-        "label": "Kinematics"
-      },
-      {
-        "id": "urn:ngm:class:position-sensor",
-        "label": "Position Sensor"
-      },
-      {
-        "id": "urn:ngm:class:power-electronics",
-        "label": "Power Electronics"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:joint-actuation",
         "label": "Joint Actuation"
+      },
+      {
+        "id": "urn:ngm:class:rotational-motion",
+        "label": "Rotational Motion"
+      },
+      {
+        "id": "urn:ngm:class:speed-control",
+        "label": "Speed Control"
       },
       {
         "id": "urn:ngm:class:torque-generation",
@@ -168,33 +247,53 @@
         "label": "Robot Joint"
       },
       {
-        "id": "urn:ngm:class:autonomous-manufacturing",
-        "label": "Autonomous Manufacturing"
+        "id": "urn:ngm:class:dynamic-responsiveness",
+        "label": "Dynamic Responsiveness"
       },
       {
-        "id": "urn:ngm:class:humanoid-robotics",
-        "label": "Humanoid Robotics"
-      },
-      {
-        "id": "urn:ngm:class:industrial-automation",
-        "label": "IndustrialAutomation"
-      },
-      {
-        "id": "urn:ngm:class:precision-manufacturing",
-        "label": "Precision Engineering"
+        "id": "urn:ngm:class:force-exertion",
+        "label": "Force Exertion"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:feedback-control",
-        "label": "Feedback Control"
+        "id": "urn:ngm:class:electromagnetic-theory",
+        "label": "Electromagnetic Theory"
+      },
+      {
+        "id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      },
+      {
+        "id": "urn:ngm:class:mechanical-coupling",
+        "label": "Mechanical Coupling"
       },
       {
         "id": "urn:ngm:class:motor-driver",
         "label": "Motor Driver"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:direct-drive-actuation",
+        "label": "Direct Drive Actuation"
+      },
       {
         "id": "urn:ngm:class:series-elastic-actuation",
         "label": "Series Elastic Actuation"
@@ -202,15 +301,55 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
         "id": "urn:ngm:class:passive-mechanism",
         "label": "Passive Mechanism"
       },
       {
         "id": "urn:ngm:class:robot-sensor",
         "label": "Robot Sensor"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
+      },
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
@@ -220,7 +359,7 @@
         "label": "Hardware Component"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -238,11 +377,39 @@
         "label": "Actuator"
       },
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
         "id": "urn:ngm:class:pid-control",
         "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
       {
         "id": "urn:ngm:class:end-effector",
         "label": "Robot End-Effector"
@@ -250,6 +417,18 @@
       {
         "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
       }
     ],
     "standardizedBy": [
@@ -260,6 +439,30 @@
       {
         "id": "urn:ngm:class:iso-9283",
         "label": "ISO 9283"
+      },
+      {
+        "id": "urn:ngm:class:iso-9283-manipulating-industrial-robots",
+        "label": "ISO 9283 Manipulating Industrial Robots"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "partOf": [

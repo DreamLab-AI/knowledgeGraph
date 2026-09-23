@@ -42,6 +42,10 @@
       {
         "id": "urn:ngm:class:data-management",
         "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-security-and-privacy",
+        "label": "Security & Privacy"
       }
     ],
     "enables": [
@@ -52,12 +56,34 @@
       {
         "id": "urn:ngm:class:threat-detection",
         "label": "Threat Detection"
+      },
+      {
+        "id": "urn:ngm:class:data-at-rest-protection",
+        "label": "Data-at-Rest Protection"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control Enforcement"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:encryption-algorithms",
+        "label": "Encryption Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:authentication-systems",
+        "label": "Authentication Systems"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

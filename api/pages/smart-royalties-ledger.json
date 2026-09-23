@@ -24,6 +24,26 @@
       {
         "id": "urn:ngm:class:settlement",
         "label": "Settlement System"
+      },
+      {
+        "id": "urn:ngm:class:payment-tracking-engine",
+        "label": "Payment Tracking Engine"
+      },
+      {
+        "id": "urn:ngm:class:royalty-calculator",
+        "label": "Royalty Calculator"
+      },
+      {
+        "id": "urn:ngm:class:distribution-queue",
+        "label": "Distribution Queue"
+      },
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement System"
+      },
+      {
+        "id": "urn:ngm:class:audit-record",
+        "label": "Audit Record"
       }
     ],
     "requires": [
@@ -42,6 +62,14 @@
       {
         "id": "urn:ngm:class:smart-royalty-contract",
         "label": "Smart Royalty Contract"
+      },
+      {
+        "id": "urn:ngm:class:identity-system",
+        "label": "Identity System"
+      },
+      {
+        "id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processor"
       }
     ],
     "enables": [
@@ -56,16 +84,46 @@
       {
         "id": "urn:ngm:class:transparent-revenue-sharing",
         "label": "Transparent Revenue Sharing"
+      },
+      {
+        "id": "urn:ngm:class:creator-compensation",
+        "label": "Automated Creator Compensation"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-attribution",
+        "label": "Cross-Platform Attribution"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:oracle-service",
+        "label": "Oracle Service"
+      },
+      {
+        "id": "urn:ngm:class:price-feed",
+        "label": "Price Feed"
+      },
+      {
+        "id": "urn:ngm:class:treasury-system",
+        "label": "Treasury System"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:creator-economy-infrastructure",
+        "label": "Creator Economy Infrastructure"
+      }
+    ],
     "relatedTo": []
   },
   "inferredSuperClasses": [
@@ -196,7 +254,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -24,6 +24,10 @@
       {
         "id": "urn:ngm:class:waveguide-optics",
         "label": "Waveguide Optics"
+      },
+      {
+        "id": "urn:ngm:class:display-driver-ic",
+        "label": "Display Driver IC"
       }
     ],
     "requires": [
@@ -121,7 +125,12 @@
         "label": "Human Computer Interaction"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:display-industry-standards",
+        "label": "Display Industry Standards"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -136,14 +145,39 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware",
+      "slug": "hardware"
+    },
+    {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering",
       "slug": "sc-display-and-rendering"
     },
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -157,34 +191,38 @@
         "label": "Optical Systems"
       },
       {
-        "id": "urn:ngm:class:display-hardware",
-        "label": "Display Hardware"
+        "id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
       },
       {
-        "id": "urn:ngm:class:foveated-rendering",
-        "label": "Foveated Rendering"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:neural-rendering",
-        "label": "Neural Rendering"
+        "id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
       },
       {
-        "id": "urn:ngm:class:physically-based-rendering",
-        "label": "Physically Based Rendering"
+        "id": "urn:ngm:class:memory-subsystem",
+        "label": "Memory Subsystem"
       },
       {
-        "id": "urn:ngm:class:rasterization",
-        "label": "Rasterization"
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
       },
       {
-        "id": "urn:ngm:class:ray-tracing",
-        "label": "Ray Tracing"
+        "id": "urn:ngm:class:storage-device",
+        "label": "Storage Device"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:graphics-processing",
         "label": "Graphics Processing"
+      },
+      {
+        "id": "urn:ngm:class:optical-systems",
+        "label": "Optical Systems"
       },
       {
         "id": "urn:ngm:class:rendering-pipeline",
@@ -195,42 +233,54 @@
         "label": "Sensor Input"
       },
       {
+        "id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
-      },
-      {
-        "id": "urn:ngm:class:low-latency",
-        "label": "Low Latency"
-      },
-      {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:immersive-visualization",
+        "label": "Immersive Visualization"
+      },
       {
         "id": "urn:ngm:class:passthrough-ar",
         "label": "Passthrough AR"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing Paradigm"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
       },
       {
-        "id": "urn:ngm:class:scene-understanding",
-        "label": "Scene Understanding"
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
       }
     ],
     "dependsOn": [
@@ -241,6 +291,14 @@
       {
         "id": "urn:ngm:class:gpu",
         "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Fabrication"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
       }
     ],
     "contrastsWith": [
@@ -249,8 +307,20 @@
         "label": "Flat Panel Display"
       },
       {
+        "id": "urn:ngm:class:software",
+        "label": "Software"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -263,16 +333,28 @@
         "label": "Human Computer Interaction"
       },
       {
+        "id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:tee",
+        "label": "Trusted Execution Environment"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       },
       {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
       }
     ],
     "uses": [
@@ -299,6 +381,14 @@
       {
         "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "supports": [
@@ -309,12 +399,44 @@
       {
         "id": "urn:ngm:class:foveated-rendering",
         "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:openxr-standard",
         "label": "OpenXR Standard"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
       },
       {
         "id": "urn:ngm:class:open-xr",
@@ -345,16 +467,28 @@
         "label": "Metaverse"
       },
       {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
         "id": "urn:ngm:class:ai-upscaling-and-super-resolution",
         "label": "AI Upscaling and Super-Resolution"
       },
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:virtual-reality",
-        "label": "Virtual Reality"
       }
     ]
   },

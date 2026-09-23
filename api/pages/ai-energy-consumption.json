@@ -67,6 +67,10 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:idle-power-consumption",
+        "label": "Idle Power Consumption"
+      },
+      {
         "id": "urn:ngm:class:power-usage-effectiveness",
         "label": "Power Usage Effectiveness"
       },
@@ -75,8 +79,16 @@
         "label": "Thermal Design Power"
       },
       {
+        "id": "urn:ngm:class:economic-sustainability",
+        "label": "Economic Sustainability"
+      },
+      {
         "id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:social-sustainability",
+        "label": "Social Sustainability"
       },
       {
         "id": "urn:ngm:class:accountability",
@@ -85,18 +97,6 @@
       {
         "id": "urn:ngm:class:policy",
         "label": "Policy"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:transparency",
-        "label": "Transparency"
       }
     ],
     "requires": [
@@ -207,6 +207,18 @@
         "label": "Proof Of Work"
       },
       {
+        "id": "urn:ngm:class:planned-obsolescence",
+        "label": "Planned Obsolescence"
+      },
+      {
+        "id": "urn:ngm:class:rebound-effect",
+        "label": "Rebound Effect"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -285,6 +297,10 @@
         "label": "ISO 14001"
       },
       {
+        "id": "urn:ngm:class:w3c-sustainable-web-design",
+        "label": "W3C Sustainable Web Design"
+      },
+      {
         "id": "urn:ngm:class:iso-iec-38500",
         "label": "ISO-IEC 38500"
       },
@@ -305,6 +321,10 @@
       {
         "id": "urn:ngm:class:carbon-footprint",
         "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:operational-cost",
+        "label": "Operational Cost"
       }
     ],
     "relatedTo": [

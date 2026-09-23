@@ -14,6 +14,26 @@
     {
       "id": "urn:ngm:class:dc-communication",
       "label": "Communication Technology"
+    },
+    {
+      "id": "urn:ngm:class:pair-programming",
+      "label": "Pair Programming"
+    },
+    {
+      "id": "urn:ngm:class:collaborative-development",
+      "label": "Collaborative Development"
+    },
+    {
+      "id": "urn:ngm:class:distributed-software-engineering",
+      "label": "Distributed Software Engineering"
+    },
+    {
+      "id": "urn:ngm:class:agile-software-development",
+      "label": "Agile Software Development"
+    },
+    {
+      "id": "urn:ngm:class:synchronous-collaboration",
+      "label": "Synchronous Collaboration"
     }
   ],
   "entityType": "Class",
@@ -28,6 +48,30 @@
       {
         "id": "urn:ngm:class:screen-sharing",
         "label": "Screen Sharing"
+      },
+      {
+        "id": "urn:ngm:class:driver-role",
+        "label": "Driver Role"
+      },
+      {
+        "id": "urn:ngm:class:navigator-role",
+        "label": "Navigator Role"
+      },
+      {
+        "id": "urn:ngm:class:shared-code-editor",
+        "label": "Shared Code Editor"
+      },
+      {
+        "id": "urn:ngm:class:audio-video-channel",
+        "label": "Audio/Video Channel"
+      },
+      {
+        "id": "urn:ngm:class:cursor-synchronisation",
+        "label": "Cursor Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:role-rotation-protocol",
+        "label": "Role Rotation Protocol"
       }
     ],
     "requires": [
@@ -42,15 +86,72 @@
       {
         "id": "urn:ngm:class:video-conferencing",
         "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-collaborative-editing",
+        "label": "Real-time Collaborative Editor"
+      },
+      {
+        "id": "urn:ngm:class:stable-network-connection",
+        "label": "Stable Network Connection"
+      },
+      {
+        "id": "urn:ngm:class:shared-development-environment",
+        "label": "Shared Development Environment"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:knowledge-transfer",
         "label": "Knowledge Transfer"
+      },
+      {
+        "id": "urn:ngm:class:code-quality-assurance",
+        "label": "Code Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:real-time-debugging",
+        "label": "Real-time Debugging"
+      },
+      {
+        "id": "urn:ngm:class:distributed-code-review",
+        "label": "Distributed Code Review"
+      },
+      {
+        "id": "urn:ngm:class:continuous-learning",
+        "label": "Continuous Learning"
+      },
+      {
+        "id": "urn:ngm:class:onboarding-acceleration",
+        "label": "Onboarding Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:collective-code-ownership",
+        "label": "Collective Code Ownership"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:ssh-tunnelling",
+        "label": "SSH Tunnelling"
+      },
+      {
+        "id": "urn:ngm:class:cloud-development-environment",
+        "label": "Cloud Development Environment"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:continuous-integration",
@@ -67,16 +168,70 @@
       {
         "id": "urn:ngm:class:test-driven-development",
         "label": "Test-Driven Development"
+      },
+      {
+        "id": "urn:ngm:class:driver-navigator-pattern",
+        "label": "Driver/Navigator Pattern"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asynchronous-code-review",
+        "label": "Asynchronous Code Review"
+      },
+      {
+        "id": "urn:ngm:class:solo-programming",
+        "label": "Solo Programming"
+      },
+      {
+        "id": "urn:ngm:class:code-walkthrough",
+        "label": "Code Walkthrough"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Pull Request Review"
+      },
+      {
+        "id": "urn:ngm:class:handoff-pairing",
+        "label": "Handoff Pairing"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:agile-software-development",
         "label": "Agile Software Development"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vs-code-live-share",
+        "label": "VS Code Live Share"
+      },
+      {
+        "id": "urn:ngm:class:jetbrains-code-with-me",
+        "label": "JetBrains Code With Me"
+      },
+      {
+        "id": "urn:ngm:class:tuple",
+        "label": "Tuple"
+      },
+      {
+        "id": "urn:ngm:class:tmux",
+        "label": "tmux"
+      },
+      {
+        "id": "urn:ngm:class:github-codespaces",
+        "label": "GitHub Codespaces"
+      },
+      {
+        "id": "urn:ngm:class:neovim",
+        "label": "Neovim"
+      },
+      {
+        "id": "urn:ngm:class:floobits",
+        "label": "Floobits"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:agile-software-development",
@@ -89,12 +244,32 @@
       {
         "id": "urn:ngm:class:open-source-development",
         "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:devops-practices",
+        "label": "DevOps Practices"
+      },
+      {
+        "id": "urn:ngm:class:pair-rotation-scheduling",
+        "label": "Pair Rotation Scheduling"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:extreme-programming",
         "label": "Extreme Programming Explained (Beck 1999)"
+      },
+      {
+        "id": "urn:ngm:class:extreme-programming",
+        "label": "Extreme Programming Explained (Beck 1999)"
+      },
+      {
+        "id": "urn:ngm:class:agile-manifesto-2001",
+        "label": "Agile Manifesto (2001)"
+      },
+      {
+        "id": "urn:ngm:class:team-topologies-skelton-pais-2019",
+        "label": "Team Topologies (Skelton & Pais 2019)"
       }
     ],
     "partOf": [],
@@ -122,6 +297,10 @@
       {
         "id": "urn:ngm:class:mob-programming",
         "label": "Mob Programming"
+      },
+      {
+        "id": "urn:ngm:class:github-copilot",
+        "label": "GitHub Copilot"
       }
     ]
   },
@@ -130,6 +309,36 @@
       "id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration",
       "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering-domain",
+      "label": "Software Engineering Domain",
+      "slug": "software-engineering-domain"
+    },
+    {
+      "id": "urn:ngm:class:tc-0001-telecollaboration-domain",
+      "label": "TC-0001-telecollaboration-domain",
+      "slug": "tc-0001-telecollaboration-domain"
+    },
+    {
+      "id": "urn:ngm:class:telecollaboration",
+      "label": "Telecollaboration",
+      "slug": "telecollaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-work",
+      "label": "Distributed Work",
+      "slug": "distributed-work"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -169,12 +378,36 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocols",
+        "label": "TC-0040-Communication-Protocols"
+      },
+      {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity and Access Management"
       },
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
       }
     ],
     "enables": [
@@ -191,20 +424,24 @@
         "label": "Virtual Collaboration"
       },
       {
-        "id": "urn:ngm:class:open-source-development",
-        "label": "Open Source Development"
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
       },
       {
-        "id": "urn:ngm:class:remote-work",
-        "label": "Remote Work"
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
       },
       {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
+        "id": "urn:ngm:class:lean-software-development",
+        "label": "Lean Software Development"
       },
       {
-        "id": "urn:ngm:class:virtual-team",
-        "label": "Virtual Team"
+        "id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
       }
     ],
     "dependsOn": [
@@ -219,22 +456,70 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:big-design-up-front",
+        "label": "Big Design Up Front"
+      },
+      {
+        "id": "urn:ngm:class:waterfall-model",
+        "label": "Waterfall Model"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
-      },
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
       },
       {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
       }
     ],
     "uses": [
@@ -247,6 +532,18 @@
         "label": "Edge Computing"
       },
       {
+        "id": "urn:ngm:class:pair-programming",
+        "label": "Pair Programming"
+      },
+      {
+        "id": "urn:ngm:class:product-backlog",
+        "label": "Product Backlog"
+      },
+      {
+        "id": "urn:ngm:class:user-story",
+        "label": "User Story"
+      },
+      {
         "id": "urn:ngm:class:conflict-free-replicated-data-type",
         "label": "Conflict-Free Replicated Data Type"
       },
@@ -257,14 +554,6 @@
       {
         "id": "urn:ngm:class:operational-transformation",
         "label": "Operational Transformation"
-      },
-      {
-        "id": "urn:ngm:class:real-time-messaging",
-        "label": "Real-Time Messaging"
-      },
-      {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
       }
     ],
     "supports": [
@@ -275,6 +564,48 @@
       {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:agile-manifesto",
+        "label": "Agile Manifesto"
+      },
+      {
+        "id": "urn:ngm:class:scaled-agile-framework",
+        "label": "Scaled Agile Framework"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "relatedTo": [
@@ -283,12 +614,12 @@
         "label": "Communication Technology"
       },
       {
-        "id": "urn:ngm:class:dc-telepresence",
-        "label": "Telepresence"
-      },
-      {
         "id": "urn:ngm:class:remote-collaboration",
         "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
       },
       {
         "id": "urn:ngm:class:collaboration-technology",
@@ -303,12 +634,12 @@
         "label": "Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:computer-supported-cooperative-work",
-        "label": "Computer-Supported Cooperative Work"
+        "id": "urn:ngm:class:distributed-teams",
+        "label": "Distributed Teams"
       },
       {
-        "id": "urn:ngm:class:groupware",
-        "label": "Groupware"
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
       }
     ]
   },

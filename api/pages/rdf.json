@@ -20,6 +20,18 @@
       {
         "id": "urn:ngm:class:iri",
         "label": "IRI"
+      },
+      {
+        "id": "urn:ngm:class:rdf-triple",
+        "label": "RDF Triple"
+      },
+      {
+        "id": "urn:ngm:class:rdf-graph",
+        "label": "RDF Graph"
+      },
+      {
+        "id": "urn:ngm:class:rdf-literal",
+        "label": "RDF Literal"
       }
     ],
     "requires": [
@@ -48,6 +60,14 @@
       {
         "id": "urn:ngm:class:federated-query",
         "label": "Federated Query"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:ontological-reasoning",
+        "label": "Ontological Reasoning"
       }
     ],
     "dependsOn": [],
@@ -77,7 +97,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -91,12 +111,16 @@
         "label": "Turtle"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
         "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:rdfs",
+        "label": "RDFS"
       }
     ],
     "supports": [
@@ -266,6 +290,22 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

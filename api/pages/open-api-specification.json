@@ -145,6 +145,10 @@
         "label": "API Versioning"
       },
       {
+        "id": "urn:ngm:class:authentication-schema",
+        "label": "Authentication Schema"
+      },
+      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       },
@@ -153,7 +157,7 @@
         "label": "Data Format Specification"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -167,10 +171,6 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
-      },
-      {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency"
       }
     ],
     "requires": [
@@ -196,6 +196,10 @@
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:component-integration",
+        "label": "Component Integration"
+      },
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
@@ -333,7 +337,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

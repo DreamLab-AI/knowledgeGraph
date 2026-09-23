@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:sustainability-reporting",
         "label": "Sustainability Reporting"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting System"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
       }
     ],
     "requires": [
@@ -58,6 +66,10 @@
       {
         "id": "urn:ngm:class:decarbonisation",
         "label": "Decarbonisation Strategy"
+      },
+      {
+        "id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation Strategy"
       }
     ],
     "uses": [
@@ -78,6 +90,10 @@
       {
         "id": "urn:ngm:class:carbon-footprint",
         "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation Strategy"
       }
     ],
     "standardizedBy": [],
@@ -221,6 +237,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      },
+      {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
@@ -301,6 +321,10 @@
         "label": "Multi-Stakeholder Governance"
       },
       {
+        "id": "urn:ngm:class:public-administration",
+        "label": "Public Administration"
+      },
+      {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
@@ -309,16 +333,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

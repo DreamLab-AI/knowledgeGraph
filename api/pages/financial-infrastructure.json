@@ -34,7 +34,7 @@
         "label": "Correspondent Banking"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       }
     ],
@@ -63,6 +63,14 @@
       },
       {
         "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -112,7 +120,7 @@
         "label": "Financial Instruments"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
+        "id": "urn:ngm:class:de-fi",
         "label": "Decentralised Finance"
       },
       {
@@ -124,6 +132,10 @@
       {
         "id": "urn:ngm:class:iso-20022",
         "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:swift",
+        "label": "SWIFT Network"
       },
       {
         "id": "urn:ngm:class:swift",
@@ -287,7 +299,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

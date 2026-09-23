@@ -45,6 +45,10 @@
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:processor",
+        "label": "Processor"
       }
     ],
     "implements": [],
@@ -124,6 +128,10 @@
         "label": "Power Management Unit"
       },
       {
+        "id": "urn:ngm:class:processor",
+        "label": "Processor"
+      },
+      {
         "id": "urn:ngm:class:sensor",
         "label": "Sensor"
       },
@@ -134,10 +142,6 @@
       {
         "id": "urn:ngm:class:cloud-native-applications",
         "label": "Cloud-Native Applications"
-      },
-      {
-        "id": "urn:ngm:class:distributed-computing",
-        "label": "Distributed Computing"
       }
     ],
     "requires": [
@@ -248,6 +252,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:bus-interface",
+        "label": "Bus Interface"
+      },
+      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       }
@@ -304,11 +312,15 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:printed-circuit-board",
+        "label": "Printed Circuit Board"
+      },
+      {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

@@ -119,9 +119,19 @@
       "slug": "information-security"
     },
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -134,6 +144,10 @@
       {
         "id": "urn:ngm:class:digital-forensics",
         "label": "Digital Forensics"
+      },
+      {
+        "id": "urn:ngm:class:incident-containment",
+        "label": "Incident Containment"
       },
       {
         "id": "urn:ngm:class:post-incident-review",
@@ -158,10 +172,6 @@
       {
         "id": "urn:ngm:class:threat-intelligence",
         "label": "Threat Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:access-control",
-        "label": "Access Control"
       }
     ],
     "requires": [
@@ -234,12 +244,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       },
       {
         "id": "urn:ngm:class:secure-communication",
@@ -292,12 +302,16 @@
         "label": "Distributed Systems Security"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -314,6 +328,10 @@
         "label": "Endpoint Detection and Response"
       },
       {
+        "id": "urn:ngm:class:security-orchestration-automation-and-response",
+        "label": "Security Orchestration Automation and Response"
+      },
+      {
         "id": "urn:ngm:class:user-and-entity-behaviour-analytics",
         "label": "User and Entity Behaviour Analytics"
       },
@@ -328,10 +346,6 @@
       {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
-      },
-      {
-        "id": "urn:ngm:class:firewall",
-        "label": "Firewall"
       }
     ],
     "supports": [
@@ -369,6 +383,10 @@
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-27035",
+        "label": "ISO IEC 27035"
+      },
       {
         "id": "urn:ngm:class:nist-cybersecurity-framework",
         "label": "NIST Cybersecurity Framework"

@@ -209,8 +209,8 @@
         "label": "Robotics Perception"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
       }
     ],
     "dependsOn": [
@@ -221,12 +221,28 @@
       {
         "id": "urn:ngm:class:feature-detection",
         "label": "Feature Detection"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:calibration",
         "label": "Self-Calibration"
+      },
+      {
+        "id": "urn:ngm:class:radiometric-calibration",
+        "label": "Radiometric Calibration"
       }
     ],
     "bridgesTo": [
@@ -241,12 +257,40 @@
       {
         "id": "urn:ngm:class:robotics-perception",
         "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:chessboard-pattern",
+        "label": "Chessboard Pattern"
+      },
+      {
         "id": "urn:ngm:class:homography",
         "label": "Homography"
+      },
+      {
+        "id": "urn:ngm:class:non-linear-least-squares",
+        "label": "Non-Linear Least Squares"
       }
     ],
     "supports": [
@@ -271,6 +315,10 @@
       {
         "id": "urn:ngm:class:epipolar-geometry",
         "label": "Epipolar Geometry"
+      },
+      {
+        "id": "urn:ngm:class:open-cv",
+        "label": "OpenCV"
       },
       {
         "id": "urn:ngm:class:projective-geometry",

@@ -41,14 +41,109 @@
       "slug": "ai-safety"
     },
     {
+      "id": "urn:ngm:class:probabilistic-risk-assessment",
+      "label": "Probabilistic Risk Assessment",
+      "slug": "probabilistic-risk-assessment"
+    },
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment",
+      "slug": "risk-assessment"
+    },
+    {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics",
       "slug": "ai-governance-and-ethics"
     },
     {
+      "id": "urn:ngm:class:audit",
+      "label": "Audit",
+      "slug": "audit"
+    },
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework",
+      "slug": "compliance-framework"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management",
+      "slug": "risk-management"
+    },
+    {
+      "id": "urn:ngm:class:safety-engineering",
+      "label": "Safety Engineering",
+      "slug": "safety-engineering"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-analysis",
+      "label": "Systems Analysis",
+      "slug": "systems-analysis"
+    },
+    {
+      "id": "urn:ngm:class:accountability-mechanism",
+      "label": "Accountability Mechanism",
+      "slug": "accountability-mechanism"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards",
+      "slug": "robo-safety-and-standards"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:accountability",
+      "label": "Accountability",
+      "slug": "accountability"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance",
+      "slug": "ai-governance"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework",
+      "slug": "governance-framework"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     }
   ],
   "inheritedRelations": {
@@ -74,16 +169,16 @@
         "label": "Pandemic Risk"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:adversarial-elicitation",
+        "label": "Adversarial Elicitation"
       },
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:cbrn-risk-assessment",
+        "label": "CBRN Risk Assessment"
       },
       {
-        "id": "urn:ngm:class:ai-fairness",
-        "label": "AI Fairness"
+        "id": "urn:ngm:class:dangerous-capability-evaluation",
+        "label": "Dangerous Capability Evaluation"
       }
     ],
     "requires": [
@@ -96,28 +191,28 @@
         "label": "Probability Estimation"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:capability-forecasting",
+        "label": "Capability Forecasting"
       },
       {
-        "id": "urn:ngm:class:formal-verification",
-        "label": "Formal Verification"
+        "id": "urn:ngm:class:dangerous-capability-evaluation",
+        "label": "Dangerous Capability Evaluation"
       },
       {
-        "id": "urn:ngm:class:interpretability",
-        "label": "Interpretability"
+        "id": "urn:ngm:class:expert-elicitation",
+        "label": "Expert Elicitation"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
       }
     ],
     "enables": [
@@ -134,36 +229,126 @@
         "label": "Pandemic Preparedness"
       },
       {
-        "id": "urn:ngm:class:human-ai-collaboration",
-        "label": "Human-AI Collaboration"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
       },
       {
-        "id": "urn:ngm:class:trustworthy-ai",
-        "label": "Trustworthy AI"
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:longtermism",
         "label": "Longtermism"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:capability-forecasting",
+        "label": "Capability Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:expert-elicitation",
+        "label": "Expert Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:failure-mode-effects-analysis",
+        "label": "Failure Mode Effects Analysis"
+      },
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-risk-assessment",
+        "label": "Probabilistic Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:beneficial-ai-risk",
+        "label": "Beneficial AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:narrow-ai-risk",
+        "label": "Narrow AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:near-term-ai-risk",
+        "label": "Near-Term AI Risk"
+      },
+      {
         "id": "urn:ngm:class:ai-capabilities-research",
         "label": "AI Capabilities Research"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
       }
     ],
     "bridgesTo": [
@@ -190,6 +375,14 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
       }
     ],
     "uses": [
@@ -198,12 +391,32 @@
         "label": "Adversarial Machine Learning"
       },
       {
-        "id": "urn:ngm:class:red-teaming",
-        "label": "Red Teaming"
+        "id": "urn:ngm:class:capability-forecasting",
+        "label": "Capability Forecasting"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
-        "label": "Reinforcement Learning from Human Feedback"
+        "id": "urn:ngm:class:dangerous-capability-evaluation",
+        "label": "Dangerous Capability Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:expert-elicitation",
+        "label": "Expert Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:harmbench",
+        "label": "HarmBench"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
       }
     ],
     "supports": [
@@ -216,16 +429,62 @@
         "label": "Biosafety Regulation"
       },
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:catastrophic-risk-reduction",
+        "label": "Catastrophic Risk Reduction"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:california-sb53",
+        "label": "California SB53"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "id": "urn:ngm:class:fca-ps21-3",
+        "label": "FCA PS21/3"
+      },
+      {
+        "id": "urn:ngm:class:fsb",
+        "label": "FSB"
       }
     ],
     "partOf": [
@@ -236,6 +495,22 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:accountability-framework",
+        "label": "Accountability Framework"
       }
     ],
     "relatedTo": [
@@ -256,20 +531,20 @@
         "label": "Longtermism"
       },
       {
-        "id": "urn:ngm:class:california-ai-bill",
-        "label": "California AI bill"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:existential-risk",
-        "label": "Existential Risk"
+        "id": "urn:ngm:class:ai-safety-level",
+        "label": "AI Safety Level"
       },
       {
-        "id": "urn:ngm:class:ai-regulation",
-        "label": "AI Regulation"
+        "id": "urn:ngm:class:ai-security-institute",
+        "label": "AI Security Institute"
       },
       {
-        "id": "urn:ngm:class:corrigibility",
-        "label": "Corrigibility"
+        "id": "urn:ngm:class:apollo-research",
+        "label": "Apollo Research"
       }
     ]
   },

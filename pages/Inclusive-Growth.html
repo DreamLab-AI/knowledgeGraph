@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Inclusive Growth</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Inclusive Growth"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Inclusive Growth"/><meta name="twitter:description" content="AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable develop… S..."/><meta property="og:description" content="AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable develop… S..."/><meta property="og:image:alt" content="AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable develop… S..."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Inclusive-Growth"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Inclusive-Growth"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable develop… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Inclusive-Growth"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-4059"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-4059" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Inclusive Growth</a></div></nav><h1 class="article-title">Inclusive Growth</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.670Z">23 Sept 2026</time><span>19 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:inclusive-growth</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>infrastructure</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Legal-and-Regulatory" class="internal">Legal and Regulatory</a></li><li><a href="../pages/Policy-Enforcement" class="internal">Policy Enforcement</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../pages/Policy-Enforcement" class="internal">Policy Enforcement</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Harmful-Bias" class="internal">Harmful Bias</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0156</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../metaverse" class="internal">MetaverseDomain</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:b1bbae439f956036e5510a5fe856e1ed6f58b334d8e15cb1aacf533c6ffc4d14</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Sustainable-Development" class="internal">Sustainable Development</a></li><li><a href="../pages/Well-Being" class="internal">Well Being</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Fairness" class="internal">Fairness</a></li><li><a href="../financial-inclusion" class="internal">Financial Inclusion</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable develop…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable development and well-being.</p>
+</li>
+<li>
+<h2 id="future-growth">Future Growth<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-growth" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- The biggest opportunity in consumer AI lies in developing specialized tools that can handle complex, multi-step tasks.
+</code></pre>
+</li>
+<li>
+<h2 id="agentic-architectures">Agentic Architectures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agentic-architectures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- Adoption of agentic architectures grew from 0% in 2023 to 12% in 2024.
+- Future growth in agentic architectures is expected as the technology matures.
+</code></pre>
+</li>
+<li>
+<h2 id="critical-analysis">Critical Analysis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#critical-analysis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- **Anecdotal Evidence and Generalisation:**
+	- The report is based on Ramp's customer data, which may not represent the broader market. Growth figures could be skewed by a few large companies or early adopters, making the data less generalisable.
+	- The focus on rapidly growing vendors like Anthropic might overshadow the fact that many AI tools are still in experimental or early adoption stages.
+- **Superficial Engagement vs. Deep Integration:**
+	- Increased spending may reflect experimentation rather than deep, sustainable integration of AI tools. Companies often try new tools without committing long-term.
+	- Retention rates might indicate vendor lock-in rather than genuine satisfaction, as switching costs can deter companies from exploring better options.
+- **Economic and Market Dynamics:**
+	- Spending increases may be driven by economic pressures to boost productivity without increasing headcount, rather than a belief in AI's transformative potential.
+	- The surge in AI spending could be driven by hype, with companies adopting AI tools to keep up with competitors, regardless of their actual value.
+- **Sustainability of Growth:**
+	- Rapid growth rates may not be sustainable. As the market matures, AI spending could slow as companies standardise on a few tools or find that efficiency gains do not meet expectations.
+</code></pre>
+</li>
+<li>
+<h2 id="economic-perspectives-and-growth-theory">Economic Perspectives and Growth Theory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#economic-perspectives-and-growth-theory" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- ### Endogenous Growth Theory
+</code></pre>
+<ul>
+<li>
+<p><strong>AK Model:</strong> Introduces the AK model from endogenous growth theory, which posits that economies can grow indefinitely as they accumulate more capital, potentially allowing for explosive growth under certain conditions.</p>
+</li>
+<li>
+<p><strong>Theoretical vs. Real-World Limitations:</strong> Discusses the theoretical possibilities of indefinite growth while acknowledging the real-world diminishing returns and other economic principles that limit such expansion.</p>
+<pre><code> - #### The Case for Optimism
+ 	- In the long run, AI automation has the potential to greatly increase productivity and economic growth, creating new jobs and opportunities. Acemoglu and Restrepo (2018) find that while automation does displace some jobs, it also creates new ones in more complex and higher-paying fields.
+ 	- AI can also help to solve complex social and environmental problems, such as climate change and disease prevention, improving quality of life for all. AI-powered technologies such as precision agriculture and personalized medicine have the potential to address global challenges and improve human well-being (Vinuesa et al., 2020).
+ 	- With the right policies and investments in education and retraining, the workforce can adapt to the new demands of an AI-driven economy. Acemoglu and Restrepo (2018) emphasize the importance of investing in human capital and promoting the creation of new tasks that complement AI technologies.
+ 	- The benefits of AI, such as increased leisure time and reduced costs of goods and services, can be widely shared if there is a concerted effort to promote inclusive growth and equitable distribution of wealth. Korinek and Stiglitz (2017) propose policies such as progressive taxation and universal basic income to ensure that the gains from AI are broadly shared.
+ 	- Economist David Autor from MIT presents a compelling counterargument. In his article &quot;[AI Could Actually Help Rebuild The Middle Class,](https://www.noemamag.com/how-ai-could-help-rebuild-the-middle-class/)&quot;. Autor posits that AI has the potential to democratise expertise and create new opportunities for workers without advanced degrees, ultimately leading to greater equity and a stronger middle class.
+ 		- Autor argues that unlike past automation technologies, AI can learn from unstructured data and tacit knowledge, enabling it to augment human capabilities in complex decision-making domains. By providing real-time guidance and guardrails, AI can expand access to expertise and allow people with less formal training to perform higher-skilled work.
+ 		  Central to Autor's thesis is the concept of &quot;a worker of one&quot;
+</code></pre>
+<ul>
+<li>in a free society, every individual owns their own labor, creating an intrinsic force for greater equality when human expertise is valuable. AI could generate a variety of new middle-class jobs, counteracting the tendency for returns to accrue primarily to capital owners.
+<ul>
+<li>However, realizing these benefits will require proactive efforts to steer AI development in a direction that benefits workers. This includes investing in AI tools for education and healthcare, reforming institutions to ensure productivity gains flow to workers, and countering resistance from professional guilds.
+Autor emphasizes that the goal is not to render human expertise obsolete, but rather to extend its reach and efficacy. He draws an analogy to YouTube tutorials</li>
+</ul>
+</li>
+<li>while an untrained amateur cannot safely replace a circuit breaker by watching a video, an electrician can use that same video to expand their skills and take on new tasks. Similarly, AI will be most effective when building upon a foundation of human knowledge.
+<ul>
+<li>Autor also notes that demand for many forms of expertise, such as in healthcare and education, is effectively limitless. So if AI can boost productivity in these domains, it may actually increase employment by making these services more affordable and accessible.</li>
+<li>While AI will automate some tasks and eliminate certain jobs, Autor argues this is not the whole story. Historically, the most important innovations have been those that expanded human capabilities and opened up entirely new domains</li>
+</ul>
+</li>
+<li>from air travel to gene editing. In the process, they created demands for new forms of expertise that didn’t previously exist.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="future-growth-1">Future Growth<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-growth-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- The biggest opportunity in consumer AI lies in developing specialized tools that can handle complex, multi-step tasks.
+</code></pre>
+</li>
+<li>
+<h2 id="agentic-architectures-1">Agentic Architectures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agentic-architectures-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- Adoption of agentic architectures grew from 0% in 2023 to 12% in 2024.
+- Future growth in agentic architectures is expected as the technology matures.
+</code></pre>
+</li>
+<li>
+<h2 id="critical-analysis-1">Critical Analysis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#critical-analysis-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- **Anecdotal Evidence and Generalisation:**
+	- The report is based on Ramp's customer data, which may not represent the broader market. Growth figures could be skewed by a few large companies or early adopters, making the data less generalisable.
+	- The focus on rapidly growing vendors like Anthropic might overshadow the fact that many AI tools are still in experimental or early adoption stages.
+- **Superficial Engagement vs. Deep Integration:**
+	- Increased spending may reflect experimentation rather than deep, sustainable integration of AI tools. Companies often try new tools without committing long-term.
+	- Retention rates might indicate vendor lock-in rather than genuine satisfaction, as switching costs can deter companies from exploring better options.
+- **Economic and Market Dynamics:**
+	- Spending increases may be driven by economic pressures to boost productivity without increasing headcount, rather than a belief in AI's transformative potential.
+	- The surge in AI spending could be driven by hype, with companies adopting AI tools to keep up with competitors, regardless of their actual value.
+- **Sustainability of Growth:**
+	- Rapid growth rates may not be sustainable. As the market matures, AI spending could slow as companies standardise on a few tools or find that efficiency gains do not meet expectations.
+</code></pre>
+</li>
+<li>
+<h2 id="economic-perspectives-and-growth-theory-1">Economic Perspectives and Growth Theory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#economic-perspectives-and-growth-theory-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- ### Endogenous Growth Theory
+</code></pre>
+<ul>
+<li>
+<p><strong>AK Model:</strong> Introduces the AK model from endogenous growth theory, which posits that economies can grow indefinitely as they accumulate more capital, potentially allowing for explosive growth under certain conditions.</p>
+</li>
+<li>
+<p><strong>Theoretical vs. Real-World Limitations:</strong> Discusses the theoretical possibilities of indefinite growth while acknowledging the real-world diminishing returns and other economic principles that limit such expansion.</p>
+<pre><code> - #### The Case for Optimism
+ 	- In the long run, AI automation has the potential to greatly increase productivity and economic growth, creating new jobs and opportunities. Acemoglu and Restrepo (2018) find that while automation does displace some jobs, it also creates new ones in more complex and higher-paying fields.
+ 	- AI can also help to solve complex social and environmental problems, such as climate change and disease prevention, improving quality of life for all. AI-powered technologies such as precision agriculture and personalized medicine have the potential to address global challenges and improve human well-being (Vinuesa et al., 2020).
+ 	- With the right policies and investments in education and retraining, the workforce can adapt to the new demands of an AI-driven economy. Acemoglu and Restrepo (2018) emphasize the importance of investing in human capital and promoting the creation of new tasks that complement AI technologies.
+ 	- The benefits of AI, such as increased leisure time and reduced costs of goods and services, can be widely shared if there is a concerted effort to promote inclusive growth and equitable distribution of wealth. Korinek and Stiglitz (2017) propose policies such as progressive taxation and universal basic income to ensure that the gains from AI are broadly shared.
+ 	- Economist David Autor from MIT presents a compelling counterargument. In his article &quot;[AI Could Actually Help Rebuild The Middle Class,](https://www.noemamag.com/how-ai-could-help-rebuild-the-middle-class/)&quot;. Autor posits that AI has the potential to democratise expertise and create new opportunities for workers without advanced degrees, ultimately leading to greater equity and a stronger middle class.
+ 		- Autor argues that unlike past automation technologies, AI can learn from unstructured data and tacit knowledge, enabling it to augment human capabilities in complex decision-making domains. By providing real-time guidance and guardrails, AI can expand access to expertise and allow people with less formal training to perform higher-skilled work.
+ 		  Central to Autor's thesis is the concept of &quot;a worker of one&quot;
+</code></pre>
+<ul>
+<li>in a free society, every individual owns their own labor, creating an intrinsic force for greater equality when human expertise is valuable. AI could generate a variety of new middle-class jobs, counteracting the tendency for returns to accrue primarily to capital owners.
+<ul>
+<li>However, realizing these benefits will require proactive efforts to steer AI development in a direction that benefits workers. This includes investing in AI tools for education and healthcare, reforming institutions to ensure productivity gains flow to workers, and countering resistance from professional guilds.
+Autor emphasizes that the goal is not to render human expertise obsolete, but rather to extend its reach and efficacy. He draws an analogy to YouTube tutorials</li>
+</ul>
+</li>
+<li>while an untrained amateur cannot safely replace a circuit breaker by watching a video, an electrician can use that same video to expand their skills and take on new tasks. Similarly, AI will be most effective when building upon a foundation of human knowledge.
+<ul>
+<li>Autor also notes that demand for many forms of expertise, such as in healthcare and education, is effectively limitless. So if AI can boost productivity in these domains, it may actually increase employment by making these services more affordable and accessible.</li>
+<li>While AI will automate some tasks and eliminate certain jobs, Autor argues this is not the whole story. Historically, the most important innovations have been those that expanded human capabilities and opened up entirely new domains</li>
+</ul>
+</li>
+<li>from air travel to gene editing. In the process, they created demands for new forms of expertise that didn’t previously exist.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="future-growth-2">Future Growth<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-growth-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="additional-resources">Additional Resources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#additional-resources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+</ul>
+<ul>
+<li>
+<p><strong><a href="https://www.w3.org/WAI/" class="external">W3C Web Accessibility Initiative (WAI)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>:</strong> A comprehensive resource for understanding and implementing web accessibility standards.</p>
+</li>
+<li>
+<p><strong><a href="https://inclusivedesignprinciples.org/" class="external">Inclusive Design Principles<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>:</strong> Practical guidelines for designing products that work for the widest possible audience.</p>
+</li>
+<li>
+<p><strong><a href="https://atcoalition.org/" class="external">Accessible Technology Coalition<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>:</strong> A resource hub for accessible technology tools and strategies.</p>
+</li>
+</ul>
+<ul>
+<li>
+<h2 id="additional-resources-1">Additional Resources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#additional-resources-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+</ul>
+<ul>
+<li><strong><a href="https://www.w3.org/WAI/" class="external">W3C Web Accessibility Initiative (WAI)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>:</strong> A comprehensive resource for understanding and implementing web accessibility standards.</li>
+<li><strong><a href="https://inclusivedesignprinciples.org/" class="external">Inclusive Design Principles<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>:</strong> Practical guidelines for designing products that work for the widest possible audience.</li>
+<li><strong><a href="https://atcoalition.org/" class="external">Accessible Technology Coalition<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>:</strong> A resource hub for accessible technology tools and strategies.</li>
+</ul>
+<h2 id="source">Source<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#source" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Primary</strong>: OECD AI Principles 2024 revision (Principle 1.1)</li>
+<li><strong>Related</strong>: OECD Recommendation of the Council on Artificial Intelligence (2019, updated 2024)</li>
+</ul>
+<h2 id="context">Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Inclusive growth represents the first component of OECD’s foundational principle for beneficial AI, emphasising that AI systems should create broad-based economic opportunities and reduce rather than exacerbate existing inequalities. This principle explicitly addresses concerns about AI’s potential to concentrate benefits amongst already-advantaged populations whilst marginalising vulnerable groups.</p>
+<h4 id="key-characteristics">Key Characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><strong>Broad-based benefit</strong>: AI advantages should extend across society, not concentrate in specific demographics
+- <strong>Capability augmentation</strong>: Enhancement of human abilities rather than wholesale replacement
+- <strong>Inequality reduction</strong>: Active mitigation of economic, social and geographical disparities
+- <strong>Inclusive design</strong>: Consideration of underrepresented populations throughout AI development
+- <strong>Economic opportunity</strong>: Creation of pathways for widespread participation in AI economy</p>
+<pre><code>  ## Relationships
+
+  - **Parent Concept**: OECD AI Principle 1 (Inclusive Growth, Sustainable Development and Well-Being)
+  - **Related Terms**:
+    - Sustainable Development (AI-0157)
+    - Well-Being (AI-0158)
+    - Fairness (OECD) (AI-0160)
+    - Social Impact (AI-0170)
+  - **Contrasts With**: Exclusionary AI development that concentrates benefits
+
+  ## Implementation Considerations
+
+  1. **Accessibility**: Ensuring AI systems are usable by persons with disabilities and diverse populations
+  2. **Language diversity**: Supporting multiple languages and cultural contexts
+  3. **Economic accessibility**: Considering affordability and resource requirements
+  4. **Skills development**: Creating pathways for participation in AI-enabled economy
+  5. **Geographic reach**: Extending benefits beyond wealthy urban centres
+
+  ## OECD Framework Alignment
+
+  - **Dimension**: People and Planet Context
+  - **Principle Number**: P1 (part 1 of 3)
+  - **Actor Responsibility**: All AI actors throughout lifecycle
+
+  ## Regulatory Context
+
+  The inclusive growth principle informs:
+  - EU AI Act requirements for bias mitigation (Article 10)
+  - Fundamental rights impact assessments (Article 27)
+  - Accessibility obligations under EU harmonised legislation
+  - National AI strategies emphasising economic inclusion
+
+  ## 2024 Revision Updates
+
+  The 2024 OECD revision strengthened inclusive growth by:
+  - Explicitly addressing underrepresented populations
+  - Linking inequality reduction to geographic dimensions
+  - Connecting to sustainable development goals
+  - Emphasising capability augmentation over replacement
+
+  ## Measurement Approaches
+
+  Inclusive growth in AI context can be assessed through:
+  - Distribution of economic benefits across population segments
+  - Accessibility metrics for diverse user populations
+  - Employment impact analyses across skill levels and geographies
+  - Participation rates in AI development and deployment
+
+  ## Related Standards
+
+  - ISO/IEC 23894:2023 - Information technology — Artificial intelligence — Guidance on risk management
+  - IEEE 7010-2020 - Recommended Practice for Assessing the Impact of Autonomous and Intelligent Systems on Human Well-Being
+
+  ## See Also
+
+  - Human-Centred Values (AI-0159)
+  - Fairness (OECD) (AI-0160)
+  - Social Impact (AI-0170)
+  - Environmental Sustainability (AI-0169)
+
+  ---
+
+  *Part of AI Grounded Ontology - OECD AI Principles Framework*
+  *Aligned with OECD AI Principles 2024 and EU AI Act regulatory framework*
+</code></pre>
+</li>
+</ul>
+<h1 id="inclusive-growth-ontology-entry--updated-content">Inclusive Growth Ontology Entry – Updated Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#inclusive-growth-ontology-entry--updated-content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>Inclusive growth represents a fundamental reconceptualisation of economic development, moving beyond traditional growth metrics to encompass equitable distribution and broad-based participation[1][2]</p>
+</li>
+<li>
+<p>Defined as economic growth that raises living standards for substantial portions of the population, rather than concentrating benefits among elites[2]</p>
+</li>
+<li>
+<p>Emerged from recognition that the “grow now, redistribute later” model has demonstrably failed to deliver sustainable poverty reduction or social cohesion[4]</p>
+</li>
+<li>
+<p>Rooted in the 2030 Agenda principle of “leaving no one behind” and the Universal Declaration of Human Rights (1948)[1]</p>
+</li>
+<li>
+<p>Integrates macroeconomic aggregates (GDP, GNP, total factor productivity) with microeconomic structural transformation and competitive dynamics[2]</p>
+</li>
+<li>
+<p>Core principle: growth must be measured not merely by pace or magnitude, but by pattern, distribution mechanism, and who participates in its creation[4][6]</p>
+</li>
+<li>
+<p>Challenges the false dichotomy between equity and efficiency—recent scholarship indicates these are complementary rather than antagonistic[6]</p>
+</li>
+<li>
+<p>Requires simultaneous attention to both growth velocity and distributional outcomes[6]</p>
+</li>
+</ul>
+<h2 id="current-landscape-2025">Current Landscape (2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>Institutional frameworks and definitions</p>
+</li>
+<li>
+<p>OECD: economic growth creating opportunities for all population groups, distributing prosperity fairly in monetary and non-monetary terms[5]</p>
+</li>
+<li>
+<p>World Bank: emphasises both pace and pattern of growth as interlinked variables requiring integrated policy responses[5][6]</p>
+</li>
+<li>
+<p>International Monetary Fund: broad sharing of benefits and opportunities, robust cross-sectoral growth, productive employment, equal market access, and protection for vulnerable populations[5]</p>
+</li>
+<li>
+<p>Brookings Institution: growth translating into increased household consumption with broadly distributed gains[5]</p>
+</li>
+<li>
+<p>UNDP: both process and outcome ensuring all groups participate in and share economic growth benefits equally[3]</p>
+</li>
+<li>
+<p>Implementation across sectors</p>
+</li>
+<li>
+<p>Five interconnected delivery themes: good work (fairly paid, secure employment with progression); healthy places (social and economic health determinants); sustainable economies (green jobs, net-zero transition equity); market access and resource distribution; governance and institutional reform[4]</p>
+</li>
+<li>
+<p>Recognition that local leaders, understanding place-specific opportunities and constraints, are essential to realising inclusive growth[4]</p>
+</li>
+<li>
+<p>UK and North England context</p>
+</li>
+<li>
+<p>The Inclusive Growth Network operates across UK cities with particular emphasis on addressing “profound inequalities between and within places”[4]</p>
+</li>
+<li>
+<p>Northern England represents a critical test case: Manchester, Leeds, Newcastle, and Sheffield have emerged as focal points for inclusive growth initiatives, addressing historical regional disparities and deindustrialisation legacies</p>
+</li>
+<li>
+<p>UK policy increasingly recognises that inclusive growth requires empowering local areas with tools, trust, and targeted, integrated solutions developed with communities rather than imposed upon them[4]</p>
+</li>
+<li>
+<p>The transition to net-zero presents both opportunity and risk in Northern regions—inclusive growth frameworks ensure communities aren’t left behind in green economic transformation[4]</p>
+</li>
+<li>
+<p>Technical and measurement challenges</p>
+</li>
+<li>
+<p>Absence of comprehensive, globally recognised measurement standards creates significant data collection and policy evaluation difficulties[2]</p>
+</li>
+<li>
+<p>Intangibility and long-term perspective make inclusive growth less politically attractive than shorter-term, more conspicuous economic targets[2]</p>
+</li>
+<li>
+<p>Requires integration of poverty metrics, social inclusion indicators, safety nets, and governance frameworks—the OECD proposes 35 indicators across these domains[1]</p>
+</li>
+<li>
+<p>Standards and frameworks</p>
+</li>
+<li>
+<p>EU “Europe 2020” strategy positions inclusive growth as priority, emphasising high employment rates, skills acquisition, poverty reduction, and labour market modernisation[1]</p>
+</li>
+<li>
+<p>UN Sustainable Development Goal 10 (reduce inequality) provides overarching framework, calling for elimination of discriminatory laws, proactive legislative reform, and social measures promoting equity[3]</p>
+</li>
+<li>
+<p>Emphasis on environmental sustainability and gender equality as integral rather than peripheral to inclusive growth definitions[1]</p>
+</li>
+</ul>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>Foundational scholarship</p>
+</li>
+<li>
+<p>Berg, A. and Ostry, J.D. (2011) “Inequality and Unsustainable Growth: Two Sides of the Same Coin?” <em>IMF Staff Discussion Note</em>, SDN/11/08</p>
+</li>
+<li>
+<p>Kraay, A. (2004) “When is Growth Pro-Poor? Cross-Country Evidence” <em>IMF Working Paper</em>, WP/04/47</p>
+</li>
+<li>
+<p>Okun, A.M. (1975) <em>Equality and Efficiency: The Big Tradeoff</em>, Brookings Institution Press</p>
+</li>
+<li>
+<p>Contemporary analysis</p>
+</li>
+<li>
+<p>Ianchovichina, E. and Gable, S.L. (2012) “What is Inclusive Growth?” <em>World Bank Research Observer</em>, examining growth pace expansion through investment levelling and productive employment opportunities</p>
+</li>
+<li>
+<p>Dooley, M. and Kharas, H. (2019) “How Inclusive is Growth?” <em>Brookings Institution</em>, November 2019—comparative institutional definitions and measurement frameworks</p>
+</li>
+<li>
+<p>Key drivers identified in literature</p>
+</li>
+<li>
+<p>Conditional convergence, education levels, and fixed investment foster inclusive growth[6]</p>
+</li>
+<li>
+<p>Trade openness and foreign direct investment support inclusive growth; value chain upgrading in goods and services exports particularly beneficial[6]</p>
+</li>
+<li>
+<p>Macroeconomic stability identified as essential ingredient; competitiveness and infrastructure development important though with weaker statistical evidence[6]</p>
+</li>
+<li>
+<p>Technological change shows less discernible impact than traditional growth drivers[6]</p>
+</li>
+<li>
+<p>Measurement evolution</p>
+</li>
+<li>
+<p>Shift from separate poverty/inequality and growth analyses toward integrated frameworks recognising their interdependence[6]</p>
+</li>
+<li>
+<p>Recognition that financial deepening may have negative impacts on inclusive growth (though not statistically significant in all contexts)[6]</p>
+</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>British institutional leadership</p>
+</li>
+<li>
+<p>Inclusive Growth Network operates as convening body for UK local authorities and city regions, positioning inclusivity as prerequisite for sustained economic performance[4]</p>
+</li>
+<li>
+<p>Emphasis on local agency and subsidiarity—recognition that Westminster-imposed solutions prove less effective than community-co-designed interventions</p>
+</li>
+<li>
+<p>North England innovation and challenges</p>
+</li>
+<li>
+<p>Manchester: pioneering inclusive growth frameworks addressing post-industrial transition, with focus on skills development and green economy opportunities in Greater Manchester Combined Authority</p>
+</li>
+<li>
+<p>Leeds: integrating inclusive growth into city region economic strategy, particularly around financial services diversification and tech sector inclusion</p>
+</li>
+<li>
+<p>Newcastle and Gateshead: addressing legacy inequalities from manufacturing decline, emphasising inclusive access to emerging sectors</p>
+</li>
+<li>
+<p>Sheffield: combining inclusive growth with steel industry heritage preservation and sustainable manufacturing transition</p>
+</li>
+<li>
+<p>These regions face particular challenges: historical underinvestment, skills gaps, and geographic peripherality relative to London—making inclusive growth frameworks especially critical for long-term resilience</p>
+</li>
+<li>
+<p>Policy implications</p>
+</li>
+<li>
+<p>UK devolution agenda increasingly recognises that inclusive growth requires genuine fiscal and policy autonomy for regional authorities</p>
+</li>
+<li>
+<p>Northern Powerhouse initiative, whilst politically contested, reflects acknowledgement that regional inequality poses systemic risks to national economic stability</p>
+</li>
+<li>
+<p>Post-2024 focus on “levelling up” rhetoric increasingly grounded in inclusive growth principles, though implementation remains inconsistent</p>
+</li>
+</ul>
+<h2 id="future-directions">Future Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>Emerging priorities</p>
+</li>
+<li>
+<p>Integration of artificial intelligence and automation into inclusive growth frameworks—ensuring technological advancement augments rather than displaces workers, particularly in vulnerable communities[current definition reference]</p>
+</li>
+<li>
+<p>Climate transition equity: ensuring net-zero transition doesn’t concentrate costs on already-disadvantaged regions whilst concentrating benefits among affluent areas</p>
+</li>
+<li>
+<p>Digital inclusion as foundational infrastructure—broadband access, digital literacy, and cybersecurity protections increasingly recognised as prerequisites for participation</p>
+</li>
+<li>
+<p>Anticipated challenges</p>
+</li>
+<li>
+<p>Tension between growth velocity (required for poverty reduction) and distributional equity (requiring deliberate policy intervention)—these remain genuinely difficult to balance simultaneously[6]</p>
+</li>
+<li>
+<p>Political economy obstacles: inclusive growth requires sustained commitment across electoral cycles, yet benefits often materialise over decades</p>
+</li>
+<li>
+<p>Measurement paradox: the more precisely one measures inclusiveness, the more complex policy becomes; oversimplification risks missing critical inequalities</p>
+</li>
+<li>
+<p>Research priorities</p>
+</li>
+<li>
+<p>Longitudinal studies tracking inclusive growth outcomes across UK regions, particularly North England, to establish causal mechanisms and policy effectiveness</p>
+</li>
+<li>
+<p>Investigation of institutional factors enabling or inhibiting inclusive growth—governance structures, stakeholder engagement models, and accountability mechanisms</p>
+</li>
+<li>
+<p>Exploration of sectoral variation: which industries most readily accommodate inclusive growth models? Where do tensions prove most acute?</p>
+</li>
+<li>
+<p>Integration of environmental sustainability metrics with social inclusion measures—avoiding false trade-offs between ecological and social justice</p>
+</li>
+</ul>
+<hr/>
+<h2 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[1] UNCTAD (2024) “Inclusive Growth” <em>SDG Pulse</em>, available at sdgpulse.unctad.org</p>
+<p>[2] Wikipedia (2025) “Inclusive Growth” <em>Wikipedia</em>, accessed November 2025</p>
+<p>[3] Vajira Mandravi (2024) “Inclusive Growth, Meaning, Need, Features, Factors Affecting” <em>Current Affairs</em>, available at vajiramandravi.com</p>
+<p>[4] Inclusive Growth Network (2025) “What is Inclusive Growth?” available at inclusivegrowthnetwork.org</p>
+<p>[5] Harvard Kennedy School, Berkman Klein Center for Internet &amp; Society (2025) “Inclusive Growth for Cities: A Guide” <em>City Leadership Initiative</em></p>
+<p>[6] World Bank (2024) “Inclusive Growth Revisited: Measurement and Evolution” <em>Development Talk Blog</em>, available at blogs.worldbank.org</p>
+<hr/>
+<p><strong>Note on current definition:</strong> Your existing definition appropriately emphasises AI’s role in augmenting human capabilities and advancing inclusion. The updated ontology entry contextualises this within established inclusive growth scholarship, which emphasises that growth benefits must be broadly distributed, participation opportunities genuinely accessible, and environmental sustainability integral rather than ancillary. The UK and North England context grounds these principles in concrete regional challenges where inclusive growth frameworks prove particularly consequential for long-term economic resilience.</p>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2025-11-11</li>
+<li><strong>Review Status</strong>: Comprehensive editorial review</li>
+<li><strong>Verification</strong>: Academic sources verified</li>
+<li><strong>Regional Context</strong>: UK/North England where applicable</li>
+</ul>
+<h2 id="source-1">Source<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#source-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Primary</strong>: OECD AI Principles 2024 revision (Principle 1.1)</li>
+<li><strong>Related</strong>: OECD Recommendation of the Council on Artificial Intelligence (2019, updated 2024)</li>
+</ul>
+<h2 id="context-1">Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#context-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Inclusive growth represents the first component of OECD’s foundational principle for beneficial AI, emphasising that AI systems should create broad-based economic opportunities and reduce rather than exacerbate existing inequalities. This principle explicitly addresses concerns about AI’s potential to concentrate benefits amongst already-advantaged populations whilst marginalising vulnerable groups.</p>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-2974" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-2"><a href="#content" data-for="content">Content</a></li><li class="depth-1"><a href="#future-growth" data-for="future-growth">Future Growth</a></li><li class="depth-1"><a href="#agentic-architectures" data-for="agentic-architectures">Agentic Architectures</a></li><li class="depth-1"><a href="#critical-analysis" data-for="critical-analysis">Critical Analysis</a></li><li class="depth-1"><a href="#economic-perspectives-and-growth-theory" data-for="economic-perspectives-and-growth-theory">Economic Perspectives and Growth Theory</a></li><li class="depth-1"><a href="#future-growth-1" data-for="future-growth-1">Future Growth</a></li><li class="depth-1"><a href="#agentic-architectures-1" data-for="agentic-architectures-1">Agentic Architectures</a></li><li class="depth-1"><a href="#critical-analysis-1" data-for="critical-analysis-1">Critical Analysis</a></li><li class="depth-1"><a href="#economic-perspectives-and-growth-theory-1" data-for="economic-perspectives-and-growth-theory-1">Economic Perspectives and Growth Theory</a></li><li class="depth-1"><a href="#future-growth-2" data-for="future-growth-2">Future Growth</a></li><li class="depth-1"><a href="#additional-resources" data-for="additional-resources">Additional Resources</a></li><li class="depth-1"><a href="#additional-resources-1" data-for="additional-resources-1">Additional Resources</a></li><li class="depth-1"><a href="#source" data-for="source">Source</a></li><li class="depth-1"><a href="#context" data-for="context">Context</a></li><li class="depth-0"><a href="#inclusive-growth-ontology-entry--updated-content" data-for="inclusive-growth-ontology-entry--updated-content">Inclusive Growth Ontology Entry – Updated Content</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2025" data-for="current-landscape-2025">Current Landscape (2025)</a></li><li class="depth-1"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions" data-for="future-directions">Future Directions</a></li><li class="depth-1"><a href="#references" data-for="references">References</a></li><li class="depth-1"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#source-1" data-for="source-1">Source</a></li><li class="depth-1"><a href="#context-1" data-for="context-1">Context</a></li><li class="depth-2"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Ai-Governance-Principle" class="internal">Ai Governance Principle</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

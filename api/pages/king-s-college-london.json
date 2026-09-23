@@ -16,7 +16,16 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:king-s-institute-for-artificial-intelligence",
+        "label": "King's Institute for Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:department-of-informatics",
+        "label": "Department of Informatics"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -51,12 +60,16 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-informatics",
+        "label": "Biomedical Informatics"
       }
     ],
     "supports": [
@@ -73,7 +86,12 @@
         "label": "Cybersecurity"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:research-excellence-framework",
+        "label": "Research Excellence Framework"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:university-of-london",
@@ -104,6 +122,10 @@
       {
         "id": "urn:ngm:class:research-university",
         "label": "Research University"
+      },
+      {
+        "id": "urn:ngm:class:nhs",
+        "label": "NHS"
       }
     ]
   },
@@ -183,6 +205,20 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

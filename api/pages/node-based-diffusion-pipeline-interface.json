@@ -20,6 +20,18 @@
       {
         "id": "urn:ngm:class:node-based-editor",
         "label": "Node Graph Editor"
+      },
+      {
+        "id": "urn:ngm:class:node-based-editor",
+        "label": "Node Graph Editor"
+      },
+      {
+        "id": "urn:ngm:class:workflow-serialisation-format",
+        "label": "Workflow Serialisation Format"
+      },
+      {
+        "id": "urn:ngm:class:custom-node-extension-system",
+        "label": "Custom Node Extension System"
       }
     ],
     "requires": [
@@ -29,6 +41,14 @@
       },
       {
         "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "VAE Image Encoding"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       },
       {
@@ -60,6 +80,10 @@
       {
         "id": "urn:ngm:class:ai-upscaling-and-super-resolution",
         "label": "AI Upscaling and Super-Resolution"
+      },
+      {
+        "id": "urn:ngm:class:image-upscaling",
+        "label": "Image Upscaling"
       }
     ],
     "dependsOn": [],
@@ -71,9 +95,22 @@
       {
         "id": "urn:ngm:class:directed-acyclic-graph",
         "label": "Directed Acyclic Graph"
+      },
+      {
+        "id": "urn:ngm:class:execution-model",
+        "label": "Dataflow Execution Model"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:automatic-1111-web-ui",
+        "label": "Automatic1111 WebUI"
+      },
+      {
+        "id": "urn:ngm:class:imperative-inference-script",
+        "label": "Imperative Inference Script"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:node-graph-visual-programming-interface",
@@ -82,6 +119,14 @@
       {
         "id": "urn:ngm:class:generative-ai-api",
         "label": "Generative AI API"
+      },
+      {
+        "id": "urn:ngm:class:node-graph-visual-programming-interface",
+        "label": "Visual Effects Node Graph"
+      },
+      {
+        "id": "urn:ngm:class:shader-graph",
+        "label": "Shader Graph"
       }
     ],
     "uses": [
@@ -106,13 +151,22 @@
         "label": "ControlNet"
       },
       {
-        "id": "urn:ngm:class:lora-adapter",
+        "id": "urn:ngm:class:lo-ra",
         "label": "LoRA Adapter"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion Model"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-ai-toolchain",
+        "label": "Generative AI Toolchain"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:node-based-editor",
@@ -133,6 +187,14 @@
       {
         "id": "urn:ngm:class:node-graph-visual-programming-interface",
         "label": "Visual Programming Environment"
+      },
+      {
+        "id": "urn:ngm:class:dataflow-programming",
+        "label": "Dataflow Programming"
+      },
+      {
+        "id": "urn:ngm:class:animatediff",
+        "label": "AnimateDiff"
       }
     ]
   },
@@ -212,6 +274,24 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

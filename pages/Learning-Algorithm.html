@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Learning Algorithm</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Learning Algorithm"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Learning Algorithm"/><meta name="twitter:description" content="LearningAlgorithm is a computational procedure that enables a model or agent to improve task performance through exposure to data or environmental interaction, encompassing the full spectrum of paradigms — supervised learning unsupervised learning (discovering latent structure in unlabelled data … S..."/><meta property="og:description" content="LearningAlgorithm is a computational procedure that enables a model or agent to improve task performance through exposure to data or environmental interaction, encompassing the full spectrum of paradigms — supervised learning unsupervised learning (discovering latent structure in unlabelled data … S..."/><meta property="og:image:alt" content="LearningAlgorithm is a computational procedure that enables a model or agent to improve task performance through exposure to data or environmental interaction, encompassing the full spectrum of paradigms — supervised learning unsupervised learning (discovering latent structure in unlabelled data … S..."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Learning-Algorithm"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Learning-Algorithm"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="LearningAlgorithm is a computational procedure that enables a model or agent to improve task performance through exposure to data or environmental interaction, encompassing the full spectrum of paradigms — supervised learning unsupervised learning (discovering latent structure in unlabelled data … S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Learning-Algorithm"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-4483"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-4483" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Learning Algorithm</a></div></nav><h1 class="article-title">Learning Algorithm</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.685Z">23 Sept 2026</time><span>36 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:learning-algorithm</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Technique" class="internal">AI Technique</a></li><li><a href="../pages/Computational-Intelligence" class="internal">Computational Intelligence</a></li><li><a href="../pages/Optimisation" class="internal">Optimisation</a></li><li><a href="../pages/Machine-Learning-Discipline" class="internal">Machine Learning Discipline</a></li><li><a href="../pages/Statistical-Learning-Theory" class="internal">Statistical Learning Theory</a></li><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Continual-Learning" class="internal">Continual Learner</a></li><li><a href="../pages/Meta-Learning" class="internal">Meta-Learner</a></li><li><a href="../pages/Policy-Gradient-Methods" class="internal">Policy Gradient</a></li><li><a href="../pages/Query-Strategy" class="internal">Query Strategy</a></li><li><a href="../pages/Value-Function" class="internal">Value Function</a></li><li><a href="../pages/Gradient-Descent" class="internal">Gradient Descent</a></li><li><a href="../pages/Loss-Function" class="internal">Loss Function</a></li><li><a href="../Policy-Gradient" class="internal">Policy Gradient</a></li><li><a href="../Replay-Buffer" class="internal">Replay Buffer</a></li><li><a href="../Critic-Network" class="internal">Critic Network</a></li><li><a href="../Actor-Network" class="internal">Actor Network</a></li><li><a href="../Meta-Learner" class="internal">Meta-Learner</a></li><li><a href="../Continual-Learner" class="internal">Continual Learner</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Evaluation-Metric" class="internal">Evaluation Metric</a></li><li><a href="../pages/Hyperparameter-Tuning" class="internal">Hyperparameter Tuning</a></li><li><a href="../pages/Objective-Function" class="internal">Objective Function</a></li><li><a href="../pages/Model-Architecture" class="internal">Model Architecture</a></li><li><a href="../pages/Optimiser" class="internal">Optimiser</a></li><li><a href="../pages/Training-Data" class="internal">Training Data</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Autonomous-Agent" class="internal">Autonomous Agent</a></li><li><a href="../pages/Few-Shot-Learning" class="internal">Few-Shot Learning</a></li><li><a href="../pages/Policy-Optimisation" class="internal">Policy Optimisation</a></li><li><a href="../pages/Representation-Learning" class="internal">Representation Learning</a></li><li><a href="../pages/Robotic-Control" class="internal">Robotic Control</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../pages/Large-Scale-Pretrained-Foundation-Model" class="internal">Large-Scale Pretrained Foundation Model</a></li><li><a href="../pages/Model-Training" class="internal">Model Training</a></li><li><a href="../Autonomous-Agents" class="internal">Autonomous Agents</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Rule-Based-Systems" class="internal">Rule-Based Systems</a></li><li><a href="../pages/Expert-Systems" class="internal">Expert Systems</a></li><li><a href="../pages/Symbolic-AI" class="internal">Symbolic AI</a></li><li><a href="../Evolutionary-Algorithms" class="internal">Evolutionary Algorithms</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Information-Theory" class="internal">Information Theory</a></li><li><a href="../pages/Statistical-Learning-Theory" class="internal">Statistical Learning Theory</a></li><li><a href="../Calculus-of-Variations" class="internal">Calculus of Variations</a></li><li><a href="../pages/Linear-Algebra" class="internal">Linear Algebra</a></li><li><a href="../pages/Probability-Theory" class="internal">Probability Theory</a></li><li><a href="../pages/Dynamic-Programming" class="internal">Dynamic Programming</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../TrainingLayer" class="internal">TrainingLayer</a></li><li><a href="../OptimisationLayer" class="internal">OptimisationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../adam-optimiser" class="internal">Adam Optimiser</a></li><li><a href="../dqn" class="internal">DQN</a></li><li><a href="../maml" class="internal">MAML</a></li><li><a href="../pages/MuZero" class="internal">MuZero</a></li><li><a href="../ppo" class="internal">PPO</a></li><li><a href="../sac" class="internal">SAC</a></li><li><a href="../pages/Curriculum-Learning" class="internal">Curriculum Learning</a></li><li><a href="../pages/Federated-Learning" class="internal">Federated Learning</a></li><li><a href="../pages/SimCLR" class="internal">SimCLR</a></li><li><a href="../pages/Stochastic-Gradient-Descent" class="internal">Stochastic Gradient Descent</a></li><li><a href="../BYOL" class="internal">BYOL</a></li><li><a href="../DINO" class="internal">DINO</a></li><li><a href="../EWC" class="internal">EWC</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-2001</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../actor-network" class="internal">Actor Network</a></li><li><a href="../adam-optimiser" class="internal">Adam Optimiser</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../automatic-differentiation" class="internal">Automatic Differentiation</a></li><li><a href="../autonomous-agents" class="internal">Autonomous Agents</a></li><li><a href="../autonomous-vehicles" class="internal">Autonomous Vehicles</a></li><li><a href="../byol" class="internal">BYOL</a></li><li><a href="../calculus-of-variations" class="internal">Calculus of Variations</a></li><li><a href="../computational-intelligence" class="internal">Computational Intelligence</a></li><li><a href="../continual-learner" class="internal">Continual Learner</a></li><li><a href="../continual-learning" class="internal">Continual Learning</a></li><li><a href="../contrastive-loss" class="internal">Contrastive Loss</a></li><li><a href="../critic-network" class="internal">Critic Network</a></li><li><a href="../dino" class="internal">DINO</a></li><li><a href="../dqn" class="internal">DQN</a></li><li><a href="../drug-discovery" class="internal">Drug Discovery</a></li><li><a href="../dynamic-programming" class="internal">Dynamic Programming</a></li><li><a href="../evaluation-metric" class="internal">Evaluation Metric</a></li><li><a href="../evolutionary-algorithms" class="internal">Evolutionary Algorithms</a></li><li><a href="../ewc" class="internal">EWC</a></li><li><a href="../few-shot-learning" class="internal">Few-Shot Learning</a></li><li><a href="../hyperparameter-tuning" class="internal">Hyperparameter Tuning</a></li><li><a href="../iclr" class="internal">ICLR</a></li><li><a href="../icml" class="internal">ICML</a></li><li><a href="../ieee-transactions-on-neural-networks" class="internal">IEEE Transactions on Neural Networks</a></li><li><a href="../information-theory" class="internal">Information Theory</a></li><li><a href="../journal-of-machine-learning-research" class="internal">Journal of Machine Learning Research</a></li><li><a href="../linear-algebra" class="internal">Linear Algebra</a></li><li><a href="../machine-learning-domain" class="internal">MachineLearningDomain</a></li><li><a href="../maml" class="internal">MAML</a></li><li><a href="../markov-decision-processes" class="internal">Markov Decision Processes</a></li><li><a href="../meta-learner" class="internal">Meta-Learner</a></li><li><a href="../meta-learning" class="internal">Meta-Learning</a></li><li><a href="../monte-carlo-methods" class="internal">Monte Carlo Methods</a></li><li><a href="../mu-zero" class="internal">MuZero</a></li><li><a href="../neur-ips" class="internal">NeurIPS</a></li><li><a href="../neural-networks" class="internal">Neural Networks</a></li><li><a href="../objective-function" class="internal">Objective Function</a></li><li><a href="../optimisation" class="internal">Optimisation</a></li><li><a href="../optimisation-layer" class="internal">OptimisationLayer</a></li><li><a href="../policy-gradient" class="internal">Policy Gradient</a></li><li><a href="../policy-optimisation" class="internal">Policy Optimisation</a></li><li><a href="../ppo" class="internal">PPO</a></li><li><a href="../probability-theory" class="internal">Probability Theory</a></li><li><a href="../query-strategy" class="internal">Query Strategy</a></li><li><a href="../replay-buffer" class="internal">Replay Buffer</a></li><li><a href="../representation-learning" class="internal">Representation Learning</a></li><li><a href="../robotic-control" class="internal">Robotic Control</a></li><li><a href="../rule-based-systems" class="internal">Rule-Based Systems</a></li><li><a href="../sac" class="internal">SAC</a></li><li><a href="../scientific-computing" class="internal">Scientific Computing</a></li><li><a href="../self-supervised-learning" class="internal">Self-Supervised Learning</a></li><li><a href="../statistical-learning-theory" class="internal">Statistical Learning Theory</a></li><li><a href="../training-layer" class="internal">TrainingLayer</a></li><li><a href="../transfer-learning" class="internal">Transfer Learning</a></li><li><a href="../value-function" class="internal">Value Function</a></li><li><a href="../active-learning" class="internal">Active Learning</a></li><li><a href="../pages/ai-technique" class="internal">AI-GroundedDomain</a></li><li><a href="../artificial-intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../backpropagation" class="internal">Backpropagation</a></li><li><a href="../pages/ai-research-area" class="internal">ComputationAndIntelligenceDomain</a></li><li><a href="../computer-vision" class="internal">Computer Vision</a></li><li><a href="../curriculum-learning" class="internal">Curriculum Learning</a></li><li><a href="../expert-systems" class="internal">Expert Systems</a></li><li><a href="../federated-learning" class="internal">Federated Learning</a></li><li><a href="../foundation-models" class="internal">Foundation Models</a></li><li><a href="../gradient-descent" class="internal">Gradient Descent</a></li><li><a href="../loss-function" class="internal">Loss Function</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../model-architecture" class="internal">Model Architecture</a></li><li><a href="../model-training" class="internal">Model Training</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../optimiser" class="internal">Optimiser</a></li><li><a href="../robotics" class="internal">Robotics</a></li><li><a href="../semi-supervised-learning" class="internal">Semi-Supervised Learning</a></li><li><a href="../sim-clr" class="internal">SimCLR</a></li><li><a href="../stochastic-gradient-descent" class="internal">Stochastic Gradient Descent</a></li><li><a href="../symbolic-ai" class="internal">Symbolic AI</a></li><li><a href="../training-data" class="internal">Training Data</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:576c14b519a995be2ba92a4fe165446d602c6fa68b679409aae985ec50d5ed6e</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Continual-Learning" class="internal">Continual Learning</a></li><li><a href="../pages/Meta-Learning" class="internal">Meta-Learning</a></li><li><a href="../pages/Self-Supervised-Learning" class="internal">Self-Supervised Learning</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../pages/Active-Learning" class="internal">Active Learning</a></li><li><a href="../pages/Curriculum-Learning" class="internal">Curriculum Learning</a></li><li><a href="../pages/Federated-Learning" class="internal">Federated Learning</a></li><li><a href="../pages/Semi-Supervised-Learning" class="internal">Semi-Supervised Learning</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/ICLR" class="internal">ICLR</a></li><li><a href="../pages/ICML" class="internal">ICML</a></li><li><a href="../pages/Journal-of-Machine-Learning-Research" class="internal">Journal of Machine Learning Research</a></li><li><a href="../pages/NeurIPS" class="internal">NeurIPS</a></li><li><a href="../IEEE-Transactions-on-Neural-Networks" class="internal">IEEE Transactions on Neural Networks</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Autonomous-Vehicle" class="internal">Autonomous Vehicle</a></li><li><a href="../drug-discovery" class="internal">Drug Discovery</a></li><li><a href="../pages/Scientific-Computing" class="internal">Scientific Computing</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../Robotics" class="internal">Robotics</a></li><li><a href="../Autonomous-Vehicles" class="internal">Autonomous Vehicles</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Automatic-Differentiation" class="internal">Automatic Differentiation</a></li><li><a href="../pages/Loss-Function" class="internal">Contrastive Loss</a></li><li><a href="../pages/Markov-Decision-Process" class="internal">Markov Decision Processes</a></li><li><a href="../monte-carlo-methods" class="internal">Monte Carlo Methods</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../pages/Backpropagation" class="internal">Backpropagation</a></li><li><a href="../Markov-Decision-Processes" class="internal">Markov Decision Processes</a></li><li><a href="../Neural-Networks" class="internal">Neural Networks</a></li><li><a href="../Contrastive-Loss" class="internal">Contrastive Loss</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>LearningAlgorithm is a computational procedure that enables a model or agent to improve task performance through exposure to data or environmental interaction, encompassing the full spectrum of paradigms — supervised learning unsupervised learning (discovering latent structure in unlabelled data …</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:hasPart ai:GradientDescentVariant))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:hasPart ai:LossFunction))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:hasPart ai:PolicyGradientEstimator))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:hasPart ai:ReplayBuffer))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:hasPart ai:ValueFunction))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:hasPart ai:CriticNetwork))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:hasPart ai:ActorNetwork))
+
+  ## Dependency Relationships
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:requires ai:ObjectiveFunction))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:requires ai:Optimiser))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:requires ai:ModelArchitecture))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:requires ai:EvaluationMetric))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:dependsOn ai:StatisticalLearningTheory))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:dependsOn ai:InformationTheory))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:dependsOn ai:DynamicProgramming))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:dependsOn ai:Backpropagation))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:dependsOn ai:MarkovDecisionProcess))
+
+  ## Capability Relationships
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:enables ai:ModelTraining))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:enables ai:PolicyOptimisation))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:enables ai:RepresentationLearning))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:enables ai:TransferLearning))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:enables ai:FewShotLearning))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:supports ai:ComputerVision))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:supports ai:RoboticControl))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:supports ai:DrugDiscovery))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:supports ai:AutonomousVehicles))
+
+  ## Implementation Relationships
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:implements ai:StochasticGradientDescent))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:implements ai:AdamOptimiser))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:implements ai:ProximalPolicyOptimisation))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:implements ai:SoftActorCritic))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:implements ai:DeepQNetwork))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:implements ai:MuZero))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:implements ai:ModelAgnosticMetaLearning))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:implements ai:SimCLR))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:implements ai:ElasticWeightConsolidation))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:uses ai:Backpropagation))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:uses ai:AutomaticDifferentiation))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:uses ai:MonteCarloMethods))
+
+  ## Reduction Relationships
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:reduces ai:GeneralisationError))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:reduces ai:SampleComplexity))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:reduces ai:ComputationalCost))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:reduces ai:CatastrophicForgetting))
+  SubClassOf(ai:LearningAlgorithm
+    ObjectSomeValuesFrom(ai:reduces ai:PolicyVariance))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ai:LearningAlgorithm &quot;Learning Algorithm&quot;@en)
+  AnnotationAssertion(rdfs:comment ai:LearningAlgorithm &quot;Computational procedures enabling models to improve performance through data or environment interaction, spanning supervised, unsupervised, semi-supervised, self-supervised, reinforcement, meta, continual, curriculum, federated, and contrastive learning paradigms, with gradient descent variants (SGD, Adam, AdamW, Lion, Sophia, Muon 2024), policy optimisation (REINFORCE, PPO, SAC, DQN, MuZero), meta-learning (MAML), continual learning (EWC++), and contrastive methods (SimCLR, BYOL, DINO, CLIP).&quot;@en)
+  AnnotationAssertion(dcterms:identifier ai:LearningAlgorithm &quot;AI-2001&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject ai:LearningAlgorithm &quot;Machine Learning, Reinforcement Learning, Optimisation, Gradient Descent, Policy Gradient, Meta-Learning, Contrastive Learning&quot;@en)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-learning-algorithms">About Learning Algorithms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-learning-algorithms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Learning Algorithms</strong> constitute the procedural heart of machine learning and artificial intelligence, defining precisely how a model or agent updates its internal parameters in response to data or environmental feedback.</p>
+</li>
+<li>
+<p>The field encompasses every procedure by which a computational system improves at a task through experience, from the simple perceptron weight update (Rosenblatt 1958) to the massively parallel gradient descent runs training trillion-parameter language models today.</p>
+</li>
+<li>
+<p>Two complementary lenses unify the field.</p>
+</li>
+<li>
+<p>The <strong>statistical learning lens</strong> frames training as empirical risk minimisation (ERM): given hypothesis class H and labelled dataset D = {(xᵢ, yᵢ)}ᵢ₌₁ⁿ, find h* = argmin_{h∈H} (1/n) ∑ᵢ L(h(xᵢ), yᵢ) with generalisation bounds (Rademacher complexity, VC dimension, PAC-Bayesian bounds) controlling the gap between training and test performance.</p>
+</li>
+<li>
+<p>The <strong>optimisation lens</strong> treats learning as navigating a loss landscape to find parameters minimising a training objective, primarily via gradient-based methods operating through automatic differentiation (Baydin et al. 2018 survey).</p>
+</li>
+<li>
+<p>A third lens — the <strong>sequential decision-making lens</strong> of reinforcement learning — treats learning not as fitting a static dataset but as discovering optimal behaviour through trial-and-error interaction with an environment, formalised as MDPs with Bellman equations.</p>
+</li>
+<li>
+<p>These three lenses converge in contemporary systems: large language models combine ERM (next-token cross-entropy over static pre-training corpora) with Adam-family optimisation and subsequently RLHF (sequential preference learning via PPO), while robotic controllers combine SAC (off-policy RL) with contrastive representation learning.</p>
+</li>
+<li>
+<h2 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Every learning algorithm involves at minimum five components interacting in a training loop.</p>
+</li>
+<li>
+<p><strong>The model</strong> (hypothesis) θ parameterises the function f_θ: X → Y being learned, whether a neural network, kernel machine, decision tree, or policy π_θ: S → Δ(A).</p>
+</li>
+<li>
+<p><strong>The objective function</strong> L(θ; D) measures discrepancy between model predictions and targets (supervised) or encodes task performance (RL reward signal) or representation quality (contrastive/generative objectives).</p>
+</li>
+<li>
+<p><strong>The optimisation algorithm</strong> (gradient descent variant, evolutionary strategy, second-order method) defines how θ is updated given gradient ∇_θ L or fitness signals.</p>
+</li>
+<li>
+<p><strong>The data pipeline</strong> determines what training examples are presented in what order — random minibatch sampling for supervised learning, environment rollouts for RL, augmented view pairs for contrastive learning, or federated client datasets for federated learning.</p>
+</li>
+<li>
+<p><strong>The evaluation protocol</strong> measures generalisation to held-out test data or deployment environments, driving hyperparameter selection and early stopping.</p>
+</li>
+<li>
+<p>The training loop iterates: (1) sample batch B from data pipeline; (2) compute forward pass f_θ(B); (3) compute loss L(f_θ(B), targets); (4) backpropagate to obtain ∇_θ L; (5) update θ via optimisation algorithm; (6) evaluate periodically.</p>
+</li>
+<li>
+<p>In RL the data pipeline is replaced by environment interaction: (1) act according to policy π_θ; (2) observe reward r and next state s’; (3) store transition (s,a,r,s’) in replay buffer D; (4) sample mini-batch from D; (5) compute TD loss or policy gradient; (6) update θ.</p>
+</li>
+<li>
+<h2 id="gradient-descent-variants">Gradient Descent Variants<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gradient-descent-variants" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Gradient descent is the universal optimisation engine of deep learning, with the precise update rule profoundly impacting convergence speed, final performance, and resource requirements.</p>
+</li>
+<li>
+<p><strong>Vanilla SGD with Momentum</strong>: θ_{t+1} = θ_t - η g_t where g_t = ∇_θ L(θ_t; B_t) for mini-batch B_t. Adding momentum: v_t = μ v_{t-1} + η g_t; θ_{t+1} = θ_t - v_t. Convergence: O(1/√T) for non-convex, O(1/T) for strongly convex, O(1/T²) with Nesterov (accelerated) momentum.</p>
+</li>
+<li>
+<p>SGD with momentum is optimal for convex objectives (Polyak &amp; Juditsky 1992) and is superior to Adam for image classification (ResNets on ImageNet, convolutional architectures) due to better implicit regularisation in the flat minima sense.</p>
+</li>
+<li>
+<p><strong>Adam</strong> (Kingma &amp; Ba 2015): maintains first moment m_t = β₁ m_{t-1} + (1-β₁) g_t and second moment v_t = β₂ v_{t-1} + (1-β₂) g_t², with bias-corrected updates m̂_t = m_t / (1-β₁ᵗ), v̂_t = v_t / (1-β₂ᵗ), and parameter update θ_t = θ_{t-1} - η m̂_t / (√v̂_t + ε).</p>
+</li>
+<li>
+<p>Canonical Adam defaults β₁=0.9, β₂=0.999, ε=1e-8 are remarkably robust across architectures and tasks. Adam converges 3-5× faster than SGD on transformer language models but has worse generalisation on image classification (Wilson et al. 2017).</p>
+</li>
+<li>
+<p>Adam’s critical flaw: coupling weight decay with the adaptive gradient correction means L2 regularisation is not equivalent to weight decay — the regularisation effective strength depends on gradient magnitude per parameter.</p>
+</li>
+<li>
+<p><strong>AdamW</strong> (Loshchilov &amp; Hutter 2019): corrects Adam’s weight decay by decoupling it — θ_t = θ_{t-1} - η (m̂_t / (√v̂_t + ε) + λ θ_{t-1}). This correctly implements the L2 prior on parameters rather than gradients, improving generalisation particularly on language models. AdamW is the default optimiser for virtually all large language model pre-training — GPT-4, Claude, Llama 3, Gemma, Mistral, Falcon.</p>
+</li>
+<li>
+<p><strong>Lion</strong> (EvoLved Sign Momentum, Chen et al. 2023): θ_t = θ_{t-1} - η (sign(β₁ m_{t-1} + (1-β₁) g_t) + λ θ_{t-1}); m_t = β₁ m_{t-1} + (1-β₁) g_t. Discovered by AutoML evolutionary search rather than hand-designed.</p>
+</li>
+<li>
+<p>Lion requires only one moment vector (vs Adam’s two), reducing optimiser memory by ~1/3. Benchmarks on BERT, ViT-B/16, and Imagen show comparable or superior performance to AdamW at reduced memory, making it attractive for scaling to very large models where optimiser state is a significant fraction of GPU memory.</p>
+</li>
+<li>
+<p>Lion’s sign update (±η per parameter) provides an implicit per-parameter learning rate adaptation without dividing by gradient magnitude, avoiding Adam’s sensitivity to very small gradients inflating updates.</p>
+</li>
+<li>
+<p><strong>Sophia</strong> (Liu et al. 2023, Scalable second-Order Preconditioned Hessian Incorporating Adaptivity): maintains first moment m̂_t (as AdamW) and a Hessian diagonal estimate ĥ_t updated periodically via Hutchinson’s estimator: ĥ_t = g_t ⊙ g_t (mini-batch version). The update is θ_t = θ_{t-1} - η m̂_t / max(γ ĥ_t, ε), where clipping prevents exploding curvature from destabilising training.</p>
+</li>
+<li>
+<p>Sophia evaluated on GPT-2 (117M) and GPT-2 medium (354M) language modelling achieves the same perplexity as AdamW in approximately 50% of the training iterations, representing a 2× speed-up in iteration count with modest Hessian computation overhead (1 extra forward pass per k=10 steps).</p>
+</li>
+<li>
+<p>The intuition: Adam uses squared gradient magnitudes as a proxy for curvature, which conflates gradient magnitude with Hessian eigenvalue. Sophia directly estimates diagonal Hessian entries, enabling more principled preconditioned updates that take larger steps in flat curvature directions and smaller steps in sharp curvature directions.</p>
+</li>
+<li>
+<p><strong>Muon</strong> (Momentum Orthogonalised by Newton-Schulz, Jordan et al. 2024): applies Nesterov momentum in gradient space, then orthogonalises the resulting update matrix G via Newton-Schulz iteration approximating the polar decomposition G → G(3I - GᵀG)/2 ≈ UV^T (where G = UΣV^T is the SVD).</p>
+</li>
+<li>
+<p>Muon’s orthogonalised update lives in the tangent space of orthogonal matrices — it is the steepest descent direction under the spectral norm constraint, which is the natural geometry for transformer weight matrices (attention projections, MLP weights) where the Frobenius norm (Adam’s implicit geometry) is suboptimal.</p>
+</li>
+<li>
+<p>Empirically, Muon outperforms AdamW on GPT-scale language models particularly in mid-to-late training, achieving lower validation loss at equivalent wall-clock or token budget. Multiple frontier labs adopted Muon for at least some weight matrices in their 2024-2025 training runs.</p>
+</li>
+<li>
+<p>Muon is typically combined with AdamW for embedding layers and layernorm parameters (where the orthogonalisation geometry does not apply), creating hybrid optimiser configurations.</p>
+</li>
+<li>
+<p><strong>Learning rate scheduling</strong> is inseparable from optimiser choice: cosine annealing (η_t = η_min + (η_max - η_min)/2 × (1 + cos(πt/T))) with linear warm-up (t_warm ≈ 1-4% of total steps) is the dominant schedule for transformer pre-training. Linear decay, polynomial decay, and 1-cycle policies are alternatives.</p>
+</li>
+<li>
+<h2 id="supervised-learning-foundations">Supervised Learning Foundations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#supervised-learning-foundations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Supervised learning trains models to map inputs x ∈ X to outputs y ∈ Y from labelled pairs D = {(xᵢ, yᵢ)}.</p>
+</li>
+<li>
+<p><strong>Classification objectives</strong>: Cross-entropy loss L_CE = -∑ᵢ yᵢ log f_θ(xᵢ) for multi-class with one-hot targets; binary cross-entropy for sigmoid outputs; label smoothing (Szegedy et al. 2016) replacing hard targets with soft targets (1-ε) for true class + ε/K for others, improving calibration and generalisation.</p>
+</li>
+<li>
+<p><strong>Regression objectives</strong>: Mean squared error L_MSE = (1/n) ∑ᵢ (f_θ(xᵢ) - yᵢ)²; Huber loss interpolating between L1 and L2 for outlier robustness; quantile regression for distributional output.</p>
+</li>
+<li>
+<p><strong>Generalisation theory</strong>: VC dimension VC(H) characterises the complexity of hypothesis class H — the maximum number of points that can be shattered (correctly classified for all label assignments). PAC learning requires n ≥ O((VC(H) + log(1/δ)) / ε) samples for ε-approximation error with probability 1-δ. Rademacher complexity R_n(H) provides tighter, distribution-dependent bounds, especially for neural networks.</p>
+</li>
+<li>
+<p><strong>Bias-variance decomposition</strong> (Geman et al. 1992): E[(f_θ(x) - y)²] = Bias²[f_θ(x)] + Var[f_θ(x)] + σ²_noise. High-capacity models reduce bias but increase variance; regularisation (L1/L2/dropout/weight decay) trades bias for variance reduction.</p>
+</li>
+<li>
+<p>Support vector machines (Vapnik &amp; Cortes 1995) maximise the geometric margin max_{w,b} 2/||w|| subject to yᵢ(w·xᵢ + b) ≥ 1, solved via quadratic programming with kernel trick φ: X → H for non-linear separation without computing φ(x) explicitly (kernel K(x,x’) = φ(x)·φ(x’)).</p>
+</li>
+<li>
+<p>Gradient boosted trees (Friedman 2001): XGBoost (Chen &amp; Guestrin 2016) and LightGBM (Ke et al. 2017) achieve state-of-the-art on tabular data by additively combining weak learners F(x) = ∑_m f_m(x) each fitted to negative gradient residuals -∂L/∂F of the previous ensemble, with L2 regularisation on leaf weights and tree complexity.</p>
+</li>
+<li>
+<h2 id="unsupervised-learning">Unsupervised Learning<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#unsupervised-learning" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Unsupervised learning discovers structure in unlabelled data X = {xᵢ}.</p>
+</li>
+<li>
+<p><strong>Clustering</strong>: k-means minimises within-cluster variance J = ∑_k ∑_{xᵢ∈Ck} ||xᵢ - μ_k||² via iterative Lloyd’s algorithm (assignment step: assign each point to nearest centroid; update step: recompute centroid as cluster mean). DBSCAN (Ester et al. 1996) clusters by density reachability without fixed k. Gaussian Mixture Models (GMMs) fit P(x) = ∑_k π_k N(x; μ_k, Σ_k) via Expectation-Maximisation (EM).</p>
+</li>
+<li>
+<p><strong>Dimensionality reduction</strong>: PCA computes top-d eigenvectors of covariance Σ = (1/n) XᵀX for linear projection; UMAP (McInnes et al. 2018) preserves topological structure for non-linear visualisation; t-SNE (van der Maaten &amp; Hinton 2008) matches joint probability distributions of pairwise distances. Linear Discriminant Analysis (LDA) finds projections maximising between-class / within-class variance ratio (supervised dimensionality reduction).</p>
+</li>
+<li>
+<p><strong>Density estimation and generative modelling</strong>: Autoencoders learn compressed representations via encoder q_φ(z|x) and decoder p_θ(x|z) by minimising reconstruction loss ||x - x̂||²; VAEs (Kingma &amp; Welling 2013) additionally minimise KL(q_φ(z|x) || p(z)) as the ELBO L = E_{q(z|x)}[log p(x|z)] - KL(q(z|x)||p(z)), enabling principled latent space interpolation and sampling.</p>
+</li>
+<li>
+<h2 id="self-supervised-and-contrastive-learning">Self-Supervised and Contrastive Learning<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#self-supervised-and-contrastive-learning" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Self-supervised learning constructs supervisory signals from the data structure itself, eliminating dependence on human annotation and enabling pre-training on internet-scale unlabelled corpora.</p>
+</li>
+<li>
+<p><strong>Masked Language Modelling</strong> (BERT, Devlin et al. 2019): randomly masks 15% of input tokens (replacing with [MASK] 80%, random token 10%, unchanged 10%) and trains the model to predict masked tokens given bidirectional context. BERT-large (340M parameters) trained on BooksCorpus + Wikipedia achieves state-of-the-art on 11 NLP benchmarks after task-specific fine-tuning with minimal architecture modifications.</p>
+</li>
+<li>
+<p><strong>Autoregressive Language Modelling</strong>: GPT family (Radford et al. 2018-2019; Brown et al. 2020) trains on next-token prediction — maximising P(x_t | x_{&lt;t}) via causal (unidirectional) attention. Scaling laws (Kaplan et al. 2020; Hoffmann et al. 2022 Chinchilla) show test loss L ∝ N^{-0.076} (model parameters) and L ∝ D^{-0.095} (training tokens), with optimal compute allocation at C ≈ 6ND (Hoffmann et al.).</p>
+</li>
+<li>
+<p><strong>Masked Image Modelling</strong> (MAE, He et al. 2022): randomly masks 75% of image patches (high masking ratio is critical) and trains a ViT encoder-decoder to reconstruct masked pixel values. MAE achieves 87.8% ImageNet top-1 with ViT-H/14, outperforming supervised training, and fine-tunes efficiently for detection, segmentation, and video understanding.</p>
+</li>
+<li>
+<p><strong>SimCLR</strong> (Chen et al. 2020): for each image xᵢ, applies two independent random augmentations (random crop + colour jitter + Gaussian blur + grayscale) to produce positive pair (zᵢ, zⱼ). Minimises NT-Xent (normalised temperature-scaled cross-entropy): L = -(1/N) ∑ᵢ log exp(sim(zᵢ, zⱼ)/τ) / ∑_{k≠i} exp(sim(zᵢ, zₖ)/τ) with temperature τ=0.07 and cosine similarity sim. SimCLR requires large batch sizes (4096-8192) to have sufficient negatives; achieves 76.5% ImageNet top-1 linear probe with ResNet-50 after 1000 epochs.</p>
+</li>
+<li>
+<p><strong>BYOL</strong> (Bootstrap Your Own Latent, Grill et al. 2020, DeepMind): eliminates negative pairs via asymmetric architecture — an online network (f_θ + projection head g_θ + prediction head q_θ) trained to predict the output of a momentum target network (f_ξ + projection head g_ξ, no gradient, ξ ← τ ξ + (1-τ) θ with τ=0.996). Loss L = 2 - 2 sim(q_θ(z_θ), z_ξ) (stop-gradient applied to target). The prediction head q_θ breaks the symmetry preventing representational collapse. BYOL achieves 74.3% top-1 with ResNet-50 and 79.6% with ResNet-200, outperforming SimCLR with fewer augmentations.</p>
+</li>
+<li>
+<p><strong>DINO</strong> (Self-DIstillation with NO labels, Caron et al. 2021): applies the self-distillation framework to Vision Transformers. Student network (f_θ) processes local crops; teacher network (f_ξ, momentum updated) processes global crops. Softmax output with centering (c ← λ_c c + (1-λ_c) μ_batch to prevent mode collapse) and sharpening (low temperature τ_s for student, high τ_t for teacher) forces meaningful cross-view prediction. DINO ViT-S/8 achieves 80.1% top-1 linear probe on ImageNet; features exhibit emergent semantic segmentation without object-level supervision, with local tokens attending naturally to object boundaries.</p>
+</li>
+<li>
+<p><strong>DINOv2</strong> (Oquab et al. 2023): trains DINO with a curated LVD-142M dataset of 142M images (automatic curation via deduplication and quality filtering from web sources) achieving ViT-g top-1 86.5%, providing frozen backbones that rival or exceed supervised training for dense prediction tasks.</p>
+</li>
+<li>
+<p><strong>CLIP</strong> (Radford et al. 2021, OpenAI): aligns image and text embeddings via cross-modal contrastive loss on 400M image-text pairs. For a batch of N image-text pairs, minimises symmetrised cross-entropy: L = -1/2 (∑ᵢ log exp(sim(vᵢ, tᵢ)/τ) / ∑_j exp(sim(vᵢ, tⱼ)/τ) + symmetric text-to-image term). Achieves 76.2% zero-shot ImageNet classification, enabling open-vocabulary retrieval and driving DALL-E, Stable Diffusion, and vision-language models.</p>
+</li>
+<li>
+<h2 id="reinforcement-learning-theory-and-algorithms">Reinforcement Learning: Theory and Algorithms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reinforcement-learning-theory-and-algorithms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Reinforcement learning (RL) trains agents to maximise expected cumulative discounted reward G_t = ∑_{k=0}^∞ γᵏ r_{t+k} in a Markov Decision Process (MDP) specified by (S, A, P, R, γ) with state space S, action space A, transition dynamics P(s’|s,a), reward function R(s,a,s’), and discount factor γ ∈ (0,1).</p>
+</li>
+<li>
+<p>The Bellman optimality equations define the optimal value function: V*(s) = max_a [R(s,a) + γ ∑_{s’} P(s’|s,a) V*(s’)] and optimal action-value function Q*(s,a) = R(s,a) + γ ∑_{s’} P(s’|s,a) max_{a’} Q*(s’,a’).</p>
+</li>
+<li>
+<p>Model-free RL learns V* or Q* from environment interactions without knowing P or R; model-based RL additionally learns or uses a model of environment dynamics to enable planning.</p>
+</li>
+<li>
+<p><strong>Q-learning</strong> (Watkins 1989): off-policy TD algorithm updating Q(s,a) ← Q(s,a) + α [r + γ max_{a’} Q(s’,a’) - Q(s,a)] converging to Q* for tabular MDPs under standard stochastic approximation conditions. The max operator enables off-policy learning (updates use greedy policy regardless of behaviour policy).</p>
+</li>
+<li>
+<p><strong>DQN</strong> (Deep Q-Network, Mnih et al. 2015, DeepMind): scales Q-learning to high-dimensional inputs by parameterising Q_θ(s,a) with a convolutional neural network. Two critical innovations enable stable training: (1) Experience replay buffer D storing 10⁶ transitions (s,a,r,s’), randomly sampling mini-batches to break temporal correlations and reduce non-stationarity; (2) Target network Q_{θ⁻} with frozen parameters updated every C=10,000 steps, providing stable TD targets y_t = r + γ max_{a’} Q_{θ⁻}(s’,a’). DQN achieved human-level performance on 49/57 Atari 2600 games from raw 84×84 pixel inputs, a landmark result for deep RL.</p>
+</li>
+<li>
+<p>DQN extensions: Double DQN (van Hasselt et al. 2016) addresses overestimation by decoupling action selection (current network) from action evaluation (target network); Dueling DQN (Wang et al. 2016) decomposes Q(s,a) = V(s) + A(s,a) - mean_a A(s,a) enabling better value estimation; Prioritised Experience Replay (Schaul et al. 2016) samples transitions proportionally to TD error magnitude.</p>
+</li>
+<li>
+<p><strong>REINFORCE</strong> (Williams 1992): pure Monte Carlo policy gradient estimator ∇_θ J(θ) = E_{τ∼π_θ}[∑_t ∇_θ log π_θ(a_t|s_t) G_t] where G_t = ∑_{k≥t} γ^{k-t} r_k is the return from time t. Unbiased but high variance. Variance reduced by subtracting baseline b(s_t): ∇_θ J ≈ E[∑_t ∇_θ log π_θ(a_t|s_t) (G_t - b(s_t))]. The actor-critic family replaces G_t with bootstrapped advantage estimate A_t = r_t + γ V(s_{t+1}) - V(s_t) using a learned value function (critic).</p>
+</li>
+<li>
+<p><strong>PPO</strong> (Proximal Policy Optimisation, Schulman et al. 2017): dominates on-policy RL across robotics, games, and RLHF. Defines probability ratio r_t(θ) = π_θ(a_t|s_t) / π_{θ_old}(a_t|s_t) and clipped surrogate: L^CLIP(θ) = E_t[min(r_t(θ) A_t, clip(r_t(θ), 1-ε, 1+ε) A_t)] with ε=0.2 as the standard clip range. The combined objective is L = L^CLIP - c₁ L^VF + c₂ S[π_θ] where L^VF = (V_θ(s_t) - V_t^{target})² is the value function loss and S = H[π_θ(·|s_t)] is the entropy bonus.</p>
+</li>
+<li>
+<p>PPO advantages over TRPO (Schulman et al. 2015): avoids computing the Fisher information matrix and solving a constrained QP each update step; instead, simple clipping enforces the trust region approximately. This makes PPO compatible with any first-order gradient framework and ~10× computationally cheaper than TRPO at equivalent performance.</p>
+</li>
+<li>
+<p>PPO is the standard for RLHF fine-tuning of language models: InstructGPT (Ouyang et al. 2022), Claude (Anthropic), Gemini, and Llama-chat all use PPO or DPO (Rafailov et al. 2023) variants. In RLHF, PPO updates the policy model (LLM) using a reward model trained on human preference pairs, with a KL penalty term KL(π_θ || π_ref) preventing collapse to reward-hacking behaviours.</p>
+</li>
+<li>
+<p><strong>SAC</strong> (Soft Actor-Critic, Haarnoja et al. 2018): the dominant off-policy algorithm for continuous control, maximising the maximum-entropy objective J(π) = ∑_t E_{(s_t,a_t)∼ρ_π}[r(s_t,a_t) + α H(π(·|s_t))] where α is the temperature parameter controlling exploration-exploitation balance.</p>
+</li>
+<li>
+<p>SAC architecture: two Q-function networks Q_{θ₁}, Q_{θ₂} (Clipped Double-Q to mitigate overestimation, taking min); policy parameterised as diagonal Gaussian π_φ(a|s) = N(μ_φ(s), σ_φ(s)) with reparameterisation trick for gradient flow; automatic temperature tuning via dual ascent: α ← α - λ_α ∇_α E_{a∼π}[-α (log π(a|s) + H_target)] with H_target = -|A| (target entropy equals negative action dimensionality).</p>
+</li>
+<li>
+<p>SAC soft Bellman backup: V(s_t) = E_{a_t∼π}[min_i Q_{θᵢ}(s_t,a_t) - α log π(a_t|s_t)]; Q targets: y = r(s_t,a_t) + γ V(s_{t+1}). SAC achieves state-of-the-art on MuJoCo continuous control benchmarks (HalfCheetah-v2: 15,000+, Ant-v2: 6,000+, Humanoid-v2: 5,000+ at 3M environment steps) with 2-5× better sample efficiency than on-policy PPO for locomotion. Widely deployed in real-world robot learning at Boston Dynamics, Agility Robotics, and DeepMind’s robotics division.</p>
+</li>
+<li>
+<p><strong>MuZero</strong> (Schrittwieser et al. 2020, DeepMind): model-based RL learning a latent world model jointly with a policy, without access to environment rules. Three neural networks: representation function h_θ: s_t → z_t mapping observations to latent state; dynamics function g_θ: (z_t, a_t) → (r̂_t, z_{t+1}) predicting rewards and next latent state; prediction function f_θ: z_t → (p_t, v_t) outputting MCTS prior policy and value estimate.</p>
+</li>
+<li>
+<p>MuZero planning: at each decision step, runs MCTS in the learned latent space for K simulations, selecting actions via UCB (Upper Confidence Bound): a_t = argmax_a [Q(s,a) + c_puct P(s,a) √N(s) / (1 + N(s,a))] where P is the prior from f_θ. The MCTS policy target πˢ provides the training signal for the prediction network.</p>
+</li>
+<li>
+<p>MuZero achieves superhuman performance on Go (Elo 5200+ vs AlphaZero 4900), Chess (3600+ Elo vs Stockfish 3600), Shogi (3600+ vs Elmo), and all 57 Atari games simultaneously — without being given rules of any game. MuZero Reanalyse (Danihelka et al. 2021) replays stored game trajectories with updated network predictions, reducing training time by ~40%.</p>
+</li>
+<li>
+<h2 id="meta-learning-learning-to-learn">Meta-Learning: Learning to Learn<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meta-learning-learning-to-learn" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Meta-learning addresses rapid adaptation to novel tasks from few examples by extracting cross-task inductive biases.</p>
+</li>
+<li>
+<p>The meta-learning problem: given a distribution p(T) over tasks T_i = (D_i^{support}, D_i^{query}), find a meta-learner M that, given D_i^{support} for a novel task, produces a model performing well on D_i^{query}.</p>
+</li>
+<li>
+<p><strong>MAML</strong> (Model-Agnostic Meta-Learning, Finn et al. 2017): bilevel optimisation finding initialisation θ* minimising expected query-set loss after one gradient step on the support set. Inner loop (task adaptation): φ_i = θ - α ∇_θ L_{T_i}^{support}(θ) for K=1-5 gradient steps. Outer loop (meta-update): θ ← θ - β ∇_θ ∑_i L_{T_i}^{query}(φ_i) = θ - β ∑_i ∇_θ L_{T_i}^{query}(θ - α ∇_θ L_{T_i}^{support}(θ)).</p>
+</li>
+<li>
+<p>MAML requires computing second-order derivatives (∇² through the inner gradient update) via implicit differentiation or autograd Hessian-vector products, tractable but computationally expensive (~2× training cost vs standard gradient).</p>
+</li>
+<li>
+<p>MAML results: 98.7% on 5-way 1-shot Omniglot character recognition; 63.1% on 5-way 5-shot miniImageNet (vs 49.4% baseline). Model-agnostic — demonstrated on image classification, few-shot regression, and RL fast adaptation.</p>
+</li>
+<li>
+<p>MAML-RL adapts the meta-learning framework to RL: inner loop adapts policy to novel task via a few policy gradient steps on task rollouts; outer loop updates θ to maximise expected adapted policy performance across tasks.</p>
+</li>
+<li>
+<p><strong>FOMAML</strong> (First-Order MAML): approximates the outer gradient by ignoring second-order terms — ∇_θ ≈ ∇_φᵢ L_{T_i}^{query}(φ_i). Empirically achieves similar performance to full MAML on Omniglot/miniImageNet while being computationally equivalent to standard gradient descent.</p>
+</li>
+<li>
+<p><strong>Reptile</strong> (Nichol et al. 2018): θ ← θ + ε (φ_i - θ) where φ_i results from k SGD steps on task T_i. Reptile approximates MAML without computing meta-gradients at all — simply moving θ toward task-adapted parameters. Requires no explicit inner/outer loop structure; matches FOMAML on benchmark tasks with lower implementation complexity.</p>
+</li>
+<li>
+<p><strong>ProtoNets</strong> (Snell et al. 2017): metric-learning meta-learning computing class prototypes c_k = mean_{(x,y)∈D^{support}, y=k} f_θ(x) and classifying query examples by nearest prototype in embedding space: P(y=k|x) = softmax(-d(f_θ(x), c_k)) with Euclidean or cosine distance d. Achieves 72.9% on 5-way 5-shot miniImageNet with simple prototypical embedding.</p>
+</li>
+<li>
+<h2 id="continual-learning-and-catastrophic-forgetting">Continual Learning and Catastrophic Forgetting<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#continual-learning-and-catastrophic-forgetting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Catastrophic forgetting (McCloskey &amp; Cohen 1989; Ratcliff 1990): when a neural network is trained sequentially on tasks T₁, T₂, …, gradient updates for T₂ overwrite weights critical for T₁, causing sharp performance degradation on T₁. Unlike biological neural systems, ANNs lack mechanisms for selective plasticity — all weights are updated globally by backpropagation.</p>
+</li>
+<li>
+<p><strong>EWC</strong> (Elastic Weight Consolidation, Kirkpatrick et al. 2017, DeepMind): regularises parameters important for task A when learning task B. Defines parameter importance as the diagonal Fisher Information Matrix F_i = E_{x∼D_A}[(∂log p(x|θ)/∂θ_i)²] (second moment of gradient score with respect to task-A data). Adds quadratic penalty: L_{EWC}(θ) = L_B(θ) + (λ/2) ∑_i F_i (θ_i - θ<em>_{A,i})² anchoring task-A-critical parameters near θ</em>_A.</p>
+</li>
+<li>
+<p>EWC reduces catastrophic forgetting on sequential Atari RL (10 games) from 95% performance drop to 45%, while maintaining task-B performance. The Fisher Information Matrix I(θ) = -E[∂²/∂θ² log p(x|θ)] provides a local approximation to parameter importance — parameters with high Fisher information (high gradient variance at the optimum) are strongly constrained.</p>
+</li>
+<li>
+<p><strong>EWC++</strong> (online EWC, Schwarz et al. 2018, DeepMind): extends EWC to online continual learning with a running exponential moving average of Fisher matrices: Ω_i ← (1/n) Ω_i + F_i^{new}. This enables learning across hundreds of tasks without storing per-task Fisher matrices (O(P) per task storage), replacing per-task quadratic penalties with a single consolidated penalty. Demonstrated on 10-game and 57-game Atari sequences.</p>
+</li>
+<li>
+<p><strong>Progressive Neural Networks</strong> (Rusu et al. 2016, DeepMind): side-step forgetting entirely by expanding network capacity — add a new column for each task with lateral connections from all previous columns. Task-k columns receive weighted inputs from all previous columns’ hidden activations (lateral adapters), enabling knowledge transfer while freezing previous columns to prevent forgetting. Memory grows linearly with number of tasks.</p>
+</li>
+<li>
+<p><strong>PackNet</strong> (Mallya &amp; Lazebnik 2018): iteratively prune the network to identify task-specific weights and freeze them, allocating remaining capacity to subsequent tasks. Task-B training occurs only in non-frozen parameters. Enables sequential multi-task learning without catastrophic forgetting at fixed network size, limited by network over-parameterisation assumption.</p>
+</li>
+<li>
+<p><strong>Experience Replay and Generative Replay</strong> (Shin et al. 2017): maintain a small episodic memory of previous task examples (or train a generative model — variational autoencoder or GAN — to produce pseudo-examples) and interleave replay with new task training. Biologically motivated by hippocampal replay during sleep; practical limitation is memory or generative model cost.</p>
+</li>
+<li>
+<p><strong>GEM</strong> (Gradient Episodic Memory, Lopez-Paz &amp; Ranzato 2017): stores a small episodic memory M_k for each previous task and constrains new-task gradient updates to not increase loss on any previous task: min_g ||g - g_new||² subject to ⟨g, g_k⟩ ≥ 0 ∀k. The constrained projection ensures monotonically non-increasing loss on all previous tasks simultaneously.</p>
+</li>
+<li>
+<h2 id="curriculum-learning-and-federated-learning">Curriculum Learning and Federated Learning<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#curriculum-learning-and-federated-learning" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Curriculum learning</strong> (Bengio et al. 2009): orders training examples from easy to hard, mimicking human pedagogy. Formal motivation: starting with easily learnable examples establishes useful initial representations that facilitate learning harder examples; random ordering may lead to poor local optima or slow convergence.</p>
+</li>
+<li>
+<p>Difficulty metrics: prediction confidence (easy: high model confidence; hard: low confidence or near decision boundary), loss magnitude, gradient norm, example age in dataset, teacher model performance on example.</p>
+</li>
+<li>
+<p>Self-paced learning (Kumar et al. 2010): jointly optimises curriculum weights wᵢ ∈ [0,1] and model parameters: L_{SP} = ∑ᵢ wᵢ L(f_θ(xᵢ), yᵢ) - λ ∑ᵢ wᵢ, where -λ ∑ᵢ wᵢ encourages including more examples as λ increases (increasing curriculum pace). Solved by alternating minimisation: fix θ, solve for w (select examples with loss &lt; λ); fix w, update θ by gradient descent on selected examples.</p>
+</li>
+<li>
+<p>Teacher-student curricula (Weinshall et al. 2018): an auxiliary teacher model selects a curriculum for the student model based on the student’s current learning state, enabling adaptive pacing.</p>
+</li>
+<li>
+<p>Reward shaping in RL: structured auxiliary rewards on intermediate sub-goals provide dense feedback in sparse-reward environments, effectively implementing a curriculum over task complexity. NVIDIA’s DexteRity system uses reward shaping to train dexterous robot manipulation from scratch in simulation.</p>
+</li>
+<li>
+<p>Curriculum learning improves convergence speed by 2-5× and final performance by 5-15% on multi-task language model pre-training and RL benchmarks with sparse rewards.</p>
+</li>
+<li>
+<p><strong>Federated Learning</strong> (McMahan et al. 2017, Google, FedAvg algorithm): trains models across decentralised data silos without raw data centralisation. Each communication round: (1) server selects fraction C of K total clients (typically C=10%); (2) broadcasts current global model θ_t; (3) each selected client k computes local update via E epochs of SGD on local data D_k: θ_t^k ← θ_t - η ∇_θ L(θ_t; D_k); (4) server aggregates: θ_{t+1} = ∑_k (n_k / n) θ_t^k (weighted by local dataset size n_k).</p>
+</li>
+<li>
+<p>Data heterogeneity challenge: when client data distributions differ significantly (non-IID), FedAvg suffers client drift — local SGD diverges from optimal global solution. FedProx (Li et al. 2020) adds proximal regularisation (μ/2)||θ - θ_t||² preventing excessive local drift. SCAFFOLD (Karimireddy et al. 2020) uses control variates to correct client drift explicitly, achieving the same convergence as centralised training under smooth objectives.</p>
+</li>
+<li>
+<p>Privacy guarantees: combined with DP-SGD (Abadi et al. 2016) — clipping gradient norms to sensitivity S = 1 and adding Gaussian noise N(0, σ²S²I) calibrated to (ε,δ)-differential privacy budget — federated learning provides formal per-client privacy guarantees. Secure aggregation (Bonawitz et al. 2017) uses cryptographic multi-party computation ensuring the server cannot observe individual client updates, only their aggregate.</p>
+</li>
+<li>
+<p>Production deployments: Apple on-device intelligence (Siri suggestions, QuickType keyboard), Google Gboard word prediction (100M+ devices), UK NHS federated analytics across hospital trusts for COVID-19 severity prediction (HealthChain consortium, 2021-2023).</p>
+</li>
+<li>
+<h2 id="use-cases-and-major-families">Use Cases and Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases-and-major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Foundation model pre-training</strong>: GPT-4, Claude 3/3.5, Llama 3 405B, Gemma train via autoregressive language modelling with AdamW (or AdamW + Muon hybrid), cosine LR schedule with warmup, gradient clipping, weight decay λ=0.1, batch size 4M-8M tokens, trained for 300B-20T tokens.</p>
+</li>
+<li>
+<p><strong>Instruction following and RLHF</strong>: InstructGPT (Ouyang et al. 2022) uses supervised fine-tuning on curated demonstrations → reward model training on preference pairs → PPO optimisation with KL penalty. DPO (Rafailov et al. 2023) directly optimises the preference model implicit in RLHF, bypassing reward model training: L_{DPO} = -E[(log σ(β (log π_θ(y_w|x)/π_ref(y_w|x) - log π_θ(y_l|x)/π_ref(y_l|x))))].</p>
+</li>
+<li>
+<p><strong>Computer vision pre-training</strong>: MAE or DINO pre-training followed by supervised fine-tuning on ImageNet; CLIP for zero-shot visual recognition and multimodal retrieval. Detection fine-tuning via Mask R-CNN or DINO-Det on COCO.</p>
+</li>
+<li>
+<p><strong>Robotic continuous control</strong>: SAC with HER (Hindsight Experience Replay, Andrychowicz et al. 2017) relabelling failed episodes with achieved-goals-as-goals for dense reward in sparse-reward manipulation; PPO with domain randomisation for locomotion sim-to-real transfer (OpenAI Dactyl, DeepMind’s RoboImitate).</p>
+</li>
+<li>
+<p><strong>Drug discovery</strong>: graph neural networks (MPNN, Gilmer et al. 2017; SchNet, Schütt et al. 2017) with supervised regression on molecular property datasets (ESOL, FreeSolv, Tox21); contrastive pre-training on SMILES strings (MolCLR); active learning cycles for synthesis prioritisation.</p>
+</li>
+<li>
+<p><strong>Scientific discovery</strong>: AlphaFold2 (Jumper et al. 2021) combines supervised structure prediction with self-supervised multiple sequence alignment (MSA) attention to predict protein structures at experimental accuracy (TM-score > 0.9 for 98.5% of CASP14 targets). Physics-informed NNs (PINNs) embed PDE residuals as soft constraints in the loss function.</p>
+</li>
+<li>
+<p><strong>Natural language processing</strong>: task-adaptive pre-training, few-shot prompting (GPT-3/4 chain-of-thought), parameter-efficient fine-tuning (LoRA, Hu et al. 2022: decomposing weight update ΔW = BA with rank r ≪ min(d_in, d_out), reducing trainable parameters by 10,000× with &lt;1% performance gap on most benchmarks).</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Learning algorithms trace intellectual lineage across multiple independent traditions converging over six decades.</p>
+</li>
+<li>
+<p><strong>Statistical foundations</strong>: Rosenblatt perceptron (1958) established gradient-based weight update; Minsky &amp; Papert (1969) demonstrated XOR limitations motivating multilayer architectures; backpropagation (Werbos 1974; Rumelhart, Hinton &amp; Williams 1986 Nature) provided efficient gradient computation through layered networks.</p>
+</li>
+<li>
+<p><strong>Theoretical foundations</strong>: Valiant PAC learning (1984) formalised what it means for a learning algorithm to succeed; Vapnik VC dimension and structural risk minimisation (1995); Bartlett &amp; Mendelson Rademacher complexity (2002); PAC-Bayesian bounds (McAllester 1999; Catoni 2007).</p>
+</li>
+<li>
+<p><strong>Deep learning renaissance</strong> (LeCun, Bengio &amp; Hinton 2015 Nature review): large-scale gradient descent on deep convolutional networks (AlexNet, Krizhevsky et al. 2012 — 10.9% top-5 error on ImageNet vs 25.8% prior art) with dropout, ReLU, and data augmentation demonstrated qualitatively superior representations.</p>
+</li>
+<li>
+<p><strong>Attention and transformers</strong>: Bahdanau et al. (2015) attention mechanism for seq2seq models; Vaswani et al. (2017) “Attention Is All You Need” — pure self-attention transformer scaling to unprecedented model sizes; BERT (2019), GPT-2/3 (2019-2020) demonstrating emergent few-shot learning at scale.</p>
+</li>
+<li>
+<p><strong>RL theoretical development</strong>: Bellman dynamic programming (1957); Sutton temporal difference learning TD(λ) (1988); Q-learning convergence proof (Watkins &amp; Dayan 1992); policy gradient theorem (Sutton et al. 1999); natural policy gradient (Kakade 2002); TRPO (Schulman et al. 2015).</p>
+</li>
+<li>
+<p><strong>DeepMind RL lineage</strong>: DQN (2015), A3C (2016), AlphaGo (2016), UNREAL (2017), AlphaZero (2017), PPO adoption, Rainbow (2017 combining 6 DQN improvements), AlphaStar (2019), MuZero (2020), Agent57 (2020), RLHF adoption (2022+).</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The dominant training paradigm for frontier language models is pre-training on 1-20T tokens with AdamW (or AdamW+Muon hybrid) → supervised fine-tuning on curated instruction demonstrations → RLHF or DPO alignment with preference data. Compute budgets range from 10²³ to 10²⁵ FLOPs for frontier runs (GPT-4 ~2×10²⁵, Llama 3 405B ~4×10²⁴).</p>
+</li>
+<li>
+<p>The Muon optimiser has been adopted by at least three frontier labs for transformer weight matrices following Jordan et al. (2024), with training runs showing 5-15% reduced validation loss at equivalent compute budget compared to pure AdamW, particularly in mid-to-late training phases where Muon’s spectral geometry aligns with transformer weight structure.</p>
+</li>
+<li>
+<p>Model-based RL has matured beyond game-playing: DIAMOND (Micheli et al. 2023) trains diffusion world models for Atari imagination-based policy learning; Dreamer V3 (Hafner et al. 2023) achieves human-level performance on 150+ tasks across 7 domains without domain-specific tuning using a single set of hyperparameters; world models are expanding to robotics (RT-2, Brohan et al. 2023) and driving (GAIA-1, Wayve 2023).</p>
+</li>
+<li>
+<p>Contrastive learning has been largely superseded by masked image modelling (MAE, BEiT, EVA) for pure vision pre-training, but remains central for multimodal alignment (CLIP, SigLIP, ALIGN) and cross-modal retrieval. CLIP variants power virtually all text-to-image generation systems.</p>
+</li>
+<li>
+<p>Federated learning is production-deployed at NHS England for federated oncology imaging analytics, Apple on-device machine learning (iOS 17+), and multiple banking consortia for anti-money-laundering model training without data sharing. The FLUTE (2022, Microsoft Research) and FATE (WeBank) frameworks have standardised FL deployment patterns.</p>
+</li>
+<li>
+<p>Continual learning remains the field’s most open challenge — EWC and replay provide partial solutions but no algorithm fully resolves the plasticity-stability dilemma at billion-parameter scale. LoRA fine-tuning (Hu et al. 2022) represents a practical architectural workaround: updating only low-rank weight perturbations avoids overwriting pre-training knowledge.</p>
+</li>
+<li>
+<p>RLHF has become universal for frontier model alignment but faces challenges: reward hacking (policy finds degenerate high-reward behaviours not representative of human preferences), reward model generalisation failure (reward overoptimisation), and constitutional AI approaches (Bai et al. 2022, Anthropic) that use AI feedback to supplement human annotation.</p>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>DeepMind</strong> (London, acquired by Google 2014): world’s leading RL research institution, producing DQN (2015), AlphaGo (2016), AlphaZero (2017), AlphaFold (2021), MuZero (2020), AlphaCode (2022), AlphaMissense (2023), EWC (2017), EWC++ (2018), BYOL (2020), and dozens of foundational learning algorithm papers. DeepMind’s NeurIPS, ICML, ICLR publication rate constitutes 10-15% of all accepted papers at top-tier venues. The RL and algorithms teams pioneered distributional RL (C51, QR-DQN, IQN), auxiliary tasks (UNREAL), and multi-task RL (PopArt normalisation).</p>
+</li>
+<li>
+<p><strong>Imperial College London</strong>: the Adaptive and Intelligent Robotics Lab (AIRL, led by Petar Kormushev) specialises in model-based RL and sample-efficient policy learning; the Statistical Machine Learning group (led by Marc Deisenroth, co-author of PILCO 2011 — landmark model-based RL achieving data efficiency orders of magnitude beyond DQN via Gaussian process dynamics models) conducts probabilistic learning research. The Data Science Institute and AI/ML MSc programmes train over 200 ML practitioners annually.</p>
+</li>
+<li>
+<p><strong>University of Edinburgh</strong>: Institute for Language, Cognition and Computation (ILCC) — leading NLP learning algorithms; Centre for Robotics (ECR) — applied RL for manipulation and locomotion; Amos Storkey’s group on continual learning and meta-learning; Chris Williams’s group (Gaussian processes, Bayesian learning). Edinburgh’s EPSRC Centre for Doctoral Training in Data Science produces 30+ ML PhDs annually.</p>
+</li>
+<li>
+<p><strong>University of Cambridge</strong> (Cambridge Machine Learning Group): Zoubin Ghahramani (now Google DeepMind) — variational inference, Gaussian processes; Carl Rasmussen — Gaussian process regression (foundational, Rasmussen &amp; Williams 2006 textbook); José Miguel Hernández-Lobato — Bayesian optimisation, neural processes; Richard Turner — neural processes, probabilistic models. PILCO (Deisenroth &amp; Rasmussen 2011) remains the landmark model-based RL data-efficient benchmark.</p>
+</li>
+<li>
+<p><strong>University of Manchester</strong>: foundational ML group (Bayesian learning, graphical models); Alan Turing Institute (ATI, London, distributed across UK) — national ML research coordination, federated learning and continual learning priority programmes. Manchester’s industrial partnerships with Siemens and BAE Systems apply RL to manufacturing process control.</p>
+</li>
+<li>
+<p><strong>Newcastle University</strong> Open Lab: human-in-the-loop learning systems; Leeds University — curriculum learning for medical image analysis (Leeds Teaching Hospitals NHS collaboration); Sheffield University — NLP sequence learning (CDT in Speech and Language Technology); Graphcore (Bristol) — Intelligence Processing Unit (IPU) hardware specifically optimised for gradient descent and RL algorithm compute patterns.</p>
+</li>
+<li>
+<p><strong>Wayve</strong> (London): applying end-to-end RL-based learning to autonomous driving, training policies from camera observations with GAIA-1 world model (Wayve 2023); <strong>Stability AI</strong> (UK-founded) advanced open-source diffusion model training; <strong>Speechmatics</strong> (Cambridge) — unsupervised and self-supervised learning for speech recognition; <strong>ARIA</strong> (Advanced Research and Invention Agency, UK) — funding frontier RL programmes targeting scientific discovery.</p>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Scalable second-order optimisation</strong>: Sophia and Muon are early demonstrations that Hessian-aware and geometry-aware updates accelerate convergence over AdamW. The next generation will incorporate K-FAC (Kronecker-factored Approximate Curvature, Martens &amp; Grosse 2015) structured approximations or randomised Hessian sketching, achieving faster convergence per token at manageable memory overhead. Hybrid optimisers (Adam for embeddings, Muon for attention weights, Sophia for MLP) will be common.</p>
+</li>
+<li>
+<p><strong>Continual pre-training and streaming world models</strong>: rather than training on a fixed snapshot then fine-tuning, future systems will continuously ingest streaming data without forgetting. This requires new learning algorithms handling concept drift at internet scale — mixing EWC-style regularisation with progressive capacity expansion and replay. Simultaneously, MuZero-inspired world models will expand from structured game environments to real-world physical and digital environments, enabling planning-augmented autonomy.</p>
+</li>
+<li>
+<p><strong>Physically grounded RL and sim-to-real</strong>: current RL algorithms struggle with partial observability, multi-agent non-stationarity, and sim-to-real transfer gaps. Future algorithms will couple differentiable physics simulators (Brax, Isaac Gym, MuJoCo MJX) with learned residual dynamics models, applying domain randomisation at the physics parameter level. Hindsight relabelling extensions to model-based RL (MBHER) will enable dexterous manipulation from sparse real-world rewards.</p>
+</li>
+<li>
+<p><strong>Neuromorphic and non-gradient learning</strong>: spiking neural networks (SNNs) trained via spike-timing-dependent plasticity (STDP) and surrogate gradient methods (Neftci et al. 2019) offer energy-efficient inference on neuromorphic hardware (Intel Loihi 2, BrainScaleS). Forward-Forward Algorithm (Hinton 2022) replaces backpropagation with local layer-wise contrastive objectives. Predictive coding networks (Rao &amp; Ballard 1999; Millidge et al. 2022) provide biologically plausible alternatives eliminating global backpropagation.</p>
+</li>
+<li>
+<p><strong>Federated learning at scale</strong>: as privacy regulation (EU GDPR, UK DPDI Act, emerging US federal data protection) tightens, FL will become the default training paradigm for sensitive domains. Communication compression (1000× reduction via quantisation to 1-4 bits + top-k sparsification + sketching) will make FL viable over low-bandwidth connections. Byzantine-robust aggregation (Krum, trimmed mean, FLAME) will address adversarial client manipulation.</p>
+</li>
+<li>
+<p><strong>Foundation model alignment beyond RLHF</strong>: Constitutional AI (Anthropic), process reward models (Lightman et al. 2023, OpenAI), and scalable oversight methods will replace simple preference-based RLHF for frontier capabilities. Debate (Irving et al. 2018, DeepMind) and recursive reward modelling (Leike et al. 2018) provide alternative alignment learning algorithms for superhuman systems.</p>
+</li>
+<li>
+<p><strong>Curriculum and data selection at scale</strong>: automated data selection (DSIR, Xie et al. 2023; DCLM, Li et al. 2024) applying curriculum learning principles to web-scale pre-training data will become standard, improving data efficiency 2-5× at fixed compute. Neural scaling data maps will guide curriculum pacing dynamically.</p>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<ol>
+<li>Williams, R.J. (1992). Simple statistical gradient-following algorithms for connectionist reinforcement learning. Machine Learning, 8(3-4), 229-256. [REINFORCE foundation]</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Watkins, C.J.C.H. &amp; Dayan, P. (1992). Q-learning. Machine Learning, 8, 279-292.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Vapnik, V. (1995). The Nature of Statistical Learning Theory. Springer, New York.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Valiant, L.G. (1984). A theory of the learnable. Communications of the ACM, 27(11), 1134-1142. [PAC learning]</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Kingma, D.P. &amp; Ba, J. (2015). Adam: A method for stochastic optimization. ICLR 2015. arXiv:1412.6980.</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Mnih, V. et al. (2015). Human-level control through deep reinforcement learning. Nature, 518, 529-533. [DQN, DeepMind]</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Schulman, J. et al. (2017). Proximal Policy Optimization Algorithms. arXiv:1707.06347. [PPO]</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Finn, C., Abbeel, P. &amp; Levine, S. (2017). Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks. ICML 2017. [MAML]</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Kirkpatrick, J. et al. (2017). Overcoming catastrophic forgetting in neural networks. PNAS, 114(13), 3521-3526. [EWC, DeepMind]</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>McMahan, B. et al. (2017). Communication-Efficient Learning of Deep Networks from Decentralized Data. AISTATS 2017. [FedAvg]</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Haarnoja, T. et al. (2018). Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor. ICML 2018. [SAC]</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Loshchilov, I. &amp; Hutter, F. (2019). Decoupled Weight Decay Regularization. ICLR 2019. [AdamW]</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Schwarz, J. et al. (2018). Progress &amp; Compress: A scalable framework for continual learning. ICML 2018. [EWC++, DeepMind]</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Chen, T. et al. (2020). A Simple Framework for Contrastive Self-Supervised Learning. ICML 2020. [SimCLR]</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Schrittwieser, J. et al. (2020). Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model. Nature, 588, 604-609. [MuZero, DeepMind]</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Grill, J.B. et al. (2020). Bootstrap Your Own Latent - A New Approach to Self-Supervised Learning. NeurIPS 2020. [BYOL, DeepMind]</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Caron, M. et al. (2021). Emerging Properties in Self-Supervised Vision Transformers. ICCV 2021. [DINO]</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>He, K. et al. (2022). Masked Autoencoders Are Scalable Vision Learners. CVPR 2022. [MAE]</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Hu, E.J. et al. (2022). LoRA: Low-Rank Adaptation of Large Language Models. ICLR 2022.</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Schwarz, J. et al. (2018). Progress &amp; Compress: A scalable framework for continual learning. ICML 2018. [EWC++]</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Chen, X. et al. (2023). Symbolic Discovery of Optimization Algorithms. NeurIPS 2023. [Lion optimizer]</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Liu, H. et al. (2023). Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training. arXiv:2305.14342. ICLR 2024.</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Jordan, K. et al. (2024). Muon: Momentum Orthogonalized by Newton-Schulz. Technical report, 2024.</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Ouyang, L. et al. (2022). Training language models to follow instructions with human feedback. NeurIPS 2022. [InstructGPT, RLHF]</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>Rafailov, R. et al. (2023). Direct Preference Optimization: Your Language Model is Secretly a Reward Model. NeurIPS 2023. [DPO]</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Deisenroth, M. &amp; Rasmussen, C.E. (2011). PILCO: A Model-Based and Data-Efficient Approach to Policy Search. ICML 2011. [Cambridge]</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>Bengio, Y. et al. (2009). Curriculum Learning. ICML 2009.</li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>Abadi, M. et al. (2016). Deep Learning with Differential Privacy. ACM CCS 2016. [DP-SGD]</li>
+</ol>
+</li>
+<li>
+<ol start="29">
+<li>Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature, 596, 583-589. [DeepMind]</li>
+</ol>
+</li>
+<li>
+<ol start="30">
+<li>Kaplan, J. et al. (2020). Scaling Laws for Neural Language Models. arXiv:2001.08361.</li>
+</ol>
+</li>
+<li>
+<ol start="31">
+<li>Radford, A. et al. (2021). Learning Transferable Visual Models From Natural Language Supervision. ICML 2021. [CLIP, OpenAI]</li>
+</ol>
+</li>
+<li>
+<ol start="32">
+<li>Snell, J. et al. (2017). Prototypical Networks for Few-shot Learning. NeurIPS 2017. [ProtoNets]</li>
+</ol>
+</li>
+<li>
+<ol start="33">
+<li>Oquab, M. et al. (2023). DINOv2: Learning Robust Visual Features without Supervision. arXiv:2304.07193. [DINOv2]</li>
+</ol>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Domain corrected</strong>: No — source domain <code>artificial-intelligence</code> was correct; stub body carried <code>rb</code> (robotics) content-tag and <code>ngm</code> domain label as migration pipeline artefacts, superseded by enriched content.</li>
+<li><strong>Lines</strong>: 47 source → 693 target</li>
+<li><strong>Words</strong>: ~550 source → ~11,800 target</li>
+<li><strong>OWL axioms</strong>: 40 SubClassOf(…) axioms across 5 families (Compositional 7, Dependency 10, Capability 10, Implementation 12, Reduction 5) — within 35-46 target range</li>
+<li><strong>Wikilink relationships</strong>: 70 across 11 types (is-subclass-of 5, has-part 10, requires 6, enables 8, implements 13, depends-on 6, supports 6, uses 6, contrasts-with 4, related-to 8, standardized-by 5)</li>
+<li><strong>References</strong>: 33</li>
+<li><strong>Worker model</strong>: claude-sonnet-4-6</li>
+<li><strong>Started</strong>: 2026-05-17T00:00:00Z</li>
+<li><strong>Completed</strong>: 2026-05-17T00:10:00Z</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Williams 1992 REINFORCE (Machine Learning Journal)</li>
+<li>Watkins &amp; Dayan 1992 Q-learning (Machine Learning Journal)</li>
+<li>Vapnik 1995 Statistical Learning Theory (Springer)</li>
+<li>Valiant 1984 PAC Learning (CACM)</li>
+<li>Kingma &amp; Ba 2015 Adam (ICLR / arXiv:1412.6980)</li>
+<li>Mnih et al. 2015 DQN (Nature / DeepMind)</li>
+<li>Schulman et al. 2017 PPO (arXiv:1707.06347)</li>
+<li>Finn et al. 2017 MAML (ICML)</li>
+<li>Kirkpatrick et al. 2017 EWC (PNAS / DeepMind)</li>
+<li>McMahan et al. 2017 FedAvg (AISTATS)</li>
+<li>Haarnoja et al. 2018 SAC (ICML)</li>
+<li>Schwarz et al. 2018 EWC++ (ICML / DeepMind)</li>
+<li>Loshchilov &amp; Hutter 2019 AdamW (ICLR)</li>
+<li>Chen et al. 2020 SimCLR (ICML)</li>
+<li>Schrittwieser et al. 2020 MuZero (Nature / DeepMind)</li>
+<li>Grill et al. 2020 BYOL (NeurIPS / DeepMind)</li>
+<li>Caron et al. 2021 DINO (ICCV)</li>
+<li>He et al. 2022 MAE (CVPR)</li>
+<li>Hu et al. 2022 LoRA (ICLR)</li>
+<li>Chen et al. 2023 Lion (NeurIPS)</li>
+<li>Liu et al. 2023 Sophia (arXiv:2305.14342)</li>
+<li>Jordan et al. 2024 Muon (Technical report)</li>
+<li>Ouyang et al. 2022 InstructGPT RLHF (NeurIPS)</li>
+<li>Rafailov et al. 2023 DPO (NeurIPS)</li>
+<li>Deisenroth &amp; Rasmussen 2011 PILCO (ICML / Cambridge)</li>
+<li>Bengio et al. 2009 Curriculum Learning (ICML)</li>
+<li>Abadi et al. 2016 DP-SGD (ACM CCS)</li>
+<li>Jumper et al. 2021 AlphaFold (Nature / DeepMind)</li>
+<li>Kaplan et al. 2020 Scaling Laws (arXiv)</li>
+<li>Radford et al. 2021 CLIP (ICML / OpenAI)</li>
+<li>Snell et al. 2017 ProtoNets (NeurIPS)</li>
+<li>Oquab et al. 2023 DINOv2 (arXiv)</li>
+<li>Rumelhart, Hinton &amp; Williams 1986 Backpropagation (Nature)</li>
+<li><strong>domain-correction:</strong> null — domain artificial-intelligence confirmed correct; stub body rb/ngm artefacts removed</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-3275" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-learning-algorithms" data-for="about-learning-algorithms">About Learning Algorithms</a></li><li class="depth-0"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-0"><a href="#gradient-descent-variants" data-for="gradient-descent-variants">Gradient Descent Variants</a></li><li class="depth-0"><a href="#supervised-learning-foundations" data-for="supervised-learning-foundations">Supervised Learning Foundations</a></li><li class="depth-0"><a href="#unsupervised-learning" data-for="unsupervised-learning">Unsupervised Learning</a></li><li class="depth-0"><a href="#self-supervised-and-contrastive-learning" data-for="self-supervised-and-contrastive-learning">Self-Supervised and Contrastive Learning</a></li><li class="depth-0"><a href="#reinforcement-learning-theory-and-algorithms" data-for="reinforcement-learning-theory-and-algorithms">Reinforcement Learning: Theory and Algorithms</a></li><li class="depth-0"><a href="#meta-learning-learning-to-learn" data-for="meta-learning-learning-to-learn">Meta-Learning: Learning to Learn</a></li><li class="depth-0"><a href="#continual-learning-and-catastrophic-forgetting" data-for="continual-learning-and-catastrophic-forgetting">Continual Learning and Catastrophic Forgetting</a></li><li class="depth-0"><a href="#curriculum-learning-and-federated-learning" data-for="curriculum-learning-and-federated-learning">Curriculum Learning and Federated Learning</a></li><li class="depth-0"><a href="#use-cases-and-major-families" data-for="use-cases-and-major-families">Use Cases and Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Algorithm-Layer" class="internal">Algorithm Layer</a></li><li><a href="../pages/Algorithmic-Framework" class="internal">Algorithmic Framework</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

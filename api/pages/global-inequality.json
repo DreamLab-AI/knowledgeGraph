@@ -10,6 +10,26 @@
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
+    },
+    {
+      "id": "urn:ngm:class:distributive-justice",
+      "label": "Distributive Justice"
+    },
+    {
+      "id": "urn:ngm:class:political-economy",
+      "label": "Political Economy"
+    },
+    {
+      "id": "urn:ngm:class:development-economics",
+      "label": "Development Economics"
+    },
+    {
+      "id": "urn:ngm:class:social-stratification",
+      "label": "Social Stratification"
+    },
+    {
+      "id": "urn:ngm:class:economic-inequality",
+      "label": "Economic Inequality"
     }
   ],
   "entityType": "Class",
@@ -36,6 +56,22 @@
       {
         "id": "urn:ngm:class:wealth-inequality",
         "label": "Wealth Inequality"
+      },
+      {
+        "id": "urn:ngm:class:compute-divide",
+        "label": "Compute Divide"
+      },
+      {
+        "id": "urn:ngm:class:gender-pay-gap",
+        "label": "Gender Pay Gap"
+      },
+      {
+        "id": "urn:ngm:class:intergenerational-mobility",
+        "label": "Intergenerational Mobility"
+      },
+      {
+        "id": "urn:ngm:class:labour-income-share",
+        "label": "Labour Income Share"
       }
     ],
     "requires": [
@@ -50,15 +86,72 @@
       {
         "id": "urn:ngm:class:world-inequality-database",
         "label": "World Inequality Database"
+      },
+      {
+        "id": "urn:ngm:class:distributional-data",
+        "label": "Distributional Data"
+      },
+      {
+        "id": "urn:ngm:class:household-survey-data",
+        "label": "Household Survey Data"
+      },
+      {
+        "id": "urn:ngm:class:corporate-tax-compliance-framework",
+        "label": "Tax Record Microdata"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:universal-basic-income",
         "label": "Universal Basic Income"
+      },
+      {
+        "id": "urn:ngm:class:policy-design",
+        "label": "Policy Design"
+      },
+      {
+        "id": "urn:ngm:class:redistributive-taxation",
+        "label": "Redistributive Taxation"
+      },
+      {
+        "id": "urn:ngm:class:social-protection",
+        "label": "Social Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure-investment",
+        "label": "Digital Infrastructure Investment"
+      },
+      {
+        "id": "urn:ngm:class:progressive-wealth-tax",
+        "label": "Progressive Wealth Tax"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "id": "urn:ngm:class:political-science",
+        "label": "Political Science"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:labour-economics",
+        "label": "Labour Economics"
+      },
+      {
+        "id": "urn:ngm:class:development-finance",
+        "label": "Development Finance"
+      },
+      {
+        "id": "urn:ngm:class:institutional-economics",
+        "label": "Institutional Economics"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:gini-coefficient",
@@ -67,9 +160,42 @@
       {
         "id": "urn:ngm:class:human-development-index",
         "label": "Human Development Index"
+      },
+      {
+        "id": "urn:ngm:class:palma-ratio",
+        "label": "Palma Ratio"
+      },
+      {
+        "id": "urn:ngm:class:atkinson-index",
+        "label": "Atkinson Index"
+      },
+      {
+        "id": "urn:ngm:class:top-income-shares",
+        "label": "Top Income Shares"
+      },
+      {
+        "id": "urn:ngm:class:s80-s20-ratio",
+        "label": "S80/S20 Ratio"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:trickle-down-economics",
+        "label": "Trickle-Down Economics"
+      },
+      {
+        "id": "urn:ngm:class:efficient-market-hypothesis",
+        "label": "Efficient Market Hypothesis"
+      },
+      {
+        "id": "urn:ngm:class:meritocracy-thesis",
+        "label": "Meritocracy Thesis"
+      },
+      {
+        "id": "urn:ngm:class:kuznets-curve-hypothesis",
+        "label": "Kuznets Curve Hypothesis"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:governance",
@@ -84,6 +210,26 @@
       {
         "id": "urn:ngm:class:world-inequality-database",
         "label": "World Inequality Database"
+      },
+      {
+        "id": "urn:ngm:class:ilo-weso",
+        "label": "ILO WESO"
+      },
+      {
+        "id": "urn:ngm:class:world-bank-findex",
+        "label": "World Bank Findex"
+      },
+      {
+        "id": "urn:ngm:class:oecd-income-distribution-database",
+        "label": "OECD Income Distribution Database"
+      },
+      {
+        "id": "urn:ngm:class:imf-article-iv-consultations",
+        "label": "IMF Article IV Consultations"
+      },
+      {
+        "id": "urn:ngm:class:human-development-index",
+        "label": "UNDP Human Development Index"
       }
     ],
     "supports": [
@@ -102,12 +248,36 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:global-digital-compact",
+        "label": "Global Digital Compact"
+      },
+      {
+        "id": "urn:ngm:class:climate-justice",
+        "label": "Climate Justice"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:sustainable-development-goals",
         "label": "United Nations Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "United Nations Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:oecd-guidelines-on-measuring-inequality",
+        "label": "OECD Guidelines on Measuring Inequality"
+      },
+      {
+        "id": "urn:ngm:class:world-bank-povcalnet-standards",
+        "label": "World Bank PovcalNet Standards"
+      },
+      {
+        "id": "urn:ngm:class:ilo-decent-work-agenda",
+        "label": "ILO Decent Work Agenda"
       }
     ],
     "partOf": [],
@@ -131,6 +301,30 @@
       {
         "id": "urn:ngm:class:financial-technology",
         "label": "Financial Technology"
+      },
+      {
+        "id": "urn:ngm:class:ai-labour-displacement",
+        "label": "AI Labour Displacement"
+      },
+      {
+        "id": "urn:ngm:class:austerity",
+        "label": "Austerity"
+      },
+      {
+        "id": "urn:ngm:class:financialisation",
+        "label": "Financialisation"
+      },
+      {
+        "id": "urn:ngm:class:migration",
+        "label": "Migration"
+      },
+      {
+        "id": "urn:ngm:class:social-mobility",
+        "label": "Social Mobility"
+      },
+      {
+        "id": "urn:ngm:class:poverty",
+        "label": "Poverty"
       }
     ]
   },
@@ -139,6 +333,66 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics",
+      "slug": "economics"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:behavioural-economics",
+      "label": "Behavioural Economics",
+      "slug": "behavioural-economics"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory",
+      "slug": "information-theory"
+    },
+    {
+      "id": "urn:ngm:class:institutional-economics",
+      "label": "Institutional Economics",
+      "slug": "institutional-economics"
+    },
+    {
+      "id": "urn:ngm:class:social-science",
+      "label": "Social Science",
+      "slug": "social-science"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "slug": "machine-learning-discipline"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -178,6 +432,10 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
@@ -188,9 +446,29 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:incentive-structures",
+        "label": "Incentive Structures"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
@@ -210,6 +488,258 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:antitrust-policy",
+        "label": "Antitrust Policy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:behavioural-science",
+        "label": "Behavioural Science"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:path-dependence",
+        "label": "Path Dependence"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:matching-theory",
+        "label": "Matching Theory"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:optimal-taxation",
+        "label": "Optimal Taxation"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:legal-reasoning",
+        "label": "Legal Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:pure-computer-science",
+        "label": "Pure Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:pure-engineering",
+        "label": "Pure Engineering"
+      },
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "id": "urn:ngm:class:expected-utility-theory",
+        "label": "Expected Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:rational-choice-theory",
+        "label": "Rational Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:neoclassical-economics",
+        "label": "Neoclassical Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-recommendation",
+        "label": "Algorithmic Recommendation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agent-based-models",
+        "label": "Agent-Based Models"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:complexity-modelling",
+        "label": "Complexity Modelling"
+      },
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      },
+      {
+        "id": "urn:ngm:class:empirical-io",
+        "label": "Empirical IO"
+      },
+      {
+        "id": "urn:ngm:class:general-equilibrium-models",
+        "label": "General Equilibrium Models"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      },
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      },
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      },
+      {
+        "id": "urn:ngm:class:hm-treasury",
+        "label": "UK HM Treasury"
+      },
+      {
+        "id": "urn:ngm:class:imf",
+        "label": "IMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd",
+        "label": "OECD"
+      },
+      {
+        "id": "urn:ngm:class:uk-competition-and-markets-authority",
+        "label": "UK Competition and Markets Authority"
+      },
+      {
+        "id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decision-science",
+        "label": "Decision Science"
       }
     ],
     "relatedTo": [
@@ -224,6 +754,26 @@
       {
         "id": "urn:ngm:class:ai-transparency-framework",
         "label": "Ai Transparency Framework"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
       }
     ]
   },

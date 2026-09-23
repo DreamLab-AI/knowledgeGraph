@@ -31,6 +31,10 @@
       {
         "id": "urn:ngm:class:backup-and-recovery",
         "label": "Backup and Recovery"
+      },
+      {
+        "id": "urn:ngm:class:backup",
+        "label": "Backup"
       }
     ],
     "dependsOn": [
@@ -95,14 +99,49 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing",
+      "slug": "cloud-computing"
+    },
+    {
+      "id": "urn:ngm:class:data-engineering",
+      "label": "Data Engineering",
+      "slug": "data-engineering"
+    },
+    {
       "id": "urn:ngm:class:data-layer",
       "label": "Data Layer",
       "slug": "data-layer"
     },
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
+      "id": "urn:ngm:class:information-systems",
+      "label": "Information Systems",
+      "slug": "information-systems"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:architectural-layer",
+      "label": "Architectural Layer",
+      "slug": "architectural-layer"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -110,9 +149,34 @@
       "slug": "infra-network-and-comms"
     },
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
+      "id": "urn:ngm:class:infrastructure-domain",
+      "label": "Infrastructure Domain",
+      "slug": "infrastructure-domain"
+    },
+    {
+      "id": "urn:ngm:class:software-layer",
+      "label": "Software Layer",
+      "slug": "software-layer"
+    },
+    {
+      "id": "urn:ngm:class:system-tier",
+      "label": "System Tier",
+      "slug": "system-tier"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture",
+      "slug": "software-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure",
+      "slug": "ai-infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -146,11 +210,15 @@
         "label": "IPFS"
       },
       {
-        "id": "urn:ngm:class:object-storage",
-        "label": "Object Storage"
+        "id": "urn:ngm:class:nvme",
+        "label": "NVMe"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:consistency-protocols",
+        "label": "Consistency Protocols"
+      },
       {
         "id": "urn:ngm:class:data-replication",
         "label": "Data Replication"
@@ -176,18 +244,18 @@
         "label": "Physical Layer"
       },
       {
-        "id": "urn:ngm:class:backup-and-recovery",
-        "label": "Backup Strategy"
-      },
-      {
-        "id": "urn:ngm:class:consensus-protocol",
-        "label": "Consensus Protocol"
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-networks",
+        "label": "Content Delivery Networks"
       },
       {
         "id": "urn:ngm:class:data-analytics",
@@ -212,13 +280,47 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:vector-search",
-        "label": "Vector Search"
+        "id": "urn:ngm:class:consensus-mechanisms",
+        "label": "Consensus Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Functions"
+      },
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:pki",
+        "label": "PKI"
+      },
+      {
+        "id": "urn:ngm:class:raid",
+        "label": "RAID"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:apache-hudi",
+        "label": "Apache Hudi"
+      },
       {
         "id": "urn:ngm:class:apache-iceberg",
         "label": "Apache Iceberg"
@@ -228,51 +330,99 @@
         "label": "CRDT"
       },
       {
+        "id": "urn:ngm:class:crdts",
+        "label": "CRDTs"
+      },
+      {
+        "id": "urn:ngm:class:crush-algorithm",
+        "label": "CRUSH Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:delta-lake",
+        "label": "Delta Lake"
+      },
+      {
         "id": "urn:ngm:class:hnsw-index",
         "label": "HNSW Index"
       },
       {
-        "id": "urn:ngm:class:posix",
-        "label": "POSIX"
-      },
-      {
-        "id": "urn:ngm:class:reed-solomon-codes",
-        "label": "Reed-Solomon Codes"
-      },
-      {
-        "id": "urn:ngm:class:s3-api",
-        "label": "S3 API"
-      },
-      {
-        "id": "urn:ngm:class:cqrs",
-        "label": "CQRS"
-      },
-      {
-        "id": "urn:ngm:class:event-sourcing",
-        "label": "Event Sourcing"
+        "id": "urn:ngm:class:nvme-of",
+        "label": "NVMe-oF"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:ephemeral-storage",
+        "label": "Ephemeral Storage"
+      },
+      {
+        "id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
+      },
+      {
+        "id": "urn:ngm:class:stateless-computing",
+        "label": "Stateless Computing"
+      },
+      {
+        "id": "urn:ngm:class:tape-storage",
+        "label": "Tape Storage"
+      },
+      {
+        "id": "urn:ngm:class:volatile-memory",
+        "label": "Volatile Memory"
+      },
+      {
+        "id": "urn:ngm:class:mainframe-computing",
+        "label": "Mainframe Computing"
+      },
+      {
+        "id": "urn:ngm:class:on-premises-computing",
+        "label": "On-Premises Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-operations",
+        "label": "Machine Learning Operations"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
         "id": "urn:ngm:class:architectural-layer",
         "label": "Architectural Layer"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:aes-256-encryption",
+        "label": "AES-256 Encryption"
+      },
       {
         "id": "urn:ngm:class:blake3",
         "label": "BLAKE3"
@@ -298,12 +448,8 @@
         "label": "SHA-256"
       },
       {
-        "id": "urn:ngm:class:bloom-filter",
-        "label": "Bloom Filter"
-      },
-      {
-        "id": "urn:ngm:class:graph-ql",
-        "label": "GraphQL"
+        "id": "urn:ngm:class:zstandard-compression",
+        "label": "Zstandard Compression"
       }
     ],
     "supports": [
@@ -342,32 +488,46 @@
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:cxl-consortium",
+        "label": "CXL Consortium"
+      },
+      {
         "id": "urn:ngm:class:ipld",
         "label": "W3C IPLD"
       },
       {
-        "id": "urn:ngm:class:ansi-sql",
-        "label": "ANSI SQL"
+        "id": "urn:ngm:class:iso-iec-27040",
+        "label": "ISO IEC 27040"
       },
       {
-        "id": "urn:ngm:class:celestia",
-        "label": "Celestia Specifications"
+        "id": "urn:ngm:class:nist-sp-800-111",
+        "label": "NIST SP 800-111"
       },
       {
-        "id": "urn:ngm:class:eip-4844",
-        "label": "EIP-4844"
+        "id": "urn:ngm:class:nvm-express-specification",
+        "label": "NVM Express Specification"
       },
       {
-        "id": "urn:ngm:class:iso-iec-9075",
-        "label": "ISO/IEC 9075"
+        "id": "urn:ngm:class:posix-ieee-1003-1",
+        "label": "POSIX IEEE 1003.1"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:snia",
+        "label": "SNIA"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:iso-iec-17788",
+        "label": "ISO/IEC 17788"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "relatedTo": [
@@ -384,6 +544,10 @@
         "label": "Data Mesh"
       },
       {
+        "id": "urn:ngm:class:finops",
+        "label": "FinOps"
+      },
+      {
         "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
       },
@@ -398,10 +562,6 @@
       {
         "id": "urn:ngm:class:terraform",
         "label": "Terraform"
-      },
-      {
-        "id": "urn:ngm:class:avail",
-        "label": "Avail"
       }
     ]
   },

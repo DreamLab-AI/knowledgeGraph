@@ -12,12 +12,24 @@
       "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
+      "id": "urn:ngm:class:actuator",
+      "label": "Actuator"
     },
     {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
+      "id": "urn:ngm:class:fluid-power-system",
+      "label": "Fluid Power System"
+    },
+    {
+      "id": "urn:ngm:class:mechanical-transducer",
+      "label": "Mechanical Transducer"
+    },
+    {
+      "id": "urn:ngm:class:motion-control-device",
+      "label": "Motion Control Device"
+    },
+    {
+      "id": "urn:ngm:class:force-control-system",
+      "label": "Force Control System"
     }
   ],
   "entityType": "Class",
@@ -48,6 +60,26 @@
       {
         "id": "urn:ngm:class:hydraulic-cylinder",
         "label": "Hydraulic Cylinder"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-pump",
+        "label": "Hydraulic Pump"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-accumulator",
+        "label": "Accumulator"
+      },
+      {
+        "id": "urn:ngm:class:pressure-relief-valve",
+        "label": "Pressure Relief Valve"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-reservoir",
+        "label": "Hydraulic Reservoir"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-manifold",
+        "label": "Hydraulic Manifold"
       }
     ],
     "requires": [
@@ -58,6 +90,34 @@
       {
         "id": "urn:ngm:class:servo-control",
         "label": "Servo Controller"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-power-unit",
+        "label": "Hydraulic Power Unit"
+      },
+      {
+        "id": "urn:ngm:class:pressurised-fluid-supply",
+        "label": "Pressurised Fluid Supply"
+      },
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Controller"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-fluid",
+        "label": "Hydraulic Fluid"
+      },
+      {
+        "id": "urn:ngm:class:seal-system",
+        "label": "Seal System"
+      },
+      {
+        "id": "urn:ngm:class:return-filter",
+        "label": "Return Filter"
+      },
+      {
+        "id": "urn:ngm:class:heat-exchanger",
+        "label": "Heat Exchanger"
       }
     ],
     "enables": [
@@ -84,9 +144,66 @@
       {
         "id": "urn:ngm:class:teleoperation",
         "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Robot Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Heavy Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:flight-simulation",
+        "label": "Flight Simulation"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton-actuation",
+        "label": "Exoskeleton Actuation"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Compliant Force Control"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "High-Force Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:deep-sea-robotics",
+        "label": "Deep-Sea Robotics"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:fluid-mechanics",
+        "label": "Fluid Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:tribology",
+        "label": "Tribology"
+      },
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      },
+      {
+        "id": "urn:ngm:class:bernoulli-equation",
+        "label": "Bernoulli Equation"
+      },
+      {
+        "id": "urn:ngm:class:bulk-modulus",
+        "label": "Bulk Modulus"
+      },
+      {
+        "id": "urn:ngm:class:pascal-law",
+        "label": "Pascal Law"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:position-control",
@@ -103,9 +220,54 @@
       {
         "id": "urn:ngm:class:series-elastic-actuation",
         "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:ngm:class:pascal-law-actuation",
+        "label": "Pascal Law Actuation"
+      },
+      {
+        "id": "urn:ngm:class:position-control",
+        "label": "Closed-Loop Position Control"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Force Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:electrohydrostatic-drive",
+        "label": "Electrohydrostatic Drive"
+      },
+      {
+        "id": "urn:ngm:class:proportional-control",
+        "label": "Proportional Flow Control"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:electric-bldc-actuator",
+        "label": "Electric BLDC Actuator"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:shape-memory-alloy-actuator",
+        "label": "Shape Memory Alloy Actuator"
+      },
+      {
+        "id": "urn:ngm:class:piezoelectric-actuator",
+        "label": "Piezoelectric Actuator"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:quasi-direct-drive-motor",
+        "label": "Quasi-Direct Drive Motor"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -127,15 +289,76 @@
       {
         "id": "urn:ngm:class:impedance-control",
         "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:servo-valve",
+        "label": "Electrohydraulic Servo Valve"
+      },
+      {
+        "id": "urn:ngm:class:linear-variable-differential-transformer",
+        "label": "Linear Variable Differential Transformer"
+      },
+      {
+        "id": "urn:ngm:class:differential-pressure-sensing",
+        "label": "Differential Pressure Sensing"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:legged-locomotion",
         "label": "Legged Locomotion Research"
+      },
+      {
+        "id": "urn:ngm:class:boston-dynamics-bigdog",
+        "label": "Boston Dynamics BigDog"
+      },
+      {
+        "id": "urn:ngm:class:boston-dynamics-atlas",
+        "label": "Boston Dynamics Atlas"
+      },
+      {
+        "id": "urn:ngm:class:iit-hyq-family",
+        "label": "IIT HyQ Family"
+      },
+      {
+        "id": "urn:ngm:class:sarcos-guardian-xo",
+        "label": "Sarcos Guardian XO"
+      },
+      {
+        "id": "urn:ngm:class:darpa-robotics-challenge",
+        "label": "DARPA Robotics Challenge"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion Research"
+      },
+      {
+        "id": "urn:ngm:class:nuclear-remote-handling",
+        "label": "Nuclear Remote Handling"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-4413-hydraulics-safety",
+        "label": "ISO 4413 Hydraulics Safety"
+      },
+      {
+        "id": "urn:ngm:class:nfpa-t3-fluid-power-standard",
+        "label": "NFPA T3 Fluid Power Standard"
+      },
+      {
+        "id": "urn:ngm:class:din-24346-hydraulic-components",
+        "label": "DIN 24346 Hydraulic Components"
+      },
+      {
+        "id": "urn:ngm:class:sae-j2048-hydraulic-systems",
+        "label": "SAE J2048 Hydraulic Systems"
+      },
+      {
+        "id": "urn:ngm:class:uk-hse-hsg244",
+        "label": "UK HSE HSG244"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -161,6 +384,14 @@
       {
         "id": "urn:ngm:class:humanoid-robot",
         "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:construction-robotics",
+        "label": "Construction Robotics"
+      },
+      {
+        "id": "urn:ngm:class:subsea-robotics",
+        "label": "Subsea Robotics"
       }
     ]
   },
@@ -169,6 +400,21 @@
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -208,19 +454,51 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:actuators",
-        "label": "Actuators"
-      },
-      {
         "id": "urn:ngm:class:control-system",
         "label": "Control System"
       },
       {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
       {
         "id": "urn:ngm:class:autonomous-manufacturing",
         "label": "Autonomous Manufacturing"
@@ -242,6 +520,96 @@
         "label": "Warehouse Automation"
       }
     ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loops"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Programmable Logic Controllers"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:passive-mechanism",
+        "label": "Passive Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transducer",
+        "label": "Transducer"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Intelligent Agents"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:encoder",
@@ -250,6 +618,92 @@
       {
         "id": "urn:ngm:class:servo-motor",
         "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical System"
+      },
+      {
+        "id": "urn:ngm:class:mechatronic-system",
+        "label": "Mechatronic System"
+      },
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
       }
     ],
     "relatedTo": [
@@ -264,6 +718,26 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
       }
     ]
   },

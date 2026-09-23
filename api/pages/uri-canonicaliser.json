@@ -28,6 +28,18 @@
       {
         "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:scope-bearer",
+        "label": "Scope Bearer"
+      },
+      {
+        "id": "urn:ngm:class:slug-derivation",
+        "label": "Slug Derivation"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Hash Computation"
       }
     ],
     "requires": [
@@ -42,6 +54,22 @@
       {
         "id": "urn:ngm:class:sha-256",
         "label": "SHA-256 Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256 Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-serialisation",
+        "label": "JSON Stringification"
+      },
+      {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340 Pubkey"
+      },
+      {
+        "id": "urn:ngm:class:uri-rfc-8141",
+        "label": "URI RFC 8141"
       }
     ],
     "enables": [
@@ -56,6 +84,10 @@
       {
         "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-resolution",
+        "label": "Decentralised Resolution"
       }
     ],
     "dependsOn": [],
@@ -63,10 +95,27 @@
       {
         "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:ngm:class:rfc-8141-urn-syntax",
+        "label": "RFC 8141 URN Syntax"
+      },
+      {
+        "id": "urn:ngm:class:ietf-content-addressable-architecture",
+        "label": "IETF Content-Addressable Architecture"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-hash-function",
+        "label": "Blockchain Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -88,12 +137,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:communication-protocol",
-        "label": "Communication Protocol"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -224,7 +273,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

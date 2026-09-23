@@ -10,6 +10,18 @@
     {
       "id": "urn:ngm:class:content-provenance",
       "label": "Content Provenance"
+    },
+    {
+      "id": "urn:ngm:class:information-hiding",
+      "label": "Information Hiding"
+    },
+    {
+      "id": "urn:ngm:class:media-security",
+      "label": "Media Security"
+    },
+    {
+      "id": "urn:ngm:class:digital-media-authentication",
+      "label": "Digital Media Authentication"
     }
   ],
   "entityType": "Class",
@@ -24,12 +36,52 @@
       {
         "id": "urn:ngm:class:imperceptibility",
         "label": "Imperceptibility"
+      },
+      {
+        "id": "urn:ngm:class:watermark-capacity",
+        "label": "Watermark Capacity"
+      },
+      {
+        "id": "urn:ngm:class:watermark-encoder",
+        "label": "Watermark Encoder"
+      },
+      {
+        "id": "urn:ngm:class:watermark-detector",
+        "label": "Watermark Detector"
+      },
+      {
+        "id": "urn:ngm:class:watermark-payload",
+        "label": "Watermark Payload"
+      },
+      {
+        "id": "urn:ngm:class:cover-medium",
+        "label": "Cover Medium"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:metadata",
         "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:cover-medium",
+        "label": "Cover Medium"
+      },
+      {
+        "id": "urn:ngm:class:statistical-signal-model",
+        "label": "Statistical Signal Model"
+      },
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correcting Code"
       }
     ],
     "enables": [
@@ -40,11 +92,106 @@
       {
         "id": "urn:ngm:class:copyright-protection",
         "label": "Copyright Protection"
+      },
+      {
+        "id": "urn:ngm:class:attribution",
+        "label": "Attribution"
+      },
+      {
+        "id": "urn:ngm:class:leak-tracing",
+        "label": "Leak Tracing"
+      },
+      {
+        "id": "urn:ngm:class:ai-origin-declaration",
+        "label": "AI Origin Declaration"
+      },
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "id": "urn:ngm:class:tamper-detection",
+        "label": "Tamper Detection"
+      },
+      {
+        "id": "urn:ngm:class:model-ownership-verification",
+        "label": "Model Ownership Verification"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:steganographic-embedding",
+        "label": "Steganographic Embedding"
+      },
+      {
+        "id": "urn:ngm:class:frequency-domain-encoding",
+        "label": "Frequency Domain Encoding"
+      },
+      {
+        "id": "urn:ngm:class:latent-space-perturbation",
+        "label": "Latent Space Perturbation"
+      },
+      {
+        "id": "urn:ngm:class:token-probability-biasing",
+        "label": "Token Probability Biasing"
+      },
+      {
+        "id": "urn:ngm:class:spread-spectrum-signalling",
+        "label": "Spread Spectrum Signalling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:visible-watermark",
+        "label": "Visible Watermark"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signing",
+        "label": "Cryptographic Signing"
+      },
+      {
+        "id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      },
+      {
+        "id": "urn:ngm:class:c2pa-manifest",
+        "label": "C2PA Manifest"
+      },
+      {
+        "id": "urn:ngm:class:fingerprinting",
+        "label": "Fingerprinting"
+      },
+      {
+        "id": "urn:ngm:class:perceptual-hashing",
+        "label": "Perceptual Hashing"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:c2-pa",
@@ -59,6 +206,30 @@
       {
         "id": "urn:ngm:class:steganography",
         "label": "Steganography"
+      },
+      {
+        "id": "urn:ngm:class:discrete-cosine-transform",
+        "label": "Discrete Cosine Transform"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correcting Code"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
       }
     ],
     "supports": [
@@ -69,9 +240,50 @@
       {
         "id": "urn:ngm:class:deepfake-detection",
         "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2-pa-standard",
+        "label": "C2PA Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-12639",
+        "label": "ISO 12639"
+      },
+      {
+        "id": "urn:ngm:class:jpeg-ai-working-group",
+        "label": "JPEG AI Working Group"
+      },
+      {
+        "id": "urn:ngm:class:nist-digital-media-forensics",
+        "label": "NIST Digital Media Forensics"
+      },
+      {
+        "id": "urn:ngm:class:ieee-wifs",
+        "label": "IEEE WIFS"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -85,6 +297,34 @@
       {
         "id": "urn:ngm:class:digital-rights-management",
         "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ]
   },
@@ -103,16 +343,6 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management (Infrastructure)",
-      "slug": "infra-data-management"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -138,19 +368,23 @@
         "label": "Provenance Recorder"
       },
       {
+        "id": "urn:ngm:class:signature-validator",
+        "label": "Signature Validator"
+      },
+      {
         "id": "urn:ngm:class:timestamp-service",
         "label": "Timestamp Service"
       },
       {
         "id": "urn:ngm:class:data-catalogue",
         "label": "Data Catalogue"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
@@ -158,10 +392,6 @@
       {
         "id": "urn:ngm:class:digital-signatures",
         "label": "Digital Signatures"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:audit-trail",
@@ -186,8 +416,16 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:disinformation-detection",
+        "label": "Disinformation Detection"
+      },
+      {
         "id": "urn:ngm:class:media-authentication",
         "label": "Media Authentication"
+      },
+      {
+        "id": "urn:ngm:class:trust-signals",
+        "label": "Trust Signals"
       },
       {
         "id": "urn:ngm:class:accountability",
@@ -208,14 +446,6 @@
       {
         "id": "urn:ngm:class:compliance-audit",
         "label": "Compliance Audit"
-      },
-      {
-        "id": "urn:ngm:class:provenance-verification",
-        "label": "Provenance Verification"
-      },
-      {
-        "id": "urn:ngm:class:data-analytics",
-        "label": "Data Analytics"
       }
     ],
     "dependsOn": [
@@ -226,11 +456,23 @@
       {
         "id": "urn:ngm:class:metadata",
         "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:event-logging",
+        "label": "Event Logging"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:w3-c-prov",
+        "id": "urn:ngm:class:provenance-standard",
         "label": "W3C PROV"
       }
     ],
@@ -248,8 +490,8 @@
         "label": "Anonymisation"
       },
       {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -266,6 +508,10 @@
         "label": "Generative AI"
       },
       {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
         "id": "urn:ngm:class:reproducibility",
         "label": "Scientific Reproducibility"
       },
@@ -276,17 +522,13 @@
       {
         "id": "urn:ngm:class:metaverse-technology",
         "label": "Metaverse Technology"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:hashing",
+        "label": "Hashing"
+      },
       {
         "id": "urn:ngm:class:metadata-standards",
         "label": "Metadata Standards"
@@ -308,14 +550,6 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:content-moderation",
-        "label": "Content Moderation"
-      },
-      {
-        "id": "urn:ngm:class:digital-rights-management",
-        "label": "Digital Rights Management"
       },
       {
         "id": "urn:ngm:class:open-data",
@@ -352,7 +586,7 @@
         "label": "PROV-O Ontology"
       },
       {
-        "id": "urn:ngm:class:w3-c-prov",
+        "id": "urn:ngm:class:provenance-standard",
         "label": "W3C PROV"
       },
       {
@@ -362,14 +596,6 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "partOf": [

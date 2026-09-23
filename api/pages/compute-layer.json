@@ -36,6 +36,14 @@
       {
         "id": "urn:ngm:class:simulation-engine",
         "label": "Simulation Engine"
+      },
+      {
+        "id": "urn:ngm:class:ai-processing-service",
+        "label": "AI Processing Service"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Orchestrator"
       }
     ],
     "requires": [
@@ -78,10 +86,28 @@
         "label": "Real-Time Rendering"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:resource-scheduler",
+        "label": "Resource Scheduler"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -221,7 +247,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

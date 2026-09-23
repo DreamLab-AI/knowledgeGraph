@@ -58,8 +58,16 @@
         "label": "Graph Traversal"
       },
       {
+        "id": "urn:ngm:class:graph-colouring",
+        "label": "Graph Colouring"
+      },
+      {
         "id": "urn:ngm:class:path-planning",
         "label": "Shortest Path"
+      },
+      {
+        "id": "urn:ngm:class:tree",
+        "label": "Tree"
       },
       {
         "id": "urn:ngm:class:ai-alignment",
@@ -76,14 +84,6 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
       }
     ],
     "requires": [
@@ -164,6 +164,26 @@
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-domain",
+        "label": "Distributed Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

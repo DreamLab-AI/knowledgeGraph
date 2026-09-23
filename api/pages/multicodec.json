@@ -34,6 +34,10 @@
       {
         "id": "urn:ngm:class:data-serialization",
         "label": "Data Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialisation"
       }
     ],
     "enables": [
@@ -113,14 +117,14 @@
       "slug": "content-addressing"
     },
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component (Blockchain)",
-      "slug": "bc-network-component"
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
     },
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
     }
   ],
   "inheritedRelations": {
@@ -184,12 +188,12 @@
         "label": "Deterministic Encoding"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
       }
     ],
     "enables": [
@@ -218,12 +222,12 @@
         "label": "Interoperability"
       },
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       },
       {
-        "id": "urn:ngm:class:deduplication",
-        "label": "Deduplication"
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
       }
     ],
     "implements": [
@@ -234,6 +238,10 @@
       {
         "id": "urn:ngm:class:content-addressed-storage",
         "label": "Content-Addressed Storage Principles"
+      },
+      {
+        "id": "urn:ngm:class:git-object-addressing",
+        "label": "Git Object Addressing"
       },
       {
         "id": "urn:ngm:class:ipfs-content-addressing",
@@ -256,8 +264,28 @@
         "label": "Governance"
       },
       {
+        "id": "urn:ngm:class:blockchain-hash-functions",
+        "label": "Blockchain Hash Functions"
+      },
+      {
         "id": "urn:ngm:class:data-layer",
         "label": "Data Layer"
+      },
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -298,6 +326,14 @@
       {
         "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ],
     "relatedTo": [
@@ -326,12 +362,8 @@
         "label": "Interoperability"
       },
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
       }
     ]
   },

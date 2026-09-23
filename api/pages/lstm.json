@@ -20,6 +20,18 @@
       {
         "id": "urn:ngm:class:cell-state",
         "label": "Cell State"
+      },
+      {
+        "id": "urn:ngm:class:forget-gate",
+        "label": "Forget Gate"
+      },
+      {
+        "id": "urn:ngm:class:input-gate",
+        "label": "Input Gate"
+      },
+      {
+        "id": "urn:ngm:class:output-gate",
+        "label": "Output Gate"
       }
     ],
     "requires": [
@@ -48,6 +60,14 @@
       {
         "id": "urn:ngm:class:time-series-forecasting",
         "label": "Time Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:language-modelling",
+        "label": "Language Modelling"
+      },
+      {
+        "id": "urn:ngm:class:handwriting-recognition",
+        "label": "Handwriting Recognition"
       }
     ],
     "dependsOn": [],
@@ -60,6 +80,10 @@
       {
         "id": "urn:ngm:class:gated-recurrent-unit",
         "label": "Gated Recurrent Unit"
+      },
+      {
+        "id": "urn:ngm:class:vanilla-rnn",
+        "label": "Vanilla RNN"
       }
     ],
     "bridgesTo": [
@@ -76,6 +100,18 @@
       {
         "id": "urn:ngm:class:dropout",
         "label": "Dropout Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:sigmoid-activation",
+        "label": "Sigmoid Activation"
+      },
+      {
+        "id": "urn:ngm:class:tanh-activation",
+        "label": "Tanh Activation"
+      },
+      {
+        "id": "urn:ngm:class:dropout",
+        "label": "Dropout Regularisation"
       }
     ],
     "supports": [],
@@ -84,6 +120,10 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:sequence-modelling",
+        "label": "Sequence Modelling"
       }
     ],
     "relatedTo": [
@@ -102,6 +142,10 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder"
       }
     ]
   },
@@ -240,6 +284,22 @@
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

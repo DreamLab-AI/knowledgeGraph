@@ -26,7 +26,7 @@
         "label": "Software-Defined Networking"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
+        "id": "urn:ngm:class:cdn",
         "label": "Content Delivery Network"
       },
       {
@@ -110,6 +110,10 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       }
     ],
     "standardizedBy": [
@@ -124,6 +128,10 @@
       {
         "id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802 Standards"
       }
     ],
     "partOf": [
@@ -271,7 +279,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

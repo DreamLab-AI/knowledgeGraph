@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:real-time-streaming",
         "label": "Real-Time Streaming"
+      },
+      {
+        "id": "urn:ngm:class:event-subscription",
+        "label": "Event Subscription"
+      },
+      {
+        "id": "urn:ngm:class:event-filtering",
+        "label": "Event Filtering"
+      },
+      {
+        "id": "urn:ngm:class:event-indexing",
+        "label": "Event Indexing"
       }
     ],
     "requires": [
@@ -34,6 +46,18 @@
       {
         "id": "urn:ngm:class:web-socket",
         "label": "WebSocket Support"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket Support"
+      },
+      {
+        "id": "urn:ngm:class:activitystreams-vocabulary",
+        "label": "ActivityStreams Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:event-schemas",
+        "label": "Event Schemas"
       }
     ],
     "enables": [
@@ -44,6 +68,18 @@
       {
         "id": "urn:ngm:class:real-time-monitoring",
         "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:fleet-observability",
+        "label": "Fleet Observability"
+      },
+      {
+        "id": "urn:ngm:class:work-tracking",
+        "label": "Work Tracking"
+      },
+      {
+        "id": "urn:ngm:class:automated-alerting",
+        "label": "Automated Alerting"
       }
     ],
     "dependsOn": [],
@@ -51,10 +87,31 @@
       {
         "id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
+      },
+      {
+        "id": "urn:ngm:class:activitystreams-2-0",
+        "label": "ActivityStreams 2.0"
+      },
+      {
+        "id": "urn:ngm:class:w3c-event-streams",
+        "label": "W3C Event Streams"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "id": "urn:ngm:class:orchestration-system",
+        "label": "Orchestration System"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics-platform",
+        "label": "Data Analytics Platform"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -105,12 +162,12 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
       }
     ],
     "requires": [
@@ -333,7 +390,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {

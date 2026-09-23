@@ -29,11 +29,15 @@
       {
         "id": "urn:ngm:class:data-labelling",
         "label": "Data Labelling"
+      },
+      {
+        "id": "urn:ngm:class:real-time-data-pipelines",
+        "label": "Real-Time Data Pipelines"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:anti-money-laundering",
+        "id": "urn:ngm:class:aml",
         "label": "Anti-Money Laundering"
       },
       {
@@ -64,6 +68,10 @@
       {
         "id": "urn:ngm:class:threat-intelligence",
         "label": "Threat Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection-systems",
+        "label": "Intrusion Detection Systems"
       }
     ],
     "bridgesTo": [
@@ -96,6 +104,22 @@
       {
         "id": "urn:ngm:class:stream-processing",
         "label": "Data Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-biometrics",
+        "label": "Behavioural Biometrics"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Data Stream Processing"
       }
     ],
     "supports": [],
@@ -111,7 +135,7 @@
         "label": "Digital Identity"
       },
       {
-        "id": "urn:ngm:class:know-your-customer",
+        "id": "urn:ngm:class:kyc",
         "label": "Know Your Customer"
       },
       {
@@ -212,8 +236,8 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
       }
     ],
     "enables": [
@@ -224,6 +248,10 @@
       {
         "id": "urn:ngm:class:intrusion-detection-system",
         "label": "Intrusion Detection System"
+      },
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
       },
       {
         "id": "urn:ngm:class:predictive-maintenance",
@@ -244,10 +272,6 @@
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
-      },
-      {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [
@@ -260,12 +284,62 @@
         "label": "Feature Engineering"
       },
       {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
       },
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dbscan",
+        "label": "DBSCAN"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
+      },
+      {
+        "id": "urn:ngm:class:isolation-forest",
+        "label": "Isolation Forest"
+      },
+      {
+        "id": "urn:ngm:class:local-outlier-factor",
+        "label": "Local Outlier Factor"
+      },
+      {
+        "id": "urn:ngm:class:one-class-svm",
+        "label": "One-Class SVM"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "contrastsWith": [
@@ -280,6 +354,10 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -292,6 +370,22 @@
         "label": "IoT Sensor Data"
       },
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
@@ -302,6 +396,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
         "id": "urn:ngm:class:autoencoder",
         "label": "Autoencoder"
       },
@@ -310,27 +408,35 @@
         "label": "Deep Learning"
       },
       {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
         "id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
       },
       {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
-      },
-      {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
-      },
-      {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:shap",
+        "label": "SHAP Values"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "IoT Sensor Data"
+      },
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
@@ -338,6 +444,28 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       }
     ],
     "relatedTo": [
@@ -350,6 +478,10 @@
         "label": "Concept Drift"
       },
       {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
         "id": "urn:ngm:class:model-monitoring",
         "label": "Model Monitoring"
       },
@@ -358,20 +490,16 @@
         "label": "Outlier Detection"
       },
       {
+        "id": "urn:ngm:class:time-series",
+        "label": "Time Series"
+      },
+      {
         "id": "urn:ngm:class:time-series-forecasting",
         "label": "Time Series Forecasting"
       },
       {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
       }
     ]
   },

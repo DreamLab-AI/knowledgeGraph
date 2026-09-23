@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
+    },
+    {
+      "id": "urn:ngm:class:natural-language-understanding",
+      "label": "Natural Language Understanding"
     }
   ],
   "entityType": "Class",
@@ -32,6 +36,10 @@
       {
         "id": "urn:ngm:class:anaphora-resolution",
         "label": "Anaphora Resolution"
+      },
+      {
+        "id": "urn:ngm:class:span-representation",
+        "label": "Span Representation"
       }
     ],
     "requires": [
@@ -50,6 +58,10 @@
       {
         "id": "urn:ngm:class:span-representation",
         "label": "Span Representation"
+      },
+      {
+        "id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
       }
     ],
     "enables": [
@@ -72,10 +84,40 @@
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:entity-tracking",
+        "label": "Entity Tracking"
+      },
+      {
+        "id": "urn:ngm:class:discourse-coherence",
+        "label": "Discourse Coherence"
+      },
+      {
+        "id": "urn:ngm:class:anaphora-resolution",
+        "label": "Anaphora Resolution"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:named-entity-recognition",
@@ -107,6 +149,10 @@
       {
         "id": "urn:ngm:class:word-embeddings",
         "label": "Word Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:part-of-speech-tagging",
+        "label": "Part-of-Speech Tagging"
       }
     ],
     "supports": [
@@ -125,9 +171,18 @@
       {
         "id": "urn:ngm:class:slot-filling",
         "label": "Slot Filling"
+      },
+      {
+        "id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:conll-2012-shared-task",
+        "label": "CoNLL-2012 Shared Task"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:natural-language-understanding",
@@ -154,6 +209,18 @@
       {
         "id": "urn:ngm:class:part-of-speech-tagging",
         "label": "Part-of-Speech Tagging"
+      },
+      {
+        "id": "urn:ngm:class:dependency-parsing",
+        "label": "Dependency Parsing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
       }
     ]
   },
@@ -184,24 +251,24 @@
         "label": "Text Classification"
       },
       {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      },
+      {
+        "id": "urn:ngm:class:semantic-role-labelling",
+        "label": "Semantic Role Labelling"
+      },
+      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
       }
     ],
     "requires": [
@@ -216,6 +283,10 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:syntactic-parsing",
+        "label": "Syntactic Parsing"
       },
       {
         "id": "urn:ngm:class:computational-infrastructure",
@@ -244,20 +315,20 @@
         "label": "Text Generation"
       },
       {
+        "id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
       },
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
-      },
-      {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
       }
     ],
     "dependsOn": [
@@ -278,6 +349,10 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
       }
     ],
     "bridgesTo": [
@@ -288,6 +363,26 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -302,12 +397,46 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computational-linguistics",
+        "label": "Computational Linguistics"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:machine-translation",
         "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       },
       {
         "id": "urn:ngm:class:ai-governance",

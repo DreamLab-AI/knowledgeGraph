@@ -49,9 +49,59 @@
       "slug": "ai-governance-and-ethics"
     },
     {
+      "id": "urn:ngm:class:digital-transformation",
+      "label": "Digital Transformation",
+      "slug": "digital-transformation"
+    },
+    {
+      "id": "urn:ngm:class:innovation-diffusion",
+      "label": "Innovation Diffusion",
+      "slug": "innovation-diffusion"
+    },
+    {
+      "id": "urn:ngm:class:organisational-change",
+      "label": "Organisational Change",
+      "slug": "organisational-change"
+    },
+    {
+      "id": "urn:ngm:class:socio-technical-process",
+      "label": "Socio-Technical Process",
+      "slug": "socio-technical-process"
+    },
+    {
+      "id": "urn:ngm:class:technology-adoption",
+      "label": "Technology Adoption",
+      "slug": "technology-adoption"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:organizational-change",
+      "label": "Organizational Change",
+      "slug": "organizational-change"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -61,32 +111,32 @@
         "label": "AI Governance Framework"
       },
       {
+        "id": "urn:ngm:class:ai-strategy",
+        "label": "AI Strategy"
+      },
+      {
         "id": "urn:ngm:class:ai-talent",
         "label": "AI Talent Capacity"
+      },
+      {
+        "id": "urn:ngm:class:ai-use-case-portfolio",
+        "label": "AI Use Case Portfolio"
+      },
+      {
+        "id": "urn:ngm:class:ai-vendor-stack",
+        "label": "AI Vendor Stack"
       },
       {
         "id": "urn:ngm:class:change-management",
         "label": "Change Management Programme"
       },
       {
+        "id": "urn:ngm:class:data-foundation",
+        "label": "Data Foundation"
+      },
+      {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:ai-fairness",
-        "label": "AI Fairness"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
       }
     ],
     "requires": [
@@ -119,38 +169,76 @@
         "label": "Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:cost-reduction",
+        "label": "Cost Reduction"
+      },
+      {
         "id": "urn:ngm:class:customer-experience",
         "label": "Customer Experience Enhancement"
+      },
+      {
+        "id": "urn:ngm:class:decision-augmentation",
+        "label": "Decision Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:innovation-velocity",
+        "label": "Innovation Velocity"
       },
       {
         "id": "urn:ngm:class:process-automation",
         "label": "Process Automation"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:productivity-improvement",
+        "label": "Productivity Improvement"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:revenue-growth",
+        "label": "Revenue Growth"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:business-innovation",
+        "label": "Business Innovation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:foundation-model-availability",
+        "label": "Foundation Model Availability"
+      },
+      {
+        "id": "urn:ngm:class:investor-capital",
+        "label": "Investor Capital"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-clarity",
+        "label": "Regulatory Clarity"
+      },
+      {
+        "id": "urn:ngm:class:skilled-workforce",
+        "label": "Skilled Workforce"
+      },
+      {
+        "id": "urn:ngm:class:ecosystem-maturity",
+        "label": "Ecosystem Maturity"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ],
     "implements": [
@@ -163,6 +251,10 @@
         "label": "Organisational Learning"
       },
       {
+        "id": "urn:ngm:class:stage-gate-adoption-process",
+        "label": "Stage-Gate Adoption Process"
+      },
+      {
         "id": "urn:ngm:class:technology-acceptance-model",
         "label": "Technology Acceptance Model"
       },
@@ -171,10 +263,72 @@
         "label": "TOE Framework"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-rejection",
+        "label": "AI Rejection"
+      },
+      {
+        "id": "urn:ngm:class:build-internally-only-posture",
+        "label": "Build-Internally-Only Posture"
+      },
+      {
+        "id": "urn:ngm:class:manual-operation",
+        "label": "Manual Operation"
+      },
+      {
+        "id": "urn:ngm:class:outsourcing-strategy",
+        "label": "Outsourcing Strategy"
+      },
+      {
+        "id": "urn:ngm:class:pre-ai-digital-transformation",
+        "label": "Pre-AI Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:organizational-change",
         "label": "Organizational Change"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -223,6 +377,26 @@
       {
         "id": "urn:ngm:class:national-competitiveness",
         "label": "National Competitiveness"
+      },
+      {
+        "id": "urn:ngm:class:sectoral-productivity",
+        "label": "Sectoral Productivity"
+      },
+      {
+        "id": "urn:ngm:class:workforce-transformation",
+        "label": "Workforce Transformation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
       }
     ],
     "standardizedBy": [
@@ -245,12 +419,28 @@
       {
         "id": "urn:ngm:class:uk-ai-opportunities-action-plan",
         "label": "UK AI Opportunities Action Plan"
+      },
+      {
+        "id": "urn:ngm:class:us-ai-action-plan-2025",
+        "label": "US AI Action Plan 2025"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-investment",
         "label": "AI Investment Cycle"
+      },
+      {
+        "id": "urn:ngm:class:ai-productivity-paradox",
+        "label": "AI Productivity Paradox"
       },
       {
         "id": "urn:ngm:class:ai-regulation",
@@ -275,10 +465,6 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-framework",
-        "label": "AI Governance Framework"
       }
     ]
   },

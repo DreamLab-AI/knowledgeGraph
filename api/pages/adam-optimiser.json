@@ -32,6 +32,30 @@
       {
         "id": "urn:ngm:class:bias-correction",
         "label": "Bias Correction"
+      },
+      {
+        "id": "urn:ngm:class:gradient-clipping",
+        "label": "Gradient Clipping"
+      },
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "AdamW"
+      },
+      {
+        "id": "urn:ngm:class:adafactor",
+        "label": "AdaFactor"
+      },
+      {
+        "id": "urn:ngm:class:amsgrad",
+        "label": "AMSGrad"
+      },
+      {
+        "id": "urn:ngm:class:lion-optimiser",
+        "label": "Lion Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:muon-optimiser",
+        "label": "Muon Optimiser"
       }
     ],
     "requires": [
@@ -76,9 +100,26 @@
       {
         "id": "urn:ngm:class:convergence",
         "label": "Convergence"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:numerical-stability",
+        "label": "Numerical Stability"
+      },
+      {
+        "id": "urn:ngm:class:gradient-accumulation",
+        "label": "Gradient Accumulation"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:adaptive-learning-rate",
@@ -87,6 +128,10 @@
       {
         "id": "urn:ngm:class:momentum-optimisation",
         "label": "Momentum Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
       }
     ],
     "contrastsWith": [
@@ -109,6 +154,10 @@
       {
         "id": "urn:ngm:class:muon-optimiser",
         "label": "Muon Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:amsgrad",
+        "label": "AMSGrad"
       }
     ],
     "bridgesTo": [
@@ -123,6 +172,14 @@
       {
         "id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient Methods"
+      },
+      {
+        "id": "urn:ngm:class:scientific-machine-learning",
+        "label": "Scientific Machine Learning"
       }
     ],
     "uses": [
@@ -133,10 +190,48 @@
       {
         "id": "urn:ngm:class:gradient-clipping",
         "label": "Gradient Clipping"
+      },
+      {
+        "id": "urn:ngm:class:exponential-moving-average",
+        "label": "Exponential Moving Average"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "id": "urn:ngm:class:tensor-flow",
+        "label": "TensorFlow"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -156,7 +251,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:adamw",
+        "id": "urn:ngm:class:adam-optimiser",
         "label": "AdamW"
       },
       {
@@ -166,6 +261,22 @@
       {
         "id": "urn:ngm:class:amsgrad",
         "label": "AMSGrad"
+      },
+      {
+        "id": "urn:ngm:class:vanishing-gradient-problem",
+        "label": "Vanishing Gradient Problem"
+      },
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
       }
     ]
   },
@@ -262,7 +373,7 @@
         "label": "Neural Network Training"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {
@@ -344,6 +455,22 @@
       {
         "id": "urn:ngm:class:operations-research",
         "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -392,10 +519,6 @@
         "label": "Convergence"
       },
       {
-        "id": "urn:ngm:class:generalisation",
-        "label": "Generalisation"
-      },
-      {
         "id": "urn:ngm:class:genetic-algorithm",
         "label": "Genetic Algorithm"
       },
@@ -406,6 +529,10 @@
       {
         "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
       }
     ]
   },

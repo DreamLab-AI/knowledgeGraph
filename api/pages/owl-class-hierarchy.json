@@ -16,7 +16,24 @@
   "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:owl-class",
+        "label": "OWL Class"
+      },
+      {
+        "id": "urn:ngm:class:subclass-axiom",
+        "label": "SubClass Axiom"
+      },
+      {
+        "id": "urn:ngm:class:equivalent-class-axiom",
+        "label": "Equivalent Class Axiom"
+      },
+      {
+        "id": "urn:ngm:class:disjoint-classes-axiom",
+        "label": "Disjoint Classes Axiom"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:description-logic",
@@ -43,6 +60,14 @@
       {
         "id": "urn:ngm:class:consistency-checking",
         "label": "Consistency Checking"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Ontology Classification"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Knowledge Inference"
       }
     ],
     "dependsOn": [
@@ -63,21 +88,53 @@
       {
         "id": "urn:ngm:class:description-logic",
         "label": "SHOIQ Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "W3C OWL Standard"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "SHOIQ Description Logic"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:closed-world-assumption",
         "label": "Closed World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:rdf-type-hierarchy",
+        "label": "RDF Type Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:property-hierarchy",
+        "label": "Property Hierarchy"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:upper-ontology",
         "label": "Upper Ontology"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-taxonomy",
+        "label": "Machine Learning Taxonomy"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle Syntax"
+      },
+      {
+        "id": "urn:ngm:class:rdfs-subclassof",
+        "label": "rdfs:subClassOf"
+      },
+      {
+        "id": "urn:ngm:class:manchester-syntax",
+        "label": "Manchester Syntax"
+      },
       {
         "id": "urn:ngm:class:turtle",
         "label": "Turtle Syntax"
@@ -95,6 +152,10 @@
       {
         "id": "urn:ngm:class:ontology-alignment",
         "label": "Ontology Alignment"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
       }
     ],
     "standardizedBy": [
@@ -107,12 +168,28 @@
       {
         "id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "OWL Ontology"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL Ontology"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:biomedical-ontology",
         "label": "Biomedical Ontology"
+      },
+      {
+        "id": "urn:ngm:class:hermit-reasoner",
+        "label": "HermiT Reasoner"
+      },
+      {
+        "id": "urn:ngm:class:pellet-reasoner",
+        "label": "Pellet Reasoner"
+      },
+      {
+        "id": "urn:ngm:class:protege",
+        "label": "Protege"
       }
     ]
   },
@@ -126,6 +203,21 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -179,6 +271,22 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -205,12 +313,24 @@
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -219,12 +339,32 @@
         "label": "3D Reconstruction"
       },
       {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
       },
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -261,6 +401,16 @@
         "label": "Head-Mounted Display"
       }
     ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:3-d-asset-standard",
@@ -285,8 +435,28 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:universal-scene-description",
+        "id": "urn:ngm:class:usd",
         "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
       }
     ]
   },

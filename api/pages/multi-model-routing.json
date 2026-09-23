@@ -423,16 +423,16 @@
         "label": "Microservices Architecture"
       },
       {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
         "id": "urn:ngm:class:security-architecture",
         "label": "Security Architecture"
       },
       {
         "id": "urn:ngm:class:domain-driven-design",
         "label": "Domain-Driven Design"
-      },
-      {
-        "id": "urn:ngm:class:technical-debt",
-        "label": "Technical Debt"
       }
     ]
   },

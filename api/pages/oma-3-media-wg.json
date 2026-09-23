@@ -32,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -75,6 +80,10 @@
         "label": "Conformance Test Suite"
       },
       {
+        "id": "urn:ngm:class:technical-working-group",
+        "label": "Technical Working Group"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
@@ -85,10 +94,6 @@
       {
         "id": "urn:ngm:class:data-protection-regulation",
         "label": "Data Protection Regulation"
-      },
-      {
-        "id": "urn:ngm:class:gdpr-compliance",
-        "label": "GDPR Compliance"
       }
     ],
     "requires": [
@@ -293,6 +298,10 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
       },
       {
         "id": "urn:ngm:class:regulatory-framework",

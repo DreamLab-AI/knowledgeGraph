@@ -38,7 +38,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -118,6 +118,14 @@
         "label": "Computation Graph"
       },
       {
+        "id": "urn:ngm:class:eigenvalue",
+        "label": "Eigenvalue"
+      },
+      {
+        "id": "urn:ngm:class:matrix",
+        "label": "Matrix"
+      },
+      {
         "id": "urn:ngm:class:singular-value-decomposition",
         "label": "Singular Value Decomposition"
       },
@@ -126,24 +134,16 @@
         "label": "Tensor"
       },
       {
+        "id": "urn:ngm:class:vector-space",
+        "label": "Vector Space"
+      },
+      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
       },
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
       }
     ],
     "requires": [
@@ -186,12 +186,12 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:dimensionality-reduction",
-        "label": "Dimensionality Reduction"
+        "id": "urn:ngm:class:computer-vision-domain",
+        "label": "Computer Vision Domain"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -234,6 +234,22 @@
       {
         "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [

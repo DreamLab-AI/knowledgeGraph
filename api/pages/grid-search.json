@@ -34,7 +34,7 @@
         "label": "Search Space"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -106,6 +106,11 @@
       "slug": "hyperparameter"
     },
     {
+      "id": "urn:ngm:class:bayesian-inference",
+      "label": "Bayesian Inference",
+      "slug": "bayesian-inference"
+    },
+    {
       "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning Discipline",
       "slug": "machine-learning-discipline"
@@ -131,6 +136,11 @@
       "slug": "artificial-intelligence-core"
     },
     {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model",
+      "slug": "generative-model"
+    },
+    {
       "id": "urn:ngm:class:mathematical-foundations",
       "label": "Mathematical Foundations",
       "slug": "mathematical-foundations"
@@ -141,6 +151,26 @@
       "slug": "neural-network"
     },
     {
+      "id": "urn:ngm:class:probabilistic-inference",
+      "label": "Probabilistic Inference",
+      "slug": "probabilistic-inference"
+    },
+    {
+      "id": "urn:ngm:class:statistical-inference",
+      "label": "Statistical Inference",
+      "slug": "statistical-inference"
+    },
+    {
+      "id": "urn:ngm:class:statistical-learning-theory",
+      "label": "Statistical Learning Theory",
+      "slug": "statistical-learning-theory"
+    },
+    {
+      "id": "urn:ngm:class:uncertainty-quantification",
+      "label": "Uncertainty Quantification",
+      "slug": "uncertainty-quantification"
+    },
+    {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture",
       "slug": "ai-model-architecture"
@@ -149,6 +179,21 @@
       "id": "urn:ngm:class:mathematical-science",
       "label": "Mathematical Science",
       "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics",
+      "slug": "statistics"
+    },
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory",
+      "slug": "probability-theory"
+    },
+    {
+      "id": "urn:ngm:class:measure-theory",
+      "label": "Measure Theory",
+      "slug": "measure-theory"
     }
   ],
   "inheritedRelations": {
@@ -212,12 +257,12 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:kernel-function",
-        "label": "Kernel Function"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
-        "id": "urn:ngm:class:probabilistic-inference",
-        "label": "Probabilistic Inference"
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
       }
     ],
     "enables": [
@@ -226,7 +271,7 @@
         "label": "AutoML"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {
@@ -264,54 +309,62 @@
         "label": "Machine Learning Framework"
       },
       {
-        "id": "urn:ngm:class:loss-function",
-        "label": "Loss Function"
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
       },
       {
-        "id": "urn:ngm:class:training-dataset",
-        "label": "Training Dataset"
+        "id": "urn:ngm:class:gaussian-process-regression",
+        "label": "Gaussian Process Regression"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
+        "id": "urn:ngm:class:kernel-function",
+        "label": "Kernel Function"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:marginal-likelihood",
+        "label": "Marginal Likelihood"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      },
+      {
+        "id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
       }
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      },
+      {
+        "id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration-Exploitation Trade-off"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
         "id": "urn:ngm:class:bayes-theorem",
-        "label": "Bayes Theorem"
+        "label": "Bayes' Theorem"
       },
       {
-        "id": "urn:ngm:class:evidence-lower-bound",
-        "label": "Evidence Lower Bound"
+        "id": "urn:ngm:class:posterior-approximation",
+        "label": "Posterior Approximation"
       },
       {
-        "id": "urn:ngm:class:expectation-maximisation",
-        "label": "Expectation Maximisation"
-      },
-      {
-        "id": "urn:ngm:class:hamiltonian-monte-carlo",
-        "label": "Hamiltonian Monte Carlo"
-      },
-      {
-        "id": "urn:ngm:class:markov-chain-monte-carlo",
-        "label": "Markov Chain Monte Carlo"
-      },
-      {
-        "id": "urn:ngm:class:message-passing",
-        "label": "Message Passing"
-      },
-      {
-        "id": "urn:ngm:class:score-matching",
-        "label": "Score Matching"
-      },
-      {
-        "id": "urn:ngm:class:variational-inference",
-        "label": "Variational Inference"
+        "id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
       }
     ],
     "contrastsWith": [
@@ -332,20 +385,20 @@
         "label": "Model Parameter"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:satisfiability",
-        "label": "Satisfiability"
+        "id": "urn:ngm:class:frequentist-statistics",
+        "label": "Frequentist Statistics"
       },
       {
-        "id": "urn:ngm:class:decision-tree",
-        "label": "Decision Tree"
+        "id": "urn:ngm:class:maximum-a-posteriori-estimation",
+        "label": "Maximum A Posteriori Estimation"
       },
       {
-        "id": "urn:ngm:class:support-vector-machine",
-        "label": "Support Vector Machine"
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
       }
     ],
     "bridgesTo": [
@@ -358,28 +411,28 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:experimental-design",
-        "label": "Experimental Design"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:self-driving-laboratory",
-        "label": "Self-Driving Laboratory"
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:meta-learning",
-        "label": "Meta-Learning"
+        "id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
       },
       {
-        "id": "urn:ngm:class:transfer-learning",
-        "label": "Transfer Learning"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "uses": [
@@ -426,6 +479,10 @@
         "label": "Model Evaluation"
       },
       {
+        "id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
@@ -434,32 +491,68 @@
         "label": "Drug Discovery"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:material-science",
         "label": "Materials Science"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:auto-ml",
-        "label": "AutoML"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:hpobench",
+        "label": "HPOBench"
+      },
+      {
+        "id": "urn:ngm:class:neurips-black-box-optimisation-competition",
+        "label": "NeurIPS Black-Box Optimisation Competition"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:aistats",
+        "label": "AISTATS"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-analysis-journal",
+        "label": "Bayesian Analysis Journal"
+      },
+      {
         "id": "urn:ngm:class:journal-of-machine-learning-research",
         "label": "Journal of Machine Learning Research"
+      },
+      {
+        "id": "urn:ngm:class:journal-of-the-american-statistical-association",
+        "label": "Journal of the American Statistical Association"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:model-configuration",
         "label": "Model Configuration"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       }
     ],
     "relatedTo": [

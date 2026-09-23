@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Data Breach</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Data Breach"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Data Breach"/><meta name="twitter:description" content="A Data Breach is a security incident in which sensitive, protected, or confidential data is accessed, disclosed, copied, transmitted, or destroyed by an unauthorised actor, whether through external attack, insider threat, or accidental exposure."/><meta property="og:description" content="A Data Breach is a security incident in which sensitive, protected, or confidential data is accessed, disclosed, copied, transmitted, or destroyed by an unauthorised actor, whether through external attack, insider threat, or accidental exposure."/><meta property="og:image:alt" content="A Data Breach is a security incident in which sensitive, protected, or confidential data is accessed, disclosed, copied, transmitted, or destroyed by an unauthorised actor, whether through external attack, insider threat, or accidental exposure."/><meta property="og:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com"/><meta property="og:url" content="https://narrativegoldmine.com/pages/Data-Breach"/><meta property="twitter:url" content="https://narrativegoldmine.com/pages/Data-Breach"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="A Data Breach is a security incident in which sensitive, protected, or confidential data is accessed, disclosed, copied, transmitted, or destroyed by an unauthorised actor, whether through external attack, insider threat, or accidental exposure."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/index.xml"/></head><body data-slug="pages/Data-Breach"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-2138"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-2138" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Data Breach</a></div></nav><h1 class="article-title">Data Breach</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T07:49:03.599Z">23 Sept 2026</time><span>19 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:data-breach</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.9</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Governance-and-Ethics" class="internal">AI Governance and Ethics</a></li><li><a href="../pages/Risk" class="internal">Risk</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../external-attack" class="internal">External Attack</a></li><li><a href="../insider-threat" class="internal">Insider Threat</a></li><li><a href="../accidental-exposure" class="internal">Accidental Exposure</a></li><li><a href="../pages/Model-Inversion" class="internal">Model Inversion</a></li><li><a href="../pages/Membership-Inference" class="internal">Membership Inference</a></li><li><a href="../pages/Ransomware" class="internal">Ransomware</a></li><li><a href="../data-exfiltration" class="internal">Data Exfiltration</a></li><li><a href="../pages/Model-Extraction" class="internal">Model Extraction</a></li><li><a href="../pages/Data-Poisoning" class="internal">Data Poisoning</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Security" class="internal">Security</a></li><li><a href="../pages/Vulnerability" class="internal">Vulnerability</a></li><li><a href="../pages/Access-Control" class="internal">Access Control</a></li><li><a href="../pages/Cybersecurity" class="internal">Cybersecurity</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Privacy" class="internal">Privacy</a></li><li><a href="../pages/Incident-Response" class="internal">Incident Response</a></li><li><a href="../pages/Regulatory-Compliance" class="internal">Regulatory Compliance</a></li><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Differential-Privacy" class="internal">Differential Privacy</a></li><li><a href="../pages/Privacy-Preserving-Machine-Learning" class="internal">Privacy-Preserving Machine Learning</a></li><li><a href="../pages/Federated-Learning" class="internal">Federated Learning</a></li><li><a href="../pages/Encryption" class="internal">Encryption</a></li><li><a href="../pages/Zero-Trust-Architecture" class="internal">Zero Trust Architecture</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li><li><a href="../pages/Adversarial-Attack" class="internal">Adversarial Attack</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Risk-Management" class="internal">Risk Management</a></li><li><a href="../pages/Threat-Intelligence" class="internal">Threat Intelligence</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0863</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../artificial-intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../risk" class="internal">Risk</a></li><li><a href="../cybersecurity" class="internal">Cybersecurity</a></li><li><a href="../gdpr" class="internal">GDPR</a></li><li><a href="../privacy" class="internal">Privacy</a></li><li><a href="../membership-inference" class="internal">Membership Inference</a></li><li><a href="../model-inversion" class="internal">Model Inversion</a></li><li><a href="../data-protection" class="internal">Data Protection</a></li><li><a href="../access-control" class="internal">Access Control</a></li><li><a href="../audit-trail" class="internal">Audit Trail</a></li><li><a href="../regulatory-compliance" class="internal">Regulatory Compliance</a></li><li><a href="../risk-management" class="internal">Risk Management</a></li><li><a href="../risk-assessment" class="internal">Risk Assessment</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../threat-intelligence" class="internal">Threat Intelligence</a></li><li><a href="../incident-response" class="internal">Incident Response</a></li><li><a href="../encryption" class="internal">Encryption</a></li><li><a href="../differential-privacy" class="internal">Differential Privacy</a></li><li><a href="../adversarial-attack" class="internal">Adversarial Attack</a></li><li><a href="../ransomware" class="internal">Ransomware</a></li><li><a href="../pages/ai-governance-and-ethics" class="internal">AI Governance and Ethics</a></li><li><a href="../data-poisoning" class="internal">Data Poisoning</a></li><li><a href="../model-extraction" class="internal">Model Extraction</a></li><li><a href="../privacy-preserving-machine-learning" class="internal">Privacy-Preserving Machine Learning</a></li><li><a href="../insider-threat" class="internal">Insider Threat</a></li><li><a href="../vulnerability" class="internal">Vulnerability</a></li><li><a href="../zero-trust-architecture" class="internal">Zero Trust Architecture</a></li><li><a href="../federated-learning" class="internal">Federated Learning</a></li><li><a href="../healthcare-ai" class="internal">Healthcare AI</a></li><li><a href="../ai-grounded-domain" class="internal">AI-GroundedDomain</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../privacy-preserving-data-mining" class="internal">Privacy Preserving Data Mining</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:bc5b3977c4e3ee4d02a584046914b118795e23f93739b899984b783a680ddcd5</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Cybersecurity" class="internal">Cybersecurity</a></li><li><a href="../pages/Data-Protection" class="internal">Data Protection</a></li><li><a href="../pages/Audit-Trail" class="internal">Audit Trail</a></li><li><a href="../pages/Regulatory-Compliance" class="internal">Regulatory Compliance</a></li><li><a href="../pages/Privacy-Preserving-Data-Mining" class="internal">Privacy Preserving Data Mining</a></li><li><a href="../encryption" class="internal">Encryption</a></li><li><a href="../pages/GDPR" class="internal">GDPR</a></li><li><a href="../pages/Differential-Privacy" class="internal">Differential Privacy</a></li><li><a href="../pages/Federated-Learning" class="internal">Federated Learning</a></li><li><a href="../zero-trust-architecture" class="internal">Zero Trust Architecture</a></li><li><a href="../pages/Access-Control" class="internal">Access Control</a></li><li><a href="../pages/Healthcare-AI" class="internal">Healthcare AI</a></li><li><a href="../Insider-Threat" class="internal">Insider Threat</a></li><li><a href="../pages/Vulnerability" class="internal">Vulnerability</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment</a></li><li><a href="../pages/Risk-Management" class="internal">Risk Management</a></li><li><a href="../pages/Threat-Intelligence" class="internal">Threat Intelligence</a></li><li><a href="../pages/Audit-Trail" class="internal">Audit Trail</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Membership-Inference" class="internal">Membership Inference</a></li><li><a href="../pages/Model-Inversion" class="internal">Model Inversion</a></li><li><a href="../pages/Adversarial-Attack" class="internal">Adversarial Attack</a></li><li><a href="../pages/Data-Poisoning" class="internal">Data Poisoning</a></li><li><a href="../pages/Model-Extraction" class="internal">Model Extraction</a></li><li><a href="../pages/Ransomware" class="internal">Ransomware</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>A Data Breach is a security incident in which sensitive, protected, or confidential data is accessed, disclosed, copied, transmitted, or destroyed by an unauthorised actor, whether through external attack, insider threat, or accidental exposure. In AI contexts, data breaches can compromise training datasets, model weights, inference outputs, or user interaction logs, triggering GDPR notification obligations (within 72 hours to supervisory authorities), regulatory penalties, and reputational damage. AI systems increase both the attack surface (by aggregating and processing large personal-data collections) and the potential for novel breach vectors such as model-inversion attacks and membership-inference attacks that reconstruct or identify individuals from model outputs without direct database access.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:hasPart ai:ExternalAttack))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:hasPart ai:InsiderThreat))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:hasPart ai:AccidentalExposure))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:hasPart ai:MembershipInference))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:hasPart ai:ModelInversion))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:hasPart ai:Ransomware))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:hasPart ai:DataExfiltration))
+</code></pre>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:requires ai:Vulnerability))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:requires ai:AccessControl))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:requires ai:SecurityMonitoring))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:dependsOn ai:CybersecurityFramework))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:dependsOn ai:DataGovernancePolicy))
+</code></pre>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:enables ai:IncidentResponse))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:enables ai:RegulatoryCompliance))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:enables ai:RiskAssessment))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:enables ai:PrivacyProtection))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:enables ai:ThreatIntelligence))
+</code></pre>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:uses ai:MembershipInferenceAttack))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:uses ai:ModelInversionAttack))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:uses ai:AdversarialAttack))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:uses ai:DataPoisoning))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:uses ai:ModelExtraction))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:implements ai:RiskManagement))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:implements ai:ThreatIntelligenceProcess))
+</code></pre>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:reducesTo ai:UnauthorisedDataAccess))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:reducesTo ai:PrivacyViolation))
+SubClassOf(ai:DataBreach
+  ObjectSomeValuesFrom(ai:reducesTo ai:ComplianceFailure))
+</code></pre>
+</li>
+<li>
+<h2 id="contrast-relationships-mitigation">Contrast Relationships (Mitigation)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contrast-relationships-mitigation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DataBreach
+  ObjectAllValuesFrom(ai:mitigatedBy ai:Encryption))
+SubClassOf(ai:DataBreach
+  ObjectAllValuesFrom(ai:mitigatedBy ai:DifferentialPrivacy))
+SubClassOf(ai:DataBreach
+  ObjectAllValuesFrom(ai:mitigatedBy ai:FederatedLearning))
+SubClassOf(ai:DataBreach
+  ObjectAllValuesFrom(ai:mitigatedBy ai:ZeroTrustArchitecture))
+SubClassOf(ai:DataBreach
+  ObjectAllValuesFrom(ai:mitigatedBy ai:AccessControl))
+SubClassOf(ai:DataBreach
+  ObjectAllValuesFrom(ai:mitigatedBy ai:AuditTrail))
+SubClassOf(ai:DataBreach
+  ObjectAllValuesFrom(ai:mitigatedBy ai:PrivacyPreservingMachineLearning))
+SubClassOf(ai:DataBreach
+  ObjectAllValuesFrom(ai:mitigatedBy ai:IncidentResponse))
+SubClassOf(ai:DataBreach
+  ObjectAllValuesFrom(ai:triggersObligation ai:RegulatoryNotification))
+SubClassOf(ai:DataBreach
+  ObjectAllValuesFrom(ai:triggersObligation ai:RiskAssessment))
+</code></pre>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>A data breach is any incident in which unauthorised parties gain access to protected information, and the phenomenon spans organisational data stores, cloud infrastructure, and increasingly the artefacts of AI systems — model weights, embeddings, inference caches, and interaction logs. The classical threat model envisages an external attacker exploiting software <a href="../pages/Vulnerability" class="internal alias" data-slug="pages/Vulnerability">vulnerabilities</a> or social engineering to gain system access, exfiltrate data, and either sell it or weaponise it for <a href="../pages/Ransomware" class="internal" data-slug="pages/Ransomware">Ransomware</a> deployment. The Verizon 2025 Data Breach Investigations Report, which analysed 22,052 incidents and 12,195 confirmed breaches, found <a href="../pages/Ransomware" class="internal" data-slug="pages/Ransomware">Ransomware</a> present in 44% of breaches (up from 32% in the prior year) and the human element implicated in approximately 60% of incidents, underscoring that technical controls are necessary but insufficient without training and access hygiene. The average time to identify and contain a breach fell to 241 days in 2025, the lowest recorded value, reflecting improved <a href="../pages/Threat-Intelligence" class="internal alias" data-slug="pages/Threat-Intelligence">Threat Intelligence</a> and detection tooling deployment.</li>
+<li>AI systems have introduced qualitatively new breach categories that sit outside the traditional “exfiltration of a database” model. <a href="../pages/Membership-Inference" class="internal alias" data-slug="pages/Membership-Inference">Membership Inference</a> attacks exploit statistical differences in model output behaviour between training-set and non-training-set examples to determine whether a specific individual’s data was used to train a model. This can constitute a <a href="../pages/GDPR" class="internal" data-slug="pages/GDPR">GDPR</a> violation without any direct access to the underlying data store — the breach is reconstructive, occurring entirely through the model’s public query interface. <a href="../pages/Model-Inversion" class="internal alias" data-slug="pages/Model-Inversion">Model Inversion</a> attacks go further, using repeated model queries to reconstruct representative examples of training data, potentially recovering sensitive attributes such as facial biometrics, genomic markers, or medical conditions. <a href="../pages/Model-Extraction" class="internal alias" data-slug="pages/Model-Extraction">Model Extraction</a> attacks systematically probe a model API to reconstruct a functional equivalent of the proprietary model, constituting intellectual property theft. <a href="../pages/Data-Poisoning" class="internal alias" data-slug="pages/Data-Poisoning">Data Poisoning</a> — corrupting training data during the collection or preprocessing phase — can introduce backdoors that the model will execute on attacker-specified inputs, constituting a delayed-action breach vector that is especially difficult to detect post-training. These AI-specific attack classes interact with the classical breach taxonomy, expanding the attack surface far beyond the perimeter of the data store that holds the original personal information.</li>
+<li>Regulatory frameworks have evolved to address these expanded risks. <a href="../pages/GDPR" class="internal" data-slug="pages/GDPR">GDPR</a> (Regulation 2016/679) imposes a 72-hour breach notification window, organisational accountability obligations, and potential fines of up to €20 million or 4% of global annual turnover for the most serious failures. European data protection authorities issued nearly €1.2 billion in GDPR fines in 2025, with the number of breach notifications rising approximately 22%, or approximately 443 breaches daily on average across supervisory authorities. UK GDPR (retained post-Brexit) maintains equivalent provisions enforced by the Information Commissioner’s Office. The UK Cyber Security and Resilience Bill (2025-2026) introduces a tightened 24-hour initial notification requirement and a two-tier penalty structure: up to £10M or 2% of global turnover for standard failures, and up to £17M or 4% of turnover for serious breaches including notification failures.</li>
+</ul>
+</li>
+<li>
+<h2 id="breach-categories-and-typology">Breach Categories and Typology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#breach-categories-and-typology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>External Intrusion</strong> — SQL injection, credential stuffing, phishing-facilitated credential theft, exploitation of unpatched <a href="../pages/Vulnerability" class="internal alias" data-slug="pages/Vulnerability">vulnerabilities</a>, supply-chain attacks on trusted software dependencies. The 2024-2025 Synnovis breach affecting NHS blood test services and the DXS International NHS supplier attack (December 2025, claimed by DevMan group, 300 GB allegedly exfiltrated) exemplify this category in UK healthcare.</li>
+<li><strong><a href="../Insider-Threat" class="internal alias" data-slug="Insider-Threat">Insider Threat</a></strong> — malicious exfiltration by current or former employees with privileged access, or inadvertent exposure by staff who misconfigure storage, email sensitive data to wrong recipients, or fail to revoke access for departed personnel. Implicated in a substantial proportion of healthcare breaches due to the broad data access patterns typical in clinical settings.</li>
+<li><strong><a href="../pages/Ransomware" class="internal" data-slug="pages/Ransomware">Ransomware</a></strong> — encrypts victim data and demands payment for decryption keys; increasingly paired with double-extortion (simultaneous exfiltration and publication threats) and triple-extortion (targeting downstream customers). Found in 44% of 2025 breaches per Verizon DBIR. Cl0p claimed a ransomware attack on NHS systems in 2025, illustrating the continued targeting of critical public infrastructure.</li>
+<li><strong>AI-Specific Attack Vectors</strong>
+<ul>
+<li><a href="../pages/Membership-Inference" class="internal alias" data-slug="pages/Membership-Inference">Membership Inference</a> — query-based reconstruction of training set membership; applicable to any model with public query access.</li>
+<li><a href="../pages/Model-Inversion" class="internal alias" data-slug="pages/Model-Inversion">Model Inversion</a> — reconstruction of training data from output distributions; particularly dangerous for face recognition and genomic models.</li>
+<li><a href="../pages/Model-Extraction" class="internal alias" data-slug="pages/Model-Extraction">Model Extraction</a> — systematic API probing to reproduce a proprietary model; constitutes intellectual property theft.</li>
+<li><a href="../pages/Data-Poisoning" class="internal alias" data-slug="pages/Data-Poisoning">Data Poisoning</a> — contaminating training data to implant backdoors, degrade accuracy for specific subpopulations, or introduce biases. Prompt injection (OWASP LLM Top 10 #1, 2025) is the LLM-era analogue: malicious instructions embedded in user inputs or retrieved documents redirect model behaviour.</li>
+</ul>
+</li>
+<li><strong>Accidental Exposure</strong> — misconfigured cloud storage buckets, inadvertent public API endpoint access, inadequately anonymised data releases, and researcher disclosure of datasets containing personal information without proper de-identification.</li>
+</ul>
+</li>
+<li>
+<h2 id="regulatory-landscape">Regulatory Landscape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regulatory-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong><a href="../pages/GDPR" class="internal" data-slug="pages/GDPR">GDPR</a> / UK GDPR</strong> — mandatory 72-hour supervisory authority notification; data subject communication when high individual risk; fines up to 4% global turnover.</li>
+<li><strong>UK Cyber Security and Resilience Bill (2025-2026)</strong> — introduces 24-hour initial notification; two-tier penalty regime; extends coverage to over 900 managed service providers; aligns with EU NIS2 directive.</li>
+<li><strong>NIS Regulations 2018 (UK) and NIS2 (EU)</strong> — sector-specific cybersecurity obligations for operators of essential services (healthcare, energy, transport) and digital service providers; breach notification obligations distinct from but complementary to GDPR.</li>
+<li><strong>ICO Enforcement</strong> — the UK Information Commissioner’s Office coordinates breach response with the NCSC; provides enforcement action including fines, improvement notices, and enforcement notices.</li>
+<li><strong>Sector-Specific Requirements</strong> — NHS Digital and NHS England maintain additional guidance on data security, aligned with the Data Security and Protection Toolkit (DSPT) which mandates annual compliance assessment for all NHS organisations.</li>
+<li><strong>AI Act (EU, 2024 in force)</strong> — while primarily addressing AI system transparency and high-risk AI deployment, the AI Act’s requirements for logging, record-keeping, and human oversight create additional surface for breach notification obligations when AI system incidents involve personal data.</li>
+</ul>
+</li>
+<li>
+<h2 id="ai-specific-breach-mechanisms-in-depth">AI-Specific Breach Mechanisms in Depth<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-specific-breach-mechanisms-in-depth" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong><a href="../pages/Membership-Inference" class="internal alias" data-slug="pages/Membership-Inference">Membership Inference</a> Attacks</strong> — first formally characterised by Shokri et al. (2017), membership inference exploits the tendency of overfitted models to assign higher confidence to training examples than to non-training examples. An attacker trains shadow models mimicking the target model’s behaviour on known datasets, then uses the shadow model’s output distributions to build a binary classifier distinguishing member from non-member queries. Differential privacy training (e.g., DP-SGD) is the primary algorithmic mitigation, trading privacy guarantees against accuracy. Under GDPR, establishing that a specific individual’s data was in a training set — even without recovering the actual data — can constitute a privacy violation requiring notification.</li>
+<li><strong><a href="../pages/Model-Inversion" class="internal alias" data-slug="pages/Model-Inversion">Model Inversion</a> Attacks</strong> — exploit gradient or output information to iteratively optimise a synthetic input that maximises the model’s predicted probability of a target class, recovering representative training examples. Fredrikson et al. (2015) demonstrated reconstruction of patient facial images from a face recognition model, and recovery of genetic markers from a medical model. Defence strategies include restricting API access, output perturbation, and confidence score truncation.</li>
+<li><strong><a href="../pages/Model-Extraction" class="internal alias" data-slug="pages/Model-Extraction">Model Extraction</a></strong> — Tramèr et al. (2016) demonstrated that a functionally equivalent substitute model could be trained using 20,000 API queries against commercial ML-as-a-service platforms. Subsequent work has reduced required queries substantially via active learning-based strategies. Watermarking and prediction poisoning (intentionally perturbing outputs to degrade extracted model quality) are deployed defences.</li>
+<li><strong><a href="../pages/Data-Poisoning" class="internal alias" data-slug="pages/Data-Poisoning">Data Poisoning</a> and Backdoor Attacks</strong> — an attacker who can influence the training data supply chain (common in web-scraped datasets) can insert trigger-response pairs that cause targeted misclassifications at inference time. The ShadowAttack (2021) and BadNet (Gu et al., 2017) frameworks illustrate how minimal perturbations to a small fraction of training examples can establish persistent backdoors invisible to standard evaluation.</li>
+<li><strong>Prompt Injection (LLM Era)</strong> — malicious instructions embedded in retrieved documents, tool outputs, or user inputs redirect <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> model behaviour away from intended purposes. Ranked #1 in OWASP’s 2025 Top 10 for LLM Applications. Direct prompt injection targets the model directly; indirect prompt injection embeds instructions in content the model retrieves, enabling automated propagation of attacker intent through multi-agent AI systems.</li>
+</ul>
+</li>
+<li>
+<h2 id="mitigation-and-defence-landscape">Mitigation and Defence Landscape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mitigation-and-defence-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Technical Controls</strong> — <a href="../pages/Encryption" class="internal" data-slug="pages/Encryption">Encryption</a> at rest and in transit; <a href="../pages/Access-Control" class="internal alias" data-slug="pages/Access-Control">Access Control</a> with least-privilege and role-based access management; <a href="../pages/Differential-Privacy" class="internal alias" data-slug="pages/Differential-Privacy">Differential Privacy</a> (DP-SGD for model training, differentially private data release); <a href="../pages/Federated-Learning" class="internal alias" data-slug="pages/Federated-Learning">Federated Learning</a> to avoid centralising raw personal data; output perturbation and confidence truncation to impede model inversion; watermarking and prediction poisoning against extraction.</li>
+<li><strong><a href="../pages/Zero-Trust-Architecture" class="internal alias" data-slug="pages/Zero-Trust-Architecture">Zero Trust Architecture</a></strong> — replaces perimeter-based security with continuous identity verification, micro-segmentation, and least-privilege access for every request, substantially reducing lateral movement potential following initial compromise.</li>
+<li><strong><a href="../pages/Incident-Response" class="internal alias" data-slug="pages/Incident-Response">Incident Response</a></strong> — predefined playbooks for breach containment, forensic preservation, regulatory notification, and stakeholder communication; tabletop exercises; retainer contracts with specialist forensic firms. Mean time to identify and contain improved to 241 days in 2025 (IBM).</li>
+<li><strong><a href="../pages/Audit-Trail" class="internal alias" data-slug="pages/Audit-Trail">Audit Trail</a></strong> — immutable logging of data access events, model queries, and configuration changes; essential for post-breach forensic reconstruction and demonstrating due diligence to regulators.</li>
+<li><strong><a href="../pages/Privacy-Preserving-Machine-Learning" class="internal alias" data-slug="pages/Privacy-Preserving-Machine-Learning">Privacy-Preserving Machine Learning</a></strong> — umbrella term covering <a href="../pages/Differential-Privacy" class="internal alias" data-slug="pages/Differential-Privacy">Differential Privacy</a>, <a href="../pages/Federated-Learning" class="internal alias" data-slug="pages/Federated-Learning">Federated Learning</a>, secure multi-party computation, homomorphic encryption, and trusted execution environments; addresses breach risk at the algorithmic level rather than relying solely on perimeter security.</li>
+<li><strong>Supply Chain Security</strong> — software bill of materials (SBOM), dependency auditing, and provenance verification for training data, model weights, and inference infrastructure; increasingly mandated by procurement requirements in public sector and critical national infrastructure.</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases-and-domain-impact">Use Cases and Domain Impact<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases-and-domain-impact" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong><a href="../pages/Healthcare-AI" class="internal alias" data-slug="pages/Healthcare-AI">Healthcare AI</a></strong> — the NHS and private healthcare providers hold extensive personal health data whose breach carries severe individual harm and ICO enforcement risk. The DXS International breach (December 2025), the earlier Synnovis breach affecting blood test matching for NHS trusts, and the LockBit attack on Barts Health in 2023 illustrate the persistent targeting of healthcare. AI systems processing electronic health records, diagnostic imaging, and genomic data expand the breach surface while also enabling <a href="../pages/Membership-Inference" class="internal alias" data-slug="pages/Membership-Inference">Membership Inference</a> and <a href="../pages/Model-Inversion" class="internal alias" data-slug="pages/Model-Inversion">Model Inversion</a> attacks specific to medical models.</li>
+<li><strong>Financial Services</strong> — banks, insurers, and payment processors face dual regulatory obligations (FCA, PRA, UK GDPR) and high financial impact from breaches. AI fraud detection models trained on transaction histories are targets for membership inference to probe whether specific accounts were flagged; model extraction enables adversaries to reverse-engineer detection logic.</li>
+<li><strong>Autonomous Systems and IoT</strong> — connected devices generate continuous personal data streams; compromise of edge AI components can expose inference results (e.g., activity recognition in smart homes) even if raw sensor data is encrypted.</li>
+<li><strong>Large Language Models and Conversational AI</strong> — interaction logs from LLM deployments contain highly sensitive personal disclosures; memorisation vulnerabilities (Carlini et al., 2021) mean models can reproduce verbatim training sequences including personal information, constituting a form of involuntary breach.</li>
+<li><strong>Academic and Research Data</strong> — university and research institute datasets containing patient cohort data, genomic sequences, or commercially sensitive experimental results require robust data governance to prevent breach; the research exemption under GDPR has defined but non-unlimited scope.</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The formal study of data breaches in the context of machine learning originated with foundational security work on statistical databases in the 1970s (Denning and Schlörer, 1983), but the modern threat landscape was crystallised by the re-identification attacks on AOL search logs (Narayanan and Shmatikoff, 2006) and Netflix prize data (Narayanan and Shmatikoff, 2008), which demonstrated that supposedly anonymised datasets could be reliably de-anonymised by cross-referencing auxiliary information. This work motivated the development of formal <a href="../pages/Differential-Privacy" class="internal alias" data-slug="pages/Differential-Privacy">Differential Privacy</a> (Dwork et al., 2006) as a mathematically rigorous alternative to ad hoc anonymisation.</li>
+<li>AI-specific breach vectors received systematic attention from 2017 onwards. Shokri et al. (2017) formalised membership inference attacks, demonstrating that model confidence scores leak training set membership information. Fredrikson et al. (2015) demonstrated model inversion in medical settings. Tramèr et al. (2016) demonstrated model extraction against commercial ML APIs. Carlini et al. (2021, 2023) catalogued memorisation in large language models, showing that GPT-2 and larger models could reproduce verbatim training sequences including personal addresses and phone numbers under targeted prompting. The OWASP Foundation codified the evolving threat landscape into the OWASP Top 10 for LLM Applications (2024/2025 edition), with prompt injection consistently at position one. The Hogan Lovells report (2024) provided a practitioner synthesis of model inversion and membership inference risks for legal and compliance audiences. Research groups at the Alan Turing Institute, UCL Information Security Research Group, and the University of Edinburgh’s Security and Privacy group have contributed to the UK academic landscape, while industry research at Google DeepMind, Microsoft Research Cambridge, and Arm Research in Cambridge addresses deployment-level mitigations.</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The data breach environment in 2026 is characterised by increasing sophistication of attacks, AI-assisted attack tooling, and an expanding regulatory perimeter. Practical DevSecOps (2026) reports that 77% of businesses experienced an AI-related security incident in 2024, with NIST documenting over a 2,000% increase in AI-specific CVEs since 2022. The average global breach cost fell slightly from <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">4.88</span><span class="mord mathnormal">Mt</span><span class="mord mathnormal">o</span></span></span></span>4.44M in 2025 (IBM), driven by faster mean-time-to-detection rather than reduced attack volume. Ransomware remains the dominant breach modality at 44% of incidents, with human element involvement at approximately 60% (Verizon DBIR 2025).</li>
+<li>In the EU, GDPR fines reached nearly €1.2 billion in 2025, reflecting active enforcement across sectors. The ICO in the UK has pursued enforcement actions against AI companies handling personal data at scale, and the Cyber Security and Resilience Bill (Royal Assent anticipated 2026) represents the most significant update to UK cyber security legislation since the 2018 NIS Regulations. The Bill introduces 24-hour initial breach notification (versus the current 72-hour GDPR window), bringing the UK into closer alignment with EU NIS2 while establishing a distinct UK framework. Penalties of up to £17M or 4% of global turnover for serious failures provide a meaningful deterrent.</li>
+<li>The AI regulatory layer is becoming simultaneously more complex and more harmonised. The EU AI Act (2024, phased application through 2026) creates additional documentation and human oversight requirements for high-risk AI systems that, when breached, trigger both AI Act obligations and GDPR breach notification. UK alignment with AI Act principles (as articulated in the AI Safety Institute’s frameworks) is occurring pragmatically without full legislative equivalence.</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The United Kingdom has experienced several high-profile data breaches in recent years that illustrate both the healthcare sector’s particular vulnerability and the government’s evolving response. The Synnovis breach (2024) affected NHS blood testing services across London hospital trusts, directly disrupting clinical operations and triggering NCSC involvement. The DXS International breach (December 2025) affected NHS GP clinical decision support systems, with ransomware group DevMan claiming 300 GB of stolen data. The Cl0p group claimed a ransomware hit on NHS systems in 2025. These incidents collectively prompted the UK Government to accelerate the Cyber Security and Resilience Bill.</li>
+<li>The National Cyber Security Centre (NCSC), a part of GCHQ, coordinates the UK’s technical breach response and publishes authoritative guidance on incident management, cloud security, and AI-specific cyber risks. The ICO works alongside the NCSC under the NIS Regulations framework, with the ICO acting as the lead regulator for DSP incidents and NCSC providing technical assistance. University research groups at UCL (Information Security Research Group), Edinburgh (Security and Privacy Research Group), Oxford (Systems Security Research Group), and the Alan Turing Institute contribute to the knowledge base underpinning UK policy.</li>
+<li>In Northern England, NHS trusts in Manchester, Leeds, Sheffield, and Newcastle are among the largest processors of personal health data in England and face obligations under NHS England’s Data Security and Protection Toolkit. The Northern Health Science Alliance (comprising healthcare organisations and universities in the North of England) has identified AI data security as a priority research theme. Manchester’s National Institute for Data Science and AI (N8 Research Partnership AI programme) includes data governance and breach prevention as active research areas. The University of Sheffield’s Insigneo Institute and the Leeds Institute for Data Analytics both operate under research data governance frameworks designed to prevent inadvertent breach of linked health datasets.</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>AI-Augmented Breach Detection</strong> — <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> models analysing network telemetry, user behaviour, and system logs in real time will progressively reduce mean-time-to-detect below the current 241-day average; anomaly detection models trained on normal operational baselines will flag unusual data access patterns indicative of exfiltration.</li>
+<li><strong>Agentic AI Attack Surfaces</strong> — as multi-agent AI systems with autonomous tool use become deployed in enterprise settings, the indirect prompt injection attack surface expands dramatically. An agent that can write to email, databases, and external APIs under attacker-injected instructions constitutes a novel breach vector requiring architectural mitigations (sandboxing, output filtering, human-in-the-loop approval for sensitive actions).</li>
+<li><strong>Memorisation Mitigation at Scale</strong> — the field of machine unlearning (enabling models to “forget” specific training examples post-training) is advancing from theoretical proposals toward practical deployment, with regulatory pressure from the GDPR right to erasure creating concrete commercial incentives. Approximate unlearning methods (gradient ascent on targeted examples, SISA training) are approaching deployable performance-cost trade-offs.</li>
+<li><strong>Homomorphic Encryption and Secure Multi-Party Computation</strong> — increasing compute efficiency of homomorphic schemes (CKKS, TFHE) is making encrypted computation on ML models practically feasible for some use cases, enabling inference on sensitive data without decrypting it, thus removing the classical breach surface of in-the-clear inference pipelines.</li>
+<li><strong>Regulatory Convergence and Divergence</strong> — the EU AI Act, US Executive Orders on AI safety, and UK AI Safety Institute frameworks are developing in parallel with some coordination. UK-EU data adequacy under the UK GDPR will require continued demonstration of equivalent protection standards, with breach notification alignment becoming a key benchmark.</li>
+<li><strong>Quantitative Breach Risk Modelling</strong> — actuarial and probabilistic models for breach likelihood, impact, and insurance pricing are maturing, driven by demand from the cyber insurance sector and regulatory requests for quantified risk disclosures. AI-specific breach modes (membership inference, model extraction) are beginning to appear in cyber insurance policy definitions.</li>
+</ul>
+</li>
+<li>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Data Breach</strong> — any incident resulting in unauthorised access to, disclosure, alteration, or destruction of personal or protected data.</li>
+<li><strong>Personal Data Breach</strong> — GDPR-specific term covering breaches that affect personally identifiable information of EU/UK data subjects.</li>
+<li><strong>Membership Inference Attack</strong> — exploiting model output distributions to determine whether a specific record was in the training set.</li>
+<li><strong>Model Inversion Attack</strong> — using model query access to reconstruct representative training data examples.</li>
+<li><strong>Model Extraction Attack</strong> — systematic model querying to train a substitute model with equivalent functionality.</li>
+<li><strong>Data Poisoning</strong> — corrupting training data to embed backdoors or degrade model performance on target inputs.</li>
+<li><strong>Prompt Injection</strong> — embedding attacker-controlled instructions in model inputs or retrieved context to redirect LLM behaviour.</li>
+<li><strong>Differential Privacy (DP)</strong> — a formal mathematical framework providing provable bounds on the information leaked about any individual training example.</li>
+<li><strong>ICO</strong> — Information Commissioner’s Office; UK supervisory authority for data protection and breach notification.</li>
+<li><strong>NCSC</strong> — National Cyber Security Centre; GCHQ arm providing technical cyber security guidance and incident response support.</li>
+<li><strong>72-hour Rule</strong> — GDPR obligation to notify the supervisory authority within 72 hours of becoming aware of a qualifying personal data breach.</li>
+<li><strong>DSPT</strong> — Data Security and Protection Toolkit; NHS England’s annual self-assessment framework for data security.</li>
+</ul>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<ol>
+<li>Dwork, C., McSherry, F., Nissim, K., Smith, A. (2006). Calibrating Noise to Sensitivity in Private Data Analysis. <em>TCC 2006</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Narayanan, A., Shmatikoff, V. (2008). Robust De-anonymization of Large Sparse Datasets. <em>IEEE S&amp;P 2008</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Fredrikson, M., Jha, S., Ristenpart, T. (2015). Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures. <em>CCS 2015</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Tramèr, F., Zhang, F., Juels, A., Reiter, M.K., Ristenpart, T. (2016). Stealing Machine Learning Models via Prediction APIs. <em>USENIX Security 2016</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Shokri, R., Stronati, M., Song, C., Shmatikoff, V. (2017). Membership Inference Attacks Against Machine Learning Models. <em>IEEE S&amp;P 2017</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Gu, T., Dolan-Gavitt, B., Garg, S. (2017). BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain. <em>arXiv:1708.06733</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Abadi, M., et al. (2016). Deep Learning with Differential Privacy. <em>CCS 2016</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Verizon (2025). Data Breach Investigations Report 2025. <a href="https://www.verizon.com/business/resources/reports/dbir/" class="external">https://www.verizon.com/business/resources/reports/dbir/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>IBM Security (2024). Cost of a Data Breach Report 2024. IBM/Ponemon Institute.</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Carlini, N., et al. (2021). Extracting Training Data from Large Language Models. <em>USENIX Security 2021</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Carlini, N., et al. (2023). Quantifying Memorization Across Neural Language Models. <em>ICLR 2023</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>OWASP (2025). OWASP Top 10 for LLM Applications 2025. <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" class="external">https://owasp.org/www-project-top-10-for-large-language-model-applications/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Hogan Lovells (2024). Model inversion and membership inference: Understanding new AI security risks and mitigating vulnerabilities. <a href="https://www.hoganlovells.com/en/publications/model-inversion-and-membership-inference-understanding-new-ai-security-risks-and-mitigating-vulnerabilities" class="external">https://www.hoganlovells.com/en/publications/model-inversion-and-membership-inference-understanding-new-ai-security-risks-and-mitigating-vulnerabilities<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>NCSC (2024). NCSC statement following reports of a Synnovis data breach. <a href="https://www.ncsc.gov.uk/news/ncsc-statement-following-reports-of-a-synnovis-data-breach" class="external">https://www.ncsc.gov.uk/news/ncsc-statement-following-reports-of-a-synnovis-data-breach<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Practical DevSecOps (2026). AI Security Statistics 2026: Latest Data, Trends &amp; Research Report. <a href="https://www.practical-devsecops.com/ai-security-statistics-2026-research-report/" class="external">https://www.practical-devsecops.com/ai-security-statistics-2026-research-report/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>BrightDefense (2026). 120 Data Breach Statistics for 2026. <a href="https://www.brightdefense.com/resources/data-breach-statistics/" class="external">https://www.brightdefense.com/resources/data-breach-statistics/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Taylor Wessing (2026). UK Cyber Security and Resilience Bill: key considerations for technology businesses. <a href="https://www.taylorwessing.com/en/global-data-hub/2026/cyber-security/gdh---uk-cyber-security-and-resilience-bill" class="external">https://www.taylorwessing.com/en/global-data-hub/2026/cyber-security/gdh---uk-cyber-security-and-resilience-bill<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>ICO (2025). NIS and the UK GDPR. <a href="https://ico.org.uk/for-organisations/the-guide-to-nis/nis-and-the-uk-gdpr/" class="external">https://ico.org.uk/for-organisations/the-guide-to-nis/nis-and-the-uk-gdpr/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Digital Health (2025). NHS GP software supplier hit by cyber attack. <a href="https://www.digitalhealth.net/2025/12/nhs-gp-software-supplier-hit-by-cyber-attack/" class="external">https://www.digitalhealth.net/2025/12/nhs-gp-software-supplier-hit-by-cyber-attack/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>ResearchGate (2025). Model Inversion and Membership Inference Attacks: Threat Landscape and Mitigation Techniques. <a href="https://www.researchgate.net/publication/390630335" class="external">https://www.researchgate.net/publication/390630335<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Private AI (2024). Privacy Attacks against Data and AI Models — Healthcare Data Threats. <a href="https://private-ai.com/en/2024/04/10/healthcare-data-threats/" class="external">https://private-ai.com/en/2024/04/10/healthcare-data-threats/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Denning, D.E., Schlörer, J. (1983). Inference Controls for Statistical Databases. <em>IEEE Computer, 16(7)</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Choquette-Choo, C.A., Tramer, F., Carlini, N., Papernot, N. (2021). Label-Only Membership Inference Attacks. <em>ICML 2021</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Mireshghallah, F., et al. (2022). Quantifying Privacy Risks of Masked Language Models Using Black-Box Membership Inference. <em>EMNLP 2022</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>Nguyen, T.T., et al. (2022). Deep Learning for Cybersecurity: A Comprehensive Overview and New Perspectives. <em>ACM Computing Surveys, 55(1)</em>.</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Passwork (2026). NIS2 latest news: What changed in 2026 and what it means for EU businesses. <a href="https://passwork.pro/blog/nis2-latest-news-april-2026/" class="external">https://passwork.pro/blog/nis2-latest-news-april-2026/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>TechCrunch (2025). Tech provider for NHS England confirms data breach. <a href="https://techcrunch.com/2025/12/18/tech-provider-for-nhs-england-confirms-data-breach/" class="external">https://techcrunch.com/2025/12/18/tech-provider-for-nhs-england-confirms-data-breach/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>Computing (2025). NHS supplier DXS confirms data security breach. <a href="https://www.computing.co.uk/news/2025/security/nhs-supplier-dxs-confirms-data-security-breach" class="external">https://www.computing.co.uk/news/2025/security/nhs-supplier-dxs-confirms-data-security-breach<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1511" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#contrast-relationships-mitigation" data-for="contrast-relationships-mitigation">Contrast Relationships (Mitigation)</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#breach-categories-and-typology" data-for="breach-categories-and-typology">Breach Categories and Typology</a></li><li class="depth-0"><a href="#regulatory-landscape" data-for="regulatory-landscape">Regulatory Landscape</a></li><li class="depth-0"><a href="#ai-specific-breach-mechanisms-in-depth" data-for="ai-specific-breach-mechanisms-in-depth">AI-Specific Breach Mechanisms in Depth</a></li><li class="depth-0"><a href="#mitigation-and-defence-landscape" data-for="mitigation-and-defence-landscape">Mitigation and Defence Landscape</a></li><li class="depth-0"><a href="#use-cases-and-domain-impact" data-for="use-cases-and-domain-impact">Use Cases and Domain Impact</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Data-Privacy" class="internal">Data Privacy</a></li><li><a href="../pages/Data-Protection-Regulation" class="internal">Data Protection Regulation</a></li><li><a href="../pages/Endpoint-Detection-and-Response" class="internal">Endpoint Detection and Response</a></li><li><a href="../pages/Incident-Response" class="internal">Incident Response</a></li><li><a href="../pages/Personal-Data" class="internal">Personal Data</a></li><li><a href="../pages/Ransomware" class="internal">Ransomware</a></li><li><a href="../pages/Security-Operations-Centre" class="internal">Security Operations Centre</a></li><li><a href="../pages/Social-Engineering" class="internal">Social Engineering</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/explorer/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

@@ -57,6 +57,10 @@
       {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Fidelity Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Fidelity Evaluation"
       }
     ],
     "implements": [],
@@ -64,6 +68,10 @@
       {
         "id": "urn:ngm:class:real-world-data",
         "label": "Real-World Data"
+      },
+      {
+        "id": "urn:ngm:class:anonymisation",
+        "label": "Data Anonymisation"
       },
       {
         "id": "urn:ngm:class:anonymisation",
@@ -90,7 +98,7 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:variational-autoencoder",
+        "id": "urn:ngm:class:vae",
         "label": "Variational Autoencoder"
       },
       {
@@ -110,6 +118,10 @@
       {
         "id": "urn:ngm:class:drug-discovery",
         "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       }
     ],
     "standardizedBy": [],
@@ -130,6 +142,10 @@
       {
         "id": "urn:ngm:class:bias-in-ai",
         "label": "Bias in AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
       }
     ]
   },
@@ -209,6 +225,20 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

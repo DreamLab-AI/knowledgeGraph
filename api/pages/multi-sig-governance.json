@@ -12,8 +12,32 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
+      "id": "urn:ngm:class:blockchain-governance",
+      "label": "Blockchain Governance"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "id": "urn:ngm:class:access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "id": "urn:ngm:class:digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "id": "urn:ngm:class:threshold-cryptography",
+      "label": "Threshold Cryptography"
+    },
+    {
+      "id": "urn:ngm:class:committee-governance",
+      "label": "Committee Governance"
+    },
+    {
+      "id": "urn:ngm:class:hash-function",
+      "label": "Hash Function"
     }
   ],
   "entityType": "Class",
@@ -56,6 +80,46 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signing",
+        "label": "Signing Key"
+      },
+      {
+        "id": "urn:ngm:class:script",
+        "label": "Redeem Script"
+      },
+      {
+        "id": "urn:ngm:class:threshold-parameter",
+        "label": "Threshold Parameter"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Signer Quorum"
+      },
+      {
+        "id": "urn:ngm:class:signer-ceremony",
+        "label": "Signer Ceremony"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction Queue"
+      },
+      {
+        "id": "urn:ngm:class:guardian-set",
+        "label": "Guardian Set"
+      },
+      {
+        "id": "urn:ngm:class:mpc-key-share",
+        "label": "MPC Key Share"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock Module"
+      },
+      {
+        "id": "urn:ngm:class:nonce-commitment",
+        "label": "Nonce Commitment"
       }
     ],
     "requires": [
@@ -90,6 +154,18 @@
       {
         "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:secure-storage",
+        "label": "Secure Key Storage"
+      },
+      {
+        "id": "urn:ngm:class:coordination-protocol",
+        "label": "Signer Coordination Protocol"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
       }
     ],
     "enables": [
@@ -120,9 +196,58 @@
       {
         "id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:emergency-response-governance",
+        "label": "Emergency Response Governance"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade-control",
+        "label": "Protocol Upgrade Control"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge Security"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
+        "label": "Ethereum Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "id": "urn:ngm:class:bip-327",
+        "label": "BIP-327"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "Secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:ed-dsa",
+        "label": "EdDSA"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-discrete-logarithm-problem",
+        "label": "Elliptic Curve Discrete Logarithm Problem"
+      },
+      {
+        "id": "urn:ngm:class:paillier-cryptosystem",
+        "label": "Paillier Cryptosystem"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:bip-16",
@@ -151,9 +276,62 @@
       {
         "id": "urn:ngm:class:gnosis-safe",
         "label": "Safe Smart Account"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "FROST Threshold Signatures"
+      },
+      {
+        "id": "urn:ngm:class:roast-protocol",
+        "label": "ROAST Protocol"
+      },
+      {
+        "id": "urn:ngm:class:gnosis-safe",
+        "label": "Safe Smart Account"
+      },
+      {
+        "id": "urn:ngm:class:gg20-protocol",
+        "label": "GG20 Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cggmp21-protocol",
+        "label": "CGGMP21 Protocol"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On-Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:timelock-contract",
+        "label": "Timelock Contract"
+      },
+      {
+        "id": "urn:ngm:class:single-key-wallet",
+        "label": "Single-Key Wallet"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:delegate-democracy",
+        "label": "Delegate Democracy"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -187,6 +365,30 @@
       {
         "id": "urn:ngm:class:trezor",
         "label": "Trezor"
+      },
+      {
+        "id": "urn:ngm:class:safe-wallet",
+        "label": "Safe Wallet"
+      },
+      {
+        "id": "urn:ngm:class:squads-protocol",
+        "label": "Squads Protocol"
+      },
+      {
+        "id": "urn:ngm:class:fireblocks",
+        "label": "Fireblocks MPC"
+      },
+      {
+        "id": "urn:ngm:class:argent",
+        "label": "Argent Account"
+      },
+      {
+        "id": "urn:ngm:class:bit-go",
+        "label": "BitGo Wallet"
+      },
+      {
+        "id": "urn:ngm:class:copper-co",
+        "label": "Copper MPC"
       }
     ],
     "supports": [
@@ -221,6 +423,18 @@
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:de-fi-protocol",
+        "label": "DeFi Protocol Security"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance Custody"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Wholesale Payment System"
       }
     ],
     "standardizedBy": [
@@ -255,6 +469,18 @@
       {
         "id": "urn:ngm:class:eip-7702",
         "label": "EIP-7702"
+      },
+      {
+        "id": "urn:ngm:class:bip-373",
+        "label": "BIP-373"
+      },
+      {
+        "id": "urn:ngm:class:rfc-9591",
+        "label": "RFC 9591"
+      },
+      {
+        "id": "urn:ngm:class:nist-ir-8214b",
+        "label": "NIST IR 8214B"
       }
     ],
     "partOf": [],
@@ -307,9 +533,219 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:asymmetric-cryptography",
+      "label": "Asymmetric Cryptography",
+      "slug": "asymmetric-cryptography"
+    },
+    {
+      "id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism",
+      "slug": "authentication-mechanism"
+    },
+    {
+      "id": "urn:ngm:class:authorisation-mechanism",
+      "label": "Authorisation Mechanism",
+      "slug": "authorisation-mechanism"
+    },
+    {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:compression-function",
+      "label": "Compression Function",
+      "slug": "compression-function"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-algorithm",
+      "label": "Cryptographic Algorithm",
+      "slug": "cryptographic-algorithm"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization",
+      "slug": "decentralized-autonomous-organization"
+    },
+    {
+      "id": "urn:ngm:class:deterministic-function",
+      "label": "Deterministic Function",
+      "slug": "deterministic-function"
+    },
+    {
+      "id": "urn:ngm:class:digital-fingerprint",
+      "label": "Digital Fingerprint",
+      "slug": "digital-fingerprint"
+    },
+    {
+      "id": "urn:ngm:class:governance-control",
+      "label": "Governance Control",
+      "slug": "governance-control"
+    },
+    {
+      "id": "urn:ngm:class:information-security-system",
+      "label": "Information Security System",
+      "slug": "information-security-system"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:one-way-function",
+      "label": "One Way Function",
+      "slug": "one-way-function"
+    },
+    {
+      "id": "urn:ngm:class:public-key-cryptosystem",
+      "label": "Public-Key Cryptosystem",
+      "slug": "public-key-cryptosystem"
+    },
+    {
+      "id": "urn:ngm:class:security-control",
+      "label": "Security Control",
+      "slug": "security-control"
+    },
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication",
+      "slug": "authentication"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System",
+      "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure",
+      "slug": "distributed-data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger",
+      "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log",
+      "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure",
+      "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System",
+      "slug": "distributed-system"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:identity-and-access-management",
+      "label": "Identity and Access Management",
+      "slug": "identity-and-access-management"
+    },
+    {
+      "id": "urn:ngm:class:multi-party-database",
+      "label": "Multi-Party Database",
+      "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication",
+      "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing",
+      "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing",
+      "slug": "concurrent-computing"
+    },
+    {
+      "id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems",
+      "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:networked-systems",
+      "label": "Networked Systems",
+      "slug": "networked-systems"
+    },
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing",
+      "slug": "parallel-computing"
+    },
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering",
+      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -327,7 +763,7 @@
         "label": "Blockchain Governance"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
       },
       {
@@ -349,38 +785,342 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:token",
+        "label": "Token-Based Representation"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:encryption-scheme",
+        "label": "Encryption Scheme"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:community-alignment",
+        "label": "Community Alignment"
       },
       {
-        "id": "urn:ngm:class:decentralised-finance",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralized Decision-Making"
       },
+      {
+        "id": "urn:ngm:class:protocol-evolution",
+        "label": "Protocol Evolution"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrades",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preservation",
+        "label": "Privacy Preservation"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:computational-hardness-assumption",
+        "label": "Computational Hardness Assumption"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:directory-service",
+        "label": "Directory Service"
+      },
+      {
+        "id": "urn:ngm:class:secure-logging",
+        "label": "Secure Logging"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      },
+      {
+        "id": "urn:ngm:class:trust-model",
+        "label": "Trust Model"
+      },
+      {
+        "id": "urn:ngm:class:abac",
+        "label": "ABAC"
+      },
+      {
+        "id": "urn:ngm:class:capability-based-security",
+        "label": "Capability-Based Security"
+      },
+      {
+        "id": "urn:ngm:class:dac",
+        "label": "DAC"
+      },
+      {
+        "id": "urn:ngm:class:mac",
+        "label": "MAC"
+      },
+      {
+        "id": "urn:ngm:class:pbac",
+        "label": "PBAC"
+      },
+      {
+        "id": "urn:ngm:class:rbac",
+        "label": "RBAC"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:capability-based-security",
+        "label": "Capability-Based Security"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-democracy",
+        "label": "Digital Democracy"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum-Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:ed-dsa",
+        "label": "EdDSA"
+      },
+      {
+        "id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      }
+    ],
+    "supports": [
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
       },
       {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:forensic-investigation",
+        "label": "Forensic Investigation"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-post-quantum-cryptography",
+        "label": "NIST Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography Standards"
+      },
+      {
+        "id": "urn:ngm:class:ansi-incits-359",
+        "label": "ANSI INCITS 359"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF RFC 4120"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-6749",
+        "label": "IETF RFC 6749"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27002",
+        "label": "ISO IEC 27002"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST SP 800-162"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-207",
+        "label": "NIST SP 800-207"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:security-protocol",
+        "label": "Security Protocol"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
     "relatedTo": [
@@ -395,6 +1135,26 @@
       {
         "id": "urn:ngm:class:regulatory-technology",
         "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:network-effects",
+        "label": "Network Effect"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-coordination",
+        "label": "Stakeholder Coordination"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
       }
     ]
   },

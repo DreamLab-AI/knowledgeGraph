@@ -50,6 +50,14 @@
       {
         "id": "urn:ngm:class:python-package-management",
         "label": "Python Package Management"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
       }
     ],
     "enables": [
@@ -64,6 +72,18 @@
       {
         "id": "urn:ngm:class:community-extension-ecosystem",
         "label": "Community Extension Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
       }
     ],
     "dependsOn": [
@@ -86,9 +106,22 @@
       {
         "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:node-graph-visual-programming-interface",
+        "label": "Node-Based Programming"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:automatic-1111-web-ui",
@@ -97,6 +130,10 @@
       {
         "id": "urn:ngm:class:pip",
         "label": "pip"
+      },
+      {
+        "id": "urn:ngm:class:automatic-1111-web-ui",
+        "label": "AUTOMATIC1111 Stable Diffusion WebUI"
       }
     ],
     "bridgesTo": [],
@@ -116,6 +153,26 @@
       {
         "id": "urn:ngm:class:hugging-face-hub",
         "label": "Hugging Face Hub"
+      },
+      {
+        "id": "urn:ngm:class:node-graph-visual-programming-interface",
+        "label": "Node-Based Programming"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "id": "urn:ngm:class:pip",
+        "label": "pip"
+      },
+      {
+        "id": "urn:ngm:class:uv-package-manager",
+        "label": "uv Package Manager"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
       }
     ],
     "supports": [
@@ -150,9 +207,46 @@
       {
         "id": "urn:ngm:class:face-restoration",
         "label": "Face Restoration"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:real-esrgan",
+        "label": "ESRGAN Upscaling"
+      },
+      {
+        "id": "urn:ngm:class:animatediff",
+        "label": "AnimateDiff"
+      },
+      {
+        "id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "id": "urn:ngm:class:sdxl",
+        "label": "SDXL"
+      },
+      {
+        "id": "urn:ngm:class:was-node-suite",
+        "label": "WAS Node Suite"
+      },
+      {
+        "id": "urn:ngm:class:comfyui-ipadapter-plus",
+        "label": "ComfyUI-IPAdapter-Plus"
+      },
+      {
+        "id": "urn:ngm:class:comfyui-animatediff-evolved",
+        "label": "ComfyUI-AnimateDiff-Evolved"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:comfy-org-github-organisation",
+        "label": "Comfy-Org GitHub Organisation"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:comfy-ui",
@@ -183,6 +277,22 @@
       {
         "id": "urn:ngm:class:comfy-node-registry",
         "label": "Comfy Node Registry"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:comfy-cli",
+        "label": "comfy-cli"
+      },
+      {
+        "id": "urn:ngm:class:openart-workflow-registry",
+        "label": "OpenArt Workflow Registry"
+      },
+      {
+        "id": "urn:ngm:class:civitai-workflow-sharing",
+        "label": "Civitai Workflow Sharing"
       }
     ]
   },
@@ -206,16 +316,6 @@
       "id": "urn:ngm:class:systems-engineering",
       "label": "Systems Engineering",
       "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering (Infrastructure)",
-      "slug": "infra-software-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -275,16 +375,16 @@
         "label": "Programming Paradigm"
       },
       {
+        "id": "urn:ngm:class:software-design-pattern",
+        "label": "Software Design Pattern"
+      },
+      {
         "id": "urn:ngm:class:agile-software-development",
         "label": "Agile Methodology"
       },
       {
         "id": "urn:ngm:class:code-review",
         "label": "Code Review"
-      },
-      {
-        "id": "urn:ngm:class:version-control",
-        "label": "Version Control"
       }
     ],
     "enables": [
@@ -345,19 +445,39 @@
         "label": "Computer Science"
       },
       {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
         "id": "urn:ngm:class:project-management",
         "label": "Project Management"
       },
       {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
-      },
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-code-generation",
+        "label": "AI Code Generation"
+      },
       {
         "id": "urn:ngm:class:code-generation",
         "label": "AI Code Generation"
@@ -369,26 +489,6 @@
       {
         "id": "urn:ngm:class:security-engineering",
         "label": "Security Engineering"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber Physical Systems"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -409,6 +509,10 @@
         "label": "Continuous Integration"
       },
       {
+        "id": "urn:ngm:class:integrated-development-environment",
+        "label": "Integrated Development Environment"
+      },
+      {
         "id": "urn:ngm:class:programming-language",
         "label": "Programming Language"
       },
@@ -419,10 +523,6 @@
       {
         "id": "urn:ngm:class:containerisation",
         "label": "Containerisation"
-      },
-      {
-        "id": "urn:ngm:class:infrastructure-as-code",
-        "label": "Infrastructure as Code"
       }
     ],
     "supports": [
@@ -453,30 +553,38 @@
       {
         "id": "urn:ngm:class:robo-safety-and-standards",
         "label": "Safety and Standards"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-ieee-15288",
+        "label": "ISO/IEC/IEEE 15288"
+      },
+      {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:software-development",
         "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
       }
     ],
     "relatedTo": [

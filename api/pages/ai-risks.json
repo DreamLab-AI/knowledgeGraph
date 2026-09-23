@@ -18,6 +18,22 @@
     {
       "id": "urn:ngm:class:harm-taxonomy",
       "label": "Harm Taxonomy"
+    },
+    {
+      "id": "urn:ngm:class:sociotechnical-risk",
+      "label": "Sociotechnical Risk"
+    },
+    {
+      "id": "urn:ngm:class:technology-risk",
+      "label": "Technology Risk"
+    },
+    {
+      "id": "urn:ngm:class:systemic-risk",
+      "label": "Systemic Risk"
+    },
+    {
+      "id": "urn:ngm:class:governance-object",
+      "label": "Governance Object"
     }
   ],
   "entityType": "Class",
@@ -76,6 +92,10 @@
       {
         "id": "urn:ngm:class:model-inversion",
         "label": "Model Inversion"
+      },
+      {
+        "id": "urn:ngm:class:data-poisoning",
+        "label": "Training Data Poisoning"
       }
     ],
     "requires": [
@@ -106,6 +126,10 @@
       {
         "id": "urn:ngm:class:red-teaming",
         "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluations"
       }
     ],
     "enables": [
@@ -136,9 +160,46 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policies"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-impact-assessment",
+        "label": "Algorithmic Impact Assessments"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai-systems",
+        "label": "Frontier AI Systems"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:deployment-context",
+        "label": "Deployment Context"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:defence-in-depth",
@@ -161,7 +222,24 @@
         "label": "Tiered Capability Thresholds"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-benefits",
+        "label": "AI Benefits"
+      },
+      {
+        "id": "urn:ngm:class:ai-capabilities",
+        "label": "AI Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:beneficial-ai",
+        "label": "Beneficial AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-for-good",
+        "label": "AI for Good"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -191,6 +269,14 @@
       {
         "id": "urn:ngm:class:threat-intelligence",
         "label": "Threat Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:risk-register",
+        "label": "Risk Registers"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness Testing"
       }
     ],
     "supports": [
@@ -213,6 +299,22 @@
       {
         "id": "urn:ngm:class:standards",
         "label": "Standards Development"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards Development"
+      },
+      {
+        "id": "urn:ngm:class:international-coordination",
+        "label": "International Coordination"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier",
+        "label": "Public Awareness"
+      },
+      {
+        "id": "urn:ngm:class:liability-adjudication",
+        "label": "Liability Adjudication"
       }
     ],
     "standardizedBy": [
@@ -307,9 +409,19 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-risk",
+      "label": "AI Risk",
+      "slug": "ai-risk"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management",
+      "slug": "risk-management"
     }
   ],
   "inheritedRelations": {
@@ -357,26 +469,38 @@
         "label": "Formal Verification"
       },
       {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:human-ai-collaboration",
         "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
       },
       {
         "id": "urn:ngm:class:responsible-ai",
@@ -387,30 +511,110 @@
         "label": "Trustworthy AI"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:ai-incident",
+        "label": "AI Incident"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "id": "urn:ngm:class:compute-threshold",
+        "label": "Compute Threshold"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-framework",
+        "label": "AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO-IEC 23894"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ai-capabilities-research",
         "label": "AI Capabilities Research"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:limited-risk-ai",
+        "label": "Limited Risk AI"
+      },
+      {
+        "id": "urn:ngm:class:minimal-risk-ai",
+        "label": "Minimal Risk AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ],
     "bridgesTo": [
@@ -425,6 +629,26 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:existential-ai-risk",
+        "label": "Existential AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -439,6 +663,26 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:sparse-autoencoders",
+        "label": "Sparse Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection"
+      },
+      {
+        "id": "urn:ngm:class:failure-mode-analysis",
+        "label": "Failure Mode Analysis"
       }
     ],
     "supports": [
@@ -447,18 +691,60 @@
         "label": "AI Ethics"
       },
       {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
       },
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-office",
+        "label": "AI Office"
+      },
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "General-Purpose AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
       }
     ],
     "relatedTo": [
@@ -479,20 +765,20 @@
         "label": "AI Regulation"
       },
       {
+        "id": "urn:ngm:class:ai-security-institute",
+        "label": "AI Security Institute"
+      },
+      {
+        "id": "urn:ngm:class:apollo-research",
+        "label": "Apollo Research"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
         "id": "urn:ngm:class:corrigibility",
         "label": "Corrigibility"
-      },
-      {
-        "id": "urn:ngm:class:existential-risk",
-        "label": "Existential Risk"
-      },
-      {
-        "id": "urn:ngm:class:mesa-optimisation",
-        "label": "Mesa-Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:robustness",
-        "label": "Robustness"
       }
     ]
   },

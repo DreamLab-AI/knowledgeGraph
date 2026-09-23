@@ -79,7 +79,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:international-monetary-fund",
+        "id": "urn:ngm:class:imf",
         "label": "International Monetary Fund"
       },
       {
@@ -89,6 +89,10 @@
       {
         "id": "urn:ngm:class:financial-stability-board",
         "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
       }
     ]
   },
@@ -177,8 +181,24 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:dao",
         "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "relatedTo": [

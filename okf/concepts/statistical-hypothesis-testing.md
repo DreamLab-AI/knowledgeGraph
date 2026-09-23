@@ -1,0 +1,16 @@
+---
+okf_version: "0.2"
+type: Class
+title: Statistical Hypothesis Testing
+resource: urn:ngm:class:statistical-hypothesis-testing
+domain: ai
+description: "Statistical hypothesis testing is a formal procedure for determining whether an observed difference between two outcomes, such as the performance of two models, is unlikely to have arisen by chance under a stated null hypothesis. It computes a test statistic and associated p-value from sample data and compares it against a significance threshold to accept or reject the null hypothesis. In machine "
+maturity: established
+quality: 0
+is-a:
+  - urn:ngm:class:model-evaluation
+---
+
+# Statistical Hypothesis Testing
+
+Statistical hypothesis testing is a formal procedure for determining whether an observed difference between two outcomes, such as the performance of two models, is unlikely to have arisen by chance under a stated null hypothesis. It computes a test statistic and associated p-value from sample data and compares it against a significance threshold to accept or reject the null hypothesis. In machine learning it is used to compare model or benchmark scores across runs, guarding against overinterpreting differences that fall within noise. Common tests include the paired t-test, Wilcoxon signed-rank test, and bootstrap resampling for non-normal score distributions.

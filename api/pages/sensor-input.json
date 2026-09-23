@@ -38,6 +38,10 @@
       {
         "id": "urn:ngm:class:digital-signal-processing",
         "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
       }
     ],
     "enables": [
@@ -52,6 +56,10 @@
       {
         "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
       }
     ],
     "dependsOn": [
@@ -61,6 +69,10 @@
       },
       {
         "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
         "label": "Embedded System"
       }
     ],
@@ -73,6 +85,10 @@
       {
         "id": "urn:ngm:class:synthetic-data",
         "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator Output"
       }
     ],
     "bridgesTo": [
@@ -93,6 +109,14 @@
       {
         "id": "urn:ngm:class:kalman-filter",
         "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-driven-i-o",
+        "label": "Interrupt-Driven I/O"
       }
     ],
     "supports": [
@@ -128,6 +152,14 @@
       {
         "id": "urn:ngm:class:data-acquisition",
         "label": "Data Acquisition"
+      },
+      {
+        "id": "urn:ngm:class:sensor-technology",
+        "label": "Sensor Technology"
+      },
+      {
+        "id": "urn:ngm:class:noise-model",
+        "label": "Noise Model"
       }
     ]
   },
@@ -285,7 +317,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -313,6 +345,10 @@
       {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:bus-interface",
+        "label": "Bus Interface"
       },
       {
         "id": "urn:ngm:class:communication-protocol",
@@ -389,6 +425,10 @@
         "label": "Edge Computing Node"
       },
       {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
@@ -403,6 +443,10 @@
         "label": "Field-Programmable Gate Array"
       },
       {
+        "id": "urn:ngm:class:printed-circuit-board",
+        "label": "Printed Circuit Board"
+      },
+      {
         "id": "urn:ngm:class:system-on-chip",
         "label": "System-on-Chip"
       },
@@ -411,7 +455,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:infra-data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       },
       {
@@ -421,10 +465,6 @@
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

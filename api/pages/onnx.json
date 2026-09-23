@@ -24,6 +24,10 @@
       {
         "id": "urn:ngm:class:onnx-runtime",
         "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:ngm:class:onnx-model-zoo",
+        "label": "ONNX Model Zoo"
       }
     ],
     "requires": [
@@ -34,6 +38,10 @@
       {
         "id": "urn:ngm:class:computation-graph",
         "label": "Computation Graph"
+      },
+      {
+        "id": "urn:ngm:class:protobuf",
+        "label": "Protocol Buffers"
       }
     ],
     "enables": [
@@ -61,7 +69,16 @@
         "label": "Open Standard"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tensorflow-savedmodel",
+        "label": "TensorFlow SavedModel"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "TorchScript"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:neural-processing-unit",
@@ -129,6 +146,11 @@
       "slug": "infra-legal-and-regulatory"
     },
     {
+      "id": "urn:ngm:class:specification",
+      "label": "Specification",
+      "slug": "specification"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
@@ -145,7 +167,7 @@
         "label": "OpenXR"
       },
       {
-        "id": "urn:ngm:class:universal-scene-description",
+        "id": "urn:ngm:class:usd",
         "label": "Universal Scene Description"
       },
       {
@@ -253,8 +275,16 @@
         "label": "Metaverse Standards Forum"
       },
       {
+        "id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
         "id": "urn:ngm:class:specification",
         "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
@@ -407,12 +437,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:infra-software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
       }
     ]
   },
