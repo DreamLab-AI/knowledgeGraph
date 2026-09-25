@@ -195,7 +195,8 @@ Language Modeling is the fundamental NLP task of learning probability distributi
 
 ![1705423306024.mp4](assets/1705423306024_1705437842029_0.mp4)
 
-- {{tweet https://twitter.com/BlockadeLabs/status/1719818562917761094}}
+<https://twitter.com/BlockadeLabs/status/1719818562917761094>
+
 - This is a [[presentation]] slide and the next slide is [[Open Generative AI tools]]
 
 ### Key Quotes
@@ -408,7 +409,8 @@ Language Modeling is the fundamental NLP task of learning probability distributi
 
 ![1705423306024.mp4](assets/1705423306024_1705437842029_0.mp4)
 
-- {{tweet https://twitter.com/BlockadeLabs/status/1719818562917761094}}
+<https://twitter.com/BlockadeLabs/status/1719818562917761094>
+
 - This is a [[presentation]] slide and the next slide is [[Open Generative AI tools]]
 
 ### Key Quotes

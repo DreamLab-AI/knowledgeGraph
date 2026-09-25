@@ -6,7 +6,8 @@ Krita is a free, open-source professional digital painting and raster graphics a
 
 - Remote server required plugins page [krita-ai-diffusion/doc/comfy-requirements.md at main · Acly/krita-ai-diffusion (github.com)](https://github.com/Acly/krita-ai-diffusion/blob/main/doc/comfy-requirements.md)
 - Port 8189 for my inference system
-- {{video https://www.youtube.com/watch?v=AF2VyqSApjA}}
+
+![](https://www.youtube.com/watch?v=AF2VyqSApjA)
 
 ### Provenance
 

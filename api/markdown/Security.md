@@ -132,7 +132,9 @@ The protection of AI systems and their components against unauthorized access, m
 - The urgent call for more technologists to understand the critical nature of the current era and commit to supporting national security efforts.
 - Swarms of lethal drones equipped with facial recognition technology.
 - Unmanned armed robots that are nearly impossible to defeat.
-  - {{video https://www.youtube.com/watch?v=KX0ji1sAXl8}}
+
+  ![](https://www.youtube.com/watch?v=KX0ji1sAXl8)
+
 - Autonomous fighter jets capable of supersonic speeds and enduring greater gravitational forces than human pilots.
 - Cyberattacks aimed at disabling critical port infrastructure.
 - Disinformation campaigns and deepfakes that can manipulate presidential elections.
@@ -194,7 +196,8 @@ The protection of AI systems and their components against unauthorized access, m
 - during a debate in 2014 at John Hopkins University. Hayden admitted that the U.S. government uses metadata, which refers to data about communications like phone records (numbers called, time, duration) rather than the actual content, as a basis for killing people in drone strikes against terrorist suspects abroad. Reports based on Snowden leaks alleged the NSA used metadata analysis to track potential targets for lethal drone operations.
 - OpenAI [has appointed](https://openai.com/index/openai-announces-leadership-transition/) Retired U.S. Army General Paul M. Nakasone to its Board of Directors and the Board's Safety and Security Committee. General Nakasone is a leading expert in cybersecurity, having previously served as the Director of the National Security Agency (NSA) and Commander of U.S. Cyber Command (USCYBERCOM).
   - [(1) Edward Snowden on X: "They've gone full mask-off: 𝐝𝐨 𝐧𝐨𝐭 𝐞𝐯𝐞𝐫 trust @OpenAI or its products (ChatGPT etc). There is only one reason for appointing an @NSAGov Director to your board. This is a willful, calculated betrayal of the rights of every person on Earth. You have been warned." / X (twitter.com)](https://twitter.com/Snowden/status/1801610725229498403)
-  - {{twitter https://twitter.com/Snowden/status/1801610725229498403}}
+
+  <https://twitter.com/Snowden/status/1801610725229498403>
 
 <iframe src="https://www.eff.org/deeplinks/2024/04/us-senate-and-biden-administration-shamefully-renew-and-expand-fisa-section-702-0" style="width: 100%; height: 600px"></iframe>
 
@@ -214,7 +217,9 @@ The protection of AI systems and their components against unauthorized access, m
 
 - [Tether](https://tether.to/en/whitepaper/) is the largest of the stablecoins, with approximately $186B in circulation as of mid-2026 (up from ~$70B in 2022, and ~$118B at start of 2025), and the third largest 'crypto' by market cap. This has been a meteoric rise, attracting the ire and scrutiny of [regulators](https://www.cftc.gov/PressRoom/PressReleases/8450-21) and [investigators](https://www.bloomberg.com/news/features/2021-10-07/crypto-mystery-where-s-the-69-billion-backing-the-stablecoin-tether). There was considerable doubt that Tether had sufficient assets backing their synthetic dollars, but the market seems not to mind. They have transitioned to being backed by US treasury bills, a perfect asset for this use case. It's resilience against 'bank runs' was tested in May 2022 when $9B was redeemed directly for dollars in a few days following the UST crash. It's an important technology for this metaverse conversation because of intersections with Bitcoin through the Lightning network. Tether might actually provide everything needed. It's only as safe as the trust invested in the central issuer though, and the leadership and history of the company [are questionable](https://www.wsj.com/articles/tether-ownership-and-company-weaknesses-revealed-in-documents-11675363340). It's notable and somewhat ironic that it's perhaps better and more transparently backed than most banks, and probably all novel fiat fintech products. We can employ the asset through the Taro technology described earlier but we would rather use something with higher regulatory assurances.
   - [Paolo Ardoino 🍐 on X: "Today Tether takes the majority stake in @BlackrockNeuro_ and unveils the ultimate pillar of its long term vision and strategy: Tether Evo🧠🦾 First of all, this investment (same as energy, mining, ...) is done outside of stablecoin reserves, with our own company profits (last…" / X (twitter.com)](https://twitter.com/paoloardoino/status/1784938950525661578)
-  - {{twitter https://twitter.com/paoloardoino/status/1784938950525661578}}
+
+  <https://twitter.com/paoloardoino/status/1784938950525661578>
+
 - Paolo Ardoino, Tether's chief technology officer, said in a podcast episode with The Block that USDT is increasingly used for value transfers, making up about **40**% of all token usage, compared to 60% of crypto trading.
   - 40% of USDT is now real world use cases, with Tron emerging as the blockchain of the moment.
   - Tether as a company makes billions of dollars of profit per year and has global adoption and network effect. The company has around 20 employees. They will likely remain pre-eminent in the synthetic dollar market.
@@ -271,11 +276,15 @@ The protection of AI systems and their components against unauthorized access, m
   - "..it is now becoming clear that crypto and DeFi have deeper structural limitations that prevent them from achieving the levels of efficiency, stability or integrity required for an adequate monetary system. In particular, the crypto universe lacks a nominal anchor, which it tries to import, imperfectly, through stable coins. It is also prone to fragmentation, and its applications cannot scale without compromising security, as shown by their congestion and exorbitant fees. Activity in this parallel system is, instead, sustained by the influx of speculative coin holders. Finally, there are serious concerns about the role of unregulated intermediaries in the system. As they are deep-seated, these structural shortcomings are unlikely to be amenable to technical fixes alone. This is because they reflect the inherent limitations of a decentralised system built on permissionless blockchains."
 - For "crypto" assets more generally it is useful to look at the recent ["whole government executive order"](https://www.whitehouse.gov/briefing-room/presidential-actions/2022/03/09/executive-order-on-ensuring-responsible-development-of-digital-assets/)signed by President Biden early in 2022. It was mainly framed in terms of "responsible innovation, and leadership" in the new space. The resulting, "Comprehensive Framework for Responsible Development of Digital Assets" was a product of multi agency collaboration and can be seen as 9 reports and a summary document, and was long anticipated. The summary itself is neither particularly comprehensive nor a framework, and mainly serves to identifies high level risks, aspirations, and challenges, and strongly hints toward eventual development of a "digital dollar" (CBDC, expanded later). This work has been repealed completely as the Trump administration eschews [[CBDCs]] and openly promotes crypto.
 - https://twitter.com/kofinas/status/1881077334750421066
-  - {{twitter https://twitter.com/kofinas/status/1881077334750421066}}
+
+  <https://twitter.com/kofinas/status/1881077334750421066>
+
 - The risks section of the original executive order shows how legislatorsare framing this, so it's useful to break down here.
   - Consumer and business protections. This is likely to pertain to custodians and is much needed. Misselling is rife. Security presents a challenge.
   - Highlighting the need for international coordination suggests they are mindful of [jurisdictional arbitrage](https://twitter.com/iamLeonHill/status/1847973039234846747).
-  - {{twitter https://twitter.com/iamLeonHill/status/1847973039234846747}}
+
+  <https://twitter.com/iamLeonHill/status/1847973039234846747>
+
   - Future protocol changes.
   - Unanticipated effects on the domestic and international energy system.
   - Vulnerability to adversary attacks are [widely studied](https://braiins.com/blog/bitcoin-mining-attacks-explained)[[apostolaki2016hijacking; @apostolaki2017hijacking; @johnson2014game; @stinner2022proof]], and still pretty much completely speculative because of the complex nature of the attack surface.

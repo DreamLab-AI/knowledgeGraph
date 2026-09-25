@@ -182,7 +182,9 @@ The challenge and process of ensuring AI systems pursue objectives that align wi
 - cryptopunks](https://nft.tiffany.com/faq/) collaboration which will automatically generate royalties for Tiffanys and parent company Louis Vitton in perpetuity. Such products prove provenance, create new aftermarket opportunities, and unlock metaverse applications.
 - It is completely reasonable to assert that these use cases could be accomplished without the use of NFT technology, and is part of the hype bubble.
 - Twitter user Cantino.Eth offers an exhaustive roundup of what they think future uses might be. It’s a [thread full of industry insider jargon](https://twitter.com/chriscantino/status/1542930648750608387)) but it’s indicative of a shift in focus from speculation to ‘building’ asthe market conditions change.
-- {{twitter https://twitter.com/chriscantino/status/1542930648750608387)}}
+
+<https://twitter.com/chriscantino/status/1542930648750608387)>
+
 - Some of the more interesting (less arcane)use cases identified in the thread are summarised very briefly below,again with comments as to how this might pertain to our metaverse applications.
   - Hobby tokens, demonstrating interest in an activity. This is potentially a metaverse adaptation of badges on a blazer in the real world, and might serve to drive communities in a metaverse. The same is true for activism and political alighnment. It’s a great idea and worth developing.
   - Professional Networks and qualification badges, like a LinkedIn qualification panel, but in the metaverse. A cisco NFT in the metaverse for a CCNA qualification makes intuitive sense.
@@ -395,7 +397,9 @@ The challenge and process of ensuring AI systems pursue objectives that align wi
 - cryptopunks](https://nft.tiffany.com/faq/) collaboration which will automatically generate royalties for Tiffanys and parent company Louis Vitton in perpetuity. Such products prove provenance, create new aftermarket opportunities, and unlock metaverse applications.
 - It is completely reasonable to assert that these use cases could be accomplished without the use of NFT technology, and is part of the hype bubble.
 - Twitter user Cantino.Eth offers an exhaustive roundup of what they think future uses might be. It’s a [thread full of industry insider jargon](https://twitter.com/chriscantino/status/1542930648750608387)) but it’s indicative of a shift in focus from speculation to ‘building’ asthe market conditions change.
-- {{twitter https://twitter.com/chriscantino/status/1542930648750608387)}}
+
+<https://twitter.com/chriscantino/status/1542930648750608387)>
+
 - Some of the more interesting (less arcane)use cases identified in the thread are summarised very briefly below,again with comments as to how this might pertain to our metaverse applications.
   - Hobby tokens, demonstrating interest in an activity. This is potentially a metaverse adaptation of badges on a blazer in the real world, and might serve to drive communities in a metaverse. The same is true for activism and political alighnment. It’s a great idea and worth developing.
   - Professional Networks and qualification badges, like a LinkedIn qualification panel, but in the metaverse. A cisco NFT in the metaverse for a CCNA qualification makes intuitive sense.
@@ -485,7 +489,8 @@ The challenge and process of ensuring AI systems pursue objectives that align wi
 - Time to accessing power is becoming the key constraint and source of value as demand for AI computing capacity far outstrips supply. Bitcoin miners with existing power access have a major advantage.
 - By locating in areas with excess renewable energy that can't be fully exported, Bitcoin miners are actually helping make these renewable installations more economically viable and efficient.
 - [Mike Alfred on X: "Morgan Stanley out with new research suggesting that BTC miners are the fastest path to put new data centers online because they already have access to huge amounts of power. Their models show BTC miners trade at a large discount to the intrinsic value of their secured power. https://t.co/rwJJLBPdYN" / X (twitter.com)](https://twitter.com/mikealfred/status/1781333730071896152)
-- {{twitter https://twitter.com/mikealfred/status/1781333730071896152}}
+
+<https://twitter.com/mikealfred/status/1781333730071896152>
 
 #### Podcasting2.0
 

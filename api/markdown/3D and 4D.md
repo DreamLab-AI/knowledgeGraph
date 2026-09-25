@@ -13,7 +13,9 @@ The domain of three-dimensional and four-dimensional content creation, covering 
 - It aims to integrate with existing 3D workflows and tools, offering features such as intelligent scene organisation and optimisation for real-time rendering.
 - Edify 3D is designed to handle large and complex 3D datasets, making it suitable for applications ranging from architectural visualisation to virtual world design.
 - NVIDIA hopes that it will democratise 3D content creation, allowing more people to participate in designing and customising virtual environments.
-  - {{video https://www.youtube.com/watch?v=AJWTUvXA0Wc}}
+
+  ![](https://www.youtube.com/watch?v=AJWTUvXA0Wc)
+
 - Users can describe the desired 3D model with a text prompt, specifying details like shape, colour, and texture.
 - Alternatively, users can upload an image to guide the 3D model generation.
 - The generated 3D models can be downloaded in various formats for use in different applications.
@@ -66,7 +68,9 @@ The domain of three-dimensional and four-dimensional content creation, covering 
 - Stable Projectorz emphasises customer satisfaction and offers support to ensure a positive purchasing experience.
 - The website features a blog with guides and articles on choosing the right projector, troubleshooting common issues, and optimising image colour and quality.
 - They appear to offer projectors with various connectivity options, including HDMI, USB, and wireless capabilities.
-  - {{video https://www.youtube.com/watch?v=IXQg0ITHjtw}}
+
+  ![](https://www.youtube.com/watch?v=IXQg0ITHjtw)
+
   - **[stabilityai/stable-zero123](https://huggingface.co/stabilityai/stable-zero123)** - - Stable Zero123 is a model developed by Stability AI that estimates the novel view of an object from a single-view image, focusing on zero-shot generalisation to arbitrary objects.
 - The model can generate multiple views of an object from different angles, allowing for a more complete 3D understanding from a single 2D image.
 - Stable Zero123 uses a diffusion model architecture to generate the novel views, resulting in detailed and realistic outputs.
@@ -417,8 +421,9 @@ The domain of three-dimensional and four-dimensional content creation, covering 
 - Building a strong foundation of [[skills development]] and knowledge is highlighted as a long-term investment.
 - Patience and persistence are crucial, as significant achievements often take time and effort.
 - The author notes the futility of seeking external validation, stating that you'll still be you regardless of success.
-  {{twitter https://twitter.com/cocktailpeanut/status/1765462787046686968}}
-- {{twitter https://twitter.com/blizaine/status/1765434684450742764?}}
+  <https://twitter.com/cocktailpeanut/status/1765462787046686968>
+
+<https://twitter.com/blizaine/status/1765434684450742764?>
 
 ## Text to 3D
 

@@ -36,7 +36,8 @@ Named Entity Recognition (NER) is the NLP task of identifying and classifying na
 
 ## Devin
 
-- {{video https://www.youtube.com/watch?v=fjHtjT7GO1c&}}
+![](https://www.youtube.com/watch?v=fjHtjT7GO1c&)
+
 - [Blog (cognition-labs.com)](https://www.cognition-labs.com/blog)
 
 ## Converting 2D Plans into 3D Models

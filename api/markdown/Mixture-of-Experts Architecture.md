@@ -117,7 +117,7 @@ An architecture that uses multiple specialised sub-networks (experts) with a gat
 - https://huggingface.co/blog/moe
 - https://huggingface.co/collections/osanseviero/moes-papers-reading-list-65a83f8a9aec16459920ffe0
 - [twitter link to the render loading below](https://twitter.com/osanseviero/status/1773360705682411750)
-  {{twitter https://twitter.com/osanseviero/status/1773360705682411750}} -
+  <https://twitter.com/osanseviero/status/1773360705682411750> -
 
   ## Academic Context
 

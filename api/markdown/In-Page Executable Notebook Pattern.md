@@ -27,7 +27,5 @@ def loadDatabase():
 loadDatabase()  # remove print
 ```
 
-- {{evalparent}}
-
 ### Provenance
 

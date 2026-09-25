@@ -49,9 +49,12 @@ A proposed multi-viewpoint immersive AI research platform enabling multiple doma
 - Leverages UK’s collaborative culture and world-class AI/human factors research.
 - This facility will transform expert teamwork, create adaptive AI, and make the UK a global leader in collaborative intelligence.
   - **The technology is ready. The need is critical. The potential is transformative.**
-- {{video https://www.youtube.com/watch?v=eV6_J_rAVs4}}
-- {{video https://www.youtube.com/watch?v=vlV1vRD4jrY}}
-- {{video https://www.youtube.com/watch?v=Y-DZLTY6Hok}}
+
+![](https://www.youtube.com/watch?v=eV6_J_rAVs4)
+
+![](https://www.youtube.com/watch?v=vlV1vRD4jrY)
+
+![](https://www.youtube.com/watch?v=Y-DZLTY6Hok)
 
 ## Core Innovation
 

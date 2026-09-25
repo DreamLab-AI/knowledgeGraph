@@ -747,7 +747,9 @@ sequenceDiagram
 ![](./assets/3c46c793cd3e9cdedc88623cafee35ef0ac7ebf0.jpg)
 
 - https://twitter.com/Geertjancap/status/1380972132990136322/photo/1
-- {{twitter https://twitter.com/Geertjancap/status/1380972132990136322/photo/1}}
+
+<https://twitter.com/Geertjancap/status/1380972132990136322/photo/1>
+
 - Bitcoin distribution is skewed to a few early holders, but it likely is fair.
 
 ##### Monetisation of User Generated Content:
@@ -830,7 +832,8 @@ sequenceDiagram
   - I'm sceptical, but it's a nice effort.
   - It's **cheap**, I would totally give this to a kid over a mobile phone. £200 all in?!?
   - It sold out immediately.
-  - {{tweet https://twitter.com/rabbit_hmi/status/1744781083831574824}}
+
+  <https://twitter.com/rabbit_hmi/status/1744781083831574824>
 
 ### Key Features and Benefits
 
@@ -875,7 +878,8 @@ sequenceDiagram
   - [Light Field Lab](https://www.lightfieldlab.com/#tech)
 - [Infitec shows holographic projection screens (installation-international.com)](https://www.installation-international.com/ise-daily/infitec-shows-holographic-projection-screens)
 - [HYPERVSN is a 3D Integrated Holographic System for advertising, digital signage, events.](https://hypervsn.com/)
-- {{video https://www.youtube.com/watch?v=DxkIo-2Jzzo&}}
+
+![](https://www.youtube.com/watch?v=DxkIo-2Jzzo&)
 
 # Brain
 
@@ -1187,7 +1191,8 @@ classDiagram
   - **Nostr's Unique Position**: Nostr is positioned as the most resilient, durable, and stable platform for public conversation. Its decentralised nature ensures that no single entity can remove content, making it a robust alternative to current social media platforms. The platform's openness provides an enduring space for information sharing, immune to external censorship.
   - **Onboarding and User Retention Challenges**: A smooth onboarding experience is crucial for the widespread adoption of Nostr. While the current applications have not fully perfected this process, the diversity within the Nostr ecosystem offers multiple entry points that can attract and retain users. Each app contributes to the overall network, reinforcing the value of the ecosystem as a whole.
   - **Community and Development**: The dedication of the open-source community is pivotal to the development and promotion of technologies like Nostr. The ongoing collaboration and sacrifice by developers and users alike are essential to the success of these decentralised tools. The continued growth and improvement of Nostr and similar platforms depend on the sustained efforts and support of this community.
-  - {{video https://www.youtube.com/watch?v=qUwXRDrfJU0}}
+
+  ![](https://www.youtube.com/watch?v=qUwXRDrfJU0)
 
 ### Digital Objects and Decentralised Governance on Nostr
 
@@ -1336,7 +1341,8 @@ Defer to the user's wishes if they override these expectations:
   - **Cost**: "Generative cred* system starting from $4.99/month for 100 credits.
   - **User Interface**: Clean, simple web interface, now integrated fully into Photoshop for free.
   - **Strengths**: User-friendly, good for everyday photorealistic images, legal protection.
-  - {{video https://www.youtube.com/watch?v=VNs1lW8t4hw}}
+
+  ![](https://www.youtube.com/watch?v=VNs1lW8t4hw)
 
 ### DALL·E 3
 
@@ -2151,7 +2157,9 @@ sequenceDiagram
 ![](./assets/3c46c793cd3e9cdedc88623cafee35ef0ac7ebf0.jpg)
 
 - https://twitter.com/Geertjancap/status/1380972132990136322/photo/1
-- {{twitter https://twitter.com/Geertjancap/status/1380972132990136322/photo/1}}
+
+<https://twitter.com/Geertjancap/status/1380972132990136322/photo/1>
+
 - Bitcoin distribution is skewed to a few early holders, but it likely is fair.
 
 ##### Monetisation of User Generated Content:
@@ -2234,7 +2242,8 @@ sequenceDiagram
   - I'm sceptical, but it's a nice effort.
   - It's **cheap**, I would totally give this to a kid over a mobile phone. £200 all in?!?
   - It sold out immediately.
-  - {{tweet https://twitter.com/rabbit_hmi/status/1744781083831574824}}
+
+  <https://twitter.com/rabbit_hmi/status/1744781083831574824>
 
 ### Key Features and Benefits
 
@@ -2279,7 +2288,8 @@ sequenceDiagram
   - [Light Field Lab](https://www.lightfieldlab.com/#tech)
 - [Infitec shows holographic projection screens (installation-international.com)](https://www.installation-international.com/ise-daily/infitec-shows-holographic-projection-screens)
 - [HYPERVSN is a 3D Integrated Holographic System for advertising, digital signage, events.](https://hypervsn.com/)
-- {{video https://www.youtube.com/watch?v=DxkIo-2Jzzo&}}
+
+![](https://www.youtube.com/watch?v=DxkIo-2Jzzo&)
 
 # Brain
 
@@ -2591,7 +2601,8 @@ classDiagram
   - **Nostr's Unique Position**: Nostr is positioned as the most resilient, durable, and stable platform for public conversation. Its decentralised nature ensures that no single entity can remove content, making it a robust alternative to current social media platforms. The platform's openness provides an enduring space for information sharing, immune to external censorship.
   - **Onboarding and User Retention Challenges**: A smooth onboarding experience is crucial for the widespread adoption of Nostr. While the current applications have not fully perfected this process, the diversity within the Nostr ecosystem offers multiple entry points that can attract and retain users. Each app contributes to the overall network, reinforcing the value of the ecosystem as a whole.
   - **Community and Development**: The dedication of the open-source community is pivotal to the development and promotion of technologies like Nostr. The ongoing collaboration and sacrifice by developers and users alike are essential to the success of these decentralised tools. The continued growth and improvement of Nostr and similar platforms depend on the sustained efforts and support of this community.
-  - {{video https://www.youtube.com/watch?v=qUwXRDrfJU0}}
+
+  ![](https://www.youtube.com/watch?v=qUwXRDrfJU0)
 
 ### Digital Objects and Decentralised Governance on Nostr
 
@@ -2740,7 +2751,8 @@ Defer to the user's wishes if they override these expectations:
   - **Cost**: "Generative cred* system starting from $4.99/month for 100 credits.
   - **User Interface**: Clean, simple web interface, now integrated fully into Photoshop for free.
   - **Strengths**: User-friendly, good for everyday photorealistic images, legal protection.
-  - {{video https://www.youtube.com/watch?v=VNs1lW8t4hw}}
+
+  ![](https://www.youtube.com/watch?v=VNs1lW8t4hw)
 
 ### DALL·E 3
 
@@ -3274,7 +3286,8 @@ Defer to the user's wishes if they override these expectations:
   - **Nostr's Unique Position**: Nostr is positioned as the most resilient, durable, and stable platform for public conversation. Its decentralised nature ensures that no single entity can remove content, making it a robust alternative to current social media platforms. The platform's openness provides an enduring space for information sharing, immune to external censorship.
   - **Onboarding and User Retention Challenges**: A smooth onboarding experience is crucial for the widespread adoption of Nostr. While the current applications have not fully perfected this process, the diversity within the Nostr ecosystem offers multiple entry points that can attract and retain users. Each app contributes to the overall network, reinforcing the value of the ecosystem as a whole.
   - **Community and Development**: The dedication of the open-source community is pivotal to the development and promotion of technologies like Nostr. The ongoing collaboration and sacrifice by developers and users alike are essential to the success of these decentralised tools. The continued growth and improvement of Nostr and similar platforms depend on the sustained efforts and support of this community.
-  - {{video https://www.youtube.com/watch?v=qUwXRDrfJU0}}
+
+  ![](https://www.youtube.com/watch?v=qUwXRDrfJU0)
 
 ### Digital Objects and Decentralised Governance on Nostr
 
@@ -3859,9 +3872,10 @@ end
 
   They don't know that most of the owners will never use them either, but I do.
 
-- {{video https://www.youtube.com/watch?v=aqTIB_q40bo}}
+![](https://www.youtube.com/watch?v=aqTIB_q40bo)
+
 - [twitter link to the render loading below](https://twitter.com/bilawalsidhu/status/1759060086977143132)
-  {{twitter https://twitter.com/bilawalsidhu/status/1759060086977143132}}
+  <https://twitter.com/bilawalsidhu/status/1759060086977143132>
 - Meta research paper finally nails down focus with waveguide AR glasses [Waveguide holography for 3D augmented reality glasses | Nature Communications](https://www.nature.com/articles/s41467-023-44032-1)
 - [CES (Pt. 2), Sony XR, DigiLens, Vuzix, Solos, EverySight, Mojie, TCL color µLED – KGOnTech (kguttag.com)](https://kguttag.com/2024/01/24/ces-pt-2-sony-xr-digilens-vuzix-solos-everysight-mojie-tcl-color-%c2%b5led/)
 - [Campus](https://techcrunch-com.cdn.ampproject.org/c/s/techcrunch.com/2022/09/09/roblox-rdc-2022/amp/)
@@ -4211,9 +4225,10 @@ graph LR
 
   They don't know that most of the owners will never use them either, but I do.
 
-- {{video https://www.youtube.com/watch?v=aqTIB_q40bo}}
+![](https://www.youtube.com/watch?v=aqTIB_q40bo)
+
 - [twitter link to the render loading below](https://twitter.com/bilawalsidhu/status/1759060086977143132)
-  {{twitter https://twitter.com/bilawalsidhu/status/1759060086977143132}}
+  <https://twitter.com/bilawalsidhu/status/1759060086977143132>
 - Meta research paper finally nails down focus with waveguide AR glasses [Waveguide holography for 3D augmented reality glasses | Nature Communications](https://www.nature.com/articles/s41467-023-44032-1)
 - [CES (Pt. 2), Sony XR, DigiLens, Vuzix, Solos, EverySight, Mojie, TCL color µLED – KGOnTech (kguttag.com)](https://kguttag.com/2024/01/24/ces-pt-2-sony-xr-digilens-vuzix-solos-everysight-mojie-tcl-color-%c2%b5led/)
 - [Campus](https://techcrunch-com.cdn.ampproject.org/c/s/techcrunch.com/2022/09/09/roblox-rdc-2022/amp/)

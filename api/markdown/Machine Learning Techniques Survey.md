@@ -71,7 +71,9 @@ A structured survey of the principal paradigms and architectures in machine lear
 - **Description**: Consists of layers of interconnected nodes which just tweak numbers
 - **Explain**: Like a network of brain cells working together to think and learn.
 - **Paper**: [Neural networks: An overview of early research, current frameworks and new challenges](https://www.sciencedirect.com/science/article/pii/S0925231216305550?)
-- {{video https://www.youtube.com/watch?v=aircAruvnKk&}}
+
+![](https://www.youtube.com/watch?v=aircAruvnKk&)
+
 - **Description**: Involves training large neural networks.
 - **Explain**: Larger scale engineering of neural nets, to solve much harder problems.
 - **Paper**: [Deep Learning: A Comprehensive Overview on Techniques, Taxonomy, and Applications](https://link.springer.com/article/10.1007/s42979-021-00815-1)

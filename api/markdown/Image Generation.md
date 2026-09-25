@@ -598,7 +598,9 @@ Recent years have witnessed the strong power of large text-to-image diffusion mo
 - It's important to note that as the web dies, we will increasingly be forced to use [[Agents]] to mediate information, and this will mean increased [[Global Inequality]] as the remaining tatters of the free internet become badlands.
   - [Andrew Gao on X: "the singularity is literally here. Devin ended up talking to ANOTHER AI (McDonalds' AI recruiter)!! The future of the web is #agents talking to agents. Luckily, Devin convinced Olivia to give me an interview :) Peep the video https://t.co/oYJG8JzIIO" / X (twitter.com)](https://twitter.com/itsandrewgao/status/1786880819170320678)
 - [Andrew Gao on X: "#Devin helped me get a job at McDonalds 🍔🍟 I will have a job post-AGI! (seriously, it's gotten really good at browser automation, watch) 📽️ Part 2: auto-applying to @cognition_labs with Devin 👇🧵 https://t.co/oBm20nOCvx" / X (twitter.com)](https://twitter.com/itsandrewgao/status/1786879644651991549)
-  - {{twitter https://twitter.com/itsandrewgao/status/1786879644651991549}}
+
+  <https://twitter.com/itsandrewgao/status/1786879644651991549>
+
 - Bots that persuade bots that persuade bots
   - https://www.linkedin.com/posts/emollick_two-weird-things-that-are-going-to-happen-activity-7180768944067072000-Gmtq?
 - Google search is dying under the shifting signal to noise problem.

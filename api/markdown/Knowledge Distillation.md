@@ -21,13 +21,15 @@ A model compression technique where a smaller "student" model is trained to mimi
 
 - In *my* version of the knowledge graph all the twitter links render interactively, inline, you will just see "loading" on the web. There are a lot of them, like this one. Sometimes you might just seen a loading with no link, that means I forgot that one, it's not going to load.
 - [twitter link to the render loading below](https://twitter.com/bentossell/status/1758235873433243950)
-  {{twitter https://twitter.com/bentossell/status/1758235873433243950}}
+  <https://twitter.com/bentossell/status/1758235873433243950>
 
 ### Notion
 
 - **Notion**: is a versatile paid tool that combines note-taking, task management, databases, and knowledge graphing. Notion allows users to create linked notes and true databases, making is very performant. It has a lot of GPT integration but this costs extra.
-- {{video https://www.youtube.com/watch?v=vFNYUl1pv54}}
-- {{video https://www.youtube.com/watch?v=WnZR7RPH8sA}}
+
+![](https://www.youtube.com/watch?v=vFNYUl1pv54)
+
+![](https://www.youtube.com/watch?v=WnZR7RPH8sA)
 
 ### Other Tools
 
@@ -61,13 +63,15 @@ A model compression technique where a smaller "student" model is trained to mimi
 
 - In *my* version of the knowledge graph all the twitter links render interactively, inline, you will just see "loading" on the web. There are a lot of them, like this one. Sometimes you might just seen a loading with no link, that means I forgot that one, it's not going to load.
 - [twitter link to the render loading below](https://twitter.com/bentossell/status/1758235873433243950)
-  {{twitter https://twitter.com/bentossell/status/1758235873433243950}}
+  <https://twitter.com/bentossell/status/1758235873433243950>
 
 ### Notion
 
 - **Notion**: is a versatile paid tool that combines note-taking, task management, databases, and knowledge graphing. Notion allows users to create linked notes and true databases, making is very performant. It has a lot of GPT integration but this costs extra.
-- {{video https://www.youtube.com/watch?v=vFNYUl1pv54}}
-- {{video https://www.youtube.com/watch?v=WnZR7RPH8sA}}
+
+![](https://www.youtube.com/watch?v=vFNYUl1pv54)
+
+![](https://www.youtube.com/watch?v=WnZR7RPH8sA)
 
 ### Other Tools
 

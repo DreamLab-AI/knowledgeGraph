@@ -27,8 +27,6 @@ concatenated_text = ""
 "Directories and paths set up."
 ```
 
-- {{evalparent}}
-
 ```python
 processed_files = 0
 skipped_files = 0
@@ -47,7 +45,6 @@ for root, _, files in os.walk(input_directory):
 "Files concatenated and cleaned. Proceed to write to output."
 ```
 
-- {{evalparent}}
 - This script has:
   - Defined paths for input and output
   - Created a text cleaning process to remove URLs, special characters, and normalize whitespace
@@ -83,8 +80,6 @@ def clean_text(text):
 "Text cleaning process defined."
 - ## Concatenate and Clean Files
 ```
-
-- {{evalparent}}
 
 ## Write to Output File
 

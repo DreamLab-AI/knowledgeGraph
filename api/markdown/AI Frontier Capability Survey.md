@@ -29,7 +29,8 @@ State of the Art in AI is a curated survey of the current frontier of artificial
 
 - Mercedes and VW now have ChatGPT4 integrated into their cars. Ford have Alexa, and when that inevitably upgrades so will all Fords.
 - Lots more hardware for consumer AI, lots more Edge and task specific inferencing. Lot more edge meets cloud. Some more local inferencing.
-- {{tweet [https://twitter.com/llama_index/status/1745148547560059277}}
+
+<https://twitter.com/llama_index/status/1745148547560059277>
 
 <!-- vault-migrate: inlined Logseq block 659e5979-c2de-4138-b2df-ede79790ee6d from working/pages/Hardware and Edge.md -->
 > ### [Rabbit](https://www.rabbit.tech/)
@@ -41,7 +42,7 @@ State of the Art in AI is a curated survey of the current frontier of artificial
 > I'm sceptical, but it's a nice effort.
 > It's **cheap**, I would totally give this to a kid over a mobile phone. £200 all in?!?
 > It sold out immediately.
-> {{tweet https://twitter.com/rabbit_hmi/status/1744781083831574824}}
+> <https://twitter.com/rabbit_hmi/status/1744781083831574824>
 > — working/pages/Hardware and Edge.md
 
 <!-- vault-migrate: inlined Logseq block 659a9229-e9c0-485f-b58a-601b68b7edd0 from working/pages/Social contract and jobs.md -->

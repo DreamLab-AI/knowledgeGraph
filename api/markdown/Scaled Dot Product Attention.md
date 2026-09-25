@@ -77,7 +77,8 @@ An attention mechanism that computes attention weights using the dot product of 
 ### Skyglass
 
 - Straight up virtual production on iPhone
-- {{tweet https://twitter.com/skyglassapp/status/1712599252575412474}}
+
+<https://twitter.com/skyglassapp/status/1712599252575412474>
 
 ### CNBC poll
 

@@ -23,7 +23,8 @@ A world-class multi-modal immersive research facility at the University of Salfo
 
   ![IMG_20160425_145237.jpg](assets/IMG_20160425_145237_1728029981248_0.jpg)
 
-  - {{video https://www.youtube.com/watch?v=vlV1vRD4jrY&t=15s}}
+  ![](https://www.youtube.com/watch?v=vlV1vRD4jrY&t=15s)
+
 - Human scale mixed reality experience
   - Very strong track record and research in immersive systems
   - 2004 VETS programme R&D engine assembler demo’d at Farnborough Air Show for Euravia Systems

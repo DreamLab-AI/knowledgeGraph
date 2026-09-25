@@ -229,7 +229,9 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 # Random Links
 
 - https://twitter.com/tldraw/status/1782443204710674571
-- {{twitter https://twitter.com/tldraw/status/1782443204710674571}}
+
+<https://twitter.com/tldraw/status/1782443204710674571>
+
 - [Paper page Design2Code: How Far Are We From Automating Front-End Engineering? (huggingface.co)](https://huggingface.co/papers/2403.03163)
 - [Generative AI Powered Assistant - Amazon Q - AWS](https://aws.amazon.com/q/)  Amazons!
 - [antworks.ai](https://antworks.ai/)
@@ -393,7 +395,9 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 - It is possible at this stage to put more flesh on the bones through example software stack choices. Such specificity likely introduces overlaps, technical challenges, and contradictions, but has been generated in the main by GenAI based on the wider corpus of text and demonstrates the direction of travel well.
 - proprietary
 - OpenAI's Sora model represents a notable advancement in AI video generation. It demonstrates the ability to generate videos up to one minute in 1080p resolution and produce high-resolution images. Sora's flexibility in handling various aspect ratios and resolutions indicates its adaptability in content creation. Its development leverages insights from prior research, including Vision Transformers and advanced training methodologies.
-- {{video https://www.youtube.com/watch?v=GqsCMPWaYac}}
+
+![](https://www.youtube.com/watch?v=GqsCMPWaYac)
+
 - **Introduction to Sora**
   - A groundbreaking AI video generation model by OpenAI, Sora is designed to transform text instructions into realistic and imaginative video scenes, marking a significant advancement in creative AI technologies.
 - **Technical Overview**
@@ -402,12 +406,14 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
   - **Transformer Architecture**
     - Leverages the Transformer model's capabilities for deep understanding and generation of content, adapted here to interpret and create complex visual narratives, ensuring dynamic and coherent video storytelling.
     - [twitter link to the render loading below](https://twitter.com/sainingxie/status/1758433676105310543)
-      {{twitter https://twitter.com/sainingxie/status/1758433676105310543}}
+      <https://twitter.com/sainingxie/status/1758433676105310543>
     - [twitter link to the render loading below](https://twitter.com/thatguybg/status/1759935959792312461)
-      {{twitter https://twitter.com/thatguybg/status/1759935959792312461}}
+      <https://twitter.com/thatguybg/status/1759935959792312461>
     - **Patch-Based Data Representation**
       - Innovatively represents videos and images as collections of smaller data units, akin to language model tokens, enabling precise and granular control over video generation and editing.
-- {{twitter https://twitter.com/drjimfan/status/1758355737066299692?s=46}}
+
+<https://twitter.com/drjimfan/status/1758355737066299692?s=46>
+
 - **Creative and Professional Applications**
   - Opens up endless possibilities for filmmakers, advertisers, educators, and content creators to produce cinema-quality visuals, educational materials, and immersive experiences effortlessly.
 - **Democratization of Video Production**
@@ -433,12 +439,15 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
   - [Video generation models as world simulators (openai.com)](https://openai.com/research/video-generation-models-as-world-simulators) research paper highlights Sora's technical foundation and its role in simulating the physical world.
   - Discussions emphasize Sora's potential in democratizing video creation and the need for granular output control for artistic purposes.
 - [Google DeepMind on X: "Introducing Veo: our most capable generative video model. 🎥 It can create high-quality, 1080p clips that can go beyond 60 seconds. From photorealism to surrealism and animation, it can tackle a range of cinematic styles. 🧵 #GoogleIO https://t.co/6zEuYRAHpH" / X (twitter.com)](https://twitter.com/GoogleDeepMind/status/1790435824598716704)
-- {{twitter https://twitter.com/GoogleDeepMind/status/1790435824598716704}}
+
+<https://twitter.com/GoogleDeepMind/status/1790435824598716704>
 
 ### [VideoPoet – Google Research](https://sites.research.google/videopoet/)
 
 - **Overview:** Google's text to video, linked to Bard, but not yet available.
-- {{video https://www.youtube.com/watch?v=xCDAjpZJWYw}}
+
+![](https://www.youtube.com/watch?v=xCDAjpZJWYw)
+
 - [NVIDIA/NeMo: NeMo: a toolkit for conversational AI (github.com)](https://github.com/NVIDIA/NeMo)
 - [Canary
   - NVIDIA NeMo](https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/)
@@ -819,7 +828,9 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 # Random Links
 
 - https://twitter.com/tldraw/status/1782443204710674571
-- {{twitter https://twitter.com/tldraw/status/1782443204710674571}}
+
+<https://twitter.com/tldraw/status/1782443204710674571>
+
 - [Paper page Design2Code: How Far Are We From Automating Front-End Engineering? (huggingface.co)](https://huggingface.co/papers/2403.03163)
 - [Generative AI Powered Assistant - Amazon Q - AWS](https://aws.amazon.com/q/)  Amazons!
 - [antworks.ai](https://antworks.ai/)
@@ -983,7 +994,9 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 - It is possible at this stage to put more flesh on the bones through example software stack choices. Such specificity likely introduces overlaps, technical challenges, and contradictions, but has been generated in the main by GenAI based on the wider corpus of text and demonstrates the direction of travel well.
 - proprietary
 - OpenAI's Sora model represents a notable advancement in AI video generation. It demonstrates the ability to generate videos up to one minute in 1080p resolution and produce high-resolution images. Sora's flexibility in handling various aspect ratios and resolutions indicates its adaptability in content creation. Its development leverages insights from prior research, including Vision Transformers and advanced training methodologies.
-- {{video https://www.youtube.com/watch?v=GqsCMPWaYac}}
+
+![](https://www.youtube.com/watch?v=GqsCMPWaYac)
+
 - **Introduction to Sora**
   - A groundbreaking AI video generation model by OpenAI, Sora is designed to transform text instructions into realistic and imaginative video scenes, marking a significant advancement in creative AI technologies.
 - **Technical Overview**
@@ -992,12 +1005,14 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
   - **Transformer Architecture**
     - Leverages the Transformer model's capabilities for deep understanding and generation of content, adapted here to interpret and create complex visual narratives, ensuring dynamic and coherent video storytelling.
     - [twitter link to the render loading below](https://twitter.com/sainingxie/status/1758433676105310543)
-      {{twitter https://twitter.com/sainingxie/status/1758433676105310543}}
+      <https://twitter.com/sainingxie/status/1758433676105310543>
     - [twitter link to the render loading below](https://twitter.com/thatguybg/status/1759935959792312461)
-      {{twitter https://twitter.com/thatguybg/status/1759935959792312461}}
+      <https://twitter.com/thatguybg/status/1759935959792312461>
     - **Patch-Based Data Representation**
       - Innovatively represents videos and images as collections of smaller data units, akin to language model tokens, enabling precise and granular control over video generation and editing.
-- {{twitter https://twitter.com/drjimfan/status/1758355737066299692?s=46}}
+
+<https://twitter.com/drjimfan/status/1758355737066299692?s=46>
+
 - **Creative and Professional Applications**
   - Opens up endless possibilities for filmmakers, advertisers, educators, and content creators to produce cinema-quality visuals, educational materials, and immersive experiences effortlessly.
 - **Democratization of Video Production**
@@ -1023,12 +1038,15 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
   - [Video generation models as world simulators (openai.com)](https://openai.com/research/video-generation-models-as-world-simulators) research paper highlights Sora's technical foundation and its role in simulating the physical world.
   - Discussions emphasize Sora's potential in democratizing video creation and the need for granular output control for artistic purposes.
 - [Google DeepMind on X: "Introducing Veo: our most capable generative video model. 🎥 It can create high-quality, 1080p clips that can go beyond 60 seconds. From photorealism to surrealism and animation, it can tackle a range of cinematic styles. 🧵 #GoogleIO https://t.co/6zEuYRAHpH" / X (twitter.com)](https://twitter.com/GoogleDeepMind/status/1790435824598716704)
-- {{twitter https://twitter.com/GoogleDeepMind/status/1790435824598716704}}
+
+<https://twitter.com/GoogleDeepMind/status/1790435824598716704>
 
 ### [VideoPoet – Google Research](https://sites.research.google/videopoet/)
 
 - **Overview:** Google's text to video, linked to Bard, but not yet available.
-- {{video https://www.youtube.com/watch?v=xCDAjpZJWYw}}
+
+![](https://www.youtube.com/watch?v=xCDAjpZJWYw)
+
 - [NVIDIA/NeMo: NeMo: a toolkit for conversational AI (github.com)](https://github.com/NVIDIA/NeMo)
 - [Canary
   - NVIDIA NeMo](https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/)

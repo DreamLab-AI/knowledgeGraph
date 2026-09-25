@@ -22,7 +22,7 @@ A prescriptive style guide authored by Dr John O'Hare specifying the structural,
   - If you find a key assertion the SHOULD be backed by a reference but isn't then you should use internet search to find a high quality citation and insert it as wiki link or academic style cite.
     - **External Links:** Use standard Markdown `[link text](URL)` format. Often, the link text is a direct quote or the title of the article.
       - **Media & Embeds (Logseq Specific):**
-      - *Videos:** Use the `{{video URL}}` renderer (e.g., `{{video https://www.youtube.com/watch?v=y48uAeHwZGg}}`).
+      - *Videos:** Use the `{{video URL}}` renderer (e.g., `![](https://www.youtube.com/watch?v=y48uAeHwZGg)`).
       - **Tweets/X:** Use the `{{twitter URL}}` renderer.
       - **Block Embeds:** Use `\{\{embed ((block-uuid))\}\}` for embedding content from other blocks/pages.
       - *Images:** Use standard Markdown image syntax `![filename.jpg](assets/filename.jpg)`. Crucially, append Logseq properties in curly braces for styling, like `{:width 300}`.

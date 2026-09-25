@@ -18,7 +18,8 @@ Artificial intelligence (AI) is the research and development of mechanisms and a
 - It aims to integrate with existing 3D workflows and tools, offering features such as intelligent scene organisation and optimisation for real-time rendering.
 - Edify 3D is designed to handle large and complex 3D datasets, making it suitable for applications ranging from architectural visualisation to virtual world design.
 - NVIDIA hopes that it will democratise 3D content creation, allowing more people to participate in designing and customising virtual environments.
-  - {{video https://www.youtube.com/watch?v=AJWTUvXA0Wc}}
+
+  ![](https://www.youtube.com/watch?v=AJWTUvXA0Wc)
 
 ### Future Plans
 
@@ -293,7 +294,7 @@ This multi-faceted approach ensured that the information presented in this artic
     - Sophisticated interpersonal relationships
     - Physically demanding and complex work
 - [twitter link to the render loading below](https://twitter.com/tsarnick/status/1758052810166513995)
-  {{twitter https://twitter.com/tsarnick/status/1758052810166513995}}
+  <https://twitter.com/tsarnick/status/1758052810166513995>
 
 ## Calls for a New Social Contract
 

@@ -7,54 +7,56 @@ Soon-Next-Later is a structured futurology framework for categorising AI capabil
 # Soon, Next, and Later
 
 - [twitter link to the render loading below](https://twitter.com/karpathy/status/1744179910347039080)
-  {{twitter https://twitter.com/karpathy/status/1744179910347039080}}
-- {{video https://www.youtube.com/watch?v=ob_GX50Za6c&t=65s}}
-  - **Digital Literacy, Data Privacy, and Algorithmic Bias** (sorting the data)
-    - Understanding AI and digital technologies for information and service access.
-    - Ensuring privacy and mitigating biases in AI algorithms.
-    - 2-5 years of integration with business processes.
-    - Models start to distribute across cloud and devices to find their correct scale **fit**.
-  - **Biome AI, AI Ethics & Safeguarding, and Ambient Education**
-    - Integration of AI in biological lives and everyday environments.
-    - Developing robust ethical frameworks for AI.
-    - Creating ambient [[Education and AI]] environments facilitated by AI. Education is too slow and monolithic for this to happen sooner.
-    - 5-10 years.
-  - **Fully Autonomous [[Agents]] and AI as lifelong companions**
-    - AI operating without human supervision in various sectors. Value globally is arbitraged by these agents in near real-time. A renaissance of the idea of smart efficient markets?
-    - Global access to hyperlocal models which match context and personal choices, through personal devices which need not be cloud connected.
-    - AI understanding human emotions for psychological, contextual, and business support.
-    - No idea... I have no idea...
-  - **Celebrating Human Diversity: Now to Later**
-    - AI understanding and adapting to human experiences and identities.
-  - **AI supported creativity: Soon to Next**
-    - AI assisting and leading in art, music, and literature creation.
-  - **Equity: Now to Next**
-    - Democratizing resources and [[Education and AI]] globally.
-  - **Self Guided Learning for Children: Next to Later**
-    - Playful, memorable AI education experiences for children, globally.
-  - **The age of the productive tinker: Later**
-    - AI revolutionizing industries with specialized gadgets and applications.
-  - **Resilience and collaborative management : Soon to Later**
-    - AI optimizing resource consumption and enhancing waste management.
-    - AI's role in climate change and wildlife conservation.
-  - **Supporting our place: Later**
-    - AI monitoring and managing physical health and environmental choices.
-  - **Personal Health Management: Now to Next**
-    - Personalized AI systems optimizing individual health. Things like [DermAssist
-  - Google Health](https://health.google/consumers/dermassist/) are just the start.
-    - [Towards Conversational Diagnostic AI](https://arxiv.org/abs/2401.05654) is scoring higher than clinicians already.
-    - Bill Gates [views](https://www.gatesnotes.com/The-Year-Ahead-2024?) AI as a transformative tool in healthcare, particularly for enhancing access to education and mental health services.
-  - **Lifetime Support Structures: Now to Later**
-    - AI providing lifetime guidance and customized assistance.
-  - **Effective collapse of integrated knowledge : Next to Later**
-    - This is the 2016 [[Death of the Internet]] [Conpiracy Theory]([Dead Internet theory
-  - Wikipedia](https://en.wikipedia.org/wiki/Dead_Internet_theory)) but will likely happen in time
-    - [Echoes of the dead internet theory: AI's silent takeover | Cybernews](https://cybernews.com/editorial/dead-internet-theory-ai-silent-takeover/)
-  - **Money will change: Next to Later**
-    - Algorithms managing financial transactions and negotiations.
-  - **Ubiquitous multi-modal UX: Next to Later**
-    - Rise of integrated displays and interfaces for AI interaction.
-  - **Intentional UX for accessing diverse networks of information: Later**
+  <https://twitter.com/karpathy/status/1744179910347039080>
+
+![](https://www.youtube.com/watch?v=ob_GX50Za6c&t=65s)
+
+- **Digital Literacy, Data Privacy, and Algorithmic Bias** (sorting the data)
+  - Understanding AI and digital technologies for information and service access.
+  - Ensuring privacy and mitigating biases in AI algorithms.
+  - 2-5 years of integration with business processes.
+  - Models start to distribute across cloud and devices to find their correct scale **fit**.
+- **Biome AI, AI Ethics & Safeguarding, and Ambient Education**
+  - Integration of AI in biological lives and everyday environments.
+  - Developing robust ethical frameworks for AI.
+  - Creating ambient [[Education and AI]] environments facilitated by AI. Education is too slow and monolithic for this to happen sooner.
+  - 5-10 years.
+- **Fully Autonomous [[Agents]] and AI as lifelong companions**
+  - AI operating without human supervision in various sectors. Value globally is arbitraged by these agents in near real-time. A renaissance of the idea of smart efficient markets?
+  - Global access to hyperlocal models which match context and personal choices, through personal devices which need not be cloud connected.
+  - AI understanding human emotions for psychological, contextual, and business support.
+  - No idea... I have no idea...
+- **Celebrating Human Diversity: Now to Later**
+  - AI understanding and adapting to human experiences and identities.
+- **AI supported creativity: Soon to Next**
+  - AI assisting and leading in art, music, and literature creation.
+- **Equity: Now to Next**
+  - Democratizing resources and [[Education and AI]] globally.
+- **Self Guided Learning for Children: Next to Later**
+  - Playful, memorable AI education experiences for children, globally.
+- **The age of the productive tinker: Later**
+  - AI revolutionizing industries with specialized gadgets and applications.
+- **Resilience and collaborative management : Soon to Later**
+  - AI optimizing resource consumption and enhancing waste management.
+  - AI's role in climate change and wildlife conservation.
+- **Supporting our place: Later**
+  - AI monitoring and managing physical health and environmental choices.
+- **Personal Health Management: Now to Next**
+  - Personalized AI systems optimizing individual health. Things like [DermAssist
+- Google Health](https://health.google/consumers/dermassist/) are just the start.
+  - [Towards Conversational Diagnostic AI](https://arxiv.org/abs/2401.05654) is scoring higher than clinicians already.
+  - Bill Gates [views](https://www.gatesnotes.com/The-Year-Ahead-2024?) AI as a transformative tool in healthcare, particularly for enhancing access to education and mental health services.
+- **Lifetime Support Structures: Now to Later**
+  - AI providing lifetime guidance and customized assistance.
+- **Effective collapse of integrated knowledge : Next to Later**
+  - This is the 2016 [[Death of the Internet]] [Conpiracy Theory]([Dead Internet theory
+- Wikipedia](https://en.wikipedia.org/wiki/Dead_Internet_theory)) but will likely happen in time
+  - [Echoes of the dead internet theory: AI's silent takeover | Cybernews](https://cybernews.com/editorial/dead-internet-theory-ai-silent-takeover/)
+- **Money will change: Next to Later**
+  - Algorithms managing financial transactions and negotiations.
+- **Ubiquitous multi-modal UX: Next to Later**
+  - Rise of integrated displays and interfaces for AI interaction.
+- **Intentional UX for accessing diverse networks of information: Later**
 
 # Sectors
 

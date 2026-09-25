@@ -11,16 +11,18 @@ A method for training AI assistants to be harmless through self-improvement, usi
 - Smaller, unsure how much smaller, it's a fork of people from OpenAI, but has radically exceeded earning expectations.
 - [[Constitutional AI Training Methodology]], like Asimov's laws of robotics
 - 🟢 [anthropics/sleeper-agents-paper: Contains random samples referenced in the paper "Sleeper Agents: Training Robustly Deceptive LLMs that Persist Through Safety Training". (github.com)](https://github.com/anthropics/sleeper-agents-paper)
-- {{twitter https://twitter.com/natfriedman/status/1777739863678386268/photo/1}}
+
+<https://twitter.com/natfriedman/status/1777739863678386268/photo/1>
 
 ### Anthropic
 
 - Smaller, unsure how much smaller, it's a fork of people from OpenAI, but has radically exceeded earning expectations.
 - [[Constitutional AI Training Methodology]], like Asimov's laws of robotics
 - 🟢 [anthropics/sleeper-agents-paper: Contains random samples referenced in the paper "Sleeper Agents: Training Robustly Deceptive LLMs that Persist Through Safety Training". (github.com)](https://github.com/anthropics/sleeper-agents-paper)
-- {{twitter https://twitter.com/natfriedman/status/1777739863678386268/photo/1}}
 
-  #### Key Characteristics
+<https://twitter.com/natfriedman/status/1777739863678386268/photo/1>
+
+#### Key Characteristics
 
 - Uses constitutional principles for alignment
   - Self-critique and revision

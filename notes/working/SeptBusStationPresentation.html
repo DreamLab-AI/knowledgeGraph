@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>SeptBusStationPresentation</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="SeptBusStationPresentation"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="SeptBusStationPresentation"/><meta name="twitter:description" content="AI Agents for Small Business What is real in September 2026, and how to start Agentics Foundation · West Cumbria · Dr John O’Hare Speaker notes Deliberately over-produced for a 30-minute slot."/><meta property="og:description" content="AI Agents for Small Business What is real in September 2026, and how to start Agentics Foundation · West Cumbria · Dr John O’Hare Speaker notes Deliberately over-produced for a 30-minute slot."/><meta property="og:image:alt" content="AI Agents for Small Business What is real in September 2026, and how to start Agentics Foundation · West Cumbria · Dr John O’Hare Speaker notes Deliberately over-produced for a 30-minute slot."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/working/SeptBusStationPresentation"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/working/SeptBusStationPresentation"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="AI Agents for Small Business What is real in September 2026, and how to start Agentics Foundation · West Cumbria · Dr John O’Hare Speaker notes Deliberately over-produced for a 30-minute slot."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="working/SeptBusStationPresentation"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-8748"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-8748" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../working/">working</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>SeptBusStationPresentation</a></div></nav><h1 class="article-title">SeptBusStationPresentation</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-25T11:57:22.439Z">25 Sept 2026</time><span>15 min read</span></p><ul class="tags"><li><a href="../tags/presentation" class="internal tag-link">presentation</a></li></ul><button class="present-button" type="button" title="Present these notes as slides (each --- is a slide break)">▶ Present</button><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Note</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>draft</span></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><h1 id="ai-agents-for-small-business">AI Agents for Small Business<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-agents-for-small-business" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="what-is-real-in-september-2026-and-how-to-start">What is real in September 2026, and how to start<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-is-real-in-september-2026-and-how-to-start" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Agentics Foundation · West Cumbria</strong> · Dr John O’Hare</p>
+<p><img src="../assets/images_1782124356200_0.jpeg" alt="images.jpeg|240"/></p>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>Deliberately over-produced for a 30-minute slot. Easy cuts: the Muse announcement page, “The capability overhang”, “Also worth knowing”, “Bigger: a whole platform”, “Copyright and where your data lives”, and “For the curious”. Section-title slides take seconds.
+Every number on these slides has a dated source linked on the slide or in the sources slide. Prices move weekly: check the ones marked “verify on the day” the morning of the talk.</p>
+</div>
+</blockquote>
+<hr/>
+<h1 id="part-1--the-agentics-foundation">Part 1 · The Agentics Foundation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-1--the-agentics-foundation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="a-global-not-for-profit-community-for-agentic-ai">A global, not-for-profit community for agentic AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-global-not-for-profit-community-for-agentic-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<hr/>
+<h2 id="what-the-agentics-foundation-is">What the Agentics Foundation is<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-the-agentics-foundation-is" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>A volunteer-run, <strong>not-for-profit community</strong> for agentic AI, founded in March 2025 by Reuven Cohen (“rUv”)</li>
+<li>Mission: <em>making AI innovation and education open to everyone through open-source agentic AI systems</em></li>
+<li>Seven pillars: research, open-source tools, education and accreditation, workshops, regional chapters, AI safety, advisory work for government and institutions</li>
+<li><strong>Free to join.</strong> No sales pitch tonight: the software we will talk about is open source</li>
+</ul>
+<iframe src="https://agentics.org/" style="width:100%;height:520px;"></iframe>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>Say “not-for-profit community”, not “registered charity”: no charity number or incorporation jurisdiction is published. Source: agentics.org (25 Sep 2026); Cohen’s launch post, 5 Mar 2025.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="a-big-active-community">A big, active community<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-big-active-community" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>100K+ members</strong> across platforms (the Foundation’s own figure)</li>
+<li><strong>52K+</strong> in the LinkedIn group · <strong>130K+</strong> Reddit followers · <strong>3K+</strong> on Discord</li>
+<li>Weekly <strong>live coding</strong> with Reuven Cohen, running every week since April 2024</li>
+<li>Chapters from Halifax to Vienna, Vancouver, Bengaluru and London</li>
+</ul>
+<p><img src="../assets/image_1782124970425_0.png" alt="LinkedIn group|640"/></p>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>These are the Foundation’s self-reported numbers and they overlap: do not add them up. LinkedIn tip: search for “♾️” agentics with the quotes around the infinity sign.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="free-learning-every-week">Free learning, every week<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#free-learning-every-week" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Hundreds of hours</strong> of free recorded sessions at <a href="https://video.agentics.org" class="external">video.agentics.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Live several times a week on YouTube, LinkedIn and the Agentics site, usually in the evening</li>
+<li>Events calendar: <a href="https://luma.com/agentics" class="external">luma.com/agentics<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<iframe src="https://video.agentics.org/" style="width:100%;height:520px;"></iframe>
+<hr/>
+<h2 id="local-west-cumbria">Local: West Cumbria<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#local-west-cumbria" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Ian and I are the Foundation’s ambassadors for the Whitehaven area</li>
+<li>June 2026: our first <strong>local SME session</strong> on agent security, trust, traceability and open-source tooling</li>
+<li>Tonight: <em>what agents can do for your business, and what to watch out for</em></li>
+<li><strong>How to join:</strong> agentics.org → Community, the Discord, the LinkedIn group, or just talk to us afterwards</li>
+</ul>
+<p><img src="../assets/image_1782124159420_0.png" alt="Discord|560"/></p>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>Confirm the date of the June session before quoting it: the June newsletter says 1 July, another listing says 22 June.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="about-me">About me<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-me" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p></p><blockquote class="transclude" data-url="Introduction-to-me" data-block data-embed-alias="undefined"><h1>Introduction to me</h1><h2 id="about-me">About Me<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-me" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><img src="../working/Introduction-to-me/../../assets/image_1779963826152_0.png" alt="image.png"/></p>
+<h2 id="chief-hallucination-officer-dreamlab-ai-consulting-ltd">Chief Hallucination Officer <a href="https://www.dreamlab-ai.com" class="external">DreamLab AI Consulting Ltd<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>,<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chief-hallucination-officer-dreamlab-ai-consulting-ltd" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="residential-training-in-eskdale">residential training in Eskdale.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#residential-training-in-eskdale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<iframe src="https://dreamlab-ai.com/" style="width:98%;height:600px;"></iframe>
+<h2 id="associate-director-rd-dreamlab">Associate Director R&amp;D dreamlab<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#associate-director-rd-dreamlab" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<iframe src="https://dreamlab.org.uk/" style="width:98%;height:600px;"></iframe>.
+<h2 id="support-learning-for-saïd-business-school">Support learning for Saïd Business School<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#support-learning-for-saïd-business-school" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="full-portfolio-of-online-ai-modules">Full portfolio of online AI modules.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#full-portfolio-of-online-ai-modules" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="../working/Introduction-to-me/../../assets/image_1782115272570_0.png" alt="image.png"/></p>
+<h2 id="founding-member-agentic-alliance">Founding member Agentic Alliance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#founding-member-agentic-alliance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<iframe src="https://github.com/topics/did-nostr" style="width:98%;height:600px;"></iframe>.
+<ul>
+<li>25+ years building research, products and teams at the intersection of technology, data and creativity. I managed the UK’s first Cave Automatic Virtual Environment for decades, working on frontier research, IMAX documentaries, autonomous marine systems and multi-agent AI orchestration.
+<ul>
+<li>PhD in telepresence and light field implementation. Over £8M in research grants managed.
+<ul>
+<li><strong>Career highlights:</strong>
+<ul>
+<li>Postdoctoral research and commercial work at MediaCityUK</li>
+<li>CTO roles in display engineering and Unreal Engine plugin development (tools used by AAA game studios and Hollywood productions)</li>
+<li>AI lead for Future Fleet (machine vision for marine systems, patent pending)</li>
+<li>Research Director at Pathway XR (virtual production and immersive systems)</li>
+<li>17 years as Technical Director of the Octave mixed reality laboratory</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<blockquote>
+<h1 id="skill-sheet">Skill Sheet<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#skill-sheet" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<hr/>
+<h2 id="ai-machine-learning--data">AI, Machine Learning &amp; Data<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-machine-learning--data" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h2 id="ai--ml-consultingstrategic-guidance-on-integrating-ai-into-workflowsfrom-concept-to-deploymenttailoured-for-general-and-immersivecreative-techbespoke-data--ai-provisioningtraditional-machine-learning-pipelines-for-structured-semi-structured-and-unstructured-data-including-data-engineering-cleansing-and-cloudhybrid-storage-strategiesprivate-large-language-modelssecure-on-premise-or-cloud-hosted-llms-for-proprietary-use-with-fine-tuning-inference-optimisation-and-seamless-integration-into-existing-toolchainscomfyui-image--video-workflowsautomating-and-managing-large-datasets-for-high-volume-image-and-video-training-with-real-time-inference-systems-for-generative-visualsretrieval-augmented-generation-rag--knowledge-managementbuilding-rag-agents-for-context-rich-tasks-and-conversational-interfaces-alongside-semantic-search-data-lakes-and-enterprise-knowledge-graph-solutionshp-ai-studio-genai-studio--hp-boostconsulting-on-leveraging-hps-aiml-toolkits-and-acceleration-software-with-collaborative-development-environments-for-rapid-experimentationhpc-infrastructure-for-aion-premise-clusters-gpu-workstations-or-cloudhybrid-solutions-designed-for-high-throughput-training-model-deployment-and-distributed-inferencesynthetic-data-creation3d-rendering-pipelines-to-generate-training-sets-for-specialised-ai-models-including-procedural-scene-character-and-environment-generationai-driven-motion-capture--retargetingautomated-capture-refinement-with-real-time-retargeting-to-digital-assetscybersecurity--access-controlprotecting-intellectual-property-during-model-training-and-deployment-with-secure-data-exchange-for-distributed-ml-pipelines"><strong>AI &amp; ML Consulting:</strong>
+Strategic guidance on integrating AI into workflows—from concept to deployment—tailoured for general and immersive/creative tech.
+<strong>Bespoke Data &amp; AI Provisioning:</strong>
+Traditional machine learning pipelines for structured, semi-structured, and unstructured data, including data engineering, cleansing, and cloud/hybrid storage strategies.
+<strong>Private Large Language Models:</strong>
+Secure, on-premise or cloud-hosted LLMs for proprietary use, with fine-tuning, inference optimisation, and seamless integration into existing toolchains.
+<strong>ComfyUI Image &amp; Video Workflows:</strong>
+Automating and managing large datasets for high-volume image and video training with real-time inference systems for generative visuals.
+<strong>Retrieval-Augmented Generation (RAG) &amp; Knowledge Management:</strong>
+Building RAG agents for context-rich tasks and conversational interfaces, alongside semantic search, data lakes, and enterprise knowledge graph solutions.
+<strong>HP AI Studio, GenAI Studio &amp; HP Boost:</strong>
+Consulting on leveraging HP’s AI/ML toolkits and acceleration software, with collaborative development environments for rapid experimentation.
+<strong>HPC Infrastructure for AI:</strong>
+On-premise clusters, GPU workstations, or cloud/hybrid solutions designed for high-throughput training, model deployment, and distributed inference.
+<strong>Synthetic Data Creation:</strong>
+3D rendering pipelines to generate training sets for specialised AI models, including procedural scene, character, and environment generation.
+<strong>AI-Driven Motion Capture &amp; Retargeting:</strong>
+Automated capture refinement with real-time retargeting to digital assets.
+<strong>Cybersecurity &amp; Access Control:</strong>
+Protecting intellectual property during model training and deployment, with secure data exchange for distributed ML pipelines.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai--ml-consultingstrategic-guidance-on-integrating-ai-into-workflowsfrom-concept-to-deploymenttailoured-for-general-and-immersivecreative-techbespoke-data--ai-provisioningtraditional-machine-learning-pipelines-for-structured-semi-structured-and-unstructured-data-including-data-engineering-cleansing-and-cloudhybrid-storage-strategiesprivate-large-language-modelssecure-on-premise-or-cloud-hosted-llms-for-proprietary-use-with-fine-tuning-inference-optimisation-and-seamless-integration-into-existing-toolchainscomfyui-image--video-workflowsautomating-and-managing-large-datasets-for-high-volume-image-and-video-training-with-real-time-inference-systems-for-generative-visualsretrieval-augmented-generation-rag--knowledge-managementbuilding-rag-agents-for-context-rich-tasks-and-conversational-interfaces-alongside-semantic-search-data-lakes-and-enterprise-knowledge-graph-solutionshp-ai-studio-genai-studio--hp-boostconsulting-on-leveraging-hps-aiml-toolkits-and-acceleration-software-with-collaborative-development-environments-for-rapid-experimentationhpc-infrastructure-for-aion-premise-clusters-gpu-workstations-or-cloudhybrid-solutions-designed-for-high-throughput-training-model-deployment-and-distributed-inferencesynthetic-data-creation3d-rendering-pipelines-to-generate-training-sets-for-specialised-ai-models-including-procedural-scene-character-and-environment-generationai-driven-motion-capture--retargetingautomated-capture-refinement-with-real-time-retargeting-to-digital-assetscybersecurity--access-controlprotecting-intellectual-property-during-model-training-and-deployment-with-secure-data-exchange-for-distributed-ml-pipelines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h2 id="virtual-production--real-time-systems">Virtual Production &amp; Real-Time Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#virtual-production--real-time-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Local High-Performance Compute (HPC) for Real-Time:</strong>
+High-end, on-premise systems for real-time rendering, simulation, and data-heavy tasks.
+<strong>VP Direction &amp; Operation:</strong>
+Comprehensive oversight of virtual production workflows—from previsualisation to on-set integration.
+<strong>Virtual Art Department (VAD):</strong>
+Creation of digital sets, environments, and virtual assets tailored for real-time pipelines.
+<strong>Unreal Engine Generalists &amp; Technical Artists:</strong>
+Expertise in modelling, texturing, blueprint scripting, optimisation, and tool creation.
+<strong>MetaHuman &amp; Performance Capture:</strong>
+Leveraging Epic’s MetaHuman framework for realistic digital humans, with full-body and facial capture for live performance mapping.
+<strong>Real-Time Characters, Rigging &amp; Advanced Character Pipelines:</strong>
+Efficient character creation, complex rigging, and bespoke toolchains for real-time applications.
+<strong>Large-Scale Immersive Systems &amp; LED Installations:</strong>
+…
+— working/pages/Dreamlab.md</p>
+</blockquote>
+<p><img src="../working/Introduction-to-me/../../assets/Screenshot_2024-11-27_094227_1732701085534_0.png" alt="Screenshot 2024-11-27 094227.png"/></p>
+<h2 id="affiliations">Affiliations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#affiliations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="agentic-alliance">Agentic Alliance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agentic-alliance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>I am an associate member of the <a href="https://agenticalliance.com/" class="external">Agentic Alliance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> — a global collective advancing the boundaries of distributed safe agentic systems.</li>
+</ul>
+<iframe src="https://agenticalliance.com/" style="width:50%;height:600px;"></iframe>
+<h3 id="open-source">Open Source<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-source" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>I publish open source software and knowledge via <a href="https://github.com/DreamLab-AI" class="external">DreamLab AI on GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+</ul>
+<h2 id="strategic-alignment">Strategic Alignment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strategic-alignment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="https://www.gartner.com/en/articles/30-emerging-technologies-that-will-guide-your-business-decisions" class="external">Gartner provides a handy and up-to-date visual for emerging tech<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. It intersects with my research interests and expertise — I’ve highlighted the relevant elements in pink. Everything there is somewhere, or everywhere, in the knowledge base.</li>
+</ul>
+<p><img src="../working/Introduction-to-me/../../assets/1759419477553_1759507979104_0.jpg" alt="1759419477553.jpg|1187"/></p>
+<h2 id="research-themes">Research Themes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-themes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="equity-of-access-to-ai">Equity of Access to AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#equity-of-access-to-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Genius is evenly distributed across humanity. There are as many incredible minds per capita in India, South America, Nigeria, China, South East Asia, as anywhere in the highly developed world. Access to the identity rails, money rails, education, technology, and now AI, is <em>not</em> equitably distributed. I am trying to change that a little by focusing on protocols.</li>
+</ul>
+<h3 id="convergence--disruption">Convergence &amp; Disruption<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#convergence--disruption" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Everything is smoothing out as GenAI scaffolds human work. Interfaces won’t need to be learnt any more. The <a href="../working/Introduction-to-me/../../working/Social-contract-and-jobs" class="internal alias" data-slug="working/Social-contract-and-jobs">Social contract and jobs</a> may soon be radically different. This is a <a href="../working/Introduction-to-me/../../working/Convergence" class="internal" data-slug="working/Convergence">Convergence</a> but is also a <a href="../working/Introduction-to-me/../../Disruption" class="internal" data-slug="Disruption">Disruption</a> — happening so fast that many view it as a <a href="../working/Introduction-to-me/../../working/Singularity" class="internal" data-slug="working/Singularity">Singularity</a> event, where we will likely see as many problems as benefits initially.</li>
+</ul>
+<h3 id="bitcoin--decentralised-infrastructure">Bitcoin &amp; Decentralised Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bitcoin--decentralised-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>I have been studying Bitcoin technologies for 7+ years. This novel ecosystem is a non-trivial disruptive force, now deeply threaded through my technical research.</li>
+</ul>
+<h3 id="research-map">Research Map<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-map" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+<blockquote>
+<p>Gemini and Claude made a diagram of this whole research corpus using  <a href="https://dreampuf.github.io/GraphvizOnline/" class="external">https://dreampuf.github.io/GraphvizOnline/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="graphviz" data-theme="github-light github-dark"><code data-language="graphviz" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>digraph G {</span></span>
+<span data-line><span>graph [rankdir=LR, overlap=false, splines=true];</span></span>
+<span data-line><span>node [shape=box, style=filled, fontsize=10, fontcolor=darkslategray];</span></span>
+<span data-line><span>edge [color=darkslategray, penwidth=1];</span></span>
+<span data-line><span>// Main Themes</span></span>
+<span data-line><span>// The main themes represent the key areas of focus in the diagram. The skyblue color provides a soft and pleasant visual appearance.</span></span>
+<span data-line><span>Decentralization [fillcolor=skyblue, label=&quot;Decentralization &amp;\nOpenness&quot;];</span></span>
+<span data-line><span>AI [fillcolor=skyblue, label=&quot;Artificial\nIntelligence&quot;];</span></span>
+<span data-line><span>XR [fillcolor=skyblue, label=&quot;Extended\nReality (XR)&quot;];</span></span>
+<span data-line><span>DigitalSociety [fillcolor=skyblue, label=&quot;Digital\nSociety&quot;];</span></span>
+<span data-line><span>GenAI [fillcolor=skyblue, label=&quot;Generative\nAI&quot;];</span></span>
+<span data-line><span>DigitalObjects [fillcolor=skyblue, label=&quot;Digital\nObjects &amp; NFTs&quot;];</span></span>
+<span data-line><span>Metaverse [fillcolor=skyblue, label=&quot;Metaverse &amp;\nVirtual Worlds&quot;];</span></span>
+<span data-line><span>Blockchain [fillcolor=skyblue, label=&quot;Blockchain &amp;\nDistributed Ledger\nTechnology (DLT)&quot;];</span></span>
+<span data-line><span>// Decentralized Technologies</span></span>
+<span data-line><span>// These nodes represent various decentralized technologies. The mediumseagreen color provides good readability against the dark font color.</span></span>
+<span data-line><span>Bitcoin [fillcolor=mediumseagreen, label=&quot;Bitcoin (BTC)&quot;];</span></span>
+<span data-line><span>Nostr [fillcolor=mediumseagreen, label=&quot;Nostr Protocol&quot;];</span></span>
+<span data-line><span>Solid [fillcolor=mediumseagreen, label=&quot;Solid Project&quot;];</span></span>
+<span data-line><span>DecentralisedStorage [fillcolor=mediumseagreen, label=&quot;InterPlanetary File System (DecentralisedStorage)&quot;];</span></span>
+<span data-line><span>CashuFedimint [fillcolor=mediumseagreen, label=&quot;Cashu &amp; Fedimint&quot;];</span></span>
+<span data-line><span>Lightning [fillcolor=mediumseagreen, label=&quot;Lightning Network&quot;];</span></span>
+<span data-line><span>RGB [fillcolor=mediumseagreen, label=&quot;RGB Protocol&quot;];</span></span>
+<span data-line><span>DecentralizedInternet [fillcolor=mediumseagreen, label=&quot;Decentralized Internet&quot;];</span></span>
+<span data-line><span>// AI Technologies</span></span>
+<span data-line><span>// These nodes represent various AI technologies. The moccasin color provides a warm and distinct appearance.</span></span>
+<span data-line><span>LLMs [fillcolor=moccasin, label=&quot;Large Language\nModels (LLMs)&quot;];</span></span>
+<span data-line><span>StableDiffusion [fillcolor=moccasin, label=&quot;Stable Diffusion&quot;];</span></span>
+<span data-line><span>Transformers [fillcolor=moccasin, label=&quot;Transformers&quot;];</span></span>
+<span data-line><span>GANs [fillcolor=moccasin, label=&quot;Generative Adversarial\nNetworks (GANs)&quot;];</span></span>
+<span data-line><span>Mamba [fillcolor=moccasin, label=&quot;Mamba Architecture&quot;];</span></span>
+<span data-line><span>PromptEngineering [fillcolor=moccasin, label=&quot;Prompt Engineering&quot;];</span></span>
+<span data-line><span>RLHF [fillcolor=moccasin, label=&quot;Reinforcement Learning\nfrom Human Feedback&quot;];</span></span>
+<span data-line><span>DPO [fillcolor=moccasin, label=&quot;Direct Preference\nOptimization&quot;];</span></span>
+<span data-line><span>// XR Technologies</span></span>
+<span data-line><span>// These nodes represent various XR technologies. The lightpink color provides a visually appealing and distinguishable appearance.</span></span>
+<span data-line><span>AR [fillcolor=lightpink, label=&quot;Augmented\nReality (AR)&quot;];</span></span>
+<span data-line><span>…</span></span>
+<span data-line><span>— working/pages/Diagrams as Code.md</span></span></code></pre></figure>
+</blockquote>
+<p><img src="../working/Introduction-to-me/../../assets/graphviz_1714508145842_0.png" alt="graphviz.png|484"/></p>
+<h2 id="visionflow--ar-agentic-knowledge-graph">VisionFlow — AR Agentic Knowledge Graph<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#visionflow--ar-agentic-knowledge-graph" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>My comprehensive agentic knowledge development engine integrating multi-agent orchestration, GraphRAG, WebXR, and 3D force-directed graph visualisation.</li>
+<li><a href="https://www.visionflow.info" class="external">https://www.visionflow.info<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Click the cog to remove the settings panel. This is a work in progress and will often not be running.</li>
+</ul>
+<h2 id="recent-projects">Recent Projects<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recent-projects" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Click <a href="../working/Introduction-to-me/../../working/Recent-Projects" class="internal alias" data-slug="working/Recent-Projects">Recent Projects</a> to see recent work.</li>
+</ul>
+<h2 id="about-this-knowledge-graph">About This Knowledge Graph<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-this-knowledge-graph" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>This interface is an example of <a href="../working/Introduction-to-me/../../pages/Knowledge-Graphing" class="internal alias" data-slug="pages/Knowledge-Graphing">Knowledge Graphing</a> powered by <a href="../working/Introduction-to-me/../../Logseq" class="internal" data-slug="Logseq">Logseq</a>, a knowledge management and note-taking tool integrated with AI capabilities.</li>
+<li>Updated a couple of times a week — you may need to hit <code>CTRL-R</code> to refresh.</li>
+<li>Below is the <a href="https://www.visionflow.info/680a51ea177aecc8cafb7003e146622b7ca13257/index.html#/graph" class="external">graph view<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> of about 1/6 of my current research base. <strong>You can also find it as “Graph” top right of this page.</strong></li>
+</ul>
+<p><img src="../working/Introduction-to-me/../../assets/Screenshot_2024-01-30_093017_1706607172633_0.png" alt="Screenshot 2024-01-30 093017.png"/></p>
+<iframe src="https://narrativegoldmine.com/#/graph" style="width:800px;height:600px;"></iframe>
+<ul>
+<li>This is the raw “shoot from the hip” Logseq graph. There is a manual version where key topics are injected back in to create edges, and a <a href="../working/Introduction-to-me/../../pages/Knowledge-Graphing" class="internal alias" data-slug="pages/Knowledge-Graphing">Knowledge Graphing</a> pipeline using <a href="../working/Introduction-to-me/../../pages/Microsoft" class="internal" data-slug="pages/Microsoft">Microsoft</a> <a href="../working/Introduction-to-me/../../pages/GraphRAG" class="internal" data-slug="pages/GraphRAG">GraphRAG</a>.</li>
+<li>They power <a href="https://github.com/jjohare/logseqSpringThing/tree/feature-branch" class="external">some experimental immersive work<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> which will be ready soon, probably.</li>
+</ul>
+<h3 id="note-about-links">Note about links<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#note-about-links" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>In my version of the knowledge graph, all Twitter links render interactively inline. On the web you will just see “loading.” Sometimes a loading indicator with no link means I forgot to add the reference.</li>
+</ul>
+<h2 id="dreamlab-ai--services--offerings">DreamLab AI — Services &amp; Offerings<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dreamlab-ai--services--offerings" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>DreamLab AI Consulting Ltd is a premium AI training and consulting lab and platform, that teaches organisations how to build and manage AI agents. They listen to users, read document and data, perform complex tasks, update databases, make decisions, and take action while keeping humans in the loop where it matters.</li>
+</ul><a href="../working/Introduction-to-me" class="internal transclude-src">Link to original</a></blockquote><p></p>
+<hr/>
+<h1 id="part-2--what-is-an-agent">Part 2 · What is an agent?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-2--what-is-an-agent" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<hr/>
+<h2 id="from-chatbot-to-agent">From chatbot to agent<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#from-chatbot-to-agent" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p></p><blockquote class="transclude" data-url="Agents" data-block="#terminology" data-embed-alias="Terminology"><h1 id="terminology">Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="definition">Definition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The term agent is contested, and has been for years. The simplest definition is a piece of software that does something on your behalf, <strong>using AI</strong>.</li>
+</ul>
+<h2 id="what-are-agents">What are Agents<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-are-agents" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>I have given up following the debate because in a way it doesn’t matter. As a good heuristic
+<ul>
+<li>Large Language Models are training on huge corpora to predict the next most likely token</li>
+<li>Chatbots - LLMs that are tuned by <a href="../working/Agents/../../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> for turn based chat</li>
+<li>Agents
+<ul>
+<li>Tool use</li>
+<li>Memory</li>
+<li>Agency (decision action trees)</li>
+<li>Minimal oversight</li>
+<li>Outcome driven</li>
+</ul>
+</li>
+<li>Agentic Systems
+<ul>
+<li>Persistence across sessions</li>
+<li>Learning (allowed by persistence)</li>
+<li>Complex tool use</li>
+<li>Complex tasks</li>
+<li>Able to create and use tooling</li>
+</ul>
+</li>
+<li>Multi-Agent Orchestration
+<ul>
+<li>Complex organisations of Agentic Systems</li>
+<li>Long runs times</li>
+<li>Open ended discovery and knowledge synthesis</li>
+<li>Systems level problems</li>
+<li>Expensive, difficult to make safe / secure</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a href="../working/Agents#terminology" class="internal transclude-src">Link to original</a></blockquote><p></p>
+<hr/>
+<h2 id="a-working-definition">A working definition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-working-definition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Chatbot:</strong> you ask, it answers. One turn at a time.</li>
+<li><strong>Agent:</strong> you give it a <em>goal</em>. It plans, uses tools (your email, files, browser, apps), checks its own work, and keeps going.</li>
+<li><strong>Agentic system:</strong> several agents with memory, working for hours, building their own tools.</li>
+</ul>
+<p>Think of agents as <strong>sheepdogs</strong>. You are no longer putting sheep in a pen one by one. Sometimes the best path is a long arc round the field; sometimes it is a structured play with more work up front. That part depends on you.</p>
+<hr/>
+<h2 id="two-ways-of-working-with-ai">Two ways of working with AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#two-ways-of-working-with-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th><strong>Vibe coding</strong></th><th><strong>Agentic engineering</strong></th></tr></thead><tbody><tr><td>Flow, fluid and intuitive</td><td>Structured, process-driven</td></tr><tr><td>Little process</td><td>Deep planning, test-driven</td></tr><tr><td><strong>You</strong> are the feedback loop</td><td><strong>The machine</strong> is the feedback loop</td></tr><tr><td>Ideation and discovery</td><td>Iteration and refinement</td></tr></tbody></table></div>
+<p>Most small businesses will start on the left. The value compounds on the right.</p>
+<hr/>
+<h2 id="why-now-agents-are-getting-longer-legs">Why now: agents are getting longer legs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-now-agents-are-getting-longer-legs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>METR measures how long a task an AI can finish on its own</li>
+<li>That length has <strong>doubled roughly every 4.3 months</strong> since 2023</li>
+<li>The best models now succeed half the time on tasks that take an expert <strong>a full working day or more</strong></li>
+<li>Caveat: <em>half the time</em> is not <em>hand it over</em>. Reliability lags capability.</li>
+</ul>
+<iframe src="https://metr.org/time-horizons/" style="width:100%;height:480px;"></iframe>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>METR time-horizons page and its January 2026 limitations note. METR itself warns that 50% success on a benchmark does not mean you can delegate the task.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="the-capability-overhang">The capability overhang<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-capability-overhang" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Very few people use more than a fraction of what current AI can already do</li>
+<li>The unlock is agents: giving the AI your tools, your files and a goal</li>
+<li>It is still fiddly. That is what this talk and the Agentics community are for.</li>
+</ul>
+<hr/>
+<h1 id="part-3--the-moment-september-2026">Part 3 · The moment: September 2026<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-3--the-moment-september-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="what-launched-in-the-last-few-weeks">What launched in the last few weeks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-launched-in-the-last-few-weeks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<hr/>
+<h2 id="meta-muse-agents-go-mass-market">Meta Muse: agents go mass-market<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meta-muse-agents-go-mass-market" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Launched <strong>8 September 2026</strong>: a personal agent that books, buys, emails and fills in forms across Gmail, Shopify, OpenTable, Expedia, PayPal and more</li>
+<li>Web, iOS, Android and <strong>inside WhatsApp</strong></li>
+<li><strong>2.8 million downloads in two weeks</strong>; overtook ChatGPT as the top free app in the US</li>
+<li>Free tier, Power <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">20</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∗</span><span class="mord mathnormal">an</span><span class="mord mathnormal">d</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">a</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span>100</strong> a month</li>
+<li><strong>Not available in the UK yet.</strong> A sign of where things are heading, not something to adopt today.</li>
+</ul>
+<p><iframe class="external-embed youtube" allow="fullscreen" frameborder="0" width="600px" src="https://www.youtube.com/embed/WY7-MxXxDvE"></iframe></p>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>Sources: Meta newsroom 8 Sep 2026; TechCrunch 8 Sep; Reuters 23 Sep (downloads); GB News 24 Sep (UK waitlist). Video: Mind the Product, “Muse: Meta’s new personal AI agent. How much control would you hand over?“. Muse runs on Meta’s Muse Spark model; Meta also sells Muse Code, a coding agent, which is irrelevant for most SMEs.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="meta-muse-the-announcement">Meta Muse: the announcement<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meta-muse-the-announcement" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<iframe src="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/" style="width:100%;height:560px;"></iframe>
+<hr/>
+<h2 id="claude-cowork-becomes-just-claude">Claude: Cowork becomes just “Claude”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#claude-cowork-becomes-just-claude" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Anthropic’s desktop agent, <strong>Cowork</strong>, merged into Claude itself on <strong>16 September 2026</strong></li>
+<li>Hand it real work: it plans, uses your files and connected apps, and returns a finished report, spreadsheet or deck</li>
+<li>Runs in the cloud, <strong>keeps going after you close the laptop</strong>, and can run on a schedule</li>
+<li><strong>Claude in Chrome</strong> (generally available since 26 August) reads pages, clicks and fills in forms, but will not buy things or handle card details</li>
+<li>Pro about <strong>£18 a month</strong> (Max from about £90)</li>
+</ul>
+<p><iframe class="external-embed youtube" allow="fullscreen" frameborder="0" width="600px" src="https://www.youtube.com/embed/UAmKyyZ-b9E"></iframe></p>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>Rollout of the merged Claude is to Pro and Max first, Team and Free later. GBP prices come from secondary sources (£15–18 quoted): verify on the day at claude.com/pricing. Video: Anthropic, “Introducing Cowork” (January 2026).</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="chatgpt-work">ChatGPT Work<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chatgpt-work" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>OpenAI’s successor to agent mode and Operator (July 2026)</li>
+<li>Researches across your connected apps and files, and produces documents, spreadsheets, slides and simple websites</li>
+<li>Scheduled tasks can be <strong>triggered by events</strong> in Gmail or Slack</li>
+<li>Included in paid plans; Plus about <strong>$20 / £20 a month</strong></li>
+<li><strong>In the UK</strong>, except computer use on Windows, which was held back from the UK and EEA at launch</li>
+</ul>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>UK billing is inconsistent (dollars plus VAT on the web, £19.99 on the App Store): verify on the day. The Atlas browser closed on 9 August; its agent features moved into ChatGPT.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="microsoft-365-agents-inside-the-tools-you-already-pay-for">Microsoft 365: agents inside the tools you already pay for<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#microsoft-365-agents-inside-the-tools-you-already-pay-for" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Copilot Cowork</strong>, built with Anthropic’s Cowork technology, generally available since June 2026: long, multi-step tasks across Outlook, Teams and your files</li>
+<li><strong>Microsoft 365 Copilot Business</strong> (up to 300 users): <strong>£16.10 per user per month</strong>, promotional <strong>£13.80 until 31 December 2026</strong> (excluding VAT)</li>
+<li>Copilot Chat, with pay-as-you-go agents, is free with eligible Microsoft 365 plans</li>
+</ul>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>Source: microsoft.com/en-gb Copilot pricing page. Copilot Cowork is billed on top by usage (Copilot Credits).</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="google-workspace-the-cheapest-door-in">Google Workspace: the cheapest door in<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#google-workspace-the-cheapest-door-in" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Gemini built into Gmail, Docs and Meet on every business plan</li>
+<li><strong>Business Starter £5.90</strong>, Standard <strong>£11.80</strong> per user per month (annual)</li>
+<li><strong>Workspace Studio</strong>: build simple agents that automate everyday work without code</li>
+<li>Google’s headline consumer agents (<strong>Gemini Spark</strong>, Gemini Agent, Chrome auto-browse) are <strong>not available in the UK</strong></li>
+</ul>
+<hr/>
+<h2 id="the-uk-is-at-the-back-of-the-queue">The UK is at the back of the queue<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-uk-is-at-the-back-of-the-queue" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Available to a Cumbrian SME today</th><th>Not in the UK yet</th></tr></thead><tbody><tr><td>Claude (with Cowork) and Claude in Chrome</td><td>Meta Muse</td></tr><tr><td>ChatGPT Work and Codex</td><td>Gemini Spark, Gemini Agent</td></tr><tr><td>Microsoft Copilot Cowork</td><td>Chrome auto-browse</td></tr><tr><td>Google Workspace Studio</td><td>ChatGPT computer use on Windows</td></tr><tr><td>Perplexity Comet (free browser)</td><td></td></tr><tr><td>Manus, Zapier and Make agents</td><td></td></tr></tbody></table></div>
+<hr/>
+<h2 id="also-worth-knowing">Also worth knowing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#also-worth-knowing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Zapier Agents</strong> (free for 400 activities a month) and <strong>Make</strong> (from $9): no-code automation, now with agents</li>
+<li><strong>Lovable</strong> and <strong>Replit</strong>: describe an app, get an app ($20–25 a month; costs rise with every round of changes)</li>
+<li><strong>Perplexity Comet</strong>: a free AI browser that can fill in forms</li>
+<li><strong>Manus</strong>: a general-purpose agent for reports and websites; its ownership has been in dispute this year</li>
+<li><strong>OpenClaw</strong>: open source and self-hosted. Powerful, but 700+ security fixes this year. For tinkerers, not your accounts.</li>
+</ul>
+<hr/>
+<h2 id="and-it-keeps-getting-cheaper">And it keeps getting cheaper<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#and-it-keeps-getting-cheaper" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Claude Opus 5.5 (22 September): Anthropic says it costs <strong>40% less</strong> to run than its predecessor</li>
+<li>OpenAI’s new GPT-6 models (22 September) are priced below the last generation</li>
+<li>Business AI now costs <strong>£6–£16 per user per month</strong> in the tools you already use</li>
+<li>Chinese coding plans (such as Z.ai GLM) are cheaper still, but think hard about where your data goes</li>
+</ul>
+<hr/>
+<h1 id="part-4--where-uk-small-businesses-are">Part 4 · Where UK small businesses are<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-4--where-uk-small-businesses-are" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<hr/>
+<h2 id="adoption-a-third-and-shallow">Adoption: a third, and shallow<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adoption-a-third-and-shallow" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>35%</strong> of UK firms with 10+ staff now use AI, up from 12% in 2023 (ONS, July 2026)</li>
+<li><strong>28%</strong> of micro firms (0–9 staff), <strong>49%</strong> of large firms</li>
+<li>Only <strong>1 in 10</strong> adopters use AI “extensively”</li>
+<li>Sector matters: information and communication <strong>58%</strong>, construction <strong>13%</strong></li>
+<li>Business surveys run higher (BCC 54%, Lloyds 61%) because they ask differently. The direction is the same.</li>
+</ul>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>ONS “Artificial intelligence in UK businesses: 2023 to 2026”, 20 Jul 2026, BICS wave 159. DSIT’s AI Adoption Research (Jan 2026) found 16% using AI; the spread is about definitions. Lloyds (Mar 2026): the North West ranks third for AI investment at 75%.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="what-is-holding-firms-back">What is holding firms back<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-is-holding-firms-back" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>“No identified need” (71%) and limited skills (60%): DSIT, January 2026</li>
+<li>Concerns rated serious: ethics 80%, cost 76%, unclear regulation 72%</li>
+<li><strong>Agentic AI is the hardest to implement</strong>: 32% of firms report significant barriers</li>
+<li><strong>92%</strong> of small firms still worry about data security, copyright and liability (FSB, 2026)</li>
+<li>Only <strong>7.5%</strong> of SMEs are “very confident” they understand the benefits (Lloyds, September 2026)</li>
+</ul>
+<hr/>
+<h2 id="what-the-evidence-says-it-is-worth">What the evidence says it is worth<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-the-evidence-says-it-is-worth" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>UK government trials: <strong>19–26 minutes a day</strong> saved on email, drafting and searching for information</li>
+<li>HMRC’s randomised trial: <strong>2–3% of the working week</strong>, about an hour</li>
+<li>Customer support: new staff <strong>34% more productive</strong> with an AI assistant (Quarterly Journal of Economics, 2025)</li>
+<li>The sober view: a Danish study of 25,000 workers found <strong>2.8%</strong> of hours saved and no change in pay</li>
+</ul>
+<p>Real, modest, and largest for the least experienced. Not magic.</p>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>DWP Copilot evaluation (29 Jan 2026): 19 min/day. GDS cross-government trial (Jun 2025): 26 min/day, self-reported. HMRC (9 Jul 2026). Brynjolfsson, Li and Raymond (QJE 2025). Humlum and Vestergaard (NBER w33777). The Department for Business and Trade found “no robust evidence” of higher productivity, and scheduling and image tasks took longer.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="the-catch-ai-can-intensify-work">The catch: AI can intensify work<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-catch-ai-can-intensify-work" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Harvard Business Review, February 2026: people using AI worked faster, took on more tasks and worked longer hours</li>
+<li>Juggling several AI threads at once feels productive but adds strain</li>
+<li>The fix is a team “AI practice”: agree what you use it for, and when you stop</li>
+</ul>
+<p><img src="../assets/chart-ai-burnout-by-role-hbr.jpeg" alt="AI burnout by role|640"/></p>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>Ranganathan and Ye, HBR, 9 Feb 2026. A single, roughly 200-person US tech firm, so indicative rather than general.</p>
+</div>
+</blockquote>
+<hr/>
+<h1 id="part-5--what-agents-can-do-for-your-business">Part 5 · What agents can do for your business<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-5--what-agents-can-do-for-your-business" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<hr/>
+<h2 id="admin-and-email">Admin and email<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#admin-and-email" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Triage the inbox, draft replies, chase invoices, summarise long threads</li>
+<li>A weekly report assembled from your spreadsheets <strong>on a schedule</strong></li>
+<li>Meeting notes turned into actions and follow-up emails</li>
+<li><em>Evidence:</em> the UK government trials’ biggest savings were email drafting (25 minutes) and finding information (26 minutes)</li>
+</ul>
+<hr/>
+<h2 id="quotes-tenders-and-compliance">Quotes, tenders and compliance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#quotes-tenders-and-compliance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Pull together a bid pack from past proposals, CVs and case studies</li>
+<li>Check a tender against its requirements before you submit</li>
+<li>Keep policies, risk registers and method statements up to date</li>
+<li>Locally: Sellafield’s supply chain (the LINC scheme, the quarterly SME Forum) runs on exactly this kind of paperwork</li>
+</ul>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>Present these as illustrations: there is no rigorous SME study of agentic tendering yet.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="marketing-and-customers">Marketing and customers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#marketing-and-customers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Draft posts, newsletters and product descriptions in your voice</li>
+<li>Answer routine customer questions with a human signing off</li>
+<li>Research competitors and suppliers, with sources</li>
+<li><em>Evidence:</em> marketing is the top use among BCC members who use AI (72%)</li>
+</ul>
+<hr/>
+<h2 id="finance-bookkeeping-hr-and-operations">Finance, bookkeeping, HR and operations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#finance-bookkeeping-hr-and-operations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Categorise transactions, reconcile, and flag anomalies for your accountant</li>
+<li>First drafts of job adverts, onboarding packs and rotas</li>
+<li>Stock, suppliers and orders: agents that watch and nudge rather than decide</li>
+<li><strong>Keep a human signature on money, contracts and people decisions</strong></li>
+</ul>
+<hr/>
+<h2 id="things-i-have-seen-built-this-year">Things I have seen built this year<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#things-i-have-seen-built-this-year" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><img src="../assets/image_1782127667159_0.png" alt="Vitrine example|760"/></p>
+<p><video controls src="../assets/labscan_web_1782126257874_0.mp4"></video></p>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>“Vitrine”: a working product built with agents in a day. Show the video if time allows.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="bigger-a-whole-platform-built-by-agents">Bigger: a whole platform, built by agents<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bigger-a-whole-platform-built-by-agents" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>VisionFlow: 18 months of continuous agentic engineering, 930+ source files</li>
+<li>Teams of people and teams of agents working in the same space</li>
+</ul>
+<iframe src="https://www.visionflow.info" style="width:100%;height:520px;"></iframe>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>Optional. Cut for a non-technical room.</p>
+</div>
+</blockquote>
+<hr/>
+<h1 id="part-6--risks-and-rules">Part 6 · Risks and rules<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-6--risks-and-rules" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<hr/>
+<h2 id="data-protection-you-stay-responsible">Data protection: you stay responsible<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#data-protection-you-stay-responsible" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The <strong>Data (Use and Access) Act 2025</strong> is fully in force from <strong>19 June 2026</strong>, with a new regime for automated decisions</li>
+<li>ICO on agentic AI: <strong>you are responsible for what your agent does</strong></li>
+<li>Do not give an agent data “just because it might be useful”</li>
+<li>Do a data protection impact assessment (DPIA) where the risk is high</li>
+<li>ICO agentic AI guidance: consultation this autumn, final version spring 2027</li>
+</ul>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>ICO Tech Futures: Agentic AI (8 Jan 2026) is not formal guidance. ICO guidance plans page (27 Aug 2026).</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="security-agents-can-be-tricked">Security: agents can be tricked<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#security-agents-can-be-tricked" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Prompt injection:</strong> hidden instructions in an email or web page can hijack an agent. The UK’s National Cyber Security Centre says it “may never be totally mitigated”</li>
+<li>Real example: <strong>EchoLeak</strong>, a single email that made Microsoft 365 Copilot leak data without a click</li>
+<li>OWASP’s Top 10 for agentic applications: goal hijack, tool misuse, privilege abuse, memory poisoning</li>
+<li>The principle is <strong>least agency</strong>: give an agent the fewest permissions that do the job, and a human sign-off on anything that matters</li>
+</ul>
+<hr/>
+<h2 id="selling-into-europe-the-eu-ai-act">Selling into Europe? The EU AI Act<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#selling-into-europe-the-eu-ai-act" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Applies to UK firms whose AI systems or their output are used in the EU</li>
+<li>Since <strong>2 August 2026</strong>: chatbots must say they are AI; deepfakes must be labelled</li>
+<li>High-risk uses (CV screening, credit scoring) are delayed to <strong>December 2027</strong></li>
+<li>In the UK there is <strong>still no AI bill</strong>. Watch this space: pressure for one returned this month.</li>
+</ul>
+<hr/>
+<h2 id="copyright-and-where-your-data-lives">Copyright and where your data lives<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#copyright-and-where-your-data-lives" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The government dropped its proposed text-and-data-mining exception in March 2026: there is no copyright reform coming soon</li>
+<li>Do not assume AI output belongs to you. Check the vendor’s indemnity.</li>
+<li>Cheap providers can mean your data leaves the UK: ask where it is processed and whether it is used for training</li>
+<li>Manus’s ownership was in dispute this year. Know who you are handing your files to.</li>
+</ul>
+<hr/>
+<h1 id="part-7--how-to-start">Part 7 · How to start<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-7--how-to-start" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<hr/>
+<h2 id="three-first-steps">Three first steps<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#three-first-steps" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Pick one painful, repetitive task.</strong> Not “AI strategy”: the invoice chasing, the weekly report, the tender pack.</li>
+<li><strong>Start in a tool you already pay for.</strong> Microsoft 365 Copilot or Google Workspace Gemini first; Claude or ChatGPT for the heavier lifting.</li>
+<li><strong>Write the rules down.</strong> What it may touch, what a human signs off, what never goes in.</li>
+</ol>
+<hr/>
+<h2 id="a-ladder-not-a-leap">A ladder, not a leap<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-ladder-not-a-leap" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Chat:</strong> ask questions and draft things</li>
+<li><strong>Assistant in your tools:</strong> Copilot in Outlook, Gemini in Gmail</li>
+<li><strong>Agent:</strong> Claude with Cowork, ChatGPT Work. Give it a goal and your files.</li>
+<li><strong>Automation:</strong> Zapier or Make agents that run without you</li>
+<li><strong>Agentic engineering:</strong> your own agents, built properly and tested</li>
+</ol>
+<p>Most of this room will get real value from rungs 2 and 3.</p>
+<hr/>
+<h2 id="what-it-costs">What it costs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-it-costs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Option</th><th>Per user, per month</th><th>Notes</th></tr></thead><tbody><tr><td>Google Workspace Business Starter</td><td><strong>£5.90</strong></td><td>Gemini included</td></tr><tr><td>Microsoft 365 Copilot Business</td><td><strong>£16.10</strong> (£13.80 until 31 December)</td><td>Plus your Microsoft 365 licence</td></tr><tr><td>Claude Pro</td><td><strong>about £18</strong></td><td>Cowork included; verify on the day</td></tr><tr><td>ChatGPT Plus</td><td><strong>about £20</strong></td><td>ChatGPT Work included</td></tr><tr><td>Zapier Agents</td><td><strong>free</strong> to start</td><td>400 activities a month</td></tr></tbody></table></div>
+<hr/>
+<h2 id="free-help-in-cumbria-and-nationally">Free help, in Cumbria and nationally<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#free-help-in-cumbria-and-nationally" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>AI Skills Boost:</strong> free short AI courses for every UK adult</li>
+<li><strong>BCC AI Academy</strong> through the Cumbria Chamber of Commerce</li>
+<li><strong>Made Smarter North West</strong> (manufacturers): match-funded grants up to £20k, digital roadmaps, funded digital interns</li>
+<li><strong>Help to Grow: Management</strong>, and the Business Growth Service at business.gov.uk</li>
+<li><strong>TechFirst</strong> is piloting AI training in the North West later this year</li>
+<li><strong>Sellafield:</strong> the SME Forum, the LINC scheme and the Tech Radar</li>
+<li>The <strong>LEVELS</strong> digital centre in Whitehaven</li>
+</ul>
+<iframe src="https://cumbriachamber.co.uk/" style="width:100%;height:440px;"></iframe>
+<blockquote class="callout speaker is-collapsible is-collapsed" data-callout="speaker" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Speaker notes </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>Cumberland’s UKSPF grants and advice vouchers closed in February 2026; a successor is unconfirmed. There is no general AI-adoption grant for SMEs in England at present.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="for-the-curious-going-deeper">For the curious: going deeper<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#for-the-curious-going-deeper" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Terminology first, then <strong>GitHub</strong>, <strong>Docker</strong> and <strong>VS Code</strong></li>
+<li>An agent “harness”: Claude Code, Codex, or a low-cost plan such as Z.ai’s GLM</li>
+<li>Self-guided course material at <a href="https://dreamlab-ai.com/workshops" class="external">dreamlab-ai.com/workshops<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>And the Agentics live coding sessions every week</li>
+</ul>
+<hr/>
+<h1 id="join-us">Join us<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#join-us" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li><strong>agentics.org</strong> · the Discord · the LinkedIn group (“♾️ agentics”)</li>
+<li>Free videos at <strong>video.agentics.org</strong></li>
+<li>Next West Cumbria session: talk to Ian or me tonight</li>
+</ul>
+<p><strong>Questions?</strong></p>
+<hr/>
+<h2 id="sources">Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Agentics Foundation: <a href="https://agentics.org/" class="external">agentics.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (25 Sep 2026); <a href="https://www.linkedin.com/pulse/agentics-foundation-june-edition-agentics-org-pvtac" class="external">June 2026 newsletter<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Meta Muse: <a href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/" class="external">Meta newsroom, 8 Sep 2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/" class="external">TechCrunch<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://www.reuters.com/business/finance/metas-muse-rekindles-fears-over-winners-losers-personal-ai-agent-emerges-2026-09-23/" class="external">Reuters, 23 Sep 2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Claude: <a href="https://claude.com/blog/cowork-is-now-claude" class="external">Cowork is now Claude, 16 Sep 2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://claude.com/blog/claude-in-chrome-generally-available" class="external">Claude in Chrome<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://claude.com/pricing" class="external">pricing<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>OpenAI: <a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/" class="external">ChatGPT Work<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes" class="external">release notes<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Microsoft: <a href="https://www.microsoft.com/en-gb/microsoft-365-copilot/pricing" class="external">Copilot pricing (UK)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/" class="external">Copilot Cowork GA<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Google: <a href="https://workspace.google.com/intl/en_uk/business/" class="external">Workspace for business (UK)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>METR: <a href="https://metr.org/time-horizons/" class="external">time horizons<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://metr.org/notes/2026-01-22-time-horizon-limitations/" class="external">limitations<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>ONS: <a href="https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/articles/artificialintelligenceinukbusinesses/2023to2026" class="external">AI in UK businesses 2023–2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>DSIT: <a href="https://www.gov.uk/government/publications/ai-adoption-research/ai-adoption-research" class="external">AI adoption research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>BCC: <a href="https://www.britishchambers.org.uk/news/2026/03/half-of-smes-using-ai-with-limited-headcount-impact-so-far/" class="external">Half of SMEs using AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; Lloyds: <a href="https://www.lloydsbankinggroup.com/media/press-releases/2026/lloyds/more-than-half-of-uk-businesses-say-ai-has-created-new-jobs.html" class="external">Business Barometer, 9 Sep 2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Evidence: <a href="https://www.gov.uk/government/publications/an-evaluation-of-dwps-microsoft-copilot-365-trial/an-evaluation-of-dwps-microsoft-365-copilot-trial" class="external">DWP Copilot trial<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://www.gov.uk/government/publications/evaluation-report-phase-3-trial-of-microsoft-copilot/evaluating-the-impact-of-microsoft-copilot-in-hmrc" class="external">HMRC trial<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://www.nber.org/papers/w31161" class="external">Brynjolfsson et al.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://www.nber.org/papers/w33777" class="external">Humlum and Vestergaard<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it" class="external">HBR, Feb 2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Rules: <a href="https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/the-data-use-and-access-act-2025-what-does-it-mean-for-organisations/" class="external">ICO on the Data (Use and Access) Act<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://ico.org.uk/about-the-ico/research-reports-impact-and-evaluation/research-and-reports/technology-and-innovation/tech-horizons-and-ico-tech-futures/ico-tech-futures-agentic-ai/" class="external">ICO Tech Futures: Agentic AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://www.ncsc.gov.uk/blog-post/prompt-injection-is-not-sql-injection" class="external">NCSC on prompt injection<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" class="external">EU AI Act<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Support: <a href="https://www.gov.uk/government/news/free-ai-training-for-all-as-government-and-industry-programme-expands-to-provide-10-million-workers-with-key-ai-skills-by-2030" class="external">AI Skills Boost<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://www.madesmarter.uk/resources/news-north-west-manufacturers-set-for-25m-digital-leap-forward/" class="external">Made Smarter North West<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>; <a href="https://www.gov.uk/guidance/how-to-do-business-with-sellafield-ltd" class="external">Doing business with Sellafield<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-6405" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#ai-agents-for-small-business" data-for="ai-agents-for-small-business">AI Agents for Small Business</a></li><li class="depth-1"><a href="#what-is-real-in-september-2026-and-how-to-start" data-for="what-is-real-in-september-2026-and-how-to-start">What is real in September 2026, and how to start</a></li><li class="depth-0"><a href="#part-1--the-agentics-foundation" data-for="part-1--the-agentics-foundation">Part 1 · The Agentics Foundation</a></li><li class="depth-1"><a href="#a-global-not-for-profit-community-for-agentic-ai" data-for="a-global-not-for-profit-community-for-agentic-ai">A global, not-for-profit community for agentic AI</a></li><li class="depth-1"><a href="#what-the-agentics-foundation-is" data-for="what-the-agentics-foundation-is">What the Agentics Foundation is</a></li><li class="depth-1"><a href="#a-big-active-community" data-for="a-big-active-community">A big, active community</a></li><li class="depth-1"><a href="#free-learning-every-week" data-for="free-learning-every-week">Free learning, every week</a></li><li class="depth-1"><a href="#local-west-cumbria" data-for="local-west-cumbria">Local: West Cumbria</a></li><li class="depth-1"><a href="#about-me" data-for="about-me">About me</a></li><li class="depth-0"><a href="#part-2--what-is-an-agent" data-for="part-2--what-is-an-agent">Part 2 · What is an agent?</a></li><li class="depth-1"><a href="#from-chatbot-to-agent" data-for="from-chatbot-to-agent">From chatbot to agent</a></li><li class="depth-1"><a href="#a-working-definition" data-for="a-working-definition">A working definition</a></li><li class="depth-1"><a href="#two-ways-of-working-with-ai" data-for="two-ways-of-working-with-ai">Two ways of working with AI</a></li><li class="depth-1"><a href="#why-now-agents-are-getting-longer-legs" data-for="why-now-agents-are-getting-longer-legs">Why now: agents are getting longer legs</a></li><li class="depth-1"><a href="#the-capability-overhang" data-for="the-capability-overhang">The capability overhang</a></li><li class="depth-0"><a href="#part-3--the-moment-september-2026" data-for="part-3--the-moment-september-2026">Part 3 · The moment: September 2026</a></li><li class="depth-1"><a href="#what-launched-in-the-last-few-weeks" data-for="what-launched-in-the-last-few-weeks">What launched in the last few weeks</a></li><li class="depth-1"><a href="#meta-muse-agents-go-mass-market" data-for="meta-muse-agents-go-mass-market">Meta Muse: agents go mass-market</a></li><li class="depth-1"><a href="#meta-muse-the-announcement" data-for="meta-muse-the-announcement">Meta Muse: the announcement</a></li><li class="depth-1"><a href="#claude-cowork-becomes-just-claude" data-for="claude-cowork-becomes-just-claude">Claude: Cowork becomes just “Claude”</a></li><li class="depth-1"><a href="#chatgpt-work" data-for="chatgpt-work">ChatGPT Work</a></li><li class="depth-1"><a href="#microsoft-365-agents-inside-the-tools-you-already-pay-for" data-for="microsoft-365-agents-inside-the-tools-you-already-pay-for">Microsoft 365: agents inside the tools you already pay for</a></li><li class="depth-1"><a href="#google-workspace-the-cheapest-door-in" data-for="google-workspace-the-cheapest-door-in">Google Workspace: the cheapest door in</a></li><li class="depth-1"><a href="#the-uk-is-at-the-back-of-the-queue" data-for="the-uk-is-at-the-back-of-the-queue">The UK is at the back of the queue</a></li><li class="depth-1"><a href="#also-worth-knowing" data-for="also-worth-knowing">Also worth knowing</a></li><li class="depth-1"><a href="#and-it-keeps-getting-cheaper" data-for="and-it-keeps-getting-cheaper">And it keeps getting cheaper</a></li><li class="depth-0"><a href="#part-4--where-uk-small-businesses-are" data-for="part-4--where-uk-small-businesses-are">Part 4 · Where UK small businesses are</a></li><li class="depth-1"><a href="#adoption-a-third-and-shallow" data-for="adoption-a-third-and-shallow">Adoption: a third, and shallow</a></li><li class="depth-1"><a href="#what-is-holding-firms-back" data-for="what-is-holding-firms-back">What is holding firms back</a></li><li class="depth-1"><a href="#what-the-evidence-says-it-is-worth" data-for="what-the-evidence-says-it-is-worth">What the evidence says it is worth</a></li><li class="depth-1"><a href="#the-catch-ai-can-intensify-work" data-for="the-catch-ai-can-intensify-work">The catch: AI can intensify work</a></li><li class="depth-0"><a href="#part-5--what-agents-can-do-for-your-business" data-for="part-5--what-agents-can-do-for-your-business">Part 5 · What agents can do for your business</a></li><li class="depth-1"><a href="#admin-and-email" data-for="admin-and-email">Admin and email</a></li><li class="depth-1"><a href="#quotes-tenders-and-compliance" data-for="quotes-tenders-and-compliance">Quotes, tenders and compliance</a></li><li class="depth-1"><a href="#marketing-and-customers" data-for="marketing-and-customers">Marketing and customers</a></li><li class="depth-1"><a href="#finance-bookkeeping-hr-and-operations" data-for="finance-bookkeeping-hr-and-operations">Finance, bookkeeping, HR and operations</a></li><li class="depth-1"><a href="#things-i-have-seen-built-this-year" data-for="things-i-have-seen-built-this-year">Things I have seen built this year</a></li><li class="depth-1"><a href="#bigger-a-whole-platform-built-by-agents" data-for="bigger-a-whole-platform-built-by-agents">Bigger: a whole platform, built by agents</a></li><li class="depth-0"><a href="#part-6--risks-and-rules" data-for="part-6--risks-and-rules">Part 6 · Risks and rules</a></li><li class="depth-1"><a href="#data-protection-you-stay-responsible" data-for="data-protection-you-stay-responsible">Data protection: you stay responsible</a></li><li class="depth-1"><a href="#security-agents-can-be-tricked" data-for="security-agents-can-be-tricked">Security: agents can be tricked</a></li><li class="depth-1"><a href="#selling-into-europe-the-eu-ai-act" data-for="selling-into-europe-the-eu-ai-act">Selling into Europe? The EU AI Act</a></li><li class="depth-1"><a href="#copyright-and-where-your-data-lives" data-for="copyright-and-where-your-data-lives">Copyright and where your data lives</a></li><li class="depth-0"><a href="#part-7--how-to-start" data-for="part-7--how-to-start">Part 7 · How to start</a></li><li class="depth-1"><a href="#three-first-steps" data-for="three-first-steps">Three first steps</a></li><li class="depth-1"><a href="#a-ladder-not-a-leap" data-for="a-ladder-not-a-leap">A ladder, not a leap</a></li><li class="depth-1"><a href="#what-it-costs" data-for="what-it-costs">What it costs</a></li><li class="depth-1"><a href="#free-help-in-cumbria-and-nationally" data-for="free-help-in-cumbria-and-nationally">Free help, in Cumbria and nationally</a></li><li class="depth-1"><a href="#for-the-curious-going-deeper" data-for="for-the-curious-going-deeper">For the curious: going deeper</a></li><li class="depth-0"><a href="#join-us" data-for="join-us">Join us</a></li><li class="depth-1"><a href="#sources" data-for="sources">Sources</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

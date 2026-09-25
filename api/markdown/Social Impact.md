@@ -19,7 +19,7 @@ Social Impact refers to the full spectrum of effects — positive and negative, 
 
 # Social engineering
 
-- {{twitter https://twitter.com/jelleprins/status/1771459616016126015?}}
+<https://twitter.com/jelleprins/status/1771459616016126015?>
 
 ### Peripheral Assumptions
 
@@ -60,7 +60,7 @@ Social Impact refers to the full spectrum of effects — positive and negative, 
 
   <!-- vault-migrate: inlined Logseq block 657d1029-63aa-4766-8324-e7d6e5e19001 from working/journals/2023-12-16.md -->
   > [Grimes has a new line of AI plush toys, including one named Grok - The Verge](https://www.theverge.com/2023/12/14/24001895/grimes-curio-ai-toy-grok-pre-order) [[Education and AI]] [[ParentsGuideToAI]]
-  > {{tweet https://twitter.com/CurioBeta/status/1735372169939652785}}
+  > <https://twitter.com/CurioBeta/status/1735372169939652785>
   > [Hacked Furby with ‘AI brain’ shares plan to take over the world | The Independent](https://www.independent.co.uk/tech/chatgpt-furby-ai-b2315590.html)
   > — working/journals/2023-12-16.md
 
@@ -109,7 +109,9 @@ Social Impact refers to the full spectrum of effects — positive and negative, 
 - **Technology Stack**: Ditto is built as a TypeScript server running in Deno, with a PostgreSQL database. It functions as both a NIP-01 client and a relay, making it a full-fledged Nostr server. The server's design leverages NIP-46 for secure event signing, enabling compatibility with existing Mastodon apps while maintaining the decentralised ethos of Nostr.
 - **Expanding Nostr’s Reach**: The goal of Ditto is to make Nostr more accessible and appealing by leveraging existing social media app ecosystems like Mastodon. Users can use their favourite Mastodon apps on Ditto, providing a familiar experience while accessing Nostr’s decentralised network.
 - **Future Developments**: Upcoming features include zap splits to enhance server sustainability and a creator programme to support those who wish to start Ditto servers. A mentorship programme has also been launched to help new developers contribute to Nostr and Bitcoin projects.
-- {{renderer :linkpreview,https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/}}
+
+<https://nate.mecca1.net/posts/2024-01-30_microblogging-protocols/>
+
 - [Post Details | Ditto](https://ditto.pub/@hzrd149.com/posts/1299e04c56891c12a800e234ee7ee02067152e2cf29f9e17b7b4f979f5f8c075) [[Nostr protocol]]
 - [noStrudel hosted on nostr + blossom servers and served over tor ...](https://nostr.at/nevent1qqsp9x0qf3tgj8qj4qqwyd8w0mszqec49ck098u7z7mmf7te7huvqagpp4mhxue69uhkummn9ekx7mqpz3mhxue69uhhyetvv9ujuerpd46hxtnfduq3zamnwvaz7tmwdaehgun4v5hxxmmdqgszv6q4uryjzr06xfxxew34wwc5hmjfmfpqn229d72gfegsdn2q3fgxvc346)
 - [Get A Nostr Signing Device To Keep Your Nostr Identity Secure!](https://nostrsigningdevice.com/)

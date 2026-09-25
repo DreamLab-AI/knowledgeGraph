@@ -77,7 +77,5 @@ main()
 ```
 ## Python code block execution
 
-- {{evalparent}}
-
 ### Provenance
 

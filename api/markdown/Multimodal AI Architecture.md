@@ -12,7 +12,8 @@ Multimodal AI refers to artificial intelligence systems that process, fuse, and 
 - Multi-lingual across 50 languages, supporting image input and output, real time video input, and 3D reconstruction from generated images.
 - Empathetic voice to voice with very low latency.
 - [Min Choi on X: "I used GPT-4o to create STL file for 3D model in ~ 20 seconds on my phone. Pretty remarkable what you can generate with AI and simple prompt now. https://t.co/2fbObrpPol" / X (twitter.com)](https://twitter.com/minchoi/status/1790396782200987662)
-- {{twitter https://twitter.com/minchoi/status/1790396782200987662}}
+
+<https://twitter.com/minchoi/status/1790396782200987662>
 
 # Google DeepMind Gemini
 

@@ -119,7 +119,9 @@ Computer Vision is the field of artificial intelligence concerned with enabling 
 - **Share Experience**: Difficult to share experience with others easily.
 - **Productivity Issues**: Feels less productive compared to traditional setups.
 - **Public Use**: Looks awkward and attracts attention when used outside.
-- {{twitter https://twitter.com/tkexpress11/status/1780566909957910682?}}
+
+<https://twitter.com/tkexpress11/status/1780566909957910682?>
+
 - [The Vision Pro is a big flop (disconnect.blog)](https://disconnect.blog/the-vision-pro-is-a-big-flop/)
 - [Apple can readily afford this experiment, they are operating at such scale that failure of the Vision Pro is meaningless](https://www.engadget.com/it-doesnt-matter-how-many-vision-pro-headsets-apple-sells-ming-chi-kuo-production-numbers-143112470.html?guccounter=1)
 
@@ -236,7 +238,9 @@ Computer Vision is the field of artificial intelligence concerned with enabling 
 - **Share Experience**: Difficult to share experience with others easily.
 - **Productivity Issues**: Feels less productive compared to traditional setups.
 - **Public Use**: Looks awkward and attracts attention when used outside.
-- {{twitter https://twitter.com/tkexpress11/status/1780566909957910682?}}
+
+<https://twitter.com/tkexpress11/status/1780566909957910682?>
+
 - [The Vision Pro is a big flop (disconnect.blog)](https://disconnect.blog/the-vision-pro-is-a-big-flop/)
 - [Apple can readily afford this experiment, they are operating at such scale that failure of the Vision Pro is meaningless](https://www.engadget.com/it-doesnt-matter-how-many-vision-pro-headsets-apple-sells-ming-chi-kuo-production-numbers-143112470.html?guccounter=1)
 
@@ -279,7 +283,8 @@ Computer Vision is the field of artificial intelligence concerned with enabling 
 
 - **Concept**: Advanced algorithms inspired by the structure of the human brain.
 - **Explain**: Like building a brain in a computer to solve complex problems.
-- {{video https://www.youtube.com/watch?v=aircAruvnKk&}}
+
+![](https://www.youtube.com/watch?v=aircAruvnKk&)
 
 #### Shaping the Future of Digital Society
 

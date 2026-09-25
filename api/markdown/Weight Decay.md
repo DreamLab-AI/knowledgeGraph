@@ -35,9 +35,10 @@ A regularisation technique that adds a penalty proportional to the L2 norm of mo
 - To reach this Meta is developing full AR glasses codenamed Orion, [slated for release in 2027](https://www.theverge.com/2023/2/28/23619730/meta-vr-oculus-ar-glasses-smartwatch-plans). These glasses are designed to work in tandem with a neural interface wristband, allowing for gesture-based control and potentially revolutionizing how we interact with digital content in the physical world.
   - It's **cheap**, I would totally give this to a kid over a mobile phone. £200 all in?!?
   - It sold out immediately.
-  - {{tweet https://twitter.com/rabbit_hmi/status/1744781083831574824}}
 
-    #### Key Characteristics
+  <https://twitter.com/rabbit_hmi/status/1744781083831574824>
+
+  #### Key Characteristics
 
 - Penalises large weights
   - L2 regularisation

@@ -4,7 +4,7 @@ Coding Support encompasses AI-assisted tools, IDE integrations, and agent framew
 
 ### Content
 
-- {{video https://www.youtube.com/watch?v=yj73GIEKmLI}}
+![](https://www.youtube.com/watch?v=yj73GIEKmLI)
 
 # Believably wrong answers
 
@@ -25,7 +25,8 @@ Coding Support encompasses AI-assisted tools, IDE integrations, and agent framew
 
 # Products
 
-- {{video https://www.youtube.com/watch?v=fjHtjT7GO1c&}}
+![](https://www.youtube.com/watch?v=fjHtjT7GO1c&)
+
 - [Blog (cognition-labs.com)](https://www.cognition-labs.com/blog)
 - The AI Coding Assistant
   - **Introduction to Cody**
@@ -128,7 +129,9 @@ Coding Support encompasses AI-assisted tools, IDE integrations, and agent framew
 # Random Links
 
 - https://twitter.com/tldraw/status/1782443204710674571
-- {{twitter https://twitter.com/tldraw/status/1782443204710674571}}
+
+<https://twitter.com/tldraw/status/1782443204710674571>
+
 - [Paper page Design2Code: How Far Are We From Automating Front-End Engineering? (huggingface.co)](https://huggingface.co/papers/2403.03163)
 - [Generative AI Powered Assistant - Amazon Q - AWS](https://aws.amazon.com/q/)  Amazons!
 - [antworks.ai](https://antworks.ai/)

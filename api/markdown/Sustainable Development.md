@@ -16,7 +16,8 @@ AI should contribute to the United Nations Sustainable Development Goals by addr
 - AI-assisted tools like Sustainable Home Visuals AI
 - Experimental generative video platforms (Runway ML Gen-2, PromeAI) for short concept clips
 - [Sustainable Home Visuals AI](https://chatgpt.com/c/680cfbe3-eb60-8005-946f-35b268702dab)
-  - {{video https://youtu.be/0fzvIBO-yLw}}
+
+  ![](https://youtu.be/0fzvIBO-yLw)
 
 ### Study Details
 
@@ -28,7 +29,8 @@ AI should contribute to the United Nations Sustainable Development Goals by addr
 - AI-assisted tools like Sustainable Home Visuals AI
 - Experimental generative video platforms (Runway ML Gen-2, PromeAI) for short concept clips
 - [Sustainable Home Visuals AI](https://chatgpt.com/c/680cfbe3-eb60-8005-946f-35b268702dab)
-  - {{video https://youtu.be/0fzvIBO-yLw}}
+
+  ![](https://youtu.be/0fzvIBO-yLw)
 
 ### Study Details
 
@@ -48,7 +50,8 @@ AI should contribute to the United Nations Sustainable Development Goals by addr
 
 - Experimental generative video platforms (Runway ML Gen-2, PromeAI) for short concept clips
 - [Sustainable Home Visuals AI](https://chatgpt.com/c/680cfbe3-eb60-8005-946f-35b268702dab)
-  - {{video https://youtu.be/0fzvIBO-yLw}}
+
+  ![](https://youtu.be/0fzvIBO-yLw)
 
 ### Study Details
 

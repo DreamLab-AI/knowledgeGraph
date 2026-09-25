@@ -37,7 +37,7 @@ A learnable lookup table that maps each discrete token in a vocabulary to a dens
 > Multi-lingual across 50 languages, supporting image input and output, real time video input, text to 3D.
 > Empathetic voice to voice with very low latency.
 > [Min Choi on X: "I used GPT-4o to create STL file for 3D model in ~ 20 seconds on my phone. Pretty remarkable what you can generate with AI and simple prompt now. https://t.co/2fbObrpPol" / X (twitter.com)](https://twitter.com/minchoi/status/1790396782200987662)
-> {{twitter https://twitter.com/minchoi/status/1790396782200987662}}
+> <https://twitter.com/minchoi/status/1790396782200987662>
 > — working/pages/multimodal.md
 
 <!-- vault-migrate: inlined Logseq block 66408f9e-30e0-442b-9aba-9eb51e36a739 from working/pages/Stable Diffusion.md -->

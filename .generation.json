@@ -1,9 +1,9 @@
 {
-  "id": "visionGraph@307e49cda883876d87090414a4d558efd3eabe54",
-  "commit": "307e49cda883876d87090414a4d558efd3eabe54",
+  "id": "visionGraph@58f26e66ec3867438f7daba4c7b98cf7af760fc6",
+  "commit": "58f26e66ec3867438f7daba4c7b98cf7af760fc6",
   "dirty": false,
-  "content_digest": "bcf9004077a7211711c7e71e2c21a4eaf2be1914072ba65aa5851ab2108333b4",
-  "generated_at": "2026-09-25T10:48:40.056230+00:00",
+  "content_digest": "e111aa3863872e585e50c04459110edf820faa0ccc7e6ffc4995a98dc4af21aa",
+  "generated_at": "2026-09-25T11:57:17.043763+00:00",
   "class_count": 8432,
   "page_count": 8432,
   "vocabulary_version": 1,
@@ -15,17 +15,17 @@
     },
     {
       "name": "data/ontology-inferred.ttl",
-      "sha256": "cdaefc9922f1ea4dd5c8aaa5e69a93f2a2a167a25c5c8242899c104b551e825e",
+      "sha256": "c5a10508130d524b9f75802cdaa804dfa0813c0c97cd6b377b4c6a22c2acca8f",
       "bytes": 3874775
     },
     {
       "name": "data/scaffold-index.json",
-      "sha256": "53127a9b0a8a1d4ee693fe9670894009d5f47605e208d4416f700fe13d5c5c38",
+      "sha256": "1bb6e6e73c8d24e507c2f46d30aeee0c9b97a7242c44f95a5515a4465d3ce7f0",
       "bytes": 9914167
     },
     {
       "name": "data/prose-index.json",
-      "sha256": "5be2f1c1ce7b6d20b98ceb24e0ff6273614d3f0fae2d623837ef773a7c9dd23d",
+      "sha256": "9e740280e9e1b144bb15287d35e10bb3d077d50fe9e37b747ad76c32d4ffbbc0",
       "bytes": 5570729
     },
     {
@@ -42450,8 +42450,8 @@
     },
     {
       "name": "api/markdown/3D and 4D.md",
-      "sha256": "ac242f3ec5ae2473cb07ad43b9bf88e9104eb508cd8f5eb616e1fbfeec54ba80",
-      "bytes": 58260
+      "sha256": "82fdfc6dbddf5391931f43bcfc43236fda5724ee9e3e3d229b7b0f1a8cf56058",
+      "bytes": 58229
     },
     {
       "name": "api/markdown/3GPP.md",
@@ -42780,8 +42780,8 @@
     },
     {
       "name": "api/markdown/AI Capability Temporal Horizon Framework.md",
-      "sha256": "80324041b4bfff80818bcf8787c08281f5e0d8be5475921786b0b1e7b5cd94b8",
-      "bytes": 12423
+      "sha256": "c0deea8a1ca806230ba43ce806dabee4e54cf496769bb28f9fc1f48f7aa649a0",
+      "bytes": 12316
     },
     {
       "name": "api/markdown/AI Capital Expenditure.md",
@@ -42915,8 +42915,8 @@
     },
     {
       "name": "api/markdown/AI Development.md",
-      "sha256": "8c263115a1e9bdc8becc0a1b748c36cbd97c84d315aa8065fef26a01b99be2f9",
-      "bytes": 195307
+      "sha256": "608fad345c807fb003b61dd4887d076b666633c1079d567f832e116fb7813090",
+      "bytes": 195275
     },
     {
       "name": "api/markdown/AI Diagram Tools.md",
@@ -42995,8 +42995,8 @@
     },
     {
       "name": "api/markdown/AI Existential Risk Probability Estimate.md",
-      "sha256": "fc925cd91438b1120bb7d3058ce0acc62aa22432117955ba3486e694d4c63c21",
-      "bytes": 1101
+      "sha256": "89f2a4eacd0fa48a7a2451d5edf686c23708fdff6e567bce176f22578a37a3f2",
+      "bytes": 1092
     },
     {
       "name": "api/markdown/AI Export Controls.md",
@@ -43015,8 +43015,8 @@
     },
     {
       "name": "api/markdown/AI Frontier Capability Survey.md",
-      "sha256": "48506a3a0384899b639fac024dfc8f31fd51fcb9763a674a1d627343a87c5016",
-      "bytes": 11067
+      "sha256": "270b839ded9d59046e8e2f820c3db92d6bfb5bf61735f8c4bcce7e545ebbf2fd",
+      "bytes": 11049
     },
     {
       "name": "api/markdown/AI Game Agent.md",
@@ -43200,8 +43200,8 @@
     },
     {
       "name": "api/markdown/AI Literacy Training for Designers.md",
-      "sha256": "c5e95411f7d4965a3355c190f1d84b9277ebdf813611af7b92ad32b1f3fea6e5",
-      "bytes": 20128
+      "sha256": "c03986873dc90e7bcf89ca0a6b5b8f50441b421b7df1063e3fa5d9f356a8095b",
+      "bytes": 20113
     },
     {
       "name": "api/markdown/AI Mandate.md",
@@ -43340,8 +43340,8 @@
     },
     {
       "name": "api/markdown/AI Product and Risk Framework.md",
-      "sha256": "134aed702ba7a8a38782d1de4ee56339b2fe6b0735ce0a61d4d1af7bbff1cc06",
-      "bytes": 4646
+      "sha256": "4b5bb73b9cb6c08ded710f3de72cd9bc86060376dd631bb80f857dacdf633988",
+      "bytes": 4559
     },
     {
       "name": "api/markdown/AI Productivity Debate.md",
@@ -43675,8 +43675,8 @@
     },
     {
       "name": "api/markdown/AI User.md",
-      "sha256": "d5e7afa46bc9e22e5e4d702d5c2300bc4b890d56b97e9f31863cc2579cd9e357",
-      "bytes": 528579
+      "sha256": "1f86bf58033d7e8e124271a2b229107bb141d9130f048836053754f9c1b3be78",
+      "bytes": 528467
     },
     {
       "name": "api/markdown/AI Venture Capital.md",
@@ -43720,8 +43720,8 @@
     },
     {
       "name": "api/markdown/AI-Assisted Developer Tooling.md",
-      "sha256": "9505c7ed3ce1767ad189732d300da94c5c739ff3f2e3bbbb38c3d12d5bf775e5",
-      "bytes": 15517
+      "sha256": "dfff290a390d72b9020bd34974d106d26fa423ee224dbef07dd55466f2367938",
+      "bytes": 15494
     },
     {
       "name": "api/markdown/AI-Assisted Development Practice.md",
@@ -43810,8 +43810,8 @@
     },
     {
       "name": "api/markdown/AICafev6.md",
-      "sha256": "c327c06bd5991e97bd676e079230b1edd5a32a94542fe92afd6996b954f647f1",
-      "bytes": 7935
+      "sha256": "708d2f70f53708edea9b766d7b6594b944216436facb8cc841beea0f5b269df8",
+      "bytes": 7922
     },
     {
       "name": "api/markdown/AIEthics.md",
@@ -45440,8 +45440,8 @@
     },
     {
       "name": "api/markdown/Artificial Intelligence.md",
-      "sha256": "d41e308651c0e9fc62b13c3df12fcee79c7f283c3b5856a5892e9b46095c00d1",
-      "bytes": 61074
+      "sha256": "b8efafee76470180e5a8e4ebd5ca26abc5d696eaa5af550b2be2bd5e54826add",
+      "bytes": 61058
     },
     {
       "name": "api/markdown/Artificial Superintelligence Theory.md",
@@ -46185,8 +46185,8 @@
     },
     {
       "name": "api/markdown/Autonomous Navigation.md",
-      "sha256": "b91be9c9c08590ae0db2bcf228da6fe232714a9b337edbc48f947e73660ff6e5",
-      "bytes": 9834
+      "sha256": "2c76a51e38ba1b990f623065d880adc683c421c1cac3a3aa6323faaf78a60763",
+      "bytes": 9759
     },
     {
       "name": "api/markdown/Autonomous Operation.md",
@@ -50190,8 +50190,8 @@
     },
     {
       "name": "api/markdown/Computer Vision.md",
-      "sha256": "e42e93ed7e32cf084b056d5f06d2a5daa306628d12e0e80fa532087c252860f9",
-      "bytes": 29339
+      "sha256": "cb2a9a6b9ddcfce0824d2cfeb89ea8d2abff0572f612e5b7393abcea1b52a06e",
+      "bytes": 29313
     },
     {
       "name": "api/markdown/Computer-Supported Cooperative Work.md",
@@ -50465,8 +50465,8 @@
     },
     {
       "name": "api/markdown/Conspiratorial Thinking in Technology Communities.md",
-      "sha256": "2b070f15e2284df19451f744418e5fa5add31523796eda3c17baa54b75dc4334",
-      "bytes": 13477
+      "sha256": "5e73519344aafd510298ee97a8505efb884eda59d23806b1f6939a140a3443e4",
+      "bytes": 13466
     },
     {
       "name": "api/markdown/Constant Product Formula.md",
@@ -50480,8 +50480,8 @@
     },
     {
       "name": "api/markdown/Constitutional AI Training Methodology.md",
-      "sha256": "e759b9316fc1665205bd9e5db4aa1e46f39d8ad41232b36dac62b9b6564ff319",
-      "bytes": 8903
+      "sha256": "7477876ce70ac2abeabff733ef9ac956046d82ef32c49e15a27c8ca263fcfb86",
+      "bytes": 8879
     },
     {
       "name": "api/markdown/Constitutional AI.md",
@@ -53930,8 +53930,8 @@
     },
     {
       "name": "api/markdown/Digital Asset Risks.md",
-      "sha256": "6dec9126b8c28967864d5089bd0754d2dbba5783d15ef2288d0ea6fe2088f74a",
-      "bytes": 64685
+      "sha256": "e613a4f0556aaa423a3f9efa97c3d721893dbcf2af44e35bc18ff7ae6cb3632d",
+      "bytes": 64625
     },
     {
       "name": "api/markdown/Digital Asset Standards.md",
@@ -55040,8 +55040,8 @@
     },
     {
       "name": "api/markdown/Dr O'Hare Writing for LogSeq.md",
-      "sha256": "31f896c2b81a52fa4b6b85bf79de37b9bd900264036908a1d53965a7512e88a9",
-      "bytes": 5404
+      "sha256": "16222d2ffee44907ecc9a57df30ed83125176dedee5886aa6089190d4ed97595",
+      "bytes": 5399
     },
     {
       "name": "api/markdown/Drake.md",
@@ -55840,8 +55840,8 @@
     },
     {
       "name": "api/markdown/Early Stopping.md",
-      "sha256": "226fe3212eb66f6ef31eb410ab41c74160afc1611e9b3d2ce624ca972022cdc1",
-      "bytes": 17986
+      "sha256": "7be5547317e096176d8c57084781446335e00b49f316550f856b3f2df0a97103",
+      "bytes": 17970
     },
     {
       "name": "api/markdown/Eclair.md",
@@ -59660,8 +59660,8 @@
     },
     {
       "name": "api/markdown/Graph Neural Network.md",
-      "sha256": "b1b2bc99977fa2edc4545d90ec126d072ed8469e070ddae76d5a526421b574a0",
-      "bytes": 18088
+      "sha256": "706c35cb42dd8d4951d43d8399ad639e6cb1503760c8a1a74e0e6ca038d34fd5",
+      "bytes": 18078
     },
     {
       "name": "api/markdown/Graph Neural Networks.md",
@@ -62060,8 +62060,8 @@
     },
     {
       "name": "api/markdown/Image Classification.md",
-      "sha256": "092fc899d7384bedfdcd99c3408d8a5966158ea4d216d7bbca3adc3318406198",
-      "bytes": 27687
+      "sha256": "58044a7f910b261b677f2b680031443c87de90ad05cab0f34599955c5b1cc63d",
+      "bytes": 27648
     },
     {
       "name": "api/markdown/Image Compression.md",
@@ -62075,8 +62075,8 @@
     },
     {
       "name": "api/markdown/Image Generation.md",
-      "sha256": "240801932a63c56b5841faeb11cede4d20de807fa00c0ee065abbfbd17e9a896",
-      "bytes": 61094
+      "sha256": "66738a162f11ce4f212fb4a7cf4c1f97dff912750ce1b6e36bfbcda5f2f575cf",
+      "bytes": 61084
     },
     {
       "name": "api/markdown/Image Preprocessing.md",
@@ -62125,8 +62125,8 @@
     },
     {
       "name": "api/markdown/Image to Image Translation.md",
-      "sha256": "96dcf8990fe1718d550c4ec8ff6f9b0e59be2d0c6edef4c2648bf7fd32eee0b0",
-      "bytes": 2815
+      "sha256": "872376937a72ad95bd19606f9b699e90d4c5266fa46460e1ba30d2bff9eafb68",
+      "bytes": 2810
     },
     {
       "name": "api/markdown/Image-to-Image.md",
@@ -62350,8 +62350,8 @@
     },
     {
       "name": "api/markdown/In-Page Executable Notebook Pattern.md",
-      "sha256": "4b285d467de256a18c862897af6d315e9e6a6db8e52d78d8ef2863f237b2a02c",
-      "bytes": 986
+      "sha256": "2fab97f6edbf66afc696d948aab57bd38149f5542669f76e2b0084e3fcd0b6c7",
+      "bytes": 968
     },
     {
       "name": "api/markdown/In-Process Communication.md",
@@ -64085,8 +64085,8 @@
     },
     {
       "name": "api/markdown/Knowledge Distillation.md",
-      "sha256": "894e87d635cf27e2d04ae4d39f8ccbf4de18d3a77016ee9d03bdc6bc615ea67d",
-      "bytes": 21949
+      "sha256": "c2d69c808a47fa9d707a5986853c32a60f42eaeb979f333f4cb0cd22eacd8cd4",
+      "bytes": 21905
     },
     {
       "name": "api/markdown/Knowledge Economy.md",
@@ -64390,8 +64390,8 @@
     },
     {
       "name": "api/markdown/Language Modeling.md",
-      "sha256": "af8bfe3827ccd059ee0b741a0cc0525263f0287b416c62c55114bf22bd52c8b2",
-      "bytes": 50889
+      "sha256": "644cbad38d093484b26c9296b21bf63c83dc0265ccd886ce95089dd836b52d28",
+      "bytes": 50871
     },
     {
       "name": "api/markdown/Language Translation.md",
@@ -65285,8 +65285,8 @@
     },
     {
       "name": "api/markdown/Local RAG Corpus Ingestion Pipeline.md",
-      "sha256": "55a521e2d14c21439f07a8368d714313fdcde73be5f9557b565de7810d292e39",
-      "bytes": 3541
+      "sha256": "6ef077fe7a5d5552b9b4e06607d19354f09c187a42e61e36bfbb0f2ffa1d6767",
+      "bytes": 3488
     },
     {
       "name": "api/markdown/Local Search.md",
@@ -65745,8 +65745,8 @@
     },
     {
       "name": "api/markdown/Machine Learning Techniques Survey.md",
-      "sha256": "75cc99032af16356c220a7a6e94530695b9970d2078be6b25f0e0c79503a2e0e",
-      "bytes": 7483
+      "sha256": "eaade3acb58b9bff1a3bf6b5db83be743d2f494945f19d1e9898aeac142e4ef5",
+      "bytes": 7478
     },
     {
       "name": "api/markdown/Machine Learning.md",
@@ -66720,8 +66720,8 @@
     },
     {
       "name": "api/markdown/Metaverse and Telecollaboration.md",
-      "sha256": "924e3d954123e9395ab182c3ce0bdc64da89178ab37814a48d9aa0cd4fc2eb9b",
-      "bytes": 129943
+      "sha256": "d5a325de708945a432aea3d3172da9d75c266e6ed160a8023ea7cb2e51fc1cda",
+      "bytes": 129918
     },
     {
       "name": "api/markdown/Metaverse governance and safeguarding.md",
@@ -67015,8 +67015,8 @@
     },
     {
       "name": "api/markdown/Mixture-of-Experts Architecture.md",
-      "sha256": "42f257a461c79c5c74cffa6c91aafd9399b6c7c2058cd137663986160b0886a1",
-      "bytes": 16478
+      "sha256": "2429f47d8e4903061827f0f7bca42363d5d1b436de40917a8fa8cb948a7bee7d",
+      "bytes": 16468
     },
     {
       "name": "api/markdown/Mixup.md",
@@ -67505,8 +67505,8 @@
     },
     {
       "name": "api/markdown/Money.md",
-      "sha256": "0b319d8b8d65338c11bdd4a65ce3355ab93143a5da5203f1cba2711b27388879",
-      "bytes": 116637
+      "sha256": "a757e198a2fa34f28ef899337865bf1d74c8b7cd1fbd7f389cfabd581e30de33",
+      "bytes": 116626
     },
     {
       "name": "api/markdown/Monitoring Dashboard.md",
@@ -67620,8 +67620,8 @@
     },
     {
       "name": "api/markdown/Motion Planning.md",
-      "sha256": "61ecd00838d6e005634b92e1bb0cdca07b89ea19311ce152cedddf657a1646c6",
-      "bytes": 8680
+      "sha256": "86411639fed466946fe25a18e524d50b4032820c0937ed489bcdad594d36aa08",
+      "bytes": 8668
     },
     {
       "name": "api/markdown/Motion Solver Software.md",
@@ -67750,8 +67750,8 @@
     },
     {
       "name": "api/markdown/Multi-Agent RAG Architecture Compendium.md",
-      "sha256": "c15a0f21c6bf4fc2890c1fbcf14e5118f5fd872254386986ce14a43027f75340",
-      "bytes": 6638
+      "sha256": "dbbdf28185ceaaed8d35169b2ccedce3b6d2119af706d6ff8f3241ed9d91b0c9",
+      "bytes": 6633
     },
     {
       "name": "api/markdown/Multi-Agent Reinforcement Learning.md",
@@ -67885,8 +67885,8 @@
     },
     {
       "name": "api/markdown/Multi-Viewpoint Immersive Research Platform.md",
-      "sha256": "69a1ecba46a938ed73a0c3942a6a0885f42df2eace9b8129f32a54827d8e3c4b",
-      "bytes": 3945
+      "sha256": "f36d7445ffdd63a32ec4ce977fe7b4ab2246fae48e0dcc720fece4039b954edf",
+      "bytes": 3927
     },
     {
       "name": "api/markdown/MultiAccessEdgeComputing.md",
@@ -67925,8 +67925,8 @@
     },
     {
       "name": "api/markdown/Multimodal AI Architecture.md",
-      "sha256": "68491eb79ac88f26a16fa5f00a8c1d4167aaebd83aeda79a5c97471adc45eb8d",
-      "bytes": 5235
+      "sha256": "3360c72c3c3444f40cb9339c61aa0a0d1422be11c13c68f20fb9ba5c561ae0b0",
+      "bytes": 5224
     },
     {
       "name": "api/markdown/Multimodal AI.md",
@@ -68295,8 +68295,8 @@
     },
     {
       "name": "api/markdown/Named Entity Recognition.md",
-      "sha256": "ba45b806f128187b17444d6d095fc4f11a1d53d5230e34c96e51f384f74e97b7",
-      "bytes": 7037
+      "sha256": "e3cf9d8f49d484484bbcb4e8d9421333e94d7686700f20101be2ad630a11eb98",
+      "bytes": 7031
     },
     {
       "name": "api/markdown/Named Entity.md",
@@ -69430,8 +69430,8 @@
     },
     {
       "name": "api/markdown/Octave Immersive Research Facility.md",
-      "sha256": "2b7a4882bb1667c7ec43e7bc79fffb338d686d092ab7e3605842445c92b075a2",
-      "bytes": 3036
+      "sha256": "319319d3d8ff035e950c8947c0fef3cc3fec7e28e0b70b0d7ff38f8a4079e607",
+      "bytes": 3030
     },
     {
       "name": "api/markdown/Octocopter.md",
@@ -69800,8 +69800,8 @@
     },
     {
       "name": "api/markdown/Open Source Digital Painting Application.md",
-      "sha256": "c6dffe2e1ef70482e02cbc9dd1e06a06e87e74fc0c19e5dac5d9c73e8c759f22",
-      "bytes": 716
+      "sha256": "3f5822d0e1d87cc8b77b4f9a986c2470b88f6715e2d6dc68b27107ffa62531c6",
+      "bytes": 710
     },
     {
       "name": "api/markdown/Open Source Framework.md",
@@ -70605,8 +70605,8 @@
     },
     {
       "name": "api/markdown/Parametric Design Methodology.md",
-      "sha256": "6eab3508f3b2950aedbd596dabbe393d24ea5bba5d3ce89911f92dc4baec5fce",
-      "bytes": 7011
+      "sha256": "f7769675f0a9fd5e03be04d890c5e70c5bc3be7587def7d9da743e9b5b15586c",
+      "bytes": 7004
     },
     {
       "name": "api/markdown/Parametric Insurance.md",
@@ -71510,8 +71510,8 @@
     },
     {
       "name": "api/markdown/Player Two Platform Implementation.md",
-      "sha256": "7c05be89d2e3660e827519546bbc9cfc54aadbc93a83cd8f867281653282264f",
-      "bytes": 3526
+      "sha256": "07caef50b94fdbcbf26bfb52c123e01b0f99192a6c8114f0cf8501c9aad021b9",
+      "bytes": 3489
     },
     {
       "name": "api/markdown/Player Two.md",
@@ -72350,8 +72350,8 @@
     },
     {
       "name": "api/markdown/Privacy.md",
-      "sha256": "00313db2646889d9e98f8ab42a999694b81eaae475d01da1319ce764b77e3f4f",
-      "bytes": 90775
+      "sha256": "3107314862c3a34a6736f0deb09bd7beed584e85ca0483be91feb0ddaaf2f5ed",
+      "bytes": 90732
     },
     {
       "name": "api/markdown/Private 5G Network.md",
@@ -72770,8 +72770,8 @@
     },
     {
       "name": "api/markdown/Prompt Tuning.md",
-      "sha256": "719df6765a81580dace3a9804b95542a9ec74e482436e41ce294c1f28b288cd1",
-      "bytes": 52088
+      "sha256": "a94d0740adf8d2340d036b7a61643b976ee6f0be7eec6208bc219901f5c94dd0",
+      "bytes": 52064
     },
     {
       "name": "api/markdown/Proof Of Personhood.md",
@@ -73310,8 +73310,8 @@
     },
     {
       "name": "api/markdown/Pyodide RAG Corpus Builder Script.md",
-      "sha256": "8efdd01e8ec47f33e1051e4ede3b4d4d40664b1b64832ead984c601d66881077",
-      "bytes": 3454
+      "sha256": "e355e30e57135eaa7aeadf06ae57ffb435e050333b7c8745e7ecbdd818d0b384",
+      "bytes": 3436
     },
     {
       "name": "api/markdown/Python 3.md",
@@ -75400,8 +75400,8 @@
     },
     {
       "name": "api/markdown/Risk Intensity Heatmap.md",
-      "sha256": "18f08813b9bd493083c0384efd0a7c9411e39c9fbb7ffb135fb4989970400ca6",
-      "bytes": 5002
+      "sha256": "e5b0ebdfa1e5bd0618f08e35e7d6ceabf7b17e43b4f6c8124643288d392a0fc2",
+      "bytes": 4829
     },
     {
       "name": "api/markdown/Risk Management Framework.md",
@@ -76425,8 +76425,8 @@
     },
     {
       "name": "api/markdown/Scaled Dot Product Attention.md",
-      "sha256": "970c7615a4390f68b8452a6f510a8d5e9478fbf274c9d4769a1226f11f46e66e",
-      "bytes": 16295
+      "sha256": "49b6ac593820d867a0915f1e1b1876bfd073ba709b2f126f56aaabff7189cba5",
+      "bytes": 16286
     },
     {
       "name": "api/markdown/Scaling Laws.md",
@@ -76975,8 +76975,8 @@
     },
     {
       "name": "api/markdown/Security.md",
-      "sha256": "faf68ca5cd862a75ac79736c48bb91c38773a59a03d481d444012f50a55794f0",
-      "bytes": 50512
+      "sha256": "a13d2d7215ab7df7b637b55ec68f1b38938406640d6101fc5e31bbaa4462fe4a",
+      "bytes": 50466
     },
     {
       "name": "api/markdown/Seed Phrase.md",
@@ -78175,8 +78175,8 @@
     },
     {
       "name": "api/markdown/Social Impact.md",
-      "sha256": "c8ef40315d4af1b565e38f88b3518dc1495dc45b48cbc99b6eda9401025b0879",
-      "bytes": 48334
+      "sha256": "584e413f923d2e8d9997539c0cf2bb7693c9f97e4264817a5620cac6faa1daf3",
+      "bytes": 48290
     },
     {
       "name": "api/markdown/Social Interaction.md",
@@ -78960,8 +78960,8 @@
     },
     {
       "name": "api/markdown/Stakeholder.md",
-      "sha256": "afedd133b0bbe577c1751afa9a9e1adac47aec109cfa7b2ed3f89d72e9cd6c27",
-      "bytes": 25519
+      "sha256": "4e19b897a2efb8be73db7f110584164fe863706f2318d0247ed4847f299e3f7d",
+      "bytes": 25487
     },
     {
       "name": "api/markdown/Staking Reward.md",
@@ -79475,8 +79475,8 @@
     },
     {
       "name": "api/markdown/Style Transfer.md",
-      "sha256": "b80c7df251b6127299682ce065fbd8f1c34432cd3ae11ed6d737ab494beed100",
-      "bytes": 44333
+      "sha256": "e922ae705c7e50082d82d89e50089494fdbd0633a66be7ab25e3ded2221f19bf",
+      "bytes": 44319
     },
     {
       "name": "api/markdown/Sub-Millisecond Latency.md",
@@ -79755,8 +79755,8 @@
     },
     {
       "name": "api/markdown/Sustainable Development.md",
-      "sha256": "5e4650ce78c893cd9c399804a7f55d073bf76679523045f47ed7e02533ae0021",
-      "bytes": 19096
+      "sha256": "751049c78b1967526cc0003ccd1160c8831f4c6f0f3e069708959048f1f1a970",
+      "bytes": 19078
     },
     {
       "name": "api/markdown/Sustainable Finance.md",
@@ -80290,8 +80290,8 @@
     },
     {
       "name": "api/markdown/Task Specific Head.md",
-      "sha256": "f0664ff6726bc2b5ccc4a28554eb2682ff7844b1d0721ca91e20b8d11bce0b1c",
-      "bytes": 29175
+      "sha256": "bf6ebfc98c4a50f3c61683ae8560b2c87302dd6eba266249c2a0eb394ba37647",
+      "bytes": 29139
     },
     {
       "name": "api/markdown/Task Specific Model.md",
@@ -80370,8 +80370,8 @@
     },
     {
       "name": "api/markdown/Technical History (extended CV).md",
-      "sha256": "376685f4f5ff92e6e15a31164c5b1902d073572848d6c6a1139f6e54eac9e11f",
-      "bytes": 20047
+      "sha256": "10d7a741c502b712feac0234b661a4d3270a7d8a84258d01ef3606db1263f0fe",
+      "bytes": 20042
     },
     {
       "name": "api/markdown/Technical Robustness and Safety.md",
@@ -80710,8 +80710,8 @@
     },
     {
       "name": "api/markdown/Text Generation.md",
-      "sha256": "d2e2b72e14db3e10fb22b56b707431f06b4a6866cc1b3110a091883a6b063c37",
-      "bytes": 301367
+      "sha256": "20db5af103668bfdf4bb743523909c9ab321c3439e9d5d2fc8e01a3f2f3273d2",
+      "bytes": 301245
     },
     {
       "name": "api/markdown/Text Mining.md",
@@ -81125,8 +81125,8 @@
     },
     {
       "name": "api/markdown/Token Embedding.md",
-      "sha256": "3ed1f183dc4000e3a762e98039baa13d2e2873985a12213dc20c68c8ed3d0ef1",
-      "bytes": 19945
+      "sha256": "ccaede532e5dfb0e72502dec9724923eebba1dd5f2a4cd3047890851618e8f5a",
+      "bytes": 19935
     },
     {
       "name": "api/markdown/Token Emission.md",
@@ -82990,8 +82990,8 @@
     },
     {
       "name": "api/markdown/Value Alignment.md",
-      "sha256": "6c02f5901969e3da250ffd47a4d6eef171d96f37f34688f67c3cbeb49feedaf4",
-      "bytes": 118285
+      "sha256": "615d36c41071709d9a90c3db4126431ae5dbc94c3a685ed763a28fccb3223cb3",
+      "bytes": 118254
     },
     {
       "name": "api/markdown/Value Function.md",
@@ -84565,8 +84565,8 @@
     },
     {
       "name": "api/markdown/Weight Decay.md",
-      "sha256": "903ea17e70b6b8766e2949c4faf6e330ec66c29b3424b7777a003facd903dcc1",
-      "bytes": 10757
+      "sha256": "128f97ad3c016cd5b0170792abf2e45ced490c43e1b89225d2334797b00efa47",
+      "bytes": 10746
     },
     {
       "name": "api/markdown/Weight Initialisation.md",
@@ -86000,7 +86000,7 @@
     },
     {
       "name": "okf/index.md",
-      "sha256": "327f8d2c5eb8e6a1a95020323c07bef52032d5965be04505f24d887f42cefdb2",
+      "sha256": "9a5a8393408a91deac7ed8f3ef5baba551f5cec1d16da6041fc8b05edf413bf5",
       "bytes": 787125
     },
     {

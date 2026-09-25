@@ -5,7 +5,9 @@ A research and literature collection exploring architectures in which multiple s
 ### Content
 
 - Lit survey for [[Domain Expert Contact Index]] [[David Tully]] [[MUST]] In here for now.
-- {{video https://www.youtube.com/watch?v=LhWtpV-ZEeI}}
+
+![](https://www.youtube.com/watch?v=LhWtpV-ZEeI)
+
 - [chat-Sure thing! Below, were going to methodically construct a series of diagrams as code using Mermaid syntax and detailed technical explanations. Well walk through the entire pipeline, from data ingestion to user .txt](assets/chat-Sure_thing!_Below,_were_going_to_methodically_construct_a_series_of_diagrams_as_code_using_Mermaid_syntax_and_detailed_technical_explanations._Well_walk_through_the_entire_pipeline,_from_data_ingestion_to_user_1716930774582_0.txt)
 
 # Distilling Social Complexity: A Knowledge Graph and Ontology Approach for Immersive Environments

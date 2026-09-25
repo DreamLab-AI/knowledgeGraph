@@ -19,7 +19,9 @@ Image-to-Image Translation transforms images from one visual domain to another w
   - Image processing from drawings
 - Experimental generative video platforms (Runway ML Gen-2, PromeAI) for short concept clips
 - [Sustainable Home Visuals AI](https://chatgpt.com/c/680cfbe3-eb60-8005-946f-35b268702dab)
-  - {{video https://youtu.be/0fzvIBO-yLw}}
+
+  ![](https://youtu.be/0fzvIBO-yLw)
+
 - [JJ's Landscape Render - XL v1.0 | Stable Diffusion XL LoRA | Civitai](https://civitai.com/models/257038/jjs-landscape-render)
 - [JJs StreetScape - XL v1.0 | Stable Diffusion XL LoRA | Civitai](https://civitai.com/models/306671?modelVersionId=344231)
 - [JJs Ecology Park - XL v1.0 | Stable Diffusion XL LoRA | Civitai](https://civitai.com/models/306688?modelVersionId=344250)

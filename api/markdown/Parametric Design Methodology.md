@@ -38,7 +38,7 @@ By incorporating voice and text input functionalities, developers can empower us
 
 <iframe src="https://nething.xyz/" style="width: 100%; height: 600px"></iframe>
 
-- {{video https://www.youtube.com/watch?v=Ey2YqyPYBSU&}}
+![](https://www.youtube.com/watch?v=Ey2YqyPYBSU&)
 
 ### References:
 

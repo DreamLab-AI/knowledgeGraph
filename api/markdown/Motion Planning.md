@@ -15,7 +15,8 @@ Motion Planning extends path planning by incorporating robot dynamics, control c
   - First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[Node-Based Diffusion Pipeline Interface]]
     - Updated LCM version: https://discord.com/channels/1076117621407223829/1192162917395730635/1192212692354748427
       using the "video/controlgif/animatediff" contolnet from here: https://huggingface.co/crishhh/animatediff_controlnet/blob/main/controlnet_checkpoint.ckpt
-  - {{video https://rave-video.github.io/static/teaser/car-turn_final.mp4}}
+
+  ![](https://rave-video.github.io/static/teaser/car-turn_final.mp4)
 
 # Introduction and Problem Definition
 
@@ -34,7 +35,8 @@ Motion Planning extends path planning by incorporating robot dynamics, control c
   - First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[Node-Based Diffusion Pipeline Interface]]
     - Updated LCM version: https://discord.com/channels/1076117621407223829/1192162917395730635/1192212692354748427
       using the "video/controlgif/animatediff" contolnet from here: https://huggingface.co/crishhh/animatediff_controlnet/blob/main/controlnet_checkpoint.ckpt
-  - {{video https://rave-video.github.io/static/teaser/car-turn_final.mp4}}
+
+  ![](https://rave-video.github.io/static/teaser/car-turn_final.mp4)
 
 # Introduction and Problem Definition
 

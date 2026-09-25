@@ -107,7 +107,9 @@ Image Classification is the computer vision task of assigning a categorical labe
 ### Magnific AI
 
 - [Magnific AI — The magic image Upscaler & Enhancer](https://magnific.ai/)
-- {{tweet https://twitter.com/LinusEkenstam/status/1744431726443614539?}}
+
+<https://twitter.com/LinusEkenstam/status/1744431726443614539?>
+
 - [[Technology Sector Landscape Analysis]] contains some maps of more products.
 - This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
 
@@ -116,7 +118,8 @@ Image Classification is the computer vision task of assigning a categorical labe
 ![image.png](assets/image_1734796224681_0.png)
 
 - Sam Alman talking UBI at 50 minutes
-- {{video https://youtu.be/nSM0xd8xHUM?t=3002}}
+
+![](https://youtu.be/nSM0xd8xHUM?t=3002)
 
 #### Specificity:
 
@@ -214,7 +217,9 @@ Image Classification is the computer vision task of assigning a categorical labe
 ### Magnific AI
 
 - [Magnific AI — The magic image Upscaler & Enhancer](https://magnific.ai/)
-- {{tweet https://twitter.com/LinusEkenstam/status/1744431726443614539?}}
+
+<https://twitter.com/LinusEkenstam/status/1744431726443614539?>
+
 - [[Technology Sector Landscape Analysis]] contains some maps of more products.
 - This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
 
@@ -223,7 +228,8 @@ Image Classification is the computer vision task of assigning a categorical labe
 ![image.png](assets/image_1734796224681_0.png)
 
 - Sam Alman talking UBI at 50 minutes
-- {{video https://youtu.be/nSM0xd8xHUM?t=3002}}
+
+![](https://youtu.be/nSM0xd8xHUM?t=3002)
 
 #### Specificity:
 
@@ -284,7 +290,8 @@ Image Classification is the computer vision task of assigning a categorical labe
 - [The bad and the ugly: AI is harmful, unreliable and running out of data (newatlas.com)](https://newatlas.com/technology/ai-index-report-negatives/)
 - [AI really is smoke and mirrors - by Brian Merchant (bloodinthemachine.com)](https://www.bloodinthemachine.com/p/ai-really-is-smoke-and-mirrors)
 - [The AI Revolution Is Already Losing Steam - WSJ](https://www.wsj.com/tech/ai/the-ai-revolution-is-already-losing-steam-a93478b1)
-- {{twitter https://twitter.com/AISafetyMemes/status/1759231062646104165)}}
+
+<https://twitter.com/AISafetyMemes/status/1759231062646104165)>
 
 ##### 4️⃣ Logistic Regression
 

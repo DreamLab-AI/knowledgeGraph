@@ -43,45 +43,46 @@ A framework mapping the scientific method onto lean product development, guiding
 
 # Everyone's pivoting to generative AI.
 
-- {{twitter https://twitter.com/petergyang/status/1667539634577092609}}
-  - [Link to Tweet](https://twitter.com/petergyang/status/1667539634577092609)
-  - But my alarm bells go off when I see:
-    - ? A crowded landscape
-    - ? FOMO driven decision making
-    - ? Sky high valuations for an early space
-  - If you took the word "AI" out, is the product still solving a customer problem?
-  - AI is a solution, not a problem. Ask yourself:
-    - What is the pain point?
-    - How many users share this pain?
-    - Is the pain big enough to take action?
-    - Is the pain underserved by non-AI tools?
-    - How accurate does the solution need to be?
-  - Plot the problem on a fluency vs. accuracy grid.
-    - Gen AI today is great for high fluency + low accuracy problems (e.g., productivity).
-    - It's not great for solutions that need high accuracy (e.g., financial decisions).
-  - How fast will incumbents move?
-    - Incumbents like Microsoft, Google, and Adobe have moved incredibly fast on AI.
-    - Startups that overlap with core incumbent use cases might struggle.
-  - AI presentation startups need to be MUCH better than AI in Powerpoint to thrive.
-    - Is there a moat? Examples moats include:
-  - Access to proprietary data and models
-    - Exclusive contracts with large customers
-    - Great product even without AI
-    - Exceptional talent in the selected field
-    - Business models that incumbents avoid
-    - And of course...speed of execution.
-  - Is it overvalued?
-    - If an AI product already has $100M+ valuation, you should think:
-    - Can it continue to grow and (more importantly) retain users?
-    - In a crowded space like AI copywriting and productivity
-  - that could get hard.
-  - To recap, here are 5 questions to ask to evaluate AI products and companies:
-    - 1. Without "AI", is it still solving a problem?
-      2. How accurate does the solution need to be?
-      3. How fast will incumbents move?
-      4. Is there a moat?
-      5. Is it overvalued?
-      7/ I hope these questions also help builders who are thinking of creating new AI products.
+<https://twitter.com/petergyang/status/1667539634577092609>
+
+- [Link to Tweet](https://twitter.com/petergyang/status/1667539634577092609)
+- But my alarm bells go off when I see:
+  - ? A crowded landscape
+  - ? FOMO driven decision making
+  - ? Sky high valuations for an early space
+- If you took the word "AI" out, is the product still solving a customer problem?
+- AI is a solution, not a problem. Ask yourself:
+  - What is the pain point?
+  - How many users share this pain?
+  - Is the pain big enough to take action?
+  - Is the pain underserved by non-AI tools?
+  - How accurate does the solution need to be?
+- Plot the problem on a fluency vs. accuracy grid.
+  - Gen AI today is great for high fluency + low accuracy problems (e.g., productivity).
+  - It's not great for solutions that need high accuracy (e.g., financial decisions).
+- How fast will incumbents move?
+  - Incumbents like Microsoft, Google, and Adobe have moved incredibly fast on AI.
+  - Startups that overlap with core incumbent use cases might struggle.
+- AI presentation startups need to be MUCH better than AI in Powerpoint to thrive.
+  - Is there a moat? Examples moats include:
+- Access to proprietary data and models
+  - Exclusive contracts with large customers
+  - Great product even without AI
+  - Exceptional talent in the selected field
+  - Business models that incumbents avoid
+  - And of course...speed of execution.
+- Is it overvalued?
+  - If an AI product already has $100M+ valuation, you should think:
+  - Can it continue to grow and (more importantly) retain users?
+  - In a crowded space like AI copywriting and productivity
+- that could get hard.
+- To recap, here are 5 questions to ask to evaluate AI products and companies:
+  - 1. Without "AI", is it still solving a problem?
+    2. How accurate does the solution need to be?
+    3. How fast will incumbents move?
+    4. Is there a moat?
+    5. Is it overvalued?
+    7/ I hope these questions also help builders who are thinking of creating new AI products.
 
 ### Risk: [[AI Governance Law and Privacy]]
 

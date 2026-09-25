@@ -91,7 +91,7 @@ Training for Design Practitioners covers structured programmes and self-directed
 > Think about integrating the open tooling into your product development, consider the software licenses. Take **some** legal advice.
 > Use the paid and private version of [RunDiffusion](https://app.rundiffusion.com/) to start to play with the open tooling. [[Fooocus]] is new and very accessible and on that platform with **everything** else of value.
 > ### The [Secret Cyborg](https://www.oneusefulthing.org/p/reshaping-the-tree-rebuilding-organizations) Concept and You.
-> [twitter link to the render loading below](https://twitter.com/emollick/status/1775176524653642164){{twitter https://twitter.com/emollick/status/1775176524653642164}}
+> [twitter link to the render loading below](https://twitter.com/emollick/status/1775176524653642164)<https://twitter.com/emollick/status/1775176524653642164>
 > Acknowledge that employees are already using AI at work, often without approval. Over half of people using AI at work are doing so without telling their bosses. [Microsoft put this number at a staggering 75%](https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part/) [[Microsoft Work Trends Impact 2024]]
 > | Statistic | Value |
 > |-----------|-------|
@@ -146,7 +146,9 @@ Training for Design Practitioners covers structured programmes and self-directed
 - AI-assisted tools like Sustainable Home Visuals AI
 - Experimental generative video platforms (Runway ML Gen-2, PromeAI) for short concept clips
 - [Sustainable Home Visuals AI](https://chatgpt.com/c/680cfbe3-eb60-8005-946f-35b268702dab)
-  - {{video https://youtu.be/0fzvIBO-yLw}}
+
+  ![](https://youtu.be/0fzvIBO-yLw)
+
 - Use [[Social Media Platform Infrastructure]] planning tools to schedule posts and analyse engagement
 - Leverage QR codes (for example, AI-powered QR code generators) to link print and digital campaigns
 - [[Social Media Platform Infrastructure]]

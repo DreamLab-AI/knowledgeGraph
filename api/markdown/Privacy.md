@@ -81,7 +81,8 @@ Implement appropriate safeguards:
 - Consider data privacy implications
 - Plan for incident response and recovery
 - [Jack Burlinson on X: "In case you were wondering just how cracked the team @cognition_labs is... This was the CEO (@ScottWu46) 14 years ago. https://t.co/UqXTYGVKzO" / X (twitter.com)](https://twitter.com/jfbrly/status/1767653596957642879)
-- {{twitter https://twitter.com/jfbrly/status/1767653596957642879}}
+
+<https://twitter.com/jfbrly/status/1767653596957642879>
 
 <iframe src="https://www.adept.ai/" style="width: 100%; height: 400px"></iframe>
 
@@ -122,7 +123,8 @@ Implement appropriate safeguards:
 
 ![image|600](./assets/2f03939e7360fa432ab47028bf32284b0088e385.jpg)
 
-- {{twitter https://twitter.com/djvalerieblove/status/1514703620272394243/}}
+<https://twitter.com/djvalerieblove/status/1514703620272394243/>
+
 - used with permission @djvalerieblove.
 - There is enormous complexity and scope, as seen in below, and yet genuinely useful products are elusive.
 - ![image](./assets/c157c8cd52e86b9bf30f9c4a5e5a28b226027ce5.png){width 800}
@@ -314,7 +316,9 @@ Implement appropriate safeguards:
 ## Tech money in Civil Society
 
 - https://twitter.com/youranonnews/status/1816298460645068879
-- {{twitter https://twitter.com/youranonnews/status/1816298460645068879}}
+
+<https://twitter.com/youranonnews/status/1816298460645068879>
+
 - Big Tech firms donate substantial funds to charities, think tanks, academic research, and lobbying efforts to shape narratives and policy around tech regulation. [[Goldenfein Mann 2024]]
 - Tracking financial flows from Big Tech to DRCSOs is challenging due to limited transparency, but available data shows ongoing funding relationships.
 - Through class action cy pres settlements, Big Tech firms direct funds to DRCSOs that purport to represent class interests, but may actually advance the firms' preferred policy narratives.
@@ -728,7 +732,8 @@ Implement appropriate safeguards:
 - Consider data privacy implications
 - Plan for incident response and recovery
 - [Jack Burlinson on X: "In case you were wondering just how cracked the team @cognition_labs is... This was the CEO (@ScottWu46) 14 years ago. https://t.co/UqXTYGVKzO" / X (twitter.com)](https://twitter.com/jfbrly/status/1767653596957642879)
-- {{twitter https://twitter.com/jfbrly/status/1767653596957642879}}
+
+<https://twitter.com/jfbrly/status/1767653596957642879>
 
 <iframe src="https://www.adept.ai/" style="width: 100%; height: 400px"></iframe>
 

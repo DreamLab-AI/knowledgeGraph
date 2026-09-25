@@ -21,8 +21,9 @@ Any individual, group, organisation, or entity that has an interest in, is affec
 # Soon, Next, and Later
 
 - [twitter link to the render loading below](https://twitter.com/karpathy/status/1744179910347039080)
-  {{twitter https://twitter.com/karpathy/status/1744179910347039080}}
-- {{video https://www.youtube.com/watch?v=ob_GX50Za6c&t=65s}}
+  <https://twitter.com/karpathy/status/1744179910347039080>
+
+![](https://www.youtube.com/watch?v=ob_GX50Za6c&t=65s)
 
 ## Timing and how to find us.
 
@@ -39,8 +40,9 @@ Any individual, group, organisation, or entity that has an interest in, is affec
 # Soon, Next, and Later
 
 - [twitter link to the render loading below](https://twitter.com/karpathy/status/1744179910347039080)
-  {{twitter https://twitter.com/karpathy/status/1744179910347039080}}
-- {{video https://www.youtube.com/watch?v=ob_GX50Za6c&t=65s}}
+  <https://twitter.com/karpathy/status/1744179910347039080>
+
+![](https://www.youtube.com/watch?v=ob_GX50Za6c&t=65s)
 
 ##### Proof of Concept
 

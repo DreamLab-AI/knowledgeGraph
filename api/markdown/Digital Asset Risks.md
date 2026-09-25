@@ -13,13 +13,17 @@ Comprehensive analysis of risks associated with digital assets, particularly Bit
 - In the wake of the [rampant crime spree](https://www.bloomberg.com/opinion/articles/2022-11-14/ftx-s-balance-sheet-was-bad) by Sam Bankman-Freid and his top teams at Alameda research and the Bahamas registered exchange ‘FTX’ the whole industry has suffered, and will continue to suffer, seismic shocks. There is a chance the sector will never recover, from the substantial negative sentiment in American democratic politics, and that we are seeing the top of the hype bubble in the crime adjacent Trump era. Fortunately this doesn’t diminish our use cases for these technologies, as we were never planning to speculate with the asset, but rather use the network and protocol for complex systems.
 - For "crypto" assets more generally it is useful to look at the recent [“whole government executive order”](https://www.whitehouse.gov/briefing-room/presidential-actions/2022/03/09/executive-order-on-ensuring-responsible-development-of-digital-assets/)signed by President Biden early in 2022. It was mainly framed in terms of “responsible innovation, and leadership” in the new space. The resulting, “Comprehensive Framework for Responsible Development of Digital Assets” was a product of multi agency collaboration and can be seen as 9 reports and a summary document, and was long anticipated. The summary itself is neither particularly comprehensive nor a framework, and mainly serves to identifies high level risks, aspirations, and challenges, and strongly hints toward eventual development of a “digital dollar” (CBDC, expanded later). This work has been repealed completely as the Trump administration eschews [[CBDCs]] and openly promotes crypto.
 - https://twitter.com/kofinas/status/1881077334750421066
-  - {{twitter https://twitter.com/kofinas/status/1881077334750421066}}
+
+  <https://twitter.com/kofinas/status/1881077334750421066>
+
 - The risks section of the original executive order shows how legislatorsare framing this, so it’s useful to break down here.
   - Consumer and business protections. This is likely to pertain to custodians and is much needed. Misselling is rife. Security presents a challenge.
   - Systemic risk, and market integrity are a concern. The legislators clearly worry about contagion risks from the sector.
   - Illicit finance (criminality and sanction busting etc) are a concern, but not particularly front and centre[[moser2013inquiry]]. Criminality in 2021 was a mere 0.15% of transactions according to Chainalysis, but this number varies year to year. There are claims that Iran have begun official overseas buying with cryptocurrencies, but again, the [numbers are small](https://finbold.com/iran-makes-the-first-ever-import-of-goods-using-cryptocurrency-worth-millions/). One of the better sections of the work is the US treasury department’s recently published ‘National Risk Assessments for Money Laundering, Terrorist Financing, and Proliferation Financing’. This is a comprehensive report and speaks to careful research across the space. It is broken into [three parts](https://home.treasury.gov/news/press-releases/jy0619). Perhaps surprisingly, while they do see activity in these areas, they do not rate the risk as very significant. Cash remains the main problem for illicit funding. There is some talk that the nature of public blockchain analysis allows greater oversight of these tools and that this is to the advantage of government and civil enforcement agencies.
   - Highlighting the need for international coordination suggests they are mindful of [jurisdictional arbitrage](https://twitter.com/iamLeonHill/status/1847973039234846747).
-  - {{twitter https://twitter.com/iamLeonHill/status/1847973039234846747}}
+
+  <https://twitter.com/iamLeonHill/status/1847973039234846747>
+
   - The partial regulatory capture of these technologies, where activity flows to globally more lenient legislative regimes, continues to be a concern. Many of the centralised exchanges for instance are located in tax havens such as Malta. As the world catches up with these products it is likely that this will be smoothed out.
   - Climate goals, diversity, equality and inclusion are mentioned. It seems that the “environment” aspect of ESG is more important then “social” and “governance” at this time.
   - Privacy and human rights are mentioned.
@@ -34,13 +38,17 @@ Comprehensive analysis of risks associated with digital assets, particularly Bit
 - **2025 Update**: The [[FTX]] bankruptcy proceedings resulted in recovery of ~$16B in assets with creditors receiving 100%+ of claim values at petition date prices (though not current [[Bitcoin Proof-of-Work Protocol]] prices). [[Sam Bankman-Fried]] sentenced to 25 years in federal prison. The [[Trump]] administration (2025) has reversed previous crypto-skeptical policies, with [[Executive Order]] repealing [[Biden]]'s [[Executive Order 14067]], establishing pro-crypto regulatory framework, and appointing crypto-friendly regulators to [[SEC]] and [[CFTC]].
 - For "crypto" assets more generally it is useful to look at the recent ["whole government executive order"](https://www.whitehouse.gov/briefing-room/presidential-actions/2022/03/09/executive-order-on-ensuring-responsible-development-of-digital-assets/) ([[Executive Order 14067]]) signed by President [[Biden]] early in 2022. It was mainly framed in terms of "responsible innovation, and leadership" in the new space. The resulting, "Comprehensive Framework for Responsible Development of Digital Assets" was a product of multi agency collaboration and can be seen as 9 reports and a summary document, and was long anticipated. The summary itself is neither particularly comprehensive nor a framework, and mainly serves to identifies high level risks, aspirations, and challenges, and strongly hints toward eventual development of a "digital dollar" ([[CBDC]], expanded later). This work has been repealed completely as the [[Trump]] administration eschews [[CBDCs]] and openly promotes crypto.
 - https://twitter.com/kofinas/status/1881077334750421066
-  - {{twitter https://twitter.com/kofinas/status/1881077334750421066}}
+
+  <https://twitter.com/kofinas/status/1881077334750421066>
+
 - The risks section of the original [[Executive Order 14067]] shows how legislators are framing this, so it's useful to break down here.
   - Consumer and business protections. This is likely to pertain to custodians and is much needed. Misselling is rife. Security presents a challenge.
   - Systemic risk, and market integrity are a concern. The legislators clearly worry about contagion risks from the sector.
   - Illicit finance (criminality and sanction busting etc) are a concern, but not particularly front and centre[[moser2013inquiry]]. Criminality in 2021 was a mere 0.15% of transactions according to [[Chainalysis]], but this number varies year to year. There are claims that [[Iran]] have begun official overseas buying with cryptocurrencies, but again, the [numbers are small](https://finbold.com/iran-makes-the-first-ever-import-of-goods-using-cryptocurrency-worth-millions/). One of the better sections of the work is the [[US Treasury]] department's recently published 'National Risk Assessments for Money Laundering, Terrorist Financing, and Proliferation Financing'. This is a comprehensive report and speaks to careful research across the space. It is broken into [three parts](https://home.treasury.gov/news/press-releases/jy0619). Perhaps surprisingly, while they do see activity in these areas, they do not rate the risk as very significant. Cash remains the main problem for illicit funding. There is some talk that the nature of public blockchain analysis allows greater oversight of these tools and that this is to the advantage of government and civil enforcement agencies.
   - Highlighting the need for international coordination suggests they are mindful of [[Jurisdictional Arbitrage]].
-  - {{twitter https://twitter.com/iamLeonHill/status/1847973039234846747}}
+
+  <https://twitter.com/iamLeonHill/status/1847973039234846747>
+
   - The partial regulatory capture of these technologies, where activity flows to globally more lenient legislative regimes, continues to be a concern. Many of the centralised exchanges for instance are located in tax havens such as Malta. As the world catches up with these products it is likely that this will be smoothed out.
   - Climate goals, diversity, equality and inclusion are mentioned. It seems that the "environment" aspect of ESG is more important then "social" and "governance" at this time.
   - Privacy and human rights are mentioned.
@@ -127,7 +135,9 @@ Comprehensive analysis of risks associated with digital assets, particularly Bit
 
 - One of the better public analysts of the asset, sees the price eventually fluctuating somewhere between 700k  and 300k.
 - https://twitter.com/davthewave/status/1072441941390974982/photo/1
-- {{twitter https://twitter.com/davthewave/status/1072441941390974982/photo/1}}
+
+<https://twitter.com/davthewave/status/1072441941390974982/photo/1>
+
 - This is not how a money is supposed to work.
 - [Cycle theory revisited blogpost](https://davethewave.substack.com/p/cycle-theory-revisited?s=r)
 - Neither though is it the endless ["number go up"](https://stephanlivera.com/episode/147/) that speculators have been promised. The aims of the project have a cognitive dissonance right at the core. The volatility trends toward:
@@ -139,7 +149,9 @@ Comprehensive analysis of risks associated with digital assets, particularly Bit
 ![](./assets/3c46c793cd3e9cdedc88623cafee35ef0ac7ebf0.jpg)
 
 - https://twitter.com/Geertjancap/status/1380972132990136322/photo/1
-- {{twitter https://twitter.com/Geertjancap/status/1380972132990136322/photo/1}}
+
+<https://twitter.com/Geertjancap/status/1380972132990136322/photo/1>
+
 - [[Bitcoin Proof-of-Work Protocol]] distribution is skewed to a few early holders, but it likely is fair.
 - This pressure to emulate the early winners leads to:
 

@@ -142,7 +142,7 @@ Prompt Tuning is a parameter-efficient fine-tuning method that learns continuous
 ### Pika Labs
 
 - **Current leader**:
-  {{tweet https://twitter.com/martial_artwork/status/1742138390517014918}}
+  <https://twitter.com/martial_artwork/status/1742138390517014918>
 - **Prompt Creativity & Flexibility**: Excels in this area, enabling users to directly influence the animation with their prompts.
 - **Human Motion Animation**: Attempts adventurous animations but may result in distortions.
 - **Camera Motion Options**: Offers accurate, straightforward camera motions but lacks the dynamic range of Runway ML.
@@ -301,7 +301,7 @@ Prompt Tuning is a parameter-efficient fine-tuning method that learns continuous
 ### Pika Labs
 
 - **Current leader**:
-  {{tweet https://twitter.com/martial_artwork/status/1742138390517014918}}
+  <https://twitter.com/martial_artwork/status/1742138390517014918>
 - **Prompt Creativity & Flexibility**: Excels in this area, enabling users to directly influence the animation with their prompts.
 - **Human Motion Animation**: Attempts adventurous animations but may result in distortions.
 - **Camera Motion Options**: Offers accurate, straightforward camera motions but lacks the dynamic range of Runway ML.
@@ -331,7 +331,7 @@ Prompt Tuning is a parameter-efficient fine-tuning method that learns continuous
 ### Pika Labs
 
 - **Current leader**:
-  {{tweet https://twitter.com/martial_artwork/status/1742138390517014918}}
+  <https://twitter.com/martial_artwork/status/1742138390517014918>
 - **Prompt Creativity & Flexibility**: Excels in this area, enabling users to directly influence the animation with their prompts.
 - **Human Motion Animation**: Attempts adventurous animations but may result in distortions.
 - **Camera Motion Options**: Offers accurate, straightforward camera motions but lacks the dynamic range of Runway ML.

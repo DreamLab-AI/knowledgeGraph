@@ -18,7 +18,9 @@ A regularisation technique that terminates model training when validation perfor
 ### Simulon (Virtual Production)
 
 - **Cloud rendered magic**: Still early, and I'm not QUITE sure how it works.
-- {{tweet https://twitter.com/diveshnaidoo/status/1735006300386336919}}
+
+<https://twitter.com/diveshnaidoo/status/1735006300386336919>
+
 - [Automotive example](https://www.linkedin.com/posts/divesh-naidoo-48809934_vfx-cgi-virtualproduction-activity-7186786217445711875-7ByY?)
 - https://www.instagram.com/reel/C6fQz81oDMS/
 
@@ -34,7 +36,9 @@ A regularisation technique that terminates model training when validation perfor
 ### Simulon (Virtual Production)
 
 - **Cloud rendered magic**: Still early, and I'm not QUITE sure how it works.
-- {{tweet https://twitter.com/diveshnaidoo/status/1735006300386336919}}
+
+<https://twitter.com/diveshnaidoo/status/1735006300386336919>
+
 - [Automotive example](https://www.linkedin.com/posts/divesh-naidoo-48809934_vfx-cgi-virtualproduction-activity-7186786217445711875-7ByY?)
 - https://www.instagram.com/reel/C6fQz81oDMS/
 

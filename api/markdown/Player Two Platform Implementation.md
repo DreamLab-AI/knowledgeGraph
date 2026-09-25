@@ -4,8 +4,6 @@ Player Two code is the technical implementation layer of the Player Two platform
 
 ### Content
 
-- {{renderer code_diagram,mermaid}}
-
 ```mermaid sequenceDiagram
     participant User
     participant Client

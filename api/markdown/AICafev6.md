@@ -10,8 +10,9 @@ AICafev6 is the sixth iteration of the AI Cafe demonstration platform, an open-s
 
 # Quick Demo Videos.
 
-- {{video https://youtu.be/cEqt-OnlBzY}}
-- {{video https://youtu.be/3wMCUgBEjos}}
+![](https://youtu.be/cEqt-OnlBzY)
+
+![](https://youtu.be/3wMCUgBEjos)
 
 # Examples of things it's made
 

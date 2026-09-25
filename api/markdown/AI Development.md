@@ -363,7 +363,7 @@ This series of papers explores the concept of agentic patterns in AI,
 ### MidJourney v5&6
 
 - [twitter link to the render loading below](https://twitter.com/LibertyRPF/status/1737848545657618873)
-  {{twitter https://twitter.com/LibertyRPF/status/1737848545657618873}}
+  <https://twitter.com/LibertyRPF/status/1737848545657618873>
 - Super popular San Francisco-based MidJourney, Inc.
   - **Cost**: Starts at $10/month with various subscription plans.
   - **User Interface**: Primarily through Discord, with a website under development.
@@ -786,7 +786,7 @@ This series of papers explores the concept of agentic patterns in AI,
 ### MidJourney v5&6
 
 - [twitter link to the render loading below](https://twitter.com/LibertyRPF/status/1737848545657618873)
-  {{twitter https://twitter.com/LibertyRPF/status/1737848545657618873}}
+  <https://twitter.com/LibertyRPF/status/1737848545657618873>
 - Super popular San Francisco-based MidJourney, Inc.
   - **Cost**: Starts at $10/month with various subscription plans.
   - **User Interface**: Primarily through Discord, with a website under development.
@@ -1140,7 +1140,8 @@ Maintain quality through systematic approaches:
 
 ## Devin
 
-- {{video https://www.youtube.com/watch?v=fjHtjT7GO1c&}}
+![](https://www.youtube.com/watch?v=fjHtjT7GO1c&)
+
 - [Blog (cognition-labs.com)](https://www.cognition-labs.com/blog)
   - Developed by Sourcegraph, co-founded by Beang Liu, CTO.
   - Aims to revolutionize software development with AI.
@@ -1290,7 +1291,8 @@ This series of papers explores the concept of agentic patterns in AI,
 
 ## Congo
 
-- {{video https://www.youtube.com/watch?v=2DZfVqHVmCc}}
+![](https://www.youtube.com/watch?v=2DZfVqHVmCc)
+
 - A new study led by Cornell researchers proposes using Bitcoin mining to support the development of renewable energy projects.
 - It focuses on the precommercial phase of wind and solar farms, suggesting potential profits through Bitcoin mining.
 

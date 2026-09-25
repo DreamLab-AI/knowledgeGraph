@@ -47,7 +47,9 @@ A **Graph Neural Network (GNN)** is a neural network architecture designed to pr
 - Day planner with voice input [intellisay](https://www.intellisay.xyz/) [[Knowledge Graphing]]
 - the [[GPTs and Custom Assistants]] API from [[OpenAI Research Organisation]] now accepts huge numbers of documents and can form the basis for checking my [[Logseq]] [[Knowledge Graphing]] work against papers. [[RFC 2119 SHOULD Normative Keyword]]
 - https://github.com/yoheinakajima/MindGraph [[Knowledge Graphing]] [[Agents]]
-  - {{twitter https://twitter.com/yoheinakajima/status/1769019899245158648}}
+
+  <https://twitter.com/yoheinakajima/status/1769019899245158648>
+
 - [Introducing Elicit Notebooks! (youtube.com)](https://www.youtube.com/watch?v=DmK-cLdbkvQ) [[Knowledge Graphing]]
 - [roboflow/supervision: We write your reusable computer vision tools. 💜 (github.com)](https://github.com/roboflow/supervision) [[Knowledge Graphing]] [[Machine Vision]]
 - [2305.16582.pdf (arxiv.org)](https://arxiv.org/pdf/2305.16582.pdf) [[Knowledge Graphing]]

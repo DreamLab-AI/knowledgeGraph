@@ -16,7 +16,8 @@ Autonomous Navigation encompasses the complete system capability for a robot or 
 
 # What's already happening
 
-- {{renderer :linkpreview,https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes}}
+<https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes>
+
 - [Autonomous F-16 Fighters Are ‘Roughly Even’ With Human Pilots Said Air Force Chief | The National Interest](https://nationalinterest.org/blog/buzz/autonomous-f-16-fighters-are-%E2%80%98roughly-even%E2%80%99-human-pilots-said-air-force-chief-210974)
 
 ## Seamless Navigation
@@ -29,7 +30,8 @@ Autonomous Navigation encompasses the complete system capability for a robot or 
 
 # What's already happening
 
-- {{renderer :linkpreview,https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes}}
+<https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes>
+
 - [Autonomous F-16 Fighters Are ‘Roughly Even’ With Human Pilots Said Air Force Chief | The National Interest](https://nationalinterest.org/blog/buzz/autonomous-f-16-fighters-are-%E2%80%98roughly-even%E2%80%99-human-pilots-said-air-force-chief-210974)
 
 # Recent Developments (2024-2025)
@@ -38,7 +40,8 @@ Autonomous Navigation encompasses the complete system capability for a robot or 
 
 # What's already happening
 
-- {{renderer :linkpreview,https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes}}
+<https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes>
+
 - [Autonomous F-16 Fighters Are ‘Roughly Even’ With Human Pilots Said Air Force Chief | The National Interest](https://nationalinterest.org/blog/buzz/autonomous-f-16-fighters-are-%E2%80%98roughly-even%E2%80%99-human-pilots-said-air-force-chief-210974)
 
 ### Biomedical:

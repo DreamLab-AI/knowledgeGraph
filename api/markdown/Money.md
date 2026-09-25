@@ -325,7 +325,8 @@ AsymmetricObjectProperty(dt:requires)
 
 - There are two main types of money in our current system: financial money and real economy money. Financial money refers to bank reserves, which are created by central banks through quantitative easing (QE). The central bank buys bonds from banks and credits their reserve accounts with new digital bank reserves. Bank reserves are an asset for commercial banks. Reserves allow banks to settle transactions with each other and meet liquidity requirements set by regulators. Importantly,bank reserves do not directly translate into increased lending or stimulus for the real economy. There is no direct channel for reserves to enter the broader economy. The amount of reserves does not drive bank lending. Real economy money refers to money that households andbusinesses can use for transactions. This includes physical currency and bank deposits. Real economy money is created through government deficits and private sector credit expansion.
   - [FINDING THE MONEY Film on X: "CLIP: We hear a lot about the national debt. But do currency-issuing governments really ‘borrow' their own currencies? The answer might surprise you. Watch FINDING THE MONEY documentary, In Theaters and On Demand TOMORROW May 3: https://t.co/H1e5fEuV7t https://t.co/MA3AGIcCXi" / X (twitter.com)](https://twitter.com/FindingMoneyDoc/status/1786050601236779078)
-  - {{twitter https://twitter.com/FindingMoneyDoc/status/1786050601236779078}}
+
+  <https://twitter.com/FindingMoneyDoc/status/1786050601236779078>
 
 ## Government deficits drive money creation and inflation
 
